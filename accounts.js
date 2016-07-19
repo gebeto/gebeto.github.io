@@ -1,6 +1,6 @@
 datas = {
 	"John":{
-		"name": "Sofia Turko",
+		"name": "&nbsp&nbsp&nbsp&nbspSofia Turko&nbsp&nbsp&nbsp&nbsp",
 		"description": "&nbsp&nbsp&nbsp&nbspStudent | Designer | Programmer &nbsp&nbsp&nbsp&nbsp;",
 		"avatar": "<img src='images/avatarJ.jpg' alt='' />",
 		"color": "pink"
