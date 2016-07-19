@@ -1,59 +1,157 @@
-<!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title>Laser Team Inc.</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.7" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script type="text/javascript" src="accounts.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="jq/jquery.min.js"></script>
+		<script src="jq/jquery-ui.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="FULL/jquery.fullPage.css" />
+		<script type="text/javascript" src="FULL/jquery.fullPage.js"></script>
+		<script type="text/javascript">$(document).ready(function() {
+            $('#fullpage').fullpage({
+                verticalCentered: true,
+                anchors: 'anchor',
+                controlArrows: false
+            });
+        });</script>
 	</head>
-	<body class="is-loading">
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar" id="avatar" ><img src="images/avatarS.jpg" alt="" /></span>
-							<h1 onClick="" id="nameField">Slavik Nychkalo</h1>
-							<p onClick="" id="descField">Student | Python Developer | Hacker:D</p>
-						</header>
-						<footer>
-							<!-- <ul class="icons">
-								<li><a href="https://github.com/bboyheadman" target="_blank" class="fa-github" onClick="return window.confirm('Перейти на GitHub?');">GitHub</a></li>
-								<li><a href="http://vk.com/gebeto" target="_blank"  class="fa-vk" onClick="return window.confirm('Перейти в ВК?');">VK</a></li>
-								<li><a href="http://facebook.com/bboyheadman" target="_blank"  class="fa-facebook" onClick="return window.confirm('Перейти на Facebook?');">Facebook</a></li>
-								<br>
-								<li><a href="http://instagram.com/slavik.nychkalo" target="_blank"  class="fa-instagram" onClick="return window.confirm('Перейти на Instagram?');">Instagram</a></li>
-								<li><a href="tel:380970067238" target="_blank"  onClick="return window.confirm('Позвонить?');" class="fa-mobile-phone">Mobile</a></li>
-							</ul> -->
-						</footer>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li onClick="this.innerHTML=prompt('Enter name')">&copy; SLAVIK NYCHKALO</li>
-							<li onclick="change(document.getElementById('nameField'),document.getElementById('descField'),document.getElementById('avatar'),'John');">2016</li>
-						</ul>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-	</body>
-</html>
+	<body>
+		<div id="fullpage">
+			<div class="section" id="section1">
+				<div class="slide" id="slide1">
+					<!--       START SLAVIK NYCHKALO-->
+					<div class="is-loading">
+						<div id="wrapper">
+							<!-- Main -->
+							<section id="main">
+								<header>
+									<span class="avatar">
+										<img src="images/avatarS.jpg" alt="" />
+									</span>
+									<h1>Slavik Nychkalo</h1>
+									<p>Student | Python Developer | Hacker:D</p>
+								</header>
+								<footer>
+									<ul class="icons">
+										<li>
+											<a href="https://github.com/bboyheadman" target="_blank" class="fa-github" onClick="return window.confirm('Перейти на GitHub?');">GitHub</a>
+										</li>
+										<li>
+											<a href="http://vk.com/gebeto" target="_blank" class="fa-vk" onClick="return window.confirm('Перейти в ВК?');">VK</a>
+										</li>
+										<li>
+											<a href="http://facebook.com/bboyheadman" target="_blank" class="fa-facebook" onClick="return window.confirm('Перейти на Facebook?');">Facebook</a>
+										</li>
+										<br>
+											<li>
+												<a href="http://instagram.com/slavik.nychkalo" target="_blank" class="fa-instagram" onClick="return window.confirm('Перейти на Instagram?');">Instagram</a>
+											</li>
+											<li>
+												<a href="tel:380970067238" target="_blank" onClick="return window.confirm('Позвонить?');" class="fa-mobile-phone">Mobile</a>
+											</li>
+										</ul>
+									</footer>
+								</section>
+								<footer id="footer">
+									<ul class="copyright">
+										<li style="padding: 3px; background-color:rgba(255,255,255,0.9); border-radius:3px; color:black;">&copy; SLAVIK NYCHKALO | 2016</li>
+									</ul>
+								</footer>
+							</div>
+						</div>
+						<!-- END -->
+					</div>
+					<div class="slide" id="slide2">
+						<!--        START SOFIA TURKO-->
+						<div class="is-loading">
+							<div id="wrapper">
+								<!-- Main -->
+								<section id="main">
+									<header>
+										<span class="avatar">
+											<img src="images/avatarJ.jpg" alt="" />
+										</span>
+										<h1>Sofia Turko</h1>
+										<p>Student | Designer | Programmer</p>
+									</header>
+									<footer>
+										<ul class="icons">
+											<!-- <li>
+											                                                <a href="https://github.com/bboyheadman" target="_blank" class="fa-github" onClick="return window.confirm('Перейти на GitHub?');">GitHub</a>
+											                                            </li> -->
+											<li>
+												<a href="http://vk.com/id33881998" target="_blank" class="fa-vk" onClick="return window.confirm('Перейти в ВК?');">VK</a>
+											</li>
+											<br>
+												<li>
+													<a href="http://facebook.com/100011344820871" target="_blank" class="fa-facebook" onClick="return window.confirm('Перейти на Facebook?');">Facebook</a>
+												</li>
+												<li>
+													<a href="http://instagram.com/sonya.turko" target="_blank" class="fa-instagram" onClick="return window.confirm('Перейти на Instagram?');">Instagram</a>
+												</li>
+												<!-- <li>
+												                                                    <a href="tel:3809374178**" target="_blank" onClick="return window.confirm('Позвонить?');" class="fa-mobile-phone">Mobile</a>
+												                                                </li> -->
+											</ul>
+										</footer>
+									</section>
+									<footer id="footer">
+										<ul class="copyright">
+											<li style="padding: 3px; background-color:rgba(255,255,255,0.9); border-radius:3px; color:black;">&copy; SOFIA TURKO | 2016</li>
+										</ul>
+									</footer>
+								</div>
+							</div>
+							<!-- END -->
+						</div>
+						<div class="slide" id="slide2">
+							<!--       START SLAVIK NYCHKALO-->
+							<div class="is-loading">
+								<div id="wrapper">
+									<!-- Main -->
+									<section id="main">
+										<header>
+											<span class="avatar">
+												<img src="images/avatarS.jpg" alt="" />
+											</span>
+											<h1>Vitya Nychkalo</h1>
+											<p>Student | Android | Footballer:D</p>
+										</header>
+										<footer>
+											<ul class="icons">
+												<li>
+													<a href="https://github.com/bboyheadman" target="_blank" class="fa-github" onClick="return window.confirm('Перейти на GitHub?');">GitHub</a>
+												</li>
+												<li>
+													<a href="http://vk.com/gebeto" target="_blank" class="fa-vk" onClick="return window.confirm('Перейти в ВК?');">VK</a>
+												</li>
+												<li>
+													<a href="http://facebook.com/bboyheadman" target="_blank" class="fa-facebook" onClick="return window.confirm('Перейти на Facebook?');">Facebook</a>
+												</li>
+												<br>
+													<li>
+														<a href="http://instagram.com/slavik.nychkalo" target="_blank" class="fa-instagram" onClick="return window.confirm('Перейти на Instagram?');">Instagram</a>
+													</li>
+													<li>
+														<a href="tel:380970067238" target="_blank" onClick="return window.confirm('Позвонить?');" class="fa-mobile-phone">Mobile</a>
+													</li>
+												</ul>
+											</footer>
+										</section>
+										<footer id="footer">
+											<ul class="copyright">
+												<li>&copy; VITYA NYCHKALO</li>
+												<li>2016</li>
+											</ul>
+										</footer>
+									</div>
+								</div>
+								<!-- END -->
+							</div>
+						</div>
+					</div>
+				</body>
+			</html>
