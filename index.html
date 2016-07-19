@@ -9,11 +9,9 @@
 		<title>Identity by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="slavik.js"></script>
 	</head>
 	<body class="is-loading">
 
@@ -23,52 +21,19 @@
 				<!-- Main -->
 					<section id="main">
 						<header>
-							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
-							<h1>Jane Doe</h1>
-							<p>Senior Psychonautics Engineer</p>
+							<span onClick="this.innerHTML=change_avatar()" class="avatar" ><img src="images/avatar.jpg" alt="" /></span>
+							<h1 onClick="this.innerHTML=prompt()">Slavik Nychkalo</h1>
+							<p onClick="this.innerHTML=prompt()">Student | Python Developer | Hacker:D</p>
 						</header>
-						<!--
-						<hr />
-						<h2>Extra Stuff!</h2>
-						<form method="post" action="#">
-							<div class="field">
-								<input type="text" name="name" id="name" placeholder="Name" />
-							</div>
-							<div class="field">
-								<input type="email" name="email" id="email" placeholder="Email" />
-							</div>
-							<div class="field">
-								<div class="select-wrapper">
-									<select name="department" id="department">
-										<option value="">Department</option>
-										<option value="sales">Sales</option>
-										<option value="tech">Tech Support</option>
-										<option value="null">/dev/null</option>
-									</select>
-								</div>
-							</div>
-							<div class="field">
-								<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-							</div>
-							<div class="field">
-								<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-							</div>
-							<div class="field">
-								<label>But are you a robot?</label>
-								<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-								<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-							</div>
-							<ul class="actions">
-								<li><a href="#" class="button">Get Started</a></li>
-							</ul>
-						</form>
-						<hr />
-						-->
 						<footer>
 							<ul class="icons">
-								<li><a href="#" class="fa-twitter">Twitter</a></li>
-								<li><a href="#" class="fa-instagram">Instagram</a></li>
-								<li><a href="#" class="fa-facebook">Facebook</a></li>
+								<li><a href="https://github.com/bboyheadman" target="_blank" class="fa-github" onClick="return window.confirm('Перейти на GitHub?');">GitHub</a></li>
+								<li><a href="http://vk.com/gebeto" target="_blank"  class="fa-vk" onClick="return window.confirm('Перейти в ВК?');">VK</a></li>
+								<li><a href="http://facebook.com/bboyheadman" target="_blank"  class="fa-facebook" onClick="return window.confirm('Перейти на Facebook?');">Facebook</a></li>
+								<br>
+								<!-- <li><a href="#" class="fa-twitter">Twitter</a></li> -->
+								<li><a href="http://instagram.com/slavik.nychkalo" target="_blank"  class="fa-instagram" onClick="return window.confirm('Перейти на Instagram?');">Instagram</a></li>
+								<li><a href="tel:380970067238" target="_blank"  onClick="return window.confirm('Позвонить?');" class="fa-mobile-phone">Mobile</a></li>
 							</ul>
 						</footer>
 					</section>
@@ -76,7 +41,8 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="copyright">
-							<li>&copy; Jane Doe</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li onClick="this.innerHTML=prompt()">&copy; SLAVIK NYCHKALO</li>
+							<li>2016</li>
 						</ul>
 					</footer>
 
@@ -89,6 +55,12 @@
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
+			</script>
+			<script>
+				function change_avatar() {
+					var imga = '<img style="width:160px" src="'+prompt('Enter image link:')+'"></img>';
+					return imga;
+					}
 			</script>
 
 	</body>
