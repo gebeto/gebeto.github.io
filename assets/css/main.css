@@ -24,6 +24,7 @@
 	}
 
 	body {
+		transition-duration: 1s;
 		line-height: 1;
 	}
 
@@ -84,11 +85,12 @@
 
 	body {
 		height: 100%;
-		background-color: #ffffff;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		transition-duration: 1s;
+		background-color: #090909;
+		background-image: url("images/overlay.png"), url("../../images/bg.png");
+		background-image: url("images/overlay.png"), url("../../images/bg.png");
+		background-image: url("images/overlay.png"), url("../../images/bg.png");
+		background-image: url("images/overlay.png"), url("../../images/bg.png");
 		background-repeat: repeat,			no-repeat,			no-repeat;
 		background-size: 100px 100px, cover,				cover;
 		background-position: top left,		center center,		bottom center;
@@ -105,7 +107,7 @@
 			height: inherit;
 			opacity: 0;
 			z-index: 1;
-			background-color: #ffffff;
+			background-color: #090909;
 			background-image: url("images/overlay.png");
 			background-image: url("images/overlay.png");
 			background-image: url("images/overlay.png");

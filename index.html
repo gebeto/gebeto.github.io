@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script type="text/javascript" src="slavik.js"></script>
+		<script type="text/javascript" src="accounts.js"></script>
 	</head>
 	<body class="is-loading">
 
@@ -21,9 +21,9 @@
 				<!-- Main -->
 					<section id="main">
 						<header>
-							<span onClick="this.innerHTML=change_avatar()" class="avatar" ><img src="images/avatar.jpg" alt="" /></span>
-							<h1 onClick="this.innerHTML=prompt('Enter Name')">Slavik Nychkalo</h1>
-							<p onClick="this.innerHTML=prompt('Enter Description')">Student | Python Developer | Hacker:D</p>
+							<span class="avatar" id="avatar" ><img src="images/avatarS.jpg" alt="" /></span>
+							<h1 onClick="" id="nameField">Slavik Nychkalo</h1>
+							<p onClick="" id="descField">Student | Python Developer | Hacker:D</p>
 						</header>
 						<footer>
 							<ul class="icons">
@@ -42,7 +42,7 @@
 					<footer id="footer">
 						<ul class="copyright">
 							<li onClick="this.innerHTML=prompt('Enter name')">&copy; SLAVIK NYCHKALO</li>
-							<li>2016</li>
+							<li onclick="change(document.getElementById('nameField'),document.getElementById('descField'),document.getElementById('avatar'),'John');">2016</li>
 						</ul>
 					</footer>
 
@@ -56,12 +56,5 @@
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
 			</script>
-			<script>
-				function change_avatar() {
-					var imga = '<img style="width:160px" src="'+prompt('Enter image link:')+'"></img>';
-					return imga;
-					}
-			</script>
-
 	</body>
 </html>
