@@ -97,29 +97,6 @@
 		background-attachment: fixed,			fixed,				fixed;
 	}
 
-		body:after {
-			content: '';
-			display: block;
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: inherit;
-			opacity: 0;
-			z-index: 1;
-			background-color: #090909;
-			background-image: url("images/overlay.png");
-			background-image: url("images/overlay.png");
-			background-image: url("images/overlay.png");
-			background-image: url("images/overlay.png");
-			background-repeat: repeat,			no-repeat;
-			background-size: 100px 100px, cover;
-			background-position: top left,		center center;
-			-moz-transition: opacity 1.75s ease-out;
-			-webkit-transition: opacity 1.75s ease-out;
-			-ms-transition: opacity 1.75s ease-out;
-			transition: opacity 1.75s ease-out;
-		}
 
 		body.is-loading:after {
 			opacity: 1;
