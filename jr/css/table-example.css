@@ -1,0 +1,40 @@
+.table_example{
+    width: 100%;
+    text-align: left;
+    margin: 15px 0;
+}
+.table_example th{
+    padding: 0px 0px 0px 20px;
+    border: 1px solid rgba(128, 100, 162, 1);
+    background-color: rgba(128, 100, 162, 1);
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+.table_example th, .table_example td{
+    position: relative;
+    border: 1px solid rgba(128, 100, 162, 1);
+}
+.table_example td{
+    padding: 10px 10px;
+}
+.table_example p{
+    margin: 0;
+}
+.table_example td img{
+    max-width: 70%;
+    margin: 0px auto;
+    display: block;
+}
+
+.wide-table
+{
+    width: 105%;
+    margin-left: -30px;
+}
+
+.double-wide-table
+{
+    width: 110%;
+    margin-left: -60px;
+}

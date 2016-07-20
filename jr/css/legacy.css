@@ -1,0 +1,366 @@
+
+/*TOP PANEL*/
+
+.top-message-panel
+{
+    position: fixed;
+    top:0px;
+    left: 0px;
+
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    z-index: 130;
+}
+
+.info-message-panel
+{
+    /*position: absolute;*/
+    width: 100%;
+    height: 100px;
+    background-color: #d3d3d3/*green*/;
+}
+
+.money-message-panel
+{
+    position: relative;
+    /*position: absolute;*/
+    width: 100%;
+    height: 100px;
+    background-color: #d3d3d3;
+}
+
+.top-money-panel-message
+{
+    /*position: absolute;*/
+    width: 620px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 30pt;
+    font-weight: bold;
+    color: #000000;
+    font-family: 'comic cansa';
+
+    text-align: center;
+}
+
+.top-money-panel-gold-message
+{
+    width: 250px;
+    height: 100px;
+    display: inline-block;
+
+    line-height: 100px;
+    text-align: right;
+
+    background-size: 194px 64px;
+    background: url("../images/buttons/ship-mini.png") no-repeat left;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-money-panel-silver-message
+{
+    width: 130px;
+    height: 100px;
+    display: inline-block;
+
+    line-height: 100px;
+    text-align: right;
+
+    background-size: 64px 64px;
+    background: url("../images/buttons/dark-matter.png") no-repeat left;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-message-panel-picture
+{
+    position: absolute;
+    top:0px;
+    left: 0px;
+
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+
+    float: left;
+    display: inline-block;
+}
+
+.top-message-panel-picture2
+{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30pt;
+    font-weight: bold;
+    color: green;
+    background-color: #90ee90;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    margin-top: 20px;
+
+    /*padding-top: 3px;*/
+    /*padding-bottom: -3px;*/
+    font-family: 'comic cansa';
+}
+
+.top-message-panel-message
+{
+    position: absolute;
+    top:0px;
+    left: 100px;
+
+    width: 100%;
+    height: 90px;
+    /*background-color: #ffc0cb;*/
+
+    float: left;
+    display: inline-block;
+
+    margin-top: 10px;
+    margin-left: 150px;
+    font-size: 16pt;
+    color:#000000; /* #97f897*/
+}
+
+.top-message-panel-button
+{
+    position: absolute;
+    top:0px;
+    right: 0px;
+
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+
+    float: left;
+    display: inline-block;
+
+    text-align: center;
+}
+
+.top-message-panel-button2
+{
+    width: 40px;
+    height: 40px;
+
+    margin: auto;
+    margin-top: 30px;
+
+    background-color: #90ee90;
+    border: 1px solid green;
+    vertical-align: middle;
+
+    color: green;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.top-message-panel-button2:hover
+{
+    background-color: green;
+    border: 1px solid #90ee90;
+    color: #90ee90;
+}
+
+
+
+
+
+
+/*CODE COPY EDITOR*/
+
+#pCopyEditorCloseButtonPanel
+{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#pCopyEditorTitle
+{
+    width: 400px;
+    height: 50px;
+    background-color: transparent;
+    text-align: center;
+
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    top: 10px;
+    font-size: 20pt;
+    color: #000000;
+}
+
+
+
+#pCopyEditorOriginalLabel
+{
+    width: 500px;
+    height: 25px;
+
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-size: 14pt;
+}
+
+#pCopyEditorOriginalCode
+{
+    width: 650px;
+    height: 60px;
+
+    position: absolute;
+    top: 85px;
+    left: 20px;
+    font-size: 12pt;
+}
+
+.copy-editor-code-area
+{
+    width: 750px;
+    height: 250px;
+    background-color: white;
+    border: 1px solid #000000;
+}
+
+
+#pCopyEditorUserLabel
+{
+    width: 500px;
+    height: 25px;
+    /*background-color: red;*/
+
+    position: absolute;
+    top: 380px;
+    left: 20px;
+    font-size: 14pt;
+}
+
+#pCopyEditorUserCode
+{
+    width: 650px;
+    height: 60px;
+    /*background-color: #ffc0cb;*/
+
+    position: absolute;
+    top: 405px;
+    left: 20px;
+    font-size: 12pt;
+}
+
+
+
+/*RIGHT PANEL*/
+
+.right-info-panel
+{
+    position: fixed;
+    top:150px;
+    left: 50%;
+    margin-left: 490px;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    color: gray;
+    font-family: Helvetica, Verdana;
+    /*font-family: 'comic cansa';*/
+
+}
+
+.right-info-panel-gold-message
+{
+    width: 80px;
+    height: 25px;
+    display: inline-block;
+
+    line-height: 25px;
+    text-align: right;
+
+    background-size: 49px 16px;
+    background: url("../images/buttons/ship-mini.png") left;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right-info-panel-silver-message
+{
+    width: 80px;
+    height: 25px;
+    display: inline-block;
+
+    line-height: 25px;
+    text-align: right;
+
+    background-size: 16px 16px;
+    background: url("../images/buttons/dark-matter.png") no-repeat left;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+div.right-info-panel-container
+{
+    width: 100px;height: 25px;background-color: transparent
+}
+
+div.right-info-panel-image
+{
+    display: inline-block;float: left; width: 50px;height: 25px;text-align: center
+}
+
+div.right-info-panel-message
+{
+    display: inline-block;width: 50px;height: 25px;line-height: 25px;
+}
+
+img.cartoon6 {
+    display: block;
+    margin-left: 20px;
+    border-radius: 10px;
+    /*box-shadow: 0 0 20px rgba(0,0,0,0.5); */
+    /*-webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);*/
+    /*-moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);*/
+    /*box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);*/
+}
+
+
+.reward-cell
+{
+    font-size: 20pt;
+    text-align: right;
+    padding: 5px;
+
+    background-size: 64px 64px;
+    background: url("../images/buttons/dark-matter.png") no-repeat 5px;
+
+}
+
+button.nomoney
+{
+    background: url("/levels/images/buttons/no.png") no-repeat;
+    background-size: 64px 64px;
+    width: 64px;
+    height: 64px;
+    border: 0px;
+}
+
+button.nomoney:active
+{
+    background: url("/levels/images/buttons/no-pressed.png") no-repeat;
+    background-size: 64px 64px;
+    width: 64px;
+    height: 64px;
+    border: 0px;
+}
