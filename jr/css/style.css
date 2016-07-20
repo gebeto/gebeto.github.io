@@ -23,6 +23,7 @@ nav {
   float: left;
   /*margin-left: .618em;*/
   margin-top: 0.2em;
+  width: 32px;
 }
 
 .icon-reorder {
@@ -46,7 +47,9 @@ nav {
 }
 
 .aka{
-  line-height: 2.5em;
+  line-height: 2.5em;  
+  padding: 0 3em;
+
 }
 
 .triangle {
