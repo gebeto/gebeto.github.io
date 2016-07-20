@@ -216,7 +216,7 @@
 <p>- Можно и так сказать.</p>
 <p class="amigo">- Гуд. А что у нас будет сегодня?</p>
 <p>- Сегодня я тебе расскажу про класс <b>RandomAccessFile</b>.</p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/32/image-ru-32-03.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/32/image-ru-32-03.png"/>
 <p>Дело в том, что FileInputStream и FileOutputStream представляют файлы в виде потоков: читать из них и писать в них можно только последовательно.</p>
 <p>Это не всегда очень-то удобно.  Иногда тебе нужно записать пару строк в середину файла, или прочитать пару страниц текста в конце многомегабайтного файла. Читать для этого весь файл не очень эффективно.</p>
 <p>Для решения этой проблемы был создан класс <b>RandomAccessFile</b>. С его помощью можно писать в любое место файла, читать из него, а также писать и читать файл одновременно.</p>
@@ -631,7 +631,7 @@ RandomAccessFile <span class="red_text">raf</span> = new RandomAccessFile<b>(<sp
 		Используйте подходящий метод класса <span class="taskcode">Throwable</span>, который поможет записать стек-трейс в <span class="taskcode">StringWriter</span>.
         </td></tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>2. Читаем из потока</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Читаем из потока</b><br/><br/>
                 Реализуйте логику метода <span class="taskcode">getAllDataFromInputStream</span>. Он должен вернуть <span class="taskcode">StringWriter</span>, содержащий все данные из переданного потока.<br/>
 		Возвращаемый объект ни при каких условиях не должен быть <span class="taskcode">null</span>.<br/>
 		Метод <span class="taskcode">main</span> не участвует в тестировании.
@@ -899,7 +899,7 @@ RandomAccessFile <span class="red_text">raf</span> = new RandomAccessFile<b>(<sp
 </tr>
 </tbody></table>
 <p><b>Способ третий – создание динамического прокси (Proxy).</b></p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/32/image-ru-32-02.gif"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/32/image-ru-32-02.gif"/>
 <p>В Java есть специальный класс (java.lang.reflect.Proxy), с помощью которого фактически <span class="red_text"><b>можно сконструировать объект во время исполнения программы (динамически), не создавая для него отдельного класса.</b></span></p>
 <p>Это делается очень просто:</p>
 <table class="table_example">
@@ -1030,7 +1030,7 @@ RandomAccessFile <span class="red_text">raf</span> = new RandomAccessFile<b>(<sp
 <th>Задачи</th>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>1. Создание прокси-объекта</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Создание прокси-объекта</b><br/><br/>
                 1) В отдельном файле создать публичный класс <span class="taskcode">CustomInvocationHandler</span>, который будет хэндлером при создании прокси-объекта.<br/>
 		2) <span class="taskcode">CustomInvocationHandler</span> должен иметь один публичный конструктор с одним агументом типа <span class="taskcode">SomeInterfaceWithMethods</span>.<br/>
 		3) Перед вызовом любого метода у оригинального объекта должна выводиться фраза [methodName in].<br/>
@@ -1058,7 +1058,7 @@ RandomAccessFile <span class="red_text">raf</span> = new RandomAccessFile<b>(<sp
 <h2>9. RMI</h2>
 </div>
 <p>- Привет! И еще одна радостная тема – <span class="red_text"><b>RMI</b></span>. <span class="red_text"><b>RMI</b></span> расшифровывается <span class="red_text">Remote Method Invokation</span> – удаленный вызов методов. Или другими словами <span class="dred_text">RMI – это механизм, который позволяет объекту в одной Java-машине вызывать методы объекта в другой Java-машине</span>, даже если они находятся на разных компьютерах, в разных странах, на разных сторонах земного шара.</p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/32/image-ru-32-01.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/32/image-ru-32-01.png"/>
 <p class="amigo">- Ничего себе! Звучит очень круто.</p>
 <p>- Ага. Но я постараюсь дать только обзорную лекцию. Тут, если глубоко копать, можно запутаться в нюансах работы. </p>
 <p>Но если не ударяться в крайности, то RMI не только очень прост, но и значительно упрощает жизнь программиста. За что ему глубокий респект.</p>
@@ -1189,7 +1189,7 @@ RandomAccessFile <span class="red_text">raf</span> = new RandomAccessFile<b>(<sp
 <th>Задачи</th>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>1. К серверу по RMI</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. К серверу по RMI</b><br/><br/>
                 Реализуйте логику метода <span class="taskcode">run</span> в <span class="taskcode">CLIENT_THREAD</span>. В нем будет имитироваться клиентская часть, которая коннектится к серверу.<br/>
 		1) Из <span class="taskcode">registry</span> получите сервис с именем <span class="taskcode">UNIC_BINDING_NAME</span><br/>
 		2) Вызовите метод у полученного сервиса, передайте любой непустой аргумент<br/>
@@ -1400,7 +1400,7 @@ RandomAccessFile <span class="red_text">raf</span> = new RandomAccessFile<b>(<sp
 <p>- Все дальнейшие инструкции также через него.</p>
 <p class="amigo">- Разрешите приступить, сэр?</p>
 <p>- Приступайте.</p>
-<img alt="" src="http://javarush.ru/levels/images/lessons/32/image-ru-32-big01.png"/>
+<img alt="" src="https://javarush.ru/levels/images/lessons/32/image-ru-32-big01.png"/>
 <div class="section_footer">
 <button class="next_lesson"></button>
 <div class="line"></div>

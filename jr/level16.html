@@ -232,7 +232,7 @@
 <p class="amigo">- Другими словами, есть задание и «маленький робот», который его исполняет, а нить – это всего лишь взгляд на текущее положение дел со стороны?</p>
 <p>- Именно так.</p>
 <p>А вот как все это работает глубоко внутри. Т.к. процессор у компьютера один, то он может выполнять только одну команду одновременно. Поэтому происходит вот что: процессор постоянно переключается между нитями. Переключился на новую нить, выполнил несколько ее команд, затем переключился на следующую нить, выполнил несколько ее команд и так далее. <span class="red_text">Но т.к. переключение между нитями происходит сотни раз в секунду, со стороны кажется, что все нити работают одновременно.</span></p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/16/image-ru-16-01.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/16/image-ru-16-01.png"/>
 <div class="section_footer">
 <button class="next_lesson"></button>
 <div class="line"></div>
@@ -279,7 +279,7 @@
 </table>
 <p>Маленькие программы на Java обычно состоят из одной нити, называемой «главной нитью» (main thread). Но программы побольше часто запускают дополнительные нити, их еще называют «дочерними нитями». Главная нить выполняет метод main и завершается. <span class="red_text">Аналогом такого метода <b>main</b>, для дочерних нитей служит метод <b>run</b> интерфейса <b>Runnable</b>.</span></p>
 <p class="amigo">- Ага, много нитей, много методов main.</p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/16/image-ru-16-02.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/16/image-ru-16-02.png"/>
 <p>- Чтобы указать, с какого именно метода нужно начать выполнение объекту Thread, нужно как-то передать метод этому объекту. В Java это реализовано с помощью интерфейса <b>Runnable</b>. Этот интерфейс содержит единственный абстрактный метод – <b>void run()</b>. Класс Thread имеет конструктор <b>Thread(Runnable Runnable)</b>, в который можно передать любой объект, который реализует интерфейс <b>Runnable</b>.</p>
 <p>Ты должен унаследовать свой класс от интерфейса <b>Runnable</b>, затем переопределить метод <b>run</b> в своем классе. Именно с вызова этого метода начнется работа новой нити. В методе <b>run</b> ты можешь написать все, что хочешь.</p>
 <table class="table_example wide-table">
@@ -985,13 +985,13 @@
 <th>Дополнительные задания для выполнения в Intellij Idea</th>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>1. Thread.currentThread - всегда возвращает текущую нить</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Thread.currentThread - всегда возвращает текущую нить</b><br/><br/>
                 1. В методе <span class="taskcode">printMsg</span> присвой переменной <span class="taskcode">t</span> текущую нить.<br/>
 		2. В методе <span class="taskcode">printMsg</span> после всех действий поставь задержку в 1 миллисекунду.
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>2. Последовательные выполнения нитей</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Последовательные выполнения нитей</b><br/><br/>
 		1. В методе <span class="taskcode">run</span> после всех действий поставь задержку в 10 миллисекунд. Выведи "Нить прервана", если нить будет прервана.<br/>
 		2. Сделай так, чтобы все нити выполнялись последовательно: сначала для нити №1 отсчет с <span class="taskcode">COUNT</span> до 1, потом для нити №2 с <span class="taskcode">COUNT</span> до 1 и т.д.<br/><br/>
 <span class="example-legacy">Пример:</span><br/>
@@ -1004,7 +1004,7 @@
 </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>3. Рекурсивное создание нитей</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Рекурсивное создание нитей</b><br/><br/>
                 1. Измени класс <span class="taskcode">GenerateThread</span> так, чтобы он стал нитью.<br/>
 		2. Создай конструктор <span class="taskcode">GenerateThread</span>, который должен:<br/>
 		2.1. Вызвать конструктор суперкласса с параметром <span class="taskcode">String</span> - номером созданной нити. Используй <span class="taskcode">countCreatedThreads</span>.<br/>
@@ -1018,7 +1018,7 @@
 		5. В итоге должно быть выведено в консоль 15 строк.
         </td></tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>4. Последовательные выполнения нитей</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>4. Последовательные выполнения нитей</b><br/><br/>
                 1. Разберись, что делает программа.<br/>
 		2. Сделай так, чтоб программа сначала выводила результат нити, а когда нить завершится - продолжила метод <span class="taskcode">main</span>.<br/><br/>
 <span class="example-legacy">Пример выходных данных:</span><br/>
@@ -1033,20 +1033,20 @@
 </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>5. Взаимная блокировка</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>5. Взаимная блокировка</b><br/><br/>
                 1. Разберись, как работает программа.<br/>
 		2. Не меняя классы <span class="taskcode">T1</span> и <span class="taskcode">T2</span> сделай так, чтобы они завершились, не обязательно успешно.<br/>
 		3. метод <span class="taskcode">sleep</span> не использовать. 
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>6. Создание по образцу</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>6. Создание по образцу</b><br/><br/>
                 Разберись, как работает программа.<br/>
 		По образу и подобию <span class="taskcode">CountDownRunnable</span> создай нить <span class="taskcode">CountUpRunnable</span>, которая выводит значения в нормальном порядке – от 1 до <span class="taskcode">number</span>
 </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>7. Поиграем?</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>7. Поиграем?</b><br/><br/>
                 Три человека играют в игру. Каждый игрок (Gamer) характеризуется двумя параметрами: фамилией (name) и количеством действий в секунду (rating).<br/>
 		Нужно вывести в консоль ход игры и определить победителя и проигравших.<br/>
 		Итак...<br/>
@@ -1064,7 +1064,7 @@
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>8. Кто первый встал - того и тапки</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>8. Кто первый встал - того и тапки</b><br/><br/>
                 1. Разберись, что делает программа.<br/>
 		1.1. Каждая нить должна читать с консоли слова. Используйте готовый <span class="taskcode">static BufferedReader reader</span>.<br/>
 		1.2. Используй <span class="taskcode">static byte countReadStrings</span>, чтобы посчитать, сколько слов уже считано с консоли всеми нитями.<br/><br/>
@@ -1075,7 +1075,7 @@
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>9. Только по-очереди!</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>9. Только по-очереди!</b><br/><br/>
                 1. В классе <span class="taskcode">Solution</span> создать нить <span class="taskcode">public static Read3Strings</span> унаследовавшись от <span class="taskcode">Thread</span>.<br/>
 		2. В методе <span class="taskcode">run</span> реализовать чтение с консоли трех строк.<br/>
 		3. Три подряд введенных строки должны считываться в одной нити и объединяться в одну строку через пробел.<br/>
@@ -1094,7 +1094,7 @@
 </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>10. Последовательный вывод файлов</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>10. Последовательный вывод файлов</b><br/><br/>
                 1. Разберись, что делает программа.<br/>
 		2. В статическом блоке считай 2 имени файла <span class="taskcode">firstFileName</span> и <span class="taskcode">secondFileName</span>.<br/>
 		3. Внутри класса <span class="taskcode">Solution</span> создай нить <span class="taskcode">public static ReadFileThread</span>, которая реализует интерфейс <span class="taskcode">ReadFileInterface</span> (Подумай, что больше подходит - <span class="taskcode">Thread</span> или <span class="taskcode">Runnable</span>).<br/>

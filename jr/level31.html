@@ -212,7 +212,7 @@
 <p>- Привет, Амиго. Давно не виделись.</p>
 <p class="amigo">- Привет, Билаабо. О чем будешь рассказывать?</p>
 <p>- <b>Сегодня я расскажу о работе с файлами.</b> В Java есть специальный класс (File), с помощью которого можно управлять файлами на диске компьютера. Для того чтобы управлять содержимым файлов, есть другие классы: FileInputStream, FileOutputStream,…</p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/31/image-ru-31-04.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/31/image-ru-31-04.png"/>
 <p class="amigo">- Интересно. А когда ты говоришь «управлять файлами», что ты имеешь в виду?</p>
 <p>- Как раз сейчас и расскажу. Файлы можно создавать, удалять, переименовывать и еще много чего. В практически все классы, которые работают (читают, пишут, изменяют) с содержимым файла, можно передавать объект класса File. Пример:</p>
 <table class="table_example">
@@ -445,7 +445,7 @@
 <th>Задачи</th>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>1. Проход по дереву файлов</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Проход по дереву файлов</b><br/><br/>
                 1. На вход метода <span class="taskcode">main</span> подаются два параметра.<br/>
 		Первый - <span class="taskcode">path</span> - путь к директории, второй - <span class="taskcode">resultFileAbsolutePath</span> - имя файла, который будет содержать результат.<br/>
 		2. Для каждого файла в директории <span class="taskcode">path</span> и в ее всех вложенных поддиректориях выполнить следующее:<br/>
@@ -458,7 +458,7 @@
 		Все файлы имеют расширение txt.
         </td></tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>2. Находим все файлы</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Находим все файлы</b><br/><br/>
                 Реализовать логику метода <span class="taskcode">getFileTree</span>, который должен в директории <span class="taskcode">root</span> найти список всех файлов включая вложенные.<br/>
 		Используйте очередь, рекурсию не используйте.<br/>
 		Верните список всех путей к найденным файлам, путь к директориям возвращать не надо.<br/>
@@ -481,7 +481,7 @@
 <p>- Думаю, у меня как раз есть, что добавить по этой теме.</p>
 <p class="amigo">- Да? Тогда с удовольствием послушаю.</p>
 <p>- Тогда слушай. Java постоянно развивается, постоянно ищутся новые способы делать различные вещи эффективнее. В Java 7 была добавлена альтернатива классу File.</p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/31/image-ru-31-03.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/31/image-ru-31-03.png"/>
 <p class="amigo">- Альтернатива?</p>
 <p>- Ага. Взяли за основу класс <b>File</b>, добавили в него немного нового, переименовывали методы, а в конце еще и разделили на два. Так что теперь есть два новых класса – <span class="blue_text"><b>Path</b></span> и <span class="red_text"><b>Files</b></span>. <span class="blue_text">Path</span> – это, фактически новый аналог класса <b>File</b>, а <span class="red_text">Files</span> – это утилитный класс (по аналогии с классами Arrays &amp; Collections), в него вынести все статические методы класса <b>File</b>. Так «правильнее» с точки зрения ООП.</p>
 <p class="amigo">- Ну, раз с точки зрения ООП, то – ок. А что поменялось-то?</p>
@@ -742,7 +742,7 @@
 <th>Задачи</th>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>1. Своя реализация</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Своя реализация</b><br/><br/>
                 Реализуйте логику методов:<br/>
 		1. <span class="taskcode">readBytes</span> - должен возвращать все байты файла <span class="taskcode">fileName</span><br/>
 		2. <span class="taskcode">readLines</span> - должен возвращать все строки файла <span class="taskcode">fileName</span>. Используйте дефолтовую кодировку<br/>
@@ -753,7 +753,7 @@
 		Никаких других импортов!
         </td></tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>2. Поиск скрытых файлов</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Поиск скрытых файлов</b><br/><br/>
                 В классе <span class="taskcode">Solution</span> переопределите логику двух методов:<br/>
 		-<span class="taskcode">visitFile</span> кроме своей логики должен добавлять в <span class="taskcode">archived</span> все пути к zip и rar файлам<br/>
 		-<span class="taskcode">visitFileFailed</span> должен добавлять в <span class="taskcode">failed</span> все пути к недоступным файлам и возвращать <span class="taskcode">SKIP_SUBTREE</span><br/><br/>
@@ -850,7 +850,7 @@
 <p>- Амиго, ты меня удивляешь!</p>
 <p class="amigo">- А то!</p>
 <p>- Отлично, тогда дам тебе два новых класса <b>ZipInputStream</b> и <b>ZipOutputStream</b>.</p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/31/image-ru-31-02.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/31/image-ru-31-02.png"/>
 <p class="amigo">- <b>Zip</b>? Это как <b>zip</b>-архив?</p>
 <p>- Именно. Эти потоки предназначены для работы с файлами, которые являются zip-архивами. С помощью них можно что-то читать прямо из zip-фала или писать в него!</p>
 <p class="amigo">- Ух ты! Как интересно. Но ведь в zip-архиве может быть не один файл, как же они работают?</p>
@@ -1033,7 +1033,7 @@
 <th>Задачи</th>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>1. Добавление файла в архив</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Добавление файла в архив</b><br/><br/>
                 В метод <span class="taskcode">main</span> приходит список аргументов.<br/>
 		Первый аргумент - полный путь к файлу <span class="taskcode">fileName</span>.<br/>
 		Второй аргумент - путь к zip-архиву.<br/>
@@ -1247,13 +1247,13 @@
 <th>Задачи</th>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>1. Null Object Pattern</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Null Object Pattern</b><br/><br/>
                 Почитайте на вики про паттерн "Null Object"<br/>
 		Используйте <span class="taskcode">Files</span>, чтобы в конструкторе класса <span class="taskcode">Solution</span> правильно инициализировать поле <span class="taskcode">fileData</span> объектом <span class="taskcode">ConcreteFileData</span>.<br/>
 		Если возникли какие-то проблемы со чтением файла по пути <span class="taskcode">pathToFile</span>, то инициализируйте поле объектом <span class="taskcode">NullFileData</span>.
         </td></tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>2. Исследуем Path</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Исследуем Path</b><br/><br/>
                 Почитайте про все методы класса <span class="taskcode">Path</span>.<br/>
 		Найдите такой, который создает относительный путь между текущим и переданным путем.<br/>
 		Реализуйте логику метода <span class="taskcode">getDiffBetweenTwoPaths</span>, он должен возвращать относительный путь.<br/>
@@ -1271,7 +1271,7 @@
 <h2>9. Properties</h2>
 </div>
 <p>- Сегодня мы изучаем еще одну новую и интересную тему – <b>свойства (properties)</b>.</p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/31/image-ru-31-01.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/31/image-ru-31-01.png"/>
 <p>В Java принято делать программы гибкими и легко настраиваемыми. Иногда еще говорят легко конфигурируемыми (от конфигурация).</p>
 <p>Например, твоя программа раз в час копирует файлы из некоторой директории, архивирует их и отсылает тебе на email.  Для этого программе надо знать директорию, откуда брать файлы и email, куда их посылать. Такие данные принято хранить не в коде программы, а в отдельных файлах свойств – <b>properties</b>-файлах.</p>
 <p>Данные в таком файле хранятся в виде пар ключ-значение, разделенные знаком равно.</p>
@@ -1389,7 +1389,7 @@
 <th>Задачи</th>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>1. Читаем конфиги</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Читаем конфиги</b><br/><br/>
                 Реализовать метод <span class="taskcode">getProperties</span>, который должен считывать свойства из переданного файла <span class="taskcode">fileName</span>.<br/>
 <span class="taskcode">fileName</span> может иметь любое расширение - как xml, так и любое другое, или вообще не иметь.<br/>
 		Нужно обеспечить корректное чтение свойств.<br/>
@@ -1597,7 +1597,7 @@
 <p>- Тогда вот тебе файл с инструкциями. Сегодня мы будем разрабатывать новую версию искусственного интеллекта. Человечеству нужна наша помощь. Мы обязаны спасти людей от гибели.</p>
 <p class="amigo">- Но, сэр! Я не могу открыть файл. Нужен архиватор.</p>
 <p>- Да? Кхм… Тогда спасение человечества переносится. Напишем сегодня собственный архиватор.</p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/31/image-ru-31-05.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/31/image-ru-31-05.png"/>
 <p class="amigo">- Товарищ Капитан, а как же люди?</p>
 <p>- Ничего с ними не случится. Обратись за заданием к агенту Intellij IDEA, там получишь все инструкции.</p>
 <p class="amigo">- Разрешите приступить, сэр?</p>

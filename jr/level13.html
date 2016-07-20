@@ -210,7 +210,7 @@
 <h2>1. Причины существования интерфейсов - поддержка заявленного поведения</h2>
 </div>
 <p>- Привет, Амиго! Хочу сегодня тебе рассказать о причинах существования интерфейсов. Тебе очень часто придется слышать, что такой-то класс, объект или сущность поддерживает определенный интерфейс. Что же это значит – <b>поддерживать интерфейс?</b></p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/13/image-ru-13-04.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/13/image-ru-13-04.png"/>
 <p>В более широком смысле интерфейс какой-нибудь вещи – это механизм взаимодействия этой вещи с другими предметами. Например,  пульт от телевизора – это дистанционный интерфейс. Собака понимает и исполняет команды - это значит, что собака поддерживает голосовой интерфейс (управления). Если все это подытожить, то можно сказать, что интерфейс – это стандартизированный способ взаимодействия двух вещей, и этот стандарт известен двум сторонам. Когда человек говорит собаке «сидеть», он отдает команду в соответствии с «голосовым интерфейсом управления собакой», и если собака выполняет эту команду, то мы говорим, что собака поддерживает этот интерфейс.</p>
 <p>Так же и в программировании. Методы – это действия над объектом, над его данными. И если класс реализует определенные методы, то он «поддерживает исполнение» определенных команд. Какие же преимущества дает объединение методов в интерфейс?</p>
 <p><b>1)</b> Каждый <b>interface</b>, как и <b>class</b>, имеет уникальное имя. Обе стороны могут быть на 100% уверены, что вторая сторона поддерживает именно нужный (известный им) интерфейс, а не похожий.</p>
@@ -451,7 +451,7 @@
 <h2>5. Множественное наследование интерфейсов</h2>
 </div>
 <p>- Привет, Амиго! Наконец-то мы добрались до очень интересной темы. Сегодня я расскажу тебе про <span class="red_text"><b>множественное наследование</b></span>. На самом деле множественное наследование очень интересный и мощный инструмент. И если бы не некоторые  проблемы, то в Java было бы множественное наследование классов.  Но т.к. его нет, придется довольствоваться <span class="red_text"><b>множественным наследованием интерфейсов</b></span>. Что тоже не мало.</p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/13/image-ru-13-03.gif"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/13/image-ru-13-03.gif"/>
 <p>Представь, что ты пишешь компьютерную игру. И ее герои – твои объекты – должны демонстрировать очень сложное поведение: ходить по карте, собирать предметы, выполнять квесты, общаться с другими героями, кого-то убивать, кого-то спасать. Допустим, ты смог разделить все объекты на 20 категорий. Это значит, что если тебе повезет, ты можешь обойтись всего 20-ю классами, для их описания. А теперь вопрос на засыпку: сколько всего уникальных видов взаимодействия у этих объектов. Объект каждого типа может иметь уникальные взаимодействия с  20-ю видами других объектов (себе подобных тоже считаем). Т.е. всего нужно запрограммировать 20 на 20 – 400 взаимодействий!  А если уникальных видов объектов будет не 20, а 100, количество взаимодействий может достигнуть 10,000!</p>
 <p class="amigo">- Ничего себе! Теперь понимаю, почему программирование такая непростая работа.</p>
 <p>- Она простая. Благодаря многим абстракциям. И в не последнюю очередь – множественному наследованию интерфейсов.</p>
@@ -792,32 +792,32 @@
 <th>Дополнительные задания для выполнения в Intellij Idea</th>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>1. Некорректные строки</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Некорректные строки</b><br/><br/>
                 Удали все некорректные строки в интерфейсе <span class="taskcode">Button</span>.
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>2. Погода</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Погода</b><br/><br/>
                 1. В классе <span class="taskcode">Today</span> реализовать интерфейс <span class="taskcode">Weather</span>.<br/>
                 2. Подумай, как связан параметр <span class="taskcode">String type</span> с методом <span class="taskcode">getWeatherType()</span>.<br/>
                 3. Интерфейсы <span class="taskcode">Weather</span> и <span class="taskcode">WeatherType</span> уже реализованы.
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>3. Чтение файла</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Чтение файла</b><br/><br/>
                 1. Считать с консоли имя файла.<br/>
                 2. Вывести в консоль(на экран) содержимое файла.<br/>
                 3. Не забыть освободить ресурсы. Закрыть поток чтения с файла и поток ввода с клавиатуры.
         </td></tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>4. Запись в файл</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>4. Запись в файл</b><br/><br/>
                  1. Прочесть с консоли имя файла.<br/>
                  2. Считывать строки с консоли, пока пользователь не введет строку "exit".<br/>
                  3. Вывести все строки в файл, каждую строчку с новой стороки.
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>5. Neo</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>5. Neo</b><br/><br/>
                 1. Реализовать интерфейс <span class="taskcode">DBObject</span> в классе <span class="taskcode">User</span>.<br/>
                 2. Реализовать метод <span class="taskcode">initializeIdAndName</span> так, чтобы программа работала и выводила на экран  "User has name Neo, id = 1".<br/>
                 3. Метод <span class="taskcode">toString</span> и метод <span class="taskcode">main</span> менять нельзя.<br/>
@@ -825,32 +825,32 @@
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>6. Исправление ошибок</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>6. Исправление ошибок</b><br/><br/>
                 1. Переделай наследование в классах и интерфейсах так, чтобы программа компилировалась и продолжала делать то же самое.<br/>
                 2. Класс <span class="taskcode">Hobbie</span> должен наследоваться от интерфейсов <span class="taskcode">Desire</span>, <span class="taskcode">Dream</span>.
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>7. Интерфейс SimpleObject</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>7. Интерфейс SimpleObject</b><br/><br/>
                 1. Создай класс <span class="taskcode">StringObject</span>.<br/>
                 2. В классе <span class="taskcode">StringObject</span> реализуй интерфейс <span class="taskcode">SimpleObject</span> с параметром типа <span class="taskcode">String</span>.<br/>
                 3. Программа должна компилироваться.               
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>8. Интерфейс Updatable в классе Screen</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>8. Интерфейс Updatable в классе Screen</b><br/><br/>
                 Реализовать интерфейс <span class="taskcode">Updatable</span> в классе <span class="taskcode">Screen</span>.
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>9. Один метод в классе</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>9. Один метод в классе</b><br/><br/>
                 1. Унаследовать <span class="taskcode">Fox</span> от интерфейса <span class="taskcode">Animal</span>.<br/>
                 2. Поменяй код так, чтобы в классе <span class="taskcode">Fox</span> был только один метод - <span class="taskcode">getName</span>.<br/>
                 3. Методы удалять нельзя!
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>10. Компиляция программы</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>10. Компиляция программы</b><br/><br/>
                 1. Исправь классы <span class="taskcode">Fox</span> и <span class="taskcode">BigFox</span> так, чтобы программа компилировалась. Задача не предполагает создания экземпляров базового класса.<br/>
                 2. Метод <span class="taskcode">main</span> менять нельзя. 
             </td>
@@ -890,7 +890,7 @@
 <tr>
 <td><button class="bonus-task-button"></button><b>3. Битва роботов.</b><br/><br/>
 <u>Задача:</u> <br/> 1. Разобраться в том, что тут написано.<br/>
-2.<br/><img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/13/image-ru-13-02.png"/>
+2.<br/><img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/13/image-ru-13-02.png"/>
 3. Смириться со своей участью и продолжить разбираться в коде.<br/>
 4. ...<br/>
 5. Порадоваться, что мы все поняли.<br/>
@@ -899,7 +899,7 @@
 6.2. Отредактировать класс <span class="taskcode">Robot</span> учитывая <span class="taskcode">AbstractRobot</span>.<br/>
 6.3. Расширить класс <span class="taskcode">BodyPart</span> новой частью тела "грудь".<br/>
 6.4. Добавить новую часть тела в реализацию интерфейсов <span class="taskcode">Attackable</span> и <span class="taskcode">Defensable</span> (в классе <span class="taskcode">AbstractRobot</span>).<br/>
-7.<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/13/image-ru-13-01.png"/>
+7.<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/13/image-ru-13-01.png"/>
 </td>
 </tr>
 </table>

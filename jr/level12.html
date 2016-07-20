@@ -212,17 +212,17 @@
 <p>- Амиго, ты любишь китов?</p>
 <p class="amigo">- Китов? Не, не слышал.</p>
 <p>- Этот как корова, только больше и плавает. Кстати, киты произошли от коров. Ну, или имели общего с ними предка. Не столь важно.</p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/12/image-ru-12-03.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/12/image-ru-12-03.png"/>
 <p>- Так вот. Хочу рассказать тебе об еще одном очень мощном инструменте ООП – это <span class="red_text"><b>полиморфизм</b></span>. У него есть четыре особенности.</p>
 <p><b>1) Переопределение метода.</b></p>
 <p>Представь, что ты для игры написал класс «Корова». В нем есть много полей и методов. Объекты этого класса могут делать разные вещи: идти, есть, спать. Еще коровы звонят в колокольчик, когда ходят. Допустим, ты реализовал в классе все до мелочей.</p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/12/image-ru-12-04.gif"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/12/image-ru-12-04.gif"/>
 <p>А тут приходит заказчик проекта и говорит, что хочет выпустить новый уровень игры, где все действия происходят в море, а главным героем будет кит.</p>
 <p>Ты начал проектировать  класс «Кит» и понял, что он лишь немного отличается от класса «Корова». Логика работы обоих классов очень похожа, и ты решил использовать наследование.</p>
 <p>Класс «Корова» идеально подходит на роль класса-родителя, там есть все необходимые переменные и методы. Достаточно только добавить киту возможность плавать. Но есть проблема: у твоего кита есть ноги, рога и колокольчик. Ведь эта функциональность реализована внутри класса «Корова». Что тут можно сделать?</p>
-<p><img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/12/image-ru-12-05.png"/></p>
+<p><img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/12/image-ru-12-05.png"/></p>
 <p>К нам на помощь приходит <b>переопределение (замена) методов</b>. Если мы унаследовали метод,  который делает не совсем то, что нужно нам в нашем новом классе, мы можем заменить этот метод на другой.</p>
-<p><img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/12/image-ru-12-06.png"/></p>
+<p><img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/12/image-ru-12-06.png"/></p>
 <p>Как же это делается? <span class="dred_text">В нашем классе-потомке мы объявляем <b>такой же метод, как и метод класса родителя, который хотим изменить.</b></span> Пишем в нем новый код. <span class="green_text">И все – как будто старого метода в классе-родителе и не было.</span></p>
 <p>Вот как это работает:</p>
 <table class="table_example">
@@ -725,7 +725,7 @@ Whale whale = <span class="red_text">(Whale)</span> cow; <span class="grey_text"
 <p>- Молодец. Именно так. А что бы отрисовал на экране метод draw самого класса ChessItem?</p>
 <p class="amigo">- Не знаю. Такой фигуры ведь в шахматах нет. Значит, и изображения у нее нет.</p>
 <p>- Именно. Более того, создавать объекты типа ChessItem – не имеет смысла. Это не фигура из шахмат, <span class="dred_text">всего лишь</span> <span class="red_text">абстракция</span> <span class="dred_text">- класс, который мы сделали для удобства.</span> Так работает абстракция из ООП: мы вынесли важные (общие для всех фигур) данные и методы в базовый класс, а их различия оставили в их классах.</p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/12/image-ru-12-02.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/12/image-ru-12-02.png"/>
 <p>Для такого случая в Java  есть специальный тип классов – <b>абстрактные классы</b>. Вот три вещи, которые стоит помнить об абстрактных классах. </p>
 <p><b>1)</b> <span class="green_text">Абстрактный класс может содержать объявление метода без его реализации.</span> Такой метод называется абстрактным.</p>
 <table class="table_example">
@@ -980,7 +980,7 @@ item.draw();
 <h2>8. Интерфейсы - это больше чем интерфейсы - это поведение</h2>
 </div>
 <p>- Привет, Амиго!  А вот и снова я. Хочу рассказать тебе еще об одном взгляде на интерфейсы. Понимаешь, класс – это, чаще всего модель какого-то конкретного объекта.  Интерфейс же больше соответствует не объектам, а их способностям или ролям.</p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/12/image-ru-12-01.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/12/image-ru-12-01.png"/>
 <p>Например, такие вещи, как машина, велосипед, мотоцикл и колесо лучше всего представить в виде классов и объектов. А такие их способности как «могу ездить», «могу перевозить людей», «могу стоять» - лучше представить в виде интерфейсов. Смотри пример:</p>
 <table class="table_example wide-table">
 <tbody><tr><th width="60%">Код</th><th width="40%">Описание</th></tr>
@@ -1194,31 +1194,31 @@ item.draw();
 <th>Дополнительные задания для выполнения в Intellij Idea</th>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>1. Метод getName в классе Cat</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Метод getName в классе Cat</b><br/><br/>
                 Переопредели метод <span class="taskcode">getName</span> в классе <span class="taskcode">Cat</span> так, чтобы программа выдавала на экран надпись «Я - кот».
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>2. Метод setName в классе Cat</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Метод setName в классе Cat</b><br/><br/>
                 Переопредели метод <span class="taskcode">setName</span> в классе <span class="taskcode">Cat</span> так, чтобы программа выдавала на экран надпись «Я - кот».
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>3. Добавь один метод в класс Cat</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Добавь один метод в класс Cat</b><br/><br/>
                 Добавь один метод в класс <span class="taskcode">Cat</span> так, чтобы программа ничего не выводила на экран.
         </td></tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>4. Что это? «Кот», «Тигр», «Лев», «Бык», «хз»</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>4. Что это? «Кот», «Тигр», «Лев», «Бык», «хз»</b><br/><br/>
                  Напиши метод, который определяет, какой объект передали в него. <br/>Программа должна выводить на экран одну из надписей: <br/>«Кот», «Тигр», «Лев», «Бык», «хз».
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>5. Что это? «Кот», «Тигр», «Лев», «Бык», «Корова», «Животное»</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>5. Что это? «Кот», «Тигр», «Лев», «Бык», «Корова», «Животное»</b><br/><br/>
                 Напиши метод, который определяет, какой объект передали в него. <br/>Программа должна выводить на экран одну из надписей: <br/>«Кот», «Тигр», «Лев», «Бык», «Корова», «Животное». <br/><br/><b>Замечание:</b> постарайся определять тип животного как можно более точно.
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>6. Fly, Run, Climb для классов Cat, Dog, Tiger, Duck</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>6. Fly, Run, Climb для классов Cat, Dog, Tiger, Duck</b><br/><br/>
                 1) Внутри класса <span class="taskcode">Solution</span> создай интерфейс <span class="taskcode">public interface Fly</span>(летать) с методом <span class="taskcode">void fly()</span><br/>
                 2) Внутри класса <span class="taskcode">Solution</span> создай интерфейс <span class="taskcode">public interface Climb</span>(лазить по деревьям) с методом <span class="taskcode">void climb()</span><br/>
                 3) Внутри класса <span class="taskcode">Solution</span> создай интерфейс <span class="taskcode">public interface Run</span>(бегать) с методом <span class="taskcode">void run()</span><br/>
@@ -1228,23 +1228,23 @@ item.draw();
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>7. Fly, Run, Swim для классов Duck, Penguin, Toad</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>7. Fly, Run, Swim для классов Duck, Penguin, Toad</b><br/><br/>
                 Есть интерфейсы <span class="taskcode">Fly</span>(летать), <span class="taskcode">Swim</span>(плавать), <span class="taskcode">Run</span>(бегать).<br/>
                 Добавь эти интерфейсы классам <span class="taskcode">Duck</span>(утка), <span class="taskcode">Penguin</span>(пингвин), <span class="taskcode">Toad</span>(жаба).
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>8. Интерфейсы к классу Human</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>8. Интерфейсы к классу Human</b><br/><br/>
                 Добавь как можно больше интерфейсов к классу <span class="taskcode">Human</span>, но чтобы он не стал абстрактным классом. Добавлять методы в класс <span class="taskcode">Human</span> запрещается.
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>9. Родитель класса CTO</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>9. Родитель класса CTO</b><br/><br/>
                 Добавь такой класс-родитель к классу <span class="taskcode">CTO</span>(технический директор), чтобы класс перестал быть абстрактным. Добавлять/реализовывать методы в классе <span class="taskcode">CTO</span> запрещается.
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>10. Метод, который выводит на экран число 10</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>10. Метод, который выводит на экран число 10</b><br/><br/>
                 Добавь еще один метод, чтобы программа выводила на экран число 10.<br/><br/>
 <b>Подсказка:</b> используй перегрузку методов.
             </td>

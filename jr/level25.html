@@ -209,7 +209,7 @@
 <div class="avatar zoidberg"></div>
 <h2>1. Enum, все особенности</h2>
 </div>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/25/image-ru-25-11.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-11.png"/>
 <p>- Привет, Амиго!</p>
 <p class="amigo">- Привет, Билаабо!</p>
 <p>- Я расскажу тебе об очень интересной штуке.  Она довольно простая, но от этого становится еще интереснее. Эта штука называется <b>enum</b>. enum –  это тип, заданный перечислением набора значений,  которые могут принимать его переменные. Сразу пример:</p>
@@ -373,7 +373,7 @@
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>3. Свой enum</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Свой enum</b><br/><br/>
                 Реализуйте интерфейс <span class="taskcode">Columnable</span> у <span class="taskcode">Column</span>, описание методов смотрите в джавадоках.<br/>
 		Реализуйте логику метода <span class="taskcode">Column.getVisibleColumns</span>.<br/>
 		Создавать дополнительные поля нельзя.<br/>
@@ -391,7 +391,7 @@
 <div class="avatar elly"></div>
 <h2>3. Thread Life Cyrcle, состояние объекта Thread</h2>
 </div>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/25/image-ru-25-08.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-08.png"/>
 <p>- Привет, Амиго!</p>
 <p>Мы начинаем новую тему – работа с нитями или как их еще называют – тр<span class="red_text"><b>э</b></span>дами (от thread).</p>
 <p class="amigo">- А я слышал, что треды называют потоками.</p>
@@ -407,14 +407,14 @@
 <p>- Твоя краткость удивляет, но так и есть.</p>
 <p>Но и это еще не все. Нить может быть заблокирована. Например, при входе в блок <b>synchronized</b>. Нить подошла к блоку кода, помеченному <b>synchronized</b>, а он занят другой нитью. Тогда наша нить получит состояние <b>blocked</b> и будет ждать освобождения объекта-мютекса.</p>
 <p>Вот как выглядит эта ситуация с состояниями:</p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/25/image-ru-25-09.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-09.png"/>
 <p>Но и это еще не все. Есть еще отдельное состояние, когда нить не <b>blocked</b>, но и не <b>ready</b> – это <b>waiting</b>. Например, при вызове методов <b>join</b>() у другой нити.</p>
 <p>При вызове join() у объекта другой нити, наша нить как-бы «присоединяется к ней», а на деле – просто ждет ее завершения. </p>
 <p>Кроме того, есть еще метод <b>wait</b>(), (из набора wait, notify, notifyAll), вызов которого тоже переводит <b>нить</b> в состояние <b>waiting</b>.</p>
 <p class="amigo">- Ничего себе.</p>
 <p>- Подожди! Но и это еще не все. Нить может спать, например, при вызове метода sleep. Для этого тоже есть отдельное состояние «<b>timed waiting»</b>. «<b>timed waiting</b>» значит, что нить чего-то ждет ограниченное время. Если вызвать метод wait с параметром - wait(timeout) или join(timeout), то нить перейдет в состояние timed waiting.</p>
 <p>Так что вот тебе полная схема:</p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/25/image-ru-25-10.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-10.png"/>
 <p class="amigo">- Гм. Это все? Или там есть еще 10 новых интересных состояний?</p>
 <p>- Пока – все.</p>
 <p>На самом деле – можешь запомнить только первую схему – она проще. Но вторая точнее.</p>
@@ -493,7 +493,7 @@
 <div class="avatar zoidberg"></div>
 <h2>5. Задачи на тему "текущее состояне нити"</h2>
 </div>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/25/image-ru-25-07.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-07.png"/>
 <p>- Привет, Амиго! Как настроение?</p>
 <p class="amigo">- Отличное. Сегодня столько нового узнал. Особенно про состояния нитей.</p>
 <p>- Да, отлично. Вот и проверим твои знания:</p>
@@ -522,7 +522,7 @@
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>3. Мониторинг состояния нити</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Мониторинг состояния нити</b><br/><br/>
                 В отдельном классе создать нить <span class="taskcode">LoggingStateThread</span>, которая будет выводить в консоль все состояния (State) переданной в конструктор нити.<br/>
 		Нить <span class="taskcode">LoggingStateThread</span> должна сама завершаться после остановки переданной в конструктор нити.<br/>
 		Метод <span class="taskcode">main</span> не участвует в тестировании.
@@ -622,7 +622,7 @@
 <div class="avatar diego"></div>
 <h2>7. Задачи на прерывание нитей</h2>
 </div>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/25/image-ru-25-06.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-06.png"/>
 <p>- Как раз тебя жду – тут столько интересной работы:</p>
 <table class="table_task">
 <tr>
@@ -634,12 +634,12 @@
 		Используйте метод super-класса в блоке <span class="taskcode">finally</span>
 </td></tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>2. Не валять дурака</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Не валять дурака</b><br/><br/>
                 Восстановите логику класса <span class="taskcode">TaskManipulator</span>.
             </td>
 </tr>
 <tr>
-<td><button class="http://javarush.ru/levels/idea-task-button"></button><b>3. Все не так легко, как кажется</b><br/><br/>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Все не так легко, как кажется</b><br/><br/>
                 1. Почитать в инете про <span class="taskcode">Socket</span>, <span class="taskcode">ThreadPoolExecutor</span>, <span class="taskcode">RunnableFuture</span>, <span class="taskcode">Callable</span><br/>
 		2. Реализуйте логику метода <span class="taskcode">cancel</span> в классе <span class="taskcode">SocketTask</span><br/>
 		3. Реализуйте логику метода <span class="taskcode">cancel</span> для локального класса внутри метода <span class="taskcode">newTask</span> в классе <span class="taskcode">SocketTask</span>
@@ -656,7 +656,7 @@
 <div class="avatar elly"></div>
 <h2>8. Стек вызовов и перехват ошибок</h2>
 </div>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/25/image-ru-25-05.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-05.png"/>
 <p>- Привет, Амиго!</p>
 <p>Хочу рассказать тебе меленькую, но интересную вещь.</p>
 <p class="amigo">- Я слушаю. Люблю интересные и маленькие вещи.</p>
@@ -705,7 +705,7 @@
 <div class="avatar diego"></div>
 <h2>9. Задачи на получение ошибок из нити</h2>
 </div>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/25/image-ru-25-05.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-05.png"/>
 <p>- А чего это у тебя все время аж по 3 задачи?</p>
 <p>Как насчет решить еще 50?</p>
 <p class="amigo">- 50? О_о</p>
@@ -824,7 +824,7 @@ thread.<span class="red_text">join</span><b>(500)</b>;
 <div class="avatar diego"></div>
 <h2>11. Задачи на yield, переуступку кванта времени</h2>
 </div>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/25/image-ru-25-04.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-04.png"/>
 <p>- Привет, Амиго! Тренируйся, вот тебе пара задач.</p>
 <table class="table_task">
 <tr>
@@ -927,7 +927,7 @@ thread.<span class="red_text">join</span><b>(500)</b>;
 <div class="avatar professor"></div>
 <h2>13. Профессор дает доп. материал</h2>
 </div>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/25/image-ru-25-03.png"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-03.png"/>
 <p>- Привет, Амиго!</p>
 <p>Вот тебе отличная лекция с дополнительным материалом:</p>
 <p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-25.html" target="_blank">Ссылка на дополнительный материал</a></p>
@@ -1042,10 +1042,10 @@ thread.<span class="red_text">join</span><b>(500)</b>;
 <p>Нужно написать симуляцию космической войны.</p>
 <p class="amigo">- Круто. То есть я хотел сказать, я - готов, сэр.</p>
 <p class="amigo">У меня как раз есть идея. Как насчет:</p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/25/image-ru-25-01.gif"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-01.gif"/>
 <p>- Нет, слишком сложно.</p>
 <p>Для начала начнем с чего-то попроще:</p>
-<img alt="" class="cartoon" src="http://javarush.ru/levels/images/lessons/25/image-ru-25-02.gif"/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-02.gif"/>
 <p class="amigo">- М-да.</p>
 <p>- Что, опять сложно? Тогда еще проще.</p>
 <p>Обратитесь за заданием к агенту Intellij IDEA. Оно уже у него.</p>
