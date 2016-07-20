@@ -21,7 +21,7 @@ nav {
   -webkit-border-radius: 4em 4em;
   border-radius: 4em / 4em;
   float: left;
-  margin-left: .618em;
+  /*margin-left: .618em;*/
   margin-top: 0.2em;
 }
 
@@ -102,7 +102,7 @@ nav {
   width: 100%;
   padding: 0.6em 0;
   color: gray;
-  border-left: 3px solid #f7f7f7;
+  /*border-left: 3px solid #f7f7f7;*/
   -webkit-transition: all 0.1s ease-out;
   -moz-transition: all 0.1s ease-out;
   -ms-transition: all 0.1s ease-out;
