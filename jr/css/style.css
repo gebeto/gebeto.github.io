@@ -66,15 +66,15 @@ nav {
   width: 100%;
   position: absolute;
   z-index: 2;
-  left: 50%;
-  margin-left: -6.5em;
+  /*left: 20%;*/
+  /*margin-left: -6.5em;*/
   /* half of width */
   top: -300px;
 }
 
 .dropOut {
   /*width: 13em;*/
-  width: 80%;
+  width: 100%;
   background: #f6f6f6;
   float: left;
   position: relative;
