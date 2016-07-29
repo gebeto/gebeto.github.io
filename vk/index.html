@@ -7,11 +7,33 @@
 </head>
 <body>
 
-<input type="text" id="domain" placeholder="domain"><br>
-<input type="text" id="token" placeholder="token"><br>
-<input type="text" id="message" placeholder="message"><br>
-<button>Send</button>
+<style type="text/css">
+	.send-message{
+		border: 5px solid black;
+		padding: 20px;
+	}
+	.checker{
+		border-left: 5px solid black;
+		border-right: 5px solid black;
+		border-bottom: 5px solid black;
+		padding: 20px;
+	}
+</style>
+<center>
+<div class="send-message">
+	<input type="text" id="domain" placeholder="domain"><br>
+	<input type="text" id="token" placeholder="token"><br>
+	<!-- <input type="text" id="message" placeholder="message"><br> -->
+	<textarea id="message" placeholder="message"></textarea><br>
+	<button>Send</button>
+</div>
 
+<div class="checker">
+	<input type="text" id="token" placeholder="token"><br>
+	<button>Check user</button>
+	<div class="profile"></div>
+</div>
+</center>
 <script src="app.js"></script>
 </body>
 </html>
