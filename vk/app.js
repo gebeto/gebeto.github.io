@@ -42,5 +42,27 @@ $(document).ready(function(){
             })
         });
 
+    	$(".login > button").on("click", function(){
+	        var BASE = "https://api.vk.com/oauth/token?";
+			var password = $(".login > #password").val();
+			var email = $(".login > #login").val();
+			var scope = "status,friends,photos,audio,video,docs,notes,pages,wall,groups,notifications,messages";
+			var payload = "password="+password+"&scope="+scope+"&grant_type=password&username="+email+"&v=5.53&2fa_supported=1&client_secret=VeWdmVclDCtn6ihuP1nt&client_id=3140623";
+			var url = BASE+payload;
+			var req = url;
+			$(".login").append(req)
+	        $.ajax({
+	            url : req,
+	            type : "GET",
+	            dataType : "jsonp",
+	            success : function(msg){
+	            	alert("SUC!");
+	            },
+	            error : function(msg){
+	            	alert(msg.status);
+	            }
+	            })
+        });
+
 
     })
