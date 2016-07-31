@@ -1,0 +1,101 @@
+body {
+	margin: 0px;
+	font-family: arial;
+}
+.header {
+	width: 980px;
+	border-top: 1px solid #BFBFBF;
+	border-bottom: 1px solid #BFBFBF;
+	padding: 15px;
+	margin-top: 20px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 50px;
+}
+
+.header:hover {
+	color: #666666;
+}
+
+.content {
+	overflow: hidden;
+}
+
+.text {
+	width: 100%;
+	border: 1px solid #cccccc;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	padding: 30px;
+	text-align: center;
+	background: #eeeeee;
+	font-size: 45px;
+}
+
+#header {
+	background-color: #f8f8f8;
+	border-bottom: solid 1px #acb8b4;
+    max-width: 980px;
+    }
+#add {
+	margin: 30px;
+	font-size: 50px;
+	font-family: arial;
+}
+#vklogo {
+	border-width: 1px;
+	border-left-color: #acb8b4;
+    border-left-style: solid;
+    padding-left: 8px;
+}
+.logo {
+	border-width: 1px;
+	border-right-color: #acb8b4;
+    border-right-style: solid;
+    padding-right: 18px;
+}
+#ico {
+	border-radius:45px;
+	border: 1px solid #bcbcbc;
+}
+#number {
+	font-size: 50px;
+	font-family: arial;
+	color: #767474;
+}
+#name {
+	font-size: 50px;
+	font-family: arial;
+}
+#category {
+	font-size: 39px;
+	font-family: arial;
+	color: #767474;
+}
+#button {
+	border-radius: 11px;
+	font-size: 42px;
+	color: #009d00;
+	font-family: arial;
+	font-weight: bold;
+	padding-left: 27px;
+	padding-right: 27px;
+	padding-bottom: 12px;
+	padding-top: 12px;
+	border: 3px solid;
+	letter-spacing: -2px;
+}
+#pr {
+	margin-top: 50px;
+    font-size: 38px;
+	font-family: arial;
+}
+a:link {
+	text-decoration: none;
+	color: #0262be;
+}
+a:visited {
+	text-decoration: none;
+	color: #0262be;
+}
