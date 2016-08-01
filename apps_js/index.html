@@ -1,0 +1,51 @@
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name = "viewport" content = "user-scalable=no, width=device-width">
+		<title>Apps</title>
+		<link rel="stylesheet" href="http://f0xyk.tk/assets/css/mobilestyles.css">
+		<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="user-scalable=no, width=device-width">
+		<link rel="apple-touch-icon" sizes="57x57" href="http://f0xyk.tk/images/ico/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="http://f0xyk.tk/images/ico/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="http://f0xyk.tk/images/ico/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="http://f0xyk.tk/images/ico/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="http://f0xyk.tk/images/ico/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="http://f0xyk.tk/images/ico/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="http://f0xyk.tk/images/ico/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="http://f0xyk.tk/images/ico/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="http://f0xyk.tk/images/ico/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="http://f0xyk.tk/images/ico/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="http://f0xyk.tk/images/ico/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="http://f0xyk.tk/images/ico/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="http://f0xyk.tk/images/ico/favicon-16x16.png">
+		<link rel="manifest" href="http://f0xyk.tk/images/ico/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="http://f0xyk.tk/images/ico/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+</head>
+	</head>
+	<body>
+<!-- CONTENT -->
+	</body>
+	<script type="text/javascript">
+		// $(document).ready(function(){
+			$.getJSON("main.json", function(json){
+				$.each(json, function(key, val) {
+		$("body").append($('<img src="../images/icons/'+val["icon"]+'" id="ico" style="position: absolute;left:105px;top:'+(54+255*key)+'px;">'));
+		$("body").append($('<div id="number" style="position: absolute; left: 23px; top: '+(129+255*key)+'px;">'+(key+1)+'</div>'));
+		$("body").append($('<p id="name" style="position: absolute;left:335px;top:'+(5+255*key)+'px;">'+val["appName"]+'</p>'));
+		$("body").append($('<p id="category" style="position:absolute;left:335px;top:'+(95+255*key)+'px;">'+val["category"]+'</p>'));
+		$("body").append($('<a href="itms-services://?action=download-manifest&url='+val["plistUrl"]+'"><div style="position:absolute;left:590px;top:'+(142+255*key)+'px;" id="button">УСТАНОВИТЬ</div></a>'));
+		$("body").append($('<img src="http://f0xyk.tk/images/apps/rating.png" style="position:absolute;left:335px;top:'+(202+255*key)+'px;">'))
+		$("body").append($('<img src="http://f0xyk.tk/images/apps/rating.png" style="position:absolute;left:365px;top:'+(202+255*key)+'px;">'))
+		$("body").append($('<img src="http://f0xyk.tk/images/apps/rating.png" style="position:absolute;left:395px;top:'+(202+255*key)+'px;">'))
+		$("body").append($('<img src="http://f0xyk.tk/images/apps/rating.png" style="position:absolute;left:425px;top:'+(202+255*key)+'px;">'))
+		$("body").append($('<img src="http://f0xyk.tk/images/apps/rating.png" style="position:absolute;left:455px;top:'+(202+255*key)+'px;">'))
+		$("body").append($('<div style="position:absolute; top:'+(274+255*key)+'px;"><hr width="979"></div>'))
+				})
+			});
+		// });
+	</script>
+</html>
