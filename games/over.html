@@ -57,7 +57,7 @@ function randomInteger(min, max) {
 function setBestScore() {
 	if (total > best){
 		$.ajax({
-			url: "score.php",
+			url: "http://bboyheadman.tk/games/score.php",
 			dataType: "html",
 			data: {set: total},
 			success: function(data){
@@ -71,7 +71,7 @@ function setBestScore() {
 
 function getBestScore() {
 	$.ajax({
-		url: "score.php",
+		url: "http://bboyheadman.tk/games/score.php",
 		dataType: "html",
 		data: {get: 1},
 		success: function(data){
