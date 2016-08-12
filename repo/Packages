@@ -1,1 +1,18 @@
-﻿
+﻿Name: HideMeX (iOS 9) by JailbreakVideo
+Package: HideMeX9Rus
+Version: 1.0.5
+Architecture: iphoneos-arm
+Author: XpucT <jailbreakvideo@gmail.com>
+Description: GOOD
+Depiction: http://jailbreakvideo.ru/Depictions/HideMeX.html
+Homepage: http://youtube.com/JailbreakVideo
+Installed-Size: 1171
+Depends: mobilesubstrate, firmware (>= 9.0), org.thebigboss.libcolorpicker, preferenceloader, applist, JVIcons
+Maintainer: JailbreakVideo
+Section: JV Tweaks
+Sponsor: JailbreakVideo <http://youtube.com/JailbreakVideo>
+Support: http://youtube.com/JailbreakVideo
+Icon: file:///Applications/Cydia.app/Sections/JV Tweaks.png
+Filename: ./debs/HideMeX9Rus.deb
+Size: 436420
+MD5Sum: 7096ec00117e4c400aee6f70daac8972
