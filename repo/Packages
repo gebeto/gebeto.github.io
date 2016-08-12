@@ -12,7 +12,6 @@ Maintainer: JailbreakVideo
 Section: JV Tweaks
 Sponsor: JailbreakVideo <http://youtube.com/JailbreakVideo>
 Support: http://youtube.com/JailbreakVideo
-Icon: file:///Applications/Cydia.app/Sections/JV Tweaks.png
-Filename: ./debs/HideMeX9Rus.deb
+Filename: http://jailbreakvideo.ru/debs/HideMeX9Rus.deb
 Size: 436420
 MD5Sum: 7096ec00117e4c400aee6f70daac8972

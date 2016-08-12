@@ -1,7 +1,6 @@
 import bz2, os, time
 
 Packages = open("Packages").readlines()
-print Packages
 Packagesbz = bz2.BZ2File("Packages.bz2", "w")
 Packagesbz.writelines(Packages)
 
