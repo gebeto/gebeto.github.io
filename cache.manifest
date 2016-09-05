@@ -1,12 +1,18 @@
 CACHE MANIFEST
 
-# This is a comment.
-# Cache manifest version 0.0.1
-# If you change the version number in this comment,
-# the cache manifest is no longer byte-for-byte
-# identical.
-
-index.html
+CACHE:
+# js
+data.js
 jquery-1.11.1.min.js
 jquery.mobile-1.4.5.min.js
 jquery.mobile-1.4.5.min.css
+
+# html
+index.html
+
+# png
+icon.png
+touch-icon-iphone.png
+touch-icon-ipad.png
+touch-icon-iphone-retina.png
+touch-icon-ipad-retina.png
