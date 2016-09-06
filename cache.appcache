@@ -3,7 +3,6 @@ CACHE MANIFEST
 CACHE:
 
 # js
-js/data.js
 js/jquery-1.11.1.min.js
 js/jquery.mobile-1.4.5.min.js
 
