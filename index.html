@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html manifest="cache.manifest">
+<html manifest="cache.appcache">
 <head>
 	<title>Розклад ПІ-21</title>
-	<meta charset="utf-8">sdf
+	<meta charset="utf-8">
 
-  <meta name="apple-mobile-web-app-status-bar-style" content="white">
+  <!-- <meta name="apple-mobile-web-app-status-bar-style" content="white"> -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name = "viewport" content = "width = device-width">
 	<meta name = "viewport" content = "initial-scale = 0.8, user-scalable = no">
 
-  <link rel="apple-touch-icon" href="touch-icon-iphone.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+  <link rel="apple-touch-icon" href="images/touch-icon-iphone.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/touch-icon-ipad.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/touch-icon-ipad-retina.png">
 	
 	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
-  <script src="jquery-1.11.1.min.js"></script>
-  <script src="jquery.mobile-1.4.5.min.js"></script>
-  <script src="data.js"></script>
-
+  
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/data.js"></script>
+  <script>
+    function updateSite(event){
+      window.applicationCache.swapCache();
+    }
+    window.applicationCache.addEventListener('updateready', updateSite, false);
+  </script>
 </head>
 <body>
 
+
 <center>
-  <h1>ПІ-21</h1>
+  <h1>ПІ-321</h1>
   <h4 class="chysOrZnam"></h4>
 </center>
+
 
 <div data-role="collapsible-set">
 
@@ -247,94 +255,80 @@
       </div>
     </div>
   </div>
- <br>
- <div data-role="collapsible">
-        <h3>Розклад дзвінків</h3>
-        <ul data-role="listview">
-          <li><a> Авдєєв	Сергій </a></li>
-          <li><a> Андросов	Артем </a></li>
-          <li><a> Бартновський	Марян </a></li>
-          <li><a> Білецький	Тарас </a></li>
-        </ul>
-      </div>
-<div data-role="collapsible">
-        <h3>Список студентів</h3>
-        <ul data-role="listview">
-          <li><a> Авдєєв	Сергій </a></li>
-          <li><a> Андросов	Артем </a></li>
-          <li><a> Бартновський	Марян </a></li>
-          <li><a> Білецький	Тарас </a></li>
-          <li><a> Богославський	Михайло </a></li>
-          <li><a> Гринчук	Дмитро </a></li>
-          <li><a> Губяк	Роман </a></li>
-          <!-- <li><a> Кісиличка	Богдан </a></li> -->
-          <li><a> Кльоміна	Поліна </a></li>
-          <li><a> Коржинський	Олесь </a></li>
-          <li><a> Крук	Микола </a></li>
-          <li><a> Лаврів	Юрій </a></li>
-          <li><a> Лапан	Володимир </a></li>
-          <li><a> Лівчанин	Руслан </a></li>
-          <li><a> Миколюк	Олександр </a></li>
-          <li><a> Мінтенко	Володимир </a></li>
-          <li><a> Ничкало	Віталій </a></li>
-          <li><a> Ничкало	Ярослав </a></li>
-          <li><a> Павленчик	Микола </a></li>
-          <li><a> Прокопович	Ярослав </a></li>
-          <li><a> Ровінська	Ольга </a></li>
-          <li><a> Садовий	Іван </a></li>
-          <li><a> Трач	Юлія </a></li>
-          <li><a> Турко	Софія </a></li>
-          <li><a> Хижняк	Дмитро </a></li>
-          <li><a> Ходак	Віталій </a></li>
-          <li><a> Штеньович	Віктор </a></li>
-          <li><a> Якимів	Микола </a></li>
-        </ul>
-      </div>
 
-    <button onclick="updateCache()">Update App</button>
+ <br>
+
+
+<!-- Розклад Дзвінків -->
+ <div data-role="collapsible">
+    <h3>Розклад дзвінків</h3>
+    <ul data-role="listview">
+      <li><a> Авдєєв	Сергій </a></li>
+      <li><a> Андросов	Артем </a></li>
+      <li><a> Бартновський	Марян </a></li>
+      <li><a> Білецький	Тарас </a></li>
+    </ul>
+  </div>
+
+
+<!-- Список Студентів -->
+  <div data-role="collapsible">
+    <h3>Список студентів</h3>
+    <ul data-role="listview">
+      <li><a> Авдєєв	Сергій </a></li>
+      <li><a> Андросов	Артем </a></li>
+      <li><a> Бартновський	Марян </a></li>
+      <li><a> Білецький	Тарас </a></li>
+      <li><a> Богославський	Михайло </a></li>
+      <li><a> Гринчук	Дмитро </a></li>
+      <li><a> Губяк	Роман </a></li>
+      <li><a> Кльоміна	Поліна </a></li>
+      <li><a> Коржинський	Олесь </a></li>
+      <li><a> Крук	Микола </a></li>
+      <li><a> Лаврів	Юрій </a></li>
+      <li><a> Лапан	Володимир </a></li>
+      <li><a> Лівчанин	Руслан </a></li>
+      <li><a> Миколюк	Олександр </a></li>
+      <li><a> Мінтенко	Володимир </a></li>
+      <li><a> Ничкало	Віталій </a></li>
+      <li><a> Ничкало	Ярослав </a></li>
+      <li><a> Павленчик	Микола </a></li>
+      <li><a> Прокопович	Ярослав </a></li>
+      <li><a> Ровінська	Ольга </a></li>
+      <li><a> Садовий	Іван </a></li>
+      <li><a> Трач	Юлія </a></li>
+      <li><a> Турко	Софія </a></li>
+      <li><a> Хижняк	Дмитро </a></li>
+      <li><a> Ходак	Віталій </a></li>
+      <li><a> Штеньович	Віктор </a></li>
+      <li><a> Якимів	Микола </a></li>
+    </ul>
+  </div>
 
 </div>
 
 <script>
-
-function updateCache() {
-	var appCache = window.applicationCache;
-	appCache.update();
-	if (appCache.status == window.applicationCache.UPDATEREADY) {
-	  alert("App Updated!");
-	  appCache.swapCache();  // The fetch was successful, swap in the new cache.
-	}
-}
-  
-function addAlert1(argument) {
-  alert(group1[argument.innerHTML]);
-}
-
-function addAlert2(argument) {
-  alert(group2[argument.innerHTML]);
-}
-
 var SeptemberStart = 1473033600;
 var week = 604800;
+
+function addAlert1(argument) { alert(group1[argument.innerHTML]); };
+
+function addAlert2(argument) { alert(group2[argument.innerHTML]); };
 
 function chisOrZnam(){
   var now = parseInt(new Date().getTime()/1000);
   var chyselnyk = false;
-
   while(SeptemberStart < now){
     chyselnyk = !chyselnyk;
     SeptemberStart += week;
   }
-
   return !chyselnyk;
-}
+};
 
 $(document).ready(function(){
   $(".chysOrZnam").text(chisOrZnam() ? "Чисельник" : "Знаменник");
 });
-
 </script>
-
 </body>
 </html>
 
