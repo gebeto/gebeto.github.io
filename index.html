@@ -282,9 +282,20 @@
         </ul>
       </div>
 
+    <button onclick="updateCache()">Update App</button>
+
 </div>
 
 <script>
+
+function updateCache() {
+	var appCache = window.applicationCache;
+	appCache.update();
+	if (appCache.status == window.applicationCache.UPDATEREADY) {
+	  alert("App Updated!");
+	  appCache.swapCache();  // The fetch was successful, swap in the new cache.
+	}
+}
   
 function addAlert1(argument) {
   alert(group1[argument.innerHTML]);
