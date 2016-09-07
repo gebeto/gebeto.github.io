@@ -18,29 +18,23 @@
   
   <script src="js/jquery-1.11.1.min.js"></script>
   <script src="js/jquery.mobile-1.4.5.min.js"></script>
-  <script>
-    function updateSite(event){
-      window.applicationCache.swapCache();
-    }
-    window.applicationCache.addEventListener('updateready', updateSite, false);
-  </script>
+  <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 
-
 <center>
   <h1>ПІ-21</h1>
-  <h4 class="chysOrZnam"></h4>
-  <h4 class="dayOfWeek"></h4>
+  <h4 class="chys-or-znam"></h4>
+  <h4 class="day-of-week"></h4>
 </center>
 
 
 <div data-role="collapsible-set">
 
 <!-- Підгрупа 1 -->
-  <div data-role="collapsible">
+  <div data-role="collapsible" class="pg1">
     <h3>1 Підгрупа</h3>
-  
+    <p class="status"></p>
   <!-- Чисельник -->
     <div data-role="collapsible">
       <h3>Чисельник</h3>
@@ -132,9 +126,9 @@
 
 
 <!-- Підгрупа 2 -->
-  <div data-role="collapsible">
+  <div data-role="collapsible" class="pg2">
     <h3>2 Підгрупа</h3>
-  
+    <p class="status"></p>
   <!-- Чисельник -->
     <div data-role="collapsible">
       <h3>Чисельник</h3>
@@ -213,7 +207,7 @@
           <li><table><tr><td><h1>4&nbsp;&nbsp;&nbsp;</h1></td><td><h3>Англійська мова (за професійним спрямуванням)</h3><p>асистент Бондарук О.А.<br>I н.к. 407, прак.</p></td></tr></table></li>
         </ul>
       </div>
-      <div data-role="collapsible">
+      <div data-role="collapsible" class="friday">
         <h3>П'ятниця</h3>
         <ul data-role="listview">
           <li><table><tr><td><h1>1&nbsp;&nbsp;&nbsp;</h1></td><td><h3>Архітектура комп'ютера лек.</h3><p>доцент Крук О.Г.<br>I н.к. 218, лекція </p></td></tr></table></li>
@@ -231,12 +225,12 @@
  <div data-role="collapsible">
     <h3>Розклад дзвінків</h3>
     <ul data-role="listview">
-      <li><a> 1&nbsp;&nbsp;&nbsp; 8:30  - 9:15  &nbsp;&nbsp;&nbsp; 9:20  - 10:05</a></li>
-      <li><a> 2&nbsp;&nbsp;&nbsp; 10:20 - 11:05 &nbsp;&nbsp;&nbsp; 11:10 - 11:55</a></li>
-      <li><a> 3&nbsp;&nbsp;&nbsp; 12:10 - 12:55 &nbsp;&nbsp;&nbsp; 13:00 - 13:45</a></li>
-      <li><a> 4&nbsp;&nbsp;&nbsp; 14:15 - 15:00 &nbsp;&nbsp;&nbsp; 15:05 - 15:50</a></li>
-      <li><a> 5&nbsp;&nbsp;&nbsp; 16:05 - 16:50 &nbsp;&nbsp;&nbsp; 16:55 - 17:40</a></li>
-      <li><a> 6&nbsp;&nbsp;&nbsp; 17:55 - 17:40 &nbsp;&nbsp;&nbsp; 17:45 - 18:30</a></li>
+      <li><a>1&nbsp;&nbsp;&nbsp; 8:30  - 9:15  &nbsp;&nbsp;&nbsp; 9:20  - 10:05</a></li>
+      <li><a>2&nbsp;&nbsp;&nbsp; 10:20 - 11:05 &nbsp;&nbsp;&nbsp; 11:10 - 11:55</a></li>
+      <li><a>3&nbsp;&nbsp;&nbsp; 12:10 - 12:55 &nbsp;&nbsp;&nbsp; 13:00 - 13:45</a></li>
+      <li><a>4&nbsp;&nbsp;&nbsp; 14:15 - 15:00 &nbsp;&nbsp;&nbsp; 15:05 - 15:50</a></li>
+      <li><a>5&nbsp;&nbsp;&nbsp; 16:05 - 16:50 &nbsp;&nbsp;&nbsp; 16:55 - 17:40</a></li>
+      <li><a>6&nbsp;&nbsp;&nbsp; 17:55 - 17:40 &nbsp;&nbsp;&nbsp; 17:45 - 18:30</a></li>
     </ul>
   </div>
 
@@ -281,38 +275,12 @@
 </div>
 
 <script>
-var SeptemberStart = 1473033600;
-var week = 604800;
 
-function addAlert1(argument) { alert(group1[argument.innerHTML]); };
-
-function addAlert2(argument) { alert(group2[argument.innerHTML]); };
-
-function dayOfWeek(){
-  var myDate = new Date();
-  $(".dayOfWeek").text(["Неділя", 
-                        "Понеділок", 
-                        "Вівторок", 
-                        "Середа", 
-                        "Четвер", 
-                        "П'ятниця", 
-                        "Субота"][myDate.getDay()]);
+function updateSite(event){
+  window.applicationCache.swapCache();
 }
+window.applicationCache.addEventListener('updateready', updateSite, false);
 
-function chisOrZnam(){
-  var now = parseInt(new Date().getTime()/1000);
-  var chyselnyk = false;
-  while(SeptemberStart < now){
-    chyselnyk = !chyselnyk;
-    SeptemberStart += week;
-  }
-  return !chyselnyk;
-};
-
-$(document).ready(function(){
-  $(".chysOrZnam").text(chisOrZnam() ? "Чисельник" : "Знаменник");
-  dayOfWeek();
-});
 </script>
 </body>
 </html>
