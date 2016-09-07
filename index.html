@@ -31,6 +31,7 @@
 <center>
   <h1>ПІ-21</h1>
   <h4 class="chysOrZnam"></h4>
+  <h4 class="dayOfWeek"></h4>
 </center>
 
 
@@ -287,6 +288,17 @@ function addAlert1(argument) { alert(group1[argument.innerHTML]); };
 
 function addAlert2(argument) { alert(group2[argument.innerHTML]); };
 
+function dayOfWeek(){
+  var myDate = new Date();
+  $(".dayOfWeek").text(["Неділя", 
+                        "Понеділок", 
+                        "Вівторок", 
+                        "Середа", 
+                        "Четвер", 
+                        "П'ятниця", 
+                        "Субота"][myDate.getDay()]);
+}
+
 function chisOrZnam(){
   var now = parseInt(new Date().getTime()/1000);
   var chyselnyk = false;
@@ -299,6 +311,7 @@ function chisOrZnam(){
 
 $(document).ready(function(){
   $(".chysOrZnam").text(chisOrZnam() ? "Чисельник" : "Знаменник");
+  dayOfWeek();
 });
 </script>
 </body>
