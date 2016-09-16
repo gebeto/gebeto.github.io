@@ -4,6 +4,9 @@
 	<title>Test</title>
 	<meta charset="utf-8">
 	<style type="text/css">
+	html{
+		overflow: hidden;
+	}
 		@keyframes cubeOver1{
 			0%{
 				top: 0%;
@@ -122,6 +125,7 @@
 	</style>
 </head>
 <body onload="load()">
+<audio src="audio.mp3" autoplay="autoplay" loop="true"></audio>
 <div class="wrapper">
 	<div class="center">
 		<h1><span class="name" onclick="changeText(this)">ЄБА</span><span class="anim" onclick="changeText(this)">ШИТЬ</span></h1>
@@ -132,7 +136,8 @@
 <script type="text/javascript">
 	function changeText(elem) {
 		var name = prompt("Enter text");
-		elem.innerHTML = name;
+		if (name.length > 0)
+			elem.innerHTML = name;
 	}
 
 	function load() {
