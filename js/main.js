@@ -1,4 +1,16 @@
-var PARES = [[510, 605], [620, 715], [730, 825], [855, 950], [965, 1060], [1075, 1110]];
+function toMinutes(hour, minute) {
+	return ((hour * 60) + minute);
+}
+
+var PARES = [
+	[toMinutes(8, 30),  toMinutes(10,5)], 
+	[toMinutes(10, 20), toMinutes(11, 55)], 
+	[toMinutes(12, 10), toMinutes(12, 45)], 
+	[toMinutes(14, 15), toMinutes(15, 50)], 
+	[toMinutes(16, 5),  toMinutes(17, 40)], 
+	[toMinutes(17, 55), toMinutes(18, 30)],
+	[toMinutes(18, 45), toMinutes(20, 15)]
+];
 var CHYSELNYK = chisOrZnam();
 var DAY = dayOfWeek();
 
@@ -7,7 +19,6 @@ $(document).ready(function(){
 	$(".chys-or-znam").text(CHYSELNYK ? "Чисельник" : "Знаменник");
 	$(".day-of-week").text(DAY);
 	setStatus(".pg1");
-	setStatus(".pg2");
 
 });
 
@@ -29,41 +40,32 @@ function chisOrZnam(){
 };
 
 function setStatus(pg) {
-	var date = new Date();
-	var subGroup = $(pg);
-	var now = date.getHours() * 60 + date.getMinutes();
-	$.each(PARES, function(key, vals){
-		if ((now > vals[0])&&(now < vals[1])){
-			var toEnd = vals[1]-now;
-			if (toEnd > 60) toEnd = "1 год. "+(toEnd-60)
-			var subj = getSubject(key, pg)
-			if (subj == false) return 0;
-			subGroup.find(".status").html((key+1)+" пара, <br>"+getSubject(key, pg)+"<br>до кінця залишилось "+toEnd+" хв.");
-		}
-	});
-
+	$(pg).find(".status").text(getSubject());
 };
 
 function getSubject(number, pg) {
-	// number -= 1;
-	var day = $(pg).find("ul");
-	if (CHYSELNYK) day = day.slice(0,4);
-	else day = day.slice(4,9);
-	day = day[(new Date).getDay()];
-
-	day = $(day).find("li");
-
-	$.each(day, function(key, val){
-		ind = $(val).find("H1").text();
-		if (parseInt(ind) == number){
-			// console.log( ind );
-			// console.log( $(val).find("td")[1].innerText );
-			day = $(val).find("td")[1];
-			day = $(day).find("H3").text();
+	var res = "До кінця залишилось ";
+	var minutesOn = 0;
+	var now = (((new Date()).getHours() * 60) + (new Date()).getMinutes());
+	for (var i = 0; i < PARES.length; i++)
+	{
+		if ((now > PARES[i][0]) && (now < PARES[i][1])){
+			minutesOn = now - PARES[i][0];
+			console.log( i );
+			minutesOn = (95 - minutesOn);
 		}
-
-	});
-	if (day.toString() == "[object Object]")
-		return false;
-	return day;
-}
+	}
+	if (minutesOn > 60)
+	{
+		minutesOn -= 60;
+		res += "1 год. "
+		res += minutesOn
+		res += " хв."
+	}
+	else
+	{
+		res += minutesOn;
+		res += "хв";
+	}
+	return res;
+};
