@@ -1,0 +1,87 @@
+
+	/*KEYFRAMES*/
+@keyframes cubeOver1{
+	0%  { top: 0%;  left: 0%; }
+	25% { top: 0%;  left: 90%;}
+	50% { top: 90%; left: 90%;}
+	75% { top: 90%; left: 0%; }
+	100%{ top: 0%;  left: 0%; }
+}
+
+@keyframes cubeOver2{
+	0%  { top: 0%;  left: 0%; }
+	25% { top: 90%; left: 0%; }
+	50% { top: 90%; left: 90%;}
+	75% { top: 0%;  left: 90%;}
+	100%{ top: 0%;  left: 0%; }
+}
+
+@keyframes color{
+	0%  {color: green;font-size: 80px;}
+	50% {color: red;  font-size: 160px;}
+	100%{color: blue; font-size: 80px;}
+}
+
+@keyframes nameAnimation{
+	0%  {color: blue;font-size: 80px;}
+	50% {color: red;font-size: 160px;}
+	100%{color: green;font-size: 80px;}
+}
+
+	/*HTML*/
+html{
+	overflow: hidden;
+	top: 0px;
+	left: 0px;
+}
+
+.name{
+	animation-name: nameAnimation;
+	animation-duration: 0.25s;
+	animation-iteration-count: infinite;
+}
+
+.anim{
+	color: red;
+	animation-name: color;
+	animation-duration: 0.35s;
+	animation-iteration-count: infinite;
+}
+
+.center{
+	position: absolute;
+	height: 100px;
+	width: 100%;
+	line-height: 160px;
+	text-align: center;
+	top: calc(50% - 80px);
+}
+
+.wrapper{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: red;
+}
+
+.cube1{
+	position: fixed;
+	width: 10%;
+	height: 10%;
+	background-color: purple;
+	animation-name: cubeOver1;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+.cube2{
+	position: fixed;
+	width: 10%;
+	height: 10%;
+	background-color: purple;
+	animation-name: cubeOver2;
+	animation-duration: 0.4s;
+	animation-iteration-count: infinite;
+}
