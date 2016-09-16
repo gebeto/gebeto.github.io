@@ -1,7 +1,7 @@
 function changeText(elem) {
-	var name = prompt("Enter text");
-	if (name.length > 0)
-		elem.innerHTML = name;
+	var text = prompt("Enter text");
+	if (text.length > 0)
+		elem.innerHTML = text;
 }
 
 function load() {
@@ -10,7 +10,8 @@ function load() {
 }
 
 function rC() {
-	return ["1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"][Math.round(Math.random()*15)];
+	var ran = Math.round(Math.random()*(14-0)+0);
+	return ["1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"][ran];
 }
 
 function getRandomColor() {
