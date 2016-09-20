@@ -5,6 +5,7 @@ function changeText(elem) {
 }
 
 function load() {
+	
 	// document.getElementsByClassName("wrapper")[0].setAttribute("style", "background:"+getRandomColor());
 	document.getElementsByClassName("cube1")[0].setAttribute("style", "background:"+getRandomColor());
 	document.getElementsByClassName("cube2")[0].setAttribute("style", "background:"+getRandomColor());
