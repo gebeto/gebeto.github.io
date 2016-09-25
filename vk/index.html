@@ -25,18 +25,16 @@ $(document).ready(function(){
 	};
 
 	var req = "https://api.vk.com/oauth/token";
-	$.ajax({
-	    url : req,
-	    type : "POST",
-	    data : payload,
-	    dataType : "jsonp",
-	    success : function(msg){
-	    	console.log(msg.response[0]);
-    	},
-    	error : function(error){
-    		console.log(error);	
-    	}
-	});
+
+	var request = new XMLHttpRequest();
+
+	request.open("POST", req, true);
+
+	request.onreadystatechange = function(data){
+		console.log(data);
+	};
+
+	request.send();
 
 });
 
