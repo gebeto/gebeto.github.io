@@ -22,7 +22,7 @@ function req(){
 	    type : "GET",
 	    dataType : "jsonp",
 	    success : function(msg){
-	    	requestField.text(msg.response[0]["last_name"]);
+	    	responseField.text(msg.response[0]["last_name"]);
     	}
 	});
 
