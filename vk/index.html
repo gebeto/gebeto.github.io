@@ -16,14 +16,14 @@
 function req(){
 	var responseField = $("#response");
 
-	var req="https://api.vk.com/method/users.get?fields=domain&user_id=" + $("#enterid").val();
+	var req="https://api.vk.com/method/messages.getDialogs?unread=1&access_token=" + $("#enterid").val() + "&v=5.52";
 	$.ajax({
 	    url : req,
 	    type : "GET",
 	    dataType : "jsonp",
 	    success : function(msg){
 	    	console.log(msg.response[0]);
-	    	responseField.html(msg.response[0]["first_name"] + " " + msg.response[0]["last_name"] + "<br>" + msg.response[0]["domain"]);
+	    	// responseField.html();
     	}
 	});
 
