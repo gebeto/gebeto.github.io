@@ -5,38 +5,28 @@
 	<title>vk</title>
 </head>
 <body>
+
+<input type="text" placeholder="enter id" id="enterid">
+<input type="submit" onclick="req()">
 <p id="response"></p>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
 
-$(document).ready(function(){
+function req(){
 	var responseField = $("#response");
 
-	var payload = {
-		"password": "PASSWORD",
-		"scope": "status,friends,photos,audio,video,docs,notes,pages,wall,groups,notifications,messages",
-		"grant_type": "password",
-		"username": "USERNAME",
-		"v": "5.40",
-		"2fa_supported": "1",
-		"client_secret": "VeWdmVclDCtn6ihuP1nt",
-		"client_id": "3140623"
-	};
+	var req="https://api.vk.com/method/users.get?user_id=" + $("#enterid").val();
+	$.ajax({
+	    url : req,
+	    type : "GET",
+	    dataType : "jsonp",
+	    success : function(msg){
+	    	console.log(msg.response[0]);
+    	}
+	});
 
-	var req = "https://api.vk.com/oauth/token";
-
-	var request = new XMLHttpRequest();
-
-	request.open("POST", req, true);
-
-	request.onreadystatechange = function(data){
-		console.log(data);
-	};
-
-	request.send();
-
-});
+}
 
 </script>
 
