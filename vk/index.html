@@ -13,10 +13,9 @@
 $(document).ready(function(){
 	var responseField = $("#response");
 
-	var scope = "status,friends,photos,audio,video,docs,notes,pages,wall,groups,notifications,messages";
 	var payload = {
 		"password": "PASSWORD",
-		"scope": scope,
+		"scope": "status,friends,photos,audio,video,docs,notes,pages,wall,groups,notifications,messages",
 		"grant_type": "password",
 		"username": "USERNAME",
 		"v": "5.40",
@@ -33,6 +32,9 @@ $(document).ready(function(){
 	    dataType : "jsonp",
 	    success : function(msg){
 	    	console.log(msg.response[0]);
+    	},
+    	error : function(error){
+    		console.log(error);	
     	}
 	});
 
