@@ -16,13 +16,14 @@
 function req(){
 	var responseField = $("#response");
 
-	var req="https://api.vk.com/method/users.get?user_id=" + $("#enterid").val();
+	var req="https://api.vk.com/method/users.get?fields=domain&user_id=" + $("#enterid").val();
 	$.ajax({
 	    url : req,
 	    type : "GET",
 	    dataType : "jsonp",
 	    success : function(msg){
-	    	responseField.text(msg.response[0]["last_name"]);
+	    	console.log(msg.response[0]);
+	    	responseField.text(msg.response[0]["first_name"] + " " + msg.response[0]["last_name"] + "<br>" + msg.response[0]["domain"]);
     	}
 	});
 
