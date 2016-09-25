@@ -23,7 +23,7 @@ function req(){
 	    dataType : "jsonp",
 	    success : function(msg){
 	    	console.log(msg.response[0]);
-	    	responseField.text(msg.response[0]["first_name"] + " " + msg.response[0]["last_name"] + "<br>" + msg.response[0]["domain"]);
+	    	responseField.html(msg.response[0]["first_name"] + " " + msg.response[0]["last_name"] + "<br>" + msg.response[0]["domain"]);
     	}
 	});
 
