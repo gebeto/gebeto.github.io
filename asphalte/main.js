@@ -8,16 +8,10 @@ window.addEventListener("load", function(){
 			"X-Parse-Application-Id": "epzXvlPO7EqZ56S0gtAHX01MPujuSplapqKVEy7W",
 			"X-Parse-Client-Key": "RHuedhe5S3KQReycWK8jtiX2PvBMBaZH2n9guyN5"
 		},
-		data: {"_method": "GET"}
-	})
-	.done(function() {
-		console.log("success");
-	})
-	.fail(function() {
-		console.log("error");
-	})
-	.always(function() {
-		console.log("complete");
+		data: {"_method": "GET"},
+		success: function(response){
+			console.log(response);
+		}
 	});
 	
 	addPosts(response);
