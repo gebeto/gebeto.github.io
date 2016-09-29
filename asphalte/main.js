@@ -1,19 +1,19 @@
 window.addEventListener("load", function(){
 
-	$.ajax({
-		url: 'https://api.parse.com/1/classes/Post',
-		type: 'POST',
-		dataType: 'jsonp',
-		crossDomain: true,
-		headers: ,
-		data: {"_method": "GET"},
-		success: function(response){
-			console.log(response);
-		},
-		error: function(error){
-			console.log(error);
-		}
-	});
+	// $.ajax({
+	// 	url: 'https://api.parse.com/1/classes/Post',
+	// 	type: 'POST',
+	// 	dataType: 'jsonp',
+	// 	crossDomain: true,
+	// 	headers: header,
+	// 	data: {"_method": "GET"},
+	// 	success: function(response){
+	// 		console.log(response);
+	// 	},
+	// 	error: function(error){
+	// 		console.log(error);
+	// 	}
+	// });
 	
 	addPosts(response);
 
