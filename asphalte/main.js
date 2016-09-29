@@ -5,8 +5,14 @@ window.addEventListener("load", function(){
 		type: 'POST',
 		dataType: 'jsonp',
 		headers: {
+			"X-Parse-Client-Version": "i1.14.2",
+			"X-Parse-Session-Token": "r:CBCznJmC9aS8cg39lz81QZftp",
 			"X-Parse-Application-Id": "epzXvlPO7EqZ56S0gtAHX01MPujuSplapqKVEy7W",
-			"X-Parse-Client-Key": "RHuedhe5S3KQReycWK8jtiX2PvBMBaZH2n9guyN5"
+			"X-Parse-Client-Key": "RHuedhe5S3KQReycWK8jtiX2PvBMBaZH2n9guyN5",
+			"X-Parse-Installation-Id": "b035b9dc-bb26-40a2-a37e-8b6bffadc86b",
+			"X-Parse-OS-Version": "9.3.3 (13G34)",
+			"X-Parse-App-Build-Version": "1",
+			"X-Parse-App-Display-Version": "2.0.2"
 		},
 		data: {"_method": "GET"},
 		success: function(response){
