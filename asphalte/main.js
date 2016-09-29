@@ -5,10 +5,10 @@ window.addEventListener("load", function(){
 		type: 'POST',
 		dataType: 'jsonp',
 		headers: {
-			"X-Parse-Session-Token": "r:CBCznJmC9aS8cg39lz81QZftp",
-			"X-Parse-Application-Id": "epzXvlPO7EqZ56S0gtAHX01MPujuSplapqKVEy7W"
+			"X-Parse-Application-Id": "epzXvlPO7EqZ56S0gtAHX01MPujuSplapqKVEy7W",
+			"X-Parse-Client-Key": "RHuedhe5S3KQReycWK8jtiX2PvBMBaZH2n9guyN5"
 		}
-		data: {_method: "GET"}
+		data: {"_method": "GET"}
 	})
 	.done(function() {
 		console.log("success");
