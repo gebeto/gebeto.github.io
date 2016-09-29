@@ -4,6 +4,7 @@ window.addEventListener("load", function(){
 		url: 'https://api.parse.com/1/classes/Post',
 		type: 'POST',
 		dataType: 'jsonp',
+		crossDomain: true,
 		headers: {
 			"X-Parse-Client-Version": "i1.14.2",
 			"X-Parse-Session-Token": "r:CBCznJmC9aS8cg39lz81QZftp",
