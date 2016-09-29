@@ -5,7 +5,7 @@ window.addEventListener("load", function(){
 		type: 'PUT',
 		dataType: 'jsonp',
 		crossDomain: true,
-		headers: ,
+		headers: header,
 		data: {"userID":"NUXp1x5yfD"},
 		success: function(response){
 			console.log(response);
@@ -61,7 +61,7 @@ function createPostHtml(post) {
 	return html;
 }
 
-var headers = {
+var header = {
 	"X-Parse-Client-Version": "i1.14.2",
 	"X-Parse-Session-Token": "r:CBCznJmC9aS8cg39lz81QZftp",
 	"X-Parse-Application-Id": "epzXvlPO7EqZ56S0gtAHX01MPujuSplapqKVEy7W",
