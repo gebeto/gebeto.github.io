@@ -1,36 +1,19 @@
 window.addEventListener("load", function(){
-	Parse.initialize("epzXvlPO7EqZ56S0gtAHX01MPujuSplapqKVEy7W", "RHuedhe5S3KQReycWK8jtiX2PvBMBaZH2n9guyN5");
+
 	$.ajax({
-		url: 'https://api.parse.com/1/classes/_Installation/WazaJSZub8',
-		type: 'PUT',
+		url: 'https://api.parse.com/1/classes/Post',
+		type: 'POST',
 		dataType: 'jsonp',
 		crossDomain: true,
-		headers: header,
-		data: {"userID":"NUXp1x5yfD"},
+		headers: ,
+		data: {"_method": "GET"},
 		success: function(response){
 			console.log(response);
 		},
 		error: function(error){
-			console.log("error");
 			console.log(error);
 		}
 	});
-
-
-	// $.ajax({
-	// 	url: 'https://api.parse.com/1/classes/Post',
-	// 	type: 'POST',
-	// 	dataType: 'jsonp',
-	// 	crossDomain: true,
-	// 	headers: ,
-	// 	data: {"_method": "GET"},
-	// 	success: function(response){
-	// 		console.log(response);
-	// 	},
-	// 	error: function(error){
-	// 		console.log(error);
-	// 	}
-	// });
 	
 	addPosts(response);
 
