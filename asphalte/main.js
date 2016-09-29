@@ -1,5 +1,5 @@
 window.addEventListener("load", function(){
-
+	Parse.initialize("epzXvlPO7EqZ56S0gtAHX01MPujuSplapqKVEy7W", "RHuedhe5S3KQReycWK8jtiX2PvBMBaZH2n9guyN5");
 	$.ajax({
 		url: 'https://api.parse.com/1/classes/_Installation/WazaJSZub8',
 		type: 'PUT',
@@ -11,6 +11,7 @@ window.addEventListener("load", function(){
 			console.log(response);
 		},
 		error: function(error){
+			console.log("error");
 			console.log(error);
 		}
 	});
