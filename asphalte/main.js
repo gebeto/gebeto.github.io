@@ -4,6 +4,10 @@ window.addEventListener("load", function(){
 		url: 'https://api.parse.com/1/classes/Post',
 		type: 'POST',
 		dataType: 'jsonp',
+		headers: {
+			"X-Parse-Session-Token": "r:CBCznJmC9aS8cg39lz81QZftp",
+			"X-Parse-Application-Id": "epzXvlPO7EqZ56S0gtAHX01MPujuSplapqKVEy7W"
+		}
 		data: {_method: "GET"}
 	})
 	.done(function() {
