@@ -11,6 +11,9 @@ window.addEventListener("load", function(){
 		data: {"_method": "GET"},
 		success: function(response){
 			console.log(response);
+		},
+		error: function(error){
+			console.log(error);
 		}
 	});
 	
