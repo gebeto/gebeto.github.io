@@ -3,15 +3,24 @@
 <head>
 	<meta charset="utf-8">
 	<title>vk</title>
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+
 </head>
 <body>
 
-<h1>get unreaded messages</h1>
-<input type="text" placeholder="enter token" id="enterid">
-<input type="submit" onclick="req()">
 
-<ol id="response"></ol>
+<div class="main">
+	<h1>get unreaded messages</h1>
+	<input class="main-token" type="text" placeholder="Enter token" id="enterid">
+	<br>
+	<input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" value="GET" onclick="req()">
+	<ol id="response"></ol>
+</div>
 
+<script src="material.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="app.js"></script>
 
