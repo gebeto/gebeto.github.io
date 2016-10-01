@@ -12,33 +12,7 @@
 <ol id="response"></ol>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
-
-var response = document.getElementById("response");
-
-function req(){
-	var responseField = $("#response");
-
-	var req="https://api.vk.com/method/messages.getDialogs?unread=1&access_token=" + $("#enterid").val() + "&v=5.52";
-	$.ajax({
-	    url : req,
-	    type : "GET",
-	    dataType : "jsonp",
-	    success : function(msg){
-	    	console.log(msg.response);
-	    	for (var i = 0; i < msg.response.count; i++){
-	    		createMessage(msg.response.items[i].message);
-	    	}
-    	}
-	});
-
-}
-
-function createMessage(item){
-	response.innerHTML += ("<li>" + item.body + "</li>");
-}
-
-</script>
+<script src="app.js"></script>
 
 </body>
 </html>
