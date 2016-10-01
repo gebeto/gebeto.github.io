@@ -26,7 +26,7 @@ function req(){
 function createMessage(item){
 	var html = "";
 	html += '<div class="demo-card-square mdl-card mdl-shadow--2dp"><div class="mdl-card__title mdl-card--expand"><h2 class="mdl-card__title-text">';
-	html += 'Message';
+	html += item.id;
 	html += '</h2></div><div class="mdl-card__supporting-text">'
 	html += item.body;
 	html += '</div></div>';
