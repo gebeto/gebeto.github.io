@@ -11,14 +11,14 @@ var PARES = [
 	[toMinutes(17, 55), toMinutes(18, 30)],
 	[toMinutes(18, 45), toMinutes(20, 15)]
 ];
-var CHYSELNYK = chisOrZnam();
+
+var CHYSELNYK = getDelta();
 var DAY = dayOfWeek();
 
 $(document).ready(function(){
 
 	$(".chys-or-znam").text(CHYSELNYK ? "Чисельник" : "Знаменник");
 	$(".day-of-week").text(DAY);
-	setStatus(".pg1");
 
 });
 
@@ -39,33 +39,11 @@ function chisOrZnam(){
 	return chyselnyk;
 };
 
-function setStatus(pg) {
-	$(pg).find(".status").text(getSubject());
-};
-
-function getSubject(number, pg) {
-	var res = "До кінця залишилось ";
-	var minutesOn = 0;
-	var now = (((new Date()).getHours() * 60) + (new Date()).getMinutes());
-	for (var i = 0; i < PARES.length; i++)
-	{
-		if ((now > PARES[i][0]) && (now < PARES[i][1])){
-			minutesOn = now - PARES[i][0];
-			console.log( i );
-			minutesOn = (95 - minutesOn);
-		}
-	}
-	if (minutesOn > 60)
-	{
-		minutesOn -= 60;
-		res += "1 год. "
-		res += minutesOn
-		res += " хв."
-	}
-	else
-	{
-		res += minutesOn;
-		res += "хв";
-	}
-	return res;
-};
+function getDelta() {
+	var d0 = new Date ().getTime (),
+    d  = new Date (new Date ().getFullYear (), 0, 1),
+    d1 = d.getTime (),
+    dd = d.getDay (),
+    re = Math.floor ((d0 - d1) / 8.64e7) + (dd ? dd - 1 : 6);
+	return ((Math.floor (re / 7) % 2) ? true : false);
+}
