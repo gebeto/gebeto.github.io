@@ -20,12 +20,15 @@ window.addEventListener("load", function(){
 });
 
 var dark = true;
+var body = document.querySelector('body');
+var header = document.querySelector('.header');
+var posts = document.querySelectorAll('.post');
+var theme = document.querySelector('.theme');
 
 document.querySelector('.theme').addEventListener('click', function() {
 	if (dark) {
-		document.querySelector('body').style.backgroundColor = '#EDEEF0';
-		document.querySelector('.header').style.backgroundColor = '#507299';
-		var posts = document.querySelectorAll('.post');
+		body.style.backgroundColor = '#EDEEF0';
+		header.style.backgroundColor = '#507299';
 		for (var i = 0; i < posts.length; i++) {
 			// console.log(posts[i])
 			posts[i].style.backgroundColor = '#FEFEFE';
@@ -33,12 +36,11 @@ document.querySelector('.theme').addEventListener('click', function() {
 			posts[i].querySelector('.post-info').style.color = '#333';
 		}
 		dark = !dark;
-		document.querySelector('.theme').style.backgroundColor = '#333';
-		document.querySelector('.theme').style.color = '#fff';
+		theme.style.backgroundColor = '#333';
+		theme.style.color = '#fff';
 	} else {
-		document.querySelector('body').style.backgroundColor = '#303030';
-		document.querySelector('.header').style.backgroundColor = '#212121';
-		var posts = document.querySelectorAll('.post');
+		body.style.backgroundColor = '#303030';
+		header.style.backgroundColor = '#212121';
 		for (var i = 0; i < posts.length; i++) {
 			// console.log(posts[i])
 			posts[i].style.backgroundColor = '#212121';
@@ -46,8 +48,8 @@ document.querySelector('.theme').addEventListener('click', function() {
 			posts[i].querySelector('.post-info').style.color = '#ddd';
 		}
 		dark = !dark;
-		document.querySelector('.theme').style.backgroundColor = '#fff';
-		document.querySelector('.theme').style.color = '#333';
+		theme.style.backgroundColor = '#fff';
+		theme.style.color = '#333';
 	}
 });
 
