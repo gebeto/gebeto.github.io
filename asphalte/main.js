@@ -19,6 +19,18 @@ window.addEventListener("load", function(){
 
 });
 
+document.querySelector('.theme').addEventListener('click', function() {
+	document.querySelector('body').style.backgroundColor = '#EDEEF0';
+	document.querySelector('.header').style.backgroundColor = '#507299';
+	var posts = document.querySelectorAll('.post');
+	for (var i = 0; i < posts.length; i++) {
+		// console.log(posts[i])
+		posts[i].style.backgroundColor = '#FEFEFE';
+		posts[i].style.color = '#555';
+		posts[i].querySelector('.post-info').style.color = '#333';
+	}
+});
+
 function addPosts(posts) {
 	var postsDiv = document.getElementById("posts");
 	
