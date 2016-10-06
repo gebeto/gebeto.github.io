@@ -19,15 +19,35 @@ window.addEventListener("load", function(){
 
 });
 
+var dark = true;
+
 document.querySelector('.theme').addEventListener('click', function() {
-	document.querySelector('body').style.backgroundColor = '#EDEEF0';
-	document.querySelector('.header').style.backgroundColor = '#507299';
-	var posts = document.querySelectorAll('.post');
-	for (var i = 0; i < posts.length; i++) {
-		// console.log(posts[i])
-		posts[i].style.backgroundColor = '#FEFEFE';
-		posts[i].style.color = '#555';
-		posts[i].querySelector('.post-info').style.color = '#333';
+	if (dark) {
+		document.querySelector('body').style.backgroundColor = '#EDEEF0';
+		document.querySelector('.header').style.backgroundColor = '#507299';
+		var posts = document.querySelectorAll('.post');
+		for (var i = 0; i < posts.length; i++) {
+			// console.log(posts[i])
+			posts[i].style.backgroundColor = '#FEFEFE';
+			posts[i].style.color = '#555';
+			posts[i].querySelector('.post-info').style.color = '#333';
+		}
+		dark = !dark;
+		document.querySelector('.theme').style.backgroundColor = '#333';
+		document.querySelector('.theme').style.color = '#fff';
+	} else {
+		document.querySelector('body').style.backgroundColor = '#303030';
+		document.querySelector('.header').style.backgroundColor = '#212121';
+		var posts = document.querySelectorAll('.post');
+		for (var i = 0; i < posts.length; i++) {
+			// console.log(posts[i])
+			posts[i].style.backgroundColor = '#212121';
+			posts[i].style.color = '#eee';
+			posts[i].querySelector('.post-info').style.color = '#ddd';
+		}
+		dark = !dark;
+		document.querySelector('.theme').style.backgroundColor = '#fff';
+		document.querySelector('.theme').style.color = '#333';
 	}
 });
 
