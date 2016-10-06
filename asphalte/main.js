@@ -20,15 +20,15 @@ window.addEventListener("load", function(){
 });
 
 var dark = true;
-var body = document.querySelector('body');
-var header = document.querySelector('.header');
-var posts = document.querySelectorAll('.post');
+var bodyy = document.querySelector('body');
+var headerr = document.querySelector('.header');
 var theme = document.querySelector('.theme');
 
 document.querySelector('.theme').addEventListener('click', function() {
 	if (dark) {
-		body.style.backgroundColor = '#EDEEF0';
-		header.style.backgroundColor = '#507299';
+		bodyy.style.backgroundColor = '#EDEEF0';
+		headerr.style.backgroundColor = '#507299';
+		var posts = document.querySelectorAll('.post');
 		for (var i = 0; i < posts.length; i++) {
 			// console.log(posts[i])
 			posts[i].style.backgroundColor = '#FEFEFE';
@@ -39,8 +39,9 @@ document.querySelector('.theme').addEventListener('click', function() {
 		theme.style.backgroundColor = '#333';
 		theme.style.color = '#fff';
 	} else {
-		body.style.backgroundColor = '#303030';
-		header.style.backgroundColor = '#212121';
+		bodyy.style.backgroundColor = '#303030';
+		headerr.style.backgroundColor = '#212121';
+		var posts = document.querySelectorAll('.post');
 		for (var i = 0; i < posts.length; i++) {
 			// console.log(posts[i])
 			posts[i].style.backgroundColor = '#212121';
