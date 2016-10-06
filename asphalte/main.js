@@ -29,7 +29,7 @@ function addPosts(posts) {
 
 function createPostHtml(post) {
 	var html = "";
-	console.log(post);
+	// console.log(post);
 	html += '<div class="post">';
 	html += '<h2 class="post-title">';
 	html += (post["title"] || "*");

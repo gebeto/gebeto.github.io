@@ -10,7 +10,7 @@
 <body>
 
 <div class="header">
-	<div class="header-title">Asphalte readeR</div>
+	<img src="asphalte_logo.png" class="icon">
 </div>
 
 <div class="main-wrapper">
@@ -48,6 +48,18 @@
 	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 	<script src="jquery.js"></script>
 	<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript">
+var header = document.querySelector('.header');
+	window.addEventListener('scroll', function(event){
+		// console.log(event);
+		if (event.pageY !== 0) {
+			header.style.height = '20px';
+		}
 
+		if (event.pageY < 100) {
+			header.style.height = "50px";
+		}
+	});
+</script>
 </body>
 </html>
