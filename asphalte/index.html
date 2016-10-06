@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
 	<title>Asphalte Alpha</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -48,18 +49,5 @@
 	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 	<script src="jquery.js"></script>
 	<script type="text/javascript" src="main.js"></script>
-<script type="text/javascript">
-var header = document.querySelector('.header');
-	window.addEventListener('scroll', function(event){
-		// console.log(event);
-		if (event.pageY !== 0) {
-			header.style.height = '20px';
-		}
-
-		if (event.pageY < 100) {
-			header.style.height = "50px";
-		}
-	});
-</script>
 </body>
 </html>
