@@ -20,8 +20,9 @@ function load() {
 }
 
 function rC() {
-	var ran = Math.round(Math.random()*(14-0)+0);
-	return ["1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"][ran];
+	var ran = Math.round(Math.random()*15);
+	console.log(ran);
+	return ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"][ran];
 }
 
 function getRandomColor() {
