@@ -1,3 +1,11 @@
+function spliceOnParts(word) {
+	var result = [];
+	result.push(word.slice(0, word.length/3));
+	result.push(word.slice(word.length/3, word.length/3*2));
+	result.push(word.slice(word.length/3*2, word.length));
+	return result;
+}
+
 function changeText(elem) {
 	var text = prompt('Enter text');
 	if (text.length > 0) {
@@ -31,4 +39,3 @@ function getRandomColor() {
 	}
 	return randColor;
 }
-
