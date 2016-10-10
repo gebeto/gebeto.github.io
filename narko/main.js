@@ -6,25 +6,23 @@ function changeText(elem) {
 }
 
 function load() {
-	// document.getElementsByClassName('wrapper')[0].setAttribute('style', 'background:'+getRandomColor());
-	document.getElementsByClassName('cube1')[0].setAttribute('style', 'background:'+getRandomColor());
-	document.getElementsByClassName('cube2')[0].setAttribute('style', 'background:'+getRandomColor());
-	document.getElementsByClassName('first')[0].setAttribute('style', 'background:'+getRandomColor());
-	document.getElementsByClassName('second')[0].setAttribute('style', 'background:'+getRandomColor());
-	document.getElementsByClassName('third')[0].setAttribute('style', 'background:'+getRandomColor());
-	document.getElementById('section1').setAttribute('style', 'background:'+getRandomColor());
-	document.getElementById('section2').setAttribute('style', 'background:'+getRandomColor());
-	document.getElementById('section3').setAttribute('style', 'background:'+getRandomColor());
-	document.getElementById('section4').setAttribute('style', 'background:'+getRandomColor());
-	setTimeout(function() { load() }, 10);
+	var elements = [
+		document.getElementsByClassName('cube1')[0],
+		document.getElementsByClassName('cube2')[0],
+		document.getElementsByClassName('first')[0],
+		document.getElementsByClassName('second')[0],
+		document.getElementsByClassName('third')[0],
+		document.getElementById('section1'),
+		document.getElementById('section2'),
+		document.getElementById('section3'),
+		document.getElementById('section4')
+	];
+	setInterval(function() { 
+		elements.forEach(function(element){
+			element.setAttribute('style', 'background:'+getRandomColor());
+		});
+	}, 20);
 }
-
-// OLD VERSION
-// function rC() {
-// 	var ran = Math.round(Math.random()*15);
-// 	console.log(ran);
-// 	return ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'][ran];
-// }
 
 function getRandomColor() {
 	var randColor = '#';
