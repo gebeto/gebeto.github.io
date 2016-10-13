@@ -1,0 +1,27 @@
+body {
+	margin:0;
+	padding:0;
+	background-color: #333;
+}
+
+canvas {
+	position: fixed;
+	right: 3px;
+	top: 3px;
+	background-color: white;
+	z-index: 0;
+}
+
+label {
+	color: #fff;
+}
+
+input {
+	display: block;
+}
+
+.tools {
+	z-index: 1;
+	margin: 5px;
+	width: 100px;
+}
