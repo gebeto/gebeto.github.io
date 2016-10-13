@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Get Token</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="icon" href="http://vladmaxi.net/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="http://vladmaxi.net/favicon.ico" type="image/x-icon">
+	<script src="jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<a href="index.html">back</a>
+	<div id="slick-login" autocomplete="off" action="">
+		<label for="login">Логин:</label><input type="text" name="login" class="placeholder" placeholder="admin@example.com">
+		<label for="password">Пароль:</label><input type="password" name="password" class="placeholder" placeholder="Сложный пароль...">
+		<!-- <input type="submit" value="ВОЙТИ"> -->
+		<button class="submit">Login</button>
+		<div class="tokken" style="display: none;"></div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$(".submit").bind("click", function(){
+				var loginn = $("input[name='login']").val();
+				var passwordd = $("input[name='password']").val();
+				$.get("php.php", {login:loginn, password:passwordd}, function(data){
+					var result = JSON.parse(data);
+					console.log(result);
+					myAlert = "prompt('TOKEN','"+result.access_token+"')";
+					$("#slick-login > .tokken").append($('<button onclick="'+myAlert+'">Show token</button>'));
+					$(".tokken").slideDown(400);
+				});
+			})
+		})
+	</script>
+</body>
+</html>

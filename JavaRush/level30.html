@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:0px;margin-right: 0px;   background: url(images/profile/web-bender-30.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 250px;margin-left: -500px;">
+                    Уровень 30
+                </div>
+</div>
+</div>
+<br/>
+<!--<div class="line"></div>-->
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2><center>1. 16-я система исчисления. 2 и 8 системы исчисления. Запись двоичного числа как 1000100В</center></h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/30/image-ru-30-06.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Билаабо!</p>
+<p>Хочу рассказать тебе немного про различные системы исчисления.</p>
+<p>Ты уже слышал, что люди пользуются десятичной системой исчисления. Вот главные факты этого подхода:</p>
+<p><span class="red_text"><b>1)</b> Для записи числа используются 10 цифр: 0,1, 2, 3, 4, 5, 6, 7, 8, 9.</span></p>
+<p><span class="red_text"><b>2)</b> Число 543 значит 5 сотен + 4 десятка + 3 единицы.</span></p>
+<p>Эта  равносильно записи 5*100 + 4*10 + 3*1, что можно записать как 5*10<sup>2</sup>+4*10<sup>1</sup>+3*10<sup>0</sup></p>
+<p>Обрати внимание – тысячи, сотни, десятки и единицы – это степени числа 10.</p>
+<p><b>1)</b> Единица – это 10 в нулевой степени.</p>
+<p><b>2)</b> Десять – это 10 в первой степени</p>
+<p><b>3)</b> Сто – это 10 во второй степени</p>
+<p><b>4)</b> Тысяча – это 10 в третьей степени и т.д.</p>
+<p class="amigo">- Ага. Понятно.</p>
+<p>- А теперь представь, что цифр всего 8. Тогда у нас есть восьмеричная система исчисления и вот ее главные факты:</p>
+<p><span class="red_text"><b>1)</b> Для записи числа используются 8 цифр: 0,1, 2, 3, 4, 5, 6, 7.</span></p>
+<p><span class="red_text"><b>2)</b> Число 5438 значит 5*8<sup>2</sup>+4*8<sup>1</sup>+3*8<sup>0</sup>.</span> Т.е. это 5*64+4*8+3*1 = 320+32+3=355<sub>10</sub></p>
+<p><b>Я написал снизу числа знаки 8 и 10, чтобы мы знали, сколько цифр используется для его записи.</b></p>
+<p class="amigo">- Вроде как и ясно. Я думаю, я бы смог перевести число из восьмеричной системы в десятичную. Но наоборот – вряд ли.</p>
+<p>- Все не так уж и сложно. Представь, что тебе нужно перевести кучу песка на нескольких грузовых машинах. У тебя есть карьерные самосвалы, обычные, и совсем маленькие машинки. Но надо, чтобы машины не ехали полупустыми.</p>
+<p>Как бы ты возил?</p>
+<p class="amigo">- Сначала я бы насыпал в карьерные самосвалы, они самые большие. Затем, когда понял, что для заполнения машины песка не  хватит, то перешел бы на машины поменьше. Затем еще меньше.</p>
+<p>- Тут все тоже очень похоже. Давай попробуем перевести число 355<sub>10</sub> обратно в восьмеричный формат.</p>
+<p>Сначала мы разделим его на 64 (8<sup>2</sup>), получим  5 целых и 35 в остатке. Значит первая цифра нашего числа – 5. Затем разделим остаток на 8(8<sup>1</sup>), получим 4 и 3 в остатке.  Так и получится число 543<sub>8</sub>.</p>
+<p>Можно, кстати, пойти и с другой стороны. Ведь 543<sub>8</sub> ==5*64+4*8+3 == ((5)*8+4)*8+3. Наши восьмеричные «десятки» и «сотни» обязательно делятся на 8. Значит, остаток от деления на 8 это и будут наши восьмеричные единицы.</p>
+<p>Поделим сначала число 355 на 8. Получим 44 и 3 в остатке.  Т.е. 355=44*8+3. А 44 можно представить как 5*8+4. Значит 355= (5*8+4)*8+3; Вот наши цифры: 5,4,3. Искомое число 543<sub>8</sub></p>
+<p class="amigo">- В общем вроде понятно, но надо немного попрактиковаться, чтобы окончательно во всем разобраться.</p>
+<p>- В программировании очень часто используются числа с различным основанием (количеством цифр). Самые популярные – это 2, 8, 10, 16, 64.</p>
+<p class="amigo">- А зачем это нужно. Зачем нужны числа, состоящие из 2, 8, 16 и 64 цифр?</p>
+<p>- Дело во внутреннем устройстве процессора. Очень упрощенно - если в проводе есть ток, то говорят, что в нем «единица», если тока нет, то в нем «ноль». Все числа хранятся в памяти в виде ячеек. Устройство таких ячеек очень примитивно. Они тоже могу хранить только 0 или 1.</p>
+<p>Зато такое упрощение всего (только 0 или 1) дало возможность сделать элементы внутри процессора и памяти очень маленькими.  Современные процессоры и модули памяти включают миллиарды различных элементов. При том, что их площадь зачастую не превышает квадратного сантиметра.</p>
+<p class="amigo">- Ничего себе. Буду знать.</p>
+<p>- Теперь перейдем к двоичным числам. Там то же самое, что и с восьмеричными, только еще проще.</p>
+<p><span class="red_text"><b>1)</b> Для записи числа используются 2 цифры: 0,1</span></p>
+<p><span class="red_text"><b>2)</b> Число 101<sub>2</sub> значит 1*2<sup>2</sup>+0*2<sup>1</sup>+1*2<sup>0</sup>.</span> Т.е. это 1*4+0*2+1*1 =4+1=5<sub>10</sub></p>
+<p class="amigo">- Да. Я помню. Одна ячейка, которая принимает значение 0 или 1 называется битом. Но т.к. в ней можно сохранить очень мало информации, то их объединяют в группы по 8. И называют такую группу – байтом.</p>
+<p>- Именно. Байт – это группа из восьми бит. В нем можно хранить значения: 00000000, 00000001, …, 11111111. Которые соответствуют десятичным 0,1,… 255. Всего 256 значений.</p>
+<p>Какое самое большое целое число в Java? Вернее его тип?</p>
+<p class="amigo">- long. long состоит из 8 байт. Т.е. 64 бита и может хранить значения от -2<sup>63</sup> до 2<sup>63</sup>-1</p>
+<p>- Ага. Я не буду касаться темы, как переводить числа из десятичной системы в двоичную или наоборот. Иначе лекция слишком затянется.</p>
+<p>Давай лучше еще немного расскажу про 16-ричную систему исчисления.</p>
+<p class="amigo">- Да, очень интересно. Для двоичной и восьмеричной систем мы просто выкинули цифры начиная с двойки или восьмерки. А тут как? Мы добавим новые цифры?</p>
+<p>- Именно! Смотри:</p>
+<p><span class="red_text"><b>1)</b> Для записи числа используются 16 цифр: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F</span></p>
+<p><span class="red_text"><b>2)</b> Число 543<sub>16</sub> значит 5*16<sup>2</sup>+4*16<sup>1</sup>+3*16<sup>0</sup>.</span> Т.е. это 5*256+4*16+3*1 =1280+64+3=1347<sub>10</sub></p>
+<p class="amigo">- Т.е. мы просто добавили буквы в качестве цифр? О_о</p>
+<p>- Ага. А что в этом такого? Зачем придумывать новые цифры, когда с этой ролью отлично справляются буквы. Вот смотри:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Шестнадцатеричная цифра</th><th width="50%">Десятичное значение</th></tr>
+<tr>
+<td class="wide-text">0
+    </td>
+<td class="wide-text">0
+    </td>
+</tr>
+<tr>
+<td class="wide-text">1
+    </td>
+<td class="wide-text">1
+    </td>
+</tr>
+<tr>
+<td class="wide-text">8
+    </td>
+<td class="wide-text">8
+    </td>
+</tr>
+<tr>
+<td class="wide-text">9
+    </td>
+<td class="wide-text">9
+    </td>
+</tr>
+<tr>
+<td class="wide-text">A
+    </td>
+<td class="wide-text">10
+    </td>
+</tr>
+<tr>
+<td class="wide-text">B
+    </td>
+<td class="wide-text">11
+    </td>
+</tr>
+<tr>
+<td class="wide-text">C
+    </td>
+<td class="wide-text">12
+    </td>
+</tr>
+<tr>
+<td class="wide-text">D
+    </td>
+<td class="wide-text">13
+    </td>
+</tr>
+<tr>
+<td class="wide-text">E
+    </td>
+<td class="wide-text">14
+    </td>
+</tr>
+<tr>
+<td class="wide-text">F
+    </td>
+<td class="wide-text">15
+    </td>
+</tr>
+</tbody></table>
+<p>Про перевод из десятичной системы в шестнадцатеричную тоже рассказывать не буду. Зато есть один интересный факт.  Шестнадцатеричная цифра – это ровно 4 бита со значениями от 0 до 15. Поэтому один байт можно записать восемью двоичными цифрами (0 или 1) или двумя шестнадцатеричными.</p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="33%">Десятичное число</th><th width="33%">Двоичное число</th><th width="33%">Шестнадцатеричное число</th></tr>
+<tr>
+<td class="wide-text">0
+    </td>
+<td class="wide-text">0000 0000
+    </td>
+<td class="wide-text">00
+    </td>
+</tr>
+<tr>
+<td class="wide-text">1
+    </td>
+<td class="wide-text">0000 0001
+    </td>
+<td class="wide-text">01
+    </td>
+</tr>
+<tr>
+<td class="wide-text">15
+    </td>
+<td class="wide-text">0000 1111
+    </td>
+<td class="wide-text">0f
+    </td>
+</tr>
+<tr>
+<td class="wide-text">16
+    </td>
+<td class="wide-text">0001 0000
+    </td>
+<td class="wide-text">10
+    </td>
+</tr>
+<tr>
+<td class="wide-text">31
+    </td>
+<td class="wide-text">0001 1111
+    </td>
+<td class="wide-text">1f
+    </td>
+</tr>
+<tr>
+<td class="wide-text">32
+    </td>
+<td class="wide-text">0010 0000
+    </td>
+<td class="wide-text">20
+    </td>
+</tr>
+<tr>
+<td class="wide-text">128
+    </td>
+<td class="wide-text">1000 0000
+    </td>
+<td class="wide-text">80
+    </td>
+</tr>
+<tr>
+<td class="wide-text">129
+    </td>
+<td class="wide-text">1000 0001
+    </td>
+<td class="wide-text">81
+    </td>
+</tr>
+<tr>
+<td class="wide-text">255
+    </td>
+<td class="wide-text">1111 1111
+    </td>
+<td class="wide-text">ff
+    </td>
+</tr>
+</tbody></table>
+<p>Шестнадцатеричное представление легко приводится к двоичному (и обратно). Поэтому, если где-то в программировании нужно показать именно внутреннее байтовое представление числа, то очень редко прибегают к двоичной записи через 0 и 1. Слишком длинно и не понятно. Шестнадцатеричная запись гораздо читабельней и компактней.</p>
+<p class="amigo">- Согласен. Даже мне понравилось.</p>
+<p>- Кстати, в Java можно прямо в коде записывать числа в различных системах исчисления:</p>
+<table class="table_example">
+<tbody><tr><th width="10%">Основание</th><th width="35%">Отличительный признак</th><th width="20%">Примеры</th><th width="35%">Неправильные числа</th></tr>
+<tr>
+<td class="wide-text">2
+    </td>
+<td class="wide-text"><span class="green_text">0b</span> в начале числа
+    </td>
+<td class="wide-text"><span class="green_text">0b</span>00001111
+    </td>
+<td class="wide-text"><span class="green_text">0b</span>11111<span class="red_text">2</span>1
+    </td>
+</tr>
+<tr>
+<td class="wide-text">8
+    </td>
+<td class="wide-text"><span class="green_text">0</span> в начале числа
+    </td>
+<td class="wide-text"><span class="green_text">0</span>1234343
+    </td>
+<td class="wide-text"><span class="green_text">0</span>12<span class="red_text">8</span>
+</td>
+</tr>
+<tr>
+<td class="wide-text">10
+    </td>
+<td class="wide-text">нет
+    </td>
+<td class="wide-text">95459
+    </td>
+<td class="wide-text">909<span class="red_text">a</span>
+</td>
+</tr>
+<tr>
+<td class="wide-text">16
+    </td>
+<td class="wide-text"><span class="green_text">0x</span> в начале числа
+    </td>
+<td class="wide-text"><span class="green_text">0x</span>10ff
+    </td>
+<td class="wide-text"><span class="green_text">0x</span>1c<span class="red_text">gh</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Отличная лекция. Спасибо, Билаабо.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>2. Задачи по системам исчисления</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level30,lesson02,task01"></button><b>1. Осваиваем методы класса Integer</b><br/><br/>
+                Используя метод <span class="taskcode">Integer.parseInt(String, int)</span> реализуйте логику метода <span class="taskcode">convertToDecimalSystem</span>, который должен переводить переданную строку в десятичное число и возвращать его в виде строки.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Конвертер систем счислений</b><br/><br/>
+                Реализуйте логику метода <span class="taskcode">convertNumberToOtherNumerationSystem</span>, который должен переводить число <span class="taskcode">number.getDigit()</span> из одной системы счисления(numerationSystem) в другую (expectedNumerationSystem). Бросьте <span class="taskcode">NumberFormatException</span>, если переданное число некорректно, например, число "120" с системой счисления 2<br/>
+		Валидация для - <span class="taskcode">number.getDigit()</span> - целое не отрицательное<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>3. Числовые операторы</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/30/image-ru-30-05.png"/>
+<p>- Привет, Амиго!</p>
+<p>Хочу рассказать тебе про числовые операторы.</p>
+<p class="amigo">- А мне Билаабо уже рассказывал!</p>
+<p>- Да? Тогда я задам всего лишь пару вопросов.</p>
+<p>Как увеличить переменную на 1? Приведи как можно больше вариантов.</p>
+<p class="amigo">- Легко:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text">x++;
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">++x;
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">x=x+1;
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">x+=1;
+    </td>
+</tr>
+</tbody></table>
+<p>- Верно. А теперь нужно умножить переменную на два?</p>
+<p class="amigo">- Готово:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text">x=x*2;
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">x*=2;
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">x=x+x;
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">x+=x;
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">x=x
+    </td></tr>
+<tr>
+<td class="monospace_text">x
+    </td></tr>
+</tbody></table>
+<p>- Как возвести переменную в девятую степень?</p>
+<p class="amigo">- Тут и думать нечего:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text">x = x*x*x*x*x*x*x*x*x;
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">x = x*x*x;  (x<sup>3</sup>)<br/>
+    x = x*x*x;  (x<sup>3</sup>*x<sup>3</sup>*x<sup>3</sup>=x<sup>9</sup>)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">x = Math.exp( 9 * Math.log(x));  // x<sup>9</sup>==exp(ln(x<sup>9</sup>))==exp(9*ln(x));
+    </td>
+</tr>
+</tbody></table>
+<p>- Корень из числа?</p>
+<p class="amigo">- Запросто:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text">Math.sqrt(x)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">x = Math.exp(0.5 * Math.log(x));  // x<sup>1/2</sup> = exp(ln(x<sup>0.5</sup>))==exp(0.5*ln(x));
+    </td>
+</tr>
+</tbody></table>
+<p>- Синус пи/2?</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text">x = Math.sin(Math.PI/2);
+    </td>
+</tr>
+</tbody></table>
+<p>Случайное число от 0 до 1?</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text">x = Math.random();
+    </td>
+</tr>
+</tbody></table>
+<p>Случайное число от 0 до 3?</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text">x = Math.random() *3;
+    </td>
+</tr>
+</tbody></table>
+<p>Случайное число от 0 до 10?</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text">x = Math.random() *10;
+    </td>
+</tr>
+</tbody></table>
+<p>Случайное число от -5 до 5?</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text">x = Math.random() *10 - 5;
+    </td>
+</tr>
+</tbody></table>
+<p>Случайное число от -1 до 1?</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text">x = Math.random() *2 - 1;
+    </td>
+</tr>
+</tbody></table>
+<p>Случайное целое число от 0 до 100?</p>
+<p class="amigo">- Даже два варианта:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text">int x = (int) (Math.random() *100);
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">Random random = new Random();<br/>
+    int x  = random.nextInt(100);
+    </td>
+</tr>
+</tbody></table>
+<p>- Отлично! Я поражен. Ты великолепно знаешь тему.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи на числовые операторы</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Экономим время</b><br/><br/>
+                1. Создайте <span class="taskcode">Producer</span> и <span class="taskcode">Consumer</span> (См. комментарий к методу <span class="taskcode">main</span>)<br/>
+		2. Создайте методы <span class="taskcode">toString</span>, <span class="taskcode">equals</span> и <span class="taskcode">hashCode</span> в классе <span class="taskcode">ShareItem</span>. Для этого в теле класса <span class="taskcode">ShareItem</span> выполни:<br/>
+		2.1. Alt+Enter -&gt; toString() -&gt; Enter<br/>
+		2.2. Alt+Enter -&gt; equals() and hashCode() -&gt; click all 'Next'-s<br/>
+		3. В <span class="taskcode">Producer</span> и <span class="taskcode">Consumer</span> реализуйте метод <span class="taskcode">run</span> так, чтобы вызов метода <span class="taskcode">interrupt</span> прерывал работу <span class="taskcode">consumer</span> и <span class="taskcode">producer</span> трэдов<br/><br/>
+
+		4. Реализация метода <span class="taskcode">run</span> для <span class="taskcode">Producer</span>:<br/>
+		4.1. Используя метод <span class="taskcode">offer</span> добавить в очередь 9 <span class="taskcode">ShareItem</span>-ов с такими параметрами: ("ShareItem-N", N), где <span class="taskcode">N</span> - номер элемента от 1 до 9<br/>
+		4.2. Перед каждым добавлением вывести фразу "Элемент 'ShareItem-N' добавлен". Используйте <span class="taskcode">System.out.format</span><br/>
+		4.3. Усыпить трэд на 0.1 секунды<br/>
+		4.4. Если у очереди есть <span class="taskcode">Consumer</span>, не занятый работой, то вывести фразу "Consumer в ожидании!".<br/>
+		Просмотрите методы интерфейса <span class="taskcode">TransferQueue</span>, там есть нужный метод.<br/><br/>
+
+		5. Реализация метода <span class="taskcode">run</span> для <span class="taskcode">Consumer</span>:<br/>
+		5.1. Усыпить трэд на 0.5 секунды<br/>
+		5.2. В бесконечном цикле заберите элемент из очереди методом <span class="taskcode">take</span> и выведите в консоль "Processing item.toString()".<br/><br/>
+
+		6. Сверьте вывод с файлом <span class="taskcode">output.txt</span><br/>
+		7. Стек-трейс не выводите в консоль
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>5. Логические операторы</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/30/image-ru-30-04.png"/>
+<p>- Привет, Амиго!</p>
+<p>Сейчас будет небольшая лекция о логических операторах.</p>
+<p>Какие логические операторы ты знаешь?</p>
+<p class="amigo">- OR (||), AND (&amp;&amp;), NOT(!)</p>
+<p>- Ага. Молодец. А ты помнишь, как они работают?</p>
+<p class="amigo">- Да:</p>
+<p class="amigo">OR дает в результате true, когда есть хотя бы один true</p>
+<p class="amigo">AND дает true, когда оба true.</p>
+<p class="amigo">NOT меняет true на false, а false на true.</p>
+<p>- Верно. А в каком порядке выполняются операторы в таком выражении?</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text">boolean a = true;<br/>
+boolean b = false;<br/>
+boolean c = true;<br/><br/>
+
+boolean result = a &amp;&amp; b || !c &amp;&amp;b || !a;
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Тут  все очень просто.</p>
+<p class="amigo">Сначала выполняется операция NOT(!) , затем AND(&amp;&amp;), а в самом конце OR(||).</p>
+<p class="amigo">Т.е. если добавить скобки, то у нас получится:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text">boolean a = true;<br/>
+boolean b = false;<br/>
+boolean c = true;<br/><br/>
+
+boolean result = (a &amp;&amp; b) || ((!c) &amp;&amp; b) || (!a);
+    </td>
+</tr>
+</tbody></table>
+<p>- Все правильно, молодец. И какой же будет ответ?</p>
+<p class="amigo">- 1) (a &amp;&amp; b) == (true &amp;&amp; false) == false</p>
+<p class="amigo">2) ((!c) &amp;&amp; b) == (false &amp;&amp; false) == false</p>
+<p class="amigo">3) (!a) == false</p>
+<p class="amigo">4) false || false || false == false</p>
+<p class="amigo">Ответ – false.</p>
+<p>- А ты, оказывается, отлично знаешь тему. Тогда я раскрою тебе пару маленьких секретов.</p>
+<p>Во-первых, логические выражения вычисляются слева направо.</p>
+<p>Во-вторых, тут работает принцип ленивых вычислений (вычислений только при необходимости). Если при вычислении части выражения ответ уже и так понятен, то остальная часть выражения не вычисляется.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text">boolean result = <span class="green_text">(true &amp;&amp; false)</span> || <span class="dblue_text">(true &amp;&amp; true) || <span class="red_text">(true &amp;&amp; false)</span>;</span>
+</td>
+</tr>
+</tbody></table>
+<p>Если очень нужно создать независимый объект Boolean, то надо создать его явно:</p>
+<p>Такое выражение разбито на три части, разделенные знаком OR(||).</p>
+<p>Если хотя-бы одна часть будет true, то ответ будет true и дальше можно ничего не считать.  Поэтому такое выражение вычисляется вот так:</p>
+<p><b>1)</b> вычисляем первую часть: <span class="green_text">(true &amp;&amp; false) == false</span></p>
+<p><b>2)</b> вычисляем вторую часть: <span class="dblue_text">(true &amp;&amp; true) == true</span></p>
+<p>3) третью часть мы не вычисляем, т.к. уже ясно, что ответ будет <b>true</b>.</p>
+<p>Такой подход еще называют ленивыми вычислениями.</p>
+<p class="amigo">- Ок. И что тут такого особенного?</p>
+<p>- Ничего, пока ты не начинаешь вызывать методы внутри условия. Если часть условия пропускается, то и методы не вызовутся.</p>
+<p>Но такой подход получил очень распространенное применение вот почему:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>Job job = null;</b><br/><br/>
+<b>if</b> (job!=null  &amp;&amp;  job.isDone())<br/>
+{<br/>
+…<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Если во время проверки в условии job равен null, то вызова job.isDone() не произойдет!</p>
+<p class="amigo">- Действительно, первая часть выражения равно false, а затем идет AND(&amp;&amp;), значит, все выражение уже будет равно false и вторую его часть вычислять не обязательно.</p>
+<p>- Именно. Хороший подход, да?</p>
+<p class="amigo">- Ага.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задачи на логические операторы</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level30,lesson06,task01"></button><b>1. Такие хитрые исключения!</b><br/><br/>
+                Исправьте реализацию метода <span class="taskcode">checkAFlag</span>, чтобы во всех случаях он не приводил к бросанию исключений.<br/>
+		Сохраните логику вывода данных.<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Fork/Join</b><br/><br/>
+                1. Создайте класс <span class="taskcode">BinaryRepresentationTask</span>. Для этого на красном имени класса нажмите Alt+Enter -&gt; Create Class ...<br/>
+		(класс должен наследоваться от <span class="taskcode">RecursiveTask</span>)<br/>
+		2. Реализуйте логику метода <span class="taskcode">compute</span>, должна переводить число в двоичное представление.<br/>
+		3. Используйте методы <span class="taskcode">fork</span> и <span class="taskcode">join</span>.<br/>
+		4. Пример функциональной реализации - метод <span class="taskcode">binaryRepresentationMethod</span>.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>7. Побитовые операторы (&amp;, xor, 
+    </h2></div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/30/image-ru-30-03.png"/>
+<p>- Привет, Амиго!</p>
+<p>И еще одна маленькая лекция о побитовых операторах.</p>
+<p>Знаешь же, что кроме логических операторов AND(&amp;&amp;), OR(||) и NOT(!), есть еще побитовые AND(&amp;), OR(|), NOT(~), XOR(^)?</p>
+<p class="amigo">- Ага. В свое время Билаабо давал очень хорошую лекцию на эту тему.</p>
+<p>- Так вот, насчет этих операторов у меня есть две новости:</p>
+<p>Во-первых, их можно применять к boolean-переменным так же, как и логические операторы.</p>
+<p>Во-вторых, при их применении ленивых вычислений не происходит.</p>
+<p>Смотри пример:</p>
+<table class="table_example">
+<tbody><tr><th width="56%">Код</th><th width="44%">Аналог</th></tr>
+<tr>
+<td class="monospace_text"><b>if (<span class="green_text">a!=null</span> &amp;&amp; <span class="dblue_text">a.getName()!=null</span> &amp;&amp; <span class="red_text">c!=null</span>)<br/>
+{<br/>
+    c.setName(a.getName());<br/>
+}</b>
+</td>
+<td class="monospace_text"><b>if</b> (<span class="green_text">a!=null</span>)<br/>
+{<br/>
+    <b>if</b> (<span class="dblue_text">a.getName()!=null</span>)<br/>
+    {<br/>
+         <b>if</b> (<span class="red_text">c!=null</span>)<br/>
+        {<br/>
+              c.setName(a.getName());<br/>
+        }<br/>
+    }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Левая часть компактней правой?</p>
+<p class="amigo">- Ага.</p>
+<p>- А по смыслу такая же?</p>
+<p class="amigo">- Ага.</p>
+<p>- То-то и оно. А вот теперь такое же выражение с использованием побитовых операций:</p>
+<table class="table_example">
+<tbody><tr><th width="56%">Код</th><th width="44%">Аналог</th></tr>
+<tr>
+<td class="monospace_text"><b>if (<span class="dblue_text">a!=null</span> &amp; <span class="green_text">a.getName()!=null</span> &amp; <span class="red_text">c!=null</span>)<br/>
+{<br/>
+    c.setName(a.getName());<br/>
+}</b>
+</td>
+<td class="monospace_text">boolean <span class="dblue_text">c1</span> = (<span class="dblue_text">a!=null</span>);<br/>
+boolean <span class="green_text">c2</span> = (<span class="green_text">a.getName()!=null</span>);<br/>
+boolean <span class="red_text">c3</span> = (<span class="red_text">c!=null</span>);<br/>
+<b>if</b> (<span class="dblue_text">c1</span>)<br/>
+{<br/>
+    <b>if</b> (<span class="green_text">c2</span>)<br/>
+    {<br/>
+         <b>if</b> (<span class="red_text">c3</span>)<br/>
+        {<br/>
+              c.setName(a.getName());<br/>
+       }<br/>
+    }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Т.е. код тот же самый, но абсолютно все вычисления будут проделаны.</p>
+<p>Обрати внимание, что если a равно null, то при вычислении c2 будет выкинуто исключение! </p>
+<p class="amigo">- Ага. Теперь картина более ясна.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Задачи на побитовые операторы</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level30,lesson08,task01"></button><b>1. Найдем число 2 в максимальной степени</b><br/><br/>
+                Реализуйте логику метода <span class="taskcode">maxPowerOf2</span>,<br/>
+		который должен возвращать число 2 в максимальной степени, которое получается поместить в переданное число<br/>
+		Аргументом <span class="taskcode">maxPowerOf2</span> может быть только положительное число<br/>
+		Используйте только операции: 1) побитовые сдвиги, 2) присваивание, 3) побитовое ИЛИ<br/>
+		Не оставляйте комментарии
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Swap по-новому</b><br/><br/>
+                В классе <span class="taskcode">Pair</span> реализуйте метод <span class="taskcode">swap</span>, который должен для <span class="taskcode">x</span>, <span class="taskcode">y</span> менять местами их значения.<br/>
+		Можно использовать только операции 1)исключающее или, 2) присваивание<br/>
+		Не оставляйте комментарии, не меняйте остальной код
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>9. NaN, Infinity</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/30/image-ru-30-02.png"/>
+<p>- Привет, Амиго!</p>
+<p>Сегодня я расскажу тебе еще про несколько интересных вещей в Java.</p>
+<p><b>Бесконечность.</b></p>
+<p>В Java тип <b>double</b> имеет специальные значения для понятий «<b>плюс бесконечность</b>» и «<b>минус бесконечность</b>».  Положительное число, разделенное на 0.0, дает «<b>плюс бесконечность</b>», а отрицательное – «<b>минус бесконечность</b>».</p>
+<p>Этим понятиям соответствуют специальные константы типа Double:</p>
+<table class="table_example">
+<tbody><tr><th width="70%">Код</th><th width="30%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static final</b> double <span class="green_text"><b>POSITIVE_INFINITY</b></span> = 1.0 / 0.0;
+    </td>
+<td class="wide-text">плюс бесконечность
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static final</b> double <span class="red_text"><b>NEGATIVE_INFINITY</b></span> = -1.0 / 0.0;
+    </td>
+<td class="wide-text">минус бесконечность
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- И что, это действительно работает?</p>
+<p>- Да. Смотри:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text"><b>double inf = Double.<span class="green_text">POSITIVE_INFINITY</span>;</b><br/>
+<b>System.out.println(inf);</b> <span class="grey_text">// Бесконечность</span><br/>
+<b>System.out.println(inf + 1);</b> <span class="grey_text">//Бесконечность+1 ==Бесконечность</span><br/>
+<b>System.out.println(inf + 10);</b> <span class="grey_text">//Бесконечность+10 ==Бесконечность</span><br/>
+<b>System.out.println(inf * -1);</b> <span class="grey_text">//равно «минус бесконечность»</span><br/>
+<b>Double.<span class="red_text">NEGATIVE_INFINITY</span></b>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Вывод на экран:</th></tr>
+<tr>
+<td class="monospace_text"><b>Infinity<br/>
+    Infinity<br/>
+    Infinity<br/>
+    -Infinity</b>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Действительно работает. А если у нас получается неопределенность?  Например, если мы из бесконечность вычитаем бесконечность?</p>
+<p>- Для этого в Java есть еще одно понятие – <b>NaN</b> – Not-a-Number (не число).</p>
+<p>Его используют в различных ситуациях:</p>
+<p><b>1)</b> Строку конвертируем в число, а в ней есть буквы. Ответ – NaN</p>
+<p><b>2)</b> Бесконечность минус бесконечность. Ответ - NaN</p>
+<p><b>3)</b> Многие другие ситуации, где в ответе ждут число, а получается неизвестно что.</p>
+<p class="amigo">- А какие операции можно производить с Infinity и NaN?</p>
+<p>- С NaN все очень просто. Любая операция, где есть NaN, дает в результате NaN.</p>
+<p>А с бесконечностью можно и поработать:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Выражение</th><th width="50%">Результат</th></tr>
+<tr>
+<td class="monospace_text">n ÷ ±Infinity
+    </td>
+<td class="monospace_text">0
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">±Infinity × ±Infinity
+    </td>
+<td class="monospace_text">±Infinity
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">±(не ноль) ÷ 0
+    </td>
+<td class="monospace_text">±Infinity
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">Infinity + Infinity
+    </td>
+<td class="monospace_text">Infinity
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">±0 ÷ ±0
+    </td>
+<td class="monospace_text">NaN
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">Infinity - Infinity
+    </td>
+<td class="monospace_text">NaN
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">±Infinity ÷ ±Infinity
+    </td>
+<td class="monospace_text">NaN
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">±Infinity × 0
+    </td>
+<td class="monospace_text">NaN
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Логично. Спасибо, Риша.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>10. Практическое применение (Битовые маски,...)</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Еще хотел бы рассказать про битовые маски и XOR.</p>
+<p>Ты уже знаешь, что числа состоят из битов и над этими битами можно производить различные операции. Битовая маска – это когда мы храним много различных логических значений (true/false) в виде одного целого числа. При этом каждому boolean-значению соответствует определенный бит. Вот как это можно делать:</p>
+<p>Числа-степени двойки (1,2,4,8,16,32,…)  занимают в двоичном представлении числа всего по одному биту:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Число</th><th width="50%">Двоичное представление</th></tr>
+<tr>
+<td class="wide-text">1
+    </td>
+<td class="wide-text"><span class="green_text">0000 000<b>1</b></span>
+</td>
+</tr>
+<tr>
+<td class="wide-text">2
+    </td>
+<td class="wide-text"><span class="green_text">0000 00<b>1</b>0</span>
+</td>
+</tr>
+<tr>
+<td class="wide-text">4
+    </td>
+<td class="wide-text"><span class="green_text">0000 0<b>1</b>00</span>
+</td>
+</tr>
+<tr>
+<td class="wide-text">8
+    </td>
+<td class="wide-text"><span class="green_text">0000 <b>1</b>000</span>
+</td>
+</tr>
+<tr>
+<td class="wide-text">16
+    </td>
+<td class="wide-text"><span class="green_text">000<b>1</b> 0000</span>
+</td>
+</tr>
+<tr>
+<td class="wide-text">19 (не степень двойки)
+    </td>
+<td class="wide-text"><span class="red_text">0001 0011</span>
+</td>
+</tr>
+<tr>
+<td class="wide-text">31 (не степень двойки)
+    </td>
+<td class="wide-text"><span class="red_text">0001 1111</span>
+</td>
+</tr>
+</tbody></table>
+<p>Поэтому любое целое число можно рассматривать, как массив бит или массив boolean.</p>
+<p>Вот как можно хранить различные логические значения в одном числе:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Значения логических переменных</th></tr>
+<tr>
+<td class="monospace_text"><b>boolean a = true;<br/>
+    boolean b = false;<br/>
+    boolean c = true;<br/>
+    boolean d = false;</b>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Упаковка их в одно число:</th></tr>
+<tr>
+<td class="monospace_text"><b>int result = 0;</b><br/>
+     <b>if (a) result+= 1;</b> <span class="grey_text">//1 == 2<sup>0</sup> – нулевой бит</span><br/>
+     <b>if (b) result+= 2;</b> <span class="grey_text">//2 == 2<sup>1</sup> – первый бит</span><br/>
+     <b>if (c) result+= 4;</b> <span class="grey_text">//4 == 2<sup>2</sup> – второй бит</span><br/>
+     <b>if (d) result+= 8;</b> <span class="grey_text">//8 == 2<sup>3</sup> – третий бит</span>
+</td>
+</tr>
+</tbody></table>
+<p>Теперь каждый бит равен 1, если соответствующая ему логическая переменная была true.</p>
+<p>В нашем случае true были переменные a и c, значит число result равно 1+4 ==5</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="wide-text">0000 0<span class="green_text">1</span>0<span class="red_text">1</span><br/>
+    0000 d<span class="green_text">c</span>b<span class="red_text">a</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Вроде понятно, что происходит.</p>
+<p>- Ну, раз понятно, то пошли дальше.</p>
+<p>В числе int 32 бита, один из них используется для знака, а еще 31 можно использовать для хранения значений 31-й булевской переменной.</p>
+<p class="amigo">- А в числе long 64 бита. Мы там можем хранить 63 логических переменных.</p>
+<p>- Ага.</p>
+<p class="amigo">- Полсотни переменных в одном числе. Немало.</p>
+<p class="amigo">А где такое применяется?</p>
+<p>- В основном там, где надо компактно хранить много информации об объектах. Когда хранишь много информации об объекте, всегда наберется пара десятков логических переменных. Вот их всех удобно хранить в одном числе.</p>
+<p>Именно хранить. Т.к. пользоваться им в работе не так уж удобно.</p>
+<p class="amigo">- Кстати, как раз хотел спросить. А как нам обратно получить логические значение их числа?</p>
+<p>- Это совсем не сложно. Вот допустим тебе нужно узнать, установлен ли 6-й бит числа в единицу или нет (2 в пятой степени – это 32). Вот как это можно проверить:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Соединяем числа в одно:</th></tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text"><b>int a = 32;</b></span> <span class="grey_text">//2<sup>5</sup> == 0010 0000</span><br/>
+<span class="green_text"><b>int b = 8;</b></span> <span class="grey_text">//2<sup>3</sup> == 0000 1000</span><br/>
+<span class="red_text"><b>int c = 2;</b></span> <span class="grey_text">//2<sup>1</sup> == 0000 0010</span><br/><br/>
+<b>int result = a+b+c;</b> <span class="grey_text">//32+8+2 == 42 == 0010 1010</span>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Восстанавливаем обратное значение – проверяем установлен ли определенный бит:</th></tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text"><b>int a = result &amp; 32;</b></span> <span class="grey_text">// 0010 1010  &amp;  0010 0000 = 0010 0000</span><br/>
+<span class="green_text"><b>int b = result &amp; 8;</b></span> <span class="grey_text">// 0010 1010  &amp;  0000 1000 = 0000 1000</span><br/>
+<span class="red_text"><b>int c = result &amp; 2;</b></span> <span class="grey_text">// 0010 1010  &amp;  0000 0010 = 0000 0010</span>
+</td>
+</tr>
+</tbody></table>
+<p>Т.е. фактически, для работы с битовыми масками нужны три операции:</p>
+<p><b>1)</b> Установить определенный бит в 0</p>
+<p><b>2)</b> Установить определенный бит в 1</p>
+<p><b>3)</b> Проверить, какое значение определенного бита.</p>
+<p>Возьмем, например, бит номер 6.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text">result = result | 01000000;<br/>
+    result |= 01000000;
+    </td>
+<td class="wide-text">Как установить в 1 бит 6?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">result = result &amp; 10111111;<br/>
+    result &amp;= 10111111;
+    </td>
+<td class="wide-text">Как установить в 0 бит 6?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">с = result &amp; 01000000;
+    </td>
+<td class="wide-text">Как получить значение 6-го бита?
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Очень необычно, но не сложно. Я ж теперь уже крутой программист.</p>
+<p>- И теперь еще маленькая подсказка. Как легко получить числа со снятым или установленным определенным битом: 01000000 или 10111111.</p>
+<p><b>Для этого у нас есть операции сдвига</b> <span class="red_text">&gt;&gt;</span> <b>и</b> <span class="red_text">.</span></p>
+<p>Вот 1 – это 2 в нулевой степени. Т.е. число с установленным нулевым битом. Нам надо число с установленным 6-м битом.</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text">int c = <span class="green_text">1;   <span class="grey_text">//<span class="dblue_text">0000 0001  == <span class="red_text">0100 0000</span> == 64</span>
+</span></span></td>
+</tr>
+</tbody></table>
+<p class="amigo">- Круто! Действительно полезная вещь для таких дел.</p>
+<p class="amigo">А если мне нужно число, где все биты 1, а один определенный – 0?</p>
+<p>- Это тоже не сложно:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text">int d = <span class="green_text">~(1; <span class="grey_text">//<span class="dblue_text">~0100 0000</span> == <span class="red_text">10111111</span></span>
+</span></td>
+</tr>
+</tbody></table>
+<p>Т.е. все очень просто:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text">result = result | (1
+    <b>result |= (1
+    </b></td>
+<td class="wide-text">Как установить в 1 бит 6?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">result = result &amp; ~(1
+    <b>result &amp;= ~(1
+    </b></td>
+<td class="wide-text">Как установить в 0 бит 6?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text"><b>с = result &amp; (1
+    </b></td>
+<td class="wide-text">Как получить значение 6-го бита?
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Выглядит не очень сложно. Но так сразу - не запомню.</p>
+<p>- Зато, если встретишь где-то в чужом коде такое страшное выражение:</p>
+<p>«result &amp;= ~(1
+    </p><p class="amigo">- Само запомнится…  Хорошо звучит. Спасибо за лекцию.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Учимся гуглить. (Перевод чисел в 16 систему)</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/30/image-ru-30-01.gif"/>
+<p>- Привет, Амиго!</p>
+<p>Продолжаем наши уроки – учимся гуглить.</p>
+<p>Вот тебе несколько заданий:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Задания на поиск в интернете:</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Как получить представление числа в 16-й системе?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Как получить представление числа в 2-й системе?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Как получить представление числа в 8-й системе?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Как получить представление числа в 19-й системе?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Как преобразовать число из 2-й системы в 10-ю?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Как преобразовать число из 8-й системы в 10-ю?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Как преобразовать число из 16-й системы в 10-ю?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Как преобразовать число из 16-й системы в 2-ю?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Как преобразовать число из 16-й системы в 2-ю?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Что такое base64?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>12. Профессор дает доп. материал</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Вот тебе дополнительный материал по теме.</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-30.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>13. Хулио</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Хулио.</p>
+<p>-  Очередные десять  уровней позади.  Как себя чувствуешь?</p>
+<p class="amigo">-  Как будто у меня наступил deadlock...</p>
+<p>-  Хм.. Значит  обучение проходит как надо. Садись, отдыхай.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-30.gif" preload="none" tabindex="0" taskkey="level30,lesson13,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-30.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=-4YYZOL81Ac&amp;index=28&amp;list=PLKZWCTkMUTmfm42sU13ecuhQf4wWPNoje" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>14. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Что такое NaN?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Как получить бесконечность в Java?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Как проверить, что в результате вычисления получилась бесконечность?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Что такое битовая маска?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Где применяют битовые маски?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Как установить бит в единицу в битовой маске?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Как установить бит в ноль в битовой маске?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Как получить значение определенного бита в битовой маске?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Что такое ленивое вычисление выражения?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Чем отличается использование &amp;&amp; и &amp; для типа boolean?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>15. Большая задача</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Здравия желаю, Капитан Бобров!</p>
+<p>- Нам нужен альтернативный канал общения на случай форс-мажора.</p>
+<p class="amigo">- Вы что-то не договариваете, какого еще форс-мажора?</p>
+<p>- У нас, в отличии от гражданских, всегда должен быть запасной канал связи.</p>
+<p class="amigo">- Скайп?</p>
+<p>- Это слишком не надежно, у нас нет контроля над их серверами. Мы напишем свой чат со своим блэкджеком, вернее сервером и клиентами!</p>
+<p class="amigo">- А там будет графический интерфейс?</p>
+<p>- Если будешь точно выполнять команды агента Intellij IDEA, то будет и графический интерфейс.</p>
+<p class="amigo">- Ух ты, наконец-то! Можно еще вопрос?</p>
+<p>- Слишком много вопросов. Бонусом получаешь задание написать бота, который будет отвечать на твои вопросы. Приступить к выполнению задания!</p>
+<p class="amigo">- Есть!</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/30/image-ru-30-big01.jpg"/>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

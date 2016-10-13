@@ -1,0 +1,61 @@
+/* ::::: http://sendcash.nichost.ru/forum/imgfon/index.css ::::: */
+
+body { background: none repeat scroll 0% 0% rgb(181, 209, 221); color: rgb(0, 0, 0); font: 10pt verdana,geneva,lucida,'lucida grande',arial,helvetica,sans-serif; margin: 0px 10px 10px; padding: 0px; }
+a:link, body_alink { color: rgb(37, 83, 129); }
+a:visited, body_avisited { color: rgb(19, 86, 153); }
+a:hover, a:active, body_ahover { color: rgb(59, 129, 199); }
+.page { background: none repeat scroll 0% 0% rgb(129, 177, 199); color: rgb(0, 0, 0); }
+td, th, p, li { font: 10pt verdana,geneva,lucida,'lucida grande',arial,helvetica,sans-serif; }
+.tborder { background: none repeat scroll 0% 0% rgb(255, 255, 255); color: rgb(0, 0, 0); border: 1px solid rgb(0, 0, 0); border-top-right-radius: 5px; border-top-left-radius: 5px; }
+.tcat { background: url('linebgtr0.jpg') repeat-x scroll left bottom rgb(234, 241, 246); color: rgb(44, 51, 60); font: bold 10pt verdana,geneva,lucida,'lucida grande',arial,helvetica,sans-serif; padding: 3px 0px 3px 5px; }
+.thead { background: url('toplinebgum0.jpg') repeat-x scroll left top rgb(37, 118, 152); color: rgb(255, 255, 255); font: bold 11px tahoma,verdana,geneva,lucida,'lucida grande',arial,helvetica,sans-serif; }
+.thead a:link, .thead_alink { color: rgb(255, 255, 255); }
+.thead a:visited, .thead_avisited { color: rgb(255, 255, 255); }
+.thead a:hover, .thead a:active, .thead_ahover { color: rgb(255, 255, 0); }
+.tfoot { background: none repeat scroll 0% 0% rgb(30, 96, 124); color: rgb(255, 255, 255); }
+.tfoot a:link, .tfoot_alink { color: rgb(255, 255, 255); }
+.tfoot a:visited, .tfoot_avisited { color: rgb(255, 255, 255); }
+.tfoot a:hover, .tfoot a:active, .tfoot_ahover { color: rgb(59, 154, 185); }
+.alt1, .alt1Active { background: none repeat scroll 0% 0% rgb(228, 235, 240); color: rgb(0, 0, 0); }
+.alt2, .alt2Active { background: none repeat scroll 0% 0% rgb(219, 228, 237); color: rgb(0, 0, 0); }
+textarea, .bginput { font: 10pt verdana,geneva,lucida,'lucida grande',arial,helvetica,sans-serif; }
+.button { font: 11px verdana,geneva,lucida,'lucida grande',arial,helvetica,sans-serif; }
+select { font: 11px verdana,geneva,lucida,'lucida grande',arial,helvetica,sans-serif; }
+option, optgroup { font-size: 11px; font-family: verdana,geneva,lucida,'lucida grande',arial,helvetica,sans-serif; }
+.smallfont { font: 11px verdana,geneva,lucida,'lucida grande',arial,helvetica,sans-serif; }
+.navbar { background: none repeat scroll 0% 0% rgb(228, 235, 240); font: 11px verdana,geneva,lucida,'lucida grande',arial,helvetica,sans-serif; }
+.vbmenu_control { background: none repeat scroll 0% 0% rgb(30, 96, 124); color: rgb(255, 255, 255); font: bold 11px tahoma,verdana,geneva,lucida,'lucida grande',arial,helvetica,sans-serif; padding: 3px 6px; white-space: nowrap; }
+.vbmenu_control a:link, .vbmenu_control_alink { color: rgb(255, 255, 255); text-decoration: none; }
+.vbmenu_control a:visited, .vbmenu_control_avisited { color: rgb(255, 255, 255); text-decoration: none; }
+.vbmenu_control a:hover, .vbmenu_control a:active, .vbmenu_control_ahover { color: rgb(255, 255, 255); text-decoration: underline; }
+.vbmenu_popup { background: none repeat scroll 0% 0% rgb(255, 255, 255); color: rgb(0, 0, 0); border: 1px solid rgb(11, 25, 140); }
+.vbmenu_option { background: none repeat scroll 0% 0% rgb(255, 255, 255); color: rgb(19, 86, 153); font: 11px verdana,geneva,lucida,'lucida grande',arial,helvetica,sans-serif; white-space: nowrap; cursor: pointer; }
+.vbmenu_option a:link, .vbmenu_option_alink { color: rgb(19, 86, 153); text-decoration: none; }
+.vbmenu_option a:visited, .vbmenu_option_avisited { color: rgb(19, 86, 153); text-decoration: none; }
+.vbmenu_option a:hover, .vbmenu_option a:active, .vbmenu_option_ahover { color: rgb(19, 86, 153); text-decoration: none; }
+.bigusername { font-size: 14pt; text-decoration: none; }
+td.thead, th.thead, div.thead { padding: 4px; }
+.opinion { text-decoration: none; }
+.theadRound { background: url('toplinebgum0.jpg') repeat-x scroll left top rgb(37, 118, 152); color: rgb(255, 255, 255); font: bold 11px tahoma,verdana,geneva,lucida,'lucida grande',arial,helvetica,sans-serif; border-top-right-radius: 5px; border-top-left-radius: 5px; }
+.theadRound a:link, .thead_alink { color: rgb(255, 255, 255); }
+.theadRound a:visited, .thead_avisited { color: rgb(255, 255, 255); }
+.theadRound a:hover, .thead a:active, .thead_ahover { color: rgb(255, 255, 0); }
+form { margin: 0px; }
+label { cursor: default; }
+.inlineimg { vertical-align: middle; }
+#header { height: 100px; overflow: hidden; }
+#menutable td:nth-child(2n) { background: url('bg-li.png') no-repeat scroll 0px 0px rgb(102, 102, 102); padding: 0px; width: 2px; }
+.highslide-move { cursor: move; }
+.highslide-overlay { display: none; }
+.hscontrolbar { background: url('controlbar4.gif') repeat scroll 0% 0% transparent; width: 167px; height: 34px; }
+.hscontrolbar a { display: block; float: left; height: 27px; }
+.hscontrolbar a:hover { background-image: url('controlbar4-hover.gif'); }
+.hscontrolbar .previous { width: 50px; }
+.hscontrolbar .next { width: 40px; background-position: -50px 0px; }
+.hscontrolbar .highslide-move { width: 40px; background-position: -90px 0px; }
+.hscontrolbar .close { width: 36px; background-position: -130px 0px; }
+.wr_header:hover { background: none repeat scroll 0px 0px rgb(228, 235, 240); }
+.wr_header { background: none repeat scroll 0px 0px rgb(207, 218, 229); color: rgb(106, 121, 137); cursor: pointer; display: block; height: 13px; padding: 9px 0px 8px; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+.pageNoFollow_hilite { color: rgb(0, 0, 0); text-decoration: line-through ! important; }
+.pageNoFollow_hilite * { color: rgb(0, 0, 0); text-decoration: line-through ! important; }
+.pageNoFollow_hilite img { opacity: 1 ! important; display: inline-block ! important; border: 1px dashed rgb(0, 0, 0) ! important; text-decoration: line-through ! important; }

@@ -1,0 +1,109 @@
+.table_task{
+    width: 100%;
+    text-align: left;
+    margin: 15px 0;
+}
+.table_task th{
+    padding: 0px 0px 0px 20px;
+    border: 1px solid rgba(128, 100, 162, 1);
+    background-color: rgba(128, 100, 162, 1);
+    color: white;
+    font-weight: bold;
+}
+.table_task th, .table_task td{
+    padding: 10px 10px;
+    position: relative;
+    border: 1px solid rgba(128, 100, 162, 1);
+}
+
+.table_task td .task_button{
+    position: absolute;
+    background: url("../images/buttons/tasks.png") no-repeat;
+    background-size: contain;
+    line-height: normal;
+    width: 64px;
+    height: 64px;
+    border: none;
+    top: 50%;
+    left: -74px;
+    outline: none;
+    -webkit-appearance: button; 
+    cursor: pointer; 
+    margin-top: -32px;
+}
+.table_task td .task_button:active{
+    background: url("../images/buttons/tasks-pressed.png") no-repeat;
+    background-size: contain;
+}
+.table_task td .task_button:disabled{
+    background: url("../images/buttons/task-compleated.png") no-repeat;
+    background-size: contain;
+    cursor: default;
+}
+
+.table_task td .task_button.restricted{
+    position: absolute;
+    background: url("../images/buttons/tasks-restricted.png") no-repeat;
+    background-size: contain;
+    line-height: normal;
+    width: 64px;
+    height: 64px;
+    border: none;
+    top: 50%;
+    left: -74px;
+    outline: none;
+    -webkit-appearance: button;
+    cursor: pointer;
+    margin-top: -32px;
+}
+.table_task td .task_button.restricted:active{
+    background: url("../images/buttons/tasks-restricted-pressed.png") no-repeat;
+    background-size: contain;
+    cursor: default;
+}
+.table_task td .task_button.restricted:disabled{
+    background: url("../images/buttons/task-compleated.png") no-repeat;
+    background-size: contain;
+    cursor: default;
+}
+
+
+.example{
+    padding: 0px 10px !important;
+    background-color: rgba(212, 200, 226, 1);
+}
+.table_task p{
+    margin: 0;
+}
+
+.example-legacy
+{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.example-data
+{
+    color: #898989;
+}
+
+table.emptytable
+{
+    border: 0px;
+    border-collapse: collapse;
+    text-align: right;
+}
+table.emptytable td
+{
+    border: 0px;
+    padding: 0px 0px 0px 20px;
+}
+
+
+table.table_task .collapsed
+{
+    padding: 0px;
+    margin: 0px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}

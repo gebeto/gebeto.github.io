@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-13.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 13
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>1. Причины существования интерфейсов - поддержка заявленного поведения</h2>
+</div>
+<p>- Привет, Амиго! Хочу сегодня тебе рассказать о причинах существования интерфейсов. Тебе очень часто придется слышать, что такой-то класс, объект или сущность поддерживает определенный интерфейс. Что же это значит – <b>поддерживать интерфейс?</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/13/image-ru-13-04.png"/>
+<p>В более широком смысле интерфейс какой-нибудь вещи – это механизм взаимодействия этой вещи с другими предметами. Например,  пульт от телевизора – это дистанционный интерфейс. Собака понимает и исполняет команды - это значит, что собака поддерживает голосовой интерфейс (управления). Если все это подытожить, то можно сказать, что интерфейс – это стандартизированный способ взаимодействия двух вещей, и этот стандарт известен двум сторонам. Когда человек говорит собаке «сидеть», он отдает команду в соответствии с «голосовым интерфейсом управления собакой», и если собака выполняет эту команду, то мы говорим, что собака поддерживает этот интерфейс.</p>
+<p>Так же и в программировании. Методы – это действия над объектом, над его данными. И если класс реализует определенные методы, то он «поддерживает исполнение» определенных команд. Какие же преимущества дает объединение методов в интерфейс?</p>
+<p><b>1)</b> Каждый <b>interface</b>, как и <b>class</b>, имеет уникальное имя. Обе стороны могут быть на 100% уверены, что вторая сторона поддерживает именно нужный (известный им) интерфейс, а не похожий.</p>
+<p><b>2)</b> Каждый интерфейс налагает определенные ограничения на тот класс, который собирается поддерживать его. Класс сам решает (его разработчик), что он будет делать в случае вызова его методов, которые он унаследовал от интерфейса, но результат должен находиться в пределах ожиданий. Если мы скомандовали собаке «сидеть», и она покрутилась 5 минут на месте и села, то это – поддержка интерфейса. А если она вместо этого вцепилась вам в ногу,  то ни о какой поддержке тут не может быть и речи. Выполнение команды не привело к ожидаемым результатам.</p>
+<p>Допустим, ты с друзьями участвуешь в написании компьютерной игры. И тебе досталась работа запрограммировать поведение одного персонажа. Один ваш коллега уже написал код по отображению всех персонажей на экран. Второй, отвечающий за сохранение игры на диск,  написал код по сохранению всех объектов игры в файл. Каждый из них написал много кода и сделал интерфейс для взаимодействия с ним. Например, это может выглядеть так:</p>
+<table class="table_example wide-table">
+<tbody>
+<tr>
+<th width="55%">Код</th>
+<th width="45%">Описание</th>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>interface <span class="red_text">Saveable</span></b><br/>
+                {<br/>
+                 void saveToMap(Map&amp;ltString, Object&amp;gt map);<br/>
+                 void loadFromMap(Map&amp;ltString, Object&amp;gt map);<br/>
+                }
+            </td>
+<td class="wide-text">- интерфейс по сохранению/загрузке объекта из map’а.
+            </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>interface <span class="red_text">Drawable</span></b><br/>
+                {<br/>
+                 void draw(Screen screen);<br/>
+                }
+            </td>
+<td class="wide-text">- интерфейс по отрисовки объекта внутри переданного объекта screen.
+            </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class PacMan <span class="red_text">implements Saveable, Drawable</span></b><br/>
+                {<br/>
+                …<br/>
+                }
+            </td>
+<td class="wide-text">- твой класс, реализующий поддержку двух интерфейсов.
+            </td>
+</tr>
+</tbody>
+</table>
+<p>Другими словами, чтобы поддержать реализацию какого-то интерфейса (группы интерфейсов) в своем классе нужно:</p>
+<p><b>1)</b> Унаследоваться от них</p>
+<p><b>2)</b> Реализовать объявленные в них методы</p>
+<p><b>3)</b> Методы должны делать то, для чего они предназначены.</p>
+<p>Тогда остальной код программы, который ничего не знает о твоем классе и его объектах, сможет успешно работать с ним. </p>
+<p class="amigo">- А почему код может ничего не знать о моем классе?</p>
+<p>- Допустим, ты взял код программы, который кто-то написал год назад. Или твои друзья купили/лицензировали движок игры у кого-то еще. Есть рабочий код игры. Тысячи объектов, которые взаимодействуют друг с другом. И они могут с легкостью <b>правильно взаимодействовать с твоими объектами</b>, если взаимодействие организовано через интерфейсы, и ты правильно реализовал эти интерфейсы в своих классах.</p>
+<p class="amigo">- Круто! Не знал что так можно.</p>
+<p>- На этом принципе основаны все большие проекты. Уже давно никто ничего не пишет с нуля.</p>
+<p>Люди тоже не изобретают математику и алфавит каждый раз заново, а изучают все то, что было придумано до них.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>2. Задачи на интерфейсы</h2>
+</div>
+<p>- Привет, Амиго! У меня для тебя хорошая новость! Сегодня вечером у тебя определенно будет хорошее настроение.</p>
+<p class="amigo">- Да ну?</p>
+<p>- Да. Ведь ты будешь отлично знать интерфейсы. Ха-ха-ха! Вот тебе десять(!) задач. Не скучай, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level13,lesson02,task01"></button><b>1. Пиво</b><br/><br/>
+                1. Подумай, какой из двух интерфейсов нужно реализовать в классе <span class="taskcode">Beer</span>.<br/>
+                2. Добавь к классу <span class="taskcode">Beer</span> этот интерфейс и реализуйте все нереализованные методы.<br/>
+                3. Подумай, как связаны переменная  <span class="taskcode">READY_TO_GO_HOME</span> и метод <span class="taskcode">isReadyToGoHome</span>.<br/>
+                4. Верни значение переменной <span class="taskcode">READY_TO_GO_HOME</span> в методе <span class="taskcode">isReadyToGoHome</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level13,lesson02,task02"></button><b>2. Пиво: возвращение</b><br/><br/>
+                Добавь к классу <span class="taskcode">AlcoholicBeer</span> интерфейс <span class="taskcode">Drink</span> и реализуй все нереализованные методы.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level13,lesson02,task03"></button><b>3. Пиво и кола</b><br/><br/>
+                Реализуй интерфейс <span class="taskcode">Drink</span> в классах <span class="taskcode">Beer</span> и <span class="taskcode">Cola</span>.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level13,lesson02,task04"></button><b>4. Selectable и Updatable</b><br/><br/>
+                1. Создай класс <span class="taskcode">Screen</span>.<br/>
+                2. Реализуй в нем интерфейсы <span class="taskcode">Selectable</span> с методом <span class="taskcode">onSelect</span>, <span class="taskcode">Updatable</span> с методом <span class="taskcode">refresh</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level13,lesson02,task05"></button><b>5. 4 ошибки</b><br/><br/>
+                Исправь 4 ошибки в программе, чтобы она компилировалась.<br/>
+                Объявление интерфейсов не изменять.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level13,lesson02,task06"></button><b>6. Баг в initializeIdAndName</b><br/><br/>
+                1. Подумать, что в программе неправильно.<br/>
+                2. Вынести реализацию метода <span class="taskcode">initializeIdAndName</span> в класс <span class="taskcode">User</span>.<br/>
+                3. <span class="taskcode">initializeIdAndName</span> в классе <span class="taskcode">User</span> должен возвращать тип <span class="taskcode">User</span>.<br/>
+                4. Поправить программу, чтобы компилировалась и работала.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level13,lesson02,task07"></button><b>7. Параметризованый интерфейс</b><br/><br/>
+                В классе <span class="taskcode">StringObject</span> реализуй интерфейс <span class="taskcode">SimpleObject</span> с параметром типа <span class="taskcode">String</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level13,lesson02,task08"></button><b>8. Жив или нет</b><br/><br/>
+                1. Создай интерфейс <span class="taskcode">Person</span>.<br/>
+                2. Добавь в него метод <span class="taskcode">isAlive()</span>, который проверяет, жив человек или нет.<br/>
+                3. Подумай, какой тип должен возвращать этот метод.<br/>
+                4. Создай интерфейс <span class="taskcode">Presidentable</span>.<br/>
+                5. Унаследуй интерфейс <span class="taskcode">Presidentable</span> от интерфейса <span class="taskcode">Person</span>.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level13,lesson02,task09"></button><b>9. Наследование интерфейса</b><br/><br/>
+                1. Создать интерфейс <span class="taskcode">Movable</span> с методом <span class="taskcode">speed</span>.<br/>
+                2. Метод <span class="taskcode">speed</span> возвращает значение типа <span class="taskcode">Double</span> и не принимает параметров.<br/>
+                3. Создать и унаследовать интерфейс <span class="taskcode">Runable</span> от интерфейса <span class="taskcode">Movable</span>.<br/>
+                4. Добавить в интерфейс <span class="taskcode">Runable</span> метод <span class="taskcode">speed</span>.<br/>
+                5. Метод <span class="taskcode">speed</span> возвращает значение типа <span class="taskcode">Double</span> и принимает один параметр типа <span class="taskcode">Runable</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level13,lesson02,task10"></button><b>10. CleverMan и SmartGirl</b><br/><br/>
+                1. Добавь интерфейсы <span class="taskcode">Secretary</span> и <span class="taskcode">Boss</span> к классам <span class="taskcode">CleverMan</span> и <span class="taskcode">SmartGirl</span>. По одному на каждый. Подумай, кому какой.<br/>
+                2. Унаследуй  интерфейсы <span class="taskcode">Secretary</span> и <span class="taskcode">Boss</span> от интерфейсов <span class="taskcode">Person</span> и <span class="taskcode">Workable</span> так, чтобы все методы у классов <span class="taskcode">CleverMan</span> и <span class="taskcode">SmartGirl</span> оказались объявленными в каком-то интерфейсе.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Абстрактные классы</h2>
+</div>
+<p>- Привет, Амиго! Вчера ты уже слушал лекцию про абстрактные классы. Теперь пришло время углубить наши познания. Хочу научить тебя правильно пользоваться абстрактными классами.</p>
+<p>Сложно представить аналогию абстрактного класса в реальной жизни. Обычно класс является моделью какой-нибудь сущности. Но абстрактный класс содержит не только реализованные методы, но и не реализованные. Что же это значит? Аналогом чего является абстрактный класс и есть ли у него аналоги в реальном мире?</p>
+<p>На самом деле есть. Представь себе почти законченный кузов машины на конвейере. Туда могу поставить как спортивный двигатель, так и экономичный. Как кожаный салон, так и матерчатый. Конкретная реализация машины еще не определена. Более того, таких конкретных реализаций на основе этого кузова предполагается несколько. Но в таком виде машина никому не нужна. Это - <b>классический абстрактный класс</b>: его объекты не имеют смысла, поэтому их создание запрещено,  класс имеет смысл, но только для его многочисленных полноценных наследников, которые будут созданы на его основе.</p>
+<p class="amigo">- Это не сложно.</p>
+<p>- Но могут быть и более абстрактные аналогии. Больше похожие на интерфейсы, с несколькими реализованными методами. Например, профессия <b>переводчик</b>. Без уточнения, с какого, и на какой язык, получим <b>«абстрактного переводчика в вакууме»</b>. Или телохранитель. Про него может быть известно, что он владеет восточными единоборствами и может защитить клиента. Но какими именно  единоборствами, и каким способом защитить клиента – это уже «особенности реализации» каждого конкретного телохранителя.</p>
+<p>Давай посмотрим пример:</p>
+<table class="table_example wide-table">
+<tbody>
+<tr>
+<th width="61%">Код</th>
+<th width="39%">Описание</th>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b><span class="red_text">abstract</span> class BodyGuard</b><br/>
+                {<br/>
+                 <span class="red_text"><b>abstract</b></span> void applyMartialArts(Attacker attacker);<br/><br/>
+
+                 void <b>shoot</b>(Attacker attacker)<br/>
+                 {<br/>
+                    <b>gun.shoot</b>(attacker);<br/>
+                 }<br/><br/>
+
+                 void <b>saveClientLife</b>(Attacker attacker)<br/>
+                 {<br/>
+                  <b>if</b> (<b>attacker.hasGun</b>())<br/>
+                     <b>shoot</b>(attacker);<br/>
+                  <b>else</b><br/>
+                     <b>applyMartialArts</b>(attacker);<br/>
+                 }<br/>
+                }
+            </td>
+<td class="wide-text">В классе «телохранитель» определено, как поступать в случае нападения: стрелять или
+                применить восточные единоборства.<br/><br/>
+                Но не определено, какие именно восточные единоборства, хотя точно известно, что этот навык есть.<br/><br/>
+                Мы можем создать несколько разных телохранителей (унаследовав этот класс). Все они будут уметь защищать
+                клиента и стрелять в нападающего.
+            </td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Действительно, по смыслу очень напоминает интерфейс с несколькими реализованными методами.</p>
+<p>- Да, абстрактные классы такого типа мы будем часто встречать среди стандартных классов JavaSE.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи на абстрактные классы</h2>
+</div>
+<p>- Привет, Амиго! Я собирался помочь тебе сегодня с задачами. Но слишком устал. А вечером у меня еще много дел: нужно выпить пива и с друзьями поиграть в покер. Так что удачи, дружище! Решай задачи.</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level13,lesson04,task01"></button><b>1. Переводчик с английского</b><br/><br/>
+                1. Создать класс <span class="taskcode">EnglishTranslator</span>, который наследуется от <span class="taskcode">Translator</span>.<br/>
+                2. Реализовать все абстрактные методы.<br/>
+                3. Подумай, что должен возвращать метод <span class="taskcode">getLanguage</span>.<br/>
+                4. Программа должна выводить на экран "Я переводчик с английского".<br/>
+                5. Метод <span class="taskcode">main</span> менять нельзя.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level13,lesson04,task02"></button><b>2. Исправление кода</b><br/><br/>
+                Исправить код так, чтобы программа выполнялась и выводила "Я переводчик с английского".
+                Метод <span class="taskcode">main</span> менять нельзя!
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level13,lesson04,task03"></button><b>3. Интерфейс Animal</b><br/><br/>
+                1. Унаследовать <span class="taskcode">Fox</span> от интерфейса <span class="taskcode">Animal</span>.<br/>
+                2. Поменяй код так, чтобы в классе <span class="taskcode">Fox</span> был только один метод - <span class="taskcode">getName</span>.<br/>
+                3. Создавать дополнительные классы и удалять методы нельзя!
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level13,lesson04,task04"></button><b>4. Класс BigFox</b><br/><br/>
+                1. Исправь класс <span class="taskcode">BigFox</span> так, чтобы программа компилировалась.
+                2. Метод <span class="taskcode">main</span> менять нельзя.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>5. Множественное наследование интерфейсов</h2>
+</div>
+<p>- Привет, Амиго! Наконец-то мы добрались до очень интересной темы. Сегодня я расскажу тебе про <span class="red_text"><b>множественное наследование</b></span>. На самом деле множественное наследование очень интересный и мощный инструмент. И если бы не некоторые  проблемы, то в Java было бы множественное наследование классов.  Но т.к. его нет, придется довольствоваться <span class="red_text"><b>множественным наследованием интерфейсов</b></span>. Что тоже не мало.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/13/image-ru-13-03.gif"/>
+<p>Представь, что ты пишешь компьютерную игру. И ее герои – твои объекты – должны демонстрировать очень сложное поведение: ходить по карте, собирать предметы, выполнять квесты, общаться с другими героями, кого-то убивать, кого-то спасать. Допустим, ты смог разделить все объекты на 20 категорий. Это значит, что если тебе повезет, ты можешь обойтись всего 20-ю классами, для их описания. А теперь вопрос на засыпку: сколько всего уникальных видов взаимодействия у этих объектов. Объект каждого типа может иметь уникальные взаимодействия с  20-ю видами других объектов (себе подобных тоже считаем). Т.е. всего нужно запрограммировать 20 на 20 – 400 взаимодействий!  А если уникальных видов объектов будет не 20, а 100, количество взаимодействий может достигнуть 10,000!</p>
+<p class="amigo">- Ничего себе! Теперь понимаю, почему программирование такая непростая работа.</p>
+<p>- Она простая. Благодаря многим абстракциям. И в не последнюю очередь – множественному наследованию интерфейсов.</p>
+<p>Очень часто можно упростить взаимодействие объектов, если взаимодействовать будут не объекты, а их роли и/или способности. А способности, как мы уже знаем, легко добавляются в класс, когда он реализует некоторый интерфейс.</p>
+<p>Когда пишется большая программа, обычно с этого сразу и начинают:</p>
+<p><b>1)</b> Определяют все существующие способности/роли.</p>
+<p><b>2)</b> Затем описывают взаимодействие между этими ролями.</p>
+<p><b>3)</b> А потом просто наделяют все классы их ролями.</p>
+<p class="amigo">- А можно пример?</p>
+<p>- Конечно. Давай рассмотрим роли, на основе героев мультика «Том и Джерри».</p>
+<table class="table_example wide-table">
+<tbody>
+<tr>
+<th width="55%">Код</th>
+<th width="45%">Описание</th>
+</tr>
+<tr>
+<td class="monospace_text wide-text">interface Moveable<br/>
+                {}
+            </td>
+<td class="wide-text">- роль/способность передвигаться.
+            </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">interface Eatable<br/>
+                {}
+            </td>
+<td class="wide-text">- роль/способность быть съеденным.
+            </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">interface Eat<br/>
+                {}
+            </td>
+<td class="wide-text">- роль/способность съесть кого-нибудь.
+            </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Tom <span class="blue_text">extends Cat</span> <span class="red_text">implements Moveable,     Eatable, Eat</span><br/>
+                {}
+            </td>
+<td class="wide-text">Tom – это кот, у которого есть три роли:<br/>
+                1) может передвигаться<br/>
+                2) может кого-то съесть<br/>
+                3) может быть съеденным кем-то (собакой)
+            </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Jerry <span class="blue_text">extends Mouse</span> <span class="red_text">implements     Moveable, Eatable</span><br/>
+                {}
+            </td>
+<td class="wide-text">Jerry – это мышь, у которого есть две роли:<br/>
+                1) может передвигаться<br/>
+                2) может быть съеденным кем-то
+            </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Killer <span class="blue_text">extends Dog</span> <span class="red_text">implements Moveable,     Eat</span><br/>
+                {}
+            </td>
+<td class="wide-text">Killer – это собака, у которого есть две роли:
+                1) может передвигаться
+                2) может кого-то съесть
+            </td>
+</tr>
+</tbody>
+</table>
+<p>Зная всего эти три роли (интерфейса) можно написать программу и описать корректное взаимодействие этих ролей. Например, объект будет гнаться (посредством интерфейса Moveable) за тем, «кого ты можешь съесть» и убегать от того, «кто может съесть тебя». И все это без знаний  о конкретных объектах. Если в программу добавить еще объектов (классов), но оставить эти роли, она будет прекрасно работать – управлять поведением своих объектов.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задачи на абстрактные классы</h2>
+</div>
+<p>- Привет, Амиго! А вот и я. И я тебе принес…  большую и интересную задачу на множественное наследование.</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level13,lesson06,task01"></button><b>Dog, Cat и Mouse</b><br/><br/>
+                1. Создать классы <span class="taskcode">Dog</span>, <span class="taskcode">Cat</span> и <span class="taskcode">Mouse</span>.<br/>
+                2. Реализовать интерфейсы в добавленных классах, учитывая что:<br/>
+            - Кот(Cat) может передвигаться, может кого-то съесть и может быть сам съеден.<br/>
+            - Мышь(Mouse) может передвигаться и может быть съедена.<br/>
+            - Собака(Dog) может передвигаться и съесть кого-то.
+
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>7. Абстрактный класс vs. интерфейс</h2>
+</div>
+<p>- Привет, Амиго! Билаабо расскажет тебе о различиях абстрактного класса и интерфейса. Их несколько.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Абстрактный класс</th><th width="50%">Интерфейс</th></tr><td></td>
+<tr><th width="50%">Наследование</th><th width="50%"> </th></tr>
+<tr>
+<td class="wide-text">Абстрактный класс может унаследоваться <span class="blue_text">только от одного класса</span> и <span class="blue_text">любого количества интерфейсов</span>.
+    </td>
+<td class="wide-text">Интерфейс <span class="dred_text">не может наследоваться от классов</span>, но может <span class="dred_text">от любого количества интерфейсов</span>.
+    </td>
+</tr>
+<td></td>
+<tr><th width="50%">Абстрактные методы</th><th width="50%"> </th></tr>
+<tr>
+<td class="wide-text">Абстрактный класс <span class="blue_text">может содержать абстрактные методы</span>. Но <span class="blue_text">может и не содержать</span> их вообще. 
+    </td>
+<td class="wide-text"><span class="dred_text">Все методы интерфейса – абстрактные</span> – не содержат реализации. Интерфейс <span class="dred_text">может не содержать никаких методов</span> вообще.
+    </td>
+</tr>
+<td></td>
+<tr><th width="50%">Методы с реализацией</th><th width="50%"> </th></tr>
+<tr>
+<td class="wide-text">Абстрактный класс может содержать <span class="blue_text">методы с реализацией</span>.
+    </td>
+<td class="wide-text">Интерфейс <span class="dred_text">не может</span> содержать <span class="dred_text">методы с реализацией</span>.
+    </td>
+</tr>
+<td></td>
+<tr><th width="50%">Данные</th><th width="50%"> </th></tr>
+<tr>
+<td class="wide-text">Никаких ограничений.
+    </td>
+<td class="wide-text">Интерфейс <span class="dred_text">содержит только public final static данные и public abstract методы.</span>
+</td>
+</tr>
+<td></td>
+<tr><th width="50%">Создание объекта</th><th width="50%"> </th></tr>
+<tr>
+<td class="wide-text">Нельзя создать объект абстрактного класса.
+    </td>
+<td class="wide-text">Нельзя создать объект интерфейса.
+    </td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Вот это я понимаю. Кратко и по существу.</p>
+<p>- Спасибо, Амиго.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Стандартные интерфейсы: InputStream, OutputStream</h2>
+</div>
+<p>- Привет, Амиго! Сейчас я тебе расскажу про два интерфейса – <b>InputStream</b> и <b>OutputStream</b>. Объявлены они как абстрактные классы, но если начать разбираться, то можно увидеть, что <b>по своей сути – это интерфейсы.</b> Почти все их методы абстрактные, кроме нескольких незначащих методов. Очень похожи на нашего <b>«телохранителя»</b>, которого мы рассматривали.</p>
+<p>Это очень интересные интерфейсы. Пока что я специально буду называть их <b>интерфейсы</b>, чтобы ты понял, зачем они нужны. А потом мы поговорим, почему же их все-таки сделали абстрактными классами.</p>
+<p class="amigo">- Хорошо. Так что это за интерфейсы?</p>
+<p>- Сейчас расскажу.</p>
+<p>Есть такая интересная вещь в Java как <b>«поток»</b>. <b>Поток</b> – это очень простая сущность. И его простота есть залог очень мощного механизма обмена данными. Потоки бывают двух видов: <b>поток для чтения</b> и <b>поток для записи</b>.</p>
+<p>В поток для записи, как ты уже, наверное, догадался, <b>можно записывать данные</b>. Для этого у него есть метод <b>write()</b>. Из потока для чтения <b>можно данные читать</b>. Для этого у него есть метод <b>read()</b>.</p>
+<p><b>InputStream</b> – это интерфейс потока чтения, описывающий такую способность: «из меня можно читать байты».</p>
+<p>А <b>OutputStream</b>– это, соответственно, интерфейс потока записи, описывающий способность: «в меня можно записывать байты».</p>
+<p class="amigo">- И это все?</p>
+<p>- Фактически да. Но все дело в том, что в  Java есть очень много классов, которые умеют работать с интерфейсами <b>InputStream</b> и <b>OutputStream</b>. Например, ты хочешь прочитать файл с диска и вывести его содержимое на экран. Нет ничего проще.</p>
+<p>Для того, чтобы прочитать данные из файла на диске, есть специальный класс <b>FileInputStream</b>, который реализует интерфейс <b>InputStream</b>. Хочешь записать прочитанные данные в другой файл? Для этого есть класс <b>FileOutputStream</b>, который реализует интерфейс <b>OutputStream</b>. Вот как выглядит код копирования [данных одного] файла в другой.</p>
+<table class="table_example">
+<tbody>
+<tr>
+<th width="100%">Код</th>
+</tr><tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args) throws IOException<br/>
+                {<br/>
+                 <b>InputStream</b> <span class="green_text"><b>inStream</b></span> = new <b>FileInputStream</b>("c:/source.txt");<br/>
+                 <b>OutputStream <span class="blue_text">outStream</span></b> = new <b>FileOutputStream</b>("c:/result.txt");<br/><br/>
+                 <b>while</b> (<span class="green_text"><b>inStream</b></span>.<b>available</b>() &gt; 0)<br/>
+                 {<br/>
+                  int data = <span class="green_text"><b>inStream</b></span>.<span class="red_text"><b>read</b></span>(); <span class="grey_text">//читаем один байт из потока для чтения</span><br/>
+                  <span class="blue_text"><b>outStream</b></span>.<span class="red_text"><b>write</b></span>(data);
+                <span class="grey_text">//записываем прочитанный байт в другой поток.</span><br/>
+                 }<br/><br/>
+                 <span class="green_text"><b>inStream</b></span>.close(); <span class="grey_text">//закрываем потоки</span><br/>
+                 <span class="blue_text"><b>outStream</b></span>.close();<br/>
+                }
+            </td>
+</tr>
+</tbody></table>
+<p>Представь, что мы написали класс, и добавили ему способности <b>InputStream</b> и <b>OutputStream</b>.</p>
+<p>Если мы корректно реализовали поддержку этих интерфейсов, то объекты нашего класса теперь можно  сохранить  в файл на диске. Просто вычитав их содержимое через метод <b>read</b>. Или загрузить из файла, создав объект и записав в него содержимое файла через метод <b>write</b>.</p>
+<p class="amigo">- А можно пример?</p>
+<p>- Можно. </p>
+<table class="table_example">
+<tbody>
+<tr>
+<th width="50%">Код</th>
+<th width="50%">Описание</th>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class MyClass</b><br/>
+                {<br/>
+                 <b>private ArrayList</b>&amp;lt<b>Integer</b>&amp;gt <b>list</b>;<br/>
+                }
+            </td>
+<td class="wide-text">Для простоты представим, что наш класс содержит в себе один объект – ArrayList типа
+                Integer.
+            </td>
+</tr>
+</tbody></table>
+<p>Теперь добавим в него методы read и write</p>
+<table class="table_example">
+<tbody>
+<tr>
+<th width="50%">Код</th>
+<th width="50%">Описание</th>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> MyClass<br/>
+                {<br/>
+                 <b>private</b> ArrayList&amp;ltInteger&amp;gt list;<br/><br/>
+
+                 <b>public void write(int data)</b><br/>
+                 {<br/>
+                  list.add(data);<br/>
+                 }<br/>
+                 <b>public int read()</b><br/>
+                 {<br/>
+                  int first = list.get(0);<br/>
+                  list.remove(0);<br/>
+                  return first;<br/>
+                 }<br/><br/>
+
+                 <b>public</b> int <b>available</b>()<br/>
+                 {<br/>
+                  return list.size();<br/>
+                 }<br/>
+                }
+            </td>
+<td class="wide-text">Теперь у нас в классе реализован метод <b>read</b>, который позволяет последовательно
+                вычитать все содержимое нашего списка <b>list</b>.<br/><br/>
+                И метод <b>write</b>, который позволяет записывать в наш <b>list</b> значения.
+            </td>
+</tr>
+</tbody></table>
+<p>Это, конечно, не реализация интерфейсов InputStream и OutputStream, но очень похоже.</p>
+<p class="amigo">- Да, это понятно. А как все-таки сохранить содержимое такого объекта в файл?</p>
+<p>- Давай я напишу тебе пример:</p>
+<table class="table_example wide-table">
+<tbody>
+<tr>
+<th width="100%">Запись объекта MyClass в файл</th>
+</tr><tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+                {<br/>
+                 <b>MyClass <span class="green_text">myObject</span></b> = <b>new <span class="green_text">MyClass</span></b>();<br/>
+                 <b>OutputStream <span class="dblue_text">outStream</span></b> = new <span class="blue_text"><b>FileOutputStream</b></span> ("c:/my-object-data.txt");<br/><br/>
+                 <b>while</b> (<span class="green_text"><b>myObject</b></span>.<b>available</b>() &gt; 0)<br/>
+                 {<br/>
+                  int data = <span class="green_text"><b>myObject</b></span>.<span class="red_text"><b>read</b></span>(); <span class="grey_text">//читаем один int из потока для чтения</span><br/>
+                  <span class="dblue_text"><b>outStream</b></span>.<span class="red_text"><b>write</b></span>(data);
+                <span class="grey_text">//записываем прочитанный int в другой поток.</span><br/>
+                 }<br/><br/>
+                 <span class="dblue_text"><b>outStream</b></span>.close();<br/>
+                }
+            </td>
+</tr>
+</tbody>
+</table>
+<table class="table_example wide-table">
+<tbody>
+<tr>
+<th width="100%">Чтение объекта MyClass из файла</th>
+</tr><tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+                {<br/>
+                 <b>InputStream <span class="green_text">inStream</span></b> = new <span class="green_text"><b>FileInputStream</b></span>("c:/my-object-data.txt");<br/>
+                 <b>MyClass <span class="dblue_text">myObject</span></b> = <b>new <span class="blue_text">MyClass</span></b>();<br/><br/>
+                 <b>while</b> (<span class="green_text"><b>inStream</b></span>.<b>available</b>() &gt; 0)<br/>
+                 {<br/>
+                  int data = <span class="green_text"><b>inStream</b></span>.<span class="red_text"><b>read</b></span>(); <span class="grey_text">//читаем один int из потока для чтения</span><br/>
+                  <span class="dblue_text"><b>myObject</b></span>.<span class="red_text"><b>write</b></span>(data);
+                <span class="grey_text">//записываем прочитанный int в другой поток.</span><br/>
+                 }<br/><br/>
+                 <span class="green_text"><b>inStream</b></span>.close(); <span class="grey_text">//закрываем потоки</span><br/>
+                }
+            </td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Ух ты! Действительно, очень похоже на работу с InputStream/OutputStream. Потоки – это крутая вещь!</p>
+<p>- А то!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>9. Cсылка, интерфейсы, множественное наследование, абстрактные классы</h2>
+</div>
+<p>- Я тебе что, не рассказывал про интерфейсы? Тогда ты многое потерял. Вот если замечательные лекции. Их когда-то написал мой давний друг:</p>
+<p><a href="http://wikijava.it-cache.net/index.php@title=Glava_9_Thinking_in_Java_4th_edition.html" target="_blank">Cсылка, интерфейсы, множественное наследование, абстрактные классы</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>10. Хулио</h2>
+</div>
+<p>- Привет, Амиго! Вот хорошее видео. Я уже два часа терплю, чтобы не смотреть. Давай быстрее сюда.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-13.gif" preload="none" tabindex="0" taskkey="level13,lesson10,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-13.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=8LSkOT9nupo" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>11. Домашние и бонусные задания</h2>
+</div>
+<p>- Здорово, боец!</p>
+<p class="amigo">- Здравия желаю, товарищ генерал!</p>
+<p>- У меня для тебя шикарная новость. Вот тебе задания для закрепления полученных навыков. Выполняй их каждый день, и твои навыки будут расти с неимоверной скоростью. Они специально разработаны для выполнения их в Intellij IDEA.</p>
+<table class="table_task">
+<tr>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Некорректные строки</b><br/><br/>
+                Удали все некорректные строки в интерфейсе <span class="taskcode">Button</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Погода</b><br/><br/>
+                1. В классе <span class="taskcode">Today</span> реализовать интерфейс <span class="taskcode">Weather</span>.<br/>
+                2. Подумай, как связан параметр <span class="taskcode">String type</span> с методом <span class="taskcode">getWeatherType()</span>.<br/>
+                3. Интерфейсы <span class="taskcode">Weather</span> и <span class="taskcode">WeatherType</span> уже реализованы.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Чтение файла</b><br/><br/>
+                1. Считать с консоли имя файла.<br/>
+                2. Вывести в консоль(на экран) содержимое файла.<br/>
+                3. Не забыть освободить ресурсы. Закрыть поток чтения с файла и поток ввода с клавиатуры.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>4. Запись в файл</b><br/><br/>
+                 1. Прочесть с консоли имя файла.<br/>
+                 2. Считывать строки с консоли, пока пользователь не введет строку "exit".<br/>
+                 3. Вывести все строки в файл, каждую строчку с новой стороки.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>5. Neo</b><br/><br/>
+                1. Реализовать интерфейс <span class="taskcode">DBObject</span> в классе <span class="taskcode">User</span>.<br/>
+                2. Реализовать метод <span class="taskcode">initializeIdAndName</span> так, чтобы программа работала и выводила на экран  "User has name Neo, id = 1".<br/>
+                3. Метод <span class="taskcode">toString</span> и метод <span class="taskcode">main</span> менять нельзя.<br/>
+                4. Подумай, что должен возвращать метод <span class="taskcode">initializeIdAndName</span> в классе <span class="taskcode">User</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>6. Исправление ошибок</b><br/><br/>
+                1. Переделай наследование в классах и интерфейсах так, чтобы программа компилировалась и продолжала делать то же самое.<br/>
+                2. Класс <span class="taskcode">Hobbie</span> должен наследоваться от интерфейсов <span class="taskcode">Desire</span>, <span class="taskcode">Dream</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>7. Интерфейс SimpleObject</b><br/><br/>
+                1. Создай класс <span class="taskcode">StringObject</span>.<br/>
+                2. В классе <span class="taskcode">StringObject</span> реализуй интерфейс <span class="taskcode">SimpleObject</span> с параметром типа <span class="taskcode">String</span>.<br/>
+                3. Программа должна компилироваться.               
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>8. Интерфейс Updatable в классе Screen</b><br/><br/>
+                Реализовать интерфейс <span class="taskcode">Updatable</span> в классе <span class="taskcode">Screen</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>9. Один метод в классе</b><br/><br/>
+                1. Унаследовать <span class="taskcode">Fox</span> от интерфейса <span class="taskcode">Animal</span>.<br/>
+                2. Поменяй код так, чтобы в классе <span class="taskcode">Fox</span> был только один метод - <span class="taskcode">getName</span>.<br/>
+                3. Методы удалять нельзя!
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>10. Компиляция программы</b><br/><br/>
+                1. Исправь классы <span class="taskcode">Fox</span> и <span class="taskcode">BigFox</span> так, чтобы программа компилировалась. Задача не предполагает создания экземпляров базового класса.<br/>
+                2. Метод <span class="taskcode">main</span> менять нельзя. 
+            </td>
+</tr>
+</table>
+<p>- Те задания были для духов. Для дедушек я добавил бонусные задания повышенной сложности. Только для старослужащих. </p>
+<table class="table_task">
+<tr>
+<th></th>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>1. Сортировка четных чисел из файла.</b><br/><br/>
+<u>Задача:</u><br/> 1. Ввести имя файла с консоли.<br/>
+2. Прочитать из него набор чисел.<br/>
+3. Вывести на консоль только четные, отсортированные по возрастанию.<br/><br/>
+<span class="example-legacy">Пример ввода:</span><br/>
+<span class="example-data">5<br/>
+8<br/>
+11<br/>
+3<br/>
+2<br/>
+10<br/><br/></span>
+<span class="example-legacy">Пример вывода:</span><br/>
+<span class="example-data">2<br/>
+8<br/>
+10</span>
+</td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>2. Сказка Репка.</b><br/><br/>
+<u>Задача:</u><br/> 1. Реализовать интерфейс <span class="taskcode">RepkaItem</span> в классе <span class="taskcode">Person</span>.<br/>
+2. В классе <span class="taskcode">Person</span> реализовать метод <span class="taskcode">pull(Person person)</span>, который выводит фразу типа '<name> за <person>'. Пример "Бабка за Дедку".<br/>
+3. Исправить логическую ошибку цикла в методе <span class="taskcode">tell</span> класса <span class="taskcode">RepkaStory</span>.<br/>
+4. Выполнить метод <span class="taskcode">main</span> и наслаждаться сказкой!
+            </person></name></td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>3. Битва роботов.</b><br/><br/>
+<u>Задача:</u> <br/> 1. Разобраться в том, что тут написано.<br/>
+2.<br/><img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/13/image-ru-13-02.png"/>
+3. Смириться со своей участью и продолжить разбираться в коде.<br/>
+4. ...<br/>
+5. Порадоваться, что мы все поняли.<br/>
+6. Изменить код согласно новой архитектуре и добавить новую логику:<br/>
+6.1. Сделать класс <span class="taskcode">AbstractRobot</span> абстрактным, вынести логику атаки и защиты из <span class="taskcode">Robot</span> в <span class="taskcode">AbstractRobot</span>.<br/>
+6.2. Отредактировать класс <span class="taskcode">Robot</span> учитывая <span class="taskcode">AbstractRobot</span>.<br/>
+6.3. Расширить класс <span class="taskcode">BodyPart</span> новой частью тела "грудь".<br/>
+6.4. Добавить новую часть тела в реализацию интерфейсов <span class="taskcode">Attackable</span> и <span class="taskcode">Defensable</span> (в классе <span class="taskcode">AbstractRobot</span>).<br/>
+7.<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/13/image-ru-13-01.png"/>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

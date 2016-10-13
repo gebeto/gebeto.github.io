@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-05.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 5
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>Как понять, что я смогу?</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/05/image-ru-05-01.jpg"/>
+<p>Принцип морской пехоты гласит: если вы нашли физически пригодных мужчин и женщин, то при правильном обучении и тренировках, вы практически любого из них сумеете превратить в уникального бойца. Программирование – такой же навык, как умение играть на гитаре, плавать, или ездить на велосипеде. Люди не рождаются велосипедистами.</p>
+<p>Когда я вижу друзей, которые вкалывают в два раза больше, а зарабатывают в четыре раза меньше, каждый раз начинается разговор:</p>
+<p>— А ты бы не хотел поработать программистом? Ты же реально умный. Может ты просто не на своём месте?</p>
+<p class="blue_text"><b>Почему программирование?</b></p>
+<p>Прежде чем учить человека программированию, лучше выяснить, что это ему даст.</p>
+<p class="blue_text">1 Простая и интересная работа.</p>
+<p>Программирование — это простая и интересная работа. Большой простор для творчества. Мне очень нравится. Поначалу я шалел от мысли – я делаю то, что мне нравится, а мне за это ещё и деньги платят. Потом привык.</p>
+<p class="blue_text">2 Хорошо оплачивается.</p>
+<p>Мне просто приятно видеть, как мои друзья через 5 лет работы начали покупать себе машины или дома. </p>
+<p class="blue_text">3 Гибкий график.</p>
+<p>Жёсткий график — это неприятно. Это вам подтвердит каждый, кто стоял в пробке в час пик, или кого штрафовали за опоздание в 5 минут. А как насчёт возможности приходить на работу в 11 утра, а уходить в 5? Скажете мечта? Для большинства программистов это реальность. Справляйтесь со своей работой, и вам слова никто не скажет. Во многих компаниях вы можете даже не приходить на работу, а работать из дома. Всегда можно договориться.</p>
+<p class="blue_text">4 Профессиональный рост.</p>
+<p>Почти в любой организации, чтобы получить престижную должность и хорошо зарабатывать, нужно делать карьеру. Программисту достаточно просто оставаться программистом. Вам не нужно переучиваться с программиста на администратора или бороться за должность начальника. Можно просто расти профессионально. Программисты с пятью-десятью годами опыта работы получают шикарные зарплаты.</p>
+<p class="blue_text">5 Высокая международная мобильность.</p>
+<p>Три самых высокооплачиваемых специальности во всем мире: юрист, хирург/врач и программист. Юристом очень сложно работать заграницей: другие законы, прецедентное право и т.д. Врачу нужно учить язык, другие медицинские стандарты, а так же заново сдавать экзамены. Программисту ничего учить не придётся. Тот же язык. Те же стандарты. Часто даже заказчики те же.</p>
+<p class="blue_text"><b>Почему именно Java?</b></p>
+<p>Совокупность трёх следующих факторов и заставила меня переучивать людей на джавистов.</p>
+<p><b>1.  Java — один из самых лёгких языков для изучения</b></p>
+<p>Человек после школы может научиться за 3-6 месяцев, в зависимости от базы и того, сколько часов в день он уделяет учебе.</p>
+<p><b>2.  Большой спрос на рынке труда.</b></p>
+<p>Можно устроиться на работу без опыта. Фирмы охотно берут на работу толковых новичков и занимаются их дальнейшим обучением. </p>
+<p><b>3.  Самые высокие зарплаты по отрасли.</b></p>
+<p>Одни из самых высоких. Особенно актуально для начинающих программистов.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/05/image-ru-05-02.jpg"/>
+<p>Нельзя прочитать книгу и стать программистом. Тут надо минимум 500 часов практики.  Прямо как в боксе. Нельзя просто пересмотреть все бои и стать профессионалом. Вам надо проводить  за тренировками в зале долгие вечера. (<b>Поэтому в JavaRush очень много практических заданий</b>).</p>
+<p>Все предложения выучить программирование за 10 часов равносильны предложению научить вас боксу за 10 часов. А потом на ринг! Не делайте этого.</p>
+<p>Иногда, на форумах, когда новичок спрашивает, как стать программистом, ему говорят – придумай себе задания и выполняй их. <b>Так не получится.</b> Дело в том, что человек не может придумать себе задание, которое лежит сразу за гранью его знаний. Вы что-то либо знаете, либо нет. </p>
+<p>Только  человек, который хорошо знает тему, может придумать для вас последовательный набор задач, каждая из которых учила бы вас чему-то новому и не требовала недели на разбор. Что собственно я и сделал.</p>
+<p class="blue_text"><b>Новый инновационный подход к обучению</b></p>
+<p>Обучение в JavaRush  построено не так, как вузе. Это вы быстро заметите. Зато оно эффективнее. </p>
+<p>В вузе вы, скорее всего, учились по такому типу: длинные лекции и  практика, которая их закрепляет.  Этот подход направлен на то, чтобы дать вам очень обширные знания. Но ваши реальные практические навыки при этом оставляют желать лучшего. А если быть честным, то вы практически ничего стоящего не умеете при таком обучении.</p>
+<p>У меня другой подход.  Я считаю, что теория – это знания, а знания – это ответы на наши вопросы. Поэтому я сначала даю вам вопросы - практические задания, которые трудно решать с текущими знаниями, а затем даю ответы (теорию, которая позволяет решать их гораздо легче.</p>
+<p>Новый материал я даю в три этапа:</p>
+<p>1) <b>Знакомство</b> (Даю самый минимум теории или несколько практических заданий)</p>
+<p>2) <b>Основной блок знаний</b> (Вы должны полностью понять, о чем речь)</p>
+<p>3) <b>Детали и нюансы работы</b> (Заполняю пробелы)</p>
+<p>Таким образом, вы минимум три раза столкнётесь с одной и той же темой. Не говоря уже о том, что все очень сильно взаимосвязано и просто невозможно полностью объяснить одну тему, не объявив перед ней, хотя бы частично, другие.</p>
+<p>Некоторые студенты даже возмущаются насчет задач, дескать, мы этого еще не проходили.  Такие задачи повод задуматься: как можно их решить с  текущим набором знаний? Вы потратите час-другой на эти задачи, зато потом с радостью встретите новый оригинальный подход или красивое решение.</p>
+<p>К тому же, в реальной жизни на работе вам тоже сначала дадут задание, а только потом вы найдете знания, которые нужны, чтобы его решить. Реальная жизнь, она такая. Так что, чем раньше вы привыкните к такому подходу, тем лучше.</p>
+<br/>
+<div class="line"></div>
+<br/>
+<p>Получи доступ ко всем уровням и прокачивай свои навыки. Нельзя стать программистом не программируя. А быть программистом - это реально круто!</p>
+<button class="profile-tariff-button-popular" onclick="window.top.location.href = '//javarush.ru/user/subscription?l=5';">Купить подписку</button>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>1. Классы</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Элли!</p>
+<p>- Сегодня я подробно расскажу тебе, что такое классы.</p>
+<p>- <b>Объяснение номер 1.</b> Начну с аналогии. Все вещи в физическом мире состоят из атомов. Атомы могут быть разных типов: водород, кислород, железо, уран, ... Комбинируя такие атомы можно создавать различные молекулы,  вещества и предметы.</p>
+<p>- Атомы в свою очередь тоже имеют некоторую внутреннюю структуру. Внутри них содержаться электроны и ядро: протоны и нейтроны.</p>
+<p class="amigo">- Да, я имею общее представление об устройстве атомов. Я же робот.</p>
+<p>- Так вот, в мире Java все очень похоже. <span class="green_text">Программы состоят из объектов, которые бывают разных типов (классов)</span>. Различные классы в свою очередь имеют различную внутреннюю структуры: переменные и методы.</p>
+<p>- <span class="violet_text">Если рассмотреть программу в целом, то объекты – это блоки, из которых состоит программа.</span> А классы – это типы этих блоков.  <span class="orange_text">Блоки разных типов являются объектами разных классов.</span></p>
+<p class="amigo">- Вроде ясно.</p>
+<p>- <b>Объяснение номер 2.</b> <span class="green_text">Когда нам нужен новый тип объектов, мы создаем новый класс, и внутри него описываем нужное нам поведение этих объектов.</span></p>
+<p class="amigo">- Что-то как-то уж слишком размыто это звучит. Вроде и понятно, но ничего конкретного.</p>
+<p>- С точки зрения внутренней структуры, <span class="orange_text">класс состоит из методов класса, которые что-то делают и переменных класса, в которых эти методы хранят различные данные.</span></p>
+<p class="amigo">- Т.е. если очень просто, то класс – это набор методов?</p>
+<p>- Почти, точнее будет сказать, что класс – это группа методов, работающих вместе, и переменные, в которых эти методы хранят различные значения, которыми пользуются сообща.</p>
+<p class="amigo">- Ага. И чтобы создать новый класс нам нужно написать эти методы…</p>
+<p>- Да. А также решить, какие общие переменные есть у различных методов, и вынести эти переменные из метода в класс: сделать переменные метода переменными класса.</p>
+<p>- Создание класса происходит примерно по такой схеме:</p>
+<p>1 <span class="green_text">Программист решает, какие еще объекты ему нужны.</span></p>
+<p>2 <span class="orange_text">Программист разбивает эти объекты на различные типы в зависимости от того, что они должны делать.</span></p>
+<p>3 <span class="violet_text">Для каждого типа программист пишет свой отдельный класс.</span></p>
+<p>4 <span class="dred_text">В классе он объявляет нужные методы и переменные.</span></p>
+<p>5 <span class="dblue_text">В каждом методе пишутся команды, чтобы метод делал то, что хочет от него программист.</span></p>
+<p class="grey_text">6 Класс готов, можно создавать его объекты.</p>
+<p class="amigo">- Круто! Интересная схема. Надо будет запомнить</p>
+<p>- Запоминай – пригодится. <span class="green_text">Подход к программированию, при котором программа разбивается на объекты, называется «Объектно-Ориентированное Программирование</span> (<span class="red_text">ООП</span>)».</p>
+<p>- Java – это классический пример ООП подхода: в Java объектами является всё.</p>
+<p>- Изучение Java состоит из двух больших задач: <span class="green_text">учимся писать свои классы</span>, <span class="orange_text">учимся использовать чужие классы</span>. Сегодня мы начнем с самого простого. Будем учиться писать простенькие классы и, конечно, создавать их объекты. Объекты часто еще называют экземплярами классов. Это синонимы: правильно и так и так.</p>
+<p class="amigo">- Понятно.</p>
+<p>- Если подытожить всё, что я сказала, то можно сказать, что класс – это мини программа: набор данных и функции, которые что-то с этими данными делают. <span class="green_text">Важной особенностью классов является возможность создавать экземпляры этих классов – объекты</span>.</p>
+<p>- Для того, чтобы создать объект класса, в коде надо написать «<b>new имя_класса()</b>». Примеры:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Примеры</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="3"><button class="task_button" taskkey="level05,lesson01,type01"></button></td>
+<td class="monospace_text">
+                    Cat cat = <span class="red_text"><b>new Cat</b></span>();
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+                    Reader reader = <span class="blue_text"><b>new BufferedReader</b></span>(<span class="green_text"><b>new InputStreamReade</b>r</span>(System.in));
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+                    InputStream is = <span class="violet_text"><b>new FileInputStream</b></span>(path);
+                </td>
+</tr>
+</table>
+<p>- У объекта класса есть две интересные особенности:</p>
+<p>- <b>Первая</b>. <span class="green_text">Каждый объект класса хранит свою собственную копию переменных класса</span>. Т.е. если в классе объявлены переменные «x,y» и создано 10 объектов такого класса, то в каждом объекте будут свои переменные. <span class="dred_text">Изменение переменных одного объекта не влияет на переменные другого объекта</span>.</p>
+<p>- <b>Вторая</b>. <span class="green_text">При создании объекта, в него можно предавать различные параметры</span>. Это так называемые «стартовые значения». Это почти как дать имя при рождении. <span class="orange_text">Многие объекты не могут быть созданы, если в них не передать такие параметры</span>.</p>
+<p class="amigo">- Немного понятно. А что ты говорила про переменные класса?</p>
+<p>- У каждого объекта есть его копия данных – переменных класса.</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th width="50%">Java</th>
+<th width="50%">Вывод на экран:</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level05,lesson01,type02"></button></td>
+<td class="monospace_text">
+                    Cat <span class="blue_text">cat1</span> = <span class="dred_text"><b>new</b> Cat</span>();<br/>
+<span class="blue_text">cat1.name</span> = <span class="green_text">"Vaska"</span>;<br/><br/>
+
+                    Cat <span class="violet_text">cat2</span> = <span class="dred_text"><b>new</b> Cat</span>();<br/>
+<span class="violet_text">cat2.name</span> = <span class="green_text">"Mashka"</span>;<br/><br/>
+<span class="brown_text">System.out.println</span>(<span class="blue_text">cat1.name</span>);<br/>
+<span class="brown_text">System.out.println</span>(<span class="violet_text">cat2.name</span>);
+                </td>
+<td class="monospace_text">
+                    Vaska<br/>Mashka
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>2. Пакеты (packages)</h2>
+</div>
+<p>- Привет, Амиго! Сегодня я расскажу тебе про пакеты. </p>
+<p>- Файлы в компьютере группируются по папкам. Классы в Java (а каждый класс лежит в отдельном файле) группируются <span class="green_text">по пакетам, которые являются папками на диске</span>. Ничего принципиально нового. Но есть два замечания</p>
+<p>- <b>Первое</b>. <span class="green_text">«Полным уникальным именем класса» является «имя пакета» + «имя класса»</span>. Примеры:</p>
+<table class="table_example">
+<tr>
+<th width="33%">Полное уникальное имя</th>
+<th width="33%">Имя пакета</th>
+<th>Имя класса</th>
+</tr>
+<tr>
+<td class="monospace_text">
+                    java.io.FileInputStream
+                </td>
+<td class="monospace_text">
+                    java.io
+                </td>
+<td class="monospace_text">
+                    FileInputStream
+                </td>
+</tr>
+<tr>
+<td class="monospace_text td2">
+                    java.lang.String
+                </td>
+<td class="monospace_text td2">
+                    java.lang
+                </td>
+<td class="monospace_text td2">
+                    String
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+                    java.util.ArrayList
+                </td>
+<td class="monospace_text">
+                    java.util
+                </td>
+<td class="monospace_text">
+                    ArrayList
+                </td>
+</tr>
+<tr>
+<td class="monospace_text td2">
+                    org.apache.tomcat.Servlet
+                </td>
+<td class="monospace_text td2">
+                    org.apache.tomcat
+                </td>
+<td class="monospace_text td2">
+                    Servlet
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+                    Cat
+                </td>
+<td class="monospace_text">
+                    отсутствует
+                </td>
+<td class="monospace_text">
+                    Cat
+                </td>
+</tr>
+</table>
+<p class="red_text">- Полное имя класса всегда уникально!</p>
+<p>- Каждый раз писать длинное имя, например <b>java.util.ArrayList</b>, очень неудобно. Поэтому в Java добавили возможность «импортировать классы».  В своем коде ты можешь пользоваться коротким именем других классов, но ты должен в начале своего класса явно указать, какой именно класс будет использоваться.</p>
+<p class="amigo">- А как это сделать?</p>
+<p>- Делается это конструкцией вида «<span class="violet_text">import java.util.ArrayList;</span>»</p>
+<p>- В начале класса, сразу после объявления  package, ты можешь указать какой именно класс скрывается за <b>ArrayList</b>, который ты используешь у себя в коде. </p>
+<p class="amigo">- Зачем такая сложность? Что могут быть классы с одинаковыми именами?</p>
+<p>- Да, в разных пакетах могут лежать классы с одинаковыми именами. Но <span class="dred_text">мы не можем импортировать в наш класс два класса с одинаковыми именами</span>, поэтому к одному из них придётся обращаться по полному имени.</p>
+<p>- Вот еще одна аналогия. У тебя в коллективе есть Серега и никаких проблем с общением – все знают кто это. Но если бы их было трое, то чтобы их различать пришлось бы использовать полные уникальные имена.</p><br/>
+<p>- <b>Второе</b>. <span class="green_text">Лучше всегда класть классы в пакеты, а не в корень папки <b><span class="green_text">src</span></b></span>. Когда классов мало,  это ещё не представляет проблему, но когда классов много – очень легко запутаться. Поэтому всегда создавай классы только в пакетах.</p>
+<p>В Java принято давать классам и пакетам осмысленные имена. Многие компании выпускают свои библиотеки (набор классов) и, чтобы не было путаницы, называют пакеты этих классов по имени компании/сайта:</p>
+<table class="table_example">
+<tr>
+<th width="50%">Имя пакета</th>
+<th>Имя компании/проекта</th>
+</tr>
+<tr>
+<td class="monospace_text">
+                    org.<b>apache</b>.common<br/>
+                    org.<b>apache</b>.tomcat<br/>
+                    org.<b>apache</b>.util
+                </td>
+<td class="monospace_text">
+                    Проект «Апач»
+                </td>
+</tr>
+<tr>
+<td class="monospace_text td2">
+                    com.<b>oracle</b>.jdbc
+                </td>
+<td class="monospace_text td2">
+                    Компания «Oracle»
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<b>java</b>.io<br/>
+<b>java</b>x.servlet
+                </td>
+<td class="monospace_text">
+                    Компания Sun, проект Java
+                </td>
+</tr>
+<tr>
+<td class="monospace_text td2">
+                    com.<b>ibm.websphere</b>
+</td>
+<td class="monospace_text td2">
+                    Компания «IBM», проект WebSphere
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+                    com.<b>jboss</b>
+</td>
+<td class="monospace_text">
+                    Проект «Jboss»
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>3. Видео уроки по созданию классов и пакетов</h2>
+</div>
+<p>- Привет, Амиго! Вот пара видео уроков, как нужно создавать классы и пакеты:</p>
+<!--<p><a href="http://www.youtube.com/watch?v=37Cl0Q4KddM">http://www.youtube.com/watch?v=37Cl0Q4KddM</a></p>-->
+<iframe allowfullscreen="" class="youtube_video_max" frameborder="0" src="http://www.youtube.com/embed/37Cl0Q4KddM"></iframe>
+<p class="amigo">- Мы же уже делали это!</p>
+<p>- Делали, вот и отлично. Повторение – мать учения. Вот тебе ещё пара ссылок:</p>
+<p><a href="https://www.jetbrains.com/idea/help/creating-java-classes,-interfaces,-enumerations-and-annotations.html" target="_blank">Создание Java классов</a></p>
+<p><a href="https://www.jetbrains.com/idea/help/creating-packages.html" target="_blank">Создание пакетов</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>4. Создание объектов, ссылки на объекты</h2>
+</div>
+<p>- Так. С классами мы разобрались в прошлый раз. Сегодня я хочу рассказать тебе, как создавать объекты. Это очень просто: пишем ключевое слово new и имя класса, объект которого хотим создать:</p>
+<table class="table_example">
+<tr><th>Пример</th></tr>
+<tr>
+<td class="monospace_text">
+                    Cat cat = <span class="red_text"><b>new Cat</b></span>();
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+                    Reader reader = <b><span class="blue_text">new BufferedReader</span>(<span class="green_text">new InputStreamReader</span></b>((System.in)));
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+                    InputStream is = <span class="violet_text"><b>new FileInputStream</b></span>(path);
+                </td>
+</tr>
+</table>
+<p class="amigo">- Так я это уже слышал.</p>
+<p>- Я знаю, поэтому слушай дальше.</p>
+<p>- При создании объекта в скобочках можно передавать различные параметры. Об этом я расскажу сегодня, но чуть попозже. Давай рассмотрим класс Cat:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th width="50%">Код</th>
+<th>Описание</th>
+</tr>
+<tr style="border-bottom: 2px dashed darkviolet;">
+<td class="collapsed" rowspan="3"><!--<button class="task_button" taskKey="level05,lesson04,type01">--></td>
+<td class="monospace_text wide-text">
+<pre>class Cat {
+    public String <span class="green_text"><b>name</b></span>;</pre>
+</td>
+<td>
+<span class="green_text"><b>name</b></span> – это переменная класса. У нее модификатор доступа public, поэтому она видна везде в проекте.
+                </td>
+</tr>
+<tr style="border-bottom: 2px dashed darkviolet;">
+<td class="monospace_text wide-text">
+<pre>   public String <span class="blue_text">getName</span>() {
+        return <span class="green_text"><b>name</b></span>;
+    }</pre>
+</td>
+<td>
+                    Метод <span class="blue_text">getName</span> – это getter (произносится гЭттэр), т.е. он возвращает значение переменной-класса <span class="green_text"><b>name</b></span>. Имя метода строится по принципу get + «имя переменной с большой буквы».
+                </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">
+<pre>    public void <span class="violet_text">setName</span>(String <span class="orange_text">name</span>) {
+        this.<span class="green_text"><b>name</b></span> = <span class="orange_text">name</span>;
+    }
+}</pre>
+</td>
+<td>
+                    Метод <span class="violet_text">setName</span> – это setter (произносится сЭттэр), т.е. он используется для присваивания нового значения переменной-класса <span class="green_text"><b>name</b></span>. Имя метода строится по принципу set + «имя переменной с большой буквы». В этом методе <span class="orange_text">имя параметра</span> совпадает с <span class="green_text">именем переменной класса</span>, поэтому мы ставим <b>this</b> перед <span class="green_text">именем переменной</span>. 
+                </td>
+</tr>
+</table>
+<p class="amigo">- А это что еще за геттеры и сеттеры такие?</p>
+<p>- В Java принято скрывать переменные от доступа из других классов. Обычно <span class="green_text">переменные, объявленные внутри классов, имеют модификатор <b>private</b></span>.</p>
+<p>- Чтобы другие классы могли менять значения таких переменных, для каждой из них создается пара методов: <b>get</b> и <b>set</b>. <span class="orange_text">Задача метода <b><span class="orange_text">get</span></b> вернуть текущее значение переменной тому, кто его вызвал</span>. <span class="violet_text">Задача метода <b>set</b> установить новое значение переменной.</span></p>
+<p class="amigo">- А в чем смысл?</p>
+<p>- <span class="dred_text">Если мы не хотим, чтобы кто-то менял значения переменных наших объектов, мы можем просто не писать метод <b>set</b> для него, или сделать его <b>private</b>.</span> Также в этот метод можно добавить дополнительные проверки данных. И если переданное новое значение неверно, то ничего не менять.</p>
+<p class="amigo">-Ясно.</p>
+<p>- Т.к. переменных в классе может быть много, то методы get и set обычно имеют в своем имени имя той переменной, с которой работают.</p>
+<p>- Если <span class="green_text">переменная называется name, то методы <b>setName</b> и <b>getName</b></span>. И т.д. по аналогии.</p>
+<p class="amigo">- Ясно. Понятный, в общем-то, подход.</p>
+<p>- Вот тебе еще пара примеров работы с новосозданным объектом:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Шаг</th><th>Код</th><th>Описание</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="5"><button class="task_button" taskkey="level05,lesson04,type01"></button></td>
+<td>1</td>
+<td class="monospace_text">
+<span class="red_text"><b>new Cat();</b></span>
+</td>
+<td>Создаём объект типа <span class="red_text">Cat</span></td>
+</tr>
+<tr>
+<td>2</td>
+<td class="monospace_text">
+                    Cat <span class="blue_text"><b>catVaska = new Cat()</b></span>;
+                </td>
+<td>Сохраняем объект в переменную <b><span class="blue_text">catVaska</span></b> с типом <span class="blue_text">Cat</span></td>
+</tr>
+<tr>
+<td>3</td>
+<td class="monospace_text">
+                    catVaska.<span class="green_text"><b>name</b></span> = "Vaska";<br/>
+                    catVaska.<span class="green_text"><b>age</b></span> = 6;<br/>
+                    catVaska.<span class="green_text"><b>weight</b></span> = 4;
+                </td>
+<td>Заполняем объект данными: <span class="green_text">имя, возраст, вес</span></td>
+</tr>
+<tr>
+<td>4</td>
+<td class="monospace_text">
+                    catVaska.<span class="violet_text"><b>sleep</b></span>();
+                </td>
+<td>Вызываем метод объекта</td>
+</tr>
+<tr>
+<td>5</td>
+<td class="monospace_text">
+<span class="red_text"><b>catVaska</b></span>.fight(<span class="red_text"><b>catBarsik</b></span>);
+                </td>
+<td>Взаимодействие объектов.</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>5. Задачи на создание своих классов и объектов</h2>
+</div>
+<p>- Привет, Амиго! Вот тебе несколько задачек на создание классов и объектов:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level05,lesson05,task01"></button>
+<b>1. Создать класс Cat</b><br/><br/>
+                Создать класс <span class="taskcode">Cat</span>. У кота должно быть имя (<span class="taskcode">name, String</span>), возраст (<span class="taskcode">age, int</span>), вес (<span class="taskcode">weight, int</span>), сила (<span class="taskcode">strength, int</span>).
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level05,lesson05,task02"></button>
+<b>2. Реализовать метод fight</b><br/><br/>
+                Реализовать метод <span class="taskcode">boolean fight(Cat anotherCat)</span>: реализовать механизм драки котов в зависимости от их веса, возраста и силы.  Зависимость придумать самому. Метод должен определять, выиграли ли мы (this) бой или нет, т.е. возвращать true, если выиграли и false - если нет. <br/>
+                    Должно выполняться условие: <br/>если <span class="taskcode">cat1.fight(cat2)</span> == true , то <span class="taskcode">cat2.fight(cat1)</span> == false
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level05,lesson05,task03"></button>
+<b>3. Геттеры и сеттеры для класса Dog</b><br/><br/>
+                Создать <span class="taskcode">class Dog</span>. У собаки должна быть кличка <span class="taskcode">String name</span> и возраст <span class="taskcode">int age</span>. <br/>Создайте геттеры и сеттеры для всех переменных класса <span class="taskcode">Dog</span>.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level05,lesson05,task04"></button>
+<b>4. Создать три объекта типа Cat</b><br/><br/>
+                В методе main создать три объекта типа <span class="taskcode">Cat</span> и заполнить их данными. Использовать класс <span class="taskcode">Cat</span> из первой задачи. Класс <span class="taskcode">Cat</span> создавать не надо.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level05,lesson05,task05"></button>
+<b>5. Провести три боя  попарно между котами</b><br/><br/>
+                Создать три кота используя класс <span class="taskcode">Cat</span>. <br/>
+                Провести три боя попарно между котами. <br/>
+                Класс <span class="taskcode">Cat</span> создавать не надо. Для боя использовать метод <span class="taskcode">boolean fight(Cat anotherCat)</span>.<br/>
+                Результат каждого боя вывести на экран.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>6. Инициализация объектов, метод Initialize</h2>
+</div>
+<p>- Хочу рассказать тебе об инициализации объектов. <span class="green_text">Когда объект создаётся – его переменным нужно присвоить стартовые данные</span>. Чтобы не было ситуаций, когда ты обращаешься к объекту, а внутри у него нет нужной ему информации для правильной работы.</p>
+<p>- Рассмотрим для примера объект типа File (файл). <span class="orange_text">Минимальной необходимой информацией для файла является его имя. Создать файл без имени – это бессмыслица.</span></p>
+<p>- Допустим, мы пишем свой класс для работы с файлами - MyFile, какая информация нужна каждому объекту этого класса?</p>
+<p class="amigo">- Имя файла, с которым этот объект будет работать?</p>
+<p>- Правильно. Для этого добавим в наш класс метод <b>initialize</b>(). Это будет выглядеть примерно так:</p>
+<table class="table_example">
+<tr>
+<th>Пример:</th>
+</tr>
+<tr>
+<td class="monospace_text"><pre><b>class</b> MyFile
+{
+    private String <span class="blue_text">filename</span> = null;
+
+    public void <b>initialize</b>(String <span class="orange_text">name</span>)
+    {
+        <b>this</b>.<span class="blue_text">filename</span> = <span class="orange_text">name</span>;
+    }
+…
+}</pre></td>
+</tr>
+</table>
+<p>- Мы добавили метод <b>initialize</b>, чтобы с объектом можно было работать – вызывать его методы. Это можно делать сразу после вызова метода <b>initialize</b>. <span class="green_text">Если с объектом работать нельзя, его называют <i><b>невалидным</b></i> (invalid), если можно – <i><b>валидным</b></i> (valid). Основная задача метода initialize – передать в объект все необходимые данные, чтобы сделать его валидным.</span></p>
+<p class="amigo">- Ясно.</p>
+<p>- Теперь усложним задачу.  Вернее упростим. Как посмотреть. Представим, что другому программисту, который будет использовать наш класс, удобнее передавать в него не полное имя файла, а директорию и короткое имя файла. Мы бы смогли реализовать эту функциональность с помощью ещё одного метода <b>initialize</b> (<span class="red_text">Java позволяет создавать несколько методов с одинаковыми именами</span>). Тогда наш класс стал бы выглядеть так:</p>
+<table class="table_example">
+<tr>
+<th>Пример с двумя методами initialize</th>
+</tr>
+<tr>
+<td class="monospace_text"><pre>class MyFile
+{
+    private String <span class="blue_text">filename</span> = null;
+    public void <b>initialize</b>(String <span class="orange_text">name</span>)
+    {
+        <b>this</b>.<span class="blue_text">filename</span> = <span class="orange_text">name</span>;
+    }
+
+    public void initialize(String <span class="green_text">folder</span>, String <span class="orange_text">name</span>)
+    {
+        <b>this</b>.<span class="blue_text">filename</span> = <span class="green_text">folder</span> + <span class="orange_text">name</span>;
+    }
+
+…
+}</pre></td>
+</tr>
+</table>
+<p>- А ещё, часто нужно создать временную копию файла рядом с текущим. </p>
+<p class="amigo">- Мы можем сделать метод для этого случая?</p>
+<p>- Конечно, вот смотри:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Создание файла рядом с текущим файлом:</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level05,lesson06,type01"></button></td>
+<td class="monospace_text"><pre>class MyFile
+{
+    private String <span class="blue_text">filename</span> = null;
+    public void <b>initialize</b>(String <span class="orange_text">name</span>)
+    {
+        this.<span class="blue_text">filename</span> = <span class="orange_text">name</span>;
+    }
+
+    public void <b>initialize</b>(String <span class="green_text">folder</span>, String <span class="orange_text">name</span>)
+    {
+        this.<span class="blue_text">filename</span> = <span class="green_text">folder</span> + <span class="orange_text">name</span>;
+    }
+
+    <span class="grey_text">// Файл <span class="blue_text">filename</span> будет находиться в той же директории, что и <span class="violet_text">file</span>.</span>
+    public void <b>initialize</b>(MyFile <span class="violet_text">file</span>, String <span class="orange_text">name</span>) 
+    {       
+        this.<span class="blue_text">filename</span> = <span class="violet_text">file</span>.<b>getFolder</b>() + <span class="orange_text">name</span>;
+    }
+
+…
+}</pre></td>
+</tr>
+</table>
+<p class="amigo">- И что, я могу сделать таких методов сколько угодно?</p>
+<p>-  Разумные пределы, конечно, есть. Но, в принципе,  да, сколько угодно.</p>
+<p class="amigo">- А когда надо вызывать метод initialize?</p>
+<p class="dred_text">- Сразу после создания объекта, чтобы перевести его в валидное состояние:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Примеры</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="3"><button class="task_button" taskkey="level05,lesson06,type02"></button></td>
+<td class="monospace_text">
+<span class="violet_text">MyFile</span> <span class="blue_text">file</span> = <b>new</b> <span class="violet_text">MyFile</span>();<br/>
+<span class="blue_text">file</span>.<span class="red_text">initialize</span>(<span class="green_text">"c:\\data\\a.txt"</span>);<br/><br/>
+
+                    String text = <span class="blue_text">file</span>.readText();
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<span class="violet_text">MyFile</span> <span class="blue_text">file</span> = <b>new</b> <span class="violet_text">MyFile</span>();<br/>
+<span class="blue_text">file</span>.<span class="red_text">initialize</span>(<span class="green_text">"c:\\data\\"</span>, <span class="green_text">"a.txt"</span>);<br/><br/>
+
+                    String text = <span class="blue_text">file</span>.readText();
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<span class="violet_text">MyFile</span> <span class="blue_text">file</span> = <b>new</b> <span class="violet_text">MyFile</span>();<br/>
+<span class="blue_text">file</span>.<span class="red_text">initialize</span>(<span class="green_text">"c:\\data\\a.txt"</span>);<br/><br/>
+<span class="violet_text">MyFile</span> <span class="orange_text">file2</span> = <b>new</b> <span class="violet_text">MyFile</span>();<br/>
+<span class="orange_text">file2</span>.<span class="red_text">initialize</span>(<span class="green_text">"a.txt"</span>);<br/><br/>
+
+                    String text = <span class="orange_text">file2</span>.readText();
+                </td>
+</tr>
+</table>
+<p class="amigo">- А что ещё за метод getFolder()?</p>
+<p>- По логике этот метод должен возвращать строку с именем папки, в которой находится наш файл. Но мы его тут не писали, он чисто для фона.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>7. Задачи по инициализации объектов</h2>
+</div>
+<p>- Привет, Амиго! Я уже заскучал без наших уроков.  Вот тебе пара задачек  на инициализацию объектов:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level05,lesson07,task01"></button>
+<b>1. Создать класс Friend</b><br/><br/>
+                Создать класс <span class="taskcode">Friend</span> (друг) с тремя инициализаторами (тремя методами <span class="taskcode">initialize</span>):<br/>- Имя<br/>- Имя, возраст<br/>- Имя, возраст, пол
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level05,lesson07,task02"></button>
+<b>2. Создать класс Cat</b><br/><br/>
+                Создать класс <span class="taskcode">Cat</span> (кот) с пятью инициализаторами:<br/>- Имя<br/>- Имя, вес, возраст<br/>- Имя, возраст (вес стандартный)<br/>- вес, цвет, (имя, адрес и возраст неизвестны, это бездомный кот)<br/>- вес, цвет, адрес (чужой домашний кот)<br/>
+<br/>
+                    Задача инициализатора – сделать объект <b><i>валидным</i></b>. Например, если вес неизвестен, то нужно указать какой-нибудь средний вес. Кот не может ничего не весить. То же касательно возраста. А вот имени может и не быть (null). То же касается адреса: null.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level05,lesson07,task03"></button>
+<b>3. Создать класс Dog</b><br/><br/>
+                Создать класс <span class="taskcode">Dog</span> (собака) с тремя инициализаторами:<br/>- Имя<br/>- Имя, рост<br/>- Имя, рост, цвет
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level05,lesson07,task04"></button>
+<b>4. Создать класс Circle</b><br/><br/>
+                Создать класс (<span class="taskcode">Circle</span>) круг, с тремя инициализаторами:<br/>- <span class="taskcode">centerX, centerY, radius</span> <br/>- <span class="taskcode">centerX, centerY, radius, width</span><br/>- <span class="taskcode">centerX, centerY, radius, width, color</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level05,lesson07,task05"></button>
+<b>5. Создать класс прямоугольник (Rectangle)</b><br/><br/>
+                Создать класс прямоугольник (<span class="taskcode">Rectangle</span>). Его данными будут <span class="taskcode">top, left, width, height</span> (левая координата, верхняя, ширина и высота). Создать для него как можно больше методов <span class="taskcode">initialize(…)</span><br/><br/>
+<span class="example-legacy">Примеры:</span><br/>
+<span class="example-data">
+                -   заданы 4 параметра: left, top, width, height<br/>
+                -   ширина/высота не задана (оба равны 0)<br/>
+                -   высота не задана (равно ширине) создаём квадрат<br/>
+                -   создаём копию другого прямоугольника (он и передаётся в параметрах)</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>8. Конструкторы</h2>
+</div>
+<p>- Самое время рассказать тебе о конструкторах. <span class="green_text">Всё очень просто: программисты придумали сокращённую запись создания и инициализации объекта:</span></p>
+<table class="table_task wide-table font19">
+<tr>
+<th class="collapsed"></th>
+<th width="45%">Без использования конструктора</th>
+<th>С использованием конструктора</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level05,lesson08,type01"></button></td>
+<td class="monospace_text wide-text"><pre>MyFile file = <span class="red_text">new MyFile()</span>;
+<span class="red_text">file.initialize</span>(<span class="green_text">"c:\\data\\a.txt"</span>);
+<span class="blue_text">String text = file.readText()</span>;</pre></td>
+<td class="monospace_text wide-text"><pre>MyFile file = <span class="red_text">new MyFile</span>(<span class="green_text">"c:\\data\\a.txt"</span>);
+String text = file.readText();</pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level05,lesson08,type02"></button></td>
+<td class="monospace_text wide-text"><pre>MyFile file = <span class="red_text">new MyFile()</span>;
+<span class="red_text">file.initialize</span>(<span class="green_text">"c:\\data\\"</span>, <span class="green_text">"a.txt"</span>);
+<span class="blue_text">String text = file.readText()</span>;</pre></td>
+<td class="monospace_text wide-text"><pre>MyFile file = <span class="red_text">new MyFile</span>(<span class="green_text">"c:\\data\\"</span>, <span class="green_text">"a.txt"</span>);
+<span class="blue_text">String text = file.readText()</span>;</pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level05,lesson08,type03"></button></td>
+<td class="monospace_text wide-text"><pre>MyFile file = <span class="red_text">new MyFile()</span>;
+<span class="red_text">file.initialize</span>(<span class="green_text">"c:\\data\\a.txt"</span>);
+
+MyFile file2 = <span class="red_text">new MyFile()</span>;
+<span class="red_text">file2.initialize</span>( file, <span class="green_text">"a.txt"</span>);
+<span class="blue_text">String text = file2.readText()</span>;</pre></td>
+<td class="monospace_text wide-text"><pre>MyFile file = <span class="red_text">new MyFile</span>(<span class="green_text">"c:\\data\\a.txt"</span>);
+
+
+MyFile file2 = <span class="red_text">new MyFile</span>(file, <span class="green_text">"a.txt"</span>);
+<span class="blue_text">String text = file2.readText()</span>;
+</pre></td>
+</tr>
+</table>
+<p class="amigo">- А я только с initialize закончил разбираться…</p>
+<p>- А ты внимательнее посмотри. Использование конструкторов удобнее и компактнее.</p>
+<p class="amigo">- Так компактнее, да.  Но есть вопрос: как написать в классе метод initialize я знаю, а как внутри класса написать конструктор?</p>
+<p>-  Посмотри сначала на небольшой пример:</p>
+<table class="table_task double-wide-table font18">
+<tr>
+<th class="collapsed"></th>
+<th width="54%">Без использования конструктора</th>
+<th>С использованием конструктора</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level05,lesson08,type04"></button></td>
+<td class="monospace_text wide-text" style="padding-right: 0px;"><pre style="t-font-size: 14pt;">class <b>MyFile</b>
+{
+  private String filename = null;
+
+  public <span class="green_text">void initialize</span>(String name)
+  {
+    this.filename = name;
+  }
+
+  public <span class="red_text">void initialize</span>(String folder, String name)
+  {
+    this.filename = folder + name;
+  }
+
+  public <span class="violet_text">void initialize</span>(MyFile file, String name)
+  {
+    this.filename = file.getFolder() + name;
+  }
+
+…
+}</pre></td>
+<td class="monospace_text wide-text" style="padding-right: 0px;"><pre style="t-font-size: 14pt;">class <b>MyFile</b>
+{
+  private String filename = null;
+
+  public <span class="green_text">MyFile</span>(String name)
+  {
+    this.filename = name;
+  }
+
+  public <span class="red_text">MyFile</span>(String folder, String name)
+  {
+    this.filename = folder + name;
+  }
+
+  public <span class="violet_text">MyFile</span>(MyFile file, String name)
+  {
+    this.filename = file.getFolder() + name;
+  }
+
+…
+}</pre></td>
+</tr>
+</table>
+<p>- Объявить конструктор в классе очень легко.  Конструктор - это тот же метод initialize, но с двумя отличиями:</p>
+<p>а) <span class="green_text">Имя метода-конструктора совпадает с именем класса</span> (вместо initialize).</p>
+<p>б) <span class="dred_text">У метода-конструктора нет типа</span> (никакой тип не указывается вообще).</p>
+<p class="amigo">- Фактически тот же метод initialize,  но с небольшими отличиями. Вроде понятно.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>9. Задачи на конструкторы</h2>
+</div>
+<p>- Смотрю, ты уже отдохнул. Отлично. Вот тебе пара задачек  на создание конструкторов:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level05,lesson09,task01"></button>
+<b>1. Создать класс Friend</b><br/><br/>
+                Создать класс <span class="taskcode">Friend</span> (друг) с тремя конструкторами:<br/>
+                - Имя<br/>
+                - Имя, возраст<br/>
+                - Имя, возраст, пол
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level05,lesson09,task02"></button>
+<b>2. Создать класс Cat</b><br/><br/>
+                Создать класс <span class="taskcode">Cat</span> (кот) с пятью конструкторами:<br/>
+                - Имя, <br/>
+                - Имя, вес, возраст<br/>
+                - Имя, возраст (вес стандартный)<br/>
+                - вес, цвет, (имя, адрес и возраст – неизвестные. Кот - бездомный)<br/>
+                - вес, цвет, адрес ( чужой домашний кот)<br/>
+<br/>
+                Задача конструктора – сделать объект валидным. Например, если вес не известен, то нужно указать какой-нибудь средний вес. Кот не может ничего не весить. То же касательно возраста. А вот имени может и не быть (null). То же касается адреса: null.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level05,lesson09,task03"></button>
+<b>3. Создать класс Dog</b><br/><br/>
+                Создать класс <span class="taskcode">Dog</span> (собака) с тремя конструкторами:<br/>
+                - Имя<br/>
+                - Имя, рост<br/>
+                - Имя, рост, цвет
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level05,lesson09,task04"></button>
+<b>4. Создать класс Circle</b><br/><br/>
+                Создать класс (<span class="taskcode">Circle</span>) круг, с тремя конструкторами:<br/>
+                - centerX, centerY, radius <br/>
+                - centerX, centerY, radius, width<br/>
+                - centerX, centerY, radius, width, color<br/>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level05,lesson09,task05"></button>
+<b>5. Создать класс прямоугольник (Rectangle)</b><br/><br/>
+                Создать класс прямоугольник (<span class="taskcode">Rectangle</span>). Его данными будут <span class="taskcode">top, left, width, height</span> (левая координата, верхняя, ширина и высота). Создать для него как можно больше конструкторов:<br/><br/>
+<span class="example-legacy">Примеры:</span><br/>
+<span class="example-data">
+                -   заданы 4 параметра: <span class="taskcode">left, top, width, height</span><br/>
+                -   ширина/высота не задана (оба равны 0)<br/>
+                -   высота не задана (равно ширине) создаём квадрат<br/>
+                -   создаём копию другого прямоугольника (он и передаётся в параметрах)</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>10. Лекция про классы и конструкторы, статику и видимость объектов</h2>
+</div>
+<p>-  А вот и снова я. Наши лекции просто великолепны. Ссылок на нудные лекции я тебе давать не буду. Вот тебе ссылка на превосходный материал!</p>
+<p>- Ты ещё здесь? Иди же быстрее, читай, а мне нужно в лабораторию.</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/05/20/lecture-5.html" target="_blank">Дополнительный материал для 5го уровня</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Хулио</h2>
+</div>
+<p>- Привет, Амиго! Я немного устал, давай немного отдохнём, а потом приступим к занятиям. Я тут нашёл отличное видео, как тебе? </p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-05.gif" preload="none" tabindex="0" taskkey="level05,lesson11,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-05.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=1JZnj4eNHXE" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>12. Джон</h2>
+</div>
+<p>- Здорово, боец!</p>
+<p class="amigo">- Здравия желаю, капитан Бобров!</p>
+<p>- У меня для тебя шикарная новость. Вот тебе задания для закрепления полученных навыков. Выполняй их каждый день, и твои навыки будут расти с неимоверной скоростью. Они специально разработаны для выполнения их в Intellij IDEA.</p>
+<table class="table_task">
+<tr>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>1. Три класса</b><br/><br/>
+                По аналогии с классом <span class="taskcode">Duck</span>(утка) создай классы <span class="taskcode">Cat</span>(кошка) и <span class="taskcode">Dog</span>(собака).<br/>Подумай, что должен возвращать метод <span class="taskcode">toString</span> в классах <span class="taskcode">Cat</span> и <span class="taskcode">Dog</span>?<br/>В методе <span class="taskcode">main</span> создай по два объекта каждого класса и выведи их на экран.<br/>Объекты класса <span class="taskcode">Duck</span> уже созданы и выводятся на экран.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>2. Man and Woman</b><br/><br/>
+                1. Внутри класса <span class="taskcode">Solution</span> создай <span class="taskcode">public static</span> классы <span class="taskcode">Man</span> и <span class="taskcode">Woman</span>.<br/>2. У классов должны быть поля: <span class="taskcode">name(String)</span>, <span class="taskcode">age(int)</span>, <span class="taskcode">address(String)</span>.<br/>3. Создай конструкторы, в которые передаются все возможные параметры.<br/>4. Создай по два объекта каждого класса со всеми данными, используя конструктор.<br/>5. Объекты выведи на экран в таком формате [<span class="taskcode">name + " " + age + " " + address</span>].
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>3. Создай public static классы Dog, Cat. </b><br/><br/>
+                Добавь по три поля в каждый класс, на твой выбор. <br/>
+                Создай объекты для героев мультика Том и Джерри. Так много, как только вспомнишь.<br/>
+<br/>
+<span class="example-legacy">Пример:</span><br/>
+<span class="taskcode">Mouse jerryMouse = new Mouse(“Jerry”, 12 <span class="example-data">(высота, см)</span> , 5 <span class="example-data">(длина хвоста, см)</span>)</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>4. Вывести на экран сегодняшнюю дату</b><br/><br/>
+                Вывести на экран текущую дату в аналогичном виде «<span class="taskcode">21 06 2015</span>».
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>5. Вводить с клавиатуры числа и считать их сумму</b><br/><br/>
+                Вводить с клавиатуры числа и считать их сумму, пока пользователь не введёт слово «<span class="taskcode">сумма</span>». Вывести на экран полученную сумму.
+                </td>
+</tr>
+</table>
+<p>- Те задания были для духов. Для дедушек я добавил бонусные задания повышенной сложности. Только для старослужащих. </p>
+<table class="table_task">
+<tr>
+<th></th>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button>
+<b>1. Нужно исправить программу, чтобы компилировалась и работала. </b><br/><br/>
+<u>Задача:</u> Программа вводит два числа с клавиатуры и выводит их сумму на экран.
+                </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button>
+<b>2. Нужно добавить в программу новую функциональность. </b><br/><br/>
+<span class="example-legacy">Старая Задача:</span> Программа вводит два числа с клавиатуры и выводит минимальное из них на экран. <br/>
+<span class="example-legacy">Новая задача:</span> Программа вводит пять чисел с клавиатуры и выводит минимальное из них на экран.
+                </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button>
+<b>3. Задача по алгоритмам. </b><br/><br/>
+<span class="example-legacy">Задача:</span> Написать программу, которая:<br/>1. вводит с консоли число N &gt; 0<br/>2. потом вводит N чисел с консоли<br/>3. выводит на экран максимальное из введенных N чисел.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

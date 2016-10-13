@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-29.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 700px;">
+                    Уровень 29
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>1. NamingConventions, CodeConventions</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/29/image-ru-29-06.png"/>
+<p>- Привет, Амиго! Сегодня я расскажу тебе о стилях кода и важности стилей кода.</p>
+<p>Начну с самого главного. <span class="red_text"><b>Код в Java должен быть легко читаем.</b></span> Общий подход к коду такой – код пишется один раз, а читается сто.</p>
+<p>Например, ты и еще 10 программистов занимаетесь написанием программы.  Программа пишется три года, с промежуточными релизами каждые три месяца.</p>
+<p class="amigo">- Так долго?</p>
+<p>- Это Java, детка! Как насчет Enterprise-системы, которая работает на десятке серверов и которую пишут более 6 лет около 100 человек? Бывает и такое.</p>
+<p class="amigo">- Ничего себе.</p>
+<p>- Так вот, главный критерий, главное требование к коду – он должен легко читаться другими разработчиками.</p>
+<p>В других языках программирования люди часто работают маленькими командами над маленькими задачами, поэтому у них может быть другой главный критерий, например – «Это работает? Вот и отлично»</p>
+<p>За пару лет в написанный тобой код успеют по нескольку раз внести изменения все члены команды. И каждый раз им придется разбираться,  а как же работает этот код?</p>
+<p>И <span class="red_text"><b>если код просто отлично делал свое дело, но был непонятен, то поменять его трудно.</b></span> <b>Его выкинут и напишут по-своему.</b> Поэтому, пиши код, понятный другим. Если можешь улучшить код – улучши его. <b>Если его можно улучшить, значит, его нужно улучшить!</b></p>
+<p>Если ты написал код за 15 минут и два часа улучшаешь его – ты все делаешь правильно. Сколько времени ты экономишь команде?</p>
+<p>«2 часа на разбор твоего кода» x  «100 раз, когда люди будут в нем разбираться» = 200 часов.</p>
+<p>Эти цифры взяты с потолка, но я хочу, чтобы ты понял проблему и ее масштаб. <span class="red_text"><b>Твой код создается для чтения другими программистами.</b></span> Все остальное – вторично.</p>
+<p>Код плохо работает? Исправим. Не оптимально? Оптимизируем. Не документирован? Прокомментируем.</p>
+<p><b>Код плохо читаем? Выкинуть его нафиг и написать все заново!</b></p>
+<p class="amigo">- Не думал, что это такая проблема.</p>
+<p>- Java поэтому и один из лидирующих языков программирования, что весь ее код пишется, чтобы читаться другими программистами.</p>
+<p>Теперь перейдем к вопросу номер два – «<b>А как писать максимально читаемый код?</b>».</p>
+<p>Любому понятно, когда с ним говорят на родном языке, родными знакомыми словами. Так и тут. Код легко читаем, когда программист, читающий его, с легкостью догадывается:</p>
+<p><b>А)</b> Что делает каждый метод</p>
+<p><b>Б)</b> Какой цели служит каждый класс</p>
+<p><b>В)</b> Что именно хранится в каждой переменной.</p>
+<p>Все это определяется по названию: имени класса, имени метода, имени переменной. Кроме того, есть еще стиль именования переменных. И стиль кода.</p>
+<p class="amigo">- Я готов слушать.</p>
+<p>- <b><span class="red_text">В основе программирования лежит… английский язык!</span> Хорошо написанная программа читается, как обычная техническая документация на английском языке.</b></p>
+<p><b>Начнем с имен.</b></p>
+<p>Имя метода должно кратко описывать, что этот метод делает. Тогда программист может читать программу, как простой текст.</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="100%">Программа</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16
+        </td>
+<td class="monospace_text wide-text"><br/><b>public</b> String downloadPhoto(String url)<br/>
+{<br/>
+   String resultFileName = TempHelper.createTempFileName();<br/><br/>
+
+   Downloader downloader = new SingleFileDownloader(new Url(url));<br/>
+   downloader.setResultFileName(resultFileName) <br/>
+   downloader.start();<br/>
+   <b>while</b>(downloader.isDone())<br/>
+   {<br/>
+      Thread.sleep(1000);<br/>
+    }<br/><br/>
+
+    <b>if</b> (downloader.hasError())<br/>
+          return null;<br/><br/>
+
+   return resultFileName;<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Вот как читается такая программа.</p>
+<p><b>Строка 1.</b></p>
+<p>Метод называется «downloadPhoto», похоже, что он загружает файл с фотографией из интернета. Куда загружает?  Пока неизвестно. Откуда? В параметрах метода передан url – скорее всего это и есть ссылка для загрузки.</p>
+<p><b>Строка 3.</b></p>
+<p>Объявляется переменная resultFileName, в нее ложится значение, отданное методом TempHelper.createTempFileName();</p>
+<p>Имя переменной resultFileName дословно переводится как «имя-файла-результата». Значит это локальный путь к файлу на диске, куда мы будем сохранять наш скачиваемый файл.</p>
+<p>Название TempHelper – ничего не говорит. Суффикс Helper говорит, что это разновидность утилитных классов, которые не содержат в себе серьезной бизнес логики, а используются для упрощения часто возникающих рутинных задач.</p>
+<p>Имя метода createTempFileName говорит о том, что этот метод создает и возвращает нам имя временного файла (temp-file). Temp file – это временный файл, который создается на время, и обычно удалятся после закрытия программы или раньше.</p>
+<p><b>Строка 5.</b></p>
+<p>Создается объект типа SingleFileDownloader и кладется в переменную downloader.</p>
+<p>Название переменной downloader переводится как загрузчик. Этот объект и будет загружать наш файл из интернета.</p>
+<p>В переменную downloader кладется объект типа SingleFileDownloader. Из названия можно предположить, что в программе есть несколько видов классов-загрузчиков файлов. Один из них написан для загрузки единственного файла (single file), и скорее всего можно ожидать встретить в коде и загрузчики для группы файлов с названиями вроде: MultiFileDownloader, GroupFileDownloader или DirectoryDownloader</p>
+<p><b>Строка 6.</b></p>
+<p>Объекту downloader устанавливаем в свойство resultFileName значение переменной resultFileName. Т.е. мы говорим загрузчику, куда сохранять скачиваемый им файл. Что и следовало ожидать.  Т.е. мы уже практически предсказываем код!</p>
+<p><b>Строка 7.</b></p>
+<p>Вызов метода start. Начало загрузки. Логично. Интересно, как будет происходить загрузка: кусочками, в отдельной нити или сразу до конца. Если сразу, то это может быть долго и иметь последствия.</p>
+<p><b>Строки 8-11.</b></p>
+<p>Ага. Тут мы видим обычный цикл, который ждет завершения загрузки. Объект downloder имеет свойство done («готово») и метод, который его возвращает isDone(). Т.к. метод называется isDone(), а не getDone(), то переменная done имеет тип boolean, ну или Boolean.</p>
+<p><b>Строки 13-14.</b></p>
+<p>Если в процессе скачивания произошла ошибка, то метод  downloadPhoto возвращает null. Хорошо, что он обрабатывает состояние ошибки.  Плохо, что он просто возвращает null – что за ошибка – не ясно. Лучше бы кинул исключение с информацией об ошибке.</p>
+<p><b>Строка 16.</b></p>
+<p>Возвращаем путь к локальному файлу, который содержит скачанный файл.</p>
+<p class="amigo">- Ничего себе!</p>
+<p>- Из текста этой программы абсолютно ясно, что она делает. Можно даже делать предположения, как устроена программа и какие еще классы/методы мы будем встречать.</p>
+<p class="amigo">- Теперь я понял, как важны имена.</p>
+<p>- Еще насчет имен. Очень часто можно угадать какие у объекта/класса есть методы. Вот например, если объект – коллекция, то скорее всего у него будут методы size() или count(), чтобы получить количество его элементов. Так же, вероятно, методы add(добавить) или put(вставить). Методы get/getItem, getElement   используются для получения элементов у классов-коллекций.</p>
+<p>Если переменная называется i, j ,k – скорее всего это счетчик цикла.</p>
+<p>Если переменная называется m, n – скорее всего это размер массива/коллекции.</p>
+<p>Если переменная называется name то, скорее всего она имеет тип String и содержит чье-то имя.</p>
+<p>Если класс называется FileInputStream, то он одновременно является файлом (так и есть) и потоком для чтения – InputStream (так и есть).</p>
+<p>Чем больше ты видел кода, тем легче читать чужой код.</p>
+<p>Но иногда есть код, который читать очень сложно. На этот случай есть один очень дельный совет:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Совет</th></tr>
+<tr>
+<td class="wide-text"><b>Пишите свой код так, как будто поддерживать его будет <span class="red_text">склонный к насилию психопат</span>, который <span class="red_text">знает, где вы живете</span>.</b>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Смешно и не смешно одновременно.</p>
+<p>- Теперь немного расскажу о стилях именования переменных.</p>
+<p>В Java переменным и методам стараются давать максимально информативные имена. Поэтому такие названия часто состоят из нескольких слов. Есть 4 стиля написания составных имен.</p>
+<p><b>1) Lowercase (нижний регистр)</b> – все слова с маленькой буквы. Пример:</p>
+<p><span class="green_text"><b>Green house</b></span> превращается в <span class="green_text">greenhouse</span></p>
+<p><span class="green_text"><b>Hollywood girl</b></span> превращается в <span class="green_text">hollywoodgirl</span></p>
+<p>В таком стиле пишутся названия пакетов (package).</p>
+<p><b>2)  Uppercase (верхний регистр)</b> – все слова пишутся с большой буквы, разделенные знаком подчеркивания. Примеры:</p>
+<p><span class="green_text"><b>Max value</b></span> превращается в <span class="green_text">MAX_VALUE</span></p>
+<p><span class="green_text"><b>Cats count</b></span> превращается в <span class="green_text">CATS_COUNT</span></p>
+<p>В таком стиле пишутся названия переменных-констант (final static).</p>
+<p><b>3) CamelCase (верблюжий стиль)</b> – все слова пишутся с маленькими буквами, первая буква каждого слова – большая. Примеры:</p>
+<p><span class="green_text"><b>Green house</b></span> превращается в  <span class="green_text">GreenHouse</span></p>
+<p><span class="green_text"><b>Hollywood girl</b></span> превращается в <span class="green_text">HollywoodGirl</span></p>
+<p>В таком стиле пишутся названия классов и интерфейсов.</p>
+<p><b>4) Lower CamelCase (смешанный стиль)</b>  – все слова пишутся маленькими буквами, первая буква каждого слова – большая, первая буква первого слова - маленькая. Примеры:</p>
+<p><span class="green_text"><b>Get width</b></span> превращается в  <span class="green_text">getWidth</span></p>
+<p><span class="green_text"><b>Get Hollywood girl</b></span>  name превращается в <span class="green_text">getHollywoodGirlName</span></p>
+<p>В таком стиле пишутся названий переменных и методов.</p>
+<p>Т.е. правил не так уж и много.</p>
+<p><b>1)</b> Всё пишется в Lower Camel Case.</p>
+<p><b>2)</b> Имена классов и интерфейсов – всегда с большой буквы.</p>
+<p><b>3)</b> Имена пакетов – всегда маленькими.</p>
+<p><b>4)</b> Константы - всегда большими.</p>
+<p>Есть еще пара нюансов, но в целом так и есть.</p>
+<p>Теперь насчет методов. <span class="red_text"><b>Имена методов практически всегда начинаются с глагола!</b></span> Имя метод count – плохое имя. Лучше назвать getCount(). Метод выполняет какое-то действие над объектом: <b>startDowbload</b> (начать загрузку), <b>interrupt</b> (прервать), <b>sleep</b> (спать),  <b>loadPirateMusic</b>(загрузить пиратскую музыку).</p>
+<p>Для работы со свойствами/полями объекта, как ты уже знаешь, есть getter’ы и  setter’ы. <b>getName</b>/<b>setName</b>, <b>getCount</b>/<b>setCount</b> и т.д.</p>
+<p>Единственное исключение делается для типа boolean. Для него getter пишется не через get, а через is: <b>isDone</b>, <b>isEmpty</b>. Так ближе к английскому языку.</p>
+<p class="amigo">- Т.е.  знание английского обязательно для умения программировать?</p>
+<p>- Не обязательно, но зная английский и имея пару лет опыта за плечами, ты сможешь очень быстро разбираться в чужом коде. Как насчет тратить на работу не 8 часов в день, а два? Заманчивое предложение?</p>
+<p class="amigo">- Ага!</p>
+<p>- То-то и оно. Основное требование у Java Junior  - это отличное знание основ Java – Java Core. Но чем опытнее ты становишься, тем сильнее тебе нужен английский. Чем раньше начнешь его учить – тем лучше.</p>
+<p class="amigo">- У меня еще вопрос. Почему такие разные методы для получения количества элементов?</p>
+<table class="table_example">
+<tbody><tr><th width="40%">Класс</th><th width="60%">Метод для получения количества элементов</th></tr>
+<tr>
+<td class="wide-text">String
+    </td>
+<td class="wide-text">метод <b>length</b>()
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Array
+    </td>
+<td class="wide-text">свойство <b>length</b>
+</td>
+</tr>
+<tr>
+<td class="wide-text">ArrayList
+    </td>
+<td class="wide-text">метод <b>size</b>()
+    </td>
+</tr>
+<tr>
+<td class="wide-text">ThreadGroup
+    </td>
+<td class="wide-text">метод  active<b>Count</b>()
+    </td>
+</tr>
+</tbody></table>
+<p>Во-первых, Java была придумана более 20 лет назад, когда требований вроде <b>setCount</b>/<b>getCount</b> еще не было, и в ходу был подход из языка С++  «сделай это как можно короче»</p>
+<p>Во-вторых, тут играет роль семантика английского языка. Так уж получилось, что когда говорят про массив, употребляют length, а когда про коллекцию – size.</p>
+<p>В русском языке тоже есть такие устоявшиеся выражения:</p>
+<p><b>1)</b> Тарелка на столе стоит, а на полу – лежит.</p>
+<p><b>2)</b> Ботинок на столе лежит, а на полу – стоит.</p>
+<p class="amigo">- Какая интересная лекция.</p>
+<p>- Хотелось бы рассказать больше, но боюсь, что  всего ты все равно сразу не запомнишь. Лучше давать снова по чуть-чуть.</p>
+<p>Еще хотел бы коснуться  стиля скобок {}. Есть два подхода:</p>
+<p><b>1)</b> Скобка каждый раз ставится  на новой строке</p>
+<p><b>2)</b> Открывающая скобка ставится в конце предыдущей строки, закрывающая – на новой. Такой стиль еще называют «египетскими скобками».</p>
+<p>Честно говоря – тебе выбирать, как писать. Многие пишут открывающую скобку на той же строке, многие  - на новой. Это как спор – с какого конца разбивать яйцо: с тупого или острого.</p>
+<p>Единственное, что могу посоветовать – это <b>придерживайся того же стиля, что и в проекте</b>, в котором ты работаешь. Не стоит менять чужой код, как тебе удобнее. <b>Люди несовершенны, это я тебе как доктор Билаабо говорю.</b></p>
+<p class="amigo">- Спасибо за интересную лекцию, Билаабо. Пойду обдумывать услышанное.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>2. Задачи на NamingConventions (исправить что-то, чтобы соответствовало стандарту)</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level29,lesson02,task01"></button><b>1. Рефакторинг в соответствии с Naming and Code Convention</b><br/><br/>
+                Исправить код в соответствии с Naming and Code Convention (Shift+F6 для рефакторинга)<br/>
+		Не оставлять комментариев, проверяется строгое соответствие стандарту<br/><br/>
+
+		Подсказка: IDEA не умеет правильно переименовывать имена классов, если меняется только регист.<br/>
+		Переименуйте имя класса во вспомогательное имя, а потом в это же в правильном регистре.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level29,lesson02,task02"></button><b>2. Рефакторинг в соответствии с Naming and Code Convention 2</b><br/><br/>
+                Исправить код в соответствии с Naming and Code Convention (Shift+F6 для рефакторинга)<br/>
+		Не оставлять комментариев, проверяется строгое соответствие стандарту
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Autoboxing (imutables)</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/29/image-ru-29-05.png"/>
+<p>- Привет, Амиго!</p>
+<p>Сегодня я расскажу про <b>autoboxing</b>. Box – это коробка. <b>Boxing</b> – упаковка. А <b>AutoBoxing</b> – это соответственно – автоматическая упаковка.</p>
+<p>Насколько ты помнишь, в Java есть как типы, унаследованные от класса Object, так и примитивные типы. Но, как оказалось, такая удобная вещь как коллекции и generic’и могут работать только с типами, унаследованными от Object.</p>
+<p>Тогда было приятно решение сделать не примитивный аналог каждого примитивного типа.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Примитивный тип</th><th width="50%">Не-примитивный аналог</th></tr>
+<tr>
+<td class="wide-text wide-text">byte
+    </td>
+<td class="wide-text">Byte
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">short
+    </td>
+<td class="wide-text">Short
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">int
+    </td>
+<td class="wide-text">Integer
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">long
+    </td>
+<td class="wide-text">Long
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">float
+    </td>
+<td class="wide-text">Float
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">double
+    </td>
+<td class="wide-text">Double
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">boolean
+    </td>
+<td class="wide-text">Boolean
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">char
+    </td>
+<td class="wide-text">Character
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">void
+    </td>
+<td class="wide-text">Void
+    </td>
+</tr>
+</tbody></table>
+<p>Но каждый раз преобразовывать эти типы друг в друга оказалось не очень удобно:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text">int x = 3;<br/>
+    Integer y = new Integer(x+1);<br/>
+    int z = y.intValue();
+    </td>
+</tr>
+</tbody></table>
+<p>Особенно, если работать сразу с коллекциями:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>int[] numbers = new int[10];</b><br/>
+<b>ArrayList&amp;ltInteger&amp;gt list = new ArrayList&amp;ltInteger&amp;gt();</b><br/><br/>
+<b>for (int i=0;i<numbers.length><br/>
+{<br/>
+    <b>list.add( new Integer(i));</b><br/>
+}
+    </numbers.length></b></td>
+</tr>
+</tbody></table>
+<p>Поэтому разработчики Java придумали автоматическую «упаковку» (boxing) и «распаковку» (unboxing)  примитивных типов в их непримитивные аналоги.</p>
+<p>Вот как это работает:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Видимый код</th><th width="50%">Что происходит на самом деле</th></tr>
+<tr>
+<td class="monospace_text wide-text">int x = 3;<br/>
+    Integer y = x+1;
+    </td>
+<td class="monospace_text">int x = 3;<br/>
+    Integer y = Integer.valueOf( x+1);
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int z = y;
+    </td>
+<td class="monospace_text">int z = y.<b>intValue</b>();
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Boolean b = Boolean.FALSE;<br/>
+    boolean a = b;
+    </td>
+<td class="monospace_text">Boolean b = Boolean. FALSE;<br/>
+    boolean a = b.<b>booleanValue</b>();
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Integer x = null;<br/>
+    int y = x;
+    </td>
+<td class="monospace_text">Integer x = null;
+    int y = x.<b>intValue</b>(); <span class="grey_text">//кинется исключение</span>
+</td>
+</tr>
+</tbody></table>
+<p>Все просто. Ты можешь присваивать типы int и Integer друг-другу, об остальном позаботится компилятор.</p>
+<p class="amigo">- Это очень удобно.</p>
+<p>- Ага. Но есть нюансы, о которых я расскажу дальше.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>4. Number (Integer Long, Byte)</h2>
+</div>
+<p>- Раз уж разработчики могли придумывать классы, которые описывают числа, они решили подойти к этому делу творчески, как настоящие разработчики.</p>
+<p>Во-первых,  придумали абстрактный класс Number (число),  от которого унаследованы типы Byte, Short,Integer, Long, Float, Double. У него есть методы, которые помогают преобразовывать числа к другим числовым типам.</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Методы класса Number</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">int <b>intValue</b>()
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">long <b>longValue</b>()
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">float <b>floatValue</b>()
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">double <b>doubleValue</b>()
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">byte <b>byteValue</b>()
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">short <b>shortValue</b>()
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Действительно, ведь уже не напишешь:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text">Long x = 100000;<br/>
+    Integer y = (Integer) x;
+    </td>
+</tr>
+</tbody></table>
+<p>- Ага. Типы то не примитивные. Поэтому используют методы  класса Number:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text">Long x = 100000;<br/>
+    Integer y = x.<b>intValue</b>();
+    </td>
+</tr>
+</tbody></table>
+<p>Но тут есть еще пара моментов. Т.к. Integer – это не int, то объекты такого типа нельзя сравнивать классическим знаком «==».</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Сравнение примитивных типов</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>int x = 500;<br/>
+    int y  = 500;</b><br/>
+    x == y; <span class="grey_text">//true</span>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Сравнение непримитивных типов:</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>Integer x = 500;<br/>
+    Integer y  = 500;</b><br/>
+    x == y; <span class="grey_text">//false</span> <br/>
+    x.equals(y); <span class="grey_text">//true</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Точно. Как-то я сразу об этом не подумал.</p>
+<p>- Но и это еще не все.</p>
+<p class="amigo">- Господи, что же там еще-то?</p>
+<p>- Когда мы присваиваем переменной типа Integer значение типа int, при этом вызывается метод Integer.valueOf:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Что происходит на самом деле</th></tr>
+<tr>
+<td class="monospace_text wide-text">Integer x = 5;
+    </td>
+<td class="monospace_text">Integer x = Integer.valueOf(5);
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ага. Я это понял еще примером выше.</p>
+<p>- Так вот, функция valueOf не всегда создает новый объект типа Integer.</p>
+<p class="amigo">- Т.е. как это не всегда?</p>
+<p>- Она кэширует значения от -128 до 127.</p>
+<table class="table_example">
+<tbody><tr><th width="32%">Код</th><th width="43%">Что происходит на самом деле</th><th width="25%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">Integer x = 300;<br/>
+    Integer y = 300;<br/>
+    Integer z = 300;
+    </td>
+<td class="monospace_text">Integer x = Integer.valueOf(300);<br/>
+    Integer y = Integer.valueOf(300);<br/>
+    Integer z = Integer.valueOf(300);
+    </td>
+<td class="wide-text">Все переменные x,y,z содержат ссылки на разные объекты
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Integer x = 100;<br/>
+    Integer y = 100;<br/>
+    Integer z = 100;
+    </td>
+<td class="monospace_text">Integer x = Integer.valueOf(100);<br/>
+    Integer y = Integer.valueOf(100);<br/>
+    Integer z = Integer.valueOf(100);
+    </td>
+<td class="wide-text">Все переменные x,y,z содержат ссылки на один и тот же объект.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Integer x = new Integer(10)<br/>
+    Integer y = new Integer(10)<br/>
+    Integer z = 10;<br/>
+    Integer t = 10;
+    </td>
+<td class="monospace_text">Integer x = new Integer(10)<br/>
+    Integer y = new Integer(10)<br/>
+    Integer z = Integer.valueOf(10);<br/>
+    Integer t = Integer.valueOf(10);
+    </td>
+<td class="wide-text">Все переменные z,t содержат ссылки на один и тот же объект.
+    </td>
+</tr>
+</tbody></table>
+<p>Т.е. ситуация такая:</p>
+<p><b>1)</b> Если мы пишем new Integer(), то гарантированно создается новый объект.</p>
+<p><b>2)</b> Если мы вызываем Integer.valueOf(), явно или при <b>autoboxing</b>, то этот метод может вернуть для нас как новый объект, так и отдать объект из кэша, если переданное число лежит в диапазоне от -128 до 127.</p>
+<p class="amigo">- А что в этом такого страшного, если метод вернет объект из кэша?</p>
+<p>- Да ничего. Просто нужно знать, что иногда, когда этого не ожидаешь, объекты могут быть равны. Там с равенством вообще все сложно. Если мы сравниваем примитивный тип и не примитивный, то они сравниваются как примитивы:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример проблемы со сравнением:</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>int x = 300;<br/>
+    Integer y = 300;<br/>
+    Integer z = 300;</b><br/><br/>
+<b>x==y;</b> <span class="grey_text">//true (сравниваются как примитивы по значению)</span><br/>
+<b>x==z;</b> <span class="grey_text">//true (сравниваются как примитивы по значению)</span><br/>
+<b>y==z;</b> <span class="grey_text">//false (сравниваются по ссылке)</span>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Этот пример еще интереснее. Тут уже в дело вступает кэш</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>int x = 100;<br/>
+    Integer y = 100;<br/>
+    Integer z = 100;</b><br/><br/>
+<b>x==y;</b> <span class="grey_text">//true (сравниваются как примитивы по значению)</span><br/>
+<b>x==z;</b> <span class="grey_text">//true (сравниваются как примитивы по значению)</span><br/>
+<b>y==z;</b> <span class="grey_text">//true (сравниваются по ссылке, ссылаются на один и тот же объект)</span>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">А тут кэш уже не работает</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>int x = 100;<br/>
+    Integer y = new Integer(100);<br/>
+    Integer z = 100;</b><br/><br/>
+<b>x==y;</b> <span class="grey_text">//true (сравниваются как примитивы по значению)</span><br/>
+<b>x==z;</b> <span class="grey_text">//true (сравниваются как примитивы по значению)</span><br/>
+<b>y==z;</b> <span class="grey_text">//false (сравниваются по ссылке, ссылаются на различные объекты)</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- М-да. И как все это запомнить…</p>
+<p>- Не нужно это запоминать. Надо просто понять, как это все устроено и что происходит на самом деле, когда в дело вступает примитивный тип и его непримитивный аналог.</p>
+<p>Еще советую тебе посмотреть на методы класса Integer, у него довольно много хороших и полезных методов. Ты даже одним из них часто пользовался.</p>
+<p class="amigo">- Ага. Помню. Integer.parseInt();</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>5. Задачи на автобоксинг и числа</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/29/image-ru-29-04.png"/>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level29,lesson05,task01"></button><b>1. И еще раз рефакторинг</b><br/><br/>
+                1. Исправить код в соответствии с Naming and Code Convention (Shift+F6 для рефакторинга)<br/>
+		2. Просмотрите методы класса <span class="taskcode">ConcurrentMap</span>.<br/>
+		3. В строке "<span class="taskcode">String previousEntry = null;</span>" у <span class="taskcode">concurrentMap</span> вызовите метод,<br/>
+		который вставит пару (<span class="taskcode">randomInt</span>, <span class="taskcode">text</span>) только для ключа, которого нет в <span class="taskcode">concurrentMap</span>.<br/>
+		Метод должен возвращать предыдущее значение либо <span class="taskcode">null</span> для новой пары.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level29,lesson05,task02"></button><b>2. Особенности автобоксинга</b><br/><br/>
+                Исправьте ошибку в методе <span class="taskcode">getValueByIndex</span>.<br/>
+		Читайте доп. статью про особенности автобоксинга.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>6. Boolean</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Ким.</p>
+<p>- Я тебе расскажу про тип Boolean. Это тоже «обертка» над типом boolean и он прост как доска. Немного упрощенный код класса Boolean:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class Boolean<br/>
+{<br/>
+     public static final Boolean</b> TRUE <b>= new Boolean(true);<br/>
+     public static final Boolean</b> FALSE <b>= new Boolean(false);<br/><br/>
+
+     private final boolean <span class="red_text">value</span>;<br/><br/>
+    
+     public Boolean(boolean value) <br/>
+     {<br/>
+          <span class="red_text">this.value</span> = value;<br/>
+     }<br/><br/>
+
+     public boolean booleanValue() <br/>
+     {<br/>
+          return <span class="red_text">value</span>;<br/>
+     }<br/><br/>
+
+     public static Boolean valueOf(boolean b) <br/>
+     {<br/>
+          return (b ? TRUE : FALSE);<br/>
+     }<br/>
+}</b>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Т.е. класс просто является «оберткой» над типом boolean.</p>
+<p>- Ага. А еще у него есть две константы TRUE и FALSE, которые являются аналогами примитивных значений true/false.</p>
+<p>С автобоксингом у него тоже все просто:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Что происходит на самом деле</th></tr>
+<tr>
+<td class="monospace_text wide-text">Boolean a = true;<br/>
+    Boolean b = true;<br/>
+    Boolean c = false;<br/>
+    boolean d = a;
+    </td>
+<td class="monospace_text wide-text">Boolean a = Boolean.valueOf(true);<br/>
+    Boolean b = Boolean.valueOf(true);<br/>
+    Boolean c = Boolean.valueOf(false);<br/>
+    boolean d = a.booleanValue();
+    </td>
+</tr>
+</tbody></table>
+<p>А вот как происходят сравнения между типами boolean и Boolean:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>boolean a = true;</b><br/>
+<b>Boolean b = true;</b> <span class="grey_text">//будет равен Boolean.TRUE</span><br/>
+<b>Boolean c = true;</b> <span class="grey_text">//будет равен Boolean.TRUE</span><br/><br/>
+<b>a == b;</b> <span class="grey_text">//true (сравниваются как примитивы по значению)</span><br/>
+<b>a == c;</b> <span class="grey_text">//true (сравниваются как примитивы по значению)</span><br/>
+<b>b == c;</b> <span class="grey_text">//true (сравниваются по ссылке, но указывают на один и тот же объект)</span>
+</td>
+</tr>
+</tbody></table>
+<p>Если очень нужно создать независимый объект Boolean, то надо создать его явно:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>boolean a = true;</b><br/>
+<b>Boolean <span class="red_text">b</span> = <span class="red_text">new Boolean(true)</span>;</b> <span class="grey_text">//новый объект Boolean</span><br/>
+<b>Boolean c = true;</b> <span class="grey_text">//будет равен Boolean.TRUE</span><br/><br/>
+<b>a == b;</b> <span class="grey_text">//true (сравниваются как примитивы по значению)</span><br/>
+<b>a == c;</b> <span class="grey_text">//true (сравниваются как примитивы по значению)</span><br/>
+<b>b == c;</b> <span class="grey_text">//false (сравниваются по ссылке, указывают на различные объекты)</span>
+</td>
+</tr>
+</tbody></table>
+<p>Собственно на этом все.</p>
+<p class="amigo">- Да, твои лекции покороче, чем  у Билаабо.</p>
+<p class="amigo">А можно использовать Boolean внутри if ?</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text">Boolean less = (2
+<b>if</b>  (less)<br/>
+ {<br/>
+   ….<br/>
+ }
+    </td>
+</tr>
+</tbody></table>
+<p>- Да, только не забудь, что если less будет null, то выкинется исключение NullPointer.</p>
+<p class="amigo">- Да,  я это уже понял. Только не держу все время в голове.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>7. Задачи на автобоксинг Boolean</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/29/image-ru-29-03.png"/>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level29,lesson07,task01"></button><b>1. Странные ошибки О_о</b><br/><br/>
+                Исправьте 2 ошибки:<br/>
+		1) возникновение исключения<br/>
+		2) подвисание<br/>
+		Сделайте минимальные изменения.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level29,lesson07,task02"></button><b>2. Особенности автобоксинга - 2</b><br/><br/>
+                Исправьте ошибку реализации, приводящую к <span class="taskcode">NullPointerException</span>, в методе <span class="taskcode">getValue</span>.<br/>
+		Читайте доп. статью про особенности автобоксинга.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>8. Character</h2>
+</div>
+<p>- Привет, Амиго! Это снова я. Хотела тебе рассказать еще об одном достаточно простом классе-обёртке. Сегодня речь пойдет о Character – обертка над char.</p>
+<p>Этот класс тоже довольно-таки прост.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text"><b>class Character<br/>
+{<br/>
+     private final char <span class="red_text">value</span>;<br/><br/>
+
+     Character(char value) <br/>
+    {<br/>
+          <span class="red_text">this.value</span> = value;<br/>
+     }<br/><br/>
+
+     public char charValue() <br/>
+    {<br/>
+          return <span class="red_text">value</span>;<br/>
+     }<br/><br/>
+
+     static final Character <span class="green_text">cache</span>[] = new Character[127 + 1];<br/><br/>
+    
+     public static Character valueOf(char c)<br/> 
+     {<br/>
+          if (c  
+               return <span class="green_text">cache</span>[(int)c];<br/><br/>
+
+          return new Character(c);<br/>
+     }<br/><br/>
+
+     public int hashCode() <br/>
+    {<br/>
+          return (int)<span class="red_text">value</span>;<br/>
+     }<br/><br/>
+
+     public boolean equals(Object <span class="orange_text">obj</span>) <br/>
+    {<br/>
+          if (<span class="orange_text">obj</span> instanceof Character) <br/>
+         {<br/>
+               return <span class="red_text">value</span> == <span class="orange_text">((Character)obj).charValue()</span>;<br/>
+          }<br/>
+          return false;<br/>
+     }<br/>
+}</b>
+</td>
+</tr>
+</tbody></table>
+<p>В нем есть:</p>
+<p><b>1)</b> Конструктор, который принимает внутреннее значение и метод charValue, который его возвращает.</p>
+<p><b>2)</b> Метод valueOf, который возвращает новые объекты Character, но кэширует объекты со значениями от 0 до 127. Как в Integer, Short и Byte.</p>
+<p><b>3)</b> Методы hashCode() &amp; equals – тут нас тоже ничем не удивишь.</p>
+<p>А еще в нем есть много полезных методов (не показаны выше). Некоторые из них я тебе сейчас перечислю:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>isDefined</b>(char)
+    </td>
+<td class="wide-text">Является ли символ символом Unicode?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>isDigit</b>(char)
+    </td>
+<td class="wide-text">Является ли символ цифрой?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>isISOControl</b>(char)
+    </td>
+<td class="wide-text">Является ли символ управляющим?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>isLetter</b>(char)
+    </td>
+<td class="wide-text">Является ли символ буквой?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>isJavaLetterOrDigit</b>()
+    </td>
+<td class="wide-text">Является ли символ буквой или цифрой?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>isLowerCase</b>(char)
+    </td>
+<td class="wide-text">Это символ в нижнем регистре (строчная буква)?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>isUpperCase</b>(char)
+    </td>
+<td class="wide-text">Это символ в верхнем регистре (заглавная буква)?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>isSpaceChar</b>(char)
+    </td>
+<td class="wide-text">Является ли символ пробелом или его аналогом (есть много невидимых символов)?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>isTitleCase</b>(char)
+    </td>
+<td class="wide-text">Является ли символ титульным?
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Спасибо, Ким, думаю, некоторые из этих методов мне точно пригодятся.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>9. Задачи на автобоксинг Character</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/29/image-ru-29-02.png"/>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level29,lesson09,task01"></button><b>1. Этот странный BigDecimal</b><br/><br/>
+                Исправьте ошибку реализации, приводящую к погрешности вычисления, в методе <span class="taskcode">getValue</span>.<br/>
+		Сигнатуру метода не менять. Округление не использовать.<br/>
+		Читайте доп. статью про особенности автобоксинга.
+        </td></tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>2. Кеширование</b><br/><br/>
+                В <span class="taskcode">CacheComputeManager</span> реализуйте логику пустого метода.<br/>
+		Догадайтесь, что он должен делать по названию метода и по логике класса.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>10. Void и др.</h2>
+</div>
+<p>- Привет, Амиго! И снова маленькая и интересная тема. Тип Void.</p>
+<p class="amigo">- А зачем может понадобиться такой тип? Ну, c void-то понятно. Чтобы привести к общему знаменателю функции и процедуры. Теперь у нас нет процедур, зато есть функции, которые возвращают void (ничего).</p>
+<p>- Ага. А ты помнишь, недавно Элли тебе рассказывала про интерфейс-шаблон Callable&amp;ltT&amp;gt?</p>
+<p class="amigo">- Ага.</p>
+<p>- А что туда нужно передать в качестве типа-параметра тоже помнишь?</p>
+<p class="amigo">- Да, тип результата:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример задания, которое ничего не делает:</th></tr>
+<tr>
+<td class="monospace_text"><b>class  EmptyJob</b> implements Callable&amp;ltString&amp;gt<br/>
+{<br/>
+     <b>public String</b> call() <b>throws Exception</b><br/>
+     {<br/>
+          <b>return null;</b><br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>- Ага. А если тебе нужно, чтобы метод call возвращал значение int? Как тогда?</p>
+<p class="amigo">- Теперь я знаю, что для этого есть autoboxing. Я просто передам Integer, и все будет работать как часы: </p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример задания, которое ничего не делает:</th></tr>
+<tr>
+<td class="monospace_text"><b>class  EmptyJob</b> implements Callable&amp;ltInteger&amp;gt<br/>
+{<br/>
+     <b>public Integer</b> call() <b>throws Exception</b><br/>
+     {<br/>
+          <b>return null;</b><br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>- Отлично. А если метод ничего не должен возвращать?</p>
+<p class="amigo">- Я понял твою мысль. Тогда мы используем Void как аналог void?</p>
+<p>- Ага.</p>
+<p class="amigo">- А не проще сделать просто Object и возвращать null.</p>
+<p>- Иногда, но не всегда.</p>
+<p>Ты знаешь, что там имелся в виду void, а ты написал Object, но другой программист может этого и не знать и будет думать, а почему это ты возвращаешь null.</p>
+<p>Или код, вызывающий этот метод будет ожидать значения в качестве результата.</p>
+<p>А когда написано Void то всем сразу понятно, что это – обертка над void, хотя возвращать null все  же придётся.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример задания, которое ничего не делает:</th></tr>
+<tr>
+<td class="monospace_text"><b>class  EmptyJob</b> implements Callable&amp;ltVoid&amp;gt<br/>
+{<br/>
+     <b>public Void</b> call() <b>throws Exception</b><br/>
+     {<br/>
+          <b>return null;</b><br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Гм. Действительно, метод, который всегда возвращает null, внушает некоторые сомнения. А метод, который объявлен Void, может это делать без лишних пояснений.</p>
+<p class="amigo">Читабельность кода - прежде всего. Мне нравится Java!</p>
+<p>- Отлично. Рада, что тебе понравилось. На сегодня закончим.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Учимся гуглить. (Как настроить IDEA на определенные конвенции, Ctrl+Alt+L)</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/29/image-ru-29-01.png"/>
+<p>- Привет, Амиго!</p>
+<p>Продолжаем наши уроки – учимся гуглить.</p>
+<p>Вот тебе несколько заданий:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Задания на поиск в интернете:</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Как средствами Intellij IDEA переименовать(rename) переменную?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Как средствами Intellij IDEA сделать замену(replace) одного кода на другой? 
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Как средствами Intellij IDEA сделать так, чтобы переменная, на которой стоит курсор, подсвечивалась во всем коде?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Как средствами Intellij IDEA переименовать метод?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Как средствами Intellij IDEA переименовать класс?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Как средствами Intellij IDEA обернуть часть кода в try-catch?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Как средствами Intellij IDEA быстро создать конструктор?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Как средствами Intellij IDEA создать getter’ы и setter’ы?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Как средствами в Intellij IDEA реализовать (implements) недостающие методы класса?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Как средствами Intellij IDEA переопределить методы класса-родителя?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>12. Профессор дает доп. материал</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Вот тебе дополнительный материал по теме.</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-29.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>13. Хулио</h2>
+</div>
+<p>- Привет, Амиго. Ты почему такой грустный?</p>
+<p class="amigo">- Здравствуй.  Не могу решить несколько  задач.</p>
+<p>- А знаешь  что я  делаю когда мне грустно?</p>
+<p class="amigo">- Что?</p>
+<p>- Смотрю видео.</p>
+<p class="amigo">- Отличная идея.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-29.gif" preload="none" tabindex="0" taskkey="level29,lesson13,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-29.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=MRuhy3QFOIA" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>14. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Что такое autoboxing?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Зачем используется autoboxing?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Альтернативы autoboxing?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Типы-обертки для примитивных типов  mutable или immutable?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Как примитивные типы приводятся к непримитивным аналогам?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Как непримитивные типы приводятся к примитивным?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Как сравниваются примитивные и непримитивные типы?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Всегда ли создается новый объект при операции autoboxing?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Как работает кэширование при операции autoboxing?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Для каких типов и/или значений работает кэширование?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>15. Большая задача</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Здравия желаю, Капитан Бобров!</p>
+<p>- Ты чувствуешь этот запах, боец? </p>
+<p class="amigo">- Никак нет.</p>
+<p>- Скорее всего, запах доносится из твоего терминала. Сейчас посмотрим, чем ты тут занят.</p>
+<p class="amigo">- Что? Как может пахнуть код?</p>
+<p>- Да, пахнуть определенно не может... а вот пованивать — запросто.</p>
+<p class="amigo">- Капитан, я тут разрабатываю новую систему управления персоналом корабля. Вот, проект практически готов.</p>
+<p>- Ну что же, пришло твое время постичь Дзэн в рефакторинге. Только так ты сможешь очистить свой код. Обратись за заданием к агенту Intellij IDEA, там получишь все инструкции.</p>
+<p class="amigo">- Есть, идти выполнять приказ.</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/29/image-ru-29-big01.jpg"/>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

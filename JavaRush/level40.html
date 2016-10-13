@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:0px;margin-right: 0px;   background: url(images/profile/web-bender-40.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 250px;margin-left: -500px;">
+                    Уровень 40
+                </div>
+</div>
+</div>
+<br/>
+<!--<div class="line"></div>-->
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>1. IP-adress,Domain, URL</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Билаабо!</p>
+<p class="amigo">Что нового расскажешь сегодня?</p>
+<p>- Много всего. Но начать думаю с работы с сетью и интернетом. Интересно?</p>
+<p class="amigo">- Ага. Галактический Интернет – это крутая вещь.</p>
+<p>- Вот, но начнем с истории. В начале 21 века дела обстояли таким образом…</p>
+<p><span class="violet_text">У каждого компьютера подключенного к интернету есть его уникальный номер. В качестве номера используется обычное четырехбайтовое число. Такой номер принято называть <b>IP-адресом</b>.</span></p>
+<p>Но, т.к. память у людей плохая и им сложно запомнить что-то типа 2108458776, они частенько записывают его байты отдельно.</p>
+<p>Если разбить четырехбайтовое число 2108458776 на отдельные байты, то получится  такое число «125.172.135.24». <span class="orange_text">Каждый байт, как ты помнишь, состоит из 8-и битов и может содержать числа от 0 до 255.</span></p>
+<p class="amigo">- Т.е. это одна и та же запись числа?</p>
+<p>- Да. Просто более легкая для запоминания (у людей) форма записи четырёхбайтового числа.</p>
+<p>Кстати, идея выбрать всего 4 байта вскоре сыграла с ними злую шутку. Количество устройств, подключенных к интернету, выросло так быстро,  что скоро свободные номера закончились.</p>
+<p class="amigo">- И как они вышли из этой ситуации?</p>
+<p>- По-людски. Хе-хе.</p>
+<p><span class="violet_text">Они придумали новый стандарт IP-адреса, гордо названный IP v6 – IP-address version 6.</span></p>
+<p>В нем, в отличие от обычного IP-адреса (который называют IP v4), для уникального номера используются на 4 байта, а 16.</p>
+<p>Ты только подумай, <span class="orange_text">люди не могли запомнить 10 цифр в обычном номере (как 2108458776), для чего им пришлось разбить на 4 части, а тут придумали номера, состоящие из 16 байт.</span></p>
+<p class="amigo">- Да, иногда люди такие странные.</p>
+<p>- Ага. Люди они и есть люди.</p>
+<p>Хотя они выкрутились и из этой ситуации.</p>
+<p>Им надоело запоминать цифры, и они решили заменить их словами.</p>
+<p class="amigo">- Это как это? А можно пример?</p>
+<p>Конечно: <span class="dred_text">web.mail.ru</span>, <span class="green_text">google.com.ua</span>, <span class="violet_text">new.books.amazon.com</span>, …</p>
+<p><b>Такое имя называется доменом.</b></p>
+<p>Для того чтобы такой интернет работал правильно, была придумана специальная таблица – DNS (Domain Name System), в которой для каждого доменного имени хранился его IP-адрес.</p>
+<p>Вот как это работает.</p>
+<p><b>1)</b> Пользователь вводит в браузере адрес, например, <span class="dred_text">web.mail.ru</span></p>
+<p><b>2)</b> Браузер обращается к DNS и по доменному имени получает IP-адрес.</p>
+<p><b>3)</b> Поэтому IP-адресу отправляется запрос, содержащий нужную ссылку(URL)  </p>
+<p class="amigo">- Выглядит не очень просто.</p>
+<p>- Но у такого подхода есть и несколько преимуществ:</p>
+<p><span class="violet_text">1) Люди легко запоминают словесные имена</span></p>
+<p><span class="violet_text">2) Доменные имена можно строить в виде дерева, добавляя в начале имени поддомены. Точь-в-точь, как package в Java. </span></p>
+<p><span class="violet_text">3) Если надо сменить IP-адрес веб-сервера, то достаточно поменять запись в DNS, и все будет работать как раньше, а пользователям не придется учить новый адрес.</span></p>
+<p>Выглядит эта DNS примерно так:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Domain Name</th><th width="50%">IP-Address</th></tr>
+<tr>
+<td class="wide-text">mail.ru
+    </td>
+<td class="wide-text">128.35.36.189
+    </td>
+</tr>
+<tr>
+<td class="wide-text">web.mail.ru
+    </td>
+<td class="wide-text">145.12.17.13
+    </td>
+</tr>
+<tr>
+<td class="wide-text">new.mail.ru
+    </td>
+<td class="wide-text">192.155.15.3
+    </td>
+</tr>
+<tr>
+<td class="wide-text">google.com
+    </td>
+<td class="wide-text">92.117.151.100
+    </td>
+</tr>
+<tr>
+<td class="wide-text">google.ru
+    </td>
+<td class="wide-text">193.168.0.1
+    </td>
+</tr>
+<tr>
+<td class="wide-text">docs.google.com
+    </td>
+<td class="wide-text">217.12.222.1
+    </td>
+</tr>
+<tr>
+<td class="wide-text">...
+    </td>
+<td class="wide-text">
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Понятненько.</p>
+<p>- Ну, домен – это имя компьютера, но нам ведь нужен не компьютер, а то, что в нем лежит. Для этого используют ссылки (URL)</p>
+<p>Вначале URL фактически представлял собой ссылку на файл на чужом компьютере. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="wide-text"><b><span class="dblue_text">http</span>:</b>//<span class="green_text"><b>info.javarush.ru</b></span>/<span class="red_text"><b>user/info/profile.html</b></span>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Описание</th></tr>
+<tr>
+<td class="wide-text"><span class="dblue_text">http</span> – это протокол – стандарт общения клиента и сервера<br/>
+<span class="green_text">info.javarush.ru</span> –доменное имя компьютера. <br/>
+<span class="dred_text">user/info/profile.html</span> – это путь к файлу на компьютере
+    </td>
+</tr>
+</tbody></table>
+<p><span class="violet_text">В самом начале развития сети web-сервер умел только отдавать файлы по урлу(ссылке), которые у него где-то хранились. URL фактически был глобальным путем к файлу (имя компьютера + путь).</span></p>
+<p>Затем, когда веб-сервера начали сами генерировать отдаваемые файлы, смысл урла немного поменялся, и он стал запросом к web-серверу.  В него так же добавились параметры запросы.</p>
+<p><span class="green_text">Сегодня уже редко увидишь расширение файла в конце url. Современные url – это просто некоторая уникальная ссылка с параметрами.</span> Больше похоже на вызов метода, а не на глобальный адрес файла.</p>
+<p>Современный классический Url выглядит так:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Разбор ссылки</th></tr>
+<tr>
+<td class="wide-text"><b><span class="orange_text">http</span>:</b>//<span class="red_text"><b>javarush.ru</b></span>/<b><span class="dblue_text">alpha/api/contacts</span>?</b><span class="green_text"><b>userid=13&amp;fileter=none&amp;page=3</b></span>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Описание  частей  ссылки</th></tr>
+<tr>
+<td class="wide-text"><span class="dred_text">javarush.ru</span> – это <b>домен</b> - уникальное имя (адрес) компьютера в интернете
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><span class="orange_text">http</span> - это <b>протокол</b> (стандарт) взаимодействия клиента и сервера
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><span class="dblue_text">alpha/api/contacts</span> – запрос к веб-серверу / запрос веб-страницы на сервере
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><span class="green_text">userid=13 &amp; fileter=none &amp; page=3</span> – параметры запроса
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ага, помню. Недавно ты мне уже рассказывал про ссылки.</p>
+<p class="amigo">И про порты тоже. На примере многоквартирного дома.</p>
+<p class="amigo">Лучше расскажи мне, что такое http. А то везде написано – протокол, а что это такое – не ясно.</p>
+<p>- Ок. Сейчас расскажу.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/40/image-ru-40-05.png"/>
+<p><b><span class="red_text">HTTP</span> – это <span class="red_text">H</span>yper<span class="red_text">T</span>ext<span class="red_text">T</span>ransport<span class="red_text">P</span>rotocol</b> – протокол для передачи гипертекста.</p>
+<p class="amigo">- А что такое гипертекст?</p>
+<p>- Это HTML.</p>
+<p><b>Протокол</b>, это грубо говоря, <b>стандарт взаимодействия. В нем описано, какие запросы можно посылать веб-серверу и в каком формате, и как этот веб-сервер должен отвечать.</b></p>
+<p>Вкратце дело обстоит таким образом. <span class="violet_text">Между клиентом и серверам пересылаются обычные текстовые файлы, ну, или если хочешь – большие куски текста.</span></p>
+<p>К серверу приходит запрос (<b>request</b>), и на каждый запрос сервер отдает ответ (<b>response</b>).</p>
+<p>Вот примеры таких запроса и ответа:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Запрос (Request)</th></tr>
+<tr>
+<td class="monospace_text"><span class="blue_text">GET</span> <span class="dred_text">alpha/api/contacts</span> <span class="grey_text">HTTP/1.1</span><br/>
+Host: <span class="red_text">javarush.ru</span><br/>
+<span class="green_text">User-Agent: Mozilla/5.0 (X11; U; Linux i686; ru; rv:1.9b5) Gecko/2008050509 Firefox/3.0b5</span><br/>
+<span class="violet_text">Accept: text/html</span><br/>
+<span class="grey_text">Connection: close</span>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Описание</th></tr>
+<tr>
+<td class="wide-text"><span class="blue_text">GET</span>   – подтип запроса<br/>
+<span class="dred_text">alpha/api/contacts</span>   – запрос к веб-серверу<br/>
+<span class="grey_text">HTTP/1.1</span>                – версия протокола – HTTP/1.1<br/>
+Host: <span class="red_text">javarush.ru</span>    – доменное имя <br/>
+<span class="green_text">User-Agent: Mozilla/5…</span> – уникальное имя браузера<br/>
+<span class="violet_text">Accept: text/html</span>  – тип запрашиваемого документа: HTML<br/>
+<span class="grey_text">Connection: close</span>  – закрыть соединение сервером, после обработки запроса.
+    </td>
+</tr>
+</tbody></table>
+<p>Первая строка – это фактически запрос. Затем идут дополнительные параметры запроса, так называемые «заголовки запроса»  (Headers).</p>
+<p>А вот и пример ответа:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Ответ (Response)</th></tr>
+<tr>
+<td class="monospace_text"><font size="4"><span class="green_text">HTTP/1.1 200 OK</span><br/>
+<span class="grey_text">Date: Wed, 11 Feb 2009 11:20:59 GMT</span><br/>
+<span class="dred_text">Server: Apache<br/>
+X-Powered-By: PHP/5.2.4-2ubuntu5wm1</span><br/>
+<span class="grey_text">Last-Modified: Wed, 11 Feb 2009 11:20:59 GMT</span><br/>
+<span class="blue_text">Content-Language: ru<br/>
+Content-Type: text/html; charset=utf-8<br/>
+Content-Length: 1234</span><br/>
+<span class="grey_text">Connection: close</span><br/>
+<span class="red_text">&amp;lthtml&amp;gt&amp;ltbody&amp;gt&amp;lta href="http://ample.com/about.html#contacts"&amp;gtClick here&amp;lt/a&amp;gt&amp;lt/body&amp;gt&amp;lt/html&amp;gt</span>
+</font></td>
+</tr>
+</tbody><tbody><tr><th width="100%">Ответ (Response)</th></tr>
+<tr>
+<td class="wide-text"><span class="green_text">HTTP/1.1 200 OK</span>                           - Ответ «200 ОК» - все хорошо.<br/>
+<span class="grey_text">Date: Wed, 11 Feb 2009</span>                  - Дата обработки запроса<br/>
+<span class="dred_text">Server: Apache</span>                                 - Имя веб-сервера<br/>
+<span class="dred_text">X-Powered-By: PHP</span>                        - Сервер работает на языке PHP<br/>
+<span class="grey_text">Last-Modified: Wed, 11 Feb 2009</span>   - Время последнего обновления запрашиваемого файла<br/>
+<span class="blue_text">Content-Language: ru </span>                      -  Язык файла<br/>
+<span class="blue_text">Content-Type: text/html; charset=utf-8</span> – Ответ – это HTML-файл в UTF-8 кодировке<br/>
+<span class="blue_text">Content-Length: 1234  </span>                     - Длинна ответа – 1234 байта<br/>
+<span class="grey_text">Connection: close </span>                             - Соединение будет закрыто после обработки запроса<br/>
+<span class="red_text">&amp;lthtml&amp;gt&amp;ltbody&amp;gt&amp;lta href="http://ample</span>  - Сам HTML-файл.
+    </td>
+</tr>
+</tbody></table>
+<p>Хочу обратить твое внимание на две вещи:</p>
+<p>Во-первых, что бы ты не запрашивал, для сервера это выглядит как запрос файла. Неважно, есть такой файл на сервере или он сего сам генерирует в ответ на запрос.</p>
+<p>Во-вторых, сам <b><span class="red_text">файл-ответ</span> передается как часть ответа HTTP протокола.</b> Т.е. <span class="green_text">сначала в ответе сервера мы видим какие-то дополнительные данные</span>, а потом просто <span class="red_text">пошло тело файла</span>, который отдает сервер.</p>
+<p class="amigo">- Как интересно. Не уверен, что все понял. Потом перечитаю еще раз.</p>
+<p>- Ну и еще хочу рассказать тебе про одну маленькую, но интересную вещь – Cookie. </p>
+<p class="amigo">- Что это еще такое?</p>
+<p>В соответствии с протоколом HTTP, <span class="violet_text">Cookie – это маленькие кусочки информации, которые сервер отправляет клиенту, чтобы тот хранил их у себя. И при следующих запросах передавал их обратно к серверу.</span></p>
+<p class="amigo">- Это еще зачем?</p>
+<p>- Например, пользователь авторизовался на главной странице сайта, тогда <span class="green_text">сервер создает объект сессии на сервере для этого пользователя, а уникальный номер этой сессии передает клиенту в виде Cookie.</span> При следующем запросе от клиента к серверу, этот номер сессии, вместе с другими Cookie, опять будет отправлен на сервер. Таким образом, сервер узнает пользователя, который отправил ему этот новый запрос.</p>
+<p class="amigo">- Как интересно.</p>
+<p>- Ага. Когда ты будешь писать свои сервлеты, мы познакомимся с этой темой поближе, а сейчас давай сделаем перерыв.</p>
+<p class="amigo">- Как скажешь.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>2. HTTP, port, request, responce, REST</h2>
+</div>
+<p>- Протокол HTTP был разработан для обмена файлами, поэтому он имеет несколько стандартных <b>команд для этого, которые <span class="dred_text">часто называют методами.</span></b></p>
+<p>Вот они: <span class="green_text">GET, POST, PUT, DELETE,</span> <span class="grey_text">OPTIONS, HEAD, PATCH, TRACE, LINK, UNLINK, CONNECT</span>.</p>
+<p>Я расскажу тебе про 4 основных.</p>
+<p><span class="orange_text">Метод <b>GET</b>  предназначен для получения файла по запросу (URL).</span>  Запрос файла предполагает, что ничего кроме самого запроса на сервер не пересылается.  При этом считается нормальным кэшировать результаты (ответы) таких запросов.  Яркий пример такому кэшированию – это загрузка картинок браузерами.</p>
+<p><span class="orange_text">Метод <b>PUT</b> предназначен для добавления файла на сервер. При этом ожидается, что путем файла, будет путь, указанный в URL.</span> Тело запроса должно содержать такой файл. </p>
+<p><span class="orange_text">Метод <b>POST</b> предназначен для обновления файла на сервере.</span> И в запросе и в ответе пересылаются данные/файлы.</p>
+<p><span class="orange_text">Метод <b>DELETE</b> предназначен для удаления файла по его URL.</span></p>
+<p class="amigo">- А можно эти данные свести в общую таблицу?</p>
+<p>- Конечно:</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/40/image-ru-40-04.png"/>
+<p><span class="violet_text">Веб фактически отошел от представления URL как пути к файлу, а стал рассматривать его как запрос, то наибольшее распространение получили методы GET и POST.</span></p>
+<p><span class="dred_text">Метод POST – самый универсальный, он поддерживает и полноценный запрос, и полноценный ответ.</span></p>
+<p><span class="green_text">При этом метод GET часто рассматривается как более упрощенная версия POST.</span> Он не предполагает наличие Полноценного запроса, только URL в качестве такового.</p>
+<p class="amigo">- А какой запрос отправляется на сервер, когда я открывают ссылку в браузере?</p>
+<p>- Каждый раз, когда ты вбиваешь в браузере очередной URL, браузер отправляет GET-запрос. Ведь никаких данных кроме URL ты же не передаешь.</p>
+<p>Кстати, ты тут в таблице написал колонку Status, что это такое.</p>
+<p>Любой ответ сервера по HTTP-протоколу должен начинаться со статуса обработки запроса.</p>
+<p>Вот какие они бывают:</p>
+<table class="table_example">
+<tbody><tr><th width="33%">Коды ошибок</th><th width="33%">Описание</th><th width="33%">Пример</th></tr>
+<tr>
+<td class="wide-text">1xx
+    </td>
+<td class="wide-text">Информационные
+    </td>
+<td class="wide-text">101
+    </td>
+</tr>
+<tr>
+<td class="wide-text">2xx-
+    </td>
+<td class="wide-text">Успех
+    </td>
+<td class="wide-text">200
+    </td>
+</tr>
+<tr>
+<td class="wide-text">3xx
+    </td>
+<td class="wide-text">Пересылает на другую страницу
+    </td>
+<td class="wide-text">301,302,303,305
+    </td>
+</tr>
+<tr>
+<td class="wide-text">4xx
+    </td>
+<td class="wide-text">Ошибка на клиенте
+    </td>
+<td class="wide-text">404
+    </td>
+</tr>
+<tr>
+<td class="wide-text">5xx
+    </td>
+<td class="wide-text">Ошибка на сервере
+    </td>
+<td class="wide-text">501
+    </td>
+</tr>
+</tbody></table>
+<p><span class="orange_text">Когда все хорошо, обычно возвращается код состояния – 200.</span></p>
+<p><span class="orange_text">Если сервер хочет переслать пользователя на другую страницу, возвращает ее URL и код состояния - 302.</span></p>
+<p><span class="orange_text">Если запрашиваемая страница не найдена, возвращается – 404.</span></p>
+<p><span class="orange_text">Если на сервере возникла ошибка – возвращается ошибки 501-503.</span></p>
+<p>Что-то я не очень хорошо себя чувствую, Амиго.</p>
+<p>Пойду-ка я удалю у себя что-нибудь. А ты можешь почитать подробнее по <a href="http://ru.wikipedia.org/wiki/HTTP#.D0.9C.D0.B5.D1.82.D0.BE.D0.B4.D1.8B">этой</a> ссылке</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Download file</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Элли!</p>
+<p>- Что-то ты сегодня сильно довольный.</p>
+<p class="amigo">- Ха, Билаабо заболел.</p>
+<p>- И не смог тебе рассказать кучу интересного, полезного и нужного. Пора бы уже вырасти из детских штанишек.</p>
+<p class="amigo">- Угу. Я обещаю сам во всем разобраться. Билаабо дал мне ссылку.</p>
+<p>- Вот и отлично. Тогда я расскажу тебе интересную тему.</p>
+<p>Как скачать файл из интернета.</p>
+<p>Для того, чтобы работать в интернетом в Java есть специальный класс – URL. Вот как скачать файл при помощи этого класса:</p>
+<p><span class="violet_text"><b>1)</b> Для начала надо задать правильный URL нужного тебе сервера.</span></p>
+<p><span class="violet_text"><b>2)</b> Затем нужно установить соединение с сервером, с помощью этого URL.</span></p>
+<p><span class="violet_text"><b>3)</b> Затем передать тело запроса, если это POST-запрос. Или пропустить этот шаг, если это GET-запрос.</span></p>
+<p><span class="violet_text"><b>4)</b> И наконец, прочитать ответ сервера.</span></p>
+<p>Вот как будет выглядеть простое скачивание файла:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><span class="dred_text">URL url</span> = new <span class="dred_text">URL</span>(<span class="orange_text">"https://www.google.com.ua/images/srpr/logo11w.png"</span>);<br/>
+<span class="red_text">URLConnection connection</span> =  <span class="dred_text">url</span>.<b>openConnection</b>(); <span class="grey_text">//устанавливаем соединение</span><br/><br/>
+<span class="grey_text">//получаем OutputStream, чтобы писать в него данные запроса</span><br/>
+<span class="dblue_text">OutputStream  outputStream</span> =  <span class="red_text">connection</span>.<b>getOutputStream</b>();<br/>
+<span class="dblue_text">outputStream</span>.<b>write</b>(1);<br/>
+<span class="dblue_text">outputStream</span>.<b>flush</b>();<br/><br/>
+<span class="grey_text">//получаем InputStream, чтобы читать из него данные ответа</span><br/>
+<span class="green_text">InputStream  inputStream</span> = <span class="red_text">connection</span>.<b>getInputStream</b>();<br/>
+<b>Files</b>.<b>copy</b>(<span class="green_text">inputStream</span>,  new File("c:/google.png").toPath());
+    </td>
+</tr>
+</tbody></table>
+<p>Сначала устанавливает соединение с сервером – получаем объект <span class="red_text">URLConnection</span>.</p>
+<p>Затем получаем  <span class="dblue_text">OutputStream</span> потока, куда нужно писать запрос. И что-то туда пишем.</p>
+<p>Затем получаем объект  <span class="green_text">InputStream</span> ответа, из которого и читаем сам ответ. С помощью метода Files.copy  сохраняем присланные данные в файл "c:/google.png"</p>
+<p class="amigo">- Да, это понятно. А что еще за write(1)?</p>
+<p>- Ну, это я для примера показала, что туда можно что-то писать. На самом деле, для скачивания файла ничего в Request писать не надо. Можно просто  сразу получать <span class="green_text">InputStream</span> и начинать читать оттуда ответ. У объекта URL есть даже метод <b>openStream</b>(), который сразу возвращает объект <span class="green_text">InputStream</span>. <span class="green_text"><b>Но это годится только для GET-запросов.</b></span> Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><span class="dred_text">URL url</span> = new <span class="dred_text">URL</span>(<span class="orange_text">"https://www.google.com.ua/images/srpr/logo11w.png"</span>);<br/>
+<span class="green_text">InputStream  inputStream</span> = <span class="red_text">url</span>.<b>openStream</b>();<br/>
+<b>Files</b>.<b>copy</b>(<span class="green_text">inputStream</span>,  new File("c:/google.png").toPath());
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Как интересно. Не думал, что скачать файл так просто.</p>
+<p>- Ну, так обычно никто не делает. Т.к. файлы могут быть большими и скачиваться очень долго.</p>
+<p>Есть достаточно много фреймворков, который значительно упрощают работу с файлами, но я не готова сейчас про них рассказать. Как-нибудь в другой раз.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level40,lesson04,task01"></button><b>1. POST, а не GET</b><br/><br/>
+                Исправь ошибки в методе <span class="taskcode">sendPost</span>, чтобы он отправлял POST-запрос с переданными параметрами.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level40,lesson04,task02"></button><b>2. Опять POST, а не GET</b><br/><br/>
+                Исправь ошибки в методе <span class="taskcode">sendPost</span>, чтобы он отправлял POST-запрос с переданными параметрами.<br/>
+                Реализация должна использовать библиотеки <span class="taskcode">Apache HttpClient</span> версии 4.5.1 и <span class="taskcode">Apache HttpCore</span> 4.4.3.
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>5. Send Email</h2>
+</div>
+<p>- А вот и снова я. И снова у меня для тебя небольшой сюрприз.</p>
+<p>Сегодня я научу тебя, <span class="red_text">как отправить email с помощью Java</span>.</p>
+<p>Начнем с хорошей новости – <span class="green_text">в Java есть родная библиотека для работы с почтой</span>.</p>
+<p>А плохая новость состоит в том, что эта библиотека входит в состав <b>Java EE</b>, но не в <b>Java SE</b>.</p>
+<p><b>Java EE</b> – это расширенная версия <b>JavaSE</b>, куда входят классы, которые нужны для более навороченных приложений. Как работа с почтой, например.</p>
+<p class="amigo">- Ясно и что же делать?</p>
+<p>- Ну, предлагаю, просто скачать данную библиотеку и все.</p>
+<p>Воспользуемся мудростью Intellij IDEA.</p>
+<p>Создай класс и добавь в раздел импорта пакеты <b>javax.mail.*</b> и <b>javax.mail.internet.*</b></p>
+<p>Затем жми <span class="red_text">Alt+Enter</span> и пусть IDEA все сделает за тебя:</p>
+<p><b>Так выглядит предложение скачать недостающие библиотеки</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/40/image-ru-40-01.png"/>
+<p><b>Так выглядит окно закачки.</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/40/image-ru-40-02.png"/>
+<p>Ну, или его можно скачать по <a href="http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-eeplat-419426.html#javamail-1.4.7-oth-JPR" target="_blank">этой</a> ссылке.</p>
+<p class="amigo">- Скачал. Что дальше?</p>
+<p>- Тебе надо зайти в настройки проекта (Open Module Settings) в раздел  Libraries и добавить туда jar-файлы из скачанного архива.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/40/image-ru-40-03.png"/>
+<p class="amigo">- Готово.</p>
+<p>- Строки перестали светиться красным?</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text"><b>import</b> javax.mail.internet.MimeMessage;<br/>
+<b>import</b> javax.mail.internet.*;
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ага.</p>
+<p>- Отлично, тогда продолжим.</p>
+<p>Отправка письма состоит из трех частей.</p>
+<p><span class="violet_text"><b>1)</b> Установить соединение с почтовым сервером, через который будет отправлено письмо</span></p>
+<p><span class="violet_text"><b>2)</b> Создать письмо, добавить вложения если надо</span></p>
+<p><span class="violet_text"><b>3)</b> Отправить письмо.</span></p>
+<p>Начнём сначала.</p>
+<p>Чтобы отравить email в Java, для начала нужно установить соединение с почтовым сервером.</p>
+<p>Лучше всего, чтобы там у тебя уже был почтовый аккаунт. <span class="dred_text">Современные почтовые серверы не хотят рассылать сообщения анонимных пользователей, опасаясь спама.</span></p>
+<p>Создать соединение с сервером можно одним вызовом метода <b>javax.mail.Session.getDefaultInstance</b>:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Создаем соединение с почтовым сервером</th></tr>
+<tr>
+<td class="monospace_text"><span class="green_text">Properties  <b>props</b></span> = new <span class="green_text">Properties</span>();<br/><br/>
+<span class="grey_text">//тут надо загрузить данные в объект props</span><br/><br/>
+<span class="dred_text">Session session</span> = <span class="dred_text">Session.<b>getDefaultInstance</b></span>(<span class="green_text">props</span>);
+    </td>
+</tr>
+</tbody></table>
+<p>Но этому методу нужно передать настройки почтового сервера.</p>
+<p>Например, <span class="orange_text">можно создать файл Mail.properties и заполнить его нужными настройками</span>, например, как-то так:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Mail.properties</th></tr>
+<tr>
+<td class="monospace_text">mail.transport.protocol=<span class="red_text">smtp</span><br/>
+mail.<span class="dred_text">host</span>=<span class="dred_text">smtp.gmail.com</span><br/>
+mail.smtp.auth=true<br/>
+mail.<span class="dblue_text">user</span>=<span class="dblue_text">arnold@gmail.com</span><br/>
+mail.<span class="dblue_text">password</span>=<span class="dblue_text">strong</span>
+</td>
+</tr>
+</tbody></table>
+<p><span class="green_text">Главное – это задать protocol и host</span>, но возможно понадобятся дополнительные настройки, в зависимости от режима работы почтового сервера.</p>
+<p>А можно просто добавить эти данные в объект типа Properties прямо в Java-коде.</p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Создаем соединение с почтовым сервером</th></tr>
+<tr>
+<td class="monospace_text"><span class="green_text">Properties <b>props</b></span> = new <span class="green_text">Properties</span>();<br/>
+<span class="green_text"><b>props</b></span>.<b>put</b>("mail.transport.protocol", "smtps");<br/>
+<span class="green_text"><b>props</b></span>.<b>put</b>("mail.smtps.host", “smtp.gmail.com”);<br/>
+<span class="green_text"><b>props</b></span>.<b>put</b>("mail.smtps.auth", "true");<br/>
+<span class="green_text"><b>props</b></span>.<b>put</b>("mail.smtp.sendpartial", "true");<br/><br/>
+<span class="dred_text">Session session</span> = <span class="dred_text">Session.<b>getDefaultInstance</b></span>(<span class="green_text">props</span>);
+    </td>
+</tr>
+</tbody></table>
+<p>Отлично, сессия у нас есть, теперь давай созданием почтовое сообщение.</p>
+<p>Сделать это легче, чем кажется на первый взгляд. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Создание почтового сообщения</th></tr>
+<tr>
+<td class="monospace_text"><font size="4"><span class="grey_text">//создаем сообщение</span><br/>
+<span class="dblue_text">MimeMessage <b>message</b></span> = new <span class="dblue_text">MimeMessage</span>(session);<br/><br/>
+<span class="grey_text">//устанавливаем тему письма</span><br/>
+<span class="dblue_text"><b>message</b></span>.<b>setSubject</b>("тестовое письмо!");<br/><br/>
+<span class="grey_text">//добавляем текст письма</span><br/>
+<span class="dblue_text"><b>message</b></span>.<b>setText</b>("Asta la vista, baby!");<br/><br/>
+<span class="grey_text">//указываем получателя</span><br/>
+<span class="dblue_text"><b>message</b></span>.<b>addRecipient</b>(Message.RecipientType.TO, new InternetAddress("stalone@gmail.com"));<br/><br/>
+<span class="grey_text">//указываем дату отправления</span><br/>
+<span class="dblue_text"><b>message</b></span>.<b>setSentDate</b>(new Date());
+    </font></td>
+</tr>
+</tbody></table>
+<p class="amigo">- В качестве получателя можно указать любой email?</p>
+<p>- Ага. Более того. <span class="dred_text">Можно указать и отправителя. Любой email-адрес.</span></p>
+<p class="amigo">- Круто! Я это учту.</p>
+<p>- Теперь осталось отправить это сообщение.</p>
+<p>Сначала мы авторизуемся на сервере, а затем отправим свое сообщение. Всего две строчки кода:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Отправка сообщения</th></tr>
+<tr>
+<td class="monospace_text"><span class="grey_text">//логин и пароль gmail пользователя</span><br/>
+String <span class="orange_text">userLogin</span>  = “arnold@gmail.com”;<br/>
+String <span class="orange_text">userPassword</span> = “strong”;<br/><br/>
+<span class="grey_text">//авторизуемся на сервере:</span><br/>
+<span class="green_text">Transport <b>transport</b></span> = <span class="red_text">session</span>.<b>getTransport</b>();<br/>
+<span class="green_text"><b>transport</b></span>.<b>connect</b>("smtp.gmail.com", 465, <span class="orange_text">userLogin</span>, <span class="orange_text">userPassword</span>);<br/><br/>
+<span class="grey_text">//отправляем сообщение:</span><br/>
+<span class="green_text"><b>transport</b></span>.<b>sendMessage</b><span class="dblue_text"><b>(message</b></span>, <span class="dblue_text"><b>message</b></span>.<b>getRecipients</b>(<span class="violet_text">Message.RecipientType.TO</span>));
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Как интересно. Надо пробовать.</p>
+<p>- Если тебе интересно, как отправить письмо с вложениями, то можешь почитать про это <a href="http://ru.wikipedia.org/wiki/JavaMail" target="_blank">тут</a>.</p>
+<p>Если хочешь разобраться, как еще и получать почту, милости прошу <a href="http://www.tutorialspoint.com/javamail_api/javamail_api_gmail_smtp_server.htm" target="_blank">сюда</a>.</p>
+<p class="amigo">- Ух ты, какие полезные ссылки.</p>
+<p class="amigo">Да, я теперь свой почтовый клиент сделаю. Круто!</p>
+<p class="amigo">Спасибо, Элли!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level40,lesson06,task01"></button><b>1. Отправка письма с файлом</b><br/><br/>
+                Исправь реализацию метода setAttachment. Этот метод должен прикреплять файл к письму.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level40,lesson06,task02"></button><b>2. Принадлежность точки многоугольнику</b><br/><br/>
+                Дан многоугольник, заданный координатами своих вершин. Ребра многоугольника не пересекаются.<br/>
+                Необходимо реализовать метод <span class="taskcode">isPointInPolygon(Point point, List<point> polygon)</point></span>, который проверит, принадлежит ли переданная точка многоугольнику.
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>7. Socket</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Здорово, Риша!</p>
+<p>- Тема сегодняшней лекции – Сокеты.  Socket в переводе с английского – Розетка</p>
+<p>Ты уже знаешь, что у каждого компьютера в сети есть его уникальный IP-адрес.</p>
+<p class="amigo">- Ага.</p>
+<p>- И вот представь, что у тебя есть несколько компьютеров и на каждом  компьютере запущено с десяток программ, которые работают с интернетом: Skype,  ICQ, и т.д.</p>
+<p>И эти программы хотят общаться между собой.</p>
+<p>Надо сделать так, чтобы они друг другу «не мешали». Чтобы Skype связывался со Skype’ом, ICQ с ICQ и т.д.</p>
+<p>Помнишь, как это проблему решили с URL и веб-серверами?</p>
+<p class="amigo">- Ага, добавили порты.</p>
+<p>- Именно.</p>
+<p>Это все равно, что в доме сделать много маленьких комнат и объявить его многоквартирным. <span class="green_text"><b>Каждый порт – это как отдельная квартира.</b></span></p>
+<p>Так вот IP-адрес – это уникальный номер компьютера, а <span class="orange_text">IP-адрес+порт – это уникальный номер некой «квартиры» (ячейки) в компьютере, которую может занять программа.</span></p>
+<p>Вот <span class="orange_text">такая уникальная ячейка и называется <b>сокет</b>.</span></p>
+<p>У сокета есть его уникальный номер, и <span class="orange_text"><b>состоит он из IP-адреса и номера порта.</b></span></p>
+<p class="amigo">- Ага. Т.е. сокет – это номер некой виртуальной ячейки в компьютере, которую может занимать программа? А другая программа будет слать ей в эту ячейку сообщения, и таким образом они будут общаться?</p>
+<p>- Не знаю, как ты это понял, но именно так и есть.</p>
+<p class="amigo">- Это моя робоинтуиция подсказала.</p>
+<p>- Отлично. Тогда давай немного подробностей.</p>
+<p>Сокеты – это фактически самый базовый и самый примитивный способ межсетевого взаимодействия программ.</p>
+<p>В Java для работы с сокетами есть два класса. Это классы <b>Socket</b> и <b>ServerSocket</b>.</p>
+<p><b>ServerSocket</b> – это специальный класс, объекты которого выполняют роль сервера – т.е. могу обслуживать запросы, пришедшие на определенный сокет.</p>
+<p>Класс <b>Socket</b> – это фактически Socket-клиент, с помощью него мы можем послать сообщение некоторому сокету и получить ответ.</p>
+<p>Как послать сообщение какому-то сокету:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><span class="grey_text">//создаем сокет</span><br/>
+<span class="dred_text">Socket</span> <span class="red_text"><b>clientSocket</b></span> = new <span class="dred_text">Socket</span>(<span class="green_text">"localhost"</span>, 4444);<br/><br/>
+<span class="grey_text">//получаем  OutputStream</span><br/>
+<span class="dblue_text">OutputStream outputStream</span> = <span class="red_text"><b>clientSocket</b></span>.<b>getOutputStream</b>();<br/>
+  PrintWriter <span class="blue_text">out</span> = new PrintWriter(<span class="dblue_text">outputStream</span>, <b>true</b>);<br/>
+<span class="blue_text">out</span>.<b>println</b>(<span class="orange_text">"Kiss my shiny metal ass!"</span>);<br/>
+<span class="blue_text">out</span>.<b>flush</b>();<br/><br/>
+<span class="grey_text">//читаем ответ</span><br/>
+<span class="green_text">InputStream inputStream</span> = <span class="red_text"><b>clientSocket</b></span>.<b>getInputStream</b>();<br/>
+  BufferedReader <span class="dgreen_text">in</span> = new BufferedReader(new InputStreamReader(<span class="green_text">inputStream</span>));<br/>
+  String <span class="violet_text">answer</span> = <span class="dgreen_text">in</span>.<b>readLine</b>();
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Все очень напоминает скачивание файла из интернета.</p>
+<p>- Это потому, детка, что там тоже используются сокеты.</p>
+<p><span class="red_text"><b>Сокеты используются в основе всего связанного с сетью, ну или почти всего.</b></span></p>
+<p>Вот <a href="http://www.tutorialspoint.com/java/java_networking.htm" target="_blank">тут</a> можешь почитать дополнительную информацию.</p>
+<p class="amigo">- Спасибо за лекцию, Риша.</p>
+<p>- Это еще не все. Размечтался.</p>
+<p>Теперь мы разберемся, как работает серверный сокет.</p>
+<p>Он работает чуток посложнее.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><span class="grey_text">//создаем объект сервер-сокет</span><br/>
+<span class="dred_text">ServerSocket  <b>serverSocket</b></span> = new <span class="dred_text">ServerSocket</span>(4444);  <span class="grey_text">//порт</span><br/><br/>
+<span class="grey_text">//в цикле обрабатываем входящие соединения.</span><br/>
+<b>while</b> (<b>true</b>)<br/>
+ {<br/>
+        <span class="grey_text">//метод accept ждет, пока кто-то не подключится.</span><br/>
+        <span class="red_text">Socket socket</span> = <span class="dred_text"><b>serverSocket</b></span>.<b>accept</b>();<br/><br/>
+
+       <span class="grey_text">//читаем сообщение</span><br/>
+       <span class="green_text">InputStream inputStream</span> = <span class="red_text"><b>socket</b></span>.<b>getInputStream</b>();<br/>
+       BufferedReader <span class="dgreen_text">in</span> = new BufferedReader(new InputStreamReader(<span class="green_text">inputStream</span>));<br/>
+       String <span class="violet_text">message</span> = <span class="dgreen_text">in</span>.<b>readLine</b>();<br/><br/>
+
+       <span class="grey_text">//придумываем ответ – просто разворачиваем строку задом наперед</span><br/>
+      String <span class="orange_text">reverseMessage</span> = new StringBuilder(<span class="violet_text">message</span>).reverse().toString();<br/><br/>
+
+      <span class="grey_text">//отправляем ответ</span><br/>
+      <span class="dblue_text">OutputStream outputStream</span> = <span class="red_text"><b>socket</b></span>.<b>getOutputStream</b>();<br/>
+      PrintWriter <span class="blue_text">out</span> = new PrintWriter(<span class="dblue_text">outputStream</span>, <b>true</b>);<br/>
+      <span class="blue_text">out</span>.<b>println</b>(<span class="orange_text">reverseMessage</span>);<br/>
+      <span class="blue_text">out</span>.<b>flush</b>();<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Хочу обратить твое внимание на несколько моментов.</p>
+<p><span class="violet_text"><b>Момент 1:</b> Для создания сокета нужно указывать IP-адрес (или домен) и порт. Для создания серверного сокета – только порт. Серверный сокет появляется только на том компьютере, где его создали.</span></p>
+<p><span class="green_text"><b>Момент 2:</b> У класса ServerSocket есть метод accept(), который, если его вызвать, будет ждать входящее соединение. Т.е. метод будет выполняться бесконечно долго, пока какой-то клиентский сокет не попробует обратиться к нему. Тогда метод accept() примерт соединение, создаст объект сокет для коммуникации и после этого вернет этот объект.</span></p>
+<p>С точки зрения Java-программиста, сокет – это два потока – InputStream из которого можно читать сообщения/данные и OutputStream, куда можно писать сообщения/данные.</p>
+<p>Когда ты создаешь серверный сокет, то фактически появляется порт, к которому могут подключаться сокеты с других компьютеров. Но для этого им надо правильно указать номер порта нашего сокета и IP-адрес нашего компьютера. Ну, или его доменное имя.</p>
+<p>Вот тебе интересный пример, можешь попробовать разобрать его и выполнить:</p>
+<p><a href="http://habrahabr.ru/post/69136/" target="_blank">http://habrahabr.ru/post/69136/</a></p>
+<p>Там весь смысл в том, что с помощью серверного сокета пишется примитивнейший веб-сервер к которому можно просто обращаться из браузера.</p>
+<p class="amigo">- Ого! Веб-сервер? Круто! Я изучу его очень внимательно.</p>
+<p class="amigo">Спасибо, Риша.</p>
+<p>- Все, Амиго, иди отдыхать!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Сокетный сервер и клиент</b><br/><br/>
+                Есть сервер, он принимает входящиие сообщения от клиентов и отвечает им echo.<br/>
+                Есть клиенты, они считывают сообщения с клавиатуры и отправляют их серверу.<br/>
+                Программа запускается, но не работает.<br/>
+                Разберись в чем проблема, внеси минимальные изменения в код, чтобы все заработало.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level40,lesson08,task01"></button><b>2. Отправка GET-запроса через сокет</b><br/><br/>
+                Перепиши реализацию метода <span class="taskcode">getSite</span>, он должен явно создавать и использовать сокетное соединение <span class="taskcode">Socket с сервером</span>.<br/>
+                Адрес сервера и параметры для GET-запроса получи из параметра <span class="taskcode">url</span>.<br/>
+                Порт используй дефолтный для <span class="taskcode">http</span>.<br/>
+                Классы <span class="taskcode">HttpURLConnection</span>, <span class="taskcode">HttpClient</span> и т.д. не использовать.
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>9. Date, SQL date, timestamp</h2>
+</div>
+<p>- Я вспомнил, что хотел рассказать тебе немного про работу с датами.</p>
+<p class="amigo">- Так вы мне уже рассказывали, что в Java существует класс Date, с помощью которого можно работать с датой.</p>
+<p>- <span class="dred_text">Гм. Ну, с некоторого времени класс Date устарел.</span></p>
+<p><span class="green_text">Сейчас вместо него советуют использовать класс Calendar</span>, у которого есть метод getTime(), который и возвращает текущую дату.</p>
+<p>Вот как обычно создается объект типа Календарь:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Создание объекта календарь</th></tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">Calendar</span> cal = <span class="dblue_text">Calendar</span>.<b>getInstance</b>();
+    </td>
+</tr>
+</tbody></table>
+<p>- Когда ты вызываешь этот метод, в зависимости от настоек твоего компьютера, будет создан нужный календарь.</p>
+<p class="amigo">- Нужный? Их что – несколько?</p>
+<p>- Ага. Более того, правильно было бы сказать – актуальный. Дело в том, что на Земле не один, а много календарей. И почти каждый из них связан с какой-нибудь религией или страной.</p>
+<p>В зависимости от того, в какой стране ты находишься, год может быть другим.</p>
+<p>Вот примеры самых распространённых календарей.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Класс календаря</th><th width="50%">Название календаря</th></tr>
+<tr>
+<td class="wide-text">GregorianCalendar
+    </td>
+<td class="wide-text">Христианский Грегорианский календарь
+    </td>
+</tr>
+<tr>
+<td class="wide-text">BuddhistCalendar
+    </td>
+<td class="wide-text">Буддистский календарь
+    </td>
+</tr>
+<tr>
+<td class="wide-text">JapaneseImperialCalendar
+    </td>
+<td class="wide-text">Японский Императорский календарь
+    </td>
+</tr>
+</tbody></table>
+<p>Есть еще Китайский календарь, Исламский календарь и много других.</p>
+<p class="amigo">- Ясно.</p>
+<p>- Чтобы узнать текущую дату, надо написать такой код:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Как узнать текущее время</th></tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">Calendar</span> <span class="blue_text">cal</span> = <span class="dblue_text">Calendar</span>.<b>getInstance</b>();<br/>
+    Date date = <span class="blue_text">cal</span>.<b>getTime</b>();
+    </td>
+</tr>
+</tbody></table>
+<p>У класса календарь есть много методов, которые позволяют быстро получить любую информацию о дате и времени.</p>
+<table class="table_example">
+<tbody><tr><th width="65%">Код</th><th width="35%">Комментарии</th></tr>
+<tr>
+<td class="monospace_text">Calendar calendar = Calendar.getInstance();<br/><br/>
+<span class="red_text">int era = calendar.get(Calendar.ERA);</span> <br/>
+<span class="dblue_text">int year = calendar.get(Calendar.YEAR);</span><br/>
+<span class="green_text">int month = calendar.get(Calendar.MONTH);</span><br/>
+<span class="blue_text">int day = calendar.get(Calendar.DAY_OF_MONTH);</span><br/><br/>
+<span class="grey_text">int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);</span><br/>
+<span class="orange_text">int hour = calendar.get(Calendar.HOUR);</span><br/>
+<span class="dgreen_text">int minute = calendar.get(Calendar.MINUTE);</span><br/>
+<span class="dred_text">int second = calendar.get(Calendar.SECOND);</span>
+</td>
+<td class="wide-text"><br/><br/><span class="red_text">эра</span><br/>
+<span class="dblue_text">год</span><br/>
+<span class="green_text">месяц</span><br/>
+<span class="blue_text">день месяца</span><br/><br/>
+<span class="grey_text">день недели (пн, вт, ср,…)</span><br/>
+<span class="orange_text">час</span><br/>
+<span class="dgreen_text">минута</span><br/>
+<span class="dred_text">секунда</span>
+</td>
+</tr>
+</tbody></table>
+<p>Иногда действительно нужно получить только часть информации. Например, какой сегодня год, или какой день недели.</p>
+<p>Но иногда бывает нужно просто вывести дату в нужном формате.</p>
+<p>Например, в лог-файл или еще куда-нибудь.</p>
+<p>Или сделать формат, который бы настраивал пользователь. Как тогда быть?</p>
+<p>Для этого тоже есть специальные классы. И класс <span class="dred_text"><b>SimpleDateFormat</b></span> отлично справляется с описанной тобой задачей:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Как привести дату к нужному формату</th></tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">Calendar <b>calendar</b></span> = <span class="dblue_text">Calendar</span>.<b>getInstance</b>();<br/><br/>
+<span class="dred_text">DateFormat</span> <span class="red_text"><b>formatter</b></span> = new <span class="dred_text">SimpleDateFormat</span>(<span class="orange_text">"MM-DD-YY"</span>);<br/><br/>
+
+        String message = <b><span class="red_text">formatter</span>.format</b>(<span class="dblue_text"><b>calendar</b></span>.<b>getTime</b>());
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ага. Я помню. Вы мне уже что-то такое объясняли про <span class="red_text"><b>SimpleDateFormat</b></span>, но я честно говоря, не очень запомнил. </p>
+<p>Тут все очень просто. Создаешь объект типа <span class="red_text">SimpleDateFormat</span> и передаешь в него шаблон даты, которую хочешь получить. Затем вызываешь метод format, и он приводит тебе переданную дату к нужному виду.</p>
+<p class="amigo">- Звучит интересно. Мне бы побольше подробностей.</p>
+<p>- Будут тебе подробности. Вот какие ключевые слова в шаблоне бывают:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Ключевое слово</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="wide-text">G
+    </td>
+<td class="wide-text">будет заменено на эру даты (н.э. или до н.э.) 
+    </td>
+</tr>
+<tr>
+<td class="wide-text">y
+    </td>
+<td class="wide-text">вместо этого символа будет подставлен год 
+    </td>
+</tr>
+<tr>
+<td class="wide-text">M
+    </td>
+<td class="wide-text">заменяется на месяц 
+    </td>
+</tr>
+<tr>
+<td class="wide-text">w
+    </td>
+<td class="wide-text">номер недели в году
+    </td>
+</tr>
+<tr>
+<td class="wide-text">W
+    </td>
+<td class="wide-text">порядковый номер недели в месяце
+    </td>
+</tr>
+<tr>
+<td class="wide-text">D
+    </td>
+<td class="wide-text">номер дня в году 
+    </td>
+</tr>
+<tr>
+<td class="wide-text">d
+    </td>
+<td class="wide-text">день месяца 
+    </td>
+</tr>
+<tr>
+<td class="wide-text">F
+    </td>
+<td class="wide-text">номер дня недели в месяце
+    </td>
+</tr>
+<tr>
+<td class="wide-text">E
+    </td>
+<td class="wide-text">день недели
+    </td>
+</tr>
+<tr>
+<td class="wide-text">a
+    </td>
+<td class="wide-text">AM/PM (до обеда или после) 
+    </td>
+</tr>
+<tr>
+<td class="wide-text">H
+    </td>
+<td class="wide-text">час в 24-часовом формате (0-23) 
+    </td>
+</tr>
+<tr>
+<td class="wide-text">k
+    </td>
+<td class="wide-text">час в 24-часовом формате (1-24)  
+    </td>
+</tr>
+<tr>
+<td class="wide-text">K
+    </td>
+<td class="wide-text">час в 12-часовом формате (0-11) 
+    </td>
+</tr>
+<tr>
+<td class="wide-text">h
+    </td>
+<td class="wide-text">час в 12-часовом формате (1-12)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">m
+    </td>
+<td class="wide-text">минуты 
+    </td>
+</tr>
+<tr>
+<td class="wide-text">s
+    </td>
+<td class="wide-text">секунды  
+    </td>
+</tr>
+<tr>
+<td class="wide-text">S
+    </td>
+<td class="wide-text">миллисекунды  
+    </td>
+</tr>
+<tr>
+<td class="wide-text">z
+    </td>
+<td class="wide-text">часовая зона в формате Pacific Standard Time, PST
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Z
+    </td>
+<td class="wide-text">часовая зона в формате -0800
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Круто! Почти все, что нужно.</p>
+<p>- Тут еще есть дополнительные нюансы с удвоением этих символов.</p>
+<p><span class="violet_text">Если ты напишешь YY, то получишь  две последние цифры года, если YYYY – то полный год из четырех цифр.</span></p>
+<p>С месяцем тоже не все просто. <span class="green_text">MM – это число месяца. MMM – это трехбуквенное сокращение месяца (Jan, Deb, Mar, Apr, May,…).  Если MMMM – полное название месяца.</span></p>
+<p><span class="orange_text">Дни недели можно тоже вывести полностью – EEEE или только первые две буквы EE.</span></p>
+<p class="amigo">- Спасибо, Риша, действительно полезная штука этот SimpleDateFormat, буду знать.</p>
+<p>- Пользуйся на здоровье. И, удачи!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>10. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level40,lesson10,task01"></button><b>1. Работа с датами</b><br/><br/>
+                Реализуй метод <span class="taskcode">printDate(String date)</span>.<br/>
+                Он должен в качестве параметра принимать дату (в одном из 3х форматов) и выводить ее в консоль в соответсвии с примером.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level40,lesson10,task02"></button><b>2. Работа с Joda Time</b><br/><br/>
+                Выполни задание, используя библиотеку <span class="taskcode">Joda Time</span> версии 2.9.1<br/>
+                Реализуй метод <span class="taskcode">printDate(String date)</span>.<br/>
+                Он должен в качестве параметра принимать дату (в одном из 3х форматов) и выводить ее в консоль в соответсвии с примером.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level40,lesson10,task03"></button><b>3. В какой день недели день рождения?</b><br/><br/>
+                Реализуй метод <span class="taskcode">weekDayOfBirthday</span>.<br/>
+                Метод должен возвращать день недели на итальянском языке, в который будет день рождения в определенном году.<br/>
+                Пример формата дат смотри в методе <span class="taskcode">main</span>.<br/>
+                Выполни задание, используя библиотеку <span class="taskcode">Joda Time</span> версии 2.9.1
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Учимся гуглить</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Продолжаем наши уроки – учимся гуглить.</p>
+<p>Вот тебе несколько заданий:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Загугли</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Java file download
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Java send email
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Java Mail API настойки для gMail
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Java Mail API настойки для Mail.RU
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Intellij IDEA how to add jar to project
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Что такое сокет?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Как работает серверный сокет?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">java сокеты, примеры
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Что такое IP-address?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Что такое host?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>12. Профессор дает доп. материал</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Вот тебе дополнительный материал по теме.</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-40.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>13. Хулио</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Хулио.</p>
+<p>- Очередные десять уровней позади. Жму руку, ты прогрессируешь на глазах.</p>
+<p class="amigo">- Столько новых тем, и еще так много вопросов, на которые надо найти ответы.</p>
+<p>- Ничего, со временем все станет на свои места. А сейчас время отдыха.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-40.gif" preload="none" tabindex="0" taskkey="level40,lesson13,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-40.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=Jvcoi827ao0" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>14. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Что такое IP-адрес?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">В чем отличие host и domain?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Какие методы в HTTP вы знаете
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Чем отличаются методы GET, POST и HEAD?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Что такое REST?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Зачем нужен класс Calendar в Java?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Как преобразовать дату в Java к нужному формату?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">В чем отличие URI и URL?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Что такое сокеты?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Отличие классов Socket и URL?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>15. Большая задача</h2>
+</div>
+<p>- Привет, боец!</p>
+<p>- Поздравляю тебя с повышением уровня квалификации. Нам нужны отчаянные парни.</p>
+<p>- Уверен, у тебя есть еще много нерешенных задач. Самое время решить парочку из них!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-11.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                Уровень 11
+            </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>1. ООП - основные принципы</h2>
+</div>
+<p>- Привет, Амиго! Сегодня я открою для тебя новый и интересный мир. Этот мир называется <b>ООП</b> – <span class="green_text">объектно-ориентированное программирование.</span> Ты уже познакомился с классами и объектами. Сегодня ты узнаешь про них больше, намного больше.</p>
+<p>Начнем с четырех принципов ООП. Это: <span class="green_text">абстракция, инкапсуляция, наследование и полиморфизм.</span> (Раньше их было три, но потом решили добавить абстракцию)</p>
+<p><span class="red_text"><b>1) Абстракция.</b></span></p>
+<p>Хорошим примером абстракции в реальной жизни является описание должностей в компании или организации. Название должности – это одно, а обязанности каждой конкретной должности – это уже совсем другое.</p>
+<p>Представь, что ты проектируешь структуру своей будущей компании. Ты можешь разделить обязанности секретаря: «раскидать» их по нескольким другим должностям. Можешь разбить должность исполнительного директора на несколько независимых должностей: финансовый директор, технический директор, директор по маркетингу, директор по персоналу. Или, например, объединить должности офис-менеджера и рекрутера в одну.</p>
+<p>Ты придумываешь названия должностей в своей фирме, а потом «раскидываешь» обязанности по этим должностям. <span class="green_text">Это и есть <b>абстракция</b> – разбиение чего-то большого, монолитного на множество маленьких составных частей.</span></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/11/image-ru-11-06.png"/>
+<p>С точки зрения программирования, абстракция - это, скажем так, <b>правильное разделение программы на объекты.</b></p>
+<p>Обычно любую большую программу можно десятками способов представить в виде взаимодействующих объектов. <span class="green_text">Абстракция позволяет отобрать главные характеристики и опустить второстепенные.</span></p>
+<p>Абстракция – это как стратегия в военном деле. Плохая стратегия – и никакой гениальной тактикой ситуацию уже не исправить.</p>
+<p><span class="red_text"><b>2) Инкапсуляция.</b></span></p>
+<p><span class="green_text">Цель инкапсуляции – улучшить качество взаимодействия вещей за счет упрощения их.</span></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/11/image-ru-11-07.png"/>
+<p>А лучший способ упростить что-то – это скрыть все сложное от посторонних глаз. Например, если тебя посадят в кабину Боинга, ты не сразу разберешься, как им управлять:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/11/image-ru-11-08.gif"/>
+<p>С другой стороны, для пассажиров самолета все выглядит проще: купил билет, сел в самолет, взлетели и приземлились. Ты можешь с легкостью перелететь с континента на континент, обладая только навыками «купить билет» и «сесть на самолет». Все сложности в виде подготовки самолета к полету, взлета, посадки и различных внештатных ситуаций скрыты от нас. Не говоря уже о спутниковой навигации, автопилоте и диспетчерских центрах в аэропортах. И это упрощает нам жизнь.</p>
+<p><span class="green_text">С точки зрения программирования, инкапсуляция – это «сокрытие реализации».</span> Мне нравится такое определение.  Наш класс может содержать сотни методов и реализовывать очень сложное поведение в различных ситуациях. Но мы можем скрыть от посторонних глаз все его методы (пометить модификатором <b>private</b>), а для взаимодействия с другими классами оставить всего пару-тройку методов (пометить их модификатором <b>public</b>). <span class="orange_text">Тогда все остальные классы нашей программы будут видеть в этом классе всего три метода,</span> и будут вызывать именно их. А все сложности будут скрыты внутри класса, как кабина пилотов от счастливых пассажиров.</p>
+<p><span class="red_text"><b>3) Наследование.</b></span></p>
+<p>У наследования есть две стороны. Сторона программирования и сторона реальной жизни. С точки зрения программирования, наследование – это специальное отношение между двумя классами. Но гораздо интереснее, что же такое наследование с точки зрения реальной жизни.</p>
+<p>Если бы нам понадобилось что-то создать в реальной жизни, то у нас есть два решения:</p>
+<p><b>1)</b> создать нужную нам вещь с нуля, потратив кучу времени и сил.</p>
+<p><b>2)</b> создать нужную нам вещь на основе уже существующей.</p>
+<p>Наиболее оптимальная стратегия выглядит так: берем существующее хорошее решение, немного его дорабатываем, подгоняем под свои нужды и используем. </p>
+<p>Если мы проследим историю возникновения человека, то окажется, что с момента зарождения жизни на планете прошли миллиарды лет. А если представить, что человек возник из обезьяны (на основе обезьяны), то прошла всего пара миллионов лет. Создание с нуля – дольше. Гораздо дольше.</p>
+<p>В программировании тоже есть возможность создавать один класс на основе другого. <span class="green_text">Новый класс становится потомком (наследником) уже существующего.</span> Это очень выгодно, когда есть класс, который содержит 80%-90% нужных нам данных и методов. <span class="orange_text">Мы просто объявляем подходящий класс <b>родителем</b> нашего нового класса, тогда в новом классе автоматически появляются все данные и методы класса-родителя.</span> Правда, удобно?</p>
+<p><span class="red_text"><b>4) Полиморфизм.</b></span></p>
+<p>Полиморфизм – это понятие из области программирования. Оно описывает ситуацию, когда за  одним интерфейсом скрываются разные реализации. Если постараться поискать его аналоги в реальной жизни, то одним из таких аналогов будет процесс управления машиной.</p>
+<p>Если человек может управлять грузовиком, то его можно посадить и за руль скорой, и за руль спорткара. <span class="violet_text">Человек может управлять машиной вне зависимости от того, что это за машина, потому что все они имеют одинаковый интерфейс управления: руль, педали и рычаг коробки передач.</span> Внутреннее устройство машин разное, но все они имеют одинаковый интерфейс управления.</p>
+<p><span class="green_text">Если вернуться к программированию, то полиморфизм позволяет единообразно обращаться к объектам различных классов</span> (обычно имеющих общего предка) – вещь, которую трудно переоценить. Ценность его тем выше, чем больше программа.</p>
+<p><b>ООП</b> – это принципы. Внутренние законы. <span class="red_text">Каждый из них нас в чем-то <b>ограничивает,</b> давая взамен <b>большие преимущества,</b> когда программа вырастает до больших размеров.</span> Четыре принципа ООП – это как четыре ножки стула. Убери хотя бы одну, и вся система станет неустойчивой.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>2. Причины появления ООП</h2>
+</div>
+<p>- Привет, Амиго! Я хочу, чтобы ты понял назначение ООП. Для этого я расскажу тебе одну историю. </p>
+<p>Была небольшая компания, которая занималась доставкой товаров в космосе…</p>
+<p class="amigo">- Как Galactic Rush?</p>
+<p>- Да, как Galactic Rush. В ней работало 5 человек. Один занимался финансами, второй работал на складе, третий выполнял доставку, четвертый руководил рекламой, а пятый управлял всем этим.</p>
+<p>Они были очень старательными, и все у них получалось. Компания имела хорошую репутацию и зарабатывала много денег. Но заказов с каждым годом было все больше, так что директору пришлось нанимать дополнительных сотрудников. Несколько на склад, несколько на доставку, еще одного кассира и рекламщика для расширения рынка.</p>
+<p><span class="red_text">И тут начались проблемы. Людей <b>стало больше</b>, и они <b>начали друг другу мешать.</b></span></p>
+<p>Маркетолог тратит все деньги на новую рекламную кампанию, и <span class="orange_text">в кассе нет денег на закупку товара, который надо срочно отправлять.</span></p>
+<p>На складе есть 10 коробок с новенькими гипердвигателями, которые поставляют раз в месяц. Курьер полетел отвозить один гипердвигатель, и заказ на 10 гипердвигателей от другого клиента вынужден ждать еще месяц. <span class="orange_text">Первый курьер просто не знал о другом заказе, который выполняет второй курьер.</span></p>
+<p>Новый помощник директора отправляет курьера на корабле для закупки товара, и <span class="orange_text">все остальные ждут, пока появится доступный корабль.</span> Есть куча срочных доставок, но этот помощник заведует только закупками и <b>старается хорошо выполнять свою работу.</b> <span class="green_text">Чем <b>лучше</b> человек выполнял <b>свои</b> обязанности, тем <b>больше он мешал</b> остальным.</span></p>
+<p>Пытаясь проанализировать ситуацию директор понял, что такие важные ресурсы, как корабль, наличность и товар расходуются не оптимально, а по принципу «кто первый встал – того и тапки». Любой мог взять нужный всем ресурс для своей работы, поставив при этом под удар остальных сотрудников, да и всю компанию в целом.</p>
+<p>Нужно было что-то делать, и <span class="green_text">директор решил разделить монолитную компанию на несколько отделов.</span> Появился отдел доставки, отдел маркетинга, отдел закупок, финансовый отдел и отдел запасов. Теперь уже никто не мог просто так взять корабль. Директор отдела доставки получал всю информацию о доставках и выдавал корабль тому курьеру, чья доставка была выгоднее для компании. Склад тоже не разрешал любому курьеру взять любой товар, а контролировал этот процесс. Финансовый отдел мог не дать денег на маркетинг, если знал, что скоро будет закупка. У каждого отдела было одно публичное лицо – его начальник. <span class="red_text">Внутреннее устройство каждого отдела было его внутренним делом.</span> Если курьер хотел получить товар, он шел к начальнику склада, а не на склад. Если появлялась новая заявка, ее получал директор отдела доставки (<b>public</b> person), а не курьер (<b>private</b> person). </p>
+<p>Другими словами, <span class="green_text">директор объединил в группы (отделы) ресурсы и действия над ними,</span><span class="orange_text"> а также запретил другим вмешиваться  во внутреннюю структуру отделов.</span><span class="violet_text"> Контактировать можно было строго с определенным лицом.</span></p>
+<p>С точки зрения ООП, это не что иное, как <span class="green_text">разбиение программы на объекты. Монолитная программа, состоящая из функций и переменных, превращается в программу, состоящую из объектов.</span> А объекты содержат в себе переменные и функции.</p>
+<p class="amigo">- Подожди. Проблема была в том, что любой сотрудник мог бесконтрольно работать с любым ресурсом и отдавать команды любому человеку?</p>
+<p>- Да, именно так.</p>
+<p class="amigo">- Интересно. Мы ввели небольшое ограничение, но получили больше порядка. А также смогли лучше контролировать все это.</p>
+<p>- Да. Разделяй и властвуй в чистом виде.</p>
+<p class="amigo">- Как ты красиво сказала – разделяй и властвуй. Нужно будет запомнить.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>3. Еще одно объяснение ООП (слабая связность, четкие функции)</h2>
+</div>
+<p>- Привет, Амиго! Хотела тебе рассказать еще об одном преимуществе использования ООП. Видишь ли – программы больше напоминают не строения, а животных. <span class="green_text"><b>Их не строят, их выращивают.</b> Разработка - это постоянные изменения.</span> В строительстве ты можешь иметь хороший план и четко ему следовать. В случае с разработкой программ – это не так.</p>
+<p>Очень часто что-то нельзя сделать тем способом, который ты себе наметил, и приходится многое переделывать. Еще чаще меняются требования заказчика.</p>
+<p class="amigo">- А если заказчик проекта дал очень точную его спецификацию?</p>
+<p>- Тогда взгляни на ситуацию во времени. <span class="orange_text">Успех продукта приведет к тому, что заказчик захочет выпустить его новую версию, а затем еще и еще.</span> И, конечно, нужно будет всего лишь добавить <b>«небольшие изменения»</b> в уже существующий продукт. <span class="green_text">Поэтому разработка продукта – это последовательность постоянных изменений.</span> Только масштаб времени разный. Каждая новая версия может выходить раз в неделю, раз в месяц или раз в полгода.</p>
+<p class="amigo">- И какой вывод можно сделать из всего этого?</p>
+<p>- <span class="red_text">Внутреннюю структуру продукта нужно поддерживать в таком состоянии, которое позволит внести значительные (и не очень) изменения с минимальными переделками.</span></p>
+<p class="amigo">- И как такое сделать?</p>
+<p>- Мы уже говорили, что программа состоит из объектов, которые взаимодействуют между собой. Давай нанесем на доску все объекты нашей программы, обозначив их жирными точками. И проведем от каждого объекта (точки) стрелочки ко всем объектам (точкам), с которыми он взаимодействуют.</p>
+<p>Теперь мы будем объединять объекты (точки) в группы. Точки должны быть объединены в группу, если связи между ними гораздо интенсивнее, чем с остальными точками. Если большинство стрелочек от точки идет к точкам ее же группы, тогда разбиение на группы произошло правильно. Точки внутри одной группы мы будем называть сильно связанными, а точки из разных групп – слабо связанными.</p>
+<p>Это называется <b>«принцип слабой связности».</b> Программа разбивается на несколько частей, часто слоев, логика которых сильно завязана на их внутреннее устройство и очень слабо на другие слои/части. <span class="orange_text">Обычно взаимодействие слоев очень регламентировано. Один слой может обращаться ко второму и использовать только небольшую часть его классов.</span></p>
+<p class="amigo">- Тот же принцип «разделения на отделы» только в большем масштабе?</p>
+<p>- Именно. Это приводит к тому, что мы можем реорганизовать отдел, повысить его эффективность, нанять в него еще больше людей, но если мы не изменим протокол взаимодействия других отделов с нашим, то все сделанные изменения останутся локальными. Никому не придется переучиваться. Не придется переделывать всю систему. Каждый отдел может заниматься такой внутренней оптимизацией, если общие механизмы взаимодействия выбраны удачно.</p>
+<p class="amigo">- Выбраны удачно. А что будет, если они выбраны неудачно?</p>
+<p>- Тогда <b>«запас изменений»</b> быстро иссякнет и придется переделывать всю систему. Такое приходится делать время от времени. Нельзя предугадать, что будет в будущем, но можно свести количество таких переделок к минимуму.</p>
+<p class="amigo">- Хорошо. Про пользу такого разделения я понял, а ООП тут причем?</p>
+<p>- Выбор структуры отделов и способа их взаимодействия – это <b>«принцип Абстракции».</b> В программировании он  используется для определения, на какие части лучше разбить программу, и как эти части должны взаимодействовать.  Данный принцип также можно применять к разделению полученных частей, пока мы не разобьем программу на отдельные классы.</p>
+<p class="amigo">- А сокрытие внутренней структуры этих частей, и жёсткие ограничения на взаимодействие с другими частями – это <b>Инкапсуляция</b>, да?</p>
+<p>- Именно. <span class="green_text">Инкапсуляция + Абстракция – это краеугольные камни ООП.</span> Хорошая программа обязана следовать этим двум принципам. В дальнейшем мы рассмотрим остальные принципы и поймем, какие преимущества они дают.</p>
+<p class="amigo">- Очень интересно. Жду с нетерпением.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>4. Лекция на вики по ООП</h2>
+</div>
+<p>- Я достал для тебя секретные материалы. Это лекции высочайшего качества. Если ты сможешь прочесть и понять их, то твое будущее навсегда изменится. Это лучшее из того, что ты  мог прочитать в жизни. Ну же, не теряй времени. </p>
+<p><a href="http://ru.wikibooks.org/wiki/%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BD%D0%BE-%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" target="_blank">Лекция на вики по ООП</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>5. Наследование. Преимущество наследования</h2>
+</div>
+<p>- Привет, Амиго! Сейчас будет одна тема, которой, я думаю, ты будешь частенько пользоваться. Это – <span class="red_text">наследование.</span></p>
+<p><span class="green_text">Программирование, для несведущих, неотличимо от магии.</span> Поэтому начну с такой интересной аналогии...</p>
+<p>Предположим, что ты волшебник и хочешь создать летающую лошадь. С одной стороны, ты бы мог попробовать наколдовать пегаса. Но т.к. пегасов в природе не существует, это будет очень не просто. Придется очень много делать самому. <span class="orange_text">Куда проще взять лошадь и приколдовать ей крылья.</span></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/11/image-ru-11-03.gif"/>
+<p><span class="green_text">В программировании такой процесс называется «наследование».</span> Предположим тебе нужно написать очень сложный класс. Писать с нуля долго, потом еще долго все тестировать и искать ошибки. Зачем идти самым сложным путем? Лучше поискать – а нет ли уже такого класса?</p>
+<p>Предположим, ты нашел класс, который своими методами реализует 80% нужной тебе функциональности. Ты можешь просто скопировать его код в свой класс. Но у такого решения есть несколько минусов:</p>
+<p><span class="orange_text">1) Найденный класс уже может быть скомпилирован в байт-код, а доступа к его исходному коду у тебя нет.</span></p>
+<p><span class="red_text">2) Исходный код класса есть, но ты работаешь в компании, которую могут засудить на пару миллиардов за использование даже 6 строчек чужого кода. А потом она засудит тебя.</span></p>
+<p><span class="blue_text">3) Ненужное дублирование большого объема кода. Кроме того, если автор чужого класса найдет в нем ошибку и исправит ее, у тебя эта ошибка останется.</span></p>
+<p>Есть решение потоньше, и без необходимости получать легальный доступ к коду оригинального класса. <span class="green_text">В Java ты можешь просто объявить тот класс родителем твоего класса.</span> Это будет эквивалентно тому, что ты добавил код  того класса в код своего. В твоем классе появятся все данные и все методы класса-родителя. Например, можно делать так: наследуемся от «лошади», добавляем «крылья» - получаем «пегаса»</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/11/image-ru-11-04.png"/>
+<p class="amigo">- Очень интересно, продолжай.</p>
+<p>- Наследование можно использовать и для других целей. Допустим, у тебя есть десять классов, которые очень похожи, имеют совпадающие данные и методы. Ты можешь создать специальный <span class="green_text">базовый класс,</span> вынести эти данные (и работающие с ними методы) в этот базовый класс и объявить те десять классов его наследниками. Т.е. указать в каждом классе, что у него есть класс-родитель – данный базовый класс.</p>
+<p>Также как <span class="red_text">преимущества абстракции раскрываются только рядом с инкапсуляцией, так и преимущества наследования гораздо сильнее при использовании полиморфизма.</span> Но о нем я расскажу завтра. Сегодня же мы рассмотрим несколько примеров использования наследования.</p>
+<p>Предположим, мы пишем программу, которая играет в шахматы с пользователем, тогда нам понадобятся классы для фигур. Какие бы ты предложил классы, Амиго?</p>
+<p class="amigo">- Король, Ферзь, Слон, Конь, Ладья и Пешка.</p>
+<p>- Отлично. Ничего не упустил.</p>
+<p>А какие бы данные ты предложил хранить в этих классах?</p>
+<p class="amigo">- Координаты x и y, а также ее ценность (worth). Ведь некоторые фигуры ценнее других.</p>
+<p>- А в чем отличия этих классов?</p>
+<p class="amigo">- Отличия в том, как они ходят фигуры. В поведении.</p>
+<p>- Да. Вот как можно было бы описать их в виде классов</p>
+<table class="table_example">
+<tbody><tr><th width="40%">&amp;nbsp</th><th width="30%">&amp;nbsp</th><th width="30%">&amp;nbsp</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> King<br/>
+{<br/>
+ int x;<br/>
+ int y;<br/>
+ int worth;<br/>
+ void kingMove()<br/>
+ {<br/>
+<span class="grey_text">//код, решающий,</span><br/>
+<span class="grey_text">//как пойдет король</span><br/>
+}<br/>
+}<br/>
+</td>
+<td class="monospace_text wide-text"><b>class</b> Queen<br/>
+{<br/>
+ int x;<br/>
+ int y;<br/>
+ int worth;<br/>
+ void queenMove()<br/>
+ {<br/>
+<span class="grey_text">//код, решающий,</span><br/>
+<span class="grey_text">//как пойдет ферзь</span><br/>
+ }<br/>
+}<br/>
+</td>
+<td class="monospace_text wide-text"><b>class</b> Rook<br/>
+{<br/>
+ int x;<br/>
+ int y;<br/>
+ int worth;<br/>
+ void rookMove()<br/>
+ {<br/>
+<span class="grey_text">//код, решающий,</span><br/>
+<span class="grey_text">//как пойдет ладья</span><br/>
+ }<br/>
+}<br/>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Knight<br/>
+{<br/>
+ int x;<br/>
+ int y;<br/>
+ int worth;<br/>
+ void knightMove()<br/>
+ {<br/>
+<span class="grey_text">//код, решающий,</span><br/>
+<span class="grey_text">//как пойдет конь</span><br/>
+ }<br/>
+}<br/>
+</td>
+<td class="monospace_text wide-text"><b>class</b> Bishop<br/>
+{<br/>
+ int x;<br/>
+ int y;<br/>
+ int worth;<br/>
+ void bishopMove()<br/>
+ {<br/>
+<span class="grey_text">//код, решающий,</span><br/>
+<span class="grey_text">//как пойдет слон</span><br/>
+ }<br/>
+}<br/>
+</td>
+<td class="monospace_text wide-text"><b>class</b> Pawn<br/>
+{<br/>
+ int x;<br/>
+ int y;<br/>
+ int worth;<br/>
+ void pawnMove()<br/>
+ {<br/>
+<span class="grey_text">//код, решающий,</span> <br/>
+<span class="grey_text">//как пойдет пешка</span><br/>
+ }<br/>
+}<br/>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Да, именно так я бы и написал.</p>
+<p>- А вот, как можно было бы сократить код с помощью наследования. Мы могли бы вынести одинаковые методы и данные в общий класс. Назовем его ChessItem. <span class="orange_text">Объекты класса ChessItem не имеет смысла создавать, так как ему не соответствует ни одна шахматная фигура,</span> но от него было бы много пользы:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="31%">&amp;nbsp</th><th width="31%">&amp;nbsp</th><th width="20%">&amp;nbsp</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> King <span class="red_text">extends ChessItem</span><br/>
+{<br/>
+void kingMove()<br/>
+ {<br/>
+<span class="grey_text">//код, решающий,</span><br/>
+<span class="grey_text">//как пойдет король</span><br/>
+}<br/>
+}<br/>
+</td>
+<td class="monospace_text wide-text"><b>class</b> Queen <span class="red_text">extends ChessItem</span><br/>
+{<br/>
+void queenMove()<br/>
+ {<br/>
+<span class="grey_text">//код, решающий,</span><br/>
+<span class="grey_text">//как пойдет ферзь</span><br/>
+}<br/>
+}<br/>
+</td>
+<td class="monospace_text wide-text"><b>class</b> Rook <span class="red_text">extends ChessItem</span><br/>
+{<br/>
+void rookMove()<br/>
+ {<br/>
+<span class="grey_text">//код, решающий,</span><br/>
+<span class="grey_text">//как пойдет ладья</span><br/>
+}<br/>
+}<br/>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td class="monospace_text wide-text"><b>class</b> <span class="red_text">ChessItem</span><br/>
+{<br/>
+ int x;<br/>
+ int y;<br/>
+ int worth;<br/>
+}<br/>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Knight <span class="red_text">extends ChessItem</span><br/>
+{<br/>
+void knightMove()<br/>
+ {<br/>
+<span class="grey_text">//код, решающий,</span><br/>
+<span class="grey_text">//как пойдет конь</span><br/>
+ }<br/>
+}<br/>
+</td>
+<td class="monospace_text wide-text"><b>class</b> Bishop <span class="red_text">extends ChessItem</span><br/>
+{<br/>
+void bishopMove()<br/>
+ {<br/>
+<span class="grey_text">//код, решающий,</span><br/>
+<span class="grey_text">//как пойдет слон</span><br/>
+ }<br/>
+}<br/>
+</td>
+<td class="monospace_text wide-text"><b>class</b> Pawn <span class="red_text">extends ChessItem</span><br/>
+{<br/>
+void pawnMove()<br/>
+ {<br/>
+<span class="grey_text">//код, решающий,</span><br/>
+<span class="grey_text">//как пойдет пешка</span><br/>
+ }<br/>
+}<br/>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Как интересно.</p>
+<p>- Именно! Особенно много преимуществ мы получаем, когда в проекте тысячи различных объектов и сотни классов.  Тогда правильно подобранными классами можно не только существенно упростить логику, но и сократить код в десятки раз.</p>
+<p class="amigo">- А что нужно чтобы унаследовать какой-то класс?</p>
+<p>- Для этого после объявления нашего класса нужно указать ключевое слово <span class="red_text">extends</span> и написать имя родительского класса. <span class="red_text">Унаследоваться можно только от одного класса.</span></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/11/image-ru-11-05.gif"/>
+<p>На картинке мы видим «корову», унаследованную от «свиньи». «Свинья» унаследована от «курицы», «курица» от «яйца». <span class="red_text">Только один родитель!</span> Такое наследование не всегда логично. Но если есть только свинья, а очень нужна корова, программист зачастую не может устоять перед желанием сделать «корову» из «свиньи».</p>
+<p class="amigo">- А если мне хочется унаследоваться от двух классов. Можно же что-то сделать?!</p>
+<p>- Почти ничего. Множественного наследования классов в Java нет: класс может иметь только одного класса-родителя. Но есть множественное наследование интерфейсов. Это немного снижает остроту проблемы.</p>
+<p class="amigo">- Ясно. А что такое интерфейс?</p>
+<p>- Про интерфейсы я расскажу тебе завтра, а пока давай продолжим разбираться с наследованием.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задачи на наследование</h2>
+</div>
+<p>- Привет, Амиго! Вот тебе очередная порция задач на наследование. Наслаждайся.</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level11,lesson06,task01"></button><b>1. Лошадь и пегас</b><br/><br/>
+                Написать два класса: <span class="taskcode">Horse</span>(лошадь) и <span class="taskcode">Pegas</span>(пегас). Унаследовать пегаса от лошади.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level11,lesson06,task02"></button><b>2. Домашние животные</b><br/><br/>
+                Написать три класса: <span class="taskcode">Pet</span>(домашнее животное), <span class="taskcode">Cat</span>(кот) и <span class="taskcode">Dog</span>(собака). Унаследовать кота и собаку от животного.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level11,lesson06,task03"></button><b>3. В гостях у бабушки</b><br/><br/>
+                Написать шесть классов: <span class="taskcode">Animal</span>(животное), <span class="taskcode">Cow</span>(корова) и <span class="taskcode">Pig</span>(свинья), <span class="taskcode">Sheep</span>(овца), <span class="taskcode">Bull</span>(бык), <span class="taskcode">Goat</span>(козел). Унаследовать корову, свинью, овцу, быка и козла от животного.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level11,lesson06,task04"></button><b>4. Все мы работники</b><br/><br/>
+                 Написать четыре класса: <span class="taskcode">Employee</span>(сотрудник), <span class="taskcode">Manager</span>(управляющий), <span class="taskcode">Chief</span>(директор) и  <span class="taskcode">Secretary</span>(секретарь). Унаследовать управляющего, директора и секретаря от сотрудника.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level11,lesson06,task05"></button><b>5. ИТ-компания</b><br/><br/>
+                Написать девять классов: <span class="taskcode">Worker</span>(сотрудник), <span class="taskcode">Clerk</span>(клерк), <span class="taskcode">IT</span>(ИТ-специалист), <span class="taskcode">Programmer</span>(программист), <span class="taskcode">ProjectManager</span>(менеджер проекта), <span class="taskcode">CTO</span>(технический директор),   <span class="taskcode">HR</span>(рекрутер), <span class="taskcode">OfficeManager</span>(офис-менеджер), <span class="taskcode">Cleaner</span>(уборщик). <br/>Унаследовать программиста, менеджера проекта и технического директора от ИТ-специалиста. <br/>Унаследовать рекрутера, уборщика и офис-менеджера от клерка. <br/>Унаследовать клерка и ИТ-специалиста от сотрудника. 
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>7. Инкапсуляция. Преимущество инкапсуляции</h2>
+</div>
+<p>- Привет, Амиго! Хочу посвятить сегодняшнюю лекцию <span class="red_text">инкапсуляции.</span> Ты уже знаешь в общих чертах, что это такое.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/11/image-ru-11-01.png"/>
+<p>В чем же преимущества инкапсуляции? Их достаточно много, но я могу выделить четыре, на мой взгляд, основных:</p>
+<p><b>1) Валидное  внутреннее состояние.</b></p>
+<p>В програмах часто возникают ситуации, когда несколько классов, взаимодействуют с одним и тем же объектом. В результате их совместной работы нарушается целостность данных внутри объекта - объект уже не может продолжить нормально работать.</p>
+<p><span class="green_text">Поэтому объект должен следить за изменениями своих внутренних данных, а еще лучше – проводить их сам.</span></p>
+<p>Если мы не хотим, чтобы какая-то переменная класса менялась другими классами, мы объявляем ее <b>private</b>, и тогда только методы её же класса смогут получить к ней доступ.  Если мы хотим, чтобы значения переменных можно было только читать, но не изменять,  тогда нужно добавить public getter для нужных переменных.</p>
+<p>Например, мы хотим, чтобы все могли узнать количество элементов в нашей коллекции, но никто не мог его поменять без нашего разрешения.  Тогда мы объявляем переменную <b>private int count</b> и метод <b>public getCount()</b>.</p>
+<p>Правильное использование инкапсуляции гарантирует, что <span class="red_text">ни один класс не может получить прямой доступ к внутренним данным нашего класса и, следовательно, изменить их без контроля с нашей стороны.</span> Только через вызов методов того же класса, что и изменяемые переменные.</p>
+<p><span class="green_text">Лучше исходить из того, что другие программисты всегда будут использовать твои классы самым удобным для них образом, а не самым безопасным для тебя (для твоего класса).</span> Отсюда и ошибки, и попытки заранее избавиться от них.</p>
+<p><b>2) Контроль передаваемых аргументов. </b></p>
+<p>Иногда нужно контролировать аргументы, передаваемые в методы нашего класса. Например, наш класс описывает объект "человек" и позволяет задать дату его рождения. <span class="orange_text">Мы должны проверять все передаваемые данные на их соответствие логике программы и логике нашего класса.</span> Например, не допускать 13-й месяц,  дату рождения 30 февраля и так далее.</p>
+<p class="amigo">- А зачем кому-то указывать в дате рождения 30 февраля?</p>
+<p>- Во-первых – это может быть ошибка ввода данных от пользователя.</p>
+<p>Во-вторых, прежде чем программа будет работать как часы, в ней будет много ошибок. Например, возможна такая ситуация.</p>
+<p>Программист пишет программу, которая определяет людей у кого день рождения послезавтра. Например, сегодня 3 марта. Программа добавляет к текущему дню месяца число 2 и ищет всех, кто родился 5 марта. Вроде бы все верно.</p>
+<p>Вот только, когда наступит 30 марта программа не найдет никого, т.к. в календаре нет 32  марта. В программе становится гораздо меньше ошибок, когда в методы добавляют проверку переданных данных.</p>
+<p class="amigo">- Помню, когда мы изучали ArrayList, я смотрел его код, и там была проверка индекса в методах get и set: index больше или равен нулю и меньше длины массива. Там еще кидалось исключение, если в массиве нет элемента с таким индексом.</p>
+<p>- Да, <span class="green_text">это классический пример проверки входных данных.</span></p>
+<p><b>3) Минимизация ошибок при изменении кода классов.</b></p>
+<p>Представим, что мы написали один очень полезный класс, когда участвовали в большом проекте. Он так всем понравился, что другие программисты начали использовать его в сотнях мест в своем коде.</p>
+<p>Класс оказался настолько полезен, что ты решил его улучшить. <span class="red_text">Но если ты удалишь какие-то методы этого класса, то код десятков людей перестанет компилироваться.</span> Им придется срочно все переделывать. И чем больше переделок, тем больше ошибок. Ты поломаешь кучу сборок, и тебя будут ненавидеть.</p>
+<p>А когда мы меняем методы, объявленные как <b>private</b>, мы знаем, что нигде нет ни одного класса, который вызывал бы эти методы. <span class="green_text">Мы можем их переделать, поменять количество параметров и их типы, и зависимый код будет работать дальше.</span> Ну, или как минимум, компилироваться.</p>
+<p><b>4) Задаем способ взаимодействия нашего объекта со сторонними объектами. </b></p>
+<p>Мы можем ограничить некоторые действия, допустимые с нашим объектом. Например, мы хотим, чтобы объект можно было создать только в одном экземпляре. Даже если его создание происходит в нескольких местах проекта одновременно. И мы можем сделать это благодаря инкапсуляции. </p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/11/image-ru-11-02.png"/>
+<p>Инкапсуляция позволяет добавлять <span class="red_text">дополнительные ограничения,</span> которые можно превратить в <span class="red_text">дополнительные преимущества.</span> Например, класс String реализован как <b>immutable</b> (неизменяемый) объект. Объект класса String неизменяем с момента создания и до момента смерти. Все методы класса String (remove, substiring, ...), <span class="green_text">возвращают новую строку, абсолютно не изменяя объект, у которого они были вызваны.</span></p>
+<p class="amigo">- Ничего себе. Вот оно как, оказывается. </p>
+<p>- Инкапсуляция очень интересная штука.</p>
+<p class="amigo">- Ага.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Задачи на инкапсуляцию</h2>
+</div>
+<p>- Привет, Амиго! Сегодня ты станешь признанным экспертом в инкапсуляции. Попробуй решить эти задачи: </p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level11,lesson08,task01"></button><b>1. Все скрыто</b><br/><br/>
+                Скрыть все внутренние переменные класса <span class="taskcode">Cat</span>. 
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level11,lesson08,task02"></button><b>2. Доступ есть</b><br/><br/>
+                Скрыть все внутренние переменные класса <span class="taskcode">Cat</span>, но только те, к которым остается доступ с помощью методов.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level11,lesson08,task03"></button><b>3. Ничего не поменяешь</b><br/><br/>
+                Скрыть все внутренние переменные класса <span class="taskcode">Cat</span>, а также методы, позволяющие менять внутреннее состояние объектов класса <span class="taskcode">Cat</span>.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level11,lesson08,task04"></button><b>4. Инкапсуляция для классов Cat и Dog</b><br/><br/>
+                 Скрыть все внутренние переменные класса <span class="taskcode">Cat</span> и <span class="taskcode">Dog</span>. Также скрыть все методы, кроме тех, с помощью которых эти классы взаимодействуют друг с другом. 
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level11,lesson08,task05"></button><b>5. Добавь недостающие переменные</b><br/><br/>
+                Посмотри внимательно на методы и добавь недостающие переменные.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>9. Лекция на вики про наследование и инкапсуляцию</h2>
+</div>
+<p>-  Хотелось бы найти побольше сторонних статей по сегодняшнему материалу. Проблема не в том, что их нет, а в том, что ООП – это вещи, которые нужно пробовать руками, а не читать про них статьи. Но все же кое-что для тебя у меня есть.</p>
+<p><a href="http://www.skipy.ru/philosophy/inheritance.html" target="_blank">Лекция про наследование и инкапсуляцию</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>10. Хулио</h2>
+</div>
+<p>- Привет, Амиго! Давно не виделись. Я тут нашел новую подборку шикарного видео. Тебе точно понравится.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-11.gif" preload="none" tabindex="0" taskkey="level11,lesson10,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-11.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=enWCamtRCeE" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>11. Домашние и бонусные задания</h2>
+</div>
+<p>- Здорово, боец!</p>
+<p class="amigo">- Здравия желаю, капитан Бобров!</p>
+<p>- У меня для тебя шикарная новость. Вот тебе задания для закрепления полученных навыков. Выполняй их каждый день, и твои навыки будут расти с неимоверной скоростью. Они специально разработаны для выполнения их в Intellij IDEA.</p>
+<table class="table_task">
+<tr>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Адам и Ева</b><br/><br/>
+                Написать два класса <span class="taskcode">Adam</span>(Адам) и <span class="taskcode">Eve</span>(Ева). Унаследовать Еву от Адама.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. AppleIPhone и SamsungGalaxyS2</b><br/><br/>
+                Написать два класса <span class="taskcode">AppleIPhone </span> и <span class="taskcode">SamsungGalaxyS2</span>. Унаследовать SamsungGalaxyS2 от AppleIPhone.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Эволюция</b><br/><br/>
+                Написать четыре класса: <span class="taskcode">Fish</span>(Рыбы), <span class="taskcode">Animal</span>(Животные), <span class="taskcode">Ape</span>(Обезьяны), <span class="taskcode">Human</span>(Человек). Унаследовать животных от рыб, обезьян от животных и человека от обезьян.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>4. Религия</b><br/><br/>
+                 Написать три класса: <span class="taskcode">Judaism</span>(Иудаизм), <span class="taskcode">Christianity</span>(Христианство), <span class="taskcode">Islam</span>(Мусульманство). Унаследовать христианство от иудаизма и мусульманство от христианства.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>5. От школьника к рабству</b><br/><br/>
+                Написать четыре класса: <span class="taskcode">Schoolboy</span>(школьник), <span class="taskcode">Student</span>(студент), <span class="taskcode">Worker</span>(Сотрудник), <span class="taskcode">Slave</span>(Раб). Унаследовать студента от школьника, сотрудника от студента, раба от сотрудника.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>6. Первая правильная «цепочка наследования»</b><br/><br/>
+                Расставь правильно «цепочку наследования» в классах: <span class="taskcode">Pet</span>(домашнее животное), <span class="taskcode">Cat</span>(кот), <span class="taskcode">Dog</span>(собака).
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>7. Вторая правильная «цепочка наследования»</b><br/><br/>
+                Расставь правильно «цепочку наследования» в классах: <span class="taskcode">Pet</span>(домашнее животное), <span class="taskcode">Cow</span>(корова), <span class="taskcode">Dog</span>(собака), <span class="taskcode">Pig</span>(свинья), <span class="taskcode">Animal</span>(животное).
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>8. Третья правильная «цепочка наследования»</b><br/><br/>
+                Расставь правильно «цепочку наследования» в классах: <span class="taskcode">Pet</span>(домашнее животное), <span class="taskcode">Cat</span>(кот), <span class="taskcode">Dog</span>(собака), <span class="taskcode">Car</span>(машина).
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>9. Четвертая правильная «цепочка наследования»</b><br/><br/>
+                Расставь правильно «цепочку наследования» в классах: <span class="taskcode">House</span>(дом), <span class="taskcode">Cat</span>(кот), <span class="taskcode">Dog</span>(собака), <span class="taskcode">Car</span>(машина).
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>10. Пятая правильная «цепочка наследования»</b><br/><br/>
+                Расставь правильно «цепочку наследования» в классах: <span class="taskcode">House</span>(дом), <span class="taskcode">Cat</span>(кот), <span class="taskcode">Dog</span>(собака), <span class="taskcode">Car</span>(машина), <span class="taskcode">Animal</span>(животное), <span class="taskcode">Assets</span>(имущество).
+            </td>
+</tr>
+</table>
+<p>- Те задания были для духов. Для дедушек я добавил бонусные задания повышенной сложности. Только для старослужащих. </p>
+<table class="table_task">
+<tr>
+<th></th>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>1. Нужно исправить программу, чтобы компилировалась и работала. </b><br/><br/>
+<u>Задача:</u> Исправь наследование в классах: <span class="taskcode">Cat, Dog, Pat, House, Airplane</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>2. Нужно добавить в программу новую функциональность. </b><br/><br/>
+<u>Задача:</u> Добавь общий базовый класс к классам-фигур:  (фигуры из шахмат).
+            </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>3. Задача по алгоритмам. </b><br/><br/>
+<u>Задача:</u> Написать метод, который возвращает минимальное и максимальное числа в массиве.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

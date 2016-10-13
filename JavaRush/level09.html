@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-09.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 9
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>Знания vs. Навыки</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/09/image-ru-09-01.jpg"/>
+<p>Учеба в вузе приучила нас к мысли, что принципиальных отличий между теорией и практикой нет. Нет, вы конечно, понимаете, что это не одно и то же. Но принципиальной разницы не видите. А она есть.</p>
+<p><b>Большинство людей ставит знак равенства между «я знаю» и «я умею»</b>. А вы – нет?</p>
+<p>А как насчет таких примеров?</p>
+<p>1) Я знаю, что курить вредно, но я – курю.</p>
+<p>2) Я знаю, что МакДональдс вреден, но ем фастфуд.</p>
+<p>3) Я знаю правила дорожного движения, но ездить не умею.</p>
+<p>4) Я знаю, что бег полезен, но не бегаю по утрам.</p>
+<p>Очень часто люди принимают «я знаю» за «я умею». Хороший пример с правилами дорожного движения. Если человек знает правила и знает, как ездить, значит ли это, что  он умеет? Нет. А если он думает, что - значит? Ну и зачем ему инструктор, когда он уже и так все знает и умет?</p>
+<p><b>Если вы уверены, что уже все знаете, то, скорее всего, ничего больше учить не будете. А если уверены, что все умеете, то ничему больше не научитесь.</b> У вас и мысли такой не возникнет. А значит, вы упустите все замечательные возможности чему-нибудь научиться.</p>
+<p>В обычном вузе вас кормят только знаниями, а умения/навыки вам придётся приобрести самим. Что я слышу? у вас в вузе была не только теория, но и практика? </p>
+<p>Ок, если вы - <b>студент физического факультета</b>, сделайте мне рабочую модель парового двигателя с КПД хотя бы 20%. Спорю, что вы знаете как, но не умете, да?</p>
+<p>Вы – <b>химик</b>? Сделайте черный бездымный порох. Тоже вроде бы знаете как, но не умеете?</p>
+<p><b>Математик</b>? Составьте уравнение полета артиллерийского снаряда. Не забудьте учесть форму снаряда. Материальные точки не летают в реальной жизни. Как не бывает и шарообразных коней.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/09/image-ru-09-02.jpg"/>
+<p><b>Биолог</b>? Выделите пенициллин. Это плесень, встречается на дынях, чтоб вы знали. Знаете как – отлично! Сможете?</p>
+<p><b>Экономист</b>? Постройте прогноз роста цен на нефть. Построили? А теперь превратите $2,000 в  $200,000 за год на основании вашего прогноза. Вы хоть раз на FOREX играли? За реальные деньги? Или тоже только знаете, что это такое?</p>
+<p><b>Международная экономика</b>? Отлично! Где мне открыть офшор? В Гонконге, Ирландии или США. Почему? Даже если вы знаете, что вряд ли, вы не сможете этого сделать, т.к. никогда раньше не делали. И даже понятия не имеете, как это делается.</p>
+<p>Вас этому в вузе не учили? Чего это я задаю задания, которые вы не проходили? А потому что это <b>задания из реальной жизни. Это и есть практика</b>, а все что вы учили в вузе: шарообразные кони, совершенная конкуренция – этого ничего в реальной жизни не существует.</p>
+<p>Что же это я <b>маркетологов</b> забыл? Куда мне лучше потратить  $500, чтобы о моем курсе узнало как можно больше людей? На рекламу? Вы вообще в курсе, что уже устарела не только классическая реклама, но и концепция Уникального Торгового Предложения, которая, как я уверен, преподносилась вам в вузе чуть ли не как панацея от всех бед?</p>
+<p class="red_text">Забудьте о том, что вы что-то знаете. Спросите себя – что вы умеете? Полезного? За что готовы платить деньги? Которых вам будет хватать?</p>
+<p>Так что, друзья, давайте скажем спасибо  такому замечательному курсу, как JavaRush. Благодаря которому, вы будете не только знать, как программировать, но и уметь программировать. А также сможете устроиться на работу, и, через пару лет, получать достойную зарплату.  Которой, надеюсь, вам будет хватать для безбедной жизни.</p>
+<p>Еще раз повторяю, чтобы запомнили: неважно, что вы знаете. Важно только то, что вы умеете делать полезного другим людям, за что они готовы платить вам деньги.</p>
+<p>Чем раньше вы это поймете, тем лучше.</p>
+<br/>
+<div class="line"></div>
+<br/>
+<p>Хочешь стать программистом - купи подписку на полный курс. Более тысячи задач, 600+ минилекций, сайт, форум, плагин к IDEA, подсказки, видеоуроки, мотивирующие видео,... Это все будет твоим. JavaRush - реально крутой способ стать Java-программистом.</p>
+<button class="profile-tariff-button-popular" onclick="window.top.location.href = '//javarush.ru/user/subscription?l=9';">Купи подписку - стань программистом</button>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>1. Стек трейс</h2>
+</div>
+<img src="https://javarush.ru/levels/images/lessons/09/image-ru-09-07.gif"/>
+<p>- Привет! Сегодня я расскажу тебе, что такое стек-трейс. Но сначала расскажу, что такое стек. </p>
+<p>- Представь себе стопку бумаг - деловых поручений для некоторого исполнителя.  Сверху на стопку можно класть новое задание, и с верха стопки задание можно брать.  При таком подходе задания будут исполняться не по порядку поступления. Задание, положенное самым последним, будет взято исполнителем самым первым. <span class="green_text">Такая структура элементов коллекции называется <i><b><span class="green_text">стеком</span></b></i> – стопкой.</span></p>
+<p>- <span class="orange_text">В Java для этого есть специальная коллекция – Stack.</span> Это коллекция, у которой есть методы «добавить элемент» и «взять(достать/забрать) элемент». Как ты уже догадался, первым будет взят элемент, добавленный самым последним.</p>
+<p>- Хм. Вроде не сложно и понятно.</p>
+<p>- Отлично. Тогда сейчас объясню, что такое <i><b>стек-трейс</b></i>. </p>
+<p>- Представь себе, что в Java <span class="green_text">функция А</span> вызвала <span class="violet_text">функцию Б</span>, а та вызвала <span class="orange_text">функцию В</span>, а та, в свою очередь, <span class="grey_text">функцию Г</span>. Так вот, чтобы выйти из <span class="violet_text">функции Б</span>, нужно сначала выйти из <span class="orange_text">функции В</span>, а для этого выйти из <span class="grey_text">функции Г</span>. Это очень похоже на стек.</p>
+<p class="amigo">- А чем похоже?</p>
+<p>- В стопке тоже, чтобы добраться до какого-то листка с заданием, надо довыполнить все задания, которые положили сверху.</p>
+<p class="amigo">- Ну, некоторая аналогия есть, но не уверен, что я все понял правильно.</p>
+<p>- Смотри. Стек – это набор элементов. Как листы в стопке. Чтобы взять третий сверху лист, надо сначала взять второй, а для этого взять первый. Класть и брать листы можно всегда, но всегда взять можно только самый верхний.</p>
+<p>- С вызовом функций то же самое. <span class="green_text">Функция А</span> вызывает <span class="violet_text">функцию Б</span>, а та вызывает <span class="orange_text">функцию В</span>. И чтобы выйти из <span class="green_text">А</span>, надо сначала выйди из <span class="violet_text">Б</span>, а для этого надо выйти из <span class="orange_text">В</span>.</p>
+<p class="amigo">- Подожди. Если я все правильно понял, то весь этот стек сведется к «взять можно только самый последний положенный лист», «выйти можно только из последней функции, в которую зашли». Так?</p>
+<p>- Да. Так вот – последовательность вызовов функций - это и есть «стек вызовов функций»,  он же  просто «стек вызовов».  <span class="green_text">Функция, вызванная последней, должна завершиться самой первой.</span> Давай посмотрим это на примере:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Получение и вывод текущего стека вызовов:</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level09,lesson01,type01"></button></td>
+<td class="monospace_text wide-text"><pre>public class ExceptionExample
+{
+  public static void <b>main</b>(String[] args)
+  {
+    <b>method1</b>();
+  }
+
+  public static void <b>method1</b>()
+  {
+    <b>method2</b>();
+  }
+
+  public static void <b>method2</b>()
+  {
+    <b>method3</b>();
+  }
+
+  public static void <b>method3</b>()
+  {
+    <span class="double-wide-text"><span class="violet_text">StackTraceElement</span>[] <span class="blue_text">stackTraceElements</span> = <b>Thread</b>.<span class="red_text">currentThread</span>().<span class="red_text">getStackTrace</span>();</span>
+    for (<span class="violet_text">StackTraceElement</span> <span class="blue_text">element</span> : <span class="blue_text">stackTraceElements</span>)
+    {
+       System.out.println(<span class="blue_text">element</span>.<span class="green_text">getMethodName</span>());
+    }
+  }
+}</pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="2"><!--<button class="task_button" taskKey="level09,lesson01,type01">--></td>
+<td class="example">Вот какой результат мы получим:</td></tr>
+<tr><td class="monospace_text">getStackTrace<br/>method3<br/>method2<br/>method1<br/>main</td></tr>
+</table>
+<p class="amigo">- Ок. С вызовом функций похоже все понятно. А что это еще за <span class="violet_text">StackTraceElement</span>?</p>
+<p>- Java-машина ведет запись всех вызовов функций. У нее есть для этого специальная коллекция – стек. Когда одна функция вызывает другую, Java-машина помещает в этот стек новый элемент <span class="violet_text">StackTraceElement</span>. Когда функция завершается этот элемент удаляется из стека. <span class="orange_text">Таким образом, в этом стеке всегда хранится актуальная информация о текущем состоянии «стека вызовов функций».</span></p>
+<p>- Каждый <span class="violet_text">StackTraceElement</span> содержит информацию о методе, который был вызван. В частности можно получить имя этого метода с помощью функции <span class="green_text">getMethodName</span>.</p>
+<p>- В примере выше ты можешь видеть демонстрацию этого дела:</p>
+<p>1) Получаем «стек вызовов»: </p>
+<p>2) Проходимся по нему с помощью цикла <b>for-each</b>. Надеюсь, ты его еще не забыл.</p>
+<p>3) Печатаем в <b>System.out</b> имена методов.</p>
+<p class="amigo">- Интересная штука и, похоже, совсем не сложная. Спасибо, Риша!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>2. Задачи на вывод стек-трейса </h2>
+</div>
+<p>- Привет, Амиго! </p>
+<p class="amigo">- Привет, Диего!</p>
+<p>- Вот тебе одна маленькая задачка на вывод <b><i>стек-трейса</i></b>.</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level09,lesson02,task01"></button><b>1. Каждый метод должен возвращать свой StackTrace</b><br/><br/>
+                    Написать пять методов, которые вызывают друг друга. Каждый метод должен возвращать свой StackTrace.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level09,lesson02,task02"></button><b>2. И снова StackTrace</b><br/><br/>
+                    Написать пять методов, которые вызывают друг друга. Каждый метод должен возвращать имя метода, вызвавшего его, полученное с помощью StackTrace.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level09,lesson02,task03"></button><b>3. Метод должен вернуть номер строки кода, из которого вызвали этот метод</b><br/><br/>
+                    Написать пять методов, которые вызывают друг друга. Метод должен вернуть номер строки кода, из которого вызвали этот метод. Воспользуйся функцией: <span class="taskcode">element.getLineNumber()</span>.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level09,lesson02,task04"></button><b>4. Стек-трейс длиной 10 вызовов</b><br/><br/>
+                    Напиши код, чтобы получить стек-трейс длиной 10 вызовов. 
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level09,lesson02,task05"></button><b>5. Метод должен возвращать результат – глубину её стек-трейса</b><br/><br/>
+                    Написать метод, который возвращает результат – глубину его стек трейса – количество методов в нем (количество элементов в списке). Это же число метод должен выводить на экран.  
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Знакомство с исключениями</h2>
+</div>
+<p>- Привет, Амиго! Сегодня будет очень интересный урок. Сегодня я расскажу тебе об исключениях. <span class="green_text">Исключения – это специальный механизм для контроля над ошибками в программе.</span> Вот примеры ошибок, которые могут возникнуть в программе:</p>
+<p>1 Программа пытается записать файл на заполненный диск.</p>
+<p>2 Программа пытается вызвать метод у переменной, которая хранит ссылку – null.</p>
+<p>3 Программа пытается разделить число на 0.</p>
+<p><span class="dred_text">Все эти действия приводят к возникновению ошибки.</span> Обычно <span class="dred_text">это приводит к закрытию программы</span> - продолжать выполнять дальше код не имеет смысла. </p>
+<p class="amigo">- Почему?</p>
+<p>- А есть ли смысл крутить руль, если машина слетела с трассы и падает с обрыва?</p>
+<p class="amigo">- Программа что, должна завершиться?</p>
+<p>- Да. Раньше так и было. <span class="dred_text">Любая ошибка приводила к завершению программы.</span> </p>
+<p>- Это очень разумный подход.</p>
+<p class="amigo">- А разве не лучше было бы попробовать работать дальше?</p>
+<p>- Ага. Ты набрал большущий текст в Word’е, сохранил его, он не сохранился, но программа говорит тебе, что все в порядке. И ты продолжаешь набирать его дальше. Глупо, да?</p>
+<p class="amigo">- Ага. </p>
+<p>- Потом разработчики придумали интересный ход: <span class="orange_text">каждая функция возвращала статус своей работы. 0 означал, что она отработала как надо, любое другое значение – что произошла ошибка</span>: это самое значение и было кодом ошибки.</p>
+<p>- Но был у такого подхода и минус. После каждого(!) вызова функции нужно было проверять код (число), который она вернула. Во-первых, это было неудобно: код по обработке ошибок исполнялся редко, но писать его нужно было всегда. Во-вторых, функции часто сами возвращают различные значения – что делать с ними?</p>
+<p class="amigo">- Ага. Я тоже об этом подумал.</p>
+<p>- Но потом наступило светлое будущее - появились исключения и механизм обработки ошибок. Вот как это работает:</p>
+<p>1 <span class="green_text">Когда возникает ошибка, Java-машина создаёт специальный объект – exception – исключение, в который записывается вся информация об ошибке.</span>  Для разных ошибок есть разные исключения.</p>
+<p>2 Затем это «исключение» приводит к тому, что программа тут же выходит из текущей функции, затем выходит из следующей функции, и так пока не выйдет из метода main. Затем программа завершается. <span class="violet_text">Еще говорят, что Java-машина «раскручивает назад стек вызовов».</span></p>
+<p class="amigo">- Но ты же сказал, что теперь программа не обязательно завершается.</p>
+<p>- Верно, потому что <span class="green_text">есть способ перехватить исключение</span>. В нужном месте, для нужных нам исключений мы можем написать специальный код, который будет перехватывать эти исключения и что-то делать. Важное.</p>
+<p>- Для этого есть специальная конструкция <b>try-catch</b>. Вот как это работает:</p>
+<table class="table_task wide-table">
+<tr>
+<th class="collapsed"></th>
+<th width="5%"></th>
+<th>Вот пример программы, которая перехватывает исключение – деление на 0. И продолжает работать.</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level09,lesson03,type01"></button></td>
+<td class="monospace_text wide-text" style="text-align: right">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>19<br/>20<br/>21<br/>22<br/>23<br/>24<br/>25<br/>26<br/>27<br/>28</td>
+<td class="monospace_text wide-text"><pre>public class ExceptionExample2
+{
+    <b>public static void main</b>(<b>String</b>[] <b>args</b>)
+    {
+        System.out.println(<span class="green_text">"Program starts"</span>);
+
+        <b>try</b>
+        {
+            System.out.println(<span class="blue_text">"Before method1 calling"</span>);
+            <span class="violet_text">method1</span>();
+            System.out.println(<span class="blue_text">"After method1 calling. Never will be shown"</span>);
+        }
+        <b>catch</b> (<b>Exception e</b>)
+        {
+           System.out.println(<span class="dred_text">"Exception has been caught"</span>);
+        }
+
+        System.out.println(<span class="green_text">"Program is still running"</span>);
+    }
+
+    <span class="violet_text">public static void method1</span>()
+    {
+        int a = 100;
+        int b = 0;
+        System.out.println(a / b);
+    }
+}</pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="2"><!--<button class="task_button" taskKey="level09,lesson03,type01"></button>--></td>
+<td></td><td><b>Вот что будет выведено на экран:</b></td>
+</tr>
+<tr>
+<td class="monospace_text wide-text" style="text-align: right">5<br/>9<br/>15<br/>18</td><td class="monospace_text"><span class="green_text">"Program starts"</span><br/><span class="blue_text">"Before method1 calling"</span><br/><span class="dred_text">"Exception has been caught"</span><br/><span class="green_text">"Program is still running"</span></td>
+</tr>
+</table>
+<p class="amigo">- А почему не будет выведено «After method1 calling. Never will be shown»?</p>
+<p>- Рада, что ты спросил. В строчке 25 у нас было деление на ноль. Это привело к возникновению ошибки – исключения. Java-машина создала объект <span class="red_text"><i>ArithmeticException</i></span> с информацией об ошибке. Этот объект является исключением.</p>
+<p>- Внутри метода <span class="violet_text">method1</span> возникло исключение. <span class="green_text">И это привело к немедленному завершению этого метода.</span> Оно привело бы и к завершению метода <b>main</b>, если бы не было блока <b>try-catch</b>. </p>
+<p>- Если внутри блока <b>try</b> возникает исключение то, оно захватывается в блоке <b>catch</b>. <span class="dred_text">Остаток кода в блоке try, не будет исполнен, а сразу начнётся исполнение блока <b><span class="dred_text">catch</span></b>.</span></p>
+<p class="amigo">- Как-то не очень понятно.</p>
+<p>- Другими словами этот код работает так:</p>
+<p>1 Если внутри блока <b>try</b> возникло исключение, то код перестаёт исполняться, и начинает исполняться блок <b>catch</b>. </p>
+<p>2 Если <span class="green_text">исключение не возникло, то блок <b><span class="green_text">try</span></b> исполняется до конца</span>, <span class="dred_text">а <b><span class="dred_text">catch</span></b> никогда так и не начнёт исполняться</span>.</p>
+<p class="amigo">- Гм?</p>
+<p>- Представь, что после вызова каждого метода мы проверяем: завершился ли только что вызванный метод сам по себе или в результате исключения. <span class="orange_text">Если исключение было, тогда мы переходим на исполнение блока catch, если он есть, и захватываем исключение</span>. Если блока catch нет, то завершаем и текущий метод. Тогда такая же проверка начинается в том методе, который вызвал нас.</p>
+<p class="amigo">- Теперь вроде понятно.</p>
+<p>- Вот и отлично.</p>
+<p class="amigo">- А что значит Exception внутри catch?</p>
+<p>- <span class="green_text">Все исключения – это классы, унаследованные от класса Exception</span>. Мы можем перехватить любое из них, указав в блоке <b>catch</b> его класс, или все сразу, указав общий родительский класс - Exception. Затем из переменной e (эта переменная хранит ссылку на объект исключения), можно получить всю необходимую информацию о возникшей ошибке. </p>
+<p class="amigo">- Круто! А если в моем методе могут возникнуть разные исключения, можно обрабатывать их по-разному? </p>
+<p>- Не можно, а нужно. Сделать это можно вот так:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Пример:</th></tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level09,lesson03,type02"></button></td>
+<td class="monospace_text wide-text"><pre>public <b>class</b> ExceptionExample2
+{
+    <b>public static void main</b>(<b>String</b>[] <b>args</b>)
+    {
+        System.out.println("Program starts");
+
+        <b>try</b>
+        {
+            System.out.println("Before method1 calling");
+            <span class="violet_text">method1();</span>
+            System.out.println("After method1 calling. Never will be shown ");
+        }
+        <b>catch</b> (<span class="blue_text">NullPointerException</span> <b>e</b>)
+        {
+           System.out.println(<span class="green_text">"Reference is null. Exception has been caught"</span>);
+        }
+        <b>catch</b> (<span class="dgreen_text">ArithmeticException</span> e)
+        {
+            System.out.println(<span dgreen_text="">"Division by zero. Exception has been caught"</span>);
+        }
+        <b>catch</b> (<span class="red_text">Exception</span> <b>e</b>)
+        {
+            System.out.println(<span dgreen_text="">"Any other errors. Exception has been caught"</span>);
+        }
+
+        System.out.println(<span dgreen_text="">"Program is still running"</span>);
+    }
+
+    <span class="violet_text">public static void method1()</span>
+    {
+        int a = 100;
+        int b = 0;
+        System.out.println(a / b);
+    }
+}</pre></td></tr>
+</table>
+<p>- Блок <b>try</b> может содержать  несколько блоков <b>catch</b>, каждый из которых будет захватывать исключения своего типа.</p>
+<p class="amigo">- Гм. Ну, вроде понятно. Сам такого не напишу, конечно, но если в коде встречу – пугаться не буду.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>4. RuntimeException, throw</h2>
+</div>
+<img src="https://javarush.ru/levels/images/lessons/09/image-ru-09-06.gif"/>
+<p>- Решила поднять сегодня ещё одну тему. В Java все исключения делятся на два типа – <span class="green_text">контролируемые/проверяемые (checked)</span> и <span class="dred_text">неконтролируемые/непроверяемые (unchecked)</span>: те, которые перехватывать обязательно, и те, которые перехватывать не обязательно. По умолчанию – все исключения обязательно нужно перехватывать.</p>
+<p class="amigo">- А можно в коде специально выбрасывать исключения?</p>
+<p>- В своем коде ты сам можешь выкидывать исключения. Ты даже можешь написать свои собственные исключения. Но это мы разберем позже. Сейчас же давай научимся работать с исключениями, которые выбрасывает Java-машина.</p>
+<p class="amigo">- Ок.</p>
+<p>- Если в методе выбрасываются (возникают) исключения <span class="dblue_text">ClassNotFoundException</span> и <span class="dblue_text">FileNotFoundException</span>, программист обязан указать их в сигнатуре метода (в заголовке метода). Это <span class="dred_text">checked</span> исключения. Вот как это обычно выглядит:</p>
+<table class="table_example wide-table">
+<tr><th>Примеры проверяемых (checked) исключений</th></tr>
+<tr><td class="monospace_text wide-text"><b>public static void</b> method1() <span class="red_text">throws</span> <span class="dblue_text">ClassNotFoundException</span>, <span class="dblue_text">FileNotFoundException</span></td></tr>
+<tr><td class="monospace_text wide-text"><b>public static void</b> main() <span class="red_text">throws</span> <span class="dblue_text">IOException</span></td></tr>
+<tr><td class="monospace_text wide-text"><b>public static void</b> main()  <span class="grey_text">//не выбрасывает никаких исключений</span></td></tr>
+</table>
+<p class="amigo">- Т.е. мы просто пишем throws и перечисляем исключения через запятую. Так?</p>
+<p>- Да. Но тут интересно другое. Чтобы программа скомпилировалась, метод, который вызывает <span class="green_text">method1</span> в примере ниже, должен сделать две вещи: <span class="green_text">или перехватить эти исключения</span> или <span class="orange_text">пробросить их дальше  (тому, кто его вызвал) указав их в своём заголовке.</span> </p>
+<p>- Еще раз. Если ты в методе main хочешь вызвать метод какого-то объекта, в заголовке которого прописано <span class="red_text">throws</span> <span class="dblue_text">FileNotFoundException</span>, … то тебе надо сделать одно из двух:</p>
+<p>1) <span class="green_text">Перехватывать исключения</span> <span class="dblue_text">FileNotFoundException, …</span> </p>
+<p>Тебе придется обернуть код вызова опасного метода в блок <b>try-catch</b></p>
+<p>2) <span class="orange_text">Не перехватывать исключения</span> <span class="dblue_text">FileNotFoundException, …</span></p>
+<p>Тебе придется добавить эти исключения в список <b>throws</b> своего метода <b>main</b>.</p>
+<p class="amigo">- А можно пример?</p>
+<p>- Вот, смотри:</p>
+<table class="table_example wide-table">
+<tr><th>Примеры проверяемых (checked) исключений</th></tr>
+<tr><td class="monospace_text wide-text"><pre><b>public static</b> void <b>main</b>(String[] args)
+{
+    <span class="green_text">method1</span>();
+}
+
+<b>public</b> static void <span class="green_text">method1</span>() <span class="red_text">throws</span>  <span class="dblue_text">FileNotFoundException, ClassNotFoundException</span>
+{
+    <span class="grey_text">//тут кинется исключение  FileNotFoundException, такого файла нет</span>
+    FileInputStream fis = new FileInputStream("C2:\\badFileName.txt");
+}</pre></td></tr>
+</table>
+<p>- Этот пример не скомпилируется, т.к. метод <b>main</b> вызывает метод <span class="green_text">method1</span>(), который выкидывает исключения, обязательные к перехвату.</p>
+<p>- Чтобы пример скомпилировался, надо добавить обработку исключений в метод <b>main</b>. Сделать это можно двумя способами:</p>
+<table class="table_example font19">
+<tr><th>Способ 1: просто пробрасываем исключение выше (вызывающему):</th></tr>
+<tr><td class="monospace_text"><pre><b>public static</b> void main(String[] args)  <span class="red_text">throws</span> <span class="dblue_text">FileNotFoundException, ClassNotFoundException</span> 
+{
+    <span class="green_text">method1</span>();
+}
+
+<b>public static</b> void <span class="green_text">method1</span>() <span class="red_text">throws</span> <span class="dblue_text">FileNotFoundException, ClassNotFoundException</span>
+{
+    <span class="grey_text">//тут кинется исключение  FileNotFoundException, такого файла нет</span>
+    FileInputStream fis = new FileInputStream("C2:\\badFileName.txt");
+}</pre></td></tr>
+</table>
+<p>- А тут перехватываем его с помощью <b>try-catch</b>:</p>
+<table class="table_example wide-table font19">
+<tr><th>Способ 2: перехватываем исключение:</th></tr>
+<tr><td class="monospace_text wide-text"><pre><b>public static</b> void main(String[] args)
+{
+    <span class="red_text">try</span>
+    {
+        <span class="green_text">method1</span>();
+    }
+    <span class="red_text">catch</span>(<span class="dblue_text">Exception</span> e)
+    {
+    }
+}
+
+<b>public static</b> void <span class="green_text">method1</span>() <span class="red_text">throws</span> <span class="dblue_text">FileNotFoundException, ClassNotFoundException</span>
+{
+    <span class="grey_text">//тут кинется исключение  FileNotFoundException, такого файла нет</span>
+    FileInputStream fis = new FileInputStream("C2:\\badFileName.txt");
+}</pre></td></tr>
+</table>
+<p class="amigo">- Что-то понемногу проясняется.</p>
+<p>- Посмотри на пример ниже, чтобы разобраться:</p>
+<table class="table_task wide-table font19">
+<tr>
+<th class="collapsed"></th>
+<th>Не обрабатываем исключения – нужно пробросить их дальше, тому, кто знает как</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level09,lesson04,type01"></button></td>
+<td class="monospace_text wide-text"><pre><b>public static void</b> <span class="green_text">method2</span>() <span class="red_text">throws</span> <span class="dblue_text">FileNotFoundException, ClassNotFoundException</span>
+{
+    <span class="green_text">method1</span>();
+}</pre></td></tr>
+<tr>
+<td class="collapsed" rowspan="2"><button class="task_button" taskkey="level09,lesson04,type02"></button></td>
+<td class="example">Обрабатываем одно исключение, второе – пробрасываем:</td></tr>
+<tr><td class="monospace_text wide-text"><pre><b>public static void</b> <span class="green_text">method3</span>() <span class="red_text">throws</span> ClassNotFoundException
+{
+    <b>try</b>
+    {
+        <span class="green_text">method1</span>();
+    }
+    <b>catch</b> (<span class="dblue_text">FileNotFoundException</span> <b>e</b>)
+    {
+        System.out.println(<span class="green_text">"FileNotFoundException has been caught."</span>);
+    }
+}</pre></td></tr>
+<tr>
+<td class="collapsed" rowspan="2"><button class="task_button" taskkey="level09,lesson04,type03"></button></td>
+<td class="example">Перехватываем оба – ничего не пробрасываем:</td></tr>
+<tr><td class="monospace_text wide-text"><pre><b>public static void</b> <span class="green_text">method4</span>()
+{
+    <b>try</b>
+    {
+        <span class="green_text">method1</span>();
+    }
+    <b>catch</b> (<span class="dblue_text">FileNotFoundException</span> <b>e</b>)
+    {
+        System.out.println(<span class="green_text">"FileNotFoundException has been caught."</span>);
+    }
+    <b>catch</b> (<span class="dblue_text">ClassNotFoundException</span> <b>e</b>)
+    {
+        System.out.println(<span class="green_text">"ClassNotFoundException has been caught."</span>);
+    }
+}</pre></td></tr>
+</table>
+<p>- Но есть вид исключений – это <span class="violet_text"><i>RuntimeException</i> и классы, унаследованные от него</span>. <span class="green_text">Их перехватывать не обязательно. Это unchecked  исключения.</span> Считается, что это трудно прогнозируемые исключения и предсказать их появление практически невозможно. С ними можно делать все то же самое, но указывать в <b>throws</b> их не нужно.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>5. Раскрутка стека вызовов, как это идёт при исключениях</h2>
+</div>
+<img class="round-corners" src="https://javarush.ru/levels/images/lessons/09/image-ru-09-05.gif"/>
+<p>- Хочу рассказать тебе немного о том, как работают исключения. Приведённый ниже пример будет показывать примерную логику работы:</p>
+<table class="table_task double-wide-table">
+<tr>
+<th class="collapsed"></th>
+<th width="48%">Код с использованием исключений</th>
+<th>Примерная расшифровка</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level09,lesson05,type01"></button></td>
+<td class="monospace_text">
+<pre style="font-size: 14px;"><b>class</b> ExceptionExampleOriginal
+{
+
+
+    <b>public static void main(String[] args)</b>
+    {
+        System.out.println(<span class="green_text">"main begin"</span>);
+        <span class="red_text">try</span>
+        {
+            System.out.println(<span class="green_text">"main before call"</span>);
+
+            <span class="blue_text">method1();</span>
+
+
+
+            System.out.println(<span class="green_text">"main after call"</span>);
+        }
+        <span class="red_text">catch (RuntimeException e)</span>
+        {
+
+
+            <span class="blue_text">String s</span> = <span class="red_text">e</span>.<span class="blue_text">getMessage();</span>
+            System.out.println(s);
+        }
+        System.out.println(<span class="green_text">"main end"</span>);
+    }
+
+    <b>public static void</b> <b><span class="blue_text">method1</span></b>()
+    {
+        System.out.println(<span class="green_text">"method1 begin"</span>);
+        <span class="blue_text">method2();</span>
+
+        System.out.println(<span class="green_text">"method1 end"</span>);
+    }
+
+    <b>public static void</b> <b><span class="blue_text">method2</span>()</b>
+    {
+      System.out.println(<span class="green_text">"method2"</span>);
+      String s = <span class="green_text">"Message: Unknown Exception"</span>;
+      <span class="red_text">throw new RuntimeException(s);</span>
+
+    }
+}</pre>
+</td>
+<td class="monospace_text">
+<pre style="font-size: 14px;"><b>public class</b> ExceptionExample
+{
+    <span class="red_text">private static Exception <i>exception</i> = null;</span>
+
+    <b>public static void main(String[] args)</b>
+    {
+        System.out.println(<span class="green_text">"main begin"</span>);
+
+       
+        System.out.println(<span class="green_text">"main before call"</span>);
+
+        <span class="blue_text">method1();</span>
+
+        <span class="red_text">if (<i>exception</i> == null)</span>
+        {
+            System.out.println(<span class="green_text">"main after call"</span>);
+        }
+        <span class="red_text">else if (<i>exception</i> instanceof RuntimeException)</span>
+        {
+            <span class="red_text">RuntimeException e = (RuntimeException) <i>exception</i>;</span>
+            <span class="red_text"><i>exception</i> = null;</span>
+            <span class="blue_text">String s =</span> <span class="red_text">e</span><span class="blue_text">.getMessage();</span>
+            System.out.println(s);
+        }
+        System.out.println(<span class="green_text">"main end"</span>);
+    }
+
+    <b>public static void</b> <b><span class="blue_text">method1</span></b>()
+    {
+        System.out.println(<span class="green_text">"method1 begin"</span>);
+        <span class="blue_text">method2();</span>
+        <span class="red_text">if (<i>exception</i> != null) return;</span>
+        System.out.println(<span class="green_text">"method1 end"</span>);
+    }
+
+    <b>public static void</b> <b><span class="blue_text">method2</span></b>()
+    {
+        System.out.println(<span class="green_text">"method2"</span>);
+        String s = <span class="green_text">"Message: Unknown Exception"</span>;
+        <span class="red_text"><i>exception</i> = new RuntimeException(s);</span>
+        <span class="red_text">return;</span>
+    }
+}</pre>
+</td>
+</tr>
+</table>
+<p class="amigo">- Ничего не понятно.</p>
+<p>- Ок. Давай я тебе объясню, что происходит.</p>
+<p>- В примере слева мы по цепочке вызываем несколько методов. В <span class="blue_text">method2</span> мы специально создаем и выкидываем исключение (инициируем ошибку).</p>
+<p>- В примере справа показано, что примерно при этом происходит.</p>
+<p>- Посмотри на <b><span class="blue_text">method2</span></b>. Создание исключение превратилось вот во что: создали объект типа <span class="red_text">RuntimeException</span>, сохранили его в специальную переменную <span class="red_text">exception</span> и тут же вышли из метода – <span class="red_text">return</span>.</p>
+<p>- В методе <b><span class="blue_text">method1</span></b>, после вызова <b><span class="blue_text">method2</span></b> стоит проверка – <span class="red_text">есть исключение или нет, если исключение есть, тогда метод method1 тут же завершается</span>. Такая проверка неявно производится после вызова каждого(!) метода в Java.</p>
+<p class="amigo">- Ого! </p>
+<p>- Вот тебе и ого.</p>
+<p>- В колонке справа в методе main я написал, что примерно происходит при перехвате исключения с помощью конструкции try-catch. Если исключения не было, то все продолжает работать, как и запланировано. Если исключение было, и оно было такого типа, как указано в catch, тогда мы его обрабатываем.</p>
+<p class="amigo">- А что значит <span class="red_text">throw</span> и <span class="red_text">instanceof</span>?</p>
+<p>– Посмотри на последнюю строку <span class="red_text">throw new RuntimeException(s)</span>. Таким способом мы создаем и кидаем исключение. Пока мы так делать не будем. Это только для примера.</p>
+<p>- А с помощью команды  «<span class="red_text">а instanceof B</span>» мы проверяем, имеет ли объект <b><span class="red_text">a</span></b> тип <b><span class="red_text">B</span></b>. Т.е. <span class="violet_text">имеет ли объект, который хранится в переменной exception, тип RuntimeException.</span> Это логическое условие.</p>
+<p class="amigo">- Ну, вроде понятно. Немного.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задача на захват исключений</h2>
+</div>
+<img class="round-corners" src="https://javarush.ru/levels/images/lessons/09/image-ru-09-04.gif"/>
+<p>- Привет, Амиго! Вот тебе интересные задачи на захват исключений.</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level09,lesson06,task01"></button><b>1. Исключение при работе с числами</b><br/><br/>
+                    Перехватить исключение (и вывести его на экран), указав его тип, возникающее при выполнении кода:<br/><span class="taskcode">int a = 42 / 0;</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level09,lesson06,task02"></button><b>2. Исключение при работе со строками</b><br/><br/>
+                    Перехватить исключение (и вывести его на экран), указав его тип, возникающее при выполнении кода:<br/><span class="taskcode">String s = null;<br/>String m = s.toLowerCase();</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level09,lesson06,task03"></button><b>3. Исключение при работе с массивами</b><br/><br/>
+                    Перехватить исключение (и вывести его на экран), указав его тип, возникающее при выполнении кода:<br/><span class="taskcode">int[] m = new int[2];<br/>m[8] = 5;</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level09,lesson06,task04"></button><b>4. Исключение при работе с коллекциями List</b><br/><br/>
+                    Перехватить исключение (и вывести его на экран), указав его тип, возникающее при выполнении кода:<br/><span class="taskcode">ArrayList&lt;String&gt; list = new ArrayList&lt;String&gt;();<br/>String s = list.get(18);</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level09,lesson06,task05"></button><b>5. Исключение при работе с коллекциями Map</b><br/><br/>
+                    Перехватить исключение (и вывести его на экран), указав его тип, возникающее при выполнении кода:<br/><span class="taskcode">HashMap&lt;String, String&gt; map = new HashMap&lt;String, String&gt;(null);<br/>map.put(null, null);<br/>map.remove(null);</span>
+</td>
+</tr>
+</table>
+<p>- <b>Подсказка</b>: напиши программу, посмотри, какое исключение возникает, а потом поменяй код и перехвати его.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>7. Как работает множественный catch</h2>
+</div>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/09/image-ru-09-03.gif" style="width:354px;height:283px;"/>
+<p>- И ещё немного интересных уроков. Мне так нравится преподавать.</p>
+<p>- Хочу рассказать тебе, как работает множественный <b>catch</b>. Все очень просто: при возникновении исключения в блоке <b>try</b>, выполнение программы передаётся на первый <b>catch</b>.</p>
+<p>- <span class="green_text">Если тип, указанный внутри круглых скобок блока catch, совпадает с типом объекта-исключения, то начинается выполнение кода внутри блока {}</span>. Иначе переходим к следующему <b>catch</b>. Там проверка повторяется.</p>
+<p>- Если блоки <b>catch</b> закончились, а исключение так и не было перехвачено, то оно выбрасывается дальше, а текущий метод аварийно завершается. </p>
+<p class="amigo">- Ясно. Будет выполнен тот catch, тип в котором совпадает с типом исключения.</p>
+<p>- Да, верно. Но в реальности все немного сложнее. Дело в том, что классы можно наследовать друг от друга. И если класс «Корова» унаследовать от класса «Животное», то объект типа «Корова» можно хранить не только в переменной типа «Корова», но и в переменной типа «Животное».</p>
+<p class="amigo">- И?</p>
+<p class="green_text">- Т.к. все исключения унаследованы от классов <b><span class="green_text">Exception</span></b> или <b><span class="green_text">RuntimeException</span></b> (который тоже унаследован от <b><span class="green_text">Exception</span></b>), то их все можно перехватить командами catch (<b><span class="green_text">Exception</span></b> e) или <b><span class="green_text">catch (RuntimeException e)</span></b>.</p>
+<p class="amigo">- И?</p>
+<p>- Отсюда два вывода. <span class="orange_text">Во-первых, с помощью команды catch(Exception e) можно перехватить любое исключение вообще</span>. <span class="violet_text">Во-вторых - порядок блоков catch имеет значение</span>.</p>
+<p>Примеры:</p>
+<p>- Возникший  при делении на 0 <span class="blue_text">ArithmeticException</span> будет перехвачен во втором catch.</p>
+<table class="table_example">
+<tr>
+<th>Код</th>
+</tr>
+<tr>
+<td class="monospace_text"><pre><b>try</b>
+{
+    System.out.println(<span class="green_text">"Before method1 calling."</span>);
+    int a = 1 / 0;
+    System.out.println(<span class="green_text">"After method1 calling. Never will be shown."</span>);
+}
+<b>catch (NullPointerException e)</b>
+{
+    System.out.println(<span class="green_text">"Reference is null. Exception has been caught."</span>);
+}
+<b>catch (<span class="blue_text">ArithmeticException</span> e)</b>
+{
+    <span class="blue_text">System.out.println("Division by zero. Exception has been caught.");</span>
+}
+<b>catch (Exception e)</b>
+{
+    System.out.println(<span class="green_text">"Any other errors. Exception has been caught."</span>);
+}</pre></td>
+</tr>
+</table>
+<p>- В примере ниже возникший <span class="blue_text">ArithmeticException</span> будет перехвачен в первом catch, т.к. классы всех исключений унаследованы от Exception. Т.е. <span class="green_text">Exception захватывает любое исключение.</span></p>
+<table class="table_example">
+<tr>
+<th>Код</th>
+</tr>
+<tr>
+<td class="monospace_text"><pre><b>try</b>
+{
+    System.out.println(<b>"Before method1 calling."</b>);
+    int a = 1/0;
+    System.out.println(<b>"After method1 calling. Never will be shown."</b>);
+}
+<b>catch (<span class="blue_text">Exception</span> e)</b>
+{
+    <span class="blue_text">System.out.println("Any other errors. Exception has been caught.");</span>
+}
+<b>catch (NullPointerException e)</b>
+{
+    System.out.println(<span class="green_text">"Reference is null. Exception has been caught."</span>);
+}
+<b>catch (ArithmeticException e)</b>
+{
+    System.out.println(<span class="green_text">"Divided by zero. Exception has been caught."</span>);
+}</pre></td>
+</tr>
+</table>
+<p>- В примере ниже исключение <span class="blue_text">ArithmeticException</span> не будет перехвачено, а будет выброшено дальше в вызывающий метод.</p>
+<table class="table_example">
+<tr>
+<th>Код</th>
+</tr>
+<tr>
+<td class="monospace_text"><pre><b>try</b>
+{
+    System.out.println(<span class="green_text">"Before method1 calling."</span>);
+    int a = 1/0;
+    System.out.println(<span class="green_text">"After method1 calling. Never will be shown."</span>);
+}
+<b>catch (NullPointerException e)</b>
+{
+    System.out.println(<span class="green_text">"Reference is null. Exception has been caught."</span>);
+}</pre></td>
+</tr>
+</table>
+<p class="amigo">- Ну, вроде все понемногу проясняется. Непростая штука эти исключения.</p>
+<p>- Это только кажется так. На самом деле – это чуть ли не самая простая вещь в Java.</p>
+<p class="amigo">- Не знаю, радоваться по этому поводу или огорчаться…</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Задачи на захват множественных исключений</h2>
+</div>
+<p>- Привет, Амиго! Я вчера напился и намудрил с твоими задачами, но ты же на меня не в обиде и все решишь? Это для твоего же блага. Держи:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level09,lesson08,task01"></button><b>1. Исключения </b><br/><br/>
+                    Есть метод, который выбрасывает два исключения, унаследованные от <span class="taskcode">Exception</span>, и два унаследованных от <span class="taskcode">RuntimeException</span>: <span class="taskcode">NullPointerException</span>, <span class="taskcode">ArithmeticException</span>, <span class="taskcode">FileNotFoundException</span>, <span class="taskcode">URISyntaxException</span>. <br/><br/>
+                    Нужно перехватить <span class="taskcode">NullPointerException</span> и <span class="taskcode">FileNotFoundException</span>, но не перехватывать  <span class="taskcode">ArithmeticException</span> и <span class="taskcode">URISyntaxException</span>. Как это сделать?
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level09,lesson08,task02"></button><b>2. Перехватывание исключений</b><br/><br/>
+                    Есть три исключения последовательно унаследованные от <span class="taskcode">Exception</span>: <br/>
+<span class="taskcode">class Exception1 extends  Exception<br/></span>
+<span class="taskcode">class Exception2 extends  Exception1<br/></span>
+<span class="taskcode">class Exception3 extends  Exception2<br/></span>Есть метод, который описан так:<br/>
+<span class="taskcode">public static void method1() throws Exception1, Exception2, Exception3<br/></span>
+<br/>
+                    Напиши catch, который перехватит все три <span class="taskcode">Exception1</span>, <span class="taskcode">Exception2</span> и <span class="taskcode">Exception3</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level09,lesson08,task03"></button><b>3. Перехват выборочных исключений</b><br/><br/>
+                    1. Разберись, какие исключения бросает метод <span class="taskcode">BEAN.methodThrowExceptions</span>.<br/>
+                    2. Метод processExceptions должен вызывать метод <span class="taskcode">BEAN.methodThrowExceptions</span> и обрабатывать исключения:<br/>
+                    2.1. если возникло исключение <span class="taskcode">FileSystemException</span>, то логировать его (вызвать метод <span class="taskcode">BEAN.log</span>) и пробросить дальше<br/>
+                    2.2. если возникло исключение <span class="taskcode">CharConversionException</span> или любое другое <span class="taskcode">IOException</span>, то только логировать его - вызвать метод <span class="taskcode">BEAN.log</span><br/>
+                    3. Добавь в сигнатуру метода processExceptions класс исключения, которое ты пробрасываешь в п.2.1.<br/>
+                    4. В методе main обработай оставшееся исключение - логируй его. Используй <span class="taskcode">try..catch</span><br/><br/>
+<b>Подсказка:</b><br/>Если ты захватил исключение <span class="taskcode">MyException</span>, которое не хотел захватывать, его можно пробросить дальше кодом вида:<br/>
+<span class="taskcode"><b>catch</b> (MyException <span class="red_text">e</span>) {<br/>   <b>throw</b> <span class="red_text">e</span>;<br/>}</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level09,lesson08,task04"></button><b>4. Перехват checked исключений</b><br/><br/>
+                    В методе <span class="taskcode">processExceptions</span> обработайте все checked исключения.<br/>
+                    Нужно вывести на экран каждое возникшее checked исключение.<br/>
+                    Можно использовать только один блок <span class="taskcode">try</span>.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level09,lesson08,task05"></button><b>5. Перехват unchecked исключений</b><br/>
+<br/>
+                    В методе <span class="taskcode">processExceptions</span> обработайте все unchecked исключения.<br/>
+                    Нужно вывести стек-трейс каждого возникшего исключения используя метод <span class="taskcode">printStack</span>.<br/>
+                    Можно использовать только один блок <span class="taskcode">try</span>.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>9. Лекция по исключениям </h2>
+</div>
+<p>-  Сегодня я расскажу супер интересную тему – исключения. В своё время эта тема будоражила умы молодых учёных и программистов… </p>
+<p>- Прости, мне нужно в лабораторию. Вот тебе конспект лекций. Думаю, ты сам разберёшься. Держи вот: <a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/06/12/lecture-9.html" target="_blank">Лекция по исключениям </a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>10. Хулио</h2>
+</div>
+<p>- Амиго, как тебе сегодняшнее занятие? Твои позитронные мозги ещё не плавятся? Диего кого угодно доконает своими задачами. Предлагаю взять по пиву и расслабиться. Ты ещё стоишь?</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-09.gif" preload="none" tabindex="0" taskkey="level09,lesson10,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-09.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=mrdRaz2b7_I" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>11. Капитан</h2>
+</div>
+<p>- Здорово, боец!</p>
+<p class="amigo">- Здравия желаю, капитан Бобров!</p>
+<p>- У меня для тебя шикарная новость. Вот тебе задания для закрепления полученных навыков. Выполняй их каждый день, и твои навыки будут расти с неимоверной скоростью. Они специально разработаны для выполнения их в Intellij IDEA.</p>
+<table class="table_task">
+<tr>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Деление на ноль </b><br/><br/>
+                    Создай метод <span class="taskcode">public static void divisionByZero</span>, в котором подели любое число на ноль и выведи на экран результат деления.<br/>
+                    Оберни вызов метода <span class="taskcode">divisionByZero</span> в <span class="taskcode">try..catch</span>. Выведи стек-трейс исключения используя метод <span class="taskcode">exception.printStackTrace()</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Обратный отсчёт от 10 до 0 </b><br/><br/>
+                    Написать в цикле обратный отсчёт от 10 до 0. Для задержки иcпользовать<span class="taskcode"> Thread.sleep(100);</span><br/>Обернуть вызов sleep в <span class="taskcode">try..catch</span>.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Метод в try..catch</b><br/><br/>
+                    Вводить с клавиатуры числа. Код по чтению чисел с клавиатуры вынести в отдельный метод <span class="taskcode">readData</span>.<br/>
+                    Обернуть все тело (весь код внутри <span class="taskcode">readData</span>, кроме объявления списка, где будут храниться числа и BufferedReader - а) этого метода в <span class="taskcode">try..catch</span>.<br/>
+                    Если пользователь ввёл какой-то текст, вместо ввода числа, то метод должен перехватить исключение и вывести на экран все введенные числа в качестве результата.<br/>
+                    Числа выводить с новой строки сохраняя порядок ввода.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>4. Конвертер дат</b><br/><br/>
+                    Ввести с клавиатуры дату в формате «08/18/2013»<br/>
+                    Вывести на экран эту дату в виде «AUG 18, 2013».<br/>
+                    Воспользоваться объектом <span class="taskcode">Date</span> и <span class="taskcode">SimpleDateFormat</span>.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>5. Гласные и согласные буквы</b><br/><br/>
+                    Написать программу, которая вводит с клавиатуры строку текста.<br/>
+                    Программа должна вывести на экран две строки:<br/>
+                    1) первая строка содержит только гласные буквы<br/>
+                    2) вторая - только согласные буквы и знаки препинания из введённой строки.<br/>
+                    Символы соединять пробелом, каждая строка должна заканчиваться пробелом.<br/><br/>
+<u>Пример ввода:</u><br/>
+<span class="example-data">Мама мыла раму.<br/></span>
+<u>Пример вывода:</u><br/>
+<span class="example-data">а а ы а а у<br/>М м м л р м .</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>6. Сказка «Красная Шапочка»</b><br/><br/>
+                    1. Есть пять классов: красная шапочка, бабушка, пирожок, дровосек, волк.<br/>
+                    2. У каждого класса есть 2 поля: убил (<span class="taskcode">killed ArrayList</span>) и съел (<span class="taskcode">ate ArrayList</span>).<br/>
+                    3. Необходимые объекты созданы (<span class="taskcode">hood</span>, <span class="taskcode">grandmother</span>, ...).<br/>
+                    4. Расставь правильно связи, кто кого съел и убил, чтобы получилась логика сказки «Красная Шапочка».
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>7. Расставь модификаторы static</b><br/><br/>
+                    Расставь модификаторы <span class="taskcode">static</span> так, чтобы пример скомпилировался
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>8. Список из массивов чисел </b><br/><br/>
+                    Создать список, элементами которого будут массивы чисел. Добавить в список пять объектов–массивов длиной 5, 2, 4, 7, 0 соответственно. Заполнить массивы любыми данными и вывести их на экран.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>9. Десять котов </b><br/><br/>
+                    Создать класс кот – <span class="taskcode">Cat</span>, с полем «имя» (<span class="taskcode">String</span>).<br/>Создать словарь <span class="taskcode">Map</span>(<span class="taskcode">&lt;String, Cat&gt;</span>) и добавить туда 10 котов в виде «Имя»-«Кот». <br/>
+                    Получить из <span class="taskcode">Map</span> множество(<span class="taskcode">Set</span>) всех имен и вывести его на экран.
+                </td>
+</tr>
+</table>
+<p>- Те задания были для духов. Для дедушек я добавил бонусные задания повышенной сложности. Только для старослужащих. </p>
+<table class="table_task">
+<tr>
+<th></th>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>1. Нужно исправить программу, чтобы компилировалась и работала. </b><br/><br/>
+<u>Задача:</u> Программа вводит два имени файла. И копирует первый файл на место, заданное вторым именем.
+                </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>2. Нужно добавить в программу новую функциональность. </b><br/><br/>
+<u>Задача:</u> Программа вводит два имени файла. И копирует первый файл на место заданное вторым именем.<br/>
+<u>Новая задача:</u> Программа вводит два имени файла. И копирует первый файл на место, заданное вторым именем.
+                    <br/>Если файла (который нужно копировать) с указанным именем не существует, то программа должна вывести надпись «Файл не существует.» и еще раз прочитать имя файла с консоли, а уже потом считывать файл для записи.
+                </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>3. Задача по алгоритмам. </b><br/><br/>
+<u>Задача:</u> Пользователь вводит с клавиатуры список слов (и чисел). Слова вывести в возрастающем порядке, числа - в убывающем.<br/><br/>
+<i><u>Пример ввода:</u></i><br/>
+<span class="example-data">Вишня<br/>1<br/>Боб<br/>3<br/>Яблоко<br/>2<br/>0<br/>Арбуз<br/><br/></span>
+<i><u>Пример вывода:</u></i><br/>
+<span class="example-data">Арбуз<br/>3<br/>Боб<br/>2<br/>Вишня<br/>1<br/>0<br/>Яблоко</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

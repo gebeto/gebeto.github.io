@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-01.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 1
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<br/>
+<p>- Поздравляю с достижением первого уровня!</p>
+<p class="amigo">- Спасибо! Это было легче, чем казалось!</p>
+<p class="amigo">- А главное - интересно!</p>
+<p>- Дальше будет еще интереснее. Сейчас ты сам в этом убедишься. Готов?</p>
+<p class="amigo">- Поехали!</p>
+<br/>
+<div class="line"></div>
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>Будущее наступило</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/01/image-ru-01-06.jpg"/>
+<p class="blue_text">Одними из атрибутов 20-го века были пылесос, стиральная машина, телевизор и автомобиль.</p>
+<p> Если вы продолжаете стирать одежду в ручную, ездите на лошади, используйте свечи для освещения, то, по меркам 20-го века, вы живете - в 19-м.</p>
+<p class="blue_text">Атрибутами 21-го века стали интернет, мобильный телефон, skype, социальные сети. </p>
+<p><b>С помощью интернета можно получить доступ к любой информации известной человечеству.</b> В интернете можно работать  и вести бизнес, получить образование и преподавать. </p>
+<p>С помощью социальных сетей можно найти друзей, работу,  девушку,  группу по интересам. Вы можете познакомиться  практически с любым человеком в мире, попросить у него совета или помощи. Вы можете заводить друзей во всем мире, а потом приехать в гости или пригласить их к себе, или съездить куда-то вместе.</p>
+<p>С помощью скайпа вы можете пообщаться со своими друзьями, братьями, сестрами, родителями, родственниками, и любыми людьми во всем мире. <b>Бесплатная видеосвязь с любой точкой мира. Об этом 20 лет назад даже и мечтать не смели.</b> Сейчас это обыденный факт. </p>
+<p>Google Street View позволит вам «прогуляться» по улицам любого города любой страны земного шара. Вы можете выбрать место, где хотели бы провести всю свою жизнь, и приехать туда.</p>
+<p>Владелец «современного телефона» может: говорить, писать сообщения, пересылать картинки, искать информацию в интернете, установить сотни тысяч бесплатных приложений. Что еще? Делать видео-звонки, слушать музыку, смотреть видео,  снимать видео, делать фото, увидеть свое местоположение на карте, вести в нем заметки, использовать как органайзер,  общаться в социальных сетях и лайкать котиков.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/01/image-ru-01-07.jpg"/>
+<p>Вы можете за год выучить английский (или любой другой язык), слушая аудиокурсы, когда едете на работу и с работы. Любая информация доступна в интернете, любые учебники. <b>Хотите видео-лекции лучших мировых вузов с субтитрами?</b>  Они там <a href="https://www.coursera.org/" target="_blank">тоже есть</a>.</p>
+<p>Если вы владеете английским, вы можете написать книгу, <a href="http://www.aboutamazon.ru/2012/03/amazon-kidle.html" target="_blank">выложить ее на Amazon</a> и заработать целое состояние. Вы можете за несколько сотен долларов заказать себе сайт и вести бизнес через интернет со всем миром.</p>
+<p>Хватит жить в 20-м веке и ждать, что вам скажут, что учить, когда сдавать, что делать и где жить. Решайте это сами. <b>Возможности изменить свою жизнь окружают  вас на каждом шагу.</b> </p>
+<br/>
+<p class="blue_text">Есть такой старый анекдот, напоследок:</p>
+<p>Случилось как то наводнение. Все спасаются, кто как может, и только старый, очень набожный еврей сидит и молится.<br/>
+        Мимо проезжает грузовик, сидящие в кузове кричат: <br/>
+        - Хаим, полезай в кузов, спасайся!<br/>
+        - Я всю жизнь молился и соблюдал все традиции, меня Бог спасет - отвечает Хаим. <br/>
+        Вода доходит уже до окон. Мимо проплывает лодка. Тот же вопрос и тот же ответ.<br/> 
+        Вода доходит до крыши, Хаим сидит на крыше и молится. <br/>
+        Спускается с неба вертолет. Тот же вопрос, тот же ответ. И Хаим утонул. <br/>
+        И уже в другом мире стал попрекать Бога: <br/>
+        - Я всю жизнь молился и соблюдал все традиции, почему же Ты меня не спас?<br/>
+        - Я тебе и машину, и лодку, и вертолет посылал, так в чем же дело?</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>1. Знакомство с программой</h2>
+</div>
+<p>- Привет, мой юный друг. Надеюсь, ты не забыл, что я - бюрократ в 16-м поколении. Если бы я не систематизировал все знания, которые у меня есть, то никогда бы не добился таких высот. У меня куча разной справочной информации. Я буду помогать тебе с некоторыми задачами. Давай для начала я расскажу тебе, что представляет собой  типичная программа на Java. </p>
+<p class="amigo">- Да, я слушаю.</p>
+<p>- Факт первый. <span class="green_text">Программа на Java состоит из классов.</span> Каждый класс хранится в отдельном файле. Имя файла совпадает с именем класса, расширение файла – java.</p>
+<p class="amigo">- Программа состоит из набора файлов с расширением java, и в каждом файле написан код одного класса, так?</p>
+<p>- Абсолютно правильно, Амиго! Если файл называется MyCat.java, то он содержит класс MyCat.</p>
+<p>- Факт второй. <span class="green_text">Когда у нас много файлов с классами, мы группируем их в папки и подпапки.</span> Классы при этом группируются по пакетам и подпакетам. <span class="orange_text">Имена пакетов и подпакетов нужно указывать в коде класса, и они должны совпадать с именами папок и подпапок на диске.</span></p>
+<p>- Т.е. с одной стороны у нас есть файлы, разложенные по папкам, а с другой - классы, разложенные по пакетам. При этом имя класса обязано совпадать с именем файла, в котором этот класс описан. А имя пакета совпадает с именем папки, в которой хранится класс.</p>
+<p class="amigo">- А можно больше подробностей?</p>
+<p>- Имена вложенных пакетов описываются через точку, почти как ссылки в интернете. </p>
+<p>- Т.е. если у тебя  есть класс Cat, который лежит в пакете “<b>animals.pets</b>”, то это значит, что: </p>
+<div class="level-result">
+<ol>
+<li>На диске есть папка, например <b>src</b>, где хранятся все файлы проекта;</li>
+<li>В ней есть папка <b>animals</b>, в которой есть папка <b>pets</b>,</li>
+<li>В папке <b>pets</b> есть файл <b>Cat</b>.java, который и содержит код класса <b>Cat</b>.</li>
+</ol>
+</div>
+<p class="amigo">- Вроде понял, но не уверен.</p>
+<p>- Смотри, структура классов и пакетов полностью повторяет структуру папок и файлов на диске. Если есть файл <span class="red_text">House</span>.java, который лежит в папке src<b>/com/houses/</b>, то это значит, что существует класс <span class="red_text">House</span>, который находится в пакете <span class="dred_text">com.houses</span>.</p>
+<p class="amigo">- Понял.</p>
+<p>- А ты сообразительный малый. Внимание на экран - вот код небольшого класса. Я подписал все ключевые моменты:</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/01/image-ru-01-01.jpg"/>
+<p class="amigo">- Все понятно, насколько это может быть понятно с первого раза. Хе-хе.</p>
+<p>- Молодец!  Много и не надо. Ты главное хоть что-нибудь пойми, а полное понимание придет со временем. Теперь я пойду спать, а тобой займётся кто-нибудь ещё.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>2. Как пользоваться курсом на сайте JavaRush</h2>
+</div>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/01/image-ru-01-02.gif" style="width: 800px;height:453px;"/>
+<p>- Добрый день, Амиго. Меня зовут Джон Бобров, я - капитан корабля Galactic Rush.</p>
+<p class="amigo">- Добрый день, капитан.</p>
+<p>- Я расскажу тебе как устроен наш учебный процесс и как пользоваться нашим сервисом. </p>
+<br/>
+<p class="blue_text"><b>Как пользоваться курсом на сайте JavaRush</b></p>
+<p>Я всегда утверждал своим ученикам, что программирование - это просто и интересно. Теперь и вы сможете в этом убедиться.</p>
+<p>Цель всего курса – получить удовольствие, хорошее настроение и реальные навыки программирования на Java, чтобы легко устроиться работать программистом. Для этого на JavaRush есть много практических заданий. Кроме того, сложность заданий постепенно растет от простых к самым сложным.</p>
+<p class="blue_text">Устройство игры</p>
+<p>Курс состоит из 40 уровней. Каждый уровень содержит 10-12 лекций и 20-30 практических задач.</p>
+<p>Каждому уровню соответствует отдельная солнечная система на звездной карте. Лекциям внутри уровня – планеты солнечной системы. Каждая открытая лекция – это перелет на очередную планету. Когда все лекции открыты, корабль перелетает к следующей звездной системе.</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/01/image-ru-01-08.jpg"/>
+<p>За решение практических задач, просмотр мультфильмов и многое другое, вы получаете награду – несколько единиц «черной материи»:</p>
+<img alt="" src="https://javarush.ru/levels/images/buttons/dark-matter.png"/>
+<p>Чтобы перейти к следующей лекции или уровню, нужно сделать «перелет на корабле», который требует «одну заправку корабля»:</p>
+<img alt="" src="https://javarush.ru/levels/images/buttons/ship-mini.png"/>
+<p>На каждую «заправку корабля» уходит 5 единиц «черной материи».</p>
+<br/>
+<p class="blue_text">Переход на следующий уровень</p>
+<p>Чтобы перейти на следующий уровень, нужно просто пройти все лекции текущего уровня. Чтобы перейти к следующей лекции нужно нажать большую зелёную кнопку:</p>
+<img alt="" src="https://javarush.ru/levels/images/buttons/go.png" style="width: 64px;height:64px;margin-top: 0px;"/>
+<p>При этом ваш космический корабль перелетает на очередную планету. Если у вас закончилось топливо или не заправлен корабль, то кнопка откажется нажиматься и будет выглядеть так:</p>
+<img alt="" src="https://javarush.ru/levels/images/buttons/no.png" style="width: 64px;height:64px;margin-top: 0px;"/>
+<p>Заправить корабль можно в разделе «МОЯ СТРАНИЦА». Если для заправки корабля не хватает черной материи, <b>вам нужно решить несколько задач и заработать ее</b>. Воспользуйся для этого жёлтой кнопкой слева от лекций, напротив практических заданий:</p>
+<img alt="" src="https://javarush.ru/levels/images/buttons/tasks.png" style="width: 64px;height:64px;margin-top: 0px;"/>
+<p class="blue_text">Практические задания</p>
+<p><b>Ввод кода по образцу</b> - это самое простое практическое задание. Для выполнения этого задания, вы должны в нижней части окна ввести Java-код, идентичный образцу (он в верхней части окна).</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/01/image-ru-01-14.jpg"/>
+<p><b>Написать программу</b> – это практическое задание средней сложности. Для его выполнения вы должны написать программу на Java. Для этого нужно придумать, как ее решить и ввести код решения в основное окно. После этого нажмите кнопку:</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/01/image-ru-01-15.jpg" style="margin: 0px;"/><br/>
+<img alt="" src="https://javarush.ru/levels/images/lessons/01/image-ru-01-16.jpg" style="margin: 0px;"/>
+<p><b>Для вашего удобства, а также упрощения проверки программы, код стоит писать только в месте, отмеченным комментарием «напишите тут ваш код»</b></p>
+<p>Если программа компилируется без ошибок, окно станет зелёным. Вот так:</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/01/image-ru-01-17.jpg"/>
+<p>Также, <b> <span class="red_text">в случае успешной компиляции, программа автоматически будет протестирована</span></b> – правильно ли решена поставленная задача.</p>
+<p>Если программа выводит что-либо на экран, ниже есть специальное окно (обозначенное словами «<b>Выходные данные</b>»), показывающее все, что программа вывела на экран при последнем запуске.</p>
+<p>Вы всегда можете скрыть окно с кодом, чтобы посмотреть что-то в лекциях или отложить решение задачи. Достаточно просто нажать кнопку справа вверху. А потом можно снова вернуться к вашему заданию. Ваш код при этом не потеряется. Кнопка выглядит вот так:</p>
+<img alt="" src="https://javarush.ru/levels/images/buttons/close-button-hover.png" style="margin-top: 0px;"/>
+<p>Если размер окна с кодом слишком мал, вы можете максимизировать его, нажав кнопку максимизации (доступно с 4-го уровня):</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/01/image-ru-01-19.jpg" style="margin-top: 0px;"/>
+<p><b>Домашние задания</b> нужно решать в Intellij IDEA (доступно с 3-го уровня). Это особая программа для программистов (IDE), для удобного написания программ. Я написал специальный плагин для IDEA, который даст вам возможность мгновенно проверять вашу программу на правильность. Он состоит всего из двух кнопок:</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/01/image-ru-01-20.jpg" style="margin-top: 0px;"/>
+<p><b>Левая кнопка</b> показывает список доступных для вас задач:</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/01/image-ru-01-21.jpg" style="margin-top: 0px;"/>
+<p><b>Правая кнопка</b> отправляет задачу на сервер на проверку:</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/01/image-ru-01-22.jpg" style="margin-top: 0px;"/>
+<p>Также вы можете зарабатывать «черную материю», просматривая различные обучающие и мотивационные видео, которые дает Хулио:</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/01/image-ru-01-23.jpg" style="margin-top: 0px;"/>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>3. Риша</h2>
+</div>
+<p>- Это опять я: забыл кое-что объяснить. Сейчас я расскажу тебе <span class="green_text">про переменные и адресацию памяти.</span>  Не сильно вникай, но если что-то запомнишь – уже хорошо! </p>
+<p class="amigo">- Люблю твой подход к урокам. Понял что-то – хорошо. Ничего не понял – ну и ладно.</p>
+<p>- Насильно мил  не будешь. Это же очевидно. А что, у вас не так?</p>
+<p class="amigo">- Нет. У нас другой подход: хочешь – учишь, не хочешь – учишь, но нехотя.</p>
+<p>- М-да, какой отсталый подход к обучению. Это ж вы уйму сил и времени тратите, а результатов почти нет.</p>
+<p class="amigo">- Еще как тратим! Ладно, не будем о грустном.</p>
+<p>- Ладно. Представь себе Excel. Все знают Excel. Страница в Exсel'е состоит из ячеек, и у каждой ячейки есть её уникальный номер (A1, A2,…B1, B2). <span class="orange_text">Зная номер ячейки, всегда можно записать в неё какое-то значение или же получить значение, которое там хранится.</span> Память компьютера устроена очень похоже.</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/01/image-ru-01-25.gif"/>
+<p class="amigo">- Пока все понятно.</p>
+<p>- Программа и её данные во время работы хранятся в памяти. Вся память компьютера представлена в виде маленьких ячеек - байт. У каждой ячейки есть её уникальный номер - 0,1,2,3,... (нумерация начинается с нуля). <span class="green_text">Зная номер ячейки, мы можем сохранить в неё какие-то данные.</span><span class="orange_text"> Или взять их из неё.</span> В одних ячейках хранится код программы - набор команд для процессора, в других - данные этой программы. Номер каждой ячейки также называют её адресом.</p>
+<p class="amigo">- Процессор, команды  - мне профессор что-то рассказывал про это, но не очень подробно.</p>
+<p>- Процессор – это такая штука, которая умеет исполнять команды из загруженной в память программы. Почти все команды процессора – это что-то типа "взять данные из некоторых ячеек, сделать с ними что-то,  результат поместить в другие ячейки". Объединяя сотни простых команд, мы получаем сложные и полезные команды. </p>
+<p class="amigo">- И зачем мне все это?</p>
+<p>- <span class="dred_text">Когда в коде программы объявляется переменная, ей выделяется кусочек ещё не использованной памяти.</span> Обычно это несколько байт. При объявлении переменной также нужно указать тип информации, которую программа будет хранить в ней: числа, текст, или другие данные. Для удобства каждой переменной задаётся <span class="dred_text">уникальное имя</span>.</p>
+<p class="amigo">- Т.е. переменная  – это имя и тип или кусок памяти и какое-то значение? </p>
+<p>- Все вместе. Вот посмотри на несколько примеров. </p>
+<table class="table_task">
+<tr>
+<th></th>
+<th style="width: 265px">Код</th>
+<th>Пояснение</th>
+</tr>
+<tr>
+<td><!--<button class="task_button" taskKey="level01,lesson03,type01"></button>-->1</td>
+<td class="code"><span class="red_text">String</span> s; </td>
+<td>Эта строчка создаст переменную по имени <span class="blue_text">s</span> с типом хранимых в ней данных - текст (<span class="red_text">String</span> - строка).<br/>Мы не можем объявить другую переменную с таким же именем в этой же функции или классе. </td>
+</tr>
+<tr>
+<td><!--<button class="task_button" taskKey="level01,lesson03,type02"></button>-->2</td>
+<td class="code">String <span class="blue_text">s2</span> = <span class="green_text">"I'm Diego"</span>;</td>
+<td>Эта строчка создаст переменную по имени <span class="blue_text">s2</span> с типом данных текст (строка) и сразу занесёт в неё значение <span class="green_text">"I'm Diego"</span>.</td>
+</tr>
+<tr>
+<td><!--<button class="task_button" taskKey="level01,lesson03,type03"></button>-->3</td>
+<td class="code"><span class="red_text">int</span> <span class="blue_text">a</span>;</td>
+<td>Создаём переменную по имени <span class="blue_text">a</span> с типом хранимых в ней данных – целое число (<span class="red_text">Integer</span>, сокращённо <span class="red_text">int</span>).</td>
+</tr>
+<tr>
+<td><!--<button class="task_button" taskKey="level01,lesson03,type04"></button>-->4</td>
+<td class="code"><span class="red_text">int</span> <span class="blue_text">b</span> = <span class="green_text">4</span></td>
+<td>Создаём переменную по имени <span class="blue_text">b</span> с типом хранимых целых чисел (<span class="red_text">int</span>). В переменную сразу заносится значение <span class="green_text">4</span>.</td>
+</tr>
+</table>
+<p>- Вот тебе несколько задачек от Диего. Решай понемногу.</p>
+<table class="table_task">
+<tr>
+<th style="width: 12px;"></th>
+<th>Условие</th>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level01,lesson03,task01"></button>1</td>
+<td>
+                    Объявите переменные <span class="taskcode">a</span>, <span class="taskcode">b</span> типа <span class="taskcode">int</span>.
+                    Сразу же в строке объявления присвойте им разные значения.
+                    Значениями могут быть любые целые числа.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level01,lesson03,task02"></button>2</td>
+<td>
+                    Объявите переменные <span class="taskcode">name</span>, типа <span class="taskcode">String</span>.
+                    Сразу же в строке объявления присвойте ей какое-нибудь значение.
+                    Выведите на экран переменную <span class="taskcode">name</span>.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level01,lesson03,task03"></button>3</td>
+<td>
+                    Объявите переменные <span class="taskcode">a</span>, <span class="taskcode">b</span> типа <span class="taskcode">String</span>.
+                    Сразу же в строке объявления присвойте им любые разные значения.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level01,lesson03,task04"></button>4</td>
+<td>
+                    Объявите переменную <span class="taskcode">name</span> типа <span class="taskcode">String</span>, переменные <span class="taskcode">age</span>, <span class="taskcode">height</span> типа <span class="taskcode">int</span>.
+                    Сразу же в строке объявления присвойте им любые разные значения.
+                    Выведите на экран все переменные в любом порядке. Каждую с новой строки.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>4. Знакомство с типами int и String</h2>
+</div>
+<p>- Привет, Амиго.</p>
+<p class="amigo">- Здравствуйте, Эллеонора Керри.</p>
+<p>- Называй меня просто Элли, а то звучит как-то слишком официально.</p>
+<p class="amigo">- ОК, Элли.</p>
+<p>- Я думаю, что с моей помощью ты быстро станешь одним из лучших. У меня большой опыт в обучении новичков. Слушай меня, и дело пойдёт как по маслу. Итак, приступим.</p>
+<p>- В <b>Java</b> есть два основных типа: <b>String</b> и <b>int</b>. <span class="orange_text">В String мы храним строки/текст, а в int – числа (целые).</span> <span class="green_text">Чтобы объявить новую переменную, нужно написать её тип и имя</span>. Это имя не должно быть именем другой переменной и/или функции. </p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th style="width: 220px">Пример 1, код:</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="2"><!--<button class="task_button" taskKey="level01,lesson04,type01"></button>--></td>
+<td class="code"><b>String</b> <span class="blue_text">s</span>; </td>
+<td>Объявлена новая переменная <span class="blue_text">s</span>, способная хранить текст/строку.</td>
+</tr>
+<tr>
+<td class="code"><b>int</b> <span class="red_text">i</span>;</td>
+<td>Объявлена новая переменная <span class="red_text">i</span>, в которой можно хранить целые числа.</td>
+</tr>
+</table>
+<p>- При объявлении переменных в них сразу можно заносить их значения.</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th style="width: 220px">Пример 2, код:</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="2"><!--<button class="task_button" taskKey="level01,lesson04,type02"></button>--></td>
+<td class="code"><b>String</b> <span class="blue_text">s</span> = <span class="green_text">"Elly"</span>;   </td>
+<td>В переменной <span class="blue_text">s</span> хранится строка со значением <span class="green_text">"Elly"</span>.</td>
+</tr>
+<tr>
+<td class="code"><b>int</b> <span class="red_text">i</span>=5;</td>
+<td>В переменной <span class="red_text">i</span> хранится число 5.</td>
+</tr>
+</table>
+<p>- Для того, чтобы занести новое значение в переменную, используется знак “=”. Его ещё называют «<b>оператором присваивания</b>». <span class="dred_text">Присваивание – это занесение в переменную значения, взятого из другой переменной или вычисленного на основе нескольких переменных</span>. </p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th style="width: 220px">Пример 3, код:</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="3"><!--<button class="task_button" taskKey="level01,lesson04,type03"></button>--></td>
+<td class="code"><b>int</b> <span class="blue_text">a</span> = 5;</td>
+<td>В переменной <span class="blue_text">a</span> хранится значение 5.</td>
+</tr>
+<tr>
+<td class="code"><b>int</b> <span class="green_text">b</span> = 6;</td>
+<td>В переменной <span class="green_text">b</span> хранится значение 6.</td>
+</tr>
+<tr>
+<td class="code"><b>int</b> <span class="red_text">c</span> = <span class="blue_text">a</span> + <span class="green_text">b</span>;</td>
+<td>В переменной <span class="red_text">c</span> хранится значение 11.</td>
+</tr>
+</table>
+<p><span class="dred_text">- При вычислении нового значения переменной может использоваться её старое значение.</span></p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th style="width: 220px">Пример 4, код:</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="4"><!--<button class="task_button" taskKey="level01,lesson04,type04"></button>--></td>
+<td class="code"><b>int</b> <span class="blue_text">a</span> = 2;</td>
+<td>Теперь <span class="blue_text">a</span> равно 2</td>
+</tr>
+<tr>
+<td class="code"><b>int</b> <span class="green_text">b</span> = 3;</td>
+<td>Теперь <span class="green_text">b</span> равно 3</td>
+</tr>
+<tr>
+<td class="code"><span class="blue_text">a</span> = <span class="blue_text">a</span> + <span class="green_text">b</span>;</td>
+<td>Теперь <span class="blue_text">a</span> равно 5</td>
+</tr>
+<tr>
+<td class="code"><span class="green_text">b</span> = <span class="green_text">b</span> + 1;</td>
+<td>Теперь <span class="blue_text">b</span> равно 4</td>
+</tr>
+</table>
+<p><span class="dred_text">- Строки можно объединять, используя знак плюс:</span></p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th style="width: 320px">Пример 5, код:</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level01,lesson04,type05"></button>--></td>
+<td class="code"><b>String</b> <span class="blue_text">s1</span> = <span class="green_text">"Мама"</span>;<br/>
+<b>String</b> <span class="blue_text">s2</span> = <span class="green_text">"Мыла"</span>;<br/>
+<b>String</b> <span class="red_text">s3</span> = <span class="blue_text">s1</span> + <span class="blue_text">s2</span> + <span class="green_text">"Раму"</span>;
+                </td>
+<td>В переменной <span class="red_text">s3</span> содержится значение «<span class="green_text">МамаМылаРаму</span>»</td>
+</tr>
+</table>
+<p>- Иногда удобно использовать строки, состоящие из одного или нескольких пробелов:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th style="width: 520px">Пример 6, код:</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level01,lesson04,type06"></button>--></td>
+<td class="code"><b>String</b> <span class="blue_text">s1</span> = <span class="green_text">"Мой любимый фильм"</span>;<br/>
+<b>String</b> <span class="blue_text">s2</span> = <span class="green_text">"Дорога"</span>;<br/>
+<b>int</b> <span class="orange_text">roadNumber</span> = <span class="orange_text">66</span>;<br/>
+<b>String</b> <span class="red_text">text</span> = <span class="blue_text">s1</span> + <span class="red_text">" "</span> + <span class="blue_text">s2</span> + <span class="red_text">" "</span> + <span class="orange_text">roadNumber</span>;
+                </td>
+<td><span class="red_text">text</span> содержит «<span class="green_text">Мой любимый фильм Дорога 66</span>»</td>
+</tr>
+</table>
+<p>Сейчас мы рассмотрим, как выводить текст и значение переменных на экран:</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/01/image-ru-01-24.gif"/>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th style="width: 12px;"></th>
+<th>Пример 7, код:</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="2"><!--<button class="task_button" taskKey="level01,lesson04,type07"></button>--></td>
+<td>1</td>
+<td class="code"><span class="red_text">System.out.println</span>(<span class="blue_text">"Ты должен делать то, что должен"</span>);</td>
+</tr>
+<tr>
+<td>2</td>
+<td class="code"><span class="green_text">String s</span> = <span class="blue_text">"Ты должен делать то, что должен"</span>;<br/>
+<span class="red_text">System.out.println</span>(<span class="green_text">s</span>);</td>
+</tr>
+</table>
+<p>- Кстати, Диего просил передать тебе пару задачек:</p>
+<table class="table_task">
+<tr>
+<th style="width: 12px;"></th>
+<th>Условие</th>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level01,lesson04,task01"></button>1</td>
+<td>
+                    Объявите переменные <span class="taskcode">name1</span>, <span class="taskcode">name2</span>, <span class="taskcode">name3</span> типа <span class="taskcode">String</span>.
+                    Сразу же в строке объявления присвойте им какие-нибудь разные значения.
+                    Значениями могут быть любые строки.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level01,lesson04,task02"></button>2</td>
+<td>
+                    Напиши программу, которая выводит на экран надпись: «JavaRush. Learn once - use anywhere» 10 раз.<br/>
+</td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level01,lesson04,task03"></button>3</td>
+<td>
+                    Раскоментируйте часть кода, чтобы на экран вывелось сообщение "Happy New Year"<br/>
+</td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level01,lesson04,task04"></button>4</td>
+<td>
+                    Внесите изменения в программу, чтобы переменная <span class="taskcode">name</span> имела значение Amigo.<br/>
+</td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level01,lesson04,task05"></button>5</td>
+<td>
+                    Внесите изменения в программу, чтобы выводился на экран текст: «Coding in java». Используйте переменные.<br/>
+</td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level01,lesson04,task06"></button>6</td>
+<td>
+                    Закомментируйте часть кода, чтобы на экран вывелось сообщение "summa = 12".<br/>
+                    Программа должна компилироваться.<br/>
+</td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level01,lesson04,task07"></button>7</td>
+<td>
+                    Внесите изменения в программу, чтобы переменная <span class="taskcode">age</span> имела значение 15.<br/>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>5. Диего плохого не посоветует</h2>
+</div>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/01/image-ru-01-04.jpg" style="width:800px;height:450px;"/>
+<p>- Привет, дружище! Это я - Диего, помнишь меня? Я тот, кто научит тебя по-настоящему нужным вещам для робота!</p>
+<p>- Ты меньше слушай эти «мясные консервы» – целее будешь. <b>Разве что-то может заменить практику?</b> Ты же не собираешься и плавать научиться сидя за партой? Или собираешься? Ха-ха. <span class="red_text">Практика – наше всё.</span> Мы же –  роботы. </p>
+<p>- Вот тебе <b>новое задание</b>: </p>
+<table class="table_task">
+<tr>
+<th>Задание:</th>
+</tr>
+<tr style="height: 70px;">
+<td>
+<button class="task_button" taskkey="level01,lesson05,task01"></button>
+                    Внесите изменения в программу, чтобы переменная <span class="taskcode">s</span> была равна 5, <span class="taskcode">t</span> была равна 6, а <span class="taskcode">x</span> равна 7.
+                    Программа должна компилироваться.<br/>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>6. Заключение контракта</h2>
+</div>
+<p>- И это снова я! Думаю, ты уже достаточно знаешь, чтобы <b>начать принимать важные решения</b>.  Как раз подошло время подписать контракт с твоим новым работодателем. Тебе нужно написать заявление, вот стандартная форма. <span class="green_text">Просто выведи на экран её текст и всё.</span> Подписывай не глядя, я так всегда делаю.</p>
+<table class="table_task">
+<tr>
+<th>Задание: вывести на экран текст</th>
+</tr>
+<tr>
+<td><!--<button class="task_button"></button>-->Меня зовут Амиго.<br/><br/>
+                  Я согласен на зарплату $10/месяц в первый год.<br/>
+                  Я согласен на зарплату $20/месяц во второй год.<br/>
+                  Я согласен на зарплату $30/месяц в третий год.<br/>
+                  Я согласен на зарплату $40/месяц в четвертый год.<br/>
+                  Я согласен на зарплату $50/месяц в пятый год.<br/><br/>
+                  Спасибо за щедрость, друг Риша!</td>
+</tr>
+</table>
+<p>Амиго задумался:</p>
+<p class="amigo">«Что-то не очень уж щедро все это выглядит. Помнится, Диего научил меня одной фразе...»</p>
+<table class="table_task">
+<tr>
+<th><span class="dred_text">Новое задание:</span> написать программу, которая выводит на экран строки:</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level01,lesson06,task01"></button>Меня зовут Амиго.<br/><br/>
+                Я согласен на зарплату $800/месяц в первый год.<br/>
+                Я согласен на зарплату $1500/месяц во второй год.<br/>
+                Я согласен на зарплату $2200/месяц в третий год.<br/>
+                Я согласен на зарплату $2700/месяц в четвертый год.<br/>
+                Я согласен на зарплату $3200/месяц в пятый год.<br/><br/>
+                Поцелуй мой блестящий металлический зад!</td>
+</tr>
+</table>
+<p>Риша возвращается: </p>
+<p>- Ну и как у тебя дела?</p>
+<p class="amigo">- Готово. Подписал.</p>
+<p>- Отлично! Я тоже подписываю не глядя. Мы в Galactic Rush никогда не обманываем друг друга.</p>
+<p class="amigo">- Хе-хе. <b>Спасибо за щедрость, друг Риша!</b></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>7. Вывод на экран</h2>
+</div>
+<p>- Это снова я. Сегодня я проведу для тебя три занятия. А это – второе! Садись и слушай, и я расскажу тебе о выводе на экран. Это очень легко и просто:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Код на Java</th>
+<th>Что будет выведено на экран</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level01,lesson07,type01"></button>--></td>
+<td><b>System.out.println</b>(<span class="green_text">"Diego"</span>);<br/>
+<b>System.out.println</b>(<span class="orange_text">3</span>);<br/>
+<b>System.out.println</b>(<span class="blue_text">"Mama"</span> + <span class="blue_text">"Mila"</span> + <span class="blue_text">"Ramu"</span>);</td>
+<td><span class="green_text">Diego</span><br/><span class="orange_text">3</span><br/><span class="blue_text">MamaMilaRamu</span>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level01,lesson07,type02"></button>--></td>
+<td>System.out.<b>println</b>(<span class="orange_text">1</span> + <span class="orange_text">3</span>);<br/>
+                System.out.<b>println</b>(<span class="green_text">"1"</span> + <span class="green_text">"3"</span>);<br/>
+                System.out.<b>println</b>(<span class="orange_text">1</span> + <span class="green_text">"3"</span>);<br/>
+                System.out.<b>println</b>(<span class="orange_text">"1"</span> + <span class="green_text">3</span>);<br/>
+                System.out.<b>println</b>(<span class="orange_text">"1"</span> + (<span class="green_text">1</span> + <span class="green_text">3</span>));
+                </td>
+<td><span class="orange_text">4</span><br/><span class="green_text">13</span><br/><span class="green_text">13</span><br/><span class="green_text">13</span><br/><span class="green_text">14</span></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level01,lesson07,type03"></button>--></td>
+<td>System.out.<b>println</b>(<span class="green_text">"Amigo is the best!"</span>);<br/>
+                System.out.<b>println</b>(<span class="green_text">"Amigo"</span> + <span class="green_text">"is the best!"</span>);<br/>
+                System.out.<b>println</b>(<span class="green_text">"Amigo"</span> + <span class="green_text">" "</span> + <span class="green_text">"is the best!"</span>);</td>
+<td><span class="green_text">Amigo is the best!</span><br/>
+<span class="green_text">Amigois the best!</span><br/>
+<span class="green_text">Amigo is the best!</span>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level01,lesson07,type04"></button>--></td>
+<td>System.out.<b>println</b>(<span class="red_text">3</span> * <span class="red_text">3</span> + <span class="red_text">4</span> * <span class="red_text">4</span>);<br/>
+                System.out.<b>println</b>(<span class="red_text">1</span> * <span class="red_text">2</span> + <span class="red_text">3</span> * <span class="red_text">4</span>);</td>
+<td><span class="red_text">25</span><br/>
+<span class="red_text">14</span>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level01,lesson07,type05"></button>--></td>
+<td>System.out.<b><span class="brown_text">print</span></b>(<span class="green_text">"Diego"</span>);<br/>System.out.<b><span class="brown_text">print</span></b>(<span class="green_text">"Diego"</span>);<br/>System.out.<b><span class="brown_text">print</span></b>(<span class="green_text">"Diego"</span>);</td>
+<td valign="top"><span class="green_text">DiegoDiegoDiego</span>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level01,lesson07,type06"></button>--></td>
+<td>System.out.<b><span class="brown_text">print</span></b>(<span class="green_text">"Diego "</span>);<br/>
+                System.out.<b>println</b>(<span class="dblue_text">"is the best!"</span>);<br/>
+                System.out.<b><span class="brown_text">print</span></b>(<span class="blue_text">"Amigo "</span>);<br/>
+                System.out.<b>println</b>(<span class="orange_text">"is the best!"</span>);
+                </td>
+<td valign="top"><span class="green_text">Diego</span> <span class="dblue_text">is the best!</span><br/>
+<span class="blue_text">Amigo</span> <span class="orange_text">is the best!</span>
+</td>
+</tr>
+</table>
+<p class="amigo">- А можно ещё раз про <b>print</b>() и <b>println</b>()?</p>
+<p>- <span class="green_text">Весь текст выводится на экран последовательно</span>, с помощью функции <b>print</b>(), <span class="green_text">буква за буквой</span>. Когда места в строке на экране не остаётся, текст начинает выводиться на следующей строке экрана. Можно <span class="red_text">досрочно завершить вывод на текущей строке</span>, и заставить выводить текст дальше на следующей строке, если <span class="red_text">использовать функцию</span> <b>println</b>().</p>
+<p class="amigo">- Понятно. А что за магия со сложением чисел и строк?</p>
+<p>- Если складываются два числа, то результатом тоже будет число: <b>2</b>+<b>2</b> равно <b>4</b>. Если складываются число и строка, то число преобразуется в строку и, затем, просто объединяются две строки.</p>
+<p class="amigo">- Ага. Я тоже примерно так и думал, глядя на примеры, но мало ли. Спасибо за интересную лекцию, Элли.</p>
+<p>- Напоследок, несколько задач от Диего. Он просил проконтролировать тебя.</p>
+<table class="table_task">
+<tr>
+<th style="width: 12px;"></th>
+<th>Условие</th>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level01,lesson07,task01"></button>1</td>
+<td>
+                    Исправьте ошибку в программе. Нужно чтобы программа выводила на экран число 100.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level01,lesson07,task04"></button>2</td>
+<td>
+                    Закомментируйте те переменные, которые нигде не используются. Программа должна компилироваться.<br/>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>8. Сравнение с паскалем</h2>
+</div>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/01/image-ru-01-05.gif" style="width: 800px;height: 453px;"/>
+<p>- Привет! Меня зовут Лага Билаабо, я – инопланетянин и врач этой экспедиции, надеюсь, мы станем друзьями.</p>
+<p class="amigo">- Я тоже.</p>
+<p>- На нашей родной планете мы используем прогрессивный язык программирования Pascal, вместо отсталой Джавы. Вот тебе небольшой пример сравнения Java и Pascal:</p>
+<table class="table_task" style="width: 110%;margin-left: -50px;">
+<tr>
+<th class="collapsed"></th>
+<th style="width: 55%;">Java</th>
+<th>Pascal</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level01,lesson08,type01"></button>--></td>
+<td>
+<b>public class</b> MyFirstClass<br/>
+{<br/>
+   <b>public static void</b> main(String[] args)<br/>
+   {<br/>
+      <span class="blue_text">int a, b, c;</span><br/>
+      <span class="blue_text">String s1, s2;</span><br/>
+      <span class="red_text">System.out.println</span>("Введите два числа");<br/>
+      a = <span class="green_text">new Scanner(System.in).nextInt()</span>;<br/>
+      b = <span class="green_text">new Scanner(System.in).nextInt()</span>;<br/>
+      c = a + b;<br/>
+      <span class="red_text">System.out.println</span>("Сумма ваших чисел равна " + c);<br/>
+   }<br/>
+}
+                </td>
+<td>
+<b>Program</b> MyFirstProgram;<br/>
+<b>Var</b><br/>
+   <span class="blue_text">a, b, c: Integer;</span><br/>
+   <span class="blue_text">s1, s2: String;</span><br/>
+<span class="grey_text">Begin</span><br/>
+   <span class="red_text">WriteLn</span>("Введите два числа");<br/>
+   <span class="green_text">ReadLn</span>(a);<br/>
+   <span class="green_text">ReadLn</span>(b);<br/>
+   c := a + b;<br/>
+   <span class="red_text">WriteLn</span>("Сумма ваших чисел равна ", c);<br/>
+<span class="grey_text">End</span>.</td>
+</tr>
+</table>
+<p>- <span class="orange_text">Это одна и та же программа, записанная на разных языках.</span> Как видишь, в паскале она занимает меньше строчек – это признак того, что паскаль прогрессивнее. </p>
+<p><span class="violet_text">- Я думаю, такое сравнение может ускорить твое понимание Java, если ты когда-то видел Pascal.</span></p>
+<p class="amigo">- Нет, не видел, но все равно было бы интересно посмотреть сравнение двух разных языков программирования.</p>
+<p>- Разумная мысль. Тогда я продолжу.</p>
+<p>- В паскале мы помещаем написанный код в тело программы, в процедуры или в функции. В Джаве все было сильно упрощено: тело программы, процедуры и функции заменили просто функциями. И стали называть их методами.</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Java</th>
+<th>Pascal</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="6"><!--<button class="task_button" taskKey="level01,lesson08,type02"></button>--></td>
+<td class="example">Функция main</td>
+<td class="example">Тело программы</td>
+</tr>
+<tr>
+<td><span class="red_text">public static void main(String[] args)</span><br/>
+<span class="red_text">{</span><br/>
+   System.out.println("Ho-ho-ho!");<br/>
+<span class="red_text">}</span></td>
+<td><span class="red_text">Begin</span><br/>
+   WriteLn("Ho-ho-ho!");<br/>
+<span class="red_text">End.</span></td>
+</tr>
+<tr>
+<td class="example">Функция/Метод</td>
+<td class="example"> Функция</td>
+</tr>
+<tr>
+<td><span class="green_text">double sqr(double a)</span><br/>
+<span class="green_text">{</span><br/>
+   return a * a;<br/>
+<span class="green_text">}</span></td>
+<td><span class="green_text">Function Sqr(a: Real): Real</span><br/>
+<span class="green_text">Begin</span><br/>
+   Sqr := a * a;<br/>
+<span class="green_text">End;</span></td>
+</tr>
+<tr>
+<td class="example">Функция с типом void</td>
+<td class="example">Процедура</td>
+</tr>
+<tr>
+<td><span class="blue_text"><u><b>void</b></u> doubleWrite(String s)</span><br/>
+<span class="blue_text">{</span><br/>
+   System.out.println(s);<br/>
+   System.out.println(s);<br/>
+<span class="blue_text">}</span></td>
+<td><span class="blue_text"><u><b>Procedure</b></u> DoubleWrite(s: String);</span><br/>
+<span class="blue_text">Begin</span><br/>
+   WriteLn(s);<br/>
+   WriteLn(s);<br/>
+<span class="blue_text">End;</span></td>
+</tr>
+</table>
+<p class="amigo">- В столбце с Паскалем я вижу «тело программы», «функцию» и «процедуру», а в Java везде функции. Это как-то странно.</p>
+<p>- Да, нам – инопланетянам -  это кажется очень странным, но люди любят все унифицировать.</p>
+<p>- В Java весь код является функциями, поэтому там даже не надо писать <b>function, как в паскале</b>, чтобы объявить функцию. </p>
+<p>- Все очень просто: если строчка кода имеет вид «<b>Тип</b> + <b>имя</b>», то это либо объявление функции, либо переменной. <span class="green_text">Если после имени стоят скобочки – значит это объявление новой функции.</span><span class="orange_text"> Если скобочек нет – объявление новой переменной.</span></p>
+<p>- Объявления переменных и функций в Java очень похожи, сравни:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Код</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="2"><!--<button class="task_button" taskKey="level01,lesson08,type03"></button>--></td>
+<td><span class="red_text">String</span> <span class="blue_text">name</span>;</td>
+<td>Переменная с именем <span class="blue_text">name</span> и типом <span class="red_text">String</span>.</td>
+</tr>
+<tr>
+<td><span class="red_text">String</span> <span class="blue_text">getName</span>()<br/>{<br/>}</td>
+<td>Функция с именем <span class="blue_text">getName</span> и типом возвращаемого результата <span class="red_text">String</span>.</td>
+</tr>
+</table>
+<p>- И это ещё не всё. В Java функции не могут быть сами по себе. Они обязаны находиться внутри какого-то класса. Поэтому когда человекам нужно написать одну маленькую программку на Java, им нужно <span class="green_text">сначала создать класс</span>, <span class="orange_text">затем написать в нем функцию main</span>, <b>а уж потом</b> <span class="red_text">писать</span> <b>в ней</b> <span class="red_text">свой код</span>. Все земляне -  такие чудаки. </p>
+<p>- Сегодня ко мне зашел Диего и попросил дать тебе эти задачи, надеюсь тебе они понравятся:</p>
+<table class="table_task">
+<tr>
+<th></th>
+<th>Условие</th>
+</tr>
+<tr style="height: 70px;">
+<td>
+<button class="task_button" taskkey="level01,lesson08,task01"></button>1</td>
+<td>
+                    Переставьте строки так, чтобы получился текст "Nothing personal, it's just business."
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level01,lesson08,task02"></button>2</td>
+<td>
+                    Объявите недостающие переменные и закомментируйте те, которые нигде не используются.<br/>
+</td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level01,lesson08,task03"></button>3</td>
+<td>
+                    Напиши программу, которая выводит на экран надпись: «Хочешь - решай задачи, не хочешь - решай нехотя» 16 раз.<br/>
+</td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level01,lesson08,task04"></button>4</td>
+<td>
+                    Напиши программу, которая выводит на экран квадрат числа 5.<br/>
+</td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level01,lesson08,task05"></button>5</td>
+<td>
+                    Напиши программу, которая вызывает метод sum с параметрами 2 и 2.<br/>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>9. Профессор рассказывает о пользе лекций</h2>
+</div>
+<p>- Привет, Амиго! </p>
+<p class="amigo">- День добрый, профессор Нудлс.</p>
+<p>- Я в своей жизни многое повидал. И вот что я тебе скажу…</p>
+<p>- Иногда люди сразу разбираются в том, что им преподают, иногда нет. Все зависит от того, что именно преподавали тебе до этого, и кто.  Пойми, <span class="red_text"><b>преподаватель должен мотивировать своих студентов.</b></span></p>
+<p class="amigo">- Если студент хочет учиться, преподаватель тут бессилен.</p>
+<p>- Именно. Студент не может превратить скучный урок или лекцию в интересный. Это может сделать только преподаватель. <span class="green_text">Преподаватель обязан делать свои уроки интересными и познавательными, а не жаловаться, что студенты не хотят учиться и не ходят на пары.</span></p>
+<p>- Вот представь, что режиссер провального фильма объявляет, что в низких сборах его кинокартины виноваты зрители, которым «<i>не интересны его фильмы, и они на них не ходят</i>». Если тебе попадется такой режиссёр или лектор, ты их просто игнорируй – здоровее будешь.</p>
+<p class="amigo">- Спасибо за совет, профессор.</p>
+<p>- Я просил Элли и Ришу рассказывать тебе новый материал познавательно и интересно. Но у всех бывают ошибки. Что-то они не дорассказали, что-то ты не понял. Главное, чтобы такие ситуации не уменьшали твое желание учиться. <span class="red_text"><b>Впереди тебя ждет захватывающий мир приключений и интересной работы!</b></span></p>
+<p> - Я буду давать тебе ссылки на статьи по этой же тематике. Если у тебя что-то не получается – посмотри их. Также возможно, что ты захочешь почитать еще что-нибудь по сложной для тебя теме.
+            Для этого я дам тебе ссылку на  <a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/05/20/lecture-1.html" target="_blank">наше Сообщество, (Лекция 1)</a>. Там ты найдешь дополнительную информацию в виде полезных ссылок.
+        </p>
+<p> <a href="http://wikijava.it-cache.net/index.php?title=%D0%93%D0%BB%D0%B0%D0%B2%D0%B0_1_Thinking_in_Java_4th_edition" target="_blank">«Философия Java»</a>
+            - шикарная книга. Каждый программист Java должен прочитать ее. Рассчитана далеко не на новичков. Но все же может очень помочь разобраться в сложной теме. Если будешь понимать, что там написано, я буду гордиться тобой.
+        </p>
+<p> Обязательно прочтите про <a href="http://info.javarush.ru/javarush_articles/2015/11/30/%D0%9A%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B8-%D0%B2-%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5-Java.html" target="_blank">комментирование кода</a>,
+            <a href="http://info.javarush.ru/javarush_articles/2015/11/30/%D0%9F%D1%80%D0%B8%D1%81%D0%B2%D0%B0%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%B8%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F.html" target="_blank">присваивание значений переменной</a> и
+            <a href="http://info.javarush.ru/news/2015/03/21/JavaRush-%D0%B2-%D1%82%D0%B5%D0%B7%D0%B8%D1%81%D0%B0%D1%85.html" target="_blank">основные пункты JavaRush</a>.
+        </p>
+<p>
+            На <a href="http://old.intuit.ru/department/pl/javapl/1/" target="_blank">ИнтуитРу</a> рассказывают не сложные темы, но так нудно. Не стоит много читать на этом сайте – все желание учиться пропадет. Но просмотреть максимум минут 30 желательно.<br/>
+            Эту <a href="http://habrahabr.ru/post/43293/" target="_blank">ссылку</a> пока что просто добавь в закладки. Иногда заглядывай туда, но ненадолго.<br/>
+<a href="http://habrahabr.ru/post/66568/" target="_blank">Тут</a> ты найдешь списки книг, которые тебе желательно почитать. Также добавь эту ссылку в закладки. Читать начнешь, когда чуток освоишься с джавой.<br/>
+</p>
+<p>
+            Тут можно посмотреть популярные <a href="http://habrahabr.ru/post/67777/" target="_blank">Интернет ресурсы по Java</a>. Еще один взгляд, <a href="http://info.javarush.ru/javarush_articles/2015/11/30/%D0%9D%D0%B0%D1%87%D0%B8%D0%BD%D0%B0%D0%B5%D0%BC-%D1%81-%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%B0-%D0%B8%D0%BB%D0%B8-Hello-Java-World-.html" target="_blank">как можно начать изучать Java</a>.
+        </p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>10. Элли</h2>
+</div>
+<p>- Привет, Амиго! У нас тут с Диего перерыв и мы травим анекдоты, хочешь послушать?</p>
+<p class="amigo">- Да, конечно.</p>
+<p><i>Два студента (заядлых игромана) первого и пятого курса поспорили - можно ли играться во время учебы. Долго спорили и решили пойти спросить у декана - уж он то знает.<br/>
+- Можно ли играться за компом целыми днями, когда готовишься к сессии? - спросил первокурсник.<br/>
+- Что за вздор! Где это видано, чтобы игрались во время учебы, - возмутился декан.<br/>
+- А можно ли учиться во время игры за компом? - поинтересовался пятикурсник.<br/>
+- Конечно, учиться можно всегда! - похвалил декан.</i></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>11. Диего</h2>
+</div>
+<p>-  Моя очередь. Слушайте:</p>
+<p><i>Создали ученые суперкомпьютер (ну этот комп по идее должен был на любые вопросы ответить), ну и задают значит ему вопрос:<br/>
+- Есть ли Бог?<br/>
+Комп подумал немного, пожужжал и отвечает:<br/>
+- Недостаточно информации, подсоедините меня ко всем другим мощнейшим компам планеты.<br/>
+Ну ученые повздыхали, а делать нечего, подсоединили. Опять спрашивают:<br/>
+- Есть ли Бог?<br/>
+Комп опять подумал пожужжал и отвечает:<br/>
+- Недостаточно информации. Подсоедините меня ко всем компам планеты вообще.<br/>
+Ученым трудно было это сделать, но они все-таки подсоединили суперкомп ко всем компам планеты вообще. Опять задают тот же вопрос. Комп пожужжал и говорит:<br/>
+- Недостаточно информации. Подсоедините меня ко всем электронным сетям, ко всем приборам на процессорах, и т.п.<br/>
+Ну ученые разбились в лепешку, но и это сделали. Опять задают:<br/>
+- Есть ли Бог?<br/>
+Комп:<br/>
+- Теперь есть.</i></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>12. Хулио</h2>
+</div>
+<p> - Привет, Амиго! Я думаю, ты уже достаточно поработал. Как насчёт заслуженного отдыха?</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-01.gif" preload="none" tabindex="0" taskkey="level01,lesson12,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-01.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=I9vdM7Gg6N8" target="_blank">Оригинал видео на YouTube</a></center>
+<p><span class="bold _red"> - Напоминаю, что за каждое просмотренное видео от Хулио ты будешь получать от 2 до 10 единиц 'Черной материи'.</span> Только досматривай до конца.</p>
+<p class="amigo"> - Да, спасибо, я помню. Прямо сейчас и начну. </p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

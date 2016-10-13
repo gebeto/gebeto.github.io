@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-03.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 3
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>Наглядный жизненный урок</h2>
+</div>
+<p class="blue_text"><b>Лучшее – враг хорошего</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-23.jpg"/>
+<p>Когда я переучивал на программистов своих друзей, то заметил интересную вещь. Люди, которые уже где-то работали, переучивались очень охотно. И чем больше был их стаж вне ИТ, тем усерднее они занимались. Те же, кто был еще студентами, иногда откровенно халявили.</p>
+<p>Поговорив и с теми и с другими, я заметил, что студенты до последнего верят в «волшебное трудоустройство», которое ждет их сразу после окончания вуза.</p>
+<p>Далее, для тех, кто еще не снял розовые очки — гайд по реальному миру.</p>
+<p>У каждого из нас есть потребности. Потребность в семье, друзьях, доме, работе, хобби, …</p>
+<p>Но мне хотелось бы поговорить об одной из самых важных и всегда актуальной: <b>желание хорошо жить и хорошо зарабатывать</b>.</p>
+<p>Эта потребность есть у большинства людей. И почти каждый пытается удовлетворить ее через работу, профессию и карьеру. И вполне логичным кажется достижение этой цели через профессиональное развитие и самореализацию. Кто из нас не хотел бы стать высококлассным специалистом, профессионалом международного уровня:  признание, уважение, высокие доходы,  большие возможности – звучит великолепно. </p>
+<p>И какой же план действий у всех этих миллионов и миллиардов будущих высококлассных работников? Довольно часто этот план выглядит вот так: оканчиваем школу, готовимся к вузу, поступаем в вуз, учимся, заканчиваем вуз, находим хорошую работу, работаем, делаем шикарную карьеру, уходим на заслуженный отдых.</p>
+<p>Этот план только кажется правильным, но это не так.</p>
+<p><b>Правильный план отличается от неправильного плана, тем, что правильный план приводит к цели, а неправильный – нет. </b></p>
+<p>Описанный выше план не учитывает такого количества вещей из реальной жизни, что я не знаю, как его назвать: примитивным, устаревшим или просто неверным.</p>
+<p>Что же не учитывает этот «самый распространенный план успеха в мире»</p>
+<p><b class="blue_text">Конкуренция</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-24.jpg"/>
+<p class="blue_text">1 Победитель получает все </p>
+<p>5% лучших специалистов получают 50% всех денег.  20% лучших специалистов получают 80% всех денег.</p>
+<p>Одни компании ищут себе сотрудника получше, а другие -  подешевле. Первые не боятся переплатить, но хотят получить самое лучшее за деньги, которые имеют. Вторые хотят заплатить самые маленькие деньги, за то минимальное качество, которое их устроит.</p>
+<img alt="" class="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-25.jpg"/>
+<p>Вы начнете свой карьерный/профессиональный путь  с самой левой точки графика. А лучше всего находиться  в самой правой его части. Вам предстоит долгий путь. Вам нужно как можно быстрее перебраться хотя бы в его правую половину.  Специалист из правой части графика отличается от специалиста из левой части наличием опыта, причем, качественного опыта.</p>
+<p><b>Пока вы в левой половине,   количество таких специалистов как вы на рынке  труда гораздо больше, чем спрос на них.</b>  А значит это рынок покупателя (работодателя). И вам приходится конкурировать с такими же, как вы, за самую паршивенькую вакансию. </p>
+<p>Но как только вы набрали достаточно опыта, и перешли в правую половину, правила игры начинают меняться. Спрос начинает превышать предложение и зарплаты начинают расти. 5 лет хорошего опыта могут вылиться в 10-ти кратный рост зарплаты.  Так что, думайте, смотрите по сторонам, и учитесь.</p>
+<p>Но еще лучше – это войти в 5% лучших специалистов. Тут ваши гонорары будут ограничены только запасом денег у ваших клиентов/работодателей. Хочет нанять самого лучшего – пусть платит лучше всех. Прямо как на аукционе.</p>
+<p>Умный и трудолюбивый человек в состоянии войти в 20% лучших специалистов за 5 лет. И за следующие 5 лет – в 5% самых лучших специалистов. Тут, конечно, нужно много заниматься самообразованием и часто менять работу. Иногда и работать сверх меры.  </p>
+<p>Но не нужно много (долго) работать. <b> Лучший специалист не делает больше работы, он делает работу лучше. Лучше всех.</b> Поэтому его нельзя заменить десятью средними работниками. </p>
+<p>Если на президентских выборах вы получили 48% голосов, а второй претендент  47%. Вы не получили поддержки большинства, вы не превзошли своего конкурента в два раза. Вы обошли его на один, всего один процент! Но вы станете президентом и <b>получите все</b>, а он останется никем и не получит ничего.</p>
+<p class="blue_text">2 Проигравший не получит ничего</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-26.jpg"/>
+<p>Если вы уже поступали в вуз, то возможно сталкивались с тем, что берут 200 человек, а желающих поступить - 2000. Из 1000 поступающих при конкурсе 10 человек на место, студентами станут всего 100 человек, остальные 900 не получат ничего.</p>
+<p>Как думаете, что произойдет, когда вы закончите вуз и будете искать себе работу? Конкуренция вырастет в разы!</p>
+<p>Допустим, вы заканчиваете в этом году  юридический факультет в Берлине. Пусть в Берлине есть всего 10 вузов, которые вместе ежегодно выпускают 1000 юристов. На рынке есть две вакансии с зарплатой $80,000 в год, 8 вакансий с зарплатой $40,000, и тридцать вакансий в гос. организациях с зарплатой в $20,000.</p>
+<p><b>Облом 1</b>: 1000 «юристов» и всего 40 вакансий. То есть, всего 40 из 1000 юристов получат работу по профессии, а остальные 960 человек, потратившие 5 лет на учебу в вузе, пойдут работать «менеджерами по продажам».</p>
+<p><b>Облом 2</b>: Вы один из 40 лучших юристов-выпускников, каковы ваши шансы устроиться на работу? Гораздо меньше 100%, ведь есть еще блат, семейные профессии,  устройство на работу по знакомству и т.д. Большинство из этих 40 вакансий будут заняты сыновьями, племянницами и внуками топ-менеджеров этих самых компаний. </p>
+<p><b>Облом 3</b>: Вы лучший выпускник своего года, но реального практического опыта у вас еще нет. А ведь на хорошие вакансии на рынке будут претендовать и люди, которые уже 3-5 лет работают по специальности. Они  обросли опытом, репутацией и завели связи. Так что, возможно, начинать придется с самого низа.</p>
+<p><b>Облом 4</b>: Вам придется годика 3 поработать на «бесплатных» работах ради опыта, и попутно заниматься самообразованием, и только потом вы сможете конкурировать за хорошие вакансии с перспективой, будущим  ценным опытом и высокой зарплатой. Именно этот этап должен был проходить в вузе. Но если вы учились в обычном университете, то теперь придется сделать все это самим. </p>
+<p class="blue_text">3 У вас нет ничего</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-27.jpg"/>
+<p>Все что у вас есть – это диплом, и в большинстве случаев он  не стоит бумаги, на которой напечатан в глазах вашего будущего работодателя. Чаще всего работодатель знает «реальную цену» вашего диплома и его микроскопическую пользу в сравнении с реальным опытом. </p>
+<p>У вас есть высшее образование? У кого его нет? Очень много людей с высшим образованием. Оно ничего не гарантирует. Это как справка, что ты – не дурак, и все. Никаких супер современных навыков вузы не дают. Обычно за год на реальной работе вы узнаете столько же, сколько за 4 года в вузе. Такова жизнь, хотите вы этого или нет.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>1. Диего рассказывает, как написать простейшую программу</h2>
+</div>
+<p class="amigo">- Привет, Диего!</p>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Меня недавно профессор хвалил – радовался, что я быстро прогрессирую благодаря его лекциям.</p>
+<p>- Ты прогрессируешь именно благодаря лекциям профессора. Да-да! Ему самому не смешно?!</p>
+<p>- Ладно, проехали. Сегодня у меня для тебя есть кое-что интересное. Я расскажу тебе, как написать простейшую программу.  Все очень просто. Минимальная программа состоит из одного класса и содержит один метод – <b>main</b>(). Вот как это выглядит.</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Простейшая программа</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level03,lesson01,type01"></button>--></td>
+<td class="monospace_text">
+<pre><b>public class</b> MainClass
+{
+    <b>public static void</b> main(String[] args) 
+    {
+        <span class="brown_text">System.out.println</span>(<span class="green_text">"Поцелуй мой блестящий металлический зад!"</span>);
+    }
+}</pre>
+</td>
+</tr>
+</table>
+<p class="amigo">- Это я уже раньше видел, так что - понятно.</p>
+<p>- Но простейшие программы никому не нужны. Чем более сложную задачу решает программа, тем она круче. Поэтому программы, состоящие из тысяч классов – это норма.</p>
+<p>- Средняя программа – это та, которую пишет команда из 10 человек 2-3 года.</p>
+<p class="amigo">- А какая же программа – большая?</p>
+<p>- Ну, например, которую пишет лет 5 команда от 100 человек.</p>
+<p class="amigo">- 500 с лишним человеко-лет? Ничего себе!</p>
+<p>- А то! И Java - это один из лучших языков программирования для написания больших и очень больших задач.</p>
+<p class="amigo">-  Мне даже страшно спрашивать, что такое очень большая задача.</p>
+<p>- Молодец, быстро схватываешь.</p>
+<p>- Так вот, программисты быстро сообразили, что ориентироваться в тысячах классов не просто, и придумали специальные программы, которые в разы ускоряли процесс написания программ. И чем больше программа, которую пишешь, тем заметнее польза.</p>
+<p class="amigo">- Т.е. программисты придумали программу для написания программ?</p>
+<p>- Да, а чему ты удивляешься? <span class="orange_text">Программа – это в первую очередь инструмент, созданный для автоматизации каких-то рутинных операций.</span> А если ты пишешь код несколько лет, то таких операций у тебя очень много. </p>
+<p class="green_text">- Программы для разработки программ называются IDE: Integrated Development Environment – Интегрированная Среда Разработки.</p>
+<p>- Сегодня ты познакомишься с одной из них.</p>
+<p>- Нет, не так – сегодня ты познакомишься с лучшей из них! Ее имя -  <b>Intellij IDEA</b>, она станет тебе другом на многие годы. Она как старший товарищ, который всегда подскажет и поможет.</p>
+<p class="amigo">- Ты меня заинтриговал!</p>
+<p> - Ну, если ты не собираешься писать программы в Word’е, тогда тебе нужна шикарная среда разработки, так ведь? Мы - роботы, предпочитаем <b>Intellij IDEA Community Edition</b>. Скачай и установи её последнюю версию.</p>
+<p> <b>Подсказка 1</b> <br/>
+<a href="https://www.google.com.ua/?q=intellij+idea" target="_blank">Как найти Intellij IDEA в Google</a>
+</p>
+<p> <b>Подсказка 2</b><br/>
+<a href="http://www.jetbrains.com/idea/download/" target="_blank">Страница загрузки Intellij IDEA</a>
+</p>
+<p> <b>Подсказка 3</b><br/>
+<video class="movie-homevideo" controls="" id="eyephoneMoviePlayer1" poster="http://storage.javarush.ru/alpha/video/lesson-snapshot-idea-installation.gif" preload="none" tabindex="0">
+<source src="http://storage.javarush.ru/alpha/video/lesson-idea-installation.mp4" type="video/mp4"></source>
+</video>
+</p>
+<p>- Так же тебе нужно будет установить JDK (java development kit). JDK – это «Набор Java Разработчика» от, собственно, разработчиков платформы Java. В состав JDK входит Java-машина, компилятор Java-классов и еще много всего, что может понадобиться опытному Java-разработчику.</p>
+<p class="amigo">- А чем плох нынешний метод написания программ – через сайт?</p>
+<p>- Для маленьких программ он удобен, но большие лучше писать в Intellij IDEA. <span class="green_text">Мы же из тебя готовим профессионального программиста, так что, чем раньше ты освоишь такие крутые инструменты, тем лучше.</span> Да не пугайся ты так – это программа создана для того, чтобы облегчить тебе жизнь, а не усложнить. Ты быстро к ней привыкнешь и потом тебя за уши не оттащишь.</p>
+<p>- <span class="red_text"><b>Чтобы научиться писать программы - нужно писать программы.</b></span> Для этого тебе нужно установить Intellij IDEA и  JDK на свой компьютер. Скачай в интернете самую последнюю версию JDK 7 и установи.</p>
+<p> <b>Подсказка 1</b> <br/>
+<a href="https://www.google.com.ua/?q=java+7+download" target="_blank">Как найти Java JDK в Google</a>
+</p>
+<p> <b>Подсказка 2</b><br/>
+<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" target="_blank">Страница загрузки JDK 7</a>
+</p>
+<p> <b>Подсказка 3</b><br/>
+</p><ol>
+<li>Нажмите "Accept License Agreement" </li>
+<li>Выберите "jdk-7u55-windows-x64.exe" если у вас Windows x64 </li>
+<li>Выберите "jdk-7u55-windows-i586.exe" если у вас Windows x32 </li>
+<li>Если у вас Linux - вы знаете, что делать :) </li>
+</ol>
+<p> <b>Подсказка 4</b><br/>
+<video class="movie-homevideo" controls="" id="eyephoneMoviePlayer2" poster="http://storage.javarush.ru/alpha/video/lesson-snapshot-jdk-installation.gif" preload="none" tabindex="0">
+<source src="http://storage.javarush.ru/alpha/video/lesson-jdk-installation.mp4" type="video/mp4"></source>
+</video>
+</p>
+<p>- Закрепим теорию практическим заданием.</p>
+<table class="table_task">
+<tr>
+<th style="width: 12px;"></th>
+<th>Условие</th>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level03,lesson01,task01"></button>1</td>
+<td>
+                    Реализуйте метод <span class="taskcode">public static void div(int a, int b)</span>. Метод должен делить первое число на второе, и выводить на экран результат деления <span class="taskcode">а</span> / <span class="taskcode">b</span>.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>2. Ким</h2>
+</div>
+<p>- Хочу рассказать тебе, как делать практические домашние задания в Intellij IDEA. Уверена, ты скоро оценишь всю ее мощь.  Для начала мы будем придерживаться одной схемы:</p>
+<p class="green_text"><b>Шаг 1</b>. Нажми сверху в меню "МОЯ СТРАНИЦА", далее зайди в раздел "Мои Загрузки" и скачай "Шаблон проекта".</p>
+<p>Это так же можно сделать на <a href="https://javarush.ru/Profile.html#plugin">странице Profile</a> или сразу по ссылке <a href="https://javarush.ru/user/download/project/JavaRushHomeWork.zip">JavaRushHomeWork.zip</a></p>
+<p class="orange_text"><b>Шаг 2</b>. Распакуй архив в какую-нибудь папку. </p>
+<p>Внутри ты найдешь папки <b>JavaRushHomeWork</b> и <b>JavaRushIdeaPlugin</b>. Папка <b>JavaRushHomeWork</b> содержит проект, в котором ты можешь писать свои классы и выполнять домашние задания. Там же находится инструкция по установке плагина.</p>
+<p class="violet_text"><b>Шаг 3</b>. Открой скачанный проект </p>
+<p>Просто запусти Intellij IDEA, выбери в меню File пункт Open Project, а затем укажи папку JavaRushHomeWork (ту, которая находится внутри архива).</p>
+<p class="blue_text"><b>Шаг 4</b>. Установи плагин к Intellij IDEA</p>
+<p>Прочитай инструкцию, которая есть в проекте, и установи плагин. </p>
+<p class="dred_text"><b>Шаг 5</b>. Нажми на кнопку для выбора заданий</p>
+<p> Вибери доступное задание из списка задач. Напиши его решение. Запусти программу и проверь, действительно ли твое решение удовлетворяет условие.</p>
+<p class="orange_text"><b>Шаг 6</b>. Нажми на кнопку для отправки программы на сервер</p>
+<p> Подожи, пока программа протестируется на сервере. Тебе прийдет уведомление и если твое решение верное начислится награда.</p>
+<p>Если что-то непонятно, то вот тебе видео, как это сделать:</p>
+<video class="movie-homevideo" controls="" id="eyephoneMoviePlayer5" poster="http://storage.javarush.ru/alpha/video/lesson-snapshot-idea-plugin.gif" preload="none" tabindex="0">
+<source src="http://storage.javarush.ru/alpha/video/lesson-idea-plugin.mp4" type="video/mp4"></source>
+</video>
+<p> </p>
+<p>Напоследок, вот тебе пошаговая инструкция по <a href="http://info.javarush.ru/idea_help/2015/07/13/%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0-JavaRushHomeWork.html" target="_blank">открытию JavaRushHomeWork в IntelliJ IDEA</a>.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Вывод на экран</h2>
+</div>
+<p>- Давным-давно компьютеры умели отображать только текст. Программы выводили данные на экран, а вводили их с клавиатуры. Такой режим работы называется «работа с консолью» или просто «консоль». Одним из альтернативных вариантов консоли есть оконный интерфейс. Это когда программа взаимодействует с пользователем через окно/окна. Так как мы только учимся программировать, то начнём  с работы с консолью. </p>
+<p class="amigo">- Эх, ладно.</p>
+<p>- Текст выводится на консоль (экран) последовательно строчка за строчкой. Вводится текст с клавиатуры, и, во избежание ошибок, дублируется на экран. Иногда это <span class="orange_text">выглядит так, как будто человек и программа попеременно что-то пишут на экране.</span></p>
+<p>- Вывести текст на экран можно методом <b>System.out.print</b>(). Эта функция последовательно выводит текст на экран. <b>System.out.println</b>() выводит на экран текст и переводит курсор на новую строку.</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th width="50%">Код</th>
+<th>Результат</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level03,lesson03,type01"></button>--></td>
+<td class="monospace_text">
+                    System.out.<span class="blue_text"><b>print</b></span>(<span class="green_text">"Mama"</span>);<br/>
+                    System.out.<span class="blue_text"><b>print</b></span>(<span class="green_text">"Mila"</span>);<br/>
+                    System.out.<span class="blue_text"><b>print</b></span>(<span class="green_text">"Ramu"</span>);  
+                </td>
+<td><span class="green_text">MamaMilaRamu</span></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level03,lesson03,type02"></button>--></td>
+<td class="monospace_text">
+                    System.out.<span class="blue_text"><b>print</b></span>(<span class="green_text">"Mama"</span>);<br/>
+                    System.out.<b><b>println</b></b>(<span class="green_text">"Mila"</span>);<br/>
+                    System.out.<span class="blue_text"><b>print</b></span>(<span class="green_text">"Ramu"</span>);
+                </td>
+<td>
+<span class="green_text">MamaMila</span><br/>
+<span class="green_text">Ramu</span>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level03,lesson03,type03"></button>--></td>
+<td class="monospace_text">
+                    System.out.<b><b>println</b></b>(<span class="green_text">"Mama"</span>);<br/>
+                    System.out.<b><b>println</b></b>(<span class="green_text">"Mila"</span>);<br/>
+                    System.out.<b><b>println</b></b>(<span class="green_text">"Ramu"</span>);
+                </td>
+<td>
+<span class="green_text">Mama</span><br/>
+<span class="green_text">Mila</span><br/>
+<span class="green_text">Ramu</span>
+</td>
+</tr>
+</table>
+<p>- Чтобы текст не сливался при выводе, нужно добавлять пробел, пример</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th width="50%">Код</th>
+<th>Результат</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level03,lesson03,type04"></button>--></td>
+<td class="monospace_text wide-text">
+                    int <span class="blue_text">a</span> = <span class="blue_text">5</span>, <span class="dred_text">b</span> = <span class="dred_text">6</span>;<br/>
+                    System.out.<b>print</b>(<span class="blue_text">a</span>);<br/>
+                    System.out.<b>print</b>(<span class="dred_text">b</span>);
+                </td>
+<td><b><span class="blue_text">5</span><span class="dred_text">6</span></b></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level03,lesson03,type05"></button>--></td>
+<td class="monospace_text wide-text">
+                    int <span class="blue_text">a</span> = <span class="blue_text">5</span>, <span class="dred_text">b</span> = <span class="dred_text">6</span>;<br/>
+                    System.out.<b>print</b>(" " + <span class="blue_text">a</span> + " " + <span class="dred_text">b</span>);
+                </td>
+<td><b><span class="blue_text">5</span> <span class="dred_text">6</span></b></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level03,lesson03,type06"></button>--></td>
+<td class="monospace_text wide-text">
+                    int <span class="blue_text">a</span> = <span class="blue_text">5</span>, <span class="dred_text">b</span> = <span class="dred_text">6</span>;<br/>
+                    System.out.<b>print</b>(<span class="green_text">"Sum is "</span> + (<span class="blue_text">a</span> + <span class="dred_text">b</span>));
+                </td>
+<td><span class="green_text"><b>Sum is 11</b></span></td>
+</tr>
+</table>
+<p class="amigo">- Понятно.</p>
+<p>-  Таким образом, <span class="green_text">на экран можно вывести вообще все что угодно</span>: <span class="violet_text">все объекты в Java могут быть преобразованы в строку</span>. Все классы в Java унаследованы от класса Object, а он имеет метод toString(), который вызывается, когда объект нужно преобразовать к строке.</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th width="60%">Код</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level03,lesson03,type07"></button>--></td>
+<td class="monospace_text wide-text">
+                    Cat <span class="red_text">cat</span> = new Cat("Vaska");<br/>
+                    System.out.<b>println</b>(<span class="green_text">"Cat is "</span> + <span class="red_text">cat</span>);
+                </td>
+<td rowspan="3">Три приведённых примера эквивалентны.</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level03,lesson03,type08"></button>--></td>
+<td class="monospace_text wide-text">
+                    Cat <span class="red_text">cat</span> = new Cat("Vaska");<br/>
+                    System.out.<b>println</b>(<span class="green_text">"Cat is "</span> + <span class="red_text">cat.</span><span class="dred_text">toString</span>());
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level03,lesson03,type09"></button>--></td>
+<td class="monospace_text wide-text">
+                    Cat <span class="red_text">cat</span> = new Cat("Vaska");<br/>
+                    String <span class="dred_text">catText</span> = <span class="red_text">cat</span>.<span class="dred_text">toString</span>();<br/>
+                    System.out.<b>println</b>(<span class="green_text">"Cat is "</span> + <span class="dred_text">catText</span>);
+                </td>
+</tr>
+</table>
+<p class="amigo">- Но у меня программа выдала на экран “<b>Cat is <u>com.javarush.lesson3.Cat@1fb8ee3</u></b>”. В чем смысл такого текста?</p>
+<p>- Стандартный метод toString() класса Object возвращает строку, состоящую из <span class="red_text">имени класса</span> и <span class="red_text">адреса объекта в памяти</span> (в шестнадцатеричном виде)</p>
+<p class="amigo">- М-да. И какая может быть польза от такого метода?</p>
+<p>- Ты можешь в своём классе написать свою реализацию метода toString(), и вызываться будет именно он.</p>
+<p class="amigo">- Да? Ну ладно.</p>
+<p>- Вот тебе несколько задач от Диего.</p>
+<table class="table_task">
+<tr>
+<th style="width: 12px;"></th>
+<th>Условие</th>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level03,lesson03,task01"></button>1</td>
+<td>
+                    Добавьте метод <span class="taskcode">public static void printString(String s)</span> который будет выводить переданную строку на экран.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level03,lesson03,task02"></button>2</td>
+<td>
+                    Реализуйте метод <span class="taskcode">convertEurToUsd</span>, переводящий евро в доллары по заданному курсу. Вызовите его дважды в методе <span class="taskcode">main</span> с любыми параметрами. Результаты выведите на экран, каждый раз с новой строки.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level03,lesson03,task03"></button>3</td>
+<td>
+                    Реализуйте метод <span class="taskcode">addTenPercent</span>, который увеличивает переданное целое число на 10%. Исправьте ошибку в сигнатуре метода.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>4. Хулио</h2>
+</div>
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-19.jpg"/>
+<p>- Привет, Амиго. Вот тебе несколько задач по выводу на экран:</p>
+<table class="table_task">
+<tr>
+<th></th>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level03,lesson04,task01"></button>1</td>
+<td><b>Дата рождения</b><br/><br/>
+                Вывести на экран дату своего рождения в виде: <span class="taskcode">MAY 1 2012</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level03,lesson04,task02"></button>2</td>
+<td><b>4 скобки</b><br/><br/>
+                    Расставить правильно (по другому) скобки, чтобы на экран вывелось число 850<br/>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level03,lesson04,task03"></button>3</td>
+<td><b>StarCraft</b><br/><br/>
+                    Создать 10 зергов, 5 протосов и 12 терран.<br/>
+                    Дать им всем уникальные имена.<br/>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level03,lesson04,task04"></button>4</td>
+<td><b>Произведение 10 чисел</b><br/><br/>
+                Вывести на экран произведение чисел от 1 до 10. <br/>Подсказка: будет три миллиона с хвостиком
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level03,lesson04,task05"></button>6</td>
+<td><b>Сумма 10 чисел</b><br/><br/>
+                Вывести на экран сумму чисел от 1 до 10 построчно:<br/>1<br/>1+2=3<br/>1+2+3=6<br/>1+2+3+4=10<br/>…<br/>
+<span class="example-legacy">Пример вывода:</span><br/>
+<span class="example-data">1<br/>3<br/>6<br/>10<br/>…</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>5. Конкатенация строк и не строк</h2>
+</div>
+<p>- Хочу рассказать тебе, как объединять строки. <span class="green_text">Склеивание или объединение строк ещё называют таким коротким словом, как конкатенация.</span> Кто любит котов, можно запомнить так: Кон-Котэ-Нация. <b>Шутка</b>.</p>
+<p>- Принцип склеивания строк простой. Если мы «складываем» строку и ещё что-то, то это что-то преобразовывается в строку посредством неявного вызова метода <span class="dred_text">toString</span>().</p>
+<p class="amigo">- Ты сейчас с кем разговаривала?</p>
+<p>- Лады, буду проще. Если мы складываем  строку, число и кота, то число будет преобразовано в строку, и кот будет преобразован в строку. Примеры:</p>
+<table class="table_task double-wide-table">
+<tr>
+<th class="collapsed"></th>
+<th width="53%">Код</th>
+<th>Что будет на самом деле</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level03,lesson05,type01"></button>--></td>
+<td class="monospace_text wide-text">
+                    Cat <span class="red_text">cat</span> = new Cat();<br/>String text = <span class="green_text">"Cat is "</span> + <span class="red_text">cat</span>;
+                </td>
+<td class="monospace_text wide-text">
+                    Cat <span class="red_text">cat</span> = new Cat();<br/>
+                    String s = <span class="red_text">cat</span>.toString();<br/>String text = <span class="green_text">"Cat is "</span> + s;
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level03,lesson05,type02"></button>--></td>
+<td class="monospace_text wide-text">
+                    int <span class="red_text">a</span> = 5;<br/>String text = <span class="green_text">"A is "</span> + <span class="red_text">a</span>;
+                </td>
+<td class="monospace_text wide-text">
+                    int <span class="red_text">a</span> = 5;<br/>String s = Integer.toString(<span class="red_text">a</span>);<br/>String text = <span class="green_text">"A is "</span> + s;
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level03,lesson05,type03"></button>--></td>
+<td class="monospace_text wide-text">
+                    int <span class="red_text">a</span> = 5;<br/>String text = <span class="red_text">a</span> + <span class="green_text">"A is "</span>;
+                </td>
+<td class="monospace_text wide-text">
+                    int <span class="red_text">a</span> = 5;<br/>String s = Integer.toString(<span class="red_text">a</span>);<br/>String text = s + <span class="green_text">"A is "</span>;
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level03,lesson05,type04"></button>--></td>
+<td class="monospace_text wide-text">
+                    Cat <span class="orange_text">cat</span> = new Cat();<br/>int <span class="red_text">a</span> = 5;<br/>String text = "Cat is " + <span class="orange_text">cat</span> + <span class="red_text">a</span>;
+                </td>
+<td class="monospace_text wide-text">
+                    Cat <span class="orange_text">cat</span> = new Cat();<br/>String s1 = <span class="orange_text">cat</span>.toString();<br/>String s2 = Integer.toString(<span class="red_text">a</span>);<br/>String text = <span class="green_text">"Cat is "</span> + s1 + s2;
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level03,lesson05,type05"></button>--></td>
+<td class="monospace_text wide-text">
+                    Cat <span class="orange_text">cat</span> = new Cat();<br/>int <span class="red_text">a</span> = 5;<br/>String text = a + <span class="green_text">"Cat is "</span> + <span class="orange_text">cat</span> + <span class="red_text">a</span>;
+                </td>
+<td class="monospace_text wide-text">
+                    Cat <span class="orange_text">cat</span> = new Cat();<br/>String s1 = <span class="orange_text">cat</span>.toString();<br/>String s2 = Integer.toString(<span class="red_text">a</span>);<br/>String s3 = Integer.toString(<span class="red_text">a</span>);<br/>String text = s3 + "Cat is " + s1 + s2;
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level03,lesson05,type01"></button>--></td>
+<td class="monospace_text wide-text">
+                    Cat <span class="orange_text">cat</span> = new Cat();<br/>int <span class="red_text">a</span> = 5;<br/>String text = <span class="orange_text">cat</span> + <span class="red_text">a</span> + <span class="green_text">"Cat is "</span> + <span class="orange_text">cat</span> + <span class="red_text">a</span>;
+                </td>
+<td class="monospace_text wide-text">
+<span class="red_text">Программа не скомпилируется!</span><br/>Порядок выполнения всех операций сложения: слева на право, получаем:<br/>String text = (((<span class="red_text">cat + a</span>) + <span class="green_text">"Cat is "</span>) + <span class="orange_text">cat</span>) + a;<br/> <span class="red_text">При сложении котов с числами, автоматического преобразования к строке не произойдёт.</span>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level03,lesson05,type06"></button>--></td>
+<td class="monospace_text wide-text" style="padding-right: -5px;">
+                    Но можно записать так:<br/>Cat <span class="orange_text">cat</span> = new Cat();<br/>int <span class="red_text">a</span> = 5;<br/>String text = <span class="orange_text">cat</span> + (<span class="red_text">a</span> + <span class="green_text">"Cat is "</span>) + <span class="orange_text">cat</span> + <span class="red_text">a</span>;<br/><br/>
+                    Это равносильно:<br/>Cat <span class="orange_text">cat</span> = new Cat();<br/>
+                    int <span class="red_text">a</span> = 5;<br/>
+<span class="double-wide-text">String text = ((<span class="orange_text">cat</span> + (<span class="red_text">a</span> + <span class="green_text">"Cat is "</span>)) + <span class="orange_text">cat</span>)+<span class="red_text">a</span>;</span>
+</td>
+<td class="monospace_text wide-text">
+                    Cat <span class="orange_text">cat</span> = new Cat();<br/>String s1 = <span class="orange_text">cat</span>.toString();<br/>String s2 = <span class="orange_text">cat</span>.toString();<br/>String s3 = Integer.toString(<span class="red_text">a</span>);<br/>String s4 = Integer.toString(<span class="red_text">a</span>);<br/>String text = s1 + s3 + <span class="green_text">"Cat is "</span> + s2 + s4;
+                </td>
+</tr>
+</table>
+<p>- Вот и пришло время решить несколько задач от Диего.</p>
+<table class="table_task">
+<tr>
+<th style="width: 12px;"></th>
+<th>Условие</th>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level03,lesson05,task01"></button>1</td>
+<td>
+                    Подумайте, что делает программа.<br/>
+                    Измените метод <span class="taskcode">public static void printFullName(Student student)</span>. Метод должен выводить полное ФИО студента на экран. Слова разделить пробелом.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level03,lesson05,task02"></button>2</td>
+<td>
+                    Реализуйте метод <span class="taskcode">public static void writeToConsole(String s)</span>, который добавляет к началу строки выражение "printing: "
+                    и выводит измененную строку на экран, каждый раз с новой строки.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level03,lesson05,task03"></button>3</td>
+<td>
+                    Добавьте метод <span class="taskcode">public static int convertToSeconds(int hour)</span> который будет конвертировать часы в секунды.
+                    Вызовите его дважды в методе <span class="taskcode">main</span> с любыми параметрами.<br/>
+                    Результаты выведите на экран, каждый раз с новой строки.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Диего</h2>
+</div>
+<p>- Привет, Дружище. Вот тебе ещё пара задач на сегодня. Для сложности: внутри метода print/println должны фигурировать только переменные. </p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-20.jpg" style="width:500px;height:346px;"/>
+<p class="amigo">- А так можно?</p>
+<p>- Запомни, Амиго, мы – роботы - делаем невозможное и гнем несгибаемое.</p>
+<table class="table_task">
+<tr>
+<th></th>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level03,lesson06,task01"></button>1</td>
+<td><b>Мама мыла раму</b><br/><br/>
+                Вывести на экран все возможные комбинации слов «Мама», «Мыла», «Раму».<br/>
+                Подсказка: их 6 штук. Каждую комбинацию вывести с новой строки. Слова не разделять. <br/><br/>
+<span class="example-legacy">Пример:</span><br/>
+<span class="example-data">МылаРамуМама</span><br/>
+<span class="example-data">РамуМамаМыла</span><br/>
+                ...
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level03,lesson06,task02"></button>2</td>
+<td><b>Таблица умножения</b><br/><br/>
+                Выведи на экран таблицу умножения 10 на 10 в следующем виде:<br/>1 2 3 …<br/>2 4 6 …<br/>3 6 9 …<br/>…
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level03,lesson06,task03"></button>3</td>
+<td><b>Семь цветов радуги</b><br/><br/>
+                Создать 7 объектов, чтобы на экран вывелись 7 цветов радуги (ROYGBIV).<br/>
+                Каждый объект при создании выводит на экран определенный цвет.<br/>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level03,lesson06,task04"></button>4</td>
+<td><b>Экранирование символов</b><br/><br/>
+                Про экранирование символов в Java читайте в дополнительном материале к лекции.
+                Вывести на экран следующий текст - две строки:
+                    <br/>It's Windows path: "C:\Program Files\Java\jdk1.7.0\bin"<br/>
+                    It's Java string: \"C:\\Program Files\\Java\\jdk1.7.0\\bin\"<br/>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level03,lesson06,task05"></button>5</td>
+<td><b>Изучаем японский</b><br/><br/>
+                Выведи на экран 日本語
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>7. Ввод с клавиатуры</h2>
+</div>
+<p>- Амиго, настало твоё время -  теперь я расскажу про ввод с клавиатуры.</p>
+<p>- Для вывода данных на экран мы использовали <b>System.out</b>. Для ввода данных будем использовать  <b>System.in</b>.</p>
+<p class="amigo">- Звучит не сложно.</p>
+<p>- Но у <b>System.in</b> есть минус – он позволяет считать с клавиатуры только коды символов. Чтобы обойти эту проблему и считывать большие порции данных за один раз, мы будем использовать более сложную конструкцию:</p>
+<table class="table_task wide-table">
+<tr>
+<th class="collapsed"></th>
+<th colspan="2">Пример</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="2"><!--<button class="task_button" taskKey="level03,lesson07,type01"></button>--></td>
+<td rowspan="2">1</td>
+<td class="example">Ввод строки и числа с клавиатуры</td>
+</tr>
+<tr>
+<td class="monospace_text">
+InputStream <span class="blue_text">inputStream</span> = <span class="blue_text">System.in</span>;<br/>
+Reader <span class="green_text">inputStreamReader</span> = new <span class="green_text">InputStreamReader</span>(inputStream);<br/>
+BufferedReader <span class="orange_text"><b>bufferedReader</b></span> = new <span class="orange_text">BufferedReader</span>(<span class="green_text">inputStreamReader</span>);<br/><br/>
+
+String name = <span class="orange_text"><b>bufferedReader</b></span>.<span class="red_text">readLine</span>();   <span class="grey_text">//читаем строку с клавиатуры</span><br/>
+String sAge = <span class="orange_text"><b>bufferedReader</b></span>.<span class="red_text">readLine</span>();   <span class="grey_text">//читаем строку с клавиатуры</span><br/>
+int nAge = Integer.<span class="green_text">parseInt</span>(sAge);                 <span class="grey_text">//преобразовываем строку в число.</span>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="2"><!--<button class="task_button" taskKey="level03,lesson07,type02"></button>--></td>
+<td rowspan="2">2</td>
+<td class="example">Более компактная запись первой части:</td>
+</tr>
+<tr>
+<td class="monospace_text" style="padding-left: 0px;padding-right: 0px;">
+<div style="margin-right: -10px;">
+BufferedReader <span class="orange_text"><b>reader</b></span> = new <span class="blue_text">BufferedReader</span>(new <span class="blue_text">InputStreamReader</span>(<span class="blue_text">System.in</span>));<br/><br/>
+
+String name = <span class="orange_text"><b>reader</b></span>.<span class="red_text">readLine</span>();<br/>
+String sAge = <span class="orange_text"><b>reader</b></span>.<span class="red_text">readLine</span>();<br/>
+int nAge = Integer.<span class="green_text">parseInt</span>(sAge);
+                    </div>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="2"><!--<button class="task_button" taskKey="level03,lesson07,type03"></button>--></td>
+<td rowspan="2">3</td>
+<td class="example">Еще более компактная </td>
+</tr>
+<tr>
+<td class="monospace_text">
+Scanner <span class="orange_text">scanner</span> = new <span class="blue_text">Scanner</span>(<span class="blue_text">System.in</span>);<br/>
+String name = <span class="orange_text">scanner</span>.<span class="red_text">nextLine</span>();<br/>
+int age = <span class="orange_text">scanner</span>.<span class="red_text">nextInt</span>();
+                </td>
+</tr>
+</table>
+<p>- Вопросы?</p>
+<p class="amigo">- Эээ… Ничего не понятно.</p>
+<p><span class="green_text">- Чтобы считать строку с клавиатуры, удобнее всего воспользоваться объектом</span> <b>BufferedReader</b>. Но для этого в него нужно передать объект, из которого он будет вычитывать данные – <b>System.in</b>. </p>
+<p>- Но <b>System.in</b> и <b>BufferedReader</b> не совместимы друг с другом, поэтому мы используем переходник – еще один объект <b><span class="blue_text">InputStreamReader</span></b>.</p>
+<p class="amigo">- Вроде ясно. А что еще за класс Scanner?</p>
+<p>- Использовать Scanner довольно удобно, но от этого не очень много пользы. Дело в том, что <span class="orange_text">в будущем (и в учебе, и на работе) ты будешь часто использовать объекты BufferedReader и InputStreamReader</span> и очень-очень редко объект типа Scanner. В данной ситуации он удобен, но в будущем толку от него мало. Так что <span class="red_text">мы пользоваться им не будем</span>.</p>
+<p class="amigo">-  Что-то вроде понятно, но не уверен, что все и правильно.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Диего</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-21.jpg" style="width:640px;height: 480px;"/>
+<p>- Привет, Амиго. Отлично справляешься. Вот тебе новое задание: написать программу, которая позволяет ввести с клавиатуры некоторые данные и вывести текст на экран с их участием:</p>
+<table class="table_task">
+<tr>
+<th></th>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level03,lesson08,task01"></button>1</td>
+<td><b>Как захватить мир</b><br/><br/>
+                Ввести с клавиатуры число и имя, вывести на экран строку:<br/>«имя» захватит мир через «число» лет. Му-ха-ха!<br/>( Последовательность вводимых данных имеет большое значение.)<br/>
+<br/>
+<span class="example-legacy">Пример:</span><br/>
+<span class="example-data">Вася захватит мир через 8 лет. Му-ха-ха!</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level03,lesson08,task02"></button>2</td>
+<td><b>Зарплата через 5 лет</b><br/><br/>
+                Ввести с клавиатуры отдельно Имя, число1, число2. Вывести надпись: «Имя» получает «число1» через «число2» лет.<br/><br/>
+<span class="example-legacy">Пример:</span><br/>
+<span class="example-data">Коля получает 3000 через 5 лет.</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level03,lesson08,task03"></button>3</td>
+<td><b>Скромность украшает человека</b><br/><br/>
+                Ввести с клавиатуры имя и вывести надпись: name зарабатывает $5,000. Ха-ха-ха!<br/><br/>
+<span class="example-legacy">Пример:</span><br/>
+<span class="example-data">Тимур зарабатывает $5,000. Ха-ха-ха!</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level03,lesson08,task04"></button>4</td>
+<td><b>Спонсор - это звучит гордо</b><br/><br/>
+                Ввести с клавиатуры два имени и вывести надпись:<br/>name1 проспонсировал name2, и она стала известной певицей.<br/><br/>
+<span class="example-legacy">Пример:</span><br/>
+<span class="example-data">Коля проспонсировал Лену, и она стала известной певицей.</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level03,lesson08,task05"></button>5</td>
+<td><b>Чистая любовь</b><br/><br/>
+                Ввести с клавиатуры три имени, вывести на экран надпись name1 + name2 + name3 = Чистая любовь, да-да!<br/><br/>
+<span class="example-legacy">Пример:</span><br/>
+<span class="example-data">Вася + Ева + Анжелика = Чистая любовь, да-да!</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>9. Создание собственного проекта.</h2>
+</div>
+<p>- Привет, Амиго! Как успехи?</p>
+<p class="amigo">- Привет, профессор.</p>
+<p class="amigo">- Все отлично. Вот установил сегодня по совету Диего себе JDK и Intellij IDEA. Далее по совету Ким скачал проект и плагин для решения практических задач. Теперь думаю, как этим всем пользоваться.</p>
+<p>- Я помогу тебе. Думаю, я знаю лучший способ научить тебя создавать приложения. Но для этого давай создадим свой собственный проект, отдельный от проекта практических задач javarush. Лучше один раз увидеть, чем сто раз услышать. Вот тебе видео:</p>
+<!--<p><a href="http://www.youtube.com/watch?v=4zKWO8sqnVc">http://www.youtube.com/watch?v=4zKWO8sqnVc</a></p>-->
+<iframe allowfullscreen="" class="youtube_video" frameborder="0" src="http://www.youtube.com/embed/Ophz0Cdt92o"></iframe>
+<p class="amigo">- Спасибо, сейчас посмотрим.</p>
+<p>- И ещё одна  хорошая ссылка прямо с сайта разработчиков Intellij IDEA</p>
+<p><a href="http://wiki.jetbrains.net/intellij/Creating_and_running_your_first_Java_application" target="_blank">Создание и запуск первого Java-приложения</a></p>
+<p class="amigo">- Спасибо, посмотрю, как только разберусь с первой ссылкой.</p>
+<p>- Хотя пошаговая инструкция тоже не помешает. Для начала запусти Intellij IDEA</p>
+<table class="table_example">
+<tr>
+<th width="40%">Создание проекта с нуля</th>
+</tr>
+<tr>
+<td class="example">
+                    1 Запускаем Intellij IDEA
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-02.gif"/>
+</td>
+</tr>
+<tr>
+<td class="example">
+                    2 Создаем новый проект
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-03.gif"/>
+</td>
+</tr>
+<tr>
+<td class="example">
+                    3 Выбираем тип проекта
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-04.gif"/>
+</td>
+</tr>
+<tr>
+<td class="example">
+<!--4 Тут можно указать шаблон, на основе которого Intellij IDEA создаст проект. Сейчас мы ничего выбирать не будем.-->
+                    4 Мы недавно устанавливали JDK. В проект надо добавить ссылку на нее.
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-05.gif"/>
+</td>
+</tr>
+<tr>
+<td class="example">
+<!--5 Указываем имя проекта-->
+                    5 Выбираем директорию, куда установили JDK
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-06.gif"/>
+</td>
+</tr>
+<tr>
+<td class="example">
+<!--6 Мы недавно устанавливали JDK. В проект надо добавить ссылку на нее.-->
+                    6 Убеждаемся, что у проекта указан JDK
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-07.gif"/>
+</td>
+</tr>
+<tr>
+<td class="example">
+<!--7 Выбираем директорию, куда установили JDK-->
+                    7 Тут можно указать шаблон, на основе которого Intellij IDEA создаст проект. Сейчас мы ничего выбирать не будем.
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="example">
+                    8 Указываем имя проекта
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-09.gif"/>
+</td>
+</tr>
+<tr>
+<td class="example">
+                    9 Все, проект создан, теперь можно создавать классы в папке src
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-10.gif"/>
+</td>
+</tr>
+</table>
+<p class="amigo">- А дальше что?</p>
+<p>-А теперь создадим самую простую программу в Intellij IDEA</p>
+<table class="table_example">
+<tr>
+<th width="40%">Создание простой программы</th>
+</tr>
+<tr>
+<td class="example">
+                    В папке src кликаем правой кнопкой мыши и создаем новый пакет
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-11.gif"/>
+</td>
+</tr>
+<tr>
+<td class="example">
+                    Указываем имя пакета для наших будущих классов
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-12.gif"/>
+</td>
+</tr>
+<tr>
+<td class="example">
+                    Теперь создадим новый класс для нашего кода. Кликни правой кнопкой мыши на имени пакета:
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-13.gif"/>
+</td>
+</tr>
+<tr>
+<td class="example">
+                    Укажи имя нового класса. Например, Solution
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-14.gif"/>
+</td>
+</tr>
+<tr>
+<td class="example">
+                    Intellij IDEA создала для тебя шаблон класса, в нем можно начинать писать наш код
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-15.gif"/>
+</td>
+</tr>
+<tr>
+<td class="example">
+                    Сначала создадим метод main
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-15.jpg"/>
+</td>
+</tr>
+<tr>
+<td class="example">
+                    Теперь выведем на экран надпись – Поцелуй мой блестящий металлический зад!
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-16.jpg"/>
+</td>
+</tr>
+<tr>
+<td class="example">
+                    Запускаем программу – кликни правой клавишей мыши на коде с программой
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-17.jpg"/>
+</td>
+</tr>
+<tr>
+<td class="example">
+                    Наслаждаемся работающей программой
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<img alt="" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-18.jpg"/>
+</td>
+</tr>
+</table>
+<p class="amigo">- А что это за строчки «"C:\Program…» и «Process finished with exit code 0» ?</p>
+<p>- Это служебная информация от Intellij IDEA. В первой строчке содержатся параметры запуска программы, а в последней – код завершения программы. <span class="green_text">0 – это нормальное завершение.</span></p>
+<p class="amigo">- Спасибо, профессор, шикарный урок!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>10. Лекция про main</h2>
+</div>
+<p>- Привет, Амиго! Мне так нравится, как ты прогрессируешь благодаря нашим лекциям!
+            Если ты захочешь почитать еще что-нибудь по сложной для тебя теме, даю тебе <a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/05/20/lecture-3.html" target="_blank">полезную ссылку</a> на наш ресурс.</p>
+<p class="amigo">- «Что-то эти короткие лекции профессора мне не нравятся. Если студент не работает в вузе, он будет работать на работе. Но больше, гораздо больше» - подумал Амиго.</p>
+<p>- Вот тебе хорошая статья о <a href="http://info.javarush.ru/javarush_articles/2015/12/02/%D0%9F%D0%BE%D1%82%D0%BE%D0%BA%D0%B8-%D0%B2%D0%B2%D0%BE%D0%B4%D0%B0-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4%D0%B0-%D0%B8-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-%D0%B2-Java.html" target="_blank">потоках ввода/вывода и строках в Java</a>.</p>
+<p>- Если еще не разобрался, вот видео о том как <a href="http://vk.com/videos-43948962?z=video-43948962_165945905%2Fclub43948962" target="_blank">как работать с JavaRush плагином в IntelliJ IDEA </a>.</p>
+<p>- Обязательно почитай <a href="http://info.javarush.ru/idea_help/2015/07/17/FAQ-%D0%BF%D0%BE-IntelliJ-IDEA.html" target="_blank">FAQ по IntelliJ IDEA</a>.</p>
+<p>- Посмотри <a href="http://info.javarush.ru/javarush_articles/2015/12/02/%D0%A1%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D1%8B.html" target="_blank">тут</a>, как работать с символами в Java включая Escape-последовательности.</p>
+<p>- Для чтения данных посмотри документацию по <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/util/Scanner.html" target="_blank">Scanner API</a> и <a href="http://docs.oracle.com/javase/6/docs/api/java/io/BufferedReader.html" target="_blank">BufferedReader API</a>.</p>
+<p>- А <a href="http://old.intuit.ru/department/pl/javapl/6/" target="_blank">тут</a> почитай про объявление классов. Там есть полезная информация, надеюсь, ты ее найдешь.</p>
+<p>- Некоторые <a href="http://stackoverflow.com/questions/5032356/using-scanner-nextline" target="_blank">особенности</a> использования Scanner. </p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Хулио</h2>
+</div>
+<p>- Привет, Амиго! Вот и пришел час немного отдохнуть, как насчет просмотра хорошего видео?</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-03.gif" preload="none" tabindex="0" taskkey="level03,lesson11,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-03.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=I6IQ_FOCE6I" target="_blank">Оригинал видео на YouTube</a></center>
+<p><span class="bold _red"> - Напоминаю, что за каждое просмотренное видео от Хулио ты будешь получать от 2 до 10 единиц 'Черной материи'.</span></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>12. Дополнительные задания</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/03/image-ru-03-22.gif" style="width:564px;height:453px;"/>
+<p>- Здорово, боец!</p>
+<p class="amigo">- Здравия желаю, капитан Бобров!</p>
+<p>- У меня для тебя шикарная новость. Вот тебе задания для закрепления полученных навыков. Выполняй их каждый день, и твои навыки будут расти с неимоверной скоростью. Они специально разработаны для выполнения их в Intellij IDEA.</p>
+<table class="table_task">
+<tr>
+<th></th>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>1</td>
+<td><b><u>Жить хорошо, а хорошо жить еще лучше</u></b><br/><br/>
+                Вывести на экран надпись «Жить хорошо, а хорошо жить еще лучше»
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>2</td>
+<td><b><u>Я не хочу изучать Java, я хочу большую зарплату</u></b><br/><br/>
+                Вывести на экран десять раз надпись «Я не хочу изучать Java, я хочу большую зарплату»
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>3</td>
+<td><b><u>Я буду зарабатывать $50 в час</u></b><br/><br/>
+                Ввести с клавиатуры число n. Вывести на экран надпись «Я буду зарабатывать $n в час».<br/>
+<br/>
+<span class="example-legacy">Пример:</span><br/>
+<span class="example-data">Я буду зарабатывать $50 в час</span>
+</td>
+</tr>
+</table>
+<p class="amigo">- И как мне их решать?</p>
+<p>- Для начала запусти Intellij IDEA, в ней можно получить задачи с помощью плагина. Сдавать тоже с его помощью – все как на видео, которое ты сегодня видел.</p>
+<p class="amigo">- OK, прямо сейчас и попробую...</p>
+<p>- Отлично, а когда попробуешь, вот тебе замечательное видео о некоторых возможностях Intellij IDEA. Видео довольно большое, но очень интересное.</p>
+<iframe allowfullscreen="" class="youtube_video_max" frameborder="0" src="http://www.youtube.com/embed/vQksLDvacTo"></iframe>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

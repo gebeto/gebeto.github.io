@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-15.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 15
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>1. Переопределение методов, реализация абстрактных методов и интерфейсов..</h2>
+</div>
+<p>- Я расскажу тебе про «<span class="red_text">модификаторы доступа</span>». Когда-то я уже рассказывал про них, но повторение – мать учения.</p>
+<p>Ты можешь управлять доступом (видимостью) методов и переменных твоего класса из других классов. Модификатор доступа отвечает на вопрос «Кто может обращаться к данному методу/переменной?». Каждому методу или переменной можно указывать только один модификатор.</p>
+<p><b>1)</b> Модификатор «<span class="red_text"><b>public</b></span>».</p>
+<p>К переменной, методу или классу, помеченному модификатором <span class="red_text"><b>public</b></span>, можно обращаться из любого места программы. Это самая высокая степень открытости – никаких ограничений нет.</p>
+<p><b>2)</b> Модификатор «<span class="red_text"><b>private</b></span>».</p>
+<p>К переменной, методу или классу, помеченному модификатором <span class="red_text"><b>private</b></span>, можно обращаться только из того же класса, где он объявлен. Для всех остальных классов помеченный метод или переменная – невидимы. Это самая высокая степень закрытости – только свой класс. Такие методы не наследуются и не переопределяются. Доступ к ним из класса-наследника также невозможен.</p>
+<p><b>3)</b> «<b>Модификатор <span class="red_text">по умолчанию</span></b>».</p>
+<p>Если переменная или метод не помечены никаким модификатором, то считается, что они помечены «модификатором по умолчанию». Переменные и методы с таким модификатором видны всем классам пакета, в котором они объявлены, и только им. Этот модификатор еще называют «<span class="red_text"><b>package</b></span>» или <b>«package private»</b>, намекая, что доступ к переменным и методам открыт для всего пакета, в котором находится их класс</p>
+<p><b>4)</b> Модификатор «<span class="red_text"><b>protected</b></span>».</p>
+<p>Этот уровень доступа чуть шире, чем <b>package</b>. К переменной, методу или классу, помеченному модификатором <span class="red_text"><b>protected</b></span>, можно обращаться из его же пакета (как package), но еще из всех классов, унаследованных от текущего.</p>
+<p>Таблица с пояснением:</p>
+<table class="table_example">
+<tbody><tr><th width="30%"> </th><th width="30%"> </th><th width="10%"> </th><th width="10%"> </th><th width="10%"> </th><th width="10%"> </th></tr>
+</tbody><tbody><tr>
+<td rowspan="2">Тип видимости</td>
+<td rowspan="2">Ключевое слово</td>
+<td colspan="4" style="text-align: center">Доступ</td>
+</tr>
+<tr>
+<td>Свой класс</td>
+<td>Свой пакет</td>
+<td>Класс - наследник</td>
+<td>Все классы</td>
+</tr>
+<tr>
+<td><b>Закрытый</b></td>
+<td><b>private</b></td>
+<td><span class="green_text"><b>Есть</b></span></td>
+<td><span class="red_text"><b>Нет</b></span></td>
+<td><span class="red_text"><b>Нет</b></span></td>
+<td><span class="red_text"><b>Нет</b></span></td>
+</tr>
+<tr>
+<td><b>Пакет</b></td>
+<td>(нет модификатора)</td>
+<td><span class="green_text"><b>Есть</b></span></td>
+<td><span class="green_text"><b>Есть</b></span></td>
+<td><span class="red_text"><b>Нет</b></span></td>
+<td><span class="red_text"><b>Нет</b></span></td>
+</tr>
+<tr>
+<td><b>Защищенный</b></td>
+<td><b>protected</b></td>
+<td><span class="green_text"><b>Есть</b></span></td>
+<td><span class="green_text"><b>Есть</b></span></td>
+<td><span class="green_text"><b>Есть</b></span></td>
+<td><span class="red_text"><b>Нет</b></span></td>
+</tr>
+<tr>
+<td><b>Открытый</b></td>
+<td><b>public</b></td>
+<td><span class="green_text"><b>Есть</b></span></td>
+<td><span class="green_text"><b>Есть</b></span></td>
+<td><span class="green_text"><b>Есть</b></span></td>
+<td><span class="green_text"><b>Есть</b></span></td>
+</tr>
+</tbody></table>
+<p>Есть способ, чтобы легко запомнить эту таблицу. Представь себе, что ты составляешь завещание и делишь все вещи на четыре категории. Кто может пользоваться твоими вещами?</p>
+<table class="table_example">
+<tbody><tr><th width="34%">Кто имеет доступ</th><th width="33%">Модификатор</th><th width="33%">Пример</th></tr>
+<tr>
+<td class="wide-text">Только <span class="red_text"><b>я сам</b></span>
+</td>
+<td class="wide-text"><b>private</b>
+</td>
+<td class="wide-text">Личный дневник
+	</td>
+</tr>
+<tr>
+<td class="wide-text"><span class="red_text">Семья</span>
+</td>
+<td class="wide-text">(нет модификатора)
+	</td>
+<td class="wide-text">Семейные фотографии
+	</td>
+</tr>
+<tr>
+<td class="wide-text"><span class="red_text">Семья и наследники</span>
+</td>
+<td class="wide-text"><b>protected</b>
+</td>
+<td class="wide-text">Фамильное поместье
+	</td>
+</tr>
+<tr>
+<td class="wide-text"><span class="red_text">Все</span>
+</td>
+<td class="wide-text"><b>public</b>
+</td>
+<td class="wide-text">Мемуары
+	</td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Если представить, что классы, лежащие в одном пакете, – это одна семья, то очень даже похоже.</p>
+<p>- Хочу также рассказать тебе несколько интересных нюансов насчет переопределения методов.</p>
+<p><b>1) Неявная реализация абстрактного метода.</b></p>
+<p>Допустим, у тебя есть код:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th>
+</tr><tr>
+<td class="monospace_text wide-text"><b>class Cat</b><br/>
+{<br/>
+   <b>public</b> String <span class="dred_text">getName</span>()<br/>
+   {<br/>
+      return "Васька";<br/>
+   }<br/>
+}
+	</td>
+</tr>
+</tbody></table>
+<p>И ты решил унаследовать от него класс тигр и добавить новому классу интерфейс</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th>
+</tr><tr>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+   <b>public</b> String <span class="blue_text">getName</span>()<br/>
+   {<br/>
+      return "Васька";<br/>
+   }<br/>
+}
+	</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>interface</b> <span class="dred_text">HasName</span><br/>
+{<br/>
+    String <span class="dred_text">getName</span>();<br/>
+    int <span class="dred_text">getWeight</span>();<br/>
+}
+	</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Tiger <span class="blue_text"><b>extends Cat</b></span> <span class="dred_text"><b>implements</b> HasName</span><br/>
+{<br/>
+   <b>public</b> int <span class="dred_text">getWeight</span>()<br/>
+   {<br/>
+      return 115;<br/>
+   }<br/><br/>
+
+}
+	</td>
+</tr>
+</tbody></table>
+<p>Если ты просто реализуешь все недостающие методы, которые тебе подскажет Intellij IDEA, то можешь потом долго искать ошибку.</p>
+<p>Оказывается, что в классе Tiger есть унаследованный от Cat метод getName, который и будет считаться реализацией метода getName для интерфейса HasName.</p>
+<p class="amigo">- Не вижу в этом ничего страшного.</p>
+<p>- Это не очень плохо, это скорее потенциальное место для ошибок.</p>
+<p>Но может быть еще хуже:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th>
+</tr><tr>
+<td class="monospace_text wide-text"><b>interface</b> <span class="dred_text">HasWeight</span><br/>
+{<br/>
+   <span class="dred_text">int getValue();</span><br/>
+}
+	</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>interface</b> <span class="blue_text">HasSize</span><br/>
+{<br/>
+   <span class="blue_text">int getValue();</span><br/>
+}
+	</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Tiger <b>extends</b> Cat <b>implements</b> <span class="dred_text">HasWeight</span>, <span class="blue_text">HasSize</span><br/>
+{<br/>
+   <span class="blue_text"><b>public</b> int get</span><span class="dred_text">Value</span>()<br/>
+   {<br/>
+      return 115;<br/>
+   }<br/>
+}
+	</td>
+</tr>
+</tbody></table>
+<p>Оказывается, ты не всегда можешь унаследоваться от нескольких интерфейсов. Вернее унаследоваться можешь, а вот корректно их реализовать – нет. Посмотри на пример, оба интерфейса требуют, чтобы ты реализовал метод getValue(), и не ясно, что он должен возвращать: вес(weight) или размер(size). Это довольно-таки неприятная вещь, если тебе придется с ней столкнуться.</p>
+<p class="amigo">- Да, согласен. Хочешь реализовать метод, а не можешь. Вдруг ты уже унаследовал метод с таким же именем от базового класса. Обломись.</p>
+<p>- Но есть и приятные новости.</p>
+<p><b>2) <span class="red_text">Расширение видимости.</span></b> При переопределении типа разрешается расширить видимость метода. Вот как это выглядит:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Пояснение</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+   <span class="red_text"><b>protected</b></span> String getName()<br/>
+   {<br/>
+      return "Васька";<br/>
+   }<br/>
+}
+</td>
+<td class="wide-text">
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Tiger <b>extends Cat</b><br/>
+{<br/>
+   <span class="red_text"><b>public</b></span> String getName()<br/>
+   {<br/>
+      return "Василий Тигранович";<br/>
+   }<br/>
+}
+</td>
+<td class="wide-text">Мы расширили видимость метода с <span class="red_text"><b>protected</b></span> до <span class="red_text"><b>public</b></span>.
+</td>
+</tr>
+<tr><th width="50%">Использование</th><th width="50%">Почему это «законно»</th></tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+{<br/>
+    Cat cat = new Cat();<br/>
+    cat.getName();<br/>
+}
+</td>
+<td class="wide-text">Все отлично. Тут мы даже не знаем, что в классе-наследнике видимость метода была расширена. 
+</td>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+{<br/>
+    Tiger tiger = new Tiger();<br/>
+    tiger.getName();<br/>
+}
+</td>
+<td class="wide-text">Тут вызывается метод, у которого расширили область видимости.<br/><br/> 
+
+		Если бы этого сделать было нельзя, всегда можно было бы объявить метод в Tiger:<br/>
+<b>public</b> String getPublicName()<br/>
+		{<br/>
+  	         super.getName(); <span class="grey_text">//вызов protected метода</span><br/>
+		}<br/><br/>
+
+		Т.е. ни о каком нарушении безопасности и речи нет.
+</td>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+{<br/>
+    <b>Cat</b> catTiger = new <b>Tiger</b>();<br/>
+    catTiger.<b>getName</b>();<br/>
+}
+</td>
+<td class="wide-text">Если все условия подходят для вызова метода базового типа (<b>Cat</b>), то они уж точно подойдут для вызова типа наследника (<b>Tiger</b>) . Т.к. ограничения на вызов метода были ослаблены, а не усилены. 
+</td>
+</tbody>
+</table>
+<p class="amigo">- Не уверен, что понял полностью, но то, что так можно делать, запомню.</p>
+<p><b>3) <span class="red_text">Расширение типа результата.</span></b></p>
+<p>В перегруженном методе мы можем <span class="red_text"><b>поменять тип результата,</b></span> расширив его.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Пояснение</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> <span class="red_text">Cat</span><br/>
+{<br/>
+    <b>public</b> Cat parent;<br/>
+    <b>public <span class="red_text">Cat</span></b> <span class="blue_text">getMyParent</span>()<br/>
+   {<br/>
+      return this.parent;<br/>
+   }<br/>
+   <b>public void</b> <span class="blue_text">setMyParent</span>(<b>Cat</b> cat)<br/>
+   {<br/>
+     this.parent = cat;<br/>
+   }<br/>
+}
+</td>
+<td class="wide-text">
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class <span class="red_text">Tiger</span> extends Cat</b><br/>
+{<br/>
+    <b>public <span class="red_text">Tiger</span></b> <span class="blue_text">getMyParent</span>()<br/>
+   {<br/>
+      return <span class="red_text"><b>(Tiger)</b></span> this.parent;<br/>
+   }<br/>
+}
+</td>
+<td class="wide-text">Мы переопределили метод <span class="red_text"><b>getMyParent</b></span>, теперь он возвращает объект типа <span class="red_text"><b>Tiger</b></span>.
+</td>
+</tr>
+<tr><th width="50%">Использование</th><th width="50%">Почему это «законно»</th></tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+{<br/>
+    Cat parent = new Cat();<br/><br/>
+
+    Cat me = new Cat();<br/>
+    me.setMyParent(parent);<br/>
+    Cat myParent = me.getMyParent();<br/>
+}
+</td>
+<td class="wide-text">Все отлично. Тут мы даже не знаем, что в классе наследнике тип результата метода getMyParent был расширен.<br/><br/>
+		«Старый код» как работал так и работает. 
+</td>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+{<br/>
+    Tiger parent = new Tiger();<br/><br/>
+
+    Tiger me = new Tiger();<br/>
+    me.setMyParent(parent);<br/>
+    Tiger myParent = me.getMyParent();<br/>
+}
+</td>
+<td class="wide-text">Тут вызывается метод, у которого расширили тип результата.<br/><br/> 
+
+		Если бы этого сделать было нельзя, всегда можно было бы объявить метод в Tiger:<br/>
+<b>public Tiger</b> getMyTigerParent()<br/>
+		{<br/>
+    		 return (Tiger) this.parent;<br/>
+		}<br/><br/>
+
+		Т.е. ни о каком нарушении безопасности и/или контроля приведения типов  нет речи.
+</td>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+{<br/>
+    Tiger parent = new Tiger();<br/><br/>
+
+    <span class="red_text">Cat me = new Tiger();</span><br/>
+    me.setMyParent(parent);<br/>
+    <span class="red_text">Cat myParent = me.getMyParent();</span><br/>
+}
+</td>
+<td class="wide-text">И тут все отлично работает, хотя мы сузили тип переменных до базового класса (Cat).<br/><br/>
+
+		Благодаря перегрузке вызовется правильный метод setMyParent.<br/><br/>
+
+		И нет ничего страшного <span class="red_text">при вызове метода getMyParent</span>, т.к. <span class="red_text">его результат</span>, хоть и класса Tiger, все равно <span class="red_text">сможет</span> отлично <span class="red_text">присвоиться в переменную</span> myParent <span class="red_text">базового класса (Cat)</span>.<br/><br/>
+
+		Объекты Tiger можно смело хранить как в переменных класса Tiger, так и в переменных класса Cat.
+</td>
+</tbody>
+</table>
+<p class="amigo">- Ага. Я понял. Надо <b>при переопределении методов беспокоится о том, как все это будет работать, если мы передадим наши объекты в код, который умеет обращаться только с базовым классом, и ничего о нашем классе не знает.</b></p>
+<p>- Именно! Тогда вопрос на засыпку, почему нельзя сузить тип результата при переопределении метода?</p>
+<p class="amigo">- Это же очевидно, тогда перестанет работать код в базовом классе:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Пояснение проблемы</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+    <b>public</b> Cat parent;<br/>
+    <b>public Cat</b> <span class="blue_text">getMyParent</span>()<br/>
+   {<br/>
+      return this.parent;<br/>
+   }<br/>
+   <b>public void</b> <span class="blue_text">setMyParent</span>(<b>Cat</b> cat)<br/>
+   {<br/>
+     this.parent = cat;<br/>
+   }<br/>
+}
+</td>
+<td class="wide-text">
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Tiger extends Cat<br/>
+{<br/>
+    <b>public <span class="red_text">Object</span></b> <span class="blue_text">getMyParent</span>()<br/>
+   {<br/>
+      <b>if</b> (this.parent != null)<br/>
+          return this.parent;<br/>
+      <b>else</b><br/>
+         <span class="red_text">return "я - сирота";</span><br/>
+   }<br/>
+}
+</td>
+<td class="wide-text">Мы переопределили метод getMyParent и сузили тип его результата. <br/><br/>
+
+		Тут все отлично.
+</td>
+</tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+{<br/>
+    Tiger parent = new Tiger();<br/><br/>
+
+    Cat me = new Tiger();<br/>
+    <span class="red_text">Cat myParent = me.getMyParent();</span><br/>
+}
+</td>
+<td class="wide-text">Тогда у нас <span class="red_text">перестанет работать этот код.</span><br/><br/>
+
+		Метод <span class="red_text">getMyParent может вернуть любой объект типа Object, т.к. на самом деле он вызывается у объекта типа Tiger.</span><br/><br/> 
+
+		А у нас <span class="red_text">нет проверки перед присваиванием.</span> Тогда вполне возможно, что <span class="red_text">переменная myParent типа Cat будет хранить ссылку на строку.</span>
+</td>
+</tbody></table>
+<p>- Отличный пример, Амиго!</p>
+<p>В Java <b>перед вызовом метода не проверяется, есть ли такой метод у объекта или нет. Все проверки происходит во время выполнения.</b> И [гипотетический] вызов отсутствующего метода, скорее всего, приведет к тому, что программа начнет выполнять байт-код там, где его нет. Это, в конце концов, приведет к фатальной ошибке, и операционная система принудительно закроет программу.</p>
+<p class="amigo">- Ничего себе. Буду знать.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>2. Задачи</h2>
+</div>
+<p>- Вчера ко мне в дом ворвались грабители, подняли все с ног на голову, перелопатили весь дом, деньги искали.</p>
+<p class="amigo">- Какой ужас, Диего. Что ты сделал?</p>
+<p>- Ничего, поржал с них и начал вместе с ними деньги искать. Ха-ха.</p>
+<p>Так вот, поскольку у меня дома сплошной бардак, не нашел я твое задание, приходится выдумать из головы. Держи.</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level15,lesson02,task01"></button><b>1. Расставить интерфейсы</b><br/><br/>
+                1. Добавить все возможные интерфейсы из <span class="taskcode">Movable</span>, <span class="taskcode">Sellable</span>, <span class="taskcode">Discountable</span> в класс <span class="taskcode">Clothes</span>.<br/>
+		2. Реализовать их методы.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level15,lesson02,task02"></button><b>2. ООП - наследование животных</b><br/><br/>
+                1. Создать <span class="taskcode">public static</span> класс <span class="taskcode">Goose</span>(Гусь).<br/>
+		2. Создать <span class="taskcode">public static</span> класс <span class="taskcode">Dragon</span>(Дракон).<br/>
+		3. Унаследовать класс <span class="taskcode">Goose</span> от <span class="taskcode">BigAnimal</span> или <span class="taskcode">SmallAnimal</span>, подумать, какой логически больше подходит.<br/>
+		4. Унаследовать класс <span class="taskcode">Dragon</span> от <span class="taskcode">BigAnimal</span> или <span class="taskcode">SmallAnimal</span>, подумать, какой логически больше подходит.<br/>
+		5. В классах <span class="taskcode">Goose</span> и <span class="taskcode">Dragon</span> переопределить метод <span class="taskcode">String getSize()</span>, расширить видимость до максимальной.<br/>
+		6. В классе <span class="taskcode">Goose</span> метод <span class="taskcode">getSize</span> должен возвращать строку "Гусь маленький, " + [<span class="taskcode">getSize</span> родительского класса].<br/>
+		7. В классе <span class="taskcode">Dragon</span> метод <span class="taskcode">getSize</span> должен возвращать строку "Дракон большой, " + [<span class="taskcode">getSize</span> родительского класса].
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level15,lesson02,task03"></button><b>3. ООП - машинки</b><br/><br/>
+                1. Для вывода использовать можно только переменные из класса <span class="taskcode">Constants</span>.<br/>
+		2. В классе <span class="taskcode">Ferrari</span> реализуйте метод <span class="taskcode">printlnDesire</span>, чтобы он выводил на экран "Я хочу ездить на Феррари".<br/>
+		3. В классе <span class="taskcode">Lanos</span> реализуйте метод <span class="taskcode">printlnDesire</span>, чтобы он выводил на экран "Я хочу ездить на Ланосе".<br/>
+		4. Создайте <span class="taskcode">public static</span> класс <span class="taskcode">LuxuriousCar</span>(РоскошнаяМашина).<br/>
+		5. Создайте <span class="taskcode">public static</span> класс <span class="taskcode">CheapCar</span>(ДешеваяМашина).<br/>
+		6. Унаследуйте <span class="taskcode">Ferrari</span> и <span class="taskcode">Lanos</span> от <span class="taskcode">CheapCar</span> и <span class="taskcode">LuxuriousCar</span>, подумайте, какой класс для кого.<br/>
+		7. В классе <span class="taskcode">LuxuriousCar</span> реализуйте метод <span class="taskcode">printlnDesire</span>, чтобы он выводил на экран "Я хочу ездить на роскошной машине".<br/>
+		8. В классе <span class="taskcode">CheapCar</span> реализуйте метод <span class="taskcode">printlnDesire</span>, чтобы он выводил на экран "Я хочу ездить на дешевой машине".<br/>
+		9. В класах <span class="taskcode">LuxuriousCar</span> и <span class="taskcode">CheapCar</span> для метода <span class="taskcode">printlnDesire</span> расставьте различными способами модификаторы доступа так, чтобы в классах <span class="taskcode">Ferrari</span> и <span class="taskcode">Lanos</span> выполнялось расширение видимости.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level15,lesson02,task04"></button><b>4. ООП - книги</b><br/><br/>
+                1. Создайте <span class="taskcode">public static</span> класс <span class="taskcode">MarkTwainBook</span>, который наследуется от <span class="taskcode">Book</span>. Имя автора [Mark Twain]. Параметр конструктора - имя книги.<br/>
+		2. В классе <span class="taskcode">MarkTwainBook</span> реализуйте все абстрактные методы.<br/>
+		3. Для метода <span class="taskcode">getBook</span> расширьте тип возвращаемого результата.<br/>
+		4. Создайте по аналогии <span class="taskcode">AgathaChristieBook</span>. Имя автора [Agatha Christie].<br/>
+		5. В классе <span class="taskcode">Book</span> реализуйте тело метода <span class="taskcode">getOutputByBookType</span> так, чтобы он возвращал:<br/>
+    		    5.1. <span class="taskcode">agathaChristieOutput</span> для книг Агаты Кристи;<br/>
+    		    5.2. <span class="taskcode">markTwainOutput</span> для книг Марка Твена.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level15,lesson02,task05"></button><b>5. ООП - исправь ошибки в наследовании</b><br/><br/>
+                Исправь метод <span class="taskcode">containsBones</span> и всю связанную с ним логику так, чтобы:<br/>
+		1. Поведение программы осталось прежним, т.е. она должна выдавать то же самое, что и выдает сейчас.<br/>
+		2. Метод <span class="taskcode">containsBones</span> должен возвращать тип <span class="taskcode">Object</span> и значение "Yes" вместо <span class="taskcode">true</span>, "No" вместо <span class="taskcode">false</span>.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>3. Перегрузка методов</h2>
+</div>
+<p>- Привет, Амиго! Пару дней назад я тебе рассказывал о перегрузке методов. Ты все понял?</p>
+<p class="amigo">- Да. Я помню. Каждый метод класса должен быть уникальным. Метод класса уникальный, если в этом классе нет метода с таким же именем и типом параметров, где порядок параметров имеет значение. </p>
+<p>- Отлично! Я вижу, что ты хорошо выучил тот урок. Сегодня я хочу лишь немного расширить твои познания в этом деле. Как ты думаешь, какой метод будет вызван  в каждом случае?</p>
+<table class="table_example">
+<tbody><tr><th width="1%">Код</th>
+</tr><tr>
+<td class="monospace_text wide-text"><b>class</b> <span class="blue_text">Cat</span><br/>
+{<br/>
+     <b>public static</b> void print(<span class="red_text">int</span> n)<br/>
+     {<br/>
+          System.out.println(n);<br/>
+     }<br/>
+     <b>public static</b> void print(<span class="red_text">short</span> n)<br/>
+     {<br/>
+         System.out.println(n);<br/>
+     }<br/>
+     <b>public static</b> void print(<span class="red_text">Integer</span> n)<br/>
+     {<br/>
+          System.out.println(n);<br/>
+     }<br/>
+     <b>public static</b> void print(<span class="red_text">String</span> s)<br/>
+     {<br/>
+          System.out.println(s);<br/>
+     } <br/>
+<b>public static</b> void main(String[] args)<br/>
+{<br/>
+          Cat.print(<span class="red_text">1</span>);<br/>
+          Cat.print(<span class="red_text">(byte)1</span>);<br/>
+          Cat.print(<span class="red_text">"1"</span>);<br/>
+          Cat.print(<span class="red_text">null</span>);<br/>
+  }<br/>
+}
+
+	</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Затрудняюсь ответить.</p>
+<p>- В первом случае 1 имеет тип <b>int</b>, у нас есть 100% совпадение метода, который принимает int. Будет вызван первый <b>void print(int n)</b>.</p>
+<p>Во втором  случае, у нас нет метода, который принимает byte. Но есть два метода, которые принимают short и int. По стандарту расширения типов, byte сначала будет расширен до short, а уж затем расширен до int. Вердикт – будет вызван метода <b>void print(short n)</b>.</p>
+<p>В третьем случае у нас есть 100% совпадение метода, который принимает String. Будет вызван метод <b>void print(String s)</b>.</p>
+<p>В четвертом случае у нас неопределенность. <span class="red_text">null не имеет определенного типа</span>, компилятор <span class="red_text">откажется компилировать этот код</span>. В таком случае нужно написать <b>Cat.print((Integer)null)</b>, чтобы вызвать третий метод и <b>Cat.print((String)null)</b>,  чтобы вызвать четвертый.</p>
+<p class="amigo">- Очень познавательно, спасибо.</p>
+<p>- Обращаю твое внимание, что в процессе определения метода, который нужно вызвать, типы могут только расширяться, но не сужаться. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th>
+</tr><tr>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+     <b>public static</b> void print(<span class="red_text">short</span> n)<br/>
+     {<br/>
+          System.out.println(n);<br/>
+     }<br/>
+     <b>public static</b> void print(<span class="red_text">Integer</span> n)<br/>
+     {<br/>
+          System.out.println(n);<br/>
+     }<br/><br/>
+
+    <b>public static</b> void main(String[] args)<br/>
+   {<br/>
+          Cat.print(<span class="red_text">(byte)1</span>);<br/>
+          Cat.print(<span class="red_text">1</span>);<br/>
+   }<br/>
+}
+	</td>
+</tr>
+</tbody></table>
+<p>В первом случает, тип byte будет расширен до short и произойдет вызов первого метода: <b>void print(short n)</b>.</p>
+<p>Во втором случае неявно будет выполнено разрешенное преобразование от int к Integer, и произойдет вызов второго метода <b>void print(Integer n)</b>.</p>
+<p class="amigo">- Неожиданно.</p>
+<p>- Нет, неожиданно – это тут:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+     <b>public static</b> void print(<span class="red_text">Object</span> o)<br/>
+     {<br/>
+          System.out.println(o);<br/>
+     }<br/>
+     <b>public static</b> void print(<span class="red_text">String</span> s)<br/>
+     {<br/>
+          System.out.println(s);<br/>
+     }<br/><br/>
+
+    <b>public static</b> void main(String[] args)<br/>
+   {<br/>
+          Cat.print(<span class="red_text">1</span>);<br/>
+          Cat.print(<span class="red_text">null</span>);<br/>
+   }<br/>
+}
+</td>
+<td class="wide-text">В первом случае int будет расширен до Integer, а так как нет метода для Integer, то вызовется наиболее подходящий метод, т.е. метод <b>void print(Object o)</b><br/><br/>
+		Во втором случае, ошибки компиляции не будет и вызовется метод <b>void print(String s)</b>, что несколько не очевидно.
+</td>
+</tr>
+</tbody>
+</table>
+<p>Надеюсь, Амиго ты понял, что лучше всего в таких случаях указать оператор преобразования типа, как в случае с (byte), чтобы точно знать, какой метод вызовется.</p>
+<p class="amigo">- Уж от чего, от чего, а от перегрузки методов я никаких проблем не ожидал. И тут – на тебе. Спасибо, Риша, буду держать ухо востро и не расслабляться.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи</h2>
+</div>
+<p>- Привет, Амиго! </p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level15,lesson04,task01"></button><b>1. Что-то лишнее</b><br/><br/>
+                1. Программа должна выводить следующее:<br/>
+		Это double<br/>
+		Это Object<br/>
+		Это double<br/>
+		Это Integer<br/>
+		Это double<br/><br/>
+
+		2. Удалите реализации всех лишних методов 
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level15,lesson04,task02"></button><b>2. ООП - Перегрузка</b><br/><br/>
+                Перегрузите метод <span class="taskcode">printMatrix</span> 8 различными способами. В итоге должно получиться 10 различных методов <span class="taskcode">printMatrix</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level15,lesson04,task03"></button><b>3. ООП - Перегрузка - убираем лишнее</b><br/><br/>
+                1. Подумайте, какая из реализаций метода <span class="taskcode">print</span> будет вызвана.<br/>
+		2. Удалите все лишние реализации метода <span class="taskcode">print</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level15,lesson04,task04"></button><b>4. Мужчина или женщина?</b><br/><br/>
+                1. В методе <span class="taskcode">main</span> создать 2 человека man и woman. man с типом <span class="taskcode">Man</span>, woman с типом <span class="taskcode">Woman</span>.<br/>
+		2. Изменить метод <span class="taskcode">printName</span> так, чтобы он выполнялся для man и woman.<br/>
+		3. Реализация метода <span class="taskcode">printName</span> должна быть одна.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level15,lesson04,task05"></button><b>5. Все лишнее - прочь!</b><br/><br/>
+                Убрать в методе main лишние строки, для которых метод <span class="taskcode">add</span> нереализован.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>5. Создание объекта. Порядок вызова конструкторов</h2>
+</div>
+<p>- Привет, Амиго! Сейчас я расскажу тебе о процессе создания объекта.</p>
+<p class="amigo">- А что там сложного, дядя Риша? Написал new имя класса, указал правильный конструктор и готово!</p>
+<p>- Это так. Но что при этом происходит внутри объекта?</p>
+<p class="amigo">- А что там происходит?</p>
+<p>- А вот что! Объект создается в несколько этапов.</p>
+<p><b><i>1)</i></b> Сначала выделяется память под все переменные – поля класса.</p>
+<p><b><i>2)</i></b> Затем идет инициализация базового класса.</p>
+<p><b><i>3)</i></b> Потом всем переменным присваиваются значения, если они указаны.</p>
+<p><b><i>4)</i></b> И наконец, вызывается конструктор.</p>
+<p class="amigo">- Выглядит не очень сложно: сначала переменные, затем конструктор.</p>
+<p>- Давай посмотрим, как это будет работать на примере двух классов:</p>
+<table class="table_example">
+<tbody><tr><th width="1%">Обозначения</th><th width="54%">Код</th><th width="45%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text" valign="top"><br/><br/><span class="red_text">2 ---------&gt;<br/>3 ---------&gt;</span><br/><br/><br/><br/><span class="blue_text">4 ---------&gt;<br/>5 ---------&gt;</span><br/><br/><br/><br/><br/><span class="green_text">6 ---------&gt;</span><br/><br/><br/><br/><span class="violet_text">1 ---------&gt;</span><br/><span class="orange_text">7 ---------&gt;</span>
+</td>
+<td class="monospace_text wide-text"><b>class Pet</b><br/>
+{<br/>
+    int x = 5, y = 5;<br/>
+    int weight = 10;<br/><br/>
+   
+    <b>Pet(int x, int y)</b><br/>
+    {<br/>
+      this.x = x;<br/>
+      this.y = y;<br/>
+   }<br/>
+}<br/>
+<b>class Cat <span class="red_text">extends Pet</span></b><br/>
+{<br/>
+    int tailLength = 8;<br/>
+    int age;<br/>
+    <b>Cat(int x, int y, int age)</b><br/>
+    {<br/>
+        <span class="red_text"><b>super</b></span>(x, y);<br/>
+        this.age = age;<br/>
+    }<br/>
+}
+</td>
+<td class="wide-text">Мы создали два класса: Pet(животное) и Cat(кот).<br/><br/>
+
+		В классе Cat мы видим явный вызов конструктора базового класса.<br/>
+<span class="red_text"><b>Он всегда должен быть в первой строке конструктора.</b></span><br/><br/>
+
+		Вот что произойдет после выделения памяти:<br/>
+<span class="violet_text">1</span> – вызов конструктора базового класса<br/>
+<span class="red_text">2, 3</span> – инициализация переменных в Pet<br/>
+<span class="blue_text">4, 5</span> – отработает код конструктора Pet<br/><br/>
+
+		далее начнется процесс инициализации класса Cat<br/>
+<span class="green_text">6</span> – инициализация переменных в Cat<br/>
+<span class="orange_text">7</span> – отработает код конструктора Cat
+	</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">
+</td>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+{<br/>
+    Cat cat = new Cat (50, 50, 5);<br/>
+}
+</td>
+<td class="monospace_text wide-text">
+</td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Что-то немного запутанно. Почему так сложно?</p>
+<p>- На самом деле не сложно, если знать что на самом деле происходит:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Что происходит на самом деле</th></tr>
+<td></td><td></td>
+</tbody></table>
+<td><span class="red_text"><b>Если у класса нет ни одного конструктора,  он будет создан автоматически.</b></span></td><td></td>
+<table class="table_example">
+<tbody><tr><th width="50%">Конструктор по умолчанию</th><th width="50%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+  int x = 5;<br/>
+  int y = 5;<br/>
+}
+</td>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+   int x = 5;<br/>
+   int y = 5;<br/>
+   <span class="red_text"><b>public</b> Cat()<br/>
+   {<br/>
+   }</span><br/>
+}
+</td>
+</tr>
+</tbody></table>
+<td><span class="red_text">Если не вызываешь конструктор базового класса, его вызов будет добавлен автоматически.</span></td><td></td>
+<table class="table_example">
+<tbody><tr><th width="50%">Вызов конструктора базового класса</th><th width="50%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Pet<br/>
+{<br/>
+    <b>public</b> String name;<br/>
+}
+</td>
+<td class="monospace_text wide-text"><b>class</b> Pet <span class="red_text">extends Object</span><br/>
+{<br/>
+    <b>public</b> String name;<br/>
+    <b>public</b> Pet()<br/>
+   {<br/>
+        <span class="red_text">super();</span><br/>
+   }<br/>
+}
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Cat extends Pet<br/>
+{<br/>
+  int x = 5;<br/>
+  int y = 5;<br/>
+}
+</td>
+<td class="monospace_text wide-text"><b>class</b> Cat extends Pet<br/>
+{<br/>
+   int x = 5;<br/>
+   int y = 5;<br/>
+   <span class="red_text"><b>public</b> Cat()<br/>
+   {<br/>
+        super();<br/>
+   }</span><br/>
+}
+</td>
+</tr>
+</tbody></table>
+<td><span class="red_text">Инициализация переменных класса происходит в конструкторе.</span></td><td></td>
+<table class="table_example">
+<tbody><tr><th width="50%">Инициализация переменных класса</th><th width="50%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+  <span class="green_text">int x = 5;</span><br/>
+  <span class="green_text">int y = 5;</span><br/>
+}
+</td>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+   <span class="green_text">int x;</span><br/>
+   <span class="green_text">int y;</span><br/>
+   <span class="red_text"><b>public</b> Cat()<br/>
+   {<br/>
+      super();</span><br/>
+      <span class="green_text">this.x = 5;</span> <br/> 
+      <span class="green_text">this.y = 5;</span><br/>
+   <span class="red_text">}</span><br/>
+}
+</td>
+</tr>
+<td></td><td></td>
+</tbody><tbody><tr><th width="50%">Как все это происходит на самом деле</th><th width="50%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Pet<br/>
+{<br/>
+    int x <span class="red_text">= 5</span>, y <span class="red_text">= 5</span>;<br/>
+    int weight <span class="red_text">= 10</span>;<br/>
+   
+    Pet(int x, int y)<br/>
+    {<br/>
+      <span class="green_text">this.x = x;</span><br/>
+      <span class="green_text">this.y = y;</span><br/>
+   }<br/>
+}<br/><br/>
+<b>class</b> Cat extends Pet<br/>
+{<br/>
+    int tailLength <span class="red_text">= 8</span>;<br/>
+    int age;<br/>
+    Cat(int x, int y, int age)<br/>
+    {<br/>
+        <span class="blue_text">super(x, y);</span><br/>
+        <span class="green_text">this.age = age;</span><br/>
+    }<br/>
+}
+</td>
+<td class="monospace_text wide-text"><b>class</b> Pet <span class="red_text">extends Object</span><br/>
+{<br/>
+    int x;<br/>
+    int y;<br/>
+    int weight;<br/><br/>
+   
+    Pet(int x, int y)<br/>
+    {<br/>
+      <span class="grey_text">//вызов конструктора базового класса</span><br/>
+      <span class="blue_text">super();</span> <br/>
+      //инициализация переменных<br/>
+      <span class="red_text">this.x = 5;<br/>
+      this.y = 5;<br/>
+      this.weight = 10;</span><br/>
+      <span class="grey_text">//вызов кода конструктора</span><br/>
+      <span class="green_text">this.x = x;<br/>
+      this.y = y;</span><br/>
+   }<br/>
+}<br/>
+<b>class</b> Cat extends Pet<br/>
+{<br/>
+    int tailLength;<br/>
+    int age;<br/>
+    Cat(int x, int y, int age)<br/>
+    {<br/>
+       <span class="grey_text">//вызов конструктора базового класса</span><br/>
+         <span class="blue_text">super(x, y);</span><br/>
+       <span class="grey_text">//инициализация переменных</span><br/>
+        <span class="red_text">this.tailLength = 8;</span><br/>
+       <span class="grey_text">//вызов кода конструктора</span><br/>
+         <span class="green_text">this.age = age;</span><br/>
+    }<br/>
+}
+</td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Теперь намного понятнее: сначала базовый класс, затем переменные вне конструктора, затем вызов кода конструктора.</p>
+<p>- Молодец, Амиго, именно так!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задачи</h2>
+</div>
+<p>- Привет, Амиго! </p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level15,lesson06,task01"></button><b>1. Максимально простой код 1</b><br/><br/>
+                Упрости код - убери все наследования и реализации, которые и так будут добавлены автоматически при компиляции<br/><br/>
+		PS: Взаимосвязь между объектами <span class="taskcode">me</span> и <span class="taskcode">zapp</span> - Has-a (использует)
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level15,lesson06,task02"></button><b>2. Максимально простой код 2</b><br/><br/>
+                -  Посмотри, что, связанное с конструкторами, может быть добавлено при компиляции, но в этой программе уже присутствует.<br/>
+		-  Упрости код - удали все конструкторы и вызовы конструкторов супер-классов, которые создаются и добавляются автоматически.<br/><br/>
+		PS: Взаимосвязь между объектами классов <span class="taskcode">NakedCat</span> и <span class="taskcode">NormalCat</span>, <span class="taskcode">SiamCat</span> - Is-a (наследование)
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level15,lesson06,task03"></button><b>3. Максимально простой код 3</b><br/><br/>
+                Упрости код:<br/>
+		- убери всё то, что будет генерироваться автоматически при компиляции<br/>
+		- убери все наследования классов, которые и так будут добавлены автоматически при компиляции<br/>
+		- убери все конструкторы, которые создаются и добавляются автоматически.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>7. Порядок загрузки классов, статические данные...</h2>
+</div>
+<p>- Привет, Амиго! Слышала, Риша рассказал тебе новую и очень интересную тему?!</p>
+<p class="amigo">- Да, Ким.</p>
+<p>- Моя тема будет не менее интересной. Я хочу рассказать тебе о загрузке в память классов.</p>
+<p>Классы в Java – это файлы на диске, содержащие байт-код – скомпилированный Java-код.</p>
+<p class="amigo">- Да, я помню.</p>
+<p>- <span class="dred_text">Java-машина не загружает их без необходимости.</span> Как только где-то в коде происходит обращение к классу, Java-машина проверяет – загружен ли он. И если нет, то <span class="dred_text">загружает и инициализирует его</span>.</p>
+<p>Инициализация класса – это присваивание значений всех его статических переменных и вызов всех статических блоков.</p>
+<p class="amigo">- Похоже на вызов конструктора у объекта. А что такое статический блок?</p>
+<p>- Если для инициализации переменных объекта нужно выполнить сложный код (например, что-то загрузить из файла), мы можем сделать это в конструкторе. Статические переменные такой возможности лишены. Но т.к. потребность в этом осталась, в классы можно добавить статический блок или блоки, которые по сути своей эквивалентны вызову статических конструкторов.</p>
+<p>Вот как это выглядит:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Что происходит на самом деле</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+     <b>public static</b> <span class="green_text">int catCount = 0 ;</span><br/>
+     <b>public static</b> <span class="green_text">String namePrefix;</span><br/><br/>
+
+     <b>static</b><br/>
+     {<br/>
+         <span class="blue_text">Properties p = new Properties();<br/>
+         p.loadFromFile("cat.properties");<br/>
+         namePrefix = p.get("name-prefix");</span><br/>
+     }<br/><br/>
+
+     <b>public static</b> <span class="green_text">int maxCatCount = 50;</span><br/><br/>
+
+     <b>static</b><br/>
+    {<br/>
+        <span class="blue_text">Properties p = new Properties();<br/>
+        p.loadFromFile("max.properties");<br/>
+        <b>if</b> (p.get("cat-max") != null)<br/>
+              maxCatCount = p.getInt("cat-max");</span><br/>
+     }<br/><br/>
+
+}
+</td>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+     <b>public static</b> <span class="green_text">int catCount;</span><br/>
+     <b>public static</b> <span class="green_text">String namePrefix;</span><br/>
+     <b>public static</b> <span class="green_text">int maxCatCount;</span><br/><br/>
+<span class="grey_text">//статические конструкторы в Java<br/>
+//запрещены, но если бы они были, то все<br/>
+//выглядело бы так</span><br/>
+     <b>public static</b> Cat()<br/>
+     {<br/>
+         <span class="green_text">catCount = 0;</span><br/><br/>
+
+         <span class="blue_text">Properties p = new Properties();<br/>
+         p.loadFromFile("cat.properties");<br/>
+         namePrefix = p.get("name-prefix");</span><br/><br/>
+
+        <span class="green_text">maxCatCount = 50;</span><br/><br/>
+
+       <span class="blue_text">Properties p2 = new Properties();<br/>
+       p2.loadFromFile("max.properties");<br/>
+       <b>if</b> (p2.get("cat-max")!=null)<br/>
+             maxCatCount = p2.getInt("cat-max");</span><br/>
+     }<br/>
+}
+</td>
+</tr>
+</tbody>
+</table>
+<p>Это очень похоже на то, что происходит при вызове конструктора. Я даже <span class="red_text">записала это в виде несуществующего статического конструктора</span>.</p>
+<p class="amigo">- Да, я все понял.</p>
+<p>- Отлично.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>8. Порядок инициализации переменных</h2>
+</div>
+<p>- Привет, Амиго! Билаабо сегодня будет рассказывать о <span class="red_text">порядке инициализации переменных</span>.</p>
+<p>Представь, что ты видишь код. Какие значения получат переменные?</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th>
+</tr><tr>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+   <b>public</b> int <span class="orange_text">a</span> = 5;<br/>
+   <b>public</b> int <span class="orange_text">b</span> = a + 1;<br/>
+   <b>public</b> int <span class="orange_text">c</span> = a * b;<br/>
+}
+    </td>
+</tr>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+   <b>public</b> int a = getSum();<br/>
+   <b>public</b> int b = getSum() - a;<br/>
+   <b>public</b> int c = getSum() - a - b;<br/><br/>
+
+   <b>public</b> int getSum()<br/>
+   {<br/>
+      return a + b + c;<br/>
+   }<br/>
+}
+    </td>
+</tbody></table>
+<p class="amigo">- А разве так можно?</p>
+<p>- Конечно. <span class="red_text">Порядок объявления между методами и полями класса неважен.</span></p>
+<p>Класс загружается сверху вниз, поэтому важно, чтобы поле класса обращалось только к уже загруженным другим полям. В примере поле <span class="orange_text"><b>b</b></span> может обращаться к <span class="orange_text"><b>a</b></span>, но ничего не знает о <span class="orange_text"><b>c</b></span>.</p>
+<p class="amigo">- И что же будет?</p>
+<p>- <span class="red_text">Когда переменные создаются, они получают дефолтовые значения</span> (значения по умолчанию).</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="50%">Код</th><th width="50%">Что происходит на самом деле</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+   <b>public</b> <span class="green_text">int a</span> = <span class="red_text">5</span>;<br/>
+   <b>public</b> <span class="green_text">int b</span> = <span class="red_text">a + 1</span>;<br/>
+   <b>public</b> <span class="green_text">int c</span> = <span class="red_text">a * b</span>;<br/>
+}
+</td>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+   <b>public</b> <span class="green_text">int a</span> = 0;<br/>
+   <b>public</b> <span class="green_text">int b</span> = 0;<br/>
+   <b>public</b> <span class="green_text">int c</span> = 0;<br/><br/>
+
+   <span class="blue_text"><b>public</b> Cat()<br/>
+   {<br/>
+      super();</span><br/><br/>
+
+      <span class="red_text">a = 5;</span><br/>
+      <span class="red_text">b = a + 1;</span> <span class="grey_text">//5+1 = 6</span><br/>
+      <span class="red_text">c = a * b;</span> <span class="grey_text">//5*6 = 30</span><br/>
+  <span class="blue_text">}</span><br/>
+}
+</td>
+</tr>
+<tr><td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+   <b>public</b> <span class="green_text">int a</span> = <span class="red_text">getSum();</span><br/>
+   <b>public</b> <span class="green_text">int b</span> = <span class="red_text">getSum() - a;</span><br/>
+   <b>public</b> <span class="green_text">int c</span> = <span class="red_text">getSum() - a - b;</span><br/><br/>
+
+   <b>public</b> getSum()<br/>
+   {<br/>
+      return a + b + c;<br/>
+   }<br/>
+}
+</td>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+   <b>public</b> <span class="green_text">int a</span> = 0;<br/>
+   <b>public</b> <span class="green_text">int b</span> = 0;<br/>
+   <b>public</b> <span class="green_text">int c</span> = 0;<br/><br/>
+
+   <span class="blue_text"><b>public</b> Cat()<br/>
+   {<br/>
+      super();</span><br/><br/>
+
+      <span class="red_text">a = getSum();</span> <span class="grey_text">//(a+b+c)=0</span><br/>
+      <span class="red_text">b = getSum() - a;</span> <span class="grey_text">//(a+b+c)-a=b=0</span><br/>
+      <span class="red_text">c = getSum() - a - b;</span> <span class="grey_text">//(a+b+c)-a-b=c=0</span><br/>
+  <span class="blue_text">}</span><br/><br/>
+
+   <b>public</b> getSum()<br/>
+   {<br/>
+      return a + b + c;<br/>
+   }<br/>
+}
+</td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Ух ты! Оказывается, это так просто. Спасибо Билаабо, ты – настоящий друг!</p>
+<p>- Ура! У Билаабо появился друг!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>9. Задачи на порядок инициализации переменных</h2>
+</div>
+<p>- Привет, Амиго! </p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level15,lesson09,task01"></button><b>1. Статики 1</b><br/><br/>
+                В статическом блоке инициализировать <span class="taskcode">labels</span> 5 различными парами. 
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level15,lesson09,task02"></button><b>2. Статики 2</b><br/><br/>
+                1. В статическом блоке считайте две переменные с консоли <span class="taskcode">А</span> и <span class="taskcode">В</span> с типом <span class="taskcode">int</span>.<br/>
+		2. Не забыть про <span class="taskcode">IOException</span>, который надо обработать в блоке <span class="taskcode">catch</span>.<br/>
+		3. Закрыть поток ввода методом <span class="taskcode">close()</span>. 
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level15,lesson09,task03"></button><b>3. Статики 3</b><br/><br/>
+                1. Создать 7 <span class="taskcode">public</span> полей класса. Убедитесь, что они инициализируются дефолтными значениями.<br/>
+		- <span class="taskcode">intVar</span> с типом <span class="taskcode">int</span><br/>
+		- <span class="taskcode">doubleVar</span> с типом <span class="taskcode">double</span><br/>
+		- <span class="taskcode">DoubleVar</span> с типом <span class="taskcode">Double</span><br/>
+		- <span class="taskcode">booleanVar</span> с типом <span class="taskcode">boolean</span><br/>
+		- <span class="taskcode">ObjectVar</span> с типом <span class="taskcode">Object</span><br/>
+		- <span class="taskcode">ExceptionVar</span> с типом <span class="taskcode">Exception</span><br/>
+		- <span class="taskcode">StringVar</span> с типом <span class="taskcode">String</span><br/><br/>
+
+		2. В методе <span class="taskcode">main</span> вывести их значения в заданном порядке. 
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level15,lesson09,task04"></button><b>4. Статики и исключения</b><br/><br/>
+                В статическом блоке выбросьте <span class="taskcode">RuntimeException</span><br/>
+		В результате класс не загрузится, и вы увидите сообщение об ошибке вместо значения переменной <span class="taskcode">B</span><br/><br/>
+<span class="taskcode">Exception in thread "main" java.lang.ExceptionInInitializerError<br/>
+		at java.lang.Class.forName0(Native Method)<br/>
+		at java.lang.Class.forName(Class.java:186)<br/>
+		at com.intellij.rt.execution.application.AppMain.main(AppMain.java:113)<br/>
+		Caused by: java.lang.RuntimeException:<br/>
+		at com.javarush.test.level15.lesson09.task04.Solution.clinit(Solution.java:22)</span><br/><br/>
+
+		Hint: Нужно погуглить причину, если получилось следующее:<br/>
+<span class="taskcode">java: initializer must be able to complete normally<br/>
+		java: unreachable statement</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level15,lesson09,task05"></button><b>5. Статики 4</b><br/><br/>
+                Внутри статического блока:<br/>
+		1. Создайте класс <span class="taskcode">Cat</span><br/>
+		2. Внутри <span class="taskcode">Cat</span> создайте поле класса <span class="taskcode">String name</span> = "Пушок"<br/>
+		3. Создайте объект класса <span class="taskcode">Cat - myCat</span><br/>
+		4. Присвойте статическому объекту <span class="taskcode">Object cat</span> объект, созданный в п.3<br/>
+		5. Выведите в консоль <span class="taskcode">myCat.name</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>10. Ссылка на вики, переопределение методов/конструкторов</h2>
+</div>
+<p>- Я думаю, что после стольких дней ты уже отлично понял весь полиморфизм, наследование и переопределение методов. Поэтому вот тебе ссылка на статью, которая еще немного расширит твои познания.</p>
+<p><a href="http://wikijava.it-cache.net/index.php@title=Glava_5_Thinking_in_Java_4th_edition.html#.D0.98.D0.BD.D0.B8.D1.86.D0.B8.D0.B0.D0.BB.D0.B8.D0.B7.D0.B0.D1.86.D0.B8.D1.8F_.D1.87.D0.BB.D0.B5.D0.BD.D0.BE.D0.B2_.D0.BA.D0.BB.D0.B0.D1.81.D1.81.D0.B0" target="_blank">Ссылка на вики, переопределение методов/конструкторов</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Хулио</h2>
+</div>
+<p>- Привет, Амиго! Ты попкорн взял? Надеюсь, сегодня будет еще интереснее.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-15.gif" preload="none" tabindex="0" taskkey="level15,lesson11,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-15.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=7udAteK1XyU" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>12. Домашние и бонусные задания</h2>
+</div>
+<p>- Здорово, боец!</p>
+<p class="amigo">- Здравия желаю, товарищ капитан!</p>
+<p>- У меня для тебя шикарная новость. Вот тебе задания для закрепления полученных навыков. Выполняй их каждый день, и твои навыки будут расти с неимоверной скоростью. Они специально разработаны для выполнения их в Intellij IDEA.</p>
+<table class="table_task">
+<tr>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Разные методы для разных типов</b><br/><br/>
+                1. Считать с консоли данные, пока не введено слово "exit".<br/>
+                2. Для каждого значения, кроме "exit", вызвать метод <span class="taskcode">print</span>. Если значение:<br/>
+                2.1. содержит точку '.', то вызвать метод <span class="taskcode">print</span> для <span class="taskcode">Double</span>;<br/>
+                2.2. больше нуля, но меньше 128, то вызвать метод <span class="taskcode">print</span> для <span class="taskcode">short</span>;<br/>
+                2.3. больше либо равно 128, то вызвать метод <span class="taskcode">print</span> для <span class="taskcode">Integer</span>;<br/>
+		2.4. иначе, вызвать метод <span class="taskcode">print</span> для <span class="taskcode">String</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Тренировка мозга</b><br/><br/>
+                Найти логическую ошибку: метод <span class="taskcode">doAction</span> в реализации интерфейса <span class="taskcode">Movable</span> должен выдавать "moving".<br/>
+		Исправьте ошибку, при необходимости измените (отрефакторите) интерфейс <span class="taskcode">Movable</span>.<br/>
+		Результат вывода в консоль должен быть:<br/>
+		flying<br/>
+		moving
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. ООП - перегрузка</b><br/><br/>
+                1.В классе <span class="taskcode">Tree</span> перегрузи метод <span class="taskcode">info(Object s)</span> два раза так, чтобы получилось три метода <span class="taskcode">info(Object s)</span>, <span class="taskcode">info(Number s)</span>, <span class="taskcode">info(String s)</span>.<br/>
+		1.1. Разберись в методе <span class="taskcode">info(Object s)</span>. Сделай по аналогии функционал новых методов.<br/>
+		1.2. Например, для метода <span class="taskcode">info(Number s)</span> результат может быть таким "Дерево № 123 , метод <span class="taskcode">Number</span>, параметр <span class="taskcode">Short</span>".<br/>
+		2. В блоке 2 должен вызываться метод <span class="taskcode">info(Object s)</span>.<br/>
+		3. В блоке 3 должен вызываться метод <span class="taskcode">info(Number s)</span>.<br/>
+		4. В блоке 4 должен вызываться метод <span class="taskcode">info(String s)</span>.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>4. Закрепляем Singleton pattern</b><br/><br/>
+                1. Найти в гугле пример для - Singleton pattern Lazy initialization.<br/>
+		2. По образу и подобию в отдельных файлах создать три синглтон класса <span class="taskcode">Sun</span>, <span class="taskcode">Moon</span>, <span class="taskcode">Earth</span>.<br/>
+		3. Реализовать интерфейс <span class="taskcode">Planet</span> для классов <span class="taskcode">Sun</span>, <span class="taskcode">Moon</span>, <span class="taskcode">Earth</span>.<br/>
+		4. В статическом блоке класса <span class="taskcode">Solution</span> вызвать метод <span class="taskcode">readKeyFromConsoleAndInitPlanet</span>.<br/>
+		5. Реализовать функционал метода <span class="taskcode">readKeyFromConsoleAndInitPlanet</span>:<br/>
+		5.1. С консоли считать один параметр типа <span class="taskcode">String</span>.<br/>
+		5.2. Если параметр равен одной из констант интерфейса <span class="taskcode">Planet</span>, то создать соответствующий объект и присвоить его <span class="taskcode">Planet thePlanet</span>, иначе обнулить <span class="taskcode">Planet thePlanet</span>.<br/>
+		5.3. Сравнивать введенный параметр можно только с константами из <span class="taskcode">Planet</span>, нельзя создавать свои строки.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>5. Перегрузка конструкторов</b><br/><br/>
+                1. В классе <span class="taskcode">Solution</span> создайте по 3 конструктора для каждого модификатора доступа.<br/>
+		2. В отдельном файле унаследуйте класс <span class="taskcode">SubSolution</span> от класса <span class="taskcode">Solution</span>.<br/>
+		3. Внутри класса <span class="taskcode">SubSolution</span> создайте конструкторы командой Alt+Insert -&gt; Constructors.<br/>
+		4. Исправьте модификаторы доступа конструкторов в <span class="taskcode">SubSolution</span> так, чтобы они соответствовали конструкторам класса <span class="taskcode">Solution</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>6. Порядок загрузки переменных</b><br/><br/>
+                Разобраться, что в какой последовательности инициализируется.<br/>
+		Исправить порядок инициализации данных так, чтобы результат был следующим:<br/>
+		static void init()<br/>
+		Static block<br/>
+		public static void main<br/>
+		non-static block<br/>
+		static void printAllFields<br/>
+		0<br/>
+		null<br/>
+		Solution constructor<br/>
+		static void printAllFields<br/>
+		6<br/>
+		First name
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>7. Файл в статическом блоке</b><br/><br/>
+                1. Инициализируй константу <span class="taskcode">Constants.FILE_NAME</span> полным путем к файлу с данными, который содержит несколько строк.<br/>
+		2. В статическом блоке считай из файла с именем <span class="taskcode">Constants.FILE_NAME</span> все строки и добавь их по-отдельности в <span class="taskcode">List lines</span>.<br/>
+		3. Закрой поток ввода методом <span class="taskcode">close()</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>8. Дебаг, дебаг, и еще раз дебаг</b><br/><br/>
+                Программа выводит 0 9, а должна 6 9. Найди одну! ошибку и исправь.<br/>
+		Используй дебаг. Для этого поставь breakpoint-ы(Ctrl+F8), потом зайди в меню Run -&gt; Debug.<br/>
+		F9 - выполнение кода до следующего breakpoint-а<br/>
+		F8 - переход к следующей строке кода<br/>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>9. Парсер реквестов</b><br/><br/>
+                Считать с консоли URl ссылку.<br/>
+		Вывести на экран через пробел список всех параметров (Параметры идут после ? и разделяются &amp;, например, lvl=15).<br/>
+		URL содержит минимум 1 параметр.<br/>
+		Если присутствует параметр <span class="taskcode">obj</span>, то передать его значение в нужный метод <span class="taskcode">alert</span>.<br/>
+<span class="taskcode">alert(double value)</span> - для чисел (дробные числа разделяются точкой)<br/>
+<span class="taskcode">alert(String value)</span> - для строк<br/><br/>
+<span class="example-legacy">Пример ввода:<br/></span>
+<span class="example-data">http://javarush.ru/alpha/index.html?lvl=15&amp;view&amp;name=Amigo<br/></span>
+<span class="example-legacy">Пример вывода:</span><br/>
+<span class="example-data">lvl view name<br/><br/></span>
+<span class="example-legacy">Еще пример ввода:<br/></span>
+<span class="example-data">http://javarush.ru/alpha/index.html?obj=3.14&amp;name=Amigo<br/></span>
+<span class="example-legacy">Пример вывода:<br/></span>
+<span class="example-data">obj name<br/>
+		double 3.14</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>10. ООП - наследование</b><br/><br/>
+                 Исправить класс <span class="taskcode">Hrivna</span> так, чтоб избежать ошибку <span class="taskcode">StackOverflowError</span>, класс <span class="taskcode">Money</span> менять нельзя.
+            </td>
+</tr>
+</table>
+<p>- Те задания были для духов. Для дедушек я добавил бонусные задания повышенной сложности. Только для старослужащих. </p>
+<table class="table_task">
+<tr>
+<th></th>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>1. Осваивание статического блока</b><br/><br/>
+<u>Задача:</u> 1. В отдельных файлах создать классы <span class="taskcode">Plane</span> и <span class="taskcode">Helicopter</span>, реализующие интерфейс <span class="taskcode">Flyable</span>.<br/>
+		2. Класс <span class="taskcode">Plane</span> должен иметь 1 конструктор с параметром <span class="taskcode">int</span> – количество перевозимых пассажиров.<br/>
+		3. В статическом методе <span class="taskcode">reset</span> класса <span class="taskcode">Solution</span>:<br/>
+		3.1. Считать с консоли параметр типа <span class="taskcode">String</span>. Параметр может быть "plane" или "helicopter".<br/>
+		3.2. Если параметр равен "helicopter", то статическому объекту <span class="taskcode">Flyable result</span> присвоить<br/>
+		объект класса <span class="taskcode">Helicopter</span>.<br/>
+		3.3. Если параметр равен "plane", то считать второй параметр типа <span class="taskcode">int</span>,<br/>
+		статическому объекту <span class="taskcode">Flyable result</span> присвоить объект класса <span class="taskcode">Plane</span>.<br/>
+		4. В статическом блоке инициализировать <span class="taskcode">Flyable result</span> вызвав метод <span class="taskcode">reset</span>.<br/>
+		5. Закрыть поток ввода методом <span class="taskcode">close()</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>2. Template pattern</b><br/><br/>
+<u>Задача:</u> 1. В отдельном файле создать класс <span class="taskcode">DrinkMaker</span> с тремя абстрактными методами:<br/>
+		- <span class="taskcode">void getRightCup()</span> - выбрать подходящую чашку<br/>
+		- <span class="taskcode">void putIngredient()</span> - положить ингредиенты<br/>
+		- <span class="taskcode">void pour()</span> - залить жидкостью<br/>
+		2. В классе <span class="taskcode">DrinkMaker</span> создать и реализовать метод <span class="taskcode">void makeDrink()</span>, который готовит напиток в такой последовательности: выбирает чашку, кладет ингредиенты, заливает жидкостью.<br/>
+		3. В отдельных файлах создать классы <span class="taskcode">LatteMaker</span> и <span class="taskcode">TeaMaker</span>, которые наследуются от <span class="taskcode">DrinkMaker</span>.<br/>
+		4. Распредели следующие фразы между всеми методами в классах <span class="taskcode">LatteMaker</span> и <span class="taskcode">TeaMaker</span>, различные фразы для различных методов.<br/>
+		5. Каждый метод должен выводить в консоль свою фразу не пересекаясь с другими методами.<br/>
+		6. Фразы:<br/>
+		"Заливаем водой"<br/>
+		"Берем чашку для латте"<br/>
+		"Насыпаем чай"<br/>
+		"Берем чашку для чая"<br/>
+		"Заливаем молоком с пенкой"<br/>
+		"Делаем кофе"
+            </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>3. Факториал</b><br/><br/>
+<u>Задача:</u> Написать метод, который вычисляет факториал - произведение всех чисел от 1 до введенного числа включая его.<br/>
+		Пример: 4! = factorial(4) = 1*2*3*4 = 24<br/>
+		1. Ввести с консоли число меньше либо равно 150.<br/>
+		2. Реализовать функцию  <span class="taskcode">factorial</span>.<br/>
+		3. Если введенное число меньше 0, то вывести 0.<br/>
+		0! = 1
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

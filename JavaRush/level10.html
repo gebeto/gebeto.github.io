@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-10.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 10
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>Невысшее необразование</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/10/image-ru-10-02.jpg"/>
+<p>А давайте зададимся вопросом: зачем люди идут в ВУЗы?</p>
+<p>Помните простую фразу: не будешь хорошо учиться – пойдешь дворником работать.  Можно даже подумать, что все, кто идут учиться, – не хотят работать дворниками? А чего же тогда они хотят? Они хотят полную противоположность работе дворника.</p>
+<p><b>Люди идут учиться в ВУЗ, чтобы иметь высокооплачиваемую, высококвалифицированную работу!</b>  Чтобы была возможность купить дом, машину. Иметь все, хоть и не всегда (одно из определений среднего класса).</p>
+<p>Люди думают, что учеба в ВУЗе дает высокооплачиваемую, высококвалифицированную работу. Она не дает. Но ВУЗ про это молчит, а мы продолжаем верить, что «вот выучимся – получим отличную  работу».  5 лет в среднем ВУЗе не приблизят вас к вашей «хорошей работе» ни на сантиметр. Потому, что:</p>
+<p class="blue_text"><b>1. Преподаватели в большинстве ВУЗов не могут научить вас быть профессионалом, ведь они сами мало что умеют. </b></p>
+<p>Честно ответьте себе на вопрос: почему те, кто вас учат, работают в ВУЗах на своих небольших зарплатах? Потому, что они не могут претендовать на квалифицированные должности на рынке труда. Им не хватает ни опыта, ни квалификации. Кому хватает — те уходят. В лучших ВУЗах мира другая ситуация, но сейчас разговор не про них.</p>
+<p>Как думаете, успешный финансист пойдет работать топ-менеджером в банк на зарплату в $3,000 в месяц или доцентом в ВУЗ на зарплату в $300 в месяц? Чаще всего в ВУЗах преподают профессионалы-неудачники, которые не смогли найти себе работу вне ВУЗа. Исключения есть, но их очень и очень мало.</p>
+<p>Сразу оговорюсь, что есть в ВУЗах и хорошие преподаватели, и очень хорошие. Но их даже не меньшинство, их – единицы. Хороший преподаватель должен не только доступно и понятно преподавать свой предмет, но и сделать упор на практическую применимость этих знаний.  Большинству преподавателей нет дела до актуальности их знаний.</p>
+<p class="blue_text"><b>2. Преподаватели средних ВУЗов превозносят науку и презирают профессиональную реализацию.</b> </p>
+<p>Корни этого следует искать в том, что все преподаватели не состоялись как  профессионалы. И единственный способ найти себе оправдание – это то, что профессиональная реализация – это недостойное занятие. Если вы не ходите на лекции, потому что ездите на научные конференции, то вы – молодец. А если вы много пропускаете, потому что работаете – к этому совершенно другое отношение.</p>
+<p>Преподаватели  - как монахи-затворники. Профессия – это все суета сует. Вот мы посвятили себя служению <span style="text-decoration:line-through">богу</span> науке, и целый день <span style="text-decoration:line-through">читаем молитвы</span> пишем научные статьи. Цель может и благородная, но абсолютно бесполезная в реальной жизни.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/10/image-ru-10-03.jpg"/>
+<p class="blue_text"><b>3. Ошибочный эталон для сравнения.</b></p>
+<p>Очень часто студенты сравнивают себя со школьниками и гордятся тем, что знают гораздо больше. Эта иллюзия продолжается, пока человек не задумается о работе, и не обратит свой взор в другую сторону. Ведь если бы студенты сравнили себя с людьми, уже работающими в их будущей профессии, тогда бы увидели, что приближаются к цели миллиметровыми шагами.</p>
+<p>Не надо в ВУЗе равняться на всех. Потому что если делать «как все», то и результат будет «как у всех». В группе большинство студентов — случайные люди, у которых нет больших перспектив. Может их запихнули в институт родители, они слабо представляют себе будущую профессию, всякое бывает.</p>
+<p>Не нужно себя сравнивать с сокурсниками. Лучшим критерием ваших знаний и успехов будут ваши сделанные проекты, ваши успехи на работе. Соотносите себя не с «серой массой», а с рынком.</p>
+<p class="blue_text"><b>4. Профессиональное обучение составляет лишь маленькую часть того, что преподают в ВУЗе.</b></p>
+<p><b>Когда вы придете на работу, вас спросят о том, что вы уже умеете делать, а не чему вас учили.</b> Вашего начальника будет интересовать, что вы знаете и умеете из того, что необходимо на должности, на которую вы претендуете. Почти как в ВУЗе: вам ставят вполне конкретную задачу, но не объясняют, как ее делать, и ждут результата в конкретные сроки. Удачи!</p>
+<p><b>Если вам читают в ВУЗе историю, а работать вы будете оператором в банке – это приближает вас к цели или удаляет от нее?</b> Формально вы знаете больше. Значит – приближает? Но фактически, с каждым семестром, у вас остается все меньше и меньше времени, чтобы получить ценные профессиональные знания, а их объем остается прежним. Т.е. реально – отдаляет.</p>
+<p class="blue_text"><b>5. У ВУЗа нет цели «сделать из вас высококлассного профессионала».</b> </p>
+<p><b>Очень сложно попасть в цель, когда ты в нее не целишься.</b> Вас превращают во всесторонне развитого специалиста. Особенно это характерно для Европы. Такое «второе общее среднее образование». Забыв только упомянуть, что <b>человек, который учит все – не знает толком ничего.</b> </p>
+<p>Помните три цели ВУЗа: наука, общее образование и профессиональное образование? Как думаете, <b>что пришлось сократить, чтобы добавить науку и общее образование</b>? Правильно: профессиональные дисциплины. И вы все еще думаете, что цель ВУЗа – сделать из вас профессионала?</p>
+<p class="blue_text">6. Если человек учит больше двух предметов одновременно, он зря тратит свое время.</p>
+<p>После школы это утверждение кажется ошибочным. Но на работе понимаешь, как оно справедливо. В школе уроки такие короткие, не потому что это эффективно, а потому что школьник – еще ребенок, и он  просто не способен концентрироваться больше часа. Но частые переключения задач мешают мозгу эффективно думать.  А на работе с вас будут требовать, как со взрослого, и тут частые переключения между задачами начнут сильно снижать вашу эффективность.</p>
+<p>Почему, вы думаете, вы так быстро готовитесь к экзаменам? Вы просто не переключаетесь на другие задачи. Отсюда и резко возросшая эффективность. Учеба маленькими кусочками – это откровенная глупость. Представьте, что вы сидите на диете всего 6 часов в неделю, и как скоро вам придется ждать результата?</p>
+<p class="blue_text">7. В вузе человек только поверхностно знакомится с предметами.</p>
+<p>Допустим, вы что-то учите два семестра. У вас две лекции и две практики в неделю. Серьезный подход по меркам универа. А сколько же это будет часов? 4 пары по 2 академических часа (1.5 обычных) – это 6 часов в неделю. </p>
+<p>В первом семестре мы учимся 4 месяца: сентябрь, октябрь, ноябрь, декабрь. Во втором еще 4: февраль, март, апрель, май. Итого: 8 месяцев по 4.5 недели в каждом и 6 часов в неделю. 216 часов в год. </p>
+<p>Да будет вам известно, дорогие мои студенты, что в месяце 180 рабочих часов и любой ваш годовой курс можно усвоить всего за 1.5 месяца, а при желании (или необходимости) всего за месяц.</p>
+<p class="blue_text">8. Вам преподают самые общие, малополезные и устаревшие знания.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/10/image-ru-10-04.jpg"/>
+<p>Каждое знание имеет разную ценность в зависимости от проблемы, которую вам предстоит решить. Если вы тонете, то умение плавать гораздо полезнее курса философии, не так ли? А если устраиваетесь на работу кассиром, то умение считать важнее знания семи иностранных языков на базовом уровне.</p>
+<p>Самые полезные навыки для вашей профессиональной реализации – это, безусловно, практический опыт и знание последних достижений в вашей профессии. Преподаватель среднего ВУЗа – чаще всего никогда не имел реального опыта в вашей будущей профессии и не знаком с последними достижениями. А если где-то про них и прочитал, то понятия не имеет об их ценности,  как и когда их применять.</p>
+<p><b>Даже если вы выучите 100 ненужных предметов, они не заменят 10 необходимых.</b></p>
+<p class="blue_text">9. Практические навыки в 10 раз ценнее теоретических знаний.</p>
+<p>В жизни и на работе нам часто приходится что-то ДЕЛАТЬ. <b>Если вы знаете</b>, как делать, или думаете, что знаете, это еще <b>не значит, что вы можете</b> это сделать. Вы знаете, что курить вредно, и смогли бросить курить? Вы знаете, что заниматься спортом правильно, и можете каждый день им заниматься? Вы знаете, что иностранные языки полезны для карьеры и, конечно, смогли выучить парочку?</p>
+<p>Значение в жизни имеет только практика. Чем больше у вас знаний в ущерб навыкам, тем меньше от них толку.  Как же вы поймете, что какие-то знания неверны, устарели, вы применяете их не к месту, а какие-то и вовсе не работают в реальном мире? Вы никогда не думали об этом? <b>Добро пожаловать в реальный мир.</b></p>
+<p>Вы можете выучить правила дорожного движения на «хорошо» и «отлично», но ездить вы все равно не сможете. Теория – это хорошее подспорье для практики. Представьте, что вы строите стену: кирпичи – это практика, а раствор – это теория. Без раствора (теории) стена будет неустойчивой, но без кирпичей (практики) от вашей теории вообще нет никакого толку.</p>
+<p>Так что, господа, разделите ваши 5 лет в вузе на 10! <b>Полгода – вот истинный результат ваших многолетних «усилий»</b>. Хотите доказательств? Когда вы устроитесь на работу, и проработайте полгодика, вы поймете, что <b>ваши ВУЗовские знания – удвоились</b>.</p>
+<br/>
+<div class="line"></div>
+<br/>
+<p>Любишь программирование – купи подписку, поддержи JavaRush. Все собранные деньги идут на развитие проекта, на написание лекций и задач, на аренду сервера и поддержание сайта.</p>
+<p>Уже написано 600+ мини-лекций, в которых интересно преподносятся новые темы, даны примеры, таблицы, графики и картинки.</p>
+<p>Мы сделали 1000+ задач и несколько автоматических тестов для каждой них. Благодаря этому вы не ждете по полчаса анализа своих решений, а задачи проверяются практически мгновенно. Мы боремся, чтобы проверка задач занимала меньше секунды, чтобы экономить ваше время. Чтобы вам было удобно, приятно и комфортно заниматься.</p>
+<p>Недавно мы добавили автоматические подсказки для первых уровней. Сервер отлавливает самые распространенные ошибки и дает рекомендации по их исправлению. Мы отлавливаем опечатки, неверный порядок параметров, перепутанные минимум и максимум, и еще два десятка самых распространённых ошибок.</p>
+<p>Я и мои друзья стараемся создать очень эффективный обучающий сервис. Поддержите нас, и тысячи людей, которые любят программирование так же, как и вы, смогут получить опыт и  устроиться на интересную для них работу.</p>
+<p>Чем больше программистов – тем лучше. Много крутых программистов – это много сложных, дорогих и интересных проектов. Мы вместе создаем наше будущее.</p>
+<button class="profile-tariff-button-popular" onclick="window.top.location.href = '//javarush.ru/user/subscription?l=10';">Поддержать JavaRush</button>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>1. Рассказ про жёсткую типизацию объектов</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Элли! </p>
+<p>- Сегодня у меня хорошее настроение, поэтому расскажу тебе кое-что интересное.  И начну я с типизации примитивных типов в Java.</p>
+<p>- <span class="green_text">В Java у каждого объекта и у каждой переменной есть свой жёстко заданный неизменяемый тип.</span> Тип переменной определяется ещё в процессе компиляции программы, тип объекта – при его создании.<span class="green_text"> Тип нового созданного объекта и/или переменной остаются неизменными все их время жизни.</span>  Пример:</p>
+<table class="table_example">
+<tr>
+<th width="40%">Код</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td class="monospace_text"><b>int</b> <span class="red_text">a</span> = 11;<br/><b>int</b> <span class="green_text">b</span> = 5;<br/><b>int</b> c = <span class="red_text">a</span> / <span class="green_text">b</span>;    <span class="grey_text">// c == 2</span></td>
+<td><span class="red_text">a</span> / <span class="green_text">b</span> – это деление нацело. Ответом будет два. Остаток от деления просто отбрасывается.</td>
+</tr>
+<tr>
+<td class="monospace_text"><b>int</b> <span class="red_text">a</span> = 13;<br/><b>int</b> <span class="green_text">b</span> = 5;<br/><b>int</b> <span class="violet_text">d</span> = <span class="red_text">a</span> % <span class="green_text">b</span>;    <span class="grey_text">// d == 3</span>
+</td>
+<td>В <span class="violet_text">d</span> будет храниться остаток от деления <span class="red_text">a</span> на <span class="green_text">b</span> нацело. Остаток равен 3.</td>
+</tr>
+</table>
+<p>- Но есть и пара интересных нюансов, которые следует помнить.</p>
+<p class="orange_text">- Во-первых, ссылочная переменная не всегда хранит значение такого же типа, как и она.</p>
+<p class="green_text">- Во-вторых, при взаимодействии переменных двух разных типов, они должны быть сначала преобразованы к одному общему типу.</p>
+<p class="blue_text">- А как же деление? Если разделить 1 на 3, мы получим 0.333(3). Ведь так?</p>
+<p>- Нет не так. При делении двух целых чисел, результатом тоже будет целое число. Если разделить 5 на 3, то ответом будет  1 и два в остатке. Остаток при этом отбрасывается.</p>
+<p>- Если разделить 1 на 3, то мы получим 0 (и единицу в остатке, который отбросится).  </p>
+<p class="amigo">- А что делать, если я все же хочу получить 0.333 ?</p>
+<p>- В Java числа перед делением лучше всего приводить к вещественному (дробному) типу путем умножения их на вещественную единицу –  1.0</p>
+<table class="table_example">
+<tr>
+<th width="50%">Код</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td class="monospace_text"><b>int</b> <span class="red_text">a</span> = 1/3;</td>
+<td><span class="red_text">a</span> будет содержать 0 </td>
+</tr>
+<tr>
+<td class="monospace_text"><b>double</b> <span class="violet_text">d</span> = 1/3;</td>
+<td><span class="violet_text">d</span> будет содержать 0.0</td>
+</tr>
+<tr>
+<td class="monospace_text"><b>double</b> <span class="violet_text">d</span> = 1.0 / 3;</td>
+<td><span class="violet_text">d</span> будет содержать 0.333(3)</td>
+</tr>
+<tr>
+<td class="monospace_text"><b>double</b> <span class="violet_text">d</span> = 1 / 3.0;</td>
+<td><span class="violet_text">d</span> будет содержать 0.333(3)</td>
+</tr>
+<tr>
+<td class="monospace_text">int <span class="red_text">a</span>=5, <span class="blue_text">b</span>=7;<br/><b>double</b> <span class="violet_text">d</span> = (<span class="red_text">a</span>*1.0) / <span>b</span>;
+                </td>
+<td><span class="violet_text">d</span> будет содержать 0.7142857142857143</td>
+</tr>
+</table>
+<p class="amigo">- Понятно.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>2. Список базовых типов</h2>
+</div>
+<p>- Привет, Амиго! </p>
+<p class="amigo">- Привет, Риша!</p>
+<p>- Ты уже изучил основы синтаксиса Java, поэтому я хочу  рассказать тебе некоторые вещи более углубленно.</p>
+<p>- Сегодня я расскажу тебе немного про примитивные типы, а также - сколько памяти они занимают. Тебе это пригодится и, возможно, даже сегодня. Вот эти типы:</p>
+<table class="table_example wide-table">
+<tr>
+<th style="text-align:center" width="10%">Тип</th>
+<th style="text-align:center" width="10%">Размер,<br/>байт</th>
+<th style="text-align:center" width="20%">Диапазон значений</th>
+<th style="text-align:center" width="20%">Значение по умолчанию</th>
+<th style="text-align:center" width="40%">Описание</th>
+</tr>
+<tr class="green_text">
+<td>byte</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">-128 .. 127</td>
+<td style="text-align:center">0</td>
+<td>Самое маленькое целое - один байт</td>
+</tr>
+<tr class="green_text">
+<td>short</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">-32,768 .. 32,767</td>
+<td style="text-align:center">0</td>
+<td>Короткое целое, два байта</td>
+</tr>
+<tr class="green_text">
+<td>int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">- 2*10<sup>9</sup> ..  2*10<sup>9</sup></td>
+<td style="text-align:center">0</td>
+<td>Целое число, 4 байта</td>
+</tr>
+<tr class="green_text">
+<td>long</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">- 9*10<sup>18</sup> ..  9*10<sup>18</sup></td>
+<td style="text-align:center">0L</td>
+<td>Длинное целое, 8 байт</td>
+</tr>
+<tr class="violet_text">
+<td>float</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">-10<sup>127</sup> .. 10<sup>127</sup></td>
+<td style="text-align:center">0.0f</td>
+<td>Дробное, 4 байта</td>
+</tr>
+<tr class="violet_text">
+<td>double</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">-10<sup>1023</sup> .. 10<sup>1023</sup></td>
+<td style="text-align:center">0.0d</td>
+<td>Дробное, двойной длины, 8 байт</td>
+</tr>
+<tr class="orange_text">
+<td>boolean</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">true, false</td>
+<td style="text-align:center">false</td>
+<td>Логический тип (только true &amp; false)</td>
+</tr>
+<tr class="blue_text">
+<td>char</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">0..65,535</td>
+<td style="text-align:center">'\u0000 '</td>
+<td>Символы, 2 байта, все больше 0</td>
+</tr>
+<tr class="red_text">
+<td>Object</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">Любая ссылка или null.</td>
+<td style="text-align:center">null</td>
+<td>Хранит ссылки на объекты типа Object или классов наследников </td>
+</tr>
+</table>
+<p>- Давай я остановлюсь на каждом типе подробнее.</p>
+<p class="green_text">- Тип byte – это самый маленький тип целых чисел. Каждая переменная этого типа занимает всего один байт памяти, поэтому он может хранить значения в диапазоне от -128 до 127.</p>
+<p class="amigo">- А зачем такой маленький тип нужен. Почему нельзя везде использовать int?</p>
+<p>- Можно. Но если ты создаешь очень большие массивы, и тебе не нужно хранить там значения больше 100, то почему бы не воспользоваться таким типом. Так ведь?</p>
+<p>- Тип <b>short</b> – ровно в два раза длиннее типа byte и тоже хранит только целые числа. Самое большое число, которое в него вмещается – это 32767. Самое большое отрицательное число – это -32768.</p>
+<p>- Тип <b>int</b> ты уже знаешь. Он может хранить целые числа до двух миллиардов, как положительные, так и отрицательные.</p>
+<p class="violet_text">- Тип <b><span class="violet_text">float</span></b> – создан для хранения вещественных (дробных) чисел. Его размер 4 байта. </p>
+<p>- Все дробные числа хранятся в памяти в очень интересной форме.</p>
+<p>- Например, число <span class="green_text">987654.321</span> можно представить как 0.<span>987654321</span>*10<sup class="dred_text">6</sup>. Поэтому в памяти оно будет представлено как два числа «0.<span class="green_text">987654321</span>» (<b>мантиса - значащая часть числа</b>) и «<span class="dred_text">6</span>» (<b>экспонента - степень десятки</b>)</p>
+<p class="amigo">- А зачем так сделано?</p>
+<p>- Такой подход позволяет хранить гораздо большие числа, чем <b>int</b>, используя всего 4 байта. Но при этом мы жертвуем точностью. Часть памяти расходуется на хранение мантиссы, поэтому такие числа хранят всего 6-7 знаков после запятой, остальные отбрасываются.  </p>
+<p class="orange_text">-Такие числа еще называют «числа с плавающей запятой» или «числа с плавающей точкой (<b><span class="orange_text"><u>float</u></span></b>ing point number)» . Отсюда, кстати, и название типа – <b><span class="orange_text"><u>float</u></span></b>.</p>
+<p class="amigo">- Ясно.</p>
+<p>- <span class="violet_text">Тип <b><span class="violet_text">double</span></b> – это такой же тип, как и <b><span class="violet_text">float</span></b>, только в два раза длиннее – он занимает восемь байт. (<b><span class="violet_text">double</span></b> – двойной, по-английски)</span>. И предельный размер мантиссы и количество значащих цифр в нем больше. Если тебе нужно хранить вещественные числа – старайся использовать именно этот тип.</p>
+<p>- <span class="dred_text">Тип <b><span class="dred_text">char</span></b> – гибридный тип. Его значения можно интерпретировать и как числа (их можно складывать и умножать) и как символы.</span> Так было сделано потому, что хоть символы и имеют визуальное представление, для компьютера они в первую очередь просто числа. И работать с ними как с числами гораздо удобнее. <span class="dred_text">Тут еще есть одно замечание: тип char строго положительный – отрицательных значений он хранить не может.</span> </p>
+<p class="green_text">- Тип <b><span class="green_text">boolean</span></b> – логический тип и может хранить всего два значения: <b><span class="green_text">true</span></b> (истина) и <b><span class="green_text">false</span></b> (ложь).</p>
+<p>- <span class="orange_text">Тип <b><span class="orange_text">Object</span></b>, хоть и представлен в таблице, примитивным типом не является.</span> Это базовый класс для всех классов в Java. Во-первых, все классы считаются унаследованными от него, а значит, содержат его методы. А во-вторых,  ему можно присваивать ссылки на объекты любого типа. В том числе и <b>null</b> – пустую ссылку.</p>
+<p class="amigo">- Узнал очень много нового. Спасибо за урок, Риша. </p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Преобразование типов. Расширение и сужение типов.</h2>
+</div>
+<p>- А теперь самое интересное. Я расскажу тебе про преобразование типов. Хоть типы переменных всегда неизменны, есть место, где можно проводить преобразование типов. И место это – <b>присваивание</b>.</p>
+<p class="violet_text">- Можно присваивать друг другу переменные разных типов. При этом значение, взятое из переменной одного типа, будет преобразовано в значение другого типа и присвоено второй переменной.</p>
+<p>- В связи с этим, можно выделить два вида преобразования типов: расширение и сужение. <span class="green_text"><b><span class="green_text">Расширение</span></b> похоже на перекладывание из маленькой корзинки в большую – операция проходит незаметно и безболезненно.</span> <span class="dred_text"><b><span class="dred_text">Сужение</span></b> типа – это перекладывание из большой корзинки в маленькую: места может не хватить, и что-то придётся выбросить.</span> </p>
+<p>-Вот типы, отсортированные по размеру «корзинки»:</p>
+<img alt="" class="round-corners" src="https://javarush.ru/levels/images/lessons/10/image-ru-10-11.gif"/>
+<p>- Тут есть пара замечаний:</p>
+<p class="dred_text">1 <b><span class="dred_text">char</span></b> такая же корзинка, как и <b><span class="dred_text">short</span></b>, но свободно перекладывать из одной в другую нельзя: при перекладывании значения из <b><span class="dred_text">short</span></b> в <b><span class="dred_text">char</span></b>, всегда будут теряться значения меньше 0. При перекладывании из char в short будут теряться значения больше 32-х тысяч.</p>
+<p class="green_text">2 При преобразовании из целых чисел в дробные, могут отбрасываться самые младшие части числа. Но т.к. смысл дробного числа в том, чтобы хранить приблизительное значение, то такое присваивание разрешается.</p>
+<p>- <span class="orange_text">При сужении типа мы должны явно показать компилятору, что мы не ошиблись и отбрасывание части числа сделано намеренно</span>. Для этого используется <b><span class="red_text">оператор приведения типа</span></b>. Это <b>имя типа в круглых скобочках.</b> </p>
+<p>- Вот как нужно присваивать переменные разных типов:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th width="50%">Код</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level10,lesson03,type01"></button></td>
+<td class="monospace_text"><span class="blue_text">byte</span> a = 115;<br/><span class="green_text">int</span> b = a;</td>
+<td><span class="green_text">Расширение типа</span>. Все отлично.</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level10,lesson03,type02"></button></td>
+<td class="monospace_text"><span class="green_text">int</span> c = 10000;<br/><span class="blue_text">byte</span> d = <span class="red_text">(byte)</span> c;</td>
+<td><span class="dred_text">Сужение типа</span>. Нужно явно отбросить лишние байты.</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level10,lesson03,type03"></button></td>
+<td class="monospace_text">i<span class="green_text">nt </span>c = 10;<br/><span class="blue_text">byte</span> d = <span class="red_text">(byte)</span> c;</td>
+<td><span class="dred_text">Сужение типа</span>. Нужно явно отбросить лишние байты, даже если они равны 0.</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level10,lesson03,type04"></button></td>
+<td class="monospace_text"><span class="violet_text">float</span> f = 10000;<br/><span class="green_text">long</span> l = <span class="red_text">(long)</span> (f * f);<br/><span class="violet_text">float</span> f2 = l;<br/><span class="green_text">long</span> l2 = <span class="red_text">(long)</span> f2;</td>
+<td><span class="green_text">При присваивании к float, происходит расширение типа.</span> <span class="dred_text">При присваивании значения float к long, происходит сужение – необходимо приведение типа.</span></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level10,lesson03,type05"></button></td>
+<td class="monospace_text"><span class="violet_text">double</span> d = 1;<br/><span class="violet_text">float</span> f = (float) d;<br/><span class="green_text">long</span> l = <span class="red_text">(long)</span> f;<br/><span class="green_text">int</span> i = <span class="red_text">(int)</span> l;<br/><span class="blue_text">short</span> s = <span class="red_text">(short)</span> i;<br/><span class="blue_text">byte</span> b = <span class="red_text">(byte)</span> s;</td>
+<td class="dred_text">Сужение во всех операция присваивания, кроме первой строки, требует указания явного преобразования типа.</td>
+</tr>
+</table>
+<p>- <b>Оператор приведения типа</b> нужно указывать перед числом/переменной каждый раз, когда происходит отбрасывание части числа или сужение типа. Он действует только на число/переменную, которое идет непосредственно за ним.</p>
+<table class="table_example">
+<tr>
+<th width="50%">Код</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td class="monospace_text"><span class="violet_text">float</span> f = 10000;<br/><span class="green_text">long</span> l = <span class="red_text">(long) f</span> * f;</td>
+<td>К типу long приводится только одна переменная из двух: умножение long и float дает float.</td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="violet_text">float</span> f = 10000;<br/><span class="green_text">long</span> l = <span class="red_text">(long) (f * f)</span>;</td>
+<td>Тут все выражение приводится к типу long.</td>
+</tr>
+</table>
+<p class="amigo">- Ясно.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи на преобразование целых типов</h2>
+</div>
+<p>- Привет, Амиго! Вот тебе задачи на преобразование целых типов. Расставь где нужно оператор приведения типа:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level10,lesson04,task01"></button><b>1. Задача №1 на преобразование целых типов</b><br/><br/>
+                    Расставьте правильно операторы приведения типа, чтобы получился ответ:  <span class="taskcode">d &gt; 0</span><br/>
+<span class="taskcode">int a = 0;<br/>int b = (byte) a + 46;<br/>byte c = (byte) (a*b);<br/>double f = (char) 1234.15;<br/>long d = (short) (a + f / c + b);<br/></span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level10,lesson04,task02"></button><b>2. Задача №2 на преобразование целых типов</b><br/><br/>
+                    Расставьте правильно операторы приведения типа, чтобы получился ответ:  <span class="taskcode">d = 3.765</span><br/>
+<span class="taskcode">int a = 15;<br/>int b = 4;<br/>float c = a / b;<br/>double d = a * 1e-3 + c;</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level10,lesson04,task03"></button><b>3. Задача №3 на преобразование целых типов</b><br/><br/>
+                    Добавить одну операцию по преобразованию типа, чтобы получался ответ: <span class="taskcode">b = 0</span><br/>
+<span class="taskcode">float f = (float)128.50;<br/>int i = (int)f;<br/>int b = (int)(i + f);</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level10,lesson04,task04"></button><b>4. Задача №4 на преобразование целых типов</b><br/><br/>
+                    Добавить одну операцию по преобразованию типа, чтобы получался ответ: <span class="taskcode">nine = 9</span><br/>
+<span class="taskcode">short number = 9;<br/>char zero = '0';<br/>int nine = (zero + number);</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level10,lesson04,task05"></button><b>5. Задача №5 на преобразование целых типов</b><br/><br/>
+                    Расставьте правильно операторы приведения типа, чтобы получился ответ: <span class="taskcode">c = 256</span><br/>
+<span class="taskcode">int a = (byte)44;<br/>int b = (byte)300;<br/>short c = (byte)(b - a);</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>5. Преобразование к типу String</h2>
+</div>
+<p>- Сейчас будет меленькая, но интересная тема – преобразование к типу String.</p>
+<p>- В Java к типу String можно преобразовать любые типы данных. </p>
+<p class="amigo">- Звучит заманчиво.</p>
+<p>- На самом деле все еще лучше. Практически все типы можно приводить к типу String неявно. Лучше всего это заметно, когда мы складываем две переменных: String и «не String».  При этом «не String» переменная преобразовывается к типу String.</p>
+<p>- Вот посмотри пару примеров:</p>
+<table class="table_example wide-table">
+<tr>
+<th width="50%">Команда</th>
+<th>Что происходит на самом деле</th>
+</tr>
+<tr>
+<td class="monospace_text wide-text">
+<b>int</b> x = 5;<br/>
+<b>String</b> text = <span class="green_text">"X="</span> + <span class="blue_text">x</span>;                          
+                </td>
+<td class="monospace_text wide-text">
+<b>int</b> x = 5;<br/>
+<b>String</b> s = <span class="green_text">"X="</span> + <span class="dred_text">Integer.toString(<span class="blue_text">x</span>)</span>;
+                </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">
+<b>Cat</b> cat = <b>new</b> Cat(<span class="green_text">"Vaska"</span>);<br/>
+<b>String</b> text = <span class="green_text">"My cat is "</span> + <span class="blue_text">cat</span>;                      
+                </td>
+<td class="monospace_text wide-text">
+<b>Cat</b> cat = <b>new</b> Cat(<span class="green_text">"Vaska"</span>);<br/>
+<b>String</b> text = <span class="green_text">"My cat is"</span> + <span class="blue_text">cat</span>.<span class="dred_text">toString()</span>;
+                </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">
+<b>Object</b> o = <b>null</b>;<br/>
+<b>String</b> text = <span class="green_text">"Object is "</span> + <span class="blue_text">o</span>;                          
+                </td>
+<td class="monospace_text wide-text">
+<b>Object</b> o = <b>null</b>;<br/>
+<b>String</b> text = <span class="green_text">"Object is "</span> + <span class="dred_text">"null"</span>;
+                </td>
+</tr>
+<tr>
+<td class="monospace_text double-wide-text">
+<b>String</b> text = <span class="blue_text">5</span> + <span class="blue_text">'\u0000'</span> + <span class="green_text">"Log"</span>;                        
+                </td>
+<td class="monospace_text double-wide-text">
+<b>int</b> <span class="blue_text">i2</span> = <span class="blue_text">5</span> + <span class="blue_text">(int)</span> '<span class="blue_text">\u0000</span>';<br/>
+<b>String</b> text = <span class="dred_text">Integer.toString(<span class="blue_text">i2</span>)</span> + <b>"Log"</b>;
+                </td>
+</tr>
+<tr>
+<td class="monospace_text double-wide-text">
+<b>String</b> text = <span class="green_text">"Object is "</span> + <span class="blue_text">(float) 2 / 3</span>;                        
+                </td>
+<td class="monospace_text double-wide-text">
+<div style="margin-right: -50px;">
+<b>float</b> <span class="blue_text">f2</span> = <span class="blue_text">((float) 2) / 3</span>;<br/>
+<b>String</b> text=<span class="green_text">"Object is "</span>+<span class="dred_text">Float.toString(<span class="blue_text">f2)</span></span>;
+                    </div>
+</td>
+</tr>
+</table>
+<p><b>Вывод</b>: <span class="orange_text">Если мы складываем <b><span class="orange_text">String</span></b> и «любой другой тип», то второй объект преобразуется к типу String.</span> </p>
+<p>- Обрати еще внимание на четвертую строку таблицы. Все операции выполняются слева направо, поэтому сложение <span class="dblue_text">5 + '\u0000'</span> происходит как сложение целых чисел.</p>
+<p class="amigo">- Т.е. если я напишу, код типа: <span class="violet_text">String s = 1+2+3+4+5+"m"</span>, то получу <span class="violet_text">s = "15m"</span> ?</p>
+<p>- Ага. Сначала произойдет сложение чисел, а затем – преобразование их к строке.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задание на преобразование типов </h2>
+</div>
+<img class="round-corners" src="https://javarush.ru/levels/images/lessons/10/image-ru-10-10.gif"/>
+<p>- А теперь небольшой урок от Диего. Кратко и по существу о преобразовании ссылочных типов. </p>
+<p>- Начнем мы пока только с переменной типа Object. Этой переменной можно присвоить ссылку любого типа (<b>расширение типа</b>). Но чтобы выполнить обратное присваивание (<b>сужение типа</b>) приходится явно указывать операцию приведения:</p>
+<table class="table_example">
+<tr>
+<th width="50%">Код</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td class="monospace_text">
+<b>String</b> s = <span class="green_text">"mama"</span>;<br/>
+<span class="blue_text">Object o = s;</span> <span class="grey_text">// o хранит String </span>
+</td>
+<td>Типичное <span class="green_text">расширение ссылочного типа</span></td>
+</tr>
+<tr>
+<td class="monospace_text">
+<b>Object</b> o = <span class="green_text">"mama"</span>;<span class="grey_text">// o хранит String</span><br/>
+<span class="orange_text">String s2 = (String) o;</span>
+</td>
+<td>Типичное <span class="dred_text">сужение ссылочного типа.</span></td>
+</tr>
+<tr>
+<td class="monospace_text">
+<b>Integer</b> i = 123;       <span class="grey_text">//o хранит Integer</span><br/>
+<span class="blue_text">Object o = i;</span>
+</td>
+<td><span class="green_text">Расширение типа.</span></td>
+</tr>
+<tr>
+<td class="monospace_text">
+<b>Object</b> o = 123;      <span class="grey_text">//o хранит Integer</span><br/>
+<span class="red_text">String s2 = (String) o;</span>
+</td>
+<td><b><span class="red_text">Ошибка во время исполнения!</span></b> Невозможно привести ссылку на число к ссылке на строку.</td>
+</tr>
+<tr>
+<td class="monospace_text">
+<b>Object</b> o = 123;     <span class="grey_text">//o хранит Integer</span><br/>
+<span class="red_text">Float s2 = (Float) o; </span>
+</td>
+<td><b><span class="red_text">Ошибка во время исполнения!</span></b> Невозможно привести ссылку на целое число к ссылке на дробное число.</td>
+</tr>
+<tr>
+<td class="monospace_text">
+<b>Object</b> o = 123f;    <span class="grey_text">// o хранит Float</span><br/>
+<span class="orange_text">Float s2 = (Float) o; </span>
+</td>
+<td>Приведение к своему типу. <span class="dred_text">Операция сужения ссылочного типа.</span></td>
+</tr>
+</table>
+<p>- <span class="green_text">При расширении или сужении ссылочных типов никакого изменения объекта не происходит.</span> Сужающим (или расширяющим) является именно операция присваивания, при которой либо выполняется «проверка соответствия типов переменной и ее нового значения» либо нет.</p>
+<p class="amigo">- Тот редкий пример, когда все ясно и понятно.</p>
+<p>- Чтобы не было <span class="red_text">ошибок, как в примерах</span>, <span class="green_text">есть способ узнать, какой именно тип сохранили в переменную типа Object:</span> </p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Код</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level10,lesson06,type01"></button></td>
+<td class="monospace_text">
+<pre><b>int</b> i = 5;
+<b>float</b> f = 444.23f;
+<b>String</b> s = "17";
+<b>Object</b> o = f;                       <span class="grey_text">//o хранит объект типа Float</span>
+
+<b>if</b> (o <span class="orange_text">instanceof</span>  Integer)
+{
+    Integer i2 = (<span class="green_text">Integer</span>) o;
+}
+<b>else if</b> (o <span class="orange_text">instanceof</span>  Float)        
+{
+    Float f2 = (<span class="green_text">Float</span>) o;            <span class="grey_text">//отработает именно этот if</span>
+}
+<b>else if</b> (o <span class="orange_text">instanceof</span>  String)
+{
+    String s2 = (<span class="green_text">String</span>) o;
+}</pre>
+</td>
+</tr>
+</table>
+<p>- Желательно выполнять такую проверку, перед каждым сужением типа, если тип сохраненного объекта на 100% не известен.</p>
+<p class="amigo">- Понятно.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>7. Вещественные типы </h2>
+</div>
+<p>- Вот тебе пару интересных вещей про вещественные (они же дробные) типы. Начнём вот с этого примера:</p>
+<table class="table_example" style="width:180px; margin: 0 auto">
+<tr>
+<th style="text-align:center"><br/>float f = 3 / 5;<br/><br/></th>
+</tr>
+</table>
+<p>В результате данного вычисления значение f будет равно… нулю!</p>
+<p class="amigo">- Мне Риша что-то подобное рассказывал…</p>
+<p>- Да? Вот и отлично. Повторение – мать учения.</p>
+<p>- На самом деле тут нет никакой ошибки. <span class="green_text">В делении участвуют два целых числа, поэтому происходит <b><span class="green_text">деление нацело</span></b>, остаток от деления просто отбрасывается.</span> Чтобы такого не было, нужно, чтобы хотя бы одно из двух чисел, участвующих в делении, было дробным. </p>
+<p>- Если одно из чисел дробное, то сначала второе число будет преобразовано к дробному типу, а затем будет выполнено деление.</p><br/>
+<p>- Вот как можно решить данную проблему:</p>
+<table class="table_example">
+<tr>
+<th>Запись дробного числа:</th>
+</tr>
+<tr>
+<td class="monospace_text"><b>float</b> f = <span class="violet_text">3.0f / 5.0f</span>;</td>
+</tr>
+<tr>
+<td class="monospace_text"><b>float</b> f = <span class="violet_text">3.0f</span> / <span class="green_text">5</span>;</td>
+</tr>
+<tr>
+<td class="monospace_text"><b>float</b> f = <span class="green_text">3</span> / <span class="violet_text">5.0f</span>;</td>
+</tr>
+</table>
+<p class="amigo">- А если в делении участвуют переменные?</p>
+<p>- Тогда – вот так:</p>
+<table class="table_example">
+<tr>
+<th>Преобразование целой переменной в вещественную</th>
+</tr>
+<tr>
+<td class="monospace_text">
+<b>int</b> <span class="green_text">a</span> = <span class="green_text">3</span>, <span class="green_text">b</span> = <span class="green_text">5</span>;<br/>
+<b>float</b> f = (<span class="green_text">a</span> <span class="violet_text">* 1.0f</span>) / <span class="green_text">b</span>;
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<b>int</b> <span class="green_text">a</span> = <span class="green_text">3</span>, <span class="green_text">b</span> = <span class="green_text">5</span>;<br/>
+<b>float</b> f = <span class="green_text">a</span> / (<span class="green_text">b</span> <span class="violet_text">* 1.0f</span>);
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<b>int</b> <span class="green_text">a</span> = <span class="green_text">3</span>, <span class="green_text">b</span> = <span class="green_text">5</span>;<br/>
+<b>float</b> f = (<span class="green_text">a</span><span class="violet_text">*1.0</span>) / (<span class="green_text">b</span><span class="violet_text">*1.0</span>);
+                </td>
+</tr>
+<tr>
+<td class="monospace_text">
+<b>int</b> <span class="green_text">a</span> = <span class="green_text">3</span>, <span class="green_text">b</span> = <span class="green_text">5</span>;<br/>
+<b>float</b> f = <span class="violet_text">(float)</span> <span class="green_text">a</span> / <span class="green_text">b</span>;
+                </td>
+</tr>
+</table>
+<p class="amigo">- Не очень красиво. А что, нет какой-нибудь более удобной операции деления?</p>
+<p>- Нет. Это все, что есть.</p>
+<p class="amigo">- Ну, ок, думаю, проблем не будет.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>8. Литералы</h2>
+</div>
+<p>- И, наконец, урок от Риши в лекторском стиле: куча бесполезной информации. Все лекторы обожают такое. Но ты хотя бы одним глазком посмотри, и хватит с тебя. </p>
+<p class="amigo">- Я – готов.</p>
+<p>- Сегодня я расскажу тебе, что такое <span class="red_text">литералы</span>. <span class="green_text">Литералы - это все данные, которые записаны прямо в Java-коде.</span> <b>Примеры</b>:</p>
+<table class="table_example">
+<tr>
+<th width="50%">Код</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td class="monospace_text">
+<span class="green_text">"Mama mila ramu"</span>
+</td>
+<td>
+                    Это литерал. Его тип - <b>String</b>
+</td>
+</tr>
+<tr>
+<td class="monospace_text">
+                    115
+                </td>
+<td>
+                    Это литерал. Его тип - <b>int</b>
+</td>
+</tr>
+<tr>
+<td class="monospace_text">
+                    0.256
+                </td>
+<td>
+                    Это литерал. Его тип – <b>float</b>
+</td>
+</tr>
+<tr>
+<td class="monospace_text">
+                    '\u1234'
+                </td>
+<td>
+                    Это литерал. Его тип – <b>char</b>
+</td>
+</tr>
+</table>
+<p>- На самом деле литералов несколько больше. С помощью литералов можно задать значения любых известных типов:</p>
+<table class="table_example">
+<tr>
+<th width="33%">Литерал</th>
+<th width="33%">Тип</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td>123676</td>
+<td><b>int</b></td>
+<td>Целое число</td>
+</tr>
+<tr>
+<td>22223333444433332222<b>L</b></td>
+<td><b>long</b></td>
+<td>Длинное целое число</td>
+</tr>
+<tr>
+<td>12.323232323<b>f</b></td>
+<td><b>float</b></td>
+<td>Дробное число</td>
+</tr>
+<tr>
+<td>12.33333333333333333<b>d</b></td>
+<td><b>double</b></td>
+<td>Длинное дробное число</td>
+</tr>
+<tr>
+<td>"Mama"<br/>""<br/>"Mama\nMila\nRamu\u123"</td>
+<td><b>String</b></td>
+<td>Строка</td>
+</tr>
+<tr>
+<td>'\u3232'<br/>'T'<br/>'5'</td>
+<td><b>char</b></td>
+<td>Символ</td>
+</tr>
+<tr>
+<td><b>true, false</b></td>
+<td><b>boolean</b></td>
+<td>Логический тип</td>
+</tr>
+<tr>
+<td><b>null </b></td>
+<td><b>Object</b></td>
+<td>Ссылка на объект</td>
+</tr>
+</table>
+<p class="amigo">- Т.е. код – это методы, классы, переменные,…, а литералы – это конкретные значения переменных, записанные прямо в коде. Так, я правильно понял?</p>
+<p>- Да, так и есть.</p>
+<p class="amigo">- Отлично. Наконец-то эта Java начинает складываться в одну картину.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>9. Лекция по типам</h2>
+</div>
+<p>-  Супер. Наконец-то моя любимая тема -  преобразования типов. Помню, ещё мой профессор когда-то “увлекательно” рассказывал мне о них. Я тогда ничего не понял. Но ты, благодаря этим замечательным лекциям, конечно же, всё поймёшь. Вот они:</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/06/18/lecture-10.html" target="_blank">Лекция по типам</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>10. Хулио</h2>
+</div>
+<p>- Вау! Ну, ты нереально крут, Амиго! Столько всего выучил всего за две недели!! Ну ты и монстр. Кстати, как насчёт развлекона после двух недель рабского труда?</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-10.gif" preload="none" tabindex="0" taskkey="level10,lesson10,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-10.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=_YlhWmLEx3M" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>11. Домашние задания</h2>
+</div>
+<p>- Здорово, боец!</p>
+<p class="amigo">- Здравия желаю, капитан Бобров!</p>
+<p>- У меня для тебя шикарная новость. Вот тебе задания для закрепления полученных навыков. Выполняй их каждый день, и твои навыки будут расти с неимоверной скоростью. Они специально разработаны для выполнения их в Intellij IDEA.</p>
+<table class="table_task">
+<tr>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Правильный ответ: d=2.941</b><br/><br/>
+                    Добавить одну операцию по преобразованию типа, чтобы получался ответ: <span class="taskcode">d=2.941</span><br/>
+                    Пример вывода: 2.9411764705882355
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Правильный ответ: d=5.5</b><br/><br/>
+                    Добавить одну операцию по преобразованию типа, чтобы получался ответ: <span class="taskcode">d=5.5</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Правильный ответ: d=1.0</b><br/><br/>
+                    Добавить одну операцию по преобразованию типа, чтобы получался ответ: <span class="taskcode">d=1.0</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>4. Большая зарплата</b><br/><br/>
+                    Вывести на экран надпись «Я не хочу изучать Java, я хочу большую зарплату» 40 раз по образцу.<br/>
+<br/>
+<u>Образец:</u><br/><span class="example-data">Я не хочу изучать Java, я хочу большую зарплату<br/>
+                    не хочу изучать Java, я хочу большую зарплату<br/>не хочу изучать Java, я хочу большую зарплату<br/>е хочу изучать Java, я хочу большую зарплату<br/> хочу изучать Java, я хочу большую зарплату<br/>хочу изучать Java, я хочу большую зарплату<br/>…</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>5. Количество букв</b><br/><br/>
+                    Ввести с клавиатуры 10 строчек и подсчитать в них количество различных букв (для 33 букв алфавита).  Вывести результат на экран.<br/>
+<br/><u>Пример вывода:</u><span class="example-data"><br/>а 5<br/>б 8<br/>в 3<br/>г 7<br/>д 0<br/>…<br/>я 9</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>6. Конструкторы класса Human</b><br/><br/>
+                    Напиши класс <span class="taskcode">Human</span> с 6 полями. Придумай и реализуй 10 различных конструкторов для него. Каждый конструктор должен иметь смысл.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>7. Расставьте минимум static-ов</b><br/><br/>
+                    Расставьте как можно меньше модификаторов <span class="taskcode">static</span> так, чтобы пример скомпилировался.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>8. Массив списков строк</b><br/><br/>
+                    Создать массив, элементами которого будут списки строк. Заполнить массив любыми данными и вывести их на экран.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>9. Одинаковые слова в списке</b><br/><br/>
+                    Ввести с клавиатуры в список 20 слов. Нужно подсчитать количество одинаковых слов в списке.
+                    Результат нужно представить в виде словаря <span class="taskcode">Map&lt;String, Integer&gt;</span>, где первый параметр – уникальная строка, а второй – число, сколько раз данная строка встречалась в списке.
+                    Вывести содержимое словаря на экран.<br/><br/>В тестах регистр (большая/маленькая буква) влияет на результат.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>10. Безопасное извлечение из списка</b><br/><br/>
+                    Создать список целых чисел. Ввести с клавиатуры 20 целых чисел. Создать метод по безопасному извлечению чисел из списка: <br/>
+<span class="taskcode">int safeGetElement(ArrayList&lt;Integer&gt;  list,  int index, int defaultValue)</span><br/><br/>
+                    Метод должен возвращать элемент списка (<span class="taskcode">list</span>) по  его индексу (<span class="taskcode">index</span>). Если в процессе получения элемента возникло исключение, его нужно перехватить, и метод должен вернуть <span class="taskcode">defaultValue</span>.
+                </td>
+</tr>
+</table>
+<p>- Те задания были для духов. Для дедушек я добавил бонусные задания повышенной сложности. Только для старослужащих. </p>
+<table class="table_task">
+<tr>
+<th></th>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>1. Нужно исправить программу, чтобы компилировалась и работала. </b><br/><br/>
+<u>Задача:</u> Программа демонстрирует работу <span class="taskcode">HashMap</span>: вводит с клавиатуры набор пар (номер и строку), помещает их в <span class="taskcode">HashMap</span> и выводит на экран содержимое <span class="taskcode">HashMap</span>.
+                </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>2. Нужно добавить в программу новую функциональность. </b><br/><br/>
+<u>Задача:</u> Программа вводит с клавиатуры пару (число и строку) и выводит их на экран.<br/><u>Новая задача:</u> Программа вводит с клавиатуры пары (число и строку), сохраняет их в <span class="taskcode">HashMap</span>. Пустая строка – конец ввода данных. Числа могу повторяться. Строки всегда уникальны. Введенные данные не должны потеряться!<br/>Затем программа выводит содержание <span class="taskcode">HashMap</span> на экран<br/><br/>
+<span class="example-legacy">Пример ввода:</span><span class="example-data"><br/>1<br/>Мама<br/>2 <br/>Рама<br/>1<br/>Мыла<br/><br/></span>
+<span class="example-legacy">Пример вывода:</span><span class="example-data"><br/>1 Мыма<br/>2 Рама<br/>1 Мама</span>
+</td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>3. Задача по алгоритмам. </b><br/><br/>
+<u>Задача:</u> Ввести с клавиатуры 30 чисел. Вывести 10-е и 11-е минимальные числа.<br/>Пояснение:<br/>Самое минимальное число – 1-е минимальное.<br/>Следующее минимальное после него – 2-е минимальное <br/>
+<br/>
+<span class="example-legacy">Пример:</span><span class="example-data"><br/>1 6 5  7  1  15   63   88<br/>Первое минимальное – 1<br/>Второе минимальное – 1<br/>Третье минимальное – 5<br/>Четвертое минимальное – 6</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

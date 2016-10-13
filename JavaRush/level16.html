@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-16.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 16
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>1. Что такое многопоточность и зачем</h2>
+</div>
+<p>- Привет, Амиго! У нас новая и очень трудная тема. Сочувствую. Часто она считается одной из самых сложных не только в Java, но и в программировании вообще. Это – <span class="red_text"><b><i>многонитиевость (multithreading)</i></b></span>.</p>
+<p>Представь себе средненькую компьютерную игру, например, гонки на звездолетах. Ты летишь по просторам космоса, уворачиваясь от метеоритов и патрульных крейсеров, а с тобой еще два десятка таких же участников этих нелегальных гонок.</p>
+<p>Допустим, ты решил написать такую же игру. Твоей программе придется отслеживать команды управления (ввод с клавиатуры), перемещать звездолеты, рассчитывать их траектории и последствия столкновения, а также отрисовывать все это на экране пользователя. Это очень сложная работа.</p>
+<p>Вспомни, как мы решили <i>«проблему большой сложности»</i> в том примере про рост курьерской компании.</p>
+<p class="amigo">- Мы разделили ее на независимые отделы и жестко задали (стандартизировали) способы их взаимодействия.</p>
+<p>- <b>Но что делать, когда независимым частям нужно выполнить какой-то объем работы, параллельно с другими частями?! Ответ на этот вопрос – <span class="red_text">нити(трэды)</span></b> (или как их неправильно называют – потоки).</p>
+<p><i><b>Попробуй представить программу, как <span class="red_text">такого маленького робота</span>, который <span class="red_text">бегает по коду и выполняет команды</span>. Сначала выполнил команду, написанную в одной строке, затем перешел на следующую, и так далее.</b></i></p>
+<p class="amigo">- Представил. Ничего сложного!</p>
+<p>- Отлично. А теперь  представь, что таких роботов у тебя несколько. И пока один занимается вводом от пользователя, второй меняет объекты в соответствии с ним. Третий выполняет код, по отображению этих объектов на экран, а четвертый несколько раз в секунду проверяет – не столкнулись ли корабли и, в случае столкновения, просчитывает его результаты.</p>
+<p>Таким образом, мы можем разделить программу не только на независимые части/объекты, но и добиться того, что эти части будут выполнять свою работу независимо друг от друга. А чем меньше взаимодействия между отдельными частями, тем меньше сложность программы.</p>
+<p>Представь, что <b>ты смог <span class="red_text">заменить менеджера – скриптом</span>, рассылающим письма</b>. А остальные отделы компании об этом даже не догадались. Такие примеры уже имели место в 26 веке и показали отличные результаты. <b><i>Большинство менеджеров, и даже топ-менеджеров, может быть успешно заменено скриптом средней сложности.</i></b> Только после вмешательства «профсоюза офисного планктона» удалось остановить массовые увольнения менеджеров. Но это так – отвлечение от темы.</p>
+<p class="amigo">- Как интересно.</p>
+<p>- Мало того, что в программе может быть несколько таких «маленьких роботов», исполняющих код, так эти роботы могут еще общаться друг с другом и порождать новых роботов.</p>
+<p class="amigo">- Порождать новых роботов?</p>
+<p>- Да, для выполнения новых задач. Иногда выгодно создать еще одного робота (еще одну нить), которая будет выполнять какое-то действие одновременно с текущей нитью (роботом).</p>
+<p class="amigo">- Думаю, что это хорошая вещь, хоть пока не могу придумать, где бы я этим пользовался.</p>
+<p class="amigo">А почему это называется <b>«нити»</b>?</p>
+<p>- Представь, что все роботы разного цвета, и каждый робот помечает своим цветом все команды, которые он выполнил. Таким образом, за маленьким роботом, как за карандашом, будет тянуться след. Этот след тянется за роботом, как <b>нитка</b> за иголкой.</p>
+<p>У каждого такого «маленького робота» есть задание, для исполнения которого его создали. И нить – это набор команд, выполненных в процессе исполнения этого задания.</p>
+<p>Допустим, ты летишь на звездолете, чтобы доставить груз. Тогда «доставить груз» - это твое задание, ты в процессе его исполнения. А путь, который ты пролетел – это твоя нить. Можно сказать, что каждому новому заданию, каждой еще не решенной задаче соответствует своя нить – путь, который еще предстоит пройти.</p>
+<p class="amigo">- Другими словами, есть задание и «маленький робот», который его исполняет, а нить – это всего лишь взгляд на текущее положение дел со стороны?</p>
+<p>- Именно так.</p>
+<p>А вот как все это работает глубоко внутри. Т.к. процессор у компьютера один, то он может выполнять только одну команду одновременно. Поэтому происходит вот что: процессор постоянно переключается между нитями. Переключился на новую нить, выполнил несколько ее команд, затем переключился на следующую нить, выполнил несколько ее команд и так далее. <span class="red_text">Но т.к. переключение между нитями происходит сотни раз в секунду, со стороны кажется, что все нити работают одновременно.</span></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/16/image-ru-16-01.png"/>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>2. Способы создания и запуска новых потоков</h2>
+</div>
+<p>- Привет, Амиго! Элли рассказала тебе о нитях, а я расскажу тебе о том, как с ними работать. Чтобы породить новую нить нужно:</p>
+<p><b>1)</b> Создать объект класса Thread (нить)</p>
+<p><b>2)</b> Передать в него метод, который нужно выполнить</p>
+<p><b>3)</b> Вызвать у созданного объекта Thread  метод start.</p>
+<p>Пример:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="52%">Код</th><th width="48%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Printer <span class="red_text"><b>implements Runnable</b></span><br/>
+{<br/>
+     <b>public void <span class="red_text">run()</span></b><br/>
+     {<br/>
+        System.out.println("I’m printer");<br/>
+     }<br/>
+}
+</td>
+<td class="wide-text">Класс, который реализует интерфейс <b>Runnable</b>.
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static void</b> main(<b>String</b>[] args)<br/>
+{<br/>
+    <span class="blue_text">Printer printer = <span class="red_text"><b>new</b></span> Printer();<br/>
+    Thread childThread = new Thread(<span class="red_text"><b>printer</b></span>); <br/>  
+    childThread.<span class="red_text"><b>start();</b></span></span><br/>
+}
+</td>
+<td class="wide-text">1 Создали объект класса Printer, который содержит метод run.<br/>
+		2 Создали новый объект класса Thread, передали ему в конструкторе объект printer, чей метод <b>run()</b> нужно будет исполнить.<br/>
+		3 Запустили новую нить в работу, вызовом метода <b>start()</b>.
+</td>
+</tr>
+</tbody>
+</table>
+<p>Маленькие программы на Java обычно состоят из одной нити, называемой «главной нитью» (main thread). Но программы побольше часто запускают дополнительные нити, их еще называют «дочерними нитями». Главная нить выполняет метод main и завершается. <span class="red_text">Аналогом такого метода <b>main</b>, для дочерних нитей служит метод <b>run</b> интерфейса <b>Runnable</b>.</span></p>
+<p class="amigo">- Ага, много нитей, много методов main.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/16/image-ru-16-02.png"/>
+<p>- Чтобы указать, с какого именно метода нужно начать выполнение объекту Thread, нужно как-то передать метод этому объекту. В Java это реализовано с помощью интерфейса <b>Runnable</b>. Этот интерфейс содержит единственный абстрактный метод – <b>void run()</b>. Класс Thread имеет конструктор <b>Thread(Runnable Runnable)</b>, в который можно передать любой объект, который реализует интерфейс <b>Runnable</b>.</p>
+<p>Ты должен унаследовать свой класс от интерфейса <b>Runnable</b>, затем переопределить метод <b>run</b> в своем классе. Именно с вызова этого метода начнется работа новой нити. В методе <b>run</b> ты можешь написать все, что хочешь.</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Printer <span class="red_text"><b>implements Runnable</b></span><br/>
+{<br/>
+     <b>private</b> String name;<br/>
+     <b>public</b> Printer(String name)<br/>
+     {<br/>
+        this.name = name;<br/>
+     }<br/>
+     <span class="red_text"><b>public void run()</b></span><br/>
+     {<br/>
+        System.out.println("I’m " + this.name);<br/>
+    }<br/>
+}
+</td>
+<td class="wide-text">Класс, который реализует интерфейс Runnable.
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static void</b> main(<b>String</b>[] args)<br/>
+{<br/>
+    <span class="blue_text">Printer printer1 = <span class="red_text"><b>new</b></span> Printer("Коля");<br/>
+    Thread thread1 = new Thread(<span class="red_text"><b>printer1</b></span>); <br/>  
+    thread1.<span class="red_text"><b>start();</b></span><br/><br/>
+
+    Printer printer2 = <span class="red_text"><b>new</b></span> Printer("Вася");<br/>
+    Thread thread2 = new Thread(<span class="red_text"><b>printer2</b></span>); <br/>  
+    thread2.<span class="red_text"><b>start();</b></span><br/>
+}
+</span></td>
+<td class="wide-text">Создаем две нити, каждая на основе своего объекта типа Printer.
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static void</b> main(<b>String</b>[] args)<br/>
+{<br/>
+    <span class="blue_text">Printer printer = <span class="red_text"><b>new</b></span> Printer("Наташа");<br/><br/>
+
+    Thread thread1 = new Thread(<span class="red_text"><b>printer</b></span>); <br/>  
+    thread1.<span class="red_text"><b>start();</b></span><br/><br/>
+
+    Thread thread2 = new Thread(<span class="red_text"><b>printer</b></span>);<br/>   
+    thread2.<span class="red_text"><b>start();</b></span><br/><br/>
+
+    Thread thread3 = new Thread(<span class="red_text"><b>printer</b></span>);<br/>   
+    thread3.<span class="red_text"><b>start();</b></span><br/>
+}
+</span></td>
+<td class="wide-text">Создаем три нити, на основе одного объекта Printer.
+</td>
+</tr>
+</tbody>
+</table>
+<p>Более того, можно совместить это все в одном классе. <b>Класс <span class="red_text">Thread унаследован от интерфейса Runnable</span>, и достаточно просто <span class="red_text">переопределить</span> его <span class="red_text">метод run</span></b>:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="50%">Второй способ создания новой нити</th><th width="50%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Printer <span class="red_text"><b>extends Thread</b></span><br/>
+{<br/>
+     <b>private</b> String name;<br/>
+     <b>public</b> Printer(String name)<br/>
+     {<br/>
+        this.name = name;<br/>
+     }<br/>
+     <span class="red_text"><b>public void run()</b></span><br/>
+     {<br/>
+        System.out.println("I’m " + this.name);<br/>
+    }<br/>
+}
+</td>
+<td class="wide-text">Унаследовались от класса <b>Thread</b>, который реализует интерфейс <b>Runnable</b>, и переопределили метод <b>run</b>.
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">public static void main(String[] args)<br/>
+{<br/>
+     <span class="blue_text">Printer printer = <span class="red_text"><b>new</b></span> Printer("Вася");<br/>
+     printer.<span class="red_text"><b>start();</b></span><br/><br/>
+
+     Printer printer2 = <span class="red_text"><b>new</b></span> Printer("Коля");<br/>
+     printer2.<span class="red_text"><b>start();</b></span><br/><br/>
+
+}
+</span></td>
+<td class="wide-text">Создаем две нити, каждая на основе своего объекта типа <b>Printer</b>.
+</td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Это решение красивее.</p>
+<p>- Да, но у него есть минусы:</p>
+<p><b>1)</b> Вам может понадобиться запустить несколько нитей на основе одного единственного объекта, как это сделано в «примере с Наташей».</p>
+<p><b>2)</b> Если вы унаследовались от класса Thread, вы не можете добавить еще один класс-родитель к своему классу.</p>
+<p><b>3)</b> Если у вашего класса есть класс-родитель, вы не можете добавить второго – Thread.</p>
+<p class="amigo">- Т.е. каждая из нитей после вызова метода start начнет выполнять метод run того объекта, который ему передали в конструкторе?</p>
+<p>- Да. А если в конструкторе ничего не передали, то Thread просто исполняет свой внутренний метод run.</p>
+<p class="amigo">- А почему нельзя просто вызвать этот метод, например, так:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static void</b> main(<b>String</b>[] args)<br/>
+{<br/>
+    Printer printer1 = <b>new</b> Printer("Коля");<br/>
+    printer1.<span class="red_text">run();</span><br/>
+}
+</td>
+</tr>
+</tbody></table>
+<p>- Когда главная нить дойдет до метода <b>run</b>, наш <i>«маленький роботик»</i>, просто зайдет внутрь и начнет исполнять все команды, которые там есть внутри, и только после их выполнения, вернется в метод <b>main</b>, и продолжит работу дальше. Создания второго <i>«маленького робота»</i> не  произойдет, и вся работа будет делаться последовательно, а не параллельно (одновременно).</p>
+<p class="amigo">- Ясно. А можно вызвать какой-нибудь другой метод, а не run?</p>
+<p>- Нет. Все привязано к интерфейсу Runnable, а он «знает» только об одном своем методе – <b>run</b>.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>3. Задачи на потоки</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson03,task01"></button><b>1. My first thread</b><br/><br/>
+                Создать <span class="taskcode">public static class TestThread</span> - нить с помощью интерфейса <span class="taskcode">Runnable</span>.<br/>
+<span class="taskcode">TestThread</span> должен выводить в консоль "My first thread".
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson03,task02"></button><b>2. My second thread</b><br/><br/>
+                1. Создать <span class="taskcode">public static класс TestThread</span> унаследовавшись от класса <span class="taskcode">Thread</span>.<br/>
+		2. Создать статик блок внутри <span class="taskcode">TestThread</span>, который выводит в консоль "it's static block inside TestThread".<br/>
+		3. Метод <span class="taskcode">run</span> должен выводить в консоль "it's run method".
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson03,task03"></button><b>3. Список и нити</b><br/><br/>
+                В методе <span class="taskcode">main</span> добавить в статический объект <span class="taskcode">list</span> 5 нитей <span class="taskcode">SpecialThread</span> - различных объектов.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson03,task04"></button><b>4. Вывод стек-трейса</b><br/><br/>
+                1. Создать таск - класс <span class="taskcode">public static SpecialThread</span> - на основании интерфейса <span class="taskcode">Runnable</span><br/>
+		2. <span class="taskcode">SpecialThread</span> должен выводить в консоль свой стек-трейс.<br/><br/>
+		Подсказка: <span class="taskcode">main thread</span> уже выводит в консоль свой стек-трейс.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson03,task05"></button><b>5. Поговорим о музыке?</b><br/><br/>
+                1. Измените класс <span class="taskcode">Violin</span> так, чтоб он стал таском для нити. Используйте интерфейс <span class="taskcode">MusicalInstrument</span><br/>
+		2. Реализуй необходимый метод в нити <span class="taskcode">Violin</span>. Реализация должна быть следующей:<br/>
+		2.1. Считай время начала игры - метод <span class="taskcode">startPlaying()</span>.<br/>
+		2.2. Подожди 1 секунду - метод <span class="taskcode">sleepNSeconds(int n)</span>, где n - количество секунд.<br/>
+		2.3. Считай время окончания игры - метод <span class="taskcode">stopPlaying()</span>.<br/>
+		2.4. Выведи на консоль продолжительность игры в миллисекундах. Пример "Playing 1002 ms".
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>4. join- ожидание завершения потока</h2>
+</div>
+<p>- Привет, Амиго! Я смотрю, ты делаешь большие успехи в изучении нитей.</p>
+<p class="amigo">- Это оказалось не сложно.</p>
+<p>- Это же отлично! Сегодня легкий урок, и тема этого урока – метод <b>join</b>.</p>
+<p>Представь себе ситуацию:  главная нить создала дочернюю нить для выполнения какого-то задания. Проходит время, и вот главной нити понадобились результаты работы той дочерней нити. А дочерняя нить еще не закончила свою работу. Что делать главной нити?</p>
+<p class="amigo">- Да, что делать главной нити?</p>
+<p>- Для этого есть метод <b>join</b>. Смысл его в следующем. Одна нить ждет, пока полностью завершится работа второй нити:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Printer <span class="blue_text"><b>implements Runnable</b></span><br/>
+{<br/>
+     <b>private</b> String name;<br/>
+     <b>public</b> Printer(String name)<br/>
+     {<br/>
+        this.name = name;<br/>
+     }<br/>
+     <b>public void</b> <span class="blue_text"><b>run()</b></span><br/>
+     {<br/>
+        System.out.println("I’m " + this.name);<br/>
+    }<br/>
+}
+</td>
+<td class="wide-text">Класс, который реализует интерфейс Runnable.
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static void</b> main(<b>String</b>[] args)<br/>
+{<br/>
+    Printer <span class="blue_text">printer1</span> = <b>new</b> Printer("Коля");<br/>
+    Thread <span class="green_text">thread1</span> = new Thread(<span class="blue_text"><b>printer1</b></span>); <br/>  
+    <span class="green_text">thread1</span>.<b>start();</b><br/><br/>
+
+   <span class="green_text"><b>thread1</b></span>.<span class="red_text"><b>join</b></span>();<br/>
+}
+</td>
+<td class="wide-text">Главная нить создает дочернюю нить – объект <span class="green_text"><b>thread1</b></span>. <br/><br/>
+
+		Затем запускает ее – вызов <span class="green_text"><b>thread1</b></span>.start();<br/><br/>
+
+		И ждет ее завершения – <span class="red_text"><b>thread1.join();</b></span>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span class="red_text">Одна нить может вызвать метод <b>join</b> у объекта второй нити.</span> В результате первая нить (которая вызвала метод) приостанавливает свою работу до окончания работы второй нити (у объекта которой был вызван метод).</p>
+<p><b>Тут стоит различать две вещи: есть, собственно, нить – отдельный процесс выполнения команд, а есть объект этой нити (объект Thread).</b></p>
+<p class="amigo">- И это все?</p>
+<p>- Да.</p>
+<p class="amigo">- А зачем нужно создавать нить и сразу же ждать ее завершения?</p>
+<p>- Сразу же может и не нужно. А вот спустя какое-то время это может и понадобится. Главная нить после запуска первой дочерней нити может <i>раздать еще много заданий</i> другим нитям (создав их и вызвав метод <b>start</b>), а потом все – работы ей больше не осталось, нужно обрабатывать результаты работы первой дочерней нити. В таких случаях, когда нужно обязательно дождаться завершения работы другой нити и нужно вызывать метод <b>join</b>.</p>
+<p class="amigo">- Понятно.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>5. Задача на join</h2>
+</div>
+<p>- Привет, Амиго! </p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson05,task01"></button><b>1. join</b><br/><br/>
+                Подумайте, в каком месте и для какого объекта нужно вызвать метод <span class="taskcode">join</span>, чтобы результат выводился по-порядку сначала для <span class="taskcode">firstThread</span>, а потом для <span class="taskcode">secondThread</span>.<br/>
+		Вызовите метод <span class="taskcode">join</span> в нужном месте.<br/><br/>
+<span class="example-legacy">Пример вывода:</span><br/>
+<span class="example-data">firstThread : String 1<br/>
+		firstThread : String 2<br/>
+		...<br/>
+		firstThread : String 19<br/>
+		firstThread : String 20<br/>
+		secondThread : String 1<br/>
+		...<br/>
+		secondThread : String 20</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson05,task02"></button><b>2. Horse Racing</b><br/><br/>
+                Разберись, что делает программа.<br/>
+		Реализуй метод <span class="taskcode">calculateHorsesFinished</span>. Он должен:<br/>
+		1. Посчитать количество финишировавших лошадей и возвратить его. Используй метод <span class="taskcode">isFinished()</span>.<br/>
+		2. Если лошадь еще не пришла к финишу (<span class="taskcode">!isFinished()</span>), то:<br/>
+		2.1. Вывести в консоль "Waiting for " + <span class="taskcode">horse.getName()</span>.<br/>
+		2.2. Подождать, пока она завершит гонку. Подумай, какой метод нужно использовать для этого.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson05,task03"></button><b>3. Продвижение на политических дебатах</b><br/><br/>
+                1. Разберитесь, что делает программа.<br/>
+		2. Нужно сделать так, чтобы Иванов сказал больше всего речей на политических дебатах.<br/>
+		3. Подумай, какой метод можно вызвать у объекта <span class="taskcode">ivanov</span>, чтобы Иванов разговаривал, пока не завершится всё свободное время.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson05,task04"></button><b>4. Справедливость</b><br/><br/>
+                1. Разберитесь, что делает программа.<br/>
+		2. Нужно сделать так, чтобы все мыши ели одновременно.<br/>
+		3. Подумай, какой метод позволяет альфа-самцу мыши есть первым, и почему остальные мыши ждут.<br/>
+		4. Удали вызов этого метода.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson05,task05"></button><b>5. Расставь вызовы методов join()</b><br/><br/>
+                1. Разберитесь, что делает программа.<br/>
+		2. Расставь вызовы методов <span class="taskcode">join()</span> так, чтобы для каждой кошки выполнялось следующее:<br/>
+		2.1. Сначала кошка рожает котят.<br/>
+		2.2. Потом все котята вылазят из корзинки в произвольном порядке.<br/>
+		2.3. В конце кошка собирает их назад в корзинку.<br/>
+		2.4. Все события для одной кошки могут быть перемешаны с событями для другой кошки.<br/>
+		2.5. Добавить сон котят (200 мс) в <span class="taskcode">investigateWorld</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>6. sleep-спать</h2>
+</div>
+<p>- Привет, Амиго! Билаабо сегодня расскажет тебе о самом интересном методе при работе с нитями – это метод <span class="red_text"><b>sleep</b></span>. <span class="red_text">Метод <b>sleep</b> объявлен как статический метод класса Thread</span>, т.е. он не привязан ни к какому объекту. Цель этого метода, чтобы <span class="red_text">программа «заснула»</span> на некоторое время. Вот как это работает:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static void</b> main(<b>String</b>[] args)<br/>
+{<br/>
+     <span class="red_text">Thread.sleep(</span>2000<span class="red_text">)</span>;<br/>
+}
+</td>
+<td class="wide-text">Программа запустится.<br/><br/>
+
+		Затем замрет на 2 секунды (2 000 миллисекунд)<br/><br/>
+
+		Затем завершится. 
+</td>
+</tr>
+</tbody></table>
+<p>Единственный параметр метода <b>sleep</b> – это время. Время задается в тысячных долях секунды (миллисекундах). Как только нить вызывает это метод, она засыпает на указанное количество миллисекунд.</p>
+<p class="amigo">- А где это лучше всего использовать?</p>
+<p>- Этот метод часто используется в дочерних нитях, когда нужно делать какое-то действие постоянно, но не слишком часто. Смотри пример:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static void</b> main(<b>String</b>[] args)<br/>
+{<br/>
+     <span class="blue_text"><b>while</b> (true)</span><br/>
+     {<br/>
+         <span class="red_text">Thread.sleep</span>(500);<br/>
+         System.out.println("Tik");<br/>
+     }<br/>
+}
+</td>
+<td class="wide-text"><span class="blue_text">Программа будет работать вечно</span> – условие продолжения цикла никогда не нарушится.<br/><br/>
+
+		Вот что программа делает в цикле:<br/>
+		а) <span class="red_text">поспать полсекунды</span><br/>
+		б) вывести на экран текст «Tik»<br/><br/>
+
+		Т.е. дважды в секунду будет выполняться некоторое действие.
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ух ты, теперь это уже интересно.</p>
+<p>- Рад, что тебе понравилось, мой друг Амиго!</p>
+<p class="amigo">- А если я хочу, чтобы какое-то действие выполнялась 100 раз в секунду, что нужно делать?</p>
+<p>- Если действие должно выполняться 100 раз в секунду, а в секунде 1000 миллисекунд, значит, действие должно выполняться один раз в 10 миллисекунд.</p>
+<p>Если твое <b>действие</b> занимает 2 миллисекунды, то нужно добавить к нему паузу длинной 8 миллисекунд. Вместе они будут выполняться как раз за 10 миллисекунд. И за секунду – как раз 100 раз.</p>
+<p>Если же твое действие выполняется почти мгновенно, то поставь паузу (sleep) длиной 10 миллисекунд. Тогда в секунду будет тоже около 100 раз.</p>
+<p class="amigo">- Спасибо, Билаабо.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>7. Задачи на sleep</h2>
+</div>
+<p>- Привет, Амиго! </p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson07,task01"></button><b>1. Часы</b><br/><br/>
+                1. Разберись, что делает программа.<br/>
+		2. Реализуйте логику метода <span class="taskcode">printTikTak</span>:<br/>
+		2.1. Через первые полсекунды должна выводиться в консоль фраза: Tik.<br/>
+		2.2. Через вторые полсекунды должна выводиться в консоль фраза: Tak.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson07,task02"></button><b>2. Stopwatch (Секундомер)</b><br/><br/>
+                1. Разберись, что делает программа.<br/>
+		2. Реализуй логику метода <span class="taskcode">doSeveralSteps</span> так, чтобы учитывалась скорость бегуна.<br/>
+		2.1. Метод <span class="taskcode">getSpeed()</span> в классе <span class="taskcode">Runner</span> показывает, сколько шагов в секунду делает бегун.<br/>
+		Нужно, чтобы бегун действительно делал заданное количество шагов в секунду.<br/>
+		Если Иванов делает 4 шага в секунду, то за 2 секунды он сделает 8 шагов.<br/>
+		Если Петров делает 2 шага в секунду, то за 2 секунды он сделает 4 шага.<br/>
+		2.2. Метод <span class="taskcode">sleep</span> в классе <span class="taskcode">Thread</span> принимает параметр типа <span class="taskcode">long</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson07,task03"></button><b>3. Big Ben clock</b><br/><br/>
+                1. Разберись, что делает программа.<br/>
+		2. Реализуй логику метода <span class="taskcode">printTime</span> так, чтобы каждую секунду выдавалось время начиная с установленного в конструкторе<br/>
+		Пример:<br/>
+		В г. Лондон сейчас 23:59:58!<br/>
+		В г. Лондон сейчас 23:59:59!<br/>
+		В г. Лондон сейчас полночь!<br/>
+		В г. Лондон сейчас 0:0:1!
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson07,task04"></button><b>4. Обратный отсчет</b><br/><br/>
+                1. Разберись, что делает программа.<br/>
+		2. Реализуй логику метода <span class="taskcode">printCountdown</span> так, чтобы каждые полсекунды выводился объект<br/>
+        из переменной <span class="taskcode">list</span> в обратном порядке - от переданного индекса до нуля.<br/>
+		Пример: Передан индекс 3<br/><br/>
+<span class="example-legacy">Пример вывода в консоль:</span><br/>
+<span class="example-data">Строка 2<br/>
+		Строка 1<br/>
+		Строка 0</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson07,task05"></button><b>5. Аэропорт</b><br/><br/>
+                1. Разберись, что делает программа.<br/>
+		2. Исправь метод <span class="taskcode">takingOff</span>(взлет) - сейчас он работает оооочень долго. Взлет должен занимать 100 миллисекунд.<br/>
+		3. Реализуй метод <span class="taskcode">waiting</span> по аналогии с методом <span class="taskcode">takingOff</span>. Время ожидания не должно превышать время взлета.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>8. Наша версия остановки потока</h2>
+</div>
+<p>- Привет, Амиго! Вот интересный вопрос, с которым ты уже столкнулся или столкнёшься в ближайшее время. А <span class="red_text"><b>как остановить запущенную нить</b></span>?</p>
+<p>Допустим, пользователь отдал программе команду «загрузить файл из интернета». Главная нить создала для этого задания отдельную дочернюю нить, и передала ей объект, метод run которого содержит все необходимые действия для скачивания файла.</p>
+<p>А тут пользователь – раз и передумал. Не хочет он качать этот файл. <span class="red_text">Как отменить задание и остановить нить?</span></p>
+<p class="amigo">- Да, как?</p>
+<p>- <span class="red_text"><b>Никак</b>.</span> Это и есть самый общий и самый правильный ответ. <span class="red_text">Нить остановить нельзя, она может остановиться только сама.</span>
+</p><p>Но можно дать нити сигнал, сообщить ей каким-нибудь образом, что работу больше выполнять не нужно, и ей нужно завершиться. Так же, как главная нить завершается вместе с выходом из метода main, чтобы завершить дочернюю нить, она должна закончить выполнение метода run.</p>
+<p class="amigo">- И как это лучше всего сделать?</p>
+<p>- Можно завести какую-нибудь переменную, например типа <b>boolean</b>. Если она <b>true</b> – нить работает. Если же она стала <b>false</b> – нить должна завершиться. Например, так:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Clock <span class="blue_text"><b>implements Runnable</b></span><br/>
+{<br/>
+    <b>public</b> void run()<br/>
+   {<br/>
+       <span class="blue_text"><b>while</b> (true)</span><br/>
+      {<br/>
+          Thread.sleep(1000);<br/>
+          System.out.println("Tik");<br/><br/>
+
+        <b><span class="red_text">if</span></b> <span class="red_text">(<b>!ClockManager.isClockRun</b>)<br/> 
+            return;</span><br/>
+      }<br/>
+   }<br/>
+}
+</td>
+<td class="wide-text">Класс Clock (часы) будет вечно писать в консоль раз в секунду слово «Tik»<br/><br/>
+<span class="red_text">Если переменная ClockManager.isClockRun равна false – метод run завершится.</span>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> ClockManager<br/>
+{<br/>
+  <b>public static</b> boolean isClockRun = true;<br/>
+<b>public static void</b> main(<b>String</b>[] args)<br/>
+{<br/>
+      <span class="blue_text">Clock clock = new Clock();<br/>
+      Thread clockThread = new Thread(clock);<br/>
+      clockThread.<b>start</b>();</span><br/><br/>
+   
+      <span class="green_text">Thread.sleep(10000);</span><br/>
+      <span class="red_text">isClockRun = false;</span><br/>
+}<br/><br/>
+
+}
+</td>
+<td class="wide-text"><span class="blue_text">Главная нить, запускает дочернюю нить – часы, которая должна работать вечно.</span><br/><br/>
+<span class="green_text">Ждет 10 секунд и</span> <span class="red_text">подает часам сигнал на завершение.</span><br/><br/>
+
+		Главная нить завершает свою работу.<br/><br/>
+
+		Нить часов завершает свою работу.
+</td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- А если у нас несколько нитей, что тогда?</p>
+<p>- Тогда лучше завести такую переменную для каждой нити. Удобнее всего будет добавить ее прямо в класс. Можно добавить туда переменную <b>boolean isRun</b>. Хотя лучше добавить переменную boolean <b>isCancel</b>, которая будет принимать значение <b>true</b>, если задание отменено.</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Clock implements Runnable<br/>
+{<br/>
+    <span class="red_text"><b>private</b> boolean isCancel = false;</span><br/><br/>
+
+    <b>public</b> void <span class="red_text"><b>cancel</b></span>() <br/>
+    {<br/>
+       <span class="red_text">this.isCancel = true;</span><br/>
+    }<br/><br/>
+
+    <b>public</b> void run()<br/>
+   {<br/>
+       <b>while</b> (<span class="red_text">!isCancel</span>)<br/>
+      {<br/>
+          Thread.sleep(1000);<br/>
+          System.out.println("Tik");<br/>
+      }<br/>
+   }<br/>
+}
+</td>
+<td class="wide-text">Класс Clock (часы) будет писать в консоль раз в секунду слово «Тик», пока переменная <span class="red_text">isCancel</span> равна false.<br/><br/>
+		Когда переменная <span class="red_text">isCancel</span> станет равной true, метод run завершится.
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static void</b> main(<b>String</b>[] args)<br/>
+{<br/>
+     <span class="blue_text">Clock clock = new Clock();<br/>
+     Thread clockThread = new Thread(clock);<br/>
+     clockThread.start();</span><br/><br/>
+   
+     <span class="green_text">Thread.sleep(10000);</span><br/>
+     <span class="red_text">clock.<b>cancel</b>();</span><br/>
+}
+</td>
+<td class="wide-text"><span class="blue_text">Главная нить, запускает дочернюю нить – часы, которая должна работать вечно.</span><br/><br/>
+<span class="green_text">Ждет 10 секунд и</span> <span class="red_text">отменяет задание, вызовом метода <b>cancel</b>.</span><br/><br/>
+
+		Главная нить завершает свою работу.<br/><br/>
+
+		Нить часов завершает свою работу.
+</td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Буду знать, спасибо, Элли.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>9. interrupt, IsInterrupted, interrupted exception</h2>
+</div>
+<p>- Привет, Амиго! Согласись, Элли хорошо придумала с этим Cancel?</p>
+<p class="amigo">- Ага.</p>
+<p>- На самом деле нечто подобное существует в классе <b>Thread</b>. Только переменная называется не <b>isCancel</b>, а <b>isInterrupt</b>, и метод остановки, соответственно, не <b>cancel()</b>, а <b>interrupt()</b>.</p>
+<p class="amigo">- Да?</p>
+<p>- Ага. Вот смотри:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="52%">Код</th><th width="48%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Clock <span class="blue_text"><b>implements Runnable</b></span><br/>
+{<br/>
+    <b>public</b> void run()<br/>
+   {<br/>
+      <span class="blue_text">Thread current = Thread.currentThread();</span><br/><br/>
+
+       <b>while</b> <span class="red_text">(!current.isInterrupted())</span><br/>
+      {<br/>
+          Thread.sleep(1000);<br/>
+          System.out.println("Tik");<br/>
+      }<br/>
+   }<br/>
+}
+</td>
+<td class="wide-text">Т.к. много нитей могут вызвать метод run одного объекта, то <span class="blue_text">объект Clock в своем методе <b>run</b> получает объект вызвавшей его нити</span> («текущей нити»).<br/><br/>
+
+		Класс Clock (часы) будет писать в консоль раз в секунду слово «Tik», пока переменная <b>isInterrupt</b> текущей нити равна false.<br/><br/>
+
+		Когда переменная <b>isInterrupt</b> станет равной <b>true</b>, метод <b>run</b> завершится.
+</td>
+</tr>
+<tr><td class="monospace_text wide-text"><b>public static void</b> main(<b>String</b>[] args)<br/>
+{<br/>
+     <span class="blue_text">Clock clock = new Clock();<br/>
+     Thread clockThread = new Thread(clock);<br/>
+     clockThread.start();</span><br/><br/>
+   
+     <span class="green_text">Thread.sleep(10000);</span><br/>
+     <span class="red_text">clockThread.<b>interrupt</b>();</span><br/>
+}
+	</td>
+<td class="wide-text"><span class="blue_text">Главная нить, запускает дочернюю нить – часы, которая должна работать вечно.</span><br/><br/>
+<span class="green_text">Ждет 10 секунд и</span> <span class="red_text">отменяет задание, вызовом метода <b>interrupt</b>.</span><br/><br/>
+
+		Главная нить завершает свою работу.<br/><br/>
+
+		Нить часов завершает свою работу.
+	</td>
+</tr>
+</tbody>
+</table>
+<p>Более того, в методе <b>sleep</b>, который так любят использовать для организации вечного цикла в методе <b>run</b>, есть автоматическая проверка переменной <b>isInterrupt</b>. Если нить вызовет метод <b>sleep</b>, то этот метод сначала проверит, а не установлена ли для текущей (вызвавшей его нити) переменная <b>isInterrupt</b> в true. И если установлена, то метод не будет спать, а выкинет исключение <span class="red_text"><b>InterruptedException</b></span>.</p>
+<p class="amigo">- А зачем выкидывать исключение? Не лучше ли тоже просто в цикле вместо isCancel подставить isInterrupted()?</p>
+<p>- <b>Во-первых</b>, не всегда в методе <b>run</b> есть цикл. Метод может состоять просто из двух десятков вызовов других методов. Тогда перед вызовом каждого придется добавлять проверку isInterrupted.</p>
+<p><b>Во-вторых</b>, вдруг какой-то метод очень долго исполняется, т.к. делает много разных действий.</p>
+<p><b>В-третьих</b>, выкидывание исключения – это не замена проверке isInterrupted, а скорее удобное дополнение. Выкинутое исключение позволяет быстро раскрутить стек вызовов до самого <b>run</b>.</p>
+<p><b>В-четвертых</b>, метод sleep часто используют, и, получается, к такому полезному методу неявно добавили не менее полезную проверку. <b>Вроде бы никто специально проверку не добавлял, а она есть.</b> Это очень ценно, когда ты используешь много чужого кода и не можешь сам добавить в него проверку.</p>
+<p><b>В-пятых</b>, дополнительная проверка не приводит к снижению производительности. Вызов метода sleep значит, что нить должна ничего не делать (спать), поэтому дополнительная работа никому не мешает.</p>
+<p class="amigo">- Серьёзные аргументы.</p>
+<p>- И, наконец, <b>последнее</b>: ты можешь в своем методе run вызывать чужой код, к которому у тебя нет доступа (исходников и/или прав их менять). Он может не иметь проверок на isInterrupted, а также перехватывать с помощью <b>try…catch(Exception e)</b> все возникшие исключения.</p>
+<p><span class="red_text"><b>Никто не гарантирует, что нить можно остановить. Она может остановиться только сама.</b></span></p><p>
+</p><div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>10. Задача на interrupt</h2>
+</div>
+<p>- Привет, Амиго! </p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson10,task01"></button><b>1. Считаем секунды</b><br/><br/>
+                1. Напиши реализацию метода <span class="taskcode">run</span> в нити <span class="taskcode">Stopwatch</span> (секундомер).<br/>
+		2. <span class="taskcode">Stopwatch</span> должен посчитать количество секунд, которое прошло от создания нити до ввода строки.<br/>
+		3. Выведи количество секунд в консоль. 
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson10,task02"></button><b>2. Отсчет на гонках</b><br/><br/>
+                1. Разберись, что делает программа.<br/>
+		2. Реализуй логику метода <span class="taskcode">run</span> так, чтобы каждую секунду через пробел<br/>
+		выдавался отсчет начиная с <span class="taskcode">countSeconds</span> до 1, а потом слово [Марш!] (см примеры).<br/>
+		3. Если нить работает 3.5 секунды или более, прерви ее методом <span class="taskcode">interrupt</span> и внутри нити выведи в консоль слово [Прервано!].<br/>
+		Пример для <span class="taskcode">countSeconds</span>=4 : [4 3 2 1 Прервано!]<br/>
+		4. Если нить работает менее 3.5 секунд, она должна завершиться сама.<br/>
+		Пример для <span class="taskcode">countSeconds</span>=3 : [3 2 1 Марш!]<br/>
+		PS: метод <span class="taskcode">sleep</span> выбрасывает <span class="taskcode">InterruptedException</span>.  
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson10,task03"></button><b>3. Снова interrupt</b><br/><br/>
+                Создай нить <span class="taskcode">TestThread</span>.<br/>
+		В методе <span class="taskcode">main</span> создай экземпляр нити, запусти, а потом прерви ее используя метод <span class="taskcode">interrupt()</span>. 
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson10,task04"></button><b>4. А без interrupt слабо?</b><br/><br/>
+                Разберись, как работает программа.<br/>
+		Сделай так, чтобы в методе <span class="taskcode">ourInterruptMethod</span> можно было сделать так, чтобы нить <span class="taskcode">TestThread</span> завершилась сама.<br/>
+		Нельзя использовать метод <span class="taskcode">interrupt</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level16,lesson10,task05"></button><b>5. Один для всех, все - для одного</b><br/><br/>
+                1. Разберись, как работает программа.<br/>
+		1.1. Обрати внимание, что объект <span class="taskcode">Water</span> - один для всех нитей.<br/><br/>
+
+		2. Реализуй метод <span class="taskcode">ourInterruptMethod</span>, чтобы он прерывал все нити из <span class="taskcode">threads</span>.<br/>
+		3. В методе <span class="taskcode">run</span> исправь значения переменных:<br/>
+		3.1. <span class="taskcode">isCurrentThreadInterrupted</span> - должна равняться значению метода <span class="taskcode">isInterrupted</span> у текущей нити.<br/>
+		3.2. <span class="taskcode">threadName</span> - должна равняться значению метода <span class="taskcode">getName</span> (реализовано в классе <span class="taskcode">Thread</span>) у текущей нити.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>11. Ссылка на вики, потоки</h2>
+</div>
+<p>- Как тебе новая тема? Правда, интересно! То-то же. Если возникли некоторые вопросы, то есть хорошая статья, которая может дать на них ответы.</p>
+<p><a href="http://wikijava.it-cache.net/index.php@title=Glava_17_Thinking_in_Java_4th_edition.html" target="_blank">Ссылка на вики, потоки</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>12. Хулио</h2>
+</div>
+<p>- Привет, Амиго! Чувствую себя любителем сериалов из девяностых. Это так здорово. Ладно, хватит уже трепаться, давай смотреть:</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-16.gif" preload="none" tabindex="0" taskkey="level16,lesson12,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-16.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=27gtCAnr9Rk" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>13. Домашние и бонусные задания</h2>
+</div>
+<p>- Здорово, боец!</p>
+<p class="amigo">- Здравия желаю, товарищ капитан!</p>
+<p>- У меня для тебя шикарная новость. Вот тебе задания для закрепления полученных навыков. Выполняй их каждый день, и твои навыки будут расти с неимоверной скоростью. Они специально разработаны для выполнения их в Intellij IDEA.</p>
+<table class="table_task">
+<tr>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Thread.currentThread - всегда возвращает текущую нить</b><br/><br/>
+                1. В методе <span class="taskcode">printMsg</span> присвой переменной <span class="taskcode">t</span> текущую нить.<br/>
+		2. В методе <span class="taskcode">printMsg</span> после всех действий поставь задержку в 1 миллисекунду.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Последовательные выполнения нитей</b><br/><br/>
+		1. В методе <span class="taskcode">run</span> после всех действий поставь задержку в 10 миллисекунд. Выведи "Нить прервана", если нить будет прервана.<br/>
+		2. Сделай так, чтобы все нити выполнялись последовательно: сначала для нити №1 отсчет с <span class="taskcode">COUNT</span> до 1, потом для нити №2 с <span class="taskcode">COUNT</span> до 1 и т.д.<br/><br/>
+<span class="example-legacy">Пример:</span><br/>
+<span class="example-data">#1: 4<br/>
+		#1: 3<br/>
+		...<br/>
+		#1: 1<br/>
+		#2: 4<br/>
+		...</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Рекурсивное создание нитей</b><br/><br/>
+                1. Измени класс <span class="taskcode">GenerateThread</span> так, чтобы он стал нитью.<br/>
+		2. Создай конструктор <span class="taskcode">GenerateThread</span>, который должен:<br/>
+		2.1. Вызвать конструктор суперкласса с параметром <span class="taskcode">String</span> - номером созданной нити. Используй <span class="taskcode">countCreatedThreads</span>.<br/>
+		2.2. Запустить текущую нить.<br/>
+		2.3. Номер первой нити должен начинается с 1.<br/>
+		3. Переопредели метод <span class="taskcode">toString</span>, для этого внутри <span class="taskcode">GenerateThread</span> нажми Alt+Insert -&gt; Override Methods. Начни печатать <span class="taskcode">toString</span>.<br/>
+		3.1. Метод <span class="taskcode">toString</span> должен возвращать № текущей нити и слово " created". Используй <span class="taskcode">getName()</span>. Пример: [8 created]<br/>
+		4. Пока количество созданных нитей меньше <span class="taskcode">Solution.count</span> метод <span class="taskcode">run</span> должен:<br/>
+		4.1. создать новую нить типа <span class="taskcode">GenerateThread</span>.<br/>
+		4.2. Вывести в консоль созданную в пункте 4.1. нить.<br/>
+		5. В итоге должно быть выведено в консоль 15 строк.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>4. Последовательные выполнения нитей</b><br/><br/>
+                1. Разберись, что делает программа.<br/>
+		2. Сделай так, чтоб программа сначала выводила результат нити, а когда нить завершится - продолжила метод <span class="taskcode">main</span>.<br/><br/>
+<span class="example-legacy">Пример выходных данных:</span><br/>
+<span class="example-data">inside MyThread 0<br/>
+		inside MyThread 1<br/>
+		...<br/>
+		inside MyThread 9<br/>
+		inside main 0<br/>
+		inside main 1<br/>
+		...<br/>
+		inside main 9</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>5. Взаимная блокировка</b><br/><br/>
+                1. Разберись, как работает программа.<br/>
+		2. Не меняя классы <span class="taskcode">T1</span> и <span class="taskcode">T2</span> сделай так, чтобы они завершились, не обязательно успешно.<br/>
+		3. метод <span class="taskcode">sleep</span> не использовать. 
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>6. Создание по образцу</b><br/><br/>
+                Разберись, как работает программа.<br/>
+		По образу и подобию <span class="taskcode">CountDownRunnable</span> создай нить <span class="taskcode">CountUpRunnable</span>, которая выводит значения в нормальном порядке – от 1 до <span class="taskcode">number</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>7. Поиграем?</b><br/><br/>
+                Три человека играют в игру. Каждый игрок (Gamer) характеризуется двумя параметрами: фамилией (name) и количеством действий в секунду (rating).<br/>
+		Нужно вывести в консоль ход игры и определить победителя и проигравших.<br/>
+		Итак...<br/>
+		1. Разберись, что делает программа.<br/>
+		1.1. <span class="taskcode">List&amp;ltString&amp;gt steps</span> хранит последовательность действий, которое каждый игрок выполняет от 0 до последнего.<br/>
+		1.2. <span class="taskcode">isWinnerFound</span> показывает, найден победитель или нет.<br/>
+		1.3. метод <span class="taskcode">sleep</span> выбрасывает <span class="taskcode">InterruptedException</span> и принимает параметр типа <span class="taskcode">long</span>.<br/>
+		1.4. Игроки играют независимо друг от друга.<br/><br/>
+
+		2. Реализуйте логику метода <span class="taskcode">run</span> так, чтобы для каждого игрока:<br/>
+		2.1. За 1 секунду через равные интервалы времени выводились в консоль действия, описанные в <span class="taskcode">steps</span>. Количество выведенных действий должно равняться <span class="taskcode">rating</span>.<br/>
+		2.2. Любой текст должен начинаться с фамилии игрока (метод <span class="taskcode">getName()</span>), потом следовать двоеточие, а затем сам текст. Пример: [Ivanov:Начало игры].<br/>
+		2.3. Когда игрок выполнит все действия из <span class="taskcode">steps</span>, то он считается победителем. Выведите [<span class="taskcode">getName()</span> + ":победитель!"].<br/>
+		2.4. Когда найден победитель, то игра останавливается, и остальные игроки считаются побежденными. Выведите для них [<span class="taskcode">getName()</span> + ":проиграл"].
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>8. Кто первый встал - того и тапки</b><br/><br/>
+                1. Разберись, что делает программа.<br/>
+		1.1. Каждая нить должна читать с консоли слова. Используйте готовый <span class="taskcode">static BufferedReader reader</span>.<br/>
+		1.2. Используй <span class="taskcode">static byte countReadStrings</span>, чтобы посчитать, сколько слов уже считано с консоли всеми нитями.<br/><br/>
+
+		2. Реализуйте логику метода <span class="taskcode">run</span>:<br/>
+		2.1. Пока нить не прервана (<span class="taskcode">!isInterrupted</span>) читайте с консоли слова и добавляйте их в поле <span class="taskcode">List&amp;ltString&amp;gt result</span>.<br/>
+		2.2. Используй <span class="taskcode">countReadStrings</span> для подсчета уже считанных с консоли слов.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>9. Только по-очереди!</b><br/><br/>
+                1. В классе <span class="taskcode">Solution</span> создать нить <span class="taskcode">public static Read3Strings</span> унаследовавшись от <span class="taskcode">Thread</span>.<br/>
+		2. В методе <span class="taskcode">run</span> реализовать чтение с консоли трех строк.<br/>
+		3. Три подряд введенных строки должны считываться в одной нити и объединяться в одну строку через пробел.<br/>
+		4. В методе <span class="taskcode">main</span> вывести результат для каждой нити.<br/>
+		5. Используйте <span class="taskcode">join</span><br/><br/>
+<span class="example-legacy">Пример входных данных:</span><br/>
+<span class="example-data">a<br/>
+		b<br/>
+		c<br/>
+		d<br/>
+		e<br/>
+		f</span><br/>
+<span class="example-legacy">Выходные данные:</span><br/>
+<span class="example-data">a b c<br/>
+		d e f</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>10. Последовательный вывод файлов</b><br/><br/>
+                1. Разберись, что делает программа.<br/>
+		2. В статическом блоке считай 2 имени файла <span class="taskcode">firstFileName</span> и <span class="taskcode">secondFileName</span>.<br/>
+		3. Внутри класса <span class="taskcode">Solution</span> создай нить <span class="taskcode">public static ReadFileThread</span>, которая реализует интерфейс <span class="taskcode">ReadFileInterface</span> (Подумай, что больше подходит - <span class="taskcode">Thread</span> или <span class="taskcode">Runnable</span>).<br/>
+		3.1. Метод <span class="taskcode">setFileName</span> должен устанавливать имя файла, из которого будет читаться содержимое.<br/>
+		3.2. Метод <span class="taskcode">getFileContent</span> должен возвращать содержимое файла.<br/>
+		3.3. В методе <span class="taskcode">run</span> считай содержимое файла, закрой поток. Раздели пробелом строки файла.<br/>
+		4. Подумай, в каком месте нужно подождать окончания работы нити, чтобы обеспечить последовательный вывод файлов.<br/>
+		4.1. Для этого добавь вызов соответствующего метода.<br/>
+		Ожидаемый вывод:<br/>
+		[все тело первого файла]<br/>
+		[все тело второго файла]
+            </td>
+</tr>
+</table>
+<p>- Те задания были для духов. Для дедушек я добавил бонусные задания повышенной сложности. Только для старослужащих. </p>
+<table class="table_task">
+<tr>
+<th></th>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>1. Factory method pattern</b><br/><br/>
+<u>Задача:</u> 1. Внимательно посмотри, какие классы у тебя есть.<br/>
+		2. В отдельных файлах в пакете <span class="taskcode">common</span> создай классы <span class="taskcode">JpgReader</span>, <span class="taskcode">PngReader</span>, <span class="taskcode">BmpReader</span>, которые реализуют интерфейс <span class="taskcode">ImageReader</span>.<br/>
+		3. В отдельном файле в пакете <span class="taskcode">bonus01</span> создай класс <span class="taskcode">ImageReaderFactory</span> с одним методом.<br/>
+		3.1. Подумай, как он должен называться.<br/>
+		3.2. Подумай, какие модификаторы должны быть у этого метода.<br/>
+		4. Этот метод должен:<br/>
+		4.1. для каждого значения из <span class="taskcode">ImageTypes</span> возвращать соответствующий <span class="taskcode">Reader</span>, например, для ImageTypes.JPG - <span class="taskcode">JpgReader</span>;<br/>
+		4.2. если передан неправильный параметр, то выбросить исключение <span class="taskcode">IllegalArgumentException</span>("Неизвестный тип картинки").
+            </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>2. Клубок</b><br/><br/>
+<u>Задача:</u> 1. Создай 5 различных своих нитей c отличным от <span class="taskcode">Thread</span> типом:<br/>
+		1.1. нить 1 должна бесконечно выполняться;<br/>
+		1.2. нить 2 должна выводить "InterruptedException" при возникновении исключения <span class="taskcode">InterruptedException</span>;<br/>
+		1.3. нить 3 должна каждые полсекунды выводить "Ура";<br/>
+		1.4. нить 4 должна реализовать интерфейс <span class="taskcode">Message</span>, при вызове метода <span class="taskcode">showWarning</span> нить должна останавливаться;<br/>
+		1.5. нить 5 должна читать с консоли цифры пока не введено слово "N", а потом вывести в консоль сумму введенных цифр.<br/>
+		2. В статическом блоке добавь свои нити в <span class="taskcode">List&amp;ltThread&amp;gt threads</span> в перечисленном порядке.<br/>
+		3. Нити не должны стартовать автоматически.<br/><br/>
+		Подсказка: Нить 4 можно проверить методом <span class="taskcode">isAlive()</span>
+</td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>3. Отдебажим все на свете</b><br/><br/>
+<u>Задача:</u> Разобраться, что делает програма.<br/>
+		Почитать про <span class="taskcode">UncaughtExceptionHandler</span> - это важно.<br/>
+		Еще раз внимательно посмотреть программу.<br/>
+		Разобраться - продебажить - почему наш <span class="taskcode">OurUncaughtExceptionHandler</span> не срабатывает.<br/>
+		Исправить ошибку, т.е. все должно работать. :)<br/><br/>
+
+		Ожидаемый результат в произвольном порядке:<br/>
+		Нить 1: My exception message<br/>
+		Нить 2: My exception message
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

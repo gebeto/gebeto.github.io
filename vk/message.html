@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Get Token</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="icon" href="http://vladmaxi.net/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="http://vladmaxi.net/favicon.ico" type="image/x-icon">
+	<script src="jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<a href="index.html">back</a>
+	<div id="slick-login" autocomplete="off" action="">
+		<label for="domain">domain:</label><input type="text" name="domain" class="placeholder" id="domain" placeholder="domain">
+		<label for="token">token:</label><input type="text" name="token" class="placeholder" id="token" placeholder="access token">
+		<label for="message">message:</label><input type="text" name="message" class="placeholder" id="message" placeholder="message">
+		<!-- <input type="submit" value="ВОЙТИ"> -->
+		<button class="submit">Send</button>
+	</div>
+	<script>
+		$(document).ready(function(){
+		    $("button").bind("click", function(){
+		        var url = "https://api.vk.com/method/messages.send?domain="+ $("#domain").val() +"&message="+ $("#message").val() +"&v=5.53&access_token="+ $("#token").val();
+		        // alert(url);
+		        var req = url
+		        $.ajax({
+		            url : req,
+		            type : "GET",
+		            dataType : "jsonp",
+		            success : function(msg){
+		            	alert(msg.response);
+		            }
+		        })
+		    });
+		})
+	</script>
+</body>
+</html>

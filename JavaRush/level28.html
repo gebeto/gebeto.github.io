@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:0px;margin-right: 0px;   background: url(images/profile/web-bender-28.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 50px;margin-left: -350px;">
+                    Уровень 28
+                </div>
+</div>
+</div>
+<br/>
+<!--<div class="line"></div>-->
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>1. switch, case, default</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/28/image-ru-28-06.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Билаабо! Так рад тебя снова видеть. Только твои лекции такие хорошие и понятные. Не то, что эта Java Memory Model.</p>
+<p>- Да, Билаабо умеет выбирать лекции. Сегодня я расскажу тебе про <b>switch</b>.</p>
+<p class="amigo">- Так мне уже про него рассказывали, кажется.</p>
+<p>- Элли. Амиго не хочет слушать лекцию про switch? Может, начнешь свою?</p>
+<p class="amigo">- Хочу, хочу. Давай про switch.</p>
+<p>- Ок. В Java есть такой оператор  - <b>switch</b>. Он удобен, когда тебе нужно выполнить определенные действия в зависимости от различных значений некоторой переменной.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Пример со switch</th><th width="50%">Аналогичный код </th></tr>
+<tr>
+<td class="monospace_text wide-text">int i = 5;<br/>
+switch(i)<br/>
+{<br/>
+     case 1: <br/>
+         System.out.println("один"); <br/>
+         break;<br/>
+     case 2: <br/>
+         System.out.println("два"); <br/>
+         break;<br/>
+     case 3: <br/>
+         System.out.println("три"); <br/>
+         break;<br/>
+    default: <br/>
+         System.out.println("много");<br/>
+}
+    </td>
+<td class="monospace_text">int i = 5;<br/>
+<b>if</b> (i==1)<br/>
+{<br/>
+     System.out.println("один");<br/>
+}<br/>
+<b>else if</b> (i==2)<br/>
+{<br/>
+     System.out.println("два");<br/>
+}<br/>
+<b>else if</b> (i==3)<br/>
+{<br/>
+     System.out.println("три");<br/>
+}<br/>
+<b>else</b> <br/>
+{<br/>
+     System.out.println("много");<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Оператор <b>switch</b> позволяет прыгнуть  на нужный кусок кода, если значение переданной в него переменной совпадает со значением, указанным после слова <b>case</b>.</p>
+<p>Если i равно 1, то выполнение перейдет на строку помеченную «case 1».</p>
+<p>Если i равно 2, то выполнение перейдет на строку помеченную «case 2».</p>
+<p>Если i равно 3, то выполнение перейдет на строку помеченную «case 3».</p>
+<p>Если переход не выполнился на какой-либо из case’ов, то выполняется на блок, помеченный «default:»</p>
+<p class="amigo">- Ясно. А справа – это та же самая логика, но реализованная с помощью if-ов?</p>
+<p>- Ага.</p>
+<p class="amigo">- А что это еще за слово <b>break</b>? Ты же говорил, что его можно использовать только в циклах?</p>
+<p>- Да, можно и здесь. При выполнении команды <b>break</b> мы тут же выходим из <b>switch</b>.</p>
+<p>Но если команду break убрать, то все строки внутри switch’а будут выполняться до конца.</p>
+<table class="table_example">
+<tbody><tr><th width="33%">Пример</th><th width="33%">Вывод, если i=1</th><th width="33%">Вывод, если i=2</th></tr>
+<tr>
+<td class="monospace_text wide-text">switch(i)<br/>
+{<br/>
+     case 1: <br/>
+         System.out.println("один"); <br/>
+     case 2: <br/>
+         System.out.println("два"); <br/>
+     case 3: <br/>
+         System.out.println("три");<br/> 
+    default: <br/>
+        System.out.println("много");
+}
+    </td>
+<td class="wide-text">один<br/>
+    два<br/>
+    три<br/>
+    много
+    </td>
+<td class="wide-text">два<br/>
+    три<br/>
+    много
+    </td>
+</tr>
+</tbody></table>
+<p>Фактически, case – это метки в коде, и в switch мы прыгаем на очередную метку и… начинаем исполнять весь код до конца switch’а, или пока не встретим break.</p>
+<p class="amigo">- Т.е. если мы не напишем break, то сначала выполнится строчка, на которую мы перепрыгнули, а потом все остальные до закрывающей фигурной скобки "}". Так?</p>
+<p>- Да.</p>
+<p class="amigo">- Ничего сложного. Но мне больше нравится с использованием if-ов. Там нет этих бессмысленных break.</p>
+<p>- Очень часто if действительно компактнее.  Но иногда switch более читабельный.</p>
+<p>Сравни:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Пример со switch</th><th width="50%">Аналогичный код</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public</b> String getName(int i)<br/>
+{<br/>
+    switch(i)<br/>
+    {<br/>
+        case 1: <br/>
+             return "один";<br/>
+        case 2: <br/>
+             return "два";<br/>
+        case 3: <br/>
+             return "три";<br/>
+       default: <br/>
+             return "много";<br/>
+}
+    </td>
+<td class="monospace_text"><b>public</b> String getName(int i)<br/>
+{<br/>
+    <b>if</b> (i==1)<br/>
+       return "один";<br/><br/>
+
+    <b>if</b> (i==2)<br/>
+       return "два";<br/><br/>
+
+    <b>if</b> (i==3)<br/>
+       return "три";<br/><br/>
+
+return "много"<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Не сказал бы, что читабельней.</p>
+<p>- Ладно, а как насчет такого примера?</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Пример со switch</th><th width="50%">Аналогичный код</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public</b> String getName(int i)<br/>
+{<br/>
+    <b>switch</b>(i)<br/>
+    {<br/>
+        <b>case</b> 1: <br/>
+        <b>case</b> 2: <br/>
+             <b>return</b> "один или два";<br/>
+        <b>case 3:</b> <br/>
+        <b>case 4:</b> <br/>
+        <b>case 5:</b> <br/>
+             <b>return</b> "от трех до пяти";<br/>
+       <b>default:</b> <br/>
+             return "много";<br/>
+}
+    </td>
+<td class="monospace_text"><b>public</b> String getName(int i)<br/>
+{<br/>
+    <b>if</b> (i==1 || i==2)<br/>
+       return "один или два";<br/><br/>
+
+    <b>if</b> (i==3 || i==4 || i==5)<br/>
+       <b>return</b> "от трех до пяти";<br/><br/>
+<b>return</b> "много"<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Что-то Билаабо у тебя не очень-то и выходит. Так break можно не писать, когда return?</p>
+<p>- Ага. return сразу приведет к выходу из метода.</p>
+<p class="amigo">- Что-то все время c if-ами выходит компактнее. Но с switch в этот раз вышло читабельней.</p>
+<p>- Фух, наконец-то.</p>
+<p>Еще одна вещь. Можно не писать default в конце. Тогда просто ничего не произойдет, если ни одна из меток не совпадет.</p>
+<p class="amigo">- Ну, точно, как if-else…  но читабельней, гораздо читабельней!</p>
+<p>- Отлично. Рад, что тебе понравилась моя лекция.</p>
+<p>Чуть не забыл. Изначально внутри switch можно было использовать переменные только примитивных типов и enum’ы. Но теперь туда добавили и поддержку типа String.</p>
+<p class="amigo">- Т.е. я могу написать так:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public</b> int getNumber(String <span class="green_text">number</span>)<br/>
+{<br/>
+     <b>switch</b>(<span class="green_text">number</span>)<br/>
+    {<br/>
+       <b>case</b> <span class="green_text">"one":</span> <br/>
+              <b>return</b> 1;<br/>
+       <b>case</b> <span class="green_text">"two":</span> <br/>
+              <b>return</b> 2;<br/>
+       <b>case</b> <span class="green_text">"three":</span> <br/>
+              <b>return</b> 3;<br/>
+       <b>default</b>: <br/>
+              <b>return</b> -1;<br/>
+    }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>- Ага. Правда, удобно?</p>
+<p class="amigo">- Да. Отличная штука switch!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>2. Задачи на switch</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level28,lesson02,task01"></button><b>1. Осваиваем switch</b><br/><br/>
+                Реализуйте логику метода <span class="taskcode">switchTest</span>:<br/>
+		1. Не используйте условные операторы<br/>
+		2. Используйте 1 <span class="taskcode">switch</span>, у которого 2 <span class="taskcode">case</span> и 1 <span class="taskcode">default</span><br/>
+		3. Ожидаемый вывод:<br/>
+		Вывод для E1.A - "it's E1.A"<br/>
+		Вывод для E1.B - "it's E1.B"<br/>
+		Вывод для E1.C - "it's E1.C"<br/>
+		Вывод для E1.Y - "it's E1.Y"<br/>
+		Вывод для E2.D - "it's E2.D"<br/>
+		Вывод для E2.E - "it's E2.E"<br/>
+		Вывод для E2.F - "it's E2.F"<br/>
+		Вывод для всех других значений - "undefined"
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. ThreadGroup - группы потоков</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/28/image-ru-28-05.png"/>
+<p>- Привет, Амиго!</p>
+<p>Начнем разбираться с нитями основательней.</p>
+<p>Чтобы любая нить не могла останавливать и прерывать все нити подряд, было введено понятие «группы нитей». Нить может оказывать влияние только на другие нити, которые содержатся в той же группе, что и она. ThreadGroup – это класс, который управляет группами нитей. Такой подход позволяет защитить нити от нежелательного изменения.</p>
+<p>Иногда приходится выполнять код, которому нельзя 100% доверять. Поэтому удобно поместить все его  нити в отдельную группу и запретить им вмешиваться в работу основной группы нитей.</p>
+<p>Группа нитей может содержать другие группы. Это позволяет организовать все нити и группы в иерархическое дерево. В таком дереве каждая группа нитей, за исключением начальной, имеет свою группу-родителя.</p>
+<p>У класса ThreadGroup есть методы, которые позволяют получить списков всех его нитей, а также влиять/изменять их. Когда мы создаем новую нить, и явно не указываем группу, она присоединяется к той же группе, что и нить-создатель.</p>
+<p>Вот тебе несколько методов класса ThreadGroup:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">String	<b>getName</b>()
+    </td>
+<td class="wide-text">Возвращает имя группы
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">ThreadGroup <b>getParent</b>()
+    </td>
+<td class="wide-text">Возвращает группу-родителя
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>interrupt</b>()
+    </td>
+<td class="wide-text">Прерывает все нити в группе.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>isDaemon</b>()
+    </td>
+<td class="wide-text">Проверяет, является ли группа демоном
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>setDaemon</b>(boolean daemon)
+    </td>
+<td class="wide-text">Устанавливает группе свойство daemon
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>activeCount</b>()
+    </td>
+<td class="wide-text">Возвращает количество живых нитей в группе и ее подгруппах
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>activeGroupCount</b>()
+    </td>
+<td class="wide-text">Возвращает количество живых групп в группе и ее подгруппах
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>enumerate</b>(Thread[] list)
+    </td>
+<td class="wide-text">Помещает в массив все живые нити и возвращает их количество.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>getMaxPriority</b>()
+    </td>
+<td class="wide-text">Возвращает максимальный приоритет для нитей в группе.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>setMaxPriority</b>(int priority)
+    </td>
+<td class="wide-text">Позволяет задать максимальный приоритет нитей в группе и подгруппах.
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи по ThreadGroup</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level28,lesson04,task01"></button><b>1. Пишем свою ThreadFactory</b><br/><br/>
+                В классе <span class="taskcode">Solution</span> создайте публичный статический класс <span class="taskcode">AmigoThreadFactory</span>, реализующий интерфейс <span class="taskcode">ThreadFactory</span><br/>
+		1.Реализация интерфейсного метода - создайте и верните трэд, который должен:<br/>
+		1.1. не быть демоном<br/>
+		1.2. иметь нормальный приоритет<br/>
+		1.3. имя трэда должно иметь шаблон "GN-pool-A-thread-B", где<br/>
+<span class="taskcode">GN</span> - это имя группы,<br/>
+<span class="taskcode">A</span> - это номер фабрики инкрементируется в пределах класса начиная с 1, используйте <span class="taskcode">AtomicInteger</span><br/>
+<span class="taskcode">B</span> - номер треда инкрементируется в пределах конкретной фабрики начиная с 1, используйте <span class="taskcode">AtomicInteger</span><br/>
+		2.Каждая фабрика должна иметь ту группу тредов (<span class="taskcode">ThreadGroup</span>), в которой она была создана<br/>
+		3. Методы <span class="taskcode">main</span> и <span class="taskcode">emulateThreadFactory</span> не участвуют в тестировании
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level28,lesson04,task02"></button><b>2. ThreadLocalRandom</b><br/><br/>
+                Класс <span class="taskcode">Solution</span> будет использоваться трэдами.<br/>
+		Реализуйте логику всех методов, используйте класс <span class="taskcode">ThreadLocalRandom</span>.<br/>
+<span class="taskcode">getRandomIntegerBetweenNumbers</span> должен возвращать случайный <span class="taskcode">int</span> между <span class="taskcode">from</span> и <span class="taskcode">to</span><br/>
+<span class="taskcode">getRandomDouble</span> должен возвращать случайный <span class="taskcode">double</span><br/>
+<span class="taskcode">getRandomLongBetween0AndN</span> должен возвращать случайный <span class="taskcode">long</span> между 0 и <span class="taskcode">n</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>5. Приоритеты потоков</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/28/image-ru-28-04.png"/>
+<p>- Продолжим наш урок. Что же такое приоритеты нитей и зачем они нужны.</p>
+<p>В реальных задачах  важность работы разных нитей может сильно различаться. Для контроля этого процесса был придуман приоритет работы. У каждой нити есть такой приоритет – это число от 1 до 10.</p>
+<p>10 – это наивысший приоритет.</p>
+<p>1 – самый низкий.</p>
+<p>Если приоритет не задан, то нить получает приоритет 5 - средний.</p>
+<p>Приоритет нити не сильно влияет на ее работу, а носит скорее рекомендательный характер.  Если есть несколько спящих нитей, которые нужно запустить, то Java-машина сначала запустит нить с более высоким приоритетом.</p>
+<p>Java-машина управляет нитями так, как посчитает нужным. Нити с низким приоритетом не будут простаивать. Просто они будут получать меньше времени, чем другие, но выполняться все равно будут.</p>
+<p>В большинстве случаев нити всегда выполняются с одинаковым приоритетом. Попытка дать одной нити больше времени, чем другим, часто указывает на архитектурную ошибку программы.</p>
+<p class="amigo">- Ничего себе. А я уже размечтался, что сейчас назначу нити самый высокий приоритет, и она будет делать в 10 раз больше.</p>
+<p>- А тут, оказывается, ситуация – близкая к finalize: нить с высоким приоритетом может и будет работать больше, а может и нет – никто не дает никакой гарантии.</p>
+<p class="amigo">- Кстати, а как поменять приоритет нити?</p>
+<p>- Это очень просто. У класса Thread есть два метода:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">void setPriority(int newPriority)
+    </td>
+<td class="wide-text">Устанавливает новое значение приоритета
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int getPriority()
+    </td>
+<td class="wide-text">Возвращает текущий приоритет нити
+    </td>
+</tr>
+</tbody></table>
+<p>У класса Thread так же есть три константы:</p>
+<p>public final static int MIN_PRIORITY = 1;</p>
+<p>public final static int NORM_PRIORITY = 5;</p>
+<p>public final static int MAX_PRIORITY = 10;</p>
+<p class="amigo">- Дай, я угадаю. MIN_PRIORITY - это минимальный приоритет, MAX_PRIORITY - максимальный, а NORM_PRIORITY - приоритет по умолчанию?</p>
+<p>- Да, именно так. Сможешь сам написать код, который выставляет нити наивысший приоритет.</p>
+<p class="amigo">- А тут есть какой-то подвох? Вроде бы так:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text">Thread thread = new MyThread();<br/>
+ thread.setPriority(Thread. MAX_PRIORITY)<br/>
+ thread.start();
+    </td>
+</tr>
+</tbody></table>
+<p>- Все верно. Ничего сложного да?</p>
+<p class="amigo">- Ага. А можно устанавливать/менять приоритет нити после ее запуска? Или тут как с setDaemon – обязательно выставить значение до старта нити?</p>
+<p>- Приоритет можно менять и после старта. Как я уже говорила, кардинальных изменений это не влечет.</p>
+<p class="amigo">- Небольшая, но интересная тема. Спасибо, Элли.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задачи на приоритет нитей</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level28,lesson06,task01"></button><b>1. Magic class</b><br/><br/>
+                В пакете <span class="taskcode">java.util.concurrent</span> найдите такую реализацию <span class="taskcode">List</span>, у которой<br/>
+		1. итератор не содержит какие-либо данные, вставленные в список после создания итератора<br/>
+		2. внутри данные хранятся в виде массива<br/>
+		3. итератор гарантированно не бросает <span class="taskcode">ConcurrentModificationException</span><br/>
+		4. допускаются все элементы включая <span class="taskcode">null</span><br/>
+		5. Исправьте строку <span class="taskcode">List&amp;ltString&amp;gt list = null</span> ... в методе <span class="taskcode">main</span>
+</td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Приоритеты в Threads</b><br/><br/>
+                В отдельном файле создайте класс <span class="taskcode">MyThread</span> унаследовавшись от <span class="taskcode">Thread</span>. <span class="taskcode">MyThread</span> должен:<br/>
+		1. иметь возможность быть созданным используя любой конструктор супер-класса  (Alt+Insert)<br/>
+		2. приоритет у трэдов должен проставляться циклично от минимального значения до максимального значения.<br/>
+		3. если у трэда установлена трэд-группа(<span class="taskcode">ThreadGroup</span>), то приоритет трэда не может быть больше максимального приоритета его трэд-группы
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>7. ThreadPoolExecutor пул нитей</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/28/image-ru-28-03.png"/>
+<p>- Рядовой программист рано или поздно сталкивается с тем, что у него есть много маленьких задач, которые нужно выполнять время от времени.</p>
+<p>Если ты пишешь игру, то это действия, которые выполняют отдельные персонажи.</p>
+<p>Если пишешь веб-сервер, то это различные команды, приходящие от пользователей: загрузить фото, перекодировать его в нужный формат, применить нужный шаблон и т.д.</p>
+<p>Все большие задачи рано или поздно разбиваются на набор маленьких и удобных задач.</p>
+<p>Вот так на этом фоне незаметно и возникает вопрос – а как ими всеми управлять? Если в минуту нужно выполнить несколько сотен задач? Создавать для каждой задачи свою нить бывает не очень рационально. Для каждой нити Java-машина выделяет довольно много ресурсов.</p>
+<p>Другими словами – создание и уничтожение отработавшей нити может тратить больше ресурсов и времени, чем само выполняемое задание.</p>
+<p>Java-разработчики придумали элегантное решение этой проблемы - <b>ThreadPoolExecutor</b>.</p>
+<p><b>ThreadPoolExecutor</b> – это класс, который имеет внутри две вещи:</p>
+<p><b>А)</b> Очередь задач, в которую можно добавлять задачи, по мере их появления в программе.</p>
+<p><b>Б)</b>  Пул-нитей (группа нитей) – которые эти задачи исполняют.</p>
+<p>При этом нити не уничтожаются  после выполнения задания, а засыпают. Чтобы начать выполнять новое задание, как только оно появится.</p>
+<p>При создании <b>ThreadPoolExecutor</b>, можно задать максимальное количество нитей, которые будут созданы и максимальное количество заданий, которые можно поместить в очередь. Т.е. можно ограничить количество нитей числом 10, например, а количество задач в очереди – 100.</p>
+<p>Как работает <b>ThreadPoolExecutor</b>:</p>
+<p><b>1)</b> При добавлении нового задания, оно помещается в конец очереди.</p>
+<p><b>2)</b> Если очередь заполнена будет выкинуто исключение.</p>
+<p><b>3)</b> Каждая нить после выполнения задания берет очередное задание из очереди и начинает выполнять его.</p>
+<p><b>4)</b> Если задач в очереди нет, нить засыпает до их добавления.</p>
+<p>Подход с ограничением количества работающих нитей выгоден тем, что чем больше нитей, тем сильнее они друг другу мешают. Гораздо эффективнее иметь 5-10 нитей-исполнителей и длинную очередь задач, чем создать 100 нитей для внезапно появившейся группы задач, которые будет конкурировать друг с другом за ресурсы: память, время процессора, доступ к базе и т.п.</p>
+<p>Пример работы такого <b>ThreadPoolExecutor</b>:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text">ExecutorService <span class="red_text">service</span> = Executors.newFixedThreadPool(2);<br/><br/>
+<b>for(int i = 0; i <br/> 
+{<br/>
+     <span class="red_text">service.submit</span><b>(new Runnable()</b> {<br/>
+            <b>public void run()</b> <br/>
+           {<br/>
+               <span class="grey_text">// тут мы загружаем что-то тяжелое из интернета.</span><br/>
+           }<br/>
+     });<br/>
+}
+    </b></td>
+</tr>
+</tbody></table>
+<p class="amigo">- Я что-то не вижу его…</p>
+<p>- Объект <b>ThreadPoolExecutor</b> создается при вызове метода <b>newFixedThreadPool</b>.</p>
+<p>Так вот, работает он очень просто. Как только ты добавляешь ему задачу с помощью метода <b>submit</b>, он:</p>
+<p><b>А)</b> Будит спящую нить для ее выполнения, если такая есть.</p>
+<p><b>Б)</b> Создает новую нить для выполнения задания, если ее нет.</p>
+<p><b>В)</b> Если достигнут максимум нитей, то просто кладет задачу в конец очереди.</p>
+<p>Я специально написала в примере – тут мы загружаем что-то тяжелое из интернета. Если у нас есть 100 задач «скачать что-то большое из интернета», то нет смысла запускать много таких задач одновременно – мы упремся в ограничение ширины интернет-канала.  В таком случает пары нитей должно быть достаточно. Именно это ты и видишь в примере выше:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>ExecutorService <span class="red_text">service</span> = Executors.<span class="red_text">newFixedThreadPool</span>(2);</b>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Оказывается, работать с кучей задач не так уж и сложно.</p>
+<p>- Да. Даже легче, чем ты можешь себе представить. Но об этом тебе расскажет Ким.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Задачи на пул потоков</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level28,lesson08,task01"></button><b>1. Знакомство с Executors</b><br/><br/>
+                1. В методе <span class="taskcode">main</span> создай фиксированный пул из 5 трэдов используя класс <span class="taskcode">Executors</span>.<br/>
+		2. В цикле отправь на исполнение в пул 10 тасок <span class="taskcode">Runnable</span>.<br/>
+		3. У каждой таски в методе <span class="taskcode">run</span> вызови метод <span class="taskcode">doExpensiveOperation</span> с порядковым номером таски начиная с 1, см. пример вывода<br/>
+		4. Запрети добавление новых тасок на исполнение в пул (метод <span class="taskcode">shutdown</span>)<br/>
+		5. Дай экзэкьютору 5 секунд на завершение всех тасок (метод <span class="taskcode">awaitTermination</span> и параметр <span class="taskcode">TimeUnit.SECONDS</span>)<br/>
+		Не должно быть комментариев кроме приведенного <span class="taskcode">output example</span>
+</td></tr>
+<tr>
+<td><button class="task_button" taskkey="level28,lesson08,task02"></button><b>2. Знакомство с ThreadPoolExecutor</b><br/><br/>
+                1. В методе <span class="taskcode">main</span> создай очередь <span class="taskcode">LinkedBlockingQueue&amp;ltRunnable&amp;gt</span><br/>
+		2. В цикле добавь в очередь 10 тасок <span class="taskcode">Runnable</span>.<br/>
+		3. У каждой таски в методе <span class="taskcode">run</span> вызови метод <span class="taskcode">doExpensiveOperation</span> с порядковым номером таски начиная с 1, см. пример вывода<br/>
+		4. Создай объект <span class="taskcode">ThreadPoolExecutor</span> со следующими параметрами:<br/>
+		- основное количество трэдов (ядро) = 3<br/>
+		- максимальное количество трэдов = 5<br/>
+		- время удержания трэда живым после завершения работы = 1000<br/>
+		- тайм-юнит - миллисекунды<br/>
+		- созданная в п.1. очередь с тасками<br/>
+		5. Запусти все трэды, которые входят в основное кол-во трэдов - ядро), используй метод <span class="taskcode">prestartAllCoreThreads</span><br/>
+		6. Запрети добавление новых тасок на исполнение в пул (метод <span class="taskcode">shutdown</span>)<br/>
+		7. Дай экзэкьютору 5 секунд на завершение всех тасок (метод <span class="taskcode">awaitTermination</span> и параметр <span class="taskcode">TimeUnit.SECONDS</span>)<br/>
+		Не должно быть комментариев кроме приведенного <span class="taskcode">output example</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>9. Executor, <s>ExecutorService</s>, Callable</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/28/image-ru-28-02.png"/>
+<p>- Привет, Амиго!</p>
+<p>Ничего нельзя создать идеальным с первого раза. Это касается и нитей. Со временем разработчики Java убедились, что интерфейс Runnable не идеален. Он  не поддерживал перебрасывание исключений и не позволял узнать результат выполнения задачи…</p>
+<p>Интерфейс Runnable скорее подходит для больших независимых задач, чем для маленьких подзадач, которых хочется запустить с десяток одновременно, а потом собрать с них результаты их работы.</p>
+<p>Поэтому был придуман интерфейс <b>Callable</b>. Он гораздо лучше подходит для параллельного выполнения небольших задач, чем <b>Runnable</b> и <b>Thread</b>, еще и потому, что является generic-интерфейсом.</p>
+<p>Вот типичный класс, который реализует интерфейс:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><b>class ReverseString</b> implements Callable&amp;lt<span class="red_text">String</span>&amp;gt<br/> 
+{<br/>
+     <b>String str;</b><br/><br/>
+
+     <b>ReverseString(String str)</b><br/>
+     {<br/>
+          <b>this.str = str;</b><br/>
+     }<br/><br/>
+
+     <b>public</b> <span class="red_text">String</span> call() throws Exception <br/>
+     {<br/>
+          <b>StringBuilder builder = new StringBuilder(str);<br/>
+          builder.reverse();<br/>
+          return builder.toString();</b><br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>В отличие от <b>Runnable</b>, тут мы должны переопределить метод <b>call</b>, который возвращает результат, заданный типом-параметром. Такой подход гораздо удобнее, чем метод run интерфейса Runnable, который возвращает void. Иногда разработчикам приходилось придумывать различные «обходные пути», чтобы получить результат работы нити.</p>
+<p class="amigo">- Ясно.</p>
+<p>- А теперь смотри, как <b>Callable</b> может работать в паре с ThreadPoolExecutor:</p>
+<p>Во-первых, метод submit класса <b>ThreadPoolExecutor</b> возвращает параметризированный объект типа <b>Future</b>. Этот объект можно использовать, чтобы узнать, завершилось ли уже выполнение задачи, а также, чтобы получить результат ее выполнения.</p>
+<p>Вот как это работает:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><span class="grey_text">//1. Создаем ThreadPoolExecutor</span><br/>
+      ExecutorService <span class="red_text">service</span> = Executors.newFixedThreadPool(5);<br/><br/>
+<span class="grey_text">//2 помещаем в него задачу для выполнения</span><br/>
+<span class="dblue_text"><b>Future</b></span>&amp;lt<b>String</b>&amp;gt <span class="dblue_text"><b>task</b></span> = <span class="red_text">service</span>.<span class="blue_text"><b>submit</b></span><b>(new ReverseString("Amigo"));</b> <br/><br/>
+<span class="grey_text">//3 ждем пока задача выполнится</span><br/>
+<b>while(!</b><span class="dblue_text">task</span>.<b><span class="green_text">isDone</span>())</b> <br/>
+      {<br/>
+          <b>Thread.sleep(1);</b> <br/>      
+      }<br/><br/>
+<span class="grey_text">//4 пробуем получить результат задачи </span><br/>
+<span class="grey_text">//получим или результат или исключение, если оно было при выполнении задачи</span><br/>
+<b>try</b> <br/>
+        {<br/>
+             <b>System.out.println("Развернутая строка : " +</b> <span class="dblue_text">task</span>.<b><span class="green_text">get</span>());</b><br/>
+        } <br/>
+<b>catch (Exception ie)</b> <br/>
+       {  <br/>         
+             <b>ie.printStackTrace(System.err);</b><br/>
+       }<br/><br/>
+<span class="grey_text">//5 останавливаем ThreadPool.</span> <br/>
+<span class="red_text">service</span>.<b><span class="blue_text">shutdown</span>();</b>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Круто! Особенно класс Future понравился. А какие у него есть методы?</p>
+<p>- Вот самые интересные:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text">boolean cancel(boolean mayInterrupt);
+    </td>
+<td class="wide-text">Останавливает задачу.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">boolean isCancelled();
+    </td>
+<td class="wide-text">Возвращает true, если задача была остановлена.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">boolean isDone();
+    </td>
+<td class="wide-text">Возвращает true, если выполнение задачи завершено.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">V get() throws InterruptedException, ExecutionException;
+    </td>
+<td class="wide-text">Возвращает результат вызова метода call или кидает исключение, если оно было.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Круто! Так задачи еще и останавливать можно.</p>
+<p>- Не сильно на это надейся – не каждую нить можно остановить. Но если задача еще в очереди, то это отлично сработает.</p>
+<p class="amigo">- Такой подход мне нравится. Гораздо удобнее, чем самому создавать нити и потом пробовать вытянуть из них результат.</p>
+<p>- Отлично. На этом сегодня и закончим.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>10. Задачи на Executor</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level28,lesson10,task01"></button><b>1. Осваиваем Callable</b><br/><br/>
+                Реализуйте логику метода <span class="taskcode">getTask</span>, который должен возвращать объект <span class="taskcode">Callable</span>.<br/>
+		Объект <span class="taskcode">Callable</span> должен вычислять сумму всех чисел от 1 до переданного числа <span class="taskcode">i</span> включая его, и возвращать его в виде строки<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Plants vs Zombies</b><br/><br/>
+                1. Почитайте про <span class="taskcode">java.util.concurrent.Phaser</span><br/>
+		2. Расставь методы в нужных местах<br/>
+		-<span class="taskcode">arriveAndDeregister()</span> - начинает запускать методы <span class="taskcode">run</span> у тасок<br/>
+		-<span class="taskcode">arriveAndAwaitAdvance()</span> - ждет, когда все трэды будут созданы<br/><br/>
+
+		Пример вывода см. в output.txt<br/>
+		Логика:<br/>
+		Сначала все персонажи присоединяются к игре.<br/>
+		После того, как все персонажи присоединятся к игре и готовы играть, выводится фраза "Игра началась!".<br/>
+		После этого персонажи вступают в игру, после чего умирают.<br/>
+		Не должно быть закоментированного кода
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Учимся гуглить. (Как создать файл и директорию большой глубины для него)</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/28/image-ru-28-01.png"/>
+<p>- Привет, Амиго!</p>
+<p>Продолжаем наши уроки – учимся гуглить.</p>
+<p>Вот тебе несколько заданий:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Задания на поиск в интернете:</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Как получить список живых нитей из группы ThreadGroup?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Как получить список мертвых нитей из группы ThreadGroup?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Аналоги ThreadPoolExecutor?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Что такое ThreadWorker?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Что такое ThreadPool?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Что такое FactoryMethod?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Что такое DDD?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Что такое TDD?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Что такое dump?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Что такое Pool?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>12. Профессор дает доп. материал</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Вот тебе дополнительный материал по теме.</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-28.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>13. Хулио</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет Хулио,  чем занимаешься?</p>
+<p>- Занимаюсь общественно полезным трудом.</p>
+<p class="amigo">- Каким?</p>
+<p>- Лежу, смотрю  видео и никому не мешаю.</p>
+<p class="amigo">- Двигайся, мне тоже захотелось так поработать.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-28.gif" preload="none" tabindex="0" taskkey="level28,lesson13,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-28.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=QB4_pDMUWmI" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>14. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Какие приоритеты нитей бывают?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Можно ли остановить нить, снизив ее приоритет до 0?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Зачем нужен класс ThreadGroup?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">В какой группе нитей состоит main-thread?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Что такое паттерн ThreadPool
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Зачем нужен класс ThreadPoolExecutor?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Сколько способов создать нить вы знаете? (Thread, Runnable, Callable&amp;ltT&amp;gt)
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Для  чего используется класс Future?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">В чем преимущества Callable над Runnable? 
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Можно ли отменить выполнение задачи, если использовать класс Future?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>15. Большая задача</h2>
+</div>
+<p>- Привет, Амиго. Сегодня ты познаешь всю мощь Java!</p>
+<p>Что может быть лучше, чем найти новый полезный сайт?? Только написать пограмму, которая автоматически вытягивает из него всю полезную информацию!</p>
+<p>Допустим, ты решил сделать сайт для поиска работы, который будет показывать все вакансии, размещенные на десятках других сайтов. Идея, конечно, хорошая, но вот только те сайты ни за что не захотят делиться с тобой своими данными.</p>
+<p class="amigo">- Ага. Кто же захочет?? Они же на этом зарабатывают!</p>
+<p>- Ага. <span class="red_text">Не стоит ждать милостей от природы, взять их у нее – наша задача!</span></p>
+<p>Мы напишем программу на Java, которая вытаскивает все нужные нам данные из страницы сайта.</p>
+<p class="amigo">- А какой сайт будем ломать?</p>
+<p>- Ну, во-первых, ломать мы ничего не будем. Мы будем брать данные, которые и так в публичном доступе.  А во-вторых, будем парсить сайт hh.ru. Пусть считает наш выбор признанием его популярности.</p>
+<p>Ему это даже выгодно. Каждый программист накануне поиска работы несколько дней просидит на этом сайте. В 50% случаев человек будет и в следующий раз искать работу именно на этом сайте.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/28/image-ru-28-07.png"/>
+<p class="amigo">- Так-так… А сайт ничего себе – куча полезной информации. И как же нам ее получить?</p>
+<p>- Не нам, а вам!</p>
+<p>Твоя задача, боец, запустить IntelliJ IDEA и приступить к выполнению этого ответственного и секретного задания.</p>
+<p class="amigo">- Есть приступить, товарищ капитан!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

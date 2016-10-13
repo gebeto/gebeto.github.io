@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:0px;margin-right: 0px;   background: url(images/profile/web-bender-35.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 250px;margin-left: -500px;">
+                    Уровень 35
+                </div>
+</div>
+</div>
+<br/>
+<!--<div class="line"></div>-->
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>1. Системы контроля версий</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет!</p>
+<p>- Сегодня я расскажу тебе о системах контроля версий.</p>
+<p>Как ты уже, наверное, знаешь, программы часто бывают очень большими и пишутся очень долго. Иногда десятки человек могут писать программу годами.</p>
+<p>Проекты с миллионом строк кода – это реальность.</p>
+<p class="amigo">- Ничего себе.</p>
+<p>- Это все очень сложно. Люди часто мешают друг другу, часто меняют один и тот же код и т.д. и т.п.</p>
+<p>Чтобы внести порядок в эту неразбериху, программисты начали пользоваться <span class="green_text"><b><i>системами контроля версий</i></b></span> для кода своей программы.</p>
+<p><span class="green_text"><b><i>Система контроля версий</i></b></span> – это программа, представленная в виде клиента и сервера.</p>
+<p>На сервере программа хранит данные (код, который пишут программисты), а программисты, с помощью программ-клиентов,  добавляют или меняют его.</p>
+<p>Основное ее отличие от просто программ, которые позволяют распределённую работу с документами, это то, что она хранит все предыдущие версии всех документов (файлов с кодом).</p>
+<p class="amigo">- А можно больше подробностей. Как это все работает?</p>
+<p>- Вот представь, что ты – программист и хочешь внести небольшие изменения в исходный код в программе, который хранится в репозитории (хранилище) на сервере.</p>
+<p>Для этого тебе надо:</p>
+<p><span class="violet_text">1) Залогиниться на сервер (<b>Login</b>)</span></p>
+<p><span class="violet_text">2) Скопировать последнюю версию всех файлов к себе на компьютер – команда <b>Checkout</b>.</span></p>
+<p><span class="violet_text">3) Внести изменения в нужные фалы.</span></p>
+<p><span class="violet_text">4) Запустить программу локально и проверить, что она компилируется и работает.</span></p>
+<p><span class="violet_text">5) Отправить свои «изменения» на сервер – команда <b>Commit</b>.</span></p>
+<p class="amigo">- В общем ясно.</p>
+<p>- Но и это еще не все. Вот представь, что ты пришел утром на работу, а в Индии уже обед и твои индийские коллеги уже что-то поменяли, и закомитили свои изменения в ваш репозиторий (хранилище) на сервере.</p>
+<p>Тебе же надо работать с последней актуальной версией данных. Тогда ты выполняешь команду <b>Update</b>.</p>
+<p class="amigo">- А в чем ее отличие от <b>Checkout</b>?</p>
+<p>- <b>Checkout</b> предназначена для копирования всех файлов репозитория, а команда <b>Update</b> – только для тех файлов, которые обновились на сервере, со времен последней твоей команды <b>Checkout</b>/<b>Update</b>.</p>
+<p>Вот как примерно это работает:</p>
+<p><b>Checkout</b>:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/35/image-ru-35-04.png"/>
+<p>Теперь допустим, мы изменили файл A и хотим залить его на сервер. Для этого надо использовать команду <b>Commit</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/35/image-ru-35-05.png"/>
+<p>А вот как работает команда <b>Update</b>:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/35/image-ru-35-06.png"/>
+<p class="amigo">- Как интересно. А есть еще команды?</p>
+<p>- Да, и довольно много. Но они могут быть разные в зависимости от того, какую именно программу контроля версий ты выберешь. Поэтому я стараюсь рассказывать только общие принципы.</p>
+<p>Есть еще такая операция, как мэрджинг – объединение двух документов. Допустим, два программиста одновременно меняли один и тот же файл.  Тогда программа на сервер не даст обоим его знакомитить. Кто первый – тот и прав.</p>
+<p class="amigo">- А что делать второму?</p>
+<p>Второму предложат сделать <b>Update</b>, чтобы забрать к себе последние изменения с сервера. Это кстати хороший стиль – перед коммитом делать <b>Update</b></p>
+<p><span class="green_text">Затем, во время исполнения операции <b>Update</b>, программа-клиент попробует объединить локальные изменения с изменениями, полученными с сервера.</span></p>
+<p><span class="violet_text">Если программисты вносили изменения в разные части файла, то программа контроля версий, скорее всего, успешно объединит их.</span> <span class="orange_text">Если в одно и то же место, то программа контроля версий сообщит о конфликте во время мерджа и предложит пользователю самому вручную объединить эти изменения.</span></p>
+<p>Такое часто случается, когда например, оба программиста добавили что-то в конец файла.</p>
+<p class="amigo">- Ясно. Разумно, в общем.</p>
+<p>- И еще одна вещь – ветки.</p>
+<p>Представь, что двум программистам из команды дали задание переписать один модуль. Или, ещё лучше – написать его заново. Пока этот модуль закончен не будет, программа не сможет работать, а может быть даже и компилироваться.</p>
+<p class="amigo">- Что же делать?</p>
+<p>- Для этого в репозиторий добавили <span class="green_text">ветки (branches)</span>. Т.е. грубо говоря – разделили репозиторий на две части. Но не по файлам или директориям, а по версиям.</p>
+<p>Представь, что <span class="dred_text">электричество так и не было открыто</span>, и роботы не были бы изобретены. Тогда <span class="dred_text">не было бы трех освободительных войн, и вся история людей прошла бы по совсем иному пути.</span></p>
+<p>Такой путь – это и есть альтернативная ветка истории.</p>
+<p>Или можешь просто попробовать представить, что ветка  – это просто копия репозитория. Т.е. в какой-то момент, мы клонировали репозиторий на сервере и у нас кроме главного (который часто называют <span class="orange_text">trunk</span> – <span class="orange_text">ствол</span>) появился еще один – <span class="green_text">branch (ветка)</span>.</p>
+<p class="amigo">- Ну, так вроде понятнее.</p>
+<p class="amigo">А почему нельзя было просто сказать, что мы скопировали репозиторий?</p>
+<p>- Это не есть копирование в чистом виде.</p>
+<p>Такие ветки можно не только отделять от ствола (trunk), но и присоединять к нему.</p>
+<p class="amigo">- Т.е. можно какую-то работу выполнить в ветке, а когда она будет закончена – добавить репозиторий-ветку к репозиторию-стволу?</p>
+<p>- Ага.</p>
+<p class="amigo">- И что при этом станет с файлами?</p>
+<p>- Файлы смерджатся (объединятся).</p>
+<p class="amigo">- Ну, звучит круто, надеюсь так же круто и работает.</p>
+<p>- А то. Ладно, давай делать перерыв.</p>
+<p>Вот <a href="http://git-scm.com/book/ru/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%B5-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9">тут</a> очень много полезной информации.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>2. коммиты и ветки</h2>
+</div>
+<p>- Сегодня я расскажу тебе о двух самых популярных программах контроля версий – SVN и Git.</p>
+<p>SVN работает примерно по той схеме, как я приводил на прошлом уроке. Git, работает немного сложнее, и на нем я собираюсь остановиться поподробнее.</p>
+<p class="amigo">- А можно мне каких-нибудь ссылок на документацию про SVN и про Git?</p>
+<p>- Конечно, держи.</p>
+<p><a href="http://svnbook.red-bean.com/nightly/ru/svn-book.html" target="_blank">http://svnbook.red-bean.com/nightly/ru/svn-book.html</a></p>
+<p><a href="http://githowto.com/ru" target="_blank">http://githowto.com/ru</a> (это просто шедевр)</p>
+<p>И так - <b>Git</b>.</p>
+<p>Принцип работы гита немного сложнее, чем SVN. <span class="green_text">Гит предлагает, чтобы кроме репозитория на сервере, у каждого пользователя был еще один репозиторий – локальный.</span></p>
+<p class="amigo">- А куда тогда комититься?</p>
+<p>- Комитится пользователь всегда в свой локальный репозиторий.</p>
+<p class="amigo">- А серверный репозиторий?</p>
+<p>- Для синхронизации локального и серверного репозитория есть специальные команды – <b>Pull(вытащить)</b> и <b>Push(поместить/затолкнуть)</b></p>
+<p>В это есть своей смысл. Иногда программисту надо сделать очень большую работу на своем участке, которая может содержать несколько сотен коммитов, прежде чем ее можно добавить в общий репозиторий.</p>
+<p>В SVN для этого пришлось бы заводить отдельную ветку, а затем мерджить ее с trunk'ом.</p>
+<p>Гит просто предлагает всегда комититься в локальный репозиторий, а когда работа сделана, то переслать все изменения скопом в центральны репозиторий на сервер.</p>
+<p>Такая работа выглядит немного избыточной, пока ты пишешь мало кода, но когда длинна твоих задач вырастет до недель, ты поймешь, что просто не можешь все это время что-то писать и не комититься.</p>
+<p class="amigo">- А почему нельзя просто две недели делать свою работу, а потом закомититься один раз на сервер?</p>
+<p>- Дело в том, что программа контроля версий предлагает очень много удобств.</p>
+<p>Представь, что ты комитишься каждый день, и на 10-й день обнаружил, что то, что ты делал два последних дня, не будет работать, так как задумано. И ты бы хотел вернуться к коду 8-го дня и попробовать сделать задачу другим образом.</p>
+<p>Тогда ты просто откатываешь (<span class="dred_text"><b>rollback</b></span>) изменения в локальном репозитории за два последних дня и возвращаешься к нужному тебе состоянию кода.</p>
+<p class="amigo">- Т.е. и так можно делать?</p>
+<p>- Ага. Более того, ты благодаря сохранению истории коммитов, ты можешь узнать, кто, когда и зачем что-то коммитил, в рамках какой фичи/баги велась работа и какие десять файлов были изменены одновременно в рамках этой работы.</p>
+<p>Допустим кто-то «фиксил багу» и поломал чужой функционал. Ты можешь просто откатить(<b>rollback</b>) его код и работать дальше, как будто его и не было.</p>
+<p class="amigo">- Ладно, это круто, убедил. А можно пару примеров, как все это работает?</p>
+<p>- Конечно.</p>
+<p>Клонирование (<b>clone</b>) центрального репозитория к себе на локальный компьютер:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/35/image-ru-35-01.png"/>
+<p class="amigo">- Т.е. операция Checkout больше не нужна.</p>
+<p>- Ага. А вот примеры операций <b>Push</b>:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/35/image-ru-35-02.png"/>
+<p>И <b>Pull</b>:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/35/image-ru-35-03.png"/>
+<p class="amigo">- Ага. Более-менее ясно.</p>
+<p>- Кстати, есть крутой сервис, называется GitHub.</p>
+<p>Любой программист  может там зарегистрироваться и создавать свои Git-репозитории. Советую тебе познакомиться с ним поближе.</p>
+<p>Вот тебе пара полезных ссылок:</p>
+<p><a href="http://habrahabr.ru/post/125799/" target="_blank">http://habrahabr.ru/post/125799/</a></p>
+<p><a href="http://githowto.com/ru" target="_blank">http://githowto.com/ru</a></p>
+<p><a href="http://webhamster.ru/site/page/index/articles/comp/171" target="_blank">http://webhamster.ru/site/page/index/articles/comp/171</a></p>
+<p><a href="http://tutorials.assembla.com/git-guide-for-windows-users/tour.ru.html" target="_blank">http://tutorials.assembla.com/git-guide-for-windows-users/tour.ru.html</a></p>
+<p>На заметку, под гит существует довольно много «клиентов».</p>
+<p><span class="green_text">Во-первых – это <b>GitBash</b> – где можно вводить команды текстом</span></p>
+<p><span class="orange_text">Во-вторых – это <b>TortoiseGit</b> – хорошая программа, которая встраивается в проводник Windows и позволяет работать с файлами в Git-репозитории прямо из проводника.</span></p>
+<p><span class="violet_text">Intellij IDEA имеет поддержку Git, и все сложные команды можно делать прямо из нее в пару кликов.</span></p>
+<p class="amigo">- И что мне учить?</p>
+<p>- Рекомендую разобраться со всем этим.</p>
+<p>Вот, пройдешь ты собеседование, придешь на работу. Тебе скинут ссылку на гит, твои логин и пароль и все. Дальше ты сам.</p>
+<p class="amigo">- Что сам?</p>
+<p>- <span class="violet_text">Сам ставишь гит, вытаскиваешь себе копию репозитория,…</span></p>
+<p>Затем ты должен собрать и попробовать запустить проект.</p>
+<p>А инструкция по сборке скорее всего тоже в Git'е (в Git-репозитории), как и документация по проекту.</p>
+<p>К тебе подойдет твой тимлид вечером и скажет: <span class="red_text">- Ну что, с чем уже разобрался?</span></p>
+<p>А ты такой: <span class="green_text">– А я тут гит пробую установить, но  у меня еще ничего не получилось. Вы ведь меня не уволите, правда?</span></p>
+<p>Или ты можешь еще днем подойти к тимлиду и сказать: <span class="violet_text">- Установил гит, вытащил проект, порылся в документации, но там сотни файлов и пока что не все понятно. Где актуальная инструкция по сборке?</span></p>
+<p>Чувствуешь разницу?</p>
+<p class="amigo">- Ага. Во втором случае я такой крутой программист и все дела, а в первом какой-то роболох, который не умеет даже проект из гита вытащить. Т.е. облажался еще до того, как дело дошло до программирования. Меня, небось, после этого и программировать-то не допустят.</p>
+<p>- Вот ты сам и ответил на свои вопросы. Так что учи, разбирайся. Никто за тебя это не сделает.</p>
+<p class="amigo">- А ты мне не поможешь?</p>
+<p>- Уже помог. Мы тут Java учим, если ты не забыл. А все остальное – сам. Или тебе голова дана только для того, чтобы ею пить?</p>
+<p class="amigo">- Ладно, я все понял. Спасибо, Билаабо!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Generics</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Элли!</p>
+<p>- Сегодня мы с Ришей собираемся рассказать тебе все о generic'ах.</p>
+<p class="amigo">- Так я уже вроде бы почти все знаю.</p>
+<p>- Почти все, да не все.</p>
+<p class="amigo">- Да? Ладно, я готов слушать.</p>
+<p>- Тогда начнем.</p>
+<p>Generic'ами в Java, называют классы, которые содержат типы-параметры.</p>
+<p>Причины появления generic'ов – см. комментарий в коде:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><span class="green_text">ArrayList stringList</span> = new <span class="green_text">ArrayList</span>();<br/>
+<span class="green_text">stringList</span>.add("abc"); <span class="grey_text">//добавляем строку с список</span><br/>
+<span class="green_text">stringList</span>.add("abc"); <span class="grey_text">//добавляем строку с список</span><br/>
+<span class="green_text">stringList</span>.add( 1 );      <span class="grey_text">//добавляем чисто с список</span><br/><br/>
+<b>for</b>(Object o: <span class="green_text">stringList</span>)<br/>
+{<br/>
+      String s = (String) o; <span class="red_text">//тут будет <b>исключение</b>, когда дойдем до элемента-числа</span><br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Как решают проблему Generic'и:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><span class="green_text">ArrayList</span><span class="red_text">&amp;lt</span><span class="dblue_text">String</span><span class="red_text">&amp;gt</span> <span class="green_text">stringList</span> = new <span class="green_text">ArrayList</span><span class="red_text">&amp;lt</span><span class="dblue_text">String</span><span class="red_text">&amp;gt</span>();<br/>
+<span class="green_text">stringList</span>.add("abc"); <span class="grey_text">//добавляем строку с список</span><br/>
+<span class="green_text">stringList</span>.add("abc"); <span class="grey_text">//добавляем строку с список</span><br/>
+<span class="green_text">stringList</span>.add( 1 );      <span class="red_text">//<b>тут будет ошибка компиляции</b></span><br/><br/>
+<b>for</b>(Object o: <span class="green_text">stringList</span>)<br/>
+{<br/>
+      <span class="dblue_text">String</span> s = (<span class="dblue_text">String</span>) o; <br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Такой код просто не скомпилируется, и ошибка с добавлением данных не того типа будет замечена еще на этапе компиляции.</p>
+<p class="amigo">- Я это уже знаю.</p>
+<p>- Вот и отлично. Повторение мать учения.</p>
+<p>Но разработчики Java немного схалявили при создании Generic и вместо того, чтобы делать полноценные типы с параметрами прикрутили хитрую оптимизацию. На самом деле в типы не добавили никакой информации о их типах-параметрах, а вся магия происходила на этапе компиляции.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код с generic'ами</th><th width="50%">Что происходит на самом деле</th></tr>
+<tr>
+<td class="monospace_text"><font size="4"><span class="green_text">List</span><span class="red_text">&amp;lt</span><span class="dblue_text">String</span><span class="red_text">&amp;gt</span> <span class="green_text">strings</span> = new <span class="green_text">ArrayList</span><span class="red_text">&amp;lt</span><span class="dblue_text">String</span><span class="red_text">&amp;gt</span>();<br/>
+<span class="green_text">strings</span>.add("abc"); <br/>
+<span class="green_text">strings</span>.add("abc");<br/>
+<span class="green_text">strings</span>.add( 1);  <span class="red_text">// тут ошибка компиляции</span><br/><br/>
+<b>for</b>(String s: <span class="green_text">strings</span>)<br/>
+{<br/>
+    <span class="grey_text">System.out.println</span>(s);<br/>
+}</font>
+</td>
+<td class="monospace_text"><font size="4"><span class="green_text">List <b>strings</b></span> = new <span class="green_text">ArrayList</span>();<br/><br/>
+<span class="green_text"><b>strings</b></span>.add((<span class="dblue_text">String</span>)"abc"); <br/>
+<span class="green_text"><b>strings</b></span>.add((<span class="dblue_text">String</span>)"abc");<br/>
+<span class="green_text"><b>strings</b></span>.add((<span class="dblue_text">String</span>) 1);    <span class="red_text">//ошибка компиляции</span><br/><br/>
+<b>for</b>(String s: <span class="green_text"><b>strings</b></span>)<br/>
+{<br/>
+    <span class="grey_text">System.out.println</span>(s);<br/>
+}</font>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Хитро, да.</p>
+<p>- Да, но у этого подхода есть побочный эффект. <span class="red_text">Внутри класса-generic'а  не хранится никакой информации о его типе-параметре.</span> Такой подход позже назвали <b>стиранием типов</b>.</p>
+<p>Т.е. если у тебя есть свой класс с типами-параметрами, то ты не можешь использовать информацию о них внутри класса</p>
+<table class="table_example">
+<tbody><tr><th width="52%">Код с generic'ами</th><th width="48%">Что происходит на самом деле</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> Zoo&amp;lt<span class="green_text">T</span>&amp;gt<br/>
+{<br/>
+    <span class="green_text">ArrayList</span>&amp;lt<span class="green_text">T</span>&amp;gt <span class="green_text">pets</span> = <b>new</b> <span class="green_text">ArrayList</span>&amp;lt<span class="green_text">T</span>&amp;gt();<br/><br/>
+
+    <b>public</b> <span class="green_text">T</span> createAnimal()<br/>
+   {<br/>
+          <span class="green_text">T</span> animal = new <span class="green_text">T</span>();<br/>
+           <span class="green_text">pets</span>.add(animal)<br/>
+          <b>return</b> anumal;<br/>
+   }<br/>
+}
+    </td>
+<td class="monospace_text"><b>class</b> Zoo<br/>
+{<br/>
+    <span class="green_text">ArrayList <b>pets</b></span> = new <span class="green_text">ArrayList</span>();<br/><br/>
+
+    <b>public</b> <span class="green_text">Object</span> createAnimal()<br/>
+   {<br/>
+          <span class="green_text">Object</span> animal = <span class="red_text"><b>new ???();</b></span><br/>
+           <span class="green_text"><b>pets</b></span>.add(animal)<br/>
+           <b>return</b> anumal;<br/>
+   }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>При компиляции все типы параметров заменяются на Object. И информации о типе, который в него передавали, в классе нет.</p>
+<p class="amigo">- Да, согласен, это не очень хорошо.</p>
+<p>- Ладно, все не так страшно, я тебе позже расскажу, как эту проблему научились обходить.</p>
+<p>Но и это еще не все. Java позволяет задать тип-родитель для типов-параметров. Для этого используется ключевое слово <b>extends</b>. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="52%">Код с generic'ами</th><th width="48%">Что происходит на самом деле</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> Zoo&amp;lt<span class="red_text">T extends Cat</span>&amp;gt<br/>
+{<br/>
+      <span class="red_text">T</span> cat;<br/><br/>
+
+     <span class="red_text">T</span> getCat()<br/>
+     {<br/>
+        return cat;<br/>
+     }<br/><br/>
+
+    <b>void</b> setCat (<span class="red_text">T</span> cat)<br/>
+   {<br/>
+        this.cat = cat;<br/>
+    }<br/><br/>
+
+   <span class="dblue_text">String getCatName()<br/>
+   {<br/>
+        return this.cat.<b>getName</b>();<br/>
+    }</span><br/>
+}
+    </td>
+<td class="monospace_text"><b>class</b> Zoo<br/>
+{<br/>
+     <span class="red_text">Cat</span> cat;<br/><br/>
+
+     <span class="red_text">Cat</span> getCat()<br/>
+     {<br/>
+        return cat;<br/>
+     }<br/><br/>
+
+    <b>void</b> setCat(<span class="red_text">Cat</span> cat)<br/>
+   {<br/>
+        this.cat = cat;<br/>
+    }<br/><br/>
+
+   <span class="dblue_text">String getCatName()<br/>
+   {<br/>
+        return this.cat.<b>getName</b>();<br/>
+    }</span><br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Обрати внимание на два факта.</p>
+<p><span class="violet_text">Во-первых, в <b>качестве типа параметра теперь можно передать не любой тип, а тип Cat</b> или один из его наследников.</span></p>
+<p><span class="green_text">Во-вторых, в классе Zoo у переменных типа T теперь можно вызвать методы класса Cat.</span> Почему – объяснено в столбце справа (потому что вместо типа T везде подставится тип Cat)</p>
+<p class="amigo">- Ага. Если мы сказали, что в качестве типа-параметра у нас передают тип Cat или его наследников, значит, мы уверены, что методы класса Cat и типа T обязательно есть.</p>
+<p class="amigo">Что ж. Умно.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level35,lesson04,task01"></button><b>1. Знакомство с дженериками</b><br/><br/>
+                Параметризируйте классы <span class="taskcode">SomeClass</span> и <span class="taskcode">Solution</span> следующим образом:<br/> 
+		1. <span class="taskcode">SomeClass</span> должен работать с типами, которые наследуются от <span class="taskcode">Number</span>; <br/>
+		2. <span class="taskcode">Solution</span> должен работать с типами, которые наследуются от <span class="taskcode">List</span>, который в свою очередь параметризируется типом <span class="taskcode">SomeClass</span>.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Вызов статического метода</b><br/><br/>
+                Измените статический метод в классе <span class="taskcode">GenericStatic</span> так, чтобы он стал дженериком. <br/>
+		Пример вызова дан в методе <span class="taskcode">main</span>.
+
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>5. Generics: super, extends, list</h2>
+</div>
+<p>- Новая интересная тема -  wildcards.</p>
+<p>По смыслу, это что-то вроде шаблона «*», который совпадает с чем угодно.</p>
+<p>Но давай начнем издалека.</p>
+<p>Представь, что у тебя есть класс «Warrior(Воин)» и метод, который вычисляет, какой из двух воинов сильнее. Вот как, например, это могло бы выглядеть:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример 1</th></tr>
+<tr>
+<td class="monospace_text"><b>class WarriorManager</b><br/>
+{<br/>
+    <b>public static boolean</b> fight<span class="green_text">(Warrior w1</span>, <span class="dblue_text">Warrior w2</span>)<br/>
+   {<br/>
+         return <span class="green_text">w1</span>.power &amp;gt  <span class="dblue_text">w2</span>.power;<br/>
+   }<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Пример вызова</th></tr>
+<tr>
+<td class="monospace_text"><span class="green_text">MagicWarrior  mag</span> = new <span class="green_text">MagicWarrior</span>();<br/>
+<span class="dblue_text">ArcherWarrior archer</span> = new <span class="dblue_text">ArcherWarrior</span>();<br/><br/>
+<b>boolean</b> isMagicCooler = <span class="violet_text">WarriorManager</span>.<b>fight</b>(<span class="green_text">mag</span>, <span class="dblue_text">archer</span>);
+    </td>
+</tr>
+</tbody></table>
+<p><span class="green_text">MagicWarrior и</span> <span class="dblue_text">ArcherWarrior</span> <span class="green_text">– это классы-наследники от <span class="violet_text">Warrior</span>.</span></p>
+<p>Немного простовато, но для примера сойдет.</p>
+<p class="amigo">- Ок.</p>
+<p>- И вот допустим, ты решил сделать аналогичный метод, где уже дерутся воины стенка на стенку.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример 1</th></tr>
+<tr>
+<td class="monospace_text"><b>class WarriorManager</b><br/>
+{<br/>
+    <b>public static boolean</b> fight<span class="green_text">(Warrior w1</span>, <span class="dblue_text">Warrior w2</span>)<br/>
+   {<br/>
+         return <span class="green_text">w1</span>.power &amp;gt  <span class="dblue_text">w2</span>.power;<br/>
+   }<br/><br/>
+   <b>public static boolean</b> fight(<span class="green_text">List&amp;ltWarrior&amp;gt w1</span>, <span class="dblue_text">List&amp;ltWarrior&amp;gt w2</span>)<br/>
+   {<br/>
+         return <span class="green_text">…</span><br/>
+   }<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Пример вызова</th></tr>
+<tr>
+<td class="monospace_text"><b>ArrayList</b>&amp;lt<span class="green_text">MagicWarrior</span>&amp;gt <span class="green_text">magi</span> = new <b>ArrayList</b>&amp;lt<span class="green_text">MagicWarrior</span>&amp;gt();<br/>
+<b>for</b>(int i=0;i
+    <span class="green_text">magi</span>.<b>add</b>(new <span class="green_text">MagicWarrior()</span>);<br/><br/>
+<b>ArrayList</b>&amp;lt<span class="dblue_text">ArcherWarrior</span>&amp;gt <span class="dblue_text">archers</span> = new <b>ArrayList</b>&amp;lt<span class="dblue_text">ArcherWarrior</span>&amp;gt();<br/>
+<b>for</b>(int i=0;i
+    <span class="dblue_text">archers</span>.<b>add</b>(new <span class="dblue_text">ArcherWarrior</span><span class="green_text">()</span>);<br/><br/>
+<b>boolean</b> isMagicCooler = <span class="violet_text">WarriorManager</span>.<b>fight</b>(<span class="dblue_text">magi</span>, <span class="dblue_text">archers</span>); <font class="red_text" size="4">//ошибка компиляции!
+    </font></td>
+</tr>
+</tbody></table>
+<p>И вот тут ты встречаешь ошибку компиляции и недоумеваешь, а что не так-то?</p>
+<p>Все дело в том, что <span class="red_text">MagicWarrior – это наследник Warrior</span> и его объекты можно передавать в метод fight(Warrior, Warrior)</p>
+<p>А вот <span class="red_text">List&amp;ltMagicWarior&amp;gt это не наследник List&amp;ltWarrior&amp;gt</span>. И передавать его туда нельзя!</p>
+<p class="amigo">- Как это не наследник?</p>
+<p>- А вот так. То List и то – List. Пусть и с параметрами.</p>
+<p class="amigo">- Да, а я как-то сразу не обратил внимание. И что, есть уже решение этой проблемы?</p>
+<p>- Ага. Для этого используется более сложная конструкция. Выглядит это так:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример 1</th></tr>
+<tr>
+<td class="monospace_text"><font size="4"><b>class WarriorManager</b><br/>
+{<br/>
+    <b>public static boolean</b> fight<span class="green_text">(Warrior w1</span>, <span class="dblue_text">Warrior w2</span>)<br/>
+   {<br/>
+         return <span class="green_text">w1</span>.power &amp;gt  <span class="dblue_text">w2</span>.power;<br/>
+   }<br/><br/>
+   <b>public static boolean</b> fight(<span class="green_text">List</span>&amp;lt? extends <span class="green_text">Warrior&amp;gt w1</span>, <span class="dblue_text">List</span>&amp;lt? extends <span class="dblue_text">Warrior&amp;gt w2</span>)<br/>
+   {<br/>
+         return <span class="green_text">…</span><br/>
+   }<br/>
+}</font>
+</td>
+</tr>
+</tbody></table>
+<p><span class="red_text"><b>«? extends Warrior» обозначает «любой тип, унаследованный от Warrior ».</b></span></p>
+<p>Т.е. туда можно передать список List&amp;ltMagicWarrior&amp;gt и список List&amp;ltArcherWarrior&amp;gt и все будет работать.</p>
+<p class="amigo">- Так это же отлично. Чем меньше всяких таких проблем, тем лучше.</p>
+<p>- Так и я о том же.</p>
+<p class="amigo">- А если мне не нужен наследник Warrior? Что если я хочу, чтобы в метод можно было передать любой List с любым параметром? Так можно?</p>
+<p>- Да, для описания этой ситуации существует две записи:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text"><center>List&amp;lt? extends Object&amp;gt</center>
+</td>
+</tr>
+<tr>
+<td class="monospace_text"><center>List&amp;lt?&amp;gt</center>
+</td>
+</tr>
+</tbody></table>
+<p>Они эквивалентны по смыслу, поэтому обычно используют вторую.</p>
+<p>У меня – все.</p>
+<p class="amigo">- Спасибо, Элли, действительно узнал сегодня много нового.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level35,lesson06,task01"></button><b>1. Простой generics</b><br/><br/>
+                Параметризируйте класс <span class="taskcode">Solution</span>, чтобы он мог работать со всеми классами, которые наследуются от <span class="taskcode">HashMap</span>. <br/>
+		Метод <span class="taskcode">getMap</span> должен возвращать тип поля <span class="taskcode">map</span>.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Несколько суперклассов для дженерика</b><br/><br/>
+                Дан класс <span class="taskcode">Solution</span>, параметризированный <span class="taskcode">T</span>. Ограничьте параметр <span class="taskcode">T</span>. <br/>
+<span class="taskcode">T</span> должен быть наследником класса <span class="taskcode">ClassForGenerics</span> и одновременно реализовывать интерфейс <span class="taskcode">InterfaceForGenerics</span>.<br/> 
+		Менять можно только класс <span class="taskcode">Solution</span>.
+
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>7. Generics: Class&amp;ltT&amp;gt</h2>
+</div>
+<p>- Привет! Я продолжу лекцию Элли про Generic'м. Готов слушать?</p>
+<p class="amigo">- Ага.</p>
+<p>- Тогда начинаем.</p>
+<p><b>Факт первый.</b> У методов класса тоже могут быть свои типы-параметры.</p>
+<p class="amigo">- Да, я знаю.</p>
+<p>- Нет, я имею ввиду именно <span class="red_text"><b>свои типы-параметры</b></span>:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> Calcultor<br/>
+{<br/>
+     &amp;ltT&amp;gt T <b>add</b>(T a, T b);   <span class="grey_text">//сложить</span><br/>
+     &amp;ltT&amp;gt T <b>sub</b>(T a, T b);   <span class="grey_text">//отнять</span><br/>
+     &amp;ltT&amp;gt T <b>mul</b>(T a, T b); <span class="grey_text">//умножить</span><br/>
+     &amp;ltT&amp;gt T <b>div</b>(T a, T b);    <span class="grey_text">//делить</span><br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Это типы-параметры именно метода(ов). У класса параметров нет. Можно даже объявить методы статическими и вызывать их без использования объекта.</p>
+<p class="amigo">- Ясно. Смысл типов-параметров в методах такой же, как и в классах?</p>
+<p>- Ага. Но есть и кое-что новое.</p>
+<p>Как ты уже знаешь, в  описании типа можно использовать wildcard. Тогда представь себе ситуацию:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример 1</th></tr>
+<tr>
+<td class="monospace_text"><b>public void</b> doSomething(<span class="dblue_text">List&amp;lt? extends</span> <span class="blue_text">MyClass</span><span class="dblue_text">&amp;gt</span> list) <br/>
+{<br/>
+     <b>for</b>(<span class="blue_text">MyClass object</span> : list)<br/> 
+     { <br/>
+           <span class="grey_text">System.out.println</span>(<span class="blue_text">object</span>.<b>getState</b>());   <span class="grey_text">//тут все работает отлично.</span><br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>А вот, что случится, если мы захотим добавить в коллекцию новый элемент:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример 2</th></tr>
+<tr>
+<td class="monospace_text"><b>public void</b> doSomething(<span class="dblue_text">List&amp;lt? extends</span> <span class="blue_text">MyClass</span><span class="dblue_text">&amp;gt</span> list) <br/>
+{<br/>
+   list.add(new <span class="blue_text">MyClass</span>()); <span class="red_text">//ошибка!</span><br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p><span class="dred_text">Дело в том, что в</span> <span class="red_text">общем случае в метод doSomething можно передать List с типом элементов не MyClass, а любой из наследников MyClass.</span> <span class="dred_text">А в такой список заносить объекты MyClass уже нельзя!</span></p>
+<p class="amigo">- Ага. И что же делать?</p>
+<p>- Ничего. Прямо в этой ситуации – ничего не сделаешь. Но это дало разработчикам Java повод для размышлений. И они придумали новое ключевое слово – <b>super</b>.</p>
+<p>Выглядит его использование практически так же:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text">List&amp;lt? <span class="red_text">super</span> MyClass&amp;gt list
+    </td>
+</tr>
+</tbody></table>
+<p>Но между <b>extends</b> и <b>super</b> есть существенное различие.</p>
+<p>«? <b>extends</b> T» обозначает, что класс должен быть наследником T.</p>
+<p>«? <b>super</b> T» обозначает, что класс должен быть предком T.</p>
+<p class="amigo">- Ух ты. А где это используется?</p>
+<p>- «? <b>super</b> T» используется, когда метод собирается добавлять в коллекцию объект типа T. Тогда это может быть коллекция типа T или любого типа-предка T.</p>
+<p class="amigo">- Ага. Ссылку на объект типа T можно же присвоить любому родительскому типу для T.</p>
+<p>- Честно говоря – этот подход используется не очень часто. Тем более, что у него есть и обратная сторона. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Примеры</th></tr>
+<tr>
+<td class="monospace_text"><b>public void</b> doSomething(<span class="dblue_text">List&amp;lt?</span> <span class="red_text">super</span> <span class="blue_text">MyClass</span><span class="dblue_text">&amp;gt</span> list)<br/> 
+{<br/>
+     <b>for</b>(<span class="blue_text">MyClass object</span> : list)  <span class="red_text">//ошибка!</span><br/>
+     { <br/>
+           <span class="grey_text">System.out.println</span>(<span class="blue_text">object</span>.<b>getState</b>());   <br/>
+     }<br/>
+}
+    </td>
+</tr>
+<tr>
+<td class="monospace_text"><b>public void</b> doSomething(<span class="dblue_text">List&amp;lt?</span> <span class="red_text">super</span> <span class="blue_text">MyClass</span><span class="dblue_text">&amp;gt</span> list)<br/> 
+{<br/>
+   list.add(new <span class="blue_text">MyClass</span>()); <span class="grey_text">//тут все работает отлично.</span><br/>
+}
+
+    </td>
+</tr>
+</tbody></table>
+<p>Теперь не работает первый пример.</p>
+<p>Т.к. коллекция list может быть даже List&amp;ltObject&amp;gt (Object самый верхний родитель MyClass), то фактически мы пишем такой код, а так писать нельзя:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример 1</th></tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">List&amp;ltObject&amp;gt</span> list; <br/><br/>
+<b>for</b>(<span class="blue_text">MyClass object</span> : list) <span class="red_text">//ошибка!</span><br/>
+    { <br/>
+          <span class="grey_text">System.out.println</span>(<span class="blue_text">object</span>.<b>getState</b>()); <br/>  
+    }
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ясно. Спасибо за интересную лекцию.</p>
+<p>- Пожалуйста.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level35,lesson08,task01"></button><b>1. Wildcards</b><br/><br/>
+                Перепишите дженерики в методе <span class="taskcode">add</span> используя <span class="taskcode">wildcards</span>.<br/> 
+		Логику не меняйте. Не оставляйте закомментированный код.
+        </td></tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>2. List to Map</b><br/><br/>
+                Реализуйте логику метода <span class="taskcode">convert</span> в классе <span class="taskcode">ConvertableUtil</span>, который должен возвращать словарь, значениями которого являются элементы переданного Списка, а ключами являются объекты, полученные вызовом интерфейсного метода <span class="taskcode">getKey</span>. <br/>
+		Элементы Списка должны наследоваться от <span class="taskcode">Convertable</span>, который в свою очередь параметризирован каким-то ключом. <br/>
+		Например, <span class="taskcode">ConvertableBook</span> параметризирован <span class="taskcode">String</span>, т.е. ключ в результирующем словаре должен иметь тип - <span class="taskcode">String ConvertableUser</span> параметризирован <span class="taskcode">Integer</span>, т.е. ключ в результирующем словаре должен иметь тип - <span class="taskcode">Integer</span> Значения в словаре должны совпадать с элементами Списка. <br/>
+		Смотрите метод <span class="taskcode">main</span> для примера. <br/>
+		Расставьте в методе <span class="taskcode">ConvertableUtil.convert</span> дженерик типы.
+
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>9. Generics: ? wildcard</h2>
+</div>
+<p>- Ну, и напоследок еще одна маленькая лекция по Generic.</p>
+<p>Сейчас я тебе расскажу, как обходить «стирание типов» (Type erasure).</p>
+<p class="amigo">- Ага. Мне тоже хочется это знать.</p>
+<p>- Как ты уже наверное знаешь, в Java есть тип Class, который используется, чтобы хранить ссылку на объект класса. Примеры:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Примеры</th></tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">Class</span> clazz = Integer.<b>class</b>;
+    </td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">Class</span> clazz = String.<b>class</b>;
+    </td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">Class</span> clazz = <span class="violet_text">"abc"</span>.getClass();
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ага.</p>
+<p>Но вот, чего ты, наверное, не знаешь, так это того, что есть еще один класс Class, который является Generic'ом.  И <span class="violet_text">переменные этого Generic Class'а могут хранить только ссылки на тип, который был типом-параметром.</span> Примеры:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Примеры</th></tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">Class&amp;ltInteger&amp;gt</span> clazz1 = Integer.<b>class</b>; <span class="grey_text">//все отлично работает</span><br/>
+<span class="dblue_text">Class&amp;ltString&amp;gt</span> clazz2 = Integer.<b>class</b>; <span class="red_text">//ошибка компиляции.</span>
+</td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">Class&amp;ltString&amp;gt</span> clazz1 = String.<b>class</b>; <span class="grey_text">//все отлично работает</span><br/>
+<span class="dblue_text">Class&amp;ltString&amp;gt</span> clazz2 = int.<b>class</b>; <span class="red_text">//ошибка компиляции.</span>
+</td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">Class&amp;lt? extends String&amp;gt</span> clazz1 = <span class="violet_text">"abc"</span>.getClass(); <span class="grey_text">//все отлично работает</span><br/>
+<span class="dblue_text">Class&amp;ltObject&amp;gt</span> clazz2 = <span class="violet_text">"abc"</span>.getClass(); <span class="red_text">//ошибка компиляции.</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- А почему оно так работает?</p>
+<p>- Дело в том, что значение поля <b>class</b> у типа <b>Integer</b> (т.е. у  Integer.class) – это  на самом деле объект типа Class&amp;ltInteger&amp;gt.</p>
+<p>Но,  давай пойдем дальше.</p>
+<p>Так вот, пользуясь тем фактом, что Class&amp;ltT&amp;gt  - это Generic, и тем, что  переменная его типа может хранить значение только типа T, можно сделать вот такую хитрую комбинацию:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> Zoo&amp;lt<span class="red_text"><b>T</b></span>&amp;gt<br/>
+ {<br/>
+       <span class="dred_text">Class</span>&amp;lt<span class="red_text"><b>T</b></span>&amp;gt <span class="dred_text">clazz</span>;<br/>
+       <span class="dblue_text">ArrayList</span>&amp;lt<span class="red_text"><b>T</b></span>&amp;gt <span class="dblue_text">animals</span> = new <span class="dblue_text">ArrayList</span>&amp;lt<span class="red_text"><b>T</b></span>&amp;gt<br/><br/>
+  
+      Zoo(<span class="dred_text">Class</span>&amp;lt<span class="red_text"><b>T</b></span>&amp;gt <span class="orange_text">clazz</span>)<br/>
+     {<br/>
+         <b>this</b>.<span class="dred_text">clazz</span> = <span class="orange_text">clazz</span>;<br/>
+     }<br/><br/>
+
+     <b>public</b> <span class="red_text"><b>T</b></span> createNewAnimal()<br/>
+    {<br/>
+         <span class="red_text"><b>T</b></span> <span class="green_text">animal</span> = <span class="dred_text">clazz</span>.<b>newInstance</b>();<br/>
+         <span class="dblue_text">animals</span>.<b>add</b>(<span class="green_text">animal</span>);<br/>
+         <b>return</b> <span class="green_text">animal</span><br/>
+    }<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Как это использовать</th></tr>
+<tr>
+<td class="monospace_text"><span class="blue_text">Zoo</span>&amp;lt<span class="green_text">Tiger</span>&amp;gt <span class="blue_text">zoo</span> = new Zoo&amp;lt<span class="green_text">Tiger</span>&amp;gt(<span class="green_text">Tiger</span>.<b>class</b>);  <span class="red_text">// вот тут передается тип!</span><br/>
+<span class="green_text">Tiger tiger</span> = <span class="blue_text">zoo</span>.<b>createNewAnimal</b>();
+    </td>
+</tr>
+</tbody></table>
+<p><span class="orange_text">Это не мега хитрая комбинация – мы просто передаем ссылку на нужный тип. Но, если бы мы просто пользовались Class вместо Class&amp;ltT&amp;gt, то кто-то мог по ошибке передать туда два разных типа – один в качестве параметра T, другой – в конструктор.</span></p>
+<p class="amigo">- Ага. Понимают. Ничего сверхъестественного не произошло, но и страшного тоже. Ссылка на тип есть, пользоваться ей можно, работает и ладно.</p>
+<p>- Вот, слышу слова «не мальчика, но мужа!» Работает и ладно – это часто самый оптимальный вариант.</p>
+<p>Очень много всего можно было бы теперь переделать в Java, но нужно сохранять совместимость со старым кодом.</p>
+<p>Именно десятки тысяч популярных отлаженных библиотек – это сегодня самый весомый аргумент в пользу Java. Так что, сохраняя обратную совместимость, Java остается самым популярным языком, и поэтому не может внедрять радикальные новшества.</p>
+<p class="amigo">- А я сделаю свою Java с блекджеком и …</p>
+<p>- Ладно, я уже подустал за день. Давай  до свидания.</p>
+<p class="amigo">- До свидания, Риша, и спасибо за такой интересный урок.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>10. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level35,lesson10,task02"></button><b>1. extends vs super</b><br/><br/>
+                Логика всех методов - добавить <span class="taskcode">source</span> в <span class="taskcode">destination</span>.<br/> 
+		!!!Расставьте <span class="taskcode">?</span>, <span class="taskcode">extends</span> и <span class="taskcode">super</span> где необходимо:!!!<br/> 
+		1) <span class="taskcode">one</span> - должен работать с одним и тем же типом;<br/> 
+		2) <span class="taskcode">two</span> - должен добавлять любых наследников типа <span class="taskcode">T</span> в список, умеющий хранить только тип <span class="taskcode">T</span>; <br/>
+		3) <span class="taskcode">three</span> - должен добавлять объекты типа <span class="taskcode">T</span> в любой список, параметризированный любым родительским классом; <br/>
+		4) <span class="taskcode">four</span> - должен добавлять любых наследников типа <span class="taskcode">T</span> в список, параметризированный любым родительским классом. <br/>
+		Не оставляйте закомментированный код.
+        </td></tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>2. ClassLoader - что это такое?</b><br/><br/>
+                Реализуйте логику метода <span class="taskcode">getAllAnimals</span>.<br/> 
+		Аргумент метода <span class="taskcode">pathToAnimals</span> - это абсолютный путь к директории, в которой хранятся скомпилированные классы. <br/>
+		Путь не обязательно содержит / в конце. НЕ все классы наследуются от интерфейса <span class="taskcode">Animal</span>. <br/>
+		НЕ все классы имеют публичный конструктор без параметров.<br/> 
+		Только для классов, которые наследуются от <span class="taskcode">Animal</span> и имеют публичный конструктор без параметров, - создать по одному объекту.<br/> 
+		Добавить созданные объекты в результирующий сет и вернуть. <br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании.
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Учимся гуглить</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Продолжаем наши уроки – учимся гуглить.</p>
+<p>Вот тебе несколько заданий:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Погугли</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Документация по SVN
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Как настроить SVN
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Как настроить TortoiseSVN
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Как создать репозиторий  на GitHub
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Как настроить TortoiseGit
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Как добавить свой проект в репозиторий на GitHub?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Что такое wildcard в generic'ах?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Как узнать тип типа-параметра в generic'ах в java?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Как создать объект типа-параметра в Generic Java?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Как определить тип generic-параметра с помощью Reflection в Java?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>12. Профессор дает доп. материал</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Вот тебе дополнительный материал по теме.</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-35.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>13. Хулио</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Хулио.</p>
+<p>- Что нового?</p>
+<p class="amigo">- Вот думаю, как решить очередную задачу. </p>
+<p>- Оно тебе надо? Как по мне, то лучше не работать и быть бедным, чем работать и быть бедным. Давай лучше посмотрим что - нибудь интересное.</p>
+<p class="amigo">- Есть время учиться, а есть время и для отдыха. Включай.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-35.gif" preload="none" tabindex="0" taskkey="level35,lesson13,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-35.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=Wtb6dSq7mvs" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>14. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Какие системы контроля версий вы знаете?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Чем отличаются SVN и Git?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Что такое GitHub? У вас есть проекты на GitHub?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Зачем нужны системы контроля версий?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Что такое generic? Как они реализованы в Java?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Что такое стирание типов?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Расскажите про extends и super в Generic'ах?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Что такое wildcard?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Как использовать wildcard?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">В чем отличие ArrayList и ArrayList&amp;lt?&amp;gt 
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>15. Большая задача</h2>
+</div>
+<p>- Привет, боец!</p>
+<p>- Поздравляю тебя с повышением уровня квалификации. Нам нужны отчаянные парни.</p>
+<p>- Уверен, у тебя есть еще много нерешенных задач. Самое время решить парочку из них!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

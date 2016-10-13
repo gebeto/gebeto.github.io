@@ -1,0 +1,26 @@
+ body {
+ 	margin: 0 auto;
+ }
+
+ .main {
+	/*background-color: #fff;*/
+	/*width: 100%;*/
+	/*min-height: 400px;*/
+	/*text-align: center;*/
+	padding: 10px;
+	/*margin: 10px auto;*/
+	/*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
+	border-radius: 10px;
+}
+
+.demo-card-square.mdl-card {
+  width: 100%;
+  height: 200px;
+  /*margin: 0 auto;*/
+  margin-top: 20px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('dog.png') bottom right 15% no-repeat #46B6AC;
+}

@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-19.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 19
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>1. Концепция адаптера</h2>
+</div>
+<p>- Привет, Амиго! Сегодня я расскажу тебе, что же такое «<span class="red_text"><b><i>адаптер</i></b></span>». Надеюсь, что после его изучения ты начнешь понимать потоки ввода-вывода гораздо лучше.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/19/image-ru-19-01.png"/>
+<p>Представь, что в твоей программе ты используешь два фреймворка, написанные другими программистами/компаниями. Оба фреймворка очень хорошие и используют принципы ООП: абстракцию, полиморфизм, инкапсуляцию. Они вместе практически полностью покрывают задачи твоей программы. За тобой осталось простая задача - объекты, которые создает один фреймворк нужно передать во второй. Но оба фреймворка совершенно разные и «не знают друг о друге» - т.е. не имеют общих классов. Тебе нужно как-то преобразовывать объекты одного фреймворка в объекты другого.</p>
+<p>Эту задачу можно красиво решить, применив подход (паттерн проектирования) «<b>адаптер</b>»:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> MyClass <b>implements</b> <span class="red_text">Interface2</span><br/>
+{<br/>
+     <b>private</b> <span class="red_text">Interface1</span> <span class="blue_text">object</span>;<br/>
+     MyClass(<span class="red_text">Interface1</span> object)<br/>
+     {<br/>
+       this.<span class="blue_text">object</span> = object;<br/>
+     }<br/>
+     <span class="grey_text">// тут располагаются методы Interface2,</span> <br/>      
+     <span class="grey_text">// которые вызывают методы Interface1</span><br/>
+}
+    </td>
+<td class="wide-text">Это схематическое описание «паттерна проектирования адаптер».<br/><br/>
+
+		Суть его в том, что класс MyClass является преобразователем (адаптером) одного интерфейса к другому.
+
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- А можно более конкретный пример?</p>
+<p>- Ок. Допустим, что у каждого фреймворка есть свой уникальный интерфейс «список», вот как это может выглядеть:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="62%">Код</th><th width="38%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>interface <span class="blue_text">AlphaList</span></b><br/>
+{<br/>
+    void <span class="blue_text">add</span>(int value);<br/>
+    void <span class="blue_text">insert</span>(int index, int value);<br/>
+    int <span class="blue_text">get</span>(int index);<br/>
+    void <span class="blue_text">set</span>(int index, int value);<br/>
+    int <span class="blue_text">count</span>();<br/>
+    void <span class="blue_text">remove</span>(int index);<br/>
+}
+    </td>
+<td class="wide-text">Код из первого(<span class="blue_text"><b>Alpha</b></span>) фреймворка.<br/><br/>
+<span class="blue_text"><b>AlphaList</b></span> – это один из интерфейсов, для взаимодействия кода фреймворка и кода, который будет использовать этот фреймворк.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class <span class="blue_text">AlphaListManager</span></b><br/>
+{<br/>
+   <b>public static <span class="blue_text">AlphaList createList</span></b>()<br/>
+   {<br/>
+     <span class="grey_text">//какой-то код  по созданию объекта</span><br/>
+   }<br/>
+}
+    </td>
+<td class="wide-text"><span class="blue_text"><b>AlphaListManager</b></span> – класс фреймворка, метод которого createList создает объект типа <span class="blue_text"><b>AlphaList</b></span>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>interface <span class="blue_text">BetaList</span></b><br/>
+{<br/>
+    int <span class="dred_text">getValue</span>(int index);<br/>
+    void <span class="dred_text">setValue</span>(int index, int value);<br/>
+    int <span class="dred_text">getSize</span>();<br/>
+    void <span class="dred_text">setSize</span>(int newSize);<br/>
+}<br/>
+<b>class <span class="dred_text">BetaSaveManager</span></b><br/>
+{<br/>
+   <b>public static</b> void <span class="dred_text">saveList</span>(<span class="dred_text"><b>BetaList</b></span> list)<br/>
+   {<br/>
+     <span class="grey_text">//какой-то код  по сохранению объекта</span> <br/>
+     <span class="grey_text">//типа BetaList в файл на диске</span><br/>
+   }<br/>
+}
+    </td>
+<td class="wide-text">Код из второго(<span class="dred_text"><b>Beta</b></span>) фреймворка.<br/><br/>
+<span class="dred_text"><b>BetaList</b></span> – это один из интерфейсов, для взаимодействия кода фреймворка и кода, который будет использовать этот фреймворк.<br/><br/>
+<span class="dred_text"><b>BetaSaveManager</b></span> – класс фреймворка, метод которого <span class="dred_text">saveList</span> сохраняет на диск объект типа <span class="dred_text"><b>BetaList</b></span>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> <span class="green_text">ListAdapter</span> <b>implements</b> <span class="dred_text">BetaList</span><br/>
+{<br/>
+    <b>private <span class="blue_text">AlphaList</span></b> <span class="blue_text">list</span>;<br/>
+    <span class="green_text">ListAdapter</span>(<span class="blue_text">AlphaList</span> list)<br/>
+   {<br/>
+      this.<span class="blue_text">list</span> = list;<br/>
+   }<br/><br/>
+
+    int <span class="dred_text"><b>getValue</b></span>(int index)<br/>
+    {<br/>
+       return this.<span class="blue_text">list</span>.<span class="blue_text">get</span>(index);<br/>
+    }<br/><br/>
+
+    void <span class="dred_text"><b>setValue</b></span>(int index, int value)<br/>
+    {<br/>
+       this.<span class="blue_text">list</span>.<span class="blue_text">set</span>(index, value);<br/>
+    }<br/><br/>
+
+    int <span class="dred_text"><b>getSize</b></span>()<br/>
+    {<br/>
+       return this.<span class="blue_text">list</span>.<span class="blue_text">count</span>();<br/>
+    }<br/><br/>
+
+    void <span class="dred_text"><b>setSize</b></span>(int newSize)<br/>
+    {<br/>
+       <b>if</b> (newSize &gt; this.<span class="blue_text">list</span>.<span class="blue_text">count</span>()<br/>
+       {<br/>
+           <b>while</b> (this.<span class="blue_text">list</span>.<span class="blue_text">count</span>() 
+         {<br/>
+            this.<span class="blue_text">list</span>.<span class="blue_text">add</span>(null);<br/>
+         }<br/>
+      }<br/>
+      <b>else if</b> (newSize list.<span class="blue_text">count</span>()<br/>
+      {<br/>
+           <b>while</b> (this.<span class="blue_text">list</span>.<span class="blue_text">count</span>() &gt; newSize)<br/>
+          {<br/>
+              <span class="blue_text">list</span>.<span class="blue_text">remove</span>(<span class="blue_text">list</span>.<span class="blue_text">count</span>() - 1);<br/>
+          }<br/>
+       }<br/>
+  }<br/>
+}
+    </td>
+<td class="wide-text">Класс «адаптер» (т.е. переходник) от интерфейса <span class="blue_text"><b>AlphaList</b></span> к интерфейсу <span class="dred_text"><b>BetaList</b></span><br/><br/>
+
+		Класс <span class="green_text">ListAdapter</span> реализует интерфейс <span class="dred_text">BetaList</span> из второго фреймворка. <br/><br/>
+
+		Когда кто-то вызывает эти методы, код класса перевызывает методы переменной <span class="blue_text">list</span>, которая имеет тип <span class="blue_text">AlphaList</span> из первого фреймворка.<br/><br/>
+
+		Объект типа <span class="blue_text">AlphaList</span> передается в конструктор <span class="green_text">ListAdapter</span> в момент создания<br/><br/>
+
+		Метод <span class="dred_text">setSize</span> работает по принципу: если нужно увеличить размер списка – добавим туда пустых (null) элементов. Если нужно уменьшить – удалим несколько последних.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">
+<div style="margin-right: -20px;">
+<b>public static void main</b>(String[] args) <br/>
+            {<br/>
+             <span class="blue_text"><b>AlphaList</b> listAlpha</span> = <span class="blue_text"><b>AlphaListManager</b>.createList();</span><br/>
+             <span class="dred_text"><b>BetaList  listBeta</b></span> = <b>new <span class="green_text">ListAdapter</span></b>(<span class="blue_text"><b>listAlpha</b></span>);<br/>
+             <span class="dred_text"><b>BetaSaveManager</b></span>.<span class="dred_text"><b>saveList</b></span>(<span class="dred_text"><b>listBeta</b></span>);<br/>
+            }
+        </div>
+</td>
+<td class="wide-text">Пример использования
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Больше всего понравился пример использования. Очень компактно и понятно.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>2. Reader/Writer</h2>
+</div>
+<p>- Привет, Амиго! Сегодня Элли тебе рассказала про паттерн адаптер.</p>
+<p><span class="dred_text">Большинство классов, относящихся к потокам ввода-вывода, реализовано в виде адаптера. Они преобразуют либо равнозначные интерфейсы, либо соединяют их по принципу от простого к сложному.</span></p>
+<p class="amigo">- А <b>InputStreamReader</b> и <b>BufferedReader</b> – тоже адаптеры? По крайней мере, они очень похожи на них по стилю использования: объект после создания передается в конструктор другого объекта.</p>
+<p>- Да, <b>InputStreamReader</b> преобразует интерфейс <b>InputStream</b> к интерфейсу <b>Reader</b>. <b>BufferedReader</b> не адаптер в чистом виде, т.к. разработчики Java решили не выделять его методы в отдельный интерфейс. Но по духу, он стоит очень близко к ним.</p>
+<p><span class="dred_text">Вместо того, чтобы писать 100500 различных классов, разработчики Java написали два десятка адаптеров и разрешили их соединять друг с другом, как программисту захочется.</span></p>
+<p>Такой подход очень удобен. Программист всегда может написать свой класс и/или адаптер, реализовать в нем стандартный интерфейс и включить его в собранную им цепочку объектов-адаптеров.</p>
+<p class="amigo">- Так вот как оно, оказывается, все устроено. Вместо больших сложных классов – цепочки простых объектов и адаптеры. А ты просто создаешь их и соединяешь в правильном порядке!</p>
+<p>- И реализовываешь то, чего не хватает.</p>
+<p class="amigo">- Да, я понимаю.</p>
+<p>- Но вообще-то я хотел сегодня рассказать тебе про <span class="dred_text"><b>Reader</b></span> и <span class="dred_text"><b>Writer</b></span>. Это два абстрактных класса, которые очень похожи на классы InputStream и OutputStream. Но в отличие от них, эти два класса работают с символами. Они читают символы и записывают символы. Они очень удобны при работе с текстовой информацией. Давай посмотрим, какие методы у них есть:</p>
+<table class="table_example">
+<tbody><tr><th width="40%">Методы класса Reader</th><th width="60%">Что метод делает</th></tr>
+<tr>
+<td class="monospace_text wide-text">int <span class="red_text"><b>read</b></span>(<span class="green_text">char[]</span> <span class="blue_text">cbuf</span>);
+    </td>
+<td class="wide-text">- метод сразу читает много символов в <span class="blue_text">буфер</span> (<span class="green_text">массив символов</span>), пока <span class="blue_text">буфер</span> не заполнится или не закончатся символы там, откуда он их читает.<br/> 
+		Метод возвращает количество реально прочитанных символов (оно может быть меньше длины массива)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <span class="red_text"><b>read</b></span>();
+    </td>
+<td class="wide-text"> - метод читает один символ и возвращает его как результат. Результат расширяется до int, для красоты. Если доступных символов нет, метод вернет «-1».
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <span class="red_text"><b>ready</b></span>();
+    </td>
+<td class="wide-text">- метод возвращает true если есть еще непрочитанные символы для методов read
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <span class="red_text"><b>close</b></span>();
+    </td>
+<td class="wide-text">- метод «закрывает» поток, вызывается после окончания работы с потоком.<br/> 
+		Объект выполняет служебные операции, связанные с закрытием файла на диске и т.д.<br/>
+		Из потока больше нельзя читать данные.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Оказывается, благодаря методу <b>read(char[] cbuf)</b> из <b>Reader</b>’а можно читать символы целыми блоками, а не по одному символу.  Так и быстрее и удобнее.</p>
+<p>- Да. А теперь посмотрим, какие методы есть у Writer:</p>
+<table class="table_example">
+<tbody><tr><th width="40%">Метод</th><th width="60%">Что метод делает</th></tr>
+<tr>
+<td class="monospace_text wide-text">void <span class="red_text"><b>write</b></span>(int c);
+    </td>
+<td class="wide-text">- метод записывает один символ. Тип int сужается до char, лишняя часть просто отбрасывается.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <span class="red_text"><b>write</b></span>(char[] cbuff);
+    </td>
+<td class="wide-text">- метод записывает массив символов.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <span class="red_text"><b>write</b></span>(String s);
+    </td>
+<td class="wide-text">- метод записывает строку. Она просто преобразовывается в массив символов и вызывается второй метод.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <span class="red_text"><b>flush</b></span>();
+    </td>
+<td class="wide-text">- если есть данные, которые хранятся где-то внутри и еще не записаны, то они записываются.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <span class="red_text"><b>close</b></span>();
+    </td>
+<td class="wide-text">- метод «закрывает» поток – вызывается после окончания работы с потоком.<br/> 
+		Объект выполняет служебные операции, связанные с закрытием файла на диске и т.д.<br/><br/>
+
+		В поток больше нельзя писать данные, flush при этом вызывается автоматически.
+
+    </td>
+</tr>
+</tbody></table>
+<p>Важно понять, что <b>Reader</b> и <b>Writer</b> – это абстрактные классы. Они ничего не делают и практически не содержат кода. Все их методы должны будут реализовываться в классах, которые будут унаследованы от них. Их же задача – <span class="red_text">стандартизировать механизм взаимодействия между классами.</span> Разработчикам не нужно изобретать свои стандарты для взаимодействия друг с другом. Гораздо удобнее всем поддерживать несколько базовых стандартов. Тогда классы, написанные разными программистами, смогут легко взаимодействовать не только с классами, написанными разработчиками Java, но и с классами других программистов.</p>
+<p><b>Стандарты – великая сила.</b></p>
+<p class="amigo">- Согласен. Поддержка общих стандартов – благо для всех.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>3. Задачи на Reader/Writer</h2>
+</div>
+<p>- Привет, Амиго! </p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level19,lesson03,task01"></button><b>1. TableAdapter</b><br/><br/>
+                Измените класс <span class="taskcode">TableAdapter</span> так, чтобы он адаптировал <span class="taskcode">ATable</span> к <span class="taskcode">BTable</span>.<br/>
+		Метод <span class="taskcode">getHeaderText</span> должен возвращать такую строку "[username] : tablename".<br/>
+		Пример, "[Amigo] : DashboardTable"
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level19,lesson03,task02"></button><b>2. Адаптер</b><br/><br/>
+                Используйте класс <span class="taskcode">AdapterFileOutputStream</span>, чтобы адаптировать <span class="taskcode">FileOutputStream</span> к новому интерфейсу <span class="taskcode">AmigoStringWriter</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level19,lesson03,task03"></button><b>3. Адаптация нескольких интерфейсов</b><br/><br/>
+                Адаптировать <span class="taskcode">IncomeData</span> к <span class="taskcode">Customer</span> и <span class="taskcode">Contact</span>.<br/>
+		Классом-адаптером является <span class="taskcode">IncomeDataAdapter</span>.<br/>
+		Инициализируйте <span class="taskcode">countries</span> перед началом выполнения программы. Соответствие кода страны и названия:<br/>
+		UA Ukraine<br/>
+		RU Russia<br/>
+		CA Canada<br/>
+        Дополнить телефонный номер нулями до 10 цифр при необходимости (смотри примеры)
+        Обратите внимание на формат вывода фамилии и имени человека
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level19,lesson03,task04"></button><b>4. И еще один адаптер</b><br/><br/>
+                Адаптировать <span class="taskcode">Scanner</span> к <span class="taskcode">PersonScanner</span>.<br/>
+		Классом-адаптером является <span class="taskcode">PersonScannerAdapter</span>.<br/>
+		Данные в файле хранятся в следующем виде:<br/>
+        Иванов Иван Иванович 31 12 1950<br/><br/>
+
+        В файле хранится большое количество людей, данные одного человека находятся в одной строке. Метод <span class="taskcode">read()</span> должен читать данные одного человека.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level19,lesson03,task05"></button><b>5. Закрепляем адаптер</b><br/><br/>
+                Адаптировать <span class="taskcode">Customer</span> и <span class="taskcode">Contact</span> к <span class="taskcode">RowItem</span>.<br/>
+		Классом-адаптером является <span class="taskcode">DataAdapter</span>.<br/>
+		Инициализируйте <span class="taskcode">countries</span> перед началом выполнения программы. Соответствие кода страны и названия:<br/>
+		UA Ukraine<br/>
+		RU Russia<br/>
+		CA Canada
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>4. FileReader/FileWriter</h2>
+</div>
+<p>- Привет, Амиго! Вчера Риша рассказывал тебе про <b>FileInputStream</b>, <b>FileOutputStream</b>. А  сегодня я расскажу тебе о классах <span class="red_text"><b>FileReader</b></span> и <span class="red_text"><b>FileWriter</b></span>.</p>
+<p>Как ты уже, наверное, догадался, все эти классы являются адаптерами между объектом File и “интерфейсами” <b>InputStream</b>, <b>OutputStream</b>, <b>Reader</b>, <b>Writer</b>.</p>
+<p class="amigo">- Они похожи на адаптеры между File и Reader/Writer, вот только в конструктор к ним нужно передать объект String, а не File!</p>
+<p>- На самом деле, у них несколько конструкторов: есть и File и String. И если ты передашь в конструктор класса объект типа String, то в нем, незаметно для тебя создастся объект типа File, с путем файла, взятым из переданного String.</p>
+<p>Это сделано для удобства. <span class="dred_text">Разработчики Java взяли самые частые сценарии использования этих классов, и написали для всех их конструкторы.</span> Это очень удобно, не так ли?</p>
+<p class="amigo">- Да, удобно, согласен. Но почему тогда мне постоянно приходится писать:<br/>
+<b>BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));</b><br/>
+    Почему они не добавили этот сценарий?
+    </p>
+<p>- Дело в том, что <span class="dred_text">типичная программа на Java не работает с консолью. Вернее, почти никогда ничего с нее не читает.</span> Это может быть web-сервер, сервер приложений или еще какая-нибудь сложная система.</p>
+<p>Но для вывода данных и текста на консоль добавили объект PrintStream. Так как те же «серверные программы» часто пишут в консоль свое состояние работы, ошибки и еще разную информацию.</p>
+<p class="amigo">- Понятно. А копировать файл с помощью FileReader и FileWriter тоже можно?</p>
+<p>- Да, если он текстовый (т.е. состоит из символов). Вот, смотри пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Копируем файл на диске</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args) throws Exception<br/>
+    {<br/>
+         <span class="green_text">FileReader <b>reader</b></span> = new <span class="green_text">FileReader</span>("c:/data.txt");<br/>
+         <span class="blue_text">FileWriter <b>writer</b></span> = new <span class="blue_text">FileWriter</span>("c:/result.txt");<br/><br/>
+
+         <b>while</b> (<span class="green_text">reader.<b>ready</b></span>()) <span class="grey_text">//пока есть непрочитанные байты в потоке ввода</span><br/>
+         {<br/>
+              int data = <span class="green_text">reader.<b>read</b></span>();   <span class="grey_text">//читаем один символ (char будет расширен до int)</span><br/>
+              <span class="blue_text">writer.<b>write</b></span>(data);           <span class="grey_text">//пишем один символ (int будет обрезан/сужен до char)</span><br/>
+         }<br/><br/>
+
+         <span class="grey_text">//закрываем потоки после использования</span><br/>
+         <span class="green_text">reader.<b>close</b></span>();<br/>
+         <span class="blue_text">writer.<b>close</b></span>();<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Почти никаких отличий.</p>
+<p>- Да, отличия минимальны.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>5. Задачи на FileReader/FileWriter</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level19,lesson05,task01"></button><b>1. Четные байты</b><br/><br/>
+                Считать с консоли 2 имени файла.<br/>
+		Вывести во второй файл все байты с четным индексом.<br/>
+        Закрыть потоки ввода-вывода.<br/><br/>
+		Пример: второй байт, четвертый байт, шестой байт и т.д.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level19,lesson05,task02"></button><b>2. Считаем слово</b><br/><br/>
+                Считать с консоли имя файла.<br/>
+        Файл содержит слова, разделенные знаками препинания.<br/>
+		Вывести в консоль количество слов "world", которые встречаются в файле.<br/>
+        Закрыть потоки. Не использовать <span class="taskcode">try-with-resources</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level19,lesson05,task03"></button><b>3. Выделяем числа</b><br/><br/>
+                Считать с консоли 2 имени файла.<br/>
+		Вывести во второй файл все числа, которые есть в первом файле.<br/>
+		Числа выводить через пробел.<br/>
+        Закрыть потоки. Не использовать <span class="taskcode">try-with-resources</span>.<br/><br/>
+<span class="example-legacy">Пример тела файла:</span><br/>
+<span class="example-data">12 text var2 14 8v 1</span><br/><br/>
+<span class="example-legacy">Результат:</span><br/>
+<span class="example-data">12 14 1</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level19,lesson05,task04"></button><b>4. Замена знаков</b><br/><br/>
+                Считать с консоли 2 имени файла.<br/>
+		Первый Файл содержит текст.<br/>
+		Заменить все точки "." на знак "!", вывести во второй файл.<br/>
+        Закрыть потоки. Не использовать <span class="taskcode">try-with-resources</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level19,lesson05,task05"></button><b>5. Пунктуация</b><br/><br/>
+                Считать с консоли 2 имени файла.<br/>
+		Первый Файл содержит текст.<br/>
+        Удалить все знаки пунктуации, включая символы новой строки.<br/>
+        Результат вывести во второй файл.<br/>
+        Закрыть потоки. Не использовать <span class="taskcode">try-with-resources</span>.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>6. BufferedReader/InputSreamReader</h2>
+</div>
+<p>- Привет, Амиго! Ты уже давно пользуешься классами <span class="dred_text"><b>BufferedReader</b></span> и <span class="dred_text"><b>InputStreamReader</b></span>. Теперь давай разберемся, что же они делают.</p>
+<p>Класс <span class="dred_text"><b>InputStreamReader</b></span> является классическим адаптером от интерфейса <b>InputStream</b> к интерфейсу <b>Reader</b>. Тут даже и добавить нечего.</p>
+<p>Но в вкратце, происходит вот что. Когда ты запрашиваешь (читаешь посредством <span class="dred_text">read</span>) у объекта типа <b>InputStreamReader</b> очередной символ, он читает из переданного ему в конструктор <b>InputStream</b>-а несколько байт и возвращает их как один char.</p>
+<p>Но Reader – не самый удобный объект для работы. Нам часто нужно прочитать не все введенные пользователем символы за один раз, а разбить эти символы на строки.</p>
+<p class="amigo">- Но у класса Reader ведь есть метод <b>read</b>(CharsetBuffer s), разве мы не можем использовать его?</p>
+<p>- Этот метод читает данные куском, размер которого равен размеру буффера и помещает их в объект CharsetBuffer.</p>
+<!--<p>- Дело в том, что в русском языке текст на экране делится на строки, а строки состоят из символов/букв. «Пятая строка, десятая буква» - вот типичная фраза для русского языка.</p>-->
+<p>Текст обычно делится на строки (линии, line - строка по-английски). Поэтому метод  read(CharsetBuffer s) может прочитать несколько «линий» за один раз. Если же нам нужно прочитать текст именно до конца «линии» (т.е. все символы строки до enter), для этого лучше поискать что-нибудь еще. И такой метод есть. В классе <b>BufferedReader</b>.</p>
+<p>Класс <span class="dred_text"><b>BufferedReader</b></span>, являющийся удобной надстройкой над Reader, имеет один очень удобный метод: <b>readLine()</b>. Этот метод позволяет читать из Reader-а сразу целыми строками (т.е. линиями). Когда ты в своем коде вызываешь метод readLine, он читает из объекта Reader символы, пока не встретится enter. Как только enter встретится, метод склеит символы в одну строку и вернет ее.</p>
+<p class="amigo">- Я этим постоянно пользовался, только не знал как все это работает. Теперь знаю. Спасибо, Ким.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>7. Пишем свой реадер - обертку на System.out</h2>
+</div>
+<p>- Привет, Амиго! Сегодня я расскажу как сделать новую интересную штуку – подменить объект System.out.</p>
+<p><b>System.out</b> - это статическая переменная <span class="dred_text"><b>out</b></span> типа <b>PrintStream</b> в классе <b>System</b>. Эта переменная имеет модификатор <span class="dred_text"><b>final</b></span>, так что просто так новое значение ей не присвоить. Но класс System имеет для этого специальный метод <b>setOut(PrintStream stream)</b>. Им то мы и воспользуемся.</p>
+<p class="amigo">- Интересно. А на что мы его заменим?</p>
+<p>- Нам нужен какой-то объект, куда можно будет собирать выведенные данные. Лучше всего на эту роль подойдет <b>ByteArrayOutputStream</b>. Это специальный класс, который с одной стороны является динамическим (растягиваемым) массивом, а с другой – реализует интерфейс OutputStream.</p>
+<p class="amigo">- Адаптер между массивом и OutputStream?</p>
+<p>- Что-то вроде того. Вот как будет выглядеть наш код.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args) throws Exception<br/>
+    {<br/>
+         <span class="grey_text">//запоминаем настоящий PrintStream в специальную переменную</span><br/>
+         PrintStream <span class="blue_text">consoleStream</span> = System.out;<br/><br/>
+
+         <span class="grey_text">//Создаем динамический массив</span><br/>
+         ByteArrayOutputStream <span class="red_text">outputStream</span> = new ByteArrayOutputStream();<br/>
+         <span class="grey_text">//создаем адаптер к классу PrintStream</span><br/>
+         PrintStream <span class="green_text">stream</span> = new PrintStream(<span class="red_text">outputStream</span>);<br/>
+         <span class="grey_text">//Устанавливаем его как текущий System.out</span><br/>
+         System.setOut(<span class="green_text">stream</span>); <br/><br/>                             
+
+         <span class="grey_text">//Вызываем функцию, которая ничего не знает о наших манипуляциях</span><br/>
+         printSomething();  <br/><br/>
+
+         <span class="grey_text">//Преобразовываем записанные в наш ByteArray данные в строку</span><br/>
+         String <span class="red_text"><b>result</b></span> = <span class="red_text">outputStream</span>.toString();<br/><br/>
+        
+         <span class="grey_text">//Возвращаем все как было</span><br/>
+         System.setOut(<span class="blue_text">consoleStream</span>);<br/>
+    }<br/><br/>
+<b>public static</b> void printSomething()<br/>
+    {<br/>
+         System.out.println("Hi");<br/>
+         System.out.println("My name is Amigo");<br/>
+         System.out.println("Bye-bye!");<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- А что мы будем делать с полученной строкой?</p>
+<p>- Да что угодно. Можем, например, развернуть ее задом наперед. Тогда это будет выглядеть так:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args) throws Exception<br/>
+    {<br/>
+         <span class="grey_text">//запоминаем настоящий PrintStream в специальную переменную</span><br/>
+         PrintStream <span class="blue_text">consoleStream</span> = System.out;<br/><br/>
+
+         <span class="grey_text">//Создаем динамический массив</span><br/>
+         ByteArrayOutputStream <span class="red_text">outputStream</span> = new ByteArrayOutputStream();<br/>
+         <span class="grey_text">//создаем адаптер к классу PrintStream</span><br/>
+         PrintStream <span class="green_text">stream</span> = new PrintStream(<span class="red_text">outputStream</span>);<br/>
+         <span class="grey_text">//Устанавливаем его как текущий System.out</span><br/>
+         System.setOut(<span class="green_text">stream</span>); <br/><br/>                             
+
+         <span class="grey_text">//Вызываем функцию, которая ничего не знает о наших манипуляциях</span><br/>
+         printSomething();  <br/><br/>
+
+         <span class="grey_text">//Преобразовываем записанные в наш ByteArray данные в строку</span><br/>
+         String <span class="red_text"><b>result</b></span> = <span class="red_text">outputStream</span>.toString();<br/><br/>
+        
+         <span class="grey_text">//Возвращаем все как было</span><br/>
+         System.setOut(<span class="blue_text">consoleStream</span>);<br/><br/>
+         <span class="grey_text">//разворачиваем строку</span><br/>
+         StringBuilder stringBuilder = new StringBuilder(result);<br/>
+         stringBuilder.reverse();<br/>
+         String reverseString = stringBuilder.toString();<br/><br/>
+        
+         <span class="grey_text">//выводим ее в консоль</span><br/>
+         System.out.println(reverseString);<br/>
+
+    }<br/><br/>
+<b>public static</b> void printSomething()<br/>
+    {<br/>
+         System.out.println("Hi");<br/>
+         System.out.println("My name is Amigo");<br/>
+         System.out.println("Bye-bye!");<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Как интересно. Теперь я начинаю понемногу понимать, какие большие возможности дают эти маленькие классы. </p>
+<p class="amigo">Спасибо за интересный урок, Билаабо.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Задачи на потоки</h2>
+</div>
+<p>- Привет, Амиго! </p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level19,lesson08,task01"></button><b>1. Ридер обертка</b><br/><br/>
+                В методе <span class="taskcode">main</span> подмените объект <span class="taskcode">System.out</span> написанной вами ридер-оберткой по аналогии с лекцией<br/>
+		Ваша ридер-обертка должна преобразовывать весь текст в заглавные буквы<br/>
+		Вызовите готовый метод <span class="taskcode">printSomething()</span>, воспользуйтесь <span class="taskcode">testString</span><br/>
+		Верните переменной <span class="taskcode">System.out</span> первоначальный поток<br/>
+		Вывести модифицированную строку в консоль.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level19,lesson08,task02"></button><b>2. Ридер обертка 2</b><br/><br/>
+                В методе <span class="taskcode">main</span> подмените объект <span class="taskcode">System.out</span> написанной вами ридер-оберткой по аналогии с лекцией<br/>
+		Ваша ридер-обертка должна заменять все подстроки "te" на "??"<br/>
+		Вызовите готовый метод <span class="taskcode">printSomething()</span>, воспользуйтесь <span class="taskcode">testString</span><br/>
+		Верните переменной <span class="taskcode">System.out</span> первоначальный поток<br/>
+		Вывести модифицированную строку в консоль.  
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level19,lesson08,task03"></button><b>3. Выводим только цифры</b><br/><br/>
+                В методе <span class="taskcode">main</span> подмените объект <span class="taskcode">System.out</span> написанной вами ридер-оберткой по аналогии с лекцией<br/>
+		Ваша ридер-обертка должна выводить только цифры<br/>
+		Вызовите готовый метод <span class="taskcode">printSomething()</span>, воспользуйтесь <span class="taskcode">testString</span><br/>
+		Верните переменной <span class="taskcode">System.out</span> первоначальный поток<br/>
+		Вывести модифицированную строку в консоль.<br/><br/>
+<span class="example-legacy">Пример вывода:</span><br/>
+<span class="example-data">12345678</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level19,lesson08,task04"></button><b>4. Решаем пример</b><br/><br/>
+                В методе <span class="taskcode">main</span> подмените объект <span class="taskcode">System.out</span> написанной вами ридер-оберткой по аналогии с лекцией<br/>
+		Ваша ридер-обертка должна выводить на консоль решенный пример<br/>
+		Вызовите готовый метод <span class="taskcode">printSomething()</span>, воспользуйтесь <span class="taskcode">testString</span><br/>
+		Верните переменной <span class="taskcode">System.out</span> первоначальный поток<br/><br/>
+
+		Возможные операции: + - *<br/>
+		Шаблон входных данных и вывода: a [знак] b = c<br/>
+		Отрицательных и дробных чисел, унарных операторов - нет.<br/><br/>
+<span class="example-legacy">Пример вывода:</span><br/>
+<span class="example-data">3 + 6 = 9</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level19,lesson08,task05"></button><b>5. Дублируем текст</b><br/><br/>
+                Считайте с консоли имя файла<br/>
+		В методе <span class="taskcode">main</span> подмените объект <span class="taskcode">System.out</span> написанной вами ридер-оберткой по аналогии с лекцией<br/>
+		Ваша ридер-обертка должна дублировать вывод всего текста в файл, имя которого вы считали<br/>
+		Вызовите готовый метод <span class="taskcode">printSomething()</span>, воспользуйтесь <span class="taskcode">testString</span><br/>
+		Верните переменной System.out первоначальный поток<br/>
+		Закройте поток файла<br/><br/>
+<span class="example-legacy">Пример вывода на экран:</span><br/>
+<span class="example-data">it's a text for testing</span><br/><br/>
+<span class="example-legacy">Пример тела файла:</span><br/>
+<span class="example-data">it's a text for testing</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>9. Ссылка на потоки ввода/вывода</h2>
+</div>
+<p>- Вчера я уже давал ссылку на эти лекции, но ты найдешь их очень полезными и для сегодняшнего материала.</p>
+<p><a href="http://wikijava.it-cache.net/index.php?title=%D0%93%D0%BB%D0%B0%D0%B2%D0%B0_16_Thinking_in_Java_4th_edition" target="_blank">Ссылка на потоки ввода/вывода</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>10. Хулио</h2>
+</div>
+<p>- Привет, Амиго! Тяжелый уровень? Вижу твои транзисторы перегрелись. Ты присаживайся, а я схожу за вентилятором. </p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-19.gif" preload="none" tabindex="0" taskkey="level19,lesson10,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-19.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=HCeLTIqEra0" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>11. Домашние и бонусные задания</h2>
+</div>
+<p>- Привет, Амиго! Хватит бездельничать! Вот твои задания, они посложнее будут, чем предыдущие, и точно улучшат твой процессор. А нам ведь это и нужно. Если вдруг возникнут трудности, то обращайся к коллегам, они точно помогут.</p>
+<table class="table_task">
+<tr>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Считаем зарплаты</b><br/><br/>
+                В метод <span class="taskcode">main</span> первым параметром приходит имя файла.<br/>
+		В этом файле каждая строка имеет следующий вид:<br/>
+		имя значение<br/>
+		где [имя] - <span class="taskcode">String</span>, [значение] - <span class="taskcode">double</span>. [имя] и [значение] разделены пробелом<br/><br/>
+
+		Для каждого имени посчитать сумму всех его значений<br/>
+		Все данные вывести в консоль, предварительно отсортировав в возрастающем порядке по имени.<br/>
+        Закрыть потоки. Не использовать <span class="taskcode">try-with-resources</span><br/><br/>
+<span class="example-legacy">Пример входного файла:</span><br/>
+<span class="example-data">Петров 2<br/>
+		Сидоров 6<br/>
+		Иванов 1.35<br/>
+		Петров 3.1</span><br/><br/>
+<span class="example-legacy">Пример вывода:</span><br/>
+<span class="example-data">Иванов 1.35<br/>
+		Петров 5.1<br/>
+		Сидоров 6.0</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Самый богатый</b><br/><br/>
+		В метод <span class="taskcode">main</span> первым параметром приходит имя файла.<br/>
+		В этом файле каждая строка имеет следующий вид:<br/>
+		имя значение<br/>
+		где [имя] - <span class="taskcode">String</span>, [значение] - <span class="taskcode">double</span>. [имя] и [значение] разделены пробелом<br/><br/>
+
+		Для каждого имени посчитать сумму всех его значений<br/>
+		Вывести в консоль имена, у которых максимальная сумма<br/>
+		Имена разделять пробелом либо выводить с новой строки <br/>
+        Закрыть потоки. Не использовать <span class="taskcode">try-with-resources</span><br/><br/>
+<span class="example-legacy">Пример входного файла:</span><br/>
+<span class="example-data">Петров 0.501<br/>
+		Иванов 1.35<br/>
+		Петров 0.85</span><br/><br/>
+<span class="example-legacy">Пример вывода:</span><br/>
+<span class="example-data">Петров</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Хуан Хуанович</b><br/><br/>
+                В метод <span class="taskcode">main</span> первым параметром приходит имя файла.<br/>
+		В этом файле каждая строка имеет следующий вид:<br/>
+		имя день месяц год<br/>
+		где [имя] - может состоять из нескольких слов, разделенных пробелами, и имеет тип <span class="taskcode">String</span><br/>
+		[день] - <span class="taskcode">int</span>, [месяц] - <span class="taskcode">int</span>, [год] - <span class="taskcode">int</span><br/>
+		данные разделены пробелами<br/><br/>
+
+		Заполнить список <span class="taskcode">PEOPLE</span> импользуя данные из файла<br/>
+        Закрыть потоки. Не использовать <span class="taskcode">try-with-resources</span><br/><br/>
+<span class="example-legacy">Пример входного файла:</span><br/>
+<span class="example-data">Иванов Иван Иванович 31 12 1987<br/>
+		Вася 15 5 2013</span>
+</td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>4. Ищем нужные строки</b><br/><br/>
+                Считать с консоли имя файла.<br/>
+		Вывести в консоль все строки из файла, которые содержат всего 2 слова из списка <span class="taskcode">words</span><br/>
+        Закрыть потоки. Не использовать <span class="taskcode">try-with-resources</span><br/><br/>
+
+		Пример: words содержит слова А, Б, В<br/>
+		Строки:<br/>
+		В Б А Д  //3 слова из words, не подходит<br/>
+		Д А Д    //1 слово из words, не подходит<br/>
+		Д А Б Д  //2 слова - подходит, выводим
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>5. Слова с цифрами</b><br/><br/>
+                В метод <span class="taskcode">main</span> первым параметром приходит имя файла1, вторым - файла2.<br/>
+		Файл1 содержит строки со слов, разделенные пробелом.<br/>
+		Записать через пробел в Файл2 все слова, которые содержат цифры, например, а1 или abc3d
+        Закрыть потоки. Не использовать <span class="taskcode">try-with-resources</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>6. Замена чисел</b><br/><br/>
+                1. В статическом блоке инициализировать словарь map парами [число-слово] от 0 до 12 включительно<br/>
+		Например, 0 - "ноль", 1 - "один", 2 - "два"<br/>
+		2. Считать с консоли имя файла<br/>
+		3. Заменить все числа на слова используя словарь <span class="taskcode">map</span><br/>
+		4. Результат вывести на экран<br/>
+		5. Закрыть потоки. Не использовать <span class="taskcode">try-with-resources</span><br/><br/>
+<span class="example-legacy">Пример данных:</span><br/>
+<span class="example-data">Это стоит 1 бакс, а вот это - 12.<br/>
+		Переменная имеет имя file1. 110 - это число.</span><br/><br/>
+<span class="example-legacy">Пример вывода:</span><br/>
+<span class="example-data">Это стоит один бакс, а вот это - двенадцать.<br/>
+		Переменная имеет имя file1. 110 - это число.</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>7. Длинные слова</b><br/><br/>
+                В метод <span class="taskcode">main</span> первым параметром приходит имя файла1, вторым - файла2<br/>
+		Файл1 содержит слова, разделенные пробелом.<br/>
+		Записать через запятую в Файл2 слова, длина которых строго больше 6<br/>
+        Закрыть потоки. Не использовать <span class="taskcode">try-with-resources</span><br/><br/>
+<span class="example-legacy">Пример выходных данных:</span><br/>
+<span class="example-data">длинное,короткое,аббревиатура</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>8. Перевертыши</b><br/><br/>
+                1 Считать с консоли имя файла.<br/>
+		2 Для каждой строки в файле:<br/>
+		2.1 переставить все символы в обратном порядке<br/>
+		2.2 вывести на экран<br/>
+		3 Закрыть потоки. Не использовать <span class="taskcode">try-with-resources</span><br/><br/>
+<span class="example-legacy">Пример тела входного файла:</span><br/>
+<span class="example-data">я - программист.<br/>
+		Амиго</span><br/><br/>
+<span class="example-legacy">Пример результата:</span><br/>
+<span class="example-data">.тсиммаргорп - я<br/>
+		огимА</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>9. Контекстная реклама</b><br/><br/>
+                В методе <span class="taskcode">main</span> подмените объект <span class="taskcode">System.out</span> написанной вами реадер-оберткой<br/>
+		Ваша реадер-обертка должна выводить на консоль контекстную рекламу после каждого второго <span class="taskcode">println-а</span><br/>
+		Вызовите готовый метод <span class="taskcode">printSomething()</span>, воспользуйтесь <span class="taskcode">testString</span><br/>
+		Верните переменной <span class="taskcode">System.out</span> первоначальный поток<br/><br/>
+
+		Рекламный текст: "JavaRush - курсы Java онлайн"<br/><br/>
+<span class="example-legacy">Пример вывода:</span><br/>
+<span class="example-data">first<br/>
+		second<br/>
+		JavaRush - курсы Java онлайн<br/>
+		third<br/>
+		fourth<br/>
+		JavaRush - курсы Java онлайн<br/>
+		fifth</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>10. Исправить ошибку</b><br/><br/>
+                Программа содержит всего 1 ошибку. Найди и исправь ее
+            </td>
+</tr>
+</table>
+<p>- Ты уже всё сделал? Вот тебе ещё и бонусные задания повышенной сложности:</p>
+<table class="table_task">
+<tr>
+<th></th>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>1. Отслеживаем изменения</b><br/><br/>
+<u>Задача:</u> Считать в консоли 2 имени файла - file1, file2.<br/>
+		Файлы содержат строки, file2 является обновленной версией file1, часть строк совпадают.<br/>
+		Нужно создать объединенную версию строк, записать их в список <span class="taskcode">lines</span><br/>
+		Операции <span class="taskcode">ADDED</span> и <span class="taskcode">REMOVED</span> не могут идти подряд, они всегда разделены SAME<br/>
+		Пример:
+        <pre>
+        оригинальный   редактированный    общий
+        file1:         file2:             результат:(lines)
+
+        строка1        строка1            SAME строка1
+        строка2                           REMOVED строка2
+        строка3        строка3            SAME строка3
+        строка4                           REMOVED строка4
+        строка5        строка5            SAME строка5
+        строка0                           ADDED строка0
+        строка1        строка1            SAME строка1
+        строка2                           REMOVED строка2
+        строка3        строка3            SAME строка3
+        строка5                           ADDED строка5
+        строка4        строка4            SAME строка4
+        строка5                           REMOVED строка5
+        </pre>
+</td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>2. Свой FileWriter </b><br/><br/>
+<u>Задача:</u> Реализовать логику <span class="taskcode">FileConsoleWriter</span><br/>
+		Должен наследоваться от <span class="taskcode">FileWriter</span><br/>
+		При записи данных в файл, должен дублировать эти данные на консоль 
+            </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>3. Знакомство с тегами</b><br/><br/>
+<u>Задача:</u> Считайте с консоли имя файла, который имеет HTML-формат<br/>
+		Пример:<br/>
+<b><i>Info about Leela &amp;ltspan xml:lang="en" lang="en"&amp;gt&amp;ltb&amp;gt&amp;ltspan&amp;gtTuranga Leela<br/>
+		&amp;lt/span&amp;gt&amp;lt/b&amp;gt&amp;lt/span&amp;gt&lt;span&gt;Super&lt;/span&gt;&lt;span&gt;girl&lt;/span&gt;</i></b><br/><br/>
+
+		Первым параметром в метод main приходит тег. Например, "span"<br/>
+		Вывести на консоль все теги, которые соответствуют заданному тегу<br/>
+		Каждый тег на новой строке, порядок должен соответствовать порядку следования в файле<br/>
+		Количество пробелов, \n, \r не влияют на результат<br/>
+		Файл не содержит тег CDATA, для всех открывающих тегов имеется отдельный закрывающий тег, одиночных тегов нету<br/>
+		Тег может содержать вложенные теги<br/><br/>
+<span class="example-legacy">Пример вывода:</span><br/>
+<span class="example-data">&amp;ltspan xml:lang="en" lang="en"&gt;&amp;ltb&amp;gt&amp;ltspan&amp;gtTuranga Leela&amp;lt/span&amp;gt&amp;lt/b&amp;gt&amp;lt/span&amp;gt<br/>
+		&amp;ltspan&amp;gtTuranga Leela&amp;lt/span&amp;gt</span><br/>
+<span class="example-data">&lt;span&gt;Super&lt;/span&gt;</span><br/>
+<span class="example-data">&lt;span&gt;girl&lt;/span&gt;</span><br/><br/>
+
+		Шаблон тега:<br/>
+		&amp;lttag&amp;gttext1&amp;lt/tag&amp;gt<br/>
+		&amp;lttag text2&gt;text1&amp;lt/tag&amp;gt<br/>
+		&amp;lttag<br/>
+		text2&amp;gttext1&amp;lt/tag&amp;gt<br/><br/>
+
+		text1, text2 могут быть пустыми
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

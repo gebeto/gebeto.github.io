@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-20.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 20
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>1. Нужно сохранить объект в файл - построчно. Сохранение массива объектов</h2>
+</div>
+<p>- Привет, Амиго! Сегодня мы познакомимся с еще одной интересной темой. А именно: <span class="dred_text">сохранением и загрузкой</span> (восстановлением) <span class="dred_text">объектов</span>. Допустим у нас есть класс Cat:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+     <b>public</b> String name;<br/>
+     <b>public</b> int age;<br/>
+     <b>public</b> int weight;<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>И мы хотим добавить в него удобный механизм сохранения в файл и загрузки из файла.</p>
+<p>Вот как это можно сделать:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+     <b>public</b> String name;<br/>
+     <b>public</b> int age;<br/>
+     <b>public</b> int weight;<br/><br/>
+
+     <b>public</b> void <span class="dred_text"><b>save</b></span>(OutputStream <span class="dred_text">outputStream</span>) throws Exception<br/>
+     {<br/>
+          PrintWriter <span class="dred_text">printWriter</span> = new PrintWriter(outputStream);<br/>
+          <span class="dred_text">printWriter</span>.println(name);<br/>
+          <span class="dred_text">printWriter</span>.println(age);<br/>
+          <span class="dred_text">printWriter</span>.println(weight);<br/>
+          <span class="dred_text">printWriter</span>.flush();<br/>
+     }<br/><br/>
+
+     <b>public</b> void <span class="green_text"><b>load</b></span>(InputStream <span class="green_text">inputStream</span>) throws Exception<br/>
+     {<br/>
+          BufferedReader <span class="green_text"><b>reader</b></span> = new BufferedReader(new InputStreamReader(inputStream));<br/>
+          name = <span class="green_text">reader</span>.readLine();<br/>
+          age = Integer.parseInt(<span class="green_text">reader</span>.readLine());<br/>
+          weight = Integer.parseInt(<span class="green_text">reader</span>.readLine());<br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- О! Это же очень просто. Мы просто печатаем значения всех аргументов, по одному в каждой строчке. А при загрузке читаем их в том же порядке. Отличное решение.</p>
+<p>- Спасибо, Амиго. А можешь написать, как будут выглядеть методы save и load у такой группы классов:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+     <b>public</b> String name;<br/>
+     <b>public</b> int age;<br/>
+     <b>public</b> int weight;<br/>
+}<br/>
+<b>class</b> Dog<br/>
+{<br/>
+     <b>public</b> String name;<br/>
+     <b>public</b> int age;<br/>
+}<br/>
+<b>class</b> Human<br/>
+{<br/>
+     <b>public</b> Cat cat;<br/>
+     <b>public</b> Dog dog;<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>У тебя есть объект человек, и он может иметь одну собаку и одного кота.</p>
+<p class="amigo">- У меня есть решение:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+{<br/>
+     <b>public</b> String name;<br/>
+     <b>public</b> int age;<br/>
+     <b>public</b> int weight;<br/><br/>
+
+     <b>public</b> void <span class="dred_text"><b>save</b></span>(OutputStream <span class="dred_text">outputStream</span>) throws Exception<br/>
+     {<br/>
+          PrintWriter <span class="dred_text">printWriter</span> = new PrintWriter(<span class="dred_text">outputStream</span>);<br/>
+          <span class="dred_text">printWriter</span>.println(name);<br/>
+          <span class="dred_text">printWriter</span>.println(age);<br/>
+          <span class="dred_text">printWriter</span>.println(weight);<br/>
+          <span class="dred_text">printWriter</span>.flush();<br/>
+     }<br/><br/>
+
+     <b>public</b> void <span class="green_text"><b>load</b></span>(InputStream <span class="green_text">inputStream</span>) throws Exception<br/>
+     {<br/>
+          BufferedReader <span class="green_text"><b>reader</b></span> = new BufferedReader(new InputStreamReader(<span class="green_text">inputStream</span>));<br/>
+          name = <span class="green_text">reader</span>.readLine();<br/>
+          age = Integer.parseInt(<span class="green_text">reader</span>.readLine());<br/>
+          weight = Integer.parseInt(<span class="green_text">reader</span>.readLine());<br/>
+     }<br/>
+}
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Dog<br/>
+{<br/>
+     <b>public</b> String name;<br/>
+     <b>public</b> int age;<br/><br/>
+
+     <b>public</b> void <span class="dred_text"><b>save</b></span>(OutputStream <span class="dred_text">outputStream</span>) throws Exception<br/>
+     {<br/>
+          PrintWriter <span class="dred_text">printWriter</span> = new PrintWriter(<span class="dred_text">outputStream</span>);<br/>
+          <span class="dred_text">printWriter</span>.println(name);<br/>
+          <span class="dred_text">printWriter</span>.println(age);<br/>
+          <span class="dred_text">printWriter</span>.flush();<br/>
+     }<br/><br/>
+
+     <b>public</b> void <span class="green_text"><b>load</b></span>(InputStream <span class="green_text">inputStream</span>) throws Exception<br/>
+     {<br/>
+          BufferedReader <span class="green_text"><b>reader</b></span> = new BufferedReader(new InputStreamReader(<span class="green_text">inputStream</span>));<br/>
+          name = <span class="green_text">reader</span>.readLine();<br/>
+          age = Integer.parseInt(<span class="green_text">reader</span>.readLine());<br/>
+     }<br/>
+}
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Human<br/>
+{<br/>
+     <b>public</b> Cat cat;<br/>
+     <b>public</b> Dog dog;<br/><br/>
+
+     <b>public</b> void <span class="dred_text"><b>save</b></span>(OutputStream <span class="dred_text">outputStream</span>) throws Exception<br/>
+     {<br/>
+            cat.save(<span class="dred_text">outputStream</span>);<br/>
+            dog.save(<span class="dred_text">outputStream</span>);<br/>
+     }<br/><br/>
+
+     <b>public</b> void <span class="green_text"><b>load</b></span>(InputStream <span class="green_text">inputStream</span>) throws Exception<br/>
+     {<br/>
+            cat.load(<span class="green_text">inputStream</span>);<br/>
+            dog.load(<span class="green_text">inputStream</span>);<br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>- Очень хорошее решение. Но что будет, если у человека нет кота, а есть только собака?</p>
+<p>Где проверки на null?</p>
+<p class="amigo">- Сейчас исправлю:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Human<br/>
+{<br/>
+     <b>public</b> Cat cat;<br/>
+     <b>public</b> Dog dog;<br/><br/>
+
+     <b>public</b> void <span class="dred_text"><b>save</b></span>(OutputStream <span class="dred_text">outputStream</span>) throws Exception<br/>
+     {<br/>
+            <b>if</b> (cat != null) <br/>
+                 cat.save(<span class="dred_text">outputStream</span>);<br/>
+            <b>if</b> (dog != null) <br/>
+                dog.save(<span class="dred_text">outputStream</span>);<br/>
+     }<br/><br/>
+
+     <b>public</b> void <span class="green_text"><b>load</b></span>(InputStream <span class="green_text">inputStream</span>) throws Exception<br/>
+     {<br/>
+           cat = new Cat();<br/>
+           cat.load(<span class="green_text">inputStream</span>);<br/>
+           dog = new Dog();<br/>
+           dog.load(<span class="green_text">inputStream</span>);<br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>- Все равно не очень верно. У тебя две ошибки:</p>
+<p><b>1)</b> Если у человека нет ни кота, ни собаки, они все равно будут созданы, при вызове метода load</p>
+<p><b>2)</b> Если мы сохраним только собаку, то ее данные будут прочитаны котом при загрузке.</p>
+<p class="amigo">- А что же делать?</p>
+<p>- Мы <span class="dred_text">не можем пропускать запись переменных, иначе это вызовет сбой при чтении.</span> Но нужно сделать так, чтобы переменные, чье значение было null при сохранении и после загрузки,  получали null. Вот мой вариант:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Human<br/>
+{<br/>
+     <b>public</b> Cat cat;<br/>
+     <b>public</b> Dog dog;<br/><br/>
+
+     <b>public</b> void <span class="dred_text"><b>save</b></span>(OutputStream <span class="dred_text">outputStream</span>) throws Exception<br/>
+     {<br/>
+           PrintWriter <span class="dred_text">writer</span> = new PrintWriter(<span class="dred_text">outputStream</span>);<br/><br/>
+         
+           String isCatPresent = cat != null ? "yes" : "no";<br/>
+             writer.print(isCatPresent);<br/><br/>
+
+             <b>if</b> (cat!=null) <br/>
+                  cat.save(<span class="dred_text">outputStream</span>);<br/><br/>
+
+            String isDogPresent = dog != null ? "yes" : "no";<br/>
+              writer.print(isDogPresent);<br/><br/>
+
+              <b>if</b> (dog != null) <br/>
+                  dog.save(<span class="dred_text">outputStream</span>);<br/>
+    }<br/><br/>
+<b>public</b> void <span class="green_text"><b>load</b></span>(InputStream <span class="green_text">inputStream</span>) throws Exception<br/>
+    {<br/>
+         BufferedReader <span class="green_text"><b>reader</b></span> = new BufferedReader(new InputStreamReader(<span class="green_text">inputStream</span>));<br/><br/>
+         
+           String isCatPresent = reader.readLine();<br/>
+           <b>if</b> (isCatPresent.equals("yes"))<br/>
+          {  <br/>
+               cat = new Cat();<br/>
+               cat.load(<span class="green_text">inputStream</span>);<br/>
+          }<br/><br/>
+
+           String isDogPresent = reader.readLine();<br/>
+           <b>if</b> (isDogPresent.equals("yes"))<br/>
+          {  <br/>
+               dog = new Dog();<br/>
+               dog.load(<span class="green_text">inputStream</span>);<br/>
+          }<br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Да, мне нравится такое решение.</p>
+<p>- Да, что-то в нем есть.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>2. Задача на сохранение массива объектов в файл</h2>
+</div>
+<p>- Привет, Амиго! </p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level20,lesson02,task01"></button><b>1. Читаем и пишем в файл: Human</b><br/><br/>
+                Реализуйте логику записи в файл и чтения из файла для класса <span class="taskcode">Human</span><br/>
+		Поле <span class="taskcode">name</span> в классе <span class="taskcode">Human</span> не может быть пустым<br/>
+		В файле your_file_name.tmp может быть несколько объектов <span class="taskcode">Human</span><br/>
+		Метод <span class="taskcode">main</span> реализован только для вас и не участвует в тестировании
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level20,lesson02,task02"></button><b>2. Читаем и пишем в файл: JavaRush</b><br/><br/>
+                Реализуйте логику записи в файл и чтения из файла для класса <span class="taskcode">JavaRush</span><br/>
+		В файле your_file_name.tmp может быть несколько объектов <span class="taskcode">JavaRush</span><br/>
+		Метод <span class="taskcode">main</span> реализован только для вас и не участвует в тестировании
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level20,lesson02,task03"></button><b>3. Знакомство с properties</b><br/><br/>
+                В методе <span class="taskcode">fillInPropertiesMap</span> считайте имя файла с консоли и заполните карту <span class="taskcode">properties</span> данными из файла.
+		Про .<span class="taskcode">properties</span> почитать тут - http://ru.wikipedia.org/wiki/.properties
+		Реализуйте логику записи в файл и чтения из файла для карты <span class="taskcode">properties</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level20,lesson02,task04"></button><b>4. Читаем и пишем в файл статики</b><br/><br/>
+                Реализуйте логику записи в файл и чтения из файла для класса <span class="taskcode">ClassWithStatic</span><br/>
+		Метод <span class="taskcode">load</span> должен инициализировать объект включая статические поля данными из файла<br/>
+		Метод <span class="taskcode">main</span> реализован только для вас и не участвует в тестировании
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level20,lesson02,task05"></button><b>5. И еще раз о синхронизации</b><br/><br/>
+                Разберитесь почему не работает метод <span class="taskcode">main()</span><br/>
+                Реализуйте логику записи в файл и чтения из файла для класса <span class="taskcode">Object</span><br/>
+		Метод <span class="taskcode">load</span> должен инициализировать объект данными из файла<br/>
+		Метод <span class="taskcode">main</span> реализован только для вас и не участвует в тестировании
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Решение - сериализация, ISerializable</h2>
+</div>
+<p>- Помнишь, мы сегодня разбирали сохранение объектов в файл и чтение из файла?</p>
+<p class="amigo">- Да, только мы сохраняли в поток вывода, а читали из потока ввода.</p>
+<p>- Молодец, Амиго. Приятно слышать, что ты замечаешь такие мелочи. А ты бы смог дописать код, чтобы было сохранение в файл и чтение из файла?</p>
+<p class="amigo">- А что там писать?! Объявил FileInputStream и FileOutputStream и передавай их в методы save &amp; load. Тут уже ничего не перепутаешь - все просто.</p>
+<p>- Рада за тебя. Итак, новая тема – <span class="red_text"><b>сериализация</b></span>.</p>
+<p><span class="red_text"><b>Сериализация</b></span> – это практически то же самое, что мы с тобой только что делали, только гораздо  круче и встроено прямо в Java-машину. <span class="red_text">Java-машина умеет сохранять и загружать свои объекты.</span> Для этого ей даже не требуются методы save &amp; load: все объекты хранятся внутри Java-машины, и она имеет к ним полный доступ.</p>
+<p>Мы просто берем объект и сохраняем его в поток/читаем из потока:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args) throws Exception<br/>
+    {<br/>
+         <span class="green_text">Cat cat</span> = new <span class="green_text">Cat</span>();<br/><br/>
+        
+         <span class="grey_text">//save cat to file</span><br/>
+         FileOutputStream <span class="blue_text">fileOutput</span> = new FileOutputStream("cat.dat");<br/>
+         <span class="dred_text">ObjectOutputStream outputStream = new ObjectOutputStream</span>(<span class="blue_text">fileOutput</span>);<br/>
+         <span class="dred_text">outputStream.<b>writeObject</b></span>(<span class="green_text">cat</span>);<br/>
+         <span class="blue_text">fileOutput.close();</span><br/>
+         <span class="dred_text">outputStream.close();</span><br/><br/>
+
+         <span class="grey_text">//load cat from file</span><br/>
+         FileInputStream <span class="blue_text">fiStream</span> = new FileInputStream("cat.dat");<br/>
+         <span class="dred_text">ObjectInputStream objectStream = new ObjectInputStream</span>(<span class="blue_text">fiStream</span>);<br/>
+         Object object = <span class="dred_text">objectStream.<b>readObject</b>();</span><br/>
+         <span class="blue_text">fiStream.close();</span><br/>
+         <span class="dred_text">objectStream.close();</span><br/><br/>
+
+         <span class="green_text">Cat newCat</span> = (<span class="green_text">Cat</span>)object;<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- И все?</p>
+<p>- Да. Там очень большой и сложный механизм <b>сериализации</b>, который поддерживает сохранение в поток и чтение из потока почти всех типов данных.</p>
+<p class="amigo">- Почти всех, это значит не всех?</p>
+<p>- Да, дело в том, что <span class="red_text">не все объекты по своей сути можно сохранить</span>. Некоторые объекты не хранят все свои данные в себе, а лишь ссылаются на другие объекты и/или источники данных. Например, консоль (System.in), поток ввода (InputStream), или что-нибудь еще.</p>
+<p>Поэтому разработчики Java придумали специальный <span class="red_text">интерфейс-маркер</span> – <span class="red_text"><b>Serializable</b></span>. Его называют <b>маркером</b>, т.к. он не содержит никаких данных и методов. Он используется только для того, чтобы «помечать» (маркировать) классы. Если мы считаем, что наш класс хранит в себе все свои данные, тогда мы можем пометить его этим маркером – написать <b>implements Serializable</b>.</p>
+<p>Пример «кота» с поддержкой сериализации:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class Cat <span class="dred_text">implements Serializable</span></b><br/>
+{<br/>
+     <b>public</b> String name;<br/>
+     <b>public</b> int age;<br/>
+     <b>public</b> int weight;<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Когда мы пытаемся сериализовать (сохранить) какой-нибудь объект, Java-машина проверяет – поддерживает ли он сериализацию: реализует ли он интерфейс <b>Serializable</b>? Если да, то сохраняет объект, если нет – выкидывает исключение о невозможности сериализации.</p>
+<p>Тут нужно понимать, что сериализуемый объект должен состоять тоже только из сериализуемых объектов.</p>
+<p class="amigo">- Ну, этого и следовало ожидать. Нельзя же сохранить целое, не сохранив какие-то его части.</p>
+<p>- Именно так.</p>
+<p class="amigo">- А как же типы int, String, ArrayList?</p>
+<p>- Они все поддерживают сериализацию, на этот счет разработчики Java специально позаботились. Тут проблем быть не должно.</p>
+<p>Более того, при сериализации объекта сохраняется его тип. Теперь ты можешь в переменную класса с типом Object сохранить ссылку на объект Cat,  и все это отлично сериализуется и десериализуется.</p>
+<p class="amigo">- Десериализуется?</p>
+<p>- <span class="red_text">Десериализация</span> – так называют процесс, обратный сериализации – чтение и восстановление объекта из потока/файла.</p>
+<p class="amigo">- Тогда вопросов больше нет.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи на сериализацию</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level20,lesson04,task01"></button><b>1. Как сериализовать?</b><br/><br/>
+                Сделайте так, чтобы сериализация класса <span class="taskcode">Human</span> была возможной
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level20,lesson04,task02"></button><b>2. Как сериализовать JavaRush?</b><br/><br/>
+                Сделайте так, чтобы сериализация класса <span class="taskcode">JavaRush</span> была возможной 
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level20,lesson04,task03"></button><b>3. Как сериализовать Singleton?</b><br/><br/>
+                Два десериализованных объекта <span class="taskcode">singleton</span> и <span class="taskcode">singleton1</span> имеют разные ссылки в памяти, а должны иметь одинаковые.<br/>
+		В класс <span class="taskcode">Singleton</span> добавьте один метод (погуглите), чтобы после десериализации ссылки на объекты были равны.<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level20,lesson04,task04"></button><b>4. Как сериализовать static?</b><br/><br/>
+                Сделайте так, чтобы сериализация класса <span class="taskcode">ClassWithStatic</span> была возможной
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level20,lesson04,task05"></button><b>5. Как сериализовать что-то свое?</b><br/><br/>
+                Сделайте так, чтобы сериализация класса <span class="taskcode">Object</span> была возможной
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>5. transient</h2>
+</div>
+<p>- Привет, Амиго! Хотела тебе порассказывать одно маленькое дополнение к сериализации.</p>
+<p>Допустим наш класс содержит ссылку на какой-нибудь <b>InputStream</b>, тогда его нельзя сериализовать, ведь так?</p>
+<p class="amigo">- Да. Ты же сама говорила, что потоки сериализовать нельзя. А сериализовать объект, у которого есть несериализуемые данные – тоже нельзя.</p>
+<p>- Да. Именно так. Но что, если класс хранит данные, которые не играют значащей роли в его состоянии, но мешают считаться ему сериализуемым классом? Мало ли что класс может у себя хранить ненужного. Возможно, он может выбросить эти данные в любой момент или даже так и делает постоянно.</p>
+<p>Для таких случаев разработчики Java придумали специальное слово – <span class="red_text"><b>transient</b></span>. Его можно <span class="red_text">написать перед переменной класса и она будет не учитываться при сериализации. Ее состояние не будет ни сохраняться, ни восстанавливаться. Как будто и нет ее вовсе.</span> Как раз для таких ситуаций, как мы только что рассмотрели.</p>
+<p>Помнишь кеширование и модификатор <span class="red_text"><b>volatile</b></span>? <b>Нет правил без исключений.</b></p>
+<p>Вот тебе один примерчик такого счастья:</p>
+<p>Пример «кота» с невидимой для сериализации переменной - in:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class Cat <span class="blue_text">implements Serializable</span></b><br/>
+{<br/>
+     <b>public</b> String name;<br/>
+     <b>public</b> int age;<br/>
+     <b>public</b> int weight;<br/><br/>
+
+     <b><span class="red_text">transient</span> public</b> InputStream <b>in</b> = System.in; <br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>6. Сохранение данных/externalizable</h2>
+</div>
+<p>- Привет, Амиго! Хотел бы немного дополнить то, что  рассказала тебе Элли.</p>
+<p>Иногда бывает нужно управлять процессом сериализации. Вот одни из причин:</p>
+<p><b>1) Объект не готов к сериализации:</b> его нынешнее внутреннее состояние в процессе изменения.</p>
+<p><b>2) Объект содержит несериализуемые объекты, но может перевести их в удобную для сериализации форму:</b> сохранить в массив байт или что-нибудь еще.</p>
+<p><b>3) Объект хочет десериализовать все свои данные, как одно целое и/или зашифровать их перед сериализацией.</b></p>
+<p>Причин выполнить сериализацию в ручном режиме может быть множество. Но не хотелось бы лишаться всех тех преимуществ, которые дает стандартная сериализация. Ведь наш объект могут использовать другие объекты. И они тоже не смогут сериализоваться, если наш объект откажется от поддержки сериализации.</p>
+<p>На этот случай тоже есть решение – интерфейс <span class="red_text"><b>Externalizable</b></span>. Спасибо дальновидным разработчикам Java. <span class="red_text">Достаточно заменить интерфейс <b>Serializable</b> на интерфейс <b>Externalizable</b>, и ваш класс сможет управлять процессом сериализации в ручном режиме.</span></p>
+<p>Дело в том, что интерфейс <b>Externalizable</b>, в отличие от <b>Serializable</b>, содержит два метода, которые вызываются Java-машиной при сериализации объекта. Вот как это выглядит:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class Cat <span class="dred_text">implements Externalizable</span></b><br/>
+{<br/>
+     <b>public</b> String name;<br/>
+     <b>public</b> int age;<br/>
+     <b>public</b> int weight;<br/><br/>
+
+     <span class="dred_text"><b>public void writeExternal(ObjectOutput out)</b></span><br/>
+     {<br/>
+          <span class="dred_text"><b>out</b></span>.<span class="dred_text">writeObject</span>(name);<br/>
+          <span class="dred_text"><b>out</b></span>.<span class="dred_text">writeInt</span>(age);<br/>
+          <span class="dred_text"><b>out</b></span>.<span class="dred_text">writeInt</span>(weight);<br/>
+    }<br/><br/>
+
+     <span class="dred_text"><b>public</b> void <b>readExternal(ObjectInput in)</b></span><br/>
+     {<br/>
+          name = (String) <span class="dred_text">in.readObject();</span><br/>
+          age = <span class="dred_text">in.readInt();</span><br/>
+          weight = <span class="dred_text">in.readInt();</span><br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Ничего не напоминает?</p>
+<p class="amigo">- Ух ты! Именно так мы пробовали сохранять объекты до «изобретения» сериализации.</p>
+<p>- Да, теперь все просто: если устраивает стандартная сериализация – просто наследуем наш класс от интерфейса <b>Serializable</b>. Если не устраивает – наследуем от <b>Externalizable</b> и пишем код для сохранения/загрузки объекта нашего класса.</p>
+<p class="amigo">- А класс, помеченный <b>Externalizable</b>, считается сериализуемым? Мы можем «безопасно» хранить на него ссылки в наших сериализуемых классах?</p>
+<p>- Да. Если класс реализует интерфейс <b>Serializable</b> или <b>Externalizable</b>, он считается сериализуемым.</p>
+<p class="amigo">- Отличное решение. Мне нравится.</p>
+<p>- Рад это слышать. Но это еще не всё… Спроси лучше профессора Ханса о всяких нюансах. Они тут точно есть. Он хотел тебе дать что-то почитать.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>7. Задачи на сериализацию и десериализацию</h2>
+</div>
+<p>- Привет, Амиго! </p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level20,lesson07,task01"></button><b>1. Externalizable для апартаментов</b><br/><br/>
+                Реализуйте интерфейс <span class="taskcode">Externalizable</span> для класса <span class="taskcode">Apartment</span><br/>
+		Подумайте, какие поля не нужно сериализовать.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level20,lesson07,task02"></button><b>2. OutputToConsole</b><br/><br/>
+                Класс <span class="taskcode">OutputToConsole</span> должен сериализоваться с помощью интерфейса <span class="taskcode">Externalizable</span>.<br/>
+		Подумайте, какие поля не нужно сериализовать.<br/>
+		Исправьте ошибку.<br/>
+		Сигнатуры методов менять нельзя.  
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level20,lesson07,task03"></button><b>3. Externalizable Person</b><br/><br/>
+                Класс <span class="taskcode">Person</span> должен сериализоваться с помощью интерфейса <span class="taskcode">Externalizable</span>.<br/>
+		Подумайте, какие поля не нужно сериализовать.<br/>
+		Исправьте ошибку сериализации.<br/>
+		Сигнатуры методов менять нельзя.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level20,lesson07,task04"></button><b>4. Serializable Solution</b><br/><br/>
+                Сериализуйте класс <span class="taskcode">Solution</span>.<br/>
+		Подумайте, какие поля не нужно сериализовать, пометить ненужные поля — <span class="taskcode">transient</span>.<br/>
+		Объект всегда должен содержать актуальные итоговые данные.<br/>
+        Метод <span class="taskcode">main</span> не участвует в тестировании.<br/>
+        Написать код проверки самостоятельно в методе <span class="taskcode">main</span>:<br/>
+        1) создать файл, открыть поток на чтение (input stream) и на запись(output stream)<br/>
+        2) создать экземпляр класса <span class="taskcode">Solution - savedObject</span><br/>
+        3) записать в поток на запись <span class="taskcode">savedObject</span> (убедитесь, что они там действительно есть)<br/>
+        4) создать другой экземпляр класса <span class="taskcode">Solution </span> с другим параметром<br/>
+        5) загрузить из потока на чтение объект - <span class="taskcode">loadedObject</span><br/>
+        6) проверить, что <span class="taskcode">savedObject.string</span> равна <span class="taskcode">loadedObject.string</span> <br/>
+        7) обработать исключения
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level20,lesson07,task05"></button><b>5. Переопределение сериализации</b><br/><br/>
+                Сделайте так, чтобы после десериализации нить <span class="taskcode">runner</span> продолжила работать.<br/>
+		Ключевые слова объекта <span class="taskcode">runner</span> менять нельзя.<br/><br/>
+		Hint/Подсказка: Конструктор не вызывается при сериализации, только инициализируются все поля.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>8. Ссылка на сериализацию</h2>
+</div>
+<p>- А если ты хочешь расширить или углубить свои знания по сериализации. Или, не дай бог, что-нибудь не понял, то для тебя у меня есть замечательные лекции.</p>
+<p><a href="http://wikijava.it-cache.net/index.php@title=Glava_16_Thinking_in_Java_4th_edition.html#.D0.A1.D0.B5.D1.80.D0.B8.D0.B0.D0.BB.D0.B8.D0.B7.D0.B0.D1.86.D0.B8.D1.8F_.D0.BE.D0.B1.D1.8A.D0.B5.D0.BA.D1.82.D0.BE.D0.B2" target="_blank">Ссылка на сериализацию</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>9. Хулио</h2>
+</div>
+<p>- Привет, Амиго! Устал? Ничего, тяжело в учении – легко в бою. Давай посмотрим хорошее видео. </p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-20.gif" preload="none" tabindex="0" taskkey="level20,lesson09,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-20.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=1akf6rDCxng" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>10. Домашние и бонусные задания</h2>
+</div>
+<p>- Привет, Амиго! Что-то ты расслабился! Вот твои задания. Если вдруг возникнут трудности, то обращайся к коллегам, они точно помогут.</p>
+<table class="table_task">
+<tr>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Минимум изменений</b><br/><br/>
+                Используя минимум изменений кода сделайте так, чтобы сериализация класса <span class="taskcode">C</span> стала возможной.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Десериализация</b><br/><br/>
+		На вход подается поток, в который записан сериализованный объект класса <span class="taskcode">A</span> либо класса <span class="taskcode">B</span>.<br/>
+		Десериализуйте объект в методе <span class="taskcode">getOriginalObject</span> предварительно определив, какого именно типа там объект.<br/>
+		Реализуйте интерфейс <span class="taskcode">Serializable</span> где необходимо.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Найти ошибки</b><br/><br/>
+                Почему-то при сериализации/десериализации объекта класса <span class="taskcode">B</span> возникают ошибки.<br/>
+		Найдите проблему и исправьте ее.<br/>
+		Класс <span class="taskcode">A</span> не должен реализовывать интерфейсы <span class="taskcode">Serializable</span> и <span class="taskcode">Externalizable</span>.<br/>
+		Сигнатура класса <span class="taskcode">В</span> не содержит ошибку :)<br/>
+        Метод <span class="taskcode">main</span> не участвует в тестировании.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>4. Исправить ошибку</b><br/><br/>
+                После десериализации объекта класса <span class="taskcode">Solution</span> обнаружили, что данных в словаре [m] нет :(<br/>
+		Исправить 1 ошибку.<br/>
+		Метод <span class="taskcode">main</span> в тестировании не участвует.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>5. Сериализуйте Person</b><br/><br/>
+                Сериализуйте класс <span class="taskcode">Person</span> стандартным способом.<br/>
+                При необходимости поставьте полям модификатор <span class="taskcode">transient</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>6. Запрет сериализации</b><br/><br/>
+                Запретите сериализацию класса <span class="taskcode">SubSolution</span> используя <span class="taskcode">NotSerializableException</span>.<br/>
+		Сигнатуры классов менять нельзя 
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>7. Переопределение сериализации в потоке</b><br/><br/>
+                Сериализация/десериализация <span class="taskcode">Solution</span> не работает.<br/>
+		Исправьте ошибки не меняя сигнатуры методов и класса.<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании.<br/>
+        Написать код проверки самостоятельно в методе <span class="taskcode">main</span>:<br/>
+        1) создать экземпляр класса <span class="taskcode">Solution</span><br/>
+        2) записать в него данные  - <span class="taskcode">writeObject</span><br/>
+        3) сериализовать класс <span class="taskcode">Solution  - writeObject(ObjectOutputStream out)</span><br/>
+        4) десериализовать, получаем новый объект<br/>
+        5) записать в новый объект данные - <span class="taskcode">writeObject</span><br/>
+        6) проверить, что в файле есть данные из п.2 и п.5<br/>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>8. Правильный вывод</b><br/><br/>
+                Расставить обращение к методам суперкласса и модификаторы доступа так, чтобы вывод на экран был следующим:<br/><br/>
+
+		C class, method2<br/>
+		A class, method2<br/>
+		A class, method1<br/>
+		B class, method1<br/><br/>
+
+		Количество изменений модификаторов доступа и вызовов методов должно быть минимально<br/>
+		1. Из одного метода можно вызвать только один метод суперкласса.<br/>
+		2. Из одного метода можно вызвать только один метод класса.<br/>
+		3. Можно менять модификаторы доступа к методам.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>9. Знакомство с графами</b><br/><br/>
+                Прочитать в дополнительных материалах о сериализации графов.<br/>
+		Дан ориентированный плоский граф <span class="taskcode">Solution</span>, содержащий циклы и петли.<br/>
+		Пример,<br/>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/20/image-ru-20-01.png"/>
+                Сериализовать <span class="taskcode">Solution</span>.<br/>
+		Все данные должны сохранить порядок следования. 
+            </td>
+</tr>
+</table>
+<p>- Ты уже всё сделал? Вот тебе ещё и бонусные задания повышенной сложности:</p>
+<table class="table_task">
+<tr>
+<th></th>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>1. Алгоритмы-числа</b><br/><br/>
+<u>Задача:</u> Число <span class="taskcode">S</span> состоит из <span class="taskcode">M</span> чисел, например, <span class="taskcode">S</span>=370 и <span class="taskcode">M</span>(количество цифр)=3<br/>
+		Реализовать логику метода <span class="taskcode">getNumbers</span>, который должен среди натуральных чисел меньше <span class="taskcode">N</span> (<span class="taskcode">long</span>)  находить все числа, удовлетворяющие следующему критерию:<br/>
+		число <span class="taskcode">S</span> равно сумме его цифр, возведенных в <span class="taskcode">M</span> степень<br/><br/>
+<span class="taskcode">getNumbers</span> должен возвращать все такие числа в порядке возрастания<br/><br/>
+
+		Пример искомого числа:<br/>
+		370 = 3*3*3 + 7*7*7 + 0*0*0<br/>
+		8208 = 8*8*8*8 + 2*2*2*2 + 0*0*0*0 + 8*8*8*8<br/><br/>
+
+		На выполнение дается 10 секунд и 50 МБ памяти.
+            </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>2. Алгоритмы-прямоугольники</b><br/><br/>
+<u>Задача:</u> 1. Дан двумерный массив <span class="taskcode">N</span>*<span class="taskcode">N</span>, который содержит несколько прямоугольников.<br/>
+		2. Различные прямоугольники не соприкасаются и не накладываются.<br/>
+		3. Внутри прямоугольник весь заполнен 1.<br/>
+		4. В массиве:<br/>
+		4.1) <span class="taskcode">a[i, j]</span> = 1, если элемент <span class="taskcode">(i, j)</span> принадлежит какому-либо прямоугольнику<br/>
+		4.2) <span class="taskcode">a[i, j]</span> = 0, в противном случае<br/>
+		5. <span class="taskcode">getRectangleCount</span> должен возвращать количество прямоугольников.<br/>
+		6. Метод <span class="taskcode">main</span> не участвует в тестировании
+            </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>3. Кроссворд</b><br/><br/>
+<u>Задача:</u> 1. Дан двумерный массив, который содержит буквы английского алфавита в нижнем регистре.<br/>
+		2. Метод <span class="taskcode">detectAllWords</span> должен найти все слова из <span class="taskcode">words</span> в массиве <span class="taskcode">crossword</span>.<br/>
+		3. Элемент<span class="taskcode">(startX, startY)</span> должен соответствовать первой букве слова, элемент<span class="taskcode">(endX, endY)</span> - последней.<br/>
+		text - это само слово, располагается между начальным и конечным элементами<br/>
+		4. Все слова есть в массиве.<br/>
+		5. Слова могут быть расположены горизонтально, вертикально и по диагонали как в нормальном, так и в обратном порядке.<br/>
+		6. Метод <span class="taskcode">main</span> не участвует в тестировании
+            </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>4. Свой список</b><br/><br/>
+<u>Задача:</u> Посмотреть, как реализован <span class="taskcode">LinkedList</span>.<br/>
+		Элементы следуют так: 1-&gt;2-&gt;3-&gt;4  и так 4-&gt;3-&gt;2-&gt;1<br/>
+		По образу и подобию создать <span class="taskcode">Solution</span>.<br/>
+		Элементы должны следовать так:<br/>
+<pre>
+1-&gt;3-&gt;7-&gt;15
+    -&gt;8...
+ -&gt;4-&gt;9
+    -&gt;10
+2-&gt;5-&gt;11
+    -&gt;12
+ -&gt;6-&gt;13
+    -&gt;14
+</pre>
+		Во внутренней реализации элементы должны добавляться по 2 на каждый уровень<br/>
+		Метод <span class="taskcode">getParent</span> должен возвращать элемент, который на него ссылается.<br/>
+		Например, 3 ссылается на 7 и на 8, т.е.  <span class="taskcode">getParent</span>("8")=="3", а <span class="taskcode">getParent</span>("13")=="6"<br/>
+		Строки могут быть любыми.<br/>
+		При удалении элемента должна удаляться вся ветка. Например, <span class="taskcode">list.remove("5")</span> должен удалить "5", "11", "12"<br/>
+		Итерироваться элементы должны в порядке добавления<br/>
+		Доступ по индексу запрещен, воспользуйтесь при необходимости <span class="taskcode">UnsupportedOperationException</span><br/>
+		Должно быть наследование <span class="taskcode">AbstractList&amp;ltString&amp;gt, List&amp;ltString&amp;gt, Cloneable, Serializable</span><br/>
+		Метод <span class="taskcode">main</span> в тестировании не участвует
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

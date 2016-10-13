@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-25.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 25
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>1. Enum, все особенности</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-11.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Билаабо!</p>
+<p>- Я расскажу тебе об очень интересной штуке.  Она довольно простая, но от этого становится еще интереснее. Эта штука называется <b>enum</b>. enum –  это тип, заданный перечислением набора значений,  которые могут принимать его переменные. Сразу пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Определение класса-enum</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public</b> enum <span class="green_text">Direction</span><br/>
+{<br/>
+     <span class="green_text"><b>UP</b></span>, <br/>
+     <span class="green_text"><b>DOWN</b></span>,<br/>
+     <span class="green_text"><b>LEFT</b></span>,<br/>
+     <span class="green_text"><b>RIGHT</b></span>,<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Использование enum’а</th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">Direction</span> <b>direction</b> = <span class="green_text">Direction<b>.LEFT</b></span>;<br/><br/>
+<b>if (direction</b> == <span class="green_text">Direction<b>.LEFT</b></span><b>)</b><br/>
+     <b>direction</b> = <span class="green_text">Direction<b>.RIGHT</b></span>;<br/>
+<b>else</b> <br/>
+    <b>direction</b> = <span class="green_text">Direction<b>.DOWN</b></span>;
+    </td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Т.е. мы просто перечисляем набор значений и все?</p>
+<p>- Да, объявляем enum, внутри через запятую пишем его возможные значения.</p>
+<p>Использовать его тоже довольно просто.</p>
+<p class="amigo">- А ему можно присваивать null?</p>
+<p>- Да, enum – это обычный класс – вернее, одна из его разновидностей, таких как interface.</p>
+<p class="amigo">- Т.е. везде, где я могу использовать класс, я могу использовать enum?</p>
+<p>- Да.</p>
+<p class="amigo">- А внутри класса можно объявить enum?</p>
+<p>- Да.</p>
+<p class="amigo">- А унаследоваться от enum?</p>
+<p>- Нет, ни наследоваться от enum, ни наследовать enum нельзя.</p>
+<p class="amigo">- А почему?</p>
+<p>- Потому что Java-компилятор превращает enum примерно вот в это:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public final class <span class="green_text">Direction</span> extends Enum</b><br/>
+{<br/>
+    <b>public static final <span class="green_text">Direction</span></b> <span class="green_text">UP</span> = new <span class="green_text">Direction();</span> <br/>
+    <b>public static final <span class="green_text">Direction</span></b> <span class="green_text">DOWN</span> = new <span class="green_text">Direction();</span><br/>
+    <b>public static final <span class="green_text">Direction</span></b> <span class="green_text">LEFT</span> = new <span class="green_text">Direction();</span><br/>
+    <b>public static final <span class="green_text">Direction</span></b> <span class="green_text">RIGHT</span> = new <span class="green_text">Direction();</span><br/><br/>
+
+    <b>private</b> Direction() {} <span class="grey_text">//приватный конструктор</span><br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Как видно из этого примера:</p>
+<p><b>1)</b> Класс Direction обязательно наследуется от класса Enum, поэтому его нельзя унаследовать больше ни от чего.</p>
+<p><b>2)</b> Класс Direction  объявлен final, поэтому от него нельзя ничего унаследовать.</p>
+<p><b>3)</b> Набор значений класса Direction  на самом деле – это public static final переменные типа Direction.  Что видно по коду их использования:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>Direction</b></span> direction = <span class="green_text"><b>Direction</b>.LEFT</span>;
+    </td>
+</tr>
+</tbody></table>
+<p><b>4)</b> Класс Direction содержит только один конструктор и тот – приватный. Это значит, что объекты класса Direction можно создать только в коде внутри класса. Кроме объявленных объектов, других объектов создать нельзя.</p>
+<p><b>5)</b> Переменным типа Direction можно присвоить ссылку на любой из существующих объектов типа Direction – все они определены у него внутри. Других объектов данного типа нет, и не будет.</p>
+<p><b>6)</b> Объекты типа Direction можно сравнивать с помощью знака «==» - это будет просто сравнение ссылок. </p>
+<p class="amigo">- Не сказал бы, что все очень понятно, но после твоего примера, стало гораздо понятнее.</p>
+<p>- Отлично. Тогда вот тебе еще чуток информации:</p>
+<p><b>1)</b> У каждого объекта типа Direction есть его уникальный номер. У первого (UP) – 0, у второго (DOWN) – 1, у третьего (LEFT) – 2, и т.д. Получить этот номер можно с помощью метода ordinal(). Внимание на экран:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>Direction</b></span> direction = <span class="green_text"><b>Direction</b>.LEFT</span>;<br/>
+    int index = direction.<b>ordinal</b>();<br/>
+    int index2 = Direction.RIGHT.<b>ordinal</b>();
+    </td>
+</tr>
+</tbody></table>
+<p><b>2)</b> У каждого enum’а есть метод <b>values</b>(), который возвращает массив значений enum’а.</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text">int <span class="red_text">leftIndex</span> = <span class="green_text"><b>Direction</b>.LEFT</span>.<b>ordinal</b>();<br/><br/>
+<span class="green_text"><b>Direction</b></span>[] array = <span class="green_text"><b>Direction</b></span>.<b>values</b>();<br/>
+<span class="green_text"><b>Direction</b></span> left = array[<span class="red_text">leftIndex</span>];
+    </td>
+</tr>
+</tbody></table>
+<p>Т.е. мы можем у любого элемента enum’а получить его номер, а затем по номеру опять получить элемент.</p>
+<p>Мы также можем использовать enum в цикле <b>foreach</b>:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>for (</b><span class="green_text"><b>Direction</b></span> <span class="red_text"><b>direction</b></span> :  <span class="green_text"><b>Direction</b></span>.values<b>())</b><br/>
+{<br/>
+     <b>System.out.println(<span class="red_text">direction</span>);</b><br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Вывод на экран будет:</th></tr>
+<tr>
+<td class="wide-text"><b>UP <br/>
+    DOWN<br/>
+    LEFT<br/>
+    RIGHT</b>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Значит, у enum’а переопределен метод String? Он же не выводит на экран что-то вроде<br/>
+    «com.javarush.Direction@123fd4»?
+    </p>
+<p>- Да, более того у каждого enum’а, а значит и у Direction есть возможность преобразовать его в строку и обратно.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Преобразование в строку:</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>String left</b> = <span class="green_text"><b>Direction</b></span>.<span class="green_text"><b>LEFT</b></span>.toString<b>()</b>;     <span class="grey_text">// left == "LEFT";</span>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Преобразование строки в enum:</th></tr>
+<tr>
+<td class="monospace_text"><span class="green_text">Direction</span> <b>direction</b> = <span class="green_text">Direction</span>.valueOf<b>("LEFT")</b>;
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- О, все понятно.</p>
+<p class="amigo">А что будет, если в функцию valueOf передать строку, которой нет в Direction? Например, "AMIGO"?</p>
+<p>- А ты сам как думаешь?</p>
+<p class="amigo">- Exception?</p>
+<p>- Ага. IllegalArgumentException.</p>
+<p>На этом наше введение в мир enum’ов окончено.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>2. Задачи на enum</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Билаабо придумал для тебя задачи. Пользуйся, друг:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level25,lesson02,task01"></button><b>1. Новые возможности!</b><br/><br/>
+                Используя возможности <span class="taskcode">enum</span>-а, реализуйте метод <span class="taskcode">getLetterPosition</span>, который должен возвращать позицию буквы (A - 1).<br/>
+		Не должно быть закоментированного кода.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level25,lesson02,task02"></button><b>2. Машину на СТО не повезем!</b><br/><br/>
+                Инициализируйте поле <span class="taskcode">wheels</span>, используя данные из <span class="taskcode">loadWheelNamesFromDB</span>.<br/>
+		Обработайте некорректные данные.<br/><br/>
+		Подсказка: если что-то не то с колесами, то это не машина!<br/><br/>
+		Сигнатуры не менять.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Свой enum</b><br/><br/>
+                Реализуйте интерфейс <span class="taskcode">Columnable</span> у <span class="taskcode">Column</span>, описание методов смотрите в джавадоках.<br/>
+		Реализуйте логику метода <span class="taskcode">Column.getVisibleColumns</span>.<br/>
+		Создавать дополнительные поля нельзя.<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Thread Life Cyrcle, состояние объекта Thread</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-08.png"/>
+<p>- Привет, Амиго!</p>
+<p>Мы начинаем новую тему – работа с нитями или как их еще называют – тр<span class="red_text"><b>э</b></span>дами (от thread).</p>
+<p class="amigo">- А я слышал, что треды называют потоками.</p>
+<p>- Да, такое название все еще употребляется, но постепенно выходит из моды. Проблема в том, что есть еще <b>stream</b>, который дословно переводится как «поток». Поэтому thread’ы принято называть нитями (дословный перевод) или программными потоками. В противовес stream’ам, которые называют потоками ввода-вывода.</p>
+<p>Итак. Сегодня мы рассмотрим состояния объекта Thread, через которые он проходит (или может проходить) в процессе работы нити.</p>
+<p>Сколько состояний ты можешь назвать прямо сейчас, Амиго?</p>
+<p class="amigo">- Два. Первое – это нить до вызова метода start(): объект есть, но нить еще не активна. И второе - после вызова метода start() – когда нить что-то делает, важное.</p>
+<p>- Ты прав, такое разграничение есть, эти состояния называются <b>new</b> и <b>running</b>, но это только самое начало.</p>
+<p>Во-первых, нить когда-нибудь заканчивает работу, а значит, может быть такая ситуация – объект Thread есть, но нить не в состоянии new и не в состоянии running. Такое состояние, когда нить завершила работу, называется <b>terminated</b>.</p>
+<p>Но и это еще не все. Не стоит забывать, что в каждый момент времени работает только одна нить. А видимая одновременная работа – это постоянное перескакивание процессора с нити на нить. Для времени, когда нить как бы работает, а на самом деле ждет своей очереди, тоже есть отдельное состояние. Оно называется  <b>ready-to-run</b>. Нить во время работы постоянно меняет состояние с <b>running</b> на <b>ready</b> и потом снова на <b>running</b>, когда становится активной.</p>
+<p>Сразу после вызова метода <b>start</b>() нить получает статус <b>ready-to-run</b>, и помещается в общий список нитей, между которыми переключается Java-машина.</p>
+<p class="amigo">- Не так уж и сложно. До начала работы – состояние <b>new</b>, после окончание – <b>terminated</b>. А в процессе работы нить находится то в активном (<b>running</b>), то в пассивном (<b>ready</b>) режиме работы.</p>
+<p>- Твоя краткость удивляет, но так и есть.</p>
+<p>Но и это еще не все. Нить может быть заблокирована. Например, при входе в блок <b>synchronized</b>. Нить подошла к блоку кода, помеченному <b>synchronized</b>, а он занят другой нитью. Тогда наша нить получит состояние <b>blocked</b> и будет ждать освобождения объекта-мютекса.</p>
+<p>Вот как выглядит эта ситуация с состояниями:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-09.png"/>
+<p>Но и это еще не все. Есть еще отдельное состояние, когда нить не <b>blocked</b>, но и не <b>ready</b> – это <b>waiting</b>. Например, при вызове методов <b>join</b>() у другой нити.</p>
+<p>При вызове join() у объекта другой нити, наша нить как-бы «присоединяется к ней», а на деле – просто ждет ее завершения. </p>
+<p>Кроме того, есть еще метод <b>wait</b>(), (из набора wait, notify, notifyAll), вызов которого тоже переводит <b>нить</b> в состояние <b>waiting</b>.</p>
+<p class="amigo">- Ничего себе.</p>
+<p>- Подожди! Но и это еще не все. Нить может спать, например, при вызове метода sleep. Для этого тоже есть отдельное состояние «<b>timed waiting»</b>. «<b>timed waiting</b>» значит, что нить чего-то ждет ограниченное время. Если вызвать метод wait с параметром - wait(timeout) или join(timeout), то нить перейдет в состояние timed waiting.</p>
+<p>Так что вот тебе полная схема:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-10.png"/>
+<p class="amigo">- Гм. Это все? Или там есть еще 10 новых интересных состояний?</p>
+<p>- Пока – все.</p>
+<p>На самом деле – можешь запомнить только первую схему – она проще. Но вторая точнее.</p>
+<p>Как ни странно – в интернете очень много схем состояний Thread и они все разные.</p>
+<p>Поэтому я и привела тебе эту схему – она самая полная и правильная.</p>
+<p>На этой схеме состояния <b>ready</b> и <b>running</b>  объединены в единый блок – <b>runnable</b>, и знаешь почему?</p>
+<p class="amigo">- Нет. Я же в первый раз это все вообще вижу.</p>
+<p>- У класса <b>Thread</b> есть внутренний класс <b>State</b>, а также метод <b>public State getState()</b>.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public enum <span class="green_text">State</span> <br/>
+{<br/>
+         <span class="grey_text">NEW</span>,<br/>
+         <span class="green_text">RUNNABLE</span>,<br/>
+         <span class="orange_text">BLOCKED</span>,<br/>
+         <span class="dblue_text">WAITING</span>,<br/>
+         <span class="blue_text">TIMED_WAITING</span>,<br/>
+         <span class="red_text">TERMINATED</span>;<br/>
+    }</b>
+</td>
+</tr>
+</tbody></table>
+<p>Ты всегда можешь вызвать у объекта типа <b>Thread</b> метод <b>getState</b>() и узнать его текущее состояние. И, конечно, оно будет одним из значений enum State.</p>
+<p class="amigo">- Ясно. То есть настоящие состояния внутри java-машины, а есть состояния, которые можно получить из Java-кода с помощью метода State getState().</p>
+<p class="amigo">А в каких ситуациях я буду это использовать?</p>
+<p>- Скорее всего – в никаких.</p>
+<p>Но знать о том, что происходит при работе внутри нити,  ты обязан. Иначе на твоем пути будет много ошибок, и ты даже не будешь догадываться об их причине.</p>
+<p>Кроме того, состояния Thread очень любят спрашивать на собеседованиях. </p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>4. Все нюансы создания и запуска новой нити, демоны</h2>
+</div>
+<p>- Вот тебе новая и интересная тема.</p>
+<p>Оказывается, нити можно запускать в различных режимах. </p>
+<p><b>Обычная программа (состоящая из одной нити) заканчивает работу вместе с завершением работы своей главной нити.</b> Главная нить заканчивает работать, и программа завершается, а java-машина освобождает ее память.</p>
+<p>Когда мы запускаем дочернюю нить, то программа продолжает работать, даже если главная нить завершилась. Java-машина не закрывает программу, пока есть хотя бы одна работающая нить. Как только все рабочие нити завершились, программа закрывается.</p>
+<p>Так вот, в больших программах часто есть так называемые «служебные процессы» - это нити, работа которых состоит в обслуживании других частей программы. Сами по себе они не нужны. Например: процесс удаления неиспользуемых объектов (сборка мусора), логирование состояния памяти и ошибок, различные отчеты о текущем состоянии программы и т.д. и т.п.</p>
+<p>Такие служебные процессы нужны, когда  программа что-то делает, но не нужны сами по себе.</p>
+<p class="amigo">- Да, я это понял.</p>
+<p>- Java позволяет запустить нить в "<b>режиме демона</b>" (daemon). Работа такой нити ничем не отличается от других, но если в программе все обычные нити завершили работу, но остались только нити-демоны -  Java-машина завершит программу.</p>
+<p class="amigo">- Т.е. мы объявляем нить «служебной», и она просто не учитывается при закрытии программы и все?</p>
+<p>- Э-э-э. Ну, ты и выдал – кратко и по существу. Собственно, я это и хотела тебе сказать.</p>
+<p class="amigo">- Краткость – сестра таланта. А талантливые роботы – талантливы во всем.</p>
+<p>- Есть вопросы?</p>
+<p class="amigo">- Что нужно, чтобы запустить нить в режиме демона?  Унаследоваться от какой-нибудь DaemonThread?</p>
+<p>- Нет, все гораздо проще – у класса Thread есть метод <b>setDaemon</b>(boolean),  надо передать в него true и все. Только вызвать его нужно до вызова метода <b>start</b>(), пока реальная нить не создана. Поменять тип уже запущенной нити невозможно.</p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b><span class="dgreen_text">Thread</span> thread</b> = new <b><span class="green_text">LoggerThread</span></b>();<br/>
+<b>thread.<span class="red_text">setDaemon</span></b>(<b>true</b>);<br/>
+<b>thread.start</b>();
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- И это все?</p>
+<p>- Да.</p>
+<p>Хочу еще раз обратить твое внимание на процесс создания и запуска нити.</p>
+<p>Когда мы создаем объект типа Thread, нить при этом еще не создается. Thread – это не нить, нить создаст сама Java-машина, когда будет вызван метод <b>start()</b>. А Thread -  это специальный объект Java-машины, который позволяет получать информацию о нити и немного управлять ей.</p>
+<p class="amigo">- Ясно. Спасибо, Элли.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>5. Задачи на тему "текущее состояне нити"</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-07.png"/>
+<p>- Привет, Амиго! Как настроение?</p>
+<p class="amigo">- Отличное. Сегодня столько нового узнал. Особенно про состояния нитей.</p>
+<p>- Да, отлично. Вот и проверим твои знания:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level25,lesson05,task01"></button><b>1. Switch для нитей</b><br/><br/>
+                Обработайте список нитей в зависимости от состояния:<br/>
+		1. Если нить еще не запущена, то запустите ее.<br/>
+		2. Если нить в ожидании, то прервите ее.<br/>
+		3. Если нить работает, то проверить маркер <span class="taskcode">isInterrupted</span>.<br/>
+		4. Если нить прекратила работу, то выведите в консоль ее приоритет.
+		Используйте <span class="taskcode">switch</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level25,lesson05,task02"></button><b>2. Без дураков</b><br/><br/>
+                1. Создай <span class="taskcode">private class MyUncaughtExceptionHandler</span>, который на перехват исключения должен подождать половину секунды,<br/>
+		а затем вывести на экран <span class="taskcode">secretKey</span>, имя трэда и сообщение возникшего исключения.<br/>
+		Используй <span class="taskcode">String.format(...)</span>.<br/><br/>
+		Пример: super secret key, Thread-0, it's an example<br/><br/>
+		2. Разберитесь в последовательности выполняемого кода и обеспечьте логирование возникновения исключения в п.1.<br/>
+		3. Метод <span class="taskcode">main</span> в тестировании не участвует.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Мониторинг состояния нити</b><br/><br/>
+                В отдельном классе создать нить <span class="taskcode">LoggingStateThread</span>, которая будет выводить в консоль все состояния (State) переданной в конструктор нити.<br/>
+		Нить <span class="taskcode">LoggingStateThread</span> должна сама завершаться после остановки переданной в конструктор нити.<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>6. Все нюансы прерывания/остановки нитей</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Все новое – хорошо забытое старое. Сегодня я буду рассказывать про остановку нитей. Надеюсь, ты уже забыл, как работает метод interrupt().</p>
+<p class="amigo">- Да, Элли, полностью забыл.</p>
+<p>- Отлично. Тогда напоминаю.</p>
+<p>В Java, если кто-то хочет остановить работающую нить, у него есть возможность подать нити об этом сигнал.  Для этого нужно установить скрытую переменную нити <b>isInterrupted</b> в true.</p>
+<p>У каждой нити (у класса Thread) есть метод interrupt(), который используется для установки такого флага. При вызове метода <b>interrupt</b>() переменная <b>isInterrupted</b> внутри нити устанавливается равной true.</p>
+<p>И когда нить вызывает методы Thread.sleep() или метод join(), в этих методах происходит скрытая проверка – а не выставлен ли у нашей текущей нити флаг isInterrupted. Если этот флаг выставлен (переменная <b>isInterrupted</b> равно true), то методы выбрасывают исключение <b>InterruptedException</b>.</p>
+<p>Вот, напомню тебе старый пример:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class Clock</b> <span class="dblue_text">implements Runnable</span><br/>
+{<br/>
+    <b>public void run()</b><br/>
+   {<br/>
+      <span class="dblue_text"><b>Thread current = Thread.currentThread();</b></span><br/><br/>
+
+       <b>while <span class="red_text">(!current.isInterrupted())</span><br/>
+      {<br/>
+          Thread.sleep(1000);<br/>
+          System.out.println("Tik");</b><br/>
+      }<br/>
+   }<br/>
+}
+</td>
+<td class="wide-text"><span class="dblue_text">Объект Clock в своем методе <b>run</b> получает объект текущей его нити.</span><br/><br/>
+
+		Класс Clock (часы) будет писать в консоль раз в секунду слово «Tik», пока переменная <b>isInterrupt</b> текущей нити равна false.<br/><br/>
+
+		Когда переменная <b>isInterrupt</b> станет равной <b>true</b>, метод <b>run</b> завершится.
+
+</td>
+</tr>
+<tr><td class="monospace_text wide-text"><b>public static</b> void <b>main</b>(String<b>[] args</b>)<br/>
+{<br/>
+     <span class="dblue_text"><b>Clock clock = new Clock();<br/>
+     Thread clockThread = new Thread(clock);<br/>
+     clockThread.start();</b></span><br/><br/>
+   
+     <span class="green_text">Thread.sleep(10000);</span><br/>
+     <span class="red_text">clockThread.</span><span class="red_text">interrupt<b>();</b></span><br/>
+}
+	</td>
+<td class="wide-text"><span class="blue_text">Главная нить, запускает дочернюю нить – часы, которая должна работать вечно.</span><br/><br/>
+<span class="green_text">Ждет 10 секунд и</span> <span class="red_text">отменяет задание, вызовом метода <b>interrupt</b>.</span><br/><br/>
+
+		Главная нить завершает свою работу.<br/><br/>
+
+		Нить часов завершает свою работу.
+	</td>
+</tr>
+</tbody>
+</table>
+<p>Тут мы используем метод <b>sleep</b> для организации вечного цикла в методе <b>run</b>. В цикле есть автоматическая проверка переменной <b>isInterrupt</b>. Если нить вызовет метод <b>sleep</b>, то этот метод сначала проверит, а не установлена ли для текущей (вызвавшей его нити) переменная <b>isInterrupt</b> в true. И если установлена, то метод не будет спать, а выкинет исключение <span class="red_text"><b>InterruptedException</b></span>.</p>
+<p class="amigo">- Но в этом примере мы постоянно проверяем переменную isInterrupted в условии цикла. </p>
+<p class="amigo">Я помню, были какие-то причины, по которым мы не могли использовать такой подход. Не напомнишь?</p>
+<p>- <b>Во-первых</b>, не всегда в методе <b>run</b> есть цикл. Метод может состоять просто из двух десятков вызовов других методов. Тогда перед вызовом каждого придется добавлять проверку isInterrupted.</p>
+<p><b>Во-вторых</b>, вдруг какой-то метод очень долго исполняется, т.к. делает много разных действий.</p>
+<p><b>В-третьих</b>, выкидывание исключения – это не замена проверке isInterrupted, а скорее удобное дополнение. Выкинутое исключение позволяет быстро раскрутить стек вызовов до самого <b>run</b>.</p>
+<p><b>В-четвертых</b>, метод sleep часто используют, и, получается, к такому полезному методу неявно добавили не менее полезную проверку. <b>Вроде бы никто специально проверку не добавлял, а она есть.</b> Это очень ценно, когда ты используешь много чужого кода и не можешь сам добавить в него проверку.</p>
+<p><b>В-пятых</b>, дополнительная проверка не приводит к снижению производительности. Вызов метода sleep значит, что нить должна ничего не делать (спать), поэтому дополнительная работа никому не мешает.</p>
+<p class="amigo">- Точно, именно это ты и говорила тогда.</p>
+<p class="amigo">А что насчет твоей фразы «<b>Никто не гарантирует, что нить можно остановить. Она может остановиться только сама</b>». Можешь ее растолковать?</p>
+<p>- Конечно.</p>
+<p>Раньше, в первых версиях Java, у нитей был метод stop(). И при его вызове Java-машина действительно останавливала нить. Но потом оказалось, что если нить, которую прерывали таким образом, делала что-то за пределами Java-машины и (например писала в файл или вызывала функции ОС), то прерывание такой нити приводила к большому количеству проблем – незакрытые файлы, неосвобожденные занятые системные ресурсы и т.д.</p>
+<p>На общем совещании проектировщиков Java было решено убрать метод принудительной остановки у нитей. Теперь мы всего лишь можем установить определенный флаг (isInterrupted) и надеяться, что код нити был написан правильно, и этот флаг будет обработан. Этот флаг – это как плакат с надписью – «нить, остановить, пожалуйста, очень надо!». Но остановится она или нет – это ее дело.</p>
+<p class="amigo">- А как же InterruptedException?</p>
+<p>- А если внутри кода, который работает в этой нити, есть куча try-catch блоков? Даже если InterruptedException где-нибудь да и выскочит, абсолютно не факт, что какой-то try-catch не захватит его и не забудет о нем. Так что никаких гарантий остановки нити нет.</p>
+<p>Другое дело, что нити уже считают достаточно низкоуровневым программированием. Но об этом я расскажу тебе в следующий раз.</p>
+<p class="amigo">- Прямо не Элли, а Шахеризада!</p>
+<p>- Так, Амиго! Все понятно по текущей лекции?</p>
+<p class="amigo">- Ага.</p>
+<p>- Вот и отлично.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>7. Задачи на прерывание нитей</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-06.png"/>
+<p>- Как раз тебя жду – тут столько интересной работы:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level25,lesson07,task01"></button><b>1. Работать в поте лица!</b><br/><br/>
+                Реализуйте логику метода <span class="taskcode">interrupt</span>, который должен прерывать трэд предварительно закрыв используемые ресурсы<br/>
+		Используйте метод super-класса в блоке <span class="taskcode">finally</span>
+</td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Не валять дурака</b><br/><br/>
+                Восстановите логику класса <span class="taskcode">TaskManipulator</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Все не так легко, как кажется</b><br/><br/>
+                1. Почитать в инете про <span class="taskcode">Socket</span>, <span class="taskcode">ThreadPoolExecutor</span>, <span class="taskcode">RunnableFuture</span>, <span class="taskcode">Callable</span><br/>
+		2. Реализуйте логику метода <span class="taskcode">cancel</span> в классе <span class="taskcode">SocketTask</span><br/>
+		3. Реализуйте логику метода <span class="taskcode">cancel</span> для локального класса внутри метода <span class="taskcode">newTask</span> в классе <span class="taskcode">SocketTask</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>8. Стек вызовов и перехват ошибок</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-05.png"/>
+<p>- Привет, Амиго!</p>
+<p>Хочу рассказать тебе меленькую, но интересную вещь.</p>
+<p class="amigo">- Я слушаю. Люблю интересные и маленькие вещи.</p>
+<p>Так вот, ты знаешь, что у каждого объекта Thread есть метод run(). И что можно запустить его на выполнение в отдельной нити с помощью метода start().</p>
+<p class="amigo">- Да, конечно.</p>
+<p>- А вот представь теперь ситуацию – ты запускаешь нить, чтобы она выполнила нужную тебе работу, а у нее внутри возникает Exception и она завершает работу, так и не выполнив того, что надо. Тебе бы надо как-то узнать об этой ошибке?</p>
+<p class="amigo">- Согласен. А что, как-то можно перехватить исключение, которое возникло в другой запущенной нити. Неужели даже это есть в Java?</p>
+<p>- Обижаешь. Еще как есть.</p>
+<p>Разработчики Java придумали специальный интерфейс UncaughtExceptionHandler. Вот как можно перехватить и обработать исключение в другой нити, если она не перехватила его сама:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public class</b> DownloadManager<br/>
+{<br/>
+    <b>public static</b> void main(String[] args)<br/>
+   {<br/>
+           <b><span class="green_text">Thread thread</span> = new <span class="dgreen_text">DownloadThread</span>();<br/>
+           <span class="green_text">thread</span>.setUncaughtExceptionHandler(<span class="red_text">new Thread.UncaughtExceptionHandler()<br/>
+           {<br/>
+                @Override<br/>
+                public void uncaughtException(Thread t, Throwable e)<br/>
+                {<br/><br/>
+
+                }<br/>
+         });</span></b><br/><br/>
+
+        <b><span class="green_text">thread</span>.start();</b><br/>
+  }
+    </td>
+</tr>
+</tbody></table>
+<p>У объекта типа Thread есть специальный метод – <b>setUncaughtExceptionHandler</b>. В него нужно предать объект, который реализует интерфейс <span class="red_text"><b>Thread.UncaughtExceptionHandler</b></span>. У этого интерфейса есть всего один метод <span class="red_text"><b>uncaughtException(Thread t, Throwable e)</b></span>.  Именно этот метод будет вызван у переданного объекта, если внутри метода run возникнет исключение, которое не будет захвачено.</p>
+<p>В приведенном мной примере, я просто объявляю анонимный внутренний класс (выделено красным), реализующий интерфейс <span class="red_text"><b>Thread.UncaughtExceptionHandler</b></span>. и переопределяю в нем метод <span class="red_text"><b>uncaughtException(Thread t, Throwable e)</b></span>.</p>
+<p>Как видно из параметров метода, в него будут переданы два параметра – ссылка на Thread, в котором возникло исключение, и само исключение – Throwable e.</p>
+<p class="amigo">- А зачем нужна ссылка на Thread - переменная t? Мы же знаем, в какой поток устанавливаем объект типа  <b>Thread.UncaughtExceptionHandler</b>?</p>
+<p>- А это сделано для того, чтобы ты мог написать универсальный обработчик таких ситуация – создать один единственный объект и передавать его десяткам различных потоков. Тогда внутри метода <span class="red_text"><b>uncaughtException(Thread t, Throwable e)</b></span> у тебя всегда будет ссылка на нить, где возникло исключение.</p>
+<p>Кроме того, ты же можешь создавать нити десятками, например, в цикле  для исполнения каких-нибудь задач. В общем – эта ссылка на нить лишней не будет, это я тебе обещаю.</p>
+<p class="amigo">- Я тебе верю. Ты еще ни разу не ошибалась.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>9. Задачи на получение ошибок из нити</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-05.png"/>
+<p>- А чего это у тебя все время аж по 3 задачи?</p>
+<p>Как насчет решить еще 50?</p>
+<p class="amigo">- 50? О_о</p>
+<p>- Давай лучше 3 как обычно.</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level25,lesson09,task01"></button><b>1. Поживем - увидим</b><br/><br/>
+                Все исключения, которые возникают в процессе работы нити <span class="taskcode">Solution</span>, должны быть обработаны одним из вариантов:<br/>
+		1. Если это <span class="taskcode">Error</span>, то вывести в консоль "Нельзя дальше работать"<br/>
+		2. Если это <span class="taskcode">Exception</span>, то вывести в консоль "Надо обработать"<br/>
+		3. Если это <span class="taskcode">Throwable</span>, то вывести в консоль "ХЗ"<br/>
+		Реализуйте эту логику.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level25,lesson09,task02"></button><b>2. Вооружаемся до зубов!</b><br/><br/>
+                Создайте свой <span class="taskcode">UncaughtExceptionHandler</span> в виде локального класса внутри конструктора.<br/>
+<span class="taskcode">UncaughtExceptionHandler</span> должен маскать звездочками имя трэда.<br/>
+		"Thread-0" должно быть заменено на "********"<br/>
+		"Thread-4321" должно быть заменено на "***********"
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level25,lesson09,task03"></button><b>3. Живем своим умом</b><br/><br/>
+                В классе <span class="taskcode">Solution</span> реализуйте интерфейс <span class="taskcode">UncaughtExceptionHandler</span>, который должен:<br/>
+		1. прервать нить, которая бросила исключение.<br/>
+		2. вывести в консоль стек исключений начиная с самого вложенного.<br/><br/>
+		Пример исключения:<br/> 
+		new Exception("ABC", new RuntimeException("DEF", new IllegalAccessException("GHI")))<br/><br/>
+<span class="example-legacy">Пример вывода:</span><br/>
+<span class="example-data">java.lang.IllegalAccessException: GHI<br/>
+		java.lang.RuntimeException: DEF<br/>
+		java.lang.Exception: ABC</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>10. Другие методы класса Thread (sleep, yield...)</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>А теперь немного расскажу про методы sleep, yield, join.</p>
+<p class="amigo">- Это скучно. Я тут нашел вопрос к собеседованию «<b>Чем отличаются методы yield(), sleep(), wait()?</b>». Может расскажешь?</p>
+<p>- Не вопрос. Начну с того, что  это три совершенно разных метода.</p>
+<p><b>1) sleep(timeout)</b> – останавливает текущую нить (в которой sleep был вызван) на timeout миллисекунд. Нить при этом переходит в состояние <b>TIMED_WAITING</b>. Метод может завершиться раньше, если был установлен флаг isInterrupted.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Пример</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>Thread</b>.sleep<b>(500)</b>;
+    </td>
+<td class="wide-text">Текущая нить приостанавливает свою работу на 500 миллисекунд – 0.5 секунды.
+    </td>
+</tr>
+</tbody></table>
+<p><b>2) yield()</b> – текущая нить «пропускает свой ход». Нить из состояния <b>running</b> переходит в состояние <b>ready</b>, а Java-машина приступает к выполнению следующей нити. Состояния running &amp; ready – это подсостояния состояния <b>RUNNABLE</b>.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Пример</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>Thread</b>.yield<b>()</b>;
+    </td>
+<td class="wide-text">Текущая нить «пропускает свой ход» - Java сразу переключается на выполнение следующей нити.
+    </td>
+</tr>
+</tbody></table>
+<p><b>3) wait(timeout)</b> – это одна из версий метода <b>wait</b>() – версия с таймаутом. Метод <b>wait</b> можно вызвать только внутри блока <b>synchronized</b> у объекта-мютекса, который был «залочен (заблокирован)» текущей нитью, в противном случае метод выкинет исключение Illegal<b>MonitorState</b>Exception.</p>
+<p>В результате вызова этого метода, блокировка с объекта-мютекса снимается, и он становится доступен для захвата и блокировки другой нитью. При этом нить переходит в состояние BLOCKED для метода wait() без параметров, но  в состояние TIMED_WAITING для метода wait(timeout).</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Пример</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>Object</b> <span class="red_text">monitor</span> <b>= getMonitor();</b><br/>
+synchronized<b>(</b><span class="red_text">monitor</span><b>)</b><br/>
+{<br/>
+     …<br/>
+     <span class="red_text">monitor</span>.wait<b>(500)</b>;<br/>
+     …<br/>
+}
+    </td>
+<td class="wide-text">При вызове метода wait, текущая нить снимает блокировку с объекта monitor, и засыпает на 500 миллисекунд. Объект monitor может быть захвачен другой нитью.<br/> 
+		Через 500 миллисекунд нить проснется и если monitor не был занят, то захватит его и продолжит работу.<br/> 
+		Если монитор окажется занят другой нитью, текущая нить перейдет в состояние BLOCKED.
+    </td>
+</tr>
+</tbody></table>
+<p><b>4) join(timeout)</b></p>
+<p>Этого метода не было в твоем вопросе, но он есть в моих планах, так что расскажу и про него. При вызове метода join() или join(timeout) текущая нить как бы «присоединяется» к нити, у объекта которой был вызван данный метод. Текущая нить засыпает и ждет окончания нити, к которой она присоединилась (чей метод join() был вызван).</p>
+<p>При этом текущая нить переходит в состояние WAITING для метода join и  в состояние TIMED_WAITING для метода join(timeout).</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Пример</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide"><b>Thread</b> thread <b>= getWorkThread();</b><br/>
+thread.<span class="red_text">join</span><b>(500)</b>;
+    </td>
+<td class="wide-text">Текущая нить присоединится к нити thread и будет ждать ее окончания.<br/>
+    Но отсоединится через 500 миллисекунд и  продолжит работу.
+    </td>
+</tr>
+</tbody></table>
+<p>timeout в методах wait(timeout) и join(timeout) значит, что метод засыпает, ждет чего-то, но не дольше чем timeout миллисекунд. После чего просыпается.</p>
+<p class="amigo">- Такое ощущение, что единственное, что есть общего у этих методов – это timeout. Но делают они совершенно разные вещи.</p>
+<p>- Так оно и есть.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>11. Задачи на yield, переуступку кванта времени</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-04.png"/>
+<p>- Привет, Амиго! Тренируйся, вот тебе пара задач.</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level25,lesson11,task01"></button><b>1. Обеспечение отсутствия прерывания важной операции</b><br/><br/>
+                Просмотрите метод <span class="taskcode">moveMoney</span><br/>
+		Если <span class="taskcode">RANDOM.nextInt(5000)</span> больше порогового значения <span class="taskcode">THRESHOLD_VALUE</span>,<br/>
+		то обеспечьте переуступку кванта времени (переход хода для текущей нити).<br/>
+		Добавьте этот код в единственное допустимое место.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level25,lesson11,task02"></button><b>2. Первый закон Финэйгла: если эксперимент удался, что-то здесь не так...</b><br/><br/>
+                Обеспечьте переуступку кванта времени (переход хода для текущей нити) для последовательных выводов текста в консоль
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>12. Учимся гуглить. Как запустить отдельный процесс</h2>
+</div>
+<p>- Привет, Амиго! Вот несколько тем, которые я советую тебе сегодня погуглить:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Найди ответы на следующие вопросы:</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Что такое ThreadGroup и зачем он нужен?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Что такое ThreadPool и зачем он нужен?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Что такое ThreadPoolExecutor и зачем он нужен?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Что такое Concurrency?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Что такое «атомарные типы» в Java?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Зачем нужен класс ThreadLocal?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Что такое модификатор volatile?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Что такое Executor?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Что такое ExecutorService?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Зачем нужен ScheduledExecutorService?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>13. Профессор дает доп. материал</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-03.png"/>
+<p>- Привет, Амиго!</p>
+<p>Вот тебе отличная лекция с дополнительным материалом:</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-25.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>14. Хулио</h2>
+</div>
+<p>- Привет, Амиго! Никак не могу попасть на концерты Курта Кобейна и Виктора Цоя, вообще нигде не выступают! Как думаешь, есть у меня шанс?</p>
+<p class="amigo">- Всему свое время. Я бы на твоём месте не слишком пытался попасть на их концерт.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-25.gif" preload="none" tabindex="0" taskkey="level25,lesson14,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-25.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=1KZ3APP8J9U" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>15. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Назовите все состояния объекта Thread?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">В какие состояния может перейти нить, при входе в блок synchronized?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">В какое состояние перейдет нить, при вызове метода wait()?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">В какое состояние перейдет нить, при вызове метода wait(500)?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">В какое состояние перейдет нить, при вызове метода notify()?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">В какое состояние перейдет нить, при вызове метода notifyAll()?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Три нити в блоке synchronized вызвали wait() у объекта-мютекса.<br/>
+		В какое состояние перейдут эти нити, если четвертая нить вызовет notifyAll()?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Чем отличается join(500) от wait(500)?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Чем отличается wait(500) от sleep(500)?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">В какое состояние перейдет нить при вызове метода yield()?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>16. Большая задача</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет!</p>
+<p>- Ты как разговариваешь со старшим по званию?</p>
+<p class="amigo">- Виноват, сэр.</p>
+<p class="amigo">Здравия желаю, Капитан Бобров.</p>
+<p>- То-то же.</p>
+<p>У тебя сегодня новая секретная миссия.</p>
+<p>Нужно написать симуляцию космической войны.</p>
+<p class="amigo">- Круто. То есть я хотел сказать, я - готов, сэр.</p>
+<p class="amigo">У меня как раз есть идея. Как насчет:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-01.gif"/>
+<p>- Нет, слишком сложно.</p>
+<p>Для начала начнем с чего-то попроще:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/25/image-ru-25-02.gif"/>
+<p class="amigo">- М-да.</p>
+<p>- Что, опять сложно? Тогда еще проще.</p>
+<p>Обратитесь за заданием к агенту Intellij IDEA. Оно уже у него.</p>
+<p class="amigo">- Разрешите вопрос, сэр?</p>
+<p>- Говори.</p>
+<p class="amigo">- А почему вы называете Intellij IDEA – агентом, сэр? Это же программа.</p>
+<p>- Сам ты – программа.</p>
+<p>IDEA – это искусственный интеллект и штатный сотрудник нашего корабля. Все понятно? Иди уже.</p>
+<p class="amigo">- Есть, идти выполнять приказание. </p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

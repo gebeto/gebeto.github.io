@@ -1,46 +1,23 @@
 <!DOCTYPE html>
-<html>
 <head>
 	<meta charset="utf-8">
-	<title>vk</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
-
+	<title>VK APIs</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="icon" href="http://vladmaxi.net/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="http://vladmaxi.net/favicon.ico" type="image/x-icon">
+	<script src="jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-
-	
-<div class="main">
-	<h1>get unreaded messages</h1>
-	<!-- <input class="main-token" type="text" placeholder="Enter token" id="enterid"> -->
-	<form onsubmit="return false;">
-		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-		    <input class="mdl-textfield__input" type="text" id="enterid" value="b979a727090ec4ee98fe241f7c7cdcfc94f480a8130c91df9e0a24398cc2b581af895c9c5c5e987807de">
-		    <label class="mdl-textfield__label" for="enterid">Token...</label>
-		</div>
-	</form>
-	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" onclick="req()">GET</button>
-	
-	<div id="response">
-	
-	<div class="demo-card-square mdl-card mdl-shadow--2dp">
-	  <div class="mdl-card__title mdl-card--expand">
-	    <h2 class="mdl-card__title-text">Message</h2>
-	  </div>
-	  <div class="mdl-card__supporting-text">
-	    Some messages
-	  </div>
+	<div id="slick-login" autocomplete="off" action="">
+		<button onclick="location.href='token.html'">Get Access Token</button>
+		<button onclick="location.href='message.html'">Send message</button>
+		<button onclick="location.href='token_checker.html'">Token Checker</button>
+		<button onclick="location.href='id_checker.html'">ID Checker</button>
+		<button onclick="location.href='indexapi.php'">APIs test</button>
 	</div>
-		
-	</div>
-
-</div>
-
-<script src="material.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="app.js"></script>
-
+	<script>
+	</script>
 </body>
 </html>

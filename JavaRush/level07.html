@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-07.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 7
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>Информационные технологии</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/07/image-ru-07-03.jpg"/>
+<p>Начавшаяся в конце 20 века компьютерная революция привела в середине 90-х годов к созданию интернета (веба). И это было началом еще большей революции.  Эффект от появления интернета сопоставим с эффектом индустриализации. Но самое вкусное в том, что этот процесс еще находится в самом начале. </p>
+<p class="blue_text"><b>Новый мир</b></p>
+<p>Количество сайтов превышает 200 миллионов. Пользователей интернета – 3 миллиарда. Интернет-аукционы, интернет-сайты, интернет-магазины, интернет-услуги.  ИТ-экономика растет на 20%-30% ежегодно. Это чудовищные темпы. Но они все не падают и не падают. </p>
+<p>За последние 10 лет в Силиконовой Долине (центр ИТ-мира), каждые 2 месяца основывалась компания, впоследствии стоящая миллиард долларов. И это не говоря уже о таких звездах интернета, как Facebook ($220 миллиардов), Amazon ($140 миллиардов) и Google ($350  миллиардов). Все эти компании не появились бы, если бы не было интернета.</p>
+<p>Все это приводит к высокому спросу на ИТ-специалистов. Мировой ИТ-экономике требуются: программисты, дизайнеры, тестировщики, архитекторы, менеджера, системные администраторы и другие специалисты. </p>
+<p class="blue_text"><b>Хорошо быть айтишником</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/07/image-ru-07-04.jpg"/>
+<p>Если вы ИТ-специалист, то для вас настало золотое время. Вы можете работать на западную компанию, а жить – в небольшом городе или вообще в другой стране. Доходы будут, конечно, меньше чем на западе (обычно раза в два), но выше, чем на местном рынке труда (в 3-10 раз). Чем меньше ваш город, тем заметней разница.</p>
+<p>Вы будете получать ценный опыт работы, хорошие деньги и блестящие перспективы. Иногда будете ездить в командировки в офис к работодателю. А если вам там очень понравится, можете туда и переехать.</p>
+<p><b>Прилив поднимает все лодки.</b> Но почему бы вам не оказаться той лодкой, которая находится в нужное время и в нужном месте? Это тоже надо уметь.</p>
+<p class="blue_text"><b>Перспективы иммиграции</b></p>
+<p>На западе ИТ-специалисты входят в тройку самых высокооплачиваемых профессий наряду с врачами  и юристами. Средние зарплаты программистов около $90 тысяч/год. Но самое интересное в том, что ИТ-профессии отлично подходят для глобального рынка труда.</p>
+<p><b>Что будет, если врач захочет сменить страну?</b> Другая страна – другие медицинские стандарты. С дипломом его страны работать в новой скорее всего не дадут. Придется выучить язык, заново сдать экзамены, пройти практику – долгий путь.</p>
+<p><b>У юристов все еще хуже.</b> В одной стране одни законы, в другой - другие. Тут главнее связи, там  - прецедентное право. От хороших юристов из одного места  будет мало толку в другом.</p>
+<p><b>ИТ-специалисты.</b> Очень часто напрямую или через посредников работают на крупные западные компании. Те же технологии, те же бизнес-процессы. Вся документация в интернете на английском. Резюме – на английском. Можно переехать в любую страну мира и ничего не поменяется. Даже заказчики/работодатели часто одни и те же. </p>
+<p>А зарплаты айтишников в Калифорнии ох как хороши. Вот зачем нужно все время развиваться.</p>
+<br/>
+<div class="line"></div>
+<br/>
+<p>Лучший способ мотивировать себя что-то учить - это заплатить за это деньги. Жадность банально сильнее лени.</p>
+<button class="profile-tariff-button-popular" onclick="window.top.location.href = '//javarush.ru/user/subscription?l=7';">Побороть лень - купить подписку</button>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>1. Массивы, null</h2>
+</div>
+<p>- Привет, Амиго! </p>
+<p class="amigo">- День добрый, Элли!</p>
+<p>- Сегодня я расскажу тебе о новой интересной сущности – о массивах.  <span class="green_text">Массив – это  специальный тип данных, который может хранить не одно значение, а несколько.</span> </p>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/07/image-ru-07-07.gif" style="margin-bottom: 0px;"/>
+<p>- Начну с аналогии. Давай сравним обычный жилой дом и многоэтажку. В обычном доме чаще всего живет одна семья, а многоэтажка разбита на квартиры. Чтобы написать письмо семье, которая живет в обычном доме, надо указать его уникальный адрес. <span class="orange_text">А чтобы написать письмо семье, которая живет в квартире, надо указать уникальный адрес дома и еще номер квартиры.</span></p>
+<p class="amigo">- Да, тут все понятно.</p>
+<p>- Так вот, переменная-массив – это переменная-многоэтажка. В ней можно хранить не одно значение, а несколько. <span class="violet_text">В такой переменной есть несколько квартир (ячеек), к каждой из которых можно обратиться по ее номеру (индексу).</span> Для этого после имени переменной в квадратных скобках надо указать индекс ячейки, к которой обращаемся. Это довольно просто.</p>
+<p class="amigo">- Надеюсь.</p>
+<p>- Переменная-многоэтажка (переменная-массив) может быть любого типа,  надо лишь вместо «<b>TypeName имя_переменной</b>», написать «<b>TypeName[] имя_переменной</b>». </p>
+<p>- Примеры:</p>
+<table class="table_task wide-table">
+<tr>
+<th class="collapsed"></th>
+<th style="width: 50%">Код</th>
+<th>Пояснение</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson01,type01"></button></td>
+<td class="monospace_text"><span class="blue_text">String[]</span> <span class="brown_text">list</span> = new String[<span class="red_text">5</span>];</td>
+<td>Создание массива на <span class="red_text">5</span> элементов типа «<span class="blue_text">строка</span>»</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson01,type02"></button></td>
+<td class="monospace_text"><span class="brown_text">System.out.println</span>(<span class="orange_text">list</span>[0]);<br/>
+<span class="brown_text">System.out.println</span>(<span class="orange_text">list</span>[1]);<br/>
+<span class="brown_text">System.out.println</span>(<span class="orange_text">list</span>[2]);<br/>
+<span class="brown_text">System.out.println</span>(<span class="orange_text">list</span>[3]);<br/>
+<span class="brown_text">System.out.println</span>(<span class="orange_text">list</span>[4]);
+                </td>
+<td>На экран будет выведено пять значений “<b>null</b>”. <br/><br/>Чтобы получить значение, которое хранится в определенной ячейке массива, используйте квадратные скобки и номер ячейки</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson01,type03"></button></td>
+<td class="monospace_text"><b>int</b> <span class="green_text">listCount</span> = <span class="orange_text">list</span>.<span class="dred_text">length</span>;</td>
+<td><span class="green_text">listCount</span> получит значение 5 – количество ячеек в массиве <span class="orange_text">list</span>.<br/>
+<span class="orange_text">list</span>.<span class="red_text">length</span> хранит длину(количество ячеек) массива.</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson01,type04"></button></td>
+<td class="monospace_text"><span class="orange_text">list</span>[1] = <span class="green_text">"Mama"</span>;<br/>String s = <span class="orange_text">list</span>[1];
+                </td>
+<td>При присваивании объектов ячейкам массива нужно указывать индекс/номер ячейки в квадратных скобках.</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson01,type05"></button></td>
+<td class="monospace_text"><pre><b>for</b> (<b>int</b> <span class="red_text">i</span> = 0; <span class="red_text">i</span> list.<span class="dred_text">length</span>; <span class="red_text">i</span>++)
+{
+     System.out.println(<span class="orange_text">list</span>[<span class="red_text">i</span>]);
+}</pre>
+</td>
+<td>Вывод всех значений массива на экран.</td>
+</tr>
+</table>
+<p class="amigo">- Как интересно.</p>
+<p>- Переменная-массив требует дополнительной инициализации. </p>
+<p class="amigo">- ?</p>
+<p>- Обычную переменную нужно было просто объявить и уже можно присваивать ей различные значения.  С массивом все немного сложнее.</p>
+<p class="green_text">- Сначала надо создать контейнер на N элементов, а затем в него уже можно класть значения.</p>
+<table class="table_example wide-table">
+<tr>
+<th width="40%">Код</th>
+<th>Пояснение</th>
+</tr>
+<tr>
+<td class="monospace_text wide-text">String[] <span class="orange_text">list</span> = <b>null</b>;</td>
+<td>Переменная-массив <span class="orange_text">list</span>, ее значение – <b>null</b>. Она может хранить только контейнер для элементов. Контейнер надо создавать отдельно.</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">String[] <span class="orange_text">list</span> = <b>new</b> String[<span class="dred_text">5</span>];</td>
+<td>Мы создаем контейнер на <span class="dred_text">5</span> элементов и кладем ссылку на него в переменную <span class="orange_text">list</span>. Этот контейнер содержит 5 квартир (ячеек) с номерами 0, 1, 2, 3, 4.</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">String[] <span class="orange_text">list</span> = <b>new</b> String[<span class="dred_text">1</span>];</td>
+<td>Мы создаем контейнер на <span class="dred_text">1</span> элемент и кладем ссылку на него в переменную <span class="orange_text">list</span>. Чтобы занести что-то в этот контейнер надо написать <span class="orange_text">list</span>[0] = <span class="green_text">“Yo!”</span>;</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">String[] <span class="orange_text">list</span> = <b>new</b> String[<span class="dred_text">0</span>];</td>
+<td>Мы создаем контейнер на <span class="dred_text">0</span> элементов и кладем ссылку на него в переменную <span class="orange_text">list</span>. Ничего в этот контейнер занести нельзя!</td>
+</tr>
+</table>
+<p class="amigo">- Ага. Кое-что проясняется.</p>
+<p>- Основные <b>факты о массивах:</b></p>
+<p>1) <span class="green_text">Массив состоит из множества ячеек.</span></p>
+<p>2) <span class="red_text">Доступ к конкретной ячейке идёт через указание её номера.</span></p>
+<p>3) <span class="dblue_text">Все ячейки одного типа.</span></p>
+<p>4) <span class="violet_text">Начальное значение для всех ячеек – null, для примитивных типов – 0, 0.0 (для дробных), false (для типа boolean). Точно такое же, как и у простых неинициализированных переменных.</span></p>
+<p>5) <span class="orange_text">String[] list - это просто объявление переменной. Сначала нужно создать массив (контейнер) и положить его в эту переменную, а потом уже им пользоваться.</span> См. пример ниже.</p>
+<p class="grey_text">6) Когда мы создаём объект массив (контейнер), нужно указать, какой он длины – сколько в нем ячеек. Это делается командой вида: new <b>TypeName</b>[n];</p>
+<img src="https://javarush.ru/levels/images/lessons/07/image-ru-07-08.gif"/>
+<p>- Примеры:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Код</th>
+<th>Пояснение</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson01,type06"></button></td>
+<td class="monospace_text">String <span class="red_text">s</span>;<br/>String[] <span class="green_text">list</span>;
+                </td>
+<td><span class="red_text">s</span> равно null<br/><span class="green_text">list</span> равно null
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson01,type07"></button></td>
+<td class="monospace_text"><span class="green_text">list</span> = new String[<span class="red_text">10</span>];<br/>int <span class="violet_text">n</span> = <span class="green_text">list</span>.length;
+                </td>
+<td><span class="red_text">Переменная <span class="green_text">list</span> хранит ссылку на объект -  массив строк из <span class="red_text">10</span> элементов.</span><br/>
+<span class="violet_text">n</span> равно <span class="red_text">10</span>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson01,type08"></button></td>
+<td class="monospace_text"><span class="blue_text">list</span> = new String[<span class="violet_text">0</span>];
+                </td>
+<td>Теперь <span class="blue_text">list</span> содержит массив из <span class="violet_text">0</span> элементов. Массив есть, но хранить элементы он не может.
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson01,type09"></button></td>
+<td class="monospace_text"><span class="green_text">list</span> = null;<br/><span class="brown_text">System.out.println</span>(<span class="green_text">list</span>[1]);
+                </td>
+<td>Будет сгенерировано исключение (ошибка программы) – программа аварийно завершится. <span class="green_text">list</span> содержит пустую ссылку – null
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson01,type10"></button></td>
+<td class="monospace_text"><span class="blue_text">list</span> = new String[10];<br/><span class="brown_text">System.out.println</span>(<span class="blue_text">list</span>[11]);
+                </td>
+<td>Будет сгенерировано исключение (ошибка программы) – выход за границы массива. <br/><br/>Если <span class="blue_text">list</span> содержит 10 элементов/ячеек, то их разрешённые индексы: 0,1,2,3,4,5,6,7,8,9 – всего 10 штук.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>2. Особенность устройства массивов в памяти </h2>
+</div>
+<p>- Привет, Амиго! Давай я покажу тебе, как это все работает в памяти:</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/07/image-ru-07-01.jpg"/>
+<p class="amigo">- А что это ещё за 345?</p>
+<p>- Вообще-то я взял его с потолка, но, по идее, это адрес строки, содержащей слово «Мама».</p>
+<p>- С массивами все немного сложнее: </p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/07/image-ru-07-02.jpg"/>
+<p class="amigo">- 155,166,177 – это тоже взятые с потолка числа, символизирующие адреса строк справа?</p>
+<p>- Ага. Хорошо, что ты сам догадался. Обрати внимание, тут присутствует  дополнительный объект – массив из 10 ячеек.</p>
+<p class="amigo">- Все ясно и понятно, спасибо. Действительно, лучше один раз увидеть. Спасибо, Риша.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>3. Примеры использования массивов Array</h2>
+</div>
+<p>- Хочу дать тебе несколько примеров, что интересного можно делать с массивами:</p>
+<p><b>Пример 1.</b></p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Заполнение массива из 10 чисел, числами от 1 до 10: </th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="2"><button class="task_button" taskkey="level07,lesson03,type01"></button></td>
+<td class="monospace_text"><pre>public <b>class</b> MainClass
+{
+    public static void <b>main</b>(String[] args) 
+    {
+        <b>int[]</b> <span class="green_text">numbers</span> = <b>new</b> int[10];
+
+        <b>for</b> (<b>int</b> <span class="red_text">i</span> = 0; <span class="red_text">i</span> numbers.length; <span class="red_text">i</span>++)
+        {
+           <span class="green_text">numbers</span>[<span class="red_text">i</span>] = <span class="red_text">i</span> + 1;
+        }
+    }
+}</pre></td>
+</tr>
+<tr><td class="example">Заполнение массива из 10 чисел, числами от 10 до 1: </td></tr>
+<tr>
+<td class="collapsed" rowspan="2"><button class="task_button" taskkey="level07,lesson03,type02"></button></td>
+<td class="monospace_text"><pre>public <b>class</b> MainClass
+{
+    public static void <b>main</b>(String[] args) 
+    {
+        <b>int[]</b> <span class="green_text">numbers</span> = <b>new</b> int[10];
+
+        <b>for</b> (<b>int</b> <span class="red_text">i</span> = 0; <span class="red_text">i</span> numbers.length; <span class="red_text">i</span>++)
+        {
+           <span class="green_text">numbers</span>[<span class="red_text">i</span>] = 10 - <span class="red_text">i</span>;
+        }
+    }
+}</pre></td></tr>
+<tr><td class="example">Заполнение массива из 10 чисел, числами от 0 до 9: </td></tr>
+<tr>
+<td class="collapsed" rowspan="2"><button class="task_button" taskkey="level07,lesson03,type03"></button></td>
+<td class="monospace_text"><pre>public <b>class</b> MainClass
+{
+    public static void <b>main</b>(String[] args) 
+    {
+        <b>int[]</b> <span class="green_text">numbers</span> = <b>new</b> int[10];
+
+        <b>for</b> (<b>int</b> <span class="red_text">i</span> = 0; <span class="red_text">i</span> numbers.length; <span class="red_text">i</span>++)
+        {
+           <span class="green_text">numbers</span>[<span class="red_text">i</span>] = <span class="red_text">i</span>;
+        }
+    }
+}</pre></td></tr>
+<tr><td class="example">Заполнение массива из 10 чисел, числами от 9 до 0:</td></tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson03,type04"></button></td>
+<td class="monospace_text"><pre>public <b>class</b> MainClass
+{
+    public static void <b>main</b>(String[] args) 
+    {
+        <b>int[]</b> <span class="green_text">numbers</span> = <b>new</b> int[10];
+
+        <b>for</b> (<b>int</b> <span class="red_text">i</span> = 0; <span class="red_text">i</span> numbers.length; <span class="red_text">i</span>++)
+        {
+           <span class="green_text">numbers</span>[<span class="red_text">i</span>] = 9 - <span class="red_text">i</span>;
+        }
+    }
+}</pre></td></tr>
+</table>
+<p><b>Пример 2.</b></p>
+<table class="table_task wide-table">
+<tr>
+<th class="collapsed"></th>
+<th>Ввод 10 строк с клавиатуры </th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="2"><button class="task_button" taskkey="level07,lesson03,type05"></button></td>
+<td class="monospace_text wide-text"><pre>public <b>class</b> MainClass
+{
+  public static void <b>main</b>(String[] args) <b>throws</b> IOException
+  {
+    <span class="blue_text">BufferedReader</span> <span class="orange_text">reader</span> = <b>new</b> <span class="blue_text">BufferedReader</span>(<b>new</b> <span class="brown_text">InputStreamReader</span>(System.in));
+    String[] <span class="green_text">list</span> = <b>new</b> String[<span class="red_text">10</span>];
+
+    for (int <span class="red_text">i</span> = 0; <span class="red_text">i</span> list.length; <span class="red_text">i</span>++)
+    {
+      <span class="green_text">list</span>[<span class="red_text">i</span>] = <span class="orange_text">reader</span>.<b>readLine</b>();
+     }
+  }
+}</pre></td>
+</tr>
+<tr><td class="example">Ввод 10 чисел с клавиатуры </td></tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson03,type06"></button></td>
+<td class="monospace_text wide-text"><pre>public <b>class</b> MainClass
+{
+  public static void <b>main</b>(String[] args) <b>throws</b> IOException
+  {
+    <span class="blue_text">BufferedReader</span> <span class="orange_text">reader</span> = <b>new</b> <span class="blue_text">BufferedReader</span>(<b>new</b> <span class="brown_text">InputStreamReader</span>(System.in));
+    int[] <span class="green_text">list</span> = <b>new</b> int[<span class="red_text">10</span>];
+
+    for (int <span class="red_text">i</span> = 0; <span class="red_text">i</span> list.length; <span class="red_text">i</span>++)
+    {
+      String <span class="violet_text">s</span> = <span class="orange_text">reader</span>.<b>readLine</b>();
+      <span class="green_text">list</span>[<span class="red_text">i</span>] = Integer.<b>parseInt</b>(<span class="violet_text">s</span>);
+    }
+  }
+}</pre></td></tr>
+</table>
+<p><b>Пример 3.</b></p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Вывод массива на экран </th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson03,type07"></button></td>
+<td class="monospace_text"><pre>public <b>class</b> MainClass
+{
+    public static void <b>main</b>(String[] args) <b>throws</b> IOException
+    {
+        int[] <span class="green_text">list</span> = <b>new</b> int[<span class="red_text">10</span>];
+
+        <span class="grey_text">//заполнение массива</span>
+        for (int <span class="red_text">i</span> = 0; <span class="red_text">i</span> list.length; <span class="red_text">i</span>++) 
+           <span class="green_text">list</span>[<span class="red_text">i</span>] = <span class="red_text">i</span>;
+
+        <span class="grey_text">//вывод на экран</span>
+        for (int <span class="red_text">i</span> = 0; <span class="red_text">i</span> list.length; <span class="red_text">i</span>++)  
+          <span class="brown_text">System.out.println</span>(<span class="green_text">list</span>[<span class="red_text">i</span>]);
+    }
+}</pre></td>
+</tr>
+</table>
+<p><b>Пример 4.</b></p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Быстрая (статическая) инициализация.  Сумма элементов массива:</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson03,type08"></button></td>
+<td class="monospace_text"><pre>public <b>class</b> MainClass
+{
+    public static void <b>main</b>(String[] args) <b>throws</b> IOException
+    {
+        <span class="grey_text">//это статическая инициализация</span>
+        int[] <span class="orange_text">list</span> = {5, 6, 7, 8, 1, 2, 5, -7, -9, 2, 0};        
+        
+        <span class="grey_text">//подсчёт суммы элементов</span>
+        int <span class="blue_text">sum</span> = 0;
+        for (int <span class="red_text">i</span> = 0; <span class="red_text">i</span> list.length; <span class="red_text">i</span>++) 
+           <span class="blue_text">sum</span> += <span class="orange_text">list</span>[<span class="red_text">i</span>];
+
+        <span class="brown_text">System.out.println</span>("Sum is " + <span class="blue_text">sum</span>);
+    }
+}</pre></td>
+</tr>
+</table>
+<p><b>Пример 5.</b></p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Поиск минимального элемента в массиве:</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson03,type09"></button></td>
+<td class="monospace_text"><pre>public <b>class</b> MainClass
+{
+    public static void <b>main</b>(String[] args) <b>throws</b> IOException
+    {
+        int[] <span class="orange_text">list</span> = {5, 6, 7, 8, 1, 2, 5, -7, -9, 2, 0};
+
+        int <span class="blue_text">min</span> = <span class="orange_text">list</span>[0];
+        for (int <span class="red_text">i</span> = 1; <span class="red_text">i</span> list.length; <span class="red_text">i</span>++)
+        {
+             if (<span class="orange_text">list</span>[<span class="red_text">i</span>] min) 
+                  <span class="blue_text">min</span> = <span class="orange_text">list</span>[<span class="red_text">i</span>];
+        }
+
+       <span class="brown_text">System.out.println</span> (<span class="green_text">"Min is "</span> + <span class="blue_text">min</span>);
+    }
+}</pre></td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи на создание и использование массивов</h2>
+</div>
+<p>- Привет, Амиго! Вот тебе пара задачек, дружище:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level07,lesson04,task01"></button>
+<b>1. Максимальное среди массива на 20 чисел</b><br/><br/>
+                    1. В методе <span class="taskcode">initializeArray()</span>:<br/>
+                    1.1. Создайте массив на 20 чисел<br/>
+                    1.2. Считайте с консоли 20 чисел и заполните ими массив<br/>
+                    2. Метод <span class="taskcode">max(int[] array)</span> должен находить максимальное число из элементов массива
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level07,lesson04,task02"></button>
+<b>2. Массив из строчек в обратном порядке</b><br/><br/>
+                    1. Создать массив на 10 строчек.<br/>
+                    2. Ввести с клавиатуры 8 строчек и сохранить их в массив.<br/>
+                    3. Вывести содержимое всего массива (10 элементов) на экран в обратном порядке. Каждый элемент - с новой строки.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level07,lesson04,task03"></button>
+<b>3. 2 массива</b><br/><br/>
+                    1. Создать массив на 10 строк.<br/>
+                    2. Создать массив на 10 чисел.<br/>
+                    3. Ввести с клавиатуры 10 строк, заполнить ими массив строк.<br/>
+                    4. В каждую ячейку массива чисел записать длину строки из массива строк, индекс/номер ячейки которой совпадает с текущим индексом из массива чисел. Вывести содержимое массива чисел на экран, каждое значение выводить с новой строки.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level07,lesson04,task04"></button>
+<b>4. Массив из чисел в обратном порядке</b><br/><br/>
+                    1. Создать массив на 10 чисел.<br/>
+                    2. Ввести с клавиатуры 10 чисел и записать их в массив.<br/>
+                    3. Расположить элементы массива в обратном порядке.<br/>4. Вывести результат на экран, каждое значение выводить с новой строки.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level07,lesson04,task05"></button>
+<b>5. Один большой массив и два маленьких</b><br/><br/>
+                    1. Создать массив на 20 чисел.<br/>
+                    2. Ввести в него значения с клавиатуры.<br/>
+                    3. Создать два массива на 10 чисел каждый.<br/>
+                    4. Скопировать большой массив в два маленьких: половину чисел в первый маленький, вторую половину во второй маленький.<br/>
+                    5. Вывести второй маленький массив на экран, каждое значение выводить с новой строки.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>5. ArrayList, отличие от Array</h2>
+</div>
+<p>- А вот и я. </p>
+<p class="amigo">- Привет, Элли!</p>
+<p>- Сегодня новая интересная тема! Сейчас я расскажу тебе о новом интересном классе – <b><span class="red_text">ArrayList</span></b>.</p>
+<p class="amigo">- О, новый класс? Круто! И что он умеет делать?</p>
+<p>- Начну с небольшой предыстории. Программистам очень не нравилось одно свойство массива – его размер нельзя изменять. <span class="orange_text">Что делать, если нужно сохранить в массиве ещё три элемента, а свободное место только одно?</span></p>
+<p>- Единственным решением проблемы нехватки места в массиве  было создание массива очень большого размера, чтобы все элементы туда точно поместились. Но это часто приводило к нерациональному расходу памяти.  Если чаще всего в массиве хранилось три элемента, но был хотя бы мизерный шанс, что там их будет 100, приходилось создавать массив на 100 элементов.</p>
+<p class="amigo">- И что же придумали программисты?</p>
+<p>-  Они написали класс <b><span class="red_text">ArrayList</span></b>, который выполнял ту же работу, что и Array (массив), но мог изменять свой размер.</p>
+<p class="amigo">- Интересный ход. И как же они это сделали?</p>
+<p>- Внутри каждого объекта типа <b><span class="red_text">ArrayList</span></b> хранится обычный массив элементов. Когда ты считываешь элементы из <span class="red_text">ArrayList</span>, он считывает их из своего внутреннего массива. Когда записываешь – записывает их во внутренний массив. Вот сравни:</p>
+<table class="table_task wide-table">
+<tr>
+<th class="collapsed"></th>
+<th style="text-align:center;" width="40%">Array</th><th style="text-align:center;">ArrayList</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="8"><button class="task_button" taskkey="level07,lesson05,type01"></button></td>
+<td class="example" colspan="2" style="text-align:center;">Создание контейнера элементов</td>
+</tr>
+<tr style="height: 70px;">
+<td class="monospace_text double-wide-text" style="text-align:center;"><span class="orange_text">String</span>[] <span class="green_text">list</span> = <b>new</b> <span class="orange_text">String</span>[10];</td>
+<td class="monospace_text double-wide-text" style="text-align:center;">ArrayList&lt;<span class="orange_text">String</span>&gt; <span class="green_text">list</span> = <b>new</b> ArrayList&lt;<span class="orange_text">String</span>&gt;();</td>
+</tr>
+<tr>
+<td class="example" colspan="2" style="text-align:center;">Получение количества элементов</td>
+</tr>
+<tr style="height: 70px;">
+<td class="monospace_text double-wide-text" style="text-align:center;"><b>int</b> n = <span class="green_text">list</span>.<b>length</b>;</td>
+<td class="monospace_text double-wide-text" style="text-align:center;"><b>int</b> n = <span class="green_text">list</span>.<b>size</b>();</td>
+</tr>
+<tr>
+<td class="example" colspan="2" style="text-align:center;">Взятие элемента из массива/коллекции</td>
+</tr>
+<tr style="height: 70px;">
+<td class="monospace_text double-wide-text" style="text-align:center;"><span class="orange_text">String</span> s = <span class="green_text">list</span>[<span class="red_text">3</span>];</td>
+<td class="monospace_text double-wide-text" style="text-align:center;"><span class="orange_text">String</span> s = <span class="green_text">list</span>.<b>get</b>(<span class="red_text">3</span>);</td>
+</tr>
+<tr>
+<td class="example" colspan="2" style="text-align:center;">Запись элемента в массив</td>
+</tr>
+<tr style="height: 70px;">
+<td class="monospace_text wide-text" style="text-align:center;"><span class="green_text">list</span>[<span class="red_text">3</span>] = s;</td>
+<td class="monospace_text double-wide-text" style="text-align:center;"><span class="green_text">list</span>.<b>set</b>(<span class="red_text">3</span>, s);</td>
+</tr>
+</table>
+<p class="amigo">- И в чем же преимущество ArrayList? Как по мне, так код стал длиннее.</p>
+<p>- Во-первых, <b><i>ArrayList</i></b> поддерживает несколько дополнительных действий, которые очень часто приходится делать программистам во время работы, и которых нет у массива. Например – <span class="green_text">вставка и удаление элементов из середины массива, и чтобы не оставалось дырок.</span></p>
+<p>- Во-вторых, <span class="green_text">изменение размера</span>: когда нужно записать во внутренний массив ещё один элемент, а свободного места там нет, то внутри <b><i>ArrayList</i></b>  делается вот что:</p>
+<p>а)  <span class="green_text">создаётся ещё один массив, в полтора раза больше размера внутреннего массива, плюс один  элемент.</span></p>
+<p>б)  <span class="orange_text">все элементы из старого массива  копируются в новый массив.</span></p>
+<p>в) <span class="violet_text">новый массив сохраняется во внутренней переменной объекта ArrayList, старый массив объявляется мусором</span> (мы просто перестаём хранить на него ссылку).</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th style="text-align:center;" width="50%">Array</th><th style="text-align:center;">ArrayList</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="8"><button class="task_button" taskkey="level07,lesson05,type02"></button></td>
+<td class="example" colspan="2" style="text-align:center;">Добавление элемента в конец массива</td>
+</tr>
+<tr style="height: 70px;">
+<td class="red_text" style="text-align:center;">Невозможно выполнить данное действие</td>
+<td class="monospace_text" style="text-align:center;"> <span class="green_text">list</span>.<b>add</b>(s);</td>
+</tr>
+<tr>
+<td class="example" colspan="2" style="text-align:center;">Вставка элемента в середину массива</td>
+</tr>
+<tr style="height: 70px;">
+<td class="red_text" style="text-align:center;">Невозможно выполнить данное действие</td>
+<td class="monospace_text" style="text-align:center;"><span class="green_text">list</span>.<b>add</b>(15, s);</td>
+</tr>
+<tr>
+<td class="example" colspan="2" style="text-align:center;">Вставка элемента в начало массива</td>
+</tr>
+<tr style="height: 70px;">
+<td class="red_text" style="text-align:center;">Невозможно выполнить данное действие</td>
+<td class="monospace_text" style="text-align:center;"><span class="green_text">list</span>.<b>add</b>(0, s);</td>
+</tr>
+<tr>
+<td class="example" colspan="2" style="text-align:center;">Удаление элемента из массива</td>
+</tr>
+<tr style="height: 70px;">
+<td style="text-align:center;">Можно стереть элемент с помощью <span class="green_text">list</span>[3] = null. Но тогда останется «дыра» в массиве.</td>
+<td class="monospace_text" style="text-align:center;"><span class="green_text">list</span>.<b>remove</b>(3);</td>
+</tr>
+</table>
+<p class="amigo">- А как работать с этим ArrayList’ом?</p>
+<p>- А практически так же, как и с массивом. Вот смотри. Давай сравним работу с ArrayList  с работой с массивом. Для примера решим такую задачу «<span class="green_text">ввести 10 строк с клавиатуры и вывести их на экран в обратном порядке</span>» . </p>
+<p>- Смотри:</p>
+<table class="table_task double-wide-table font19">
+<tr>
+<th class="collapsed"></th>
+<th width="50%">Используем Array</th><th>Используем ArrayList</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson05,type03"></button></td>
+<td class="monospace_text double-wide-text"><pre>public static void <b>main</b>(String[] args)
+{
+<span class="green_text">Reader</span> r = <b>new</b> <span class="green_text">InputStreamReader</span>(System.in);
+<span class="blue_text">BufferedReader</span> <span class="orange_text">reader</span> = <b>new</b> <span class="blue_text">BufferedReader</span>(r);
+
+<span class="grey_text">//ввод строк с клавиатуры</span>
+<span class="red_text">String[] list = new String[10];</span>
+<b>for</b> (int i = 0; i reader.<b>readLine</b>();
+  <span class="violet_text">list[i] = s;</span>
+}
+
+<span class="grey_text">//вывод содержимого массива на экран</span>
+<b>for</b> (int i = 0; i list.length; i++)
+{
+  int j = <span class="green_text">list.length</span> - i - 1;
+  <span class="brown_text">System.out.println</span>( <span class="violet_text">list[j]</span> );
+}
+}</pre></td>
+<td class="monospace_text double-wide-text"><pre>public static void <b>main</b>(String[] args)
+{
+<span class="green_text">Reader</span> r = <b>new</b> <span class="green_text">InputStreamReader</span>(System.in);
+<span class="blue_text">BufferedReader</span> <span class="orange_text">reader</span> = <b>new</b> <span class="blue_text">BufferedReader</span>(r);
+
+<span class="grey_text">//ввод строк с клавиатуры</span>
+<span class="red_text" style="letter-spacing: -2.5px">ArrayList&lt;String&gt; list = new ArrayList&lt;String&gt;();</span>
+<b>for</b> (int i = 0; i reader.<b>readLine</b>();
+  <span class="violet_text">list.add(s);</span>
+}
+
+<span class="grey_text">//вывод содержимого коллекции на экран </span>
+<b>for</b> (int i = 0; i list.size(); i++)
+{
+  int j = <span class="green_text">list.size()</span> - i - 1;
+  <span class="brown_text">System.out.println</span>( <span class="violet_text">list.get(j)</span> );
+}
+}</pre></td>
+</tr>
+</table>
+<p>- Я раскрасила одним цветом эквивалентные действия в обеих колонках.</p>
+<p class="amigo">- С одной стороны все по-другому, с другой – все осталось тем же самым.</p>
+<p>- Ага. Только мы теперь не используем квадратные скобочки при работе с <b>ArrayList</b>. Вместо них мы используем методы <b>get</b>, <b>set</b> и <b>add</b>.</p>
+<p class="amigo">- Да, я уже заметил. Но все равно очень похоже.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задачи по ArrayList</h2>
+</div>
+<p>- Ты опять ничего не делаешь? Ты же робот! Роботы все время чем-то заняты.  Вот тебе пара задачек, чтобы ты не расслаблялся. Но  для начала – пара подсказок:</p>
+<p>- <b>Подсказка 1:</b></p>
+<p>Список (анг. List), чаще всего под этим словом подразумевается <b>ArrayList</b>.</p>
+<p>- <b>Подсказка 2:</b></p>
+<p>Строка (анг. String), под этим подразумевается тип <b>String</b>.</p>
+<p>- <b>Подсказка 3:</b></p>
+<p>Создать список строк чаще всего означает: <span class="taskcode">ArrayList&lt;String&gt; list = new ArrayList&lt;String&gt;();</span></p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level07,lesson06,task01"></button>
+<b>Задача 1.  5 различных строчек в списке</b><br/><br/>
+                    1. Создай список строк. <br/>
+                    2. Добавь в него 5 различных строчек.<br/>
+                    3. Выведи его размер на экран. <br/>
+                    4. Используя цикл, выведи его содержимое на экран, каждое значение с новой строки.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level07,lesson06,task02"></button>
+<b>Задача 2.  Самая длинная строка</b><br/><br/>
+                    1. Создай список строк. <br/>
+                    2. Считай с клавиатуры 5 строк и добавь в список. <br/>
+                    3. Используя цикл, найди самую длинную строку в списке. <br/>
+                    4. Выведи найденную строку на экран.<br/>
+                    5. Если таких строк несколько, выведи каждую с новой строки.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level07,lesson06,task03"></button>
+<b>Задача 3.   Самая короткая строка</b><br/><br/>
+                    1. Создай список строк. <br/>
+                    2. Считай с клавиатуры 5 строк и добавь в список. <br/>
+                    3. Используя цикл, найди самую короткую строку в списке.<br/>
+                    4. Выведи найденную строку на экран.<br/>
+                    5. Если таких строк несколько, выведи каждую с новой строки.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level07,lesson06,task04"></button>
+<b>Задача 4.  10 строчек в начало списка</b><br/><br/>
+                    1. Создай список строк в методе main. <br/>
+                    2. Добавь в него 10 строчек с клавиатуры, но только добавлять не в конец списка, а в начало. <br/>
+                    3. Используя цикл, выведи содержимое на экран, каждое значение с новой строки.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level07,lesson06,task05"></button>
+<b>Задача 5.   Удали последнюю строку и вставь её в начало</b><br/><br/>
+                    1. Создай список строк. <br/>
+                    2. Добавь в него 5 строчек с клавиатуры. <br/>
+                    3. Удали последнюю строку и вставь её в начало. Повторить 13 раз. <br/>
+                    4. Используя цикл, выведи содержимое на экран, каждое значение с новой строки.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>7. Generics</h2>
+</div>
+<p>- И ещё одна крутая тема.</p>
+<p class="amigo">- Одни сюрпризы. Прямо не день, а день рождения.</p>
+<p>- Сегодня я расскажу тебе, что такое Generics. “Дженерики” – это типы с параметром. В Java <span class="green_text">классы-контейнеры позволяют указывать тип их внутренних объектов.</span> </p>
+<p class="green_text">- Когда мы объявляем generic-переменную, то мы указываем не один тип, а два: тип переменной и тип данных, которые она у себя хранит.</p>
+<p>Хороший пример этого – ArrayList. <span class="orange_text">Когда мы создаём новый объект/переменную типа ArrayList, нам удобно указать, значения какого типа будут храниться внутри этого списка.</span> </p>
+<table class="table_example double-wide-table">
+<tr>
+<th width="57%">Код</th><th>Пояснение</th>
+</tr>
+<tr>
+<td class="monospace_text double-wide-text">ArrayListString&gt; <span class="orange_text">list</span> = <b>new</b> ArrayListString&gt;();</td>
+<td>Мы создали переменную <span class="orange_text">list</span> типа ArrayList.<br/>Занесли в нее объект типа ArrayList.<br/>В таком списке можно хранить только переменные типа <span class="orange_text">String</span>.</td>
+</tr>
+<tr>
+<td class="monospace_text double-wide-text">ArrayList <span class="orange_text">list</span> = <b>new</b> ArrayList();</td>
+<td>Мы создали переменную <span class="orange_text">list</span> типа ArrayList.<br/>Занесли в нее объект типа ArrayList.<br/><br/>В таком листе можно хранить переменные <span class="red_text">любого типа</span>.
+</td>
+</tr>
+<tr>
+<td class="monospace_text double-wide-text">ArrayListInteger&gt; <span class="orange_text">list</span> = <b>new</b> ArrayListInteger&gt;();</td>
+<td>Мы создали переменную <span class="orange_text">list</span> типа ArrayList.<br/>Занесли в нее объект типа ArrayList.<br/>В таком листе можно хранить только переменные типа <span class="orange_text">Integer</span> и <span class="orange_text">int</span>.
+</td>
+</tr>
+</table>
+<p class="amigo">- Звучит очень интересно. Особенно про <span class="red_text">любой тип</span>.</p>
+<p>- Это только кажется, что это хорошо. На самом деле, если в одном методе в ArrayList кладутся строки, а в другом мы работаем с его содержимым и ожидаем, что там будут только числа, программа упадет (закроется с ошибкой).</p>
+<p class="amigo">- Ясно.</p>
+<p class="dred_text">- Пока что мы не будем создавать <span class="red_text"><b>свои</b></span> классы с типами-параметрами, но будем использовать чужие.</p>
+<p class="amigo">- А в качестве типа-параметра можно поставить любой класс, даже тот, что напишу я?</p>
+<p>- Да, любой тип, кроме примитивных типов. Все классы-параметры должны быть унаследованы от класса Object.</p>
+<p class="amigo">- Т.е. я не могу написать <span class="violet_text">ArrayList&lt;int&gt;</span> ?</p>
+<p>- В общем-то, да, не можешь. Но для примитивных типов разработчики языка Java написали их непримитивные аналоги - классы, унаследованные от <b>Object</b>. Вот как это будет выглядеть:</p>
+<table class="table_example">
+<tr>
+<th style="text-align:center;" width="33%">Примитивный тип</th><th style="text-align:center;" width="33%">Класс</th><th style="text-align:center;">Список</th>
+</tr>
+<tr>
+<td class="monospace_text"><span class="green_text">int</span></td>
+<td class="monospace_text"><span class="green_text">Integer</span></td>
+<td class="monospace_text">ArrayListInteger&gt;</td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="violet_text">double</span></td>
+<td class="monospace_text"><span class="violet_text">Double</span></td>
+<td class="monospace_text">ArrayListDouble&gt;</td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="orange_text">boolean</span></td>
+<td class="monospace_text"><span class="orange_text">Boolean</span></td>
+<td class="monospace_text">ArrayListBoolean&gt;</td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="blue_text">char</span></td>
+<td class="monospace_text"><span class="blue_text">Character</span></td>
+<td class="monospace_text">ArrayListCharacter&gt;</td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="dred_text">byte</span></td>
+<td class="monospace_text"><span class="dred_text">Byte</span></td>
+<td class="monospace_text">ArrayListByte&gt;</td>
+</tr>
+</table>
+<p>- Примитивные типы и их классы-аналоги (классы-обёртки) можно спокойно присваивать друг другу:</p>
+<table class="table_example">
+<tr>
+<th>Примеры</th>
+</tr>
+<tr>
+<td class="monospace_text"><span class="green_text">int</span> a = 5;<br/><span class="green_text">Integer</span> b = a;<br/><span class="green_text">int</span> c = b;
+                </td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="blue_text">Character</span> c = 'c';         <span class="grey_text">//литерал 'c' имеет тип char</span><br/><span class="blue_text">char</span> d = c;
+                </td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="dred_text">Byte</span> b = (<span class="dred_text">byte</span>) 77;      <span class="grey_text">//литерал 77 имеет тип int</span></td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="brown_text">Boolean</span> isOk = true;  <span class="grey_text">//литерал true имеет тип boolean</span></td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="violet_text">Double</span> d = 1.0d;        <span class="grey_text">//литерал 1.0d имеет тип double</span></td>
+</tr>
+</table>
+<p class="amigo">- Отлично. Тогда я думаю, я буду почаще использовать ArrayList.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>8. Примеры по ArrayList и Generics</h2>
+</div>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/07/image-ru-07-06.gif" style="width: 340px;height:221px;"/>
+<p>- Давай-ка я начну с действительно полезных вещей. Сейчас ты увидишь несколько полезных примеров работы с ArrayList и Generics:</p>
+<p><b>- Пример 1:</b></p>
+<table class="table_task wide-table">
+<tr>
+<th class="collapsed"></th>
+<th>Ввод списка целых чисел с клавиатуры </th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson08,type01"></button></td>
+<td class="monospace_text wide-text"><pre>public static void <b>main</b>(String[] args) <b>throws</b> IOException
+{
+    <span class="blue_text">BufferedReader</span> <span class="orange_text">reader</span> = <b>new</b> <span class="blue_text">BufferedReader</span>(new InputStreamReader(System.in) );
+    ArrayListInteger&gt; <span class="green_text">list</span> = <b>new</b> ArrayListInteger&gt;();
+
+    <b>while</b> (<b>true</b>)
+    {
+        String <span class="dred_text">s</span> = <span class="orange_text">reader</span>.readLine();
+        <b>if</b> (<span class="dred_text">s</span>.isEmpty()) <b>break</b>;
+        <span class="green_text">list</span>.add(Integer.parseInt(<span class="dred_text">s</span>));
+    }
+}</pre></td>
+</tr>
+</table>
+<p><b>- Пример 2:</b></p>
+<table class="table_task wide-table">
+<tr>
+<th class="collapsed"></th>
+<th>То же, чётные числа добавляются в конец списка, нечётные – в начало.</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson08,type02"></button></td>
+<td class="monospace_text wide-text"><pre>public static void <b>main</b>(String[] args) <b>throws</b> IOException
+{
+    <span class="blue_text">BufferedReader</span> <span class="orange_text">reader</span> = <b>new</b> <span class="blue_text">BufferedReader</span>(new InputStreamReader(System.in));
+    ArrayListInteger&gt; <span class="green_text">list</span> = <b>new</b> ArrayListInteger&gt;();
+
+    <b>while</b> (<b>true</b>)
+    {
+        String <span class="dred_text">s</span> = <span class="orange_text">reader</span>.readLine();
+        <b>if </b>(<span class="dred_text">s</span>.isEmpty()) <b>break</b>;
+
+        int x = Integer.parseInt(<span class="dred_text">s</span>);
+        <b>if</b> (x % 2 == 0)  <span class="grey_text">//проверяем, что остаток от деления на два равен нулю</span>
+            <span class="green_text">list</span>.add(x);          <span class="grey_text">//добавление в конец</span>
+        <b>else</b>
+            <span class="green_text">list</span>.add(0, x);      <span class="grey_text">//вставка в начало</span>      
+    }
+}</pre></td>
+</tr>
+</table>
+<p><b>- Пример 3:</b></p>
+<table class="table_task wide-table">
+<tr>
+<th class="collapsed"></th>
+<th>Удаление всех чисел больше 5:</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson08,type03"></button></td>
+<td class="monospace_text wide-text"><pre>public static void <b>main</b>(String[] args) <b>throws</b> IOException
+{
+    <span class="blue_text">BufferedReader</span> <span class="orange_text">reader</span> = <b>new</b> <span class="blue_text">BufferedReader</span>(new InputStreamReader(System.in) );
+    ArrayListInteger&gt; <span class="green_text">list</span> = <b>new</b> ArrayListInteger&gt;();
+
+    <span class="green_text">list</span>.add(1);
+    <span class="green_text">list</span>.add(7);
+    <span class="green_text">list</span>.add(11);
+    <span class="green_text">list</span>.add(3);
+    <span class="green_text">list</span>.add(15);
+
+    <b>for</b> (int i = 0; i list.size(); )  <span class="grey_text">//убрали увеличение i внутрь цикла</span>
+    {
+        <b>if</b> (<span class="green_text">list</span>.get(i) &gt; 5)
+            <span class="green_text">list</span>.remove(i);  <span class="grey_text">//не увеличиваем i, если удалили текущий  элемент  </span>
+        <b>else</b>
+            <span class="red_text">i++</span>;
+    }
+}</pre></td>
+</tr>
+</table>
+<p><b>- Пример 4:</b></p>
+<table class="table_task wide-table">
+<tr>
+<th class="collapsed"></th>
+<th>Разделение массива на два – чётных и нечётных чисел</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson08,type04"></button></td>
+<td class="monospace_text wide-text"><pre>public static void <b>main</b>(String[] args) <b>throws</b> IOException
+{
+    <span class="grey_text">//статическая инициализация массива</span>
+    int[] <span class="green_text">data</span> = {1, 5, 6, 11, 3, 15, 7, 8};  
+
+    <span class="grey_text">//создание списка, где все элементы должны быть типа Integer </span>
+    ArrayList&lt;Integer&gt; <span class="orange_text">list</span> = new ArrayList&lt;Integer&gt;();   
+
+    <span class="grey_text">//заполнение списка из массива</span>
+    for (int i = 0; i data.length; i++) <span class="orange_text">list</span>.add(<span class="green_text">data</span>[i]);  
+
+    ArrayList&lt;Integer&gt; <span class="violet_text">even</span> = new ArrayList&lt;Integer&gt;();  <span class="grey_text">//чётные</span>
+    ArrayList&lt;Integer&gt; <span class="brown_text">odd</span> = new ArrayList&lt;Integer&gt;();    <span class="grey_text">//нечётные</span>
+
+    for (int i = 0; i list.size(); i++)
+    {
+        Integer <span class="dred_text">x</span> = <span class="orange_text">list</span>.get(i);
+        if (<span class="dred_text">x</span> % 2 == 0)    <span class="grey_text">//если x - чётное</span>
+            <span class="violet_text">even</span>.add(<span class="dred_text">x</span>);   <span class="grey_text">// добавляем x в коллекцию четных чисел</span>  
+        else
+            <span class="brown_text">odd</span>.add(<span class="dred_text">x</span>);    <span class="grey_text">// добавляем x в коллекцию нечетных чисел</span>
+    }
+}</pre></td>
+</tr>
+</table>
+<p><b>- Пример 5:</b></p>
+<table class="table_task wide-table">
+<tr>
+<th class="collapsed"></th>
+<th>Слияние списков.</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level07,lesson08,type05"></button></td>
+<td class="monospace_text wide-text"><pre>public static void <b>main</b>(String[] args) <b>throws</b> IOException
+{
+    ArrayListInteger&gt; <span class="orange_text">list1</span> = new ArrayListInteger&gt;();   <span class="grey_text">//создание списка </span> 
+    <span class="violet_text">Collections</span>.<b>addAll</b>(<span class="orange_text">list1</span>, 1, 5, 6, 11, 3, 15, 7, 8);   <span class="grey_text">//заполнение списка</span>
+
+    ArrayListInteger&gt; <span class="blue_text">list2</span> = new ArrayListInteger&gt;();
+    <span class="violet_text">Collections</span>.<b>addAll</b>(<span class="blue_text">list2</span>, 1, 8, 6, 21, 53, 5, 67, 18);
+
+    ArrayListInteger&gt; <span class="dred_text">result</span> = new ArrayListInteger&gt;();
+
+    <span class="dred_text">result</span>.<b>addAll</b>(<span class="orange_text">list1</span>);   <span class="grey_text">//добавление всех значений из одного списка в другой</span>
+    <span class="dred_text">result</span>.<b>addAll</b>(<span class="blue_text">list2</span>);
+
+    <b>for</b> (Integer x : <span class="dred_text">result</span>)   <span class="grey_text">//быстрый for по всем элементам, только для коллекций</span>
+    {
+        <span class="brown_text">System.out.println</span>(x);
+    }
+}</pre></td>
+</tr>
+</table>
+<p class="amigo">- Круто. И что Диего даст мне сейчас кучу аналогичных задач, да?</p>
+<p>- Ага!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>9. Задачи по List&lt;T&gt;</h2>
+</div>
+<p>- Наконец-то ты освободился. Устал уже держать в уме твои задачи. Вот тебе ещё парочка, чтобы не расслаблялся:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level07,lesson09,task01"></button>
+<b>1. Три массива</b><br/><br/>
+                    1. Введи с клавиатуры 20 чисел, сохрани их в список и рассортируй по трём другим спискам:<br/>
+                    Число делится на 3 (<span class="taskcode">x%3==0</span>), делится на 2 (<span class="taskcode">x%2==0</span>) и все остальные. <br/>
+                    Числа, которые делятся на 3 и на 2 одновременно, например 6, попадают в оба списка.<br/>
+                    2. Метод <span class="taskcode">printList</span> должен выводить на экран все элементы списка  с новой строки.<br/>
+                    3. Используя метод <span class="taskcode">printList</span>, выведи эти три списка на экран. Сначала тот, который для <span class="taskcode">x%3</span>, потом тот, который для <span class="taskcode">x%2</span>, потом последний.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level07,lesson09,task02"></button>
+<b>2. Слова в обратном порядке</b><br/><br/>
+                    Введи с клавиатуры 5 слов в список строк. Удали 3 - ий элемент списка, и выведи оставшиеся элементы в обратном порядке.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level07,lesson09,task03"></button>
+<b>3. Слово «именно»</b><br/><br/>
+                    1. Создай список из слов «мама», «мыла», «раму». <br/>
+                    2. После каждого слова вставь в список строку, содержащую слово «именно». <br/>
+                    3. Используя цикл <span class="taskcode">for</span>, вывести результат на экран. Каждый элемент списка с новой строки.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level07,lesson09,task04"></button>
+<b>4. Буква «р» и буква «л»</b><br/><br/>
+                    1. Создай список слов, заполни его самостоятельно. <br/>
+                    2. Метод <span class="taskcode">fix()</span> должен:<br/>
+                    2.1. удалять из списка строк все слова, содержащие букву «р»<br/>
+                    2.2. удваивать все слова содержащие букву «л».<br/>
+                    2.3. если слово содержит и букву «р» и букву «л», то оставить это слово без изменений.<br/>
+                    2.4. с другими словами ничего не делать.<br/>
+<br/>
+<span class="example-legacy">Пример:</span><span class="example-data"><br/>роза<br/>лира<br/>лоза<br/></span>
+<span class="example-legacy">Выходные данные:</span><span class="example-data"><br/>лира<br/>лоза<br/>лоза</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level07,lesson09,task05"></button>
+<b>5. Удвой слова</b><br/><br/>
+                    1. Введи с клавиатуры 10 слов в список строк. <br/>
+                    2. Метод <span class="taskcode">doubleValues</span> должен удваивать слова по принципу a,b,c → a,a,b,b,c,c. <br/>
+                    3. Используя цикл <span class="taskcode">for</span>, выведи результат на экран, каждое значение с новой строки.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>10. Лекция по массивам и спискам </h2>
+</div>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/07/image-ru-07-05.gif" style="width:498px;height:375px;"/>
+<p>-  Я нашёл мои “замечательные” лекции! Так что сегодня ты станешь обладателем “ценнейшего знания” по массивам и спискам. Вот они: </p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/05/20/lecture-7.html" target="_blank">Дополнительные материалы к уровню 7</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Хулио</h2>
+</div>
+<p>- Привет, Амиго! Рад, что ты со всем этим справился – ты заслужил награду: </p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-07.gif" preload="none" tabindex="0" taskkey="level07,lesson11,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-07.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=Rbj3TVOmmqk" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>12. Капитан</h2>
+</div>
+<p>- Здорово, боец!</p>
+<p class="amigo">- Здравия желаю, капитан Бобров!</p>
+<p>- У меня для тебя шикарная новость. Вот тебе задания для закрепления полученных навыков. Выполняй их каждый день, и твои навыки будут расти с неимоверной скоростью. Они специально разработаны для выполнения их в Intellij IDEA.</p>
+<table class="table_task">
+<tr>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>1. Вывести числа в обратном порядке</b><br/><br/>
+                    Ввести с клавиатуры 10 чисел и заполнить ими список.<br/>Используя цикл <span class="taskcode">for</span> вывести их в обратном порядке.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>2. Переставить M первых строк в конец списка</b><br/><br/>
+                    Ввести с клавиатуры 2 числа <span class="green_text">N</span> и <span class="blue_text">M</span><br/>Ввести <span class="green_text">N</span> строк и заполнить ими список.<br/>Переставить <span class="blue_text">M</span> первых строк в конец списка. <br/>Вывести список на экран, каждое значение с новой строки.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>3. Максимальное и минимальное числа в массиве</b><br/><br/>
+                    Создать массив на 20 чисел. <br/>Заполнить его числами с клавиатуры. <br/>Найти максимальное и минимальное числа в массиве. <br/>Вывести на экран максимальное и минимальное числа через пробел.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>4. Вводить с клавиатуры строки, пока пользователь не введёт строку “end</b><br/><br/>
+                    Создать список строк. <br/>Ввести строки с клавиатуры и добавить их в список. <br/>Вводить с клавиатуры строки, пока пользователь не введёт строку “end”.  “end” не учитывать.<br/>Вывести строки на экран, каждую с новой строки.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>5. Бум</b><br/><br/>
+                    Написать программу, которая ведёт обратный отсчёт с 30 до 0, и в конце выводит на экран текст «Бум!». Программа должна уменьшать число 10 раз в секунду. Для того чтобы вставить в программу задержку, воспользуйся функцией: <br/>
+<span class="taskcode">Thread.sleep(100);</span> <span class="grey_text">//задержка на одну десятую секунды.<br/></span>
+<br/>
+<i><u>Пример:</u></i><span class="example-data"><br/>30<br/>29<br/>…<br/>1<br/>0<br/>Бум!</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>6. Семья</b><br/><br/>
+                    Создай класс <span class="taskcode">Human</span> с полями имя(<span class="taskcode">String</span>), пол(<span class="taskcode">boolean</span>), возраст(<span class="taskcode">int</span>), отец(<span class="taskcode">Human</span>), мать(<span class="taskcode">Human</span>). Создай объекты и заполни их так, чтобы получилось: Два дедушки, две бабушки, отец, мать, трое детей. Вывести объекты на экран. <br/>
+<br/>
+<b>Примечание:</b><br/>Если написать свой метод <span class="taskcode">String toString()</span> в классе <span class="taskcode">Human</span>, то именно он будет использоваться при выводе объекта на экран.<br/>
+<br/>
+<u><i>Пример вывода:</i></u><span class="example-data"><br/>Имя: Аня, пол: женский, возраст: 21, отец: Павел, мать: Катя<br/>Имя: Катя, пол: женский, возраст: 55 <br/>Имя: Игорь, пол: мужской, возраст: 2, отец: Михаил, мать: Аня</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>7. Переставь один модификатор static</b><br/><br/>
+                    Переставь один модификатор <span class="taskcode">static</span>, чтобы пример скомпилировался.
+                </td>
+</tr>
+</table>
+<p>- Те задания были для духов. Для дедушек я добавил бонусные задания повышенной сложности. Только для старослужащих.</p>
+<table class="table_task">
+<tr>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button>
+<b>1. Нужно исправить программу, чтобы компилировалась и работала. </b><br/><br/>
+<u>Задача:</u> Программа вводит с клавиатуры данные про котов и выводит их на экран. <br/>
+<br/>
+<span class="example-legacy">Пример:</span><br/><span class="example-data">Cat name is Barsik, age is 6, weight is 5, tail = 22<br/>Cat name is Murka, age is 8, weight is 7, tail = 20</span>
+</td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button>
+<b>2. Нужно заменить функциональность программы. </b><br/><br/>
+<u>Задача:</u> Программа вводит строки, пока пользователь не введёт пустую строку (нажав enter). Потом она конвертирует строки в верхний регистр (Мама превращается в МАМА) и выводит их на экран.<br/>
+<u>Новая задача:</u> Программа вводит строки, пока пользователь не введёт пустую строку (нажав enter). Потом программа строит новый список. Если в строке чётное число букв, строка удваивается, если нечётное – утраивается. Программа выводит содержимое нового списка на экран.<br/>
+<br/>
+<u><i>Пример ввода:</i></u><span class="example-data"><br/>Кот<br/>Коты<br/>Я<br/></span>
+<u><i>Пример вывода:</i></u><span class="example-data"><br/>Кот Кот Кот<br/>Коты Коты<br/>Я Я Я</span>
+</td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button>
+<b>3. Задача по алгоритмам. </b><br/><br/>
+<u>Задача:</u> Программа вводит с клавиатуры 20 чисел и выводит их в убывающем порядке.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

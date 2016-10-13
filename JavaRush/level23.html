@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-23.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 23
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>1. final и другие ключевые слова java</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/23/image-ru-23-07.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Билаабо!</p>
+<p>- Я расскажу тебе сегодня про несколько ключевых слов в Java. Но начну с самого интересного – ключевого слова <b>final</b>. Если перевести его с английского, то получится что-то вроде <b>финальный или окончательный</b>.</p>
+<p>Ключевое слово <b>final</b> можно добавлять при объявлении переменной, метода и класса.</p>
+<p class="amigo">- А зачем нужен этот final?</p>
+<p>- Все довольно просто. Если мы пометили переменную словом <b>final</b>, то она становится неизменной:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>final</b> int i = 5;<br/>
+    i++;</span> <span class="grey_text">//ошибка компиляции – нельзя менять значение переменной i</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ясно.</p>
+<p>- Если мы пометили метод словом <b>final</b>, то  этот метод запрещено переопределять в классах-наследниках:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>class</b> Cat<br/>
+{<br/>
+     <b>public final</b> String <u>getName</u>()<br/>
+    {<br/>
+         return "cat";<br/>
+     }<br/>
+}<br/><br/>
+<b>class</b> Tiger <b>extends</b> Cat<br/>
+{<br/>
+ <b>public</b> String <u>getName</u>() <span class="grey_text">//ошибка компиляции – нельзя переопределять метод getName()</span><br/>
+ {<br/>
+         return "tiger";<br/>
+     }<br/>
+}
+    </span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ясно. А зачем может понадобиться запрещать переопределение метода?</p>
+<p>- Например, программист написал в этом методе много важного кода и хочет, чтобы все наследники его класса гарантированно  имели заданное поведение.</p>
+<p>И наконец – третье.</p>
+<p>Если мы пометим словом final класс, то таким образом мы запретим наследоваться от него.</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>public final class</b> Cat<br/>
+{<br/>
+     <b>public</b> String getName()<br/>
+    {<br/>
+         return "cat";<br/>
+     }<br/>
+}<br/><br/>
+<b>class</b> Tiger <b>extends</b> Cat <span class="grey_text">//ошибка компиляции – нельзя наследоваться от класса Cat</span><br/>
+{<br/>
+ <b>public</b> String getName()   <br/>
+ {<br/>
+         return "tiger";<br/>
+     }<br/>
+}
+    </span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- А зачем запрещать наследование классов?</p>
+<p>- Ты должен понять, что запрет наследования идет не из вредности, а ради безопасности и целостности кода. Если наследование класса не запрещено, то подразумевается, что оно разрешено. И код проектировщика класса будет нормально работать и с объектами его класса и с объектами класса-наследника.</p>
+<p>А вот если разработчик видит, что даже при небольших изменениях в его классе, все перестанет работать, как задумано, тогда ему лучше запретить наследование.</p>
+<p>- Класс String, например,  объявлен как final, как и все примитивные типы: Integer, Boolean, Double, Character,…</p>
+<p class="amigo">- Ага, понимаю. Класс String сделан immutable и если бы вдруг появились изменяемые строки, то много чего перестало бы работать.</p>
+<p>- Ну, почти. Скажем так, все работало бы почти по-старому, но иногда возникали бы ошибки, которые было бы очень  сложно найти и понять. Поэтому, в некоторых случаях наследование классов или методов не грех и запретить – меньше потом ошибок вылавливать.</p>
+<p class="amigo">- А где еще можно писать final?</p>
+<p>- final можно писать перед переменными-аргументами функции и перед переменными в методе. Вот пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>public</b> void setName(<b>final</b> String name)<br/>
+{<br/>
+ <b>final</b> String displayName = "Mr."+name;<br/>
+   …<br/>
+    this.name = displayName;<br/>
+}
+    </span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- А какой в этом смысл?</p>
+<p>- Ну, смыслов – два. Во-первых, мы объявляем переменную <b>final</b> – если хотим сообщить другим разработчикам, что это значение – определенная константа, а не просто переменная.</p>
+<p>Например, мы хотим рассчитать НДС от цены:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>public</b> int getPriceNDS()<br/>
+{<br/>
+ <b>final</b> int NDS = 20;<br/>
+   return this.price * NDS / 200;<br/>
+}
+    </span>
+</td>
+</tr>
+</tbody></table>
+<p>И во-вторых,  если мы будем писать локальные или анонимные внутренние классы, то такие переменные нам понадобятся. Я расскажу о таких классах в ближайшее время. Но не сегодня.</p>
+<p class="amigo">- Ок, пока вроде ничего сложного.</p>
+<p>- Обрати внимание, что неизменяемой становится только переменная, а не объект, на который она ссылается. Объект можно менять еще как.</p>
+<p class="amigo">- Как раз хотел спросить этот момент. А нет способа сделать объект неизменным? </p>
+<p>- Нет, только если ты напишешь immutable класс.</p>
+<p>Обрати внимание на такой момент - т.к. значение переменной менять нельзя, то ей сразу нужно присвоить начальное значение:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Этот код скомпилируется</th><th width="50%">Этот код <span class="red_text">не</span> скомпилируется</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class Home</b><br/>
+{<br/>
+     <b>private final int width = 200;</b><br/>
+     <b>private final int height = 100;</b><br/><br/>
+
+     <b>public Home()</b><br/>
+    {<br/>
+    }<br/>
+} 
+    </td>
+<td class="monospace_text wide-text"><b>class</b> Home<br/>
+{<br/>
+     <span class="red_text"><b>private final</b> int width;<br/>
+     <b>private final</b> int height;</span><br/><br/>
+
+     <b>public</b> Home()<br/>
+    {<br/>
+    }<br/>
+} 
+    </td>
+</tr>
+</tbody></table>
+<p>Но, вместе с тем, Java разрешает перенести инициализацию <b>final</b>-переменных класса в конструктор.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Этот код скомпилируется</th><th width="50%">Этот код <span class="red_text">не</span> скомпилируется</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class Home</b><br/>
+{<br/>
+     <b>private final int width = 200;</b><br/>
+     <b>private final int height;</b><br/><br/>
+
+     <b>public Home()</b><br/>
+    {<br/>
+          <b>height = 100;</b><br/>
+    }<br/>
+} 
+    </td>
+<td class="monospace_text wide-text"><b>class</b> Home<br/>
+{<br/>
+     <span class="red_text"><b>private final</b> int width;</span><br/>
+ <b>private final</b> int height;<br/><br/>
+
+     <b>public</b> Home()<br/>
+    {<br/>
+          height = 100;<br/>
+    }<br/>
+} 
+    </td>
+</tr>
+</tbody></table>
+<p>Более того, в разных конструкторах final-переменные можно инициализировать разными значениями. Это очень удобно:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Этот код скомпилируется</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class Home<br/>
+{<br/>
+     private final int width;<br/>
+     private final int height;<br/><br/>
+
+     public Home()<br/>
+    {<br/>
+          <span class="green_text">height = 100;<br/>
+          width = 200;</span><br/>
+    }<br/><br/>
+
+     public Home(int width)<br/>
+    {<br/>
+  <span class="green_text">this.height = 300;<br/>
+  this.width = width;</span><br/>
+    }<br/><br/>
+
+     public Home(int width, int height)<br/>
+    {<br/>
+  <span class="green_text">this.height = height;<br/>
+  this.width = width;</span><br/>
+    }<br/>
+}</b>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Действительно интересная тема, и абсолютно все понятно, спасибо, Билаабо!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>2. Задачи на final,...</h2>
+</div>
+<p>- Билаабо принес Амиго задачи:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level23,lesson02,task01"></button><b>1. Запретите наследование</b><br/><br/>
+                Запретите наследование от класса <span class="taskcode">Listener</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level23,lesson02,task02"></button><b>2. Запретите переопределение</b><br/><br/>
+                Запретите переопределение метода <span class="taskcode">onMouseDown</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level23,lesson02,task03"></button><b>3. Запретите создание экземпляров класса</b><br/><br/>
+                Запретите создание экземпляров класса <span class="taskcode">Listener</span>.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Вложенные классы</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/23/image-ru-23-05.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Элли!</p>
+<p>- Сегодня будет очень интересная тема. Я сегодня расскажу о внутренних классах.</p>
+<p>Если один класс объявить внутри другого, то такой класс называется <b>внутренним</b>.</p>
+<p>Объекты внутренних классов при этом вложены в объекты внешних классов и могут обращаться к переменным внешних классов.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public class Car<br/>
+{<br/>
+ int <span class="red_text">height</span> = 160;<br/>
+ ArrayList&amp;ltDoor&amp;gt doors = new ArrayList&amp;ltDoor&amp;gt();<br/><br/>
+
+    public Car<br/>
+   {<br/>
+  doors.add(<span class="green_text">new Door</span>());<br/>
+  doors.add(<span class="green_text">new Door</span>());<br/>
+  doors.add(<span class="green_text">new Door</span>());<br/>
+  doors.add(<span class="green_text">new Door</span>());<br/>
+   } <br/><br/>
+
+class <span class="green_text">Door</span>()<br/>
+   {<br/>
+     public int getDoorHeight()<br/>
+     {<br/>
+        return (int)(<span class="red_text">height</span> * 0.80);<br/>
+     }<br/>
+   }<br/>
+}</b>
+</td>
+</tr>
+</tbody></table>
+<p>Обрати внимание, у класса Door(дверь) есть метод, который возвращает высоту двери – getDoorHeight, этот метод использует переменную height объекта Car.</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/23/image-ru-23-06.png"/>
+<p>Объект типа <b>Door</b> не может существовать отдельно от объекта типа Car – ведь он использует его переменные. Компилятор незаметно <b>добавляет в конструктор и в класс Door ссылку на объект внешнего класса Car</b>, чтобы методы внутреннего класса Door могли обращаться к переменным и вызвать методы внешнего класса Car.</p>
+<p class="amigo">- Вложенные объекты. Мне все понятно. Судя по картинке тут все элементарно.</p>
+<p>- Так и есть. Лишь пара нюансов.</p>
+<p>Во внутреннем классе Door имеется ссылка на объект класса Car, поэтому:</p>
+<p><b>1) Нельзя создать объект Door внутри статического метода в классе Car:</b> негде взять ссылку на объект типа Car, который неявно передается в конструктор типа Door.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Правильно</th><th width="50%"><span class="red_text">Неправильно</span></th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public class Car</b><br/>
+{<br/>
+    <b>public static Door createDoor()</b><br/>
+    {<br/>
+       <b><span class="green_text">Car car = new Car();</span></b><br/>
+       <b>return <span class="green_text">car.new Door();</span></b><br/>
+    }<br/><br/>
+
+     <b>public class Door</b><br/>
+     {<br/>
+  <b>int width, height;</b><br/>
+     }<br/>
+}
+    </td>
+<td class="monospace_text wide-text"><b>public class Car</b><br/>
+{<br/>
+    <b>public static</b> Door createDoor()<br/>
+    {<br/>
+       return <span class="red_text"><b>new Door</b>();</span><br/>
+    }<br/><br/>
+
+     <b>public class Door</b><br/>
+     {<br/>
+  int width, height;<br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p><b>2) Класс Door не может содержать статические переменные и методы.</b></p>
+<table class="table_example">
+<tbody><tr><th width="50%">Правильно</th><th width="50%"><span class="red_text">Неправильно</span></th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public class Car</b><br/>
+{<br/>
+    <b>public int <span class="green_text">count</span>;</b><br/>
+    <b>public int getCount()</b><br/>
+    {<br/>
+       <b>return <span class="green_text">count</span>;</b><br/>
+    }<br/><br/>
+
+     <b>public class Door</b><br/>
+     {<br/>
+  <b>int width, height;</b><br/>
+     }<br/>
+}
+    </td>
+<td class="monospace_text wide-text"><b>public class Car</b><br/>
+{<br/><br/>
+
+     <b>public class Door</b><br/>
+     {<br/>
+         <b>public <span class="red_text">static</span></b> int <span class="red_text">count</span>;<br/>
+  int width, height;<br/><br/>
+
+         <b>public <span class="red_text">static</span></b> int <b>getCount</b>()<br/>
+         {<br/>
+             return <span class="red_text">count</span>;<br/>
+         }<br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- А если мне нужна общая переменная для всех объектов Door?</p>
+<p>Ты всегда можешь объявить ее просто в классе Car – это и будет общая переменная для всех объектов Door, вложенных в объект Car.</p>
+<p><b>3)</b> Обрати внимание, что <b>если внутренний класс объявлен как public, то его объекты можно создавать вне внешнего класса, но объект внешнего класса при этом обязан присутствовать:</b></p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><b><span class="green_text">Car car = new Car();</span><br/>
+    Car.Door door = <span class="green_text">car</span>.new Door();</b>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>Car.Door door = <span class="green_text">new Car()</span>.newDoor();</b>
+</td>
+</tr>
+</tbody></table>
+<p><b>4)</b> И еще одно замечание – чуть не забыла.</p>
+<p>Т.к. у нас два вложенных объекта,  то в методах внутреннего объекта доступно две ссылки this:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public class <span class="green_text">Car</span><br/>
+{<br/>
+ int width, height;<br/><br/>
+
+     public class <span class="dblue_text">Door</span><br/>
+     {<br/>
+  int width, height;<br/><br/>
+
+          public void setHeight(int height)<br/>
+          {<br/>
+   <span class="dblue_text">this</span>.height = height;<br/>
+         }    <br/><br/>
+
+      public int getHeight()<br/>
+      {<br/>
+          if (height!=0)<br/>
+               return  <span class="dblue_text">this</span>.height;<br/>
+          else <br/>
+              return  (int)(<span class="green_text">Car.this.</span>height * 0.8);<br/>
+     }<br/>
+}</b>
+</td>
+</tr>
+</tbody></table>
+<p>Я специально объявила в классах одинаковые переменные.</p>
+<p>Чтобы обратиться к переменной внешнего класса, когда она скрыта, или к this внешнего класса, достаточно написать «<b>имя класса</b>» <b>точка this</b>:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Как получить доступ к this внешнего (или любого) класса </th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>Car.this</b>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>Car.Door.this</b>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>Car.Door.InnerClass2.InnerClass3.this</b>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Т.е. если мы внутри метода внутреннего класса пишем this, то этот this относится к внутреннему классу?</p>
+<p>- Да. Именно так.</p>
+<p>Как тебе внутренние классы, Амиго?</p>
+<p class="amigo">- Очень интересно. Я бы не сказал, что очень сложно.</p>
+<p class="amigo">Есть много ограничений, но они вполне логичны, когда ты мне объяснила, откуда и зачем они берутся.</p>
+<p class="amigo">А я уже два месяца в практических заданиях постоянно пишу вложенные классы и только сейчас понял, что же я писал на самом деле.</p>
+<p class="amigo">Спасибо за отличный урок, Элли.</p>
+<p>- Рада, что тебе понравилось, Амиго.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи по внутренним классам</h2>
+</div>
+<p>- Привет, Амиго! Готов заниматься?</p>
+<p class="amigo">- Да, давай уже сюда свои задачи по внутренним классам, Диего:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level23,lesson04,task01"></button><b>1. Inner</b><br/><br/>
+                Реализовать метод <span class="taskcode">getTwoSolutions</span>, который должен возвращать массив из 2-х экземпляров класса <span class="taskcode">Solution</span>.<br/>
+		Для каждого экземпляра класса <span class="taskcode">Solution</span> инициализировать поле <span class="taskcode">innerClasses</span> двумя значениями.<br/>
+		Инициализация всех данных должна происходить только в методе <span class="taskcode">getTwoSolutions</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level23,lesson04,task02"></button><b>2. Inner 2</b><br/><br/>
+                В классе <span class="taskcode">SuperUser</span> метод <span class="taskcode">getDescription</span> должен учитывать страну и город, т.е. возвращать результат аналогичный следующему:<br/>
+		My name is George. I'm from the USA, Seattle.<br/>
+		Используйте возможности иннер класса.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Inner 3</b><br/><br/>
+                Внутри класса <span class="taskcode">Solution</span>:<br/>
+		1) реализуйте <span class="taskcode">private class TaskDataProvider</span> используя <span class="taskcode">Task</span> и <span class="taskcode">DbMock</span>, цель которого - обновить поле <span class="taskcode">tasks</span>.<br/>
+		2) реализуйте <span class="taskcode">private class NameDataProvider</span> используя <span class="taskcode">String</span> и <span class="taskcode">DbMock</span>, цель которого - обновить поле <span class="taskcode">names</span>.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>5. Внутренние статические классы</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/23/image-ru-23-04.png"/>
+<p>- Итак, тема номер два – <b>вложенные классы</b>. </p>
+<p>Перед объявлением внутреннего класса мы можем поставить ключевое слово – <b>static</b> и тогда внутренний класс станет вложенным. </p>
+<p>Давай разберемся, что же значит слово static рядом с объявлением вложенного класса.  Как ты думаешь?</p>
+<p class="amigo">- Если переменная объявлена статической, то она существует в единственном экземпляре, а если вложенный класс – статический, то можно создать всего один объект такого класса?</p>
+<p>- Пусть слово <b>static</b> тут не вводит тебя в заблуждение. Если переменная объявлена статической – то она существуют в единственно экземпляре – это верно. Но статический вложенный класс больше похож на статический метод в этом плане. Слово <b>static</b> перед объявлением класса указывает, что этот класс не хранит в себе ссылок на объекты внешнего класса, внутри которого объявлен.</p>
+<p class="amigo">- Ага. Обычные методы втихаря хранят ссылку на объект, а статические – нет. То же и со статическими классами, я прав, Элли?</p>
+<p>- Абсолютно. Твоя догадливость очень похвальна. Вложенные статические классы не имеют скрытых ссылок на объекты внешнего класса, в котором они объявлены.</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class Zoo</b><br/>
+{<br/>
+ <b>private static int count = 7;</b><br/>
+ <b>private int mouseCount = 1;</b><br/><br/>
+
+  <b>public static int getAnimalCount()</b><br/>
+ {<br/>
+    <b>return count;</b><br/>
+ }<br/><br/>
+
+ <b>public int getMouseCount()</b><br/>
+ {<br/>
+    <b>return mouseCount;</b><br/>
+ }<br/><br/>
+
+ <span class="green_text"><b>public static class Mouse</b><br/>
+ {<br/>
+       <b>public Mouse()</b><br/>
+       {<br/>
+       }<br/>
+        <b>public int getTotalCount()</b><br/>
+      {<br/>
+   <b>return count + mouseCount;</b> <span class="grey_text">//ошибка компиляции.</span><br/>
+      }<br/>
+ }</span><br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Давай посмотрим внимательно на этот пример.</p>
+<p><b>К каким переменным может обращаться статический метод getAnimalCount?</b></p>
+<p class="amigo">- Только к статическим. Это же статический метод.</p>
+<p><b>К каким переменным может обращаться метод getMouseCount?</b></p>
+<p class="amigo">- И к статическим, и к нестатическим. Он скрытно хранит ссылку(this) на объект типа Zoo.</p>
+<p>- Верно. Так вот, статический вложенный класс Mouse, как и статический метод, может обращаться к статическим переменным класса Zoo, но не может обращаться к нестатическим.</p>
+<p>Мы можем спокойно создавать объекты класса Mouse, даже когда нет ни одного созданного объекта класса Zoo. Вот как можно это сделать:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Home<br/>
+{<br/>
+     <b>public static</b> void main(String[] args)<br/>
+    {<br/>
+  <b>Zoo.Mouse</b> mouse = new <b>Zoo.Mouse</b>();<br/>
+    }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Фактически класс Mouse – это самый обычный класс. Из-за того, что он объявлен внутри класса Zoo, у него есть две особенности.</p>
+<p><b>1) При создании объектов вложенного класса (как класс Mouse) вне внешнего класса-родителя, надо еще указывать через точку и имя внешнего класса.</b></p>
+<p>Например так: <b>Zoo.Mouse</b>.</p>
+<p><b>2) Класс Zoo.Mouse и его объекты имеют доступ к private static переменным и методам класса Zoo</b> ( класс Mouse ведь тоже объявлен внутри класса Zoo).</p>
+<p>На этом на сегодня все.</p>
+<p class="amigo">- Т.е. просто дополнительное имя и все?</p>
+<p>Да.</p>
+<p class="amigo">- Это еще проще, чем казалось на первый взгляд.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задачи по внутренним статическим классам</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Да, задачи, знаю, знаю. Кстати, Диего, у тебя получились отличные задачи.</p>
+<p>- Спасибо, что наконец-то заметил. Держи еще:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level23,lesson06,task01"></button><b>1. Как выбрать нужное?</b><br/><br/>
+                В методе <span class="taskcode">main</span> присвойте объекту <span class="taskcode">Object obj</span> экземпляр класса <span class="taskcode">TEST</span><br/>
+		Константу <span class="taskcode">TEST</span> и класс <span class="taskcode">TEST</span> менять нельзя.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level23,lesson06,task02"></button><b>2. Рефакторинг</b><br/><br/>
+                Отрефакторите класс <span class="taskcode">Solution</span>: вынесите все константы в <span class="taskcode">public</span> вложенный(nested) класс <span class="taskcode">Constants</span>.<br/>
+		Запретите наследоваться от <span class="taskcode">Constants</span>.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>7. Внутренние анонимные классы, примеры</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/23/image-ru-23-03.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Так здоровались уже, Элли!</p>
+<p>- Так, не спорь с тетей. В 31 веке принято здороваться опять, если не видел человека более получаса. Так что не возникай!</p>
+<p>Так вот, новая интересная тема – размножение роботов!</p>
+<p class="amigo">- О_О.</p>
+<p>- Шучу, новая тема – <b>анонимные вложенные классы</b>.</p>
+<p>Иногда в Java встречается ситуация, когда нужно унаследовать класс от нескольких классов. Т.к. множественное наследование классов в Java запрещено, эту проблему решают с помощью внутренних классов: в нужном нам классе мы объявляем внутренний класс и наследуем его от требуемого класса. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример внутреннего класса, унаследованного от Thread</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class <span class="green_text">Tiger</span> extends Cat</b><br/>
+{<br/><br/>
+
+   <b>public void <span class="green_text">tigerRun</span>()</b><br/>
+  {<br/>
+       .....<br/>
+   }<br/><br/>
+<b>public void <span class="green_text">startTiger</span>()</b><br/>
+   {<br/>
+  <b><span class="dblue_text">TigerThread</span> <span class="blue_text">thread</span> = new <span class="dblue_text">TigerThread</span>();</b><br/>
+  <b><span class="blue_text">thread</span>.start();</b><br/>
+   }<br/><br/>
+
+   <b>class <span class="dblue_text">TigerThread</span> extends Thread</b><br/>
+  {<br/>
+      <b>public void run()</b><br/>
+      {<br/>
+   <b><span class="green_text">tigerRun</span>();</b><br/>
+      } <br/>
+  }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Давай разберем этот пример:</p>
+<p>Нам нужен класс, унаследованный от Thread, чтобы переопределить у него метод run.</p>
+<p>Для этого внутри класса Tiger мы объявили внутренней класс <b>TigerThread</b>, который унаследовали от Thread и у которого переопределили метод run.</p>
+<p>Для нашего удобства в классе Tiger мы объявили два метода (аналоги методов runи startкласса Thread) –методы <b>tigerRun&amp;startTiger</b>.</p>
+<p>В методе <b>startTiger</b> мы создаем объект типа <b>TigerThread</b> и вызываем у него метод start().</p>
+<p>При этом Java-машина создаст новую нить, и эта нить начнет работу с вызова метода run, класса <b>TigerThread</b>.</p>
+<p>А этот метод в свою очередь вызовет наш метод <b>run</b> – метод <b>tigerRun</b>.</p>
+<p class="amigo">- С нитями я уже дело имел, так что вроде не очень сложно.</p>
+<p class="amigo">А обязательно называть методы <b>tigerRun</b> и <b>startTiger</b>?</p>
+<p>- Нет, можно было назвать <b>run</b> и <b>start</b>, но я хотела дополнительно показать, что мы не наследуемся от Thread, к тому же ты мог сильнее запутаться в моем пояснении.</p>
+<p class="amigo">- Ок. Тогда все вроде понятно. Только при вызове метода <b>startTiger</b> второй раз мы создадим еще один класс Thread и запустим его. Не получиться ли что у нас «один тигр будет бегать в двух различных нитях»?</p>
+<p>- Ну ты и глазастый. Согласна, это не хорошо. Тогда давай перепишем код так:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class <span class="green_text">Tiger</span> extends Cat</b><br/>
+{<br/><br/>
+
+   <b>public void <span class="green_text">tigerRun</span>()</b><br/>
+  {<br/>
+       .....<br/>
+   }<br/><br/>
+<b>public void <span class="green_text">startTiger</span>()</b><br/>
+   {<br/>
+    <b><span class="blue_text">thread</span>.start();</b><br/>
+   }<br/><br/>
+<b>private <span class="dblue_text">TigerThread</span> <span class="blue_text">thread</span> = new <span class="dblue_text">TigerThread</span>();</b><br/><br/>
+
+     <b>private class <span class="dblue_text">TigerThread</span> extends Thread</b><br/>
+     {<br/>
+      <b>public void run()</b><br/>
+      {<br/>
+       <b><span class="green_text">tigerRun</span>();</b><br/>
+      } <br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Не то, чтобы отлично. Два раза все равно вызывать такой метод нельзя. Но в этот раз мы хотя бы не будем создавать вторую нить и делать вид, что все хорошо.</p>
+<p>- Правильно, запустил второй раз, тигра – получи  Exception.</p>
+<p class="amigo">- Я уже лучше тебя вижу все ошибки, Элли!</p>
+<p>Да, ты молодец. Тогда перейдём к <b>анонимным внутренним классам</b>.</p>
+<p>Обрати внимание на несколько аспектов вышеописанного кода:</p>
+<p><b>1)</b> Мы унаследовались от класса Thread, но фактически не дописали туда никакого кода. Нам скорее пришлось унаследоваться, а не «мы унаследовались с целью расширить класс Thread»</p>
+<p><b>2)</b>  Будет создан всего один объект класса TigerThread.</p>
+<p>Т.е. с целью переопределить один метод и создать один объект, мы написали целую кучу кода.</p>
+<p>Помнишь, как я рассказывала про появление конструкторов?</p>
+<table class="table_example">
+<tbody><tr><th width="50%">До изобретения</th><th width="50%">После изобретения</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b><span class="dblue_text">TigerThread</span> <span class="blue_text">thread</span> = new <span class="dblue_text">TigerThread</span>();</b><br/><br/>
+<b>private class <span class="dblue_text">TigerThread</span> extends Thread</b><br/>
+ {<br/>
+     <b>public void run()</b><br/>
+     {<br/>
+      <b><span class="green_text">tigerRun</span>();</b><br/>
+     } <br/>
+ }
+    
+    </td>
+<td class="monospace_text"><b>Thread <span class="blue_text">thread</span> = new Thread()</b><br/>
+{<br/>
+     <b>public</b> void run()<br/>
+     {<br/>
+      <b><span class="green_text">tigerRun</span></b>();<br/>
+     } <br/>
+ };
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Вижу, что код стал компактнее, но не совсем понимаю, что произошло.</p>
+<p>- Мы можем объединить в одном месте три вещи:</p>
+<p>А) объявление класса-наследника</p>
+<p>Б) переопределение метода</p>
+<p>В) объявление переменной</p>
+<p>Г) создание объекта класса-наследника.</p>
+<p>Фактически мы объединяем вместе две операции – объявление класса-наследника и создание его объекта:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Без анонимного класса</th><th width="50%">С использованием анонимного класса</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>Cat tiger = new <s>Tiger()</s>;</b><br/><br/>
+<b><s>class Tiger extends</s> Cat</b><br/>
+{<br/>
+}
+    </td>
+<td class="monospace_text">Cat tiger = new Сat()<br/>
+{<br/>
+};
+    </td>
+</tr>
+</tbody></table>
+<p>Еще раз разбираем синтаксис:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Объявление переменной типа Thread</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>Thread thread = new Thread();</b>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Объявление переменной типа «анонимный класс-наследник Thread»</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>Thread thread = new Thread()</b><br/>
+{<br/><br/>
+
+};
+    </td>
+</tr>
+</tbody></table>
+<p>Обрати внимание – мы не просто объявляем новый класс – мы создаем переменную – в конце ставится точка с запятой!</p>
+<p class="amigo">- А если  мы хотим переопределить метод run, то нужно писать так:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Объявление переменной типа Thread</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>Thread</b> thread = new <b>Thread</b>()<br/>
+{<br/>
+&amp;nbsp<b>public</b> void run()<br/>
+       {<br/>
+   System.out.println("new run-method");<br/>
+       }<br/>
+};
+    </td>
+</tr></tbody></table>
+<p>- Быстро схватываешь – молодец!</p>
+<p class="amigo">- Спасибо. А если мне нужны еще методы, которых нет у класса Thread?</p>
+<p>- Ты можешь их дописать.</p>
+<p>Это же полноценный внутренний класс, хоть и анонимный:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b><span class="red_text">Thread thread</span> <span class="green_text">= new Thread()</span></b><br/>
+<span class="dblue_text">{<br/>
+       <b>public void run()</b><br/>
+       {<br/>
+   <b>printHi();</b><br/>
+       }<br/><br/>
+
+       <b>public void printHi()</b><br/>
+      {<br/>
+   <b>System.out.println("Hi!");</b><br/>
+      }<br/>
+}</span>;
+    </td>
+<td class="wide-text"><span class="red_text">Красным цветом отмечен код создания переменной.</span><br/><br/>
+<span class="green_text">Зеленым – создания объекта.</span><br/><br/>
+<span class="dblue_text">Синим – код анонимного класса-наследника.</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Полноценный внутренний класс?</p>
+<p class="amigo">Т.е. я могу и переменные внешнего класса использовать?</p>
+<p>- Да, конечно можешь.</p>
+<p class="amigo">- А в конструктор я могу что-то передавать?</p>
+<p>- Да, но только параметры конструктора базового класса:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Класс</th><th width="50%">Объект анонимного внутреннего класса</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class Cat</b><br/>
+{<br/>
+&amp;nbsp<b>int x, y;</b><br/>
+    <b>Cat(int x, int y)</b><br/>
+    {<br/>
+  <b>this.x = x;</b><br/>
+  <b>thix.y = y;</b><br/>
+    }<br/>
+}
+    </td>
+<td class="monospace_text">Cat cat = new Cat(3,4)<br/>
+{<br/>
+      <b>public</b> void print()<br/>
+      {<br/>
+  &amp;nbspSystem.out.println(x+" "+y);<br/>
+      }<br/>
+};
+    </td>
+</tr>
+</tbody></table>
+<p>Мы не можем добавить свои параметры в чужой конструктор. Зато можем использовать переменные внешнего класса – это достаточно сильно компенсирует этот недостаток.</p>
+<p class="amigo">- А если мне все-таки очень нужно добавить в конструктор еще параметры?</p>
+<p>- Тогда объяви обычный не анонимный внутренний класс и используй его.</p>
+<p class="amigo">- Действительно, я чуть не забыл об этом.</p>
+<p class="amigo">А если я объявлю статическую переменную, тогда анонимный класс будет вложенным, а не внутренним  - т.е. без ссылки на внешний класс?</p>
+<p>- Нет. Будет именно анонимный внутренний класс. Смотри примеры:</p>
+<table class="table_example">
+<tbody><tr><th width="42%">С анонимным классом</th><th width="58%">Без анонимного класса</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>Thread <span class="blue_text">thread</span> = new Thread()</b><br/>
+{<br/>
+      <b>public void run()</b><br/>
+      {<br/>
+   <b><span class="green_text">tigerRun</span>();</b><br/>
+      } <br/>
+ };
+    </td>
+<td class="monospace_text"><b><span class="dblue_text">TigerThread</span> <span class="blue_text">thread</span> = new <span class="dblue_text">TigerThread</span>();</b><br/><br/>
+<b>private class <span class="dblue_text">TigerThread</span> extends Thread</b><br/>
+ {<br/>
+     <b>public</b> void run()<br/>
+     {<br/>
+  <span class="green_text"><b>tigerRun</b></span>();<br/>
+     } <br/>
+ }
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b><span class="red_text">static</span> Thread <span class="blue_text">thread</span> = new Thread()</b><br/>
+{<br/>
+      <b>public void run()</b><br/>
+      {<br/>
+   <b><span class="green_text">tigerRun</span>();</b><br/>
+      } <br/>
+ };
+    </td>
+<td class="monospace_text"><b><span class="red_text">static</span> <span class="dblue_text">TigerThread</span> <span class="blue_text">thread</span> = new <span class="dblue_text">TigerThread</span>();</b><br/><br/>
+<b>private class <span class="dblue_text">TigerThread</span> extends Thread</b><br/>
+ {<br/>
+     <b>public</b> void run()<br/>
+     {<br/>
+  <span class="green_text"><b>tigerRun</b></span>();<br/>
+     } <br/>
+ }
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ясно. Статической становится только переменная, но не класс.</p>
+<p>- Ага.</p>
+<p>На самом деле, в процессе компиляции Компилятор создает внутренние классы для всех анонимных внутренних классов. Такие классы обычно получают имена «1», «2», «3», и т.д.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Задачи по анонимным классам</h2>
+</div>
+<p>- Кто хочет задачи по анонимным внутренним классам?</p>
+<p class="amigo">- Кто же еще, конечно я. Давай их уже. Хочу немного попрограммировать:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level23,lesson08,task01"></button><b>1. Напряги извилины!</b><br/><br/>
+                Метод <span class="taskcode">printName</span> должен выводить свое собственное имя, т.е. "sout"<br/>
+		Сделайте минимум изменений.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level23,lesson08,task02"></button><b>2. Повторяем threads</b><br/><br/>
+                Сделать так, чтобы в методе <span class="taskcode">someActions</span> вызывались только методы класса <span class="taskcode">Solution</span>.<br/>
+		Ожидаемый вывод в методе <span class="taskcode">main</span>:<br/>
+		Amigo: Mmmmm, beef<br/>
+		Amigo: knock knock<br/>
+		Amigo: Zzzzzzz...1 sec
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Анонимность иногда так приятна!</b><br/><br/>
+                1. В пакете <span class="taskcode">vo</span> создайте <span class="taskcode">public</span> классы <span class="taskcode">User</span>, <span class="taskcode">Location</span>, <span class="taskcode">Server</span>, <span class="taskcode">Subject</span>, <span class="taskcode">Subscription</span>, которые наследуются от <span class="taskcode">NamedItem</span><br/>
+		2. В классе <span class="taskcode">Solution</span> для каждого класса создайте свой метод, который возвращает список экземпляров класса.<br/>
+		Например, для класса <span class="taskcode">User</span> это будет - <span class="taskcode">public List<user>getUsers()</user></span><br/>
+		Для класса <span class="taskcode">Location</span> это будет - <span class="taskcode">public List<location>getLocations()</location></span><br/>
+		3. Внутри каждого такого метода создайте анонимный класс от <span class="taskcode">AbstractDbSelectExecutor</span> и вызовите его нужный метод.<br/><br/>
+		
+                Подсказка: тело метода должно начинаться так: <span class="taskcode">returnnewAbstractDbSelectExecutor</span><br/><br/>
+
+		4. Пример вывода для <span class="taskcode">User</span> и <span class="taskcode">Location</span>:<br/>
+		Id=5, name='User-5', description=Got by executing 'select * from USER'<br/>
+		Id=1, name='Location-1', description=Got by executing 'select * from LOCATION'<br/><br/>
+
+		5. Проанализируйте пример вывода и сформируйте правильный <span class="taskcode">query</span> для всех классов.<br/>
+		6. Классы не должны содержать закоментированного кода.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2><center>9. Учимся гуглить. Как узнать, есть ли у объекта определенный метод? getName, getDisplayName, getPublicName</center></h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/23/image-ru-23-02.png"/>
+<p>- Привет, Амиго!</p>
+<p>Продолжаем наши уроки – учимся гуглить.</p>
+<p>Вот тебе несколько заданий:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопрос</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Как отсортировать массив чисел?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Как отсортировать список строк в обратном алфавитном порядке?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Как отправить email из программы Java?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Как определить, содержит ли переданный объект определенный метод?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">В чем отличие TreeMap и HashMap?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Зачем нужно писать в таком коде ArrayList&amp;lt?&amp;gt
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Как узнать максимальное значение int?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Как узнать минимальное значение byte?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Как преобразовать число в 16-тиричную строку (123-&gt;"7B")?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Как преобразовать число в двоичную строку (123-&gt;"1111011")?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>10. Профессор дает доп. материал</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Вот тебе дополнительный материал по теме.</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-23.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Хулио</h2>
+</div>
+<p>- Привет, дружище!</p>
+<p>Элли сегодня подходит и спрашивает: - Дорогой, как я тебе?</p>
+<p>А, я что-то на своей волне был, вот и отвечаю:</p>
+<p>Немножко надоела... А так - ничего!</p>
+<p class="amigo">- Ну ты даешь!</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-23.gif" preload="none" tabindex="0" taskkey="level23,lesson11,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-23.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=P7mQs9XScYw" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>12. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Какие бывают внутренние классы?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Во что компилируется анонимный внутренний класс?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Зачем использовать ключевое слово final при создании анонимных классов?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Как правильно создать объект внутреннего класса?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Как правильно создать объект вложенного класса?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Можно ли создавать статические методы/переменные во внутреннем классе?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Назовите три любых внутренних класса?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Как внутренние классы решают проблему множественного наследования в Java?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Чем отличаются анонимные классы, созданные на основе интерфейса и на основе класса?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Можно ли создать анонимный статический вложенный класс?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>13. Большая задача</h2>
+</div>
+<p>- Здорово, Амиго!</p>
+<p class="amigo">- Здравия желаю, Капитан Бобров!</p>
+<p>- Готов к новой полностью секретной миссии?</p>
+<p class="amigo">- Готов, сэр!</p>
+<p>- Тогда вот тебе инструкции к первому секретному заданию:</p>
+<p><b>«А теперь напишем игру "змейка"».</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/23/image-ru-23-01.gif"/>
+<p class="amigo">- Есть, написать игру «змейка»!</p>
+<p>- Да не кричи ты. Говорят же тебе – полностью секретное задание.</p>
+<p>Для его выполнения будешь работать с агентом IntellijIDEA. Он введет тебя в курс дела.</p>
+<p>Все дальнейшие инструкции также через него.</p>
+<p class="amigo">- Разрешите приступить, сэр?</p>
+<p>- Приступайте.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+
