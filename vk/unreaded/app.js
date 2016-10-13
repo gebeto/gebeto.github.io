@@ -1,7 +1,7 @@
-var response = document.getElementById("response");
+var response = document.getElementById("messages");
 
 function req(){
-	var responseField = $("#response");
+	var responseField = $("#messages");
 
 	var req="https://api.vk.com/method/messages.getDialogs?";
 	$.ajax({
@@ -9,7 +9,7 @@ function req(){
 	    type : "GET",
 	    data: {
 	    	unread: "1",
-	    	access_token: $("#enterid").val(),
+	    	access_token: $("#enter-token").val(),
 	    	v: "5.52"
 	    },
 	    dataType : "jsonp",
@@ -25,11 +25,9 @@ function req(){
 
 function createMessage(item){
 	var html = "";
-	html += '<div class="demo-card-square mdl-card mdl-shadow--2dp"><div class="mdl-card__title mdl-card--expand"><h2 class="mdl-card__title-text">';
-	html += item.id;
-	html += '</h2></div><div class="mdl-card__supporting-text">'
+	html += '<article class="item"><a><header><h3>';
 	html += item.body;
-	html += '</div></div>';
+	html += '</h3></header></a></article>';
 	response.innerHTML += (html);
 }
 
