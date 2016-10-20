@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>React</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="react/react.js"></script>
+	<script type="text/javascript" src="react/react-dom.js"></script>
+	<script type="text/javascript" src="react/browser.min.js"></script>
+</head>
+<body>
+
+<div class="header" id="header">
+	<img src="asphalte_logo.png" class="icon">
+</div>
+
+<div class="main-wrapper">
+	<div class="posts" id="posts">
+		
+		<div class="post">
+			<h2 class="post-title">4  seazon</h2>
+			<div class="post-info">
+				<span class="post-date">Sep 22</span>
+				 by 
+				<span class="post-author">#shalna</span>
+			</div>
+			<p class="post-content">
+				Києве, ти цього року спатимеш довше.
+			</p>
+		</div>
+
+	</div>
+</div>
+
+<script type="text/babel">
+	
+	var Hello = React.createClass({
+		render: function() {
+			return (<div ref="body" className="post">
+						<h2 className="post-title">{this.props.title}</h2>
+						<div className="post-info">
+							<span className="post-date">{this.props.date}</span> by
+							<span className="post-author"> #{this.props.author}</span>
+						</div>
+						<p className="post-content">{this.props.content}</p>
+					</div>);
+		}
+	});
+
+	ReactDOM.render(<div class="posts" id="posts">
+		<Hello title="Slavik world" date="Sep 12" author="slavik" content="Some text and something with that" />
+		<Hello title="Some niga" date="Sep 12" author="slavik" content="Some text and something with that" />
+		<Hello title="Hello world" date="Sep 12" author="slavik" content="Some text and something with that" />
+		<Hello title="Hello world" date="Sep 12" author="slavik" content="Some text and something with that" />
+	</div>, document.querySelector('.main-wrapper'));
+
+</script>
+</body>
+</html>
