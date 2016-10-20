@@ -7,6 +7,8 @@ var winHeight = window.innerHeight,
 ctx.canvas.width = winWidth;
 ctx.canvas.height = winHeight;
 
+var bgChange = false;
+
 function randomColor() {
     var color = '#';
     for (var i = 0; i < 3; i++) {
@@ -16,24 +18,32 @@ function randomColor() {
     return color;
 }
 
+function randomInt(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
 function mainLoop() {
     ctx.fillStyle = randomColor();
     fillWindow(
-        Math.round(Math.random() * winWidth-100),
+        Math.round(Math.random() * randomInt(-100, winWidth+500)),
         Math.round(Math.random() * winHeight)
     );
-//    document.body.style.backgroundColor = randomColor();
+    if (bgChange) document.body.style.backgroundColor = randomColor();
     window.requestAnimationFrame(mainLoop);
 }
 
 function fillWindow(x, y) {
-    var ind = Math.round(Math.random() * 2);
+    var ind = Math.round(Math.random() * 6);
     console.log(ind);
-    var phrase = ['ГІМНОКОДЕР', 'ЧМО', 'ЛОХ'][ind]
+    var phrase = ['ГІМНОКОДЕР', 'ЧМО', 'ЛОХ', 'ПОВТОРКА', 'ХУЙ', 'НЕМА РОБОТИ', 'БОМЖ'][ind]
     var fnt = Math.round(Math.random() * 50);
     ctx.font = fnt + 'px Arial';
-//    ctx.fillText('Єбать ти ЛОХ', x, y);
     ctx.fillText(phrase, x, y);
  }
 
 mainLoop();
+
+document.addEventListener('keypress', function(event) {
+	bgChange = !bgChange;
+});
+
