@@ -47,3 +47,6 @@ document.addEventListener('keypress', function(event) {
 	bgChange = !bgChange;
 });
 
+document.addEventListener('click', function() {
+	bgChange = !bgChange;
+});
