@@ -33,10 +33,10 @@ function mainLoop() {
 }
 
 function fillWindow(x, y) {
-    var ind = Math.round(Math.random() * 5);
+    var ind = Math.round(Math.random() * 6);
     console.log(ind);
-    var phrase = ['СПІДНИЦЯ', 'ПРОЇБАЛА', 'ВСІ', 'РЖАЛИ', 'НІХТО', 'НЕ СКАЗАЛИ'][ind]
-    // var phrase = ['ГІМНОКОДЕР', 'ЧМО', 'ЛОХ', 'ПОВТОРКА', 'ХУЙ', 'НЕМА РОБОТИ', 'БОМЖ'][ind]
+    // var phrase = ['СПІДНИЦЯ', 'ПРОЇБАЛА', 'ВСІ', 'РЖАЛИ', 'НІХТО', 'НЕ СКАЗАЛИ'][ind]
+    var phrase = ['ГІМНОКОДЕР', 'ЧМО', 'ЛОХ', 'ПОВТОРКА', 'ХУЙ', 'НЕМА РОБОТИ', 'БОМЖ'][ind]
     var fnt = Math.round(Math.random() * 50);
     ctx.font = fnt + 'px Arial';
     ctx.fillText(phrase, x, y);
