@@ -7,7 +7,7 @@ var h = window.innerHeight;
 canvas.height = h;
 canvas.width = w;
 
-var stroke = 'Hello world!';
+var stroke = prompt('Enter phrase for pattern');
 var cnt = 0;
 
 	ctx.translate(w/2, h/2)
