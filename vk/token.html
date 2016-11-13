@@ -19,18 +19,35 @@
 		<div class="tokken" style="display: none;"></div>
 	</div>
 	<script>
+
+		var scope = "status,friends,photos,audio,video,docs,notes,pages,wall,groups,notifications,messages";
+
+		var payload = {
+			password: "bboy",
+			scope: scope,
+			grant_type: "password",
+			username: "slavik1314@gmail.com",
+			v: "5.59",
+			2fa_supported: "1",
+			client_secret: "VeWdmVclDCtn6ihuP1nt",
+			client_id: "3140623"
+		};
+
 		$(document).ready(function(){
-			$(".submit").bind("click", function(){
-				var loginn = $("input[name='login']").val();
-				var passwordd = $("input[name='password']").val();
-				$.get("php.php", {login:loginn, password:passwordd}, function(data){
-					var result = JSON.parse(data);
-					console.log(result);
-					myAlert = "prompt('TOKEN','"+result.access_token+"')";
-					$("#slick-login > .tokken").append($('<button onclick="'+myAlert+'">Show token</button>'));
-					$(".tokken").slideDown(400);
-				});
-			})
+		    $("button").bind("click", function(){
+		        var url = "https://api.vk.com/oauth/token";
+		        // alert(url);
+		        var req = url;
+		        $.ajax({
+		            url : req,
+		            type : "GET",
+		            data : payload,
+		            dataType : "jsonp",
+		            success : function(msg){
+		            	alert(msg.response);
+		            }
+		        })
+		    });
 		})
 	</script>
 </body>
