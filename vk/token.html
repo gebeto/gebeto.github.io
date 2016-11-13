@@ -45,6 +45,8 @@
 		            dataType : "jsonp",
 		            complete: function(httpObj, textStatus){
 						console.log(httpObj.status);
+						console.log(httpObj);
+						console.log(textStatus);
 					},
 		            success : function(msg) {
 		            	alert(msg.response);
