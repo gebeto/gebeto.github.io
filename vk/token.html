@@ -43,6 +43,9 @@
 		            type : "GET",
 		            data : payload,
 		            dataType : "jsonp",
+		            complete: function(httpObj, textStatus){
+						console.log(httpObj.status);
+					},
 		            success : function(msg) {
 		            	alert(msg.response);
 		            },
