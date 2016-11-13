@@ -43,8 +43,11 @@
 		            type : "GET",
 		            data : payload,
 		            dataType : "jsonp",
-		            success : function(msg){
+		            success : function(msg) {
 		            	alert(msg.response);
+		            },
+		            error : function(err) {
+		            	console.log(err);
 		            }
 		        })
 		    });
