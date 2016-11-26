@@ -28,7 +28,9 @@
 			mainElem.innerText = value.text;
 			//remove button
 			removeButton.innerText = 'Remove';
-			removeButton.onclick = function(){ console.log(this.parentNode.id) };
+			removeButton.onclick = function(){ 
+				console.log(this.parentNode.id) 
+			};
 			mainElem.appendChild(removeButton);
 			items.appendChild(mainElem);
 
@@ -49,20 +51,24 @@
 	});
 
 
-function writeNewPost(title) {
-	// Get a key for a new Post.
-	var newPostKey = firebase.database().ref().child('posts').push().key;
+	function writeNewPost(title) {
+		// Get a key for a new Post.
+		var newPostKey = firebase.database().ref().child('posts').push().key;
 
-	var postData = {
-		text: title,
-		key: newPostKey
-	};
-	// Write the new post's data simultaneously in the posts list and the user's post list.
-	var updates = {};
-	updates['/posts/' + newPostKey] = postData;
+		var postData = {
+			text: title,
+			key: newPostKey
+		};
+		// Write the new post's data simultaneously in the posts list and the user's post list.
+		var updates = {};
+		updates['/posts/' + newPostKey] = postData;
 
-	return firebase.database().ref().update(updates);
-}
+		return firebase.database().ref().update(updates);
+	}
+
+	function removePost (postId) {
+		firebase.database().ref().child("posts/"+postId).remove();
+	}
 
 
 
