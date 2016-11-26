@@ -15,7 +15,7 @@
 	db.on('value', function(posts) {
 		var response = posts.val();
 		items.innerHTML = '';
-		Object.keys(response).map(function(objectKey, index) {
+		Object.keys(response).reverse().map(function(objectKey, index) {
 	    	var value = response[objectKey];
 
 			var mainElem = document.createElement('div');
