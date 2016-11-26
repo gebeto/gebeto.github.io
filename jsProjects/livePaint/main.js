@@ -1,5 +1,5 @@
 (function(){
-		
+
 	var config = {
 		apiKey: "AIzaSyAwKMoKj_sk6TQV-paWdgarGW8w8v8XQ1Q",
 		authDomain: "nulp-93482.firebaseapp.com",
@@ -9,11 +9,17 @@
 	  };
 	firebase.initializeApp(config);
 
-	var title = document.getElementById('title');
-
+	var items = document.getElementById('items');
 	var db = firebase.database().ref().child('posts');
+
 	db.on('value', function(posts) {
-		// title.innerText = text.val();
+		var response = posts.val();
+		for (var i = 0; i < response.length; i++) {
+			var element = document.createElement('div');
+			element.setAttribute('class', 'item');
+			element.innerText = response[i];
+			items.appendChild(element);
+		}
 		console.log(posts.val());
 	});
 
