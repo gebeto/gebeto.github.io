@@ -22,9 +22,6 @@
 			//Main div
 			mainElem.className = 'item';
 			mainElem.id = value.key;
-			mainElem.onclick = function(){
-				console.log(this);
-			};
 			mainElem.innerText = value.text;
 			//remove button
 			removeButton.innerText = 'Remove';
