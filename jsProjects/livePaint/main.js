@@ -16,9 +16,9 @@
 		var response = posts.val();
 		for (var i = 0; i < response.length; i++) {
 			var element = document.createElement('div');
-			element.setAttribute('class', 'item');
+			element.className = 'item';
 			element.innerText = response[i];
-			items.appendChild(element);
+			items.insertBefore(items.firstChild, element);
 		}
 		console.log(posts.val());
 	});
