@@ -20,7 +20,9 @@
 			var element = document.createElement('div');
 			element.className = 'item';
 			element.id = value.key;
-			element.onclick = "console.log(this)";
+			element.addEventListener('click', function(this){
+				console.log(this);
+			});
 			element.innerText = value.text;
 			items.appendChild(element);
 		});
