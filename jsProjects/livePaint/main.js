@@ -19,6 +19,7 @@
 	    	var value = response[objectKey];
 			var element = document.createElement('div');
 			element.className = 'item';
+			element.id = value.key;
 			element.innerText = value.text;
 			items.appendChild(element);
 		});
@@ -39,14 +40,13 @@
 
 
 function writeNewPost(title) {
-	// A post entry.
-	var postData = {
-		text: title
-	};
-
 	// Get a key for a new Post.
 	var newPostKey = firebase.database().ref().child('posts').push().key;
 
+	var postData = {
+		text: title,
+		key: newPostKey
+	};
 	// Write the new post's data simultaneously in the posts list and the user's post list.
 	var updates = {};
 	updates['/posts/' + newPostKey] = postData;
