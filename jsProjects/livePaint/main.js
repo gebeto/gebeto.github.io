@@ -14,13 +14,12 @@
 
 	db.on('value', function(posts) {
 		var response = posts.val();
-		response.forEach(item, i) {
+		response.forEach(function(item, i, arr) {
 			var element = document.createElement('div');
 			element.className = 'item';
 			element.innerText = item.toString();
 			items.appendChild(element);
-		}
-		console.log(posts.val());
+		});
 	});
 
 
