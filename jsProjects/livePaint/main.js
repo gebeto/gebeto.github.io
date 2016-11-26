@@ -23,10 +23,17 @@
 		console.log(posts.val());
 	});
 
+
+
 	document.getElementById('submit').addEventListener('click', function(){
 
 		var input = document.getElementById('textInput');
+		db.val().set({
+			db.val().length.toString(): input.value
+		});
 
 	});
+
+
 
 }());
