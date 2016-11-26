@@ -29,18 +29,15 @@
 
 	document.getElementById('submit').addEventListener('click', function(){
 
-		console.log(cnt);
-		var input = document.getElementById('textInput');
-		var data = {cnt:input.value}
-		db.set(data);
+		writeNewPost('hello')
 
 	});
 
 
-	function writeNewPost(uid, username, picture, title, body) {
+	function writeNewPost(title) {
   // A post entry.
   var postData = {
-    title: "someTitle",
+    title: title,
     text: "Some text"
   };
 
@@ -50,7 +47,6 @@
   // Write the new post's data simultaneously in the posts list and the user's post list.
   var updates = {};
   updates['/posts/' + newPostKey] = postData;
-  updates['/user-posts/' + uid + '/' + newPostKey] = postData;
 
   return firebase.database().ref().update(updates);
 }
