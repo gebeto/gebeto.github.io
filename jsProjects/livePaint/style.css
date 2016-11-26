@@ -7,8 +7,8 @@ body {
 	width: 100%;
 	height: 60px;
 	position: fixed;
-	bottom: 0;
-	/*top: 0;*/
+	/*bottom: 0;*/
+	top: 0;
 	border: solid 1px black;
 	overflow: hidden;
 }
