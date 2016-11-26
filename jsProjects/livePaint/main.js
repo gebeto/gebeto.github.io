@@ -17,18 +17,25 @@
 		items.innerHTML = '';
 		Object.keys(response).map(function(objectKey, index) {
 	    	var value = response[objectKey];
+
 			var mainElem = document.createElement('div');
 			var removeButton = document.createElement('button');
+			var elemText = document.createElement('span');
 			//Main div
 			mainElem.className = 'item';
 			mainElem.id = value.key;
-			mainElem.innerText = value.text;
+			// mainElem.innerText = value.text;
 			//remove button
 			removeButton.innerText = 'Remove';
 			removeButton.onclick = function(){ 
 				removePost(this.parentNode.id); 
 			};
+			//content span
+			elemText.className = 'content';
+			elemText.innerText = value.text;
+
 			mainElem.appendChild(removeButton);
+			mainElem.appendChild(elemText);
 			items.appendChild(mainElem);
 
 		});

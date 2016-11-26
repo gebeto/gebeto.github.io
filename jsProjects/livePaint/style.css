@@ -35,3 +35,7 @@ body {
 	font-size: 20px;
 	border: 0;
 }
+
+.item {
+	display: block;
+}
