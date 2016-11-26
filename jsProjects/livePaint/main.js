@@ -36,7 +36,7 @@
 
 
 
-	document.getElementById('submit').addEventListener('click', function(){
+	document.getElementById('add-panel-submit').addEventListener('click', function(){
 
 		var text = document.getElementById('textInput');
 		if (text.value.length > 0) {
