@@ -30,7 +30,7 @@
 	document.getElementById('submit').addEventListener('click', function(){
 
 		var text = document.getElementById('textInput');
-		if (text.value/length > 0) {
+		if (text.value.length > 0) {
 			writeNewPost(text.value);
 		} else {
 			alert("enter a data!");
