@@ -22,7 +22,7 @@
 			//Main div
 			mainElem.className = 'item';
 			mainElem.id = value.key;
-			element.onclick = function(){
+			mainElem.onclick = function(){
 				console.log(this);
 			};
 			mainElem.innerText = value.text;
