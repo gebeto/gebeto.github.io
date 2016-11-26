@@ -11,11 +11,11 @@
 
 	var items = document.getElementById('items');
 	var db = firebase.database().ref().child('posts');
-	var cnt = "";
+	var cnt = 0;
 
 	db.on('value', function(posts) {
-		cnt = posts.val().length.toString();
 		var response = posts.val().reverse();
+		cnt = response.length;
 		for (var i = 0; i < response.length; i++) {
 			var element = document.createElement('div');
 			element.className = 'item';
