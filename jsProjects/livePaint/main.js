@@ -41,6 +41,7 @@
 		var text = document.getElementById('textInput');
 		if (text.value.length > 0) {
 			writeNewPost(text.value);
+			text.value = "";
 		} else {
 			alert("Заповніть форму!");
 		}
