@@ -39,6 +39,8 @@ body {
 .remove-button {
 	border: 0;
 	padding: 10px;
+	margin: 0 10px;
+	color: red;
 }
 
 .item {
