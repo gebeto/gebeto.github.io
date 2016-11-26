@@ -62,7 +62,7 @@ body {
 }
 
 .item {
-	height: 50px;
+	min-height: 50px;
 	display: block;
 	position: relative;
 	background: #eee;
