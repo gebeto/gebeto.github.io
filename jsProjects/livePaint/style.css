@@ -36,6 +36,11 @@ body {
 	border: 0;
 }
 
+.remove-button {
+	border: 0;
+	padding: 10px;
+}
+
 .item {
 	display: block;
 }

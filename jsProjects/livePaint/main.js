@@ -24,9 +24,9 @@
 			//Main div
 			mainElem.className = 'item';
 			mainElem.id = value.key;
-			// mainElem.innerText = value.text;
 			//remove button
-			removeButton.innerText = 'Remove';
+			removeButton.className = 'remove-button';
+			removeButton.innerText = 'X';
 			removeButton.onclick = function(){ 
 				removePost(this.parentNode.id); 
 			};
