@@ -55,6 +55,16 @@
 
 	});
 
+	document.getElementById('clear-button').addEventListener('click', function(){
+		var itemss = document.getElementsByClassName('item');
+		console.log(itemss[0].id);
+		if (itemss.length > 10) {
+			for (var i = itemss.length-1; i >= 10; i--) {
+				removePost(itemss[i].id);
+			}
+		}
+	});
+
 
 	function writeNewPost(title) {
 		// Get a key for a new Post.
@@ -75,7 +85,5 @@
 		// firebase.database().ref().child("posts/"+postId).remove();
 		firebase.database().ref().child("posts/"+username+"/"+postId).remove();
 	}
-
-
 
 }());
