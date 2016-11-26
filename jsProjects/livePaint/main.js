@@ -19,7 +19,7 @@
 	    	var value = response[objectKey];
 			var element = document.createElement('div');
 			element.className = 'item';
-			element.innerText = value.toString();
+			element.innerText = value.text;
 			items.appendChild(element);
 		});
 	});
