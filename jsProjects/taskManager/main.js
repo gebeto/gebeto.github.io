@@ -56,19 +56,15 @@
 	});
 
 	document.getElementById('clear-button').addEventListener('click', function(){
-		var itemss = document.getElementsByClassName('item');
-		console.log(itemss[0].id);
 		var conf = confirm("Очистити iсторiю?");
-		if (itemss.length > 10 && conf) {
-			for (var i = itemss.length-1; i >= 10; i--) {
-				removePost(itemss[i].id);
-			}
-		}
+		if (conf) clearMessageList(10);
 	});
 
 
 	function writeNewPost(title) {
 		// Get a key for a new Post.
+
+		clearMessageList(40);
 		var newPostKey = firebase.database().ref().child('posts/'+username).push().key;
 
 		var postData = {
@@ -85,6 +81,17 @@
 	function removePost (postId) {
 		// firebase.database().ref().child("posts/"+postId).remove();
 		firebase.database().ref().child("posts/"+username+"/"+postId).remove();
+	}
+
+	function clearMessageList(cnt){
+		var itemss = document.getElementsByClassName('item');
+		// console.log(itemss[0].id);
+		if (itemss.length > cnt)
+			if (itemss.length > 10) {
+				for (var i = itemss.length-1; i >= 10; i--) {
+					removePost(itemss[i].id);
+				}
+			}
 	}
 
 }());
