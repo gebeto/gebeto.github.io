@@ -17,14 +17,21 @@
 		items.innerHTML = '';
 		Object.keys(response).map(function(objectKey, index) {
 	    	var value = response[objectKey];
-			var element = document.createElement('div');
-			element.className = 'item';
-			element.id = value.key;
+			var mainElem = document.createElement('div');
+			var removeButton = document.createElement('button');
+			//Main div
+			mainElem.className = 'item';
+			mainElem.id = value.key;
 			element.onclick = function(){
 				console.log(this);
 			};
-			element.innerText = value.text;
-			items.appendChild(element);
+			mainElem.innerText = value.text;
+			//remove button
+			removeButton.innerText = 'Remove';
+			removeButton.onclick = function(){ console.log(this.parentNode.id) };
+			mainElem.appendChild(removeButton);
+			items.appendChild(mainElem);
+
 		});
 	});
 
