@@ -11,8 +11,10 @@
 
 	var items = document.getElementById('items');
 	var db = firebase.database().ref().child('posts');
+	var cnt = "";
 
 	db.on('value', function(posts) {
+		cnt = posts.val().length.toString();
 		var response = posts.val().reverse();
 		for (var i = 0; i < response.length; i++) {
 			var element = document.createElement('div');
@@ -27,11 +29,10 @@
 
 	document.getElementById('submit').addEventListener('click', function(){
 
-		var key = db.val().length.toString();
 		console.log(key);
 		var input = document.getElementById('textInput');
 		db.set({
-			key: input.value
+			cnt: input.value
 		});
 
 	});
