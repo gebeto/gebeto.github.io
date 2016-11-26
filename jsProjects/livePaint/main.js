@@ -13,12 +13,12 @@
 	var db = firebase.database().ref().child('posts');
 
 	db.on('value', function(posts) {
-		var response = posts.val();
+		var response = posts.val().reverse();
 		for (var i = 0; i < response.length; i++) {
 			var element = document.createElement('div');
 			element.className = 'item';
 			element.innerText = response[i];
-			items.insertBefore(items.firstChild, element);
+			items.appendChild(element);
 		}
 		console.log(posts.val());
 	});
