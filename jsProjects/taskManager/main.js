@@ -58,7 +58,8 @@
 	document.getElementById('clear-button').addEventListener('click', function(){
 		var itemss = document.getElementsByClassName('item');
 		console.log(itemss[0].id);
-		if (itemss.length > 10) {
+		var conf = confirm("Очистити iсторiю?");
+		if (itemss.length > 10 && conf) {
 			for (var i = itemss.length-1; i >= 10; i--) {
 				removePost(itemss[i].id);
 			}
