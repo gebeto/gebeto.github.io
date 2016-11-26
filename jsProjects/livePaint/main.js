@@ -14,10 +14,12 @@
 
 	db.on('value', function(posts) {
 		var response = posts.val();
-		response.forEach(function(item, i, arr) {
+
+		Object.keys(response).map(function(objectKey, index) {
+	    	var value = response[objectKey];
 			var element = document.createElement('div');
 			element.className = 'item';
-			element.innerText = item.toString();
+			element.innerText = value.toString();
 			items.appendChild(element);
 		});
 	});
