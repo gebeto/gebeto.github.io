@@ -29,7 +29,7 @@
 
 	document.getElementById('submit').addEventListener('click', function(){
 
-		console.log(key);
+		console.log(cnt);
 		var input = document.getElementById('textInput');
 		db.set({
 			cnt: input.value
