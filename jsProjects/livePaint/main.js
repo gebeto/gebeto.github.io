@@ -1,13 +1,5 @@
-firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-        // User is signed in
-        var email = user.email;
-        alert(email + " Connected!");
-        // ...
-    } else {
-        // User is not signed in
-        alert("Connection error!");
-        // ...
-    }
+var title = document.getElementById('title');
+var db = firebase.database().ref().child('text');
+db.on('value', function(text) {
+	title.innerText = text.val();
 });
-firebase.auth().signInWithEmailAndPassword(email, password);
