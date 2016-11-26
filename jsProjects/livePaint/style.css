@@ -13,7 +13,7 @@ body {
 	overflow: hidden;
 }
 
-.add-panel-input > *{
+.add-panel-input{
 	position: absolute;
 	height: 100%;
 	width: 75%;
@@ -21,7 +21,7 @@ body {
 	background: #eee;
 }
 
-.add-panel-submit > *{
+.add-panel-submit{
 	position: absolute;
 	height: 100%;
 	width: 25%;
