@@ -29,7 +29,7 @@
 			//remove button
 			removeButton.innerText = 'Remove';
 			removeButton.onclick = function(){ 
-				console.log(this.parentNode.id) 
+				removePost(this.parentNode.id); 
 			};
 			mainElem.appendChild(removeButton);
 			items.appendChild(mainElem);
