@@ -37,6 +37,8 @@ body {
 }
 
 .remove-button {
+	position: absolute;
+	right: 0;
 	border: 0;
 	padding: 10px;
 	margin: 0 10px;
@@ -49,5 +51,11 @@ body {
 }
 
 .item {
+	height: 50px;
 	display: block;
+	position: relative;
+}
+
+.content {
+	line-height: 50px;
 }

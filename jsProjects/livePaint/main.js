@@ -34,8 +34,8 @@
 			elemText.className = 'content';
 			elemText.innerText = value.text;
 
-			mainElem.appendChild(removeButton);
 			mainElem.appendChild(elemText);
+			mainElem.appendChild(removeButton);
 			items.appendChild(mainElem);
 
 		});
