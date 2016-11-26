@@ -27,9 +27,11 @@
 
 	document.getElementById('submit').addEventListener('click', function(){
 
+		var key = db.val().length.toString();
+		console.log(key);
 		var input = document.getElementById('textInput');
 		db.val().set({
-			db.val().length.toString(): input.value
+			key: input.value
 		});
 
 	});
