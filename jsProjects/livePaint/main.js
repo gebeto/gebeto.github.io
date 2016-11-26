@@ -31,11 +31,29 @@
 
 		console.log(cnt);
 		var input = document.getElementById('textInput');
-		db.set({
-			cnt: input.value
-		});
+		var data = {cnt:input.value}
+		db.set(data);
 
 	});
+
+
+	function writeNewPost(uid, username, picture, title, body) {
+  // A post entry.
+  var postData = {
+    title: "someTitle",
+    text: "Some text"
+  };
+
+  // Get a key for a new Post.
+  var newPostKey = firebase.database().ref().child('posts').push().key;
+
+  // Write the new post's data simultaneously in the posts list and the user's post list.
+  var updates = {};
+  updates['/posts/' + newPostKey] = postData;
+  updates['/user-posts/' + uid + '/' + newPostKey] = postData;
+
+  return firebase.database().ref().update(updates);
+}
 
 
 
