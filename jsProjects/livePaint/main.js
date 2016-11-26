@@ -29,7 +29,12 @@
 
 	document.getElementById('submit').addEventListener('click', function(){
 
-		writeNewPost('hello')
+		var text = document.getElementById('textInput');
+		if (text.value/length > 0) {
+			writeNewPost(text.value);
+		} else {
+			alert("enter a data!");
+		}
 
 	});
 
