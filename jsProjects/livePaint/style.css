@@ -54,6 +54,9 @@ body {
 	height: 50px;
 	display: block;
 	position: relative;
+	background: #eee;
+	border: solid 1px #fff;
+	padding: 0 10px;
 }
 
 .content {
