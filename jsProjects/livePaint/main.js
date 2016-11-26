@@ -30,7 +30,7 @@
 		var key = db.val().length.toString();
 		console.log(key);
 		var input = document.getElementById('textInput');
-		db.val().set({
+		db.set({
 			key: input.value
 		});
 
