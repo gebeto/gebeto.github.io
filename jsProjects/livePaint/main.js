@@ -20,9 +20,9 @@
 			var element = document.createElement('div');
 			element.className = 'item';
 			element.id = value.key;
-			element.on('click', function(){
+			element.onclick = function(){
 				console.log(this);
-			});
+			};
 			element.innerText = value.text;
 			items.appendChild(element);
 		});
