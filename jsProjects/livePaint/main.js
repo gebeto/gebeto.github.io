@@ -10,7 +10,7 @@
 	firebase.initializeApp(config);
 
 	var items = document.getElementById('items');
-	var db = firebase.database().ref().child('posts');
+	var db = firebase.database().ref().child('posts/'+username);
 
 	db.on('value', function(posts) {
 		var response = posts.val();
@@ -58,7 +58,7 @@
 
 	function writeNewPost(title) {
 		// Get a key for a new Post.
-		var newPostKey = firebase.database().ref().child('posts').push().key;
+		var newPostKey = firebase.database().ref().child('posts/'+username).push().key;
 
 		var postData = {
 			text: title,
@@ -66,13 +66,14 @@
 		};
 		// Write the new post's data simultaneously in the posts list and the user's post list.
 		var updates = {};
-		updates['/posts/' + newPostKey] = postData;
+		updates['/posts/'+username+'/' + newPostKey] = postData;
 
 		return firebase.database().ref().update(updates);
 	}
 
 	function removePost (postId) {
-		firebase.database().ref().child("posts/"+postId).remove();
+		// firebase.database().ref().child("posts/"+postId).remove();
+		firebase.database().ref().child("posts/"+username+"/"+postId).remove();
 	}
 
 
