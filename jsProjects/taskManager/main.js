@@ -60,6 +60,20 @@
 		if (conf) clearMessageList(10);
 	});
 
+	var menuOpened = false;
+	document.getElementById('stick').addEventListener('click', function(elem){
+		var menu = document.getElementById('bottom-menu');
+		if (!menuOpened){
+			menu.className = 'bottom-menu bottom-menu-opened';
+			elem.target.style.transform = "rotate(180deg)";
+		} else {
+			menu.className = 'bottom-menu';
+			elem.target.style.transform = "rotate(0deg)";
+		} 
+		console.log(elem);
+		menuOpened = !menuOpened;
+	});
+
 
 	function writeNewPost(title) {
 		// Get a key for a new Post.
@@ -93,5 +107,7 @@
 				}
 			}
 	}
+
+
 
 }());

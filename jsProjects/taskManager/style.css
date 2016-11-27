@@ -86,10 +86,11 @@ body {
 	top:-20px;
 	background-color: #333;
 	padding: 0 10px;
+	transition-duration: 1s;
+
 }
 
 .clear-button {
-
 	text-align: center;
 	line-height: 50px;
 }
@@ -106,6 +107,6 @@ body {
 	transition-duration: 1s;
 }
 
-.bottom-menu:hover {
+.bottom-menu-opened {
 	top: calc(100% - 50px);
 }
