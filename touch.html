@@ -9,8 +9,8 @@
 <script type="text/javascript">
 var doc = document.getElementById('touch');
 
-document.addEventListener('mousemove', function(ev){
-	doc.innerHTML = ev;
+document.addEventListener('touchmove', function(ev){
+	doc.innerHTML = ev.screenX +", "+ ev.screenY;
 });
 
 
