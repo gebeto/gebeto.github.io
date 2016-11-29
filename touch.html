@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1 id="touch">hello</h1>
+
+<script type="text/javascript">
+var doc = document.getElementById('touch');
+
+document.addEventListener('touchmove', function(ev){
+	doc.innerHTML = ev.clientX +", "+ ev.clientY;
+});
+
+
+
+</script>
+
+</body>
+</html>
