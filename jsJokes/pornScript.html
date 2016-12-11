@@ -75,6 +75,7 @@ textLoop();
 
 document.addEventListener('keydown', function(ev){
 	if (ev.key === 'Backspace') textDiv.innerHTML = textDiv.innerHTML.slice(0, textDiv.innerHTML.length-1);
+	else if (ev.key === 'Enter') textDiv.innerHTML += "<br>";
 	else if (ev.key.length === 1) textDiv.innerHTML += ev.key;
 })
 
