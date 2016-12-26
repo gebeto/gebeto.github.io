@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<a href="https://oauth.vk.com/authorize?client_id=5256902&v=5.7&scope=video,friends,groups,wall,offline&redirect_uri=https://oauth.vk.com/blank.html&display=page&response_type=token" target="_blank">iPad token</a>
+
+<br>
+<textarea id="rawToken" rows="4" cols="60"></textarea>
+<br>
+<input type="text" id="streamName" placeholder="stream name" value="stream">
+<br>
+<button id="submit">Подтвердить</button>
+
+<p id="token"></p>
+
+<a href="" id="link" target="_blank"></a>
+
+<script>
+var rawToken = document.getElementById("rawToken");
+var token = document.getElementById("token");
+var submitButton = document.getElementById("submit");
+var link = document.getElementById("link");
+var streamName = document.getElementById("streamName");
+
+submitButton.addEventListener('click', function(){
+	var res = rawToken.value.split('access_token=')
+	if (res.length > 1) 
+		res = res[1].split('&')[0];
+	  
+	token.innerText = res
+
+	link.href = "https://api.vk.com/method/video.startStreaming?access_token="+res+"&https=1&lang=en&name="+streamName.value+"&v=5.60&wallpost=0"
+	link.innerText = "Get key";
+});
+
+</script>
+
+</body>
+</html>
