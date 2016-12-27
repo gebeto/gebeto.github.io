@@ -1,0 +1,324 @@
+/*#4d4d4d*/
+/*#808080*/
+/*#f1f4f5*/
+/*#ef5f60*/
+
+/*width 1171px*/
+
+
+
+* {
+	font: 1em "Bebas Neue";
+	margin: 0;
+	padding: 0;
+	color: #4d4d4d;
+}
+
+body {
+	height: 3000px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1170px;
+}
+
+/************/
+/****MENU****/
+/************/
+
+.nav {
+	padding-top: 50px;
+	height: 104px;
+	/*background: red;*/
+}
+
+.menu {
+	height: 44px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.menu .logo {
+	float: left;
+	position: absolute;
+}
+
+.menu .social {
+	position: absolute;
+	top: 4px;
+	right: 0;
+}
+
+.menu ul {
+	float: right;
+}
+
+.menu li {
+	display: inline-block;
+	height: 44px;
+	list-style: none;
+}
+
+.menu li a {
+	letter-spacing: 1.5px;
+	/*color: #4d4d4d;*/
+	display: inline-block;
+	font: 16px "Bebas Neue";
+	font-weight: bold;
+	margin: 14px 27px 14px 27px;
+	text-align: center;
+	text-decoration: none;
+	transition-duration: .6s;
+}
+
+.menu li a:hover {
+	color: #ef5f60;
+}
+
+.menu li:last-child {
+	padding-right: 40px;
+}
+
+/***************/
+/*info wrapper*/
+/**************/
+
+.info {
+	width: 100%;
+	height: 205px;
+	background: #f1f4f5;
+}
+
+.info .big-title {
+	position: absolute;
+	font-family:'Bebas Neue Book';
+	font-weight:normal;
+	font-size:36px;
+	letter-spacing: 1.5px;
+	font-weight: ;
+	/*color: #4d4d4d;*/
+	margin-top: 68px;
+}
+
+.info .small-title {
+	position: absolute;
+	font: 15px Arial;
+	color: #808080;
+	margin-top: 124px;
+}
+
+
+
+/****************/
+/****Portfolio***/
+/****************/
+
+.portfolio .head {
+	margin-top: 70px;
+	margin-bottom: 16px;
+	letter-spacing: 1.5px;
+	font: 15px 'Bebas Neue Bold';
+	height: 42px;
+}
+
+.portfolio .head .title {
+	float: left;
+	padding: 13px 0 13px 0;
+	font: 21px 'Bebas Neue Bold';
+}
+
+.portfolio .head .filter {
+	float: right;
+	padding: 15px;
+	background: #ef5f60;
+	color: #fff;
+}
+
+.portfolio .works {
+	font-size: 0;
+}
+
+.portfolio .works .row {
+	margin-top: 15px;
+}
+
+.portfolio .works .row img {
+	width: 380px;
+}
+.portfolio .works .row img:first-child {
+	margin-right: 15px;
+}
+
+.portfolio .works .row img:last-child {
+	margin-left: 15px;
+}
+
+.portfolio .contact {
+	margin-top: 65px;
+}
+
+.portfolio .contact .title {
+	display: block;
+	font: 28px 'Bebas Neue Book';
+	letter-spacing: 1.5px;
+	text-align: center;
+}
+
+.portfolio .contact .button {
+	background: #ef5f60;
+	color: #fff;
+	display: block;
+	font: 16px 'Bebas Neue Bold';
+	height: 40px;
+	letter-spacing: 1.2px;
+	line-height: 40px;
+	margin: 25px auto;
+	position: relative;
+	text-align: center;
+	text-indent: 26px;
+	width: 114px;
+}
+
+.portfolio .contact .button:before {
+	background: url('../images/envelope.png');
+	content: "";
+	height: 16px;
+	left: 10px;
+	position: absolute;
+	top: 12px;
+	width: 16px;
+}
+
+
+
+
+/****************/
+/****SERVICES****/
+/****************/
+
+.services {
+	margin-top: 68px;
+}
+
+.services .head .title {
+	font: 21px 'Bebas Neue Bold';
+	/*color: #4d4d4d;*/
+	letter-spacing: 1.5px;
+	display: block;
+}
+
+.services .head .description {
+	font: 15px Arial;
+	color: #808080;
+	margin-top: 26px; 
+	display: block;
+}
+
+.services .cards {
+	margin-top: 48px;
+	display: flex;
+}
+
+.services .card {
+	/*display: inline-block;*/
+	margin: auto;
+	position: relative;
+	width: 270px;
+	height: 300px;
+	/*background: #eee;*/
+	/*margin: 0 10px 0 10px;*/
+}
+
+.services .card .icon {
+	width: 110px;
+	height: 110px;
+	background-color: #f1f4f5;
+	border-radius: 50%;
+	margin: 0 80px;
+}
+
+.services .card .title {
+	font: 19px 'Bebas Neue Bold';
+	display: block;
+	margin-top: 38px;
+	text-align: center;
+	letter-spacing: 1.3px;
+}
+
+.services .card .description {
+	display: block;
+	margin-top: 25px;
+	font: 16.5px Arial;
+	color: #808080;
+	text-align: center;
+	line-height: 26px;
+}
+
+.love {background: url(../images/wdwd/love.png) center no-repeat;}
+.print {background: url(../images/wdwd/print.png) center no-repeat;}
+.responsive {background: url(../images/wdwd/responsive.png) center no-repeat;}
+.tv {background: url(../images/wdwd/tv.png) center no-repeat;}
+
+/**************/
+/***JOURNAL****/
+/**************/
+
+.journal {
+	margin-top: 90px;
+}
+
+.journal .head .title {
+	font: 21px 'Bebas Neue Bold';
+	/*color: #4d4d4d;*/
+	letter-spacing: 1.5px;
+	display: block;
+}
+
+.journal .head .description {
+	font: 15px Arial;
+	color: #808080;
+	margin-top: 26px; 
+	display: block;
+}
+
+.journal .cards {
+	margin-top: 40px;
+	display: inline-block;
+}
+
+.journal .card {
+	float: left;
+	margin-top: 10px;
+	width: 570px;
+	height: 180px;
+	background: red;
+}
+
+.journal .card .icon {
+	width: 180px;
+	height: 180px;
+}
+
+.fi {
+	background: url(../images/journal/1.png) center no-repeat;
+}
+.se {
+	background: url(../images/journal/2.png) center no-repeat;
+}
+.th {
+	background: url(../images/journal/3.png) center no-repeat;
+}
+.fo {
+	background: url(../images/journal/4.png) center no-repeat;
+}
+
+
+
+
+
+
+
+
+
