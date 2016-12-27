@@ -23,6 +23,10 @@ span.red {
 	width: 1170px;
 }
 
+
+
+
+
 /************/
 /****MENU****/
 /************/
@@ -61,11 +65,11 @@ span.red {
 }
 
 .menu li a {
-	letter-spacing: 1.5px;
 	/*color: #4d4d4d;*/
 	display: inline-block;
-	font: 16px "Bebas Neue";
 	font-weight: bold;
+	font: 16px "Bebas Neue";
+	letter-spacing: 1.5px;
 	margin: 14px 27px 14px 27px;
 	text-align: center;
 	text-decoration: none;
@@ -80,40 +84,41 @@ span.red {
 	padding-right: 40px;
 }
 
+
+
+
 /***************/
 /*info wrapper*/
 /**************/
 
 .info {
-	width: 100%;
-	height: 205px;
 	background: #f1f4f5;
+	height: 205px;
+	width: 100%;
 }
 
 .info .big-title {
+	/*color: #4d4d4d;*/
+	/*margin-top: 68px;*/
 	/*position: absolute;*/
+	display: block;
 	font-family:'Bebas Neue Book';
 	font-size:36px;
 	letter-spacing: 1.5px;
-	/*color: #4d4d4d;*/
-	/*margin-top: 68px;*/
-	
 	position: relative;
 	top: 68px;
-	display: block;
 }
 
 .info .small-title {
 	/*position: absolute;*/
-	font: 16.5px Arial;
-	color: #808080;
-	margin-top: 124px;
-
-
-	position: relative;
 	bottom: 36px;
+	color: #808080;
 	display: block;
+	font: 16.5px Arial;
+	margin-top: 124px;
+	position: relative;
 }
+
 
 
 
@@ -122,25 +127,25 @@ span.red {
 /****************/
 
 .portfolio .head {
-	margin-top: 70px;
-	margin-bottom: 16px;
-	letter-spacing: 1.5px;
 	font: 15px 'Bebas Neue Bold';
 	height: 42px;
+	letter-spacing: 1.5px;
+	margin-bottom: 16px;
+	margin-top: 70px;
 }
 
 .portfolio .head .title {
 	float: left;
-	padding: 13px 0 13px 0;
 	font: 21px 'Bebas Neue Bold';
+	padding: 13px 0 13px 0;
 }
 
 .portfolio .head .filter {
-	float: right;
-	padding: 15px;
 	background: #ef5f60;
 	color: #fff;
 	cursor: pointer;
+	float: right;
+	padding: 15px;
 	transition-duration: .4s;
 }
 
@@ -154,28 +159,35 @@ span.red {
 
 .portfolio .works .row {
 	margin-top: 15px;
-}
-
-.portfolio .works .row img {
-	width: 380px;
 	position: relative;
 }
-.portfolio .works .row img:first-child {
+
+.portfolio .works .row .img {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	width: 380px;
+}
+.portfolio .works .row .img:first-child {
 	margin-right: 15px;
 }
 
-.portfolio .works .row img:last-child {
+.portfolio .works .row .img:last-child {
 	margin-left: 15px;
 }
 
-.portfolio img::after {
-	content: " ";
-	width: 100%;
+.portfolio .works .row .img:before {
+	background: radial-gradient(transparent, rgba(64,64,64,.4));
+	content: "";
 	height: 100%;
-	background: red;
+	opacity: 0;
 	position: absolute;
-	left: 0;
-	top: 0;
+	transition-duration: .5s;
+	width: 100%;
+}
+
+.portfolio .works .row .img:hover:before {
+	opacity: 1;
 }
 
 .portfolio .contact {
@@ -192,6 +204,7 @@ span.red {
 .portfolio .contact .button {
 	background: #ef5f60;
 	color: #fff;
+	cursor: pointer;
 	display: block;
 	font: 16px 'Bebas Neue Bold';
 	height: 40px;
@@ -201,9 +214,8 @@ span.red {
 	position: relative;
 	text-align: center;
 	text-indent: 26px;
-	width: 114px;
-	cursor: pointer;
 	transition-duration: .4s;
+	width: 114px;
 }
 
 .portfolio .contact .button:hover {
@@ -232,63 +244,66 @@ span.red {
 }
 
 .services .head .title {
-	font: 21px 'Bebas Neue Bold';
 	/*color: #4d4d4d;*/
-	letter-spacing: 1.5px;
 	display: block;
+	font: 21px 'Bebas Neue Bold';
+	letter-spacing: 1.5px;
 }
 
 .services .head .description {
-	font: 16.5px Arial;
 	color: #808080;
-	margin-top: 26px; 
 	display: block;
+	font: 16.5px Arial;
+	margin-top: 26px; 
 }
 
 .services .cards {
-	margin-top: 48px;
 	display: flex;
+	margin-top: 48px;
 }
 
 .services .card {
+	/*background: #eee;*/
 	/*display: inline-block;*/
+	/*margin: 0 10px 0 10px;*/
+	height: 300px;
 	margin: auto;
 	position: relative;
 	width: 270px;
-	height: 300px;
-	/*background: #eee;*/
-	/*margin: 0 10px 0 10px;*/
 }
 
 .services .card .icon {
-	width: 110px;
-	height: 110px;
 	background-color: #f1f4f5;
 	border-radius: 50%;
+	height: 110px;
 	margin: 0 80px;
+	width: 110px;
 }
 
 .services .card .title {
-	font: 19px 'Bebas Neue Bold';
 	display: block;
+	font: 19px 'Bebas Neue Bold';
+	letter-spacing: 1.3px;
 	margin-top: 38px;
 	text-align: center;
-	letter-spacing: 1.3px;
 }
 
 .services .card .description {
-	display: block;
-	margin-top: 25px;
-	font: 16.5px Arial;
 	color: #808080;
-	text-align: center;
+	display: block;
+	font: 16.5px Arial;
 	line-height: 26px;
+	margin-top: 25px;
+	text-align: center;
 }
 
 .love {background: url(../images/whatdo/love.png) center no-repeat;}
 .print {background: url(../images/whatdo/print.png) center no-repeat;}
 .responsive {background: url(../images/whatdo/responsive.png) center no-repeat;}
 .tv {background: url(../images/whatdo/tv.png) center no-repeat;}
+
+
+
 
 /**************/
 /***JOURNAL****/
@@ -299,75 +314,67 @@ span.red {
 }
 
 .journal .head .title {
-	font: 21px 'Bebas Neue Bold';
 	/*color: #4d4d4d;*/
-	letter-spacing: 1.5px;
 	display: block;
+	font: 21px 'Bebas Neue Bold';
+	letter-spacing: 1.5px;
 }
 
 .journal .head .description {
-	font: 16.5px Arial;
 	color: #808080;
-	margin-top: 26px; 
 	display: block;
+	font: 16.5px Arial;
+	margin-top: 26px; 
 }
 
 .journal .cards {
-	margin-top: 10px;
 	display: inline-block;
+	margin-top: 10px;
 }
 
 .journal .cards .card {
-	float: left;
-	position: relative;
-	margin-top: 50px;
-	width: 570px;
-	height: 180px;
 	 /*background: red; */
+	float: left;
+	height: 180px;
+	margin-top: 50px;
+	position: relative;
+	width: 570px;
 }
 
 .journal .card .text {
-	position: absolute;
 	left: 205px;
+	position: absolute;
 	width: 360px;
 }
 
 .journal .date {
+	color: #c3c3c3;
 	display: block;
 	font: 17px 'Bebas Neue Regular';
-	color: #c3c3c3;
-	margin-top: 1px;
 	letter-spacing: 1.3px;
+	margin-top: 1px;
 }
 
 .journal .title {
+	color: #4d4d4d;
 	display: block;
 	font: 21px 'Bebas Neue Bold';
-	color: #4d4d4d;
 	margin-top: 20px;
 }
 
 .journal .description {
-	margin-top: 25px;
+	color: #c3c3c3;
 	display: block;
 	font: 16.5px Arial;
-	color: #c3c3c3;
 	line-height: 29px;
+	margin-top: 25px;
 }
 
+.fi {background: url(../images/journal/1.png) left no-repeat;}
+.se {background: url(../images/journal/2.png) left no-repeat;}
+.th {background: url(../images/journal/3.png) left no-repeat;}
+.fo {background: url(../images/journal/4.png) left no-repeat;}
 
-.fi {
-	background: url(../images/journal/1.png) left no-repeat;
-}
-.se {
-	background: url(../images/journal/2.png) left no-repeat;
-}
-.th {
-	background: url(../images/journal/3.png) left no-repeat;
-}
-.fo {
-	background: url(../images/journal/4.png) left no-repeat;
-}
 
 
 
@@ -376,35 +383,32 @@ span.red {
 /************/
 
 .footer {
-	position: relative;
-	margin-top: 150px;
-	height: 205px;
-	width: 100%;
 	background: #2d2d30;
+	height: 205px;
+	margin-top: 150px;
+	position: relative;
+	width: 100%;
 }
 
 .footer .copyright {
-	font: 16.5px Arial;
 	color: #bdbdbd;
-	position: absolute;
 	display: block;
-	width: 100%;
-	text-align: center;
+	display: block;
+	font: 16.5px Arial;
 	margin-top: 68px;
-	display: block;
+	position: absolute;
+	text-align: center;
+	width: 100%;
 }
 
 .footer .social-icons {
 	display: flex;
-	position: relative;
-	width: 178px;
 	margin: 0 auto;
+	position: relative;
 	top: 110px;
+	width: 178px;
 }
 
 .footer .icon {
 	margin: auto;
 }
-
-
-
