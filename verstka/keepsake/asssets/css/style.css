@@ -3,8 +3,7 @@
 /*#f1f4f5*/
 /*#ef5f60*/
 
-/*width 1171px*/
-
+/*width 1170px*/
 
 
 * {
@@ -12,7 +11,11 @@
 	margin: 0;
 	padding: 0;
 	color: #4d4d4d;
-	/*text-transform: uppercase;*/
+}
+
+span.red {
+	color: #ef5f60;
+	text-shadow: 0 1px #f1f4f5;
 }
 
 .container {
@@ -27,7 +30,6 @@
 .nav {
 	padding-top: 50px;
 	height: 104px;
-	/*background: red;*/
 }
 
 .menu {
@@ -67,7 +69,7 @@
 	margin: 14px 27px 14px 27px;
 	text-align: center;
 	text-decoration: none;
-	transition-duration: .6s;
+	transition-duration: .2s;
 }
 
 .menu li a:hover {
@@ -89,21 +91,28 @@
 }
 
 .info .big-title {
-	position: absolute;
+	/*position: absolute;*/
 	font-family:'Bebas Neue Book';
-	font-weight:normal;
 	font-size:36px;
 	letter-spacing: 1.5px;
-	font-weight: ;
 	/*color: #4d4d4d;*/
-	margin-top: 68px;
+	/*margin-top: 68px;*/
+	
+	position: relative;
+	top: 68px;
+	display: block;
 }
 
 .info .small-title {
-	position: absolute;
-	font: 15px Arial;
+	/*position: absolute;*/
+	font: 16.5px Arial;
 	color: #808080;
 	margin-top: 124px;
+
+
+	position: relative;
+	bottom: 36px;
+	display: block;
 }
 
 
@@ -131,6 +140,12 @@
 	padding: 15px;
 	background: #ef5f60;
 	color: #fff;
+	cursor: pointer;
+	transition-duration: .4s;
+}
+
+.portfolio .head .filter:hover {
+	background: #d95657;
 }
 
 .portfolio .works {
@@ -143,6 +158,7 @@
 
 .portfolio .works .row img {
 	width: 380px;
+	position: relative;
 }
 .portfolio .works .row img:first-child {
 	margin-right: 15px;
@@ -150,6 +166,16 @@
 
 .portfolio .works .row img:last-child {
 	margin-left: 15px;
+}
+
+.portfolio img::after {
+	content: " ";
+	width: 100%;
+	height: 100%;
+	background: red;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
 .portfolio .contact {
@@ -176,6 +202,12 @@
 	text-align: center;
 	text-indent: 26px;
 	width: 114px;
+	cursor: pointer;
+	transition-duration: .4s;
+}
+
+.portfolio .contact .button:hover {
+	background: #d95657;
 }
 
 .portfolio .contact .button:before {
@@ -207,7 +239,7 @@
 }
 
 .services .head .description {
-	font: 15px Arial;
+	font: 16.5px Arial;
 	color: #808080;
 	margin-top: 26px; 
 	display: block;
@@ -274,7 +306,7 @@
 }
 
 .journal .head .description {
-	font: 15px Arial;
+	font: 16.5px Arial;
 	color: #808080;
 	margin-top: 26px; 
 	display: block;
@@ -318,7 +350,7 @@
 .journal .description {
 	margin-top: 25px;
 	display: block;
-	font: 15px Arial;
+	font: 16.5px Arial;
 	color: #c3c3c3;
 	line-height: 29px;
 }
@@ -352,7 +384,7 @@
 }
 
 .footer .copyright {
-	font: 15px Arial;
+	font: 16.5px Arial;
 	color: #bdbdbd;
 	position: absolute;
 	display: block;
