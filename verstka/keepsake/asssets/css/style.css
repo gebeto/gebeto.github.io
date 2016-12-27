@@ -262,16 +262,18 @@ span.red {
 }
 
 .services .cards {
-	display: flex;
+	/*display: flex;*/
 	margin-top: 48px;
 }
 
 .services .card {
+	display: inline-block;
 	/*background: #eee;*/
 	/*display: inline-block;*/
 	/*margin: 0 10px 0 10px;*/
 	height: 300px;
-	margin: auto;
+	/*margin: auto;*/
+	margin-left: 16px;
 	position: relative;
 	width: 270px;
 }
