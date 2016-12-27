@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CoreJailbreak Stream</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: #ecf0f1;
+		}
+
+		input {
+			display: block;
+			width: 100%;
+			height: 60px;
+			margin: 10px auto;
+			text-align: center;
+			font: 1.6em Arial;
+		}
+
+		input[type="text"] {
+			border: 1px solid rgba(0,0,0,.3);
+			border-radius: 5px;
+		}
+
+		input[type="button"] {
+			background: linear-gradient(#ecf0f1, #bdc3c7);
+			border: 0;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		.shadow {
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+			transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+		}
+
+		.main-wrapper {
+			background: #fff;
+			border-radius: 10px;
+			bottom: 0px;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+			height: 206px;
+			left: 0px;
+			margin: auto;
+			padding: 20px;
+			position: fixed;
+			right: 0px;
+			text-align: center;
+			top: 0px;
+			transition-duration: .4s;
+			transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+			width: 400px;
+		}
+
+		.main-wrapper:hover {
+			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		}
+
+		.created {
+			height: 276px;
+		}
+
+		a.button {
+			color: #fff;
+			border-radius: 5px;
+			font: 1.6em Arial;
+			display: block;
+			text-decoration: none;
+			line-height: 60px;
+			transition-duration: 1s;
+		}
+
+		.stop {
+			background: linear-gradient(#e74c3c, #c0392b);
+		}
+
+		.start {
+			opacity: 0;
+			background: linear-gradient(#2ecc71, #27ae60);
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="main-wrapper" id="main-wrapper">
+	<a class="button stop shadow" href="https://api.vk.com/method/video.stopStreaming?access_token=46c1cfeddbecff2083ab944c190a7dfbfa2f5feec988f27d005951cc2a983c0036ecfa97e2ffe99a889c7&v=5.60" target="_blank">Остановить трансляцию</a>
+
+	<input type="text" id="stream-name" class="shadow" placeholder="Stream name">
+	<input type="button" class="shadow" id="generate-link-button" class="button" value="Generate link">
+</div>
+<script>
+var token = "46c1cfeddbecff2083ab944c190a7dfbfa2f5feec988f27d005951cc2a983c0036ecfa97e2ffe99a889c7"
+var created = false;
+
+document.getElementById("generate-link-button").addEventListener('click', function(){
+	if (!created) {
+		created = true;
+		var streamName = document.getElementById("stream-name");
+		var startUrl = "https://api.vk.com/method/video.startStreaming?access_token="+token+"&https=1&lang=en&name="+streamName.value+"&v=5.60&wallpost=1"
+		var link = document.createElement('a');
+		link.className = 'button start shadow';
+		link.href = startUrl;
+		link.setAttribute('target', '_blank');
+		link.innerHTML = "Start stream";
+		document.getElementById('main-wrapper').className += ' created';
+		document.getElementById('main-wrapper').appendChild(link);
+		setTimeout(function() {
+			link.style.opacity = "1";
+		}, 100);
+	}
+});
+
+</script>
+</body>
+</html>
