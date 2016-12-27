@@ -12,10 +12,7 @@
 	margin: 0;
 	padding: 0;
 	color: #4d4d4d;
-}
-
-body {
-	height: 3000px;
+	text-transform: uppercase;
 }
 
 .container {
@@ -284,41 +281,98 @@ body {
 }
 
 .journal .cards {
-	margin-top: 40px;
+	margin-top: 10px;
 	display: inline-block;
 }
 
-.journal .card {
+.journal .cards .card {
 	float: left;
-	margin-top: 10px;
+	position: relative;
+	margin-top: 50px;
 	width: 570px;
 	height: 180px;
-	background: red;
+	 /*background: red; */
 }
 
-.journal .card .icon {
-	width: 180px;
-	height: 180px;
+.journal .card .text {
+	position: absolute;
+	left: 205px;
+	width: 360px;
 }
+
+.journal .date {
+	display: block;
+	font: 17px 'Bebas Neue Regular';
+	color: #c3c3c3;
+	margin-top: 1px;
+	letter-spacing: 1.3px;
+}
+
+.journal .title {
+	display: block;
+	font: 21px 'Bebas Neue Bold';
+	color: #4d4d4d;
+	margin-top: 20px;
+}
+
+.journal .description {
+	margin-top: 25px;
+	display: block;
+	font: 15px Arial;
+	color: #c3c3c3;
+	line-height: 29px;
+}
+
 
 .fi {
-	background: url(../images/journal/1.png) center no-repeat;
+	background: url(../images/journal/1.png) left no-repeat;
 }
 .se {
-	background: url(../images/journal/2.png) center no-repeat;
+	background: url(../images/journal/2.png) left no-repeat;
 }
 .th {
-	background: url(../images/journal/3.png) center no-repeat;
+	background: url(../images/journal/3.png) left no-repeat;
 }
 .fo {
-	background: url(../images/journal/4.png) center no-repeat;
+	background: url(../images/journal/4.png) left no-repeat;
 }
 
 
 
+/************/
+/***FOOTER***/
+/************/
 
+.footer {
+	position: relative;
+	margin-top: 150px;
+	height: 205px;
+	width: 100%;
+	background: #2d2d30;
+}
 
+.footer .copyright {
+	font: 15px Arial;
+	color: #bdbdbd;
+	position: absolute;
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-top: 68px;
+	display: block;
+}
 
+.footer .social-icons {
+	display: flex;
+	position: relative;
+	width: 178px;
+	margin: 0 auto;
+	top: 110px;
+}
+
+.footer .icon {
+	margin: auto;
+}
 
 
 
