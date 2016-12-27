@@ -12,7 +12,7 @@
 	margin: 0;
 	padding: 0;
 	color: #4d4d4d;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 
 .container {
@@ -253,10 +253,10 @@
 	line-height: 26px;
 }
 
-.love {background: url(../images/wdwd/love.png) center no-repeat;}
-.print {background: url(../images/wdwd/print.png) center no-repeat;}
-.responsive {background: url(../images/wdwd/responsive.png) center no-repeat;}
-.tv {background: url(../images/wdwd/tv.png) center no-repeat;}
+.love {background: url(../images/whatdo/love.png) center no-repeat;}
+.print {background: url(../images/whatdo/print.png) center no-repeat;}
+.responsive {background: url(../images/whatdo/responsive.png) center no-repeat;}
+.tv {background: url(../images/whatdo/tv.png) center no-repeat;}
 
 /**************/
 /***JOURNAL****/
