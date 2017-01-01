@@ -43,9 +43,10 @@ function refreshComments(comments) {
 }
 
 function startScanStream() {
+	var url = "https://api.vk.com/method/video.getComments?count=30&sort=desc&access_token="+token+"&video_id="+videoID
 	streamScanInterval = setInterval(function(){
 		$.ajax({
-			url: "https://api.vk.com/method/video.getComments?count=30&sort=desc&access_token="+token+"&video_id="+videoID,
+			url: url,
 			dataType: "jsonp",
 			jsonpCallback: "logResults",
 			success: function(res){
