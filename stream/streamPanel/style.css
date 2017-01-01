@@ -156,3 +156,9 @@ a.button {
 	font: 16px Arial;
 	border-bottom: 1px solid #333;
 }
+
+#chat-url {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}

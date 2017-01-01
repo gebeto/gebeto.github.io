@@ -36,6 +36,10 @@ function refreshComments(comments) {
 }
 
 function startScanStream(videoID) {
+	var chatUrl = "https://bboyheadman.github.io/stream/streamPanel/chat.html?token="+token+"&video_id="+videoID;
+	var chatLink = document.getElementById('chat-url');
+	chatLink.href = chatUrl;
+	chatLink.style.display = "block";
 	streamScanInterval = setInterval(function(){
 		$.ajax({
 			url: "https://api.vk.com/method/video.liveHeartbeat?access_token="+token+"&extended=1&fields=photo_50&https=1&lang=en&owner_id="+ownerID+"&spectators_count=10&v=5.60&video_id="+videoID,
