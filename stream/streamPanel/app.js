@@ -86,8 +86,8 @@ function startStream(){
 			console.log(res);
 			startScanStream(res["response"]["video_id"]);
 			ownerID = res["response"]["owner_id"];
-			startStreamButton.value = "Started";
-			stopStreamButton.value = "Stop Stream";
+			// startStreamButton.value = "Started";
+			// stopStreamButton.value = "Stop Stream";
 			document.getElementById('server-url').value = res['response']['stream']['url']
 			document.getElementById('server-key').value = res['response']['stream']['key']
 			document.getElementById('server-name').innerHTML = "Stream name: " + res['response']['name']
@@ -108,8 +108,8 @@ function stopStream() {
 		success: function(res){
 			console.log(res);
 			clearInterval(streamScanInterval);
-			stopStreamButton.value = "Stopped";
-			startStreamButton.value = "Start Stream";
+			// stopStreamButton.value = "Stopped";
+			// startStreamButton.value = "Start Stream";
 			mainWrapper.style.height = "276px";
 		},
 		error: function(err) {
