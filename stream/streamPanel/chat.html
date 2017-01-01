@@ -26,8 +26,8 @@
 <script>
 var url = location.href;
 var token = url.split('token=')[1].split('&')[0]
-var videoID = url.split('video_id=')[1];
-var groupID = "";
+var videoID = url.split('video_id=')[1].split('&')[0];
+var groupID = url.split('group_id=')[1];
 var streamScanInterval;
 var commentsBlock = document.getElementById('comments');
 

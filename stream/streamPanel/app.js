@@ -36,7 +36,7 @@ function refreshComments(comments) {
 }
 
 function startScanStream(videoID) {
-	var chatUrl = "https://bboyheadman.github.io/stream/streamPanel/chat.html?token="+token+"&video_id="+videoID;
+	var chatUrl = "https://bboyheadman.github.io/stream/streamPanel/chat.html?token="+token+"&video_id="+videoID+"&group_id="+groupID;
 	var chatLink = document.getElementById('chat-url');
 	chatLink.href = chatUrl;
 	chatLink.style.display = "block";
