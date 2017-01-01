@@ -1,0 +1,158 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #ecf0f1;
+}
+
+input {
+	display: block;
+	width: 100%;
+	height: 60px;
+	margin: 10px auto;
+	text-align: center;
+	font: 1.6em Arial;
+}
+
+input:first-child {
+	margin: 0;
+}
+
+input.first {
+	margin-top: 22px;
+}
+
+input.server {
+	height: 20px;
+	font-size: 10px;
+}
+
+input[type="text"] {
+	border: 1px solid rgba(0,0,0,.3);
+	border-radius: 5px;
+}
+
+.shadow {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.main-wrapper {
+	background: #fff;
+	border-radius: 10px;
+	bottom: 0px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	height: 276px;
+	left: 0px;
+	margin: auto;
+	padding: 20px;
+	position: fixed;
+	right: 0px;
+	text-align: center;
+	top: 0px;
+	transition-duration: .4s;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	width: 400px;
+	overflow: hidden;
+}
+
+.main-wrapper:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#hide-show {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #333;
+	right: 10px;
+	bottom: 10px;
+	border-radius:50%;
+	cursor: pointer;
+}
+
+.created {
+	height: 276px;
+}
+
+a.button {
+	color: #fff;
+	border-radius: 5px;
+	font: 1.6em Arial;
+	display: block;
+	text-decoration: none;
+	line-height: 60px;
+	transition-duration: 1s;
+}
+
+.stop {
+	background: linear-gradient(#e74c3c, #c0392b);
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.start {
+	background: linear-gradient(#2ecc71, #27ae60);
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #fff;
+}
+
+#server {
+	margin-top: 13px;
+	width: 98.5%;
+}
+
+/***********/
+/***USERS***/
+/***********/
+#users {
+	max-height: 500px;
+	overflow-x: scroll;
+	position: fixed;
+	padding: 10px;
+	background: #fff;
+	border-radius: 3px;
+	width: 200px;
+	left: 10px;
+	top: 10px;
+}
+
+#users .user {
+	display: block;
+	position: relative;
+}
+
+#users .user .name {
+	position: absolute;
+	padding: 8px;
+	font: 14px Arial;
+	text-decoration: none;
+}
+
+#users .user img {
+	border-radius: 50%;
+	height: 30px;
+}
+
+/**************/
+/***COMMENTS***/
+/**************/
+#comments {
+	overflow-x: scroll;
+	background: #fff;
+	border-radius: 3px;
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	width: 300px;
+	height: 94%;
+	padding: 10px;
+}
+
+#comments .comment {
+	font: 16px Arial;
+	border-bottom: 1px solid #333;
+}

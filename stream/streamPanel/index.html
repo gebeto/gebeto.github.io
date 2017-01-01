@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VK Stream</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="main" style="display: none">
+	<div class="main-wrapper" id="main-wrapper">
+		<input type="text" id="stream-name" class="shadow" placeholder="Stream name">
+		<input type="text" id="stream-by-group" class="shadow" placeholder="Group ID(optional)">
+		<input type="button" class="shadow stop" id="stop-stream-button" value="Stopped">
+		<input type="button" class="shadow start" id="start-stream-button" value="Start Stream">
+
+		<input type="text" id="server-url" class="server first">
+		<input type="text" id="server-key" class="server">
+		<span id="server-name">Stream name:</span>
+		<div id="hide-show"></div>
+	</div>
+
+	<div id="users"></div>
+	<div id="comments"></div>
+</div>
+
+<div id="login" style="display: none">
+	<p>Need login</p>
+	<p>Перейдите по <a style="font-size: 22px;" target="_blank" href="https://oauth.vk.com/authorize?client_id=5256902&v=5.7&scope=video,friends,groups,wall,offline&redirect_uri=https://oauth.vk.com/blank.html&display=page&response_type=token">ссылке</a> и дайте доступ</p>
+	<p>Скопируйте все с адресной строки и вставте <textarea id="token-url" placeholder="сюда" style="font-size: 10px"></textarea> и нажмите кнопку <button id="submit">Подтвердить</button></p>
+	<script>
+		document.getElementById('submit').addEventListener('click', function(){
+			var raw = document.getElementById('token-url').value;
+			var token = raw.split('access_token=')[1].split('&')[0];
+			if (token.length != 0) {
+				localStorage.setItem('token', token);
+				location.reload();
+			} else {
+				alert('Wrong url with token');
+			}
+		});
+	</script>
+</div>
+
+<script>
+	var token = localStorage.getItem('token');
+	if (!token) {
+		document.getElementById('login').style.display = "block";
+	} else {
+		document.getElementById('main').style.display = "block";
+	}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
