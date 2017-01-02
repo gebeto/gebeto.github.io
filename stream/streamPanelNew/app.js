@@ -103,6 +103,7 @@ function stopStream() {
 		success: function(res){
 			console.log(res);
 			clearInterval(streamScanInterval);
+			location.reload();
 		},
 		error: function(err) {
 			console.log(err);
