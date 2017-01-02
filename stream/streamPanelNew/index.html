@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VK Stream</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="main" style="display: none">
+
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">VK Stream Panel</a>
+				<ul class="nav navbar-nav">
+					<!-- <li class="active"><a href="#">От имени пользователя</a></li> -->
+					<li class="active" id="group-toggle"><a href="#">От имени сообщества</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="col-md-offset-3 col-md-2 main-controller">
+		<div class="form-group">
+			<input type="text" class="form-control" id="stream-name" placeholder="Название стрима">
+		</div>
+		<div class="form-group" id="">
+			<input type="text" class="form-control" id="stream-by-group" placeholder="ID Группы">
+		</div>
+		<div class="form-group">
+			<input type="button" class="form-control btn btn-danger" id="stop-stream-button"	value="Stop Stream">
+		</div>
+		<div class="form-group">
+			<input type="button" class="form-control btn btn-success" id="start-stream-button" value="Start Stream">
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="panel-group" id="accordion">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Информация подключения</a>
+					</h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<div class="form-group">
+							<input type="text" id="server-url" class="form-control" placeholder="URL сервера">
+						</div>
+						<div class="form-group">
+							<input type="text" id="server-key" class="form-control" placeholder="Ключ сервера">
+						</div>
+						<span id="server-name" class="panel-title">Название стрима:</span>
+						<a id="chat-url" href="#">Открить чат</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="users"></div>
+	<div id="comments"></div>
+</div>
+
+
+<div id="login" style="display: none">
+	<p>Need login</p>
+	<p>Перейдите по <a style="font-size: 22px;" target="_blank" href="https://oauth.vk.com/authorize?client_id=5256902&v=5.7&scope=video,friends,groups,wall,offline&redirect_uri=https://oauth.vk.com/blank.html&display=page&response_type=token">ссылке</a> и дайте доступ</p>
+	<p>Скопируйте все с адресной строки и вставте <textarea id="token-url" placeholder="сюда" style="font-size: 10px"></textarea> и нажмите кнопку <button id="submit">Подтвердить</button></p>
+	<script>
+		document.getElementById('submit').addEventListener('click', function(){
+			var raw = document.getElementById('token-url').value;
+			var token = raw.split('access_token=')[1].split('&')[0];
+			if (token.length != 0) {
+				localStorage.setItem('token', token);
+				location.reload();
+			} else {
+				alert('Wrong url with token');
+			}
+		});
+	</script>
+</div>
+
+<script>
+	var token = localStorage.getItem('token');
+	if (!token) {
+		document.getElementById('login').style.display = "block";
+	} else {
+		document.getElementById('main').style.display = "block";
+	}
+</script>
+<script src="app.js"></script>
+
+</body>
+</html>

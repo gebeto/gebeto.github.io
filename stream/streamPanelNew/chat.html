@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chat</title>
+	<style>
+	/*	#comments {
+			width: 200px;
+			height: 400px;
+			background: #eee;
+			font: 16px Arial;
+			color: red;
+			padding: 4px;
+			font-weight: bold;
+			overflow: hidden;
+			border-radius: 5px;
+			border: 2px solid red;
+		}*/
+	</style>
+</head>
+<body>
+
+<div id="comments"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+var url = location.href;
+var token = url.split('token=')[1].split('&')[0]
+var videoID = url.split('video_id=')[1].split('&')[0];
+var groupID = url.split('group_id=')[1];
+var streamScanInterval;
+var commentsBlock = document.getElementById('comments');
+
+function refreshComments(comments) {
+	commentsBlock.innerHTML = "";
+	for (var i = 1; i < comments.length; i++) {
+		var html = '<div class="comment">';
+		html += '';
+		html += '<p>' + comments[i]["message"] + '</p>';
+		html += '</div>';
+		commentsBlock.innerHTML += html;
+	}
+}
+
+function startScanStream() {
+	var url = "https://api.vk.com/method/video.getComments?count=30&sort=desc&access_token="+token+"&video_id="+videoID;
+	if (groupID)
+		url = "https://api.vk.com/method/video.getComments?count=30&sort=desc&access_token="+token+"&video_id="+videoID+"&group_id="+groupID;
+
+	streamScanInterval = setInterval(function(){
+		$.ajax({
+			url: url,
+			dataType: "jsonp",
+			jsonpCallback: "logResults",
+			success: function(res){
+				console.log(res);
+				refreshComments(res["response"]);
+			},
+			error: function(err) {
+				console.log(err);
+				refreshComments([{message: 'error'}]);
+			}
+		});
+	}, 5000);
+}
+
+startScanStream();
+
+</script>
+</body>
+</html>
