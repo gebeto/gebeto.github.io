@@ -3,27 +3,71 @@
 <head>
 	<meta charset="UTF-8">
 	<title>VK Stream</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
 <div id="main" style="display: none">
-	<div class="main-wrapper" id="main-wrapper">
-		<input type="text" id="stream-name" class="shadow" placeholder="Stream name">
-		<input type="text" id="stream-by-group" class="shadow" placeholder="Group ID(optional)">
-		<input type="button" class="shadow stop" id="stop-stream-button" value="Stop Stream">
-		<input type="button" class="shadow start" id="start-stream-button" value="Start Stream">
 
-		<input type="text" id="server-url" class="server first">
-		<input type="text" id="server-key" class="server">
-		<span id="server-name">Stream name:</span>
-		<div id="hide-show"></div>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">VK Stream Panel</a>
+				<ul class="nav navbar-nav">
+					<!-- <li class="active"><a href="#">От имени пользователя</a></li> -->
+					<li class="active" id="group-toggle"><a href="#">От имени сообщества</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="col-md-offset-3 col-md-2 main-controller">
+		<div class="form-group">
+			<input type="text" class="form-control" id="stream-name" placeholder="Название стрима">
+		</div>
+		<div class="form-group" id="">
+			<input type="text" class="form-control" id="stream-by-group" placeholder="ID Группы">
+		</div>
+		<div class="form-group">
+			<input type="button" class="form-control btn btn-danger" id="stop-stream-button"	value="Stop Stream">
+		</div>
+		<div class="form-group">
+			<input type="button" class="form-control btn btn-success" id="start-stream-button" value="Start Stream">
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="panel-group" id="accordion">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Информация подключения</a>
+					</h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<div class="form-group">
+							<input type="text" id="server-url" class="form-control" placeholder="URL сервера">
+						</div>
+						<div class="form-group">
+							<input type="text" id="server-key" class="form-control" placeholder="Ключ сервера">
+						</div>
+						<span id="server-name" class="panel-title">Название стрима:</span>
+						<a target="_blank" id="chat-url" href="#">Открить чат</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div id="users"></div>
 	<div id="comments"></div>
-	<a id="chat-url" href="#">Open chat</a>
 </div>
+
 
 <div id="login" style="display: none">
 	<p>Need login</p>
@@ -51,7 +95,6 @@
 		document.getElementById('main').style.display = "block";
 	}
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="app.js"></script>
 
 </body>

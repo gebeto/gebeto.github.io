@@ -1,14 +1,12 @@
 var startStreamButton = document.getElementById("start-stream-button");
 var stopStreamButton = document.getElementById("stop-stream-button");
-var mainWrapper = document.getElementById('main-wrapper');
 var profilesBlock = document.getElementById('users');
 var commentsBlock = document.getElementById('comments');
 var streamScanInterval;
-var ownerID;
+var ownerID = "";
 
 var groupID = ""
 
-// var token = "";
 var stopStreamUrl = "https://api.vk.com/method/video.stopStreaming?access_token="+token+"&v=5.60";
 var streamName = document.getElementById("stream-name");
 var startUrl = "https://api.vk.com/method/video.startStreaming?access_token="+token+"&https=1&lang=en&name="+streamName.value+"&v=5.60&wallpost=1";
@@ -86,12 +84,9 @@ function startStream(){
 			console.log(res);
 			startScanStream(res["response"]["video_id"]);
 			ownerID = res["response"]["owner_id"];
-			// startStreamButton.value = "Started";
-			// stopStreamButton.value = "Stop Stream";
 			document.getElementById('server-url').value = res['response']['stream']['url']
 			document.getElementById('server-key').value = res['response']['stream']['key']
-			document.getElementById('server-name').innerHTML = "Stream name: " + res['response']['name']
-			mainWrapper.style.height = "376px";
+			document.getElementById('server-name').innerHTML = "Название стрима: " + res['response']['name']
 		},
 		error: function(err) {
 			console.log(err);
@@ -108,9 +103,7 @@ function stopStream() {
 		success: function(res){
 			console.log(res);
 			clearInterval(streamScanInterval);
-			// stopStreamButton.value = "Stopped";
-			// startStreamButton.value = "Start Stream";
-			mainWrapper.style.height = "276px";
+			location.reload();
 		},
 		error: function(err) {
 			console.log(err);
@@ -127,12 +120,8 @@ $(document).ready(function(){
 	stopStreamButton.addEventListener('click', stopStream);
 });
 
-var hidden = true;
-document.getElementById('hide-show').addEventListener('click', function(){
-	if (hidden) {
-		mainWrapper.style.height = "376px";
-	} else {
-		mainWrapper.style.height = "276px";
-	}
-	hidden = !hidden;
+
+$('#group-toggle').on('click', function() {
+	$('#stream-by-group').slideToggle();
+	$(this).toggleClass('active');
 });
