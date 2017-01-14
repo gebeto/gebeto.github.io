@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Periscope</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<script>
+		$.ajax({
+			method: "post",
+			url: "https://api.periscope.tv/api/v2/mapGeoBroadcastFeed?build=v1.8.6",
+			dataType: "jsonp",
+			data: {
+				cookie: "WlsfAnsiVXNlcklkIjoiMWVWUVlEYm9OQUVMTyIsIlNlc3Npb24iOiJmQU9zckdneEZPVDJqMFlaQ0FMOFJFZkNoVDNtZG5CaFU1Yk4tekVSbE53IiwiVmVyc2lvbiI6MX37O1WBHA6nxnHVwm_ntw3iFVGYIqvxuvpKT9fJfbUhWw==",
+				p1_lng: -10.06741294506111,
+				p1_lat: 81.83992430982617,
+				include_replay: true,
+				p2_lng: -145.0673950549389,
+				p2_lat: -65.84265487868534
+			},
+			success: function(res) {
+				console.log(res);
+			},
+			error: function(err) {
+				console.log(err);
+			}
+		})
+	</script>
+</body>
+</html>
