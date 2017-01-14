@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$$.ajax({
+	$.ajax({
 		url: 'tutorials/tutorials.json',
 		type: 'GET',
 		dataType: 'json',
