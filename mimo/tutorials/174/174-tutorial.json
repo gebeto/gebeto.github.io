@@ -1,0 +1,863 @@
+{
+  "tutorial": {
+    "id": 174,
+    "version": 12,
+    "title": "C#",
+    "chapters": [
+      {
+        "title": "C# Basics",
+        "lessons": [
+          {
+            "title": "Introduction",
+            "id": 6185
+          },
+          {
+            "title": "Variables",
+            "id": 6186
+          },
+          {
+            "title": "Programming",
+            "id": 6187
+          },
+          {
+            "title": "String and numbers",
+            "id": 6188
+          },
+          {
+            "title": "Types of numbers",
+            "id": 6189
+          },
+          {
+            "title": "Arithmetic",
+            "id": 6190
+          },
+          {
+            "title": "C# projects",
+            "id": 6192
+          },
+          {
+            "title": "Main()",
+            "id": 6193
+          },
+          {
+            "title": "Special Mission #1",
+            "id": 6191
+          },
+          {
+            "title": "Compendium",
+            "id": 6194
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 6195
+          },
+          {
+            "title": "Quiz #2",
+            "id": 6196
+          },
+          {
+            "title": "Quiz #3",
+            "id": 6197
+          },
+          {
+            "title": "Quiz #4",
+            "id": 6199
+          },
+          {
+            "title": "Quiz #5",
+            "id": 6200
+          }
+        ]
+      },
+      {
+        "title": "Variables",
+        "lessons": [
+          {
+            "title": "Declaring",
+            "id": 6473
+          },
+          {
+            "title": "Initializing",
+            "id": 6474
+          },
+          {
+            "title": "Type inference",
+            "id": 6487
+          },
+          {
+            "title": "Type safety .. and safely",
+            "id": 6475
+          },
+          {
+            "title": "Always initialize, never compromise!",
+            "id": 6476
+          },
+          {
+            "title": "Incrementing",
+            "id": 6477
+          },
+          {
+            "title": "+=",
+            "id": 6478
+          },
+          {
+            "title": "Special Mission #2",
+            "id": 6479
+          },
+          {
+            "title": "Compendium",
+            "id": 6480
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 6481
+          },
+          {
+            "title": "Quiz #2",
+            "id": 6482
+          },
+          {
+            "title": "Quiz #3",
+            "id": 6483
+          },
+          {
+            "title": "Quiz #4",
+            "id": 6485
+          },
+          {
+            "title": "Quiz #5",
+            "id": 6488
+          }
+        ]
+      },
+      {
+        "title": "Booleans",
+        "lessons": [
+          {
+            "title": "True or false?",
+            "id": 6506
+          },
+          {
+            "title": "Comparing",
+            "id": 6507
+          },
+          {
+            "title": "Greater or equal",
+            "id": 6508
+          },
+          {
+            "title": "Equality",
+            "id": 6509
+          },
+          {
+            "title": "Inequality",
+            "id": 6510
+          },
+          {
+            "title": "To be or not to be",
+            "id": 6511
+          },
+          {
+            "title": "And what?",
+            "id": 6512
+          },
+          {
+            "title": "Or what?",
+            "id": 6513
+          },
+          {
+            "title": "String comparisons",
+            "id": 6963
+          },
+          {
+            "title": "Special Mission #3",
+            "id": 6514
+          },
+          {
+            "title": "Compendium",
+            "id": 6515
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 6520
+          },
+          {
+            "title": "Quiz #2",
+            "id": 6516
+          },
+          {
+            "title": "Quiz #3",
+            "id": 6517
+          },
+          {
+            "title": "Quiz #4",
+            "id": 6518
+          },
+          {
+            "title": "Quiz #5",
+            "id": 6519
+          }
+        ]
+      },
+      {
+        "title": "Conditional statements",
+        "lessons": [
+          {
+            "title": "What if?",
+            "id": 6959
+          },
+          {
+            "title": "Or else what?",
+            "id": 6960
+          },
+          {
+            "title": "Else if",
+            "id": 6961
+          },
+          {
+            "title": "Nested if",
+            "id": 6962
+          },
+          {
+            "title": "Multiple conditions",
+            "id": 8941
+          },
+          {
+            "title": "Switch it up",
+            "id": 6964
+          },
+          {
+            "title": "Default cases",
+            "id": 8909
+          },
+          {
+            "title": "Ternary operators",
+            "id": 8910
+          },
+          {
+            "title": "Special Mission #4",
+            "id": 6965
+          },
+          {
+            "title": "Compendium",
+            "id": 6966
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 6967
+          },
+          {
+            "title": "Quiz #2",
+            "id": 6968
+          },
+          {
+            "title": "Quiz #3",
+            "id": 6969
+          },
+          {
+            "title": "Quiz #4",
+            "id": 6971
+          },
+          {
+            "title": "Quiz #5",
+            "id": 6973
+          }
+        ]
+      },
+      {
+        "title": "Arrays",
+        "lessons": [
+          {
+            "title": "Hooray array!",
+            "id": 6991
+          },
+          {
+            "title": "Initializing ",
+            "id": 6992
+          },
+          {
+            "title": "Populating",
+            "id": 6993
+          },
+          {
+            "title": "The quick way",
+            "id": 6994
+          },
+          {
+            "title": "String.Join()",
+            "id": 6999
+          },
+          {
+            "title": "Sorting",
+            "id": 6995
+          },
+          {
+            "title": "Length",
+            "id": 6996
+          },
+          {
+            "title": "Accessing",
+            "id": 6997
+          },
+          {
+            "title": "Replacing",
+            "id": 6998
+          },
+          {
+            "title": "Special Mission #5",
+            "id": 7000
+          },
+          {
+            "title": "Compendium",
+            "id": 7001
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 7002
+          },
+          {
+            "title": "Quiz #2",
+            "id": 7003
+          },
+          {
+            "title": "Quiz #3",
+            "id": 7004
+          },
+          {
+            "title": "Quiz #4",
+            "id": 7005
+          },
+          {
+            "title": "Quiz #5",
+            "id": 7006
+          }
+        ]
+      },
+      {
+        "title": "Strings",
+        "lessons": [
+          {
+            "title": "Creating strings",
+            "id": 7007
+          },
+          {
+            "title": "Class constructor",
+            "id": 7008
+          },
+          {
+            "title": "Concatenating",
+            "id": 7009
+          },
+          {
+            "title": "Getting a character",
+            "id": 7010
+          },
+          {
+            "title": "Length",
+            "id": 7011
+          },
+          {
+            "title": "Contains()",
+            "id": 7012
+          },
+          {
+            "title": "IndexOf()",
+            "id": 7013
+          },
+          {
+            "title": "Removing",
+            "id": 7014
+          },
+          {
+            "title": "Removing with an end",
+            "id": 7019
+          },
+          {
+            "title": "Replacing",
+            "id": 7015
+          },
+          {
+            "title": "Special Mission #6",
+            "id": 7016
+          },
+          {
+            "title": "Compendium",
+            "id": 7017
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 7018
+          },
+          {
+            "title": "Quiz #2",
+            "id": 7020
+          },
+          {
+            "title": "Quiz #3",
+            "id": 7022
+          },
+          {
+            "title": "Quiz #4",
+            "id": 7024
+          },
+          {
+            "title": "Quiz #5",
+            "id": 7025
+          }
+        ]
+      },
+      {
+        "title": "Lists",
+        "lessons": [
+          {
+            "title": "On my list",
+            "id": 7026
+          },
+          {
+            "title": "Converting",
+            "id": 7029
+          },
+          {
+            "title": "Adding",
+            "id": 7030
+          },
+          {
+            "title": "Accessing",
+            "id": 8912
+          },
+          {
+            "title": "Counting",
+            "id": 7028
+          },
+          {
+            "title": "Inserting",
+            "id": 7031
+          },
+          {
+            "title": "Sorting",
+            "id": 7034
+          },
+          {
+            "title": "Removing",
+            "id": 7032
+          },
+          {
+            "title": "Contains",
+            "id": 7027
+          },
+          {
+            "title": "IndexOf",
+            "id": 7033
+          },
+          {
+            "title": "Lists and arrays",
+            "id": 7035
+          },
+          {
+            "title": "Special Mission #7",
+            "id": 7036
+          },
+          {
+            "title": "Compendium",
+            "id": 7043
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 7037
+          },
+          {
+            "title": "Quiz #2",
+            "id": 7038
+          },
+          {
+            "title": "Quiz #3",
+            "id": 7039
+          },
+          {
+            "title": "Quiz #4",
+            "id": 7040
+          },
+          {
+            "title": "Quiz #5",
+            "id": 7041
+          }
+        ]
+      },
+      {
+        "title": "Dictionaries",
+        "lessons": [
+          {
+            "title": "What's a dictionary?",
+            "id": 7044
+          },
+          {
+            "title": "Initializing",
+            "id": 7046
+          },
+          {
+            "title": "Accessing elements (again!)",
+            "id": 8942
+          },
+          {
+            "title": "Counting",
+            "id": 7045
+          },
+          {
+            "title": "Keys",
+            "id": 7047
+          },
+          {
+            "title": "Values",
+            "id": 7048
+          },
+          {
+            "title": "Adding",
+            "id": 7049
+          },
+          {
+            "title": "Clearing out",
+            "id": 7050
+          },
+          {
+            "title": "Where's my key!?",
+            "id": 7051
+          },
+          {
+            "title": "Removing",
+            "id": 7052
+          },
+          {
+            "title": "Special Mission #8",
+            "id": 7053
+          },
+          {
+            "title": "Compendium",
+            "id": 7054
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 7056
+          },
+          {
+            "title": "Quiz #2",
+            "id": 7057
+          },
+          {
+            "title": "Quiz #3",
+            "id": 7058
+          },
+          {
+            "title": "Quiz #4",
+            "id": 7059
+          },
+          {
+            "title": "Quiz #5",
+            "id": 7060
+          }
+        ]
+      },
+      {
+        "title": "Loops",
+        "lessons": [
+          {
+            "title": "Loop da loop",
+            "id": 7062
+          },
+          {
+            "title": "While we wait",
+            "id": 7063
+          },
+          {
+            "title": "For C#'s sake",
+            "id": 7064
+          },
+          {
+            "title": "Do while",
+            "id": 7065
+          },
+          {
+            "title": "Foreach",
+            "id": 8913
+          },
+          {
+            "title": "Nesting",
+            "id": 7066
+          },
+          {
+            "title": "Taking breaks",
+            "id": 7067
+          },
+          {
+            "title": "Continuing",
+            "id": 7068
+          },
+          {
+            "title": "Looping endlessly",
+            "id": 7069
+          },
+          {
+            "title": "Special Mission #9",
+            "id": 7070
+          },
+          {
+            "title": "Compendium",
+            "id": 7071
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 7072
+          },
+          {
+            "title": "Quiz #2",
+            "id": 7073
+          },
+          {
+            "title": "Quiz #3",
+            "id": 7074
+          },
+          {
+            "title": "Quiz #4",
+            "id": 7076
+          },
+          {
+            "title": "Quiz #5",
+            "id": 7077
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "lessons": [
+          {
+            "title": "Method to the madness",
+            "id": 7078
+          },
+          {
+            "title": "Custom methods",
+            "id": 7079
+          },
+          {
+            "title": "Return types",
+            "id": 7081
+          },
+          {
+            "title": "Parameters",
+            "id": 7082
+          },
+          {
+            "title": "More parameters",
+            "id": 7083
+          },
+          {
+            "title": "Recursion",
+            "id": 7084
+          },
+          {
+            "title": "Default parameters",
+            "id": 7085
+          },
+          {
+            "title": "Endless parameters",
+            "id": 7086
+          },
+          {
+            "title": "Special Mission #10",
+            "id": 7087
+          },
+          {
+            "title": "Compendium",
+            "id": 7088
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 7089
+          },
+          {
+            "title": "Quiz #2",
+            "id": 7091
+          },
+          {
+            "title": "Quiz #3",
+            "id": 7092
+          },
+          {
+            "title": "Quiz #4",
+            "id": 7093
+          },
+          {
+            "title": "Quiz #5",
+            "id": 7094
+          }
+        ]
+      },
+      {
+        "title": "Classes",
+        "lessons": [
+          {
+            "title": "Object orientation",
+            "id": 7104
+          },
+          {
+            "title": "Welcome to class",
+            "id": 7095
+          },
+          {
+            "title": "Defining classes",
+            "id": 7096
+          },
+          {
+            "title": "Constructors",
+            "id": 7097
+          },
+          {
+            "title": "Parameters",
+            "id": 7098
+          },
+          {
+            "title": "Class methods",
+            "id": 7102
+          },
+          {
+            "title": "Access specifiers ",
+            "id": 7080
+          },
+          {
+            "title": "Getters and setters",
+            "id": 7101
+          },
+          {
+            "title": "Class inheritance",
+            "id": 7103
+          },
+          {
+            "title": "Special Mission #10",
+            "id": 7099
+          },
+          {
+            "title": "Compendium",
+            "id": 7105
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 7106
+          },
+          {
+            "title": "Quiz #2",
+            "id": 7107
+          },
+          {
+            "title": "Quiz #3",
+            "id": 7108
+          },
+          {
+            "title": "Quiz #4",
+            "id": 7109
+          },
+          {
+            "title": "Quiz #5",
+            "id": 7110
+          }
+        ]
+      },
+      {
+        "title": "Main and System",
+        "lessons": [
+          {
+            "title": "Remember main?",
+            "id": 7112
+          },
+          {
+            "title": "Static? Bzz!",
+            "id": 7113
+          },
+          {
+            "title": "Command-line arguments",
+            "id": 7114
+          },
+          {
+            "title": "Using main with classes",
+            "id": 7115
+          },
+          {
+            "title": "Namespaces",
+            "id": 7116
+          },
+          {
+            "title": "System",
+            "id": 7117
+          },
+          {
+            "title": "Nested namespaces",
+            "id": 7118
+          },
+          {
+            "title": "Bringing it all together",
+            "id": 7119
+          },
+          {
+            "title": "Special Mission #12",
+            "id": 7120
+          },
+          {
+            "title": "Compendium",
+            "id": 7121
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 7122
+          },
+          {
+            "title": "Quiz #2",
+            "id": 7123
+          },
+          {
+            "title": "Quiz #3",
+            "id": 7124
+          },
+          {
+            "title": "Quiz #4",
+            "id": 7125
+          },
+          {
+            "title": "Quiz #5",
+            "id": 7126
+          }
+        ]
+      },
+      {
+        "title": "Interfaces",
+        "lessons": [
+          {
+            "title": "Overriding classes ***",
+            "id": 7100
+          }
+        ],
+        "challenges": []
+      }
+    ]
+  }
+}

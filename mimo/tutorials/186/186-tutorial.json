@@ -1,0 +1,417 @@
+{
+  "tutorial": {
+    "id": 186,
+    "version": 6,
+    "title": "Hacking",
+    "chapters": [
+      {
+        "title": "ch1.introduction.zip",
+        "lessons": [
+          {
+            "title": "So you want to h4ck?",
+            "id": 9061
+          },
+          {
+            "title": "H4ck3r5 wear many hats",
+            "id": 11506
+          },
+          {
+            "title": "White hat hackers",
+            "id": 11563
+          },
+          {
+            "title": "Wear that white hat",
+            "id": 17607
+          },
+          {
+            "title": "Black hat hackers",
+            "id": 11564
+          },
+          {
+            "title": "Wear that black hat",
+            "id": 17608
+          },
+          {
+            "title": "Grey hat hackers",
+            "id": 11565
+          },
+          {
+            "title": "Wear that grey hat",
+            "id": 17609
+          },
+          {
+            "title": "Elite hackers",
+            "id": 11566
+          },
+          {
+            "title": "J4rg0n",
+            "id": 11567
+          },
+          {
+            "title": "Joining the sneakers",
+            "id": 11568
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 11614
+          },
+          {
+            "title": "Quiz #2",
+            "id": 11615
+          },
+          {
+            "title": "Quiz #3",
+            "id": 11616
+          }
+        ]
+      },
+      {
+        "title": "ch2.cryptography.dmg",
+        "lessons": [
+          {
+            "title": "Dszquphsbqiz",
+            "id": 11627
+          },
+          {
+            "title": "Tales from the crypt-ography",
+            "id": 11628
+          },
+          {
+            "title": "Hail, Caesar",
+            "id": 11629
+          },
+          {
+            "title": "Hail, Caesar II",
+            "id": 11631
+          },
+          {
+            "title": "Atbash cipher",
+            "id": 11630
+          },
+          {
+            "title": "Atbash cipher II",
+            "id": 11632
+          },
+          {
+            "title": "Polybius Square",
+            "id": 11721
+          },
+          {
+            "title": "Polybius Square II",
+            "id": 11722
+          },
+          {
+            "title": "Rail Fence",
+            "id": 11723
+          },
+          {
+            "title": "Deciphering for bsociety",
+            "id": 13345
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 11726
+          },
+          {
+            "title": "Quiz #2",
+            "id": 11724
+          },
+          {
+            "title": "Quiz #3",
+            "id": 11725
+          }
+        ]
+      },
+      {
+        "title": "ch3.passwords.rar",
+        "lessons": [
+          {
+            "title": "Strong passwords",
+            "id": 11727
+          },
+          {
+            "title": "What's a weak password?",
+            "id": 11728
+          },
+          {
+            "title": "Guesswork",
+            "id": 11729
+          },
+          {
+            "title": "More guesswork",
+            "id": 17610
+          },
+          {
+            "title": "Online dictionary attacks",
+            "id": 11730
+          },
+          {
+            "title": "What's a strong password?",
+            "id": 11731
+          },
+          {
+            "title": "Passwords and cryptography",
+            "id": 11735
+          },
+          {
+            "title": "Offline dictionary attacks",
+            "id": 11736
+          },
+          {
+            "title": "Dictionary-attacking X Corp.",
+            "id": 13346
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 11732
+          },
+          {
+            "title": "Quiz #2",
+            "id": 11733
+          },
+          {
+            "title": "Quiz #3",
+            "id": 11734
+          }
+        ]
+      },
+      {
+        "title": "ch4.sql_injection.gz",
+        "lessons": [
+          {
+            "title": "What's SQL injection?",
+            "id": 12740
+          },
+          {
+            "title": "What's its impact?",
+            "id": 12734
+          },
+          {
+            "title": "Normal user input",
+            "id": 12735
+          },
+          {
+            "title": "Malicious user input",
+            "id": 12736
+          },
+          {
+            "title": "Dropping tables at X Corp.",
+            "id": 13344
+          },
+          {
+            "title": "Prevention by sanitizing inputs",
+            "id": 12737
+          },
+          {
+            "title": "Prevention with parameterizing SQL",
+            "id": 12738
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 12741
+          },
+          {
+            "title": "Quiz #2",
+            "id": 12742
+          },
+          {
+            "title": "Quiz #3",
+            "id": 13365
+          }
+        ]
+      },
+      {
+        "title": "ch5.session_hijacking.cab",
+        "lessons": [
+          {
+            "title": "What's session hijacking?",
+            "id": 12746
+          },
+          {
+            "title": "What's its impact?",
+            "id": 12747
+          },
+          {
+            "title": "Hijacking a session",
+            "id": 12748
+          },
+          {
+            "title": "Hijacking an X Corp. session",
+            "id": 13337
+          },
+          {
+            "title": "Preventing with web frameworks",
+            "id": 12749
+          },
+          {
+            "title": "Preventing by signing cookies",
+            "id": 12750
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 12751
+          },
+          {
+            "title": "Quiz #2",
+            "id": 12752
+          },
+          {
+            "title": "Quiz #3",
+            "id": 13338
+          }
+        ]
+      },
+      {
+        "title": "ch6.path_traversal.7z",
+        "lessons": [
+          {
+            "title": "What is path traversal?",
+            "id": 12776
+          },
+          {
+            "title": "What's its impact?",
+            "id": 12755
+          },
+          {
+            "title": "Traversing directories",
+            "id": 12753
+          },
+          {
+            "title": "Traversing X Corp. directories",
+            "id": 13335
+          },
+          {
+            "title": "Preventing by segregating files",
+            "id": 12757
+          },
+          {
+            "title": "Preventing by restricting permissions",
+            "id": 12758
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 12759
+          },
+          {
+            "title": "Quiz #2",
+            "id": 12760
+          },
+          {
+            "title": "Quiz #3",
+            "id": 13336
+          }
+        ]
+      },
+      {
+        "title": "ch7.man_in_the_middle.jar",
+        "lessons": [
+          {
+            "title": "What's a man-in-the-middle attack?",
+            "id": 12761
+          },
+          {
+            "title": "What's its impact?",
+            "id": 12762
+          },
+          {
+            "title": "Evil-twin-in-the-middle",
+            "id": 12763
+          },
+          {
+            "title": "Evil twinning at X Corp.",
+            "id": 13333
+          },
+          {
+            "title": "Preventing by taking care",
+            "id": 12765
+          },
+          {
+            "title": "Preventing with HTTPS",
+            "id": 12764
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 12766
+          },
+          {
+            "title": "Quiz #2",
+            "id": 12767
+          },
+          {
+            "title": "Quiz #3",
+            "id": 13334
+          }
+        ]
+      },
+      {
+        "title": "ch8.social_engineering.iso",
+        "lessons": [
+          {
+            "title": "What's social engineering?",
+            "id": 12768
+          },
+          {
+            "title": "What's its impact?",
+            "id": 12769
+          },
+          {
+            "title": "Pretexting",
+            "id": 12770
+          },
+          {
+            "title": "Do you even pretext?",
+            "id": 13330
+          },
+          {
+            "title": "Phishing",
+            "id": 12771
+          },
+          {
+            "title": "Gone phishing at X Corp.",
+            "id": 13331
+          },
+          {
+            "title": "Vishing",
+            "id": 12772
+          },
+          {
+            "title": "Prevention",
+            "id": 12773
+          },
+          {
+            "title": "Counterpunch",
+            "id": 17611
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 12774
+          },
+          {
+            "title": "Quiz #2",
+            "id": 12775
+          },
+          {
+            "title": "Quiz #3",
+            "id": 13332
+          }
+        ]
+      }
+    ]
+  }
+}

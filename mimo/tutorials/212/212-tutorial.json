@@ -1,0 +1,415 @@
+{
+  "tutorial": {
+    "id": 212,
+    "version": 5,
+    "title": "Terminal",
+    "chapters": [
+      {
+        "title": "Introduction",
+        "lessons": [
+          {
+            "title": "The Terminal",
+            "id": 11507
+          },
+          {
+            "title": "Shell prompt",
+            "id": 11528
+          },
+          {
+            "title": "Echoes",
+            "id": 12401
+          },
+          {
+            "title": "Listing",
+            "id": 11509
+          },
+          {
+            "title": "Where are we?",
+            "id": 11510
+          },
+          {
+            "title": "Navigating",
+            "id": 11512
+          },
+          {
+            "title": "Navigating further",
+            "id": 11513
+          },
+          {
+            "title": "Making directories",
+            "id": 11514
+          },
+          {
+            "title": "Making files",
+            "id": 11515
+          },
+          {
+            "title": "Opening the Terminal ",
+            "id": 11516
+          },
+          {
+            "title": "Project #1",
+            "id": 11517
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 11518
+          },
+          {
+            "title": "Quiz #2",
+            "id": 11519
+          },
+          {
+            "title": "Quiz #3",
+            "id": 11520
+          },
+          {
+            "title": "Quiz #4",
+            "id": 11522
+          },
+          {
+            "title": "Quiz #5",
+            "id": 11521
+          }
+        ]
+      },
+      {
+        "title": "Manipulation",
+        "lessons": [
+          {
+            "title": "Listing again",
+            "id": 11523
+          },
+          {
+            "title": "Options",
+            "id": 11524
+          },
+          {
+            "title": "Long listing",
+            "id": 11530
+          },
+          {
+            "title": "Listing by time",
+            "id": 11531
+          },
+          {
+            "title": "Combining options",
+            "id": 11532
+          },
+          {
+            "title": "Copying",
+            "id": 11533
+          },
+          {
+            "title": "Copying to an existing file",
+            "id": 11535
+          },
+          {
+            "title": "Arguments",
+            "id": 11534
+          },
+          {
+            "title": "Wildcards",
+            "id": 11536
+          },
+          {
+            "title": "Moving",
+            "id": 11537
+          },
+          {
+            "title": "Removing",
+            "id": 11538
+          },
+          {
+            "title": "Project #2",
+            "id": 11539
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 11540
+          },
+          {
+            "title": "Quiz #2",
+            "id": 11541
+          },
+          {
+            "title": "Quiz #3",
+            "id": 11542
+          },
+          {
+            "title": "Quiz #4 ",
+            "id": 11543
+          },
+          {
+            "title": "Quiz #5",
+            "id": 11544
+          }
+        ]
+      },
+      {
+        "title": "Redirection",
+        "lessons": [
+          {
+            "title": "Introducing redirection ",
+            "id": 11545
+          },
+          {
+            "title": "Reading files",
+            "id": 11546
+          },
+          {
+            "title": "Counting words",
+            "id": 11553
+          },
+          {
+            "title": "Redirecting output",
+            "id": 11547
+          },
+          {
+            "title": "Redirecting input",
+            "id": 11548
+          },
+          {
+            "title": "Redirecting more output",
+            "id": 11549
+          },
+          {
+            "title": "Appending to files",
+            "id": 11551
+          },
+          {
+            "title": "Pipes",
+            "id": 11552
+          },
+          {
+            "title": "Project #3",
+            "id": 11554
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 11555
+          },
+          {
+            "title": "Quiz #2",
+            "id": 11558
+          },
+          {
+            "title": "Quiz #3",
+            "id": 11560
+          },
+          {
+            "title": "Quiz #4",
+            "id": 11561
+          },
+          {
+            "title": "Quiz #5",
+            "id": 11562
+          }
+        ]
+      },
+      {
+        "title": "Permissions",
+        "lessons": [
+          {
+            "title": "Permissions and accessing",
+            "id": 11569
+          },
+          {
+            "title": "Classes of permission",
+            "id": 11570
+          },
+          {
+            "title": "Permissions of classes",
+            "id": 11571
+          },
+          {
+            "title": "Viewing permissions",
+            "id": 11572
+          },
+          {
+            "title": "Directories",
+            "id": 11573
+          },
+          {
+            "title": "Changing permissions",
+            "id": 11574
+          },
+          {
+            "title": "Superuser",
+            "id": 11575
+          },
+          {
+            "title": "Switching users",
+            "id": 13329
+          },
+          {
+            "title": "Sudo",
+            "id": 11576
+          },
+          {
+            "title": "Project #4",
+            "id": 11577
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 11578
+          },
+          {
+            "title": "Quiz #2",
+            "id": 11579
+          },
+          {
+            "title": "Quiz #3",
+            "id": 11580
+          },
+          {
+            "title": "Quiz #4",
+            "id": 11581
+          },
+          {
+            "title": "Quiz #5",
+            "id": 11582
+          }
+        ]
+      },
+      {
+        "title": "Environment",
+        "lessons": [
+          {
+            "title": "What's an environment?",
+            "id": 11583
+          },
+          {
+            "title": "Environment variables",
+            "id": 11584
+          },
+          {
+            "title": "Path",
+            "id": 11585
+          },
+          {
+            "title": "Which path",
+            "id": 11613
+          },
+          {
+            "title": "Echo and the environment",
+            "id": 11609
+          },
+          {
+            "title": "Setting environment variables",
+            "id": 11588
+          },
+          {
+            "title": "Modifying variables",
+            "id": 11589
+          },
+          {
+            "title": "Profile files",
+            "id": 11590
+          },
+          {
+            "title": "Project #5",
+            "id": 11592
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 11617
+          },
+          {
+            "title": "Quiz #2",
+            "id": 11618
+          },
+          {
+            "title": "Quiz #3",
+            "id": 11619
+          },
+          {
+            "title": "Quiz #4",
+            "id": 11620
+          },
+          {
+            "title": "Quiz #5",
+            "id": 11621
+          }
+        ]
+      },
+      {
+        "title": "Extras",
+        "lessons": [
+          {
+            "title": "A few more useful commands ",
+            "id": 11610
+          },
+          {
+            "title": "Searching",
+            "id": 11594
+          },
+          {
+            "title": "Finding",
+            "id": 11595
+          },
+          {
+            "title": "Processes",
+            "id": 11596
+          },
+          {
+            "title": "Less is more ",
+            "id": 11597
+          },
+          {
+            "title": "Head",
+            "id": 11598
+          },
+          {
+            "title": "Tail",
+            "id": 11599
+          },
+          {
+            "title": "Sorting",
+            "id": 11611
+          },
+          {
+            "title": "Uniques",
+            "id": 11612
+          },
+          {
+            "title": "Project #6",
+            "id": 11601
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 11622
+          },
+          {
+            "title": "Quiz #2",
+            "id": 11623
+          },
+          {
+            "title": "Quiz #3",
+            "id": 11624
+          },
+          {
+            "title": "Quiz #4",
+            "id": 11625
+          },
+          {
+            "title": "Quiz #5",
+            "id": 11626
+          }
+        ]
+      }
+    ]
+  }
+}

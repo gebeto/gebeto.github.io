@@ -1,0 +1,692 @@
+{
+  "tutorial": {
+    "id": 178,
+    "version": 13,
+    "title": "JavaScript",
+    "chapters": [
+      {
+        "title": "JavaScript Basics",
+        "lessons": [
+          {
+            "title": "Introduction",
+            "id": 6542
+          },
+          {
+            "title": "Scripts",
+            "id": 8930
+          },
+          {
+            "title": "Variables ",
+            "id": 6549
+          },
+          {
+            "title": "This is off-limits!",
+            "id": 8940
+          },
+          {
+            "title": "Console output",
+            "id": 8915
+          },
+          {
+            "title": "String-ing along",
+            "id": 6546
+          },
+          {
+            "title": "Numbers",
+            "id": 6547
+          },
+          {
+            "title": "Semicolons",
+            "id": 8916
+          },
+          {
+            "title": "Comments",
+            "id": 8917
+          },
+          {
+            "title": "Project #1",
+            "id": 6550
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 8931
+          },
+          {
+            "title": "Quiz #2",
+            "id": 6551
+          },
+          {
+            "title": "Quiz #3",
+            "id": 6552
+          },
+          {
+            "title": "Quiz #4",
+            "id": 8918
+          },
+          {
+            "title": "Quiz #5",
+            "id": 6554
+          }
+        ]
+      },
+      {
+        "title": "Variables",
+        "lessons": [
+          {
+            "title": "Declaring",
+            "id": 8473
+          },
+          {
+            "title": "Assigning",
+            "id": 8923
+          },
+          {
+            "title": "Strings",
+            "id": 8924
+          },
+          {
+            "title": "Integers",
+            "id": 8925
+          },
+          {
+            "title": "Floats",
+            "id": 8926
+          },
+          {
+            "title": "Data types",
+            "id": 8927
+          },
+          {
+            "title": "Arithmetic operators",
+            "id": 6951
+          },
+          {
+            "title": "Shortcuts",
+            "id": 8928
+          },
+          {
+            "title": "More shortcuts",
+            "id": 8929
+          },
+          {
+            "title": "\"Hello\" + ?",
+            "id": 8516
+          },
+          {
+            "title": "Project #2",
+            "id": 8475
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 8476
+          },
+          {
+            "title": "Quiz #2",
+            "id": 8519
+          },
+          {
+            "title": "Quiz #3",
+            "id": 8943
+          },
+          {
+            "title": "Quiz #4",
+            "id": 8944
+          },
+          {
+            "title": "Quiz #5",
+            "id": 8945
+          }
+        ]
+      },
+      {
+        "title": "Booleans",
+        "lessons": [
+          {
+            "title": "Equality",
+            "id": 8952
+          },
+          {
+            "title": "Greater or less",
+            "id": 8953
+          },
+          {
+            "title": "Greater or less or equal",
+            "id": 8954
+          },
+          {
+            "title": "Inequality",
+            "id": 8955
+          },
+          {
+            "title": "Equal value and type",
+            "id": 8956
+          },
+          {
+            "title": "Logical and",
+            "id": 8957
+          },
+          {
+            "title": "Logical or",
+            "id": 8958
+          },
+          {
+            "title": "Opposite day",
+            "id": 8991
+          },
+          {
+            "title": "Conditional operator ",
+            "id": 8966
+          },
+          {
+            "title": "Strange strings",
+            "id": 8959
+          },
+          {
+            "title": "Project #3",
+            "id": 8960
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 8964
+          },
+          {
+            "title": "Quiz #2",
+            "id": 8962
+          },
+          {
+            "title": "Quiz #3",
+            "id": 8963
+          },
+          {
+            "title": "Quiz #4",
+            "id": 8961
+          },
+          {
+            "title": "Quiz #5",
+            "id": 8965
+          }
+        ]
+      },
+      {
+        "title": "Conditional statements",
+        "lessons": [
+          {
+            "title": "If",
+            "id": 8464
+          },
+          {
+            "title": "Else",
+            "id": 8463
+          },
+          {
+            "title": "Else if",
+            "id": 8968
+          },
+          {
+            "title": "Unlimited else ifs",
+            "id": 8949
+          },
+          {
+            "title": "Nesting",
+            "id": 9014
+          },
+          {
+            "title": "Logical operators",
+            "id": 9015
+          },
+          {
+            "title": "Let's switch it up!",
+            "id": 8459
+          },
+          {
+            "title": "Switching again",
+            "id": 9016
+          },
+          {
+            "title": "Non-boolean values",
+            "id": 8950
+          },
+          {
+            "title": "More non-boolean values",
+            "id": 8951
+          },
+          {
+            "title": "Project #4",
+            "id": 8971
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 8855
+          },
+          {
+            "title": "Quiz #2",
+            "id": 8465
+          },
+          {
+            "title": "Quiz #3",
+            "id": 8972
+          },
+          {
+            "title": "Quiz #4",
+            "id": 8898
+          },
+          {
+            "title": "Quiz #5",
+            "id": 8970
+          }
+        ]
+      },
+      {
+        "title": "Strings",
+        "lessons": [
+          {
+            "title": "Concat!",
+            "id": 6945
+          },
+          {
+            "title": "Length",
+            "id": 6941
+          },
+          {
+            "title": "Single or double?",
+            "id": 8946
+          },
+          {
+            "title": "The Great (String) Escape",
+            "id": 8947
+          },
+          {
+            "title": "Slicing",
+            "id": 6936
+          },
+          {
+            "title": "Substring",
+            "id": 8948
+          },
+          {
+            "title": "Searching and replacing",
+            "id": 6939
+          },
+          {
+            "title": "Changing cases",
+            "id": 6943
+          },
+          {
+            "title": "Project #5",
+            "id": 8856
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 6944
+          },
+          {
+            "title": "Quiz #2",
+            "id": 8982
+          },
+          {
+            "title": "Quiz #3",
+            "id": 8753
+          },
+          {
+            "title": "Quiz #4",
+            "id": 8857
+          },
+          {
+            "title": "Quiz #5",
+            "id": 8981
+          }
+        ]
+      },
+      {
+        "title": "Numbers and dates",
+        "lessons": [
+          {
+            "title": "Numbers",
+            "id": 9030
+          },
+          {
+            "title": "Type conversions",
+            "id": 8900
+          },
+          {
+            "title": "NaN ",
+            "id": 6952
+          },
+          {
+            "title": "Parsing",
+            "id": 9000
+          },
+          {
+            "title": "Rounding",
+            "id": 6956
+          },
+          {
+            "title": "Math",
+            "id": 6955
+          },
+          {
+            "title": "Date",
+            "id": 9031
+          },
+          {
+            "title": "Getting dates",
+            "id": 9003
+          },
+          {
+            "title": "Using dates",
+            "id": 9002
+          },
+          {
+            "title": "Project #6",
+            "id": 8865
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 8799
+          },
+          {
+            "title": "Quiz #2",
+            "id": 9004
+          },
+          {
+            "title": "Quiz #3",
+            "id": 9005
+          },
+          {
+            "title": "Quiz #4",
+            "id": 8862
+          },
+          {
+            "title": "Quiz #5",
+            "id": 9006
+          }
+        ]
+      },
+      {
+        "title": "Arrays",
+        "lessons": [
+          {
+            "title": "Why arrays?",
+            "id": 6561
+          },
+          {
+            "title": "Creating",
+            "id": 6545
+          },
+          {
+            "title": "Accessing",
+            "id": 6567
+          },
+          {
+            "title": "Converting",
+            "id": 6569
+          },
+          {
+            "title": "Length",
+            "id": 6568
+          },
+          {
+            "title": "Manipulating",
+            "id": 6572
+          },
+          {
+            "title": "Splitting strings",
+            "id": 6571
+          },
+          {
+            "title": "Pushing the boundaries",
+            "id": 6566
+          },
+          {
+            "title": "Popping",
+            "id": 6565
+          },
+          {
+            "title": "Shifting",
+            "id": 6570
+          },
+          {
+            "title": "Unshifting",
+            "id": 6576
+          },
+          {
+            "title": "Splicing",
+            "id": 9040
+          },
+          {
+            "title": "Sorting things out",
+            "id": 6564
+          },
+          {
+            "title": "Project #7",
+            "id": 8526
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 8530
+          },
+          {
+            "title": "Quiz #2",
+            "id": 8528
+          },
+          {
+            "title": "Quiz #3",
+            "id": 8527
+          },
+          {
+            "title": "Quiz #4",
+            "id": 8529
+          },
+          {
+            "title": "Quiz #5",
+            "id": 8531
+          }
+        ]
+      },
+      {
+        "title": "Loops",
+        "lessons": [
+          {
+            "title": "Why loops",
+            "id": 9007
+          },
+          {
+            "title": "For loops",
+            "id": 8456
+          },
+          {
+            "title": "Arrays",
+            "id": 9013
+          },
+          {
+            "title": "For-in",
+            "id": 9012
+          },
+          {
+            "title": "While loops",
+            "id": 8457
+          },
+          {
+            "title": "Do-while",
+            "id": 8458
+          },
+          {
+            "title": "Taking breaks",
+            "id": 8461
+          },
+          {
+            "title": "Continuing",
+            "id": 8460
+          },
+          {
+            "title": "Project #8",
+            "id": 9008
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1 ",
+            "id": 8469
+          },
+          {
+            "title": "Quiz #2",
+            "id": 9009
+          },
+          {
+            "title": "Quiz #3",
+            "id": 9011
+          },
+          {
+            "title": "Quiz #4",
+            "id": 8864
+          },
+          {
+            "title": "Quiz #5",
+            "id": 9010
+          }
+        ]
+      },
+      {
+        "title": "Functions",
+        "lessons": [
+          {
+            "title": "Why functions",
+            "id": 9019
+          },
+          {
+            "title": "Creating",
+            "id": 6592
+          },
+          {
+            "title": "Invoking",
+            "id": 9020
+          },
+          {
+            "title": "Parameters",
+            "id": 6593
+          },
+          {
+            "title": "Multiple parameters",
+            "id": 9021
+          },
+          {
+            "title": "Returning values",
+            "id": 6594
+          },
+          {
+            "title": "Expressing functions",
+            "id": 6596
+          },
+          {
+            "title": "Project #9",
+            "id": 8532
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 8534
+          },
+          {
+            "title": "Quiz #2",
+            "id": 8533
+          },
+          {
+            "title": "Quiz #3",
+            "id": 8535
+          },
+          {
+            "title": "Quiz #4",
+            "id": 9022
+          },
+          {
+            "title": "Quiz #5",
+            "id": 9023
+          }
+        ]
+      },
+      {
+        "title": "Objects",
+        "lessons": [
+          {
+            "title": "Why objects",
+            "id": 8472
+          },
+          {
+            "title": "Creating",
+            "id": 9024
+          },
+          {
+            "title": "Properties",
+            "id": 9025
+          },
+          {
+            "title": "Accessing",
+            "id": 9026
+          },
+          {
+            "title": "Changing",
+            "id": 9027
+          },
+          {
+            "title": "Deleting",
+            "id": 9028
+          },
+          {
+            "title": "Methods",
+            "id": 8470
+          },
+          {
+            "title": "Constructors",
+            "id": 6934
+          },
+          {
+            "title": "Project #10",
+            "id": 8861
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Quiz #1",
+            "id": 8769
+          },
+          {
+            "title": "Quiz #2",
+            "id": 9029
+          },
+          {
+            "title": "Quiz #3",
+            "id": 8770
+          },
+          {
+            "title": "Quiz #4",
+            "id": 8776
+          },
+          {
+            "title": "Quiz #5",
+            "id": 6935
+          }
+        ]
+      },
+      {
+        "title": "JavaScript meets HTML",
+        "lessons": [],
+        "challenges": []
+      }
+    ]
+  }
+}
