@@ -10,7 +10,7 @@
 		$.ajax({
 			method: "post",
 			url: "https://api.periscope.tv/api/v2/mapGeoBroadcastFeed?build=v1.8.6",
-			dataType: "jsonp",
+			dataType: "json",
 			data: {
 				cookie: "WlsfAnsiVXNlcklkIjoiMWVWUVlEYm9OQUVMTyIsIlNlc3Npb24iOiJmQU9zckdneEZPVDJqMFlaQ0FMOFJFZkNoVDNtZG5CaFU1Yk4tekVSbE53IiwiVmVyc2lvbiI6MX37O1WBHA6nxnHVwm_ntw3iFVGYIqvxuvpKT9fJfbUhWw==",
 				p1_lng: -10.06741294506111,
@@ -25,7 +25,7 @@
 			error: function(err) {
 				console.log(err);
 			}
-		})
+		});
 	</script>
 </body>
 </html>
