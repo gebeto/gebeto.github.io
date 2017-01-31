@@ -1,0 +1,43 @@
+* {
+	padding: 0;
+	margin: 0;
+	/*background: #fff;*/
+}
+
+h3 {
+	font: 1em "Roboto Mono";
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.tutorial {
+	margin-top: 10px;
+	width: 100%;
+	background: #fff;
+}
+
+.content {
+	background: #eee;
+	border-radius: 4px;
+	margin: 0 10px;
+	padding: 6px;
+}
+
+.difficult {
+	font: .7em "Roboto Mono";
+	font-weight: bold;
+	color: #999;
+}
+
+.description {
+	margin-top: 5px;
+	font: .8em "Roboto Mono";
+}
+
+
+
+
