@@ -1,0 +1,8 @@
+Origin: Slavik Nychkalo
+Label: Slavik Nychkalo
+Suite: stable
+Version: 1.1
+Codename: ios
+Architectures: iphoneos-arm
+Components: main
+Description: Slavik Nychkalo Repository !

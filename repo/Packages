@@ -1,0 +1,12 @@
+Name: Test;
+Size: 1000;
+Maintainer: Slavik Nychkalo;
+Section: Hack;
+Author: Slavik Nychkalo;
+Version: 1.0;
+HomePage: bboyheadman.github.io;
+Architecture: iphoneos-arm;
+Package: com.test.app;
+Filename: /debs/test.deb;
+Description: Test tweak;
+MD5Sum: 123123;
