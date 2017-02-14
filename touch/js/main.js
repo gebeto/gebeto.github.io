@@ -1,21 +1,13 @@
 $(function() {
-  $("#test-swipe").swipe({
+  $("[class=cell]").swipe({
     //Generic swipe handler for all directions
-    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-      console.log(direction);
-      if (direction === 'left')
-        $(this).find('#leftright').text( parseInt($(this).find('#leftright').text()) - distance );
-      if (direction === 'right')
-        $(this).find('#leftright').text( parseInt($(this).find('#leftright').text()) + distance );
-      if (direction === 'up')
-      $(this).find('#updown').text( parseInt($(this).find('#updown').text()) - distance );
-      if (direction === 'down')
-        $(this).find('#updown').text( parseInt($(this).find('#updown').text()) + distance );
-
-      if (direction === 'up' || direction === 'down')
-        $(this).css({top: parseInt($(this).find('#updown').text())});
-      if (direction === 'left' || direction === 'right')
-        $(this).css({left: parseInt($(this).find('#leftright').text())});
+    swipeStatus: function(event, action, direction, duration, arg, arg1) {
+      console.log('cell swipe', action, direction, arg);
+      if (direction === 'left' && arg > 200) {
+        $(this).addClass('opened');
+      } else if (direction === 'right' && arg > 200) {
+        $(this).removeClass('opened');
+      }
     }
   });
 

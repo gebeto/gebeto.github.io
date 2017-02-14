@@ -6,20 +6,40 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Swipe</title>
   <style>
-  #test-swipe {
-    width: 300px;
-    height: 300px;
+  .cell {
+    width: 100%;
+    height: 100%;
     background: silver;
     position: absolute;
     left: 0;
+    border: 1px solid #333;
+    transition-duration: 1s;
+  }
+
+  .opened {
+    left: -100px;
+  }
+
+  .cell-container {
+    position: relative;
+    height: 100px;
+    width: 100%;
   }
   </style>
 </head>
 <body>
   <h1>Сука свайп</h1>
-  <div id="test-swipe">
-    <span id="updown">0</span>
-    <span id="leftright">0</span>
+  <div class="cell-container">
+    <div class="cell">Zaebok1</div>
+  </div>
+  <div class="cell-container">
+    <div class="cell">Zaebok1</div>
+  </div>
+  <div class="cell-container">
+    <div class="cell">Zaebok1</div>
+  </div>
+  <div class="cell-container">
+    <div class="cell">Zaebok1</div>
   </div>
 
   <script src="js/jquery.min.js"></script>
