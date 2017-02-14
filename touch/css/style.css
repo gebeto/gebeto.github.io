@@ -1,0 +1,28 @@
+.cell {
+  width: 100%;
+  height: 100%;
+  background: silver;
+  position: absolute;
+  left: 0;
+  border: 1px solid #333;
+  transition-duration: .4s;
+}
+
+.opened {
+  left: -100px;
+}
+
+.cell-container {
+  position: relative;
+  height: 100px;
+  width: 100%;
+}
+
+.cell-menu-delete {
+  width: 100px;
+  right: 0;
+  position: absolute;
+  height: 100%;
+  background: red;
+  color: #fff;
+}
