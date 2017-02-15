@@ -1,4 +1,5 @@
 $(function() {
+  var swipeLengthToOpen = 50;
   var setOpened = false;
 
   $("[class=cell]").swipe({
@@ -9,7 +10,7 @@ $(function() {
           $(this).removeClass('animated');
         }
         $(this).css({left: -length});
-        if (-length < -50) setOpened = true;
+        if (-length < -swipeLengthToOpen) setOpened = true;
       }
 
       if (event.type === 'touchend') {
