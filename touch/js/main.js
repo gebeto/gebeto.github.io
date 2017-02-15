@@ -22,6 +22,14 @@ $(function() {
         }
       }
 
+      if (direction === 'right' && $(this).hasClass('opened')) {
+        $(this).removeClass('opened');
+        $(this).attr('style', '');
+        $(this).addClass('animated');
+        $(this).addClass('closed');
+        setOpened = false;
+      }
+
       if (action === 'cancel') {
         $(this).removeClass('opened');
         $(this).attr('style', '');
