@@ -15,6 +15,10 @@
   left: -100px;
 }
 
+.closed {
+  left: 0px;
+}
+
 .cell-container {
   position: relative;
   height: 100px;
