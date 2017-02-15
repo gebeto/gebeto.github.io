@@ -5,6 +5,9 @@
   position: absolute;
   left: 0;
   border: 1px solid #333;
+}
+
+.animated {
   transition-duration: .4s;
 }
 
