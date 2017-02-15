@@ -3,7 +3,7 @@ $(function() {
 
   $("[class=cell]").swipe({
     swipeStatus: function(event, action, direction, length, duration) {
-      console.log('cell:', action, direction, length);
+      // console.log('cell:', action, direction, length);
       if (direction === 'left' && !$(this).hasClass('opened')) {
         if ($(this).hasClass('animated')) {
           $(this).removeClass('animated');
