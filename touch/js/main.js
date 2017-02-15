@@ -5,7 +5,9 @@ $(function() {
     swipeStatus: function(event, action, direction, length, duration) {
       console.log('cell:', action, direction, length);
       if (direction === 'left' && !$(this).hasClass('opened')) {
-        $(this).removeClass('animated');
+        if ($(this).hasClass('animated')) {
+          $(this).removeClass('animated');
+        }
         $(this).css({left: -length});
         if (-length < -50) setOpened = true;
       }
