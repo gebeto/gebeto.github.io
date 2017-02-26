@@ -9,7 +9,7 @@ function CanvasDrawer(canvas, bgUrl) {
 	this.fontFamily = 'CoreSansDS67CnHeavyItalic';
 	this.background = this.loadImage(bgUrl);
 	this.linesCount = 1;
-	this.currentText = '';
+	this.currentText = 'JailGeek';
 	this.top = 280;
 	this.setFillStyle();
 }
@@ -68,8 +68,14 @@ CanvasDrawer.prototype.moveToCenter = function() {
 }
 
 CanvasDrawer.prototype.changeFontSize = function(size) {
-	this.fontSize = this.lineSpacing = size;
+	// this.fontSize = this.lineSpacing = size;
+	this.fontSize = size;
 	this.ctx.font = this.fontSize + 'px ' + this.fontFamily;
+	this.refreshTitle();
+}
+
+CanvasDrawer.prototype.changeLineSpacing = function(size) {
+	this.lineSpacing = size;
 	this.refreshTitle();
 }
 
@@ -81,12 +87,19 @@ WebFontConfig = {
 		urls: ['fonts.css']
 	},
 	active: function() {
+		drawer.refreshTitle();
 		textInput.addEventListener('keyup', function (e) {
 			drawer.moveToCenter();
 			drawer.refreshTitle(this.value);
 		});
 		downloadButton.addEventListener('click', function(e) {
 			drawer.saveImage();
+		});
+		document.getElementById('fontsize-input').addEventListener('input', function() {
+			drawer.changeFontSize(this.value);
+		});
+		document.getElementById('linespacing-input').addEventListener('input', function() {
+			drawer.changeLineSpacing(this.value);
 		});
 	}
 };

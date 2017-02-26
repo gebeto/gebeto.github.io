@@ -28,6 +28,28 @@
 	height: 40px;
 }
 
+#fontsize-input {
+	display: inline-block;
+	margin-right: -8px; 
+	width: 50%;
+	text-align: center;
+}
+
+#linespacing-input {
+	display: inline-block;
+	margin-right: -8px; 
+	width: 50%;
+	text-align: center;
+}
+
+.control-button {
+	width: 100%;
+}
+
+.form-container {
+	margin: 10px 0 10px 0;
+}
+
 @media screen and (max-width: 600px) {
 	.main-wrapper {
 		width: 100%;
