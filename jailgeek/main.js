@@ -34,12 +34,35 @@ CanvasDrawer.prototype.refreshTitle = function(text) {
 	this.currentText = (text ? text : this.currentText);
 	this.ctx.drawImage(this.background, 0, 0);
 	var lines = this.currentText.split('\n');
-	console.log(lines);
+	// console.log(lines);
 	lines.map(function(line, i) {
 		var top = this.top + this.fontSize / 3;
 		this.ctx.fillText(line, 425, top + this.lineSpacing * i);
 	}.bind(this))
 }
+
+CanvasDrawer.prototype.moveOneLineUp = function() {
+	this.top -= this.fontSize / 2;
+	this.refreshTitle();
+}
+
+CanvasDrawer.prototype.moveOneLineDown = function() {
+	this.top += this.fontSize / 2;
+	this.refreshTitle();
+}
+
+CanvasDrawer.prototype.moveToCenter = function() {
+	this.top = this.canvas.height / 2 - this.fontSize / 2 * (this.currentText.split('\n').length - 1);
+	this.refreshTitle();
+}
+
+CanvasDrawer.prototype.changeFontSize = function(size) {
+	this.fontSize = this.lineSpacing = size;
+	this.ctx.font = this.fontSize + 'px ' + this.fontFamily;
+	this.refreshTitle();
+}
+
+
 
 
 var drawer = new CanvasDrawer(canvas, 'background.svg');
@@ -51,7 +74,7 @@ WebFontConfig = {
 	},
 	active: function() {
 		document.getElementById('text-input').addEventListener('keyup', function (e) {
-			// CanvasDrawer.refreshTitle(this.value);
+			drawer.moveToCenter();
 			drawer.refreshTitle(this.value);
 		});
 	}

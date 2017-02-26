@@ -4,13 +4,16 @@
 	<meta charset="utf-8">
 	<title>HTML 5 WebApp</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
+<!-- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ --></head>
 <body>
 
 <div class="main-wrapper">
-	<canvas width="850" height="560" id="main-canvas"></canvas>
-	<textarea id="text-input" rows="3"></textarea>
-	<button id="download-image">Скачать</button>
+	<canvas class="col-md-12 col-sm-12" width="850" height="560" id="main-canvas"></canvas>
+	<textarea placeholder="Текст" class="form-control" id="text-input" rows="3"></textarea>
+	<button class="form-control btn-primary" id="download-image">Скачать</button>
 </div>
 	
 	<script type="text/javascript" src="main.js"></script>
