@@ -16,9 +16,10 @@ function CanvasDrawer(canvas, bgUrl) {
 
 CanvasDrawer.prototype.saveImage = function() {
 	console.log(this.canvas);
-    this.canvas.toBlob(function(blob) {
-    	console.log(blob);
-    });
+	var link = document.createElement('a');
+    link.href = this.canvas.toDataURL();
+    link.download = filename;
+    link.click();
 }
 
 
@@ -92,12 +93,3 @@ WebFontConfig = {
 
 
 
-
-function downloadCanvas(link, canvasId, filename) {
-    link.href = document.getElementById(canvasId).toDataURL();
-    link.download = filename;
-}
-
-document.getElementById('download').addEventListener('click', function() {
-    downloadCanvas(this, 'main-canvas', 'test.png');
-}, false);
