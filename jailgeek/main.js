@@ -3,9 +3,13 @@ var canvas = document.getElementById('main-canvas');
 function CanvasDrawer(canvas, bgUrl) {
 	this.canvas = canvas;
 	this.ctx = this.canvas.getContext('2d');
-	this.size = 150;
-	this.family = 'CoreSansDS67CnHeavyItalic';
+	this.fontSize = this.lineSpacing = 150;
+	this.fontFamily = 'CoreSansDS67CnHeavyItalic';
 	this.background = this.loadImage(bgUrl);
+	this.linesCount = 1;
+	this.currentText = '';
+	this.top = 280;
+	this.setFillStyle();
 }
 
 CanvasDrawer.prototype.loadImage = function(iurl) {
@@ -22,18 +26,21 @@ CanvasDrawer.prototype.setFillStyle = function() {
 	gradient.addColorStop(0.0, "#FCFDFF");
 	gradient.addColorStop(1.0, "#E5F4FA");
 	this.ctx.fillStyle = gradient;
-	this.ctx.font = this.size + 'px ' + this.family;
+	this.ctx.font = this.fontSize + 'px ' + this.fontFamily;
 	this.ctx.textAlign = 'center';
 }
 
-CanvasDrawer.prototype.setup = function() {
-	this.setFillStyle();
+CanvasDrawer.prototype.refreshTitle = function(text) {
+	this.currentText = (text ? text : this.currentText);
+	this.ctx.drawImage(this.background, 0, 0);
+	var lines = this.currentText.split('\n');
+	console.log(lines);
+	lines.map(function(line, i) {
+		var top = this.top + this.fontSize / 3;
+		this.ctx.fillText(line, 425, top + this.lineSpacing * i);
+	}.bind(this))
 }
 
-CanvasDrawer.prototype.refreshTitle = function(text) {
-	this.ctx.drawImage(this.background, 0, 0);
-	this.ctx.fillText(text, 425, 280 + this.size / 3);
-}
 
 var drawer = new CanvasDrawer(canvas, 'background.svg');
 
@@ -45,7 +52,7 @@ WebFontConfig = {
 	active: function() {
 		document.getElementById('text-input').addEventListener('keyup', function (e) {
 			// CanvasDrawer.refreshTitle(this.value);
-			// drawer.
+			drawer.refreshTitle(this.value);
 		});
 	}
 };
