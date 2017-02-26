@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+	<meta charset="utf-8">
+	<title>HTML 5 WebApp</title>
+	<script>
+	  // load fonts before loading the game
+	  WebFontConfig = {
+			custom: {
+			  families: ['CoreSansDS67CnHeavyItalic'],
+				urls: ['fonts.css']
+			},
+			active: function() {
+				var bg = new Image();
+				bg.src = 'vkpass.svg';
+				var mainTitle = document.getElementById('main-text');
+				var canvas = document.getElementById('main-canvas');
+				var ctx = canvas.getContext('2d');
+				ctx.font = '150px CoreSansDS67CnHeavyItalic';
+				ctx.textAlign = 'center';
+
+				var gradient = ctx.createLinearGradient(canvas.width/2, 0, canvas.width/2, canvas.height);
+				gradient.addColorStop(0.0, "#FCFDFF");
+				gradient.addColorStop(1.0, "#E5F4FA");
+
+				ctx.fillStyle = gradient;
+				ctx.fillRect(0,0,1000,100);
+				document.getElementById('text-input').addEventListener('keyup', function (e) {
+					ctx.drawImage(bg, 0, 0);
+					ctx.fillText(this.value, 425, 280);
+					// mainTitle.innerHTML = this.value;
+					
+				});
+			}
+		};
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  </head>
+  <body>
+<canvas style="width: 400px" width="850" height="560" id="main-canvas"></canvas>
+<textarea id="text-input"></textarea>
+
+  </body>
+</html>
