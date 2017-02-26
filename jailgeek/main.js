@@ -1,4 +1,6 @@
 var canvas = document.getElementById('main-canvas');
+var textInput = document.getElementById('text-input');
+var downloadButton = document.getElementById('download-button');
 
 function CanvasDrawer(canvas, bgUrl) {
 	this.canvas = canvas;
@@ -11,6 +13,14 @@ function CanvasDrawer(canvas, bgUrl) {
 	this.top = 280;
 	this.setFillStyle();
 }
+
+CanvasDrawer.prototype.saveImage = function() {
+	console.log(this.canvas);
+    this.canvas.toBlob(function(blob) {
+    	console.log(blob);
+    });
+}
+
 
 CanvasDrawer.prototype.loadImage = function(iurl) {
 	var bg = new Image();
@@ -62,9 +72,6 @@ CanvasDrawer.prototype.changeFontSize = function(size) {
 	this.refreshTitle();
 }
 
-
-
-
 var drawer = new CanvasDrawer(canvas, 'background.svg');
 
 WebFontConfig = {
@@ -73,9 +80,12 @@ WebFontConfig = {
 		urls: ['fonts.css']
 	},
 	active: function() {
-		document.getElementById('text-input').addEventListener('keyup', function (e) {
+		textInput.addEventListener('keyup', function (e) {
 			drawer.moveToCenter();
 			drawer.refreshTitle(this.value);
+		});
+		downloadButton.addEventListener('click', function(e) {
+			drawer.saveImage();
 		});
 	}
 };
@@ -83,4 +93,11 @@ WebFontConfig = {
 
 
 
+function downloadCanvas(link, canvasId, filename) {
+    link.href = document.getElementById(canvasId).toDataURL();
+    link.download = filename;
+}
 
+document.getElementById('download').addEventListener('click', function() {
+    downloadCanvas(this, 'main-canvas', 'test.png');
+}, false);
