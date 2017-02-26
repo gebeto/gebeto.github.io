@@ -18,7 +18,7 @@ CanvasDrawer.prototype.saveImage = function() {
 	console.log(this.canvas);
 	var link = document.createElement('a');
     link.href = this.canvas.toDataURL();
-    link.download = filename;
+    link.download = this.currentText + '.png';
     link.click();
 }
 
