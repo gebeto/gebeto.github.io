@@ -12,7 +12,6 @@
 			.fa::before {font-size: 13px !important;}
 			#main {padding-top: 30px;}
 			#main .icons {margin-bottom: 15px;}
-			body {overflow: hidden;}
 		</style>
 	</head>
 	<body class="is-loading">
@@ -30,7 +29,7 @@
 					<li><a target="_blank" href="https://github.com/bboyheadman" class="fa fa-github">GitHub</a></li>
 				</ul>
 				<header>
-					<span class="avatar"><img src="images/avatar.jpg" alt="" onclick="doScrolling(window.innerHeight, 500)" /></span>
+					<span class="avatar"><img src="images/avatar.jpg" alt=""/></span>
 					<h1>Slavik Nychkalo</h1>
 					<p>Developer</p>
 				</header>
@@ -39,7 +38,7 @@
 					<div class="field">
 						<div class="select-wrapper">
 							<select name="projects" id="projects" class="projects">
-								<option value="">Source code</option>
+								<option value="">Source codes</option>
 								<option value="https://github.com/bboyheadman/VK-Graffiti-Uploader">VK Graffiti Uploader</option>
 								<option value="https://github.com/bboyheadman/theos-projects">Theos tweaks</option>
 								<option value="https://github.com/bboyheadman/HTML-CSS-JS-Snippets">Sublime text snippets</option>
@@ -75,52 +74,10 @@
 			</footer>
 		</div>
 
-		<div id="wrapper" style="height: 100%;">
-			<section id="main">
-				<ul class="icons">
-					<li><a target="_blank" href="https://twitter.com/slavik.nychkalo" class="fa fa-twitter">Twitter</a></li>
-					<li><a target="_blank" href="https://instagram.com/slavik.nychkalo" class="fa fa-instagram">Instagram</a></li>
-					<li><a target="_blank" href="https://facebook.com/bboyheadman" class="fa fa-facebook">Facebook</a></li>
-					<li><a target="_blank" href="https://vk.com/gebeto" class="fa fa-linkedin">LinkEdin</a></li>
-					<li><a target="_blank" href="https://vk.com/gebeto" class="fa fa-vk">VK</a></li>
-					<li><a target="_blank" href="https://github.com/bboyheadman" class="fa fa-github">GitHub</a></li>
-				</ul>
-				<header>
-					<span class="avatar"><img src="images/avatar.jpg" alt="" onclick="doScrolling(0, 500)" /></span>
-					<h1>Slavik Nychkalo</h1>
-					<p>Developer</p>
-				</header>
-
-				<ul class="actions">
-					<div class="field">
-						<div class="select-wrapper">
-							<select name="projects" id="projects" class="projects">
-								<option value="">Source code</option>
-							</select>
-						</div>
-					</div>
-				</ul>
-
-				<ul class="actions">
-					<div class="field">
-						<div class="select-wrapper">
-							<select name="projects" id="projects" class="projects">
-								<option value="">SDFD</option>
-							</select>
-						</div>
-					</div>
-				</ul>
-			</section>
-			<footer id="footer">
-				<ul class="copyright">
-					<!-- <li>&copy; Jane Doe</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
-				</ul>
-			</footer>
-		</div>
-
 		<!-- Scripts -->
 		<script type="text/javascript" src="assets/js/bg.js"></script>
 		<script>
+
 			if ('addEventListener' in window) {
 				window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
 				document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
@@ -134,28 +91,6 @@
 						win.focus();
 					}
 				});
-			}
-
-			function doScrolling(elementY, duration) { 
-				var startingY = window.pageYOffset	
-				var diff = elementY - startingY	
-				var start
-
-				// Bootstrap our animation - it will get called right before next frame shall be rendered.
-				window.requestAnimationFrame(function step(timestamp) {
-					if (!start) start = timestamp
-					// Elapsed miliseconds since start of scrolling.
-					var time = timestamp - start
-					// Get percent of completion in range [0, 1].
-					var percent = Math.min(time / duration, 1)
-
-					window.scrollTo(0, startingY + diff * percent)
-
-					// Proceed with animation as long as we wanted it to.
-					if (time < duration) {
-						window.requestAnimationFrame(step)
-					}
-				})
 			}
 
 		</script>
