@@ -8,7 +8,7 @@ function drawLogoInCtx(ctx, img) {
 	var smallerHeight = (img.width > img.height);
 	// logoSize = (img.width > img.height ? img.height : img.width) / 5;
 	logoSize = (smallerHeight ? img.height : img.width);
-	logoSize -= logoSize / 10;
+	logoSize -= logoSize / 2;
 	ctx.globalAlpha = 0.1;
 	if (smallerHeight) {
 		ctx.drawImage(logo, img.width / 2 - logoSize / 2, logoSize / 20, logoSize, logoSize);
