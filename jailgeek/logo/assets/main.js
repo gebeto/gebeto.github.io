@@ -11,9 +11,9 @@ function drawLogoInCtx(ctx, img) {
 	logoSize -= logoSize / 2;
 	ctx.globalAlpha = 0.1;
 	if (smallerHeight) {
-		ctx.drawImage(logo, img.width / 2 - logoSize / 2, logoSize / 20, logoSize, logoSize);
+		ctx.drawImage(logo, img.width / 2 - logoSize / 2, logoSize / 4, logoSize, logoSize);
 	} else {
-		ctx.drawImage(logo, logoSize / 20, img.height / 2 - logoSize / 2, logoSize, logoSize);
+		ctx.drawImage(logo, logoSize / 4, img.height / 2 - logoSize / 2, logoSize, logoSize);
 	}
 }
 
