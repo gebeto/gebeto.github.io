@@ -30,6 +30,8 @@ function createImageWithFile(openedFile, index) {
 		var link = document.createElement('a');
 	    link.href = canvas.toDataURL();
 	    link.download = index + '.png';
+	    link.innerHTML = 'Скачать';
+	    link.className = 'download';
 	    link.setAttribute('target', '_blank');
 		blc.appendChild(link);
 		document.body.appendChild(blc);
