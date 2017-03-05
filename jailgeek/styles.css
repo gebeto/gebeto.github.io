@@ -1,0 +1,63 @@
+@font-face {
+	font-family: 'Haydon Brush PERSONAL USE';
+	font-weight: normal;
+	src: url(HaydonBrush_PERSONAL_USE.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+	/* background: -webkit-gradient(linear, left top, left bottom, from(#0088cc), to(#2e87ca)) fixed; */
+}
+
+.title {
+	position: fixed;
+	width: 250px;
+	height: 320px;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0088cc), to(#2e87ca)) fixed;
+}
+
+.title #title {
+	display: block;
+	font: 64px 'Haydon Brush PERSONAL USE';
+}
+
+.title .description {
+	font-family: 'PT Sans Narrow', sans-serif;
+	display: block;
+}
+
+.addrepo {
+	display: block;
+	padding: 16px;
+	margin: 10px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	background: #fff;
+	color: #0088cc;
+	/*border: 6px solid #fff;*/
+	border-radius: 10px;
+	cursor: pointer;
+	transition-duration: 1s;
+	text-decoration: none;
+}
+
+.fa {
+    padding-right: 4px;
+}
+
+.bg .fa {
+    padding: 10px;
+    color: #fff;
+}
