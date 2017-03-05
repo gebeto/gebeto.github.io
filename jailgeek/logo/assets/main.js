@@ -21,6 +21,7 @@ function createImageWithFile(openedFile, index) {
 	var img = new Image();
 	img.onload = function() {
 		var blc = document.createElement('div');
+		blc.className = 'image';
 		var canvas = document.createElement('canvas');
 		canvas.width = img.width;
 		canvas.height = img.height;
