@@ -95,8 +95,8 @@
 						// link.setAttribute('target', '_blank');
 						// link.click();
 
-						if (window.clientInformation) {
-							alert(window.clientInformation.platform);
+						if (window.navigator) {
+							alert(window.navigator.platform);
 							window.location = this.value;
 						}
 					}
