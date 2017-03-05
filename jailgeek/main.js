@@ -101,6 +101,12 @@ WebFontConfig = {
 		document.getElementById('linespacing-input').addEventListener('input', function() {
 			drawer.changeLineSpacing(this.value);
 		});
+		document.getElementById('move-up').addEventListener('click', function() {
+			drawer.moveOneLineUp();
+		});
+		document.getElementById('move-down').addEventListener('click', function() {
+			drawer.moveOneLineDown();
+		});
 	}
 };
 

@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML 5 WebApp</title>
+	<meta content="width=device-width,initial-scale=1.0" name="viewport">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -10,9 +11,12 @@
 <div class="main-wrapper">
 	<canvas width="850" height="560" id="main-canvas"></canvas>
 	<textarea placeholder="Текст" class="form-control" id="text-input" rows="3">JailGeek</textarea>
-<!-- 	<div class="form-container">
-		<button class="control-button">Переместить текст на середину</button>
-	</div> -->
+	<div class="form-container">
+		<button class="control-button" id="move-up">Переместить текст выше</button>
+	</div>
+	<div class="form-container">
+		<button class="control-button" id="move-down">Переместить текст ниже</button>
+	</div>
 	<div class="form-container">
 		<label for="#fontsize-input">Размер шрифта</label>
 		<input type="number" id="fontsize-input" value="150">

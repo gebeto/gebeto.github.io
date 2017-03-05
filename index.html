@@ -3,120 +3,121 @@
 	<head>
 		<title>Slavik Nychkalo</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="assets/css/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/bg.css" />
+		<style type="text/css">
+			.fa {
+				font-size: 10px;
+			}
+			.fa::before {
+				font-size: 13px !important;
+			}
+			#main {
+				padding-top: 30px;
+			}
+			#main .icons {
+				margin-bottom: 15px;
+			}
+		</style>
 	</head>
-	<body>
-		<div id="header">
-			<div class="top">
-			<!-- Logo -->
-				<div id="logo">
-					<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-					<h1 id="title">Slavik Nychkalo</h1>
-					<p>Hey yooooo!:)</p>
-				</div>
-			<!-- Nav -->
-				<nav id="nav">
-					<ul>
-						<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
-						<li><a href="#projects" id="projects-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Projects</span></a></li>
-						<li><a href="asd" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-university">ASD</span></a></li>
-					</ul>
-				</nav>
-			</div>
+	<body class="is-loading">
 
-			<div class="bottom">
-			<!-- Social Icons -->
-				<ul class="icons">
-					<li><a href="http://vk.com/gebeto" class="icon fa-vk"><span class="label">Twitter</span></a></li>
-					<li><a href="http://facebook.com/bboyheadman" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="https://github.com/bboyheadman" class="icon fa-github"><span class="label">Github</span></a></li>
-					<li><a href="http://instagram.com/slavik.nychkalo" class="icon fa-instagram"><span class="label">Dribbble</span></a></li>
-					<li><a href="mailto:bboyheadman@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-			</div>
-		</div>
-		<!-- Main -->
-			<div id="main">
+	<canvas id="space"></canvas>
 
-			<!-- Intro -->
-				<section id="top" class="one dark cover">
-					<div class="container">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<ul class="icons">
+							<li><a target="_blank" href="https://twitter.com/slavik.nychkalo" class="fa fa-twitter">Twitter</a></li>
+							<li><a target="_blank" href="https://instagram.com/slavik.nychkalo" class="fa fa-instagram">Instagram</a></li>
+							<li><a target="_blank" href="https://facebook.com/bboyheadman" class="fa fa-facebook">Facebook</a></li>
+							<!-- <br> -->
+							<li><a target="_blank" href="https://vk.com/gebeto" class="fa fa-linkedin">LinkEdin</a></li>
+							<li><a target="_blank" href="https://vk.com/gebeto" class="fa fa-vk">VK</a></li>
+							<li><a target="_blank" href="https://github.com/bboyheadman" class="fa fa-github">GitHub</a></li>
+						</ul>
 						<header>
-							<h2 class="alt"><strong>Good</strong> site with <strong>good</strong> content
-							<br/>HTML | Python | JS</h2>
-							<p>Created for posting my projects.</p>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<h1>Slavik Nychkalo</h1>
+							<p>Developer</p>
 						</header>
 
-						<footer>
-							<a href="#projects" class="button scrolly">   Start Journey   </a>
-						</footer>
-					</div>
-				</section>
-
-			<!-- Projects -->
-				<section id="projects" class="two">
-					<div class="container">
-						<header>
-							<h2>Projects</h2>
-						</header>
-						<!-- <p>All my projects in one place.</p> -->
-						<div class="row">
-						<!-- serios projects -->
-							<div class="4u 12u$(mobile)">
-								<h4>GitHub Sources</h4><br>
-								<article class="item">
-									<a href="https://github.com/bboyheadman/javarush"><header><h3>JavaRush Sublime Plugin</h3></header></a>
-								</article>
-								<article class="item">
-									<a href="https://github.com/bboyheadman/devnull"><header><h3>/dev/null Sublime Plugin</h3></header></a>
-								</article>
-								<article class="item">
-									<a href="https://github.com/bboyheadman/vk-graffiti"><header><h3>VK Graffiti Uploader</h3></header></a>
-								</article>
-								<article class="item">
-									<a href="https://github.com/bboyheadman/theos-projects"><header><h3>Theos Projects</h3></header></a>
-								</article>
+						<ul class="actions">
+							<div class="field">
+								<div class="select-wrapper">
+									<select name="projects" id="projects" class="projects">
+										<option value="">Source code</option>
+										<option value="https://github.com/bboyheadman/VK-Graffiti-Uploader">VK Graffiti Uploader</option>
+										<option value="https://github.com/bboyheadman/theos-projects">Theos tweaks</option>
+										<option value="https://github.com/bboyheadman/HTML-CSS-JS-Snippets">Sublime text snippets</option>
+										<option value="https://github.com/bboyheadman/react-native-docs">React Native Documentation</option>
+										<option value="https://github.com/bboyheadman/react-native-ios-dev-launcher">React Native iOS Dev Launcher</option>
+										<option value="https://github.com/bboyheadman/react-native-vk-audio-messages">VK Audio Messages</option>
+										<option value="https://github.com/bboyheadman/lfy-react-native-app">#LFY reader app</option>
+										<option value="https://github.com/bboyheadman/boomserver">BOOM ios app custom server</option>
+										<option value="https://github.com/bboyheadman/js-libs">My JavaScript libs</option>
+									</select>
+								</div>
 							</div>
-						<!-- Joke projects -->
-							<div class="4u 12u$(mobile)">
-								<h4>Web Site</h4><br>
-								<article class="item">
-									<a href="jsProjects/squareDrag"><header><h3>Canvas Squares drag</h3></header></a>
-								</article>
-								<article class="item">
-									<a href="jsProjects/keyboard"><header><h3>Keyboard</h3></header></a>
-								</article>
-							</div>
-						<!-- vk api -->
-							<div class="4u$ 12u$(mobile)">
-								<h4>Site Layout</h4><br>
-								<article class="item">
-									<a target="_blank" href="sitelayouts/keepsake"><header><h3>Keepsake</h3></header></a>
-								</article>
-							</div>
-						</div>
-					</div>
-				</section>
+						</ul>
 
-		<!-- Main END -->
-			</div>
+						<ul class="actions">
+							<div class="field">
+								<div class="select-wrapper">
+									<select name="projects" id="projects" class="projects">
+										<option value="">Web</option>
+										<option value="https://bboyheadman.github.io/sitelayouts/keepsake">- LAYOUT: Keepsake</option>
+										<option value="https://bboyheadman.github.io/jsProjects/dragdrop">Canvas Grag&Drop</option>
+										<option value="https://bboyheadman.github.io/jsProjects/keyboard">Keyboard trainer</option>
+									</select>
+								</div>
+							</div>
+						</ul>
+						
+						<!-- <footer>
+							<ul class="icons">
+								<li><a target="_blank" href="https://twitter.com/slavik.nychkalo" class="fa fa-twitter">Twitter</a></li>
+								<li><a target="_blank" href="https://instagram.com/slavik.nychkalo" class="fa fa-instagram">Instagram</a></li>
+								<li><a target="_blank" href="https://facebook.com/bboyheadman" class="fa fa-facebook">Facebook</a></li>
+								<li><a target="_blank" href="https://vk.com/gebeto" class="fa fa-linkedin">LinkEdin</a></li>
+								<li><a target="_blank" href="https://vk.com/gebeto" class="fa fa-vk">VK</a></li>
+								<li><a target="_blank" href="https://github.com/bboyheadman" class="fa fa-github">GitHub</a></li>
+							</ul>
+						</footer> -->
+					</section>
 
-		<!-- Footer -->
-			<div id="footer">
-			<!-- Copyright -->
-				<ul class="copyright">
-					<li>2016 | Slavik Nychkalo | NULP</a></li>
-				</ul>
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<!-- <li>&copy; Jane Doe</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
+						</ul>
+					</footer>
+
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script type="text/javascript" src="assets/js/bg.js"></script>
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+
+				var projects = document.getElementsByClassName('projects');
+				for (var i = 0; i < projects.length; i++) {
+					projects[i].addEventListener('change', function(e) {
+						if (this.value) {
+							var win = window.open(this.value, '_blank');
+		  					win.focus();
+						}
+					});
+				}
+
+			</script>
 
 	</body>
 </html>
