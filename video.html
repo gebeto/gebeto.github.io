@@ -8,7 +8,6 @@
 	<canvas style="transform: rotateY(180deg);" id="canvas" width="640" height="480"></canvas>
 
 	<script type="text/javascript">
-		var playing = false;
 		document.addEventListener('keyup', function(e) {
 			if (e.key === 'z') {
 				playing = !playing;
@@ -24,13 +23,14 @@
 			video.addEventListener('play', function() {
 				var $this = this; //cache
 				(function loop() {
-					if (!$this.paused && !$this.ended && playing) {
+					if (!$this.paused && !$this.ended) {
 						ctx.drawImage($this, 0, 0);
 						setTimeout(loop, 200); // drawing at 30fps
 						ctx.drawImage(ctx.getImageData(320, 240, 100, 100).data, 0, 0);
 					}
 				})();
 			}, 0);
+			document.body.appendChild(video);
 			video.play();
 		}, function(error) {
 			alert(error);
