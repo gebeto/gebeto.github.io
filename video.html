@@ -5,18 +5,16 @@
 	<title>Document</title>
 </head>
 <body>
-	<canvas id="canvas"></canvas>
+	<canvas id="canvas" width="640" height="480"></canvas>
 
 	<script type="text/javascript">
+		var canvas = document.getElementById('canvas');
+		var ctx = canvas.getContext('2d');
 		navigator.getUserMedia({video: true, audio: false}, function(stream){
-			var canvas = document.getElementById('canvas');
-			var ctx = canvas.getContext('2d');
 			var video = document.createElement('video');
 			// document.body.appendChild(video);
 			video.src = window.URL.createObjectURL(stream);
 			console.log(video);
-			canvas.width = video.videoWidth;
-			canvas.height = video.videoHeight;
 			video.addEventListener('play', function() {
 				var $this = this; //cache
 				(function loop() {
