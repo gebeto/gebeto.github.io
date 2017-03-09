@@ -12,10 +12,11 @@
 			var canvas = document.getElementById('canvas');
 			var ctx = canvas.getContext('2d');
 			var video = document.createElement('video');
-			canvas.width = video.innerWidth;
-			canvas.height = video.innerHeight;
 			// document.body.appendChild(video);
 			video.src = window.URL.createObjectURL(stream);
+			console.log(video);
+			canvas.width = video.innerWidth;
+			canvas.height = video.innerHeight;
 			video.addEventListener('play', function() {
 				var $this = this; //cache
 				(function loop() {
