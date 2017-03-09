@@ -21,7 +21,7 @@
 					if (!$this.paused && !$this.ended) {
 						ctx.drawImage($this, 0, 0);
 						setTimeout(loop, 1000 / 60); // drawing at 30fps
-						console.log(ctx.getImageData(320, 240));
+						console.log(ctx.getImageData(320, 240, 1, 1).data);
 					}
 				})();
 			}, 0);
