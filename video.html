@@ -8,15 +8,26 @@
 	<canvas id="canvas"></canvas>
 
 	<script type="text/javascript">
-		navigator.getUserMedia({video: true, audio: false}, function(stream) {
-			console.log('stream', stream);
+		navigator.getUserMedia({video: true, audio: false}, function(stream){
+			var canvas = document.getElementById('canvas');
+			var ctx = canvas.getContext('2d');
 			var video = document.createElement('video');
 			document.body.appendChild(video);
 			video.src = window.URL.createObjectURL(stream);
+			video.addEventListener('play', function() {
+				var $this = this; //cache
+				(function loop() {
+					if (!$this.paused && !$this.ended) {
+						ctx.drawImage($this, 0, 0);
+						setTimeout(loop, 1000 / 20); // drawing at 30fps
+					}
+				})();
+			}, 0);
 			video.play();
-		}, function(err) {
-			console.log(err);
+		}, function(error) {
+			alert(error);
 		});
+
 	</script>
 </body>
 </html>
