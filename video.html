@@ -8,6 +8,12 @@
 	<canvas style="transform: rotateY(180deg);" id="canvas" width="640" height="480"></canvas>
 
 	<script type="text/javascript">
+		var playing = false;
+		document.addEventListener('keyup', function(e) {
+			if (e.key === 'z') {
+				playing = !playing;
+			}
+		});
 		var canvas = document.getElementById('canvas');
 		var ctx = canvas.getContext('2d');
 		navigator.getUserMedia({video: true, audio: false}, function(stream){
@@ -18,7 +24,7 @@
 			video.addEventListener('play', function() {
 				var $this = this; //cache
 				(function loop() {
-					if (!$this.paused && !$this.ended) {
+					if (!$this.paused && !$this.ended && playing) {
 						ctx.drawImage($this, 0, 0);
 						setTimeout(loop, 200); // drawing at 30fps
 						ctx.drawImage(ctx.getImageData(320, 240, 100, 100).data, 0, 0);
