@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+
+	<script type="text/javascript">
+		navigator.getUserMedia({video: true, audio: false}, function(stream) {
+			console.log('stream', stream);
+			var video = document.createElement('video');
+			document.body.appendChild(video);
+			video.src = window.URL.createObjectURL(stream);
+			video.play();
+		}, function(err) {
+			console.log(err);
+		});
+	</script>
+</body>
+</html>
