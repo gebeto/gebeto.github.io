@@ -15,8 +15,8 @@
 			// document.body.appendChild(video);
 			video.src = window.URL.createObjectURL(stream);
 			console.log(video);
-			canvas.width = video.innerWidth;
-			canvas.height = video.innerHeight;
+			canvas.width = video.videoWidth;
+			canvas.height = video.videoHeight;
 			video.addEventListener('play', function() {
 				var $this = this; //cache
 				(function loop() {
