@@ -17,11 +17,13 @@
 			console.log(video);
 			video.addEventListener('play', function() {
 				var $this = this; //cache
+				ctx.stroke
 				(function loop() {
 					if (!$this.paused && !$this.ended) {
 						ctx.drawImage($this, 0, 0);
-						setTimeout(loop, 1000 / 60); // drawing at 30fps
-						console.log(ctx.getImageData(320, 240, 1, 1).data);
+						setTimeout(loop, 1000 / 100); // drawing at 30fps
+						ctx.fillStyle = 'rgba(' + ctx.getImageData(320, 240, 1, 1).data.join(',') + ')';
+						ctx.fillRect(0, 0, 40, 40);
 					}
 				})();
 			}, 0);
