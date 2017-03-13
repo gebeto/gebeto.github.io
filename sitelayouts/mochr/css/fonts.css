@@ -1,0 +1,36 @@
+
+
+@font-face {
+	font-family: 'Proxima';
+	src: local('Proxima'), url("fonts/Proxima Nova Regular.otf") format('opentype');
+}
+
+@font-face {
+	font-family: 'Proxima Light';
+	src: local('Proxima Light'), url("fonts/Proxima Nova Light.otf") format('opentype');
+}
+
+@font-face {
+	font-family: 'Proxima Regular';
+	src: local('Proxima Regular'), url("fonts/Proxima Nova Regular.otf") format('opentype');
+}
+
+@font-face {
+	font-family: 'Proxima Regular Italic';
+	src: local('Proxima Regular Italic'), url("fonts/Proxima Nova Regular Italic.otf") format('opentype');
+}
+
+@font-face {
+	font-family: 'Proxima Bold';
+	src: local('Proxima Bold'), url("fonts/Proxima Nova Bold.otf") format('opentype');
+}
+
+@font-face {
+	font-family: 'Proxima Semibold';
+	src: local('Proxima Semibold'), url("fonts/Proxima Nova Semibold.otf") format('opentype');
+}
+
+@font-face {
+	font-family: 'ForteMT';
+	src: local('ForteMT'), url("fonts/fortemt.ttf") format('truetype');
+}
