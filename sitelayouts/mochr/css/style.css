@@ -9,6 +9,10 @@ html, body {
 	/*background: #aaa;*/
 }
 
+.main-wrapper {
+	width: 100%;
+}
+
 .header {
 	/*z-index: -2;*/
 	width: 100%;
