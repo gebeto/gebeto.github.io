@@ -5,13 +5,11 @@
 }
 
 html, body {
-	height: 1000px;
+	height: 3000px;
+	background: #fdf8f9;
 	/*background: #aaa;*/
 }
 
-.main-wrapper {
-	width: 100%;
-}
 
 .header {
 	/*z-index: -2;*/
@@ -146,3 +144,92 @@ html, body {
 	background-color: #e26983;
 	box-shadow: -6px 0 6px rgba(0,0,0,.1);
 }
+
+.first-section {
+	padding-top: 50px;
+	padding-bottom: 45px;
+}
+
+.section-title {
+	text-align: center;
+	font: 18px "Proxima Semibold";
+	color: #626161;
+}
+
+.booking-form {
+	padding-top: 45px;
+}
+
+.form-input {
+	height: 48px;
+	margin-right: 3.7%;
+	border: 0px;
+	box-shadow: 0 0 20px rgba(247, 111, 141, .15);
+	font: 14px "Proxima Regular";
+	color: #626161;
+}
+
+.form-input[type="text"] {
+	padding-left: 20px;
+	letter-spacing: 1px;
+}
+
+.form-input[type="button"] {
+	font: 14px "Proxima Semibold";
+	background: #f76f8d;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.form-input:last-child {
+	margin-right: -10px;
+}
+
+.select-destination {
+	width: 20%;
+}
+
+
+.select-from,
+.select-to,
+.select-guests {
+	width: 15%;
+}
+
+.form-submit {
+	width: 20%;
+}
+
+.dest {
+	overflow: hidden;
+	height: 330px;
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+.dest:after {
+	content: '';
+	background: rgb(240, 74, 111);
+	width: 100%;
+	height: 100%;
+	left: 15px;
+	opacity: 0;
+	top: 0px;
+	position: absolute;
+	transition-duration: .2s;
+}
+
+.dest:hover:after {
+	opacity: .7;
+}
+
+.dest img {
+	min-width: 110%;
+}
+
+.second-section .row {
+	padding-top: 14px;
+}
+
