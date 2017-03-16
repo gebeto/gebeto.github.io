@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <!-- <meta content="width=device-width,initial-scale=1.0" name="viewport"> -->
 	<title>MOCHR</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
@@ -10,7 +11,7 @@
 <body>
 
 	<header class="header">
-		<div class="head col-md-12">
+		<div class="head">
 			<div class="container">
 				<span class="logo pull-left">MR Travel</span>
 				<ul class="menu pull-right">
@@ -31,38 +32,133 @@
 		</div>
 	</header>
 
-	<div class="main-wrapper">
-		<section class="first-section col-md-10 col-md-offset-1">
+	<div class="pink-wrapper">
+		<section class="first-section container">
 			<h2 class="section-title">BUAT SEBUAH AGENDA</h2>
-			<div class="col-md-12">
+			<div class="row">
 				<form class="booking-form">
-					<input placeholder="Select destination" type="text" class="form-input select-destination">
-					<input placeholder="From" type="text" class="form-input select-from">
-					<input placeholder="To" type="text" class="form-input select-to">
-					<input placeholder="Guests" type="text" class="form-input select-guests">
-					<input type="button" class="form-input form-submit pull-right" value="Check Availability">
+					<div class="col-md-3">
+						<input class="form-input select-destination" placeholder="Select destination" type="text">
+					</div>
+					<div class="col-md-2">
+						<input class="form-input select-from" placeholder="From" type="text">
+					</div>
+					<div class="col-md-2">
+						<input class="form-input select-to" placeholder="To" type="text">
+					</div>
+					<div class="col-md-2">
+						<input class="form-input select-guests" placeholder="Guests" type="text">
+					</div>
+					<div class="col-md-3">
+						<input class="form-input form-submit pull-right" type="button" value="Check Availability">
+					</div>
 				</form>
 			</div>
 		</section>
-		<section class="second-section col-md-10 col-md-offset-1">
+
+		<section class="second-section container">
 			<div class="row">
-				<div class="col-md-12">
-					<div class="dest col-md-4"><img src="images/dest1.png"></div>
-					<div class="dest col-md-4"><img src="images/dest2.png"></div>
-					<div class="dest col-md-4"><img src="images/dest3.png"></div>
+				<div class="image-wrapper col-md-4 col-sm-6 col-xs-6">
+					<div class="image-container">
+						<img src="images/dest1.png">
+					</div>
+				</div>
+				<div class="image-wrapper col-md-4 col-sm-6 col-xs-6">
+					<div class="image-container">
+						<img src="images/dest2.png">
+					</div>
+				</div>
+				<div class="image-wrapper col-md-4 col-sm-6 col-xs-6">
+					<div class="image-container">
+						<img src="images/dest3.png">
+					</div>
+				</div>
+				<div class="image-wrapper col-md-8 col-sm-6 col-xs-6">
+					<div class="image-container">
+						<img src="images/dest4.png">
+					</div>
+				</div>
+				<div class="image-wrapper col-md-4 col-sm-6 col-xs-6">
+					<div class="image-container">
+						<img src="images/dest5.png">
+					</div>
+				</div>
+				<div class="image-wrapper col-md-4 col-sm-6 col-xs-6">
+					<div class="image-container">
+						<img src="images/dest6.png">
+					</div>
+				</div>
+				<div class="image-wrapper col-md-8 col-sm-6 col-xs-6">
+					<div class="image-container">
+						<img src="images/dest7.png">
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="dest col-md-8"><img src="images/dest4.png"></div>
-					<div class="dest col-md-4"><img src="images/dest5.png"></div>
+		</section>
+
+	</div>
+	<div class="white-wrapper">
+		<section class="third-section container">
+			<h2 class="title">Cari Tempat Beristirahat</h2>
+			<p class="description col-md-6 col-md-offset-3">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis id libero ut finibus. Nullam et tortor aliquam
+			</p>
+
+			<div class="menu col-md-6 col-md-offset-3">
+				<div class="col-md-4">
+					<button class="active paling-btn">Paling Decat</button>
+				</div>
+				<div class="col-md-4">
+					<button class="paling-btn">Paling Popular</button>
+				</div>
+				<div class="col-md-4">
+					<button class="paling-btn">Paling Murah</button>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="dest col-md-4"><img src="images/dest6.png"></div>
-					<div class="dest col-md-8"><img src="images/dest7.png"></div>
+
+			<div class="orders col-md-12">
+				<div class="order col-md-6">
+					<div class="pic col-md-5 col-sm-5"><div class="img"><img src="images/paling1.png"></div></div>
+					<h3 class="order-title">Hotel Samudera Aksara,<br>Ciangsana, Sukabumi</h3>
+					<h4 class="order-description">2 Orang / Ruangan</h4>
+					<h3 class="order-price">$200.00 Semalam</h3>
 				</div>
+
+				<div class="order col-md-6">
+					<div class="pic col-md-5 col-sm-5"><div class="img"><img src="images/paling1.png"></div></div>
+					<h3 class="order-title">Hotel Samudera Aksara,<br>Ciangsana, Sukabumi</h3>
+					<h4 class="order-description">2 Orang / Ruangan</h4>
+					<h3 class="order-price">$200.00 Semalam</h3>
+				</div>
+
+				<div class="order col-md-6">
+					<div class="pic col-md-5 col-sm-5"><div class="img"><img src="images/paling2.png"></div></div>
+					<h3 class="order-title">Penginapan Villa Pratama<br>Nagrak, Sukabumi</h3>
+					<h4 class="order-description">8 Orang</h4>
+					<h3 class="order-price">$550.00 Semalam</h3>
+				</div>
+
+				<div class="order col-md-6">
+					<div class="pic col-md-5 col-sm-5"><div class="img"><img src="images/paling2.png"></div></div>
+					<h3 class="order-title">Penginapan Villa Pratama<br>Nagrak, Sukabumi</h3>
+					<h4 class="order-description">8 Orang</h4>
+					<h3 class="order-price">$550.00 Semalam</h3>
+				</div>
+
+				<div class="order col-md-6">
+					<div class="pic col-md-5 col-sm-5"><div class="img"><img src="images/paling3.png"></div></div>
+					<h3 class="order-title">Saung Ngampar Tiada Tara<br>Cikopak, Sukabumi</h3>
+					<h4 class="order-description">12 Orang</h4>
+					<h3 class="order-price">$400.00 Semalam</h3>
+				</div>
+
+				<div class="order col-md-6">
+					<div class="pic col-md-5 col-sm-5"><div class="img"><img src="images/paling3.png"></div></div>
+					<h3 class="order-title">Saung Ngampar Tiada Tara<br>Cikopak, Sukabumi</h3>
+					<h4 class="order-description">12 Orang</h4>
+					<h3 class="order-price">$400.00 Semalam</h3>
+				</div>
+
 			</div>
 		</section>
 	</div>
