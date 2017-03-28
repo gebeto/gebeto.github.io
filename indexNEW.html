@@ -16,6 +16,14 @@
 			.fa::before {font-size: 13px !important;}
 			#main {padding-top: 30px;}
 			#main .icons {margin-bottom: 15px;}
+
+			.roll {
+				transition: all 1s ease;
+			}
+			.rolled {
+				/*transform: rotateX(88.4deg) !important;*/
+				transform: rotateX(180deg) !important;
+			}
 		</style>
 	</head>
 	<body class="is-loading">
@@ -23,6 +31,7 @@
 	<canvas id="space"></canvas>
 
 		<div id="wrapper" style="height: 100%;">
+		<div id="roll" class="roll">
 			<section id="main">
 				<ul class="icons">
 					<li><a target="_blank" href="https://twitter.com/slavik.nychkalo" class="fa fa-twitter">Twitter</a></li>
@@ -33,7 +42,7 @@
 					<li><a target="_blank" href="https://github.com/gebeto" class="fa fa-github">GitHub</a></li>
 				</ul>
 				<header>
-					<span class="avatar"><img src="images/avatar.jpg" alt=""/></span>
+					<span class="avatar" id="avatar"><img src="images/avatar.jpg" alt=""/></span>
 					<h1>Slavik Nychkalo</h1>
 					<p>Developer</p>
 				</header>
@@ -72,6 +81,7 @@
 					</div>
 				</ul>
 			</section>
+		</div>
 
 			<footer id="footer">
 				<ul class="copyright">
@@ -84,6 +94,15 @@
 		<!-- Scripts -->
 		<script type="text/javascript" src="assets/js/bg.js"></script>
 		<script>
+
+			document.getElementById('avatar').addEventListener('click', function() {
+				var r = document.getElementById('roll');
+				if (r.className === 'roll') {
+					r.className = 'roll rolled';
+				} else {
+					r.className = 'roll';
+				}
+			});
 
 			if ('addEventListener' in window) {
 				window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
