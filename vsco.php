@@ -32,5 +32,5 @@
 	print '<textarea rows="10" cols="100">"keys": '.$keys.'</textarea>';
 	print '<h1>'.$count.' Фильтров.</h1>';
 ?>
-</body>
+</body>a
 </html>
