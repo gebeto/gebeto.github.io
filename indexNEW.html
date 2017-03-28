@@ -19,10 +19,13 @@
 
 			.roll {
 				transition: all 1s ease;
+				backface-visibility: none;
+				transform-style: preserve-3d;
+				perspective: 100px;
+				transform-origin: 50% 50% 50px;
 			}
 			.rolled {
-				/*transform: rotateX(88.4deg) !important;*/
-				transform: rotateX(180deg) !important;
+				transform: rotateX(180deg);
 			}
 		</style>
 	</head>
@@ -31,8 +34,7 @@
 	<canvas id="space"></canvas>
 
 		<div id="wrapper" style="height: 100%;">
-		<div id="roll" class="roll">
-			<section id="main">
+			<section id="main" class="main">
 				<ul class="icons">
 					<li><a target="_blank" href="https://twitter.com/slavik.nychkalo" class="fa fa-twitter">Twitter</a></li>
 					<li><a target="_blank" href="https://instagram.com/slavik.nychkalo" class="fa fa-instagram">Instagram</a></li>
@@ -42,7 +44,7 @@
 					<li><a target="_blank" href="https://github.com/gebeto" class="fa fa-github">GitHub</a></li>
 				</ul>
 				<header>
-					<span class="avatar" id="avatar"><img src="images/avatar.jpg" alt=""/></span>
+					<span class="avatar" id="avatar"><img src="images/avatar.jpg" class="roll" id="roll" alt=""/></span>
 					<h1>Slavik Nychkalo</h1>
 					<p>Developer</p>
 				</header>
@@ -81,8 +83,6 @@
 					</div>
 				</ul>
 			</section>
-		</div>
-
 			<footer id="footer">
 				<ul class="copyright">
 					<li>anonimizer <br><a href="http://217.79.181.111">217.79.181.111</a></li>
@@ -113,14 +113,7 @@
 			for (var i = 0; i < projects.length; i++) {
 				projects[i].addEventListener('change', function(e) {
 					if (this.value) {
-
-						// var link = document.createElement('a');
-						// link.href = this.value;
-						// link.setAttribute('target', '_blank');
-						// link.click();
-
 						if (window.navigator.platform[0] === 'i') {
-							// alert(window.navigator.platform);
 							window.location = this.value;
 						} else {
 							var win = window.open(this.value, '_blank');
