@@ -36,6 +36,7 @@ function createImageWithFile(openedFile, index) {
 	    link.setAttribute('target', '_blank');
 		var imgForSave = document.createElement('img');
 		imgForSave.src = canvas.toDataURL();
+		imgForSave.height = 200;
 		// blc.appendChild(link);
 		blc.appendChild(imgForSave);
 		document.body.appendChild(blc);
