@@ -34,7 +34,10 @@ function createImageWithFile(openedFile, index) {
 	    link.innerHTML = 'Скачать';
 	    link.className = 'download';
 	    link.setAttribute('target', '_blank');
+		var imgForSave = document.createElement('img');
+		imgForSave.src = canvas.toDataURL();
 		blc.appendChild(link);
+		blc.appendChild(imgForSave);
 		document.body.appendChild(blc);
 
 	    // link.click();
@@ -50,6 +53,3 @@ images.addEventListener('change', function(e) {
 		createImageWithFile(files[i], i);
 	}
 });
-
-
-
