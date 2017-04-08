@@ -27,7 +27,7 @@ function createImageWithFile(openedFile, index) {
 		canvas.height = img.height;
 		var ctx = canvas.getContext('2d');
 		drawLogoInCtx(ctx, img);
-		blc.appendChild(canvas);
+		// blc.appendChild(canvas);
 		var link = document.createElement('a');
 	    link.href = canvas.toDataURL();
 	    link.download = index + '.png';
@@ -36,7 +36,7 @@ function createImageWithFile(openedFile, index) {
 	    link.setAttribute('target', '_blank');
 		var imgForSave = document.createElement('img');
 		imgForSave.src = canvas.toDataURL();
-		blc.appendChild(link);
+		// blc.appendChild(link);
 		blc.appendChild(imgForSave);
 		document.body.appendChild(blc);
 
