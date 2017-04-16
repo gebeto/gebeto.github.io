@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+.colors-list {
+  height: 100%;
+  width: 100%;
+}
+
+.color-list-item {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #fff;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition-duration: .3s;
+}
+
+.color-list-item:hover {
+  font-size: 20px;
+  margin-top: -20px;
+}
+
+.color-view {
+  text-align: center;
+  height: calc(100% - 100px);
+  line-height: 300px;
+  font-size: 3em;
+  font-family: Arial;
+  color: #fff;
+  letter-spacing: 2px;
+  transition-duration: .2s;
+}

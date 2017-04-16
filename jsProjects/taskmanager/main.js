@@ -27,8 +27,8 @@
 			//remove button
 			removeButton.className = 'remove-button';
 			removeButton.innerText = 'X';
-			removeButton.onclick = function(){ 
-				removePost(this.parentNode.id); 
+			removeButton.onclick = function(){
+				removePost(this.parentNode.id);
 			};
 			//content span
 			elemText.className = 'content';
@@ -69,15 +69,13 @@
 		} else {
 			menu.className = 'bottom-menu';
 			elem.target.style.transform = "rotate(0deg)";
-		} 
+		}
 		console.log(elem);
 		menuOpened = !menuOpened;
 	});
 
 
 	function writeNewPost(title) {
-		// Get a key for a new Post.
-
 		clearMessageList(40);
 		var newPostKey = firebase.database().ref().child('posts/'+username).push().key;
 
@@ -85,7 +83,6 @@
 			text: title,
 			key: newPostKey
 		};
-		// Write the new post's data simultaneously in the posts list and the user's post list.
 		var updates = {};
 		updates['/posts/'+username+'/' + newPostKey] = postData;
 
@@ -93,13 +90,11 @@
 	}
 
 	function removePost (postId) {
-		// firebase.database().ref().child("posts/"+postId).remove();
 		firebase.database().ref().child("posts/"+username+"/"+postId).remove();
 	}
 
 	function clearMessageList(cnt){
 		var itemss = document.getElementsByClassName('item');
-		// console.log(itemss[0].id);
 		if (itemss.length > cnt)
 			if (itemss.length > 10) {
 				for (var i = itemss.length-1; i >= 10; i--) {
