@@ -16,7 +16,10 @@ function getParamsFromUrl() {
 }
 
 function ColorsList(colors) {
-  this.colors = colors;
+  this.colors = colors.map(function(item, index){
+    if (item[0] !== '#') return '#' + item;
+    return item;
+  });
   this.rendered = document.createElement('div');
   this.colorsList = document.createElement('ul')
   this.colorView = document.createElement('div');
@@ -33,7 +36,6 @@ ColorsList.prototype.createElement = function() {
     this.colorsList.appendChild(new ColorBlock(item, 100 / list.length, this.colorView));
   }.bind(this));
 
-  this.colorView.textContent = '#234234';
   this.colorView.className = 'color-view';
 
   return this.rendered;
