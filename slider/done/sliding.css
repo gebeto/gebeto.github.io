@@ -1,0 +1,39 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#frame {
+    position: relative;
+    height: 200px;
+    width:100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#frame ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left:0;
+    height:200px;
+    list-style-type: none;
+}
+
+#frame ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    /*float: left;*/
+    display: inline-block;
+    margin-left: -3px;
+    width: 100vw;
+    height: 100%;
+    color: #FFF;
+    text-align: center;
+}
+
+
+/*end of sliding navigation between the slides*/
+
