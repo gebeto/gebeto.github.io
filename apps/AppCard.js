@@ -49,7 +49,7 @@ AppCard.prototype.refreshElement = function(appData) {
 							<p></p>
 						</div>
 					</div>
-					<a href="#" style="text-decoration:none;">
+					<a href="` + this.data.installationUrl + `" style="text-decoration:none;">
 						<div class="cont-butt" style="background-color: #42ca52;">
 							<b>Установить</b>
 						</div>

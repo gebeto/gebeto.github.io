@@ -11,6 +11,7 @@ var apps = [{
     developerName: 'Александр Орлов',
     appVersion: '16.0',
     tweakVersion: '0.1',
+    installationUrl: '#',
 },{
     appName: 'VKPreferences',
     appTItle: 'VK + VKPreferences',
@@ -21,6 +22,7 @@ var apps = [{
     developerName: 'Александр Орлов',
     appVersion: '10.0',
     tweakVersion: '1.0',
+    installationUrl: '#',
 },]
 
 $(document).ready(function () {
@@ -28,7 +30,7 @@ $(document).ready(function () {
     carousel = $("#frame ul");
 
     carousel.itemslide({
-        one_item: true,
+        // one_item: true,
     }); //initialize itemslide
     currentApp = new AppCard(apps[carousel.getActiveIndex()]);
     
