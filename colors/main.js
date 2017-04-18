@@ -6,13 +6,13 @@ window.onload = function() {
 
 
 function getParamsFromUrl() {
-    var rawParams = window.location.href.split('?')[1].split('&');
-    var params = {};
-    for (var i = 0; i < rawParams.length; i++) {
-      var splitedParam = rawParams[i].split('=');
-      params[splitedParam[0]] = splitedParam[1].split(',');
-    }
-    return params;
+  var rawParams = window.location.href.split('?')[1].split('&');
+  var params = {};
+  for (var i = 0; i < rawParams.length; i++) {
+    var splitedParam = rawParams[i].split('=');
+    params[splitedParam[0]] = splitedParam[1].split(',');
+  }
+  return params;
 }
 
 function ColorsList(colors) {
@@ -40,8 +40,6 @@ ColorsList.prototype.createElement = function() {
 
   return this.rendered;
 }
-
-
 
 
 function ColorBlock(color, width, colorView) {
