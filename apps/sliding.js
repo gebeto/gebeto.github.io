@@ -6,7 +6,7 @@ var apps = [{
     appTItle: 'Instagram + IGPreferences',
     appPrefix: 'IGP',
     tweakCapabilities: 'NaN',
-    appDescription: 'Looks like VKPreference description',
+    appDescription: 'Looks like IGPreference description',
     developerUrl: 'https://vk.com/orlov_alexender',
     developerName: 'Александр Орлов',
     appVersion: '16.0',
