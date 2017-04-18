@@ -288,9 +288,9 @@ html
 }
 
 .page-application-icon {
-    height: 200px;
     padding-left: 0;
-    width: 200px;
+    height: 140px;
+    width: 140px;
 }
 
 .page-application-author, .page-application-version, .page-application-install {
