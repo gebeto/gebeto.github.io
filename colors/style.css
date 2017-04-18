@@ -27,17 +27,26 @@ html, body {
 }
 
 .color-list-item:hover {
-  font-size: 20px;
-  margin-top: -20px;
+  /*color: rgba(255,255,255,.2);*/
 }
 
 .color-view {
   text-align: center;
   height: calc(100% - 100px);
-  line-height: 300px;
   font-size: 3em;
   font-family: Arial;
   color: #fff;
   letter-spacing: 2px;
   transition-duration: .2s;
+  position: relative;
+}
+
+.h1 {
+  position: absolute;
+  left: 0;
+  line-height: 200px;
+  margin: auto;
+  margin-top: -100px;
+  top: 50%;
+  width: 100%;
 }
