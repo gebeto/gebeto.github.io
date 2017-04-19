@@ -1,0 +1,331 @@
+{
+  "tutorial": {
+    "id": 382,
+    "version": 1,
+    "title": "Make a Website 1",
+    "chapters": [
+      {
+        "id": 3933,
+        "title": "Laying out the basics",
+        "lessons": [
+          {
+            "title": "Getting started",
+            "id": 26522,
+            "images": []
+          },
+          {
+            "title": "Tools of the trade",
+            "id": 26523,
+            "images": []
+          },
+          {
+            "title": "Getting Atom",
+            "id": 26524,
+            "images": []
+          },
+          {
+            "title": "Opening Atom",
+            "id": 26525,
+            "images": [
+              {
+                "id": "acc545b4-fcaf-477c-98fc-8ad73bb0d8ec"
+              }
+            ]
+          },
+          {
+            "title": "Creating a project",
+            "id": 26526,
+            "images": [
+              {
+                "id": "0fb50d57-c895-480b-a1f2-c52787738914"
+              }
+            ]
+          },
+          {
+            "title": "Saving",
+            "id": 26527,
+            "images": [
+              {
+                "id": "7554be77-496f-4d57-b2a6-0112e769fbe5"
+              }
+            ]
+          },
+          {
+            "title": "Using the web browser",
+            "id": 26528,
+            "images": []
+          },
+          {
+            "title": "Editing and reloading",
+            "id": 26529,
+            "images": []
+          },
+          {
+            "title": "The blog",
+            "id": 26530,
+            "images": [
+              {
+                "id": "7f22fd7c-04cf-4160-9484-cc6e633021ba"
+              }
+            ]
+          },
+          {
+            "title": "The home page",
+            "id": 26531,
+            "images": []
+          },
+          {
+            "title": "Basic structure",
+            "id": 26532,
+            "images": []
+          },
+          {
+            "title": "Title",
+            "id": 26533,
+            "images": []
+          },
+          {
+            "title": "Body",
+            "id": 26536,
+            "images": [
+              {
+                "id": "e3c62a6c-292f-4e51-afae-b5f9f0afbfff"
+              }
+            ]
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3935,
+        "title": "Creating header & footer",
+        "lessons": [
+          {
+            "title": "Sections",
+            "id": 26534,
+            "images": []
+          },
+          {
+            "title": "Containers",
+            "id": 26535,
+            "images": []
+          },
+          {
+            "title": "Header",
+            "id": 27796,
+            "images": [
+              {
+                "id": "317ca860-e829-4411-9dda-f7ed5c518d04"
+              }
+            ]
+          },
+          {
+            "title": "Left side",
+            "id": 26537,
+            "images": []
+          },
+          {
+            "title": "Right side",
+            "id": 26544,
+            "images": []
+          },
+          {
+            "title": "Adding links",
+            "id": 26545,
+            "images": []
+          },
+          {
+            "title": "Header complete",
+            "id": 26546,
+            "images": []
+          },
+          {
+            "title": "Footer",
+            "id": 26547,
+            "images": [
+              {
+                "id": "b8d999f8-e43e-439e-b2a9-227cdd56c82e"
+              }
+            ]
+          },
+          {
+            "title": "Columns",
+            "id": 26548,
+            "images": []
+          },
+          {
+            "title": "My Links",
+            "id": 26549,
+            "images": []
+          },
+          {
+            "title": "Twitter and Facebook",
+            "id": 26550,
+            "images": []
+          },
+          {
+            "title": "My Story",
+            "id": 26551,
+            "images": []
+          },
+          {
+            "title": "Footer complete",
+            "id": 26552,
+            "images": []
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3936,
+        "title": "Creating content",
+        "lessons": [
+          {
+            "title": "Content",
+            "id": 27797,
+            "images": [
+              {
+                "id": "4e6cbb20-e934-4a96-be5a-ab3b328ecabb"
+              }
+            ]
+          },
+          {
+            "title": "Posts",
+            "id": 26553,
+            "images": []
+          },
+          {
+            "title": "Author details",
+            "id": 26554,
+            "images": []
+          },
+          {
+            "title": "Adding an image",
+            "id": 26555,
+            "images": []
+          },
+          {
+            "title": "Adding a name",
+            "id": 26556,
+            "images": []
+          },
+          {
+            "title": "Adding a date",
+            "id": 26557,
+            "images": []
+          },
+          {
+            "title": "Adding a title",
+            "id": 26558,
+            "images": []
+          },
+          {
+            "title": "Adding content",
+            "id": 26559,
+            "images": []
+          },
+          {
+            "title": "Content complete",
+            "id": 26561,
+            "images": []
+          },
+          {
+            "title": "Going website",
+            "id": 26585,
+            "images": [
+              {
+                "id": "5e07893b-a417-4bf0-a806-c71c11b1faed"
+              }
+            ]
+          },
+          {
+            "title": "Duplicating the home page",
+            "id": 26586,
+            "images": [
+              {
+                "id": "cbab7448-8ec0-4bcf-aaf7-15e3be0b863b"
+              }
+            ]
+          },
+          {
+            "title": "Removing and changing elements",
+            "id": 26588,
+            "images": []
+          },
+          {
+            "title": "Renaming classes",
+            "id": 26587,
+            "images": []
+          },
+          {
+            "title": "About page complete",
+            "id": 27798,
+            "images": []
+          },
+          {
+            "title": "Does it work?",
+            "id": 26562,
+            "images": []
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3905,
+        "title": "Challenges",
+        "lessons": [
+          {
+            "title": "Challenges",
+            "id": 26564,
+            "images": []
+          },
+          {
+            "title": "Bronze challenge",
+            "id": 26560,
+            "images": []
+          },
+          {
+            "title": "Silver challenge",
+            "id": 26565,
+            "images": []
+          },
+          {
+            "title": "Gold challenge",
+            "id": 26567,
+            "images": []
+          },
+          {
+            "title": "Solutions",
+            "id": 26572,
+            "images": []
+          },
+          {
+            "title": "Bronze solution",
+            "id": 26574,
+            "images": []
+          },
+          {
+            "title": "Silver solution",
+            "id": 26580,
+            "images": []
+          },
+          {
+            "title": "Gold solution",
+            "id": 26581,
+            "images": []
+          },
+          {
+            "title": "The end",
+            "id": 26589,
+            "images": [
+              {
+                "id": "1d3d2c5d-cb68-4a8e-8981-445fe50c00e6"
+              }
+            ]
+          }
+        ],
+        "challenges": []
+      }
+    ]
+  }
+}

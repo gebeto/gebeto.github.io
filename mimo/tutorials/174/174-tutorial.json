@@ -1,10 +1,11 @@
 {
   "tutorial": {
     "id": 174,
-    "version": 12,
+    "version": 17,
     "title": "C#",
     "chapters": [
       {
+        "id": 645,
         "title": "C# Basics",
         "lessons": [
           {
@@ -72,6 +73,7 @@
         ]
       },
       {
+        "id": 663,
         "title": "Variables",
         "lessons": [
           {
@@ -135,6 +137,7 @@
         ]
       },
       {
+        "id": 669,
         "title": "Booleans",
         "lessons": [
           {
@@ -206,6 +209,7 @@
         ]
       },
       {
+        "id": 707,
         "title": "Conditional statements",
         "lessons": [
           {
@@ -273,6 +277,7 @@
         ]
       },
       {
+        "id": 709,
         "title": "Arrays",
         "lessons": [
           {
@@ -344,6 +349,7 @@
         ]
       },
       {
+        "id": 710,
         "title": "Strings",
         "lessons": [
           {
@@ -419,6 +425,7 @@
         ]
       },
       {
+        "id": 711,
         "title": "Lists",
         "lessons": [
           {
@@ -498,6 +505,7 @@
         ]
       },
       {
+        "id": 712,
         "title": "Dictionaries",
         "lessons": [
           {
@@ -509,7 +517,7 @@
             "id": 7046
           },
           {
-            "title": "Accessing elements (again!)",
+            "title": "Accessing elements (again)",
             "id": 8942
           },
           {
@@ -573,6 +581,7 @@
         ]
       },
       {
+        "id": 713,
         "title": "Loops",
         "lessons": [
           {
@@ -644,6 +653,7 @@
         ]
       },
       {
+        "id": 714,
         "title": "Methods",
         "lessons": [
           {
@@ -711,6 +721,7 @@
         ]
       },
       {
+        "id": 715,
         "title": "Classes",
         "lessons": [
           {
@@ -782,6 +793,7 @@
         ]
       },
       {
+        "id": 716,
         "title": "Main and System",
         "lessons": [
           {
@@ -849,13 +861,9 @@
         ]
       },
       {
+        "id": 1157,
         "title": "Interfaces",
-        "lessons": [
-          {
-            "title": "Overriding classes ***",
-            "id": 7100
-          }
-        ],
+        "lessons": [],
         "challenges": []
       }
     ]

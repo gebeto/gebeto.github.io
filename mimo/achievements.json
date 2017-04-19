@@ -1,0 +1,179 @@
+{
+	"programming_completed_1":
+	{
+		"title": "Upstart",
+		"description": "You've mastered the challenges of Programming. Achieve on!"
+	},
+	"programming2_completed_1":
+	{
+		"title": "Computer whisperer",
+		"description": "You've mastered the challenges of Programming 2. Achieve on!"
+	},
+	"css_completed_1":
+	{
+		"title": "Style icon",
+		"description": "You've mastered the challenges of CSS. Achieve on!"
+	},
+	"swift_completed_1":
+	{
+		"title": "High flyer",
+		"description": "You've mastered the challenges of Swift. Achieve on!"
+	},
+	"html_completed_1":
+	{
+		"title": "Architect",
+		"description": "You've mastered the challenges of HTML. Achieve on!"
+	},
+	"java_completed_1":
+	{
+		"title": "Coffee bean",
+		"description": "You've mastered the challenges of Java. Achieve on!"
+	},
+	"ruby_completed_1": {
+		"title": "Treasurer",
+		"description": "You've mastered the challenges of Ruby. Achieve on!"
+	},
+	"python_completed_1": {
+		"title": "Monty Python",
+		"description": "You've mastered the challenges of Python. Achieve on!"
+	},
+	"csharp_completed_1":
+	{
+		"title": "Sharp mind",
+		"description": "You've mastered the challenges of C#. Achieve on!"
+	},
+	"javascript_completed_1":
+	{
+		"title": "Script kiddy",
+		"description": "You've mastered the challenges of JavaScript. Achieve on!"
+	},
+	"cplusplus_completed_1":
+	{
+		"title": "Tinkerer",
+		"description": "You've mastered the challenges of C++. Achieve on!"
+	},
+	"sql_completed_1":
+	{
+		"title": "SELECTOR",
+		"description": "You've mastered the challenges of SQL. Achieve on!"
+	},
+	"hacking_completed_1":
+	{
+		"title": "H4x0r",
+		"description": "You've mastered the challenges of Hacking. Achieve on!"
+	},
+	"terminal_completed_1": {
+		"title": "Linux beard",
+		"description": "You've mastered the challenges of Terminal. Achieve on!"
+	},
+	"arnoldc_completed_1":
+	{
+		"title": "Terminator",
+		"description": "You've mastered the challenges of ArnoldC. Achieve on!"
+	},
+	"git_completed_1":
+	{
+		"title": "Git-r-done!",
+		"description": "You've mastered the challenges of Git. Achieve on!"
+	},
+	"chapters_completed_1":
+	{
+		"title": "Rookie",
+		"description": "You've breezed through a total of 1 chapter. Here's to you!"
+	},
+	"chapters_completed_2":
+	{
+		"title": "Semi Pro",
+		"description": "You've breezed through a total of 5 chapters. Here's to you!"
+	},
+	"chapters_completed_3":
+	{
+		"title": "Pro",
+		"description": "You've breezed through a total of 10 chapters. Here's to you!"
+	},
+	"chapters_completed_4":
+	{
+		"title": "Veteran",
+		"description": "You've breezed through a total of 25 chapters. Here's to you!"
+	},
+	"chapters_completed_5":
+	{
+		"title": "Grand Master",
+		"description": "You've breezed through a total of 50 chapters. Here's to you!"
+	},
+	"chapters_completed_6":
+	{
+		"title": "Legend",
+		"description": "You've breezed through a total of 100 chapters. Here's to you!"
+	},
+	"lessons_completed_1":
+	{
+		"title": "Kick-off",
+		"description": "You've completed your first lesson."
+	},
+	"lessons_completed_2":
+	{
+		"title": "Quarter",
+		"description": "You've waltzed through a total of 25 lessons. Keep it up!"
+	},
+	"lessons_completed_3":
+	{
+		"title": "Five-0",
+		"description": "You've waltzed through a total of 50 lessons. Keep it up!"
+	},
+	"lessons_completed_4":
+	{
+		"title": "In the 100s",
+		"description": "You've waltzed through a total of 100 lessons. Keep it up!"
+	},
+	"lessons_completed_5":
+	{
+		"title": "Two-fifty",
+		"description": "You've waltzed through a total of 250 lessons. Keep it up!"
+	},
+	"lessons_completed_6":
+	{
+		"title": "Fortune 500",
+		"description": "You've waltzed through a total of 500 lessons. Keep it up!"
+	},
+	"lessons_completed_7":
+	{
+		"title": "Seven-fifty",
+		"description": "You've waltzed through a total of 750 lessons. Keep it up!"
+	},
+	"lessons_completed_8":
+	{
+		"title": "A grand",
+		"description": "You've waltzed through a total of 1000 lessons. Keep it up!"
+	},
+	"streak_length_1":
+	{
+		"title": "Hat-trick",
+		"description": "You've met your daily goal for 3 days in a row. Can you maintain the streak?"
+	},
+	"streak_length_2":
+	{
+		"title": "High five",
+		"description": "You've met your daily goal for 5 days in a row. Can you maintain the streak?"
+	},
+	"streak_length_3":
+	{
+		"title": "Week o'code",
+		"description": "You've met your daily goal for 7 days in a row. Can you maintain the streak?"
+	},
+	"streak_length_4":
+	{
+		"title": "Fortnight o'code",
+		"description": "You've met your daily goal for 14 days in a row. Can you maintain the streak?"
+	},
+	"streak_length_5":
+	{
+		"title": "Month o'code",
+		"description": "You've met your daily goal for 30 days in a row. Can you maintain the streak?"
+	},
+	"streak_length_6":
+	{
+		"title": "Year o'code",
+		"description": "You've met your daily goal for 365 days in a row. Can you maintain the streak?"
+	}
+}

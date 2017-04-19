@@ -1,10 +1,11 @@
 {
   "tutorial": {
     "id": 212,
-    "version": 5,
+    "version": 11,
     "title": "Terminal",
     "chapters": [
       {
+        "id": 1875,
         "title": "Introduction",
         "lessons": [
           {
@@ -76,6 +77,7 @@
         ]
       },
       {
+        "id": 1876,
         "title": "Manipulation",
         "lessons": [
           {
@@ -151,6 +153,7 @@
         ]
       },
       {
+        "id": 1877,
         "title": "Redirection",
         "lessons": [
           {
@@ -214,6 +217,7 @@
         ]
       },
       {
+        "id": 1879,
         "title": "Permissions",
         "lessons": [
           {
@@ -281,6 +285,7 @@
         ]
       },
       {
+        "id": 1878,
         "title": "Environment",
         "lessons": [
           {
@@ -344,6 +349,7 @@
         ]
       },
       {
+        "id": 1882,
         "title": "Extras",
         "lessons": [
           {

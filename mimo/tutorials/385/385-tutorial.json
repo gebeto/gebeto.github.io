@@ -1,0 +1,420 @@
+{
+  "tutorial": {
+    "id": 385,
+    "version": 1,
+    "title": "Make a Website 2",
+    "chapters": [
+      {
+        "id": 3937,
+        "title": "Going back to square one",
+        "lessons": [
+          {
+            "title": "Continuing with the website",
+            "id": 26607,
+            "images": []
+          },
+          {
+            "title": "Where we're at",
+            "id": 26608,
+            "images": [
+              {
+                "id": "6af3d985-c340-41d4-a00c-b3d3138a5873"
+              }
+            ]
+          },
+          {
+            "title": "Where we're going",
+            "id": 26609,
+            "images": [
+              {
+                "id": "092e3dfb-9e9c-4005-a00f-791dac234ab4"
+              }
+            ]
+          },
+          {
+            "title": "Creating a stylesheet",
+            "id": 26610,
+            "images": [
+              {
+                "id": "856c3a87-ab9c-4247-9c02-e455e26ce2a6"
+              }
+            ]
+          },
+          {
+            "title": "Splitting views",
+            "id": 26611,
+            "images": [
+              {
+                "id": "1522ce73-44b8-4dc0-8859-1790da3e30ef"
+              }
+            ]
+          },
+          {
+            "title": "Adding a rule",
+            "id": 26614,
+            "images": []
+          },
+          {
+            "title": "Linking the stylesheet",
+            "id": 26612,
+            "images": []
+          },
+          {
+            "title": "The header",
+            "id": 26615,
+            "images": [
+              {
+                "id": "70f79a56-22d0-4fc7-be6e-e47a4989fec2"
+              }
+            ]
+          },
+          {
+            "title": "The header's structure",
+            "id": 26616,
+            "images": []
+          },
+          {
+            "title": "Background",
+            "id": 26617,
+            "images": []
+          },
+          {
+            "title": "Body margins",
+            "id": 26702,
+            "images": [
+              {
+                "id": "a5faf0ee-3ef9-4598-be0a-8bef2828cf6f"
+              }
+            ]
+          },
+          {
+            "title": "Removing body margins",
+            "id": 26618,
+            "images": []
+          },
+          {
+            "title": "Positioning the title",
+            "id": 26619,
+            "images": []
+          },
+          {
+            "title": "Positioning the navigation",
+            "id": 26622,
+            "images": []
+          },
+          {
+            "title": "Repurposing the list",
+            "id": 26624,
+            "images": []
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3938,
+        "title": "Working on the header",
+        "lessons": [
+          {
+            "title": "Two problems",
+            "id": 26625,
+            "images": [
+              {
+                "id": "5a70aef4-5d7e-4d7a-b58b-4d5cdfcaa040"
+              }
+            ]
+          },
+          {
+            "title": "Adding some padding",
+            "id": 26626,
+            "images": []
+          },
+          {
+            "title": "Removing margins",
+            "id": 26627,
+            "images": []
+          },
+          {
+            "title": "Setting line height",
+            "id": 26631,
+            "images": []
+          },
+          {
+            "title": "The container class",
+            "id": 26636,
+            "images": []
+          },
+          {
+            "title": "Styling the title",
+            "id": 26629,
+            "images": []
+          },
+          {
+            "title": "Styling the links",
+            "id": 26637,
+            "images": []
+          },
+          {
+            "title": "Transforming the links",
+            "id": 26638,
+            "images": []
+          },
+          {
+            "title": "Hovering in the header",
+            "id": 26639,
+            "images": []
+          },
+          {
+            "title": "Header complete",
+            "id": 26703,
+            "images": [
+              {
+                "id": "0cdd590e-afa8-4e15-b087-54bc97a40a7e"
+              }
+            ]
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3939,
+        "title": "Working on the footer",
+        "lessons": [
+          {
+            "title": "The footer",
+            "id": 26642,
+            "images": [
+              {
+                "id": "03146bca-d93d-49e6-8764-057489b5406f"
+              }
+            ]
+          },
+          {
+            "title": "The footer's structure",
+            "id": 26644,
+            "images": []
+          },
+          {
+            "title": "Background",
+            "id": 26645,
+            "images": []
+          },
+          {
+            "title": "The column class",
+            "id": 26647,
+            "images": []
+          },
+          {
+            "title": "Aligning vertically",
+            "id": 26648,
+            "images": []
+          },
+          {
+            "title": "The footer headers",
+            "id": 26649,
+            "images": []
+          },
+          {
+            "title": "The footer paragraphs",
+            "id": 26651,
+            "images": []
+          },
+          {
+            "title": "Styling the links",
+            "id": 26652,
+            "images": []
+          },
+          {
+            "title": "Hovering over links",
+            "id": 26653,
+            "images": []
+          },
+          {
+            "title": "Footer complete",
+            "id": 26704,
+            "images": [
+              {
+                "id": "4f74e69e-307f-453c-b222-fbc5c684d2fa"
+              }
+            ]
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3940,
+        "title": "Working on the content",
+        "lessons": [
+          {
+            "title": "The content",
+            "id": 26654,
+            "images": [
+              {
+                "id": "2f67da31-ea62-4d36-9d65-f0fa8ab2ef6f"
+              }
+            ]
+          },
+          {
+            "title": "The content's structure",
+            "id": 26662,
+            "images": []
+          },
+          {
+            "title": "The post class",
+            "id": 26663,
+            "images": []
+          },
+          {
+            "title": "Adding a padding",
+            "id": 26664,
+            "images": []
+          },
+          {
+            "title": "Sizing the image",
+            "id": 26665,
+            "images": []
+          },
+          {
+            "title": "Positioning the name",
+            "id": 26666,
+            "images": []
+          },
+          {
+            "title": "Styling the date",
+            "id": 26668,
+            "images": []
+          },
+          {
+            "title": "Headlines",
+            "id": 26669,
+            "images": []
+          },
+          {
+            "title": "Paragraphs",
+            "id": 26670,
+            "images": []
+          },
+          {
+            "title": "Importing a web font",
+            "id": 26671,
+            "images": []
+          },
+          {
+            "title": "Using a web font",
+            "id": 26672,
+            "images": []
+          },
+          {
+            "title": "Content complete",
+            "id": 27685,
+            "images": [
+              {
+                "id": "8f49bcb1-4c4e-4cbe-b99e-d2142818f6a2"
+              }
+            ]
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3941,
+        "title": "Working on the about page",
+        "lessons": [
+          {
+            "title": "The About page",
+            "id": 26688,
+            "images": [
+              {
+                "id": "88e6846c-b79b-44ce-9ab3-b96ef100c396"
+              }
+            ]
+          },
+          {
+            "title": "The About page's structure",
+            "id": 26689,
+            "images": []
+          },
+          {
+            "title": "Joining a rule",
+            "id": 26687,
+            "images": []
+          },
+          {
+            "title": "About page complete",
+            "id": 27686,
+            "images": [
+              {
+                "id": "a3d44e1c-9f3c-4252-b0cf-c8e111dd7f19"
+              }
+            ]
+          },
+          {
+            "title": "Does it work?",
+            "id": 26673,
+            "images": [
+              {
+                "id": "aea211cd-5f98-449b-99b6-9c471d7cc789"
+              }
+            ]
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3910,
+        "title": "Challenges",
+        "lessons": [
+          {
+            "title": "Challenges",
+            "id": 26674,
+            "images": []
+          },
+          {
+            "title": "Bronze challenge",
+            "id": 26676,
+            "images": []
+          },
+          {
+            "title": "Silver challenge",
+            "id": 26692,
+            "images": []
+          },
+          {
+            "title": "Gold challenge",
+            "id": 26693,
+            "images": []
+          },
+          {
+            "title": "Solutions",
+            "id": 26694,
+            "images": []
+          },
+          {
+            "title": "Bronze solution",
+            "id": 26695,
+            "images": []
+          },
+          {
+            "title": "Silver solution",
+            "id": 26696,
+            "images": []
+          },
+          {
+            "title": "Gold solution",
+            "id": 26697,
+            "images": []
+          },
+          {
+            "title": "The end",
+            "id": 26699,
+            "images": [
+              {
+                "id": "54228a64-bafc-4d3f-ad4c-278adfba0ec5"
+              }
+            ]
+          }
+        ],
+        "challenges": []
+      }
+    ]
+  }
+}

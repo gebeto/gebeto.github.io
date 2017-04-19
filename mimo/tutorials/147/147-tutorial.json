@@ -1,10 +1,11 @@
 {
   "tutorial": {
     "id": 147,
-    "version": 12,
+    "version": 18,
     "title": "HTML",
     "chapters": [
       {
+        "id": 519,
         "title": "Introduction",
         "lessons": [
           {
@@ -16,12 +17,8 @@
             "id": 4018
           },
           {
-            "title": "HTML files",
+            "title": "Going behind the scenes",
             "id": 4019
-          },
-          {
-            "title": "HTML editors",
-            "id": 4020
           },
           {
             "title": "Tags",
@@ -36,7 +33,7 @@
             "id": 4023
           },
           {
-            "title": "Heads-up",
+            "title": "Heads up",
             "id": 4024
           },
           {
@@ -48,12 +45,8 @@
             "id": 4026
           },
           {
-            "title": "What's up, Doctype?",
+            "title": "What's up, Doc(type)?",
             "id": 4027
-          },
-          {
-            "title": "Blog #1",
-            "id": 4028
           }
         ],
         "challenges": [
@@ -72,6 +65,7 @@
         ]
       },
       {
+        "id": 520,
         "title": "Common tags",
         "lessons": [
           {
@@ -113,10 +107,6 @@
           {
             "title": "Comments",
             "id": 4040
-          },
-          {
-            "title": "Blog #2",
-            "id": 4041
           }
         ],
         "challenges": [
@@ -135,6 +125,7 @@
         ]
       },
       {
+        "id": 521,
         "title": "Hyperlinks",
         "lessons": [
           {
@@ -160,10 +151,6 @@
           {
             "title": "Targets",
             "id": 4051
-          },
-          {
-            "title": "Blog #3",
-            "id": 4052
           }
         ],
         "challenges": [
@@ -182,6 +169,7 @@
         ]
       },
       {
+        "id": 523,
         "title": "Multimedia",
         "lessons": [
           {
@@ -223,10 +211,6 @@
           {
             "title": "Audio",
             "id": 4065
-          },
-          {
-            "title": "Blog #4",
-            "id": 4066
           }
         ],
         "challenges": [
@@ -245,6 +229,7 @@
         ]
       },
       {
+        "id": 524,
         "title": "Lists",
         "lessons": [
           {
@@ -278,10 +263,6 @@
           {
             "title": "List items as links",
             "id": 4077
-          },
-          {
-            "title": "Blog #5",
-            "id": 4078
           }
         ],
         "challenges": [
@@ -300,6 +281,7 @@
         ]
       },
       {
+        "id": 525,
         "title": "Tables",
         "lessons": [
           {
@@ -333,10 +315,6 @@
           {
             "title": "Borders",
             "id": 4092
-          },
-          {
-            "title": "Blog #6",
-            "id": 4087
           }
         ],
         "challenges": [
@@ -355,10 +333,11 @@
         ]
       },
       {
+        "id": 526,
         "title": "Styles",
         "lessons": [
           {
-            "title": "De Stijl",
+            "title": "Sprucing things up",
             "id": 4095
           },
           {
@@ -396,10 +375,6 @@
           {
             "title": "Spantastic",
             "id": 4094
-          },
-          {
-            "title": "Blog #7",
-            "id": 4104
           }
         ],
         "challenges": [
@@ -416,11 +391,6 @@
             "id": 4107
           }
         ]
-      },
-      {
-        "title": "Forms",
-        "lessons": [],
-        "challenges": []
       }
     ]
   }

@@ -1,10 +1,11 @@
 {
   "tutorial": {
     "id": 173,
-    "version": 14,
+    "version": 18,
     "title": "Python",
     "chapters": [
       {
+        "id": 759,
         "title": "Python Basics",
         "lessons": [
           {
@@ -80,6 +81,7 @@
         ]
       },
       {
+        "id": 762,
         "title": "Variables and types",
         "lessons": [
           {
@@ -163,6 +165,7 @@
         ]
       },
       {
+        "id": 763,
         "title": "Strings",
         "lessons": [
           {
@@ -246,6 +249,7 @@
         ]
       },
       {
+        "id": 764,
         "title": "Booleans",
         "lessons": [
           {
@@ -273,7 +277,7 @@
             "id": 7914
           },
           {
-            "title": "Not",
+            "title": "Opposite Day",
             "id": 7913
           },
           {
@@ -281,7 +285,7 @@
             "id": 8802
           },
           {
-            "title": "Or",
+            "title": "Or   ",
             "id": 9058
           },
           {
@@ -317,6 +321,7 @@
         ]
       },
       {
+        "id": 765,
         "title": "Conditional statements",
         "lessons": [
           {
@@ -392,6 +397,7 @@
         ]
       },
       {
+        "id": 766,
         "title": "Lists",
         "lessons": [
           {
@@ -467,6 +473,7 @@
         ]
       },
       {
+        "id": 767,
         "title": "Loops",
         "lessons": [
           {
@@ -534,6 +541,7 @@
         ]
       },
       {
+        "id": 768,
         "title": "Functions",
         "lessons": [
           {
@@ -601,6 +609,7 @@
         ]
       },
       {
+        "id": 769,
         "title": "Dictionaries",
         "lessons": [
           {
@@ -668,6 +677,7 @@
         ]
       },
       {
+        "id": 770,
         "title": "Classes",
         "lessons": [
           {

@@ -1,0 +1,455 @@
+{
+  "tutorial": {
+    "id": 340,
+    "version": 3,
+    "title": "Build an App 1",
+    "chapters": [
+      {
+        "id": 3921,
+        "title": "Getting started",
+        "lessons": [
+          {
+            "title": "Warming up",
+            "id": 23615,
+            "images": []
+          },
+          {
+            "title": "Opening Xcode",
+            "id": 23616,
+            "images": [
+              {
+                "id": "4d30eb10-731f-4f6f-8f38-08cbd8522d21"
+              }
+            ]
+          },
+          {
+            "title": "Single View Application",
+            "id": 23617,
+            "images": [
+              {
+                "id": "35597074-152d-46fb-875a-1a9137d1ccc4"
+              }
+            ]
+          },
+          {
+            "title": "What's your name?",
+            "id": 23620,
+            "images": [
+              {
+                "id": "a804ed58-d64c-4c1b-9895-233be2903ca4"
+              }
+            ]
+          },
+          {
+            "title": "Saving the project",
+            "id": 23621,
+            "images": []
+          },
+          {
+            "title": "Project structure",
+            "id": 23622,
+            "images": [
+              {
+                "id": "5864877c-94a2-421a-b5d6-35baf3cfaee4"
+              }
+            ]
+          },
+          {
+            "title": "Model-View-Controller",
+            "id": 23623,
+            "images": []
+          },
+          {
+            "title": "The Model",
+            "id": 23624,
+            "images": []
+          },
+          {
+            "title": "The View",
+            "id": 23625,
+            "images": []
+          },
+          {
+            "title": "The Controller",
+            "id": 23626,
+            "images": []
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3922,
+        "title": "Adding a label",
+        "lessons": [
+          {
+            "title": "Hello, view controller!",
+            "id": 23627,
+            "images": []
+          },
+          {
+            "title": "Cleaning up",
+            "id": 23694,
+            "images": []
+          },
+          {
+            "title": "Storyboards",
+            "id": 23629,
+            "images": []
+          },
+          {
+            "title": "First view",
+            "id": 23630,
+            "images": [
+              {
+                "id": "ef14d96e-cabe-4071-939d-124a5e94774b"
+              }
+            ]
+          },
+          {
+            "title": "Positioning",
+            "id": 23631,
+            "images": [
+              {
+                "id": "a3b047a0-1266-4b0d-8466-b0b3a313de71"
+              }
+            ]
+          },
+          {
+            "title": "View hierarchy",
+            "id": 23632,
+            "images": [
+              {
+                "id": "21e5ae75-fe9e-45d2-9edd-e89f53c9da59"
+              }
+            ]
+          },
+          {
+            "title": "Auto-layouts",
+            "id": 23633,
+            "images": [
+              {
+                "id": "c6f599b7-a8db-46c2-9a62-57c247486a77"
+              }
+            ]
+          },
+          {
+            "title": "Constraints",
+            "id": 23634,
+            "images": []
+          },
+          {
+            "title": "Solid lines",
+            "id": 23635,
+            "images": [
+              {
+                "id": "935c0274-c068-4a11-8818-a5f2b363227d"
+              }
+            ]
+          },
+          {
+            "title": "Running",
+            "id": 23637,
+            "images": [
+              {
+                "id": "1ff60101-62da-42e9-ae01-aa2e6816be00"
+              }
+            ]
+          },
+          {
+            "title": "Checking constraints",
+            "id": 23638,
+            "images": []
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3923,
+        "title": "Displaying things",
+        "lessons": [
+          {
+            "title": "Opening the Assistant Editor",
+            "id": 23639,
+            "images": [
+              {
+                "id": "2cf9ef1b-4f49-494a-b602-fd37af9454ac"
+              }
+            ]
+          },
+          {
+            "title": "Automatic matching",
+            "id": 23640,
+            "images": [
+              {
+                "id": "1a356502-1cd3-4a55-8632-e35b6e25d487"
+              }
+            ]
+          },
+          {
+            "title": "Dragging along",
+            "id": 23641,
+            "images": [
+              {
+                "id": "269e4faa-eba0-43a5-850a-00070c716cd2"
+              }
+            ]
+          },
+          {
+            "title": "Adding an outlet",
+            "id": 23642,
+            "images": [
+              {
+                "id": "bbe74a65-033c-4046-af90-0cfc75ed7e19"
+              }
+            ]
+          },
+          {
+            "title": "@IBOutlet",
+            "id": 23643,
+            "images": []
+          },
+          {
+            "title": "Implicitly unwrapped",
+            "id": 23644,
+            "images": []
+          },
+          {
+            "title": "Weak",
+            "id": 23645,
+            "images": []
+          },
+          {
+            "title": "viewDidLoad()",
+            "id": 23651,
+            "images": []
+          },
+          {
+            "title": "Text",
+            "id": 23652,
+            "images": []
+          },
+          {
+            "title": "Number",
+            "id": 23653,
+            "images": []
+          },
+          {
+            "title": "Instance variables",
+            "id": 23628,
+            "images": []
+          },
+          {
+            "title": "Removing the local variable",
+            "id": 23654,
+            "images": []
+          },
+          {
+            "title": "1 + 9 = 10?",
+            "id": 23655,
+            "images": []
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3924,
+        "title": "Adding a button",
+        "lessons": [
+          {
+            "title": "Randomizing",
+            "id": 23656,
+            "images": []
+          },
+          {
+            "title": "Int()",
+            "id": 23657,
+            "images": []
+          },
+          {
+            "title": "Using the random number",
+            "id": 23695,
+            "images": []
+          },
+          {
+            "title": "5 is not 6",
+            "id": 23658,
+            "images": []
+          },
+          {
+            "title": "At the push of a button",
+            "id": 23660,
+            "images": [
+              {
+                "id": "d1150aba-e09a-499b-b11f-8ea32c9db9f9"
+              }
+            ]
+          },
+          {
+            "title": "Blue lines",
+            "id": 23661,
+            "images": [
+              {
+                "id": "ad1bc865-c779-47fa-94b3-0b2691b9cb6d"
+              }
+            ]
+          },
+          {
+            "title": "Adding constraints",
+            "id": 23662,
+            "images": [
+              {
+                "id": "4d3bef2d-85e0-4da6-9592-01a0c7bc5618"
+              }
+            ]
+          },
+          {
+            "title": "Missing a constraint",
+            "id": 23663,
+            "images": [
+              {
+                "id": "ba6463e4-ae8d-4189-b49d-52f07f961cb4"
+              }
+            ]
+          },
+          {
+            "title": "Turning blue",
+            "id": 23664,
+            "images": [
+              {
+                "id": "575f636e-64c8-4166-a567-33279f88c849"
+              }
+            ]
+          },
+          {
+            "title": "Happy?",
+            "id": 23665,
+            "images": [
+              {
+                "id": "46fe84d1-9cf9-4e8c-82e4-3a54c89c1155"
+              }
+            ]
+          },
+          {
+            "title": "Getting the Assistant View",
+            "id": 23666,
+            "images": [
+              {
+                "id": "2b330380-96af-4a24-a6d0-37ec923066ff"
+              }
+            ]
+          },
+          {
+            "title": "Drawing that line",
+            "id": 23667,
+            "images": [
+              {
+                "id": "82e3cbd1-5eed-4c66-ae69-3759c4e82ace"
+              }
+            ]
+          },
+          {
+            "title": "Adding a function",
+            "id": 23668,
+            "images": [
+              {
+                "id": "4f5fa8e8-bc2c-4d46-95f3-029e9f220e11"
+              }
+            ]
+          },
+          {
+            "title": "Giving a title",
+            "id": 23669,
+            "images": []
+          },
+          {
+            "title": "@IBAction",
+            "id": 23670,
+            "images": []
+          },
+          {
+            "title": "Passing a parameter",
+            "id": 23671,
+            "images": []
+          },
+          {
+            "title": "Touch",
+            "id": 23672,
+            "images": []
+          },
+          {
+            "title": "More numbers!",
+            "id": 23673,
+            "images": []
+          },
+          {
+            "title": "Duplicate code",
+            "id": 23674,
+            "images": []
+          },
+          {
+            "title": "Does it work?",
+            "id": 23675,
+            "images": []
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3700,
+        "title": "Challenges",
+        "lessons": [
+          {
+            "title": "Challenges",
+            "id": 23676,
+            "images": []
+          },
+          {
+            "title": "Bronze challenge",
+            "id": 23677,
+            "images": []
+          },
+          {
+            "title": "Silver challenge",
+            "id": 23678,
+            "images": []
+          },
+          {
+            "title": "Gold challenge",
+            "id": 23679,
+            "images": []
+          },
+          {
+            "title": "Solutions",
+            "id": 23680,
+            "images": []
+          },
+          {
+            "title": "Bronze solution",
+            "id": 23681,
+            "images": [
+              {
+                "id": "fee583e9-0e18-484b-aa7d-e642bb767a11"
+              }
+            ]
+          },
+          {
+            "title": "Silver solution",
+            "id": 23682,
+            "images": []
+          },
+          {
+            "title": "Gold solution",
+            "id": 23683,
+            "images": []
+          },
+          {
+            "title": "The end",
+            "id": 23684,
+            "images": []
+          }
+        ],
+        "challenges": []
+      }
+    ]
+  }
+}

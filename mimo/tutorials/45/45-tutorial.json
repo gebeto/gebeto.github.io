@@ -1,220 +1,133 @@
 {
-  "tutorial": {
-    "id": 45,
-    "version": 12,
-    "title": "Programming",
-    "chapters": [
-      {
-        "title": "Getting started ",
-        "lessons": [
-          {
-            "title": "Welcome!",
-            "id": 454
-          },
-          {
-            "title": "Computers can't think",
-            "id": 455
-          },
-          {
-            "title": "Instructions",
-            "id": 456
-          },
-          {
-            "title": "Programming vs. writing code",
-            "id": 457
-          },
-          {
-            "title": "Computer programs",
-            "id": 458
-          },
-          {
-            "title": "Sequences",
-            "id": 459
-          },
-          {
-            "title": "They're among us",
-            "id": 460
-          },
-          {
-            "title": "Making a sandwich",
-            "id": 461
-          }
-        ],
-        "challenges": [
-          {
-            "title": "Quiz",
-            "id": 9046
-          }
-        ]
-      },
-      {
-        "title": "Storing information",
-        "lessons": [
-          {
-            "title": "Computers remember",
-            "id": 1009
-          },
-          {
-            "title": "Variables",
-            "id": 1010
-          },
-          {
-            "title": "Labels",
-            "id": 1011
-          },
-          {
-            "title": "Tracking information",
-            "id": 1012
-          },
-          {
-            "title": "Different kinds of information",
-            "id": 1013
-          },
-          {
-            "title": "Numbers",
-            "id": 1014
-          },
-          {
-            "title": "Using numbers",
-            "id": 1015
-          },
-          {
-            "title": "Strings",
-            "id": 1016
-          },
-          {
-            "title": "Lists",
-            "id": 1017
-          }
-        ],
-        "challenges": [
-          {
-            "title": "Quiz",
-            "id": 9047
-          }
-        ]
-      },
-      {
-        "title": "Making decisions",
-        "lessons": [
-          {
-            "title": "Computers can't decide",
-            "id": 1018
-          },
-          {
-            "title": "Conditions",
-            "id": 1019
-          },
-          {
-            "title": "If-then",
-            "id": 1020
-          },
-          {
-            "title": "If-then-else",
-            "id": 1021
-          },
-          {
-            "title": "Doors unlocked and open",
-            "id": 1022
-          },
-          {
-            "title": "Ruling the doors",
-            "id": 1023
-          },
-          {
-            "title": "Else-if-then",
-            "id": 1024
-          }
-        ],
-        "challenges": [
-          {
-            "title": "Quiz",
-            "id": 9048
-          }
-        ]
-      },
-      {
-        "title": "Repeating things",
-        "lessons": [
-          {
-            "title": "Computers don't get bored",
-            "id": 1031
-          },
-          {
-            "title": "Making two sandwiches",
-            "id": 1032
-          },
-          {
-            "title": "Making ten sandwiches",
-            "id": 1033
-          },
-          {
-            "title": "Loop de loop",
-            "id": 1034
-          },
-          {
-            "title": "Count-controlled loops",
-            "id": 1035
-          },
-          {
-            "title": "Condition-controlled loops",
-            "id": 1036
-          },
-          {
-            "title": "Shopping sprees",
-            "id": 1037
-          }
-        ],
-        "challenges": [
-          {
-            "title": "Quiz",
-            "id": 9049
-          }
-        ]
-      },
-      {
-        "title": "Using computer-speak",
-        "lessons": [
-          {
-            "title": "Computers don't understand",
-            "id": 1038
-          },
-          {
-            "title": "Common ground",
-            "id": 1039
-          },
-          {
-            "title": "Programming languages",
-            "id": 1040
-          },
-          {
-            "title": "Code",
-            "id": 1041
-          },
-          {
-            "title": "Peeking into Python",
-            "id": 1042
-          },
-          {
-            "title": "Storing information",
-            "id": 1043
-          },
-          {
-            "title": "Making decisions",
-            "id": 1044
-          },
-          {
-            "title": "Repeating things",
-            "id": 1045
-          }
-        ],
-        "challenges": [
-          {
-            "title": "Quiz",
-            "id": 9050
-          }
-        ]
-      }
-    ]
-  }
+	"tutorial": {
+		"id": 45,
+		"version": 18,
+		"title": "Programming",
+		"chapters": [{
+			"id": 88,
+			"title": "Getting started ",
+			"lessons": [{
+				"title": "Welcome!",
+				"id": 454
+			}, {
+				"title": "Computers can't think",
+				"id": 455
+			}, {
+				"title": "Instructions",
+				"id": 456
+			}, {
+				"title": "Programming vs. writing code",
+				"id": 457
+			}, {
+				"title": "Computer programs",
+				"id": 458
+			}, {
+				"title": "Sequences",
+				"id": 459
+			}, {
+				"title": "They're among us",
+				"id": 460
+			}, {
+				"title": "Making a sandwich",
+				"id": 461
+			}],
+			"challenges": [{
+				"title": "Quiz",
+				"id": 9046
+			}]
+		}, {
+			"id": 242,
+			"title": "Storing information",
+			"lessons": [{
+				"title": "Computers remember",
+				"id": 1009
+			}, {
+				"title": "Variables",
+				"id": 1010
+			}, {
+				"title": "Labels",
+				"id": 1011
+			}, {
+				"title": "Tracking information",
+				"id": 1012
+			}, {
+				"title": "Different kinds of information",
+				"id": 1013
+			}, {
+				"title": "Numbers",
+				"id": 1014
+			}, {
+				"title": "Using numbers",
+				"id": 1015
+			}, {
+				"title": "Strings",
+				"id": 1016
+			}, {
+				"title": "Lists",
+				"id": 1017
+			}],
+			"challenges": [{
+				"title": "Quiz",
+				"id": 9047
+			}]
+		}, {
+			"id": 243,
+			"title": "Making decisions",
+			"lessons": [{
+				"title": "Computers can't decide",
+				"id": 1018
+			}, {
+				"title": "Conditions",
+				"id": 1019
+			}, {
+				"title": "If-then",
+				"id": 1020
+			}, {
+				"title": "If-then-else",
+				"id": 1021
+			}, {
+				"title": "Doors unlocked and open",
+				"id": 1022
+			}, {
+				"title": "Ruling the doors",
+				"id": 1023
+			}, {
+				"title": "Else-if-then",
+				"id": 1024
+			}],
+			"challenges": [{
+				"title": "Quiz",
+				"id": 9048
+			}]
+		}, {
+			"id": 270,
+			"title": "Repeating things",
+			"lessons": [{
+				"title": "Computers don't get bored",
+				"id": 1031
+			}, {
+				"title": "Making two sandwiches",
+				"id": 1032
+			}, {
+				"title": "Making ten sandwiches",
+				"id": 1033
+			}, {
+				"title": "Loop de loop",
+				"id": 1034
+			}, {
+				"title": "Count-controlled loops",
+				"id": 1035
+			}, {
+				"title": "Condition-controlled loops",
+				"id": 1036
+			}, {
+				"title": "Shopping sprees",
+				"id": 1037
+			}],
+			"challenges": [{
+				"title": "Quiz",
+				"id": 9049
+			}]
+		}]
+	}
 }

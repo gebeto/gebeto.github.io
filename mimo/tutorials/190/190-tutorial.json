@@ -1,10 +1,11 @@
 {
   "tutorial": {
     "id": 190,
-    "version": 1,
+    "version": 8,
     "title": "Git",
     "chapters": [
       {
+        "id": 2201,
         "title": "Introduction",
         "lessons": [
           {
@@ -76,6 +77,7 @@
         ]
       },
       {
+        "id": 2202,
         "title": "History",
         "lessons": [
           {
@@ -135,6 +137,7 @@
         ]
       },
       {
+        "id": 2203,
         "title": "Branches",
         "lessons": [
           {
@@ -190,6 +193,7 @@
         ]
       },
       {
+        "id": 2204,
         "title": "Conflicts",
         "lessons": [
           {
@@ -241,6 +245,7 @@
         ]
       },
       {
+        "id": 2205,
         "title": "Repositories",
         "lessons": [
           {

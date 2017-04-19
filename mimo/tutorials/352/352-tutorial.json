@@ -1,0 +1,302 @@
+{
+  "tutorial": {
+    "id": 352,
+    "version": 1,
+    "title": "SQL Injection",
+    "chapters": [
+      {
+        "id": 3942,
+        "title": "Poking around",
+        "lessons": [
+          {
+            "title": "Project",
+            "id": 23958,
+            "images": []
+          },
+          {
+            "title": "Training ground",
+            "id": 23959,
+            "images": [
+              {
+                "id": "c5c020d6-3b18-4255-97b1-2471c25824f1"
+              }
+            ]
+          },
+          {
+            "title": "Plan",
+            "id": 23960,
+            "images": []
+          },
+          {
+            "title": "Phase 1",
+            "id": 23961,
+            "images": [
+              {
+                "id": "f71ddeaa-b7aa-4a82-b996-19f891fbbdda"
+              }
+            ]
+          },
+          {
+            "title": "Try it",
+            "id": 23968,
+            "images": []
+          },
+          {
+            "title": "Malicious?",
+            "id": 23969,
+            "images": []
+          },
+          {
+            "title": "Malicious!",
+            "id": 23970,
+            "images": []
+          },
+          {
+            "title": "Results?",
+            "id": 23971,
+            "images": []
+          },
+          {
+            "title": "Dig deeper",
+            "id": 23972,
+            "images": []
+          },
+          {
+            "title": "Different angles",
+            "id": 23979,
+            "images": []
+          },
+          {
+            "title": "Spotting",
+            "id": 23962,
+            "images": []
+          },
+          {
+            "title": "What's that?",
+            "id": 23963,
+            "images": [
+              {
+                "id": "cea9a17b-5d65-4f2d-ad86-97949f6c6574"
+              }
+            ]
+          },
+          {
+            "title": "What's happening?",
+            "id": 23980,
+            "images": []
+          },
+          {
+            "title": "Again!",
+            "id": 23988,
+            "images": []
+          },
+          {
+            "title": "Server Error",
+            "id": 23989,
+            "images": [
+              {
+                "id": "33251bbd-37bc-434e-bd68-c5ad34610419"
+              }
+            ]
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3943,
+        "title": "Exploring the database",
+        "lessons": [
+          {
+            "title": "Behind the scenes 1",
+            "id": 23990,
+            "images": []
+          },
+          {
+            "title": "Behind the scenes 2",
+            "id": 23986,
+            "images": []
+          },
+          {
+            "title": "More?",
+            "id": 23991,
+            "images": []
+          },
+          {
+            "title": "1 = 1?",
+            "id": 23992,
+            "images": []
+          },
+          {
+            "title": "Reset?",
+            "id": 23995,
+            "images": [
+              {
+                "id": "45ccc501-4ca8-4723-9e54-d96ffa0a1b23"
+              }
+            ]
+          },
+          {
+            "title": "Assumptions",
+            "id": 23994,
+            "images": []
+          },
+          {
+            "title": "Email?",
+            "id": 23999,
+            "images": []
+          },
+          {
+            "title": "Another error?",
+            "id": 24000,
+            "images": []
+          },
+          {
+            "title": "Found!",
+            "id": 26596,
+            "images": []
+          },
+          {
+            "title": "Detailed look",
+            "id": 24003,
+            "images": []
+          },
+          {
+            "title": "Explanation",
+            "id": 24001,
+            "images": []
+          },
+          {
+            "title": "Comment",
+            "id": 24002,
+            "images": []
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3729,
+        "title": "Breaking in",
+        "lessons": [
+          {
+            "title": "More field names?",
+            "id": 24004,
+            "images": []
+          },
+          {
+            "title": "Found?",
+            "id": 24005,
+            "images": []
+          },
+          {
+            "title": "Users?",
+            "id": 24007,
+            "images": []
+          },
+          {
+            "title": "Users!",
+            "id": 24009,
+            "images": []
+          },
+          {
+            "title": "Users",
+            "id": 24008,
+            "images": []
+          },
+          {
+            "title": "Notes",
+            "id": 24010,
+            "images": []
+          },
+          {
+            "title": "Let's break it!",
+            "id": 24012,
+            "images": []
+          },
+          {
+            "title": "Change that email!",
+            "id": 24021,
+            "images": []
+          },
+          {
+            "title": "What the ..?",
+            "id": 24022,
+            "images": []
+          },
+          {
+            "title": "Email?",
+            "id": 24023,
+            "images": []
+          },
+          {
+            "title": "Email!",
+            "id": 24024,
+            "images": []
+          },
+          {
+            "title": "Go for gold!",
+            "id": 24025,
+            "images": []
+          },
+          {
+            "title": "Does it work?",
+            "id": 24026,
+            "images": []
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3944,
+        "title": "Challenges",
+        "lessons": [
+          {
+            "title": "Challenges",
+            "id": 24028,
+            "images": []
+          },
+          {
+            "title": "Bronze challenge",
+            "id": 24029,
+            "images": []
+          },
+          {
+            "title": "Silver challenge",
+            "id": 24030,
+            "images": []
+          },
+          {
+            "title": "Gold challenge",
+            "id": 24031,
+            "images": []
+          },
+          {
+            "title": "Solutions",
+            "id": 24033,
+            "images": []
+          },
+          {
+            "title": "Bronze solution",
+            "id": 24034,
+            "images": []
+          },
+          {
+            "title": "Silver solution",
+            "id": 24035,
+            "images": []
+          },
+          {
+            "title": "Gold solution",
+            "id": 24036,
+            "images": []
+          },
+          {
+            "title": "The end",
+            "id": 24037,
+            "images": []
+          }
+        ],
+        "challenges": []
+      }
+    ]
+  }
+}

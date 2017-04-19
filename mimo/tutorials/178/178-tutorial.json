@@ -1,10 +1,11 @@
 {
   "tutorial": {
     "id": 178,
-    "version": 13,
+    "version": 19,
     "title": "JavaScript",
     "chapters": [
       {
+        "id": 673,
         "title": "JavaScript Basics",
         "lessons": [
           {
@@ -72,6 +73,7 @@
         ]
       },
       {
+        "id": 674,
         "title": "Variables",
         "lessons": [
           {
@@ -143,6 +145,7 @@
         ]
       },
       {
+        "id": 827,
         "title": "Booleans",
         "lessons": [
           {
@@ -214,6 +217,7 @@
         ]
       },
       {
+        "id": 813,
         "title": "Conditional statements",
         "lessons": [
           {
@@ -241,7 +245,7 @@
             "id": 9015
           },
           {
-            "title": "Let's switch it up!",
+            "title": "Switching it up",
             "id": 8459
           },
           {
@@ -285,6 +289,7 @@
         ]
       },
       {
+        "id": 705,
         "title": "Strings",
         "lessons": [
           {
@@ -348,6 +353,7 @@
         ]
       },
       {
+        "id": 706,
         "title": "Numbers and dates",
         "lessons": [
           {
@@ -415,6 +421,7 @@
         ]
       },
       {
+        "id": 675,
         "title": "Arrays",
         "lessons": [
           {
@@ -498,6 +505,7 @@
         ]
       },
       {
+        "id": 828,
         "title": "Loops",
         "lessons": [
           {
@@ -561,6 +569,7 @@
         ]
       },
       {
+        "id": 682,
         "title": "Functions",
         "lessons": [
           {
@@ -620,6 +629,7 @@
         ]
       },
       {
+        "id": 704,
         "title": "Objects",
         "lessons": [
           {
@@ -683,6 +693,7 @@
         ]
       },
       {
+        "id": 3715,
         "title": "JavaScript meets HTML",
         "lessons": [],
         "challenges": []

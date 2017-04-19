@@ -1,10 +1,11 @@
 {
   "tutorial": {
     "id": 169,
-    "version": 10,
+    "version": 15,
     "title": "Ruby",
     "chapters": [
       {
+        "id": 659,
         "title": "Ruby Basics",
         "lessons": [
           {
@@ -80,6 +81,7 @@
         ]
       },
       {
+        "id": 664,
         "title": "Strings",
         "lessons": [
           {
@@ -155,6 +157,7 @@
         ]
       },
       {
+        "id": 672,
         "title": "Booleans",
         "lessons": [
           {
@@ -230,6 +233,7 @@
         ]
       },
       {
+        "id": 708,
         "title": "Loops",
         "lessons": [
           {
@@ -305,6 +309,7 @@
         ]
       },
       {
+        "id": 750,
         "title": "Control flow",
         "lessons": [
           {
@@ -376,6 +381,7 @@
         ]
       },
       {
+        "id": 751,
         "title": "Arrays",
         "lessons": [
           {
@@ -451,6 +457,7 @@
         ]
       },
       {
+        "id": 753,
         "title": "Hashes",
         "lessons": [
           {
@@ -526,6 +533,7 @@
         ]
       },
       {
+        "id": 754,
         "title": "Methods",
         "lessons": [
           {
@@ -601,6 +609,7 @@
         ]
       },
       {
+        "id": 755,
         "title": "Classes",
         "lessons": [
           {
@@ -676,6 +685,7 @@
         ]
       },
       {
+        "id": 761,
         "title": "Modules",
         "lessons": [
           {
@@ -751,11 +761,13 @@
         ]
       },
       {
+        "id": 3716,
         "title": "Object-oriented programming",
         "lessons": [],
         "challenges": []
       },
       {
+        "id": 1153,
         "title": "Input and output",
         "lessons": [],
         "challenges": []

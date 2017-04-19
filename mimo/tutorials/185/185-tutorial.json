@@ -1,10 +1,11 @@
 {
   "tutorial": {
     "id": 185,
-    "version": 11,
+    "version": 18,
     "title": "SQL",
     "chapters": [
       {
+        "id": 771,
         "title": "Introduction",
         "lessons": [
           {
@@ -76,6 +77,7 @@
         ]
       },
       {
+        "id": 818,
         "title": "Table manipulation",
         "lessons": [
           {
@@ -151,6 +153,7 @@
         ]
       },
       {
+        "id": 817,
         "title": "Clauses",
         "lessons": [
           {
@@ -226,6 +229,7 @@
         ]
       },
       {
+        "id": 815,
         "title": "Operators",
         "lessons": [
           {
@@ -301,6 +305,7 @@
         ]
       },
       {
+        "id": 820,
         "title": "Queries",
         "lessons": [
           {
@@ -376,6 +381,7 @@
         ]
       },
       {
+        "id": 824,
         "title": "Functions",
         "lessons": [
           {
@@ -451,6 +457,7 @@
         ]
       },
       {
+        "id": 825,
         "title": "Keys and constraints",
         "lessons": [
           {
@@ -526,11 +533,13 @@
         ]
       },
       {
+        "id": 822,
         "title": "Advanced clauses",
         "lessons": [],
         "challenges": []
       },
       {
+        "id": 821,
         "title": "Advanced queries",
         "lessons": [],
         "challenges": []

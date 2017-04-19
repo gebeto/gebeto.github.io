@@ -1,10 +1,11 @@
 {
   "tutorial": {
     "id": 159,
-    "version": 11,
+    "version": 15,
     "title": "Java",
     "chapters": [
       {
+        "id": 572,
         "title": "Java Basics",
         "lessons": [
           {
@@ -88,6 +89,7 @@
         ]
       },
       {
+        "id": 573,
         "title": "Variables",
         "lessons": [
           {
@@ -163,6 +165,7 @@
         ]
       },
       {
+        "id": 574,
         "title": "Booleans",
         "lessons": [
           {
@@ -242,6 +245,7 @@
         ]
       },
       {
+        "id": 575,
         "title": "If and else",
         "lessons": [
           {
@@ -321,6 +325,7 @@
         ]
       },
       {
+        "id": 576,
         "title": "Arrays",
         "lessons": [
           {
@@ -396,6 +401,7 @@
         ]
       },
       {
+        "id": 577,
         "title": "Strings",
         "lessons": [
           {
@@ -483,6 +489,7 @@
         ]
       },
       {
+        "id": 578,
         "title": "ArrayLists",
         "lessons": [
           {
@@ -566,6 +573,7 @@
         ]
       },
       {
+        "id": 579,
         "title": "HashMaps",
         "lessons": [
           {
@@ -649,6 +657,7 @@
         ]
       },
       {
+        "id": 580,
         "title": "Loops",
         "lessons": [
           {
@@ -732,6 +741,7 @@
         ]
       },
       {
+        "id": 581,
         "title": "Methods",
         "lessons": [
           {
@@ -815,6 +825,7 @@
         ]
       },
       {
+        "id": 582,
         "title": "Classes",
         "lessons": [
           {
@@ -898,6 +909,7 @@
         ]
       },
       {
+        "id": 583,
         "title": "Main and modifiers",
         "lessons": [
           {
@@ -985,11 +997,13 @@
         ]
       },
       {
+        "id": 1039,
         "title": "Interfaces",
         "lessons": [],
         "challenges": []
       },
       {
+        "id": 1152,
         "title": "Exceptions",
         "lessons": [],
         "challenges": []

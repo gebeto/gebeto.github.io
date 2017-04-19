@@ -1,0 +1,785 @@
+{
+  "tutorial": {
+    "id": 341,
+    "version": 1,
+    "title": "Build an App 2",
+    "chapters": [
+      {
+        "id": 3925,
+        "title": "Starting again",
+        "lessons": [
+          {
+            "title": "Building something real",
+            "id": 23741,
+            "images": []
+          },
+          {
+            "title": "Labels",
+            "id": 23767,
+            "images": []
+          },
+          {
+            "title": "Removing @IBOutlet ",
+            "id": 23768,
+            "images": []
+          },
+          {
+            "title": "Start",
+            "id": 23769,
+            "images": []
+          },
+          {
+            "title": "Removing @IBAction",
+            "id": 23770,
+            "images": []
+          },
+          {
+            "title": "Removing code",
+            "id": 23772,
+            "images": []
+          },
+          {
+            "title": "Not alone",
+            "id": 23773,
+            "images": [
+              {
+                "id": "65231029-dd87-48be-9a92-979f46ae50de"
+              }
+            ]
+          },
+          {
+            "title": "Subclassing",
+            "id": 23774,
+            "images": [
+              {
+                "id": "8ceb8a8f-a313-459a-8d4b-745703ea1cbb"
+              }
+            ]
+          },
+          {
+            "title": "Naming things",
+            "id": 23775,
+            "images": [
+              {
+                "id": "b97cd2bf-86a9-4cd3-bd8f-655873f3339d"
+              }
+            ]
+          },
+          {
+            "title": "Adding view controllers",
+            "id": 23776,
+            "images": [
+              {
+                "id": "84a0cd9d-90b9-463a-a23d-56e856d800f4"
+              }
+            ]
+          },
+          {
+            "title": "Wire it up!",
+            "id": 23778,
+            "images": [
+              {
+                "id": "fb66ebc5-c224-4492-8fc0-359bf76ecc00"
+              }
+            ]
+          },
+          {
+            "title": "Show!",
+            "id": 23779,
+            "images": [
+              {
+                "id": "ef053484-9e6b-41b6-bdf8-b703e4596b6f"
+              }
+            ]
+          },
+          {
+            "title": "Run, baby, run!",
+            "id": 23780,
+            "images": []
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3926,
+        "title": "Getting input",
+        "lessons": [
+          {
+            "title": "Going back?",
+            "id": 23781,
+            "images": [
+              {
+                "id": "9d6e8c5b-8054-466d-b1c3-18fc4036d3dc"
+              }
+            ]
+          },
+          {
+            "title": "Navigation View Controller",
+            "id": 23782,
+            "images": [
+              {
+                "id": "aeec5b6e-33bd-4a9e-b173-55a4d77f06eb"
+              }
+            ]
+          },
+          {
+            "title": "Going back!",
+            "id": 23783,
+            "images": []
+          },
+          {
+            "title": "Renaming the view controller",
+            "id": 23784,
+            "images": [
+              {
+                "id": "c359882a-c0ae-4776-9d50-2d598939454b"
+              }
+            ]
+          },
+          {
+            "title": "Renaming the class",
+            "id": 23785,
+            "images": []
+          },
+          {
+            "title": "More changes",
+            "id": 23786,
+            "images": [
+              {
+                "id": "523e6c5d-c363-486e-bbf2-e3ff59603323"
+              }
+            ]
+          },
+          {
+            "title": "Even more changes",
+            "id": 23787,
+            "images": [
+              {
+                "id": "5326595d-9ef7-4313-bde9-4f864360d864"
+              }
+            ]
+          },
+          {
+            "title": "More buttons!",
+            "id": 23788,
+            "images": []
+          },
+          {
+            "title": "Adding constraints",
+            "id": 23789,
+            "images": [
+              {
+                "id": "1fdddd69-180a-429a-b315-d313e52bf196"
+              }
+            ]
+          },
+          {
+            "title": "Input!",
+            "id": 23790,
+            "images": [
+              {
+                "id": "fdaa1777-f361-42b2-b055-88b29429a86f"
+              }
+            ]
+          },
+          {
+            "title": "Positioning",
+            "id": 23791,
+            "images": [
+              {
+                "id": "a80276cc-8345-4357-bcf7-d0a59754b0e9"
+              }
+            ]
+          },
+          {
+            "title": "Adding horizontal constraints",
+            "id": 23792,
+            "images": [
+              {
+                "id": "e6ecdb0c-8582-4fb8-a154-d817f8ac5e94"
+              }
+            ]
+          },
+          {
+            "title": "Adding vertical constraints",
+            "id": 23793,
+            "images": [
+              {
+                "id": "f73b522b-e801-4f0e-a382-4ea59992164a"
+              }
+            ]
+          },
+          {
+            "title": "Keyboard",
+            "id": 23794,
+            "images": []
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3927,
+        "title": "Checking input",
+        "lessons": [
+          {
+            "title": "Assistance, please!",
+            "id": 23795,
+            "images": []
+          },
+          {
+            "title": "Adding a function",
+            "id": 23796,
+            "images": [
+              {
+                "id": "da60a194-b07a-47df-8a35-9985fe4fccbe"
+              }
+            ]
+          },
+          {
+            "title": "Adding an instance variable",
+            "id": 23797,
+            "images": [
+              {
+                "id": "08824354-f6ba-4f3a-beef-0fb0cf594630"
+              }
+            ]
+          },
+          {
+            "title": "Cleaning",
+            "id": 23798,
+            "images": []
+          },
+          {
+            "title": "Retrieving the input",
+            "id": 23799,
+            "images": []
+          },
+          {
+            "title": "Unwrapping an optional",
+            "id": 23800,
+            "images": []
+          },
+          {
+            "title": "Printing",
+            "id": 23802,
+            "images": []
+          },
+          {
+            "title": "Running and printing",
+            "id": 23803,
+            "images": []
+          },
+          {
+            "title": "Empty?",
+            "id": 23804,
+            "images": []
+          },
+          {
+            "title": "Else",
+            "id": 23805,
+            "images": []
+          },
+          {
+            "title": "Keyboard",
+            "id": 23806,
+            "images": [
+              {
+                "id": "fba0457f-55c7-44e6-9414-a97b74fce6bd"
+              }
+            ]
+          },
+          {
+            "title": "Testing the number pad",
+            "id": 23807,
+            "images": [
+              {
+                "id": "f766fa34-34da-4bb2-95a7-aa25472a2833"
+              }
+            ]
+          },
+          {
+            "title": "Checking for numbers",
+            "id": 23808,
+            "images": []
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3928,
+        "title": "Showing errors",
+        "lessons": [
+          {
+            "title": "Popping up",
+            "id": 23809,
+            "images": []
+          },
+          {
+            "title": "Action?",
+            "id": 27772,
+            "images": []
+          },
+          {
+            "title": "Action!",
+            "id": 27773,
+            "images": []
+          },
+          {
+            "title": "Presentation",
+            "id": 27774,
+            "images": []
+          },
+          {
+            "title": "Understanding pop-ups",
+            "id": 23894,
+            "images": []
+          },
+          {
+            "title": "Enums",
+            "id": 23814,
+            "images": []
+          },
+          {
+            "title": "Adding the function",
+            "id": 23810,
+            "images": []
+          },
+          {
+            "title": "Guess",
+            "id": 23811,
+            "images": [
+              {
+                "id": "420616ff-e153-4082-92c3-7b535a00c0e1"
+              }
+            ]
+          },
+          {
+            "title": "Experiment",
+            "id": 23815,
+            "images": []
+          },
+          {
+            "title": "UIAlertController",
+            "id": 27771,
+            "images": []
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3929,
+        "title": "Guessing numbers",
+        "lessons": [
+          {
+            "title": "Model",
+            "id": 23816,
+            "images": [
+              {
+                "id": "ab769bee-b171-4274-8168-b8912e92cf5f"
+              }
+            ]
+          },
+          {
+            "title": "Code",
+            "id": 23818,
+            "images": []
+          },
+          {
+            "title": "Instance variables",
+            "id": 23819,
+            "images": []
+          },
+          {
+            "title": "Random",
+            "id": 23821,
+            "images": []
+          },
+          {
+            "title": "Init",
+            "id": 23822,
+            "images": []
+          },
+          {
+            "title": "Guessing",
+            "id": 23823,
+            "images": []
+          },
+          {
+            "title": "Making use of the model",
+            "id": 23824,
+            "images": []
+          },
+          {
+            "title": "Calling",
+            "id": 23825,
+            "images": []
+          },
+          {
+            "title": "Warning",
+            "id": 23826,
+            "images": []
+          },
+          {
+            "title": "Printing everything",
+            "id": 23827,
+            "images": []
+          },
+          {
+            "title": "Try it out",
+            "id": 23828,
+            "images": []
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3930,
+        "title": "Guessing correctly",
+        "lessons": [
+          {
+            "title": "Tries",
+            "id": 23829,
+            "images": []
+          },
+          {
+            "title": "More tries",
+            "id": 23834,
+            "images": []
+          },
+          {
+            "title": "More to print",
+            "id": 23835,
+            "images": []
+          },
+          {
+            "title": "Cheating",
+            "id": 23836,
+            "images": []
+          },
+          {
+            "title": "Giving privacy",
+            "id": 23837,
+            "images": []
+          },
+          {
+            "title": "No touching!",
+            "id": 23838,
+            "images": []
+          },
+          {
+            "title": "Correct?",
+            "id": 23839,
+            "images": []
+          },
+          {
+            "title": "Adaptable",
+            "id": 23840,
+            "images": []
+          },
+          {
+            "title": "Calling that function",
+            "id": 23841,
+            "images": []
+          },
+          {
+            "title": "More calls",
+            "id": 27775,
+            "images": []
+          },
+          {
+            "title": "Until it pops",
+            "id": 23842,
+            "images": []
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3931,
+        "title": "Giving hints",
+        "lessons": [
+          {
+            "title": "Hints",
+            "id": 23843,
+            "images": []
+          },
+          {
+            "title": "Returning an enumeration",
+            "id": 23844,
+            "images": []
+          },
+          {
+            "title": "Making use",
+            "id": 23845,
+            "images": []
+          },
+          {
+            "title": "Changing the name",
+            "id": 23846,
+            "images": []
+          },
+          {
+            "title": "Look at that!",
+            "id": 23847,
+            "images": []
+          },
+          {
+            "title": "Switching",
+            "id": 23848,
+            "images": []
+          },
+          {
+            "title": "Still winning",
+            "id": 23849,
+            "images": []
+          },
+          {
+            "title": "Labels, even more labels",
+            "id": 23850,
+            "images": [
+              {
+                "id": "1141f638-940b-46a5-967c-2848fb99ce44"
+              }
+            ]
+          },
+          {
+            "title": "Stay there",
+            "id": 23851,
+            "images": [
+              {
+                "id": "a915bfe7-df79-4186-93f3-7b5e98d182d9"
+              }
+            ]
+          },
+          {
+            "title": "Next to me",
+            "id": 23852,
+            "images": [
+              {
+                "id": "f191a52d-38e8-41ae-93ec-f1675db96cf2"
+              }
+            ]
+          },
+          {
+            "title": "Give me a hint",
+            "id": 23853,
+            "images": [
+              {
+                "id": "291cd96e-dd2c-4181-a6c7-d6155a075062"
+              }
+            ]
+          },
+          {
+            "title": "Using that label",
+            "id": 23854,
+            "images": []
+          },
+          {
+            "title": "Run, run, run",
+            "id": 23855,
+            "images": []
+          },
+          {
+            "title": "Hiding",
+            "id": 23856,
+            "images": []
+          },
+          {
+            "title": "Show yourself",
+            "id": 23857,
+            "images": []
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3932,
+        "title": "Finishing up",
+        "lessons": [
+          {
+            "title": "More labels",
+            "id": 23858,
+            "images": [
+              {
+                "id": "12495a9f-c0ee-4699-af1f-6ca73e20969d"
+              }
+            ]
+          },
+          {
+            "title": "Even more constraints",
+            "id": 23861,
+            "images": [
+              {
+                "id": "5c73ca7c-2419-4573-90fa-03f90797e1db"
+              }
+            ]
+          },
+          {
+            "title": "Even even more constraints",
+            "id": 23864,
+            "images": [
+              {
+                "id": "6f8059d0-6756-47d2-8439-351bf946eeb9"
+              }
+            ]
+          },
+          {
+            "title": "A lot of text",
+            "id": 23865,
+            "images": []
+          },
+          {
+            "title": "Way too long",
+            "id": 23868,
+            "images": [
+              {
+                "id": "cf87d165-9279-4378-a25d-090458de018b"
+              }
+            ]
+          },
+          {
+            "title": "Deleting constraints",
+            "id": 23870,
+            "images": []
+          },
+          {
+            "title": "Nearest neighbor",
+            "id": 23872,
+            "images": [
+              {
+                "id": "4c82a40b-3456-4e66-bfec-da7a41629736"
+              }
+            ]
+          },
+          {
+            "title": "Warnings",
+            "id": 23873,
+            "images": [
+              {
+                "id": "1d08a1f8-6fc7-4411-9908-6ca90a52dd03"
+              }
+            ]
+          },
+          {
+            "title": "Misplaced views",
+            "id": 23874,
+            "images": [
+              {
+                "id": "d0b1f3ac-7550-4aed-8c72-92d9f28e25fb"
+              }
+            ]
+          },
+          {
+            "title": "Still weird",
+            "id": 23875,
+            "images": [
+              {
+                "id": "a4a1332b-56f2-4c5b-8345-e943ff6e0a13"
+              }
+            ]
+          },
+          {
+            "title": "More lines",
+            "id": 23876,
+            "images": [
+              {
+                "id": "7d63d0de-72ee-4ba0-9497-64c14f99e46e"
+              }
+            ]
+          },
+          {
+            "title": "Runnn",
+            "id": 23879,
+            "images": [
+              {
+                "id": "d8fc29ce-cdc4-42d6-a9c6-b15b37cd95e0"
+              }
+            ]
+          },
+          {
+            "title": "6 vs. 100",
+            "id": 23880,
+            "images": []
+          },
+          {
+            "title": "Resetting",
+            "id": 23881,
+            "images": []
+          },
+          {
+            "title": "Tries?",
+            "id": 23882,
+            "images": []
+          },
+          {
+            "title": "Tries!",
+            "id": 23883,
+            "images": []
+          },
+          {
+            "title": "Does it work?",
+            "id": 23884,
+            "images": []
+          }
+        ],
+        "challenges": []
+      },
+      {
+        "id": 3707,
+        "title": "Challenges",
+        "lessons": [
+          {
+            "title": "Challenges",
+            "id": 23892,
+            "images": []
+          },
+          {
+            "title": "Bronze challenge",
+            "id": 23885,
+            "images": []
+          },
+          {
+            "title": "Silver challenge",
+            "id": 23886,
+            "images": []
+          },
+          {
+            "title": "Gold challenge",
+            "id": 23887,
+            "images": []
+          },
+          {
+            "title": "Solutions",
+            "id": 23888,
+            "images": []
+          },
+          {
+            "title": "Bronze solutions",
+            "id": 23889,
+            "images": []
+          },
+          {
+            "title": "Silver solution",
+            "id": 23890,
+            "images": [
+              {
+                "id": "a1f39a5c-9b21-4572-8dab-506d51585327"
+              }
+            ]
+          },
+          {
+            "title": "Gold solution",
+            "id": 23891,
+            "images": []
+          },
+          {
+            "title": "The end",
+            "id": 23893,
+            "images": []
+          }
+        ],
+        "challenges": []
+      }
+    ]
+  }
+}

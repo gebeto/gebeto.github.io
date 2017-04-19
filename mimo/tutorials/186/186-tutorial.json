@@ -1,10 +1,11 @@
 {
   "tutorial": {
     "id": 186,
-    "version": 6,
+    "version": 10,
     "title": "Hacking",
     "chapters": [
       {
+        "id": 1467,
         "title": "ch1.introduction.zip",
         "lessons": [
           {
@@ -16,7 +17,7 @@
             "id": 11506
           },
           {
-            "title": "White hat hackers",
+            "title": "White-hat hackers",
             "id": 11563
           },
           {
@@ -24,7 +25,7 @@
             "id": 17607
           },
           {
-            "title": "Black hat hackers",
+            "title": "Black-hat hackers",
             "id": 11564
           },
           {
@@ -32,7 +33,7 @@
             "id": 17608
           },
           {
-            "title": "Grey hat hackers",
+            "title": "Grey-hat hackers",
             "id": 11565
           },
           {
@@ -68,6 +69,7 @@
         ]
       },
       {
+        "id": 1881,
         "title": "ch2.cryptography.dmg",
         "lessons": [
           {
@@ -127,6 +129,7 @@
         ]
       },
       {
+        "id": 1893,
         "title": "ch3.passwords.rar",
         "lessons": [
           {
@@ -182,6 +185,7 @@
         ]
       },
       {
+        "id": 1911,
         "title": "ch4.sql_injection.gz",
         "lessons": [
           {
@@ -229,6 +233,7 @@
         ]
       },
       {
+        "id": 1944,
         "title": "ch5.session_hijacking.cab",
         "lessons": [
           {
@@ -272,6 +277,7 @@
         ]
       },
       {
+        "id": 1945,
         "title": "ch6.path_traversal.7z",
         "lessons": [
           {
@@ -315,6 +321,7 @@
         ]
       },
       {
+        "id": 1946,
         "title": "ch7.man_in_the_middle.jar",
         "lessons": [
           {
@@ -358,6 +365,7 @@
         ]
       },
       {
+        "id": 1947,
         "title": "ch8.social_engineering.iso",
         "lessons": [
           {

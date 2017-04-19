@@ -1,10 +1,11 @@
 {
   "tutorial": {
     "id": 184,
-    "version": 12,
+    "version": 15,
     "title": "C++",
     "chapters": [
       {
+        "id": 774,
         "title": "C++ Basics",
         "lessons": [
           {
@@ -80,6 +81,7 @@
         ]
       },
       {
+        "id": 775,
         "title": "Variables",
         "lessons": [
           {
@@ -151,6 +153,7 @@
         ]
       },
       {
+        "id": 776,
         "title": "Booleans",
         "lessons": [
           {
@@ -186,7 +189,7 @@
             "id": 8504
           },
           {
-            "title": "Or",
+            "title": "Or  ",
             "id": 8505
           },
           {
@@ -222,6 +225,7 @@
         ]
       },
       {
+        "id": 777,
         "title": "Conditionals",
         "lessons": [
           {
@@ -289,6 +293,7 @@
         ]
       },
       {
+        "id": 779,
         "title": "Arrays",
         "lessons": [
           {
@@ -356,6 +361,7 @@
         ]
       },
       {
+        "id": 780,
         "title": "Strings",
         "lessons": [
           {
@@ -423,6 +429,7 @@
         ]
       },
       {
+        "id": 778,
         "title": "Pointers",
         "lessons": [
           {
@@ -486,6 +493,7 @@
         ]
       },
       {
+        "id": 781,
         "title": "Loops",
         "lessons": [
           {
@@ -553,6 +561,7 @@
         ]
       },
       {
+        "id": 782,
         "title": "Functions",
         "lessons": [
           {
@@ -624,6 +633,7 @@
         ]
       },
       {
+        "id": 783,
         "title": "Classes",
         "lessons": [
           {
@@ -691,6 +701,7 @@
         ]
       },
       {
+        "id": 784,
         "title": "Input and output",
         "lessons": [
           {
@@ -758,11 +769,13 @@
         ]
       },
       {
+        "id": 1150,
         "title": "Advanced types",
         "lessons": [],
         "challenges": []
       },
       {
+        "id": 1151,
         "title": "Exceptions",
         "lessons": [],
         "challenges": []
