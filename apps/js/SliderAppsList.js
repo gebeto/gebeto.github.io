@@ -4,7 +4,8 @@ function sliderInit(apps) {
 	var currentApp;
 
 	apps.map(function(appData, index){
-		new SliderCard(document.getElementById('frame').children[0], appData.sliderIconUrl, appData.sliderBg);
+		// new SliderCard(document.getElementById('frame').children[0], appData.sliderIconUrl, appData.sliderBg);
+		new SliderCard(carousel[0], appData.sliderIconUrl, appData.sliderBg);
 	});
 
 	currentApp = new AppCard(apps[0]);
