@@ -8,19 +8,16 @@
 
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="bootstrap/css/font-awesome.css">
-  <link rel = "stylesheet" href="style.css">
-  <link rel = "stylesheet" href="sliding.css">
+  <link rel = "stylesheet" href="css/style.css">
+  <link rel = "stylesheet" href="css/sliding.css">
+  <link rel = "stylesheet" href="css/animate.css">
 
   <script src="js/jquery-3.2.1.js"></script>
   <script type="text/javascript" src="js/js.cookie.js"></script>
   <script type="text/javascript">
     $(function () {
-
       $.post("index.php",{ApiName: "AuthCookie", Page: "igpreferences"},onAjaxSuccessed);
       $('#slideBlock').attr('style','margin-top:10px;');
-    //$('#pan1').attr('style','display:none;');
-    //$('#pan2').attr('style','display:none;');
-    //$('#showHideContent').attr('style','border-radius: 5px 5px 5px 5px;background-color:#5b8bde;margin-top:10px;');
   });
 
 
@@ -209,12 +206,12 @@
                 <ul>
                   <li>
                     <div class="row application-box insta-bg">
-                      <img class="page-application-icon" src="images/insta-vector.png">
+                      <img class="page-application-icon" src="css/images/insta-vector.png">
                     </div>
                   </li>
                   <li>
                     <div class="row application-box vk-bg">
-                      <img class="page-application-icon" src="images/vk-icon.jpg">
+                      <img class="page-application-icon" src="css/images/vk-icon.jpg">
                     </div>
                   </li>
                 </ul>
@@ -379,8 +376,8 @@
     $('img').on('dragstart', function(event) { event.preventDefault(); });
   </script>
   
-  <script src="AppCard.js"></script>
-  <script type="text/javascript" src="itemslide.js"></script>
-  <script type="text/javascript" src="sliding.js"></script>
+  <script src="js/AppCard.js"></script>
+  <script type="text/javascript" src="js/itemslide.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

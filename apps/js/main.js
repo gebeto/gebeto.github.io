@@ -32,11 +32,21 @@ $(document).ready(function () {
     carousel.itemslide({
         // one_item: true,
     }); //initialize itemslide
+
     currentApp = new AppCard(apps[carousel.getActiveIndex()]);
-    
+    currentApp.rendered.style.animationDuration = '.2s';
+
     carousel.on('changeActiveIndex', function(args) {
         var index = carousel.getActiveIndex();
-        currentApp.refreshElement(apps[index]);
+        $(currentApp.rendered).addClass('animated slideOutDown');
+        $(currentApp.rendered).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            currentApp.refreshElement(apps[index]);
+            $(currentApp.rendered).removeClass('animated slideOutDown');
+            $(currentApp.rendered).addClass('animated slideInUp');
+            $(currentApp.rendered).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                $(currentApp.rendered).removeClass('animated slideInUp');
+            });
+        });
         window.location.hash = index;
     });
 
