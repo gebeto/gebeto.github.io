@@ -1,4 +1,51 @@
 
+function sliderInit(apps) {
+	var carousel = $("#frame ul");
+	var currentApp;
+
+	apps.map(function(appData, index){
+		// new SliderCard(document.getElementById('frame').children[0], appData.sliderIconUrl, appData.sliderBg);
+		new SliderCard(carousel[0], appData.sliderIconUrl, appData.sliderBg);
+	});
+
+	currentApp = new AppCard(apps[0]);
+	currentApp.rendered.style.animationDuration = '.2s';
+    $('#headerwrap-app').append(currentApp.refreshElement());
+    
+    carousel.itemslide({});
+    carousel.on('changeActiveIndex', function(args) {
+        var index = carousel.getActiveIndex();
+        $(currentApp.rendered).addClass('animated slideOutDown');
+        $(currentApp.rendered).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            currentApp.refreshElement(apps[index]);
+            $(currentApp.rendered).addClass('animated slideInUp');
+            $(currentApp.rendered).removeClass('animated slideOutDown');
+            $(currentApp.rendered).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                $(currentApp.rendered).removeClass('animated slideInUp');
+            });
+        });
+        window.location.hash = index;
+    });
+
+    $(window).resize(function () {
+        carousel.reload();
+    });
+}
+
+
+function SliderCard(sliderWrapper, iconUrl, background) {
+	this.rendered = document.createElement('li');
+	this.rendered.innerHTML = `
+		<div class="row application-box">
+			<img class="page-application-icon" src="` + iconUrl + `">
+		</div>`;
+	this.rendered.children[0].style.background = (background[0] === '#' ? background : 'url(' + background + ')');
+    this.rendered.children[0].style.backgroundRepeat = 'no-repeat';
+    this.rendered.children[0].style.backgroundSize = 'cover';
+
+	sliderWrapper.appendChild(this.rendered);
+}
+
 
 function AppCard(appData) {
 
@@ -60,6 +107,9 @@ AppCard.prototype.refreshElement = function(appData) {
 
 	return this.rendered;
 }
+
+
+
 
 
 

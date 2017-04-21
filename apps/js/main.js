@@ -1,7 +1,7 @@
-var carousel;
-var currentApp;
-
 var apps = [{
+    // sliderBg: '#4c75a3',
+    sliderBg: 'css/images/instagram-bg.jpg',
+    sliderIconUrl: 'css/images/insta-vector.png',
     appName: 'IGPreferences',
     appTItle: 'Instagram + IGPreferences',
     appPrefix: 'IGP',
@@ -13,6 +13,8 @@ var apps = [{
     tweakVersion: '0.1',
     installationUrl: '#',
 },{
+    sliderBg: '#4c75a3',
+    sliderIconUrl: 'css/images/vk-icon.jpg',
     appName: 'VKPreferences',
     appTItle: 'VK + VKPreferences',
     appPrefix: 'VKP',
@@ -27,25 +29,7 @@ var apps = [{
 
 $(document).ready(function () {
 
-    carousel = $("#frame ul");
-
-    carousel.itemslide({
-        // one_item: true,
-    }); //initialize itemslide
-    currentApp = new AppCard(apps[carousel.getActiveIndex()]);
-    
-    carousel.on('changeActiveIndex', function(args) {
-        var index = carousel.getActiveIndex();
-        currentApp.refreshElement(apps[index]);
-        window.location.hash = index;
-    });
-
-    $(window).resize(function () {
-        carousel.reload();
-    }); //Recalculate width and center positions and sizes when window is resized
-
-    // $('#apps').append(new AppCard(instaApp).refreshElement());
-    $('#headerwrap-app').append(currentApp.refreshElement());
+    sliderInit(apps);
 
 });
 
