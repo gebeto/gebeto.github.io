@@ -43,6 +43,7 @@ window.sliderInit = function(apps) {
 
 function SliderCard(sliderWrapper, iconUrl, background) {
 	this.rendered = document.createElement('li');
+	this.rendered.setAttribute('no-drag', true);
 	this.rendered.innerHTML = `
 		<div class="row application-box">
 			<img class="page-application-icon" src="` + iconUrl + `">
