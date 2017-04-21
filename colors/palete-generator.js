@@ -1,8 +1,13 @@
-
+var createdPalete;
 
 // var colors = ['F7F8FA', '3CA1D8', 'D7DADC', '6C8F8B', '3CAEE2', 'F17052', '51C1B0', '85CFD8'];
 
+
+
 function createPalete(colors) {
+	if (createdPalete) {
+		createdPalete.outerHTML = '';
+	}
 	colors = colors.map(function(item, index) {
 		if (item[0] !== '#') return '#' + item;
 		return item;
@@ -11,7 +16,7 @@ function createPalete(colors) {
 	var canvas = document.createElement('canvas');
 	var img = document.createElement('img');
 	// img.style.width = '100%';
-	img.className = 'generated-palete';
+	img.className = 'generated-palete animated bounceIn';
 	img.addEventListener('click', function() {
 		this.outerHTML = '';
 	});
@@ -30,4 +35,5 @@ function createPalete(colors) {
 	});
 
 	img.src = canvas.toDataURL();
+	createdPalete = img;
 }
