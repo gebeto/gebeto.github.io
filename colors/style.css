@@ -62,8 +62,24 @@ html, body {
   bottom: 0px;
   top: 0px;
   right: 0px;
+  width: 80%;
   margin: auto;
   z-index: 1000;
   border: solid #fff 3px;
   cursor: pointer;
+}
+
+#generate-action {
+  color: #000;
+  font-family: 'Arial';
+  font-weight: bold;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  height: 40px;
+  background: #fff;
+  border: solid 2px #000;
+  z-index: 10000;
 }

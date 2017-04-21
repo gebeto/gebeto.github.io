@@ -20,12 +20,13 @@ function createPalete(colors) {
 	canvas.width = 100 * colors.length;
 	canvas.height = 100;
 
-	ctx.font = '14px Arial';
+	ctx.font = 'bold 14px Arial';
+	ctx.textAlign = 'center';
 	colors.map(function(item, index) {
 		ctx.fillStyle = item;
 		ctx.fillRect(100 * index, 0, 100, 100);
 		ctx.fillStyle = '#fff';
-		ctx.fillText(item, 100 * index + 4, 96);
+		ctx.fillText(item, 100 * index + 50, 57);
 	});
 
 	img.src = canvas.toDataURL();

@@ -1,3 +1,5 @@
+var colors = [];
+
 window.onload = function() {
   console.log(getParamsFromUrl());
   var colors = getParamsFromUrl();
@@ -21,6 +23,7 @@ function ColorsList(colors) {
     if (item[0] !== '#') return '#' + item;
     return item;
   });
+  window.colors = this.colors;
   this.rendered = document.createElement('div');
   this.colorsList = document.createElement('ul')
   this.colorView = document.createElement('div');
@@ -42,13 +45,6 @@ ColorsList.prototype.createElement = function() {
   this.colorViewTitle.addEventListener('click', function() {
     createPalete(this.colors);
   }.bind(this));
-  this.colorViewTitle.addEventListener('mouseover', function() {
-    this.currentColor = this.textContent;
-    this.textContent = 'Generate Palete';
-  });
-  this.colorViewTitle.addEventListener('mouseout', function() {
-    this.textContent = this.currentColor;
-  });
   this.colorView.className = 'color-view';
   this.colorView.appendChild(this.colorViewTitle);
 
