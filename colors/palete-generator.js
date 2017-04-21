@@ -6,7 +6,7 @@ var createdPalete;
 
 function createPalete(colors) {
 	if (createdPalete) {
-		createdPalete.outerHTML = '';
+		createdPalete.innerHTML = '';
 	}
 	colors = colors.map(function(item, index) {
 		if (item[0] !== '#') return '#' + item;
