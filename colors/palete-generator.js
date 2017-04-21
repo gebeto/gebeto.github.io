@@ -17,16 +17,16 @@ function createPalete(colors) {
 	});
 	document.body.insertBefore(img, document.body.children[0]);
 	var ctx = canvas.getContext('2d');
-	canvas.width = 100 * colors.length;
-	canvas.height = 100;
+	canvas.width = 300 * colors.length;
+	canvas.height = 300;
 
-	ctx.font = 'bold 14px Arial';
+	ctx.font = 'bold 40px Arial';
 	ctx.textAlign = 'center';
 	colors.map(function(item, index) {
 		ctx.fillStyle = item;
-		ctx.fillRect(100 * index, 0, 100, 100);
+		ctx.fillRect(300 * index, 0, 300, 300);
 		ctx.fillStyle = '#fff';
-		ctx.fillText(item, 100 * index + 50, 57);
+		ctx.fillText(item, 300 * index + 150, 170);
 	});
 
 	img.src = canvas.toDataURL();
