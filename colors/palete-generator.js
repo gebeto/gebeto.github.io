@@ -5,8 +5,10 @@ var createdPalete;
 
 
 function createPalete(colors) {
+	console.log(createdPalete);
 	if (createdPalete) {
-		createdPalete.innerHTML = '';
+		createdPalete.src = '';
+		createdPalete.className = '';
 	}
 	colors = colors.map(function(item, index) {
 		if (item[0] !== '#') return '#' + item;
@@ -18,7 +20,8 @@ function createPalete(colors) {
 	// img.style.width = '100%';
 	img.className = 'generated-palete animated bounceIn';
 	img.addEventListener('click', function() {
-		this.outerHTML = '';
+		// this.outerHTML = '';
+		createdPalete.outerHTML = '';
 	});
 	document.body.insertBefore(img, document.body.children[0]);
 	var ctx = canvas.getContext('2d');
