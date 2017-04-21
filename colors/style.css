@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 0;
 }
 
 html, body {
@@ -14,6 +15,8 @@ html, body {
 }
 
 .color-list-item {
+
+  font-size: 18px;
   display: inline-block;
   font-family: Arial, sans-serif;
   font-weight: 200;
@@ -49,4 +52,18 @@ html, body {
   margin-top: -100px;
   top: 50%;
   width: 100%;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+.generated-palete {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  right: 0px;
+  margin: auto;
+  z-index: 1000;
+  border: solid #fff 3px;
+  cursor: pointer;
 }

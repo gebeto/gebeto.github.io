@@ -39,6 +39,16 @@ ColorsList.prototype.createElement = function() {
   }.bind(this));
 
   this.colorViewTitle.className = 'h1';
+  this.colorViewTitle.addEventListener('click', function() {
+    createPalete(this.colors);
+  }.bind(this));
+  this.colorViewTitle.addEventListener('mouseover', function() {
+    this.currentColor = this.textContent;
+    this.textContent = 'Generate Palete';
+  });
+  this.colorViewTitle.addEventListener('mouseout', function() {
+    this.textContent = this.currentColor;
+  });
   this.colorView.className = 'color-view';
   this.colorView.appendChild(this.colorViewTitle);
 
