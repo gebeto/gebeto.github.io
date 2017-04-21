@@ -146,7 +146,7 @@ html
 {
   background: #312d2d none repeat scroll 0 0;
   bottom: 0;
-  position: fixed;
+  position: absolute;
   width: 100%;
 }
 
@@ -198,6 +198,26 @@ html
 .btn
 {
   border-radius: 0;
+}
+
+.width-200 {
+    border: medium none;
+    float: right;
+    margin: 0;
+    padding: 7px 12px;
+    width: 200px;
+}
+.width-100 {
+    border: medium none;
+    float: left;
+    margin: 0;
+    padding: 7px 12px;
+    width: 98px;
+}
+
+.modal-footer .btn + .btn {
+    margin-bottom: 0;
+    margin-left: 0;
 }
 
 .application-box

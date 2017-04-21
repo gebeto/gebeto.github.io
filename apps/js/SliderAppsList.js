@@ -1,5 +1,9 @@
+;(function() {
 
-function sliderInit(apps) {
+var currentCarouselIndex = 0;
+
+// function sliderInit(apps) {
+window.sliderInit = function(apps) {
 	var carousel = $("#frame ul");
 	var currentApp;
 
@@ -14,6 +18,10 @@ function sliderInit(apps) {
     
     carousel.itemslide({});
     carousel.on('changeActiveIndex', function(args) {
+
+		if (currentCarouselIndex === carousel.getActiveIndex()) return;
+		currentCarouselIndex = carousel.getActiveIndex();
+
         var index = carousel.getActiveIndex();
         $(currentApp.rendered).addClass('animated slideOutDown');
         $(currentApp.rendered).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
@@ -103,7 +111,20 @@ AppCard.prototype.refreshElement = function(appData) {
 					</a>
 				</div>
 			</div>
-		</div>`;
+		</div>
+      <div class="center-block col-sm-12 col-md-7 col-lg-6" style="margin-top:10px;float:none;">
+        <div style="padding:10px 10px;">
+        <div class="row application-box slider-block">
+          <div id="slides">
+            <img src="` + this.data.screenshot1 + `">
+            <img src="` + this.data.screenshot2 + `">
+            <img src="` + this.data.screenshot3 + `">
+            <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+            <a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>`;
 
 	return this.rendered;
 }
@@ -113,3 +134,5 @@ AppCard.prototype.refreshElement = function(appData) {
 
 
 
+
+})();

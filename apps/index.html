@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <title>cr0w | IGPreferences</title>
+  <title>cr0w | Приложения</title>
 
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="bootstrap/css/font-awesome.css">
@@ -23,16 +23,15 @@
 
     function onAjaxSuccessed(data) {
       if (data=="OK") {
-        $('#lPButton').remove();
-        $('#registerButton').remove();
-        $('#enterButton').remove();
+        $('#exitButton').show();
+        $('#myCabButton').show();
         var cookie = $.cookie("Cr0WArea");
         var login = cookie.split(":")[0];
         $('#cabinetButt').html('<span class="glyphicon glyphicon-briefcase"></span> Личный кабинет ('+login+')');
       }
       else {
-        $('#exitButton').remove();
-        $('#myCabButton').remove();
+        $('#registerButton').show();
+        $('#enterButton').show();
       }
     }
   </script>
@@ -44,7 +43,6 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header" style="padding:0px 0px;background-color:#f2f2f2;text-align:center">
-          <button type="button" class="close" data-dismiss="modal">x</button>
           <h4>Регистрация</h4>
         </div>
         <div class="modal-body" style="padding:0px 0px;">
@@ -78,7 +76,6 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header" style="padding:0px 0px;background-color:#f2f2f2;text-align:center">
-              <button type="button" class="close" data-dismiss="modal">x</button>
               <h4><span class="glyphicon glyphicon-log-in"></span> Авторизация</h4>
             </div>
             <div class="modal-body" style="padding:0px 0px;">
@@ -91,16 +88,22 @@
                   <label for="psw1" style="margin-left:25px;"><span class="glyphicon glyphicon-eye-open"></span> Пароль</label>
                   <input type="password" class="form-control" id="authpass" placeholder="Пароль">
                 </div>
+                <div class="form-group" style="margin-top:-10px;margin-left: 25px;">
+            <a href="#" data-toggle="modal" data-target="#lPass_Modal" data-dismiss="modal">
+                <p>
+                Забыли пароль?
+                </p>
+              </a>
+            </div>
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button reset" class="btn btn-danger width-100" style="float:left;" data-dismiss="modal">
+              <button type="button reset" class="btn btn-danger width-100" data-dismiss="modal">
                 <span class="glyphicon glyphicon-remove"></span> Отмена</button>
-                <button type="submit" id="loginBtn" class="btn btn-success width-200" style="float:right;">
+                <button type="submit" id="loginBtn" class="btn btn-success width-200">
                   <span class="glyphicon glyphicon-off"></span> Вход</button>
                 </div>
               </div>
-
             </div>
           </div>
           <!-- Modal lost password -->
@@ -108,7 +111,6 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header" style="padding:0px 0px;background-color:#f2f2f2;text-align:center">
-                  <button type="button" class="close" data-dismiss="modal">x</button>
                   <h4><span class="glyphicon glyphicon-lock"></span> Забыли пароль?</h4>
                 </div>
                 <div class="modal-body" style="padding:0px 0px;">
@@ -167,7 +169,7 @@
                 <li>
                   <a href="https://cr0w.pw"><span class="glyphicon glyphicon-home"></span> Главная</a>
                 </li>
-                <li>
+                <li class="active">
                   <a href="/apps.cw"><span class="glyphicon glyphicon-th-large"></span> Приложения</a>
                 </li>
                 <li style="font-size:13px;">
@@ -175,19 +177,16 @@
                 </li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li id="enterButton">
+                <li id="enterButton" style="display: none">
                   <a href="#" id="logButtonA"><span class="glyphicon glyphicon-log-in"></span> Вход</a>
                 </li>
-                <li id="registerButton">
+                <li id="registerButton" style="display: none">
                   <a href="#" id="regButtonA"><span class="glyphicon glyphicon-user"></span> Регистрация</a>
                 </li>
-                <li id="lPButton">
-                  <a href="#" id="lPassButtonA"><span class="glyphicon glyphicon-lock"></span> Забыли пароль?</a>
-                </li>
-                <li id="myCabButton">
+                <li id="myCabButton" style="display: none">
                   <a href="/myCabinet.cw" id="cabinetButt"><span class="glyphicon glyphicon-briefcase"></span> Личный кабинет</a>
                 </li>
-                <li id="exitButton">
+                <li id="exitButton" style="display: none">
                   <a href="#"><span class="glyphicon glyphicon-log-out"></span> Выход</a>
                 </li>
               </ul>
@@ -364,7 +363,7 @@
 
     $('img').on('dragstart', function(event) { event.preventDefault(); });
   </script>
-  
+
   <script src="js/SliderAppsList.js"></script>
   <script type="text/javascript" src="js/itemslide.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
