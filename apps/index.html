@@ -219,28 +219,7 @@
           </div>
         </div>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-        <!-- SlidesJS Required: Link to jquery.slides.js -->
-        <script src="js/slides/jquery.slides.min.js"></script>
-        <!-- End SlidesJS Required -->
-        <script>
-          $(document).ready(function(){
 
-            $("#showHideContent").click(function () {
-              if ($("#slideBlock").is(":hidden")) {
-                $('#slideBlock').show("slow");
-                $('#slide').show("slow");
-                $('#showHideContent').attr('style','border-radius: 0px 0px 5px 5px;background-color:#5b8bde;margin-top:-15px;');
-                $('#nameScreensButton').text('Скрыть');
-              }
-              else {
-                $('#slideBlock').hide("slow");
-                $('#showHideContent').attr('style','border-radius: 5px 5px 5px 5px;background-color:#5b8bde;');
-                $('#nameScreensButton').text('Показать скриншоты');
-              }
-              return false;
-            });
-          });
-        </script>
         <script>
           $(document).ready(function(){
             $("#regButtonA").click(function(){
