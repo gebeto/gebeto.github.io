@@ -6,7 +6,7 @@ var downloadButton = document.getElementById('download-button');
 function CanvasDrawer(canvas, bgUrl) {
 	this.canvas = canvas;
 	this.ctx = this.canvas.getContext('2d');
-	this.fontSize = this.lineSpacing = 150;
+	this.fontSize = this.lineSpacing = 120;
 	this.fontFamily = 'font';
 	this.background = this.loadImage(bgUrl);
 	this.linesCount = 1;
@@ -39,7 +39,7 @@ CanvasDrawer.prototype.loadImage = function(iurl) {
 CanvasDrawer.prototype.setFillStyle = function() {
 	var gradient = this.ctx.createLinearGradient(this.canvas.width/2, this.canvas.height/3, this.canvas.width/2, this.canvas.height - this.canvas.height/3);
 	gradient.addColorStop(0.0, "#FCFDFF");
-	gradient.addColorStop(1.0, "#E5F4FA");
+	gradient.addColorStop(1.0, "#e5c3bd");
 	this.ctx.fillStyle = gradient;
 	this.ctx.font = this.fontSize + 'px ' + this.fontFamily;
 	this.ctx.textAlign = 'center';
@@ -83,7 +83,8 @@ CanvasDrawer.prototype.changeLineSpacing = function(size) {
 	this.refreshTitle();
 }
 
-var drawer = new CanvasDrawer(canvas, 'assets/background.svg');
+// var drawer = new CanvasDrawer(canvas, 'assets/background.svg');
+var drawer = new CanvasDrawer(canvas, 'assets/background.png');
 
 WebFontConfig = {
 	custom: {
