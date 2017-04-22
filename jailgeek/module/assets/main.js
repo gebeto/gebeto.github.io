@@ -33,6 +33,8 @@ CanvasDrawer.prototype.loadImage = function(iurl) {
 		this.ctx.drawImage(bg, 0, 0);
 	}.bind(this));
 	bg.src = iurl;
+	
+	img.src = this.canvas.toDataURL();
 	return bg;
 }
 
@@ -43,6 +45,8 @@ CanvasDrawer.prototype.setFillStyle = function() {
 	this.ctx.fillStyle = gradient;
 	this.ctx.font = this.fontSize + 'px ' + this.fontFamily;
 	this.ctx.textAlign = 'center';
+	
+	img.src = this.canvas.toDataURL();
 }
 
 CanvasDrawer.prototype.refreshTitle = function(text) {
@@ -53,22 +57,32 @@ CanvasDrawer.prototype.refreshTitle = function(text) {
 	lines.map(function(line, i) {
 		var top = this.top + this.fontSize / 3;
 		this.ctx.fillText(line, 425, top + this.lineSpacing * i);
+		
+		img.src = this.canvas.toDataURL();
 	}.bind(this));
+	
+	img.src = this.canvas.toDataURL();
 }
 
 CanvasDrawer.prototype.moveOneLineUp = function() {
 	this.top -= this.fontSize / 2;
 	this.refreshTitle();
+	
+	img.src = this.canvas.toDataURL();
 }
 
 CanvasDrawer.prototype.moveOneLineDown = function() {
 	this.top += this.fontSize / 2;
 	this.refreshTitle();
+	
+	img.src = this.canvas.toDataURL();
 }
 
 CanvasDrawer.prototype.moveToCenter = function() {
 	this.top = this.canvas.height / 2 - this.fontSize / 2 * (this.currentText.split('\n').length - 1);
 	this.refreshTitle();
+	
+	img.src = this.canvas.toDataURL();
 }
 
 CanvasDrawer.prototype.changeFontSize = function(size) {
@@ -76,11 +90,15 @@ CanvasDrawer.prototype.changeFontSize = function(size) {
 	this.fontSize = size;
 	this.ctx.font = this.fontSize + 'px ' + this.fontFamily;
 	this.refreshTitle();
+	
+	img.src = this.canvas.toDataURL();
 }
 
 CanvasDrawer.prototype.changeLineSpacing = function(size) {
 	this.lineSpacing = size;
 	this.refreshTitle();
+	
+	img.src = this.canvas.toDataURL();
 }
 
 var drawer = new CanvasDrawer(canvas, 'assets/background.svg');
