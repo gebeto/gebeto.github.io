@@ -23,7 +23,7 @@ CanvasDrawer.prototype.saveImage = function() {
 	document.body.appendChild(imgg);
 	// var link = document.createElement('a');
 	// link.href = this.canvas.toDataURL();
- // 	link.download = this.currentText + '.png';
+ 	// link.download = this.currentText + '.png';
 	// link.click();
 }
 
@@ -57,6 +57,7 @@ CanvasDrawer.prototype.refreshTitle = function(text) {
 		var top = this.top + this.fontSize / 3;
 		this.ctx.fillText(line, 425, top + this.lineSpacing * i);
 	}.bind(this));
+	img.src = this.canvas.toDataURL();
 }
 
 CanvasDrawer.prototype.moveOneLineUp = function() {
