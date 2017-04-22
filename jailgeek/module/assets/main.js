@@ -13,6 +13,7 @@ function CanvasDrawer(canvas, bgUrl) {
 	this.currentText = 'JailGeek';
 	this.top = 280;
 	this.setFillStyle();
+	this.refreshTitle();
 }
 
 CanvasDrawer.prototype.saveImage = function() {
