@@ -19,6 +19,7 @@ CanvasDrawer.prototype.saveImage = function() {
 	console.log(this.canvas);
 	var imgg = document.createElement('img');
 	imgg.src = this.canvas.toDataURL();
+	img.src = this.canvas.toDataURL();
 	document.body.appendChild(imgg);
 	// var link = document.createElement('a');
 	// link.href = this.canvas.toDataURL();
