@@ -1,6 +1,13 @@
 ;(function() {
 
 var currentCarouselIndex = 0;
+var paginators;
+
+function updatePaginators() {
+	for (var i = 0; i < paginators.length; i++) {
+		paginators[i].className = 'dot ' + (i === currentCarouselIndex ? 'active' : '');
+	}
+}
 
 // function sliderInit(apps) {
 window.sliderInit = function(apps) {
@@ -11,33 +18,35 @@ window.sliderInit = function(apps) {
 		// new SliderCard(document.getElementById('frame').children[0], appData.sliderIconUrl, appData.sliderBg);
 		new SliderCard(carousel[0], appData.sliderIconUrl, appData.sliderBg);
 	});
-
+	
+	paginators = document.getElementById('paginators').children;
 	currentApp = new AppCard(apps[0]);
 	currentApp.rendered.style.animationDuration = '.2s';
-		$('#headerwrap-app').append(currentApp.refreshElement());
-		
-		carousel.itemslide({});
-		carousel.on('changeActiveIndex', function(args) {
+	$('#headerwrap-app').append(currentApp.refreshElement());
 
+	carousel.itemslide({});
+	
+	updatePaginators();
+	carousel.on('changeActiveIndex', function(args) {
 		if (currentCarouselIndex === carousel.getActiveIndex()) return;
 		currentCarouselIndex = carousel.getActiveIndex();
-
-				var index = carousel.getActiveIndex();
-				$(currentApp.rendered).addClass('animated slideOutDown');
+		updatePaginators();
+		var index = carousel.getActiveIndex();
+		$(currentApp.rendered).addClass('animated slideOutDown');
+		$(currentApp.rendered).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+				currentApp.refreshElement(apps[index]);
+				$(currentApp.rendered).addClass('animated slideInUp');
+				$(currentApp.rendered).removeClass('animated slideOutDown');
 				$(currentApp.rendered).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-						currentApp.refreshElement(apps[index]);
-						$(currentApp.rendered).addClass('animated slideInUp');
-						$(currentApp.rendered).removeClass('animated slideOutDown');
-						$(currentApp.rendered).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-								$(currentApp.rendered).removeClass('animated slideInUp');
-						});
+						$(currentApp.rendered).removeClass('animated slideInUp');
 				});
-				window.location.hash = index;
 		});
+		window.location.hash = index;
+	});
 
-		$(window).resize(function () {
-				carousel.reload();
-		});
+	$(window).resize(function () {
+		carousel.reload();
+	});
 }
 
 
@@ -53,6 +62,7 @@ function SliderCard(sliderWrapper, iconUrl, background) {
 		this.rendered.children[0].style.backgroundSize = 'cover';
 
 	sliderWrapper.appendChild(this.rendered);
+	document.getElementById('paginators').innerHTML += '<span class="dot">&#x25cf;</span> ';
 }
 
 

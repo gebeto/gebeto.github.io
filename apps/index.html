@@ -201,8 +201,20 @@
 
           <div class="container-fluid">
             <div class="row">
-              <div id="frame">
+              <div id="frame" style="position: relative;">
+              <style type="text/css">
+                .dot {
+                  color: #bbb;
+                }
+                .active {
+                  color: #fff;
+                }
+              </style>
                 <ul></ul>
+                <div id="paginators" style="position: absolute; width:100%;text-align: center; line-height: 1.2">
+                  <!-- <span class="dot active">&#x25cf;</span>
+                  <span class="dot">&#x25cf;</span> -->
+                </div>
               </div>
             </div>
           </div>
