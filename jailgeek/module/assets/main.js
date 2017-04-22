@@ -1,4 +1,5 @@
 var canvas = document.getElementById('main-canvas');
+var canvas = document.createElement('canvas');
 var img = document.getElementById('main-img');
 var textInput = document.getElementById('text-input');
 var downloadButton = document.getElementById('download-button');
