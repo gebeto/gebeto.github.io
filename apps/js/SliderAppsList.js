@@ -71,8 +71,7 @@ AppCard.prototype.refreshElement = function(appData) {
 		this.data = appData;
 	}
 
-	this.rendered.innerHTML = ' \
-		<div class="row">\
+	this.rendered.innerHTML = '<div class="row">\
 			<div class="col-sm-12 col-md-12 col-lg-12">\
 				<div id="panes' + this.data.appPrefix + 'Tabs" style="background-color:#45432;">\
 					<ul class="nav nav-pills">\
@@ -116,15 +115,12 @@ AppCard.prototype.refreshElement = function(appData) {
 		<div class="center-block col-sm-12 col-md-7 col-lg-6" style="margin-top:10px;float:none;">\
 			<div style="padding:10px 10px;">\
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">\
-					<!-- Wrapper for slides --> /\
 					<div class="carousel-inner" role="listbox">\
 						' + this.data.appScreenshots.map(function(item, index) {
 							return '<div class="item ' + (index === 0 ? 'active' : '') + '">\
 										<img src="' + item + '" alt="screenshot">\
 									</div>'
-						}).join('') + '\
-					</div>\
-					<!-- Left and right controls -->\
+						}).join('') + '</div>\
 					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">\
 						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>\
 						<span class="sr-only">Previous</span>\
