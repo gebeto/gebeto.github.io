@@ -14,30 +14,30 @@ window.sliderInit = function(apps) {
 
 	currentApp = new AppCard(apps[0]);
 	currentApp.rendered.style.animationDuration = '.2s';
-    $('#headerwrap-app').append(currentApp.refreshElement());
-    
-    carousel.itemslide({});
-    carousel.on('changeActiveIndex', function(args) {
+		$('#headerwrap-app').append(currentApp.refreshElement());
+		
+		carousel.itemslide({});
+		carousel.on('changeActiveIndex', function(args) {
 
 		if (currentCarouselIndex === carousel.getActiveIndex()) return;
 		currentCarouselIndex = carousel.getActiveIndex();
 
-        var index = carousel.getActiveIndex();
-        $(currentApp.rendered).addClass('animated slideOutDown');
-        $(currentApp.rendered).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            currentApp.refreshElement(apps[index]);
-            $(currentApp.rendered).addClass('animated slideInUp');
-            $(currentApp.rendered).removeClass('animated slideOutDown');
-            $(currentApp.rendered).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-                $(currentApp.rendered).removeClass('animated slideInUp');
-            });
-        });
-        window.location.hash = index;
-    });
+				var index = carousel.getActiveIndex();
+				$(currentApp.rendered).addClass('animated slideOutDown');
+				$(currentApp.rendered).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						currentApp.refreshElement(apps[index]);
+						$(currentApp.rendered).addClass('animated slideInUp');
+						$(currentApp.rendered).removeClass('animated slideOutDown');
+						$(currentApp.rendered).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+								$(currentApp.rendered).removeClass('animated slideInUp');
+						});
+				});
+				window.location.hash = index;
+		});
 
-    $(window).resize(function () {
-        carousel.reload();
-    });
+		$(window).resize(function () {
+				carousel.reload();
+		});
 }
 
 
@@ -49,8 +49,8 @@ function SliderCard(sliderWrapper, iconUrl, background) {
 			<img class="page-application-icon" src="` + iconUrl + `">
 		</div>`;
 	this.rendered.children[0].style.background = (background[0] === '#' ? background : 'url(' + background + ')');
-    this.rendered.children[0].style.backgroundRepeat = 'no-repeat';
-    this.rendered.children[0].style.backgroundSize = 'cover';
+		this.rendered.children[0].style.backgroundRepeat = 'no-repeat';
+		this.rendered.children[0].style.backgroundSize = 'cover';
 
 	sliderWrapper.appendChild(this.rendered);
 }
@@ -113,24 +113,42 @@ AppCard.prototype.refreshElement = function(appData) {
 				</div>
 			</div>
 		</div>
-      <div class="center-block col-sm-12 col-md-7 col-lg-6" style="margin-top:10px;float:none;">
-        <div style="padding:10px 10px;">
-        <div class="row application-box slider-block">
-          <div id="slides">
-            <img src="` + this.data.screenshot1 + `">
-            <img src="` + this.data.screenshot2 + `">
-            <img src="` + this.data.screenshot3 + `">
-            <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-            <a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>`;
+		<div class="center-block col-sm-12 col-md-7 col-lg-6" style="margin-top:10px;float:none;">
+			<div style="padding:10px 10px;">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						` + this.data.appScreenshots.map(function(item, index) {
+							return `<div class="item ` + (index === 0 ? 'active' : '') + `">
+										<img src="` + item + `" alt="screenshot">
+									</div>`
+						}).join('') + `
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>`;
 
 	return this.rendered;
 }
 
 
+					// <div id="slides">
+					//	 <img src="` + this.data.screenshot1 + `">
+					//	 <img src="` + this.data.screenshot2 + `">
+					//	 <img src="` + this.data.screenshot3 + `">
+					//	 <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+					//	 <a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					// </div>
 
 
 
