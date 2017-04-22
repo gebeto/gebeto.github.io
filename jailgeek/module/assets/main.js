@@ -17,13 +17,13 @@ function CanvasDrawer(canvas, bgUrl) {
 
 CanvasDrawer.prototype.saveImage = function() {
 	console.log(this.canvas);
-	var img = document.createElement('img');
-	img.src = this.canvas.toDataURL();
-	document.body.appendChild(img);
-	// var link = document.createElement('a');
-	// link.href = this.canvas.toDataURL();
- 	// link.download = this.currentText + '.png';
-	// link.click();
+	// var img = document.createElement('img');
+	// img.src = this.canvas.toDataURL();
+	// document.body.appendChild(img);
+	var link = document.createElement('a');
+	link.href = this.canvas.toDataURL();
+ 	link.download = this.currentText + '.png';
+	link.click();
 }
 
 
@@ -54,6 +54,7 @@ CanvasDrawer.prototype.refreshTitle = function(text) {
 		var top = this.top + this.fontSize / 3;
 		this.ctx.fillText(line, 425, top + this.lineSpacing * i);
 	}.bind(this));
+	img.src = this.canvas.toDataURL();
 }
 
 CanvasDrawer.prototype.moveOneLineUp = function() {
