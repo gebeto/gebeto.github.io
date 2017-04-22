@@ -36,6 +36,25 @@ var apps = [{
         '../apps/images/vkp/vkp-screen-2.png',
         '../apps/images/vkp/vkp-screen-2.png'
     ],
+}, {
+    sliderBg: '#345976',
+    sliderIconUrl: 'images/insta-vector.png',
+    appName: 'VKPreferences',
+    appTItle: 'VK + VKPreferences',
+    appPrefix: 'VKP',
+    tweakCapabilities: 'NaN',
+    appDescription: 'Looks like VKPreference description',
+    developerUrl: 'https://vk.com/orlov_alexender',
+    developerName: 'Александр Орлов',
+    appVersion: '10.0',
+    tweakVersion: '1.0',
+    installationUrl: '#',
+    appScreenshots: [
+        '../apps/images/vkp/vkp-screen-3.png',
+        '../apps/images/vkp/vkp-screen-3.png',
+        '../apps/images/vkp/vkp-screen-3.png',
+        '../apps/images/vkp/vkp-screen-3.png'
+    ],
 },]
 
 $(document).ready(function () {
