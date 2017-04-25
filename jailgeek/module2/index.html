@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Text for post</title>
+	<meta content="width=device-width,initial-scale=1.0" name="viewport">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+
+<div class="main-wrapper">
+	<canvas style="display: none;" width="850" height="560" id="main-canvas"></canvas>
+	<img style="width: 100%" id="main-img">
+	<textarea placeholder="Текст" class="form-control" id="text-input" rows="3">JailGeek</textarea>
+	<div class="form-container">
+		<button class="control-button" id="move-up">Переместить текст выше</button>
+	</div>
+	<div class="form-container">
+		<button class="control-button" id="move-down">Переместить текст ниже</button>
+	</div>
+	<div class="form-container">
+		<label for="#fontsize-input">Размер шрифта</label>
+		<input type="number" id="fontsize-input" value="120">
+	</div>
+	<div class="form-container">
+		<label for="#linespacing-input">Отступ между строками</label>
+		<input type="number" id="linespacing-input" value="120">
+	</div>
+	<button style="display: none;" id="download-button">Сгенерироать</button>
+</div>
+	
+	<script type="text/javascript">
+		var CONFIG = {
+
+		};
+	</script>
+	<script type="text/javascript" src="assets/main.js"></script>
+	<script type="text/javascript" src="assets/webfont.js"></script>
+</body>
+</html>
