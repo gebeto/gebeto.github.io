@@ -43,7 +43,8 @@ CanvasDrawer.prototype.setFillStyle = function() {
 	// gradient.addColorStop(0.0, "#FCFDFF");
 	// gradient.addColorStop(1.0, "#e5c3bd");
 	gradient.addColorStop(0.0, "#fff");
-	gradient.addColorStop(1.0, "#e5c3bd");
+	// gradient.addColorStop(1.0, "#e5c3bd");
+	gradient.addColorStop(1.0, "#fff");
 	this.ctx.fillStyle = gradient;
 	this.ctx.font = this.fontSize + 'px ' + this.fontFamily;
 	this.ctx.textAlign = 'center';
