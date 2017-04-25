@@ -42,8 +42,8 @@ CanvasDrawer.prototype.setFillStyle = function() {
 	var gradient = this.ctx.createLinearGradient(this.canvas.width/2, this.canvas.height/3, this.canvas.width/2, this.canvas.height - this.canvas.height/3);
 	// gradient.addColorStop(0.0, "#FCFDFF");
 	// gradient.addColorStop(1.0, "#e5c3bd");
-	gradient.addColorStop(0.0, "#e5c3bd");
-	gradient.addColorStop(1.0, "#d8a79e");
+	gradient.addColorStop(0.0, "#fff");
+	gradient.addColorStop(1.0, "#e5c3bd");
 	this.ctx.fillStyle = gradient;
 	this.ctx.font = this.fontSize + 'px ' + this.fontFamily;
 	this.ctx.textAlign = 'center';
