@@ -1,0 +1,2170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:0px;margin-right: 0px;   background: url(images/profile/web-bender-33.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 250px;margin-left: -500px;">
+                    Уровень 33
+                </div>
+</div>
+</div>
+<br/>
+<!--<div class="line"></div>-->
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>1. JavaScript</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Билаабо!</p>
+<p>- Рад тебя видеть. Сегодня у нас небольшое, но очень познавательное занятие. Сегодня я расскажу тебе о языке JavaScript.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/33/image-ru-33-05.png"/>
+<p class="amigo">- Новый язык? Как интересно…</p>
+<p>- JavaScript сейчас популярен благодаря интернету. Дело в том, что это единственный язык, который умеют исполнять все браузеры. Если ты хочешь добавить анимацию или некоторую логику в свою интернет-страницу, то ты можешь сделать это с помощью JavaScript.</p>
+<p class="amigo">- А правда, что JavaScript – самый популярный язык? </p>
+<p>- Да, но тут правильнее было бы сказать, что он самый популярный «второй язык». Программисты на C++, Java, C#, PHP вынуждены писать небольшие скрипты на JavaScript, чтобы оживить свои интернет-страницы. В то же время, людей, которые пишут только на JavaScript гораздо меньше.</p>
+<p class="amigo">- А почему у него такое название – JavaScript? Звучит почти как Java.</p>
+<p>- На самом деле сначала он назывался LiveScript, но когда Java начала набирать популярность, его переименовали в JavaScript.</p>
+<p><span class="red_text">Java и JavaScript - <b>это два совершенно разных языка</b>, не стоит их путать. </span></p>
+<p>JavaScript,  в отличие от Java, не имеет классов, не поддерживает статическую типизацию, многопоточность и много чего еще. <b>И если Java – это скорее большой набор строительных инструментов, то JavaScript – это швейцарский нож.</b> JavaScript создан для решения маленьких задач, а Java – для больших и очень больших.</p>
+<p>Вот тебе несколько фактов о JavaScript:</p>
+<p><u><b>Факт первый – в JavaScript есть функции, но нет классов.</b></u></p>
+<p>Вы просто пишите логику программы в нескольких функциях и все. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">JavaScript</th><th width="50%">Java</th></tr>
+<tr>
+<td class="monospace_text"><b>function <span class="red_text">min</span></b>(<span class="green_text">a</span>, <span class="dblue_text">b</span>)<br/>
+    {<br/>
+     <b>return</b> <span class="green_text">a</span>&amp;lt<span class="dblue_text">b</span> ? <span class="green_text">a</span>: <span class="dblue_text">b</span>;<br/>
+    }
+    </td>
+<td class="monospace_text"><b>public static int <span class="red_text">min</span></b>(int <span class="green_text">a</span>, int <span class="dblue_text">b</span>)<br/>
+    {<br/>
+<b>return</b> <span class="green_text">a</span>&amp;lt<span class="dblue_text">b</span> ? <span class="green_text">a</span>: <span class="dblue_text">b</span>;<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p>Новые функции объявляются с помощью конструкции «<b>function+имя</b>».</p>
+<p>Еще пример:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">JavaScript</th><th width="50%">Java</th></tr>
+<tr>
+<td class="monospace_text"><b>function <span class="red_text">min</span></b>(<span class="green_text">a</span>, <span class="dblue_text">b</span>)<br/>
+    {<br/>
+     <b>return</b> <span class="green_text">a</span>&amp;lt<span class="dblue_text">b</span> ? <span class="green_text">a</span>: <span class="dblue_text">b</span>;<br/>
+    }<br/><br/>
+<b>function</b> main()<br/>
+    {<br/>
+     <b>var</b> s = 3;<br/>
+     <b>var</b> t = 5;<br/>
+     <b>var</b> min = <span class="red_text">min</span>(s, t);<br/>
+    }
+    </td>
+<td class="monospace_text"><b>public static int <span class="red_text">min</span></b>(int <span class="green_text">a</span>, int <span class="dblue_text">b</span>)<br/>
+    {<br/>
+     return <span class="green_text">a</span>&amp;lt<span class="dblue_text">b</span> ? <span class="green_text">a</span>: <span class="dblue_text">b</span>;<br/>
+    }<br/><br/>
+<b>public static void</b> main()<br/>
+    {<br/>
+     <b>int</b> s = 3;<br/>
+     <b>int</b> t = 5;<br/>
+     <b>int</b> min = <span class="red_text">min</span>(s,t);<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p><u><b>Факт второй – в JavaScript есть переменные, но у них нет типов.</b></u></p>
+<p>JavaScript – это язык с динамической типизацией. Это значит, что у переменных, по факту, нет типов. Любой переменной можно присвоить значение любого типа (у значений типы есть). Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">JavaScript</th><th width="50%">Java</th></tr>
+<tr>
+<td class="monospace_text"><b>function <span class="green_text">main</span>()<br/>
+    {<br/>
+     <span class="red_text">var</span> s = "Bender";<br/>
+     <span class="red_text">var</span> k = 1;<br/>
+     <span class="red_text">var</span> n = s.length;<br/>
+    }</b>
+</td>
+<td class="monospace_text"><b>public static void <span class="green_text">main</span>()<br/>
+    {<br/>
+     <span class="red_text">String</span> s ="Bender";<br/>
+     <span class="red_text">int</span> k = 1;<br/>
+     <span class="red_text">int</span> n = s.length();<br/>
+    }</b>
+</td>
+</tr>
+</tbody></table>
+<p>Но динамическая типизация увеличивает риск ошибок во время работы программы:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">JavaScript</th><th width="50%">Java</th></tr>
+<tr>
+<td class="monospace_text"><b>function <span class="green_text">main</span>()<br/>
+    {<br/>
+     var s = "Bender";<br/>
+     var k = 1;<br/>
+     <span class="red_text">var n = k.length;</span><br/>
+    }</b>
+</td>
+<td class="monospace_text"><b>public static void <span class="green_text">main</span>()<br/>
+    {<br/>
+     String s ="Bender";<br/>
+     int k = 1;<br/>
+     <span class="red_text">int n = k.length();</span><br/>
+    }</b>
+</td>
+</tr>
+</tbody></table>
+<p>В примере выше, мы подставили вместо s (строки), переменную k(число). В случае с Java ошибка будет обнаружена на этапе компиляции, в случае с JavaScript – позже: уже во время исполнения этого кода.</p>
+<p>Если хочешь объявить переменную в JavaScript, надо написать «<b>var+имя</b>». Типов у переменных нет, так же нет типов у методов/функций и их аргументов.</p>
+<p><span class="green_text"><b>В JavaScript очень мало строгих правил и очень много анархии.</b></span></p>
+<p>Можно объявить функцию с 5 аргументами, а вызвать с двумя – остальные будут равны null. Можно объявить функцию с двумя аргументами, а при вызове передать пять. Три просто отпросятся. Контроль за ошибками, опечатками, изменениями – минимальный.</p>
+<p><u><b>Факт третий – в JavaScript есть if, for, while</b></u></p>
+<p>В JavaScript есть if, for, while и это – хорошая новость. Смотрим примеры:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">JavaScript</th><th width="50%">Java</th></tr>
+<tr>
+<td class="monospace_text"><b>function</b> <span class="green_text">main</span>()<br/>
+{<br/>
+ <b>var</b> s = "Bender";<br/><br/>
+
+ <b>var</b> <span class="grey_text">result</span> = "";<br/><br/>
+
+ <span class="red_text"><b>for</b></span>(<b>var</b> i=0;i&amp;lts.length;i++)<br/>
+    {<br/>
+  <span class="grey_text">result</span> = s[i]+ "";<br/>
+    }<br/><br/>
+
+ <span class="blue_text"><b>if</b></span>(<span class="grey_text">result</span>.length&amp;gt10)<br/>
+   {<br/>
+  alert (<span class="grey_text">result</span>);<br/>
+   }<br/>
+ <span class="blue_text"><b>else</b></span> <br/>
+   {<br/>
+  <span class="orange_text"><b>while</b></span>(<span class="grey_text">result</span> &amp;lt=10)<br/>
+        {<br/>
+   <span class="grey_text">result</span> +="";<br/>
+        }<br/>
+       alert(<span class="grey_text">result</span>);<br/>
+   }<br/>
+}
+    </td>
+<td class="monospace_text"><b>public static void</b> <span class="green_text">main</span>()<br/>
+{<br/>
+ <b>String</b> s = "Bender";<br/>
+ <b>char[]</b> s2 = s.toCharArray(); <br/>
+ <b>String</b> <span class="grey_text">result</span> = "";<br/><br/>
+
+ <span class="red_text"><b>for</b></span>(<b>int</b> i=0;i&amp;lts.length();i++)<br/>
+    {<br/>
+  <span class="grey_text">result</span> = s2[i]+ "";<br/>
+    }<br/><br/>
+
+ <span class="blue_text"><b>if</b></span>(<span class="grey_text">result</span>.length()&amp;gt10)<br/>
+   {<br/>
+        System.out.println(<span class="grey_text">result</span>);<br/>
+   }<br/>
+ <span class="blue_text"><b>else</b></span> <br/>
+   {<br/>
+  <span class="orange_text"><b>while</b></span>(<span class="grey_text">result</span> &amp;lt=10)<br/>
+        {<br/>
+   <span class="grey_text">result</span> +="";<br/>
+        }<br/>
+        System.out.println(<span class="grey_text">result</span>);<br/>
+   }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Довольно похоже. Думаю, я смог бы разобраться, как работает код, написанный на JavaScript.</p>
+<p>- Оптимизм – это хорошо.</p>
+<p><u><b>Факт четверный – в JavaSctipt есть try-catch-finally</b></u></p>
+<p>В <b>JavaScript</b> есть исключения (<b>Error</b>) и это хорошо. <b>checked</b> исключений нет, только <b>unchecked</b> – аналог <b>RuntimeException</b>. <b>try-catch-finally</b> работает так же, как и в Java. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">JavaScript</th><th width="50%">Java</th></tr>
+<tr>
+<td class="monospace_text"><b>function <span class="green_text">main</span></b>()<br/>
+{<br/>
+ <span class="red_text"><b>try</b></span><br/>
+    {<br/>
+  var s = null;<br/>
+  var n = s.length;<br/>
+    }<br/>
+ <span class="red_text"><b>catch</b></span>(<span class="blue_text">e</span>) <br/>
+   {<br/>
+        alert(<span class="blue_text">e</span>);<br/>
+ }<br/>
+}
+    </td>
+<td class="monospace_text"><b>public static void <span class="green_text">main</span></b>()<br/>
+{<br/>
+ <span class="red_text"><b>try</b></span><br/>
+    {<br/>
+         String s = null;<br/>
+         int n = s.length();<br/>
+    }<br/>
+ <span class="red_text"><b>catch</b></span>(Exception <span class="blue_text">e</span>) <br/>
+ {<br/>
+  System.out.println(<span class="blue_text">e</span>);<br/>
+ }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>При попытке узнать длину строки будет выкинуто исключение, т.к. переменная ссылается на null.</p>
+<p><u><b>Факт пятый – в JavaScript есть массивы</b></u></p>
+<p>Хорошая новость. В JavaScript есть массивы. Плохая – там нет ни списков, ни коллекций.</p>
+<p>Еще одна хорошая новость – массивы могут динамически растягиваться, при добавлении новых элементов и уменьшаться при их удалении. <span class="orange_text">Больше похоже на гибрид массива и списка.</span></p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="45%">JavaScript</th><th width="55%">Java</th></tr>
+<tr>
+<td class="monospace_text"><font size="4"><b>function <span class="green_text">main</span></b>()<br/>
+{<br/>
+ <b>var</b> <span class="red_text">m</span> = [1,3,18, 45, 'c', "roma", null];<br/>
+ <span class="grey_text">alert</span>(<span class="red_text">m</span>.<span class="dblue_text">length</span>); <span class="grey_text">//7</span><br/><br/>
+
+ <span class="red_text">m</span>.<b>push</b>("end");<br/>
+ <span class="grey_text">alert</span>(<span class="red_text">m</span>.<span class="dblue_text">length</span>); <span class="grey_text">//8</span><br/><br/>
+
+ <b>for</b> (<b>var</b> i=0;i<span class="red_text">&amp;ltm</span>.<span class="dblue_text">length</span>;i++)<br/>
+  {<br/>
+  <span class="grey_text">alert</span>(<span class="red_text">m</span>[i]);<br/>
+  }<br/>
+}</font>
+</td>
+<td class="monospace_text"><font size="4"><b>public static void <span class="green_text">main</span></b>()<br/>
+{<br/>
+ <b>List</b> <span class="red_text">m</span> = Arrays.asList(1,3,18, 45,'c', "roma", null);<br/>
+ <span class="grey_text">System.out.println</span>(<span class="red_text">m</span>.<span class="dblue_text">size()</span>);<span class="grey_text">//7</span><br/><br/>
+
+ <span class="red_text">m</span>.<b>add</b>("end");<br/>
+ <span class="grey_text">System.out.println</span>(<span class="red_text">m</span>.<span class="dblue_text">size()</span>);<span class="grey_text">//8</span><br/><br/>
+
+ <b>for</b> (<b>int</b> i=0;im.<span class="dblue_text">size()</span>;i++)<br/>
+  {<br/>
+  <span class="grey_text">System.out.println</span>(<span class="red_text">m</span>.get(i));<br/>
+  }<br/>
+}</font>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- А что это за квадратные скобки при объявлении массива?</p>
+<p>- Это и есть «объявление массива». Чтобы объявить массив надо написать квадратные скобки, а между ними перечислить элементы массива. Пустой массив объявляется просто парой скобок.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><b>var m = [];</b>
+</td>
+</tr>
+</tbody></table>
+<p><u><b>Факт шестой – в JavaSctipt есть объекты</b></u></p>
+<p>В JavaScript есть объекты. На самом деле все в JavaScript является объектом, примитивные типы тоже. Каждый объект представлен в виде набора пар «ключ-значение». Грубо говоря, <span class="green_text">каждый объект JavaScript – это аналог HashMap</span> в Java. Пример объявления объекта:</p>
+<table class="table_example">
+<tbody><tr><th width="49%">JavaScript</th><th width="51%">Java</th></tr>
+<tr>
+<td class="monospace_text"><b>function <span class="green_text">main</span></b>()<br/>
+{<br/>
+ <b>var</b> <span class="red_text">m</span> = {<br/>
+       first_name : "Bill",<br/>
+       last_name: "Gates",<br/>
+       age: 54,<br/>
+       weight: 67,<br/>
+ <span class="blue_text">children</span>: ["Emma", "Catrin"],<br/>
+ <span class="orange_text">wife</span>: {<br/>
+          first_name : "Melinda",<br/>
+          last_name: "Gates",<br/>
+          age: 45,<br/>
+       }<br/>
+};<br/><br/>
+
+ <span class="grey_text">alert</span>(<span class="red_text">m</span>.first_name); <span class="grey_text">// Bill</span><br/>
+ <span class="grey_text">alert</span>(<span class="red_text">m</span>.age); <span class="grey_text">// 54</span><br/>
+ <span class="grey_text">alert</span>(<span class="red_text">m</span>.<span class="orange_text">wife</span>.first_name);<span class="grey_text">// Melinda</span><br/><br/>
+
+ <span class="red_text">m</span>.age = 45;<br/>
+ <span class="red_text">m</span>.age++;<br/>
+ <span class="red_text">m</span>["first_name"] = "Stive";<br/>
+ <span class="red_text">m</span>["wife"] = null;
+    </td>
+<td class="monospace_text"><b>public static void <span class="green_text">main</span></b>()<br/>
+{<br/>
+ HashMap <span class="red_text">m</span> = new HashMap();<br/>
+ <span class="red_text">m</span>.put("first_name", "Bill");<br/>
+ <span class="red_text">m</span>.put("last_name", "Gates");<br/>
+ <span class="red_text">m</span>.put("age", 54);<br/>
+ <span class="red_text">m</span>.put("weight", 67);<br/><br/>
+
+ String[] <span class="blue_text">children</span> = {"Emma","Catrin"};<br/>
+ <span class="red_text">m</span>.put("children", <span class="blue_text">children</span>);<br/><br/>
+
+ HashMap <span class="orange_text">wife</span> = new HashMap();<br/>
+ <span class="orange_text">wife</span>.put("first_name", "Melinda");<br/>
+ <span class="orange_text">wife</span>.put("last_name", "Gates");<br/>
+ <span class="orange_text">wife</span>.put("age", 45);<br/>
+ <span class="red_text">m</span>.put("wife", <span class="orange_text">wife</span>);<br/><br/>
+
+ <span class="grey_text">System.out.println</span>(<span class="red_text">m</span>.get("first_name"));<br/>
+ <span class="grey_text">System.out.println</span>(<span class="red_text">m</span>.get("age"));<br/><br/>
+
+ HashMap <span class="orange_text">w</span> = ((HashMap)<span class="red_text">m</span>.get("wife"));<br/>
+ <span class="grey_text">System.out.println</span>(<span class="orange_text">w</span>.get("first_name")));<br/><br/>
+
+ <span class="red_text">m</span>.put("age", 45);<br/>
+ <span class="red_text">m</span>.put("age", ((Integer)m.get("age"))+1);<br/>
+ <span class="red_text">m</span>.put("first_name","Stive");<br/>
+ <span class="red_text">m</span>.put("wife", null);
+    </td>
+</tr>
+</tbody></table>
+<p>Чтобы создать новый объект достаточно написать две фигурные скобки «{}».</p>
+<p>Внутри скобок можно указать данные объекта в формате «ключ, двоеточие, значение, запятая».</p>
+<p>К полям объекта можно обращаться двумя способами:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Эквивалентные записи</th></tr>
+<tr>
+<td class="monospace_text"><span class="dred_text">m</span>.<span class="green_text">age</span> = 45;
+    </td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="dred_text">m</span>[<span class="green_text">“age”</span>] = 45;
+    </td>
+</tr>
+</tbody></table>
+<p>Если указанного поля нет, оно создается.</p>
+<p>Что-то мой газовый пузырь переполнился, думаю надо сделать перерыв.</p>
+<p>Напоследок - если хочешь изучить JavaScript подробнее, могу посоветовать отличный онлайн курс. Именно он когда-то вдохновил Джона на создание JavaRush:</p>
+<p><a href="http://www.codecademy.com/" target="_blank">http://www.codecademy.com/</a></p>
+<p><u><b>Факт седьмой – JavaScript создан, чтобы работать внутри web-страниц.</b></u></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>2. JSON</h2>
+</div>
+<p>- Ложная тревога – с пузырем все в порядке.</p>
+<p>Продолжим. Сегодня я хочу рассказать тебе, что такое JSON.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/33/image-ru-33-04.png"/>
+<p class="amigo">- Да, я много раз слышал это слово, что же это такое?</p>
+<p>- С развитием web-а, HTML-страницы с JavaScript начали активно взаимодействовать с серверами и загружать с сервера данные. Для облегчения этого процесса, был придуман стандарт обмена сообщениями между сервером и программой, написанной на JavaScript. Этот стандарт называется <b>JSON (JavaScript Object Notation)</b>.</p>
+<p class="amigo">- И что же это за стандарт?</p>
+<p>- О, тут самое интересное. В качестве стандарта было взято… объявление объекта в <b>JavaScript</b>!</p>
+<p>Вот тебе пример сообщений в формате JSON:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Сообщения в формате JSON</th></tr>
+<tr>
+<td class="monospace_text">{<br/>
+     <span class="grey_text">"name"</span>: "oleg",<br/>
+     <span class="grey_text">"last"</span>: "eremenko"<br/>
+    }
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">{<br/>
+     <span class="grey_text">"name"</span>: "batman",<br/>
+     <span class="grey_text">"enemies"</span>: [1,4,6,7,8,4,3,90]<br/>
+    }
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">{<br/>
+     <span class="grey_text">"name"</span>: "grandpa",<br/>
+     <span class="grey_text">"children"</span>: [ <br/>
+<span class="green_text">{<br/>
+     "name" = "Bob",<br/>
+     "children": ["Emma", "Nikol"]<br/>
+    },</span> <br/>
+<span class="dblue_text">{<br/>
+     "name" = "Devid",<br/>
+     "children": ["Jesica", "Pamela"]<br/>
+    }</span><br/>
+    ]<br/>
+    }
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">{<br/>
+     <span class="red_text">"12  45":</span> <span class="grey_text">{</span> <br/>
+     <span class="red_text">"__++"</span>: [], <br/>
+     <span class="red_text">"1"</span>:"2"<br/>
+     <span class="grey_text">}</span><br/>
+    }
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">{}
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Т.е. они просто пересылают данные, которые фактически является объектами JavaScript?</p>
+<p>- Ага. И это очень удобно по двум причинам:</p>
+<p>Во-первых, не нужно конвертировать данные из «формата пересылки» в набор объектов JavaScript.</p>
+<p>Во-вторых, такой формат очень нагляден: легко читается и редактируется человеком.</p>
+<p>Конечно, есть некоторые ограничения – не все можно представить в виде набора объектов, массивов, текста и чисел.</p>
+<p>Объект Date, например, пересылается в строковом виде: «<i>2012-04-23T18:25:43.511Z</i>»</p>
+<p>Но все равно этот способ пересылки информации колоссально удобный, читабельный,  достаточно легкий и содержит минимум лишней информации. Поэтому он завоевал очень большую популярность.</p>
+<p class="amigo">- Как по мне - JSON очень простой формат, тут все очевидно и понятно.</p>
+<p class="amigo">Да и сам JavaScript не очень сложный.</p>
+<p>- Язык-то простой, зато программы – сложные.</p>
+<p>Или, как говорил мой дядя, в человеческом английском 26 букв, а вот научиться на нем правильно говорить – это не такая уж и простая задача для лобстера.</p>
+<p class="amigo">- Гм. Ты прав, Билаабо, буду иметь это в виду. Спасибо за интересную лекцию.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Сериализация в JSON</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Элли!</p>
+<p>- Раз уж ты познакомился с JSON, давай поговорим о нем сегодня подробнее.</p>
+<p class="amigo">- Ок. А где обычно он используется?</p>
+<p>- Обычно дело выглядит так. Кто-то (клиент) запрашивает у Java-программы (сервера) данные. Программа создает Java-объекты и заполняет их информацией из базы данных. Затем преобразовывает их в формат понятный запрашивающему (клиенту), например JSON, и отсылает их обратно.</p>
+<p>Давай я тебе расскажу, как работать с ним из Java. Собственно нам понадобится только две вещи – сериализовать Java-объекты в JSON-формат и десериализовать Java-объекты из формата JSON.</p>
+<p>Т.е. <span class="green_text">JSON – это стандарт транспортировки сообщений/данных от одной программы до другой.</span> Таких стандартов довольно много. Но если программа написана на JavaScript, она обычно старается работать с JSON.</p>
+<p class="amigo">- Ок. Я готов.</p>
+<p>- Отлично. Тогда начнем.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/33/image-ru-33-03.png"/>
+<p>Как ты уже знаешь, в Java есть встроенные стандартные средства сериализации. Но JSON к ним не относится. Поэтому если тебе надо использовать сериализацию объекта в JSON, ты можешь использовать один из популярных фреймворков(библиотек), которые это умеют.</p>
+<p class="amigo">- А чем отличаются различные фреймворки?</p>
+<p>- Обычно они отличаются степенью сложности: есть фреймворки, которые умеют делать только самое необходимое, но они очень маленькие и простые. А есть и большие сложные фреймворки, которые могут делать гораздо больше.</p>
+<p>Одним из популярных фреймворков считается <b>Jackson</b>. Мы рассмотрим работу с JSON на его примере.</p>
+<p>Для начала тебе надо скачать этот фреймворк и добавить его себе в проект. Делать это надо в Intellij IDEA само собой. Скачать проект можно по <a href="http://mvnrepository.com/artifact/com.fasterxml.jackson.core/" target="_blank">ссылке</a>.</p>
+<p class="amigo">- Готово.</p>
+<p>- Отлично. Тогда продолжим.</p>
+<p>Сконвертировать Java-объект в JSON примерно так же просто, как и сериализовать его. Для этого есть специальный класс ObjectMapper  (<font size="4">com.fasterxml.jackson.databind.ObjectMapper</font>).</p>
+<p>Давай я покажу тебе рабочий пример, а потом мы его разберем:</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="100%">Конвертация объекта в JSON</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>19<br/>20<br/>21<br/>22
+    </td>
+<td class="monospace_text"><br/><b>public static void</b> main(String[] args) throws IOException<br/>
+{<br/>
+ <span class="grey_text">//создание объекта для сериализации в JSON</span><br/>
+ <span class="green_text">Cat cat</span> = new <span class="green_text">Cat</span>();<br/>
+ <span class="green_text">cat</span>.name = "Murka";<br/>
+ <span class="green_text">cat</span>.age = 5;<br/>
+ <span class="green_text">cat</span>.weight = 4;<br/><br/>
+
+ <span class="grey_text">//писать результат сериализации будем во Writer(StringWriter)</span><br/>
+ StringWriter <span class="dblue_text">writer</span> = new StringWriter();<br/><br/>
+
+ <span class="grey_text">//это объект Jackson, который выполняет сериализацию</span><br/>
+ <span class="dred_text">ObjectMapper</span> <span class="red_text">mapper</span> = new <span class="dred_text">ObjectMapper</span>();<br/><br/>
+
+ <span class="grey_text">// сама сериализация: 1-куда, 2-что</span><br/>
+ <span class="red_text">mapper</span>.<b>writeValue</b>(<span class="dblue_text">writer</span>, <span class="green_text">cat</span>);<br/><br/>
+
+ <span class="grey_text">//преобразовываем все записанное во StringWriter в строку </span><br/>      
+ String <span class="violet_text">result</span> = <span class="dblue_text">writer</span>.<b>toString</b>();<br/>
+ <b>System.out.println</b>(<span class="violet_text">result</span>);<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="1%"> </th><th width="100%">Класс Cat, объект которого конвертирует в JSON</th></tr>
+<tr>
+<td class="monospace_text">
+</td>
+<td class="monospace_text"><span class="green_text">@JsonAutoDetect<br/>
+<b>class</b> Cat<br/>
+    {<br/>
+         <b>public</b> String name;<br/>
+         <b>public</b> int age;<br/>
+         <b>public</b> int weight;<br/><br/>
+
+         Cat()<br/>
+         {<br/>
+         }<br/>
+    }</span>
+</td>
+</tr>
+</tbody><tbody><tr><th width="1%"> </th><th width="100%">Результат сериализации и вывода на экран:</th></tr>
+<tr>
+<td class="monospace_text">
+</td>
+<td class="monospace_text"><b>{ "name"="Murka", "age"=5, "weight"=4}</b>
+</td>
+</tr>
+</tbody></table>
+<p>Вот как все было:</p>
+<p>В строках 5-8  мы создаем объект класса <span class="green_text">Cat</span> и заполняем его данными.</p>
+<p>Строка 11 – создаем объект Writer, куда будем писать строку - JSON представление объекта.</p>
+<p>Строка 14 – создаем объект <span class="dred_text">ObjectMapper</span>, который и выполняет всю сериализацию.</p>
+<p>Строка 17 – пишем JSON-представление объекта <span class="green_text">cat</span> во <span class="dblue_text">writer</span>.</p>
+<p>Строки 20-21 – выводим результат на экран.</p>
+<p>Все выглядит довольно просто. Не сложнее родной сериализации в Java.</p>
+<p class="amigo">- А как будет выглядеть десериализация?</p>
+<p>- Да почти так же, только короче:</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="100%">Конвертация объекта из JSON</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10
+    </td>
+<td class="monospace_text"><br/><b>public static void</b> main(String[] args) throws IOException<br/>
+{<br/>
+ String jsonString = <span class="violet_text">"{ \"name\"=\"Murka\", \"age\"=5, \"weight\"=4}";</span> <br/> 
+ <b>StringReader</b> <span class="dblue_text">reader</span> = new <b>StringReader</b>(jsonString);<br/><br/>
+
+ <span class="dred_text">ObjectMapper</span> <span class="red_text">mapper</span> = new <span class="dred_text">ObjectMapper</span>();<br/><br/>
+
+ <span class="green_text">Cat cat</span> = <span class="red_text">mapper</span>.<b>readValue</b>(<span class="dblue_text">reader</span>, <span class="green_text">Cat.class</span>);<br/>
+}<br/>
+</td>
+</tr>
+</tbody><tbody><tr><th width="1%"> </th><th width="100%">Класс, объект которого десериализуется из JSON-формата</th></tr>
+<tr>
+<td class="monospace_text">
+</td>
+<td class="monospace_text"><span class="green_text">@JsonAutoDetect<br/>
+<b>class</b> Cat<br/>
+    {<br/>
+         <b>public</b> String name;<br/>
+         <b>public</b> int age;<br/>
+         <b>public</b> int weight;<br/><br/>
+
+         Cat()<br/>
+         {<br/>
+         }<br/>
+    }</span>
+</td>
+</tr>
+</tbody></table>
+<p>Тут еще проще. Берем <span class="dred_text">ObjectMapper</span>  и передаем в него строку с JSON или StringReader, а также <span class="green_text">класс объекта, который надо десериализовать</span>. Вызываем метод <b>readValue</b>, и на выходе получаем готовый Java-объект со всеми данными.</p>
+<p class="amigo">- Ну, точно, как десериализация в Java.</p>
+<p>- Почти. К объектам, которые сериализуются/десериализуются в JSON есть несколько требований:</p>
+<p><b>1)</b> поля должны быть видимые: или public или иметь getter’ы и setter’ы</p>
+<p><b>2)</b> должен быть конструктор по умолчанию (без параметров)</p>
+<p class="amigo">- Ясно. Ожидаемо, в общем. Хотя Java отлично сериализовала и private поля.</p>
+<p>- Так то - Java. У нее есть доступ к скрытым данным. От себя не утаишь.</p>
+<p>Тут есть еще третий аспект. Надеюсь, ты обратил внимание на аннотацию <span class="green_text">@JsonAutoDetect</span> в классе Cat?</p>
+<p class="amigo">- Ага. Как раз хотел спросить – что это такое.</p>
+<p>- Это аннотации – служебная информация для фреймворка Jackson. Можно очень гибко управлять результатом сериализации в JSON формат,  расставляя правильные аннотации.</p>
+<p class="amigo">- Круто! А что за аннотации есть?</p>
+<p>- Вот тебе несколько:</p>
+<table class="table_example">
+<tbody><tr><th width="30%">Аннотация</th><th width="70%">Описание</th></tr>
+<tr>
+<td class="wide-text">@JsonAutoDetect
+    </td>
+<td class="wide-text">Ставится перед классом.<br/>
+    Помечает класс как готовый к сериализациив JSON.
+    </td>
+</tr>
+<tr>
+<td class="wide-text">@JsonIgnore
+    </td>
+<td class="wide-text">Ставится перед свойством.<br/> 
+    Свойство игнорируется при сериализации.
+    </td>
+</tr>
+<tr>
+<td class="wide-text">@JsonProperty
+    </td>
+<td class="wide-text">Ставится перед свойством или getter’ом или steer’ом. Позволяет задать другое имя поля при сериализации.
+    </td>
+</tr>
+<tr>
+<td class="wide-text">@JsonWriteNullProperties
+    </td>
+<td class="wide-text">Ставится перед классом. <br/>
+    Поля объекта, которые равны null не будет игнорироваться.
+    </td>
+</tr>
+<tr>
+<td class="wide-text">@JsonPropertyOrder
+    </td>
+<td class="wide-text">Ставится перед классом.<br/> 
+    Позволяет задать порядок полей для сериализации.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Как интересно. А есть еще?</p>
+<p>- Есть много. Но не сейчас. Сейчас давай немного переделаем наш первый пример:</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="100%">Конвертация объекта в JSON</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17
+    </td>
+<td class="monospace_text"><br/><b>public static void</b> main(String[] args) throws IOException<br/>
+{<br/>
+ <span class="green_text">Cat cat</span> = new <span class="green_text">Cat</span>();<br/>
+ <span class="green_text">cat</span>.name = "Murka";<br/>
+ <span class="green_text">cat</span>.age = 5;<br/>
+ <span class="green_text">cat</span>.weight = 4;<br/><br/>
+
+ StringWriter <span class="dblue_text">writer</span> = new StringWriter();<br/><br/>
+
+ <span class="dred_text">ObjectMapper</span> <span class="red_text">mapper</span> = new <span class="dred_text">ObjectMapper</span>();<br/><br/>
+
+ <span class="red_text">mapper</span>.<b>writeValue</b>(<span class="dblue_text">writer</span>, <span class="green_text">cat</span>);<br/><br/>
+    
+ String <span class="violet_text">result</span> = <span class="dblue_text">writer</span>.<b>toString</b>();<br/>
+ <b>System.out.println</b>(<span class="violet_text">result</span>);<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="1%"> </th><th width="100%">Класс, объект которого конвертирует в JSON</th></tr>
+<tr>
+<td class="monospace_text">
+</td>
+<td class="monospace_text"><span class="green_text">@JsonAutoDetect<br/>
+<b>class</b> Cat<br/>
+    {<br/>
+ @JsonProperty(name="alias")<br/>
+         <b>public</b> String name;<br/><br/>
+
+         <b>public</b> int age;<br/><br/>
+
+ @JsonIgnore<br/>
+         <b>public</b> int weight;<br/><br/>
+
+         Cat()<br/>
+         {<br/>
+         }<br/>
+    }</span>
+</td>
+</tr>
+</tbody><tbody><tr><th width="1%"> </th><th width="100%">Результат сериализации и вывода на экран:</th></tr>
+<tr>
+<td class="monospace_text">
+</td>
+<td class="monospace_text"><b>{ "alias"="Murka", "age"=5}</b>
+</td>
+</tr>
+</tbody></table>
+<p>Код остался тот же, но я поменял аннотации: указал другое имя полю name - имя alias. А так же отметил поле weight как Ignore, в результате JSON объекта поменялся.</p>
+<p class="amigo">- Хорошо, что можно так всего настраивать – думаю, мне это обязательно пригодится.</p>
+<p class="amigo">А десериализация поймет, как с этим работать? При десериализации из JSON в Java-объект, значение поля alias будет занесено в name объекта Cat?</p>
+<p>- Да, десериализация будет работать как надо. Она умная.</p>
+<p class="amigo">- Что не может не радовать.</p>
+<p class="amigo">Спасибо за такую интересную лекцию, Элли.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Json serialize frameworks</h2>
+</div>
+<p>- Привет, дружище!</p>
+<p class="amigo">- Здорова, Диего.</p>
+<p>- Я тут смотрю, тебя познакомили с азами сериализации в JSON?</p>
+<p class="amigo">- Почему с азами?  Я уже много знаю!</p>
+<p>- Святая простота. Да ты и половины не знаешь. Процентов 10 от силы.</p>
+<p class="amigo">- Ух ты. А что там еще осталось?</p>
+<p>- Десериализация иерархии объектов (полиморфизм при десериализации), десериализация коллекций, еще много всего.  Jackson – большой и мощный фреймворк, а ты с ним познакомился чуть-чуть, прямо говоря.</p>
+<p class="amigo">- Ладно. Тогда расскажи мне про что-нибудь из этого, а я – послушаю.</p>
+<p class="amigo">Приятно становиться умнее с каждой лекцией!</p>
+<p>- Как не помочь другу-роботу? Кто если не я?</p>
+<p>Готов?  Тогда слушай.</p>
+<p>Как ты уже убедился, аннотации используются не только при сериализации, но и при десериализации. На практике для сериализации надо гораздо меньше информации, чем для десериализации. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="55%">Java class</th><th width="45%">JSON</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+    {<br/>
+      <b>public</b> String <span class="green_text">name</span> = "murka";<br/>
+      <b>public</b>  Cat[] <span class="dred_text">cats</span> = <span class="red_text">new Cat[0]</span>;<br/>
+    }
+    </td>
+<td class="monospace_text">{<br/>
+     "<span class="green_text">name</span>": "murka",<br/>
+     "<span class="dred_text">cats</span>"<span class="red_text">: []</span><br/>
+    }
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+    {<br/>
+      <b>public</b> String <span class="green_text">name</span> = "murka";<br/>
+      <b>public</b>  List&amp;ltCat&amp;gt <span class="dred_text">cats</span> = <span class="red_text">new ArrayList</span>&amp;ltCat&amp;gt();<br/>
+    }
+    </td>
+<td class="monospace_text">{<br/>
+     "<span class="green_text">name</span>": "murka",<br/>
+     "<span class="dred_text">cats</span>"<span class="red_text">: []</span><br/>
+    }
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Cat<br/>
+    {<br/>
+     <b>public</b> String <span class="green_text">name</span> = "murka";<br/>
+     <b>public</b>  List&amp;ltCat&amp;gt <span class="dred_text">cats</span> = <span class="red_text">new LinkedList</span>&amp;ltCat&amp;gt();<br/>
+    }
+    </td>
+<td class="monospace_text">{<br/>
+     "<span class="green_text">name</span>": "murka",<br/>
+     "<span class="dred_text">cats</span>"<span class="red_text">: []</span><br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p>Объекты типов Array(массив), ArrayList, LinkedList,… заменяются на массив в JSON-формате.</p>
+<p>А вот при десериализации неясно, какой объект создать ArrayList или LinkedList?</p>
+<p class="amigo">- Согласен, если у класса есть поле, и тип поля – это интерфейс (как в случае с public  <span class="dred_text">List&amp;ltCat&amp;gt cats</span>), то совсем не ясно, какой именно объект ему присваивать.</p>
+<p>- Можно добавить этому полю дополнительные аннотации или указать нужные классы прямо во время десериализации объекта. Смотри пример:</p>
+<table class="table_example">
+<tbody><tr><th width="1%">&amp;nbsp</th><th width="100%">Конвертация объекта из JSON</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7
+    </td>
+<td class="monospace_text"><font size="4"><b>public static void</b> main(String[] args) throws IOException<br/>
+    {<br/>
+     String jsonString = <span class="violet_text">"{ \"name\"=\"Murka\", \"age\"=5, \"weight\"=4}";</span> <br/> 
+     <b>StringReader</b> <span class="violet_text">reader</span> = new <b>StringReader</b>(jsonString);<br/>
+     ObjectMapper <span class="blue_text">mapper</span> = new ObjectMapper();<br/>
+     <span class="green_text">Cat cat</span> = <span class="blue_text">mapper</span>.<b>readValue</b>(<span class="violet_text">reader</span>, <span class="orange_text">TypeFactory.collectionType</span><span class="dred_text">(</span><span class="red_text">ArrayList.class</span>, <span class="green_text">Cat.class</span><span class="dred_text">)</span>);<br/>
+    }
+    </font></td>
+</tr>
+</tbody><tbody><tr><th width="1%">&amp;nbsp</th><th width="100%">Класс, объект которого десериализуется из JSON-формата</th></tr>
+<tr>
+<td class="monospace_text">
+</td>
+<td class="monospace_text"><span class="green_text">@JsonAutoDetect<br/>
+<b>class</b> Cat<br/>
+    {<br/>
+ <b>public</b> String name;<br/>
+         <b>public</b>  List&amp;ltCat&amp;gt cats = new ArrayList&amp;ltCat&amp;gt();<br/><br/>
+
+         Cat()<br/>
+         {<br/>
+         }<br/>
+    }</span>
+</td>
+</tr>
+</tbody></table>
+<p>Т.е. мы в метод <span class="blue_text">mapper</span>.<b>readValue</b> вторым параметром передаем список классов, которые будут использоваться при десериализации. </p>
+<p class="amigo">- А мне нравится. Удобно. Можно где надо десериализовать «JSON массив» как ArrayList, а где надо, как LinkedList.</p>
+<p class="amigo">Ты еще говорил, что аннотациями можно. Это как?</p>
+<p>- Да ничего сложного. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="90%">Конвертация объекта из JSON</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>
+</td>
+<td class="monospace_text"><br/><b>public static void</b> main(String[] args) throws IOException<br/>
+{<br/>
+ String jsonString = <span class="violet_text">"{ \"name\"=\"Murka\", \"age\"=5, \"weight\"=4}"</span>; <br/> 
+ <b>StringReader</b> <span class="dblue_text">reader</span> = new <b>StringReader</b>(jsonString);<br/><br/>
+
+ <span class="dred_text">ObjectMapper</span> <span class="red_text">mapper</span> = new <span class="dred_text">ObjectMapper</span>();<br/><br/>
+
+ <span class="green_text">Cat cat</span> = <span class="red_text">mapper</span>.<b>readValue</b>(<span class="dblue_text">reader</span>, <span class="green_text">Cat.class</span>);<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="1%"> </th><th width="90%">Класс, объект которого десериализуется из JSON-формата</th></tr>
+<tr>
+<td class="wide-text">11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>19<br/>20<br/>21<br/>22
+    </td>
+<td class="monospace_text"><br/><span class="green_text">@JsonAutoDetect<br/>
+<b>class</b> Cat<br/>
+    {<br/>
+         <b>public</b> String name;<br/>
+ <span class="red_text">@JsonDeserialize(as=ArrayList.class)</span><br/>
+ <b>public</b> List&amp;ltCat&amp;gt cats = new ArrayList&amp;ltCat&amp;gt();<br/><br/>
+
+         Cat()<br/>
+         {<br/>
+         }<br/>
+    }</span>
+</td>
+</tr>
+</tbody></table>
+<p>В строке 16 мы просто добавили аннотацию <span class="red_text">@JsonDeserialize(as=ArrayList.class)</span>, где указали, какую реализацию интерфейса List использовать.</p>
+<p class="amigo">- Ага. Ясно. Действительно – довольно просто.</p>
+<p>- Но и это еще не все. Теперь представь, что тип данных в List тоже интерфейс! Что ты будешь делать?</p>
+<p class="amigo">- У нас есть аннотация и на этот случай?</p>
+<p>- Да, причем, та же самая. В ней можно указать еще и тип параметр. Выглядеть это будет вот так:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Тип коллекции</th><th width="50%">Как задать тип данных</th></tr>
+<tr>
+<td class="wide-text"><b>List</b>
+</td>
+<td class="monospace_text"><span class="dred_text">@JsonDeserialize(<span class="red_text"><b>contentAs</b></span>=ValueTypeImpl.class)</span>
+</td>
+</tr>
+<tr>
+<td class="wide-text"><b>Map</b>
+</td>
+<td class="monospace_text"><span class="dred_text">@JsonDeserialize(<span class="red_text"><b>keyAs</b></span>=KeyTypeImpl.class)</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Круто. Действительно, много нужных аннотация для разных случаев, о которых заранее и не догадаешься.</p>
+<p>- И это еще не все. Сейчас будет самое вкусное. В реальных проектах, классы данных очень часто унаследованы от одного базового класса или интерфейса, который используется практически везде. И вот представь, тебе надо десериализовать структуру данных, которая содержит такие классы. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="100%">Конвертация объекта в JSON</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>19<br/>20<br/>21
+    </td>
+<td class="monospace_text"><br/><b>public static void</b> main(String[] args) throws IOException<br/>
+{<br/>
+ <span class="green_text">Cat cat</span> = new <span class="green_text">Cat</span>();<br/>
+ <span class="green_text">cat</span>.name = "Murka";<br/>
+ <span class="green_text">cat</span>.age = 5;<br/><br/>
+
+ <span class="green_text">Dog dog</span> = new <span class="green_text">Dog</span>();<br/>
+ <span class="green_text">dog</span>.name = "Killer";<br/>
+ <span class="green_text">dog</span>.age = 8;<br/>
+ <span class="green_text">dog</span>.owner = "Bill Jeferson";<br/><br/>
+
+         ArrayList&amp;lt<span class="green_text">Pet</span>&amp;gt <span class="green_text">pets</span> = new ArrayList&amp;lt<span class="green_text">Pet</span>&amp;gt();<br/>
+ <span class="green_text">pets</span>.add(cat);<br/>
+ <span class="green_text">pets</span>.add(dog);<br/><br/>
+
+ StringWriter <span class="dblue_text">writer</span> = new StringWriter();<br/>
+ <span class="dred_text">ObjectMapper</span> <span class="red_text">mapper</span> = new <span class="dred_text">ObjectMapper</span>();<br/>
+ <span class="red_text">mapper</span>.<b>writeValue</b>(<span class="dblue_text">writer</span>, <span class="green_text">pets</span>);<br/>
+ <b>System.out.println</b>(<span class="dblue_text">writer</span>.<b>toString</b>());<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="1%"> </th><th width="100%">Класс, объект которого конвертирует в JSON</th></tr>
+<tr>
+<td class="wide-text">
+</td>
+<td class="monospace_text"><span class="green_text">@JsonAutoDetect</span><br/>
+<b>class</b> Pet<br/>
+{<br/>
+    <b>public</b> String name;<br/>
+}<br/><br/>
+<span class="green_text">@JsonAutoDetect</span><br/>
+<b>class</b> Cat extends Pet<br/>
+{<br/>
+    <b>public</b> int age;<br/>
+}<br/><br/>
+<span class="green_text">@JsonAutoDetect</span><br/>
+<b>class</b> Dog extends Pet<br/>
+{<br/>
+    <b>public</b> int age;<br/>
+    <b>public</b> String owner;<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="1%"> </th><th width="100%">Результат сериализации и вывода на экран:</th></tr>
+<tr>
+<td class="wide-text">
+</td>
+<td class="monospace_text">[<br/>
+ { "name" : "Murka",  "age" : 5}, <br/>
+     { "name": "Killer",    "age" : 8 ,   "owner" : "Bill Jeferson"}<br/>
+]
+    </td>
+</tr>
+</tbody></table>
+<p>Обрати внимание на результат сериализации.</p>
+<p>Мы не сможем провести десериализацию этих данных обратно в Java-объекты, т.к. они фактически неразличимы.</p>
+<p class="amigo">- Немного различимы - у Dog есть поле owner.</p>
+<p>- Да, но это поле может быть равно null или вообще пропускаться при сериализации.</p>
+<p class="amigo">- А разве мы не можем задать тип данных с помощью известных нам аннотаций?</p>
+<p>- Нет. В одной коллекции после десериализации должны хранится различные объекты типа Cat, Dog и еще пары десятков классов, которые можно унаследовать от Pet.</p>
+<p class="amigo">- И что же можно тут сделать?</p>
+<p>- Тут применяют две вещи.</p>
+<p>Во-первых, <span class="violet_text">выделяют некоторое поле, которое используется для того, чтобы отличать один тип от другого.</span> Если его нет – его заводят.</p>
+<p>Во-вторых, есть специальные аннотации, которые позволяют управлять процессом «полиморфной десериализации». Вот что можно сделать:</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="100%">Конвертация объекта в JSON</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>19<br/>20
+    </td>
+<td class="monospace_text"><b>public static void</b> main(String[] args) throws IOException<br/>
+{<br/>
+ <span class="green_text">Cat cat</span> = new <span class="green_text">Cat</span>();<br/>
+ <span class="green_text">cat</span>.name = "Murka";<br/>
+ <span class="green_text">cat</span>.age = 5;<br/><br/>
+
+ <span class="green_text">Dog dog</span> = new <span class="green_text">Dog</span>();<br/>
+ <span class="green_text">dog</span>.name = "Killer";<br/>
+ <span class="green_text">dog</span>.age = 8;<br/>
+ <span class="green_text">dog</span>.owner = "Bill Jeferson";<br/><br/>
+
+ <span class="green_text">House house</span> = new <span class="green_text">House</span>();<br/>
+ <span class="green_text">house</span>.pets.add(dog);<br/>
+ <span class="green_text">house</span>.pets.add(cat);<br/><br/>
+
+ StringWriter <span class="dblue_text">writer</span> = new StringWriter();<br/>
+ <span class="dred_text">ObjectMapper</span> <span class="red_text">mapper</span> = new <span class="dred_text">ObjectMapper</span>();<br/>
+ <span class="red_text">mapper</span>.<b>writeValue</b>(<span class="dblue_text">writer</span>, <span class="green_text">house</span>);<br/>
+ <b>System.out.println</b>(<span class="dblue_text">writer</span>.<b>toString</b>());<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="1%"> </th><th width="100%">Класс, объект которого конвертирует в JSON</th></tr>
+<tr>
+<td class="wide-text">
+</td>
+<td class="monospace_text"><span class="green_text">@<span class="red_text">JsonTypeInfo</span>(use = JsonTypeInfo.Id.NAME, property="<span class="dgreen_text">type</span>")<br/>
+@<span class="red_text">JsonSubTypes</span>({<br/>
+        @<span class="red_text">JsonSubTypes</span>.Type(value=<span class="blue_text">Cat.class</span>, name="<span class="blue_text">cat</span>"),<br/>
+        @<span class="red_text">JsonSubTypes</span>.Type(value=<span class="blue_text">Dog.class</span>, name="<span class="blue_text">dog</span>")<br/>
+})</span><br/>
+<b>class</b> Pet<br/>
+{<br/>
+    <b>public</b> String name;<br/>
+}<br/><br/>
+<b>class</b> Cat extends Pet<br/>
+{<br/>
+    <b>public</b> int age;<br/>
+}<br/><br/>
+<b>class</b> Dog extends Pet<br/>
+{<br/>
+    <b>public</b> int age;<br/>
+    <b>public</b> String owner;<br/>
+}<br/><br/>
+<b>class</b> House<br/>
+{<br/>
+     <b>public</b> List&amp;ltPet&amp;gt pets = new ArrayList&amp;ltPet&amp;gt();<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="1%"> </th><th width="100%">Результат сериализации и вывода на экран:</th></tr>
+<tr>
+<td class="wide-text">
+</td>
+<td class="monospace_text">{<br/>
+ "pets" : [ <br/>
+ {"type" : "dog","name" : "Killer", "age" : 8, "owner" : "Bill Jeferson"}, <br/>
+ {"type" : "cat","name" : "Murka", "age" : 5} <br/>
+]<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>С помощью аннотаций мы указываем, что JSON-представление будет содержать специальное поле <span class="green_text">type</span>, которое будет хранить значение <span class="dblue_text">cat</span>, для класса <span class="dblue_text">Cat</span> и значение <span class="dblue_text">dog</span>, для класса <span class="dblue_text">Dog</span>. Этой информации достаточно, чтобы выполнить корректную десериализацию объекта: при десериализации по значению поля <span class="green_text">type</span> будет определяться тип объекта, который надо создать.</p>
+<p>Иногда в качестве значения поля type используют имя класса (например, "com.example.entity.Cat.class"), но это не очень хорошо. Зачем стороннему приложению, которому мы пересылаем JSON, знать, как называются наши  классы? К тому же, классы иногда переименовывают. Использование некоего уникального имени для обозначения конкретного класса – предпочтительнее.</p>
+<p class="amigo">- Круто! А я и не знал, что десериализация такая сложная вещь. И что столько всего можно настраивать.</p>
+<p>- Ага. Это действительно новые для тебя вещи, но именно благодаря таким практическим знаниям, ты скоро станешь крутым программистом.</p>
+<p class="amigo">- Амиго – крутой программист. Круто!</p>
+<p>- Ладно. Иди, отдыхай. </p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>5. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Первая сериализация в JSON</b><br/><br/>
+                НЕОБХОДИМО: подключенные библиотеки <span class="taskcode">Jackson Core</span>, <span class="taskcode">Bind</span> и <span class="taskcode">Annotation</span> версии 2.6.1<br/><br/>
+
+		1) В программе не выполнено основное требование к сериализации в JSON.<br/>
+		Найдите ошибку и исправьте.<br/>
+		2) Расставьте правильно <span class="taskcode">Json</span> аннотации у классов.<br/>
+		Все данные должны сериализоваться.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Вторая сериализация в JSON</b><br/><br/>
+                НЕОБХОДИМО: подключенные библиотеки <span class="taskcode">Jackson Core</span>, <span class="taskcode">Bind</span> и <span class="taskcode">Annotation</span> версии 2.6.1<br/><br/>
+
+		Расставьте <span class="taskcode">Json</span> аннотации так, чтобы результат работы метода <span class="taskcode">main</span> был следующим<br/>
+		{"wildAnimal":"Murka","over":3}
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Десериализация JSON объекта</b><br/><br/>
+                НЕОБХОДИМО: подключенные библиотеки <span class="taskcode">Jackson Core</span>, <span class="taskcode">Bind</span> и <span class="taskcode">Annotation</span> версии 2.6.1<br/><br/>
+
+		В метод <span class="taskcode">convertFromJsonToNormal</span> первым параметром приходит имя файла, который содержит один ДЖЕЙСОН объект.<br/>
+		Вторым параметром приходит имя класса, объект которого находится в файле.<br/>
+		Метод <span class="taskcode">convertFromJsonToNormal</span> должен вычитать объект из файла, преобразовать его из JSON и вернуть его.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>4. Конвертация из одного класса в другой используя JSON</b><br/><br/>
+                НЕОБХОДИМО: подключенные библиотеки <span class="taskcode">Jackson Core</span>, <span class="taskcode">Bind</span> и <span class="taskcode">Annotation</span> версии 2.6.1<br/><br/>
+
+		Два класса имеют одинаковые поля, но не имеют общий суперкласс. Пример, классы <span class="taskcode">First</span> и <span class="taskcode">Second</span>.<br/>
+		Реализовать логику метода <span class="taskcode">convertOneToAnother</span>, который должен возвращать объект класса <span class="taskcode">resultClassObject</span>, значения полей которого равны значениям полей в объекте <span class="taskcode">one</span>.<br/>
+		Известно, что у классов есть <span class="taskcode">Json</span> аннотация, у которой значение проперти равно имени класса в нижнем регистре.<br/>
+		На примере класса <span class="taskcode">First</span>, это <span class="taskcode">className="first"</span><br/>
+		Классы <span class="taskcode">First</span> и <span class="taskcode">Second</span> не участвуют в тестировании, они предоставлены в качестве тестовых данных.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>5. Определение имени класса</b><br/><br/>
+                НЕОБХОДИМО: подключенные библиотеки <span class="taskcode">Jackson Core</span>, <span class="taskcode">Bind</span> и <span class="taskcode">Annotation</span> версии 2.6.1<br/><br/>
+
+		Расставьте <span class="taskcode">Json</span> аннотации так, чтобы результат выполнения метода <span class="taskcode">main</span> был следующий:<br/>
+		{<br/>
+    		  "className" : ".Parking",<br/>
+   		   "name" : "Super Parking",<br/>
+    		  "city" : "Kyiv",<br/>
+    		  "autos" : [ {<br/>
+        		      "className" : "com.javarush.test.level33.lesson05.home05.RaceBike",<br/>
+        		      "name" : "Simba",<br/>
+        		      "owner" : "Peter",<br/>
+        		      "age" : 2<br/>
+    		  }, {<br/>
+        		      "className" : "com.javarush.test.level33.lesson05.home05.Motorbike",<br/>
+        		      "name" : "Manny",<br/>
+        		      "owner" : null<br/>
+    		  }, {<br/>
+        		      "className" : "com.javarush.test.level33.lesson05.home05.Car"<br/>
+		  } ]<br/>
+		}<br/><br/>
+
+		Подсказка: это всего два класса
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. XML, Сериализация в XML</h2>
+</div>
+<p>- Как делишки?</p>
+<p class="amigo">- Отлично. Не жалуюсь. Сегодня Билаабо рассказал про JavaScript. Не все, конечно, но тоже немало. Я конечно еще на JS ничего не писал, но думаю, что это не сложно. </p>
+<p class="amigo">А Элли рассказала про сериализацию в JSON. И ты рассказывал о Jackson framework и как настраивать «полиморфную десериализацию» с помощью аннотаций.</p>
+<p>- Нифига себе, ты умный теперь, Амиго! Серьезный мужик!</p>
+<p class="amigo">- А то!</p>
+<p>- Ладно. Давай к работе. Сегодня <u><b>новая и интересная тема – XML.</b></u></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/33/image-ru-33-02.png"/>
+<p>XML – это стандарт представления данных, которые легко могут быть прочитаны человеком, и еще легче – программой. Пример xml-файла:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">XML</th></tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">&amp;ltdata&amp;gt</span><br/>
+<span class="dred_text">&amp;ltowner first="Nikolay" last="Ivanovich"&amp;gt</span><br/>
+<span class="red_text">&amp;ltaddress&amp;gtMoscow&amp;lt/address&amp;gt</span><br/>
+<span class="dred_text">&amp;lt/owner&amp;gt</span><br/>
+<span class="green_text">&amp;ltcat name="Murka" age="15"/&amp;gt</span><br/>
+<span class="dblue_text">&amp;lt/data&amp;gt</span>
+</td>
+</tr>
+</tbody></table>
+<p>Основа XML – это теги. Тег – это слово в треугольных скобках (знаки меньше и больше).</p>
+<p>Теги бывают открывающие и закрывающие. Одному открывающему всего соответствует один закрывающий тег. Открывающие теги могут иметь атрибуты.</p>
+<p>В тег можно складывать другие теги, получая, таким образом, дерево элементов. Тег верхнего уровня называют корнем (root): у него есть дочерние теги, у них свои дочерние теги.</p>
+<p>Примеры:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Тег</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text"><span class="red_text">&amp;lt</span><span class="green_text">data</span><span class="red_text">&amp;gt</span>
+</td>
+<td class="wide-text">Открывающий тег «data»
+    </td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="red_text">&amp;lt/</span><span class="green_text">data</span><span class="red_text">&amp;gt</span>
+</td>
+<td class="wide-text">Закрывающий тег «data»
+    </td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="blue_text">&amp;ltcat <span class="dred_text">name</span><span class="blue_text">=</span><span class="red_text">"Murka"<span class="dred_text">age</span><span class="blue_text">=</span><span class="red_text">"15"</span><span class="blue_text">&amp;gt</span>
+</span></span></td>
+<td class="wide-text">Тег с атрибутами. Значения атрибутов берутся в кавычки
+    </td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="green_text">&amp;ltdata&amp;gt</span><br/>
+<span class="dblue_text">&amp;ltowner&amp;gt</span><br/>
+<span class="red_text">&amp;ltcat name="Murka"/&amp;gt</span><br/>
+<span class="dblue_text">&amp;lt/owner&amp;gt</span><br/>
+<span class="green_text">&amp;lt/data&amp;gt</span>
+</td>
+<td class="wide-text">Вложенные теги. 
+    </td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="red_text">&amp;lt</span><span class="green_text">cat name="Murka"  age="15"</span><span class="red_text">/&amp;gt</span>
+</td>
+<td class="wide-text">Автозакрывающийся тег.<br/> 
+    Такому тегу не нужен закрывающий. <br/>
+    Не может содержать дочерние теги.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="green_text">&amp;ltinfo&amp;gt</span><br/>
+<span class="dred_text">Тут может быть любая информация</span><br/>
+<span class="green_text">&amp;lt/info&amp;gt</span>
+</td>
+<td class="wide-text">Тег может содержать текстовые данные
+    </td>
+</tr>
+<tr>
+<td class="monospace_text"><span class="green_text">&amp;ltinfo&amp;gt</span><br/>
+<span class="dblue_text">Тут может</span> <br/>
+<span class="red_text">&amp;ltdata xxx="yyy"&amp;gt</span><br/>
+<span class="red_text">&amp;lt/data&amp;gt</span><br/>
+<span class="dblue_text">быть любая</span><br/>
+<span class="red_text">&amp;ltdata 2xxx="yyy"/&amp;gt</span><br/>
+<span class="dblue_text">информация</span><br/>
+<span class="green_text">&amp;lt/info&amp;gt</span>
+</td>
+<td class="wide-text">Тег может содержать текстовые данные и другие теги вперемешку.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Выглядит несложно. А какие теги бывают?</p>
+<p>- Любые. Никаких зарезервированных тегов нет. XML – это язык, для описания любых данных. Люди сами придумывают теги для своих нужд и договариваются, как их использовать.</p>
+<p><span class="violet_text"><b>Фактически, XML – это способ записать данные  в виде дерева элементов, понятный компьютеру.</b></span></p>
+<p class="amigo">- Вроде ясно. Кстати, у меня вопрос.</p>
+<p class="amigo">Вот JSON используется для передачи данных с браузера на сервер, а где используется XML?</p>
+<p>- Да там же, где и JSON: для хранения и передачи данных.</p>
+<p>Ладно, продолжим.</p>
+<p>Представь, что есть один общий XML-файл, который хранит данные программы, которую пишут двадцать человек. Тогда каждый из них придумывает теги для себя и очень скоро они начинают мешать друг другу.</p>
+<p>Чтобы гарантировать уникальность тегов, им были придуманы префиксы. Выглядит это так:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Теги</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text">&amp;lt<span class="blue_text">animal</span>:cat&amp;gt
+    </td>
+<td class="wide-text">Тег <b>cat</b> с префиксом <span class="blue_text"><b>animal</b></span>
+</td>
+</tr>
+<tr>
+<td class="monospace_text">&amp;lt<span class="blue_text">animal</span>:cat&amp;gt<br/>
+    &amp;lt/<span class="blue_text">animal</span>:cat&amp;gt<br/>
+    &amp;lt<span class="green_text">zoo</span>:cat&amp;gt<br/>
+    &amp;lt/<span class="green_text">zoo</span>:cat&amp;gt
+    </td>
+<td class="wide-text">Два тега <b>cat</b> с разными префиксами.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">&amp;lt<span class="blue_text">animal</span>:<span class="orange_text">cat</span> <span class="green_text">zoo</span>:<span class="orange_text">name</span>="MX"&amp;gt
+    </td>
+<td class="wide-text">Тег <span class="orange_text">cat</span> с префиксом <span class="blue_text">animal</span>, атрибут <span class="orange_text">name</span> с префиксом <span class="green_text">zoo</span>.
+    </td>
+</tr>
+</tbody></table>
+<p>Префиксы еще называют <span class="dred_text">namespace – пространство имен</span>. Тогда последнее предложение в таблице будет звучать так «Тег cat из пространства имен animal с атрибутом name из пространства имен zoo».</p>
+<p>Кстати, помнишь в Java у класса есть короткое имя, а есть длинное уникальное имя, в которое входит название пакета, его еще указывают при импорте?</p>
+<p class="amigo">- Ага.</p>
+<p>- Так вот, у <span class="green_text">префиксов тоже есть уникальное длинное имя</span> и его тоже указывают при импорте:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">&amp;ltdata</span><span class="dred_text"> xmlns:<span class="red_text"><b>soap</b></span>="http://cxf.apache.org/bindings/soap"</span><span class="dblue_text">&amp;gt</span><br/>
+<span class="dred_text">&amp;lt<span class="red_text"><b>soap</b></span>:item&amp;gt</span><br/>
+<span class="dred_text">&amp;lt<span class="red_text"><b>soap</b></span>:info/&amp;gt</span><br/>
+<span class="dred_text">&amp;lt/<span class="red_text"><b>soap</b></span>:item&amp;gt</span><br/>
+<span class="dblue_text">&amp;lt/data&amp;gt</span>
+</td>
+</tr>
+</tbody></table>
+<p>«<span class="violet_text">xml</span><span class="orange_text">ns</span>:soap» значит  «<span class="violet_text">XML</span>-<span class="orange_text">n</span>ame<span class="orange_text">s</span>pace SOAP»</p>
+<p>Более того, если <span class="dblue_text">есть теги без префикса, можно задать и его уникальное имя</span>:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">&amp;ltdata xmlns="http://www.springframework.org/schema/beans"</span><br/>
+<span class="dred_text">xmlns:<span class="red_text"><b>soap</b></span>="http://cxf.apache.org/bindings/soap"</span><br/>
+<span class="orange_text">xmlns:<b>task</b>="http://www.springframework.org/schema/task"</span><span class="dblue_text">&amp;gt</span><br/>
+<span class="dred_text">&amp;lt<span class="red_text"><b>soap</b></span>:item&amp;gt</span><br/>
+<span class="dred_text">&amp;lt<span class="red_text"><b>soap</b></span>:info/&amp;gt</span><br/>
+<span class="orange_text">&amp;lt<b>task</b>:info/&amp;gt</span><br/>
+<span class="dred_text">&amp;lt/<span class="red_text"><b>soap</b></span>:item&amp;gt</span><br/>
+<span class="dblue_text">&amp;lt/data&amp;gt</span>
+</td>
+</tr>
+</tbody></table>
+<p>«xmlns=…»  задает namespace для пустого префикса – т.е. для тегов без префикса, таких как data.</p>
+<p><span class="orange_text">В документе может быть сколько угодно namespace, но у каждого должно быть свое уникальное имя.</span></p>
+<p class="amigo">- Ясно. А почему такие странные «уникальные имена» у этих namespace?</p>
+<p>- Обычно там указывают URL, по которому находится документ, который описывает этот namespace и/или его XML-теги.</p>
+<p class="amigo">- Не так уж и мало на меня сегодня вылили информации. Что еще?</p>
+<p>- Еще немного осталось.</p>
+<p>Во-первых, у XML есть заголовок – специальная строка, которая описывает версию этого XML и кодировку файла. Выглядит она обычно так:</p>
+<p>Выглядит она обычно так:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><span class="dred_text">&amp;lt?xml <span class="red_text">version</span>="1.0" <span class="red_text">encoding</span>="UTF-8"?&amp;gt</span><br/>
+    &amp;ltdata xmlns:soap="http://cxf.apache.org/bindings/soap"&amp;gt<br/>
+    &amp;ltsoap:item&amp;gt<br/>
+    &amp;ltsoap:info/&amp;gt<br/>
+    &amp;lt/soap:item&amp;gt<br/>
+    &amp;lt/data&amp;gt
+    </td>
+</tr>
+</tbody></table>
+<p>Еще в XML можно вставлять комментарии. Для начала комментария используют «<span class="red_text">&amp;lt!--</span>», а для конца «<span class="red_text">--&amp;gt</span>». </p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text">&amp;lt?xml version="1.0" encoding="UTF-8"?&amp;gt<br/>
+    &amp;ltdata xmlns:soap="http://cxf.apache.org/bindings/soap"&amp;gt<br/>
+    &amp;ltsoap:item&amp;gt<br/>
+<span class="red_text">&amp;lt!--  &amp;ltsoap:info/&amp;gt --&amp;gt</span><br/>
+    &amp;lt/soap:item&amp;gt<br/>
+<span class="red_text">&amp;lt!--  это тоже комментарий --&amp;gt</span><br/>
+    &amp;lt/data&amp;gt
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Пока понятно.</p>
+<p>- Из-за того, что в XML используются символы «<u> &amp;lt  &amp;gt  “  &amp;</u>», их нельзя использовать в других местах. Для их описания используют так называемые «эскейп последовательности» - набор символов для представления других символов/символа. Вот список некоторых из них:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Escape-последовательность</th><th width="50%">Символ, который она заменяет</th></tr>
+<tr>
+<td class="wide-text"><b>&amp;amp;</b>
+</td>
+<td class="wide-text">&amp;
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>&amp;quot;</b>
+</td>
+<td class="wide-text">"
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>&amp;lt;</b>
+</td>
+<td class="wide-text">&amp;lt
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>&amp;gt;</b>
+</td>
+<td class="wide-text">&amp;gt
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>&amp;apos;</b>
+</td>
+<td class="wide-text">‘
+    </td>
+</tr>
+</tbody></table>
+<p>А вот пример кода, который хранится в XML:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Java-код</th><th width="50%">Он же, в XML</th></tr>
+<tr>
+<td class="monospace_text"><font size="4">if (a<span class="red_text">&amp;lt</span>b)<br/>
+    System.out.println(<span class="blue_text">"</span>a is minimum<span class="blue_text">"</span>);
+    </font></td>
+<td class="monospace_text"><font size="4">&amp;ltcode&amp;gt<br/>
+    if (a <span class="red_text">&amp;lt;</span> b)<br/>
+     System.out.println(<span class="blue_text">&amp;quot;</span>a is minimum<span class="blue_text">&amp;quot;</span>);<br/>
+
+    &amp;lt/code&amp;gt
+    </font></td>
+</tr>
+</tbody></table>
+<p class="amigo">- М-да. Выглядит не очень красиво.</p>
+<p>- А ты помнишь, в Java тоже экранируются некоторые символы  - например «\». И тоже для его написания в строке приходится писать его дважды. Так что это часто встречаемое явление.</p>
+<p class="amigo">- Ок.</p>
+<p>- У меня на сегодня все.</p>
+<p class="amigo">- Ура. Наконец-то я отдохну.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>7. JAXB</h2>
+</div>
+<p>- Не так быстро, молодой человек! У меня для тебя еще две лекции!</p>
+<p class="amigo">- Две? Ого. Ну, ладно. Чего не сделаешь ради собственной крутости. Я готов слушать.</p>
+<p>- XML, как и JSON, часто применяется при пересылке данных между разными программами и компьютерами. И так же есть несколько фреймворков, которые значительно упрощают жизнь Java-программистов при работе с XML. Сегодня я познакомлю тебя с одним из них. </p>
+<p><b>JAXB – это отличный многофункциональный фреймворк, для работы с XML.</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/33/image-ru-33-01.png"/>
+<p>JAXB – это часть JDK, поэтому скачивать его отдельно не требуется.</p>
+<p>Давай я сначала покажу тебе пример работы с ним, а после мы его разберем. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="100%">Конвертация объекта в XML</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>19<br/>20<br/>21<br/>22<br/>23
+    </td>
+<td class="monospace_text"><br/><b>public static void</b> main(String[] args) throws JAXBException<br/>
+{<br/>
+ <span class="grey_text">//создание объекта для сериализации в XML</span><br/>
+ <span class="green_text">Cat cat</span> = new <span class="green_text">Cat</span>();<br/>
+ <span class="green_text">cat</span>.name = "Murka";<br/>
+ <span class="green_text">cat</span>.age = 5;<br/>
+ <span class="green_text">cat</span>.weight = 4;<br/><br/>
+
+ <span class="grey_text">//писать результат сериализации будем в Writer(StringWriter)</span><br/>
+ StringWriter <span class="dblue_text">writer</span> = new StringWriter();<br/><br/>
+
+ <span class="grey_text">//создание объекта Marshaller, который выполняет сериализацию</span><br/>
+ JAXBContext <span class="dred_text">context</span> = <b>JAXBContext.newInstance</b>(<span class="green_text">Cat.class</span>);<br/>
+         Marshaller <span class="red_text">marshaller</span> = <span class="dred_text">context</span>.<b>createMarshaller</b>();<br/>
+ <span class="red_text">marshaller</span>.<b>setProperty</b>(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);<br/>
+ <span class="grey_text">// сама сериализация</span><br/>
+ <span class="red_text">marshaller</span>.<b>marshal</b>(<span class="green_text">cat</span>, <span class="dblue_text">writer</span>);<br/><br/>
+
+ <span class="grey_text">//преобразовываем в строку все записанное в StringWriter</span><br/>
+ String <span class="violet_text">result</span> = <span class="dblue_text">writer</span>.<b>toString</b>();<br/>
+ <b>System.out.println</b>(<span class="violet_text">result</span>);<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="1%"> </th><th width="100%">Класс, объект которого конвертирует в XML</th></tr>
+<tr>
+<td class="wide-text">
+</td>
+<td class="monospace_text"><span class="green_text">@XmlType(name = "cat")<br/>
+@XmlRootElement<br/>
+<b>class</b> Cat<br/>
+    {<br/>
+         <b>public</b> String name;<br/>
+         <b>public</b> int age;<br/>
+         <b>public</b> int weight;<br/><br/>
+
+         Cat()<br/>
+         {<br/>
+         }<br/>
+    }</span>
+</td>
+</tr>
+</tbody><tbody><tr><th width="1%"> </th><th width="100%">Результат сериализации и вывода на экран:</th></tr>
+<tr>
+<td class="wide-text">
+</td>
+<td class="monospace_text"><span class="grey_text">&amp;ltcat&amp;gt</span><br/>
+<span class="green_text">&amp;ltname&amp;gt<b>Murka</b>&amp;lt/name&amp;gt</span><br/>
+<span class="orange_text">&amp;ltage&amp;gt<b>5</b>&amp;lt/age&amp;gt</span><br/>
+<span class="dblue_text">&amp;ltweight&amp;gt<b>4</b>&amp;lt/weight&amp;gt</span><br/>
+<span class="grey_text">&amp;lt/cat&amp;gt</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Что-то мне этот код один в один напоминает сериализацию в JSON. Тоже аннотации, но там был ObjectMapper, тут Context &amp; Marshaller.</p>
+<p>- Ага. Действительно они очень похожи. Jackson писался по образцу JAXB. Но и JAXB то же с кого-то списали. Нельзя выдумать нечто гениальное на пустом месте.</p>
+<p class="amigo">- Похоже на то.</p>
+<p>- Ок, вот что там происходит:</p>
+<p>В строках 5-8  мы создаем объект класса <span class="green_text">Cat</span> и заполняем его данными.</p>
+<p>Строка 11 – создаем объект Writer для записи результата.</p>
+<p>Стока 14 – создаем «контекст». Это аналог ObjectMapper, но от него потом создаются еще два дочерних объекта <span class="dred_text">Marshaller</span> – для сериализации, и <span class="dred_text">Unmarshaller</span> для десериализации.  Небольшие отличия от Jackson, но – непринципиально.</p>
+<p>Строка 15 – создаем объект <span class="dred_text">Marshaller</span>. Маршалинг – это синоним слова сериализация.</p>
+<p>Строка 16 – устанавливает свойство FORMATTED_OUTPUT в TRUE. В результат будут добавлены переносы строки и пробелы, чтобы код был читабельным для человека, а не весь текст в одну строку.</p>
+<p>Строка 18 – сериализация объекта.</p>
+<p>Строки 21-22 – вывод результата сериализации на экран.</p>
+<p class="amigo">- А что это еще за аннотации <b>@XmlType(name = "cat")</b> и <b>@XmlRootElement</b>?</p>
+<p>- <b>@XmlRootElement</b> указывает на то, что этот объект может быть «корнем дерева» элементов в XML. Т.е. быть элементом самого верхнего уровня,  все остальные элементы лежат в нем.</p>
+<p><b>@XmlType(name = "cat")</b> указывает на то, что класс участвует в JAXB сериализации, в ней же задано имя, которое будет у XML-тега для этого класса.</p>
+<p>Ладно, давай теперь покажу пример десериализации из XML:</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="100%">Конвертация объекта из XML</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11
+    </td>
+<td class="monospace_text"><b>public static void</b> main(String[] args) throws JAXBException<br/>
+{<br/>
+       String <span class="violet_text">xmldata</span> = <br/>"<span class="grey_text">&amp;ltcat&amp;gt</span><span class="green_text">&amp;ltname&amp;gt<b>Murka</b>&amp;lt/name&amp;gt</span><span class="orange_text">&amp;ltage&amp;gt<b>5</b>&amp;lt/age&amp;gt</span><span class="dblue_text">&amp;ltweight&amp;gt<b>4</b>&amp;lt/weight&amp;gt</span><span class="grey_text">&amp;lt/cat&amp;gt</span>";<br/>
+ <b>StringReader</b> <span class="dblue_text">reader</span> = new <b>StringReader</b>(<span class="violet_text">xmldata</span>);<br/><br/>
+
+ JAXBContext <span class="dred_text">context</span> = <b>JAXBContext.newInstance</b>(<span class="green_text">Cat.class</span>);<br/>
+ Unmarshaller <span class="red_text">unmarshaller</span> = <span class="dred_text">context</span>.<b>createUnmarshaller</b>();<br/><br/>
+
+ <span class="green_text">Cat cat</span> = (<span class="green_text">Cat</span>) <span class="red_text">unmarshaller</span>.<b>unmarshal</b>(<span class="dblue_text">reader</span>);<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="1%"> </th><th width="100%">Класс, объект которого десериализуется из XML</th></tr>
+<tr>
+<td class="wide-text">
+</td>
+<td class="monospace_text"><span class="green_text">@XmlType(name = "cat")<br/>
+@XmlRootElement<br/>
+<b>class</b> Cat<br/>
+    {<br/>
+         <b>public</b> String name;<br/>
+         <b>public</b> int age;<br/>
+         <b>public</b> int weight;<br/><br/>
+
+         Cat()<br/>
+         {<br/>
+         }<br/>
+    }</span>
+</td>
+</tr>
+</tbody></table>
+<p>Все практически аналогично случаю с Jackson. Но на всякий случай объясню все, что тут происходит.</p>
+<p>Строка 4 – задаем <span class="violet_text">строку</span>, которая хранит xml для десериализации.</p>
+<p>Строка 5 – оборачиваем xml-строку в <b>StringReader</b>.</p>
+<p>Строка 7 – создаем <span class="dred_text">JAXB-контекст</span>, куда передаем список классов.</p>
+<p>Строка 8  - создаем <span class="dred_text">Unmarshaller</span> – объект, который будет выполнять десериализацию.</p>
+<p>Строка 10 – десериализуем xml из объекта reader и получаем объект cat типа Cat.</p>
+<p class="amigo">- Теперь это все выглядит чуть ли не очевидно. А еще пару часов назад, я ломал голову - как же это работает.</p>
+<p>- Так всегда бывает, когда становишься умнее – сложные вещи становятся простыми.</p>
+<p class="amigo">- Я становлюсь умнее? Это не может не радовать.</p>
+<p>- Отлично. Тогда вот тебе список аннотаций, которые ты можешь использовать, чтобы управлять результатом результатом JAXB сериализации:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">JAXB-аннотации</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text">@XmlElement(name)
+    </td>
+<td class="wide-text">Ставится около поля.<br/>
+    Поле будет представлено в XMLэлементом.<br/>
+    Позволяет задать имя для тэга.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">@XmlAttribute(name)
+    </td>
+<td class="wide-text">Ставится около поля.<br/>
+    Поле будет представлено в XMLатрибутом!<br/>
+    Позволяет задать имя для атрибута.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">@XmlElementWrapper(nillable = true)
+    </td>
+<td class="wide-text">Ставится около поля.<br/>
+    Позволяет задать «обрамляющий тег» для группы элементов.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">@XmlType
+    </td>
+<td class="wide-text">Ставится около класса.<br/>
+    Позволяет задать метод для создания объекта, если конструктор по умолчанию private.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">@XmlJavaTypeAdapter
+    </td>
+<td class="wide-text">Ставится около поля.<br/>
+    Позволяет задать класс, который будет преобразовывать данные поля в строку.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Как интересно. А можно примеры с этими аннотациями, а то написанное – это одно, а живой пример – это совсем другое.</p>
+<p>- Ок. Будет тебе пример. Хотел только добавить, то JAXB  позволяет ставить аннотации у методов getter/setter вместо полей.</p>
+<p>Обещанный пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Конвертация объекта в XML</th></tr>
+<tr>
+<td class="monospace_text"><b>public static void</b> main(String[] args) throws JAXBException<br/>
+{<br/>
+ <span class="grey_text">//создание объектов Cat&amp;Zoo для сериализации в XML</span><br/>
+ <span class="green_text">Cat cat</span> = new <span class="green_text">Cat</span>();<br/>
+ <span class="green_text">cat</span>.name = "Murka";<br/>
+ <span class="green_text">cat</span>.age = 5;<br/>
+ <span class="green_text">cat</span>.weight = 4;<br/><br/>
+
+ <span class="dblue_text">Zoo zoo</span> = new <span class="dblue_text">Zoo</span>();<br/>
+ <span class="dblue_text">zoo</span>.animals.add(<span class="green_text">cat</span>);<br/>
+ <span class="dblue_text">zoo</span>.animals.add(<span class="green_text">cat</span>);<br/><br/>
+
+ <span class="grey_text">//писать результат сериализации будем во Writer(StringWriter)</span><br/>
+ StringWriter <span class="violet_text">writer</span> = newStringWriter();<br/><br/>
+
+ <span class="grey_text">//создание объекта Marshaller, который выполняет сериализацию</span><br/>
+ JAXBContext <span class="dred_text">context</span> = <b>JAXBContext.newInstance</b>(<span class="green_text">Cat.class</span>, <span class="dblue_text">Zoo.class</span>);<br/>
+ Marshaller <span class="red_text">marshaller</span> = <span class="dred_text">context</span>.<b>createMarshaller</b>();<br/>
+ <span class="red_text">marshaller</span>.<b>setProperty</b>(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);<br/>
+ <span class="grey_text">// самосериализация</span><br/>
+ <span class="red_text">marshaller</span>.<b>marshal</b>(<span class="dblue_text">zoo</span>, <span class="violet_text">writer</span>);<br/><br/>
+
+ <span class="grey_text">//преобразовываем все записанное в StringWriter в строку</span><br/>      
+ <b>System.out.println</b>(<span class="violet_text">writer</span>.<b>toString</b>());<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Класс, объект которого конвертирует в XML</th></tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">@XmlType(name = "<span class="blue_text"><b>zoo</b></span>")<br/>
+@XmlRootElement<br/>
+<b>class</b> Zoo<br/>
+{<br/>
+ <span class="blue_text">@XmlElementWrapper(name="<b>wild-animals</b>", nillable = true)</span><br/>
+    <b>public</b> List&amp;ltCat&amp;gt animals = new ArrayList&amp;ltCat&gt;<br/>
+}</span><br/><br/>
+<span class="dred_text">@XmlType(name = "<span class="red_text">tiger</span>")</span><br/>
+<span class="green_text"><b>class</b> Cat<br/>
+    {</span><br/>
+ <span class="dred_text">@XmlElement(name = "<span class="red_text">catname</span>")</span><br/>
+<span class="green_text"> <b>public</b> String name;</span><br/>
+ <span class="dred_text">@XmlAttribute(name = "<span class="red_text">age</span>")</span><br/>
+<span class="green_text"> <b>public</b> int age;</span><br/>
+ <span class="dred_text">@XmlAttribute(name = "<span class="red_text">w</span>")</span><br/>
+<span class="green_text"> <b>public</b> int weight;<br/><br/>
+
+         Cat()<br/>
+         {<br/>
+         }<br/>
+    }</span>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Результат сериализации и вывода на экран:</th></tr>
+<tr>
+<td class="monospace_text"><span class="grey_text">&amp;ltzoo&amp;gt</span><br/>
+<span class="dblue_text">&amp;ltwild-animals&amp;gt</span><br/>
+<span class="dred_text">&amp;lttiger age="5" w="4"&amp;gt</span><br/>
+<span class="red_text">&amp;ltcatname&amp;gtMurka&amp;lt/catname&amp;gt</span><br/>
+<span class="dred_text">&amp;lt/tiger&amp;gt</span><br/>
+<span class="dred_text">&amp;lttiger age="5" w="4"&amp;gt</span><br/>
+<span class="red_text">&amp;ltcatname&amp;gtMurka&amp;lt/catname&amp;gt</span><br/>
+<span class="dred_text">&amp;lt/tiger&amp;gt</span><br/>
+<span class="dblue_text">&amp;lt/wild-animals&amp;gt</span><br/>
+<span class="grey_text">&amp;lt/zoo&amp;gt</span>
+</td>
+</tr>
+</tbody></table>
+<p>Обрати внимание, в этот раз мы сериализуем не объект Cat, а объект типа Zoo, которых хранит коллекцию объектов Cat.</p>
+<p>Объект cat в коллекцию был добавлен дважды, поэтому он 2 раза в XML.</p>
+<p>У коллекции есть свой тег – «<span class="dblue_text">wild-animals</span>» , который обрамляет все элементы коллекции.</p>
+<p>Элементы <span class="dred_text">age &amp; weight</span> стали атрибутами <span class="dred_text">age &amp;w</span>.</p>
+<p>С помощью атрибута <span class="dred_text">@XmlType</span> мы поменяли тэг <span class="dred_text">cat</span> на <span class="dred_text">tiger</span>.</p>
+<p>Обрати еще внимание на строку 18,  теперь мы передаем в JAXB-контекст два класса – <span class="dblue_text">Zoo</span> &amp; <span class="green_text">Cat</span>, т.к. они оба участвуют в сериализации.</p>
+<p class="amigo">- Сегодня очень интересный день – столько нового.</p>
+<p>- Ага. Рад за тебя. Сейчас сделаем небольшой перерыв и продолжим.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Первая сериализация в XML</b><br/><br/>
+                Раставьте правильно JAXB аннотации у статических классов.<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Десериализация XML объекта</b><br/><br/>
+                В метод <span class="taskcode">convertFromXmlToNormal</span> первым параметром приходит строка, содержащая xml объект.<br/>
+		Вторым параметром приходит имя класса, объект которого необходимо вернуть.<br/>
+		Метод <span class="taskcode">convertFromXmlToNormal</span> должен создать объект из xml-строки и вернуть его.
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>9. Сложная сериализация в XML, JAXB (вложенные классы и т.д.)</h2>
+</div>
+<p>- Так вот. Как ты уже, наверное, догадался  - это еще не все.</p>
+<p>Сейчас я тебе расскажу об еще нескольких аспектах JAXB. Но начнем мы, как и в случае с JSON, с коллекций.</p>
+<p>При десериализации коллекций в JAXB тоже возникает неопределенность,  какую именно коллекцию (ArrayList, LinkedList, Vector, …) подставить в переменную типа List? И опять ответ на этот вопрос дают аннотации.</p>
+<p>Тут все довольно просто. <span class="orange_text">Если тип коллекции не задан в аннотации к ней, тогда JAXB попробует подобрать самую подходящую коллекцию – на основе типа.</span> Для List это будет ArrayList, для Map – HashMap и т.д.</p>
+<p>На самом деле тут гораздо меньше проблем, чем в случае с JSON, т.к. у каждого класса есть его уникальный тэг, а по тэгу можно точно определить – что это за класс.</p>
+<p>Например, если надо десериализовать группу элементов, которые унаследованы от общего предка, для этого используется аннотация <span class="red_text">@XmlAny</span>:</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="100%">Конвертация объекта из XML</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11
+    </td>
+<td class="monospace_text"><b>public static void</b> main(String[] args) throws JAXBException<br/>
+{<br/>
+       String <span class="violet_text">xmldata</span> = "&amp;ltzoo&amp;gt<span class="grey_text">&amp;ltcat/&amp;gt&amp;ltcat/&amp;gt</span><span class="dblue_text">&amp;ltdog/&amp;gt</span><span class="grey_text">&amp;ltcat/&amp;gt</span>&amp;lt/zoo&amp;gt";<br/>
+ <b>StringReader</b> <span class="dblue_text">reader</span> = new <b>StringReader</b>(<span class="violet_text">xmldata</span>);<br/><br/>
+
+ JAXBContext <span class="dred_text">context</span> = <b>JAXBContext.newInstance</b>(<span class="green_text">Cat.class, Zoo.class, Dog.class</span>);<br/>
+ Unmarshaller <span class="red_text">unmarshaller</span> = <span class="dred_text">context</span>.<b>createUnmarshaller</b>();<br/><br/>
+
+ <span class="green_text">Cat cat</span> = (<span class="green_text">Cat</span>) <span class="red_text">unmarshaller</span>.<b>unmarshal</b>(<span class="dblue_text">reader</span>);<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="1%"> </th><th width="100%">Класс, объект которого десериализуется из XML</th></tr>
+<tr>
+<td class="wide-text">
+</td>
+<td class="monospace_text"><span class="green_text">@XmlType(name = "zoo")<br/>
+@XmlRootElement<br/>
+<b>class</b> Zoo<br/>
+{<br/>
+ <span class="red_text">@XmlAny</span><br/>
+     <b>public</b> List&amp;ltObject&amp;gt animals;<br/>
+}<br/><br/>
+
+@XmlType(name = "cat")<br/>
+@XmlRootElement<br/>
+<b>class</b> Cat<br/>
+    {<br/>
+         <b>public</b> String name;<br/>
+         <b>public</b> int age;<br/>
+         <b>public</b> int weight;<br/><br/>
+
+         Cat()<br/>
+         {<br/>
+         }<br/>
+    }<br/><br/>
+
+@XmlType(name = "dog")<br/>
+@XmlRootElement<br/>
+<b>class</b> Dog<br/>
+    {<br/>
+         <b>public</b> String name;<br/>
+         <b>public</b> int age;<br/>
+         <b>public</b> int weight;<br/><br/>
+
+         Cat()<br/>
+         {<br/>
+         }<br/>
+    }</span>
+</td>
+</tr>
+</tbody></table>
+<p>Если коллекция помечена аннотацией <span class="red_text">@XmlAny</span>, то в нее могут быть помещены любые подходящие объекты. JAXB <span class="red_text">Unmarshaller</span> при этом обращает внимание на тэги.</p>
+<p>При этом последовательность тэгов « <i><b>&amp;ltzoo&amp;gt<span class="green_text">&amp;ltcat/&amp;gt&amp;ltcat/&amp;gt</span><span class="red_text">&amp;ltdog/&amp;gt</span><span class="green_text">&amp;ltcat/&amp;gt</span>&amp;ltzoo&amp;gt</b></i> » будет превращена в набор объектов Cat, Cat, Dog, Cat.</p>
+<p class="amigo">- Ожидаемо, в общем.</p>
+<p>- Ага. О, кстати, вот еще что. Если ты десериализуешь смесь текста и тэгов, для этого надо использовать аннотацию <b>@XmlMixed</b>.</p>
+<p>Пример такого XML:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример XML, для которого нужно использовать аннотацию @XmlMixed</th></tr>
+<tr>
+<td class="monospace_text"><span class="grey_text">&amp;ltdata&amp;gt</span><br/>
+<span class="dblue_text">&amp;ltitems&amp;gt</span><br/>
+          <span class="red_text">test</span><br/>
+<span class="green_text">&amp;ltitem/&amp;gt</span><br/>
+          <span class="red_text">text 2</span><br/>
+<span class="green_text">&amp;ltitem&amp;gt</span><br/>
+              <span class="violet_text">name</span><br/>
+<span class="green_text">&amp;lt/item&amp;gt</span><br/>
+         <span class="red_text">text 3</span><br/>
+<span class="dblue_text">&amp;lt/items&amp;gt</span><br/>
+<span class="grey_text">&amp;lt/data&amp;gt</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ого. А я и забыл, что такой XML бывает. Привык, что все так красиво, тэги вложены, все дела.</p>
+<p>- Бывает. И даже на этот случай у JAXB есть аннотация!</p>
+<p class="amigo">- Отлично. А я вот, кстати, хотел спросить, а как сериализуются enum?</p>
+<p>- Хороший вопрос! Молодец! Я-то как раз  упустил эту тему.</p>
+<p>Для enum существует специальная аннотация @XmlEnum, которой надо помечать enum. В ней же можно указать – будут значения представлены в виде чисел или строк.</p>
+<p>Также есть специальная аннотация @XmlEnumValue, которая позволяет задать специальное значение, которое будет соответствовать данному значению enum’а.</p>
+<p>Примеры:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Числа</th><th width="50%">Строки</th></tr>
+<tr>
+<td class="monospace_text"><span class="dred_text">@XmlType<br/>
+@XmlEnum(</span><span class="red_text"><b>Integer</b></span><span class="dred_text">.class)</span><br/>
+<b>public</b> enum Code <br/>
+{<br/>
+ <span class="dblue_text">@XmlEnumValue(<b>"1"</b>)</span> <br/>
+      START,<br/><br/>
+
+ <span class="dblue_text">@XmlEnumValue(<b>"2"</b>)</span> <br/>
+      INPROGRESS,<br/><br/>
+
+ <span class="dblue_text">@XmlEnumValue(<b>"3"</b>)</span> <br/>
+      FINISH<br/><br/>
+
+ <span class="dblue_text">@XmlEnumValue("-1")</span> <br/>
+      ERROR<br/>
+}
+    </td>
+<td class="monospace_text"><span class="dred_text">@XmlType<br/>
+@XmlEnum(</span><span class="red_text"><b>String</b></span><span class="dred_text">.class)</span><br/>
+<b>public</b> enum Card <br/>
+{ <br/>
+ <span class="dblue_text">@XmlEnumValue("</span><span class="blue_text"><b>Пика</b></span><span class="dblue_text">")</span><br/>
+  CLUBS, <br/><br/>
+
+ <span class="dblue_text">@XmlEnumValue("</span><span class="blue_text"><b>Бубна</b></span><span class="dblue_text">")</span><br/>
+  DIAMONDS, <br/><br/>
+
+ <span class="dblue_text">@XmlEnumValue("</span><span class="blue_text"><b>Черва</b></span><span class="dblue_text">")</span><br/>
+  HEARTS, <br/><br/>
+
+ <span class="dblue_text">@XmlEnumValue("</span><span class="blue_text"><b>Трефа</b></span><span class="dblue_text">")</span><br/>
+  SPADES <br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ух ты. Не могу представить, где мне это может понадобиться, но думаю, что это очень полезная штука. А главное – не обязательно придерживается стандартных строковых или числовых значений.</p>
+<p>- Ага. Это полезно, когда ты, например, пишешь программу, которая обменивается сообщениями, скажем, с сервером Facebook, и у них свой заданный набор значений. Тебе достаточно просто прописать их у своего enum и все заработает.</p>
+<p class="amigo">- Это же замечательно. Мне определенно нравится JAXB.</p>
+<p>- Отлично. Тогда на сегодня все. Иди - отдыхай.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>10. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Создание класса по строке xml</b><br/><br/>
+                Восстановите класс по переданной строке xml.<br/>
+		Класс должен быть в отдельном файле.<br/>
+		Метод <span class="taskcode">getClassName</span> должен возвращать восстановленный класс.<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании.
+        </td></tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>2. Комментарий внутри xml</b><br/><br/>
+                Реализовать метод <span class="taskcode">toXmlWithComment</span>, который должен возвращать строку - xml представление объекта <span class="taskcode">obj</span>.<br/>
+		В строке перед каждым тэгом <span class="taskcode">tagName</span> должен быть вставлен комментарий <span class="taskcode">comment</span>.<br/>
+		Сериализация <span class="taskcode">obj</span> в xml может содержать <span class="taskcode">CDATA</span> с искомым тегом. Перед ним вставлять комментарий не нужно.<br/><br/>
+
+		Пример вызова:  toXmlWithComment(firstSecondObject, "second", "it's a comment")<br/>
+		Пример результата:<br/>
+		&amp;lt?xml version="1.0" encoding="UTF-8" standalone="no"?&amp;gt<br/>
+		&amp;ltfirst&amp;gt<br/>
+		&amp;lt!--it's a comment--&amp;gt<br/>
+		&amp;ltsecond&amp;gtsome string&amp;lt/second&amp;gt<br/>
+		&amp;lt!--it's a comment--&amp;gt<br/>
+		&amp;ltsecond&amp;gtsome string&amp;lt/second&amp;gt<br/>
+		&amp;lt/first&amp;gt
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Учимся гуглить</h2>
+</div>
+<p>- Вот тебе несколько заданий:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Что надо найти в Google</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Что такое JSON
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">В чем связь JSON и JavaScript
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Как использовать Jackson
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Java jackson. Как настроить сериализацию в JSON
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Настройка JAXB
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Сериализация в JAXB примеры
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Аннотации в JAXB
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Документация по Jackson
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Документация по JAXB
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Проблемы десериализации в Jackson
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>12. Профессор дает доп. материал</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Вот тебе дополнительный материал по теме.</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-33.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>13. Хулио</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Хулио.</p>
+<p>- Ты купил на обед Json? Ой, я хотел сказать батон.</p>
+<p class="amigo">- Купил. Но кажется мне, кому - то нужно отдохнуть. Присаживайся.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-33.gif" preload="none" tabindex="0" taskkey="level33,lesson13,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-33.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=MdeVRDhUv3c" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>14. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Что такое JSON?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">В чем отличия Java и JavaScript?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">В чем отличия JSON и XML?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Какие фреймворки для работы с JSON вы знаете?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Какие фреймворки для работы с XML вы знаете?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Какие аннотации Jackson вы знаете?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Какие аннотации JAXB вы знаете?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">В чем отличие сериализации и десериализации в JSON?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Что лучше JSON или XML? Почему?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Что такое DTO?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>15. Большая задача</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Здравия желаю, Капитан Бобров!</p>
+<p>- У тебя сегодня новая секретная миссия. Для того, чтобы переписка между нашими подразделениями  была зашифрованной,  тебе нужно  реализовать свой сервис коротких ссылок.</p>
+<p class="amigo">- Круто. То есть я хотел сказать, я готов, сэр. Но зачем нам это нужно?</p>
+<p>- Как это зачем? Боец, кругом враги, нам нужно защитить канал связи. Приступай к задаче.</p>
+<p class="amigo">- Есть, реализовать сервис коротких ссылок.</p>
+<p>- Отправляйся к нашему секретному агенту Intellij IDEA, там получишь все инструкции.</p>
+<p class="amigo">- Будет сделано, товарищ капитан!</p>
+<p>- Приступайте.</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/33/image-ru-33-big01.jpg"/>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

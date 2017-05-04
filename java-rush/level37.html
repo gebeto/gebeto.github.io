@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:0px;margin-right: 0px;   background: url(images/profile/web-bender-37.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 250px;margin-left: -500px;">
+                    Уровень 37
+                </div>
+</div>
+</div>
+<br/>
+<!--<div class="line"></div>-->
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>1. Паттерны проектирования: Singleton, Factory, FactoryMethod, AbstractFactory </h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Билаабо!</p>
+<p>- Сегодня у нас будет не просто интересная,  я прямо-таки эпическая тема.</p>
+<p>Сегодня я расскажу тебе, что такое <b>шаблоны проектирования (design patterns)</b>.</p>
+<p class="amigo">- Круто. Много про них слышал. Жду с нетерпением.</p>
+<p>- Опытным программистам приходится писать очень много классов. Но самая сложная часть этой работы – это решать, какие классы должны быть и как распределить работу между ними.</p>
+<p>Чем чаще они решали такие вопросы, тем чаще стали понимать, что существуют некоторые удачные решения, и  наоборот, неудачные.</p>
+<p>Неудачные решения обычно создают проблем больше, чем решают. Они плохо расширяются, создают много лишних ограничений,  и т.п. А удачные решения – наоборот.</p>
+<p class="amigo">- А можно какую-нибудь аналогию?</p>
+<p>- Допустим, ты строишь дом. И думаешь - из чего же он должен состоять. Ты решил, что тебе нужны стены, пол и потолок. В результате ты построил дом без фундамента и с ровной крышей. Такой дом будет трескаться, а крыша – протекать. Это – неудачное решение.</p>
+<p>И наоборот, дом, состоящий из фундамента, стен и двускатной крыши – будет удачным решением. Ему нестрашны ни большие снегопады (снег будет скатываться с крыши), ни подвижки почвы – фундамент будет обеспечивать стабильность. Такое решение мы назовем удачным.</p>
+<p class="amigo">- Ясно. Спасибо.</p>
+<p>- Ок. Тогда я продолжу.</p>
+<p>Со временем сборник удачных решений объявили «<span class="green_text">паттернами</span> (шаблонами) проектирования», а сборник неудачных – <span class="dred_text">антипаттернами</span>.</p>
+<p><span class="red_text"><b>Сам шаблон  проектирования - это как бы ответ на вопрос. Его сложно понять, если не слышал самого вопроса.</b></span></p>
+<p><b>Первая категория паттернов – это порождающие паттерны.</b> Такие паттерны описывают удачные решения, связанные с созданием объектов.</p>
+<p class="amigo">- А что такого сложного в создании объектов?</p>
+<p>- А вот как рез сейчас мы это и разберем.</p>
+<p><b><u>Паттерн Singleton – Синглетон, Одиночка.</u></b></p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/37/image-ru-37-04.png"/>
+<p>Часто в программе некоторые объекты могут существовать только в единственном экземпляре. Например, консоль, логгер, сборщик мусора и т.д.</p>
+<p><span class="dred_text">Неудачное решение:</span> отказаться от создания объектов, просто создать класс у которого все методы статические.</p>
+<p><span class="green_text">Удачное решение:</span> создать единственный объект класса и хранить его в статической переменной. Запретить создание второго объекта этого класса. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> <span class="green_text">Sun</span><br/>
+{<br/>
+ <b>private static</b> <span class="green_text">Sun</span> <span class="dblue_text">instance</span>;<br/>
+ <b>public static</b> <span class="green_text">Sun</span> <span class="dblue_text">getInstance</span>()<br/>
+    {<br/>
+  <b>if</b> (<span class="dblue_text">instance</span> == <b>null</b>) <br/>
+  <span class="dblue_text">instance</span> = new <span class="green_text">Sun</span>();<br/><br/>
+
+  <b>return</b> <span class="dblue_text">instance</span>;<br/>
+    }<br/><br/>
+
+ <b>private</b> <span class="green_text">Sun</span>()<br/>
+   {<br/>
+   }<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Как вызвать</th></tr>
+<tr>
+<td class="monospace_text"><span class="green_text">Sun</span> sun = <span class="green_text">Sun</span>.<b>getInstance</b>();
+    </td>
+</tr>
+</tbody></table>
+<p>Все просто.</p>
+<p>Во-первых, мы сделали конструктор <b>private</b>. Теперь его можно вызвать только изнутри нашего класса. Мы запретили создание объекта <span class="green_text">Sun</span> везде кроме методов класса <span class="green_text">Sun</span>.</p>
+<p>Во-вторых, получить объект этого класса можно только вызвав метод <b>getInstance</b>(). Это не только единственный метод, который может создавать объекты класса <span class="green_text">Sun</span>, но он еще и следит, чтобы такой объект был единственным.</p>
+<p class="amigo">- Ясно.</p>
+<p>- Когда человек думает – как же именно это сделать? Паттерн говорит – можешь  попробовать так – это одно из удачных решений.</p>
+<p class="amigo">- Спасибо. Теперь что-то начинает проясняться.</p>
+<p>- Так же про этот паттерн можно прочитать <a href="http://www.javenue.info/post/2" target="_blank">здесь</a>.</p>
+<p><b><u>Паттерн Factory – Фэктори, Фабрика.</u></b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/37/image-ru-37-05.gif"/>
+<p>Очень часто программисты сталкиваются вот с какой ситуацией. У тебя есть некоторый базовый класс и много подклассов. Например – персонаж игры – GamePerson и классы всех остальных персонажей игры, унаследованные от  него.</p>
+<p>Допустим, у тебя есть такие классы:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><b>abstract class</b> <span class="dblue_text">GamePerson</span><br/> 
+{<br/>
+}<br/><br/>
+<b>class</b> <span class="dblue_text">Warrior</span> <b>extends</b> <span class="dblue_text">GamePerson</span><br/>
+{<br/>
+}<br/><br/>
+<b>class</b> <span class="dblue_text">Mag</span> <b>extends</b> <span class="dblue_text">GamePerson</span><br/>
+{<br/>
+}<br/><br/>
+<b>class</b> <span class="dblue_text">Troll</span> <b>extends</b> <span class="dblue_text">GamePerson</span><br/>
+{<br/>
+}<br/><br/>
+<b>class</b> <span class="dblue_text">Elv</span> <b>extends</b> <span class="dblue_text">GamePerson</span><br/>
+{<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Вопрос состоит в том – как гибко и удобно управлять созданием объектов этих классов.</p>
+<p><span class="violet_text">Если проблема кажется тебе надуманной, представь, что в игре нужно создавать десятки мечей и щитов, сотни магических заклинаний, тысячи монстров. Без удобного подхода к созданию объектов тут не обойтись.</span></p>
+<p>Вот какое «удачное решение» предлагает паттерн <b>Фабрика (Factory)</b></p>
+<p>Во-первых, надо завести enum, значения которого будут соответствовать различным классам.</p>
+<p>Во-вторых, сделать специальный класс – <b>Factory</b>, у которого будет статический метод или методы, которые и будут заниматься созданием объекта(ов) в зависимости от enum'а.</p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><b>public enum</b> <span class="green_text">PersonType</span><br/>
+{<br/>
+ <span class="green_text">UNKNOWN</span>,<br/>
+ <span class="green_text">WARRIOR</span>,<br/>
+ <span class="green_text">MAG</span>,<br/>
+ <span class="green_text">TROLL</span>,<br/>
+ <span class="green_text">ELV</span>,<br/>
+}<br/><br/>
+<b>public class</b> <span class="dred_text">PersonFactory</span><br/>
+{<br/>
+ <b>public static</b> <span class="dblue_text">GamePerson</span> <span class="dred_text">createPerson</span>(<span class="green_text">PersonType <b>personType</b></span>)<br/>
+     {<br/>
+  <b>switch</b>(<span class="green_text"><b>personType</b></span>)<br/>
+          {<br/>
+   <span class="green_text">WARRIOR</span>:<br/>
+   <b>return</b> new <span class="dblue_text">Warrior</span>();<br/>
+   <span class="green_text">MAG</span>:<br/>
+   <b>return</b> new <span class="dblue_text">Mag</span>();<br/>
+   <span class="green_text">TROLL</span>:<br/>
+   <b>return</b> new <span class="dblue_text">Troll</span>();<br/>
+   <span class="green_text">ELV</span>:<br/>
+   <b>return</b> new <span class="dblue_text">Elv</span>();<br/>
+   <b>default</b>:<br/>
+   <b>throw</b> new <span class="orange_text">GameException</span>();<br/>
+          }<br/>
+    }<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Как вызвать</th></tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">GamePerson person</span> <span class="green_text">=</span> <span class="dred_text">PersonFactory</span><span class="green_text">.</span><span class="dred_text">createPerson</span>(<span class="green_text">PersonType.MAG</span>);
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Т.е. мы создали специальный класс для управления созданием объектов?</p>
+<p>- Ага.</p>
+<p class="amigo">- А какие преимущества это дает?</p>
+<p>- Во-первых, там эти объекты можно инициализировать нужными данными.</p>
+<p>Во-вторых, между методами можно сколь угодно передавать нужный enum, чтобы в конце-концов по нему создали правильный объект.</p>
+<p>В третьих,  количество значений enum не обязательно должно совпадать с количеством классов. Типов персонажей может  быть много, а классов – мало.</p>
+<p>Например, для <b>Mag &amp; Warrior</b> можно использовать один класс – Human, но с различными настройками силы и магии (параметрами конструктора).</p>
+<p>Вот как это может выглядеть (для наглядности добавил еще темных эльфов):</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><b>public enum</b> <span class="green_text">PersonType</span><br/>
+{<br/>
+ <span class="green_text">UNKNOWN</span>,<br/>
+ <span class="green_text">WARRIOR</span>,<br/>
+ <span class="green_text">MAG</span>,<br/>
+ <span class="green_text">TROLL</span>,<br/>
+ <span class="green_text">ELV</span>,<br/>
+ <span class="green_text">DARK_ELV</span><br/>
+}<br/><br/>
+<b>public class</b> <span class="dred_text">PersonFactory</span><br/>
+{<br/>
+ <b>public static</b> <span class="dblue_text">GamePerson</span> <span class="dred_text">createPerson</span>(<span class="green_text">PersonType  <b>personType</b></span>)<br/>
+     {<br/>
+  <b>switch</b>(<span class="green_text"><b>personType</b></span>)<br/>
+          {<br/>
+   <span class="green_text">WARRIOR</span>:<br/>
+   <b>return</b> new <span class="dblue_text">Human</span>(10, 0);  <span class="grey_text">//сила, магия</span><br/>
+   <span class="green_text">MAG</span>:<br/>
+   <b>return</b> new <span class="dblue_text">Human</span>(0, 10); <span class="grey_text">//сила, магия</span><br/>
+   <span class="green_text">TROLL:</span><br/>
+   <span class="green_text">OGR:</span><br/>
+   <b>return</b> new <span class="dblue_text">Troll</span>();<br/>
+   <span class="green_text">ELV</span>:<br/>
+   <b>return</b> new <span class="dblue_text">Elv</span>(true);  <span class="grey_text">//true – добрый, false – злой</span><br/>
+   <span class="green_text">DARK_ELV</span>:<br/>
+   <b>return</b> new <span class="dblue_text">Elv</span>(false);  <span class="grey_text">//true – добрый, false - злой</span><br/>
+   <b>default</b>:<br/>
+   <b>throw</b> new <span class="orange_text">GameException</span>();<br/>
+          }<br/>
+    }<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Как вызвать</th></tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">GamePerson person</span> <span class="green_text">=</span> <span class="dred_text">PersonFactory</span><span class="green_text">.</span><span class="dred_text">createPerson</span>(<span class="green_text">PersonType.MAG</span>);
+    </td>
+</tr>
+</tbody></table>
+<p>В примере выше мы использовали всего три класса, чтобы создавать объекты шести разных типов. Это очень удобно.  Более того, у нас вся эта логика сосредоточена в одном классе и в одном методе.</p>
+<p>Если мы вдруг решим создать отдельный класс для Огра, мы просто поменяем тут пару строк кода, а не будет перелопачивать половину приложения.</p>
+<p class="amigo">- Согласен. Удачное решение.</p>
+<p>- А я тебе о чем говорю, шаблоны проектирования – это сборники удачных решений.</p>
+<p class="amigo">- Знать бы еще, где их применять…</p>
+<p>- Ага. Сходу не разберёшься, согласен. Но все равно, лучше знать и не уметь, чем не знать и не уметь. Вот тебе еще полезная ссылка по этому паттерну: <a href="http://www.javenue.info/post/17" target="_blank">Паттерн Factory</a></p>
+<p class="amigo">- О, спасибо.</p>
+<p>- Паттерн <b>Abstract Factory – Абстрактная Фабрика</b>.</p>
+<p>Иногда, когда объектов очень много, напрашивается создание фабрики фабрик. Такую фабрику принято называть <b>Абстрактной Фабрикой</b>.</p>
+<p class="amigo">- Это ж где такое может понадобиться?</p>
+<p>- Ну, например, у тебя есть несколько групп идентичных объектов. Это легче показать на примере.</p>
+<p>Смотри, допустим, у тебя в игре есть три расы – люди, эльфы и демоны. И у каждой расы, для баланса есть воин, лучник и маг. В зависимости от того, за какую сторону играет человек, он может создавать только объекты своей расы. Вот как это могло бы выглядеть в коде:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Объявление классов войск</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> Warrior<br/> 
+{<br/>
+}<br/>
+<b>class</b> Archer<br/>
+{<br/>
+}<br/>
+<b>class</b> Mag<br/>
+{<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Люди</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> <span class="dblue_text">HumanWarrior</span> <b>extends</b> Warrior<br/>
+{<br/>
+}<br/><br/>
+<b>class</b> <span class="dblue_text">HumanArcher</span> <b>extends</b> Archer<br/>
+{<br/>
+}<br/><br/>
+<b>class</b> <span class="dblue_text">HumanMag</span> <b>extends</b> Mag<br/>
+{<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Эльфы</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> <span class="green_text">ElvWarrior</span> <b>extends</b> Warrior<br/>
+{<br/>
+}<br/><br/>
+<b>class</b> <span class="green_text">ElvArcher</span> <b>extends</b> Archer<br/>
+{<br/>
+}<br/><br/>
+<b>class</b> <span class="green_text">ElvMag</span> <b>extends</b> Mag<br/>
+{<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Демоны</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> <span class="dred_text">DaemonWarrior</span> <b>extends</b> Warrior<br/>
+{<br/>
+}<br/><br/>
+<b>class</b> <span class="dred_text">DaemonArcher</span> <b>extends</b> Archer<br/>
+{<br/>
+}<br/><br/>
+<b>class</b> <span class="dred_text">DaemonMag</span> <b>extends</b> Mag<br/>
+{<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>А теперь создадим расы, ну или можно еще назвать их армиями.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Армии</th></tr>
+<tr>
+<td class="monospace_text"><b>abstract class</b> <span class="violet_text">Army</span><br/>
+{<br/>
+ <b>public</b> Warrior createWarrior();<br/>
+ <b>public</b> Archer createArcher();<br/>
+ <b>public</b> Mag createMag();<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Армия людей</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> <span class="dblue_text">HumanArmy</span> <b>extends</b> <span class="violet_text">Army</span><br/>
+{<br/>
+ <b>public</b> Warrior <b>createWarrior</b>()<br/>
+  {<br/>
+  <b>return</b> new <span class="dblue_text">HumanWarrior</span>();<br/>
+  }<br/>
+ <b>public</b> Archer <b>createArcher</b>()<br/>
+  {<br/>
+  <b>return</b> new <span class="dblue_text">HumanArcher</span>();<br/>
+  }<br/>
+ <b>public</b> Mag <b>createMag</b>()<br/>
+  { <br/>
+  <b>return</b> new <span class="dblue_text">HumanMag</span>();<br/>
+  }<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Армия эльфов</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> <span class="green_text">ElvArmy</span> <b>extends</b> <span class="violet_text">Army</span><br/>
+{<br/>
+ <b>public</b> Warrior <b>createWarrior</b>()<br/>
+  {<br/>
+  <b>return</b> new <span class="green_text">ElvWarrior</span>();<br/>
+  }<br/>
+ <b>public</b> Archer <b>createArcher</b>()<br/>
+  {<br/>
+  <b>return</b> new <span class="green_text">ElvArcher</span>();<br/>
+  }<br/>
+ <b>public</b> Mag <b>createMag</b>()<br/>
+  { <br/>
+  <b>return</b> new <span class="green_text">ElvMag</span>();<br/>
+  }<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Армия демонов</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> <span class="dred_text">DaemonArmy</span> <b>extends</b> Army<br/>
+{<br/>
+ <b>public</b> Warrior <b>createWarrior</b>()<br/>
+  {<br/>
+  <b>return</b> new <span class="dred_text">DaemonWarrior</span>();<br/>
+  }<br/>
+ <b>public</b> Archer <b>createArcher</b>()<br/>
+  {<br/>
+  <b>return</b> new <span class="dred_text">DaemonArcher</span>();<br/>
+  }<br/>
+ <b>public</b> Mag <b>createMag</b>()<br/>
+  { <br/>
+  <b>return</b> new <span class="dred_text">DaemonMag</span>();<br/>
+  }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- А как это использовать?</p>
+<p>- Можно везде в программе использовать классы Army, Warrior, Archer, Mag,  а для создания нужных объектов – просто передавать объект нужного класса-наследника Army.</p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text">Army <span class="dblue_text">humans</span> = new <span class="dblue_text">HumanArmy</span>();<br/>
+    Army <span class="dred_text">daemons</span> = new <span class="dred_text">DaemonArmy</span>();<br/><br/>
+
+    Army <span class="violet_text">winner</span> = <span class="red_text">FightSimulator</span>.<b>simulate</b>(<span class="dblue_text">humans</span>, <span class="dred_text">daemons</span>);
+    </td>
+</tr>
+</tbody></table>
+<p>В примере выше, у нас есть класс, который симулирует бои между разными расами (армиями), и ему нужно просто передать два объекта Army. С их помощью он сам создает различные войска и проводит виртуальные бои между ними, с целью выявить победителя.</p>
+<p class="amigo">- Ясно. Спасибо. Действительно интересный подход.</p>
+<p class="amigo">Удачное решение, что ни говори.</p>
+<p>- Ага.</p>
+<p>Вот еще хорошая ссылка по этой теме: <a href="http://www.javenue.info/post/27" target="_blank">Паттерн Abstract Factory</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>2. Паттерны: Adapter, Proxy, Bridge</h2>
+</div>
+<p>- Привет, друг!</p>
+<p class="amigo">- Привет, Билаабо!</p>
+<p>- У нас еще осталось немного времени, поэтому я расскажу тебе про еще три паттерна.</p>
+<p class="amigo">- Еще три, а сколько их всего?</p>
+<p>- Ну, сейчас есть несколько десятков популярных  паттернов, но количество «удачных решений» не ограничено.</p>
+<p class="amigo">- Ясно. И что, мне придется учить несколько десятков паттернов?</p>
+<p>- Пока у тебя нет опыта реального программирования, они дадут тебе не очень много.</p>
+<p>Ты лучше поднаберись опыта, а потом, через годик, вернись к этой теме и попробуй разобраться в них более основательно. Хотя-бы пару десятков самых популярных.</p>
+<p>Грех не пользоваться чужим опытом и самому что-то изобретать в очередной 110-й раз.</p>
+<p class="amigo">- Согласен.</p>
+<p>- Тогда начнем.</p>
+<p><b><u>Паттерн Adapter(Wrapper) – Адаптер (Обертка)</u></b></p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/37/image-ru-37-02.png"/>
+<p>Представь, что ты приехал в Китай, а там другой стандарт  розеток. Отверстия не круглые, а плоские. Тогда тебе понадобится переходник, или другими словами – адаптер.</p>
+<p>В программировании тоже может быть что-то похожее. Они оперируют похожими, но различными интерфейсами. И надо сделать переходник между ними.</p>
+<p>Вот как это может выглядеть:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><b>interface</b> <span class="dblue_text">Time</span><br/>
+{<br/>
+ <b>int</b> <span class="dblue_text">getSeconds</span>();<br/>
+ <b>int</b> <span class="dblue_text">getMinutes</span>();<br/>
+ <b>int</b> <span class="dblue_text">getHours</span>();<br/>
+}<br/><br/>
+<b>interface</b> <span class="green_text">TotalTime</span><br/>
+{<br/>
+ <b>int</b> <span class="green_text">getTotalSeconds</span>();<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Допустим, у нас есть два интерфейса – <span class="dblue_text">Time</span> и <span class="green_text">TotalTime</span>.</p>
+<p>Интерфейс <span class="dblue_text">Time</span> позволяет узнать текущее время с помощью методов <span class="dblue_text">getSeconds</span>(), <span class="dblue_text">getMinutes</span>() и <span class="dblue_text">getHours</span>().</p>
+<p>Интерфейс <span class="green_text">TotalTime</span> позволяет получить количество секунд, которое прошло от полночи до текущего момента.</p>
+<p>Что делать, если у нас есть объект типа <span class="green_text">TotalTime</span>, а нужен <span class="dblue_text">Time</span> и наоборот?</p>
+<p>Для этого мы можем написать классы-адаптеры. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> <span class="violet_text">TotalTimeAdapter</span> <b>implements</b> <span class="dblue_text">Time</span><br/>
+{<br/>
+ <b>private</b> <span class="green_text">TotalTime totalTime</span>;<br/>
+ <b>public</b> <span class="violet_text">TotalTimeAdapter</span>(<span class="green_text">TotalTime totalTime</span>)<br/>
+     {<br/>
+         this.<span class="green_text">totalTime</span> = <span class="green_text">totalTime</span>;<br/>
+     }<br/><br/>
+
+ <b>int</b> <span class="dblue_text">getSeconds</span>() <br/>
+   {<br/>
+  <b>return</b> <span class="green_text">totalTime.getTotalSeconds</span>() % 60; <span class="grey_text">//секунды</span><br/>
+   }<br/><br/>
+
+ <b>int</b> <span class="dblue_text">getMinutes</span>()<br/>
+    {<br/>
+  <b>return</b> <span class="green_text">totalTime.getTotalSeconds</span>() / 60; <span class="grey_text">//минуты</span><br/>
+    }<br/><br/>
+
+ <b>int</b> <span class="dblue_text">getHours</span>()<br/>
+   {<br/>
+  <b>return</b> <span class="green_text">totalTime.getTotalSeconds</span>() / (60*60); <span class="grey_text">//часы</span><br/>
+    }<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Как пользоваться</th></tr>
+<tr>
+<td class="monospace_text"><span class="green_text">TotalTime totalTime</span> = <span class="grey_text">TimeManager.getCurrentTime</span>();<br/>
+<span class="dblue_text">Time time</span> = new <span class="violet_text">TotalTimeAdapter</span>(<span class="green_text">totalTime</span>);<br/>
+<span class="grey_text">System.out.println</span>(<span class="dblue_text">time.getHours()</span>+":"+<span class="dblue_text">time.getMinutes()</span>+":"+<span class="dblue_text">time.getSeconds()</span>);
+    </td>
+</tr>
+</tbody></table>
+<p>И адаптер в другую сторону:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> <span class="orange_text">TimeAdapter</span> <b>implements</b> <span class="green_text">TotalTime</span><br/>
+{<br/>
+ <b>private</b> <span class="dblue_text">Time time</span>;<br/>
+ <b>public</b> <span class="orange_text">TimeAdapter</span>(<span class="dblue_text">Time  time</span>)<br/>
+     {<br/>
+         this.<span class="dblue_text">time</span> = <span class="dblue_text">time</span>;<br/>
+     }<br/><br/>
+
+ <b>int</b> <span class="green_text">getTotalSeconds</span>()<br/>
+ {<br/>
+  <b>return</b> <span class="dblue_text">time.getHours</span>()*60*60+<span class="dblue_text">time.getMinutes</span>()*60 + <span class="dblue_text">time.getSeconds</span>(); <br/>
+  }<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Как пользоваться</th></tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">Time time</span> = <span class="grey_text">new Time();</span><br/>
+<span class="green_text">TotalTime totalTime</span> = new <span class="orange_text">TimeAdapter</span>(<span class="dblue_text">time</span>);<br/>
+<span class="grey_text">System.out.println</span>(<span class="green_text">time.getTotalSeconds</span>());
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ага. Мне нравится. А примеры есть?</p>
+<p>- Конечно, например, InputStreamReader – это классический адаптер. Преобразовывает тип InputStream к типу Reader.</p>
+<p>Иногда этот паттерн еще называют обертка, потому что новый класс как бы «оборачивает» собой другой объект.</p>
+<p>Другие интересные вещи почитать можно <a href="http://www.javenue.info/post/63" target="_blank">тут</a>.</p>
+<p><u><b>Паттерн Proxy - Заместитель</b></u></p>
+<p>Паттерн прокси чем-то похож на паттерн обертка. Но его задача – не преобразовывать интерфейсы, а контролировать доступ к оригинальному объекту, сохраненному внутри прокси-класса. При этом и оригинальный класс и прокси обычно имеют один и тот же интерфейс, что облегчает подмену объекта оригинального класса, на объект прокси.</p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Интерфейс реального класса</th></tr>
+<tr>
+<td class="monospace_text"><b>interface</b> <span class="dblue_text">Bank</span><br/>
+{<br/>
+ <b>public</b> void <span class="dblue_text">setUserMoney</span>(User user, <b>double</b> money);<br/>
+ <b>public</b> int <span class="dblue_text">getUserMoney</span>(User user);<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Реализация оригинального класса</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> <span class="dred_text">CitiBank</span> <b>implements</b> <span class="dblue_text">Bank</span><br/>
+{<br/>
+ <b>public</b> void <span class="dblue_text">setUserMoney</span>(User user, double money)<br/>
+    {<br/>
+       UserDAO.updateMoney(user, money);<br/>
+    }<br/><br/>
+
+ <b>public</b> int <span class="dblue_text">getUserMoney</span>(User user)<br/>
+    {<br/>
+      return  UserDAO.getMoney(user);<br/>
+    }<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Реализация прокси-класса</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> <span class="green_text">BankSecurityProxy</span> <b>implements</b> <span class="dblue_text">Bank</span><br/>
+{<br/>
+ <b>private</b> <span class="dblue_text">Bank bank</span>;<br/>
+ <b>public</b> <span class="green_text">BankSecurityProxy</span>(<span class="dblue_text">Bank bank</span>)<br/>
+    {<br/>
+  <b>this</b>.<span class="dblue_text">bank</span> = <span class="dblue_text">bank</span>;<br/>
+     }<br/>
+ <b>public</b> void <span class="dblue_text">setUserMoney</span>(User user, double money)<br/>
+    {<br/>
+  <span class="violet_text"><b>if</b> (!SecurityManager.<b>authorize</b>(user, BankAccaunts.Manager))<br/>
+  <b>throw</b> new SecurityException("User can’t change money value");</span><br/><br/>
+
+  <span class="dblue_text">bank.setUserMoney</span>(User user, double money);<br/>
+    }<br/><br/>
+
+ <b>public</b> int <span class="dblue_text">getUserMoney</span>(User user)<br/>
+    {<br/>
+        <span class="violet_text"><b>if</b> (!SecurityManager.<b>authorize</b>(user, BankAccaunts.Manager))<br/>
+  <b>throw</b> new SecurityEsception("User can’t get money value");</span><br/><br/>
+
+  <b>return</b> <span class="dblue_text">bank.getUserMoney</span>(User user);<br/>
+    }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>В примере выше мы описали интерфейс банка – <span class="dblue_text">Bank</span>, и одну его реализацию – <span class="dred_text">CitiBank</span>.</p>
+<p>Этот интерфейс позволяет получить или изменить количество денег на счету пользователя.</p>
+<p>А потом мы создали <span class="green_text"><b>BankSecurityProxy</b></span>, который тоже реализует  интерфейс <span class="dblue_text">Bank</span> и хранит в себе ссылку на другой интерфейс <span class="dblue_text">Bank</span>. Методы этого класса проверяют: является ли данный пользователь менеджером банка, и если нет – то кидает исключение безопасности – SecurityException.</p>
+<p>Вот как это работает на деле:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код <span class="red_text">без</span> проверки безопасности:</th></tr>
+<tr>
+<td class="monospace_text">User user = <b>AuthManager</b>.authorize(login, password);<br/>
+    Bank bank = <b>BankFactory</b>.createUserBank(user);<br/>
+    bank.setUserMoney(user, 1000000);
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Код <span class="green_text">с включённой</span> проверкой безопасности:</th></tr>
+<tr>
+<td class="monospace_text">User user = <b>AuthManager</b>.authorize(login, password);<br/>
+    Bank bank = <b>BankFactory</b>.createUserBank(user);<br/>
+    bank = new <span class="green_text">BankSecurityProxy</span>(bank);<br/>
+    bank.setUserMoney(user, 1000000);
+    </td>
+</tr>
+</tbody></table>
+<p>В первом примере мы создаем объект банк и вызываем у него метод <b>setUserMoney</b>.</p>
+<p>Во втором примере – мы оборачиваем оригинальный объект банк в объект <span class="green_text">BankSecurityProxy</span>. Интерфейс у них один, так что дальнейший код как работал, так и работает. Но теперь при каждом вызове метода будет происходить проверка безопасности.</p>
+<p class="amigo">- Круто!</p>
+<p>- Ага. Таких прокси может быть много. Например, можно добавить еще один прокси, который будет проверять – не слишком ли большая сумма. Может менеджер банка решил положить себе на счет кучу денег и сбежать с ними на Кубу.</p>
+<p>Более того. Создание всех этих цепочек объектов можно поместить в класс <b>BankFactory</b> и подключать/отключать нужные из них.</p>
+<p>По похожему принципу работает <b>BufferedReader</b>. Это <b>Reader</b>, но который делает еще дополнительную работу.</p>
+<p>Такой подход позволяет «собирать» из «кусочков» объект нужной тебе функциональности.</p>
+<p>Чуть не забыл. Прокси используются гораздо шире, чем я только что тебе показал. Об остальных типах использования ты можешь почитать <a href="https://ru.wikipedia.org/wiki/Proxy_(%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" target="_blank">здесь</a>.</p>
+<p><b><u>Паттерн Bridge – Мост</u></b></p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/37/image-ru-37-03.gif"/>
+<p>Иногда, в процессе работы программы, надо сильно поменять функциональность объекта. Например, был у тебя в игре персонаж осел, а потом маг превратил его в дракона. У дракона совсем другое поведение и свойства, но(!) это – тот же самый объект.</p>
+<p class="amigo">- А нельзя просто создать новый объект и все?</p>
+<p>- Не всегда. Допустим, твой осел был в друзьях у кучи персонажей, или например, на нем были наложены некоторые заклинания, или он участвовал в каких-то квестах. Т.е. этот объект уже может быть задействован в куче мест и привязан к куче других объектов. Так что просто создать новый другой объект в этом случае – не вариант.</p>
+<p class="amigo">- И что же делать?</p>
+<p>- Одним из наиболее удачных решений есть паттерн <b>Мост</b>.</p>
+<p>Этот паттерн предлагает разделить объект на два объекта.  На «объект интерфейса» и «объект реализации».</p>
+<p class="amigo">- А в чем отличие от интерфейса и класса, который его реализует?</p>
+<p>- В случае с интерфейсом и классом в результате будет создан один объект, а тут  - два. Смотри пример: </p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> <span class="green_text">User</span><br/>
+{<br/>
+ <b>private</b> <span class="dblue_text">UserImpl realUser</span>;<br/><br/>
+
+ <b>public</b> <span class="green_text">User</span>(<span class="dblue_text">UserImpl impl</span>)<br/>
+    {<br/>
+  <span class="dblue_text">realUser</span> = <span class="dblue_text">impl</span>;<br/>
+     }<br/><br/>
+
+ <b>public void</b> <span class="green_text">run</span>() <span class="grey_text">//бежать</span><br/>
+     {<br/>
+  <span class="dblue_text">realUser.run</span>();<br/>
+      }<br/><br/>
+
+ <b>public void</b> <span class="green_text">fly</span>() <span class="grey_text">//лететь</span><br/>
+     {<br/>
+           <span class="dblue_text">realUser.fly</span>();<br/>
+      }<br/>
+}<br/><br/>
+<b>class</b> <span class="dblue_text">UserImpl</span><br/>
+{<br/>
+ <b>public void</b> <span class="dblue_text">run</span>() <br/>
+     {<br/>
+      }<br/><br/>
+
+ <b>public void</b> <span class="dblue_text">fly</span>()<br/>
+     {<br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>А потом можно объявить несколько классов наследников от UserImpl, например <span class="grey_text">UserDonkey</span>(осел)  и <span class="dgreen_text">UserDragon</span>(дракон).</p>
+<p class="amigo">- Все равно не очень понял,  как это будет работать.</p>
+<p>- Ну, примерно так:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> <span class="green_text">User</span><br/>
+{<br/>
+ <b>private</b> <span class="dblue_text">UserImpl realUser</span>;<br/><br/>
+
+ <b>public</b> <span class="green_text">User</span>(<span class="dblue_text">UserImpl impl</span>)<br/>
+    {<br/>
+  <span class="dblue_text">realUser</span> = <span class="dblue_text">impl</span>;<br/>
+     }<br/><br/>
+
+ <b>public void</b> <span class="dred_text">transformToDonkey()</span><br/>
+    {<br/>
+  <span class="dblue_text">realUser = new</span> <span class="dred_text">UserDonkeyImpl</span><span class="dblue_text">();</span><br/>
+    }<br/><br/>
+
+ <b>public void</b> <span class="red_text">transformToDragon()</span><br/>
+    {<br/>
+  <span class="dblue_text">realUser = new</span> <span class="red_text">UserDragonImpl</span><span class="dblue_text">();</span><br/>
+    }<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Как это работает</th></tr>
+<tr>
+<td class="monospace_text"><span class="green_text">User user</span> = new <span class="green_text">User</span>(<span class="dred_text">new UserDonkey</span>()); <span class="grey_text">//внутри мы – осел</span>
+<span class="green_text">user</span>.<span class="red_text">transformToDragon</span>(); <span class="grey_text">//теперь внутри мы – дракон</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Чем-то напоминает прокси.</p>
+<p>- Да, только в прокси главный объект мог храниться где-то отдельно, а код работал с прокси-объектами вместо него. Здесь же предлагается, что все работают именно с главным объектом, а меняются его внутренние части.</p>
+<p class="amigo">- Ага. Спасибо. А дашь ссылку почитать еще про это?</p>
+<p>- Конечно, друг Амиго. Держи: <a href="http://crypto.pp.ua/2010/06/shablon-bridge-java/" target="_blank">Паттерн Bridge</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Итераторы</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Элли!</p>
+<p>- Сегодня я хочу рассказать тебе про итераторы.</p>
+<p>Итераторы придумали практически тогда, когда и коллекции. Основная задача коллекций была – хранить элементы, а основная задача итератора – выдавать эти элементы по одному.</p>
+<p class="amigo">- А что сложного в том, чтобы выдать набор элементов?</p>
+<p>- Во-первых, некоторые коллекции, как например Set не имеют установленного порядка элементов и/или он постоянно меняется.</p>
+<p>Во-вторых, некоторые структуры данных могут хранить объекты очень сложно:  различными группами, списками и т.д. Т.е. отдать последовательно все элементы – это будет сложная нетривиальная задача.</p>
+<p>В третьих – коллекции имеют свойство меняться. Решил ты вывести на экран все содержимое коллекции, а прямо в середине вывода JVM переключилась на другую нить, которая половину элементов из этой коллекции заменила на другую. Вот и получишь ты вместо вывода не пойми-что.</p>
+<p class="amigo">- М-да.</p>
+<p>- Вот! Именно такие проблемы должен был решить итератор. <span class="violet_text">Итератор – это специальный внутренний объект в коллекции, который с одной стороны имеет доступ ко всем ее private данным и знает ее внутреннюю структуру, с другой – реализует общедоступный интерфейс Iterator, благодаря чему все знают, как с ним работать.</span></p>
+<p>Некоторые итераторы имеют внутри себя массив, куда копируются все элементы коллекции, во время создания итератора. Это гарантирует, что последующее изменения коллекции не повлияет на порядок и количество элементов.</p>
+<p>Думаю, ты уже сталкивался, что при работе с <b>for each</b> нельзя одновременно «идти по коллекции циклом» и удалять из нее элементы.  Это все именно из-за устройства итератора.</p>
+<p>В новых коллекциях, добавленных в библиотеке concurrency, устройство итератора переработано, поэтому там такой проблемы нет.</p>
+<p>Давай я тебе напомню, как устроен итератор.</p>
+<p>В Java есть специальный интерфейс Iterator, вот какие у него методы:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Методы интерфейса  Iterator&amp;ltE&amp;gt</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text">boolean <b>hasNext</b>()
+    </td>
+<td class="wide-text">Проверяет – есть ли еще элементы
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">E <b>next</b>()
+    </td>
+<td class="wide-text">Возвращает текущий элемент и переключается на следующий.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">void <b>remove</b>()
+    </td>
+<td class="wide-text">Удаляет текущий элемент
+    </td>
+</tr>
+</tbody></table>
+<p>Итератор позволяет поочередно получить все элементы коллекции. Логичнее представить итератор чем-то вроде InputStream – у него есть все данные, но его задача выдавать их последовательно.</p>
+<p>Метод <b>next</b>() возвращает следующий (очередной) элемент коллекции.</p>
+<p>Метод <b>hashNext</b>() используется, чтобы проверять – есть ли еще элементы.</p>
+<p>Ну, а <b>remove</b>() – удаляет текущий элемент.</p>
+<p>Вопросы есть?</p>
+<p class="amigo">- А почему методы называются так странно? Почему не isEmpty() или getNextElement()?</p>
+<p class="amigo">Разве так не логичнее?</p>
+<p>- Логичнее, но такие названия пришли из языка C++, где итераторы появились раньше.</p>
+<p class="amigo">- Ясно. Продолжим.</p>
+<p>Кроме итератора есть еще интерфейс <b>Iterable</b> – его должны реализовывать все коллекции, которые поддерживают итератор. У него есть единственный метод:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Методы interface Iterable&amp;ltT&amp;gt</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text">Iterator&amp;ltT&amp;gtiterator()
+    </td>
+<td class="wide-text">Возвращает объект-итератор
+    </td>
+</tr>
+</tbody></table>
+<p>С помощью этого метода у любой коллекции можно получить объект итератор для обхода ее элементов.  Давай обойдем все элементы дерева в коллекции <b>TreeSet</b>:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">TreeSet&amp;lt</span><span class="green_text">String</span><span class="dblue_text">&amp;gt set</span> = new <span class="dblue_text">TreeSet&amp;lt</span><span class="green_text">String</span><span class="dblue_text">&amp;gt</span>();<br/>
+<span class="red_text">Iterator&amp;lt</span><span class="green_text">String</span><span class="red_text">&amp;gt iterator</span> =  <span class="dblue_text">set</span>.<b>iterator</b>();<br/><br/>
+<b>while</b> (<span class="red_text">iterator</span>.<b>hasNext</b>())<br/>
+        {<br/>
+ <span class="green_text">String item</span> = <span class="red_text">iterator</span>.<b>next</b>();<br/>
+ <span class="grey_text">System.out.println</span>(<span class="green_text">item</span>);<br/>
+        }
+    </td>
+</tr>
+</tbody></table>
+<p>Такое использование итератора не очень удобно – слишком много лишнего  и очевидного кода. Ситуация упростилась, когда в Java появился цикл по итератору – <b>for-each</b>.</p>
+<p>Теперь такой код гораздо компактнее и читабельнее:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Было</th><th width="50%">Стало</th></tr>
+<tr>
+<td class="monospace_text"><font size="4"><span class="dblue_text">TreeSet&amp;lt</span><span class="green_text">String</span><span class="dblue_text">&amp;gt set</span> = new <span class="dblue_text">TreeSet&amp;lt</span><span class="green_text">String</span><span class="dblue_text">&amp;gt</span>();<br/>
+<span class="red_text">Iterator&amp;lt</span><span class="green_text">String</span><span class="red_text">&amp;gt iterator</span> =  <span class="dblue_text">set</span>.<b>iterator</b>();<br/><br/>
+<b>while</b> (<span class="red_text">iterator</span>.<b>hasNext</b>())<br/>
+        {<br/>
+ <span class="green_text">String item</span> = <span class="red_text">iterator</span>.<b>next</b>();<br/>
+ <span class="grey_text">System.out.println</span>(<span class="green_text">item</span>);<br/>
+        }
+    </font></td>
+<td class="monospace_text" valign="top"><font size="4"><span class="dblue_text">TreeSet&amp;lt</span><span class="green_text">String</span><span class="dblue_text">&amp;gt set</span> = new <span class="dblue_text">TreeSet&amp;lt</span><span class="green_text">String</span><span class="dblue_text">&amp;gt</span>();<br/><br/>
+<b>for</b>(<span class="green_text">String item</span> : <span class="dblue_text">set</span>)<br/>
+{<br/>
+ <span class="grey_text">System.out.println</span>(<span class="green_text">item</span>);<br/>
+}
+    </font></td>
+</tr>
+</tbody></table>
+<p><span class="dred_text">Это один и тот же код! Итератор используется и там и там.</span></p>
+<p>Просто в цикле <b>for-each</b> его использование скрыто. Обрати внимание – в коде справа вообще нет <span class="red_text">красного цвета</span>. Использование итератора скрыто полностью.</p>
+<p>Цикл <b>for-each</b> можно использовать для любых объектов, которые поддерживают итератор. Т.е. ты можешь написать свой класс, добавить ему метод <b>iterator</b>() и сможешь использовать его объекты в правой части конструкции <b>for-each</b>.</p>
+<p class="amigo">- Ого! Я, конечно, не рвусь писать собственные коллекции и итераторы, но предложение все равно заманчивое. Возьму на карандаш.</p>
+<p>- Кроме того,  есть еще одна популярная разновидность итераторов, что ей даже придумали свой интерфейс. Речь идет о итераторе для списков – <b>ListIterator</b>.</p>
+<p>Списки, независимо от реализации обладают порядком элементов, что в свою очередь позволяет работать с ними через итератор чуть более удобно.</p>
+<p>Вот какие методы есть у интерфейса <b>ListIterator</b>&amp;ltE&amp;gt:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text">boolean <span class="dblue_text"><b>hasNext</b></span>()
+    </td>
+<td class="wide-text">Проверяет – есть ли еще элементы впереди.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">E <span class="dblue_text"><b>next</b></span>()
+    </td>
+<td class="wide-text">Возвращает следующий элемент.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">int <span class="dblue_text"><b>nextIndex</b></span>()
+    </td>
+<td class="wide-text">Возвращает индекс следующего элемента
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">void <b>set</b>(E e)
+    </td>
+<td class="wide-text">Меняет значение текущего элемента
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">boolean <span class="green_text"><b>hasPrevious</b></span>()
+    </td>
+<td class="wide-text">Проверяет – есть ли элементы позади.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">E <span class="green_text"><b>previous</b></span>()
+    </td>
+<td class="wide-text">Возвращает предыдущий элемент
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">int <span class="green_text"><b>previousIndex</b></span>()
+    </td>
+<td class="wide-text">Возвращает индекс предыдущего элемента
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">void <b>remove</b>()
+    </td>
+<td class="wide-text">Удаляет текущий элемент
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">void <b>add</b>(E e)
+    </td>
+<td class="wide-text">Добавляет элемент в конец списка.
+    </td>
+</tr>
+</tbody></table>
+<p>Т.е. тут мы можем ходить не только вперед, но и назад. И еще пара фич по мелочи.</p>
+<p class="amigo">- Что ж, интересная штука. А где его используют?</p>
+<p>- Например, ты хочешь двигаться туда-обратно по связному списку. При этом операция get будет довольно медленной, а операция next() очень быстрой.</p>
+<p class="amigo">- Хм. Убедила. Буду иметь ввиду.</p>
+<p class="amigo">Спасибо, Элли!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<p>- Привет, дружище. Держи свою интересную задачу.</p>
+<tr>
+<td>
+<button class="task_button" taskkey="level37,lesson04,task01"></button><b>1. Круговой итератор</b><br/><br/>
+		Класс <span class="taskcode">Solution</span> наследуется от <span class="taskcode">ArrayList</span>. <br/>
+		Напишите свой класс <span class="taskcode">RoundIterator</span> внутри <span class="taskcode">Solution</span>, который будет итератором для списка <span class="taskcode">Solution</span>. <br/>
+		Итератор должен ходить по кругу по всем элементам. <br/>
+		В остальном поведение должно быть идентичным текущему итератору.
+        </td></tr>
+</table>
+<p>- Подожди, мне тут звонят</p>
+<p>- Алло... Угу... Да... Фабрика... Что там с этой фабрикой??? Алло, алло!</p>
+<p>- Амиго, мне звонил капитан, про какую-то фабрику говорил и про агента секретного. Ты же мой друг, правда? Сходи к этому агенту IntelliJ IDEA, узнай, что там за дела с фабрикой. Только тсс, никому не говори.</p>
+<p class="amigo">- Да знаю я этого секретного агента, вмести столько часов провели. Не беспокойся, уже иду.</p>
+<br/>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>5. Иерархия Map</h2>
+</div>
+<p>- Ну, и напоследок – расскажу о Map.</p>
+<p>Map, как ты знаешь, хранит набор пар «ключ-значение». Ключи должны быть уникальны, значение – любые. Если ты добавляешь в Map пару ключ-значение, а такой ключ в коллекции уже есть, то старое значение заменится на новое. Т.е. <span class="violet_text">ключ – это что-то вроде уникального индекса, который может быть любым объектом.</span></p>
+<p>Как только название Map не переводится на русский язык. Их существует уже, наверное, десятка полтора. Самые распространённые – это Словарь, Карта, Отображение, …</p>
+<p>Название Map – это математический термин, который обозначает набор (множество) пар (x,y), где каждому уникальному x соответствует какой-то y.</p>
+<p>Программисты очень любят Map, поэтому у нас тут аж 4 различных коллекции, реализующих интерфейс Map:</p>
+<p>Вот тебе ее простенькая структура наследования:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/37/image-ru-37-01.png"/>
+<p>Желтым отмечено, что <b>Entry</b> – это вложенный интерфейс в интерфейсе <b>Map</b>.</p>
+<p><span class="orange_text"><b>Entry</b> был добавлен, чтобы описать именно пару элементов как одну сущность.</span></p>
+<p>Вот какие методы есть у Map&amp;ltK,V&amp;gt:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Методы</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text">int <b>size</b>()
+    </td>
+<td class="wide-text">Возвращает количество пар в map.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">boolean <b>isEmpty</b>()
+    </td>
+<td class="wide-text">Проверяет – пустой ли map.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">boolean <b>containsKey</b>(Object key)
+    </td>
+<td class="wide-text">Содержит ли map заданный ключ?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">boolean <b>containsValue</b>(Object value)
+    </td>
+<td class="wide-text">Содержит ли map заданное значение?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">V <b>get</b>(Object key)
+    </td>
+<td class="wide-text">Возвращает значение по ключу.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">V <b>put</b>(K key, V value)
+    </td>
+<td class="wide-text">Устанавливает новое значение ключу.<br/>
+    Метод возвращает старое значение или null
+    </td>
+</tr>
+<tr>
+<td class="monospace_text"><b>putAll</b>(Map&amp;lt? extends K, ? extends V&amp;gt m)
+    </td>
+<td class="wide-text">Добавляет пары из другого map.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">void <b>clear</b>()
+    </td>
+<td class="wide-text">Очищает map – удаляет все пары.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">Set&amp;ltK&amp;gt<b>keySet</b>()
+    </td>
+<td class="wide-text">Возвращает Set из ключей.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">Collection&amp;ltV&amp;gt<b>values</b>()
+    </td>
+<td class="wide-text">Возвращает коллекцию из значений.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">Set&amp;ltMap.Entry&amp;ltK, V&amp;gt&amp;gt<b>entrySet</b>()
+    </td>
+<td class="wide-text">Возвращает множество (Set) пар.
+    </td>
+</tr>
+</tbody></table>
+<p>K,V – это типы-параметры для ключей (Key) и значений(Value).</p>
+<p class="amigo">- Ну, с большинством методов я знаком, хотя работал только с некоторыми из них.</p>
+<p class="amigo">А что еще за Entry такой?</p>
+<p>- Это класс, который описывает пару элементов. Методов у него немного:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Методы</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text">K <b>getKey</b>()
+    </td>
+<td class="wide-text">Возвращает значение «ключа пары».
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">V <b>getValue</b>()
+    </td>
+<td class="wide-text">Возвращает значение «значения пары».
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">V <b>setValue</b>(V value)
+    </td>
+<td class="wide-text">Устанавливает новое значение «значения пары».
+    </td>
+</tr>
+</tbody></table>
+<p>Entry удобен тем, что ты можешь взять какую-то пару и передать ее в нужный метод, не передавая туда всю коллекцию map.</p>
+<p class="amigo">- Ясно.</p>
+<p>- Ну, и пробегусь еще по реализациям Map.</p>
+<p>Первая на очереди – это <b>коллекция HashMap</b>. Она использует хэш-таблицы для хранения элементов. Ключи и значения могут быть любых типов, а так же могут быть null. <span class="violet_text">Порядок элементов может меняться при изменении коллекции.</span></p>
+<p>Элементы хранятся внутри HashMap в виде набора групп – корзин (bucket).  В какую корзину попадет элемент, зависит от значения его hashCode().</p>
+<p>Очень грубо говоря, элементы со значением хэш-кода от 1 до 100 попадает в первую корзину, со значением от 101 до 200 во вторую, и т.д.</p>
+<p>Смысл такого хранения в том, что при поиске/удалении можно отбрасывать ненужные корзины, и исключать все их элементы из рассмотрения.</p>
+<p class="amigo">- Ясно.</p>
+<p>- Есть очень хорошая статья по HashMap, советую почитать <a href="http://habrahabr.ru/post/128017/" target="_blank">http://habrahabr.ru/post/128017/</a></p>
+<p>Вторая коллекция – это <b>LinkedHashMap</b>. Основное ее отличие от HashMap – она дополнительно хранит элементы в виде связного списка. У обычной HashMap порядок элементов неопределён и, строго говоря, может меняться со временем. А у  LinkedHashMap можно получить итератор и с помощью него перебрать все элементы в порядке их добавления в LinkedHashMap. Так же у LinkedHashMap есть итератор, который позволяет обойти все пары в порядке из последнего использования/активности.</p>
+<p>Есть очень хорошая статья по HashMap, держи <a href="http://habrahabr.ru/post/129037/" target="_blank">http://habrahabr.ru/post/129037/</a></p>
+<p>Третья коллекция, о которой я бы хотела сегодня рассказать – это <b>TreeMap</b>.</p>
+<p><b>TreeMap</b> хранит свои элементы отсортированными по возрастанию. Это достигается благодаря тому, что TreeMap для их хранения использует сбалансированное красно-черное бинарное дерево.</p>
+<p>Благодаря этому там очень низкое время вставки и поиска элементов. Этот класс – отличный выбор при использовании очень больших объемов данных.</p>
+<p>Ну и, конечно же, статья по TreeMap: <a href="http://www.quizful.net/post/Java-TreeMap" target="_blank">http://www.quizful.net/post/Java-TreeMap</a></p>
+<p>Что я еще не рассказала?</p>
+<p class="amigo">- WeakHashMap, но мне Риша рассказывал про него пару дней назад. </p>
+<p>- Это когда?</p>
+<p class="amigo">- Ну, когда рассказывала про SoftReference, WeakReference и PhantomReference.</p>
+<p>- Верю, учитывая, что ты все правильно назвал. Тогда иди отдыхай. Вечером увидимся.</p>
+<p class="amigo">- Пока, Элли.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level37,lesson06,task01"></button><b>1. Найти класс по описанию</b><br/><br/>
+		1. Реализует интерфейс <span class="taskcode">Map</span> <br/>
+		2. Используется при работе с трэдами <br/>
+		3. Неблокирущая версия списка с пропусками, который адаптирован для хеш-таблицы. <br/>
+		Про список с пропусками читать в дополнительном материале к этой лекци           
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level37,lesson06,task02"></button><b>2. Фикс бага</b><br/><br/>
+                В Вашем большом проекте повсеместно используется метод <span class="taskcode">getExpectedMap</span>.<br/> 
+		В какой-то момент тестеры обнаружили, что метод <span class="taskcode">getExpectedMap</span> выбрасывает <span class="taskcode">NullPointerException</span>. <br/>
+		Ожидаемое поведение описано в комментарии метода <span class="taskcode">main</span>. <br/>
+		Найдите другую стандартную реализацию интерфейса <span class="taskcode">Map</span>, верните объект этого типа в <span class="taskcode">getExpectedMap</span> вместо <span class="taskcode">TreeMap</span>.<br/>
+		Метод <span class="taskcode">main</span> должен отработать без исключений. Метод <span class="taskcode">main</span> не менять.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level37,lesson06,task03"></button><b>3. Ambiguous behavior for NULL</b><br/><br/>
+                Измените реализацию метода <span class="taskcode">getExpectedMap</span>, он должен вернуть объект такого класса, для которого будет противоположное поведение при добавлении ссылки <span class="taskcode">null</span>.<br/> 
+		См. пример вывода в методе <span class="taskcode">main</span>. Остальной код не менять.
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>7. Arrays</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Как прошли утренние лекции?</p>
+<p class="amigo">- Да прилично так, я тебе скажу.</p>
+<p class="amigo">Билаабо дал кучу паттернов проектирования, Элли кучу всего по коллекциям. Не простой выдался денек.</p>
+<p>- Ничего, зато я тебя сильно ничем нагружать не стану.</p>
+<p>Хочу рассказать тебе про два утилитных класса, с которыми ты уже сталкивался.</p>
+<p>Это классы <b>Arrays</b> и <b>Collections</b>. Все их методы статические и предназначены для работы с коллекциями и массивами.</p>
+<p>Начну с более простого – <b>Arrays</b>. Вот его методы:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Методы и их описание</th></tr>
+<tr>
+<td class="example">List&amp;ltT&amp;gt<b>asList</b>(T... a)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Возвращает неизменяемый список, заполненный переданными элементами.
+    </td>
+</tr>
+<tr>
+<td class="example">int <b>binarySearch</b>(int[] a, int fromIndex, int toIndex, int key)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Ищет элемент (key) в массиве a  или подмассиве, начиная с fromIndex и до toIndex.<br/>
+    Массив должен быть отсортирован!<br/>
+    Возвращает номер элемента или fromIndex-1, если элемент не найдет.
+    </td>
+</tr>
+<tr>
+<td class="example">int[] <b>copyOf</b>(int[] original, int newLength)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Возвращает под массив original массива, newLength элементов, начиная с нулевого.
+    </td>
+</tr>
+<tr>
+<td class="example">int[] <b>copyOfRange</b>(int[] original, int from, int to)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Возвращает под массив original массива, начиная с from и до to.
+    </td>
+</tr>
+<tr>
+<td class="example">boolean <b>deepEquals</b>(Object[] a1, Object[] a2)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Глубокое сравнение массивов. Массивы считаются равными, если равны их элементы. Если элементы сами являются массивами, для них тоже выполняется глубокое сравнение.
+    </td>
+</tr>
+<tr>
+<td class="example">int <b>deepHashCode</b>(Object a[])
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Глубокий хэшкод на основе всех элементов. Если элемент является массивом, для него также вызывается deepHashCode.
+    </td>
+</tr>
+<tr>
+<td class="example">String <b>deepToString</b>(Object[] a)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Глубокое преобразование к строке. Для всех элементов вызывается toString(). Если элемент является массивом, для него тоже выполняется глубокое преобразование к строке.
+    </td>
+</tr>
+<tr>
+<td class="example">boolean <b>equals</b>(int[] a, int[] a2)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Сравнивает два массив а поэлементно.
+    </td>
+</tr>
+<tr>
+<td class="example">void <b>fill</b>(int[] a, int fromIndex, int toIndex, int val)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Заполняет массив (или подмассив) заданным значением.
+    </td>
+</tr>
+<tr>
+<td class="example">int <b>hashCode</b>(int a[])
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Вычисляет общий hashCode всех элементов массива.
+    </td>
+</tr>
+<tr>
+<td class="example">void <b>sort</b>(int[] a, int fromIndex, int toIndex)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Сортирует массив (или подмассив) по возрастанию.
+    </td>
+</tr>
+<tr>
+<td class="example">String <b>toString</b>(int[] a)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Преобразовывает массив к строке. Для всех элементов вызывается toString();
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- А что, очень полезные методы, многие мне бы пригодились.</p>
+<p>- Хочу еще заметить, что я тут привел не все методы. Почти все методы из таблицы дублируются для всех примитивных типов. Т.е. если написано String toString(<b>int</b>[] a), то так же есть методы String toString(<b>boolean</b>[] a), String toString(<b>byte</b>[] a), String toString(<b>long</b>[] a), String toString(<b>float</b>[] a), String toString(<b>double</b>[] a), String toString(<b>char</b>[] a).</p>
+<p class="amigo">- Так это же меняет дело. Теперь это, ну просто незаменимый класс.</p>
+<p>- Рад, что тебе понравилось. Тогда продолжим после перерыва.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Задачи</h2>
+<p>- Амиго, сейчас я дам тебе всего одну задачу, но очень крутую! Ты такого еще никогда не делал, это верх мастерства!
+            Где же она... эээ... Ну... Вобщем, иди и реши те задачи, которые у тебя еще не решены. Отдохни и приходи в следующий раз, я как раз ее найду для тебя.</p>
+</div>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>9. Collections</h2>
+</div>
+<p>- А вот и я.</p>
+<p class="amigo">- Я уже давно тебя тут жду.</p>
+<p>- Надеюсь. Тогда продолжим.</p>
+<p>Представляю тебе супер-мега навороченный утилитный класс для коллекций. </p>
+<p class="amigo">- Я уже весь дрожу.</p>
+<p>- Отлично. Тогда начнем. Вот методы класса Collections:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Методы и их описание</th></tr>
+<tr>
+<td class="example">boolean <b>addAll</b>(Collection&amp;lt? super T&amp;gt c, T... elements)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Добавляет переданные элементы в переданную коллекцию.<br/> 
+    Удобно использовать в виде <span class="dred_text">Collections.addList(list, 10,11,12,13,14,15)</span>
+</td>
+</tr>
+<tr>
+<td class="example">Queue&amp;ltT&amp;gt<b>asLifoQueue</b>(Deque&amp;ltT&amp;gt deque)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Возвращает «обычную очередь», сделанную из «обратной очереди».
+    </td>
+</tr>
+<tr>
+<td class="example">int <b>binarySearch</b>(List&amp;lt? extends T&amp;gt list, T key, Comparator&amp;lt? super T&amp;gt c)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Ищет с помощью двоичного поиска элемент keyв списке list.<br/>
+    Список должен быть отсортирован.<br/>
+    Можно задать компаратор для сравнения элементов.
+    </td>
+</tr>
+<tr>
+<td class="example">Collection&amp;ltE&amp;gt<b>checkedCollection</b>(Collection&amp;ltE&amp;gt c, Class&amp;ltE&amp;gt type)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Проверяет, что все элементы коллекции «с» определенного типа «type».<br/>
+    Аналогичные методы существуют для List, Map, Set и SortedSet.
+    </td>
+</tr>
+<tr>
+<td class="example">void <b>copy</b>(List&amp;lt? super T&amp;gt dest, List&amp;lt? extends T&amp;gt src)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Копирует список «src»в список «dest».
+    </td>
+</tr>
+<tr>
+<td class="example">boolean <b>disjoint</b>(Collection&amp;lt?&amp;gt c1, Collection&amp;lt?&amp;gt c2)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Проверяет, что коллекции не содержат общих элементов
+    </td>
+</tr>
+<tr>
+<td class="example">void <b>fill</b>(List&amp;lt? super T&amp;gt list, T obj)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Заполоняет список list, элементом obj
+    </td>
+</tr>
+<tr>
+<td class="example">int <b>frequency</b>(Collection&amp;lt?&amp;gt c, Object o)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Подсчитывает сколько раз в коллекции «с» встречается объект «o»
+    </td>
+</tr>
+<tr>
+<td class="example">int <b>indexOfSubList</b>(List&amp;lt?&amp;gt source, List&amp;lt?&amp;gt target)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Определяет индекс, с которого в списокsource входит список target как подпоследовательность.<br/>
+    Принцип аналогичен String.indexOf("somestring")
+    </td>
+</tr>
+<tr>
+<td class="example">int <b>lastIndexOfSubList</b>(List&amp;lt?&amp;gt source, List&amp;lt?&amp;gt target)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Определяет последний индекс, с которого в список source входит список target как подпоследовательность.<br/>
+    Аналогичен String.lastIndexOf("somestring")
+    </td>
+</tr>
+<tr>
+<td class="example">T <b>max</b>(Collection&amp;lt? extends T&amp;gt coll)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Ищет максимальное число/значение в коллекции.<br/>
+    Как найти максимум из 6-и чисел?<br/>
+<span class="dred_text">Collections.max(Arrays.asList(51, 42, 33, 24, 15, 6));</span>
+</td>
+</tr>
+<tr>
+<td class="example">T <b>min</b>(Collection&amp;lt? extends T&amp;gt coll)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Ищет минимальное значение в коллекции.
+    </td>
+</tr>
+<tr>
+<td class="example">List&amp;ltT&amp;gt<b>nCopies</b>(int n, To)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Создает фиктивную коллекцию, которая выглядит так, как будто в ней «n» раз встречается элемент «o».
+    </td>
+</tr>
+<tr>
+<td class="example">boolean <b>replaceAll</b>(List&amp;ltT&amp;gt list, T oldVal, T newVal)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Заменяет в коллекции list все элементы oldVal на newVal
+    </td>
+</tr>
+<tr>
+<td class="example">void <b>reverse</b>(List&amp;lt?&amp;gt list)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Разворачивает список задом наперед.
+    </td>
+</tr>
+<tr>
+<td class="example">void <b>shuffle</b>(List&amp;lt?&amp;gt list)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Перемешивает элементы списка случайным образом.
+    </td>
+</tr>
+<tr>
+<td class="example">List&amp;ltT&amp;gt<b>singletonList</b>(To)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Возвращает  неизменяемый список, состоящий из одного переданного элемента.<br/>
+    Аналогичные методы существуют для Map, Set и SortedSet.
+    </td>
+</tr>
+<tr>
+<td class="example">void <b>sort</b>(List&amp;ltT&amp;gt list)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Сортирует список по возрастанию.
+    </td>
+</tr>
+<tr>
+<td class="example">void <b>swap</b>(List&amp;lt?&amp;gt list, int i, int j)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Меняет элементы списка местами
+    </td>
+</tr>
+<tr>
+<td class="example">Collection&amp;ltT&amp;gt<b>synchronizedCollection</b>(Collection&amp;ltT&amp;gt c)
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Оборачивает данную коллекцию в ее синхронизированный аналог.<br/>
+    Аналогичные методы существуют для List, Map, Set и SortedSet.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ничего себе! Да это же целый арсенал, а я и десятой части не использовал.</p>
+<p>- Собственно на этом моя сегодняшняя лекция и заканчивается.</p>
+<p>Посмотри эти методы, найти те, которые, скорее всего, будешь использовать.</p>
+<p>А еще лучше – выучи. Они тебе пригодятся.</p>
+<p class="amigo">- Спасибо тебе, Риша. Пойду учить.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>10. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<p>- Привет, Амиго. Держи полезную задачу:</p>
+<tr>
+<td><button class="task_button" taskkey="level37,lesson10,task01"></button><b>1. Давно забытый Array</b><br/><br/>
+                Реализуйте логику метода <span class="taskcode">getData</span> так, чтобы <span class="taskcode">main</span> отработал без исключений.<br/>
+                Остальной код не менять
+        </td></tr>
+</table>
+<p>- Вспомнил! Вот задача, которую я обещал тебе в прошлый раз. Знаешь, что такое SET?</p>
+<p class="amigo">- Уже давно знаю, да и Риша только что рассказывал про утилитный класс Collections.</p>
+<p>- SET - это Super Extreme Task, супер экстремальная задача. Что тебе про нее рассказывал Риша?</p>
+<p class="amigo">- Ээ, он мне про другое рассказывал... про полезные методы для коллекций.</p>
+<p>- Про другое?? Ладно, на условие, иди решай. Только не решай эту задачу на листочках. Видел я, как ты себе что-то там записываешь. Нужно сразу в карту памяти писать.</p>
+<p class="amigo">- Так а где мне ее решать?</p>
+<p>- Иди к секретному агенту, у него точно для тебя что-то найдется.</p>
+<br/>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Учимся гуглить</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Продолжаем наши уроки – учимся гуглить.</p>
+<p>Вот тебе несколько заданий:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Надо найти в Google</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Паттерны проектирования
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Паттерн Singleton
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Реализация паттерна Singleton в Java
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Что такое UML
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">UML примеры
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Паттерн Factory и AbstractFactory
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Паттерн Proxy
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Паттерн Bridge
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Паттерн Adapter
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Антипаттерны
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>12. Профессор дает доп. материал</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Вот тебе дополнительный материал по теме.</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-37.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>13. Хулио</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Хулио.</p>
+<p>- Ну как? Выучил паттерны проектирования?</p>
+<p class="amigo">- Выучил - не выучил, но точно ознакомился.</p>
+<p>- Вот и отлично. После тяжелой умственной работы нужно отдыхать. Ты присаживайся, а я найду, что посмотреть.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-37.gif" preload="none" tabindex="0" taskkey="level37,lesson13,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-37.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=SGfUt0XjBmA" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>14. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Что такое паттерны проектирования?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Какие паттерны проектирования вы знаете?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Расскажите про паттерн Singleton? Как сделать его потокобезопасным?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Расскажите про паттерн Factory
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Расскажите про паттерн AbstractFactory 
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Расскажите про паттерн Adaper, его отличия от Wrapper?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Расскажите про паттерн Proxy
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Что такое итератор? Какие интерфейсы, связанные с итератором, вы знаете?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Зачем нужен класс Arrays?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Зачем нужен класс Collections?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>15. Большая задача</h2>
+</div>
+<p>- Привет, боец!</p>
+<p>- Поздравляю тебя с повышением уровня квалификации. Нам нужны отчаянные парни.</p>
+<p>- Уверен, у тебя есть еще много нерешенных задач. Самое время решить парочку из них!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

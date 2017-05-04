@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:0px;margin-right: 0px;   background: url(images/profile/web-bender-31.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 250px;margin-left: -500px;">
+                    Уровень 31
+                </div>
+</div>
+</div>
+<br/>
+<!--<div class="line"></div>-->
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>1. File, Files, Path</h2>
+</div>
+<p>- Привет, Амиго. Давно не виделись.</p>
+<p class="amigo">- Привет, Билаабо. О чем будешь рассказывать?</p>
+<p>- <b>Сегодня я расскажу о работе с файлами.</b> В Java есть специальный класс (File), с помощью которого можно управлять файлами на диске компьютера. Для того чтобы управлять содержимым файлов, есть другие классы: FileInputStream, FileOutputStream,…</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/31/image-ru-31-04.png"/>
+<p class="amigo">- Интересно. А когда ты говоришь «управлять файлами», что ты имеешь в виду?</p>
+<p>- Как раз сейчас и расскажу. Файлы можно создавать, удалять, переименовывать и еще много чего. В практически все классы, которые работают (читают, пишут, изменяют) с содержимым файла, можно передавать объект класса File. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Можно сразу передавать имя файла в FileInputStream</th></tr>
+<tr>
+<td class="monospace_text">FileInputStream <b>input</b> = <b>new</b> FileInputStream<b>(<span class="green_text">"c:/path/a.txt"</span>);</b>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">А можно отдельно создать объект-файл, а потом передать его в FileInputStream</th></tr>
+<tr>
+<td class="monospace_text">File <span class="red_text"><b>file</b></span> = <b>new</b> File<b>(<span class="green_text">"c:/path/a.txt"</span>);</b><br/>
+    FileInputStream <b>input</b> = <b>new</b> FileInputStream<b>(<span class="red_text">file</span>);</b>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Но во втором случае длиннее же получается. Так и не понял – зачем эти файлы нужны.</p>
+<p>- Для этого конкретного случая – да. Это не пример, как надо делать, а скорее – как можно.</p>
+<p>Но вот представь, что тебе нужно вывести на экран список всех файлов, которые находятся в определенной директории (папке). Вот как это можно сделать с помощью файлов:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text">File <span class="blue_text">folder</span> = <b>new</b> File<b>(<span class="green_text">"c:/path/"</span>);</b><br/>
+<b>for</b> (File <span class="red_text">file</span> : <span class="blue_text">folder</span>.listFiles<b>())</b><br/>
+        {<br/>
+             <b>System.out.println</b>(<span class="red_text">file</span>.getName<b>());</b><br/>
+        }
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- <b>listFiles()</b> – это метод, который возвращает список файлов в папке с именем «c:/path/»?</p>
+<p>- Да. Хотя программисты обычно говорят «директория» или «каталог». Название «папка» стало употребляться совсем недавно, но, в принципе, они все верные, и ты можешь говорить, как тебе удобнее.</p>
+<p class="amigo">- Ок. А <b>getName()</b> что делает? Выдает имя файла? И какое именно имя? Полное вместе с путем или только имя самого файла?</p>
+<p>- Только имя самого файла. Для полного есть file.getAbsolutePath()</p>
+<p class="amigo">- А какие еще методы есть у класса File?</p>
+<p>- Вот, смотри:</p>
+<table class="table_example">
+<tbody><tr><th width="35%">Метод</th><th width="65%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>isDirectory</b>()
+    </td>
+<td class="wide-text">Является ли «объект файла» директорией
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>isFile</b>()
+    </td>
+<td class="wide-text">Является ли объект файлом
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">long <b>length</b>()
+    </td>
+<td class="wide-text">Возвращает размер/длину файла в байтах.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>createNewFile</b>()
+    </td>
+<td class="wide-text">Создает файл. Если такой файл уже был, возвращает false.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>mkdir</b>()
+    </td>
+<td class="wide-text">Создает директорию. Название mkdir происходит от "make directory".
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>mkdirs</b>()
+    </td>
+<td class="wide-text">Создает директорию и все поддиректории.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>delete</b>()
+    </td>
+<td class="wide-text">Удаляет файл объекта на диске. Если объект – директория, то только, если в ней нет файлов.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>deleteOnExit</b>()
+    </td>
+<td class="wide-text">Добавляет файл в специальный список файлов, которые будут автоматически удалены при закрытии программы.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">File createTempFile(<br/>
+         String prefix,<br/> 
+         String suffix,<br/>    
+         File directory)
+    </td>
+<td class="wide-text">Создает «временный файл» - файл с случайно сгенерированным уникальным именем – что-типа «dasd4d53sd».<br/>
+    Дополнительные параметры – префикс к имени, суффикс (окончание). Если директория не указана, то файл создается в специальной директории ОС для временных файлов
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>exists</b>()
+    </td>
+<td class="wide-text">Возвращает true, если файл с таким именем существует на диске компьютера.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">String <b>getAbsolutePath</b>()
+    </td>
+<td class="wide-text">Возвращает полный путь файла со всеми поддиректориями.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">String <b>getCanonicalPath</b>()
+    </td>
+<td class="wide-text">Возвращает канонический путь файла.<br/> 
+    Например, преобразовывает путь «c:/dir/dir2/../a.txt» к пути «c:/dir/a.txt»
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">String[] <b>list</b>()
+    </td>
+<td class="wide-text">Возвращает массив имен файлов, которые содержатся в директории, которой является текущий объект-файл.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">File[] <b>listFiles</b>()
+    </td>
+<td class="wide-text">Возвращает массив файлов, которые содержатся в директории, которой является текущий объект-файл. 
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">long <b>getTotalSpace</b>()
+    </td>
+<td class="wide-text">Возвращает размер диска (количество байт) на котором расположен файл.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">long <b>getFreeSpace</b>()
+    </td>
+<td class="wide-text">Возвращает количество свободного места (количество байт) на диске, на котором расположен файл.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>renameTo</b>(File)
+    </td>
+<td class="wide-text">Переименовывает файл – содержимое файла фактически получает новое имя.  Т.е. можно переименовать файл «c:/dir/a.txt» в «d:/out/text/b.doc».
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">String <b>getName</b>()
+    </td>
+<td class="wide-text">Возвращает только имя файла, без пути.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">String <b>getParent</b>()
+    </td>
+<td class="wide-text">Возвращает только путь (директорию) к текущему файлу, без самого имени.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Path <b>toPath</b>()
+    </td>
+<td class="wide-text">Возвращает объект Path, который соответствует текущему объекту File.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ничего себе! А не маленький такой список получился. Да и вроде, можно довольно много сделать с помощью него: создавать, удалять файлы, переименовывать,…</p>
+<p class="amigo">А чтобы получить директорию текущего файла, надо вызвать getParent()?</p>
+<p>- Ага, но он вернет не объект-файл, а строку – путь к файлу. Фактически у класса File почти все методы дублированы: одна версия возвращает String, вторая File. Вот смотри:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text"><b>File <span class="red_text">file</span></b> = new <b>File</b>(<span class="green_text">"c:/path/a.txt"</span>);<br/>
+<b>String</b> directory  = file.<b>getParent</b>();
+    </td>
+</tr>
+<tr>
+<td class="monospace_text"><b>File <span class="red_text">file</span></b> = new <b>File</b>(<span class="green_text">"c:/path/a.txt"</span>);<br/>
+<b>File</b> directory  = file.<b>getParentFile</b>();
+    </td>
+</tr>
+</tbody></table>
+<p>Если у тебя есть строка с путем к файлу, а надо объект <b>File</b>, то воспользуйся конструктором. Если же наоборот – есть объект <b>File</b>, а нужна строка – используй <b>getAbsolutePath</b>(). Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text"><b>String <span class="dblue_text">path</span></b> = <span class="green_text">"c:/a.txt"</span>;<br/>
+<b>File <span class="red_text">file</span></b> = new <b>File</b>(<span class="green_text"><b>path</b></span>);
+    </td>
+</tr>
+<tr>
+<td class="monospace_text"><b>File <span class="red_text">file</span></b> = <b>new File</b>(<span class="green_text">"c:/a.txt"</span>);<br/>
+<b>String <span class="dblue_text">path</span></b> = <b><span class="red_text">file</span>.getAbsolutePath</b>();
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Понял.</p>
+<p>- Отлично. Тогда вот тебе маленькое задание – выведи имена всех файлов, которые есть в той же директории, что и текущий файл.</p>
+<p class="amigo">- Нет ничего проще, вот, смотри:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text"><span class="grey_text">//какой-то текущий файл</span><br/>
+        File <span class="green_text">originalFile</span> = <b>new</b> File<b>("c:/path/dir2/a.txt");</b><br/><br/>
+<span class="grey_text">//объект-директория</span><br/>
+        File <span class="green_text">folder</span> = <span class="green_text">originalFile</span>.getParentFile();<br/><br/>
+<span class="grey_text">//печать списка файлов на экран</span><br/>
+<b>for</b> (File <span class="red_text">file</span> : <span class="green_text">folder</span>.listFiles<b>())</b><br/>
+        {<br/>
+             <b>System.out.println</b>(<span class="red_text">file</span>.getName<b>());</b><br/>
+        }
+    </td>
+</tr>
+</tbody></table>
+<p>- Гм. Правильно.</p>
+<p class="amigo">- А, то! Немного путает, что и для файла и для директории используется один и тот же класс – File. Как то это не очень логично, мне кажется.</p>
+<p>- Так исторически сложилось. Раньше директория была специальным «пустым» файлом на диске. Сейчас уже, конечно, многое изменилось, но не везде. У меня на сегодня все.</p>
+<p class="amigo">- Спасибо, за отличную лекцию, Билаабо.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>2. Задачи на File</h2>
+</div>
+<p>- Привет, Амиго! Я придумал тебе пару интересных задач.</p>
+<p>Решать их можно только в Intellij IDEA. Вот, смотри, какие интересные условия…</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Проход по дереву файлов</b><br/><br/>
+                1. На вход метода <span class="taskcode">main</span> подаются два параметра.<br/>
+		Первый - <span class="taskcode">path</span> - путь к директории, второй - <span class="taskcode">resultFileAbsolutePath</span> - имя файла, который будет содержать результат.<br/>
+		2. Для каждого файла в директории <span class="taskcode">path</span> и в ее всех вложенных поддиректориях выполнить следующее:<br/>
+		2.1. Если у файла длина в байтах больше 50, то удалить его.<br/>
+		2.2. Если у файла длина в байтах НЕ больше 50, то для всех таких файлов:<br/>
+		2.2.1. отсортировать их по имени файла в возрастающем порядке, путь не учитывать при сортировке<br/>
+		2.2.2. переименовать <span class="taskcode">resultFileAbsolutePath</span> в '<span class="taskcode">allFilesContent.txt</span>'<br/>
+		2.2.3. в <span class="taskcode">allFilesContent.txt</span> последовательно записать содержимое всех файлов из п. 2.2.1. Тела файлов разделять "<span class="taskcode">\n</span>"<br/>
+		2.3. Удалить директории без файлов (пустые).<br/>
+		Все файлы имеют расширение txt.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Находим все файлы</b><br/><br/>
+                Реализовать логику метода <span class="taskcode">getFileTree</span>, который должен в директории <span class="taskcode">root</span> найти список всех файлов включая вложенные.<br/>
+		Используйте очередь, рекурсию не используйте.<br/>
+		Верните список всех путей к найденным файлам, путь к директориям возвращать не надо.<br/>
+		Путь должен быть абсолютный.
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>3. Files, Path</h2>
+</div>
+<p class="amigo">- О, Риша, здорово!</p>
+<p>- Привет, Амиго! Как жизнь?</p>
+<p class="amigo">- Отлично. Только что Билаабо рассказывал кучу интересного про File, и как с ним работать.</p>
+<p>- Думаю, у меня как раз есть, что добавить по этой теме.</p>
+<p class="amigo">- Да? Тогда с удовольствием послушаю.</p>
+<p>- Тогда слушай. Java постоянно развивается, постоянно ищутся новые способы делать различные вещи эффективнее. В Java 7 была добавлена альтернатива классу File.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/31/image-ru-31-03.png"/>
+<p class="amigo">- Альтернатива?</p>
+<p>- Ага. Взяли за основу класс <b>File</b>, добавили в него немного нового, переименовывали методы, а в конце еще и разделили на два. Так что теперь есть два новых класса – <span class="blue_text"><b>Path</b></span> и <span class="red_text"><b>Files</b></span>. <span class="blue_text">Path</span> – это, фактически новый аналог класса <b>File</b>, а <span class="red_text">Files</span> – это утилитный класс (по аналогии с классами Arrays &amp; Collections), в него вынести все статические методы класса <b>File</b>. Так «правильнее» с точки зрения ООП.</p>
+<p class="amigo">- Ну, раз с точки зрения ООП, то – ок. А что поменялось-то?</p>
+<p>- Во-первых, отказались от дублирования методов, которые возвращали <b>String</b> и <b>File</b>. В классе <span class="blue_text">Path</span> все методы возвращают <span class="blue_text">Path</span>. </p>
+<p>Во-вторых, убрали многие статические утилитные методы  в класс <span class="red_text">Files</span>.</p>
+<p>В третьих, удобнее стало работать с относительными путями.</p>
+<p>Вот список методов:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Методы класса Path</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>isAbsolute</b>()
+    </td>
+<td class="wide-text">Возвращает true, если путь – абсолютный.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Path <b>getRoot</b>()
+    </td>
+<td class="wide-text">Возвращает корень текущего пути – директорию самого верхнего уровня. 
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Path <b>getFileName</b>()
+    </td>
+<td class="wide-text">Возвращает имя файла из текущего пути.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Path <b>getParent</b>()
+    </td>
+<td class="wide-text">Возвращает директорию из текущего пути.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>startsWith</b>(Path other)
+    </td>
+<td class="wide-text">Проверяет, что текущий путь начинается с переданного пути.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>endsWith</b>(Path other)
+    </td>
+<td class="wide-text">Проверяет, что текущий путь заканчивается на переданный путь.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Path <b>normalize</b>()
+    </td>
+<td class="wide-text">Нормализует текущий путь. Например, приводит путь «c:/dir/dir2/../a.txt» к пути «c:/dir/a.txt»
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Path <b>relativize</b>(Path other)
+    </td>
+<td class="wide-text">Вычисляет относительный путь двух путей – «разницу путей»
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Path <b>resolve</b>(String other)
+    </td>
+<td class="wide-text">Восстанавливает абсолютный путь по текущему и относительному.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">URI <b>toUri</b>()
+    </td>
+<td class="wide-text">Возвращает URI текущего пути/файла.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Path <b>toAbsolutePath</b>()
+    </td>
+<td class="wide-text">Приводит путь к абсолютному, если был относительный.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">File <b>toFile</b>()
+    </td>
+<td class="wide-text">Возвращает объект File, который соответствует текущему объекту Path.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- А текущий путь – это что?</p>
+<p>- Это тот путь, который был передан в конструктор объекта Path, методы которого вызываются. Path – это «путь» по-английски.</p>
+<p class="amigo">- Ок. А какие методы есть у класса <span class="red_text">Files</span>?</p>
+<p>- Ну и куда же ты так спешишь-то? Сейчас все расскажу. Вот основные методы:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Методы класса Files</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">Path <b>createFile</b>(…)
+    </td>
+<td class="wide-text">Создает файл на диске.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Path <b>createDirectory</b>(…)
+    </td>
+<td class="wide-text">Создает директорию. 
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Path <b>createDirectories</b>(…)
+    </td>
+<td class="wide-text">Создает директорию и поддиректории.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Path <b>createTempFile</b>(…)
+    </td>
+<td class="wide-text">Создает «временный файл»
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Path <b>createTempDirectory</b>(…)
+    </td>
+<td class="wide-text">Создает «временную директорию»
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>delete</b>(Path path)
+    </td>
+<td class="wide-text">Удаляет файл/директорию.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Path <b>copy</b>(Path source, Path target,…)
+    </td>
+<td class="wide-text">Копирует файл.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Path <b>move</b>(Path source, Path target,…)
+    </td>
+<td class="wide-text">Перемещает файл.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>isSameFile</b>(Path, Path)
+    </td>
+<td class="wide-text">Сравнивает два файла.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>isDirectory</b>(Path)
+    </td>
+<td class="wide-text">Путь - это директория?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>isRegularFile</b>(Path)
+    </td>
+<td class="wide-text">Путь – это файл?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">long <b>size</b>(Path)
+    </td>
+<td class="wide-text">Возвращает размер файла.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>exists</b>(Path)
+    </td>
+<td class="wide-text">Объект с таким именем существует?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>notExists</b>(Path)
+    </td>
+<td class="wide-text">Объект с таким именем не существует? 
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">long <b>copy</b>(InputStream, OutputStream)
+    </td>
+<td class="wide-text">Копирует байты из InputStream в OutputStream.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">long <b>copy</b>(Path, OutputStream)
+    </td>
+<td class="wide-text">Копирует все байты из Path в OutputStream.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">long <b>copy</b>(InputStream, Path)
+    </td>
+<td class="wide-text">Копирует все байты из InputStream в Path.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">byte[] <b>read</b>(InputStream, int initialSize)
+    </td>
+<td class="wide-text">Читает массив байт из InputStream.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">byte[] <b>readAllBytes</b>(Path path)
+    </td>
+<td class="wide-text">Читает все байты из InputStream.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">List&amp;ltString&amp;gt <b>readAllLines</b>(Path path,..)
+    </td>
+<td class="wide-text">Читает текстовый файл, возвращает список строк.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Path <b>write</b>(Path path, byte[] bytes,…)
+    </td>
+<td class="wide-text">Пишет массив байт в файл.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Как интересно, столько крутых функций, и все в одном месте.</p>
+<p class="amigo">А зачем нужны временные файлы?</p>
+<p>- Ну, смотри. Допустим, ты хочешь скачать файл из интернета, а потом отправить его кому-то. Для этого очень удобно создать временный файл на диске и сохранять считанные данные в него.</p>
+<p class="amigo">- А сложно скачать файл из интернета?</p>
+<p>- Очень просто. Смотри пример:</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="100%">Код</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7
+    </td>
+<td class="monospace_text"><b>URL</b> <span class="dblue_text">url</span> = new <b>URL</b>(<span class="green_text">"https://www.google.com.ua/images/srpr/logo11w.png"</span>);<br/>
+        InputStream <span class="dblue_text">inputStream</span> = <span class="dblue_text">url</span>.openStream<b>();</b><br/><br/>
+
+        Path <span class="orange_text">tempFile</span> = <b><span class="red_text">Files</span>.<span class="violet_text">createTempFile</span>("temp-",".tmp");</b><br/>
+<b><span class="red_text">Files</span>.copy</b>(<span class="dblue_text">inputStream</span>, <span class="orange_text">tempFile</span>);
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- И это все?</p>
+<p>- Да, а что ты ожидал тут увидеть? Тут всего 4 строчки.</p>
+<p><b>Строка номер 2.</b> Создается объект <b>URL</b>, куда передается ссылка в интернете на файл с картинкой.</p>
+<p><b>Строка номер 3.</b> У объекта <span class="dblue_text">url</span> открываться  поток на чтение файла – <span class="dblue_text">InputStream</span>.</p>
+<p><b>Строка номер 5.</b> С помощью метода  <span class="violet_text"><b>createTempFile</b></span> создается временный файл.</p>
+<p><b>Строка номер 6.</b> Метод <b><span class="red_text">Files</span>.copy</b> копирует данные из <span class="dblue_text">inputStream</span> в <span class="orange_text">tempFile</span>. Все.</p>
+<p class="amigo">- Гениально!</p>
+<p>- Отлично, рад, что тебе понравилось. Думаю, с остальными методами ты разберёшься сам. А я попрошу Диего дать тебе несколько задачек на них.</p>
+<p>Вот тебе, кстати, хорошая ссылка на этот материал:</p>
+<p><a href="http://docs.oracle.com/javase/tutorial/essential/io/legacy.html" target="_blank">Ссылка на материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи на Files, Path</h2>
+</div>
+<p>- Привет, Амиго! Я придумал тебе пару интересных задач.</p>
+<p>Решать их можно только в Intellij IDEA. Вот, смотри, какие интересные условия…</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Своя реализация</b><br/><br/>
+                Реализуйте логику методов:<br/>
+		1. <span class="taskcode">readBytes</span> - должен возвращать все байты файла <span class="taskcode">fileName</span><br/>
+		2. <span class="taskcode">readLines</span> - должен возвращать все строки файла <span class="taskcode">fileName</span>. Используйте дефолтовую кодировку<br/>
+		3. <span class="taskcode">writeBytes</span> - должен записывать массив <span class="taskcode">bytes</span> в файл <span class="taskcode">fileName</span><br/>
+		4. <span class="taskcode">copy</span> - должен копировать файл <span class="taskcode">resourceFileName</span> на место <span class="taskcode">destinationFileName</span><br/><br/>
+
+		ГЛАВНОЕ УСЛОВИЕ:<br/>
+		Никаких других импортов!
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Поиск скрытых файлов</b><br/><br/>
+                В классе <span class="taskcode">Solution</span> переопределите логику двух методов:<br/>
+		-<span class="taskcode">visitFile</span> кроме своей логики должен добавлять в <span class="taskcode">archived</span> все пути к zip и rar файлам<br/>
+		-<span class="taskcode">visitFileFailed</span> должен добавлять в <span class="taskcode">failed</span> все пути к недоступным файлам и возвращать <span class="taskcode">SKIP_SUBTREE</span><br/><br/>
+<span class="example-legacy">Пример вывода:</span><br/>
+<span class="example-data">D:/mydir/BCD.zip</span><br/><br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>5. FileInputStream, FileOutputStream, ZipOutputStream, ZipInputStream</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Элли!</p>
+<p>- Сегодня мы будем изучать потоки ввода-вывода.</p>
+<p class="amigo">- Да, я уже там все знаю. Это делается с помощью классов FileInputStream и FileOutputStream.</p>
+<p>- Да, а какие методы есть у этих классов, знаешь?</p>
+<p class="amigo">- Конечно, вот методы <b>FileInputStream</b>:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">int <b>read</b>()
+    </td>
+<td class="wide-text">Читает один байт и возвращает его.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>read</b>(byte b[])
+    </td>
+<td class="wide-text">Читает массив байт, возвращает количество.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>read</b>(byte b[], int off, int len)
+    </td>
+<td class="wide-text">Читает из потока массив байт.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">long <b>skip</b>(long n)
+    </td>
+<td class="wide-text">Пропускает n байт, используется при чтении из потока.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>available</b>()
+    </td>
+<td class="wide-text">Возвращает количество байт, которое еще можно прочитать из потока.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>close</b>() 
+    </td>
+<td class="wide-text">Закрывает поток. 
+    </td>
+</tr>
+</tbody></table>
+<p>- Все верно! А методы FileOutputStream?</p>
+<p class="amigo">- Вот:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">void <b>write</b>(int b)
+    </td>
+<td class="wide-text">Записывает один байт в поток.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>write</b>(byte b[])
+    </td>
+<td class="wide-text">Записывает массив байт в поток.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>write</b>(byte b[], int off, int len)
+    </td>
+<td class="wide-text">Записывает массив байт в поток.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>close</b>()
+    </td>
+<td class="wide-text">Закрывает поток.
+    </td>
+</tr>
+</tbody></table>
+<p>- Амиго, ты меня удивляешь!</p>
+<p class="amigo">- А то!</p>
+<p>- Отлично, тогда дам тебе два новых класса <b>ZipInputStream</b> и <b>ZipOutputStream</b>.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/31/image-ru-31-02.png"/>
+<p class="amigo">- <b>Zip</b>? Это как <b>zip</b>-архив?</p>
+<p>- Именно. Эти потоки предназначены для работы с файлами, которые являются zip-архивами. С помощью них можно что-то читать прямо из zip-фала или писать в него!</p>
+<p class="amigo">- Ух ты! Как интересно. Но ведь в zip-архиве может быть не один файл, как же они работают?</p>
+<p>- А для этого есть еще один специальный класс – <b>ZipEntry</b>. Он представляет файл, хрянящийся в архиве. Из <b>ZipInputStream</b>  можно читать только объекты типа <b>ZipEntry</b>, а  в <b>ZipOutputStream</b> можно писать только объекты <b>ZipEntry</b>. А вот сами <b>ZipEntry</b> как раз можно читать и писать как обычные файлы.</p>
+<p class="amigo">- А можно пример, как это работает?</p>
+<p>- Конечно, вот пример, где мы создаем архив и кладем в него файл:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text"><span class="grey_text">// создаем архив</span><br/>
+   FileOutputStream  <span class="orange_text">zipFile</span> = new FileOutputStream<b>(<span class="green_text">"c:/archive.zip"</span>);</b><br/>
+   ZipOutputStream  <span class="red_text">zip</span> = new ZipOutputStream(<span class="orange_text">zipFile</span>);  <br/><br/>
+<span class="grey_text">//кладем в него  ZipEntry – «архивный объект»</span><br/>
+<span class="red_text">zip</span>.putNextEntry(new <span class="dred_text">ZipEntry</span><b>(<span class="green_text">"document.txt"</span>));</b> <br/><br/>
+<span class="grey_text">//копируем файл «document-for-archive.txt» в архив под именем «document.txt»</span><br/>
+   File <span class="green_text">file</span> = new File<b>(<span class="green_text">"c:/document-for-archive.txt"</span>);</b><br/>
+   Files.copy(<span class="green_text">file</span>.toPath(), <span class="red_text">zip</span>);<br/><br/>
+<span class="grey_text">// закрываем архив</span><br/>
+<span class="red_text">zip</span>.close<b>();</b>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Как интересно. А разархивировать файлы так же легко?</p>
+<p>- Ага. Вот тебе краткое описание методов классов <b>ZipEntry</b>, <b>ZipInputStream</b> и <b>ZipOutputStream</b></p>
+<p><b>ZipInputStream</b> – это поток, поэтому все <b>ZipEntry</b> могут быть прочитаны только последовательно.  Вот его методы:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">ZipEntry <b>getNextEntry</b>()
+    </td>
+<td class="wide-text">Возвращает объект, описывающий следующий <b>ZipEntry</b> (пропускает все байты текущего entry).
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>closeEntry</b>()
+    </td>
+<td class="wide-text">Закрывает чтение текущего <b>ZipEntry</b> (пропускает все байты текущего entry).
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>available</b>()
+    </td>
+<td class="wide-text">Возвращает 1, если есть доступные <b>ZipEntry</b>, иначе 0.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>read</b>(byte[] b, int off, int len)
+    </td>
+<td class="wide-text">Читает байты из текущего <b>ZipEntry</b>.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">long <b>skip</b>(long n)
+    </td>
+<td class="wide-text">Пропускает n байт при чтении из потока.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>close</b>()
+    </td>
+<td class="wide-text">Закрывает поток.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Не очень понятно.</p>
+<p>- Лучше всего - это представить, что ты читаешь текстовый файл, а <b>ZipEntry</b> – это строки в нем.  Можно читать как данные текущей строки – текущий <b>ZipEntry</b>, так и прыгать по строкам – <b>getNextEntry</b>, <b>closeEntry</b>.</p>
+<p class="amigo">- Вроде понятно, хотя не уверен, что правильно.</p>
+<p>- ZipOutputStrem и его методы:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">void <b>setComment</b>(String comment)
+    </td>
+<td class="wide-text">Устанавливает комментарий к архиву.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>setMethod</b>(int method)
+    </td>
+<td class="wide-text">Указывает метод (тип) сжатия.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>setLevel</b>(int level)
+    </td>
+<td class="wide-text">Указывает степень сжатия. Чем сильнее, тем медленнее.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>putNextEntry</b>(ZipEntry e)
+    </td>
+<td class="wide-text">Добавляет новый ZipEntry.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>closeEntry</b>()
+    </td>
+<td class="wide-text">Закрывает текущий ZipEntry.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>write</b>(byte[] b, int off, int len)
+    </td>
+<td class="wide-text">Пишет набор байт в текущий ZipEntry.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>close</b>()
+    </td>
+<td class="wide-text">Закрывает поток.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- А мы же в примере выше почти ничего этого не использовали.</p>
+<p>- Это необязательные методы. Можно не указывать степень и метод сжатия, тогда будут использованы настройки по умолчанию.</p>
+<p class="amigo">- Гм. Тоже не плохо. А ZipEntry?</p>
+<p>- Ага. В ZipEntry дополнительно хранится только служебная информация:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">String <b>getName</b>(), <b>setName</b>(String)
+    </td>
+<td class="wide-text">Внутреннее имя файла.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">long <b>getTime</b>(), <b>setTime</b>(long)
+    </td>
+<td class="wide-text">Время последней модификации entry.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">long <b>getCRC</b>(), <b>setCRC</b>(long)
+    </td>
+<td class="wide-text">Контрольная сумма.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">long <b>getSize</b>(), <b>setSize</b>(long)
+    </td>
+<td class="wide-text">Размер до компрессии.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>getMethod</b>(), <b>setMethod</b>(int)
+    </td>
+<td class="wide-text">Метод сжатия.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">long <b>get</b>/<b>setCompressedSize</b>()
+    </td>
+<td class="wide-text">Размер после архивации.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>isDirectory</b>()
+    </td>
+<td class="wide-text">Является ли entry директорией.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Выглядит не сложно и интересно, что не может не радовать!</p>
+<p>- Отлично, тогда Диего даст тебе задачи и на эту тему.</p>
+<p class="amigo">- Язык мой – враг мой.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задачи</h2>
+</div>
+<p>- Привет, Амиго! Я придумал тебе пару интересных задач.</p>
+<p>Решать их можно только в Intellij IDEA. Вот, смотри, какие интересные условия…</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Добавление файла в архив</b><br/><br/>
+                В метод <span class="taskcode">main</span> приходит список аргументов.<br/>
+		Первый аргумент - полный путь к файлу <span class="taskcode">fileName</span>.<br/>
+		Второй аргумент - путь к zip-архиву.<br/>
+		Добавить файл (<span class="taskcode">fileName</span>) внутрь архива в директорию '<span class="taskcode">new</span>'.<br/>
+		Если в архиве есть файл с таким именем, то заменить его.<br/><br/>
+<span class="example-legacy">Пример входных данных:</span><br/>
+<span class="example-data">C:/result.mp3<br/>
+		C:/pathToTest/test.zip</span><br/><br/>
+<span class="example-legacy">Файлы внутри test.zip:</span><br/>
+<span class="example-data">a.txt<br/>
+		b.txt</span><br/><br/>
+		После запуска <span class="taskcode">Solution.main</span> архив test.zip должениметь такое содержимое:<br/>
+		new/result.mp3<br/>
+		a.txt<br/>
+		b.txt<br/><br/>
+
+		Подсказка: нужно сначала куда-то сохранить содержимое всех энтри,<br/>
+		а потом записать в архив все энтри вместе с добавленным файлом.<br/>
+		Пользоваться файловой системой нельзя.
+        </td></tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>2. Разархивируем файл</b><br/><br/>
+                В метод <span class="taskcode">main</span> приходит список аргументов.<br/>
+		Первый аргумент - имя результирующего файла <span class="taskcode">resultFileName</span>, остальные аргументы - имена файлов <span class="taskcode">fileNamePart</span>.<br/>
+		Каждый файл (<span class="taskcode">fileNamePart</span>) - это кусочек zip архива. Нужно разархивировать целый файл, собрав его из кусочков.<br/>
+		Записать разархивированный файл в <span class="taskcode">resultFileName</span>.<br/>
+		Архив внутри может содержать файл большой длины, например, 50Mb.<br/>
+		Внутри архива может содержаться файл с любым именем.<br/><br/>
+<span class="example-legacy">Пример входных данных. Внутри архива находится один файл с именем abc.mp3:</span><br/>
+<span class="example-data">C:/result.mp3<br/>
+		C:/pathToTest/test.zip.003<br/>
+		C:/pathToTest/test.zip.001<br/>
+		C:/pathToTest/test.zip.004<br/>
+		C:/pathToTest/test.zip.002</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>7. Reader, Writer</h2>
+</div>
+<p>- Привет, Амиго, еще раз.</p>
+<p class="amigo">- И тебе привет, Риша. О чем будет сегодняшняя лекция?</p>
+<p>- Сегодня я тебе расскажу про Reader и Writer.</p>
+<p class="amigo">- Но, Риша, я же уже почти все о них знаю!</p>
+<p>- Повторение мать учения.</p>
+<p class="amigo">- Гм. Ну, ок.</p>
+<p>- <b>Reader</b> и <b>Writer</b> – это аналоги <b>InputStream</b> и <b>OutputStream</b>, но в отличие от них, они работают не с байтами, а с символами. Иногда их еще называют символьными потоками,  в противовес <b>InputStream</b> и <b>OutputStream</b> – байтовым потокам.</p>
+<p class="amigo">- Один символ – два байта, я помню.</p>
+<p>- Дело не только в этом. Эти классы специально ориентированы для работы с текстом и строками. Сегодня мы рассмотрим две классические реализации этих абстрактных классов – классы <b>FileReader</b> и <b>FileWriter</b>.</p>
+<p>Вот методы класса <b>FileReader</b>:</p>
+<table class="table_example">
+<tbody><tr><th width="55%">Метод</th><th width="45%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">int <b>read</b>()
+    </td>
+<td class="wide-text">Читает один символ из потока и возвращает его.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>read</b>(char cbuf[], int offset, int length) 
+    </td>
+<td class="wide-text">Читает массив символов, возвращает количество прочитанных символов.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>ready</b>()
+    </td>
+<td class="wide-text">Возвращает true, если из потока еще можно читать.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>close</b>()
+    </td>
+<td class="wide-text">Закрывает поток для чтения.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>read</b>(java.nio.CharBuffer target)
+    </td>
+<td class="wide-text">Читает набор символов в буфер.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>read</b>(char cbuf[])
+    </td>
+<td class="wide-text">Читает массив символов.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">long <b>skip</b>(long n)
+    </td>
+<td class="wide-text">Пропускает n символов в потоке.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">String <b>getEncoding</b>()
+    </td>
+<td class="wide-text">Возвращает текущую кодировку потока.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ну, я почти все это знаю. А <b>FileWriter</b>?</p>
+<table class="table_example">
+<tbody><tr><th width="55%">Метод</th><th width="45%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">void <b>write</b>(int c)
+    </td>
+<td class="wide-text">Пишет один символ в поток.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>write</b>(char cbuf[], int off, int len)
+    </td>
+<td class="wide-text">Пишет массив  символов в поток.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>write</b>(char cbuf[])
+    </td>
+<td class="wide-text">Пишет массив  символов в поток.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>write</b>(String str, int off, int len)
+    </td>
+<td class="wide-text">Пишет часть строки в поток.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>write</b>(String str)
+    </td>
+<td class="wide-text">Пишет строку в поток.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>flush</b>()
+    </td>
+<td class="wide-text">Записывает на диск, все для оптимизации хранится в памяти.  
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>close</b>()
+    </td>
+<td class="wide-text">Закрывает поток.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">String <b>getEncoding</b>()
+    </td>
+<td class="wide-text">Возвращает текущую кодировку потока.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">И это знаю!</p>
+<p>- Да, но это же отлично. Тогда давай разберем один интересный пример, а Диего потом даст тебе еще задач.</p>
+<p>Как прочитать файл построчно? Сможешь написать код?</p>
+<p class="amigo">- Легко, смотри:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text"><span class="grey_text">//создаем список для хранения строк</span><br/>
+        List<b>&amp;ltString&amp;gt</b> <span class="dblue_text">list</span> = new ArrayList<b>&amp;ltString&amp;gt();</b> <br/><br/>
+<span class="grey_text">// открываем файл</span><br/>
+        File <span class="green_text">file</span> = new File(<span class="green_text"><b>"c:/document.txt"</b></span>);<br/>
+        BufferedReader <span class="red_text">reader</span> = new BufferedReader(new <span class="orange_text">FileReader</span>(<span class="green_text">file</span>));<br/><br/>
+<span class="grey_text">//пока файл не пуст – читаем из него</span><br/>
+<b>while</b> (<span class="red_text">reader</span>.ready())<br/>
+        {<br/>
+             <span class="dblue_text">list</span>.add(<span class="red_text">reader</span>.readLine());<br/>
+        }<br/><br/>
+<span class="grey_text">//закрываем файл</span><br/>
+        reader.close();
+    </td>
+</tr>
+</tbody></table>
+<p>- Гм. Неплохо.</p>
+<p class="amigo">- Неплохо? Да тут все  просто и красиво. Признайся, Риша, что я уже отлично владею потоками ввода-вывода. Ну что тут можно улучшить-то?</p>
+<p>- Ну, например, можно сделать так:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код Ришы</th></tr>
+<tr>
+<td class="monospace_text">File <span class="green_text">file</span> = new File(<span class="green_text"><b>"c:/document.txt"</b></span>);<br/><br/>
+        
+        List&amp;ltString&amp;gt <span class="dblue_text">list</span> = Files.<span class="red_text">readAllLines</span>(<span class="green_text">file</span>.toPath(), <span class="blue_text">Charset.defaultCharset()</span>);
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Гм. Действительно короче. И ведь только сегодня вы мне рассказывали про все эти методы. Буду отрабатывать. Спасибо за урок, Риша.</p>
+<p>- Удачи, Амиго.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Задачи</h2>
+</div>
+<p>- Привет, Амиго! Я придумал тебе пару интересных задач.</p>
+<p>Решать их можно только в Intellij IDEA. Вот, смотри, какие интересные условия…</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Null Object Pattern</b><br/><br/>
+                Почитайте на вики про паттерн "Null Object"<br/>
+		Используйте <span class="taskcode">Files</span>, чтобы в конструкторе класса <span class="taskcode">Solution</span> правильно инициализировать поле <span class="taskcode">fileData</span> объектом <span class="taskcode">ConcreteFileData</span>.<br/>
+		Если возникли какие-то проблемы со чтением файла по пути <span class="taskcode">pathToFile</span>, то инициализируйте поле объектом <span class="taskcode">NullFileData</span>.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Исследуем Path</b><br/><br/>
+                Почитайте про все методы класса <span class="taskcode">Path</span>.<br/>
+		Найдите такой, который создает относительный путь между текущим и переданным путем.<br/>
+		Реализуйте логику метода <span class="taskcode">getDiffBetweenTwoPaths</span>, он должен возвращать относительный путь.<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании.
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>9. Properties</h2>
+</div>
+<p>- Сегодня мы изучаем еще одну новую и интересную тему – <b>свойства (properties)</b>.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/31/image-ru-31-01.png"/>
+<p>В Java принято делать программы гибкими и легко настраиваемыми. Иногда еще говорят легко конфигурируемыми (от конфигурация).</p>
+<p>Например, твоя программа раз в час копирует файлы из некоторой директории, архивирует их и отсылает тебе на email.  Для этого программе надо знать директорию, откуда брать файлы и email, куда их посылать. Такие данные принято хранить не в коде программы, а в отдельных файлах свойств – <b>properties</b>-файлах.</p>
+<p>Данные в таком файле хранятся в виде пар ключ-значение, разделенные знаком равно.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text">Файл data.properties<br/>
+<span class="dblue_text">directory</span>=<span class="grey_text">c:/text/downloads</span><br/>
+<span class="dblue_text">email</span>=<span class="grey_text">zapp@javarush.ru</span>
+</td>
+</tr>
+</tbody></table>
+<p>Слева от знака равно – имя (ключ), справа – значение.</p>
+<p class="amigo">- Т.е. это что-то типа текстового представления HashMap?</p>
+<p>- В общем-то, да.</p>
+<p>Для удобной работы с такими файлами в Java есть специальный класс – Properties. Класс Properties унаследован от Hashtable&amp;ltObject,Object&amp;gt. Его даже можно рассматривать как HashTable, который умеет загружать себя из файла.</p>
+<p>Вот его методы:</p>
+<table class="table_example">
+<tbody><tr><th width="65%">Метод</th><th width="35%">Описание</th></tr>
+<tr>
+<td class="monospace_text">void <b>load</b>(Reader reader)
+    </td>
+<td class="wide-text">Загружает свойства из файла, представленного объектом Reader
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">void <b>load</b>(InputStream inStream)
+    </td>
+<td class="wide-text">Загружает свойства из файла, представленного объектом InputStream
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">void <b>loadFromXML</b>(InputStream in)
+    </td>
+<td class="wide-text">Загружает свойства из XML-файла
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">Object <b>get</b>(Object key)
+    </td>
+<td class="wide-text">Возвращает значение по ключу. Метод унаследован от HashTable
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">String <b>getProperty</b>(String key)
+    </td>
+<td class="wide-text">Возвращает значение свойства (строку) по ключу.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">String <b>getProperty</b>(String key, String defaultValue)
+    </td>
+<td class="wide-text">Возвращает значение свойства по ключу или defaultValue, если такого ключа нет.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text">Set&amp;ltString&amp;gt <b>stringPropertyNames</b>()
+    </td>
+<td class="wide-text">Возвращает список всех ключей
+    </td>
+</tr>
+</tbody></table>
+<p>Т.е. фактически тебе нужно выполнить всего две операции – загрузить в объект <b>Properties</b> данные из какого-нибудь файла, а затем получить эти свойства с помощью метода <b>getProperty</b>().  Ну и не забывай, что можешь пользоваться объектом <b>Properties</b> как <b>HashMap</b>.</p>
+<p>Вот тебе пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text"><span class="grey_text">//файл, который хранит свойства нашего проекта</span><br/>
+        File <span class="violet_text">file</span> = <b>new</b> File<b>(</b><span class="green_text"><b>"c:/data.properties"</b></span><b>);</b><br/><br/>
+<span class="grey_text">//создаем объект Properties и загружаем в него данные из файла.</span><br/>
+<span class="dred_text"><b>Properties</b> properties</span> = <b>new</b> <span class="dred_text">Properties</span><b>();</b><br/>
+<span class="dred_text">properties</span>.<span class="orange_text"><b>load</b></span><b>(new</b> FileReader<b>(</b><span class="violet_text">file</span><b>));</b><br/><br/>
+<span class="grey_text">//получаем значения свойств из объекта Properties</span><br/>
+        String <b>email</b> = <span class="dred_text">properties</span>.<b><span class="orange_text">getProperty</span>(<span class="green_text">"email"</span>);</b><br/>
+        String <b>directory</b> = <span class="dred_text">properties</span>.<b><span class="orange_text">getProperty</span>(<span class="green_text">"directory"</span>);</b><br/><br/>
+<span class="grey_text">//получаем числовое значение из объекта Properties</span><br/>
+        int <b>maxFileSize</b> = <b><span class="blue_text">Integer.parseInt</span>(</b><span class="dred_text">properties</span>.<b><span class="orange_text">getProperty</span>(<span class="green_text">"max.size", "10000"</span>));</b>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ага. Т.е. мы создаем объект Properties, затем передаем в него файл. В метод load, а затем просто вызываем getProperty. Так?</p>
+<p>- Ага.</p>
+<p class="amigo">- А ты еще говорил, что им можно пользоваться как HashMap? Что ты имел в виду?</p>
+<p>- Класс Properties унаследован от Hashtable, а это – тот же HashMap, просто все методы его синхронизированы. Вот так можно просто вывести на экран все значения из файла свойств:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text"><span class="grey_text">//получаем файл со свойствами</span><br/>
+        File <span class="violet_text">file</span> = <b>new</b> File<b>(</b><span class="green_text"><b>"c:/data.properties"</b></span><b>);</b><br/><br/>
+<span class="grey_text">//создаем объект Properties и загружаем в него данные из файла.</span><br/>
+<span class="dred_text"><b>Properties</b> properties</span> = <b>new</b> <span class="dred_text">Properties</span><b>();</b><br/>
+<span class="dred_text">properties</span>.<span class="orange_text"><b>load</b></span><b>(new</b> FileReader<b>(</b><span class="violet_text">file</span><b>));</b><br/><br/>
+<span class="grey_text">//проходимся по всем ключам и печатаем все их значения на консоль</span><br/>
+<b>for (</b>String <b><span class="blue_text">key</span> : <span class="red_text">properties</span>.<span class="orange_text">stringPropertyNames())</span></b><br/>
+        {<br/>
+              <b>System.out</b>.println<b>(<span class="red_text">properties</span>.<span class="green_text">get</span>(<span class="blue_text">key</span>));</b><br/>
+        }
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ага. Вроде все стало на свои места. Спасибо, Риша, буду пользоваться такой крутой штукой.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>10. Задачи</h2>
+</div>
+<p>- Привет, Амиго! Вот, держи интересную задачу, решать ее можно только в Intellij IDEA. </p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Читаем конфиги</b><br/><br/>
+                Реализовать метод <span class="taskcode">getProperties</span>, который должен считывать свойства из переданного файла <span class="taskcode">fileName</span>.<br/>
+<span class="taskcode">fileName</span> может иметь любое расширение - как xml, так и любое другое, или вообще не иметь.<br/>
+		Нужно обеспечить корректное чтение свойств.<br/>
+		При возникновении ошибок должен возвращаться пустой объект.<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании.<br/><br/>
+		Подсказка: возможно, Вам понадобится <span class="taskcode">File.separator</span>.
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Учимся гуглить</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Продолжаем наши уроки – учимся гуглить.</p>
+<p>Вот тебе несколько заданий:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Найди в интернете:</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Примеры работы с классом File
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Как получить список всех файлов  в директории и ее поддиректориях?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Как получить список всех файлов  в директории с расширением zip?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Как заархивировать файл?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Как заархивировать много файлов?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Как заархивировать много файлов и директорий?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Как разархивировать файл?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Как задать кодировку файла?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Как узнать кодировку файла в архиве?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Как поменять данные (свойства) в объекте типа Properties?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>12. Профессор дает доп. материал</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Вот тебе дополнительный материал по теме.</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2014/03/25/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-31.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>13. Хулио</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Хулио.</p>
+<p>- Вот недавно была презентация нового Ipad.</p>
+<p class="amigo">- Да, и что он умеет делать?</p>
+<p>- Представляешь, он может проектировать изображение на любую поверхность. Вот смотри видео, тут подробней о новых технологиях и программистах в Силиконовой Долине.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-31.gif" preload="none" tabindex="0" taskkey="level31,lesson13,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-31.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=h50a1RxGraY" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>14. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Может ли объект File соответствовать файлу, которого еще нет?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Как преобразовать объект File к типу Path?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Зачем нужен класс Files?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Какие классы для архивации вы знаете?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Как добавить директорию в архив?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Зачем нужны Properties?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">В каком виде хранятся данные в файле .properties?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Можно ли изменять данные в объекте Properties после загрузки их из файла?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Зачем нужен класс FileReader?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Зачем нужен класс FileWriter?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>15. Большая задача</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Здравия желаю, Капитан Бобров!</p>
+<p>- Готов к новой секретной миссии?</p>
+<p class="amigo">- Конечно готов, сэр!</p>
+<p>- Тогда вот тебе файл с инструкциями. Сегодня мы будем разрабатывать новую версию искусственного интеллекта. Человечеству нужна наша помощь. Мы обязаны спасти людей от гибели.</p>
+<p class="amigo">- Но, сэр! Я не могу открыть файл. Нужен архиватор.</p>
+<p>- Да? Кхм… Тогда спасение человечества переносится. Напишем сегодня собственный архиватор.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/31/image-ru-31-05.png"/>
+<p class="amigo">- Товарищ Капитан, а как же люди?</p>
+<p>- Ничего с ними не случится. Обратись за заданием к агенту Intellij IDEA, там получишь все инструкции.</p>
+<p class="amigo">- Разрешите приступить, сэр?</p>
+<p>- Приступайте.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

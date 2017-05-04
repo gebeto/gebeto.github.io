@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:0px;margin-right: 0px;   background: url(images/profile/web-bender-36.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 250px;margin-left: -500px;">
+                    Уровень 36
+                </div>
+</div>
+</div>
+<br/>
+<!--<div class="line"></div>-->
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>1. MVC</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Билаабо!</p>
+<p>- Ты уже серьезный программист. Поэтому сегодня у нас будет лекция про <b>MVC</b>.</p>
+<p>MVC расшифровывается как <b><span class="green_text">Model</span>-<span class="dblue_text">View</span>-<span class="dred_text">Controller</span></b>. Это принцип построения архитектуры большого приложения, при котором оно разбивается на три части.</p>
+<p>Первая часть содержит всю <span class="green_text">бизнес-логику приложения</span>. Такая часть называется <span class="green_text">Модель (Model)</span>. В ней содержится код, который делает все то, для чего приложение создавалось. Эта часть наиболее независимая от остальных.</p>
+<p>Вторая часть содержит все, что касается <span class="dblue_text">отображения данных пользователю</span>. Такая часть называется <span class="dblue_text">Вид (View)</span>. Именно в ней содержится код, который управляет показом окон, страниц, сообщений и т.д.</p>
+<p>Третья часть содержит код, который занимается <span class="dred_text">обработкой действий пользователя</span>. Любые действия пользователя, направленные на изменения модели должны обрабатываться тут. Такая часть называется <span class="dred_text">Controller</span>.</p>
+<p>Такой подход позволяет независимо делать три вещи: <span class="green_text">логику программы (Model)</span>, <span class="dblue_text">механизм показа всех данных программы пользователю (View)</span>, <span class="dred_text">обрабатывать ввод/действия пользователя (Controller)</span>.</p>
+<p>Очень часто у приложения бывает <span class="dblue_text">несколько View</span>. Это нормально. Вы можете видеть в Excel одни и те же данные в виде чисел и диаграмм. В играх вы можете смотреть на события от лица героя, на карте, со стороны  и т.д. Все это – это <span class="dblue_text">разные View</span> для одной <span class="green_text">Model</span>.</p>
+<p>В <span class="dred_text">Controller'е</span> сосредоточен весь код, который принимает решение – что менять в модели в ответ на действия пользователя. Например, пользователь принял решение закрыть программу, тогда надо сохранить данные модели в файл на диск. Или  пользователь ввел новые данные, тогда надо добавить их в модель, а модель потом уведомит все View, об изменении данных, чтобы они отображали только актуальное их состояние.</p>
+<p class="amigo">- Еще раз.</p>
+<p>- С точки зрения Java-программиста, можно сказать, что Model, View, Controller – это три группы классов, у которых:</p>
+<p><b>а)</b> у каждой части есть свое назначение;</p>
+<p><b>б)</b> связи между классами одной группы довольно сильные;</p>
+<p><b>в)</b> связи между группами довольно слабые;</p>
+<p><b>г)</b> способы взаимодействия частей довольно сильно регламентированы.</p>
+<p>И вот тебе еще такая картинка:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-21.png"/>
+<p>Модель – это <span class="dred_text">самая независимая часть системы</span>. Она не зависит от View &amp; Controller.  Модель не может использовать классы из разделов View &amp; Controller(!).</p>
+<p>Основное ограничение вида (View) – <span class="dred_text">вид не может менять модель</span>. Классы вида могут обращаться к модели за данными или подписываться на события, но менять модель классы View не могут.</p>
+<p>Основное ограничение контроллера – он <span class="dred_text">не занимается отображением данных</span>. Контроллер обрабатывает действия пользователя  и меняет в соответствии с ними модель.</p>
+<p class="amigo">- А зачем это мне?</p>
+<p>- То, что ты это не применяешь сейчас, еще не значит, что не будешь применять в ближайшем будущем. Ты же тут учишься, для того, чтобы работать пойти. И даже если эти знания не пригодятся тебе во время обучения, они точно пригодятся тебе во время работы.</p>
+<p>А ведь тебя ждут еще реальные проекты и собеседования…</p>
+<p>Мы тут сейчас с тобой разговариваем, а может через месяц ты уже работать будешь.</p>
+<p class="amigo">- Ты абсолютно прав, Билаабо. Я тебя внимательно слушаю.</p>
+<p>- Подход MVC в архитектуре приложений встречается довольно часто. Ты должен это знать, чтобы вдруг не начать добавлять классы для View в Model, т.к. так удобнее.</p>
+<p>Самое главное в любом проекте – это его архитектура. <span class="dred_text"><b>Твоя задача на нынешнем этапе не столько суметь сделать хорошую архитектуру, как научиться разбираться в чужой.</b></span> До своей ты еще потом пару лет расти будешь. А чужую понимать надо. Сразу.</p>
+<p>Когда в приложении используется стандартная архитектура, все становится гораздо понятнее. Зная архитектуру, ты знаешь, что где лежит, как все взаимодействует, как примерно программа работает, где добавить нужный тебе класс и где искать причину ошибки.</p>
+<p>Но, вот если ты не знаком со стандартными подходами к архитектуре, то тебе даже самая лучшая архитектура ни о чем не скажет. Будешь смотреть как крестьянин 15 века на новый автомобиль. Стандартный автомобиль.</p>
+<p class="amigo">- Ясно. Спасибо, за интересную лекцию, Билаабо.</p>
+<p>Вот тебе напоследок пара хороших ссылок, обязательно посмотри:</p>
+<p><a href="http://ru.wikipedia.org/wiki/Model-View-Controller" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>2. Java Beans</h2>
+</div>
+<p>- Вот ты где.</p>
+<p>Я тут подумал и решил устроить тебе еще одну маленькую лекцию, которая будет тебе очень полезна. Пока ты не работал программистом, ты, скорее всего, не сталкивался со специальной терминологией, и я хочу тебя сейчас познакомить с несколькими распространёнными понятиями.</p>
+<p>Лет 10 назад массовое распространение получила концепция <b><span class="red_text">EJB</span> – <span class="red_text">E</span>nterprise <span class="red_text">J</span>ava <span class="red_text">B</span>eans.</b></p>
+<p class="amigo">- А что значит Java Beans?</p>
+<p>- Bean по-английски боб. А Java Beans – это, стало быть, кофейные бобы (Java – сорт кофе). Такой айтишный юмор.</p>
+<p>Бизнес логику программы представляли в виде набора высокоуровневых объектов – бинов, которые умели обмениваться сообщениями, сохранять себя, находить друг друга по имени, и  еще кучу всего. Обычно это достигалось за счет специального супер-навороченного родительского класса, хотя были и другие подходы. Поведение таких объектов очень регламентировалось.</p>
+<p>Три самых известных вида EJB-бинов:</p>
+<p><b>Entity Bean</b> – бин, цель которого хранить некоторые данные. В логику такого бина встроен механизм сохранения себя и своих полей в базу данных. Такой объект может быть уничтожен, а потом воссоздан из базы заново. Но кроме хранения данных у него нет никакой логики.</p>
+<p><b>Session Bean</b> – это функциональный бин. У каждого Session Bean есть своя функция. Один делает одно, другой другое. Такие бины работают с другими объектам и бинами, а не со своими данными.</p>
+<p><b>Session Beans</b> делятся на две категории.</p>
+<p><b>Stateless Session Bean</b> – это бин, который не хранит во внутренних переменных важных данных, нужных для его работы. Такой бин можно уничтожить, а затем заново создать, и он будет выполнять свою функцию, как и раньше.</p>
+<p><b>Statefull Session Bean</b> – это бин, который хранит у себя внутри данные, которые использует при работе. Если мы вызываем методы этого бина, то в каждом следующем вызове он может использовать часть данных, переданных ему в предыдущих. И все равно этот бин – это не то же самое, что обычный объект.</p>
+<p>Но в использовании бинов тоже было не все так радужно, поэтому скоро маятник качнулся в обратную сторону. И разработчики стали все чаще использовать обычные объекты. Им даже придумали специальное название.</p>
+<p><b><span class="red_text">POJO</span> (<span class="red_text">P</span>lain <span class="red_text">O</span>ld <span class="red_text">J</span>ava <span class="red_text">O</span>bject)</b> – старый обычный Java-объект. Такие объекты не обладали какими-то суперфункциями и не наследовались от суперобъектов. Самые обычные Java-объекты.</p>
+<p>Когда ты познакомишься с EJB на практике, ты поймешь, в чем разница. Грубо говоря, POJO – это нож, а EJB – это швейцарский нож, по которому можно еще и звонить.</p>
+<p class="amigo">- Интересное сравнение.</p>
+<p>- Да, вот еще что.</p>
+<p>Со временем в назначении объектов/классов возникла специализация. Как результат – выделились некоторые роли, объекты которых получили новые названия.</p>
+<p><b>DTO</b> - Data Transfer Object – объект, который создается с целью быть использованным при транспортировке данных. Обычно к таким объектам два требования: а) уметь хранить данные, б) уметь сериализоваться. Т.е. их используют только  для пересылки данных.</p>
+<p>Создал объект, записал в него нужные данные из бизнес-логики, сериализовал в JSON/XML и отправил куда-надо. Или наоборот – пришло сообщение – десериализовал его в DTO-объект и вытягивай из него данные.</p>
+<p><b>Entity</b> – это объект, который хранится в базе данных. Но они не содержат никакой бизнес-логики. Можно сказать, что это – данные бизнес-модели.</p>
+<p>Есть еще <b>DAO</b> – Data Access Object. Задача DAO - сохранять объекты в базу и доставать их из нее. Entity сам такой работой не занимается – он не содержит никакой логики и, следовательно, не может ничего никуда сохранять.</p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Взаимодействие DAO и Entity</th></tr>
+<tr>
+<td class="monospace_text"><span class="green_text">UserEntity user</span> = <span class="dred_text">UserDAO</span>.<b>getUserById</b>("1535");<br/>
+<b>if</b> (<span class="green_text">user</span>.<b>getAge</b>()&gt;18)<br/>
+    {<br/>
+      <span class="green_text">user</span>.<b>setMobilization</b>(true);<br/>
+      <span class="dred_text">UserDAO</span>.<b>save</b>(<span class="green_text">user</span>);<br/>
+    }
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Комментарии</th></tr>
+<tr>
+<td class="wide-text">UserEntity – это класс, который хранит данные о пользователе (User-Entity)<br/> 
+    UserDAO – это класс, который достает данные (объекты UserEntity) из базы и сохраняет их туда, после изменений.
+    </td>
+</tr>
+</tbody></table>
+<p>На этом все.</p>
+<p>Пусть это и небольшая ознакомительная лекция, но больше ты сейчас все равно не поймешь. Каждую из этих тем можно днями рассказывать, а EJB – годами.</p>
+<p>Но я хочу, чтобы ты хотя бы представлял, о чем речь, если столкнёшься с такими вещами в разговоре, переписке, на форуме или на собеседовании.</p>
+<p class="amigo">- Гм. Спасибо, Билаабо. Да, думаю, технических терминов мне не хватает. Спасибо большое тебе еще раз.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Интерфейсы коллекций</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Элли!</p>
+<p>- Сегодня мы разберемся с устройством коллекций раз и навсегда.</p>
+<p class="amigo">- Давно этого ждал.</p>
+<p>- Ты уже знаешь, что такое коллекции, и знаешь, как с ними работать. Пришло время выстроить твои знания в строгую систему. Тогда отпадут многие вопросы, почему, как, зачем и большинство вещей станет очевидно.</p>
+<p><b>Интерфейсы коллекций.</b> Структура наследования <span class="violet_text">интерфейсов</span> коллекций выглядит примерно так:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-19.png"/>
+<p>Обрати внимание, на две вещи.</p>
+<p>Во-первых, <span class="violet_text">все, что ты тут видишь – это интерфейсы.</span></p>
+<p>Во-вторых, <span class="dred_text">красные стрелочки обозначают «наследуется от».</span></p>
+<p class="amigo">- Т.е. List, Set, Queue наследуются от Collection, а Map – нет?</p>
+<p>- Ага. Потом от этих интерфейсов наследуются абстрактные классы, а от них в свою очередь – известные тебе реализации: <b>ArrayList</b>, <b>Hashtable</b>, <b>TreeSet</b>,…</p>
+<p class="amigo">- Есть такое дело.</p>
+<p>Теперь давай посмотрим, что за методы есть у этих интерфейсов:</p>
+<p>Методы интерфейса <b>Iterable&amp;ltE&amp;gt</b>:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Методы</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">Iterator&amp;ltT&amp;gt <b>iterator</b>();
+    </td>
+<td class="wide-text">Возвращает объект-итератор.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Маловато как-то.</p>
+<p>- Ну, сколько есть. Все ради итераторов, прямо сейчас мы их рассматривать не будем, но скоро уже рассмотрим во всех подробностях.</p>
+<p>Методы интерфейса <b>Collection&amp;ltE&amp;gt</b>:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Методы</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>add</b>(E e);
+    </td>
+<td class="wide-text">Добавляет элемент в коллекцию
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>addAll</b>(Collection&amp;lt? extends E&amp;gt c);
+    </td>
+<td class="wide-text">Добавляет элементы в коллекцию
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>clear</b>();
+    </td>
+<td class="wide-text">Удаляет все элементы из коллекции
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>contains</b>(Object o);
+    </td>
+<td class="wide-text">Проверяет – есть ли в коллекции элемент?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>containsAll</b>(Collection&amp;lt?&amp;gt c);
+    </td>
+<td class="wide-text">Проверяет – есть ли в коллекции элементы?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>equals</b>(Object o);
+    </td>
+<td class="wide-text">Сравнивает коллекции
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>hashCode</b>();
+    </td>
+<td class="wide-text">Возвращает хэш-код
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>isEmpty</b>();
+    </td>
+<td class="wide-text">Проверяет – пуста ли коллекция?
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Iterator&amp;ltE&amp;gt <b>iterator</b>();
+    </td>
+<td class="wide-text">Возвращает объект-итератор
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>remove</b>(Object o);
+    </td>
+<td class="wide-text">Удаляет элемент из коллекции
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>removeAll</b>(Collection&amp;lt?&amp;gt c);
+    </td>
+<td class="wide-text">Удаляет элементы из коллекции
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>retainAll</b>(Collection&amp;lt?&amp;gt c);
+    </td>
+<td class="wide-text">Удаляет все элементы, которых нет «с»
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>size</b>();
+    </td>
+<td class="wide-text">Возвращает размер коллекции
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Object[] <b>toArray</b>();
+    </td>
+<td class="wide-text">Преобразовывает коллекцию к массиву
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">&amp;ltT&amp;gt T[] <b>toArray</b>(T[] a);
+    </td>
+<td class="wide-text">Преобразовывает коллекцию к массиву
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Тут уже посолиднее все. Половину из этих методов я использовал, а со второй сталкивался.</p>
+<p>- Отлично, тогда продолжим.</p>
+<p>Методы интерфейса <b>List&amp;ltE&amp;gt</b>:</p>
+<table class="table_example">
+<tbody><tr><th width="62%">Методы</th><th width="38%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">void add(int index, E element);
+    </td>
+<td class="wide-text">Добавляет элементы в середину коллекции
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean addAll(int index, Collection&amp;lt? extends E&amp;gt c);
+    </td>
+<td class="wide-text">Добавляет элементы в коллекцию
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">E get(int index);
+    </td>
+<td class="wide-text">Возвращает элемент по номеру
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int indexOf(Object o);
+    </td>
+<td class="wide-text">Возвращает индекс(номер) элемента
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int lastIndexOf(Object o);
+    </td>
+<td class="wide-text">Возвращает последний индекс элемента.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">ListIterator&amp;ltE&amp;gt listIterator();
+    </td>
+<td class="wide-text">Возвращает итератор для списка
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">ListIterator&amp;ltE&amp;gt listIterator(int index);
+    </td>
+<td class="wide-text">Возвращает итератор для списка
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">E remove(int index);
+    </td>
+<td class="wide-text">Удаляет элемент по индексу
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">E set(int index, E element);
+    </td>
+<td class="wide-text">Устанавливает новое значение по индексу
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">List&amp;ltE&amp;gt subList(int fromIndex, int toIndex);
+    </td>
+<td class="wide-text">Возвращает под-коллекцию
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Тоже ничего кардинально нового. Я уже практически все знаю по коллекциям,  что не может не радовать.</p>
+<p>- Ну, я думаю, у меня найдется, чем тебя удивить. Но давай продолжим изучат интерфейсы:</p>
+<p>Методы интерфейса <b>Set&amp;ltE&amp;gt</b>:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Методы</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="wide-text" colspan="2"><center>нет методов</center>
+</td>
+</tr>
+</tbody></table>
+<p>Интерфейс Set не содержит новых методов, только унаследованные.</p>
+<p class="amigo">- Да, я смотрю, интерфейс Interable был еще ничего.</p>
+<p class="amigo">С другой стороны – меньше методов – меньше запоминать!</p>
+<p>- Меня радует твой жизнеутверждающий оптимизм.</p>
+<p>У интерфейса Set есть два интерфейса-наследника с методами: <b>SortedSet</b> и <b>NavigableSet</b>, но я  не буду их приводить, а то мы никогда не закончим.</p>
+<p>Давай я лучше дам тебе общую картину классов и интерфейсов, описывающих коллекции в Java.</p>
+<p class="amigo">- Давай.</p>
+<p>- Тогда держи:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-20.png"/>
+<p class="amigo">- Ничего себе, да она просто огромная!</p>
+<p>- Ну, не такая уж она и большая. Кроме того, запоминать абстрактные классы совсем не обязательно. А вот какой класс, какие интерфейсы реализует лучше запомнить – такое может пригодиться довольно часто.</p>
+<p>- Ну, еще хотелось бы отметить, что  некоторые коллекции были признаны устаревшими.</p>
+<p class="amigo">- Это какие же?</p>
+<p>- Это я про классы Vector, Stack, Dictionary, Hashtable – они являются синхронизированными (потокобезопасными) версиями обычных коллекций.</p>
+<p>Но в Java появилась специальная библиотека - <span class="orange_text"><b>concurrency</b></span>, где содержится очень много коллекций, к которым не только можно обращаться из других потоков/нитей, но и которые написаны гораздо эффективнее. <b>ConcurrentHashMap</b> гораздо эффективнее <b>Hashtable</b>.</p>
+<p>Использовать коллекции Vector, Stack, Dictionary, Hashtable можно, но не рекомендуется.</p>
+<p class="amigo">- Ясно, буду иметь в виду.</p>
+<p class="amigo">Спасибо, Элли!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи</h2>
+</div>
+<p>- Привет, Амиго.</p>
+<p class="amigo">- Привет, Диего. Что это у тебя за китайские иероглифы с кнопкой в центре?</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-22.gif"/>
+<p>- Это же всем известный MVC! Ты обязан его знать. Так, быстро иди разбираться в шаблоне MVC.
+        Думаю, после решения задачи ты поймешь, что скрывается под иероглифами. Я дам тебе одну легенькую задачу и
+        другую большую посложнее. Как решишь легкую, так и приступай к большой.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>5. Реализации интерфейса List</h2>
+</div>
+<p>- Если ты думаешь, что на интерфейсе List все закончилось, то ты ошибаешься, все только начинается. Давай я тебе расскажу про коллекции <b>LinkedList</b> и <b>ArrayList</b>.</p>
+<p><u><b>Начну с коллекции ArrayList.</b></u></p>
+<p>Вот как эта коллекция выглядит на схеме наследования:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-16.png"/>
+<p><span class="green_text">Зеленым отмечены интерфейсы.</span></p>
+<p><span class="violet_text">Фиолетовым – абстрактные классы.</span></p>
+<p><span class="red_text">Красным – обычные классы.</span></p>
+<p>Сплошная линия – наследование, пунктирная – реализация интерфейса.</p>
+<p>Это самая простая коллекция. Внутри <b>ArrayList</b> хранит элементы в простом массиве.</p>
+<p>Основное преимущество такой коллекции над массивом – это расширяемость – увеличение длины при надобности.</p>
+<p>Если в этом массиве заканчивается место, то создаётся второй массив побольше, куда копируются все элементы из первого. Затем второй массив занимает место первого, а первый – выбрасывается (будет уничтожен сборщиком мусора).</p>
+<p class="amigo">- А насколько увеличивается массив?</p>
+<p>- Длина нового массива рассчитывается так (3*n)/2+1, где n – это длина старого массива. Т.е. если старый массив был длиной 100 элементов, то новый будет 300/2+1 = 151.</p>
+<p>При добавлении элемента в середину <b>ArrayList</b>, все элементы справа от него копируются на 1 позицию вправо, а затем в пустую ячейку добавляется новый элемент.</p>
+<p>При удалении элемента из середины, все элементы справа от него копируются на 1 позицию влево.</p>
+<p class="amigo">- Ты говоришь, что ArrayList сам удлиняется, при добавлении элементов в него. А при удалении он сам укорачивается?</p>
+<p>Нет, сам внутренний массив в ArrayList никогда не укорачивается, но можно заставить ArrayList уменьшить свой внутренней массив до минимального уровня, если вызвать метод <b>trimToSize</b>().</p>
+<p><u><b>Ну, и конечно, расскажу о LinkedList.</b></u></p>
+<p>Вот как выглядит его схема наследования:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-17.png"/>
+<p><span class="green_text">Зеленым отмечены интерфейсы.</span></p>
+<p><span class="violet_text">Фиолетовым – абстрактные классы.</span></p>
+<p><span class="red_text">Красным – обычные классы.</span></p>
+<p>Сплошная линия – наследование, пунктирная – реализация интерфейса.</p>
+<p>Как ты уже знаешь, <b>LinkedList</b> хранит элементы в виде связного списка.</p>
+<p class="amigo">- Я постоянно об этом слышу, но не могла бы ты рассказать, что это такое?</p>
+<p>- Конечно. Все просто.</p>
+<p>Связный список состоит из <span class="violet_text"><b>одинаковых элементов</b></span>, которые <b>а)</b> хранят данные, <b>б)</b> хранят ссылки на следующий и предыдущий элементы.</p>
+<p>Вот так бы  выглядел класс <span class="violet_text"><b>такого элемента</b></span> для хранения строк:</p>
+<table class="table_example">
+<tbody><tr><th width="40%">Пример</th><th width="60%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> <span class="violet_text">LinkedListElement</span><br/>
+    {<br/>
+     String <span class="red_text">data</span>;<br/>
+     <span class="violet_text">LinkedListElement</span> <span class="green_text">next</span>;<br/>
+     <span class="violet_text">LinkedListElement</span> <span class="dblue_text">previous</span>;<br/>
+    }
+    </td>
+<td class="wide-text"><span class="red_text">data</span> хранится строковое значение элемента.<br/>
+<span class="green_text">next</span> хранит ссылку на следующий элемент в списке.<br/>
+<span class="dblue_text">previous</span> хранит ссылку на предыдущий элемент в списке.
+    </td>
+</tr>
+</tbody></table>
+<p>А если использовать generics для типа данных, то будет что-то типа такого:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Класс элемента связного списка с generic'ом</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> <span class="violet_text">LinkedListElement&amp;lt</span><span class="dred_text">T</span><span class="violet_text">&amp;gt</span><br/>
+    {<br/>
+     <span class="dred_text">T</span> <span class="red_text">data</span>;<br/>
+     <span class="violet_text">LinkedListElement&amp;lt</span><span class="dred_text">T</span><span class="violet_text">&amp;gt</span> <span class="green_text">next</span>;<br/>
+     <span class="violet_text">LinkedListElement&amp;lt</span><span class="dred_text">T</span><span class="violet_text">&amp;gt</span> <span class="dblue_text">previous</span>;<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ясненько.</p>
+<p>- Давай, для лучшего понимания, напишем код, где добавим в двусвязный список 10 элементов:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static void</b> main(String[] args)<br/>
+{   <br/>
+    <span class="dred_text">LinkedListElement&amp;ltInteger&amp;gt</span> <span class="blue_text">tail</span>;  <span class="grey_text">//хвост (самый последний элемент) списка</span><br/><br/>
+
+    <b>for</b>(int i=0;i
+    {<br/>
+         <span class="dred_text">LinkedListElement&amp;ltInteger&amp;gt</span> <span class="green_text">element</span> =  new <span class="dred_text">LinkedListElement&amp;ltInteger&amp;gt</span> ();<br/>
+         <span class="green_text">element</span>.data = i;<br/><br/>
+
+         <b>if</b> (<span class="blue_text">tail</span> == null) <span class="grey_text">//если в хвосте нет элементов, сделать наш элемент последним</span><br/>
+         {<br/>
+              <span class="blue_text">tail</span> = <span class="green_text">element</span>;<br/>
+         }<br/>
+         <b>else</b> <span class="grey_text">//если хвост есть, добавить элемент</span><br/>
+        {<br/>
+             <span class="blue_text">tail</span>.next =  <span class="green_text">element</span>;  <span class="grey_text">//добавляем хвосту ссылку на следующий элемент</span><br/>
+             <span class="green_text">element</span>.previous = <span class="blue_text">tail</span>; <span class="grey_text">//добавляем новому элементу ссылку на хвост</span><br/>
+             <span class="blue_text">tail</span> = <span class="green_text">element</span>;               <span class="grey_text">//объявляем новый элемент хвостом.</span><br/>
+        }<br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Допустим у нас в списке 10 элементов, вот как вставить элемент в середину:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-18.png"/>
+<p><span class="red_text"><b>Ярко красным</b></span> выделены ссылки, которые поменялись – они теперь указывают на новый элемент.</p>
+<p><span class="violet_text"><b>Ярко фиолетовым</b></span> выделены новые ссылки – ссылки нового элемента на его соседей.</p>
+<p>А теперь – кодом:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Вставка элемента в середину связного списка</th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="grey_text">//тут содержится элемент – голова списка</span><br/>
+<span class="dred_text">LinkedListElement&amp;ltInteger&amp;gt</span> head = … <br/><br/>
+<span class="grey_text">//получаем 4-й элемент (нумерация с нуля)</span><br/>
+<span class="dred_text">LinkedListElement&amp;ltInteger&amp;gt</span> <span class="green_text">element4</span> = head.<b>next.next.next.next;</b> <br/>
+<span class="grey_text">//получаем 5-й элемент</span><br/>
+<span class="dred_text">LinkedListElement&amp;ltInteger&amp;gt</span> <span class="blue_text">element5</span> = <span class="green_text">element4</span>.<b>next;</b><br/><br/>
+<span class="grey_text">//Создаем новый элемент, который будем вставлять</span><br/>
+<span class="dred_text">LinkedListElement&amp;ltInteger&amp;gt</span> <span class="red_text">newElement</span> = new <span class="dred_text">LinkedListElement&amp;ltInteger&amp;gt</span>();<br/>
+<span class="red_text">newElement</span>.<b>data</b> = -18;<br/><br/>
+<span class="grey_text">//обмениваемся ссылками с элементом слева</span><br/>
+<span class="red_text">newElement</span>.<b>previous</b> = <span class="green_text">element4</span>;<br/>
+<span class="green_text">element4</span>.<b>next</b> = newElement;<br/><br/>
+<span class="grey_text">//обмениваемся ссылками с элементом справа</span><br/>
+<span class="red_text">newElement</span>.<b>next</b> = <span class="blue_text">element5</span>;<br/>
+<span class="blue_text">element5</span>.<b>previous</b> = newElement;
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Спасибо, Элли, действительно узнал о списках много нового.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level36,lesson06,task01"></button><b>1. Найти класс по описанию</b><br/><br/>
+		1. Реализует интерфейс <span class="taskcode">List</span><br/>
+		2. Является приватным статическим классом внутри популярного утилитного класса<br/> 
+		3. Доступ по индексу запрещен - кидается исключение <span class="taskcode">IndexOutOfBoundsException</span><br/>
+		4. Используйте рефлекшн, чтобы добраться до искомого класса                
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level36,lesson06,task02"></button><b>2. Поиск класса по описанию</b><br/><br/>
+                Замените следующие слова на нужные: <br/>
+		1. <span class="taskcode">ClassNameToBeReplaced</span> - имя класса, потокобезопасный аналог <span class="taskcode">ArrayList</span>, в котором все операции изменения (mutative operations) используют новую копию основного массива.<br/> 
+		2. <span class="taskcode">methodNameToBeReplaced</span> - имя метода, который в текущий список '<span class="taskcode">list</span>' добавляет те элементы переданной коллекции, которые не содержатся в '<span class="taskcode">list</span>'.<br/>
+		Не оставляйте комментированный код.
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>7. Деревья, красно-черные деревья</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Здорово, Риша!</p>
+<p>- Нашел тут свои старые записи и приготовил для тебя немного интересного материала. Думаю, тебе будет интересно послушать.</p>
+<p class="amigo">- Давай. Ты всегда находишь что-то интересное, которое потом становится очень полезным.</p>
+<p>- Ладно. Сегодня я хочу тебе рассказать про <i><b>деревья</b></i>, поэтому начну я с <i><b>графов</b></i>.</p>
+<p><b>Граф</b> – это система, состоящая из точек и линий, которые их соединяют. Точки называются вершинами графа, а линии – ребрами графа. Пример:</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-03.png"/>
+<p>Граф очень удобно использовать как математическую модель для различных реальных процессов и задач. Для графов придумано очень много различных задач и алгоритмов, поэтому их довольно часто используют.</p>
+<p>Например, вершины – это города, а ребра – это дороги. Тогда поиск самой короткой дороги между городами превращается в задачу <span class="violet_text">«дан граф, найти кратчайший путь между двумя вершинами»</span>.</p>
+<p>Но не всегда путь из А в Б, занимает столько же, как и путь из Б в А. Поэтому иногда желательно бы иметь две различные линии. Для этого линии (ребра графа) заменяют на стрелки. Т.е. граф может содержать две стрелки: одну из А в Б, а вторую из Б в А.</p>
+<p>Если в графе используются стрелки, его называют <b>ориентированным графом</b>, если просто линии – <b>неориентированным графом</b>.</p>
+<p>У каждой вершины может быть свое количество ребер. Так же вершина может не иметь ребер вообще. Или наоборот, быть соединена ребрами со всеми остальными вершинами. <span class="violet_text">Если в графе каждая вершина соединена ребром с каждой – такой граф называют <b>полным</b>.</span></p>
+<p>Если в графе по ребрам можно добраться до любой вершины, такой граф называют <b>связным</b>. Граф состоящий из трех отдельных вершин, без ребер вообще, это все равно граф, но <b>несвязный</b>.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-04.png"/>
+<p><span class="red_text">Чтобы соединить в связный граф N вершин, надо минимум N-1 ребер. Такой граф называется <b>деревом</b>.</span></p>
+<p>При этом обычно одну вершину выбирают <span class="orange_text">корнем</span> дерева, а остальные объявляют ее ветвями. Ветви дерева, которые не имеют своих ветвей, называют <span class="green_text">листьями</span>. Пример:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-05.png"/>
+<p><b>Дерево называют бинарным</b>, если у каждого элемента дерева два потомка. Т.е. их может быть 0 или 2. Выше справа как раз <b>изображено бинарное дерево</b>.</p>
+<p><b>Дерево называют полным бинарным деревом</b>, когда у каждой ветви 2 потомка, а все листья (без потомков)  находятся в одном ряду.</p>
+<p>Пример:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-06.png"/>
+<p class="amigo">- А зачем нужны такие деревья?</p>
+<p>- О, деревья применяются много где. Бинарные деревья так вообще являются отсортированной структурой данных.</p>
+<p class="amigo">- Это как?</p>
+<p>- Да очень просто.  В каждой вершине мы храним некоторое значение. А <span class="green_text">для каждого элемента вводится правило – значение, которое хранится в потомке справа, больше, чем значение в вершине, а значение, которое хранится в потомке слева – меньше чем значение в вершине.</span> Такое упорядочивание позволяет очень быстро находить нужные элементы в дереве.</p>
+<p class="amigo">- А можно поподробнее.</p>
+<p>- Сортировка элементов дерева обычно выполняется добавлением. Вот, допустим, у нас есть 7 элементов: 13, 5, 4, 16, 8, 11, 10 </p>
+<p>Вот как добавляются элементы в такое дерево.</p>
+<p><b>Шаг 1 – добавляем 13</b></p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-07.png"/>
+<p><b>Шаг 2 – добавляем 5</b></p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-08.png"/>
+<p><b>Шаг 3 – добавляем 4</b></p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-09.png"/>
+<p><b>Шаг 4 – добавляем 16</b></p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-10.png"/>
+<p><b>Шаг 5 – добавляем 8</b></p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-11.png"/>
+<p><b>Шаг 6 – добавляем 11</b></p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-12.png"/>
+<p><b>Шаг 7 – добавляем 10</b></p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-13.png"/>
+<p>Если мы ищем, например число 7 в таком дереве, то поиск будет проходить так:</p>
+<p>0) Начинаем с корня.</p>
+<p>1а) Число 7 равно 13? Нет</p>
+<p>1б) Число 7 больше 13? Нет, тогда идем в левое поддерево.</p>
+<p>2а) Чисто 7 равно 5? Нет.</p>
+<p>2б) Число 7 больше 5? Да, тогда идем в правое поддерево.</p>
+<p>3а) Число 7 равно 8? Нет</p>
+<p>3б) Число 7 больше 8? Нет, тогда идем в левое поддерево.</p>
+<p>4а) Левого поддерева нет, значит, числа 7 в дереве нет.</p>
+<p class="amigo">- Ага. Т.е. нам надо проверять только вершины на пути от корня до предполагаемого места нужного числа. Да, это действительно быстро.</p>
+<p>- Еще бы, если дерево сбалансировано, то для миллиона элементов понадобится обход всего около 20 вершин.</p>
+<p class="amigo">- Да, согласен, что это не много.</p>
+<p class="amigo">А что значит – сбалансированное дерево?</p>
+<p>- Дерево без «перекосов»  - без длинных ветвей. Ведь <span class="violet_text">если бы мы подавали элементы при строительстве дерева в уже отсортированном порядке, у нас бы получилось длинное-предлинное дерево, состоящее из одной ветви.</span></p>
+<p class="amigo">- Гм. Действительно. И как тогда быть?</p>
+<p>- Как ты уже, наверное, догадался, самым эффективным будет дерево, которое имеет ветви примерно равной длины. Тогда при каждом сравнении отбрасывается наибольшая часть поддерева из оставшегося.</p>
+<p class="amigo">- Т.е. нужно переделать дерево?</p>
+<p>- Ага. Его нужно «сбалансировать» - сделать максимально похожим на полное бинарное дерево.</p>
+<p>Для решения этой проблемы были придуманы самобалансирующиеся деревья. <span class="violet_text">Когда, после добавления элемента, в дереве возникает перекос, оно немного меняет порядок элементов и все становится ок.</span> Пример балансировки:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-14.png"/>
+<p>Одними из таких деревьев есть так называемые «<b><span class="red_text">красно</span>-черные</b> деревья».</p>
+<p class="amigo">- А почему их называют красно-черные?</p>
+<p>- Их создатель придумал красить все вершины в два цвета. Один цвет – красный, второй – черный. И разные вершины подчиняются разным правилам. На этом и стоится вся балансировка.</p>
+<p>Пример:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-15.png"/>
+<p class="amigo">- А что это за принципы?</p>
+<p>- <b>1)</b> Красная вершина не может быть сыном красной вершины.</p>
+<p><b>2)</b> Черная глубина любого листа одинакова (черной глубиной называют количество черных вершин на пути из корня).</p>
+<p><b>3)</b> Корень дерева черный.</p>
+<p>Я не буду рассказывать тебе, как это работает, у тебя уже небось голова кипит.</p>
+<p class="amigo">- Ага. Процессор греется и не слабо так.</p>
+<p>Вот тебе ссылка, если захочешь – почитаешь тут подробнее.</p>
+<p><a href="http://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE-%D1%87%D1%91%D1%80%D0%BD%D0%BE%D0%B5_%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE" target="_blank">Ссылка на дополнительный материал</a></p>
+<p>А теперь – иди отдыхай.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level36,lesson08,task01"></button><b>2. Использование TreeSet</b><br/><br/>
+                Первым параметром приходит имя файла: файл1. файл1 содержит только буквы латинского алфавита, пробелы, знаки препинания, тире, символы перевода каретки.<br/>
+		Отсортировать буквы по алфавиту и вывести на экран первые 5 различных букв в одну строку без разделителей.<br/>
+		Если файл1 содержит менее 5 различных букв, то вывести их все. Буквы различного регистра считаются одинаковыми.<br/>
+		Регистр выводимых букв не влияет на результат. Закрыть потоки.<br/><br/>
+<span class="example-legacy">Пример 1 данных входного файла:</span><br/>
+<span class="example-data">zBk yaz b-kN</span><br/><br/>
+<span class="example-legacy">Пример 1 вывода:</span><br/>
+<span class="example-data">abkny</span><br/><br/>
+<span class="example-legacy">Пример 2 данных входного файла:</span><br/>
+<span class="example-data">caAC A, aB? bB</span><br/><br/>
+<span class="example-legacy">Пример 2 вывода:</span><br/>
+<span class="example-data">abc</span><br/><br/>
+
+		Подсказка: использовать TreeSet
+        </td></tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>1. Разбираемся в красно-черном дереве</b><br/><br/>
+                Дана реализация красно-черного дерева. Некоторые методы сломаны. Разберитесь в коде и исправьте ошибки.<br/>
+                Метод <span class="taskcode">main</span> не участвует в тестировании.<br/>
+                Все модификатры правильные. Имена переменных и методов не изменяйте.
+
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>9. Реализации интерфейса Set, Queue</h2>
+</div>
+<p>- Ну как твой процессор?</p>
+<p class="amigo">- Норм. Посидел час в жидком азоте и как новенький!</p>
+<p>- Отлично. Тогда давай продолжим.</p>
+<p><b>Коллекции Set.</b></p>
+<p>Set переводится как множество. А множество, с математической точки зрения, - это набор уникальных элементов. Но т.к. не все программисты – математики, то обычно  говоря, что Set – это коллекция уникальных элементов, или коллекция, которая не позволяет хранить одинаковые элементы.</p>
+<p>Не знаю, давала Элли тебе иерархию наследования для Set, но если нет, то вот она:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-01.png"/>
+<p><b>HashSet</b> – это коллекция, которая для хранения элементов внутри использует их хэш-значения, которые возвращает метод <b>hashCode</b>().</p>
+<p>Для простоты внутри HashSet&amp;ltE&amp;gt хранится объект HashMap&amp;ltE, Object&amp;gt, который и хранит в качестве ключей значения HashSet. </p>
+<p class="amigo">- Ничего себе!</p>
+<p>- Использование hash-кодов позволяет довольно быстро искать, добавлять и удалять элементы из множества (Set).</p>
+<p>Но учти, чтобы объекты твоих классов можно было класть в Set и правильно находить их там, у твоего класса должны быть правильно реализованы методы <b>hashCode &amp; equals</b>.</p>
+<p>И тот и другой активно используются внутри <b>HashSet</b>/<b>HashMap</b>.</p>
+<p>Если ты забудешь реализовать метод <b>hashCode</b>(), то рискуешь, что твой объект в коллекции Set не будет найден, даже если он там есть.</p>
+<p class="amigo">- Да, помню, я помню. Ты мне уже рассказывал раньше об этом. Все робоуши прожужжал.</p>
+<p>- Ок. Тогда вот тебе еще полезная информация.</p>
+<p>Допустим, ты правильно реализовал <b>hashCode</b> и <b>equals</b> в своем классе и такой весь радостный хранишь их в Set'е.</p>
+<p>Но потом ты взял и поменял один из объектов, при этом поменялись его внутренние данные, которые используются в вычислении <b>хэша</b>. И хэш объекта стал другим.</p>
+<p>А это значит, что когда ты будешь его искать в Set'е, его скорее всего не найдут. </p>
+<p class="amigo">- Ничего себе! Это как же?</p>
+<p>- Это всем известный косяк с работой хешей. Грубо говоря, поиск в HashSet (и в HashMap) гарантированно работает правильно, только если объекты – <b>immutable</b>.</p>
+<p class="amigo">- Ничего себе! И что, никто ничего не делает?</p>
+<p>- Все делают вид, что проблемы не существует. Но на собеседованиях это частенько спрашивают, так что возможно, тебе стоит запомнить этот  факт…</p>
+<p><b>LinkedHashSet</b> – это HashSet, в котором элементы хранятся еще и в связном списке.  Обычный HashSet не поддерживает порядок элементов. Во-первых, официально его просто нет, во-вторых, даже внутренний порядок может сильно поменяться при добавлении всего одного элемента.</p>
+<p>А у <b>LinkedHashSet</b> можно получить итератор и с его помощью обойти все элементы именно в том порядке, в котором они добавлялись в <b>LinkedHashSet</b>.. Не часто, но иногда это может очень понадобится.</p>
+<p class="amigo">- Ясно. Люблю, когда у классов есть такие «на всякий случай» разновидности. Обычно такие случаи наступают не так уж и редко.</p>
+<p>- <span class="green_text"><b>TreeSet</b></span> – это коллекция, которая хранит элементы в виде упорядоченного по значениям дерева. Внутри <span class="green_text"><b>TreeSet</b></span>&amp;ltE&amp;gt содержится <span class="green_text"><b>TreeMap</b></span>&amp;ltE, Object&amp;gt который и хранит все эти значения. А этот <span class="green_text"><b>TreeMap</b></span> использует <i><b><span class="red_text">красно</span>-черное <span class="red_text">сбалансированное бинарное дерев</span></b></i> для хранения элементов. Поэтому у него очень быстрые операции <b>add</b>, <b>remove</b>, <b>contains</b>.</p>
+<p class="amigo">- Ага. Я помню, мы же совсем недавно это разбирали. А я еще думал – и где это применяется.</p>
+<p class="amigo">А оказывается, одни из самых популярных коллекций в Java используют это. </p>
+<p>- Ага, кстати, на собеседованиях часто спрашивают про TreeSet. Обычно стараются подловить. Мол, если в <span class="green_text">TreeSet</span> используется бинарное дерево, то тогда все элементы могут образовывать одну длинную ветку и при этом поиск будет очень долгим. Тут, кстати, стоит поставить такого наглеца на место, и заявить, что  даже ребенку известно, что <span class="green_text">TreeSet</span> и <span class="green_text">TreeMap</span> используют сбалансированные <b><span class="red_text">красно</span>-черные</b> бинарные деревья, и поэтому такая ситуация невозможна в принципе.</p>
+<p class="amigo">- Ага. Хотелось бы увидеть лицо спрашивающего в этот момент. Я, пожалуй, даже заучу эту фразу. ...</p>
+<p class="amigo">А в принципе, Set оказался не таким уж и простым, как мне казалось в самом начале.</p>
+<p>- Зато с <b>Queue</b> ситуация гораздо проще:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/36/image-ru-36-02.png"/>
+<p><b>Queue</b> – это очередь. Элементы добавляются в конец очереди, а выбираются из ее начала.</p>
+<p><b>PriorityQueue</b> – это фактически единственная классическая реализация интерфейса <b>Queue</b>, не  считая <b>LinkedList</b>, который формально тоже является очередью.</p>
+<p>Ладно, что-то я устал, на сегодня все. Давай до свидания. </p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>10. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level36,lesson10,task01"></button><b>2. Найти класс по описанию</b><br/><br/>
+                1. Реализует интерфейс <span class="taskcode">Queue</span><br/>
+		2. Используется при работе с трэдами<br/> 
+		3. Из этой очереди элементы могут быть взяты только тогда, когда они заэкспарятся, их время задержки истекло <br/>
+		4. Головой очереди является элемент, который заэкспарился раньше всех.
+        </td></tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>1. Осваиваем ClassLoader и Reflection</b><br/><br/>
+                Аргументом для класса <span class="taskcode">Solution</span>  является абсолютный путь к пакету, например: "C:\JavaRushHomeWork\src\com\javarush\test\level36\lesson10\bonus01\data\second".<br/>
+                Имя пакета может содержать <span class="taskcode">File.separator</span>. В этом пакете находятся только скомпилированные классы.<br/>
+                Известно, что каждый класс имеет конструктор без параметров и реализует интерфейс <span class="taskcode">HiddenClass</span>.<br/>
+                Считайте все классы с файловой системы, создайте фабрику - реализуйте метод <span class="taskcode">getHiddenClassObjectByKey</span>.<br/>
+                Известно, что есть только один класс, простое имя которого начинается с <span class="taskcode">String key</span> без учета регистра.
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Учимся гуглить</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Продолжаем наши уроки – учимся гуглить.</p>
+<p>Вот тебе несколько заданий:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Надо найти в Google</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Что такое граф?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Что такое дерево из теории графов?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Что такое бинарное дерево?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Что такое красно-черное дерево?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Что такое MVC?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Что такое EJB?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Что такое DAO и DTO?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Устаревшие коллекции в java?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Чем отличается TreeMap и HashMap?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Чем отличается TreeSet и HashSet?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>12. Профессор дает доп. материал</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Вот тебе дополнительный материал по теме.</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-36.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>13. Хулио</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Хулио.</p>
+<p>- Вот тебе интересный факт, человеческий мозг способен вместить от 3 до 1000 терабайт информации.</p>
+<p class="amigo">- Интересно, чем же занято место в твоей голове, Хулио? </p>
+<p>- Как чем? Интересными видеороликами. Вот пришло время занять очередные 100 мегабайт. Я как раз нашел подходящее видео.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-36.gif" preload="none" tabindex="0" taskkey="level36,lesson13,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-36.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=OMYNhxvav-M" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>14. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Что такое MVC?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Что такое DAO и DTO?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Что такое POJO?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Что такое Entity?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Какие коллекции-списки вы знаете? 
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Какие коллекции-множества вы знаете?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Что такое map, чем он отличается от «словаря»?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Что такое Queue и Dequeue?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Какие классы, реализующие интерфейс Queeue вы знаете?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Что такое дерево?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>15. Большая задача</h2>
+</div>
+<p>- Привет, боец!</p>
+<p>- Поздравляю тебя с повышением уровня квалификации. Нам нужны отчаянные парни.</p>
+<p>- Уверен, у тебя есть еще много нерешенных задач. Самое время решить парочку из них!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-17.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 17
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>1. Проблемы многопоточности: обращение к общему ресурсу</h2>
+</div>
+<p>- Привет, Амиго!  Вчера мы обсудили преимущества и удобства, которые несет с собой многонитиевость (multithreading). Теперь пора взглянуть и на минусы. А они, к сожалению, не маленькие.</p>
+<p><b>Раньше мы смотрели на программу, как на набор объектов, которые вызывают методы друг друга.</b> Теперь все стало немного сложнее. Программа – это скорее набор объектов, по которым лазает несколько «маленьких роботиков» – нитей – и выполняют команды, содержащиеся в методах.</p>
+<p>Формально – второе не отменяет первое. Это все еще объекты, и они все еще вызывают методы друг у друга. <span class="red_text">Но нужно не забывать, что нитей – несколько, и каждая нить выполняет свою работу – свое задание.</span></p>
+<p>Программа становится сложнее. <span class="red_text">Разные нити меняют состояние разных объектов в соответствии с задачей, которую каждая из них выполняет. И могут мешать друг другу.</span></p>
+<p>Но самое страшное происходит глубоко внутри Java-машины. Как я уже рассказывала, видимая одновременность работы нитей достигается за счет того, что процессор постоянно переключается с одной нити на другую. Переключился на нить, поработал 10 миллисекунд, переключился на следующую нить, там поработал 10 миллисекунд и так далее.  И тут возникает проблема: переключение может произойти в самый неподходящий момент. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код первой нити</th><th width="50%">Код второй нити</th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">System.out.print ("Коле");<br/>
+	System.out.print ("");<br/>
+	System.out.print ("15");<br/>
+	System.out.print ("");<br/>
+	System.out.print ("лет");<br/>
+	System.out.println ();</span>
+</td>
+<td class="monospace_text"><span class="blue_text">System.out.print ("Лене");<br/>
+	System.out.print ("");<br/>
+	System.out.print ("21");<br/>
+	System.out.print ("");<br/>
+	System.out.print ("год");<br/>
+	System.out.println ();</span>
+</td>
+</tr>
+</tbody></table>
+<table class="table_example">
+<tr><th width="100%">Ожидаемый вывод на консоль</th></tr>
+<tr>
+<td class="wide-text"><span class="green_text">Коле 15 лет</span><br/>
+<span class="blue_text">Лене 21 год</span>
+</td>
+</tr>
+</table>
+<table class="table_example">
+<tr><th width="33%">Итоговый порядок</th><th width="33%">Код первой нити</th><th width="33%">Код второй нити</th></tr>
+<tr>
+<td class="wide-text"><span class="green_text">System.out.print ("Коле");</span><br/>
+<span class="blue_text">System.out.print ("Лене");<br/>
+	System.out.print (" ");</span><br/>
+<span class="green_text">System.out.print (" ");<br/>
+	System.out.print ("15");</span><br/>
+<span class="blue_text">System.out.print ("21");<br/>
+	System.out.print (" ");</span><br/>
+<span class="green_text">System.out.print (" ");<br/>
+	System.out.print ("лет");<br/>
+	System.out.println ();</span><br/>
+<span class="blue_text">System.out.print ("год");<br/>
+	System.out.println ();</span>
+</td>
+<td class="wide-text"><span class="green_text">System.out.print ("Коле");</span><br/>
+<span class="grey_text">исполняется другая нить<br/>
+	исполняется другая нить</span><br/>
+<span class="green_text">System.out.print (" ");<br/>
+	System.out.print ("15");</span><br/>
+<span class="grey_text">исполняется другая нить<br/>
+	исполняется другая нить</span><br/>
+<span class="green_text">System.out.print (" ");<br/>
+	System.out.print ("лет");<br/>
+	System.out.println ();</span><br/>
+<span class="grey_text">исполняется другая нить<br/>
+	исполняется другая нить</span>
+</td>
+<td class="wide-text"><span class="grey_text">исполняется другая нить</span><br/>
+<span class="blue_text">System.out.print ("Лене");<br/>
+	System.out.print (" ");</span><br/>
+<span class="grey_text">исполняется другая нить<br/>
+	исполняется другая нить</span><br/>
+<span class="blue_text">System.out.print ("21");<br/>
+	System.out.print (" ");</span><br/>
+<span class="grey_text">исполняется другая нить<br/>
+	исполняется другая нить<br/>
+	исполняется другая нить</span><br/>
+<span class="blue_text">System.out.print ("год");<br/>
+	System.out.println ();</span>
+</td>
+</tr>
+</table>
+<table class="table_example">
+<tr><th width="33%">Реальный вывод на консоль</th></tr>
+<tr>
+<td class="wide-text"><span class="green_text">Коле</span> <span class="blue_text">Лене</span> <span class="green_text">15</span> <span class="blue_text">21</span> <span class="green_text">лет</span> <br/>
+<span class="blue_text">год</span>
+</td>
+</tr>
+</table>
+<p>Или вот еще пример:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> MyClass <br/>
+{<br/>
+    <b>private</b> String <span class="green_text">name1</span> = "Оля";<br/>
+    <b>private</b> String <span class="blue_text">name2</span> = "Лена";<br/>
+      <b>public</b> void <span class="red_text">swap()</span><br/>
+     {<br/>
+          String s = name1;<br/>
+          name1 = name2;<br/>
+          name2 = s;<br/>
+   }<br/>
+}
+</td>
+<td class="wide-text">Метод <span class="red_text">swap</span> меняет местами значения переменных <span class="green_text">name1</span> &amp; <span class="blue_text">name2</span>.<br/><br/>
+
+	Что же будет если его вызывать из двух нитей одновременно?
+</td>
+</tr>
+</tbody></table>
+<table class="table_example">
+<tr><th width="33%">Итоговый порядок</th><th width="33%">Код первой нити</th><th width="33%">Код второй нити</th></tr>
+<tr>
+<td class="wide-text"><span class="green_text">String s1 = name1;   //Оля<br/>
+	name1 = name2;      //Лена</span><br/>
+<span class="blue_text">String s2 = name1;  //</span><span class="red_text">Лена(!)</span><br/>
+<span class="blue_text">name1 = name2;      //Лена</span><br/>
+<span class="green_text">name2 = s1;            //Оля</span><br/>
+<span class="blue_text">name2 = s2;            //Лена</span>
+</td>
+<td class="wide-text"><span class="green_text">String s1 = name1;<br/>
+        name1 = name2;</span><br/>
+<span class="grey_text">исполняется другая нить<br/>
+	исполняется другая нить</span><br/>
+<span class="green_text">name2 = s1;</span><br/>
+<span class="grey_text">исполняется другая нить</span>
+</td>
+<td class="wide-text"><span class="grey_text">исполняется другая нить<br/>
+	исполняется другая нить</span><br/>
+<span class="blue_text">String s2 = name1;<br/>
+        name1 = name2;</span><br/>
+<span class="grey_text">исполняется другая нить</span><br/>
+<span class="blue_text">name2 = s2;</span>
+</td>
+</tr>
+</table>
+<table class="table_example">
+<tr><th width="33%">Итог</th></tr>
+<tr>
+<td class="wide-text"><span class="red_text">Обе переменных имеют значение «Лена».</span><br/>
+	Объект «Оля» был перезатерт и потерян.
+    </td>
+</tr>
+</table>
+<p class="amigo">- Кто бы мог подумать, что при элементарном присваивании возможны такие ошибки?</p>
+<p>- Да, но для этой проблемы есть решение. Но об этом немного  позже – у меня горло пересохло.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>2. Задачи на общий ресурс - вывод в консоль..</h2>
+</div>
+<p>- Привет, Амиго! </p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level17,lesson02,task01"></button><b>1. Заметки</b><br/><br/>
+                1. Класс <span class="taskcode">Note</span> будет использоваться нитями.<br/>
+		2. Создай <span class="taskcode">public static</span> нить <span class="taskcode">NoteThread</span> (<span class="taskcode">Runnable</span> не является нитью), которая в методе <span class="taskcode">run</span> 1000 раз (<span class="taskcode">index</span> = 0-999) сделает следующие действия:<br/>
+		2.1. используя метод <span class="taskcode">addNote</span> добавит заметку с именем [<span class="taskcode">getName()</span> + "-Note" + <span class="taskcode">index</span>], например, при <span class="taskcode">index</span>=4<br/>
+		"Thread-0-Note4"<br/>
+		2.2. используя метод <span class="taskcode">removeNote</span> удалит заметку<br/>
+		2.3. в качестве первого параметра в <span class="taskcode">removeNote</span> передай имя нити - метод <span class="taskcode">getName()</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level17,lesson02,task02"></button><b>2. Вместе быстрее? Ща проверим :)</b><br/><br/>
+                1. Разберись, что и как работает<br/>
+		2. Создай <span class="taskcode">public static</span> нить <span class="taskcode">SortThread</span>, которая в методе <span class="taskcode">run</span> отсортирует статический массив <span class="taskcode">testArray</span> используя метод <span class="taskcode">sort</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. synchronized</h2>
+</div>
+<p>- Привет, Амиго! У нас есть панацея – лекарство от всех болезней. Как мы уже успели убедиться – неконтролируемое переключение нитей – это проблема.</p>
+<p class="amigo">- А почему бы нитям самим не решать, когда переключиться на следующую? Сделала все важные дела и «маякует», я – все!</p>
+<p>- Разрешать нитям самим управлять своим переключением – еще большая проблема. Вдруг какой-то код не очень красиво написан, и нить никогда сама не отдаст свое «процессорное время». Давным-давно так и было – и это был тихий ужас.</p>
+<p class="amigo">- Ладно. И какое же решение есть?</p>
+<p>- <span class="red_text"><b>Блокировка нитей.</b></span> И вот как это работает. </p>
+<p>Было выяснено, что <span class="red_text">нити мешают друг другу, когда пытаются сообща работать с общими объектами и/или ресурсами</span>. Как в примере с выводом на консоль: консоль одна, а выводят на нее все нити. Непорядок.</p>
+<p>Поэтому был придуман специальный объект – <span class="red_text">мютекс</span>. Это как табличка на двери туалета <span class="green_text">«свободно»</span> <span class="red_text">«занято»</span>. Он имеет два состояния – <span class="green_text">объект свободен</span> и <span class="red_text">объект занят</span>, или их еще называют <span class="red_text">заблокирован</span> и <span class="green_text">разблокирован</span>.</p>
+<p>Когда какой-то нити нужен общий для всех нитей объект, она проверяет мютекс, связанный с этим объектом. Если мютекс свободен, то нить блокирует его (помечает как занятый) и начинает использование общего ресурса. После того, как она сделала свои дела, мютекс разблокируется (помечается как свободен).</p>
+<p>Если же нить хочет использовать объект, а мютекс заблокирован, то нить засыпает в ожидании. Когда мютекс, наконец, освободится занятой нитью, наша нить тут же заблокирует его и приступит к работе. Аналогия с табличками для туалета один в один.</p>
+<p class="amigo">- А как работать с этим мютексом. Надо создавать специальные объекты?</p>
+<p>- Все намного проще. <span class="red_text">Разработчики Java встроили этот мютекс в класс Object. Тебе даже создавать его не придется. Он есть у каждого объекта.</span> Вот как это все работает:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> MyClass<br/> 
+{<br/>
+    private String name1 = "Оля";<br/>
+    private String name2 = "Лена";<br/><br/>
+
+     <b>public void</b> swap()<br/>
+    {<br/>
+       <span class="red_text"><b>synchronized (this)</b></span><br/>
+      {<br/>
+            String s = name1;<br/>
+            name1 = name2;<br/>
+            name2 = s;<br/>
+      }<br/>
+   }<br/>
+}
+</td>
+<td class="wide-text">Метод swap меняет местами значения переменных name1 &amp; name2.<br/><br/>
+	
+		Что же будет если его вызывать из двух нитей одновременно?
+</td>
+</tr>
+</tbody></table>
+<table class="table_example">
+<tr><th width="33%">Итоговый порядок</th><th width="33%">Код первой нити</th><th width="33%">Код второй нити</th></tr>
+<tr>
+<td class="wide-text"><span class="green_text">String s1 = name1;   //Оля<br/>
+	name1 = name2;      //Лена<br/>
+	name2 = s1;            //Оля</span><br/><br/>
+<span class="blue_text">String s2 = name1;  //Лена<br/>
+	name1 = name2;      //Оля<br/>
+	name2 = s2;            //Лена</span>
+</td>
+<td class="wide-text"><span class="green_text">String s1 = name1;<br/>
+        name1 = name2;</span><br/>
+<span class="grey_text">исполняется другая нить</span><br/>
+<span class="green_text">name2 = s1;</span>
+</td>
+<td class="wide-text"><span class="grey_text">нить ждет, пока освободится мютекс</span><br/><br/>
+<span class="blue_text">String s2 = name1;<br/>
+        name1 = name2;</span><br/>
+<span class="grey_text">исполняется другая нить<br/>
+	исполняется другая нить</span><br/>
+<span class="blue_text">name2 = s2;</span>
+</td>
+</tr>
+</table>
+<table class="table_example">
+<tr><th width="33%">Итог</th></tr>
+<tr>
+<td class="wide-text">Значения переменных были дважды обменяны местами и вернулись на первоначальное место.
+    </td>
+</tr>
+</table>
+<p>Обрати внимание на ключевое слово <span class="red_text"><b>synchronized</b></span>.</p>
+<p class="amigo">- Да, а что оно значит?</p>
+<p>- <b>Когда одна нить заходит внутрь блока кода, помеченного словом <span class="red_text">synchronized</span>, то Java-машина тут же блокирует мютекс у объекта, который указан в круглых скобках после слова synchronized. <span class="red_text">Больше ни одна нить не сможет зайти в этот блок, пока наша нить его не покинет.</span> Как только наша нить выйдет из блока, помеченного synchronized, то мютекс тут же автоматически разблокируется и будет свободен для захвата другой нитью.</b></p>
+<p>Если же мютекс был занят, то наша нить будет стоять на месте и ждать когда он освободится.</p>
+<p class="amigo">- Так просто и так элегантно. Красивое решение.</p>
+<p>- Ага. А как ты думаешь, что будет в этом случае?</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> MyClass<br/> 
+{<br/>
+    <b>private</b> String name1 = "Оля";<br/>
+    <b>private</b> String name2 = "Лена";<br/><br/>
+
+     <b>public void</b> swap()<br/>
+    {<br/>
+       <span class="red_text"><b>synchronized</b></span> <span class="red_text">(<b>this</b>)</span><br/>
+      {<br/>
+            String s = name1;<br/>
+            name1 = name2;<br/>
+            name2 = s;<br/>
+      }<br/>
+   }<br/><br/>
+
+     <b>public void</b> swap2()<br/>
+    {<br/>
+       <span class="red_text"><b>synchronized</b></span> <span class="red_text">(<b>this</b>)</span><br/>
+      {<br/>
+            String s = name1;<br/>
+            name1 = name2;<br/>
+            name2 = s;<br/>
+      }<br/>
+   }<br/>
+}
+</td>
+<td class="wide-text"><span class="red_text">Методы swap и swap2 имеют один и тот же <b>мютекс</b> – объект <b>this</b>.</span>
+</td>
+</tr>
+</tbody></table>
+<p>Что будет, если одна нить вызовет метод swap, а другая – метод swap2?</p>
+<p class="amigo">- Т.к. мютекс у них один, то второй нити придется ждать, пока первая нить выйдет из блока <b>synchronized</b>, поэтому проблем с одновременным доступом тут не будет.</p>
+<p>- Молодец, Амиго! Верное решение!</p>
+<p>Хотелось бы обратить твое внимание на то, что словом <span class="red_text">synchronized</span> может быть помечен как кусок кода, так и метод. Вот что это значит:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="50%">Код</th><th width="50%">Что происходит на самом деле</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> MyClass<br/> 
+{<br/>
+    <b>private <span class="blue_text">static</span></b> String name1 = "Оля";<br/>
+    <b>private <span class="blue_text">static</span></b> String name2 = "Лена";<br/><br/>
+
+     <b>public <span class="red_text">synchronized</span> void</b> swap()<br/>
+    {<br/>
+           String s = name1;<br/>
+           name1 = name2;<br/>
+           name2 = s;<br/>
+   }<br/><br/>
+
+     <b>public <span class="blue_text">static</span> <span class="red_text">synchronized</span> void</b> swap2()<br/>
+    {<br/>
+           String s = name1;<br/>
+           name1 = name2;<br/>
+           name2 = s;<br/>
+   }<br/>
+}
+</td>
+<td class="monospace_text"><b>class</b> MyClass<br/> 
+{<br/>
+    <b>private <span class="blue_text">static</span></b> String name1 = "Оля";<br/>
+    <b>private <span class="blue_text">static</span></b> String name2 = "Лена";<br/><br/>
+
+     <b>public void</b> swap()<br/>
+    {<br/>
+       <span class="red_text"><b>synchronized</b></span> (<b>this</b>)<br/>
+      {<br/>
+            String s = name1;<br/>
+            name1 = name2;<br/>
+            name2 = s;<br/>
+      }<br/>
+   }<br/><br/>
+
+     <b>public <span class="blue_text">static</span></b> void swap2()<br/>
+    {<br/>
+       <span class="red_text"><b>synchronized</b></span> (<span class="blue_text"><b>MyClass.class</b></span>)<br/>
+      {<br/>
+            String s = name1;<br/>
+            name1 = name2;<br/>
+            name2 = s;<br/>
+      }<br/>
+   }
+</td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи на synchronized</h2>
+</div>
+<p>- Привет, Амиго! </p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level17,lesson04,task01"></button><b>1. Синхронизированные заметки</b><br/><br/>
+                1. Класс <span class="taskcode">Note</span> будет использоваться нитями. Поэтому сделай так, чтобы обращения к листу <span class="taskcode">notes</span> блокировали мютекс <span class="taskcode">notes</span>, не <span class="taskcode">this</span><br/>
+		2. Все <span class="taskcode">System.out.println</span> не должны быть заблокированы (синхронизированы), т.е. не должны находиться в блоке <span class="taskcode">synchronized</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level17,lesson04,task02"></button><b>2. Синхронизированные заметки 2</b><br/><br/>
+                Класс <span class="taskcode">Note</span> будет использоваться нитями. Поэтому сделай так, чтобы все методы были синхронизированы
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level17,lesson04,task03"></button><b>3. Сад-огород</b><br/><br/>
+                1. Создайте метод <span class="taskcode">public void addFruit(int index, String fruit)</span> - который добавляет параметр <span class="taskcode">fruit</span> в лист <span class="taskcode">fruits</span> на позицию <span class="taskcode">index</span><br/>
+		2. Создайте метод <span class="taskcode">public void removeFruit(int index)</span> - который удаляет из <span class="taskcode">fruits</span> элемент с индексом <span class="taskcode">index</span><br/>
+		3. Создайте метод <span class="taskcode">public void addVegetable(int index, String vegetable)</span> - который добавляет параметр <span class="taskcode">vegetable</span> в лист <span class="taskcode">vegetables</span> на позицию <span class="taskcode">index</span><br/>
+		4. Создайте метод <span class="taskcode">public void removeVegetable(int index)</span> - который удаляет из <span class="taskcode">vegetables</span> элемент с индексом <span class="taskcode">index</span><br/>
+		5. Класс <span class="taskcode">Garden</span> будет использоваться нитями. Поэтому сделай так, чтобы все методы блокировали мютекс <span class="taskcode">this</span><br/>
+		6. Реализуй это минимальным количеством кода
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level17,lesson04,task04"></button><b>4. Синхронизированный президент</b><br/><br/>
+                И снова <span class="taskcode">Singleton</span> паттерн - синхронизация в статическом блоке<br/>
+		Внутри класса <span class="taskcode">OurPresident</span> в статическом блоке создайте синхронизированный блок.<br/>
+		Внутри синхронизированного блока инициализируйте <span class="taskcode">president</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level17,lesson04,task05"></button><b>5. МВФ</b><br/><br/>
+<span class="taskcode">Singleton</span> паттерн - синхронизация в методе<br/>
+		IMF - это Международный Валютный Фонд<br/>
+		Внутри метода <span class="taskcode">getFund</span> создайте синхронизированный блок<br/>
+		Внутри синхронизированного блока инициализируйте переменную <span class="taskcode">imf</span> так, чтобы метод <span class="taskcode">getFund</span> всегда возвращал один и тот же объект
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>5. Кэш. проблема многопоточности - локальный кэш. volatile</h2>
+</div>
+<p>- Привет, Амиго! Помнишь, Элли тебе рассказывала про проблемы при одновременном доступе нескольких нитей к общему (разделяемому) ресурсу?</p>
+<p class="amigo">- Да.</p>
+<p>- Так вот – это еще не все. Есть еще небольшая проблема.</p>
+<p>Как ты знаешь, в компьютере есть память, где хранятся данные и команды (код), а также  процессор, который исполняет эти команды и работает с данными. Процессор считывает данные из памяти, изменяет и записывает их обратно в память. Чтобы ускорить работу процессора в него встроили свою «быструю» память – кэш.</p>
+<p>Чтобы ускорить свою работу, процессор копирует самые часто используемые переменные и области памяти в свой кэш и все изменения с ними производит в этой быстрой памяти. А после – копирует обратно в «медленную» память. Медленная память все это время содержит старые(!) (неизмененные) значения переменных.</p>
+<p>И тогда может возникнуть проблема. <span class="red_text">Одна нить меняет переменную</span>, такую как isCancel или isInterrupted из примера выше, а <span class="red_text">вторая нить «не видит» этого изменения</span>, т.к. оно было совершено в быстрой памяти. Это следствие того, что нити не имеют доступа к кэшу друг друга. (Процессор часто содержит несколько независимых ядер и нити физически могут исполняться на разных ядрах.)</p>
+<p>Вспомним вчерашний пример:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Clock <b>implements Runnable</b><br/>
+{<br/>
+    <b>private</b> boolean isCancel = false;<br/><br/>
+
+    <b>public</b> void <b>cancel</b>() <br/>
+    {<br/>
+       this.isCancel = true;<br/>
+    }<br/><br/>
+
+    <b>public</b> void run()<br/>
+   {<br/>
+       <b>while</b> <span class="red_text">(!this.isCancel)</span><br/>
+      {<br/>
+          Thread.sleep(1000);<br/>
+          System.out.println("Tik");<br/>
+      }<br/>
+   }<br/>
+}
+</td>
+<td class="wide-text">Нить «не знает» о существовании других нитей.<br/><br/>
+
+В методе run переменная isCancel при первом использовании будет помещена в кэш дочерней нити. Эта операция эквивалентна коду:<br/><br/>
+<span class="monospace_text"><b>public</b> void run()<br/>
+  {<br/>
+      <span class="red_text">boolean <b>isCancelCached</b> = this.isCancel;</span><br/>
+      <b>while</b> (!isCancelCached)<br/>
+     {<br/>
+         Thread.sleep(1000);<br/>
+         System.out.println("Tik");<br/>
+     }<br/>
+  }</span><br/><br/>
+
+Вызов метода <b>cancel</b> из другой нити поменяет значение переменной <b>isCancel</b> в обычной (медленной) памяти, но не в кэше остальных нитей.
+</td>
+</tr>
+<tr><td class="monospace_text wide-text"><b>public static void</b> main(<b>String</b>[] args)<br/>
+{<br/>
+     Clock clock = new Clock();<br/>
+     Thread clockThread = new Thread(clock);<br/>
+     clockThread.start();<br/><br/>
+   
+     Thread.sleep(10000);<br/>
+     clock.<b>cancel</b>();<br/>
+}
+	</td>
+<td class="wide-text">
+</td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Ничего себе! А для этой проблемы тоже придумали красивое решение, как в случае с <b>synchronized</b>?</p>
+<p>- Ты не поверишь!</p>
+<p>Сначала думали отключить работу с кэшем, но потом оказалось, что из-за этого программы работают в разы медленнее. Тогда придумали другое решение.</p>
+<p>Было придумано специальное ключевое слово <span class="red_text"><b>volatile</b></span>. Помещение его перед определением переменной запрещало помещать ее значение в кэш. Вернее не запрещало помещать в кэш, а просто принудительно всегда читало и писало ее только в обычную (медленную) память.</p>
+<p>Вот как нужно исправить наше решение, чтобы все стало отлично работать:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="55%">Код</th><th width="45%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Clock implements Runnable<br/>
+{<br/>
+    <b>private <span class="red_text">volatile</span></b> boolean isCancel = false;<br/><br/>
+
+    <b>public</b> void <b>cancel</b>() <br/>
+    {<br/>
+       this.<b>isCancel</b> = true;<br/>
+    }<br/><br/>
+
+    <b>public</b> void run()<br/>
+   {<br/>
+       <b>while</b> <span class="red_text">(!this.isCancel)</span><br/>
+      {<br/>
+          Thread.sleep(1000);<br/>
+          System.out.println("Tik");<br/>
+      }<br/>
+   }<br/>
+}
+</td>
+<td class="wide-text">Из-за модификатора volatile чтение и запись значения переменной всегда будут происходить в обычной, общей для всех нитей, памяти. 
+</td>
+</tr>
+<tr><td class="monospace_text wide-text"><b>public static void</b> main(<b>String</b>[] args)<br/>
+{<br/>
+     Clock clock = new Clock();<br/>
+     Thread clockThread = new Thread(clock);<br/>
+     clockThread.start();<br/><br/>
+   
+     Thread.sleep(10000);<br/>
+     clock.<b>cancel</b>();<br/>
+}
+	</td>
+<td class="wide-text">
+</td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- И все?</p>
+<p>- Да. Просто и красиво.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задачи на volatile</h2>
+</div>
+<p>- Привет, Амиго! </p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level17,lesson06,task01"></button><b>1. Заметки для всех</b><br/><br/>
+                Класс <span class="taskcode">Note</span> будет использоваться нитями.<br/>
+		Поэтому сделай так, чтобы лист <span class="taskcode">notes</span> находился в общей памяти
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level17,lesson06,task02"></button><b>2. Предложения</b><br/><br/>
+                Не используя <span class="taskcode">synchronized</span> сделайте так, чтобы количество сделанных и принятых предложений было одинаковым.  
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>7. yield - пропуск хода</h2>
+</div>
+<p>- Привет, Амиго! У нас сегодня будет небольшой и интересный урок. Я расскажу тебе про <span class="red_text">yield</span> – статический метод класса Thread. </p>
+<p>Элли тебе уже рассказывала, что процессор постоянно переключается между нитями. Каждой нити выделяется небольшой кусочек процессорного времени, называемый <b>квантом</b>. Когда это время истекает – процессор переключается на другую нить и начинает выполнять ее команды. Вызов метода <span class="blue_text"><b>Thread.yield()</b></span> позволяет досрочно завершить квант времени текущей нити или, другими словами, переключает процессор на следующую нить.</p>
+<p class="amigo">- А зачем нити может понадобиться уступить свое время другой нити?</p>
+<p>- Необходимость в этом возникает не часто. Вызов <b>yield</b> приводит к тому, что «наша нить досрочно завершает ход», и что следующая за <b>yield</b> команда начнется с полного кванта времени. Значит шансы, что ее прервут – меньше. Особенно, если она небольшая (по времени). Такой подход можно использовать при оптимизации некоторых процессов.</p>
+<p>Еще могу добавить, что метод <b>Thread.sleep(0)</b> работает фактически так же. Думаю, ты вначале будешь использовать метод <b>yield</b> не очень часто, но знать о нем - полезно.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>8. Ссылка на вики, synchronized, volatile, yield</h2>
+</div>
+<p>- У меня есть для тебя новый материал по критическим секциям и модификатору <b>synchronized</b>. Там довольно много нового и сложного материала. Не стоит сильно вдаваться в детали. Смотри на него пока как на дополнительный взгляд на материал нынешнего уровня. В дальнейшем мы будем глубоко погружаться в эту тему, но пока тебе это не нужно. Почитай вот:</p>
+<p><a href="http://wikijava.it-cache.net/index.php@title=Glava_17_Thinking_in_Java_4th_edition.html#.D0.9A.D1.80.D0.B8.D1.82.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D1.81.D0.B5.D0.BA.D1.86.D0.B8.D0.B8" target="_blank">Ссылка на вики, synchronized, volatile, yield</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>9. Хулио</h2>
+</div>
+<p>- Привет, Амиго! Ты сегодня хорошо решал задачи. Садись смотреть видео.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-17.gif" preload="none" tabindex="0" taskkey="level17,lesson09,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-17.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=IuMskex_0Hc" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>10. Домашние и бонусные задания</h2>
+</div>
+<p>- Здорово, боец!</p>
+<p class="amigo">- Здравия желаю, товарищ капитан!</p>
+<p>- У меня для тебя шикарная новость. Вот тебе задания для закрепления полученных навыков. Выполняй их каждый день, и твои навыки будут расти с неимоверной скоростью. Они специально разработаны для выполнения их в Intellij IDEA.</p>
+<table class="table_task">
+<tr>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Общий список</b><br/><br/>
+                1. Изменить класс <span class="taskcode">Solution</span> так, чтобы он стал списком. (Необходимо реализовать интерфейс <span class="taskcode">java.util.List</span>).<br/>
+		2. Список <span class="taskcode">Solution</span> должен работать только с целыми числами <span class="taskcode">Long</span>.<br/>
+		3. Воспользуйтесь полем <span class="taskcode">original</span>.<br/>
+		4. Список будет использоваться нитями, поэтому позаботьтесь, чтобы все методы были синхронизированы.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Comparable</b><br/><br/>
+		Реализуйте интерфейс <span class="taskcode">Comparable&amp;ltBeach&amp;gt</span> в классе <span class="taskcode">Beach</span>, который будет использоваться нитями.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Аптека</b><br/><br/>
+                Реализуй интерфейс <span class="taskcode">Runnable</span> в классах <span class="taskcode">Apteka</span> и <span class="taskcode">Person</span>.<br/>
+		Все нити должны работать пока не <span class="taskcode">isStopped</span><br/>
+		Логика для <span class="taskcode">Apteka</span>: <span class="taskcode">drugsController</span> должен сделать закупку случайного лекарства (<span class="taskcode">getRandomDrug</span>) в количестве (<span class="taskcode">getRandomCount</span>) и подождать 300 мс<br/>
+		Логика для <span class="taskcode">Person</span>: <span class="taskcode">drugsController</span> должен сделать продажу случайного лекарства (<span class="taskcode">getRandomDrug</span>) в количестве (<span class="taskcode">getRandomCount</span>) и подождать 100 мс<br/>
+		Расставь <span class="taskcode">synchronized</span> там, где это необходимо
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>4. Синхронизированные методы</b><br/><br/>
+                Установить модификатор <span class="taskcode">synchronized</span> только тем методам, которым необходимо.<br/>
+		Объект класса <span class="taskcode">Solution</span> будет использоваться нитями.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>5. Лишняя синхронизация</b><br/><br/>
+<span class="taskcode">synchronized</span> существенно замедляет программу, поэтому убери избыточность <span class="taskcode">synchronized</span> внутри методов
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>6. Глажка</b><br/><br/>
+                И снова быт...<br/>
+		Поставьте один <span class="taskcode">synchronized</span>, чтобы <span class="taskcode">diana</span> и <span class="taskcode">igor</span> гладили по-очереди, ведь утюг всего один!<br/><br/>
+        Подсказка: использовать блокировку на уровне класса.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>7. ApplicationContext</b><br/><br/>
+<span class="taskcode">ApplicationContext</span> будет доступен множеству нитей.<br/>
+		Сделать так, чтобы данные не терялись: подумай, какое ключевое слово необходимо поставить и где.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>8. Банкомат</b><br/><br/>
+                Разберись, как работает программа<br/>
+		Во время тестирования лог содержит следующее:<br/>
+		.....<br/>
+		Добавляем 100, на счету 1100<br/>
+		Добавляем 100, на счету 1200<br/>
+		Тратим 1000, на счету 100<br/>
+		Недостаточно денег<br/>
+		.....<br/><br/>
+
+		Создан баг: При списании денег со счета теряются деньги<br/>
+		Найти и исправить ошибку 
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>9. Транзакционность</b><br/><br/>
+                Сделать метод <span class="taskcode">joinData</span> транзакционным, т.е. если произошел сбой, то данные не должны быть изменены.<br/>
+		1. Считать с консоли 2 имени файла<br/>
+		2. Считать построчно данные из файлов. Из первого файла - в <span class="taskcode">allLines</span>, из второго - в <span class="taskcode">forRemoveLines</span><br/>
+		В методе <span class="taskcode">joinData</span>:<br/>
+		3. Если список <span class="taskcode">allLines</span> содержит все строки из <span class="taskcode">forRemoveLines</span>, то удалить из списка <span class="taskcode">allLines</span> все строки, которые есть в <span class="taskcode">forRemoveLines</span><br/>
+		4. Если список <span class="taskcode">allLines</span> НЕ содержит каких-либо строк, которые есть в <span class="taskcode">forRemoveLines</span>, то<br/>
+		4.1. очистить <span class="taskcode">allLines</span> от данных<br/>
+        4.2. выбросить исключение <span class="taskcode">CorruptedDataException</span><br/>
+		Метод <span class="taskcode">joinData</span> должен вызываться в <span class="taskcode">main</span>. Все исключения обработайте в методе <span class="taskcode">main</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>10. Посчитаем</b><br/><br/>
+                1. Сделай так, чтобы результат успел посчитаться для всех элементов массива <span class="taskcode">values</span> НЕ используя <span class="taskcode">Thread.sleep</span><br/>
+		2. Исправь <span class="taskcode">synchronized</span> блок так, чтобы массив values заполнился значением 1
+            </td>
+</tr>
+</table>
+<p>- Те задания были для духов. Для дедушек я добавил бонусные задания повышенной сложности. Только для старослужащих. </p>
+<table class="table_task">
+<tr>
+<th></th>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>1. CRUD</b><br/><br/>
+<u>Задача:</u> CrUD - Create, Update, Delete<br/>
+		Программа запускается с одним из следующих наборов параметров:<br/>
+		-c name sex bd<br/>
+		-u id name sex bd<br/>
+		-d id<br/>
+		-i id<br/>
+		Значения параметров:<br/>
+		name - имя, <span class="taskcode">String</span><br/>
+		sex - пол, "м" или "ж", одна буква<br/>
+		bd - дата рождения в следующем формате 15/04/1990<br/>
+		-с  - добавляет человека с заданными параметрами в конец <span class="taskcode">allPeople</span>, выводит id (index) на экран<br/>
+		-u  - обновляет данные человека с данным id<br/>
+		-d  - производит логическое удаление человека с id<br/>
+		-i  - выводит на экран информацию о человеке с id: name sex (м/ж) bd (формат 15-Apr-1990)<br/><br/>
+
+		id соответствует индексу в списке<br/>
+		Все люди должны храниться в <span class="taskcode">allPeople</span><br/>
+		Используйте <span class="taskcode">Locale.ENGLISH</span> в качестве второго параметра для <span class="taskcode">SimpleDateFormat</span><br/><br/>
+
+		Пример параметров: -c Миронов м 15/04/1990
+            </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>2. CRUD 2</b><br/><br/>
+<u>Задача:</u> CrUD Batch - multiple Creation, Updates, Deletion<br/>
+		Программа запускается с одним из следующих наборов параметров:<br/>
+		-c name1 sex1 bd1 name2 sex2 bd2 ...<br/>
+		-u id1 name1 sex1 bd1 id2 name2 sex2 bd2<br/>
+		-d id1 id2 id3 id4 ...<br/>
+		-i id1 id2 id3 id4 ...<br/>
+		Значения параметров:<br/>
+		name - имя, <span class="taskcode">String</span><br/>
+		sex - пол, "м" или "ж", одна буква<br/>
+		bd - дата рождения в следующем формате 15/04/1990<br/>
+		-с  - добавляет всех людей с заданными параметрами в конец <span class="taskcode">allPeople</span>, выводит id (index) на экран в соответствующем порядке<br/>
+		-u  - обновляет соответствующие данные людей с заданными id<br/>
+		-d  - производит логическое удаление всех людей с заданными id<br/>
+		-i  - выводит на экран информацию о всех людях с заданными id: name sex bd<br/><br/>
+
+		id соответствует индексу в списке<br/>
+		Формат вывода даты рождения 15-Apr-1990<br/>
+		Все люди должны храниться в <span class="taskcode">allPeople</span><br/>
+		Порядок вывода данных соответствует вводу данных<br/>
+		Обеспечить корректную работу с данными для множества нитей (чтоб не было затирания данных)<br/>
+		Используйте <span class="taskcode">Locale.ENGLISH</span> в качестве второго параметра для <span class="taskcode">SimpleDateFormat</span>
+</td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>3. Ресторан</b><br/><br/>
+<u>Задача:</u> 1.Разберись, что делает программа. Официант почему-то не относит приготовленные блюда назад к столам :(<br/>
+		2.Исправь ошибку.<br/><br/>
+		Подсказка: это одна строчка
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

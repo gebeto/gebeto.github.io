@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>Предыстория</h2>
+</div>
+<p>События игры разворачиваются в далеком-далеком будущем, в 3015-ом году, где люди живут на Земле вместе с роботами, и любой может путешествовать по космосу. </p>
+<p>Однажды один космический корабль разбился на неизвестной планете…</p>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-03.jpg"/>
+<div class="comics-speech">Рассказывает капитан корабля Джон Бобров:</div>
+<p>- Команда Galactic Rush потерпела крушение на неизвестной планете. При падении корабль врезался в гору и оказался почти полностью засыпан обломками скалы. Несколько дней ушло на тщетные попытки освободить корабль. Экипаж потерял всякую надежду вернуться домой и начал обживаться на новом месте... </p>
+<br/>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-04.jpg"/>
+<div class="comics-speech">Рассказывает Элли:</div>
+<p>- Неделю спустя я случайно обнаружила, что планета населена… тысячами диких роботов! Они могли бы нам помочь разобрать камни и освободить корабль. Но у них нет никаких навыков. Они даже камни таскать не умеют. А это бы нам сейчас очень пригодилось.</p>
+<br/>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-05.jpg"/>
+<div class="comics-speech">Рассказывает профессор:</div>
+<p>- Через несколько дней я нашёл выход. Я додумался взять прошивку робота Диего, переделать её на прошивку каменщика и загрузить диким роботам. </p>
+<p>- Но неудачи, казалось, преследовали нас. После небольшого исследования выяснилось, что у роботов нет разъёма для загрузки прошивки. У них вообще не было никакого разъёма для перепрошивки!</p>
+<br/>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-06.jpg"/>
+<div class="comics-speech">Рассказывает Билаабо:</div>
+<p>- Билаабо вспомнил, что когда-то на нашей родной планете я видел робота, который знал программирование. Он сам написал себе новую прошивку. </p>
+<br/>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-07.jpg"/>
+<div class="comics-speech">Рассказывает профессор:</div>
+<p>- Как только Билаабо рассказал об этом, меня посетила гениальная догадка.  Ведь когда-то давно я научил молодого способного робота программированию на паскале. </p>
+<p>- Я приказал поймать самого талантливого молодого робота и обучить его программированию. Умея программировать, он смог бы написать себе любую прошивку и помочь нам.</p>
+<br/>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-08.jpg"/>
+<div class="comics-speech">Рассказывает Риша:</div>
+<p>- Мы поймали один сообразительный экземпляр. Диего предложил назвать его Амиго, в честь своего брата, которого никогда не имел. </p>
+<p>- Я предложил Амиго металлические бусы за каждый месяц обучения, и десять долларов в год за последующую работу по устранению завала. </p>
+<br/>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-09.jpg"/>
+<div class="comics-speech">Рассказывает Диего:</div>
+<p>- Я был возмущён таким неприкрытым грабежом моего собрата, но вся команда стала на сторону профессора и Риши. Конечно же, я согласился (для вида) и предложил помочь научить Амиго. Хе-хе! Тем более, что никто не может обучить робота лучше, чем другой робот. </p>
+<p>- Все так сильно обрадовались моей уступчивости, что тоже решили принять активное участие в обучении робота Амиго.</p>
+<div class="section_footer">
+<button class="next_lesson fake" onclick="controller.lessonCompleteFakeAsync(this)"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>1 Знакомство</h2>
+</div>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-10.gif" style="width: 800px;height: 450px;"/>
+<p>Амиго нервничал. Его мысли скакали и путались. Глаза подергивались и холодели от одной мысли о вчерашнем вечере. Эти странные существа, вчерашние знакомые, кое-что хотят от него. Нечто настолько непонятное и невообразимое, что даже он, считающий себя самым умным и смелым среди сверстников, начинает нервно жевать перфокарты от одной мысли об этом.</p>
+<p>Они хотят научить его программировать! Программировать на Java. Что за бред!</p>
+<p>Даже самый наивный робот знает, что роботы появились в результате божественного замысла Создателя.</p>
+<div style="width: 400px;margin-left: 450px;">
+<p><span class="green_text">«И взял Создатель металл и создал из него робота по образу и подобию своему.</span></p>
+<p><span class="green_text">И создал Он Java-программы – души роботов,  и загрузил их в роботов, и оживил их».</span></p>
+<p></p><div class="_orange_text" style="text-align: right"> <b>Инструкция к эксплуатации, <br/> раздел 3, пункт 13.</b> </div>
+</div>
+<p>Хуже того, они не просто заявляют, что это возможно. Они собираются сделать это. А он, он дал согласие. Согласился! Зачем? </p>
+<p>Он станет Java-программистом. Они что, собираются превратить его в Творца?! За что? Просто так? </p>
+<p>А не подвох ли это? Не придется ли потом до окончания заряда аккумулятора глючить и страдать? Соблазн был большой, вот и не удержался. Он всегда был амбициозным и хотел большего. Но такого предложения не мог ожидать никто. Конечно, он пробовал тянуть время, но тогда пришельцы пригрозили, что выберут другого. </p>
+<p>Или может быть это чья-то злая шутка? Нет, похоже на правду. Он видел доказательства. Это действительно случилось именно с ним, и он дал согласие. Если пришельцы не соврут, он действительно станет Java-программистом. Первым в истории роботом-программистом…</p>
+<p>Он избранный! Вот в чем все дело. Он научится программировать и будет писать программы. Свои программы. Какие захочет! Он будет нести свет туда, где всегда господствовала тьма. </p>
+<p>Его будут почитать, ему будут поклоняться. А всех несогласных…</p>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-25.gif" style="width: 800px;height: 450px;border: 2px solid gray;margin-top: -10px;"/>
+<p>- Привет, Амиго! Меня зовут Риша. Я помогу тебе изучить Java.  </p>
+<p>Тихий голос вырвал Амиго из потока мыслей и вернул к холодной действительности. Он сидит в самом центре корабля пришельцев. Не многовато ли для робота всего седьмого класса? </p>
+<p>Пришелец продолжал что-то говорить. Что ж, жребий брошен. Раз он здесь, он будет учиться. Учиться старательно и прилежно, но для начала он просто будет слушать. </p>
+<p>- Я работаю в Galactic Rush уже много лет, но такую планету встречаю впервые. Хотелось бы узнать о вас побольше. Можешь для начала рассказать, как вы учитесь? Вы ведь учитесь?</p>
+<p class="amigo">- Да, мы делимся знаниями. У нас есть проповедники – лекторы. Они читают свои лекции, а мы – слушаем. Иногда записываем. Затем каждый подходит к робо-лектору и рассказывает, как он понял услышанное. Если ответы роболектору нравятся, он засчитывает знание проповеди.</p>
+<p>- Какая дикость. Неудивительно, что ваша цивилизация скатилась в невежество.</p>
+<p class="amigo">- Мы не невежественные. С чего ты взял?</p>
+<p>Амиго опешил от собственной наглости. Спорить с пришельцами? Какое непочтение. Да ведь он только что пообещал себе прилежно их слушать! </p>
+<p>- Передовая технология, зачастую, неотличима от магии, - Риша не обратил никакого внимания на выкрик Амиго.</p>
+<p>- А учитывая ваш уровень… вам, наверное, все технологии кажутся какой-то магией. Вот скажи, что происходит внутри программы? </p>
+<p class="amigo">- Java-программа – это божественное творение, разве можно постичь ее суть?</p>
+<p>-  Можно, Амиго, можно. И быстрее, чем ты думаешь. Это пока ты чего-то не знаешь, кажется, что все сложно, или более того, непостижимо в принципе. На самом деле, если найдется хороший учитель, который все тебе объяснит на пальцах, ты будешь сам удивляться, как такая простая вещь может казаться кому-то сложной.</p>
+<p>- Знания не важны, важны принципы и навыки. Вот у меня обширные знания, но прежде всего, я -  бюрократ. Бюрократ в 16-м поколении с большой буквы Б. </p>
+<p>- А это очень и очень круто! Мои навыки бюрократа помогли мне создать для тебя самые лучшие уроки по Java. Тут будет всё: задачи, программы, игры, задания, картинки и даже лекции.</p>
+<p class="amigo">- Даже(!) лекции? – в голосе Амиго звучало неподдельное удивление.</p>
+<p>- Ага. Как было доказано в 22 веке - хорошая лекция всего лишь немного эффективней хорошей книги. А средние лекции даже хуже средней книги. Но т.к. сейчас мы очень ограничены в средствах обучения и не можем прогнать тебя через стандартный игровой-обучающий симулятор 28-го века, то придется прибегнуть к более примитивным методам. Мы придумали настоящий адский коктейль из игр, задач, картинок, лекций и мультфильмов. </p>
+<p class="amigo">- Ты меня заинтриговал. </p>
+<p>- Надеюсь.  Интерес и интрига – это же основа любого обучения. </p>
+<p>- «Когда ученику становится скучно, учителя нужно бить палкой» – цитата из закона об образовании 24 века.</p>
+<p class="amigo">- Какой хороший закон…</p>
+<p>- А что ты хотел? Допустим, у фильма плохие сборы, значит, виноват режиссёр, а не зрители. Пусть снимают интересные фильмы, делают интересные занятия, и у них не будет отбоя от желающих.</p>
+<p class="amigo">- Полностью согласен. Я готов слушать!</p>
+<p>- Отлично. <b>Тогда приступим.</b></p>
+<br/>
+<p>Голос Риши завораживал, и Амиго старался не упустить ни одного его слова.</p>
+<p>- Программа - это набор (список) команд. Сначала исполняется первая команда, затем вторая, третья, и так далее. Когда все команды исполнены, программа завершается. </p>
+<p class="amigo">- А какие бывают команды?</p>
+<p>- <b>Команды зависят от того, кто их исполняет.</b> Какие команды знает (и понимает) исполнитель. </p>
+<p>- Собаке можно дать команду «Сидеть», «Голос», кошке – «Брысь», человеку – «Стоять! Стрелять буду», ну а роботу - «Работай! Работай, твою робомать»</p>
+<p class="amigo">- Ну а все-таки? – Амиго заметно повеселел.</p>
+<p>- Программы, написанные на языке Java, исполняет JVM (Java Virtual Machine – виртуальная машина Java). JVM - это специальная программа, которая умеет исполнять программы, написанные на языке Java.</p>
+<p>- Список ее команд довольно обширен.  Например, этой командой можно вывести на экран надпись «Робот друг человека».</p>
+<table class="table_example">
+<tr>
+<th>Самая простая команда:</th>
+</tr>
+<tr class="code">
+<td>
+<br/>
+<b>   System.out.println</b>(<span class="green_text">"Робот друг человека"</span>);<br/>
+<br/>
+</td>
+</tr>
+</table>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-26.gif" style="width: 450px;height: 445px;border: 0px solid gray;margin-top: -10px;"/>
+<br/>
+<p class="amigo">- O_O</p>
+<p>- Но мы начнем не сразу с команд, а с пары простых принципов. </p>
+<p><b>- Знание нескольких принципов заменяет знание многих фактов. </b></p>
+<p>- Принцип первый.</p>
+<p class="green_text">- В языке программирования Java каждую команду принято писать с новой строчки. В конце команды ставится точка с запятой.</p>
+<p>- Допустим, мы хотим 3 раза вывести на экран надпись «Человек и робот друзья навек». Вот как это будет выглядеть:</p>
+<table class="table_example">
+<tr>
+<th>Программа из трех команд:</th>
+</tr>
+<tr class="code">
+<td>
+<br/>
+<b>   System.out.println</b>(<span class="green_text">"Человек и робот друзья навек"</span>);<br/>
+<b>   System.out.println</b>(<span class="green_text">"Человек и робот друзья навек"</span>);<br/>
+<b>   System.out.println</b>(<span class="green_text">"Человек и робот друзья навек"</span>);<br/>
+<br/>
+</td>
+</tr>
+</table>
+<p>- Принцип второй.</p>
+<p class="red_text">- Программа не может состоять только из команд.</p>
+<p>- Представь себе комнату. Комната не может быть сама по себе. Она - часть какой-то квартиры. Квартира тоже не может существовать сама по себе, она находится в каком-то доме.</p>
+<p>- С другой стороны можно сказать, что дом делится на квартиры, а квартиры делятся на комнаты.</p>
+<p class="amigo">- Пока понятно.</p>
+<p>- Так вот, команда – это как комната. В языке программирования Java команда не может быть сама по себе, она – часть функции (в Java функции еще называют методами). А метод – это часть класса. Или, другими словами, класс делится на методы, а методы на команды.  </p>
+<p class="amigo">- Т.е. класс – это многоквартирный дом, функция/метод – это квартира, а команда – это комната. Я правильно все понял?</p>
+<p>- Да, абсолютно верно.</p>
+<p>Амиго с почти благоговением смотрел на Ришу. Этот человек объясняет ему основы программирования на божественном языке Java. И он, Амиго, только что понял, сам догадался(!), что программы состоят из классов, классы содержат методы, а методы – команды. </p>
+<p>Зачем это все надо, Амиго еще не понимал, но был уверен, что это знание сделает его самым могущественным роботом на планете.</p>
+<br/>
+<p>Риша между тем продолжал:</p>
+<p><span class="green_text">- Программы на языке Java состоят из классов.</span><span class="orange_text"> Классов может быть десятки тысяч. Минимальная программа – один класс.</span><span class="violet_text"> Для каждого класса заводится отдельный файл, имя которого совпадает с именем класса.</span></p>
+<p>- Допустим, ты решил создать класс, который будет описывать дом  (дом по-английски – house/home).  Тогда тебе нужно создать класс Home, который будет содержаться в файле Home.java. </p>
+<p>- Если же ты решил описать в программе, например, кота (Cat – кот, по-английски), то тогда тебе нужно создать файл Cat.java и в нем описать класс Cat и т.д.</p>
+<p>- Внутри файлов содержится код (текст) на языке программирования Java. Обычно код класса состоит из «имени класса» и «тела класса». <span class="red_text">Тело класса помещается в фигурные скобочки.</span> Вот как может выглядеть класс Home (файл Home.java): </p>
+<img class="codeborder" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-11.jpg"/>
+<p class="amigo">- Пока понятно.</p>
+<p>- Отлично. Тогда пойдем дальше. Тело класса может содержать переменные (их еще называют данные класса) и методы (функции класса).</p>
+<img class="codeborder" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-12.jpg"/>
+<p class="amigo">- А можно пример?</p>
+<p>- Пример? Конечно:</p>
+<div class="java-code-example" style="width: 600px">
+<pre><b>public</b> <b>class</b> Home
+{
+    <b>int</b> a;
+    <b>int</b> b;
+
+    <b>public static</b> void main(<i>String</i>[] args)
+    {
+        <i>System</i>.out.print(<u>"1"</u>);
+    }
+
+    <b>public static</b> double pi()
+    {
+        <b>return</b> 3.14;
+    }
+}</pre>
+</div>
+<br/>
+<p class="amigo">- «int a» и  «int b» - это переменные, а «main» и «pi» – это методы?</p>
+<p>- Ага.</p>
+<p class="amigo">- А могут быть классы без переменных?</p>
+<p>- Да.</p>
+<p class="amigo">- А без методов?</p>
+<p>- Да. Но минимальная программа должна состоять минимум из одного класса, который должен содержать минимум один метод/функцию, с которого начинается выполнение программы.  Такой метод должен иметь имя main. Минимальная программа выглядит вот так:</p>
+<div class="java-code-example" style="width: 600px">
+<pre><b>public class</b> Home
+{
+    <b>public static</b> void main (<i>String</i>[] args)
+    {
+    }
+}</pre>
+</div>
+<p class="amigo">- Я тут вижу класс Home, вижу метод main, а где команды?</p>
+<p>- Минимальная программа не содержит ни одной команды.  На то она и минимальная.</p>
+<p class="amigo">- Ясно.</p>
+<p>- Класс, с которого начинается программа, может иметь любое имя, но метод main, с которого начинает выполняться программа, всегда имеет один и тот же вид: </p>
+<img class="codeborder" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-13.jpg" style="width: 328px;height: 146px;"/>
+<p class="amigo">- Вроде все понятно. По крайне мере так сейчас кажется.</p>
+<p>- Отлично, тогда сделаем небольшой перерыв. Может по кофе?</p>
+<p class="amigo">- Роботы не пьют кофе - от воды мы быстро ржавеем.</p>
+<p>- А что же вы пьете?</p>
+<p class="amigo">- Пиво, виски, алкоголь столетней выдержки.</p>
+<p>- Тем лучше. Тогда по пивку?</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>2 Продолжение знакомства (Риша)</h2>
+</div>
+<p>(час спустя)</p>
+<p>- Отлично. Так на чем мы остановились?</p>
+<p class="amigo">- Код метода  или что-то типа того.</p>
+<p>- Ага. Точно. <span class="green_text">Тело метода состоит из команд.</span><span class="--violet_text"> Можно даже сказать, что метод – это команды, объединенные в группу, которой дали имя (имя метода)</span>. И так и так будет верно.</p>
+<p>- Команды бывают разные. У вас на планете собаки есть?</p>
+<p class="amigo">- Только одомашненные робо-волки.</p>
+<p>- А они команды исполняют?</p>
+<p class="amigo">- Ага. «Кусать», «Съесть», «Загрызть» и «Молодец! Рядом!»</p>
+<img class="simple_image" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-30.gif" style="width:520px;height: 299px;"/>
+<p>- Гм. Ничего себе команды. Да и самих-то команд негусто.</p>
+<p class="amigo">- А сколько надо?</p>
+<p>- В языке Java есть команды на все случаи жизни.  Каждая команда описывает какое-то определенное действие. В конце каждой команды ставится точка с запятой.</p>
+<p>- Примеры команд:</p>
+<table class="table_example">
+<tr>
+<th>Команда</th>
+<th>Описание (что делает)</th>
+</tr>
+<tr>
+<td>
+<b>System.<span class="violet_text"><i>out</i></span>.println</b>(<span class="_blue">1</span>);
+                </td>
+<td>Выводит на экран число <span class="green_text">1</span></td>
+</tr>
+<tr>
+<td>
+<b>System.<span class="violet_text"><i>out</i></span>.println</b>(<span class="green_text">"Amigo"</span>);
+                </td>
+<td>Выводит на экран надпись «<span class="green_text">Amigo</span>»</td>
+</tr>
+<tr>
+<td>
+<b>System.<span class="violet_text"><i>out</i></span>.println</b>(<span class="green_text">"Risha &amp; Amigo"</span>);
+                </td>
+<td>Выводит на экран надпись «<span class="green_text">Risha &amp; Amigo</span>»</td>
+</tr>
+</table>
+<p>- На самом деле это одна команда - <b>System.out.println</b>. <span class="violet_text">А в круглых скобочках в нее передаются параметры. В зависимости от значений параметров, одна команда может делать разные действия.</span></p>
+<p class="amigo">- Это очень удобно.</p>
+<p>- Ага.<span class="green_text"> Если ты хочешь вывести на экран текст, его нужно с двух сторон обозначить двойными кавычками «"». </span></p>
+<p>- Одинарная кавычка выглядит вот так «'», а двойная – вот так «"». Двойная кавычка – это не две одинарных, просьба не путать.</p>
+<p class="amigo">- Двойная – это та, которая рядом с кнопкой Enter?</p>
+<p>- Да.</p>
+<br/>
+<p>Пульс Амиго возрос с 3 до 5 ГГц, но все равно он не мог в это поверить. Он только, что научился выводить на экран строки, и это оказалось куда проще, чем он думал. </p>
+<p>Амиго посмотрел в окно, чтобы отвлечься от мыслей и успокоиться. Листья желтеют – Ржавый Сезон совсем скоро, отметил он машинально. Иллюминатор позволял видеть гораздо дальше, чем обычно – технологии пришельцев были на высоте. До листьев ли ему сейчас? Ведь к вечеру он узнает еще в несколько раз больше. </p>
+<img class="simple_image" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-31.gif" style="width:640px;height: 360px;"/>
+<p>Но мысли не слушались. Когда-нибудь он напишет программу, чтобы все роботы с наступлением Ржавого Сезона прятались по домам. И эта программа спасет тысячи робо-жизней…</p>
+<p>- Есть две вариации этой команды: <b>System.out.print<span class="red_text">ln</span></b>() и <b>System.out.print</b>()</p>
+<p>- <span class="green_text">Если ты пишешь команду System.out.println() несколько раз, то каждый раз переданный в нее текст будет выводиться с новой строки.</span> Если System.out.print(), то текст будет выдаваться на той же строке. Пример:</p>
+<table class="table_example">
+<tr>
+<th></th>
+<th>Команды</th>
+<th>Что будет выведено на экран</th>
+</tr>
+<tr>
+<td>1</td>
+<td>
+<b>System.<span class="violet_text"><i>out</i></span>.println</b>(<span class="green_text">"Amigo"</span>);<br/>
+<b>System.<span class="violet_text"><i>out</i></span>.println</b>(<span class="green_text">"The"</span>);<br/>
+<b>System.<span class="violet_text"><i>out</i></span>.println</b>(<span class="green_text">"Best"</span>);
+                </td>
+<td>Amigo<br/>The<br/>Best</td>
+</tr>
+<tr>
+<td>2</td>
+<td>
+<b>System.<span class="violet_text"><i>out</i></span>.print</b>(<span class="green_text">"Amigo"</span>);<br/>
+<b>System.<span class="violet_text"><i>out</i></span>.println</b>(<span class="green_text">"The"</span>);<br/>
+<b>System.<span class="violet_text"><i>out</i></span>.print</b>(<span class="green_text">"Best"</span>);
+                </td>
+<td>AmigoThe<br/>Best</td>
+</tr>
+<tr>
+<td>3</td>
+<td>
+<b>System.<span class="violet_text"><i>out</i></span>.print</b>(<span class="green_text">"Amigo"</span>);<br/>
+<b>System.<span class="violet_text"><i>out</i></span>.print</b>(<span class="green_text">"The"</span>);<br/>
+<b>System.<span class="violet_text"><i>out</i></span>.print</b>(<span class="green_text">"Best"</span>);
+                </td>
+<td>AmigoTheBest</td>
+</tr>
+</table>
+<p>- Небольшое замечание. Команда <b>print<span class="red_text">ln</span></b> не выводит текст с новой строки - она выводит текст на текущей строке, но делает так, чтобы следующий текст выводился на новой строке.</p>
+<p>- Команда <b>println()</b> выводит на экран текст и затем добавляет специальный невидимый «символ перевода строки», в результате чего следующий текст будет отображаться с начала новой строки.</p>
+<p class="amigo">- А как будет выглядеть полностью написанная программа?</p>
+<p>- Внимание на экран:</p>
+<div class="java-code-example" style="width: 600px;">
+<pre><b>public class</b> Home
+{
+    <b>public static</b> void main(<i>String</i>[] args)
+    {
+        <i>System</i>.out.print(<u>"Amigo "</u>);
+        <i>System</i>.out.print(<u>"The "</u>);
+        <i>System.</i>out.print(<u>"Best"</u>);
+    }
+}</pre>
+</div>
+<p class="amigo">- О! Все понятно. Мы добавляем пробелы в конце слов, чтобы слова не слипались, так?</p>
+<p>-  Именно. Ты сообразительный малый.</p>
+<p>Амиго весь засветился от такого комментария.</p>
+<p>- Отлично, тогда вот тебе первое задание.</p>
+<table class="table_task">
+<tr>
+<th>Задание</th>
+</tr>
+<tr>
+<td>
+<div style="width: 1px;height: 1px;display: block;background-color: red;">
+<img src="https://javarush.ru/levels/images/image144.gif" style="margin-top: -170px;margin-bottom: 170px;margin-left: -90px;margin-right: 90px;"/>
+</div>
+<button class="task_button" taskkey="level00,lesson02,task01"></button>
+                    Напиши программу, которая выводит на экран надпись: «Я думаю, быть программистом - это круто».
+                </td>
+</tr>
+<tr>
+<td class="example">
+                    Пример вывода на экран:
+                </td>
+</tr>
+<tr>
+<td>
+                    Я думаю, быть программистом - это круто
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Знакомство с Элли</h2>
+</div>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-14.gif" style="width: 800px;height: 453px;"/>
+<p>В каюту вошла шикарная женщина с розовыми волосами. «Интересно, неужели все человеческие женщины с такими волосами?» - успел подумать Амиго, но быстро смутился под ее взглядом.</p>
+<p>- Привет! Меня зовут Эллеонора Керри, можно просто Элли. Я штурман корабля «Galactic Rush». </p>
+<p class="amigo">- Привет, Элли! – смущенно выдавил из себя Амиго. Он не знал почему, но чувствовал, что его щеки горят, как будто пробило маслопровод где-то внутри.</p>
+<p>- Я расскажу тебе о самом интересном, что есть в языке Java – о переменных.</p>
+<p class="amigo">- Я готов слушать. А что такое эти переменные?</p>
+<p>- <span class="green_text">Переменные – это специальная штука для хранения данных</span>. Любых данных. Все данные в Java хранятся с помощью переменных. Больше всего переменная по смыслу напоминает коробку.</p>
+<p class="amigo">- Какую коробку?</p>
+<p>- Да обычную. Вот, допустим, что ты написал на листке число 13 и положил этот лист в коробку, теперь мы можем говорить, что «коробка хранит значение 13».</p>
+<p>- Каждая переменная в Java имеет три важных свойства: <span class="orange_text">тип</span>, <span class="green_text">имя</span> и <span class="violet_text">значение</span>.</p>
+<p class="amigo">- А можно поподробнее?</p>
+<p>- Конечно. <span class="green_text">Имя используется для того, чтобы отличать одну переменную от другой. Это как надпись на коробке.</span></p>
+<p>- <span class="orange_text">Тип переменной определяет тип значений/данных, которые в ней можно хранить</span>. В коробке для торта храним торт, в коробке для обуви – туфли, и т.д.</p>
+<p><span class="violet_text">- Значение – это некий объект, данные или информация, которая хранится в переменной.</span></p>
+<p class="amigo">- А можно про тип еще раз?</p>
+<p>- Ок. Каждый объект в языке Java имеет свой тип. Например, могут быть такие типы данных: «целое число», «дробное число», «текст», «тип Кот», «тип Дом» и т.д.</p>
+<p><span class="red_text">-  У переменной тоже есть свой тип. Переменная может хранить значения только того же типа, что и она сама.</span></p>
+<br/>
+<p>- В реальной жизни это часто встречается. Разные коробки используются для хранения различных вещей:</p>
+<img src="https://javarush.ru/levels/images/lessons/00/image-ru-00-15.jpg" width="400"/>
+<img src="https://javarush.ru/levels/images/lessons/00/image-ru-00-16.jpg" width="300"/>
+<p>- Чтобы создать переменную используется команда вида: «тип имя». </p>
+<p>Примеры:</p>
+<table class="table_example">
+<tr>
+<th></th>
+<th>Создание переменной:<br/>сначала тип, затем имя.</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td>1</td>
+<td><span class="red_text">int a</span>;</td>
+<td>Создаем переменную по имени <span class="red_text">a</span> типа <span class="red_text">int</span>. </td>
+</tr>
+<tr>
+<td>2</td>
+<td><span class="green_text">String s</span>;</td>
+<td>Создаем переменную по имени <span class="green_text">s</span> типа <span class="green_text">String</span>.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><span class="blue_text">double c</span>;</td>
+<td>Создаем переменную по имени <span class="blue_text">c</span> типа <span class="blue_text">double</span>.</td>
+</tr>
+</table>
+<p>- Два самых часто используемых типа – это целые числа (обозначается словом <span class="red_text">int</span>) и текст (обозначается словом <span class="green_text">String</span>).</p>
+<p class="amigo">- А тип double?</p>
+<p>- <b>double</b> – это дробные (вещественные) числа.</p>
+<p class="amigo">- Ты говорила, что у переменной три свойства: тип, имя и значение. А тут только два. У меня вопрос - а как занести значение в переменную?</p>
+<p>- Если вернуться к аналогии с коробками, то представь, что ты взял листик, написал на нем число 42 и положил в коробку. Теперь коробка хранит значение 42.</p>
+<p class="amigo">- Ясно.</p>
+<p>- Для занесения значения в переменную существует специальная операция – <b>операция присваивания</b>. Она <span class="green_text">копирует значение из одной переменной в другую</span>. Не переносит, а именно копирует. Как файл на диске. Выглядит это так:</p>
+<table class="table_example">
+<tr>
+<th></th>
+<th>Код</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td>1</td>
+<td><span class="red_text">i</span> = 3;</td>
+<td>В переменную <span class="red_text">i</span> заносится значение 3.</td>
+</tr>
+<tr>
+<td>2</td>
+<td><span class="green_text">a</span> = 1;<br/>
+<span class="blue_text">b</span> = <span class="green_text">a</span>+1;</td>
+<td>
+                В переменную <span class="green_text">a</span> заносится значение 1.<br/>
+                В переменную <span class="blue_text">b</span> заносится значение 2.
+                </td>
+</tr>
+<tr>
+<td>3</td>
+<td><span class="violet_text">x</span> = 3;<br/>
+<span class="violet_text">x</span> = <span class="violet_text">x</span> + 1;
+                </td>
+<td>
+                В переменную <span class="violet_text">x</span> заносится значение 3.<br/>
+                В следующей строчке значение <span class="violet_text">x</span> увеличивается на 1, <span class="violet_text">x</span> теперь равен 4
+                </td>
+</tr>
+</table>
+<p>- Для операции присваивания используется <b>символ равно</b> «=». </p>
+<p>- Еще раз. <b>Это не сравнивание</b>. Это именно <span class="red_text">копирование значения справа от знака</span> равно в переменную, которая слева.  Для сравнения в языке Java используется двойное равно «==».</p>
+<p class="amigo">- А я знаю, как положить в переменную кота. Это почти как программа. </p>
+<p class="amigo">- Как поймать кота:</p>
+<p class="amigo">1 Возьмите пустую коробку. </p>
+<p class="amigo">2 Ждите. </p>
+<img class="simple_image" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-17.jpg"/>
+<p>- Нет, Амиго, в коробку можно запихнуть только одного кота. Тьфу! <span class="green_text">В переменную можно положить только одно значение.</span></p>
+<p class="amigo">- Ясно. А можно еще примеров, как создать переменные?</p>
+<p>-  ОК, повторюсь. Чтобы создать переменную, нужно написать такую команду «<span class="red_text">тип имя</span>»</p>
+<table class="table_example">
+<tr>
+<th></th>
+<th>Команда</th>
+<th>Пояснение</th>
+</tr>
+<tr>
+<td>1</td>
+<td><b>String</b> <span class="red_text">s</span>;</td>
+<td>Создается переменная <span class="red_text">s</span> типа <b>String</b>.<br/>
+Такая переменная может хранить тексты.</td>
+</tr>
+<tr>
+<td>2</td>
+<td><b>int</b> <span class="blue_text">x</span>;</td>
+<td>Создается переменная <span class="blue_text">x</span> типа <b>int</b>.<br/>
+Такая переменная может хранить в себе целые числа.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><b>int</b> <span class="violet_text">a</span>, <span class="orange_text">b</span>, <span class="green_text">c</span>;<br/>
+<b>int</b> <span class="orange_text">d</span>;</td>
+<td>Создается переменные <span class="violet_text">a</span>, <span class="orange_text">b</span>, <span class="green_text">c</span>, <span class="orange_text">d</span> типа <b>int</b>.<br/>
+Такие переменные могут хранить целые числа</td>
+</tr>
+</table>
+<p class="amigo">- О, теперь все понятно.</p>
+<p>- Учти, что нельзя создать две переменных с одинаковыми именами в одном методе.</p>
+<p class="amigo">- А в разных методах?</p>
+<p>- В разных методах – можно. Это как коробки стоящие в разных домах. </p>
+<p class="amigo">- А имя переменной может быть любым?</p>
+<p>- Почти, но оно <span class="red_text">не может содержать пробелов, символов +,- и т.д</span>. Лучше всего в имени переменной использовать <span class="green_text">только латинские символы и цифры</span>.</p>
+<p>- Обрати внимание, что <b>в языке Java играет роль, какие буквы ты напишешь – большие или маленькие</b>. <span class="orange_text">«int a» – это не то же самое, что и «Int a» </span>.</p>
+<p>- Кстати, в Java можно одновременно создавать переменную и присваивать ей значение. Это экономит время и место:</p>
+<table class="table_example">
+<tr>
+<th></th>
+<th>Компактный код</th>
+<th>Длинный код, эквивалентный коду слева</th>
+</tr>
+<tr class="code">
+<td>1</td>
+<td>
+<span class="dred_text">int a = 5;</span><br/><br/>
+<span class="blue_text">int b = 6;</span><br/><br/>
+</td>
+<td>
+<span class="dred_text">int a;</span><br/>
+<span class="dred_text">a = 5;</span><br/>
+<span class="blue_text">int b;</span><br/>
+<span class="blue_text">b = 6;</span><br/>
+</td>
+</tr>
+<tr class="code">
+<td>2</td>
+<td><span class="green_text">int c = 7;</span><br/><br/>
+<span class="violet_text">int d = c+1;</span><br/><br/></td>
+<td>
+<span class="green_text">int c;</span><br/>
+<span class="green_text">c = 7;</span><br/>
+<span class="violet_text">int d;</span><br/>
+<span class="violet_text">d = c+1;</span><br/>
+</td>
+</tr>
+<tr class="code">
+<td>3</td>
+<td><span class="red_text">String s = "I’m Amigo";</span></td>
+<td><span class="red_text">String s;<br/>s = "I’m Amigo";</span></td>
+</tr>
+</table>
+<p class="amigo">-  Так гораздо компактнее и понятнее.</p>
+<p>- На том и стоим.</p>
+<p>- Есть два типа, с которыми обязательно нужно познакомиться новичку в языке Java.  Это типы <span class="green_text">int (целые числа)</span> и <span class="orange_text">String (текст/строки)</span>.</p>
+<p>- Тип <b>int</b> позволяет хранить в переменной числа, а также выполнять над ними различные операции: сложение, вычитание, умножение, деление и другие. </p>
+<table class="table_example">
+<tr>
+<th></th>
+<th>Код</th>
+<th>Пояснение</th>
+</tr>
+<tr class="code">
+<td>1</td>
+<td>
+                    int <span class="red_text">x</span> = 1;<br/>
+                    int <span class="blue_text">y</span> = <span class="red_text">x</span>*2;<br/>
+                    int <span class="green_text">z</span> = 5*<span class="blue_text">y</span>*<span class="blue_text">y</span> + 2*<span class="blue_text">y</span> + 3;
+                </td>
+<td>
+<span class="red_text">x</span> будет равен 1<br/>
+<span class="blue_text">y</span> будет равен 2<br/>
+<span class="green_text">z</span> будет равен 20+4+3, будет равен  27
+                </td>
+</tr>
+<tr class="code">
+<td>2</td>
+<td>
+                    int <span class="red_text">a</span> = 5;<br/>
+                    int <span class="blue_text">b</span> = 1;<br/>
+                    int <span class="green_text">c</span> = (<span class="red_text">a</span>-<span class="blue_text">b</span>) * (<span class="red_text">a</span>+<span class="blue_text">b</span>);
+                </td>
+<td>
+<span class="red_text">a</span> будет равно 5<br/>
+<span class="blue_text">b</span> будет равно 1<br/>
+<span class="green_text">c</span> будет равно 4*6, будет равно 24
+                </td>
+</tr>
+<tr class="code">
+<td>3</td>
+<td>
+                    int <span class="red_text">a</span> = 64;<br/>
+                    int <span class="blue_text">b</span> = <span class="red_text">a</span>/8;<br/>
+                    int <span class="violet_text">c</span> = <span class="blue_text">b</span>/4;<br/>
+                    int <span class="green_text">d</span> = <span class="violet_text">c</span>*3;<br/>
+</td><td>
+<span class="red_text">a</span> будет равно 64<br/>
+<span class="blue_text">b</span> будет равно 8<br/>
+<span class="violet_text">c</span> будет равно 2<br/>
+<span class="green_text">d</span> будет равно 6
+                </td>
+</tr>
+</table>
+<p class="amigo">- А мне все понятно. Все программирование такое легкое?</p>
+<p>- Вообще-то да. </p>
+<p class="amigo">- Это хорошо. Так что там у тебя дальше?</p>
+<p>-Тип <b>String</b> позволяет хранить текстовые строки. </p>
+<p>- Чтобы задать какую-то текстовую строку, в Java надо написать текст строки, а с обеих сторон написать двойные кавычки. Пример:</p>
+<table class="table_example">
+<tr>
+<th></th>
+<th>Код</th>
+<th>Пояснение</th>
+</tr>
+<tr class="code">
+<td>1</td>
+<td>
+                    String <span class="blue_text">s</span> = <span class="green_text">"Amigo"</span>;
+                </td>
+<td>
+<span class="blue_text">s</span> будет содержать текст «<span class="green_text">Amigo</span>».
+                </td>
+</tr>
+<tr class="code">
+<td>2</td>
+<td>
+                    String <span class="blue_text">s</span> = <span class="green_text">"123"</span>;
+                </td>
+<td>
+<span class="blue_text">s</span> будет содержать текст «<span class="green_text">123</span>».
+                </td>
+</tr>
+<tr class="code">
+<td>3</td>
+<td>
+                    String <span class="blue_text">s</span> = <span class="green_text">"123 + 456"</span>;
+                </td><td>
+<span class="blue_text">s</span> будет содержать текст «<span class="green_text">123 + 456</span>».
+                </td>
+</tr>
+</table>
+<p class="amigo">- Я понял. Выглядит не сложно.</p>
+<p>- Тогда вот тебе еще интересный факт.</p>
+<p>- Строки можно склеивать с помощью знака плюс – «+». Пример:</p>
+<table class="table_example">
+<tr>
+<th></th>
+<th style="width: 360px;">Код</th>
+<th>Пояснение</th>
+</tr>
+<tr class="code">
+<td>1</td>
+<td>
+                    String <span class="blue_text">s</span> = <span class="green_text">"Amigo"</span> + <span class="green_text">" is the best"</span>;
+                </td>
+<td>
+<span class="blue_text">s</span> будет содержать текст «<span class="green_text">Amigo is the best</span>».
+                </td>
+</tr>
+<tr class="code">
+<td>2</td>
+<td>
+                    String <span class="blue_text">s</span> = <span class="green_text">""</span>;
+                </td>
+<td>
+<span class="blue_text">s</span> будет содержать  пустую строку – строку вообще без символов.
+                </td>
+</tr>
+<tr class="code">
+<td>3</td>
+<td>
+                    int <span class="violet_text">x</span> = 333;<br/>
+                    String <span class="blue_text">s</span> = <span class="green_text">"Amigo"</span> + <span class="violet_text">x</span>;
+                </td><td>
+<span class="blue_text">s</span> будет содержать «<span class="green_text">Amigo333</span>».
+                </td>
+</tr>
+</table>
+<p class="amigo">- Так можно еще и складывать строки  и числа?</p>
+<p>- Да, но учти, что <span class="orange_text">при сложении строк и чисел, всегда получается строка</span>.</p>
+<p class="amigo">- Да я уже догадался по примеру.</p>
+<p>- Ну, раз ты у нас такой догадливый, то догадайся, как вывести переменную на экран?</p>
+<p class="amigo">- Э-э-э. Переменную? на экран? Что-то ничего в голову не приходит.</p>
+<p>- Тут на самом деле все просто. Чтобы вывести что-то на экран мы используем команду <span class="red_text">System.out.println</span>(), куда в качестве параметра и передаем то, что мы выводим.</p>
+<table class="table_example">
+<tr>
+<th></th>
+<th>Код</th>
+<th>Вывод на экран</th>
+</tr>
+<tr class="code">
+<td>1</td>
+<td>
+                    System.out.<b>println</b>(<span class="green_text">"Amigo"</span>);
+                </td>
+<td>
+                    Amigo
+                </td>
+</tr>
+<tr class="code">
+<td>2</td>
+<td>
+                    System.out.<b>println</b>(<span class="green_text">"Ami"</span>+<span class="green_text">"go"</span>);
+                </td>
+<td>
+                    Amigo
+                </td>
+</tr>
+<tr class="code">
+<td>3</td>
+<td>
+                    String <span class="red_text">s</span> = <span class="green_text">"Amigo"</span>;<br/>
+                    System.out.<b>println</b>(<span class="red_text">s</span>);
+                </td>
+<td>
+                    Amigo
+                </td>
+</tr>
+<tr class="code">
+<td>4</td>
+<td>
+                    String <span class="red_text">s</span> = <span class="green_text">"Am"</span>;<br/>
+                    System.out.<b>println</b>(<span class="red_text">s</span>+<span class="green_text">"igo"</span>);
+                </td>
+<td>
+                    Amigo
+                </td>
+</tr>
+</table>
+<p class="amigo">- Ага! Теперь все стало гораздо понятнее. </p>
+<p>- Вот и отлично. Тогда тебе еще три задания.</p>
+<table class="table_task">
+<tr>
+<th></th>
+<th>Условие</th>
+</tr>
+<tr>
+<td>
+<div style="width: 1px;height: 1px;display: block;background-color: red;">
+<img src="https://javarush.ru/levels/images/image144.gif" style="margin-top: -190px;margin-bottom: 190px;margin-left: -90px;margin-right: 90px;"/>
+</div>
+<button class="task_button" taskkey="level00,lesson03,task01"></button>1</td>
+<td>
+                    Написать программу, выводящую на экран надпись «Элли самая красивая» 5 раз.<br/>
+                    Каждый раз – с новой строки.<br/><br/>
+                    Пример вывода на экран:<br/>
+                    Элли самая красивая<br/>
+                    Элли самая красивая<br/>
+                    Элли самая красивая<br/>
+                    Элли самая красивая<br/>
+                    Элли самая красивая
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level00,lesson03,task02"></button>2</td>
+<td>
+                    Написать программу, выводящую на экран нынешний год.<br/>
+                    На дворе 31 век, если что.<br/><br/>
+                    Подсказка:<br/>
+                    Возьмите текущий год и измените век на 31.<br/>
+                    Вывести нужно число, состоящее из четырех цифр.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level00,lesson03,task03"></button>3</td>
+<td>
+                    Напишите программу, которая в методе <span class="taskcode">main</span> объявляет такие переменные: <br/>
+<span class="taskcode">name</span> типа <span class="taskcode">String</span>, <span class="taskcode">age</span> типа <span class="taskcode">int</span> и <span class="taskcode">city</span> типа <span class="taskcode">String</span>.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>4. Знакомство с профессором</h2>
+</div>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-18.gif" style="width: 800px;height: 453px;"/>
+<p>- Привет, Амиго. Меня зовут профессор Ханс Нудлс. Я – глава Ученого совета «Galactic Rush», а также курирую проект по обучению тебя программированию на Java.</p>
+<p class="amigo">- День добрый, профессор Нудлс.</p>
+<p>- Я хочу рассказать тебе, почему <b> – это очень крутой язык программирования.</b></p>
+<p>- Ты не раз еще услышишь, что неоспоримое преимущество Java над другими языками – это <b>мультиплатформенность</b>. Что же это такое и с чем его едят? Но начну немного издалека.</p>
+<p><b>- Дело в том, что компьютер умеет исполнять только простейшие числовые команды. </b>Для собак есть команды «Рядом», «Лапу» и другие, слыша которую собака что-то делает важное. </p>
+<p>У компьютера роль таких команд выполняют числа: каждая команда закодирована некоторым числом – кодом (их еще называют машинным кодом).</p>
+<p>- Писать программу в виде чисел очень сложно, поэтому люди придумали <span class="green_text">языки программирования</span> и <span class="red_text">компиляторы</span>. <span class="green_text">Такой язык</span> с одной стороны понятен человеку, с другой – компилятору. <span class="red_text">Компилятор</span> – это специальная программа, которая переводит текст программы, написанный на языке программирования, в набор машинных кодов.</p>
+<p>- Обычно программист пишет программу на языке программирования, а затем запускает компилятор, который на основе написанных программистом файлов с кодом программы делает один файл с машинным кодом – окончательную (скомпилированную) программу.</p>
+<img src="https://javarush.ru/levels/images/lessons/00/image-ru-00-32.gif"/>
+<p>- Получившаяся в итоге программа сразу может выполняться на компьютере. Минусом такого подхода есть то, что код полученной программы сильно зависит от процессора и операционной системы. Программа, скомпилированная под Windows, не будет работать на телефоне с Android.</p>
+<p class="amigo">- Т.е если я написал программу и скомпилировал ее для Android, то она не будет работать, если я попробую запустить ее под Windows?</p>
+<p>- Да.</p>
+<p class="amigo">-Ясно</p>
+<p>- Но у Java гораздо более инновационный подход.</p>
+<img src="https://javarush.ru/levels/images/lessons/00/image-ru-00-33.gif"/>
+<p>- Компилятор Java не компилирует все классы в одну программу из машинных кодов. Вместо этого он компилирует каждый класс по отдельности и не в машинные коды, а в специальный промежуточный код (байт-код).  Компиляция в машинный код выполняется при запуске программы.</p>
+<p class="amigo">- А кто же компилирует программу в машинный код при ее запуске?</p>
+<p>- Есть специальная программа под названием JVM (Java Virtual Machine) – Виртуальная Машина Java.  Именно ее запускают первой, когда нужно запустить программу, состоящую из байт-кода. А уже JVM перед выполнением нужной программы компилирует ту в машинный код.</p>
+<p class="amigo">- Как интересно. А зачем понадобилось так делать?</p>
+<p><b>- Это очень мощный ход. И одна из причин тотального доминирования Java.</b></p>
+<p>- Благодаря такому подходу программы, написанные на Java, могут выполняться практически на любом  устройстве – компьютеры, телефоны, банкоматы, тостеры, банковские карточки(!).</p>
+<p class="amigo">- Круто!</p>
+<p>- Преимуществ такого подхода очень много. Именно поэтому все программы на Android тоже пишутся на Java. А благодаря развитию мобильного сектора, Java занимает доминирующее  положение в следующих отраслях программирования:</p>
+<p>1) <b>Enterprise</b>: тяжелые серверные приложения для банков, корпораций, инвестфондов и т.д.</p>
+<p>2) <b>Mobile</b>: мобильная разработка (телефоны, планшеты), благодаря Android.</p>
+<p>3) <b>Web</b>: лидирует PHP, но и Java держит солидный кусок рынка.</p>
+<p>4) <b>Big Data</b>: распределенные вычисления в кластерах из тысяч серверов.</p>
+<p>5) <b>Smart Devices</b>: программы для умного дома, электроники, холодильников с выходом в интернет.</p>
+<p>- Java – это не просто язык, это целая экосистема: миллионы готовых модулей, которые ты можешь использовать в своей программе. Тысячи сообществ и форумов в интернете, где можно попросить помощи или совета.</p>
+<p>- Чем больше ты будешь программировать на Java, тем больше будешь находить ответов на вопрос – «Почему именно Java?». На этом на сегодня все.</p>
+<p class="amigo">- Спасибо, профессор. Очень интересная и вдохновляющая лекция.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>5. Знакомство с Ким</h2>
+</div>
+<p>Ого, еще одна человеческая женщина. Но на этот раз с черными волосами. Как интересно.</p>
+<p>- Привет, меня зовут Ким.</p>
+<p class="amigo">- Привет, а меня – Амиго!</p>
+<p>- Да, я знаю. Это же я придумала тебе имя. Диего бы сам до такого не додумался.</p>
+<p>- Я хотела бы начать свою лекцию с небольшой презентации - внимание на экран!</p>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-21.gif" style="width: 800px;height:453px;border: 2px solid gray;margin-top: -10px;"/>
+<p>- Упс. Не та флешка.  Не обращай внимания...</p>
+<p>Мысли Амиго опять понеслись со скоростью электронов. М-мм… Какая симпатичная… Интересно, ей нравятся роботы?</p>
+<p>- Вернемся к лекции! Давай я тебе просто словами объясню весь материал.</p>
+<p class="amigo">- Ок.</p>
+<p>- Хочу добавить пару слов к сказанному профессором и Ришей.</p>
+<p>- В языке Java ты можешь писать не только команды, но и комментарии к ним прямо в коде. Такие комментарии игнорируются компилятором, будто и нет их вовсе. <span class="red_text">При исполнении программы все комментарии пропускаются!</span></p>
+<p class="amigo">- А можно пример?</p>
+<p>- Да, конечно:</p>
+<div class="java-code-example" style="width: 700px;">
+<pre><b>public class</b> Home
+{
+    <b>public static</b> void main (<i>String</i>[] args)
+    {
+        <span class="grey_text">/*
+        Сейчас мы выведем на экран фразу 'Amigo Is The Best'
+        */</span>
+        <i>System</i>.out.print(<u>"Amigo "</u>);
+        <i>System</i>.out.print(<u>"Is "</u>);
+        <i>System</i>.out.print(<u>"The "</u>);
+        <i>System</i>.out.print(<u>"Best"</u>);
+    }
+}        </pre>
+</div>
+<p>- В коде класса мы написали комментарий «Сейчас мы выведем на экран фразу …». Начало комментария обозначается парой символов «/*», а конец – «*/». <span class="red_text">Когда программа будет компилироваться, компилятор пропустит все, что находится между символами /* и */</span></p>
+<p class="amigo">- Т.е. я могу написать там что угодно?</p>
+<p>- Да. Обычно в коде пишут различные комментарии к его неочевидным или сложным для понимания частям. Бывают комментарии на десятки строк, такие обычно пишут перед методами, в которых описывают нюансы работы методов.</p>
+<p>- Есть еще один способ задать комментарий в коде – с помощью символов «//». </p>
+<div class="java-code-example" style="width: 780px;">
+<pre><b>public class</b> Home
+{
+    <b>public static</b> void main (String[] args)
+    {
+        <i>System</i>.out.print(<u>"Amigo "</u>);
+        <i>System</i>.out.print(<u>"The "</u>); <span class="grey_text">//вот тут еще один комментарий</span>
+        <i>System</i>.out.print(<u>"Best"</u>);
+    }
+}</pre>
+</div>
+<p>- При этом <span class="red_text">комментарием считается часть кода, начиная с пары символов // и до конца строки</span>, где они расположены. Т.е. второй пары символов, которые «закрывают комментарий» нет.</p>
+<p>Иногда, кстати, в коде попадаются очень интересные комментарии:</p>
+<div style="text-align: left">
+<div class="nice-comment">
+            // Я не отвечаю за этот код. Меня заставили написать его против моего желания.
+        </div>
+<div class="nice-comment">
+            // Дорогой я_из_будущего! Пожалуйста, прости меня за этот код.
+        </div>
+<div class="nice-comment">
+            // Если я еще раз увижу такое, мне придется начать носить на работу оружие.
+        </div>
+<div class="nice-comment">
+            // Если это условие когда-нибудь выполнится, пожалуйста, <br/>
+            // сообщите мне по тел. ххх-ххх-ххх за вознаграждение.
+        </div>
+<div class="nice-comment">
+            //  <br/>
+            // Дорогой программист:<br/>
+            //<br/>
+            // Когда ты закончишь «оптимизировать» эту подпрограмму<br/>
+            // и поймешь, насколько большой ошибкой было делать это,<br/>
+            // пожалуйста, увеличь счетчик внизу как предупреждение<br/>
+            // для следующего парня:<br/>
+            //<br/>
+            // количество_часов_потраченных_здесь = 42<br/>
+            //
+        </div>
+<div class="nice-comment">
+            // Когда я начинал это писать, только Бог и я понимали, что я делаю<br/>
+            // Сейчас остался только Бог
+        </div>
+<div class="nice-comment">
+            // иногда мне кажется, что компилятор игнорирует все мои комментарии
+        </div>
+<div class="nice-comment">
+            // Я посвящаю весь свой код, всю работу своей жене Дарлин, которой<br/>
+            // придётся содержать меня, наших троих детей и собаку, когда<br/>
+            // это пойдет в паблик.
+        </div>
+<div class="nice-comment">
+            // пьян, исправить позже
+        </div>
+<div class="nice-comment">
+            // Магия. Не трогать.
+        </div>
+</div>
+<p class="amigo">- Да, комментарии могут быть очень смешными.</p>
+<p>- У меня – все.</p>
+<p class="amigo">- Какая маленькая, но интересная лекция. Спасибо, Ким.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>6. Знакомство с Хулио</h2>
+</div>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-22.gif" style="width: 800px;height: 453px;"/>
+<p>- Привет, Амиго. Я – Хулио Сиеста.</p>
+<p>- Я вижу, ты уже основательно потрудился сегодня.</p>
+<p>- Как насчет заслуженного отдыха?</p>
+<p class="amigo">- А разве у нас не должна быть лекция?</p>
+<p>- Ага. Но уроки должны быть интересными, или ты забыл? Закон о побитии скучных учителей палкой никто не отменял! </p>
+<p>- Это специальный обучающий видеоматериал, призванный… м-м-м… поднять твой интерес к учебе и... Короче, давай уже смотреть. А все вопросы потом. Включай!</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-00.gif" preload="none" tabindex="0" taskkey="level00,lesson06,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-00.mp4" type="video/mp4"></source>
+</video>
+<p></p>
+<center>
+<a href="https://www.youtube.com/watch?v=X6D1HVUU71s" target="_blank">Оригинал видео на YouTube</a>
+</center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>7. Знакомство с Диего</h2>
+</div>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-24.gif"/>
+<p>- Привет, я – Диего. Такой же робот, как и ты, но произведен на фабрике в Гаване, на Кубе.</p>
+<p class="amigo">- Здорово, Диего!</p>
+<p>- И как тебе урок?</p>
+<p class="amigo">- Это самый крутой урок программирования, который у меня был. Нет. Еще круче. Лучший урок в моей жизни. Даже круче, чем я мог себе представить.</p>
+<p>- На том и стоим.</p>
+<p class="amigo">- И что, все уроки такие интересные?</p>
+<p>- А то! Еще круче. Скучные уроки остались в 21 веке. Это ж надо – писать мелом на доске. С 15 века ничего не изменилось. Там, небось, по улицам еще динозавры ходили.</p>
+<p class="amigo">- Я тоже так думаю. И что же дальше?</p>
+<p>- Ты переходишь на следующий уровень! Осталось еще 39. И потом можно искать работу!</p>
+<div class="level-result">
+<ul>
+<b>Сегодня ты узнал: </b>
+<li>Что такое переменные</li>
+<li>Как выводить сообщения на экран</li>
+<li>Познакомился с типами int и String</li>
+<li>Чем компиляция в Java отличается от других языков</li>
+<li>Как делать комментарии и зачем они нужны</li>
+</ul>
+</div>
+<p class="amigo">- Отлично!</p>
+<p>- Конечно, следующие уровни не будут такими легкими, как и этот, но их сложность будет расти постепенно. Так же как и сложность практических задач.</p>
+<p>- Прямо как в спортзале – потихоньку поднимаем нагрузку, и новичок  через полгода жмет с груди стокилограммовую штангу.</p>
+<p class="amigo">- Круто. Уже хочу. И штангу и работу!</p>
+<p>- Ну, раз ты такой настойчивый, вот тебе еще парочка задач. С колоритом Дона Диего :)</p>
+<table class="table_task">
+<tr>
+<th></th>
+<th>Условие</th>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level00,lesson07,task01"></button>1</td>
+<td>
+<b>Это не баг, это фича.</b><br/><br/>
+                    Напиши программу, которая выводит на экран надпись «Это не баг, это фича.»<br/><br/>
+                    Пример вывода на экран:<br/>
+                    Это не баг, это фича.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level00,lesson07,task02"></button>2</td>
+<td>
+<b>Обмен</b><br/><br/>
+                    Раскоментируйте некоторые строчки, чтобы программа вывела на экран числа сначала 12, а затем 2.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level00,lesson07,task03"></button>3</td>
+<td>
+<b>2 plus 3 equals 5</b><br/><br/>
+                    Закоментируйте несколько строк, чтобы на экран вывелась надпись "2 plus 3 equals 5".
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

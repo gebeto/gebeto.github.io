@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-14.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 14
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>1. instanceof - что это такое и зачем нужно</h2>
+</div>
+<p>- Привет, Амиго! Ты уже раньше знакомился с оператором <span class="red_text"><b>instanceof</b></span>. Сегодня я расскажу тебе, как и где его можно использовать. <b>instanceof</b> – это очень простой и эффективный в использовании оператор.</p>
+<p class="amigo">- Звучит, как реклама!</p>
+<p>- Он, и правда, очень простой. Он используется в виде: <span class="red_text"><b>«объект» instanceof «класс»</b></span>.</p>
+<p>Он проверяет, является ли объект объектом определенного класса. Все еще проще, чем я говорю. Смотри пример:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="55%">Код</th><th width="45%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>Object</b> o = new <b>Integer</b>(3);<br/>
+boolean isInt = o <span class="red_text"><b>instanceof</b></span> Integer;
+</td>
+<td class="wide-text"><b>isInt</b> будет равно <b>true</b>. Объект, на который ссылается переменная o, является объектом класса <b>Integer</b>.
+</td>
+</tr>
+<tr><td class="monospace_text wide-text"><b>Object</b> o = "Mama";<br/>
+boolean isInt = o <span class="red_text"><b>instanceof</b></span> Integer;
+</td>
+<td class="wide-text"><b>isInt</b> будет равно <b>false</b>. Объект, на который ссылается переменная o, не является объектом класса <b>Integer</b>, он является объектом класса <b>String</b>.
+</td>
+</tr>
+<tr><td class="monospace_text wide-text"><b>InputStream</b> is = new <b>FileInputStream</b>("");<br/>
+boolean isFIS = is <span class="red_text"><b>instanceof</b></span> FileInputStream;
+</td>
+<td class="wide-text"><b>isFIS</b> будет равно <b>true</b>. Объект, на который ссылается переменная o, является объектом класса <b>FileInputStream</b>.
+</td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Да, очень просто.</p>
+<p>- Этот оператор учитывает и наследование. Вот смотри.</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="55%">Код</th><th width="45%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class Pet</b><br/>
+{<br/>
+}<br/>
+<b>class Cat extends Pet</b><br/>
+{<br/>
+}<br/>
+<b>class Tiger extends Cat</b><br/>
+{<br/>
+}
+</td>
+<td class="wide-text">Тут мы видим три объявленных класса: животное, кот и тигр. Кот наследуется от Животного. А Тигр от Кота.
+</td>
+</tr>
+<tr><td class="monospace_text wide-text">Object o = new Tiger();<br/>
+boolean isCat = o <b>instanceof</b> Cat;<br/>
+boolean isTiger = o <b>instanceof</b> Tiger;<br/>
+boolean isPet = o <b>instanceof</b> Pet;
+</td>
+<td class="wide-text"><b>isCat</b> будет равно <b>true</b>.<br/>
+<b>isTiger</b> будет равно <b>true</b>.<br/>
+<b>isPet</b> будет равно <b>true</b>.
+</td>
+</tr>
+<tr><td class="monospace_text wide-text">Object o = new Pet();<br/>
+boolean isCat = o <b>instanceof</b> Cat;<br/>
+boolean isTiger = o <b>instanceof</b> Tiger;<br/>
+boolean isPet = o <b>instanceof</b> Pet;
+</td>
+<td class="wide-text"><b>isCat</b> будет равно <b>false</b>.<br/>
+<b>isTiger</b> будет равно <b>false</b>.<br/>
+<b>isPet</b> будет равно <b>true</b>.
+</td>
+</tr>
+</tbody>
+</table>
+<p>И даже интерфейсы:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="55%">Код</th><th width="45%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">interface <b>Moveable</b><br/>
+{<br/>
+}<br/>
+<b>class Cat</b><br/>
+{<br/>
+}<br/>
+<b>class</b> TomCat extends <b>Cat implements Moveable</b><br/>
+{<br/>
+}
+</td>
+<td class="wide-text">Создадим два класса: Cat, TomCat и интерфейс Moveable
+</td>
+</tr>
+<tr><td class="monospace_text wide-text">Cat o = new TomCat();<br/>
+boolean isCat = o <b>instanceof</b> Cat;<br/>
+boolean isMoveable = o <b>instanceof</b> Moveable;<br/>
+boolean isTom = o <b>instanceof</b> TomCat;
+</td>
+<td class="wide-text"><b>isCat</b> будет равно <b>true</b>.<br/>
+<b>isMoveable</b> будет равно <b>true</b>.<br/>
+<b>isTom</b> будет равно <b>true</b>.
+</td>
+</tr>
+<tr><td class="monospace_text wide-text">Cat o = new Cat();<br/>
+boolean isCat = o <b>instanceof</b> Cat;<br/>
+boolean isMoveable = o <b>instanceof</b> Moveable;<br/>
+boolean isTom = o <b>instanceof</b> TomCat;
+</td>
+<td class="wide-text"><b>isCat</b> будет равно <b>true</b>.<br/>
+<b>isMoveable</b> будет равно <b>false</b>.<br/>
+<b>isTom</b> будет равно <b>false</b>.
+</td>
+</tr>
+</tbody>
+</table>
+<p>Оператор instanceof имеет вид: <span class="red_text"><b>a</b></span> instanceof <span class="blue_text">B</span>.</p>
+<p>Другими словами, оператор <b>instanceof</b> вернет значение <b>true</b>, если:</p>
+<p><b>1)</b> переменная <span class="red_text"><b>а</b></span> хранит ссылку на объект типа <span class="blue_text"><b>B</b></span></p>
+<p><b>2)</b> переменная <span class="red_text"><b>а</b></span> хранит ссылку на объект, класс которого унаследован от <span class="blue_text"><b>B</b></span></p>
+<p><b>3)</b> переменная <span class="red_text"><b>а</b></span> хранит ссылку на объект реализующий интерфейс <span class="blue_text"><b>B</b></span></p>
+<p>Иначе оператор <b>instanceof</b> вернет значение <b>false</b>.</p>
+<p class="amigo">- Понятно. А зачем это нужно, дядя Риша?</p>
+<p>- Об этом сегодня тебе расскажет Элли. Это очень хороший оператор. Сегодня ты в этом убедишься.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>2. Задачи на instanceof</h2>
+</div>
+<p>- Привет, Амиго! Ты отличный друг! Профессор сказал придумать тебе 10 задач, но я дам тебе только две. Это максимум, что можно придумать с бодуна. Жалко, тебя вчера не было на вечеринке в твою честь. Отлично оттянулся.</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level14,lesson02,task01"></button><b>1. Bingo</b><br/><br/>
+                Исправь строчку '<span class="taskcode">Object o = new Pet();</span>' в методе <span class="taskcode">main</span> так, чтобы программа вывела "Bingo!"
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level14,lesson02,task02"></button><b>2. Bingo-2</b><br/><br/>
+                Исправь строчку '<span class="taskcode">Cat o = new Cat();</span>' так, чтобы программа вывела "Bingo!"
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Приведение типов. Расширение и  сужение</h2>
+</div>
+<p>- Привет, Амиго! Тема сегодняшней лекции – расширение и сужение типов. С расширением и сужением примитивных типов ты познакомился уже давно. На 10 уровне. Сегодня мы расскажем, как это работает для ссылочных типов, т.е. для объектов классов.</p>
+<p>Тут все довольно просто на самом деле. Представь себе цепочку наследования класса: класс, его родитель, родитель родителя и т.д. до самого класса Object. Т.к. <span class="red_text"><b>класс содержит все методы</b></span> класса, <span class="red_text"><b>от которого он был унаследован</b></span>, то объект этого класса <span class="red_text">можно сохранить в переменную <b>любого из его типов родителей</b></span>.</p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class Pet</b><br/>
+{<br/>
+    <b>public</b> void doPetActions();<br/>
+ }<br/><br/>
+<b>class Cat extends Pet</b><br/>
+{<br/>
+    <b>public</b> void doCatActions();<br/>
+ }<br/><br/>
+<b>class Tiger extends Cat</b><br/>
+{<br/>
+    <b>public</b> void doTigerActions();<br/>
+}
+    </td>
+<td class="wide-text">Тут мы видим три объявленных класса: животное, кот и тигр. Кот наследуется от Животного. А Тигр от Кота.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+{<br/>
+    Tiger tiger = new Tiger();<br/>
+    <span class="red_text">Cat cat  = new Tiger();<br/>
+    Pet pet = new Tiger();<br/>
+    Object obj = new Tiger();</span><br/>
+}
+    </td>
+<td class="wide-text">Объект класса Tiger всегда можно спокойно присвоить переменной с типом класса-родителя. Для класса Tiger – это Cat, Pet и Object.
+    </td>
+</tr>
+</tbody></table>
+<p>Теперь рассмотрим, что же такое расширение и сужение типов.</p>
+<p>Если в результате присваивания мы двигаемся по цепочке наследования вверх (к типу Object), то это сужение типа, а если вниз, к типу объекта, то это расширение типа.</p>
+<p><b>Движение вверх по цепочке наследования называется сужением, т.к. теряется возможность вызвать методы, которые были добавлены в класс при наследовании.</b></p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+{<br/>
+    Object obj = new Tiger();<br/>
+    <span class="red_text">Pet pet = (Pet) obj;<br/>
+    Cat cat = (Cat) obj;<br/>
+    Tiger tiger = (Tiger) pet;<br/>
+    Tiger tiger2 = (Tiger) cat;</span><br/>
+}
+    </td>
+<td class="wide-text">При расширении типа, нужно использовать оператор преобразования типа.<br/><br/> 
+    При этом Java-машина выполняет проверку, а действительно ли данный объект унаследован от Типа, к которому мы хотим его преобразовать.<br/><br/>
+    Такое небольшое нововведение уменьшило количество ошибок в преобразовании типов в разы, и существенно повысило стабильность работы Java-программ.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+{<br/>
+    Object obj = new Tiger();<br/>
+
+     <b>if</b> (obj <span class="red_text"><b>instanceof</b></span> Cat)<br/>
+     {<br/>
+        Cat cat = <span class="red_text"><b>(Cat)</b></span> obj;<br/>
+        cat.doCatActions();<br/>
+    }<br/><br/>
+
+}
+    </td>
+<td class="wide-text">Еще лучше – использовать проверку <b>instanceof</b>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+{<br/>
+    Pet pet = <span class="red_text">new Tiger();</span><br/>
+    <span class="blue_text">doAllAction</span>(pet);<br/><br/>
+
+    Pet pet2 = <span class="red_text">new Cat();</span><br/>
+    <span class="blue_text">doAllAction</span>(pet2);<br/><br/>
+
+    Pet pet3 = <span class="red_text">new Pet();</span><br/>
+    <span class="blue_text">doAllAction</span>(pet3);<br/>
+}<br/><br/>
+<b>public static</b> void <span class="blue_text"><b>doAllAction</b></span>(<span class="red_text">Pet</span> <span class="blue_text"><b>pet</b></span>)<br/>
+{<br/>
+     <b>if</b> (<span class="blue_text"><b>pet</b></span> <span class="dred_text"><b>instanceof</b></span> Tiger)<br/>
+     {<br/>
+        Tiger tiger  = (Tiger) pet;<br/>
+        tiger.doTigerActions();<br/>
+    }<br/><br/>
+
+     <b>if</b> (<span class="blue_text"><b>pet</b></span> <span class="dred_text"><b>instanceof</b></span> Cat)<br/>
+     {<br/>
+        Cat cat  = (Cat) pet;<br/>
+        cat.doCatActions();<br/>
+    }<br/><br/>
+
+    <span class="blue_text"><b>pet</b></span>.doPetActions();<br/>
+}
+    </td>
+<td class="wide-text">И вот почему. Смотрим на пример слева.<br/><br/> 
+    Мы (наш код) не всегда знаем, с объектом какого типа мы работаем. Это  может быть как объект того же типа, что и переменная (Pet), так и любой тип-наследник (Cat, Tiger).<br/><br/>
+    Рассмотрим метод doAllAction. Он корректно работает в независимости от того, объект какого типа в него передали.<br/><br/>
+    Т.е. он корректно работает для всех трех типов Pet, Cat, Tiger.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+{<br/>
+    <span class="dred_text">Cat cat = new Tiger();<br/>
+    Pet pet = cat;<br/>
+    Object obj = cat;</span><br/>
+}
+    </td>
+<td class="wide-text">Тут мы видим три присваивания. Все они являются примерами сужения типа.<br/><br/>
+    Оператор преобразования типа тут не нужен, т.к. не нужна проверка. <span class="dred_text"><b>Ссылку на объект всегда можно сохранить в переменную любого его базового типа.</b></span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- О, на предпоследнем примере все стало понятно. И для чего нужна проверка, и для чего нужно преобразование типов.</p>
+<p>- Надеюсь, что так. Хочу обратить твое внимание на следующую вещь:</p>
+<p><span class="dred_text"><b>С объектом при таком присваивании ничего не происходит! Меняется только количество методов</b></span>, которое можно вызвать с помощью <span class="dred_text"><b>конкретной переменной-ссылки</b></span>.</p>
+<p>Например, переменная класса Cat позволяет вызывать методы doPetActions &amp; doCatActions, и ничего не знает о методе doTigerActions, даже если ссылается на объект класса Tiger.</p>
+<p class="amigo">- Ну, это-то уже ясно. Оказалось легче, чем я думал.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи на приведение типов</h2>
+</div>
+<p>- Знаешь, что я думаю?</p>
+<p class="amigo">- Что, друг Диего?</p>
+<p>- Ты уже почти катишь на робота моего уровня. Скоро сможешь сам писать программы.</p>
+<p class="amigo">- Серьезно, Диего?</p>
+<p>- Конечно же – нет, щенок. Ха-ха. Тебе еще учиться и учиться. Так что не ной и на вот, решай!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level14,lesson04,task01"></button><b>1. Building и School</b><br/><br/>
+                1. Расставь правильно наследование между <span class="taskcode">Building</span>(здание) и <span class="taskcode">School</span>(здание школы).<br/>
+                2. Подумай, объект какого класса должны возвращать методы <span class="taskcode">getSchool</span> и <span class="taskcode">getBuilding</span>.<br/>
+                3. Измени <span class="taskcode">null</span> на объект класса <span class="taskcode">Building</span> или <span class="taskcode">School</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level14,lesson04,task02"></button><b>2. Коты</b><br/><br/>
+                1. Считывать строки(параметры) с консоли, пока пользователь не введет пустую строку(Enter).<br/>
+                2. Каждый параметр соответствует имени кота.<br/>
+                Для каждого параметра:<br/>
+                3. Создать объект <span class="taskcode">cat</span> класса <span class="taskcode">Cat</span>, который равен коту из <span class="taskcode">getCatByKey</span>(<span class="taskcode">String</span> параметр).<br/>
+                4. Вывести на экран <span class="taskcode">cat.toString()</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level14,lesson04,task03"></button><b>3. Food</b><br/><br/>
+                1. Реализовать интерфейс <span class="taskcode">Selectable</span> в классе <span class="taskcode">Food</span>.<br/>
+                2. Метод onSelect() должен писать в консоль "food is selected".<br/>
+                3. Подумай, какие методы можно вызвать для переменной <span class="taskcode">food</span> и какие для <span class="taskcode">selectable</span>.<br/>
+                4. В методе <span class="taskcode">foodMethods</span> вызови методы <span class="taskcode">onSelect</span>, <span class="taskcode">eat</span>, если это возможно.<br/>
+                5. В методе <span class="taskcode">selectableMethods</span> вызови методы <span class="taskcode">onSelect</span>, <span class="taskcode">eat</span>, если это возможно.<br/>
+                6. Явное приведение типов не использовать. 
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level14,lesson04,task04"></button><b>4. Без ошибок</b><br/><br/>
+                Инициализировать объект <span class="taskcode">obj</span> таким классом, чтобы метод <span class="taskcode">main</span> выполнился без ошибок.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level14,lesson04,task05"></button><b>5. Player and Dancer</b><br/><br/>
+                1. Подумать, что делает программа.<br/>
+                2. Изменить метод <span class="taskcode">haveRest</span> так, чтобы он вызывал метод<br/>
+                       - <span class="taskcode">play</span>, если <span class="taskcode">person</span> имеет тип <span class="taskcode">Player</span><br/>
+                       - <span class="taskcode">dance</span>, если <span class="taskcode">person</span> имеет тип <span class="taskcode">Dancer</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>5. Ссылка на вики, приведение типов и instanceof</h2>
+</div>
+<p>- Это самые лучшие источники. Сам дядечка Эккель читал мне эти лекции. Они могут показаться немного сложными для понимания, но польза от них бесценная.</p>
+<p><a href="http://wikijava.it-cache.net/index.php@title=Glava_13_Thinking_in_Java_4th_edition.html" target="_blank">Ссылка на вики, приведение типов и instanceof</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Домашние и бонусные задания</h2>
+</div>
+<p>- Ты что, так быстро решил то, что я тебе давал?! Нельзя просто так взять и решить все мои задачи. Мне кажется – ты халтуришь. Вот тебе новое задание, это очень сложное, будь внимателен и разбери все по полочкам, почитай литературу, поспрашивай у друзей! Никто не смеет обманывать Великого Диего!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>Куриная фабрика</b><br/><br/>
+                Написать Фабрику(Factory) по производству кур(Hen)<br/>
+                1. Создать класс <span class="taskcode">Hen</span><br/>
+                1.1. Сделать его абстрактным<br/>
+                1.2. Добавить в класс абстрактный метод  <span class="taskcode">int getCountOfEggsPerMonth()</span><br/>
+                1.3. Добавить в класс метод <span class="taskcode">String getDescription()</span>, который возвращает строку "Я курица."<br/><br/>
+
+                2. Создать класс <span class="taskcode">RussianHen</span>, который наследуется от <span class="taskcode">Hen</span><br/>
+                3. Создать класс <span class="taskcode">UkrainianHen</span>, который наследуется от <span class="taskcode">Hen</span><br/>
+                4. Создать класс <span class="taskcode">MoldovanHen</span>, который наследуется от <span class="taskcode">Hen</span><br/>
+                5. Создать класс <span class="taskcode">BelarusianHen</span>, который наследуется от <span class="taskcode">Hen</span><br/><br/>
+
+                6. В каждом из четырех последних классов написать свою реализацию метода <span class="taskcode">getCountOfEggsPerMonth</span>.<br/>
+                Методы должны возвращать количество яиц в месяц от данного типа куриц.<br/><br/>
+
+                7. В каждом из четырех последних классов написать свою реализацию метода <span class="taskcode">getDescription</span>.<br/>
+                Методы должны возвращать строку вида:<br/>
+                &amp;lt<span class="taskcode">getDescription()</span> родительского класса&amp;gt  + ;<br/>
+                где Sssss - название страны<br/>
+                где N - количество яиц в месяц<br/><br/>
+
+                8. В классе <span class="taskcode">HenFactory</span> реализовать метод <span class="taskcode">getHen</span>, который возвращает соответствующую стране породу кур<br/>
+                9. Все созданные вами классы должны быть в отдельных файлах
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>7. Хулио</h2>
+</div>
+<p>- Привет, Амиго! Пора немного отдохнуть. Ну что, смотрим видео?</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-14.gif" preload="none" tabindex="0" taskkey="level14,lesson07,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-14.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=T3kAAM1iCuU" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>8. Домашние и бонусные задания</h2>
+</div>
+<p>- Здорово, боец!</p>
+<p class="amigo">- Здравия желаю, товарищ капитан!</p>
+<p>- У меня для тебя шикарная новость. Вот тебе задания для закрепления полученных навыков. Выполняй их каждый день, и твои навыки будут расти с неимоверной скоростью. Они специально разработаны для выполнения их в Intellij IDEA.</p>
+<table class="table_task">
+<tr>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Мосты.</b><br/><br/>
+                1. Создать интерфейс <span class="taskcode">Bridge</span> с методом <span class="taskcode">int getCarsCount()</span>.<br/>
+                2. Создать классы <span class="taskcode">WaterBridge</span> и <span class="taskcode">SuspensionBridge</span>, которые реализуют интерфейс <span class="taskcode">Bridge</span>.<br/>
+                3. Метод <span class="taskcode">getCarsCount()</span> должен возвращать любое захардкоженое значение типа <span class="taskcode">int</span>.<br/>
+                4. Метод <span class="taskcode">getCarsCount()</span> должен возвращать различные значения для различных классов.<br/>
+                5. В классе <span class="taskcode">Solution</span> создать публичный метод <span class="taskcode">println(Bridge bridge)</span>.<br/>
+                6. В методе <span class="taskcode">println</span> вывести на консоль значение <span class="taskcode">getCarsCount()</span> для объекта <span class="taskcode">bridge</span>.<br/>
+                7. Каждый класс и интерфейс должны быть в отдельных файлах.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Дегустация вин.</b><br/><br/>
+                1. Создать абстрактный класс <span class="taskcode">Drink</span> с реализованным методом <span class="taskcode">void taste()</span>, который выводит в консоль "Вкусно".<br/>
+                2. Создать класс <span class="taskcode">Wine</span>, который наследуется от <span class="taskcode">Drink</span>, с реализованным методом <span class="taskcode">String getHolidayName()</span>, который возвращает строку "День рождения".<br/>
+                3. Создать класс <span class="taskcode">BubblyWine</span>, который наследуется от <span class="taskcode">Wine</span>, с реализованным методом <span class="taskcode">String getHolidayName()</span>, который возвращает строку "Новый год".<br/>
+                4. Написать такую реализацию методов <span class="taskcode">getDeliciousDrink</span>, <span class="taskcode">getWine</span>, <span class="taskcode">getBubblyWine</span>, чтобы метод <span class="taskcode">main</span> отработал без ошибок.<br/>
+                5. Каждый класс и интерфейс должны быть в отдельных файлах.<br/>
+                6. Метод <span class="taskcode">main</span> менять нельзя!
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. User, Looser, Coder and Proger.</b><br/><br/>
+                1. Ввести [в цикле] с клавиатуры несколько строк (ключей).<br/>
+                Строки(ключи) могут быть такими: "user", "looser", "coder", "proger".<br/>
+                Ввод окончен, когда строка не совпадает ни с одной из вышеуказанных.<br/><br/>
+
+                2. Для каждой введенной строки нужно:<br/>
+                2.1. Создать соответствующий объект [см Person.java], например, для строки "user" нужно создать объект класса <span class="taskcode">User</span>.<br/>
+                2.2. Передать этот объект в метод <span class="taskcode">doWork</span>.<br/><br/>
+
+                3. Написать реализацию метода <span class="taskcode">doWork</span>, который:<br/>
+                3.1. Вызывает метод <span class="taskcode">live()</span> у переданного обекта, если этот объект (<span class="taskcode">person</span>) имеет тип <span class="taskcode">User</span>.<br/>
+                3.2. Вызывает метод <span class="taskcode">doNothing()</span>, если <span class="taskcode">person</span> имеет тип <span class="taskcode">Looser</span>.<br/>
+                3.3. Вызывает метод <span class="taskcode">coding()</span>, если <span class="taskcode">person</span> имеет тип <span class="taskcode">Coder</span>.<br/>
+                3.4. Вызывает метод <span class="taskcode">enjoy()</span>, если <span class="taskcode">person</span> имеет тип <span class="taskcode">Proger</span>.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>4. Реализовать метод printMainInfo.</b><br/><br/>
+                 1. Напиши реализацию метода <span class="taskcode">printMainInfo</span>, чтобы:<br/>
+                 1.1. Если в метод передают объект типа <span class="taskcode">Drawable</span>, у этого объекта вызывался метод <span class="taskcode">draw</span>.<br/>
+                 1.2. Если в метод передают объект типа <span class="taskcode">Movable</span>, у этого объекта вызывался метод <span class="taskcode">move</span>.<br/>
+                 2. Метод <span class="taskcode">main</span> менять нельзя.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>5. Computer.</b><br/><br/>
+                1. Создай интерфейс <span class="taskcode">CompItem</span>.<br/>
+                2. Добавь в него метод <span class="taskcode">String getName()</span>.<br/>
+                3. Создай классы <span class="taskcode">Keyboard</span>, <span class="taskcode">Mouse</span>, <span class="taskcode">Monitor</span>, которые реализуют интерфейс <span class="taskcode">CompItem</span>.<br/>
+                4. Метод <span class="taskcode">getName()</span> должен возвращать имя класса, например, для класса <span class="taskcode">Keyboard</span> будет "Keyboard".<br/>
+                5. Создай класс <span class="taskcode">Computer</span>.<br/>
+                6. В класс <span class="taskcode">Computer</span> добавь приватное поле типа <span class="taskcode">Keyboard</span>.<br/>
+                7. В класс <span class="taskcode">Computer</span> добавь приватное поле типа <span class="taskcode">Mouse</span>.<br/>
+                8. В класс <span class="taskcode">Computer</span> добавь приватное поле типа <span class="taskcode">Monitor</span>.<br/>
+                9. Создай конструктор в классе <span class="taskcode">Computer</span> используя комбинацию клавиш Alt+Insert внутри класса (команда Constructor).<br/>
+                10. Параметрами конструктора выбери все три поля (переменных) класса.<br/>
+                11. Создай геттеры для полей класса <span class="taskcode">Computer</span> (в классе используй комбинацию клавиш Alt+Insert и выбери команду Getter).<br/>
+                12. Все созданные классы и интерфейс должны быть в отдельных файлах.<br/>
+                13. Класс <span class="taskcode">Solution</span> менять нельзя.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>6. MovieFactory.</b><br/><br/>
+                Расширение функционала по аналогии, чтение с консоли:<br/>
+                1. Разобраться, что программа умеет делать.<br/>
+                2. Все классы должны быть внутри класса <span class="taskcode">Solution</span>.<br/>
+                3. Добавить классы <span class="taskcode">Cartoon</span>, <span class="taskcode">Thriller</span>.<br/>
+                4. Разобраться, как мы получаем объект класса <span class="taskcode">SoapOpera</span> по ключу "soapOpera".<br/>
+                Аналогично получению объекта <span class="taskcode">SoapOpera</span> сделать:<br/>
+                5. Добавить в <span class="taskcode">MovieFactory.getMovie</span> получение объекта <span class="taskcode">Cartoon</span> для ключа "cartoon".<br/>
+                6. Добавить в <span class="taskcode">MovieFactory.getMovie</span> получение объекта <span class="taskcode">Thriller</span> для ключа "thriller".<br/><br/>
+
+                7. Считать с консоли несколько ключей (строк).<br/>
+                7.1. Ввод заканчивается, как только вводится строка не совпадающая с одной из: "cartoon", "thriller", "soapOpera".<br/><br/>
+
+                8. Создать переменную <span class="taskcode">movie</span> класса <span class="taskcode">Movie</span> и для каждой введенной строки(ключа):<br/>
+                8.1. Получить объект используя <span class="taskcode">MovieFactory.getMovie</span> и присвоить его переменной <span class="taskcode">movie</span>.<br/>
+                8.2. Вывести на экран <span class="taskcode">movie.getClass().getSimpleName()</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>7. Клининговый центр.</b><br/><br/>
+                1. Реализовать метод <span class="taskcode">cleanAllApartaments</span>.<br/>
+                Для каждого объекта из <span class="taskcode">apartaments</span>:<br/>
+                2. Для однокомнатных квартир (<span class="taskcode">Apt1Room</span>) вызвать метод <span class="taskcode">clean1Room</span>, т.е. если объект типа <span class="taskcode">Apt1Room</span>, то вызвать у него метод <span class="taskcode">clean1Romm</span>.<br/>
+                3. Для двухкомнатных квартир (<span class="taskcode">Apt2Room</span>) вызвать метод <span class="taskcode">clean2Rooms</span>, т.е. если объект типа <span class="taskcode">Apt2Room</span>, то вызвать у него метод <span class="taskcode">clean2Rooms</span>.<br/>
+                4. Для трехкомнатных квартир (<span class="taskcode">Apt3Room</span>) вызвать метод <span class="taskcode">clean3Rooms</span>, т.е. если объект типа <span class="taskcode">Apt3Room</span>, то вызвать у него метод <span class="taskcode">clean3Rooms</span>.              
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>8. Исправление ошибок.</b><br/><br/>
+                1. Подумать, как связаны интерфейсы <span class="taskcode">Swimable</span>(способен плавать) и <span class="taskcode">Walkable</span>(способен ходить) с классом <span class="taskcode">OceanAnimal</span>(животное океана).<br/>
+                2. Расставить правильно наследование интерфейсов и класса <span class="taskcode">OceanAnimal</span>.<br/>
+                3. Подумать, как могут быть связаны классы  <span class="taskcode">Orca</span>(Косатка), <span class="taskcode">Whale</span>(Кит), <span class="taskcode">Otter</span>(Выдра) с классом <span class="taskcode">OceanAnimal</span>.<br/>
+                4. Расставить правильно наследование между классами <span class="taskcode">Orca</span>, <span class="taskcode">Whale</span>, <span class="taskcode">Otter</span> и классом <span class="taskcode">OceanAnimal</span>.<br/>
+                5. Подумать, какой класс должен реализовать интерфейс <span class="taskcode">Walkable</span> и добавить интерфейc этому классу.<br/>
+                6. Подумать, какое животное еще не умеет плавать и добавить ему интерфейс <span class="taskcode">Swimable</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>9. Валюты.</b><br/><br/>
+                1. Реализуй метод <span class="taskcode">getAmount</span> в классе <span class="taskcode">Money</span>:<br/>
+                1.1. Подумай, какого типа нужно создать приватную переменную, если метод <span class="taskcode">getAmount</span> будет ее возвращать.<br/>
+                1.2. Создай приватную переменную этого типа и верни ее в методе <span class="taskcode">getAmount</span>.<br/>
+                1.3. В конструкторе присвой ей значение, полученное параметром.<br/>
+                2. В отдельном файле создай класс <span class="taskcode">Hrivna</span>.<br/>
+                3. Наследуй класс <span class="taskcode">Hrivna</span> от класса <span class="taskcode">Money</span>.<br/>
+                4. В классе <span class="taskcode">Hrivna</span> реализуй метод <span class="taskcode">getCurrencyName</span>, который возвращает "HRN".<br/>
+                5. В отдельном файле создай класс <span class="taskcode">USD</span>.<br/>
+                6. Наследуй класс <span class="taskcode">USD</span> от класса <span class="taskcode">Money</span>.<br/>
+                7. В классе <span class="taskcode">USD</span> реализуй метод <span class="taskcode">getCurrencyName</span>, который возвращает "USD".<br/>
+                8. Подумай, объекты каких классов можно добавить в список(лист) <span class="taskcode">allMoney</span>.<br/>
+                9. Добавь в конструктор класса <span class="taskcode">Person</span> заполнение листа <span class="taskcode">allMoney</span> объектами всех возможных классов.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>10. Исправить 4 ошибки.</b><br/><br/>
+                Исправить 4 ошибки в конструкторе <span class="taskcode">NotIncapsulatedClass</span> и отрефактори код<br/>
+                1. В класе <span class="taskcode">NotIncapsulatedClass</span> создать <span class="taskcode">private</span> методы <span class="taskcode">initList(List&amp;ltNumber&amp;gt list)</span>, <span class="taskcode">printListValues</span>, <span class="taskcode">processCastedObjects</span>.<br/>
+                2. Метод <span class="taskcode">initList</span> должен заполнять значениями входящий параметр <span class="taskcode">list</span>:<br/>
+                       - найди нужный блок кода в конструкторе, в котором <span class="taskcode">list</span> заполняется значениями<br/>
+                       - перенеси его в метод <span class="taskcode">initList</span><br/>
+                       - верни заполненный <span class="taskcode">list</span>.<br/>
+                3. Метод <span class="taskcode">printListValues</span> должен принимать параметр <span class="taskcode">list</span> и вывести в консоль все элементы из списка <span class="taskcode">list</span>:<br/>
+                       - метод ничего не возвращает<br/>
+                       - найди нужный блок кода в конструкторе, в котором в цикле из списка <span class="taskcode">list</span> выводятся в    консоль все значения<br/>
+                       - перенеси его в метод <span class="taskcode">printListValues</span><br/>
+                       - исправь 2 ошибки в этом методе.<br/>
+                4.  Метод <span class="taskcode">processCastedObjects</span>:<br/>
+                       - входящий параметр метода имеет тип <span class="taskcode">List&amp;ltNumber&amp;gt list</span> <br/>
+                       - метод ничего не возвращает<br/>
+                       - найди нужный блок кода в конструкторе, в котором в цикле для каждого объекта из списка <span class="taskcode">list</span> проверяется его тип<br/>
+                       - перенеси этот блок в метод <span class="taskcode">processCastedObjects</span><br/>
+                       - исправь 2 ошибки в этом методе<br/>
+                       - учти, что для объекта типа <span class="taskcode">Float</span> нужно вывести "Is float value defined? " + <span class="taskcode">[Float_object].isNaN()</span><br/>
+                       - учти, что для объекта типа <span class="taskcode">Double</span> нужно вывести "Is double value infinite? " + <span class="taskcode">[Double_object].isInfinite()</span>.<br/>
+</td>
+</tr>
+</table>
+<p>- Те задания были для духов. Для дедушек я добавил бонусные задания повышенной сложности. Только для старослужащих. </p>
+<table class="table_task">
+<tr>
+<th></th>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>1. Нашествие эксепшенов. </b><br/><br/>
+<u>Задача:</u> Заполни массив <span class="taskcode">exceptions</span> 10 различными эксепшенами.<br/>
+Первое исключение уже реализовано в методе <span class="taskcode">initExceptions</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>2. НОД.</b><br/><br/>
+<u>Задача:</u> Наибольший общий делитель (НОД).<br/>
+Ввести с клавиатуры 2 целых положительных числа.<br/>
+Вывести в консоль наибольший общий делитель.
+            </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>3. Singleton.</b><br/><br/>
+<u>Задача:</u> Класс является синглтоном (реализует паттерн(шаблон) <span class="taskcode">Singleton</span>), если позволяет создать всего один объект своего типа.<br/><br/>
+
+Реализовать Singleton pattern:<br/>
+1. Создай класс <span class="taskcode">Singleton</span> в отдельном файле.<br/>
+2. Добавь в него статический метод <span class="taskcode">getInstance()</span>.<br/>
+3. Метод <span class="taskcode">getInstance</span> должен возвращать один и тот же объект класса <span class="taskcode">Singleton</span> при любом вызове метода <span class="taskcode">getInstance</span>.<br/>
+4. Подумай, каким образом можно запретить создание других объектов этого класса.<br/>
+5. Сделай все конструкторы в классе <span class="taskcode">Singleton</span> приватными (<span class="taskcode">private</span>).<br/>
+6. В итоге должна быть возможность создать объект (экземпляр класса) ТОЛЬКО используя метод <span class="taskcode">getInstance</span>.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

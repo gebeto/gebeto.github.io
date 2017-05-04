@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-06.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 6
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>Путь программиста</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/06/image-ru-06-02.jpg"/>
+<p>Моя знакомая частенько задавалась вопросом, почему программисты постоянно ходят такие счастливые. Ответ, к которому она пришла, был простым и обескураживающим: потому что они работают на любимой работе и у них дофига денег.</p>
+<p><b>Добро пожаловать в мир программистов.</b></p>
+<p class="blue_text"><b>Зарплата программиста</b></p>
+<p>Хочу рассказать о зарплатах программистов.  Как собственно обстоят дела с зарплатой, куда лучше идти работать, а куда - нет. Если вы не программист и попытаетесь самостоятельно разобраться в этой теме, то можете получить набор очень противоречивых данных.</p>
+<p>Все дело в том, что главным фактором, влияющим на зарплату программиста, является не его квалификация, а место работы. Иногда, при одинаковой квалификации, разница между хорошим и плохим местом может достигать 2-10 раз(!) </p>
+<p>В каждый конкретный момент времени ваша квалификация постоянна. Вы не можете за месяц стать опытнее в два раза и получать в два раза больше. А вот сменить за месяц работу и получать в два раза больше – очень даже можете. Однажды, в течении двух месяцев моя зарплата выросла в три раза(!) - незабываемое впечатление.  Давайте же выясним, где лучше всего работать.</p>
+<p>Вот три фактора, которые очень сильно влияют на уровень зарплат в компаниях: </p>
+<p>1)   Является ли разработка ПО основным бизнесом компании.</p>
+<p>2)   Ориентирована ли компания на международный рынок или на внутренний.</p>
+<p>3)   Собственником фирмы является западная компания или отечественная.</p>
+<p>Обратите внимание, что город, в котором вы живете не играет решающей роли. Т.е. если вы получаете в 10 раз меньше, живя в Дрездене, чем ваш знакомый в Нью-Йорке, значит, в дело вступили перечисленные выше факторы.</p>
+<p class="blue_text"><b>Конкретные цифры</b></p>
+<p>Сложно привести какие-то конкретные цифры для всего мира. Я дам описание ситуации для Восточной Европы, которая в целом справедлива для всех стран, где более-менее развит IT-outsource/outstaff. </p>
+<p>Ниже приведен расклад зарплат программистов для Киева – это крупный центр ИТ-аутсорса Восточной Европы. В СПб зарплаты на 10%  выше, в Москве где-то на 20%. Не встречал в Восточной Европе ни одного города-миллионника, где бы зарплаты были на 30% меньше чем в Киеве. Так как вы все из разных городов, предлагаю увеличивать приведённые мною цифры, в соответствии с указанной шкалой: </p>
+<table class="motivation">
+<tr><td width="70%">Москва</td><td>+20%</td></tr>
+<tr><td>Санкт-Петербург</td><td>+10%</td></tr>
+<tr><td>Киев (3 миллиона)</td><td></td></tr>
+<tr><td>Город с населением миллион и больше</td><td>-20%</td></tr>
+<tr><td>Город с населением меньше миллиона</td><td>-30%</td></tr>
+</table>
+<p>Вот сколько может зарабатывать <b>Java Senior Developer</b> с пятью годами опыта работы, в зависимости от уровня компании в которой работает:</p>
+<table class="motivation">
+<tr><th width="10%">Уровень</th><th width="20%">Зарплата в месяц </th><th width="70%">Описание</th></tr>
+<tr>
+<td>1</td>
+<td>$200 - $500</td>
+<td>На самом низу находятся фирмы, где ИТ – это непрофильное направление бизнеса компании, заказчик - внутренний рынок, а собственник - государство.  Например, ИТ отдел в налоговой или другой государственной организации.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$500 - $1500</td>
+<td>Ниже среднего находятся ИТ отделы различных не государственных структур: банков и т.д. </td>
+</tr>
+<tr>
+<td>3</td>
+<td>$1,000 - $2,500</td>
+<td>Средний уровень – это фирмы, которые занимаются разработкой ПО</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$3,000 - $4,000</td>
+<td>Выше среднего – это фирмы, которые занимаются разработкой ПО, и заказчики у них с запада</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$4,000 - $5,000</td>
+<td>На самом верху – фирмы, занимающиеся разработкой ПО, заказчики у них с запада, и собственник тоже.  Их мало. Открытые вакансии имеют не часто, и попасть туда не просто. Но они есть.</td>
+</tr>
+</table>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/06/image-ru-06-03.jpg"/>
+<p><b>Что самое странное в сложившийся ситуации?</b> </p>
+<p>Половина всех программистов работает в фирмах уровня 1 и 2. </p>
+<p><b>Хотите узнать, в чем подвох?</b> </p>
+<p>Есть сотни открытых вакансий программистов в фирмах уровня 3 и 4. Эти компании готовы предложить более высокие зарплаты и, обычно, гораздо лучшие условия труда.</p>
+<p>Я знаю двух Java Junior'ов, один из которых пошел работать на $100 в месяц (в фирму уровня 1), а второй  на $1,000 в месяц (уровень 4).  <b><span class="red_text">Зачем получать меньше?</span></b></p>
+<p><b>Спрос на программистов превышает предложение – не идите работать туда, где мало платят! </b></p>
+<p><b>Вывод 1:</b> Средние зарплаты Java-программистов в Киеве - около $1,200 в месяц</p>
+<p><b>Вывод 2:</b> Ваша средняя зарплата, через 5 лет, если вы не пойдёте работать в фирмы уровней 1 и 2, а пойдете работать в фирмы уровня 3 и 4, будет выше $3,000 в месяц.</p>
+<p class="blue_text"><b>Чего можно добиться, если не тупить</b></p>
+<p>Если вы будете постоянно заниматься саморазвитием в области программирования, то ваша зарплата, начиная с сегодняшнего дня, может выглядеть примерно так. </p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/06/image-ru-06-04.jpg"/>
+<p class="blue_text"><b>План</b></p>
+<p class="blue_text">0-3 месяца (Ученик) </p>
+<p>Вы знаете о программировании очень мало. Может учили в школе и/или университете, но очень поверхностно. </p>
+<p><b>Ваша задача</b> – учиться программированию и изучать Java. </p>
+<p><b>Ваша цель</b> – устроится на работу Java Junior’ом в компанию не ниже 3-го уровня. </p>
+<p>Первые три месяца на плане вы не получаете ничего, т.к. просто изучаете программирование.  В будущем, когда у вас будет семья и куча кредитов,  сменить специализацию будет гораздо сложнее. Чтобы исправить ошибку вам понадобится отложить денег на год нормальной жизни. Не делайте глупых ошибок.</p>
+<p class="blue_text">3-15 месяцев (Java Junior Developer)</p>
+<p>Вы уже работаете программистом, и ваш опыт растёт с каждым днём. Не прохлаждайтесь. Вам ещё многое предстоит сделать, чтобы можно было почивать на лаврах. </p>
+<p><b>Ваша задача </b>– изучать технологии, которые понадобятся вам, как Middle разработчику. Какие именно технологии? Мир меняется. Я сейчас насоветую, а жизнь все поменяет. Найдите в интернете несколько вакансий и посмотрите, что для них требуется. Обязательно прочитайте книгу Брюса Эккеля «Философия Java».</p>
+<p><b>Ваша цель</b> в первый год работы Java Junior’ом – это  дорасти до уровня Java Middle. Никто не говорит что это очень легко, но вполне возможно для целеустремлённого человека. Это сразу даст скачок ЗП до полутора тысяч. </p>
+<p class="blue_text">2-й год работы программистом (Java Middle Developer,  level 1)</p>
+<p>Вы хорошо потрудились в прошлый год, и теперь вы - Java Middle Developer. С зарплатой в полторы тысячи можно нормально жить. На работе вам дают серьёзные  задания, и ваш опыт растёт как на дрожжах. Вы дорастёте до Java Senior Developer за два-три года. Нет смысла ускорять этот процесс. Сильного роста в зарплате вы все равно не получите.</p>
+<p><b>Ваша задача</b> – изучите паттерны проектирования, прочитайте «Совершенный код» МакКоннела. Улучшайте качество своего кода и  свои навыки работы в команде. Можно взять за правило каждую неделю читать одну книгу по ИТ-тематике. Тогда через 4 года, вы будете на 50 книг умнее всех остальных. Не стоит откладывать это на потом: свободного времени у вас больше не станет, к тому же, вероятно, у вас появится семья, или пополнится, если уже есть.</p>
+<p><b>Ваша цель</b> – выбрать несколько технологий, в которых вы будете специализироваться как Senior разработчик. Всего вам все равно не изучить. А быть гуру в небольшой области – это хорошее решение. </p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/06/image-ru-06-05.jpg"/>
+<p class="blue_text">3-й год работы программистом (Java Middle Developer,  level 2)</p>
+<p>Вы уже опытный Middle разработчик и начинаете подумывать – стать Senior Developer. Это приятно и престижно. Ваша зарплата превышает 2 тысячи долларов (данные для Киева). С этого момента спрос на таких профессионалов как вы, превышает предложение. Вы всегда сможете устроиться на работу за пару дней, и вряд ли будете получать меньше, чем сейчас. Если, конечно, не выкинете какую-нибудь глупость.</p>
+<p><b>Ваша задача</b> – продолжить изучение выбранных технологий. Работайте лучше. Не ради работодателя, ради вас самих. Проситесь в проекты с перспективными технологиями (такими как Big Data, на момент написания этой статьи). Вы все равно будете проводить в офисе 8 часов в день, так почему бы не получить за это немного больше денег и, что гораздо важнее, ценнейший опыт, который вам ещё понадобится.</p>
+<p><b>Ваша цель</b> – сменить работу. Хороший коллектив есть везде. Вы столкнётесь с новыми проектами и технологиями. Не стоит раньше времени прирастать к стулу. Если вы все ещё работаете в компании третьего уровня, подумайте над переходом на четвёртый уровень.  Пятый уровень, хоть и очень привлекательный, пока недостижим.</p>
+<p class="blue_text">4-й год работы программистом (Java Senior Developer,  level 1)</p>
+<p>Вы стали Senior разработчиком. Поздравляю. Возможно, стали им незаслуженно, и вы это чувствуйте.  Все равно поздравляю. Не важно, достойны ли вы сейчас вашей должности, главное чтобы вы стали достойны её в будущем. Согласитесь, лучше сначала получить хорошую работу, а через год дорасти до неё, чем дорасти до хорошей позиции и ждать её ещё год. </p>
+<p>Надеюсь, вы не забыли мой совет и читали по одной книге в неделю - теперь вашим возможностям позавидует любой студент. Вернее он готов молиться на них. Подумайте, у вас серьёзная зарплата, приближающаяся к трём тысячам долларов. Скорее всего, вы ещё молоды. Весь мир у вас под ногами.</p>
+<p><b>Ваша задача</b> – ещё раз просмотреть выбранные вами технологии. Возможно, вам нужно сменить специализацию. Мир изменился, технологии изменились, да и знаний у вас за два последних года прибавилось. То, на чем вы сейчас остановитесь – станет вашим выбором на несколько ближайших лет. Самое время выбирать любимые технологии.</p>
+<p><b>Ваша цель</b>  - выбрать направление, в котором вы могли бы развиваться дальше. Их очень много, всех вариантов никто не перечислит, но выбор нужно сделать прямо сейчас. Если сегодня вы немного измените своё настоящее, это приведёт к большим изменениям в вашем будущем. </p>
+<p class="blue_text">5-й год работы программистом (Java Senior Developer,  level 2)</p>
+<p>Вы определились с вашим будущим и работаете над воплощением вашей мечты. Правильно выбранное направление  в совокупности с желанием идти вперёд и результат не заставил себя ждать. Поздравляю. Я рад, что ещё одним счастливым человеком стало больше.</p>
+<p>Есть одна мудрая истина. Люди часто переоцениваю чего можно добиться за один год, и недооценивают, чего можно добиться за пять лет.  Оглянитесь на пять лет назад. Так оно и есть.</p>
+<p><b>Ваша задача</b> – не принимать глупых решений и не идти на поводу у лени.</p>
+<p><b>Ваша цель</b> – выбрать направление и двигаться дальше. А вы думали это конец? Вспомните свой выпускной класс. Это не конец, это только начало.</p>
+<p class="blue_text"><b>Будущая специализация</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/06/image-ru-06-06.jpg"/>
+<p>Вы можете развиваться как технический специалист (верхняя ветка), как управленец (нижняя ветка) или как наемный профессионал/независимый консультант (средняя ветка). Все зависти от ваших предпочтений.</p>
+<p class="blue_text">Карьера программиста</p>
+<p><b>Профессия программист отличается от других профессий.</b> Здесь нет необходимости делать карьеру менеджера, чтобы хорошо зарабатывать. Нередки ситуации, когда старший программист получает больше, чем его начальник-менеджер.  Чем больше вы набираете опыта, тем сильнее ваши отношения с начальством движутся от точки «начальник-рабочий» к отношениям вида «кинозвезда и её менеджер». <span style="text-decoration:line-through">Зажравшиеся</span> знающие себе цену программисты перебирают и проектами и вакансиями. Порадуемся за своих.</p>
+<p>Что же нужно, чтобы стать таким высококлассным и востребованном в мировом масштабе программистом? <b>Вы должны иметь большой опыт в самых новых и востребованных технологиях.</b> Как этого достичь? Ответ ниже. </p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/06/image-ru-06-07.jpg"/>
+<p>После того, как вы первый раз устроились работать программистом, с вами начинают происходить две вещи, которые, как ни странно, не всегда бросаются в глаза.</p>
+<p><b>1 Вы начинаете быстро набирать опыт работы в реальных проектах.</b> Один год опыта работы программистом может дать вам больше знаний и навыков в вашей специальности, чем 5 лет университета. Опыт – это настолько значимый показатель, что в IT-вакансиях зачастую пишут «требуется Java-программист с тремя годами опыта работы». </p>
+<p><b>2 Вы по 8 часов в день изучаете новые технологии, а вам за это ещё и щедро платят.</b>  Значимость этого фактора трудно переоценить.  В некоторых случаях полученные навыки настолько ценны, что ради их получения можно работать бесплатно, а то и доплачивать. Если вы грамотно выбираете проекты, на которых соглашаетесь работать,  то вас ждёт головокружительная карьера программиста. </p>
+<p><b>Вот только, что же выбрать?</b> </p>
+<p>Зачастую, если вы не знаете, какие технологии будут вам полезны, вы начинаете выбирать технологии по принципу «нравится, не нравится» или «модно, не модно». Тут уж как повезёт. Так что, лучше знать заранее, куда вы хотите попасть. </p>
+<p>Путей развития программиста очень много, поэтому я, для простоты, выделю несколько из них, и напишу своё видение полученной ситуации. Не стоит воспринимать эту схему как жёсткую позицию, скорее как упрощённый взгляд на вещи, с целью внести хоть какую-то ясность.</p>
+<p class="blue_text">Двухсотлетний программист</p>
+<p>Если больше всего вам <b>нравится программировать</b>, то ваш путь: Senior Developer, затем Tech Lead Developer и архитектор. Также вы можете просто работать программистом лет 50. Зачастую зарплаты старших программистов и техлидов превышают зарплаты их менеджеров. Не прогадайте.</p>
+<p class="blue_text">Менеджер. Тебе повезло, ты не такой как все.</p>
+<p>Вы перешли на сторону врага. Шучу. Если у вас открылись недюжие <b>организаторские способности</b>, то ваш путь: Team Lead, а затем Project Manager. Это даст вам шанс стать директором и поможет при открытии своего дела. Вы ведь этого хотите, не так ведь?</p>
+<p class="blue_text">Украсть трактор. </p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/06/image-ru-06-08.jpg"/>
+<p>Если вы успели <b>завести семью и детей</b>, то возможно вы хотите тихой и безбедной жизни в стране со стабильной экономикой. Задумываетесь над переездом/иммиграцией в Канаду, США, Швейцарию или даже Австралию. У вас есть отличные навыки и востребованная профессия. Вам не придётся начинать с мойщика посуды. А, например, с Java Senor Developer. Да ещё и, вероятно, на большую зарплату. Не так уж и плохо.</p>
+<p class="blue_text">Посмотреть весь мир, кроме Парижа и не умирать.</p>
+<p>У вас ещё нет семьи, и вы <b>хотите попутешествовать</b>. oDesk – ваше все. Найдите себе заказчика, обговорите с ним рейты – от $20/час, берите ноутбук и вперёд. Вашей зарплаты должно хватить, чтобы нормально жить в любой стране мира. Почему бы не приступить к исполнению своей мечты прямо сейчас?</p>
+<p class="blue_text">Я не хочу ничего программировать, я – девочка. </p>
+<p>Если <b>вы – девочка</b>,  то можете <b>уйти в декрет</b>. Звучит как сексисткая шутка, каковой и является. Впрочем, тут есть большая доля здравого смысла. Скорее всего, при уходе в декрет вы сможете получить кучу декретных денег (в странах с высокой социальной защитой). <b>Есть компании, которые не платят ничего, есть и другие, которые платят очень хорошо.</b> Одна моя ученица, уходя в декрет получила треть годовой зарплаты. И это весной 2009 года. В разгар массовых увольнений.  А годика через полтора вы можете вернуться обратно, как минимум Middle разработчиком.</p>
+<br/>
+<div class="line"></div>
+<br/>
+<p>Глупые тратят все заработанные деньги. Умные - откладывают. А будущие программисты вкладывают в себя и свое профессиональное образование. IT-шников ждет отличное будущее!</p>
+<button class="profile-tariff-button-popular" onclick="window.top.location.href = '//javarush.ru/user/subscription?l=6';">Вложить деньги в себя - купить подписку</button>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>1. Видимость объектов и ссылка null.</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Элли! Что интересного расскажешь сегодня?</p>
+<p>- Сегодня я расскажу тебе про <b>время жизни объекта</b>. <span class="green_text">Каждый объект после создания существует (живёт) пока хотя бы одна переменная хранит его адрес (на него есть хотя бы одна ссылка).</span> Если ссылок больше не остаётся – объект умирает.  Примеры:</p>
+<img alt="" class="codeborder" src="https://javarush.ru/levels/images/lessons/06/image-ru-06-11.gif"/>
+<p class="red_text">- Объект «кот Томми» существует всего одну строчку с момента создания. Уже на следующей строке единственную переменную, которая хранит на него ссылку, «обнуляют» и объект уничтожается Java-машиной.</p>
+<p class="blue_text">- Объект «кот Семми» после создания хранится в переменной cat1. Или, если быть точным, там хранится ссылка на него. Парой строчек ниже эта ссылка копируется в cat2. После этого в cat1 сохраняется ссылка на другой объект, и ссылка на «кот Семми» остаётся только в cat2. Наконец, в последней строке метода main, последнюю ссылку на объект обнуляют.</p>
+<p class="violet_text">- Объект «кот Мейси» существует сразу после создания всего одну строчку. На следующей строке переменной cat2 присваивают другое значение, и ссылка на «кот Мейси» теряется. Объект становится недостижимым и считается мусором (объект умер).</p>
+<p class="green_text">- Объект «кот Джинджер» существует сразу после создания и до конца метода. Вместе с окончанием метода будет уничтожена переменная cat2, и следом за ней и объект «кот Джинджер».</p>
+<p class="amigo">- Ясно.</p>
+<p>- Но если создать объект Cat в каком-нибудь методе и сохранить ссылку на него в переменную класса, то объект Cat будет существовать все время, пока существует ссылка на него из другого живого объекта.</p>
+<p>- Обычно объект уничтожается не сразу. Java-машина время от времени запускает уборку мусора – уничтожение неиспользуемых объектов. Об этом ниже.</p>
+<p>- Если мы хотим, чтобы какая-то <span class="orange_text">переменная перестала хранить ссылку на объект – можно  присвоить ей значение <b>null</b></span> или же ссылку на другой объект. </p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>2. Уборка мусора</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/06/image-ru-06-09.gif" style="width:746px;height:403px;"/>
+<p>- Привет, Амиго! Вот тебе полезная ссылочка, про «уборку мусора» в Java. Это, конечно, не мои превосходные лекции, но тоже ничего:</p>
+<p><a href="http://info.javarush.ru/translation/2014/08/12/%D0%A1%D0%B1%D0%BE%D1%80%D0%BA%D0%B0-%D0%BC%D1%83%D1%81%D0%BE%D1%80%D0%B0.html" target="_blank">Основы "уборки мусора"</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Знакомство с методом finalize</h2>
+</div>
+<p>- И снова привет! Сегодня будет кратенькое знакомство с методом <b>finalize()</b>. Этот метод вызывается Java-машиной у объекта перед тем, как объект будет уничтожен. Фактически этот метод – противоположность конструктору. В нем можно освобождать ресурсы, используемые объектом.</p>
+<p>- Этот метод есть у класса Object и, следовательно, есть в каждом классе (<span class="green_text">все классы в Java считаются унаследованными от класса Object и содержат копию его методов</span>). Ты можешь просто написать в твоём классе такой же метод, и он будет вызываться перед уничтожением объектов этого класса. Пример:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Пример:</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level06,lesson03,type01"></button></td>
+<td class="monospace_text"><pre><b>class</b> Cat
+{
+    String <span class="blue_text">name</span>;
+
+    Cat(String name)
+    {
+        <b>this</b>.<span class="blue_text">name</span> = name;
+    }
+
+    <span class="red_text">protected void <b>finalize</b>() throws Throwable</span>
+    {
+        <span class="brown_text">System.out.println</span>(<span class="blue_text">name</span> + <span class="green_text">" destroyed"</span>);
+    }
+}</pre></td></tr>
+</table>
+<p class="amigo">- Понятно.</p>
+<p>- Но! <span class="red_text">Java-машина сама решает – вызвать данный метод или нет.</span> Чаще всего объекты, созданные в методе и объявленные мусором после его завершения, уничтожаются сразу же и без всяких вызовов метода <b>finalize()</b>. <span class="violet_text">Этот метод скорее дополнительная страховка, чем надёжное решение.</span> Лучшим вариантом будет освобождать любые используемые ресурсы (обнулять сохраненные ссылки на другие объекты), когда наш объект ещё жив. О пользе этого метода и нюансах его работы я расскажу тебе уровней через 10, или 20.  А пока что ты должен знать две вещи: такой метод существует, и (<span class="red_text">сюрприз!</span>) не всегда вызывается.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>4. Время жизни объекта</h2>
+</div>
+<p>- Ещё хочу рассказать пару интересных вещей про время жизни объектов.  В Java случайно потерять объект очень сложно – <span class="green_text">если у тебя есть ссылка на него, значит, объект гарантированно жив.</span></p>
+<p>- <span class="red_text">Ссылки на объекты нельзя поменять. Нельзя увеличить или уменьшить. Также нельзя создать ссылку на объект – ее можно только присвоить. Или обнулить.</span> Все.</p>
+<p class="amigo">- Ясно. Т.е. если я обнулю (сотру) все ссылки на объект, то я никогда не смогу получить на него ссылку и обращаться к нему?</p>
+<p>- Да. Но часто наблюдается обратная ситуация – слишком много неиспользуемых живых объектов. <span class="violet_text">Часто программисты создают объекты десятками и хранят их в различных списках для обработки, но никогда эти списки не чистят.</span></p>
+<p>- <span class="orange_text">Чаще всего ненужные объекты помечаются программистами, как неиспользуемые и все</span>. А удалением их из списков никто не занимается.  Так что для больших Java-программ характерно раздувание – все больше и больше неиспользуемых объектов остаются жить в памяти. </p>
+<p>-Ты столкнёшься с этим ещё не скоро.  Но я буду каждый раз обращать твоё внимание, на неиспользуемые больше объекты и правильный способ их утилизации.</p>
+<p class="amigo">- Ок. спасибо. Ты прояснила мне пару моментов насчет ссылок.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>5. Задачи на время жизни объекта</h2>
+</div>
+<p>- Привет, Амиго! Вот тебе пара задачек:</p>
+<table class="table_task">
+<tr><th>Задачи</th></tr>
+<tr><td><button class="task_button" taskkey="level06,lesson05,task01"></button>
+<b>1. Метод finalize класса Cat</b><br/><br/>
+                В классе <span class="taskcode">Cat</span> создать метод <span class="taskcode">protected void finalize() throws Throwable</span>
+</td></tr>
+<tr><td><button class="task_button" taskkey="level06,lesson05,task02"></button>
+<b>2. Классы Cat и Dog и метод finalize для каждого</b><br/><br/>
+                В каждом классе <span class="taskcode">Cat</span> и <span class="taskcode">Dog</span> написать метод <span class="taskcode">finalize</span>, который выводит на экран текст о том, что такой-то объект уничтожен.
+            </td></tr>
+<tr><td><button class="task_button" taskkey="level06,lesson05,task03"></button>
+<b>3. По 50 000 объектов Cat и Dog</b><br/><br/>
+                Создать в цикле по 50 000 объектов <span class="taskcode">Cat</span> и <span class="taskcode">Dog</span>. (Java-машина должна начать уничтожать неиспользуемые, и метод <span class="taskcode">finalize</span> хоть раз да вызовется).
+            </td></tr>
+<tr><td><button class="task_button" taskkey="level06,lesson05,task04"></button>
+<b>4. Счётчик котов</b><br/><br/>
+                В конструкторе класса <span class="taskcode">Cat</span> [<span class="taskcode">public Cat()</span>] увеличивать счётчик котов (статическую переменную <span class="taskcode">catCount</span> этого же класса) на 1. В методе <span class="taskcode">finalize</span> уменьшать на 1.
+            </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>6. Статические переменные и методы</h2>
+</div>
+<p>- Новая интересная тема. Хочу рассказать тебе о статических переменных и методах. </p>
+<p class="amigo">- О, я уже слышал про статические переменные. И про статические методы, кажется. Но хотелось бы больше подробностей.</p>
+<p class="green_text">- Когда мы описываем переменные в классе, мы указываем, будут ли эти переменные созданы всего один раз или же нужно создавать их копии для каждого объекта. По умолчанию создаётся новая копия переменной для каждого объекта. Вот как это выглядит:</p>
+<table class="table_example wide-table">
+<tr><th>Объявление класса</th></tr>
+<tr><td class="monospace_text wide-text"><pre><b>class</b> <span class="red_text">Cat</span>                        <span class="grey_text">//класс</span>
+{
+    String <span class="blue_text">name</span>;                 <span class="grey_text">//переменная </span> 
+
+    <span class="red_text">Cat</span>(String <span class="violet_text">name</span>)             <span class="grey_text">//конструктор </span>
+    {
+        <b>this</b>.<span class="blue_text">name</span> = <span class="violet_text">name</span>;        <span class="grey_text">//инициализация переменной</span> 
+    }
+}</pre></td></tr>
+<tr>
+<td class="example">Код в методе main:</td>
+</tr>
+<tr><td class="monospace_text wide-text">
+Cat <span class="blue_text">cat1</span> = new Cat(<span class="green_text">"Vaska"</span>);       <span class="grey_text">//создали один объект, его name содержит строку «Vaska»</span><br/>
+Cat <span class="violet_text">cat2</span> = new Cat(<span class="green_text">"Murka"</span>);      <span class="grey_text">//создали один объект, его name содержит строку «Murka»</span><br/>
+<span class="brown_text">System.out.println</span>(<span class="blue_text">cat1.name</span>);<br/>
+<span class="brown_text">System.out.println</span>(<span class="violet_text">cat2.name</span>);     
+            </td></tr>
+<tr>
+<td class="example">Вывод на экран будет таким:</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Vaska<br/>Murka</td>
+</tr>
+</table>
+<p>- Переменные <span class="blue_text">cat1.name</span> и <span class="violet_text">cat2.name</span>, хоть и описаны в одном классе – Cat, но хранят разные значения, т.к. привязаны к разным объектам.</p>
+<p class="amigo">- Это понятно. </p>
+<p>- Статические же переменные – существуют в одном экземпляре, и обращаться к ним нужно по имени класса: </p>
+<table class="table_example wide-table">
+<tr><th>Объявление класса</th></tr>
+<tr><td class="monospace_text"><pre><b>class</b> Cat                   <span class="grey_text">//класс</span>
+{
+    <span class="green_text">String name;</span>            <span class="grey_text">//обычная переменная</span>
+    <span class="red_text">static int catCount</span>;    <span class="grey_text">//статическая переменная</span>
+
+    Cat(String <span class="violet_text">name</span>)
+    {
+        <span class="green_text">this.name</span> = <span class="violet_text">name</span>;
+        <span class="red_text">Cat.catCount</span>++;   <span class="grey_text">//увеличиваем значение статический переменной на 1</span>
+    }
+}</pre></td></tr>
+<tr>
+<td class="example">Код в методе main:</td>
+</tr>
+<tr><td class="monospace_text">
+<span class="brown_text">System.out.println</span>(<span class="red_text">Cat.catCount</span>);<br/>
+Cat <span class="violet_text">cat1</span> = new Cat(<span class="green_text">"Vaska"</span>);<br/><br/>
+<span class="brown_text">System.out.println</span>(<span class="red_text">Cat.catCount</span>);<br/>
+Cat <span class="blue_text">cat2</span> = new Cat(<span class="green_text">"Murka"</span>);<br/><br/>
+<span class="brown_text">System.out.println</span>(<span class="violet_text">cat1.name</span>);<br/>
+<span class="brown_text">System.out.println</span>(<span class="blue_text">cat2.name</span>);<br/>
+<span class="brown_text">System.out.println</span>(<span class="red_text">Cat.catCount</span>);    
+            </td></tr>
+<tr>
+<td class="example">Вывод на экран будет таким:</td>
+</tr>
+<tr>
+<td class="monospace_text">0<br/>1<br/>Vaska<br/>Murka<br/>2</td>
+</tr>
+</table>
+<p class="amigo">- Это тоже понятно.</p>
+<p>- Методы класса тоже делятся на две категории. <span class="green_text"><b><span class="green_text">Обычные методы</span></b> вызываются у объекта и имеют доступ к данным этого объекта.</span> <span class="red_text"><b>Статические методы</b> не имеют такого доступа</span> – у них просто нет ссылки на объект,  они способны обращаться либо к статическим переменным этого класса либо к другим статическим методам. </p>
+<p class="red_text">- Статические методы не могут обращаться к нестатическим методам или нестатическим переменным!</p>
+<p class="amigo">- А почему?</p>
+<p>- Каждая обычная переменная класса находится внутри объекта. Обратиться к ней можно только имея ссылку на этот объект. В статический метод такая ссылка не передается.</p>
+<p class="amigo">- А в обычные методы передается?</p>
+<p>- Да, в обычные методы передается, неявно. <span class="green_text">В каждый метод неявно передается ссылка на объект, у которого этот метод вызывают.</span> Переменная, которая хранит эту ссылку, называется <b><span class="red_text">this</span></b>.  Таким образом, метод всегда может получить данные из своего объекта или вызвать другой нестатический метод этого же объекта.</p>
+<p>- В статический метод вместо ссылки на объект передается null. Поэтому он не может обращаться к нестатическим переменным и методам – у него банально нет ссылки на объект, к которому они привязаны.</p>
+<p class="amigo">- Ясно.</p>
+<p>- Так работают обычные нестатические методы:</p>
+<table class="table_example wide-table">
+<tr><th width="50%">Как выглядит код</th><th width="50%">Что происходит на самом деле</th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="dred_text">Cat</span> <span class="orange_text">cat</span> = <b>new</b> <span class="dred_text">Cat</span>();<br/>
+String name = <span class="orange_text">cat</span>.<span class="violet_text">getName</span>();<br/>
+<span class="orange_text">cat</span>.<span class="violet_text">setAge</span>(17);<br/>
+<span class="orange_text">cat</span>.<span class="violet_text">setChildren</span>(cat1, cat2, cat3);
+</td>
+<td class="monospace_text wide-text"><span class="dred_text">Cat</span> <span class="orange_text">cat</span> = <b>new</b> <span class="dred_text">Cat</span>();<br/>
+String name = <span class="dred_text">Cat</span>.<span class="violet_text">getName</span>(<span class="orange_text">cat</span>);<br/>
+<span class="dred_text">Cat</span>.<span class="violet_text">setAge</span>(<span class="orange_text">cat</span>, 17);<br/>
+<span class="dred_text">Cat</span>.<span class="violet_text">setChildren</span>(<span class="orange_text">cat</span>, cat1, cat2, cat3);</td>
+</tr>
+<tr>
+<td colspan="2">При вызове метода в виде «объект» точка «имя метода», на самом деле вызывается метод класса, в который первым аргументом передаётся тот самый объект. Внутри метода он получает имя <span class="red_text">this</span>. Именно с ним и его данными происходят все действия.</td>
+</tr>
+</table>
+<p>- А вот как работают статические методы:</p>
+<table class="table_example wide-table">
+<tr><th width="48%">Как выглядит код</th><th>Что происходит на самом деле</th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="blue_text">Cat</span> cat1 = <b>new</b> <span class="blue_text">Cat</span>();<br/>
+<span class="blue_text">Cat</span> cat2 = <b>new</b> <span class="blue_text">Cat</span>();<br/>
+int <span class="green_text">catCount</span> = <span class="blue_text">Cat</span>.<b>getAllCatsCount</b>();</td>
+<td class="monospace_text wide-text"><span class="blue_text">Cat</span> cat1 = <b>new</b> <span class="blue_text">Cat</span>();<br/>
+<span class="blue_text">Cat</span> cat2 = <b>new</b> <span class="blue_text">Cat</span>();<br/>
+int <span class="green_text">catCount</span> = <span class="blue_text">Cat</span>.<b>getAllCatsCount</b>(<span class="red_text">null</span>);</td>
+</tr>
+<tr>
+<td colspan="2">При вызове статического метода, никакого объекта внутрь не передаётся. Т.е. <span class="red_text">this</span> равен <span class="red_text">null</span>, поэтому статический метод не имеет доступа к нестатическим переменным и методам (ему нечего неявно передать в обычные методы). </td>
+</tr>
+</table>
+<p>- Переменная или метод являются статическими, если перед ними стоит ключевое слово static. </p>
+<p class="amigo">- А зачем такие методы нужны, если они так сильно ограничены?</p>
+<p>- У такого подхода тоже есть свои преимущества.</p>
+<p>- Во-первых,  <span class="green_text">для того, чтобы обратиться к статическим методам и переменным не надо передавать никакую ссылку на объект.</span> </p>
+<p>- Во-вторых,  <span class="orange_text">иногда бывает нужно, чтобы переменная была в единственном экземпляре</span>. Как, например, переменная System.out (статическая переменная out класса System).</p>
+<p>- И в третьих, <span class="violet_text">иногда нужно вызвать метод, еще до того, как будет возможность создавать какие-то объекты</span></p>
+<p class="amigo">- Это когда же?</p>
+<p>- А почему, по-твоему, метод main объявлен статическим? <span class="green_text">Чтобы его можно было вызвать сразу после загрузки класса в память.</span> Еще до того, когда можно будет создавать какие-то объекты.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>7. Статические классы и методы</h2>
+</div>
+<p>- <span class="green_text">Кроме статических методов есть ещё и статические классы</span>. Что это такое мы рассмотрим в будущем, я лишь покажу пример, что такое может быть:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Пример</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level06,lesson07,type01"></button></td>
+<td class="monospace_text"><pre>public <b>class</b> StaticClassExample
+{
+    <span class="blue_text">private static int catCount = 0;</span>
+
+    public static void <b>main</b>(String[] args) <b>throws</b> Exception
+    {
+        Cat vaska = new Cat(<span class="green_text">"Bella"</span>);
+        Cat murka = new Cat(<span class="green_text">"Tiger"</span>);
+
+        <span class="orange_text">System.out.println</span>(<span class="green_text">"Cat count "</span> + <span class="blue_text">catCount</span>);
+    }
+    
+    <span class="red_text">public <b>static class</b> Cat
+    {
+        private String name;
+
+        public Cat(String name)
+        {
+            this.name = name;
+            StaticClassExample.<span class="blue_text">catCount</span>++;
+        }
+    }</span>
+
+}</pre></td></tr>
+</table>
+<p>- <span class="green_text">Объектов класса Cat можно создавать сколько угодно.</span> В отличие от, например, статической переменной, которая существует в единственном экземпляре.</p>
+<p>- Основной смысл модификатора <b>static</b> перед объявлением класса  - это регулирование отношения класса <b>Cat</b> к классу <b>StaticClassExample</b>. Смысл примерно такой: <span class="dred_text">класс Cat не привязан к объектам класса StaticClassExample</span>, и не может обращаться к обычным (нестатическим) переменным класса StaticClassExample.</p>
+<p class="amigo">- Значит, я могу создавать классы внутри других классов?</p>
+<p>- Да. Java такое позволяет. Не слишком задумывайся об этом сейчас. В будущем я объясню еще некоторые вещи, и все станет немного проще.</p>
+<p class="amigo">- Надеюсь.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Задачи на статические методы</h2>
+</div>
+<p>- Привет, Амиго! Вот тебе несколько интересных задач на статические методы:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level06,lesson08,task01"></button>
+<b>1. Класс Cat и статическая переменная catCount</b><br/>
+                    Создать статическую переменную <span class="taskcode">int catCount</span> в классе <span class="taskcode">Cat</span>. Создай конструктор [<span class="taskcode">public Cat()</span>], в котором увеличивай данную переменную на 1.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level06,lesson08,task02"></button>
+<b>2. Статические методы: int getCatCount() и setCatCount(int)</b><br/>
+                    Добавить к классу <span class="taskcode">Cat</span> два статических метода: <span class="taskcode">int getCatCount()</span> и <span class="taskcode">setCatCount(int)</span>, с помощью которых можно получить/изменить количество котов (переменную <span class="taskcode">catCount</span>)
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level06,lesson08,task03"></button>
+<b>3. Класс Util</b><br/>
+                    Реализовать статический метод <span class="taskcode">double getDistance(x1, y1, x2, y2)</span>. Он должен вычислять расстояние между точками. Используй метод <span class="taskcode">double Math.sqrt(double a)</span>, который вычисляет квадратный корень переданного параметра
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level06,lesson08,task04"></button>
+<b>4. Класс ConsoleReader</b><br/>
+                    Сделать класс <span class="taskcode">ConsoleReader</span>, у которого будут 4 статических метода:<br/><span class="taskcode">String readString()</span> – читает с клавиатуры строку <br/>
+<span class="taskcode">int readInt()</span> – читает с клавиатуры число <br/>
+<span class="taskcode">double readDouble()</span> – читает с клавиатуры дробное число <br/>
+<span class="taskcode">boolean readBoolean()</span> – читает с клавиатуры строку "true" или "false" и возвращает соответствующую логическую переменную true или false <br/>
+                    Внимание: создавайте переменную для чтения данных с консоли (<span class="taskcode">BufferedReader</span> или <span class="taskcode">Scanner</span>) внутри каждого метода
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level06,lesson08,task05"></button>
+<b>5. Класс StringHelper</b><br/>
+                    Cделать класс <span class="taskcode">StringHelper</span>, у которого будут 2 статических метода:<br/><span class="taskcode">String multiply(String s, int count)</span> – возвращает строку, повторенную count раз.<br/>
+<span class="taskcode">String multiply(String s)</span> – возвращает строку, повторенную 5 раз.<br/>
+<br/>
+<i><u>Пример:</u></i><br/><span class="example-data">Амиго → АмигоАмигоАмигоАмигоАмиго</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>9. Лекция про уборку мусора, статику и время жизни объектов</h2>
+</div>
+<img alt="" src="https://javarush.ru/levels/images/lessons/06/image-ru-06-10.gif"/>
+<p>-  А вот и снова я. К сожалению, ссылок сегодня дать не могу. Эти великолепные лекции где-то затерялись. Боюсь, что сегодня тебе придётся обойтись своими силами. Но лучше больше слушай  Элли или Ришу, они всегда могут научить тебя чему-нибудь.</p>
+<p>Хотя… попробуй заглянуть сюда:</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/05/20/lecture-6.html" target="_blank">Жизненный цикл объекта</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>10. Хулио</h2>
+</div>
+<p>- Привет, Амиго! Ты сегодня отлично поработал. Я просто не имею права заваливать тебя работой ещё. Давай уже, садись, начинается: </p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-06.gif" preload="none" tabindex="0" taskkey="level06,lesson10,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-06.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=Z2R83H5O56o" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>11. Капитан Джон Бобров</h2>
+</div>
+<p>- Здорово, боец!</p>
+<p class="blue_text">- Здравия желаю, капитан Бобров!</p>
+<p>- У меня для тебя шикарная новость. Вот тебе задания для закрепления полученных навыков. Выполняй их каждый день, и твои навыки будут расти с неимоверной скоростью. Они специально разработаны для выполнения их в Intellij IDEA.</p>
+<table class="table_task">
+<tr>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>1. Класс <span class="taskcode">Cat</span> и статическая переменная <span class="taskcode">catCount</span></b><br/><br/>
+                    В классе <span class="taskcode">Cat</span> создай статическую переменную <span class="taskcode">public int catCount</span>. Создай конструктор [<span class="taskcode">public Cat()</span>]. Пусть при каждом создании кота (нового объекта <span class="taskcode">Cat</span>) статическая переменная <span class="taskcode">catCount</span> увеличивается на 1. Создать 10 объектов <span class="taskcode">Cat</span> и вывести значение переменной <span class="taskcode">catCount</span> на экран.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>2. Статические коты</b><br/><br/>
+                    1. В классе <span class="taskcode">Cat</span> добавь <span class="taskcode">public</span> статическую переменную <span class="taskcode">cats</span> (<span class="taskcode">ArrayList&lt;Cat&gt;</span>).<br/>
+                    2. Пусть при каждом создании кота (нового объекта <span class="taskcode">Cat</span>) в переменную cats добавляется этот новый кот. Создать 10 объектов <span class="taskcode">Cat</span>.<br/>
+                    3. Метод <span class="taskcode">printCats</span> должен выводить всех котов на экран. Нужно использовать  переменную <span class="taskcode">cats</span>.<br/>
+<br/>
+<b>Подсказка:</b> Чтобы создать переменную cats, используйте конструкцию:<br/>
+<span class="taskcode">public static ArrayList&lt;Cat&gt; cats = new ArrayList&lt;Cat&gt;();</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>3. Переставь один модификатор static</b><br/><br/>
+                    Переставь один модификатор <span class="taskcode">static</span>, чтобы пример скомпилировался.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>4. Минимальное количество static-ов</b><br/><br/>
+                    Расставьте минимальное количество <span class="taskcode">static</span>-ов, чтобы код начал работать, и программа успешно завершилась
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>5.  Есть новые идеи? Подумаем...</b><br/><br/>
+                    1) В классе <span class="taskcode">Solution</span> создать <span class="taskcode">public</span> статический класс <span class="taskcode">Idea</span><br/>
+                    2) В классе <span class="taskcode">Idea</span> создать метод <span class="taskcode">public String getDescription()</span>, который будет возвращать любой непустой текст<br/>
+                    3) В классе <span class="taskcode">Solution</span> создайте статический метод <span class="taskcode">public void printIdea(Idea idea)</span>, который будет выводить на экран описание идеи - это то, что возвращает метод <span class="taskcode">getDescription</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>6. KissMyShinyMetalAss</b><br/><br/>
+                    Создай класс с именем <span class="taskcode">KissMyShinyMetalAss</span>. Создай объект этого класса, выведи его на экран.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>7. Три статические переменных name</b><br/><br/>
+                    Создай 3 <span class="taskcode">public</span> статических переменных: <span class="taskcode">String Solution.name</span>, <span class="taskcode">String Cat.name</span>, <span class="taskcode">String Dog.name</span>
+</td>
+</tr>
+</table>
+<p>- Те задания были для духов. Для дедушек я добавил бонусные задания повышенной сложности. Только для старослужащих. </p>
+<table class="table_task">
+<tr>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button>
+<b>1. Нужно исправить программу, чтобы компилировалась и работала. </b><br/><br/>
+<u>Задача:</u> Программа вводит два числа с клавиатуры и выводит их максимум в виде «Max is 25».
+                </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button>
+<b>2. Нужно добавить в программу новую функциональность. </b><br/><br/>
+<u>Задача:</u> У каждой кошки есть имя и кошка-мама. Создать класс, который бы описывал данную ситуацию. Создать два объекта: кошку-дочь и кошку-маму. Вывести их на экран.<br/>
+<u>Новая задача:</u> У каждой кошки есть имя, кошка-папа и кошка-мама. Создать класс, который бы помог описать данную ситуацию. Создать 6 объектов: дедушку(папин папа), бабушку(мамина мама), папу, маму, сына, дочь.
+                    Вывести их всех на экран в порядке: дедушка, бабушка, папа, мама, сын, дочь.<br/>
+<br/>
+<i><u>Пример ввода:</u></i><span class="example-data"><br/>дедушка Вася<br/>бабушка Мурка<br/>папа Котофей<br/>мама Василиса<br/>сын Мурчик<br/>дочь Пушинка<br/></span>
+<br/>
+<i><u>Пример вывода:</u></i><span class="example-data"><br/>Cat name is дедушка Вася, no mother, no father <br/>Cat name is бабушка Мурка, no mother, no father <br/>Cat name is папа Котофей, no mother, father is дедушка Вася<br/>Cat name is мама Василиса, mother is бабушка Мурка, no father<br/>
+                    Cat name is сын Мурчик, mother is мама Василиса, father is папа Котофей<br/>Cat name is дочь Пушинка, mother is мама Василиса, father is папа Котофей</span>
+</td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button>
+<b>3. Задача по алгоритмам. </b><br/><br/>
+<u>Задача:</u> Программа вводит с клавиатуры 5 чисел и выводит их в возрастающем порядке. <br/>
+<br/>
+<i><u>Пример ввода:</u></i><span class="example-data"><br/>3<br/>2<br/>15<br/>6<br/>17<br/></span><i><u>Пример вывода:</u></i><span class="example-data"><br/>2<br/>3<br/>6<br/>15<br/>17</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

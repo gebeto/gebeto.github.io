@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<title>Task Manager</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<script>
+var username = "";//prompt('Enter your username');
+</script>
+
+<div class="add-panel">
+	<textarea placeholder="Task..." class="add-panel-input" type="text" id="textInput"></textarea>
+	<button class="add-panel-submit" id="submit">Create</button>
+</div>
+
+<div class="main-wrapper">
+	<div class="items" id="items">
+		<!-- <div class="item">Test item</div> -->
+	</div>
+</div>
+
+<div class="bottom-menu" id="bottom-menu">
+	<div class="stick" id="stick">^</div>
+	<div class="clear-button" id="clear-button">Clean</div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

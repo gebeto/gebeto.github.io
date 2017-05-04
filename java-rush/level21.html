@@ -1,0 +1,2326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-21.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 21
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>1. Приоритет операторов</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/21/image-ru-21-08.png"/>
+<p class="amigo">- Привет, Билаабо!</p>
+<p>- Билаабо рад приветствовать друга!</p>
+<p>Билаабо сегодня расскажет о приоритете операторов. Но сначала он расскажет о самих операторах.</p>
+<p class="amigo">- А что это такое – эти операторы?</p>
+<p>На самом деле ты уже знаком с ними, просто, возможно, не знал, что это – операторы.</p>
+<p>Вот, например, есть выражение <b>c = a + b;</b></p>
+<p>Тут есть два оператора: оператор сложения и оператор присваивания.</p>
+<p class="amigo">- Т.е. операторы – это просто математические знаки? Как умножение, деление и сложение?</p>
+<p>- Ага, так и есть. Хотя есть и отличия.</p>
+<p>Я не буду давать определение операторов: от этого ты умнее не станешь. Лучше посмотрим их на деле. Операторы можно разбить на несколько групп, и мы сейчас их рассмотрим.</p>
+<p><b>1)</b> Группа   «<b>математические операторы</b>»</p>
+<table class="table_example">
+<tbody><tr><th width="10%">Обозначение</th><th width="10%">Пример</th><th width="40%">Название</th><th width="40%">Описание (что делает)</th></tr>
+<tr>
+<td class="wide-text wide-text">+
+    </td>
+<td class="wide-text wide-text">a + b
+    </td>
+<td class="wide-text wide-text"><b>Оператор сложения</b>
+</td>
+<td class="wide-text wide-text">Складывает два числа.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">-
+    </td>
+<td class="wide-text wide-text">c - d
+    </td>
+<td class="wide-text wide-text"><b>Оператор вычитания</b>
+</td>
+<td class="wide-text wide-text">Вычитает второе число из первого.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">*
+    </td>
+<td class="wide-text wide-text">a * t
+    </td>
+<td class="wide-text wide-text"><b>Оператор умножения</b>
+</td>
+<td class="wide-text wide-text">Умножает два числа.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">/
+    </td>
+<td class="wide-text wide-text">a / b
+    </td>
+<td class="wide-text wide-text"><b>Оператор деления</b>
+</td>
+<td class="wide-text wide-text">Делит первое число на второе.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">%
+    </td>
+<td class="wide-text wide-text">c % d
+    </td>
+<td class="wide-text wide-text"><b>Остаток от деления</b>
+</td>
+<td class="wide-text wide-text">Вычисляет остаток от деления первого числа на второе.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">-
+    </td>
+<td class="wide-text wide-text">-a
+    </td>
+<td class="wide-text wide-text"><b>Одинарный минус</b>
+</td>
+<td class="wide-text wide-text">Меняет знак переменой наобратный.<br/>
+Плюс на минус, минус на плюс.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">+
+    </td>
+<td class="wide-text wide-text">+a
+    </td>
+<td class="wide-text wide-text"><b>Одинарный плюс</b>
+</td>
+<td class="wide-text wide-text">Ничего не меняет. Добавлен вместе с одинарным минусом для красоты. 
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Это я и со школы знаю – мне залили школьный курс вместе с прошивкой.</p>
+<p class="amigo">А что это еще за процент такой волшебный?</p>
+<p>- Это <span class="dred_text">«остаток от деления»</span>. Если 11 делить нацело на 5, то получим 2 и  остаток от деления – 1. Вот этот 1 и можно получить, если записать 11 % 5;</p>
+<p>При делении целых чисел в Java результат тоже будет целым числом. Остаток от деления просто отбрасывается. Если разделить 8 на 5, то получим 1.</p>
+<table class="table_example">
+<tbody><tr><th width="10%">Выражение</th><th width="10%">Ответ</th><th width="80%"> </th></tr>
+<tr>
+<td class="wide-text wide-text">19 / 10
+    </td>
+<td class="wide-text wide-text">1
+    </td>
+<td class="wide-text wide-text">Если делить нацело 19 на 10, <b>получим 1</b> и 9 в остатке.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">19 % 10
+    </td>
+<td class="wide-text wide-text">9
+    </td>
+<td class="wide-text wide-text">Если делить нацело 19 на 10, получим 1 и <b>9 в остатке</b>.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">2 / 5
+    </td>
+<td class="wide-text wide-text">0
+    </td>
+<td class="wide-text wide-text">Если делить нацело 2 на 5, <b>получим 0</b> и 2 в остатке.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">16 % 2
+    </td>
+<td class="wide-text wide-text">0
+    </td>
+<td class="wide-text wide-text">Если делить нацело 16 на 2, получим 8 и <b>0 в остатке</b>.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- А зачем вообще нужен этот остаток от деления?</p>
+<p>- Допустим тебе нужно проверить – четное число а или нет, тогда это можно записать так</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>if</b> (a % 2 == 0)</span>
+</td>
+</tr>
+</tbody></table>
+<p>А если нужно проверить, что b – нечетное, тогда это можно записать так</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>if</b> (b % 2 == 1)</span>
+</td>
+</tr>
+</tbody></table>
+<p>Или, например, делится ли d нацело на 3:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>if</b> (d % 3 == 0)</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Интересно, я это запомню.</p>
+<p><b>2)</b> Группа  «<b>операторы сравнения</b>»</p>
+<table class="table_example">
+<tbody><tr><th width="10%">Обозначение</th><th width="10%">Пример</th><th width="30%">Название</th><th width="50%">Описание (что делает)</th></tr>
+<tr>
+<td class="wide-text wide-text">
+</td><td class="wide-text wide-text">a 
+    </td><td class="wide-text wide-text"><b>Меньше</b>
+</td>
+<td class="wide-text wide-text">Проверяет, что a меньше b.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">
+</td><td class="wide-text wide-text">c 
+    </td><td class="wide-text wide-text"><b>Меньше или равно</b>
+</td>
+<td class="wide-text wide-text">Проверяет, что c меньше или равно d.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">&gt;
+    </td>
+<td class="wide-text wide-text">a &gt; b
+    </td>
+<td class="wide-text wide-text"><b>Больше</b>
+</td>
+<td class="wide-text wide-text">Проверяет, что a больше b.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">&gt;=
+    </td>
+<td class="wide-text wide-text">c &gt;= d
+    </td>
+<td class="wide-text wide-text"><b>Больше или равно</b>
+</td>
+<td class="wide-text wide-text">Проверяет, что c больше или равно d.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">==
+    </td>
+<td class="wide-text wide-text">i == j
+    </td>
+<td class="wide-text wide-text"><b>Равно</b>
+</td>
+<td class="wide-text wide-text">Проверяет, что i равно j.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">!=
+    </td>
+<td class="wide-text wide-text">a != 0
+    </td>
+<td class="wide-text wide-text"><b>Неравно</b>
+</td>
+<td class="wide-text wide-text">Проверяет, что a неравно нулю.<br/>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Я этим всем уже пользовался.</p>
+<p>- И какое же главное отличие этих операторов от математических операторов?</p>
+<p class="amigo">- Если мы складываем два числа, то получаем число,  а если сравниваем два числа – получаем true или false.</p>
+<p>- Верно. Результатом сравнения будет «<b>логическое значение</b>» или попросту одно значение из пары (true, false), которые, как ты знаешь, являются значениями типа boolean.</p>
+<p>Иногда еще говорят, что результатом сравнения будет «логическое значение», подразумевая, что будет значение типа boolean.</p>
+<p class="amigo">- Да, тут все понятно, я это уже знаю.</p>
+<p><b>3)</b> Группа  «<b>логические операторы</b>»</p>
+<table class="table_example">
+<tbody><tr><th width="10%">Обозначение</th><th width="10%">Пример</th><th width="30%">Название</th><th width="50%">Описание (что делает)</th></tr>
+<tr>
+<td class="wide-text wide-text">&amp;&amp;
+    </td>
+<td class="wide-text wide-text">a &amp;&amp; b
+    </td>
+<td class="wide-text wide-text"><b>AND – «и»</b>
+</td>
+<td class="wide-text wide-text">Результат выражения true, только когда и a и b равны true.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">||
+    </td>
+<td class="wide-text wide-text">c || d
+    </td>
+<td class="wide-text wide-text"><b>OR – «или»</b>
+</td>
+<td class="wide-text wide-text">Результат выражения true, если a или b равно true. Оба или хотя бы один.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">!
+    </td>
+<td class="wide-text wide-text">!a 
+    </td>
+<td class="wide-text wide-text"><b>NOT – «не»</b>
+</td>
+<td class="wide-text wide-text">Результат выражения true, только если a равно false.
+    </td>
+</tr>
+</tbody></table>
+<p>- Логические операторы можно применять только к переменным или выражениям логического типа.</p>
+<table class="table_example">
+<tbody><tr><th width="30%">Пример</th><th width="70%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">boolean  a = true;<br/>
+boolean  b = true;<br/><br/>
+<span class="green_text"><b>if</b> (a &amp;&amp; b)</span>
+</td>
+<td class="wide-text wide-text">Условие if истинно (true), если оба значения  истинны.<br/>
+Т.е. если  <b>a и b</b> равны <b>true</b>, то результат – <b>true</b>.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean  a = true;<br/>
+boolean  b = false;<br/><br/>
+<span class="green_text"><b>if</b> (a || b)</span>
+</td>
+<td class="wide-text wide-text">Условие if истинно (true), если хотя бы одно значение -  истина.<br/>
+Т.е. если  <b>a или b</b> равны <b>true</b>, то результат – <b>true</b>.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean b = false;<br/><br/>
+<span class="green_text"><b>if</b> (!b)</span>
+</td>
+<td class="wide-text wide-text">Условие if истинно (true), если b - не истина.<br/>
+Т.е. если  <b>b</b> равно <b>false</b>, то результат – <b>true</b>.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int a=2, b=3, c=4;<br/><br/>
+<span class="green_text"><b>if</b> (a&amp;ltb &amp;&amp; a&amp;ltc)</span><br/>
+эквивалентно<br/>
+<span class="green_text"><b>if</b> ((a&amp;ltb) &amp;&amp; (a&amp;ltc))</span>
+</td>
+<td class="wide-text wide-text">Если a меньше b и a меньше c, то результат выражения – истина. <br/>
+a,b,c – целые числа, но результат сравнения целых чисел – это уже логическое значение (true, false) а значит мы можем использовать логические операторы.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Все это я и так знаю.</p>
+<p>- Да? Тогда продолжим.</p>
+<p><b>4)</b> Группа – «<b>побитовые операторы</b>»</p>
+<table class="table_example">
+<tbody><tr><th width="10%">Обозначение</th><th width="10%">Пример</th><th width="30%">Название</th><th width="50%">Описание (что делает)</th></tr>
+<tr>
+<td class="wide-text wide-text">&amp;
+    </td>
+<td class="wide-text wide-text">a &amp; b
+    </td>
+<td class="wide-text wide-text"><b>AND – «и»</b>
+</td>
+<td class="wide-text wide-text">Побитовое «И»
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">|
+    </td>
+<td class="wide-text wide-text">c | d
+    </td>
+<td class="wide-text wide-text"><b>OR – «или»</b>
+</td>
+<td class="wide-text wide-text">Побитовое «ИЛИ»
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">~
+    </td>
+<td class="wide-text wide-text">~a  
+    </td>
+<td class="wide-text wide-text"><b>NOT – «не»</b>
+</td>
+<td class="wide-text wide-text">Побитовое «НЕ»
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">^
+    </td>
+<td class="wide-text wide-text">a^b  
+    </td>
+<td class="wide-text wide-text"><b>XOR – «исключающее или»</b>
+</td>
+<td class="wide-text wide-text">Побитовое «ИСКЛЮЧАЮЩЕЕ ИЛИ»
+    </td>
+</tr>
+</tbody></table>
+<p>- Побитовые операторы выполняю операцию над целыми числами побитово.</p>
+<p class="amigo">- Это как?</p>
+<p>- Каждое число представляется в виде набора бит, а затем вычисляется результат по такой схеме:</p>
+<p>Если первый бит в обоих числах равен 1, то первый бит результата будет 1.</p>
+<p>Если второй бит в обоих числах равен 1, то второй бит результата будет 1. И так далее</p>
+<p class="amigo">- Это верно для всех побитовых операторов?</p>
+<p>- Тут все намного проще. Бит может принимать только два значения – 0 и 1, так?</p>
+<p class="amigo">- Да.</p>
+<p>- Тогда представь, что <b>1</b> – это <b>true</b>, а <b>0</b> – это <b>false</b>. Тогда операции над отдельными битами будут практически такими же, как и логические операции:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Логическое выражение</th><th width="50%">Битовое выражение</th></tr>
+<tr>
+<td class="wide-text wide-text"><b>true &amp;&amp; true == true</b>
+</td>
+<td class="wide-text wide-text">1&amp;1 == 1
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>true &amp;&amp; false == false</b>
+</td>
+<td class="wide-text wide-text">1&amp;0 ==0
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>true || true == true</b>
+</td>
+<td class="wide-text wide-text">1|1 ==1
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>true || false == true</b>
+</td>
+<td class="wide-text wide-text">1|0 ==1
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>false || false = false</b>
+</td>
+<td class="wide-text wide-text">0|0 ==0
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>!false == true</b>
+</td>
+<td class="wide-text wide-text">~0 ==1
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>!true == false</b>
+</td>
+<td class="wide-text wide-text">~1 == 0
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- О! Так все же очень просто.</p>
+<p>- Да, только не забывай, что в побитовых операциях участвуют биты двух чисел, которые расположены на одних и тех же местах.</p>
+<p class="amigo">- Да, я помню: первый бит одного числа взаимодействует с первым битом второго, и результат записывается также в первый бит. Для остальных битов – аналогично.</p>
+<p>- Верно. Есть еще вопросы?</p>
+<p class="amigo">- А что это за XOR еще такой – «исключающее или»?</p>
+<p>- Тут тоже все просто: когда значение разные – истина (true, 1), когда одинаковые – (false, 0)</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Логическое выражение</th><th width="50%">Битовое выражение</th></tr>
+<tr>
+<td class="wide-text wide-text"><b>true XOR true == false</b>
+</td>
+<td class="wide-text wide-text">1 ^ 1 ==0
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>false XOR false == false</b>
+</td>
+<td class="wide-text wide-text">0 ^ 0 ==0
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>true XOR false == true</b>
+</td>
+<td class="wide-text wide-text">1 ^ 0 ==1
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>false XOR true == true</b>
+</td>
+<td class="wide-text wide-text">0 ^ 1 ==1
+    </td>
+</tr>
+</tbody></table>
+<p>Вот тебе еще пара примеров побитовых операций:</p>
+<table class="table_example">
+<tbody><tr><th width="10%">Пример</th><th width="30%">Числа в битовом виде</th><th width="30%">Ответ в битовом виде</th><th width="30%">Ответ</th></tr>
+<tr>
+<td class="wide-text wide-text">5 &amp; 3
+    </td>
+<td class="wide-text wide-text">0000010<b>1</b> &amp; 0000001<b>1</b>
+</td>
+<td class="wide-text wide-text">0000000<b>1</b>
+</td>
+<td class="wide-text wide-text">1
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">7 &amp; 2
+    </td>
+<td class="wide-text wide-text">000001<b>1</b>1 &amp; 000000<b>1</b>0
+    </td>
+<td class="wide-text wide-text">00000010
+    </td>
+<td class="wide-text wide-text">2
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">5 | 9
+    </td>
+<td class="wide-text wide-text">00000<b>1</b>0<b>1</b> | 0000<b>1</b>00<b>1</b>
+</td>
+<td class="wide-text wide-text">00001101
+    </td>
+<td class="wide-text wide-text">13
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">5 ^ 9
+    </td>
+<td class="wide-text wide-text">00000<b>101</b> ^ 00001001
+    </td>
+<td class="wide-text wide-text">0000<b>1100</b>
+</td>
+<td class="wide-text wide-text">12
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">~9
+    </td>
+<td class="wide-text wide-text">~<b>00001001</b>
+</td>
+<td class="wide-text wide-text">11110110
+    </td>
+<td class="wide-text wide-text">246
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Спасибо, Билаабо. Буду знать.</p>
+<p>- Есть еще одна группа побитовых операторов – операторы сдвига:</p>
+<p><b>5)</b> Группа   «<b>операторы сдвига</b>»</p>
+<table class="table_example">
+<tbody><tr><th width="10%">Обозначение</th><th width="10%">Пример</th><th width="30%">Название</th><th width="50%">Описание (что делает)</th></tr>
+<tr>
+<td class="wide-text wide-text">&gt;&gt;
+    </td>
+<td class="wide-text wide-text">a&gt;&gt;b
+    </td>
+<td class="wide-text wide-text"><b>сдвиг вправо</b>
+</td>
+<td class="wide-text wide-text">Сдвигает биты числа a, на b разрядов вправо. 
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">
+</td><td class="wide-text wide-text">c
+    </td><td class="wide-text wide-text"><b>сдвиг влево</b>
+</td>
+<td class="wide-text wide-text">Сдвигает биты числа c, на d разрядов влево.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">&gt;&gt;&gt;
+    </td>
+<td class="wide-text wide-text">a&gt;&gt;&gt;2 
+    </td>
+<td class="wide-text wide-text"><b>сдвиг вправо с заполнением нулем</b>
+</td>
+<td class="wide-text wide-text">Сдвигает биты числа a, на 2 разряда вправо.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Это что еще за уличная магия?</p>
+<p>- На самом деле тут все просто. Вот смотри:</p>
+<table class="table_example">
+<tbody><tr><th width="10%">Пример</th><th width="30%">Числа в битовом виде</th><th width="30%">Ответ в битовом виде</th><th width="30%">Ответ</th></tr>
+<tr>
+<td class="wide-text wide-text">10&gt;&gt;1
+    </td>
+<td class="wide-text wide-text">0000<b>101</b>0&gt;&gt;1
+    </td>
+<td class="wide-text wide-text">00000<b>101</b>
+</td>
+<td class="wide-text wide-text">5
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">10&gt;&gt;2
+    </td>
+<td class="wide-text wide-text">0000<b>101</b>0&gt;&gt;2
+    </td>
+<td class="wide-text wide-text">000000<b>10</b>
+</td>
+<td class="wide-text wide-text">2
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">10
+    </td><td class="wide-text wide-text">0000<b>101</b>0
+    </td><td class="wide-text wide-text">000<b>101</b>00
+    </td>
+<td class="wide-text wide-text">20
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">10
+    </td><td class="wide-text wide-text">0000<b>101</b>0
+    </td><td class="wide-text wide-text">00<b>101</b>000
+    </td>
+<td class="wide-text wide-text">40
+    </td>
+</tr>
+</tbody></table>
+<p>Сдвига разрядов числа на 1 влево – то же самое, что умножить число на 2. На два разряда равно умножению на 4, на три разряда – умножению на 8 и так далее.</p>
+<p>Сдвиг вправо – соответственно, деление на 2,4,8,16,… и так далее.</p>
+<p class="amigo">- А в чем отличие операторов «&gt;&gt;&gt;» и «&gt;&gt;»?</p>
+<p>- Они отличаются при работе с отрицательными числами. Дело в том, что <b>знак отрицательного числа хранится в крайнем левом бите</b>. И при сдвиге вправо число перестает быть отрицательным. Поэтому и придумали два различных оператора, вот смотри:</p>
+<p>- На самом деле тут все просто. Вот смотри:</p>
+<table class="table_example">
+<tbody><tr><th width="20%">Выражение</th><th width="20%">Результат</th><th width="60%">Описание</th></tr>
+<tr>
+<td class="wide-text wide-text"><b>1</b>000<b>1010</b>&gt;&gt;1
+    </td>
+<td class="wide-text wide-text"><b>11</b>000<b>101</b>
+</td>
+<td class="wide-text wide-text" rowspan="3">Отрицательное число остается отрицательным.<br/>
+Новые разряды заполняются 1, для отрицательных чисел.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>1</b>000<b>1010</b>&gt;&gt;2
+    </td>
+<td class="wide-text wide-text"><b>111</b>000<b>10</b>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>1</b>000<b>1010</b>&gt;&gt;3
+    </td>
+<td class="wide-text wide-text"><b>1111</b>000<b>1</b>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>1</b>000<b>1010</b>&gt;&gt;&gt;1
+    </td>
+<td class="wide-text wide-text"><b>01</b>000<b>101</b>
+</td><td class="wide-text wide-text" rowspan="3">Отрицательное число перестает быть  отрицательным. Новые разряды заполняются 0, для отрицательных чисел.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>1</b>000<b>1010</b>&gt;&gt;&gt;2
+    </td>
+<td class="wide-text wide-text"><b>001</b>000<b>10</b>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>1</b>000<b>1010</b>&gt;&gt;&gt;3
+    </td>
+<td class="wide-text wide-text"><b>0001</b>000<b>1</b>
+</td>
+</tr>
+</tbody></table>
+<p>Сдвиг не циклический. Биты, которые оказались за краем числа слева или справа, просто отбрасываются.</p>
+<p><b>6)</b> Группа  «<b>операторы присваивания</b>»</p>
+<p class="amigo">- Присваивание я уже знаю. А почему ты говоришь операторы?</p>
+<p>- Потому что их несколько ☺</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Оператор</th><th width="50%">Что он значит</th></tr>
+<tr>
+<td class="wide-text wide-text">a += b;
+    </td>
+<td class="wide-text wide-text">a = a + b;
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">a -= b;
+    </td>
+<td class="wide-text wide-text">a = a - b;
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">a *= b;
+    </td>
+<td class="wide-text wide-text">a = a * b;
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">a %= b;
+    </td>
+<td class="wide-text wide-text">a = a % b;
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">a |= b;
+    </td>
+<td class="wide-text wide-text">a = a | b;
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">a &amp;= b;
+    </td>
+<td class="wide-text wide-text">a = a &amp; b;
+    </td>
+</tr>
+</tbody></table>
+<p>Думаю, логика тебе ясна.</p>
+<p><b>7)</b> Группа  «<b>операторы инкремента и декремента</b>»</p>
+<table class="table_example">
+<tbody><tr><th width="20%">Запись</th><th width="20%">Пример</th><th width="60%">Описание</th></tr>
+<tr>
+<td class="wide-text wide-text">++
+    </td>
+<td class="wide-text wide-text">a++;<br/>
+++b;
+    </td>
+<td class="wide-text wide-text">Увеличивает число на 1.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">--
+    </td>
+<td class="wide-text wide-text">d--;<br/>
+--i;
+
+    </td>
+<td class="wide-text wide-text">Уменьшает число/переменную на 1.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- А в чем отличие, когда два минуса спереди или сзади?</p>
+<p>- А отличие есть. Хоть и не очень большое. Если переменная с таким оператором участвует в каком-нибудь выражении или присваивании, то тут возникают различия. Давай я лучше покажу тебе на примере:</p>
+<table class="table_example">
+<tbody><tr><th width="20%">Пример</th><th width="40%">Что происходит на самом деле</th><th width="40%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">int a = 3;<br/>
+int b = ++a;
+    </td>
+<td class="monospace_text wide-text">int a = 3;<br/>
+a=a+1;<br/>
+int b = a;
+    </td>
+<td class="wide-text wide-text">а сначала увеличивается на 1, затем участвует в выражении.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int a = 3;<br/>
+int b = a++;
+    </td>
+<td class="monospace_text wide-text">int a = 3;<br/>
+int b = a;<br/>
+a=a+1;
+    </td>
+<td class="wide-text wide-text">а сначала участвует в выражении, затем увеличивается на 1.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int a = 3;<br/>
+return  a++;
+    </td>
+<td class="monospace_text wide-text">int a = 3;<br/>
+int result = a;<br/>
+a=a+1;<br/>
+return result;
+    </td>
+<td class="wide-text wide-text">функция вернет 3, но значение a будет увеличено на 1.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int x = 5;<br/>
+x = ++x + ++x;
+    </td>
+<td class="monospace_text wide-text">int x = 5;<br/>
+int a=x+1;<span class="grey_text">//первое слагаемое 6</span><br/>
+x = a;<br/>
+int b=x+1;<span class="grey_text">//второе слагаемое 7</span><br/>
+x = b;<br/>
+x = a + b;
+    </td>
+<td class="wide-text wide-text">тут будет ответ 13. Сначала x увеличится на 1, и это значение подставится на место первого слагаемого, а потом х увеличится еще раз на 1.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ничего себе! Вот это круто!</p>
+<p>- Рад, что тебе понравилось. Но, если нет никакого выражения или присваивания, то никаких отличий нет:</p>
+<p>Просто «x++» эквивалентно x=x+1.</p>
+<p>Просто «++x» тоже эквивалентно x=x+1.</p>
+<p class="amigo">- Буду знать, спасибо, Билаабо.</p>
+<p><b>8)</b> Группа  «<b>тернарный оператор</b>»</p>
+<p>- В этом операторе участвуют не одна переменная/выражение и не две, а сразу три:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Вот как он записывается</th><th width="50%">А вот чему он эквивалентен:</th></tr>
+<tr>
+<td class="monospace_text wide-text">a ? b : c;
+    </td>
+<td class="monospace_text wide-text"><b>if</b> (a)<br/>
+     b<br/>
+<b>else</b><br/>
+     c
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int min = a<b :="" a="" b="">
+</b></td><td class="monospace_text wide-text"><b>if</b> (a&amp;ltb)<br/>
+ min = a;<br/>
+<b>else</b><br/>
+ min = b;
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>return</b> a!=null ? a.length : 0;
+    </td>
+<td class="monospace_text wide-text"><b>if</b> (a!=null)<br/>
+ <b>return</b> a.length;<br/>
+<b>else</b> <br/>
+ <b>return</b> 0;
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Так это же очень удобная штука.</p>
+<p>- Ага. И компактно и код читабельный. Пользуйся на здоровье.</p>
+<p><b>9)</b> Группа  «<b>остальное</b>»</p>
+<p>- Сколько музыку не разбирай, а папку «разное» создать придется.</p>
+<p class="amigo">- Да, каждый, кто хоть раз это делал, полностью с тобой согласен.</p>
+<p>- Так вот,  есть еще три оператора, о которых я хотел тебе рассказать:</p>
+<table class="table_example">
+<tbody><tr><th width="20%">Запись</th><th width="20%">Пример</th><th width="60%">Описание</th></tr>
+<tr>
+<td class="wide-text wide-text">()
+    </td>
+<td class="wide-text wide-text">(a+b)*c
+    </td>
+<td class="wide-text wide-text">Скобки повышают приоритет выполнения.<br/>
+Сначала выполняется то, что в скобках.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">[]
+    </td>
+<td class="wide-text wide-text">c[i] = c[i+1];
+    </td>
+<td class="wide-text wide-text">Получение элемента массива по индексу.
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">.
+    </td>
+<td class="wide-text wide-text">int n = a.length;
+    </td>
+<td class="wide-text wide-text">«<b>оператор точка</b>» – получение переменных и методов у объекта.
+    </td>
+</tr>
+</tbody></table>
+<p>И, наконец, приоритет операторов и порядок их выполнения:</p>
+<table class="table_example">
+<tbody><tr><th width="20%">Операторы</th><th width="80%">Примеры</th></tr>
+<tr>
+<td class="wide-text" colspan="2"><center>Высший приоритет (сначала выполняются операторы с меньшим номером)</center>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text">()<br/>   
+[]<br/> 
+.
+    </td>
+<td class="monospace_text wide-text">(a+b)<br/>
+c[i]  = c[i]+1
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">++  <br/>
+-- <br/>
+ ~ <br/>
+ !<br/>
++<br/>
+-
+    </td>
+<td class="monospace_text wide-text">i++; ++i;<br/>
+--j; a--;<br/>
+~c<br/>
+!f<br/>
+return +a;<br/>
+return -a;
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">*<br/> 
+/<br/>
+%
+    </td>
+<td class="monospace_text wide-text">a * b<br/>
+c / d<br/>
+a % b
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">+<br/>
+-
+    </td>
+<td class="monospace_text wide-text">a+b<br/>
+c-d<br/>
+String s = "count"+"35 ";
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">&gt;&gt;<br/>
+
+&gt;&gt;&gt;<br/>
+</td>
+<td class="monospace_text wide-text">a&gt;&gt;3<br/>
+b
+c&gt;&gt;&gt;3
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">
+
+&gt;<br/>
+&gt;=
+    </td>
+<td class="monospace_text wide-text">a 
+a 
+c &gt;  b<br/>
+c &gt;= b
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">== <br/>
+!=
+    </td>
+<td class="monospace_text wide-text">a == 3<br/>
+a != 0
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">&amp;
+    </td>
+<td class="monospace_text wide-text">a &amp; 7
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">^
+    </td>
+<td class="monospace_text wide-text">a ^ b
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">|
+    </td>
+<td class="monospace_text wide-text">a | b
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">&amp;&amp;
+    </td>
+<td class="monospace_text wide-text">(a&amp;ltb) &amp;&amp; (a&amp;ltc)
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">||
+    </td>
+<td class="monospace_text wide-text">(b!=0) || (c!=0)
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">? : =
+    </td>
+<td class="monospace_text wide-text">a&gt;0 ? a : -a;
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">= <br/>
+*=,  /=, %=<br/>
+-=, +=<br/>
+&gt;=, &gt;&gt;&gt;=<br/>
+&amp;=, ^=. |=
+    </td>
+<td class="monospace_text wide-text">
+</td>
+</tr>
+<tr>
+<td class="wide-text" colspan="2"><center>Низший приоритет (выполняются в самом конце)</center>
+</td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>2. Задачи на приоритет операторов</h2>
+</div>
+<p>- Привет, Амиго! Билаабо нашел для тебя задачи:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level21,lesson02,task01"></button><b>1. Определяем адрес сети</b><br/><br/>
+                1) Даны IP-адрес и маска подсети, необходимо вычислить адрес сети - метод <span class="taskcode">getNetAddress</span>. Используйте операцию поразрядной конъюнкции (логическое И).<br/><br/>
+		Пример:<br/>
+		IP-адрес:             11000000  10101000  00000001  00000010 (192.168.1.2)<br/>
+		Маска подсети:   11111111    11111111   11111110    00000000 (255.255.254.0)<br/>
+		Адрес сети:         11000000  10101000  00000000  00000000 (192.168.0.0)<br/>
+		2) Реализовать метод <span class="taskcode">print</span>, который выведет в консоль данные в двоичном коде<br/>
+		3) Метод <span class="taskcode">main</span> не участвует в тестировании
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level21,lesson02,task02"></button><b>2. Сравниваем модификаторы</b><br/><br/>
+                Реализовать логику метода <span class="taskcode">isAllModifiersContainSpecificModifier</span>, который проверяет,<br/>
+		содержит ли переданный параметр <span class="taskcode">allModifiers</span> значение конкретного модификатора <span class="taskcode">specificModifier</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level21,lesson02,task03"></button><b>3. Все гениальное - просто!</b><br/><br/>
+                Упростить. Переменные не переименовывать, комментарии не оставлять.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Все методы класса Object, метод toString()</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/21/image-ru-21-07.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет!</p>
+<p>- Сегодня мы будем изучать класс Object.</p>
+<p>Ты уже сталкивался с ним, и знаешь, что Object – базовый класс для всех классов.  У него практически нет никаких данных, но есть несколько методов.</p>
+<p class="amigo">- А зачем ему методы? Разве кто-то создает его объекты?</p>
+<p>- Посмотри на ситуацию с такой стороны – методы, которые есть у Object’а, есть вообще у всех классов. Т.е. разработчики Java отобрали несколько методов, которые, по их мнению, должны быть у всех классов и добавили их в класс Object.</p>
+<p>А в сочетании с полиморфизмом – возможностью переопределять методы класса Object в классах-наследниках – это порождает очень мощный инструмент.</p>
+<p>Давай посмотрим, что же это за методы:</p>
+<table class="table_example">
+<tbody><tr><th width="55%">Метод</th><th width="45%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public</b> String<b> toString</b>()
+    </td>
+<td class="wide-text wide-text">Возвращает строковое представление объекта. 
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public</b> native int <b>hashCode</b>()<br/>
+<b>public</b> boolean <b>equals</b>(Object obj)
+    </td>
+<td class="wide-text wide-text">Пара методов, которые используются для сравнения объектов.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public final</b> native Class <b>getClass</b>()
+    </td>
+<td class="wide-text wide-text">Возвращает специальный объект, который описывает текущий класс.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public final</b> native void <b>notify</b>()<br/>
+<b>public final</b> native void <b>notifyAll</b>()<br/>
+<b>public final</b> native void <b>wait</b>(long timeout) <br/>
+<b>public final</b> void <b>wait</b>(long timeout, intnanos) <br/>
+<b>public final</b> void <b>wait</b>() 
+    </td>
+<td class="wide-text wide-text">Методы для контроля доступа к объекту из различных нитей. Управление синхронизацией нитей.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>protected</b> void <b>finalize</b>()
+    </td>
+<td class="wide-text wide-text">Метод позволяет «освободить» родные не-Java ресурсы: закрыть файлы, потоки и т.д.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>protected</b> native Object <b>clone</b>()
+    </td>
+<td class="wide-text wide-text">Метод позволяет клонировать объект: создает дубликат объекта.
+    </td>
+</tr>
+</tbody></table>
+<p>Методы можно разбить на 6 групп. С некоторыми ты уже знаком, а с остальными мы познакомимся в ближайших лекциях.</p>
+<p class="amigo">- Что-то не вижу тут ничего полезного.</p>
+<p>- Амиго! Если бы эти методы были не важны, их бы не добавили абсолютно всем объектам! Так что советую тебе более внимательно разобраться – что это такое и зачем они нужны. Если тебе кажется, что они не важны, значит, ты что-то не понял или понял не правильно.</p>
+<p class="amigo">- Ок. Я буду внимательно слушать.</p>
+<p>- <b>Начнем с метода toString();</b></p>
+<p>Этот метод позволяет получить текстовое описание любого объекта. Реализация его в классе Object очень простая:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>return getClass().getName()</b> + "@" + Integer.toHexString<b>(hashCode());</b></span>
+</td>
+</tr>
+</tbody></table>
+<p>getClass() и hashCode() – это тоже методы класса Object.</p>
+<p>Вот стандартный результат вызова такого метода</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">java.lang.Object@12F456
+</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- И в чем же польза такого описания?</p>
+<p>- Из такого описания можно узнать класс объекта, у которого вызвали данный метод. А также можно различать объекты – разным объектам соответствуют разные цифры, идущие после символа @.</p>
+<p>Но ценность данного метода в другом. Данный метод можно переопределить в любом классе и возвращать более нужное или более детальное описание объекта.</p><p>
+</p><p>Но и это еще не все. Благодаря тому, что для каждого объекта можно получить его текстовое представление, в Java можно было реализовать поддержку «сложения» строк с объектами.</p>
+<p>Вот смотри:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Что происходит на самом деле</th></tr>
+<tr>
+<td class="monospace_text wide-text">int age = 18;<br/>
+System.out.println("Age is " + age);
+    </td>
+<td class="monospace_text wide-text">String s = <b>String.valueOf(18)</b>;<br/>
+String result = "Age is " + s;<br/>
+System.out.println(result);
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Student st = new Student("Vasya");<br/>
+System.out.println("Student is " + st);
+    </td>
+<td class="monospace_text wide-text">Student st = new Student("Vasya");<br/>
+String result = "Student is " + <br/>    <b>st.toString()</b>;<br/>
+System.out.println(result);
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Car car = new Porsche();<br/>
+System.out.println("My car is " + car);
+    </td>
+<td class="monospace_text wide-text">Car car = new Porsche();<br/>
+String result = "My car is " + <br/>    <b>car.toString()</b>;<br/>
+System.out.println(result);
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Да, я постоянно этим пользуюсь. Особенно когда пишу программу или ищу в ней ошибки. Полезный метод.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>4. Методы equals &amp; hashCode: зачем, где используются, как работают</h2>
+</div>
+<p>- Теперь я расскажу о не менее полезных методах <b>equals(Object o) &amp; hashCode()</b>.</p>
+<p>Как ты уже, наверное, успел запомнить, в Java при сравнении ссылочных переменных сравниваются не сами объекты, а ссылки на объекты.</p>
+<table class="table_example">
+<tbody><tr><th width="40%">Код</th><th width="60%">Пояснение</th></tr>
+<tr>
+<td class="monospace_text wide-text">Integer i = new Integer(1);<br/>
+Integer j = new Integer(1);<br/>
+System.out.println(i==j);
+    </td>
+<td class="wide-text wide-text">i не равно j<br/>
+Переменные указывают на различные объекты. <br/>
+Хотя объекты содержат одинаковые данные;
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Integer i = new Integer(1);<br/>
+Integer j = i;<br/>
+System.out.println(i==j);
+    </td>
+<td class="wide-text wide-text">i равно j<br/>
+Переменные содержат ссылку на один и тот же объект. 
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Да, я это помню.</p>
+<p>- Есть также стандартное решение этой ситуации – метод <b>equals</b>.</p>
+<p>Цель метода <b>equals</b> – определить идентичны ли объекты внутри, сравнив внутреннее содержание объектов.</p>
+<p class="amigo">- И как он это делает?</p>
+<p>- Тут все аналогично методу toString().</p>
+<p>У класса Object есть своя реализация метода equals, которая просто сравнивает ссылки:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>public</b> boolean <b>equals</b>(Object obj)<br/>
+ {<br/>
+         return (this == obj);<br/>
+ }
+</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- М-да. С чем боролись, на то и напоролись.</p>
+<p>- Не вешай нос. Тут все тоже очень хитро.</p>
+<p>Этот метод создавался, чтобы разработчики переопределяли его в своих классах. Ведь только разработчик класса знает, какие данные важны, что учитывать при сравнении, а что – нет.</p>
+<p class="amigo">- А можно пример такого метода?</p>
+<p>- Конечно. Допустим, у нас есть класс, описывающий математические дроби, тогда он выглядел бы так (для ясности, я переведу английские названия на русский язык):</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Дробь<br/>
+{<br/>
+    <b>private</b> int числитель;<br/>
+    <b>private</b> int знаменатель;<br/><br/>
+
+    Дробь(int числитель, int знаменатель)<br/>
+    {<br/>
+  this.числитель = числитель;<br/>
+  this.знаменатель = знаменатель;<br/>
+ }<br/><br/>
+
+   <b>public</b> boolean equals(Object obj) <br/>
+  {<br/>
+      <b>if</b> (obj==null) <br/>
+             return false;<br/><br/>
+
+      <b>if</b> (obj.getClass() != this.getClass() )<br/>
+             return false;<br/><br/>
+
+  Дробь other  = (Дробь) obj;<br/>
+     return  this.числитель* other.знаменатель == this.знаменатель * other.числитель;<br/>
+ }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример вызова:</th></tr>
+<tr>
+<td class="monospace_text wide-text">Дробь <b>one</b> = <b>new</b> Дробь<b>(2,3)</b>;<br/>
+Дробь <b>two</b> = <b>new</b> Дробь<b>(4,6)</b>;<br/>
+<b>System.out.println(one.equals(two));</b>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>Результат вызова будет true.<br/>
+дробь 2/3 равна дроби 4/6</b>
+</td>
+</tr>
+</tbody></table>
+<p>Для большей ясности я использовала русские названия. Так можно делать только в обучающих целях. </p>
+<p>Теперь разберем пример.</p>
+<p>Мы переопределили метод <b>equals</b>, и теперь для объектов класса <b>Дробь</b> у него будет своя реализация.</p>
+<p>В этом методе есть несколько проверок:</p>
+<p><b>1)</b> Если переданный для сравнения объект  – <b>null</b>, то объекты не равны. Объект, у которого вызвали метод <b>equals</b> ведь точно не <b>null</b>.</p>
+<p><b>2)</b> Проверка на сравнение классов. Если объекты разных классов, то мы не будем пробовать их сравнить, а сразу говорим, что это различные объекты – <b>return false</b>.</p>
+<p><b>3)</b> Со второго класса школы все помнят, что дробь 2/3 равно дроби 4/6. А как это проверить?</p>
+<table class="table_example">
+<tbody><tr><th width="100%">2/3 == 4/6</th></tr>
+<tr>
+<td class="wide-text wide-text"><b>Умножим обе части на оба делителя (6 и 3), получим:</b>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>6 * 2 == 4 * 3</b>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>12 == 12</b>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text">Общее правило:
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>Если <br/> 
+a / b == c / d <br/>
+То <br/> 
+a * d == c * b </b>
+</td>
+</tr>
+</tbody></table>
+<p>- Поэтому в третьей части метода <b>equals</b> мы преобразуем переданный объект к типу Дробь и сравниваем дроби.</p>
+<p class="amigo">- Понятно. Если бы мы просто сравнивали числитель с числителем и знаменатель со знаменателем, то дробь 2/3 не была бы равной 4/6. </p>
+<p class="amigo">Теперь  понятно, что ты имела ввиду, когда говорила, что только разработчик класса знает, как правильно его сравнивать.</p>
+<p>- Да, но это только половина дела. <b>Есть еще второй метод – hashCode()</b></p>
+<p class="amigo">- С методом <b>equals</b> все понятно, а зачем нужен <b>hashCode</b>()?</p>
+<p>- Метод <b>hashCode</b> нужен для быстрого сравнения.</p>
+<p>У метода <b>equals</b> есть большой минус – он слишком медленно работает. Допустим, у тебя есть множество(Set) из миллиона элементов, и нам нужно проверить, содержит ли оно определенный объект или нет. Как это сделать?</p>
+<p class="amigo">- Можно в цикле пройтись по всем элементам и сравнить нужный объект с каждым объектом множества.  Пока не найдем нужный.</p>
+<p>- А если его там нет? Мы выполним миллион сравнений, чтобы узнать, что там нет этого объекта? Не многовато ли?</p>
+<p class="amigo">- Да, даже мне понятно, что слишком много сравнений. А что, есть другой способ?</p>
+<p>- Да, для этого и используется <b>hashCode()</b>.</p>
+<p>Метод <b>hashCode()</b> для каждого объекта возвращает определенное число. Какое именно – это тоже решает разработчик класса, как и в случае с методом <b>equals</b>.</p>
+<p>Давай рассмотрим ситуацию на примере:</p>
+<p>Представь, что у тебя есть миллион 10-тизначных чисел. Тогда в качестве hashCode для каждого числа можно выбрать остаток от его деления на 100.</p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Число</th><th width="50%">Наш hashCode</th></tr>
+<tr>
+<td class="wide-text wide-text">1234567890
+    </td>
+<td class="wide-text wide-text">90
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">9876554321
+    </td>
+<td class="wide-text wide-text">21
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">9876554221
+    </td>
+<td class="wide-text wide-text">21
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">9886554121
+    </td>
+<td class="wide-text wide-text">21
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Да, с этим понятно. И что нам делать с этим hashCode-числом?</p>
+<p>- Вместо того чтобы сравнивать числа, мы будем сравнивать их <b>hashCode</b>. Так быстрее.</p>
+<p>И только если <b>hashCode</b>-ы равны, сравнивать уже посредством <b>equals</b>.</p>
+<p class="amigo">- Да, так быстрее. Но нам все равно придется сделать миллион сравнений, только уже более коротких чисел, а для тех чисел, чьи <b>hashCode</b> совпадают, опять вызвать <b>equals</b>.</p>
+<p>- Нет, можно обойтись гораздо меньшим числом. </p>
+<p>Представь, что наше множество хранит числа, сгруппированные по hashCode или отсортированные по <b>hashCode</b>(что равносильно их группировке, т.к. числа с одинаковым hashCode находятся рядом).  Тогда можно очень быстро и легко отбросить ненужные группы, достаточно один раз для каждой группы проверить совпадает ли ее hashCode с hashCode заданного объекта.</p>
+<p>Представь, что ты студент, и ищешь своего друга, которого знаешь в лицо и про которого известно, что он живет в 17 общаге. Тогда ты просто проходишься по всем общежитиям универа и в каждом общежитии спрашиваешь «это 17 общага?». Если нет, то ты отбрасываешь всех из этой общаги и переходишь к следующей. Если «да», то начинаешь ходить по всем комнатам и искать друга.</p>
+<p>В данном примере номер общаги – 17 – это и есть hashCode.</p>
+<p>Разработчик, который реализует функцию hashCode, должен знать следующие вещи:</p>
+<p><b>А) <span class="green_text">у двух разных объектов может быть одинаковый hashCode</span></b> (разные люди могут жить в одной общаге)</p>
+<p><b>Б) <span class="green_text">у одинаковых объектов</span> (с точки зрения equals) <span class="green_text">должен быть одинаковый hashCode.</span></b></p>
+<p><b>В) <span class="dred_text">хеш-коды должны быть выбраны таким образом, чтобы не было большого количества различных объектов с одинаковыми hashCode.</span></b> Это сведет все их преимущество на нет (Ты пришел в 17 общагу, а там живет пол универа. Облом-с).</p>
+<p>И теперь самое важное. Если ты переопределяешь метод <b>equals</b>, обязательно нужно переопределить метод <b>hashCode</b>(), с учетом трех вышеописанных правил.</p>
+<p>Все дело в том, что <b>коллекции в Java перед тем как сравнить объекты с помощью equals всегда ищут/сравнивают их с помощью  метода hashCode().</b> И если у одинаковых объектов будут разные hashCode, то объекты будут считаться разными - до сравнения с помощью equals просто не дойдет.</p>
+<p>В нашем примере с Дробью, если бы мы взяли hashCode равный числителю, то дроби 2/3 и 4/6 имели бы разные hashCode.  Дроби – одинаковые, equals говорит, что они одинаковые, но hashCode говорит, что они разные. И если перед сравнением с помощью equals сравнивать по hashCode, то получим что объекты разные и до equals просто не дойдём.</p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><b><span class="green_text">HashSetset = new HashSet();<br/>
+set.add(new Дробь(2,3));<br/><br/>
+
+System.out.println(  set.contains(new Дробь(4,6))  );</span></b>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text">Если метод <span class="green_text"><b>hashCode()</b></span> будет возвращать числитель дроби, то результат будет <span class="green_text"><b>false</b></span>.<br/>
+Объект <span class="green_text"><b>new Дробь(4,6)</b></span> не будет найден в коллекции. 
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- А как правильно реализовать hashCode для дроби?</p>
+<p>- Тут надо помнить, что одинаковым дробям обязательно должен соответствовать одинаковый hashCode.</p>
+<p><b>Вариант 1</b>: hashCode равен целой части от деления.</p>
+<p>Для  дроби 7/5 и 6/5 это будет 1.</p>
+<p>Для дроби 4/5 и 3/5 это будет 0.</p>
+<p>Но этот вариант плохо годится для сравнения дробей, которые заведомо меньше 1. Целая часть (hashCode) всегда будет 0.</p>
+<p><b>Вариант 2</b>: hashCode равен целой части от деления знаменателя на числитель.</p>
+<p>Этот вариант подойдет для случая, когда значение дроби меньше 1. Если дробь меньше 1, значит перевернутая дробь больше 1. А если мы переворачиваем все дроби – это никак не скажется на их сравнении.</p>
+<p>Итоговый вариант будет совмещать в себе оба решения:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>public</b> int hashCode()<br/>
+{<br/>
+ return <b>числитель/знаменатель + знаменатель/числитель;</b><br/>
+}
+</span>
+</td>
+</tr>
+</tbody></table>
+<p>Проверяем для дробей 2/3 и 4/6.  У них должны быть равные hashCode:</p>
+<table class="table_example">
+<tbody><tr><th width="33%"> </th><th width="33%">Дробь 2/3</th><th width="33%">Дробь 4/6</th></tr>
+<tr>
+<td class="wide-text wide-text"><b>числитель / знаменатель</b>
+</td>
+<td class="wide-text wide-text">2 / 3 == 0
+    </td>
+<td class="wide-text wide-text">4 / 6 == 0
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>знаменатель / числитель</b>
+</td>
+<td class="wide-text wide-text">3 / 2 == 1
+    </td>
+<td class="wide-text wide-text">6 / 4 == 1
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>числитель / знаменатель</b><br/>
++ <br/>
+<b>знаменатель / числитель</b>
+</td>
+<td class="wide-text wide-text">0 + 1 == 1
+    </td>
+<td class="wide-text wide-text">0 + 1 == 1
+    </td>
+</tr>
+</tbody></table>
+<p>На этом – все.</p>
+<p class="amigo">- Спасибо, Элли, было действительно интересно.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>5. Задачи на equals &amp; hashCode</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/21/image-ru-21-06.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Диего!</p>
+<p>- Старый добрый Диего подготовил для тебя несколько задач:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level21,lesson05,task01"></button><b>1. Equals and HashCode</b><br/><br/>
+                В классе <span class="taskcode">Solution</span> исправить пару методов <span class="taskcode">equals</span>/<span class="taskcode">hashCode</span> в соответствии с правилами реализации этих методов.<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level21,lesson05,task02"></button><b>2. Исправить ошибку</b><br/><br/>
+                Сравнение объектов <span class="taskcode">Solution</span> не работает должным образом. Найти ошибку и исправить.<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level21,lesson05,task03"></button><b>3. Ошибка в equals/hashCode</b><br/><br/>
+                Исправьте ошибки реализаций методов <span class="taskcode">equals</span> и <span class="taskcode">hashCode</span> для класса <span class="taskcode">Solution</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>6. Знакомство с методами  wait, notify, notifyAll</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Риша!</p>
+<p>- Я познакомлю тебя с методами <b>wait</b>, <b>notify</b>, <b>notifyAll</b> класса Object.</p>
+<p>Сегодня мы просто ознакомимся с ними, но потом еще раз вернемся и уже выделим на это больше времени.</p>
+<p class="amigo">- Хорошо.</p>
+<p>- Эти методы были придуманы как часть механизма синхронизации нитей.</p>
+<p>Напомню, что в Java есть встроенный механизм управления доступом к общим ресурсам (объектам) из разных нитей. Нить может объявить какой-нибудь объект занятым, и другие нити будут вынуждены ждать, пока занятый объект освободиться.</p>
+<p class="amigo">- Я помню, это делается с помощью ключевого слова <b>synchronized</b>.</p>
+<p>- Правильно. Обычно такой код выглядит примерно так:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>public</b> void print()<br/>
+{<br/>
+     Object monitor = getMonitor();<br/>
+ <b><u>synchronized</u></b>(monitor)<br/>
+    {<br/>
+  System.out.println("text");<br/>
+    }<br/>
+}
+</span>
+</td>
+</tr>
+</tbody></table>
+<p>Помнишь, как это работает?</p>
+<p class="amigo">- Ага. Если две нити одновременно вызовут метод print(), то одна из них войдет в блок, помеченный synchronized, и заблокирует monitor, поэтому вторая нить будет ждать, пока монитор не освободится.</p>
+<p>- Правильно. Как только нить входит в блок, помеченный <b>synchronized</b>, то объект-монитор помечается как занятый, и другие нити будут вынуждены ждать освобождения объекта-монитора. Один и тот же объект-монитор может использоваться в различных частях программы.</p>
+<p class="amigo">- Кстати, почему – монитор?</p>
+<p>- Монитором принято называть объект, который хранит состояние занят/свободен.</p>
+<p>Вот тут и вступают в дело методы <b>wait</b> и <b>notify</b>.</p>
+<p>Собственно, методов как таковых всего два. Остальные – это лишь модификации этих методов.</p>
+<p>Теперь разберемся, <b>что же такое метод wait и зачем он нужен.</b></p>
+<p>Иногда в программе может оказаться такая ситуация, что нить вошла в блок кода synchronized, заблокировала монитор и не может работать дальше, т.к. каких-то данных еще не хватает: например, файл который она должна обработать еще не загрузился или что-нибудь в таком духе.</p>
+<p>Мы же можем просто подождать, когда файл скачается. Можно просто в цикле проверять – если файл еще не скачался – спать, например, секунду и опять проверять и т.д.</p>
+<p>Примерно так:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>while</b>(!file.isDownloaded())<br/>
+{<br/>
+ Thread.sleep(1000);<br/>
+}<br/>
+processFile(file);
+</span>
+</td>
+</tr>
+</tbody></table>
+<p>Но в нашем случае такое ожидание слишком дорого. Т.к. наша нить заблокировала монитор, то другие нити вынуждены тоже ждать, хотя их данные для работы могут быть уже готовы.</p>
+<p>Для решения этой проблемы и был придуман метод <b>wait()</b>. Вызов этого метода приводит к тому, что нить освобождает монитор  и «<b>становится на паузу</b>».</p>
+<p>Метод wait можно вызвать у объекта-монитора и только тогда, когда это монитор занят – т.е. внутри блока <b>synchronized</b>. При этом нить временно прекращает работу, а монитор освобождается, чтобы им могли воспользоваться другие нити.</p>
+<p>Часто встречаются ситуации, когда в блок <b>synchronized</b> зашла нить, вызвала там wait, освободила монитор. Затем туда вошла вторая нить и тоже стала на паузу, затем третья и так далее.</p>
+<p class="amigo">- А как же нить снимется с паузы?</p>
+<p>- Для этого есть второй метод – <b>notify</b>.</p>
+<p>Методы <b>notify</b>/<b>notifyAll</b> можно вызвать у объекта-монитора и только, когда этот монитор занят – т.е. внутри блока <b>synchronized</b>. Метод <b>notifyAll</b> снимает с паузы все нити, которые стали на паузу с помощью данного объекта-монитора.</p>
+<p>Метод <b>notify</b> «размораживает» одну случайную нить, метод <b>notifyAll</b> – все «замороженные» нити данного монитора.</p>
+<p class="amigo">- Очень интересно, спасибо Риша.</p>
+<p>- Рад, что тебе нравится, Амиго!</p>
+<p>Есть еще модификации метода <b>wait</b>():</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод wait()</th><th width="50%">Пояснение</th></tr>
+<tr>
+<td class="monospace_text wide-text">void <b>wait</b>(long timeout)
+    </td>
+<td class="wide-text wide-text">Нить «замерзает», но через переданное количество миллисекунд автоматически «размораживается».
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>wait</b>(long timeout, int nanos)
+    </td>
+<td class="wide-text wide-text">Нить «замерзает», но  через переданное количество миллисекунд и наносекунд автоматически «размораживается».
+    </td>
+</tr>
+</tbody></table>
+<p>Это, как еще говорят, wait с таймаутом. Метод работает как обычный wait, но если указанное время прошло, а нить никто не снял с паузы – она активируется сама.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>7. Метод clone, интерфейс Cloneable</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/21/image-ru-21-05.gif"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Ким.</p>
+<p>- Я тебе расскажу про метод clone().</p>
+<p>Цель этого метода – клонировать объект – т.е. создать его клон/копию/дубликат.</p>
+<p>Если его вызвать, то Java-машина создаст и вернет дубликат объекта, у которого вызвали этот метод.</p>
+<p>Клонирование объекта в классе Object реализовано очень примитивно – при клонировании создается всего один новый объект: просто создается еще один объект и его полям присваиваются значения полей объекта-образца. Если  копируемый объект содержит ссылки на другие объекты, то ссылки будут скопированы, дубликаты тех объектов не создаются.</p>
+<p class="amigo">- Гм. Не густо.</p>
+<p>- Дело в том, что Java-машина не знает, какие объекты можно клонировать, а какие нет. Файлы, например, клонировать нельзя. Как и поток System.in.</p>
+<p>Поэтому вопрос о полноценном клонировании был отдан на откуп разработчикам классов. Тут все было сделано по аналогии с методом equals. Даже есть свой аналог hashCode – это интерфейс Cloneable.</p>
+<p>Интерфейс <b>Cloneable</b> – это так называемый интерфейс-маркер, который не содержит никаких методов. Он используется, чтобы маркировать (помечать) некоторые классы. </p>
+<p>Если разработчик класса считает, что объекты класса можно клонировать, он помечает класс этим интерфейсом (наследует класс от Cloneable).</p>
+<p>Если разработчика не устраивает стандартная реализация метода clone, он должен написать свою, которая будет создавать дубликат объекта правильным образом.</p>
+<p>При вызове метода <b>clone()</b>, Java проверяет, был ли у объекта интерфейс Cloneable. Если да - клонирует объект методом <b>clone()</b>, если нет - выкидывает исключение CloneNotSupportedException.</p>
+<p class="amigo">- Т.е. мы должны или переопределить метод clone и написать его новую реализацию или унаследовать класс от Cloneable? </p>
+<p>- Да, но переопределять метод все же придется. Метод clone() объявлен как protected, так что он доступен для вызова только классам из его пакета (java.lang.*) или классам-наследникам.</p>
+<p class="amigo">- Я немного запутался, так что же надо сделать, чтобы клонировать объект?.</p>
+<p>- Смотри, если ты хочешь воспользоваться «клонированием по умолчанию», которое реализовано в классе Object, тебе нужно:</p>
+<p><b>а)</b> Добавить интерфейс Cloneable своему классу</p>
+<p><b>б)</b> Переопределить метод clone и вызвать в нем базовую реализацию:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>class</b> Point <b>implements Cloneable</b><br/>
+{<br/>
+ int x;<br/>
+ int y;<br/><br/>
+
+   <b>public</b> Object <b>clone()</b><br/>
+   {<br/>
+         return <b>super.clone();</b><br/>
+   }<br/>
+}
+</span>
+</td>
+</tr>
+</tbody></table>
+<p>Или ты можешь написать реализацию метода clone полностью сам:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>class</b> Point <br/>
+{<br/>
+ int x;<br/>
+ int y;<br/><br/>
+
+   <b>public</b> Object <b>clone()</b><br/>
+   {<br/>
+         Point <b>point</b> = new Point();<br/>
+  <b>point</b>.x = this.x;<br/>
+  <b>point</b>.y = this.y;<br/>
+         return <b>point</b>;<br/>
+   }<br/>
+}
+</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Интересный метод, буду пользоваться. Иногда…</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Задачи на клонирование</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Я тут нашел журнал за 2014 год, представляешь?</p>
+<p>И там набор старых-престарых задач на клонирование. Вот смотри:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level21,lesson08,task01"></button><b>1. Глубокое клонирование карты</b><br/><br/>
+                Клонируйтие объект класса <span class="taskcode">Solution</span> используя глубокое клонирование.<br/>
+		Данные в карте <span class="taskcode">users</span> также должны клонироваться.<br/>
+                Метод <span class="taskcode">main</span> изменять нельзя.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level21,lesson08,task02"></button><b>2. Клонирование</b><br/><br/>
+                Класс <span class="taskcode">Plant</span> не должен реализовывать интерфейс <span class="taskcode">Cloneable</span><br/>
+		Реализуйте механизм глубокого клонирования для <span class="taskcode">Tree</span>.<br/>
+                Метод <span class="taskcode">main</span> изменять нельзя.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level21,lesson08,task03"></button><b>3. Запретить клонирование</b><br/><br/>
+                Разрешите клонировать класс <span class="taskcode">А</span><br/>
+		Запретите клонировать класс <span class="taskcode">B</span><br/>
+		Разрешите клонировать класс <span class="taskcode">C</span><br/>
+        Метод <span class="taskcode">main</span> не участвует в тестировании.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>9. Метод finalize, интерфейс closeable, try-with-resources(java7)</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/21/image-ru-21-04.png"/>
+<p>- Привет, Амиго!</p>
+<p>Я тут решила с тобой еще раз обсудить метод finalize().</p>
+<p>Если ты помнишь, то <b>finalize()</b> – это специальный метод, который вызывается у объекта перед тем, как сборщик мусора его уничтожит.</p>
+<p>Основная цель этого метода – освободить используемые внешние не-Java ресурсы: закрыть файлы, потоки ввода-вывода и т.п.</p>
+<p>К сожалению, этот метод не оправдывает возложенных на него надежд. Java-машина может отложить уничтожение объекта, как и вызов метода finalize на сколько угодно. Более того, она вообще не гарантирует, что этот метод будет вызван.  В куче ситуаций  ради «оптимизации» он не вызывается.</p>
+<p>Приведу тебе две цитаты:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="wide-text wide-text">У Джошуа Блоха хорошо написано об этом методе: <a href="http://www.informit.com/articles/article.aspx?p=1216151&amp;seqNum=7" target="_blank">link</a><br/>
+Краткая выдержка:<br/>
+1. finalize() можно использовать только в двух случаях:<br/>
+1.1. Проверка/подчистка ресурсов с логированием.<br/>
+1.2. При работе с нативным кодом, который не критичен к утечке ресурсов.<br/>
+2. finalize() замедляет работу GC по очистке объекта в 430 раз<br/>
+3. finalize() может быть не вызван
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">Если я на собеседовании скажу, что finalize - это вредный и опасный костыль, который своим существованием сбивает с толку, то буду прав?
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- М-да, обрадовала ты меня, Элли.</p>
+<p>- На замену метода <b>finalize</b> в Java 7 появился новая конструкция. Называется она – <b>try-with-resources</b>. Это не совсем замена <b>finalize</b> – скорее альтернативный подход.</p>
+<p class="amigo">- Как <b>try-catch</b>, только с ресурсами?</p>
+<p>- Почти как <b>try-catch</b>. Дело в том, что в отличие от метода <b>finalize</b>(), блок <b>finally</b>  из конструкции <b>try-catch-finally</b> вызывается всегда. Этим и пользовались программисты, когда нужно было гарантированно освободить ресурсы, закрыть потоки и т.д.</p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">InputStream is = null;<br/>
+<b>try</b><br/>
+{<br/>
+    is = new FileInputStream("c:/file.txt");<br/>
+ is.read(…)<br/>
+}<br/>
+<b>finally</b><br/>
+{<br/>
+  <b>if</b> (is!=null)<br/>
+ is.<b>close</b>();<br/>
+}</span>
+</td>
+</tr>
+</tbody></table>
+<p>Независимо от того, нормально ли отработал блок <b>try</b>, или там возникло исключение, блок <b>finally</b> вызовется всегда, и там можно будет освободить занятые ресурсы.</p>
+<p>Поэтому в Java 7 этот подход решили сделать официальным, и вот что из этого вышло:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>try</b>(InputStream is = new FileInputStream("c:/file.txt"))<br/>
+{<br/>
+ is.read(…)<br/>
+}
+</span>
+</td>
+</tr>
+</tbody></table>
+<p>Это специальная конструкция <b>try</b>, называемая <b>try-with-resources</b> (так же как и второй <b>for</b> для коллекций называется <b>foreach</b>).</p>
+<p>Обрати внимание – после try следуют круглые скобки, где объявляются переменные и создаются объекты. Эти объекты можно использовать внутри блока try, обозначенного скобками {}. Когда выполнение команд блока try закончится, независимо от того – нормально оно закончилось или было исключение, для объекта, созданного внутри круглых скобок (), будет вызван метод close();</p>
+<p class="amigo">- Как интересно. Такая запись гораздо компактнее, чем предыдущая. Понять бы ее еще.</p>
+<p>- Все не так сложно, как ты думаешь.</p>
+<p class="amigo">- А я могу указывать в круглых скобках объекты своих классов?</p>
+<p>- Да, конечно, иначе от этих скобок было бы мало пользы.</p>
+<p class="amigo">- А если мне нужно вызвать другой метод при выходе из блока try, где мне его указать?</p>
+<p>- Тут все немного тоньше. В Java 7 появился такой интерфейс:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>public</b> interface AutoCloseable<br/>
+{<br/>
+     void close() throws Exception;<br/>
+}
+</span>
+</td>
+</tr>
+</tbody></table>
+<p>Ты можешь унаследовать свой класс от такого интерфейса. И тогда его объекты можно будет использовать внутри <b>try-with-resources</b>. <span class="green_text"><b>Только объекты такого типа можно использовать внутри круглых скобок try-with-resources для «автоматического закрытия».</b></span></p>
+<p class="amigo">- Т.е. мне нужно будет переопределить метод close и написать в нем код по «очистке» моего объекта, а указать другой метод нельзя?</p>
+<p>- Ага. Зато можно указывать несколько объектов, разделив их точкой с запятой:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>try(</b><br/>
+InputStream is = new FileInputStream("c:/file.txt");<br/>
+OutputStreamos = new FileOutputStream("c:/output.txt")<br/>
+<b>)</b><br/>
+{<br/>
+ is.read(…)<br/>
+ os.write(…);<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Уже лучше, но не так круто, как я надеялся.</p>
+<p>- Все не так плохо, ты привыкнешь. Со временем.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>10. Задачи на освобождение занятых ресурсов</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Я думал, ты уже разобрался с finalize.</p>
+<p class="amigo">- Я тоже так думал. А теперь еще и этот try-with-resources.</p>
+<p class="amigo">Охренеть. Я так Java никогда не выучу. Только кажется, что все понял, а тут на тебе!</p>
+<p>- Не волнуйся ты так – маслопровод лопнет, лучше вот порешай задачи пока:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level21,lesson10,task01"></button><b>1. Рефакторинг</b><br/><br/>
+                Отрефакторите метод <span class="taskcode">writeZipEntriesToFile</span> в соответствии с java7 <span class="taskcode">try-with-resources</span>.<br/>
+		Допускаются только текстовые коментарии.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level21,lesson10,task02"></button><b>2. Освобождаем ресурсы</b><br/><br/>
+                Реализуйте метод <span class="taskcode">finalize</span>, подумайте, что именно в нем должно быть.<br/>
+		Отрефакторите метод <span class="taskcode">getUsers</span> в соответствии с java7 <span class="taskcode">try-with-resources</span>.<br/>
+		Допускаются только текстовые коментарии. 
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level21,lesson10,task03"></button><b>3. Нюансы Exceptions</b><br/><br/>
+                Классы семейства <span class="taskcode">Utilizator</span> должны утилизировать ресурсы не влияя на работу программы, т.е. программа должна отрабатывать одинаково с любым из <span class="taskcode">Utilizator</span>-ов.<br/>
+		На данный момент это не выполняется из-за неправильных реализаций утилизаторов. Исправьте реализацию утилизаторов.<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании.<br/>
+<span class="taskcode">UtilizatorUtil</span> не менять.<br/>
+		Стек трейс не выводить.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>11. Метод getClass(), объект класс, знакомство с Reflection</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/21/image-ru-21-03.png"/>
+<p>- Привет, Амиго!</p>
+<p>А теперь самое интересное. Мы познакомимся с классом <b>Class</b> и немного с <b>Reflection</b>.</p>
+<p>Как ты уже, наверное, успел понять, в Java все является объектом. А что нужно для объекта? Что есть у каждого объекта и определяет саму его суть?</p>
+<p class="amigo">- Класс объекта!</p>
+<p>- Правильно! Молодец. У каждого объекта есть класс. Но вернемся к объектам. Некоторые объекты полностью содержат какую-то сущность, другие же просто помогают ей управлять.</p>
+<p>Ко вторым можно отнести <b>FileOutputStream</b> или <b>Thread</b>. Когда ты создаешь объект <b>Thread</b>, новая нить не создается. Ее создает Java-машина после вызова метода start(). Этот объект просто помогает управлять процессом.</p>
+<p>Так же и <b>FileOutputStream</b>: файл хранится на диске и его хранением и доступом к нему управляет ОС. Но мы можем взаимодействовать с ним посредством объектов типа File, при опять-таки помощи Java-машины.</p>
+<p class="amigo">- Да, я это понял уже.</p>
+<p>- Так вот, для взаимодействия с классами есть специальный класс и называется он - Class.</p>
+<p class="amigo">- Не трудно было догадаться.</p>
+<p>- Ага. Каждый раз, когда Java-машина загружает в память новый класс, она создает объект типа Class, посредством которого можно получить некоторую информацию о загруженном классе.</p>
+<p>К каждому классу и объекту привязан такой «<b>объект класса</b>».</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Пример</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>Class clazz = Integer.class;</b>
+</td>
+<td class="wide-text">Получение «объект класса» у класса Integer.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>Class clazz = int.class;</b>
+</td>
+<td class="wide-text">Получение «объект класса» у класса int.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>Class clazz = "123".getClass();</b>
+</td>
+<td class="wide-text">Получение «объект класса» у объекта типа String.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>Class clazz = new Object().getClass();</b>
+</td>
+<td class="wide-text">Получение «объект класса» у объекта типа Object.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ух ты, как интересно.</p>
+<p class="amigo">А почему ты пишешь clazz, а не class?</p>
+<p>- А ты помнишь, что слово <b>class</b> – это ключевое слово в Java и использовать его для именования переменных нельзя?</p>
+<p class="amigo">- Да, я это знаю, знаю. Только забыл.</p>
+<p>- Ты где-нибудь уже использовал объект Class?</p>
+<p class="amigo">- Да, мы использовали его, когда писали свою реализацию метода equals.</p>
+<p>- Да, можно сравнить – одинаковые ли у объектов классы, если воспользоваться методом getClass().</p>
+<p class="amigo">- А что можно делать с этим объектом?</p>
+<p>- Ну, много чего:</p>
+<table class="table_example">
+<tbody><tr><th width="60%">Код</th><th width="40%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>Class</b> s = int.class;<br/>
+String name = s.getName();
+    </td>
+<td class="wide-text">Получить имя класса.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>Class</b> s = <b>Class</b>.forName("java.lang.String");
+    </td>
+<td class="wide-text">Получить класс по имени.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Object o1 = String.valueOf(1);<br/>
+Object o2 = 123 + "T";<br/>
+o1.getClass() == o2.getClass();
+    </td>
+<td class="wide-text">Сравнить классы у объектов.
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Интересно, но не так круто, как я думал.</p>
+<p>- Хочешь, чтобы было круто? Есть еще <b>Reflection</b>. <b>Reflection</b> – это очень круто.</p>
+<p class="amigo">- А что такое <b>Reflection</b>?</p>
+<p>- <b>Reflection</b> – это способность класса получить информацию о самом себе. В Java есть специальные классы: <b>Field</b> – поле, <b>Method</b> – метод, по аналогии с <b>Class</b> для классов. Т.к. объект типа <b>Class</b> дает возможность получить информацию о классе, то объект типа Field–получить информацию о «поле класса», а Method–о «методе класса». И вот что с ними можно делать:</p>
+<table class="table_example">
+<tbody><tr><th width="60%">Код</th><th width="40%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>Class</b>[] interfaces = List.<b>class</b>.getInterfaces();</span>
+</td>
+<td class="wide-text">Получаем список «объектов класса»  для интерфейсов класса List
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>Class</b> parent = String.<b>class</b>.getSuperclass();</span>
+</td>
+<td class="wide-text">Получаем «объект класса» родительского класса для класса String
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">Method[] methods = List.<b>class</b>.getMethods();</span>
+</td>
+<td class="wide-text">Получаем список методов, которые есть у класса List
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">String s = String.<b>class</b>.newInstance();</span>
+</td>
+<td class="wide-text">Создаем новый объект класса String
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">String s = String.<b>class</b>.newInstance();<br/>
+Method  m = String.<b>class</b>.getMethod("length");<br/>
+int length = (int) m.invoke(s)
+</span>
+</td>
+<td class="wide-text">Получаем метод length у класса String, вызываем его у строки s
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Вау! Вот это реально круто! </p>
+<p>- Рад, что тебе понравилось.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>12. Учимся гуглить. Я показываю, как я ищу решение определенной задачи</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Я могу научить тебя тому, что лучше всего умею – как делать меньше ненужной работы.</p>
+<p class="amigo">- Гм. Начало интересное.</p>
+<p>- Запомни, всего знать невозможно. Да и не нужно. Но если ты можешь быстро найти нужную тебе информацию, то ты на коне.</p>
+<p>Java развивается так быстро, потому что Java-программисты пользуются результатом работы друг друга. В интернете есть миллионы библиотек кода на java, который хорошо написан, отлажен,  задокументирован и свободен от лицензий. Пользуйся этим.</p>
+<p>В интернете есть сотни сайтов для программистов, где более опытные программисты помогают менее опытным и новичкам. Пользуйся этим.</p>
+<p>Все, что ты хочешь написать, кто-то уже когда-то написал. Ну, может не все, но процентов 90-95 точно.</p>
+<p class="amigo">- Ничего себе.</p>
+<p>- Я хочу, чтобы ты крепко запомнил две вещи:</p>
+<p><b>1. Программирование появилось более 50 лет назад. Языку Java скоро 20 лет.</b></p>
+<p><b>99% кода, который тебе нужен, уже написан.</b></p>
+<p><b>2. Прежде, чем что-то писать с нуля, поищи в интернете – скорее всего кому-то это понадобилось раньше, и проблема уже решена.</b></p>
+<p>Поэтому мы будем учиться гуглить – искать в интернете.  Гуглить – это от слова Google.</p>
+<p>Яндекс тоже хорош, но только для рунета. Программирование же активно развивается в первую очередь на западе, так что Google – наше все.</p>
+<p>Я буду давать тебе задания – найти что-то в гугле, а ты должен будешь учиться это искать.</p>
+<p>Но в этот раз начнем просто с примеров.</p>
+<table class="table_example">
+<tbody><tr><th width="30%">Что хотим найти</th><th width="30%">Запрос в Google</th><th width="30%">Примечание</th></tr>
+<tr>
+<td class="wide-text">Как в Java проверить, есть файл или нет?
+    </td>
+<td class="wide-text">java file exists
+    </td>
+<td class="wide-text">По первой же ссылке находим ответ.
+    </td>
+</tr>
+<tr>
+<td colspan="3"><b>Найденный ответ:</b></td>
+</tr>
+<tr>
+<td class="monospace_text" colspan="3">File f = new File(filePathString);<br/>
+<b>if</b>(f.exists()) <br/>
+{ /* do something */ }
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Как в java скачать файл из интернета?
+    </td>
+<td class="wide-text">java file download
+    </td>
+<td class="wide-text">По первой же ссылке находим пример.
+    </td>
+</tr>
+<tr>
+<td colspan="3"><b>Найденный ответ:</b></td>
+</tr>
+<tr>
+<td class="monospace_text" colspan="3">URL website = new URL("http://www.website.com/information.asp");<br/>
+ReadableByteChannel rbc = Channels.newChannel(website.openStream());<br/>
+FileOutputStream fos = new FileOutputStream("information.html");<br/>
+fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Сколько будет $100 в рублях?
+    </td>
+<td class="wide-text">100 dollar in RUB
+    </td>
+<td class="wide-text">Для ответа даже не нужно переходить по ссылке!
+    </td>
+</tr>
+<tr>
+<td colspan="3"><b>Найденный ответ:</b></td>
+</tr>
+<tr>
+<td class="wide-text" colspan="3">3 270.21812 российских рубля
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Как узнать, какая именно версия JDK установлена?
+    </td>
+<td class="wide-text">how to get jdk version
+    </td>
+<td class="wide-text">Вторая ссылка.
+    </td>
+</tr>
+<tr>
+<td colspan="3"><b>Найденный ответ:</b></td>
+</tr>
+<tr>
+<td class="monospace_text" colspan="3">C:\<b>&gt;</b>java <span class="violet_text">-version</span><br/>
+java version <span class="red_text">"1.6.0_18"</span><br/>
+Java<span class="violet_text"><b>(</b></span>TM<span class="violet_text"><b>)</b></span> SE Runtime Environment <span class="violet_text"><b>(</b></span>build 1.6.0_18-b07<span class="violet_text"><b>)</b></span><br/>
+Java HotSpot<span class="violet_text"><b>(</b></span>TM<span class="violet_text"><b>)</b></span> Client VM <span class="violet_text"><b>(</b></span>build 16.0-b13, mixed mode, sharing<span class="violet_text"><b>)</b></span>
+</td>
+</tr>
+</tbody></table>
+<p>Не ленись. Зайди в Google, вбей указанные запросы и найди ответы.</p>
+<p>Мы учимся за секунды искать ответы, которые экономят нам часы, а иногда и недели. Бывает и так.</p>
+<p class="amigo">- Ого. Обещаю не лениться.</p>
+<p>- Опытный разработчик может найти в интернете готовый ответ или подсказку на 99.99% всех возникающих проблем.</p>
+<p class="amigo">- Ничего себе! Буду всегда внимательно тебя слушать!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>13. Профессор дает доп. материал</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/21/image-ru-21-02.png"/>
+<p>- Привет, Амиго! Вот ссылка на дополнительный материал по сегодняшнему уровню.</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-21.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>14. Хулио</h2>
+</div>
+<p>- Привет, Амиго!.</p>
+<p>Я вот что придумал. Когда я пересплю со страшненькой, чтобы перед собой не было так стыдно, называю это "сексуальная благотворительность".</p>
+<p class="amigo">- Да ты, я посмотрю, меценат....</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-21.gif" preload="none" tabindex="0" taskkey="level21,lesson14,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-21.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=ecmUHC9vDwM" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>15. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Чуть не забыл. Вот тебе несколько вопросов к собеседованию, рассмотренных в текущем уровне:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Перечислите методы класса Object
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Зачем нужны методы equals &amp; hashCode?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Что будет, если переопределить equals, но не переопределить hashCode?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Зачем нужны методы wait, notify, notifyAll?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Как правильно клонировать объект?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Зачем нужен метод finalize() и как он работает?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">В чем отличие final, finally, finalize?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Что такое try-with-resources?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Чем отличаются методы wait(1000) и sleep(1000)?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">В чем отличие i++ и ++i ?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>16. Большая задача</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/21/image-ru-21-01.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Здравия желаю, Капитан Бобров!</p>
+<p>- Теперь будем учиться писать большие проекты. В связи с этим, появился новый тип заданий – "большая задача".  Это одна большая задача, разбитая на много маленьких. Решая очередную "маленькую задачу" ты будешь дописывать новый код к нынешнему коду, а не писать что-то с нуля. Будущее федерации в твоих руках.</p>
+<p class="amigo">- Есть, сэр!</p>
+<p>- Цель первых пяти "больших задач" научиться писать большие и сложные проекты.  Сначала описание "маленьких задач" довольно детальное, иногда даже чересчур. Затем оно будет становиться все более общим, а размер задач расти. Сначала будут небольшие кусочки "моего" кода. Потом большие. И наконец  – целые фреймворки (библиотеки).</p>
+<p class="amigo">- Я готов, сэр!</p>
+<p>- Я постарался сделать описание задач максимально однозначным. Но если что-то не получается:</p>
+<p><b>а)</b> подумай, как еще можно понять условие. Возможно, не все так однозначно, как хотелось бы.</p>
+<p><b>б)</b> попробуй решить несколькими разными способами.</p>
+<p><b>в)</b> попроси помощи/напиши нам - это же новые задачи и мы с радостью их "отполируем".</p>
+<p>Вот тебе первое задание:</p>
+<p><b>Сегодня мы напишем небольшую игру под названием "Ипподром".</b></p>
+<p>Когда я говорю мы – я имею в виду тебя. Я же буду работать наставником.</p>
+<p class="amigo">- А где же условие?</p>
+<p>- Какое условие, рядовой? Ты что, до сих пор в учебке? Это же секретная военная программа. Запускай Intellij IDEA – там будет первая часть этого задания. Каждое следующее задание будет доступно только после того, как ты успешно выполнишь предыдущее.Приступай немедленно.</p>
+<p class="amigo">- Есть, приступать немедленно!</p>
+<p>- И помни, если ты запутался в своих решениях, у тебя есть возможность начать решать большие задачи заново. Нажми правой кнопкой мыши на большой задаче в списке задач плагина, и ты увидишь контекстное меню с разными опциями.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

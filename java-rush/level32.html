@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:0px;margin-right: 0px;   background: url(images/profile/web-bender-32.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 250px;margin-left: -500px;">
+                    Уровень 32
+                </div>
+</div>
+</div>
+<br/>
+<!--<div class="line"></div>-->
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>1. RandomAccessFile  и т.д.</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Билаабо! Как жизнь?</p>
+<p>- Отлично. Вчера выводил паразитов, но пока не очень-то получается. А потом опять пришлось ночевать в мусорном баке.</p>
+<p class="amigo">- Т.е. все по-прежнему отлично?</p>
+<p>- Можно и так сказать.</p>
+<p class="amigo">- Гуд. А что у нас будет сегодня?</p>
+<p>- Сегодня я тебе расскажу про класс <b>RandomAccessFile</b>.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/32/image-ru-32-03.png"/>
+<p>Дело в том, что FileInputStream и FileOutputStream представляют файлы в виде потоков: читать из них и писать в них можно только последовательно.</p>
+<p>Это не всегда очень-то удобно.  Иногда тебе нужно записать пару строк в середину файла, или прочитать пару страниц текста в конце многомегабайтного файла. Читать для этого весь файл не очень эффективно.</p>
+<p>Для решения этой проблемы был создан класс <b>RandomAccessFile</b>. С его помощью можно писать в любое место файла, читать из него, а также писать и читать файл одновременно.</p>
+<p class="amigo">- Как интересно.</p>
+<p>- Ага. Очень удобно на самом деле.</p>
+<p class="amigo">- А как читать из произвольного места?</p>
+<p>- Все довольно просто. Представь, что у тебя открыт текстовый редактор «блокнот». В нем есть курсор. Когда ты что-то печатаешь, текст добавляется в том месте, где он стоит. С чтением файла то же самое. Чтение происходит в том месте, где стоит «курсор». При чтении/записи он сам автоматически сдвигается.</p>
+<p>Давай, я лучше покажу тебе пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Чтение файла:</th></tr>
+<tr>
+<td class="monospace_text"><span class="grey_text">//r- read, файл открыт только для чтения</span><br/>
+RandomAccessFile <span class="red_text">raf</span> = <b>new</b> RandomAccessFile<b>(<span class="green_text">"input.txt"</span>, <span class="green_text">"r"</span>);</b> <br/><br/>
+<span class="grey_text">//перемещаем «курсор» на 100-й символ.</span><br/>
+<span class="red_text">raf</span>.<span class="green_text">seek</span><b>(100);</b><br/><br/>
+<span class="grey_text">//читаем строку, начиная с текущего положения курсора и до конца строки</span><br/>
+<b>String text</b> = <span class="red_text">raf</span>.<span class="dblue_text">readLine</span><b>();</b><br/><br/>
+<span class="grey_text">//закрываем файл</span><br/>
+<span class="red_text">raf</span>.close();
+    </td>
+</tr>
+</tbody></table>
+<p>В этом примере я хотел бы обратить твое внимание на две вещи:</p>
+<p>Во-первых, создание объекта <b>RandomAccessFile</b>. Вторым параметром идет буква <span class="green_text"><b>r</b></span>. Это означает, что файл открыт для чтения (<span class="green_text"><b>r</b>- read</span>). Если ты хочешь открыть файл для чтения и записи, в конструктор надо передать <span class="green_text">“rw”</span> вместо <span class="green_text">“r”</span>.</p>
+<p>Во-вторых, обрати внимание на метод <span class="green_text"><b>seek</b></span>. С помощью этого метода можно прыгать по файлу и менять позицию курсора для текущей операции чтения/записи. Сразу при открытии файла «курсор» устанавливается на 0-й байт. Или точнее – перед нулевым байтом.</p>
+<p class="amigo">- Правильно ли я понял, что мы открыли файл, и курсор был в его самом начале – на позиции 0. Затем мы вызвали <span class="green_text"><b>seek</b></span> и он переместился на 100-й байт. А когда вызвали <span class="dblue_text"><b>readLine</b></span>, то чтение уже было начиная с сотого байта. Так?</p>
+<p>- Да. Только хочу обратить твое внимание на то, что метод seek позволяет произвольно прыгать по файлу. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Чтение файла:</th></tr>
+<tr>
+<td class="monospace_text"><span class="grey_text">//r- read, файл открыт только для чтения</span><br/>
+RandomAccessFile <span class="red_text">raf</span> = <b>new</b> RandomAccessFile<b>(<span class="green_text">"input.txt"</span>, <span class="green_text">"r"</span>);</b> <br/>
+<span class="grey_text">// «курсор» стоит на 0-м символе.</span><br/>
+<b>String text1</b> = <span class="red_text">raf</span>.<span class="green_text">readLine</span><b>();</b><br/><br/>
+<span class="grey_text">//перемещаем «курсор» на 100-й символ.</span><br/>
+<span class="red_text">raf</span>.<span class="blue_text">seek</span><b>(100);</b><br/>
+<b>String text2</b> = <span class="red_text">raf</span>.<span class="green_text">readLine</span><b>();</b><br/><br/>
+<span class="grey_text">//перемещаем «курсор» на 0-й символ.</span><br/>
+<span class="red_text">raf</span>.<span class="blue_text">seek</span><b>(0);</b><br/>
+<b>String text3</b> = <span class="red_text">raf</span>.<span class="green_text">readLine</span><b>();</b><br/><br/>
+<span class="grey_text">//закрываем файл</span><br/>
+<span class="red_text">raf</span>.close();
+    </td>
+</tr>
+</tbody></table>
+<p>В данном примере мы вначале прочитали строку, начиная с 0-го байта. Затем прыгнули на сотый байт и прочитали строку там. Затем снова прыгнули на 0-й байт и прочитали строку. Т.е. text1 и text3 – это идентичные строки.</p>
+<p class="amigo">- Ага. Ситуация начинает проясняться.</p>
+<p>- Отлично. Тогда вот тебе еще один пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Чтение файла:</th></tr>
+<tr>
+<td class="monospace_text"><span class="grey_text">//rw- read/write, файл открыт и для чтения и для записи</span><br/>
+RandomAccessFile <span class="red_text">raf</span> = new RandomAccessFile<b>(<span class="green_text">"seek.txt"</span>, <span class="green_text">"rw"</span>);</b><br/><br/>
+<span class="grey_text">//пишем в файл строку, начиная с 0-го байта</span><br/>
+<span class="red_text">raf</span>.<span class="green_text">writeBytes</span><b>(<span class="orange_text">"It is a string"</span>);</b><br/><br/>
+<span class="grey_text">//ставим курсор на 8-й символ</span><br/>
+<span class="red_text">raf</span>.<span class="blue_text">seek</span><b>(8);</b><br/>
+<span class="grey_text">//печатаем в файл строку surprise!</span><br/>
+<span class="red_text">raf</span>.<span class="green_text">writeBytes</span><b>(<span class="orange_text">"surprise!"</span>);</b><br/><br/>
+<span class="grey_text">//закрываем файл</span><br/>
+<span class="red_text">raf</span>.close<b>();</b>
+</td>
+</tr>
+</tbody></table>
+<p>Тут мы открываем файл для чтения и записи – в конструктор передаем «<span class="green_text">rw</span>» (<span class="green_text">read</span>/<span class="green_text">write</span>).</p>
+<p>Затем пишем в файл строку «<span class="orange_text">It is a string</span>».</p>
+<p>Затем переставляем курсор на 8-й байт (как раз на начало слова string)</p>
+<p>Затем пишем в файл строку «<span class="orange_text">surprise!</span>»</p>
+<p>В результате файл будет содержать «<span class="orange_text">It is a surprise!</span>»</p>
+<p class="amigo">- Т.е. байты не вставляются в середину файла, а заменяют те, которые там были?</p>
+<p>- Ага.</p>
+<p class="amigo">- А если мы установим курсор в самый конец файла?</p>
+<p>- Тогда байты будут писаться в конец, а файл – удлиняться. Т.е. практически то же самое, когда ты пишешь текст в текстовом редакторе.</p>
+<p class="amigo">- Гм. Вроде все понятно. А можно полный список методов  класса <b>RandomAccessFile</b>?</p>
+<p>- Конечно. Держи:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">int <b>read</b>()
+    </td>
+<td class="wide-text">Читает один байт и возвращает его
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>read</b>(byte b[], int off, int len)
+    </td>
+<td class="wide-text">Читает массив байт
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>read</b>(byte b[])
+    </td>
+<td class="wide-text">Читает массив байт
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>readFully</b>(byte b[])
+    </td>
+<td class="wide-text">Читает массив байт, ждет, пока добавятся новые байты, если их не хватает для заполнения массива
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>skipBytes</b>(int n)
+    </td>
+<td class="wide-text">Пропускает n байт. Т.е. перемещает курсор на n байт вперед.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>write</b>(int b)
+    </td>
+<td class="wide-text">Пишет один байт в то место, где стоит курсор
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>write</b>(byte b[])
+    </td>
+<td class="wide-text">Пишет массив байт в то место, где стоит курсор
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>write</b>(byte b[], int off, int len)
+    </td>
+<td class="wide-text">Пишет массив байт в то место, где стоит курсор
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">long <b>getFilePointer</b>()
+    </td>
+<td class="wide-text">Возвращает номер байта, на который указывает «курсор». Может быть от 0 до «длины файла»
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>seek</b>(long pos)
+    </td>
+<td class="wide-text">Перемещает «курсор», используемый для чтения/записи, в указанное место
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">long <b>length</b>()
+    </td>
+<td class="wide-text">Возвращает длину файла
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>setLength</b>(long newLength)
+    </td>
+<td class="wide-text">Устанавливает новую длину файла. Если файл был больше – он обрезается, если меньше – расширяется и новое место заполняется нулями
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>close</b>()
+    </td>
+<td class="wide-text">Закрывает файл
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">boolean <b>readBoolean</b>()
+    </td>
+<td class="wide-text">Читает boolean с текущей позиции курсора в файле
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">byte <b>readByte</b>()
+    </td>
+<td class="wide-text">Читает byte с текущей позиции курсора в файле
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">char <b>readChar</b>()
+    </td>
+<td class="wide-text">Читает char с текущей позиции курсора в файле
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int <b>readInt</b>() 
+    </td>
+<td class="wide-text">Читает int с текущей позиции курсора в файле
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">long <b>readLong</b>()
+    </td>
+<td class="wide-text">Читает long с текущей позиции курсора в файле
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">float <b>readFloat</b>()
+    </td>
+<td class="wide-text">Читает float с текущей позиции курсора в файле
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">double <b>readDouble</b>()
+    </td>
+<td class="wide-text">Читает double с текущей позиции курсора в файле
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">String <b>readLine</b>()
+    </td>
+<td class="wide-text">Читает строку из файла и возвращает ее
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>writeBoolean</b>(boolean v) 
+    </td>
+<td class="wide-text">Пишет boolean в файл (начиная с позиции курсора)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>writeByte</b>(int v) t
+    </td>
+<td class="wide-text">Пишет byte в файл (начиная с позиции курсора)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>writeChar</b>(int v)
+    </td>
+<td class="wide-text">Пишет char в файл (начиная с позиции курсора)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>writeInt</b>(int v)
+    </td>
+<td class="wide-text">Пишет int в файл (начиная с позиции курсора)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>writeLong</b>(long v)
+    </td>
+<td class="wide-text">Пишет long в файл (начиная с позиции курсора)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>writeFloat</b>(float v)
+    </td>
+<td class="wide-text">Пишет float в файл (начиная с позиции курсора)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>writeDouble</b>(double v) 
+    </td>
+<td class="wide-text">Пишет double в файл (начиная с позиции курсора)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>writeBytes</b>(String s)
+    </td>
+<td class="wide-text">Пишет строку в файл (начиная с позиции курсора)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void writeChars(String s)
+    </td>
+<td class="wide-text">Пишет строку в файл (начиная с позиции курсора)
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Гм. Ничего принципиально нового. Разве что пара методов seek()/getFilePointer() и length()/setLength().</p>
+<p>- Да, Амиго. Все примерно то же самое. Но ведь удобно?</p>
+<p class="amigo">- Удобно. Спасибо тебе, Билаабо, за интересную лекцию и за те примеры, что ты мне дал.</p>
+<p>- Рад помочь, друг Амиго!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>2. Задачи</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level32,lesson02,task01"></button><b>1. Запись в файл</b><br/><br/>
+                В метод <span class="taskcode">main</span> приходят три параметра:<br/>
+		1) <span class="taskcode">fileName</span> - путь к файлу<br/>
+		2) <span class="taskcode">number</span> - число, позиция в файле<br/>
+		3) <span class="taskcode">text</span> - текст<br/>
+		Записать <span class="taskcode">text</span> в файл <span class="taskcode">fileName</span> начиная с позиции <span class="taskcode">number</span>.<br/>
+		Если файл слишком короткий, то записать в конец файла.
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. StringReader, StringWriter</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Элли!</p>
+<p>- Сегодня я хочу тебе рассказать про классы <b>StringReader</b> и <b>StringWriter</b>. Принципиально нового тут для тебя будет мало, но иногда эти классы бывают очень полезны. И, как минимум, я хочу, чтобы ты знал, что они есть.</p>
+<p>Эти классы – это простейшие реализации абстрактных классов Reader и Writer. И практически аналоги FileReader и FileWriter. Но, в отличие от них, они работают не с данными в файле на диске, а со строкой (String) находящейся в памяти Java-машины.</p>
+<p class="amigo">- А зачем нужные такие классы?</p>
+<p>- Иногда нужны. <b>StringReader</b> – это, фактически, переходник между классом <b>String</b> и <b>Reader</b>. А <b>StringWriter</b> – это строка, которая унаследована от <b>Writer</b>. М-да. Сама вижу, что объяснение не очень. Давай лучше для начала рассмотрим пару примеров.</p>
+<p>Например, ты хочешь проверить, как работает твой метод, который должен вычитывать данные из переданного в него объекта Reader. Вот как это можно сделать:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Чтение из объекта reader:</th></tr>
+<tr>
+<td class="monospace_text"><b>public static</b> void <b>main (String[] args)</b> throws <b>Exception</b><br/>
+    {<br/>
+         String <span class="blue_text">test</span> = <span class="green_text"><b>"Hi!\n My name is Richard\n I'm a photographer\n"</b></span>;<br/><br/>
+
+ <span class="grey_text">//это строчка – ключевая: мы «превратили» строку в Reader</span><br/>
+ StringReader <span class="red_text">reader</span> = <b>new</b> StringReader(<span class="blue_text">test</span>);<br/><br/>
+
+ <b><span class="violet_text">executor</span>(<span class="red_text">reader</span>);</b><br/>
+    }    <br/><br/>
+<b>public static</b> void <span class="violet_text"><b>executor</b></span>(Reader <span class="red_text"><b>reader</b></span>) throws <b>Exception</b><br/>
+    {<br/>
+ <span class="violet_text"><b>BufferedReader</b> br</span> = <b>new <span class="violet_text">BufferedReader</span>(reader);</b><br/>
+ <b>while (</b><span class="violet_text">br</span>.ready<b>())</b><br/>
+         {<br/>
+              <b>String</b> <span class="dblue_text">line</span> = <span class="violet_text">br</span>.readLine<b>();</b><br/>
+              <b>System.out</b>.println<b>(</b><span class="dblue_text">line</span><b>);</b><br/>
+         }<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Т.е. мы просто взяли строку, обернули ее в <b>StringReader</b> и передали вместо объекта <b>Reader</b>? И из нее все будет читаться, как и надо?</p>
+<p>- Ага. Гм. А в этом есть смысл. А теперь проверим, как работают методы <b>StringWriter</b>. Для этого усложним пример. Теперь он будет не просто читать строки, и выводить их на экран, а разворачивать их задом наперед и выводить в объект <b>writer</b>. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Чтение из объекта reader и запись в объект writer:</th></tr>
+<tr>
+<td class="monospace_text"><b>public static void main (String[] args) throws Exception</b><br/>
+{<br/>
+         <span class="grey_text">//эту строку должен будет прочитать Reader</span><br/>
+ String <span class="blue_text">test</span> = <span class="green_text"><b>"Hi!\n My name is Richard\n I'm a photographer\n"</b></span>;<br/>
+         <span class="grey_text">//заворачиваем строку в StringReader</span><br/>
+         StringReader <span class="red_text">reader</span> = new StringReader<b>(<span class="blue_text">test</span>);</b><br/><br/>
+
+         <span class="grey_text">//Создаем объект StringWriter</span><br/>
+         StringWriter <span class="green_text">writer</span> = new StringWriter<b>();</b><br/><br/>
+
+ <span class="grey_text">//переписываем строки из Reader во Writer, предварительно развернув их</span><br/>
+ <b><span class="violet_text">executor</span>(</b><span class="red_text">reader</span>, <span class="green_text">writer</span><b>);</b><br/><br/>
+
+         <span class="grey_text">//получаем текст, который был записан во Writer</span><br/>
+ <b>String</b> result = <span class="green_text">writer</span>.<span class="dred_text">toString</span><b>();</b><br/><br/>
+
+         <span class="grey_text">//выводем полученный из Writer’а текст на экран</span><br/>
+ <b>System.out.println("Результат: "</b>+result);<br/>
+    }<br/><br/>
+<b>public static void <span class="violet_text">executor</span>(</b>Reader <span class="red_text">reader</span>, Writer <span class="green_text">writer</span><b>) throws Exception</b><br/>
+    {<br/>
+ <span class="violet_text"><b>BufferedReader</b></span> <span class="orange_text">br</span> = <b>new <span class="violet_text">BufferedReader</span>(</b><span class="red_text">reader</span><b>);</b><br/>
+ <b>while (</b><span class="orange_text">br</span>.ready<b>())</b><br/>
+         {<br/>
+          <span class="grey_text">//читаем строку из Reader’а</span><br/>
+              <b>String <span class="orange_text">line</span></b> = <span class="orange_text">br</span>.readLine<b>();</b><br/><br/>
+
+              <span class="grey_text">//разворачиваем строку задом наперед</span><br/>
+  <span class="violet_text"><b>StringBuilder</b> sb</span> = <b>new <span class="violet_text">StringBuilder</span>(<span class="orange_text">line</span>);</b><br/>
+              <b>String <span class="orange_text">newLine</span></b> = <span class="violet_text">sb</span>.<span class="violet_text">reverse</span><b>()</b>.toString<b>();</b><br/><br/>
+
+              <span class="grey_text">//пишем строку в Writer</span><br/>
+  <span class="green_text">writer</span>.write<b>(<span class="orange_text">newLine</span>);</b><br/>
+         }<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p>Мы создали объект <b>StringWriter</b>, внутри которого есть строка, в которой хранится все, что в этот <b>writer</b> пишут. А чтобы ее получить, надо всего лишь вызвать метод <span class="dred_text"><b>toString</b></span>().</p>
+<p class="amigo">- Гм. Как-то все слишком просто получается. Метод <span class="violet_text">executor</span> работает с объектами потокового ввода <span class="red_text"><b>reader</b></span> и <span class="green_text"><b>writer</b></span>, а в методе <b>main</b> мы работаем уже со строками.</p>
+<p class="amigo">Все действительно так просто? </p>
+<p>- Ага. Чтобы преобразовать строку в <b>Reader</b> достаточно написать:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Создание Reader из String</th></tr>
+<tr>
+<td class="monospace_text">String <span class="red_text">s</span> = <span class="green_text"><b>"data"</b></span>;<br/>
+    Reader <span class="violet_text"><b>reader</b></span> = <b>new</b> StringReader<b>(<span class="red_text">s</span>);</b>
+</td>
+</tr>
+</tbody></table>
+<p>А преобразовать <b>StringWriter</b> к строке еще проще:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Получение String из Writer</th></tr>
+<tr>
+<td class="monospace_text">Writer <span class="red_text"><b>writer</b></span> = new StringWriter();<br/>
+<span class="grey_text">/*тут пишем кучу данных во writer */</span><br/>
+    String <span class="orange_text"><b>result</b></span> = <span class="red_text"><b>writer</b></span>.<span class="dred_text">toString</span>();
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Отличные классы, как по мне. Спасибо за рассказ, Элли.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level32,lesson04,task01"></button><b>1. Пишем стек-трейс</b><br/><br/>
+                Реализуйте логику метода <span class="taskcode">getStackTrace</span>, который в виде одной строки должен возвращать весь стек-трейс переданного исключения.<br/>
+		Используйте подходящий метод класса <span class="taskcode">Throwable</span>, который поможет записать стек-трейс в <span class="taskcode">StringWriter</span>.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Читаем из потока</b><br/><br/>
+                Реализуйте логику метода <span class="taskcode">getAllDataFromInputStream</span>. Он должен вернуть <span class="taskcode">StringWriter</span>, содержащий все данные из переданного потока.<br/>
+		Возвращаемый объект ни при каких условиях не должен быть <span class="taskcode">null</span>.<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>5. BufferedReader, BufferedWriter</h2>
+</div>
+<p>- И это снова я.</p>
+<p class="amigo">- Привет, Элли!</p>
+<p>- Сегодня я хочу тебе подробно рассказать про <b>BufferedReader</b> и <b>BufferedWriter</b>.</p>
+<p class="amigo">- Так ты мне уже рассказывала все про них. Ну ничего там сложного нет.</p>
+<p>- Ок. Расскажи, как работает <b>BufferedReader</b>.</p>
+<p class="amigo">- <b>BufferedReader</b> -  это как переходник в розетке с 110 к 220 вольт.</p>
+<p class="amigo">В конструктор объекта <b>BufferedReader</b> обязательно нужно передать объект <b>Reader</b>, из которого он будет читать данные. Объект <b>BufferedReader</b> читает из <b>Reader</b>’а данные большими кусками и хранит их у себя внутри в буфере. Поэтому чтение из пары <b>BufferedReader+Reader</b> быстрее, чем прямо из <b>Reader</b>.</p>
+<p>- Верно. А <b>BufferedWriter</b>?</p>
+<p class="amigo">- Тут тоже все просто. Когда мы пишем в <b>FileWriter</b>, например, то данные сразу записываются на диск. Если мы часто пишем небольшие данные, то происходит много обращений к диску, что замедляет работу программы. А если мы используем <b>BufferedWriter</b> в качестве «переходника», то операция записи на диск ускорится. <b>BufferedWriter</b>, при записи в него, сохраняет переданные данные во внутреннем буфере, а когда буфер заполняется – пишет данные во <b>Writer</b> одним большим куском. Это гораздо быстрее.</p>
+<p>- Гм. Все верно. А что ты забыл?</p>
+<p class="amigo">- После окончания записи у объекта <b>BufferedReader</b> надо вызвать метод <b>flush()</b>, чтобы он записал данные из буфера во <b>Writer</b>, которые еще не записаны, т.е. буфер не заполнен до конца.</p>
+<p>- А кроме того?</p>
+<p class="amigo">- А кроме того, пока буфер еще не записан во <b>Writer</b>, данные можно удалить и/или заменить на другие.</p>
+<p>- Амиго! Я поражена! Да ты просто эксперт. Ладно, тогда я расскажу тебе о новых классах: <b>ByteArrayStream</b>, <b>PrintStream</b>.</p>
+<p>Итак, <b>ByteArrayInputStream</b> и <b>ByteArrayOutputStream</b>.</p>
+<p>Эти классы по сути чем-то похожи на <b>StringReader</b> и <b>StringWriter</b>. Только <b>StringReader</b> читал символы (<b>char</b>) из строки (<b>String</b>), а <b>InputStream</b> читает байты из массива байт (<b>ByteArray</b>).</p>
+<p><b>StringWriter</b> писал символы (<b>char</b>)  в строку, а <b>ByteArrayOutputStream</b> пишет байты в массив байт у него внутри.  При записи в <b>StringWriter</b> строка внутри него удлинялась, а при записи в <b>ByteArrayOutputStream</b> его внутренний массив байт тоже динамически расширяется.</p>
+<p>Вспомни пример, который давали тебе на прошлой лекции:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Чтение из объекта reader и запись в объект writer:</th></tr>
+<tr>
+<td class="monospace_text"><b>public static void main (String[] args) throws Exception</b><br/>
+    {<br/>
+         String <span class="blue_text">test</span> = <span class="green_text">"Hi!\n My name is Richard\n I'm a photographer\n"</span>;<br/>
+         StringReader <span class="red_text">reader</span> = new StringReader<b>(</b><span class="blue_text"><b>test</b></span><b>);</b><br/><br/>
+
+         StringWriter <span class="green_text">writer</span> = new StringWriter<b>();</b><br/><br/>
+
+         <b>executor(</b><span class="red_text">reader</span>, <span class="green_text">writer</span><b>);</b><br/><br/>
+
+         <b>String</b> result = <span class="green_text">writer</span>.toString<b>();</b><br/><br/>
+
+         <b>System.out.println("Результат: "</b>+result<b>);</b><br/>
+    }<br/><br/>
+<b>public static void <span class="violet_text">executor</span>(</b>Reader <span class="red_text">reader</span>, Writer <span class="green_text">writer</span><b>) throws Exception</b><br/>
+    {<br/>
+         <b>BufferedReader</b> <span class="orange_text">br</span> = <b>new BufferedReader(reader);</b><br/>
+         <b>while (</b><span class="orange_text">br</span>.ready<b>())</b><br/>
+         {<br/>
+              <b>String line</b> = <span class="orange_text">br</span>.readLine<b>();</b><br/><br/>
+
+              <b>StringBuilder sb = new StringBuilder(line);<br/>
+              String newLine = sb.reverse().toString();</b><br/><br/>
+
+  <span class="green_text">writer</span>.write<b>(newLine);</b><br/>
+         }<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p>Вот как он будет выглядеть, если тут работать не с символами, а с байтами:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Чтение из объекта InputStream и запись в объект OutputStream:</th></tr>
+<tr>
+<td class="monospace_text"><b>public static</b> void main (String[] args) throws Exception<br/>
+{<br/>
+         String <span class="dblue_text"><b>test</b></span> = <span class="green_text">"Hi!\n My name is Richard\n I'm a photographer\n"</span>;<br/>
+         InputStream <span class="red_text">inputStream</span> = new <b>ByteArrayInputStream</b>(<span class="dblue_text"><b>test</b></span>.<b>getBytes</b>());<br/><br/>
+
+ <b>ByteArrayOutputStream</b> <span class="green_text">outputStream</span> = new <b>ByteArrayOutputStream</b>();<br/><br/>
+
+ <span class="violet_text">executor</span>(<span class="red_text">inputStream</span>, <span class="green_text">outputStream</span>);<br/><br/>
+
+         String result = <b>new String</b>(<span class="green_text">outputStream</span>.<span class="orange_text"><b>toByteArray</b></span>());<br/>
+         System.out.println("Результат: "+result);<br/>
+    }<br/><br/>
+<b>public static</b> void <span class="violet_text">executor</span>(InputStream <span class="red_text">inputStream</span>, OutputStream <span class="green_text">outputStream</span>) <br/>
+    {<br/>
+ <b>BufferedInputStream</b> <span class="orange_text">bis</span> = new <b>BufferedInputStream</b>(<span class="red_text">inputStream</span>);<br/>
+         <b>while</b> (<span class="orange_text">bis</span>.<b>available</b>() &gt; 0)<br/>
+         {<br/>
+              int data = <span class="orange_text">bis</span>.<b>read</b>();<br/>
+  <span class="green_text">outputStream</span>.<b>write</b>(data);<br/>
+         }<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p>Тут все аналогично примеру выше. Вместо String – ByteArray. Вместо Reader – InputStream, вместо Writer – OutputStream.</p>
+<p>Единственные еще два момента – это преобразование строки в массив байт и обратно. Как ты видишь, это делается довольно несложно:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Преобразование строки в массив байт и обратно</th></tr>
+<tr>
+<td class="monospace_text"><b>public static void</b> main (String[] args) <b>throws</b> Exception<br/>
+    {<br/>
+         String <span class="dblue_text"><b>test</b></span> = <span class="green_text">"Hi!\n My name is Richard\n I'm a photographer\n"</span>;<br/>
+ byte[] <span class="red_text"><b>array</b></span> = <b><span class="dblue_text">test</span>.<span class="green_text">getBytes</span></b>();<br/><br/>
+
+         String <span class="dblue_text">result</span> = <span class="green_text"><b>new String</b></span>(<span class="red_text"><b>array</b></span>);<br/>
+         System.out.<b>println</b>(<span class="green_text">"Результат: "</span>+<span class="dblue_text">result</span>);<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p>Чтобы получить байты, которые уже добавлены в ByteArrayInputStream, надо вызвать метод <span class="orange_text"><b>toByteArray</b></span>().</p>
+<p class="amigo">- Ага. Аналогия с StringReader/StringWriter довольно сильная, особенно когда ты мне ее показала. Спасибо, Элли, действительно интересный урок.</p>
+<p>- Куда это ты спешишь? У меня есть еще небольшой  подарок – хочу рассказать тебе про класс PrintStream.</p>
+<p class="amigo">- PrintStream? В первый раз слышу о таком классе.</p>
+<p>- Ага. Особенно, если не считать, что ты им пользуешься с первого дня, когда ты начал изучать Java. Помнишь  <b>System.out</b>? так вот – <b>System.out</b> – это статическая переменная класса <b>System</b> типа… <b>PrintStream</b>! Именно оттуда растут ноги всех этих <b>print</b>, <b>println</b> и т.д.</p>
+<p class="amigo">- Ого. Как интересно. Я как-то ни разу и не задумывался. Расскажи подробнее.</p>
+<p>- Гуд. Тогда слушай. Класс PrintStream был придуман для читабельного вывода информации.  Он практически весь состоит из методов print и println. См. таблицу:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Методы</th><th width="50%">Методы</th></tr>
+<tr>
+<td class="monospace_text wide-text">void <b>print</b>(boolean b)
+    </td>
+<td class="monospace_text">void <b>println</b>(boolean b)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>print</b>(char c)
+    </td>
+<td class="monospace_text">void <b>println</b>(char c)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>print</b>(int c)
+    </td>
+<td class="monospace_text">void <b>println</b>(int c)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>print</b>(long c)
+    </td>
+<td class="monospace_text">void <b>println</b>(long c)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>print</b>(float c)
+    </td>
+<td class="monospace_text">void <b>println</b>(float c)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>print</b>(double c)
+    </td>
+<td class="monospace_text">void <b>println</b>(double c)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>print</b>(char[] c)
+    </td>
+<td class="monospace_text">void <b>println</b>(char[] c)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>print</b>(String c)
+    </td>
+<td class="monospace_text">void <b>println</b>(String c)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">void <b>print</b>(Object obj)
+    </td>
+<td class="monospace_text">void <b>println</b>(Object obj)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">
+</td>
+<td class="monospace_text">void <b>println</b>()
+    </td>
+</tr>
+<tr>
+<td class="monospace_text" colspan="2">PrintStream <b>format</b> (String format, Object ... args)
+    </td>
+</tr>
+<tr>
+<td class="monospace_text" colspan="2">PrintStream <b>format</b> (Locale l, String format, Object ... args)
+    </td>
+</tr>
+</tbody></table>
+<p>Также есть несколько методов format, чтобы можно было выводить данные на основе шаблона.  Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Преобразование строки в массив байт и обратно</th></tr>
+<tr>
+<td class="monospace_text">String name = "Kolan";<br/>
+        int age = 25;<br/>
+<b>System.out.<span class="red_text">format</span></b>(<span class="green_text">"My name is <u>%s</u>. My age is <u>%d</u>."</span>, name, age);
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Вывод на экран:</th></tr>
+<tr>
+<td class="wide-text"><span class="green_text">My name is Kolan. My age is 25.</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ага, помню, мы уже когда-то разбирали метод format у класса String.</p>
+<p>- На этом все.</p>
+<p class="amigo">- Спасибо, Элли.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задачи</h2>
+</div>
+<p>- Хе-хе, Амиго. Смотри, что я для тебя придумал:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level32,lesson06,task01"></button><b>1. Генератор паролей</b><br/><br/>
+                Реализуйте логику метода <span class="taskcode">getPassword</span>, который должен возвращать <span class="taskcode">ByteArrayOutputStream</span>, в котором будут байты пароля.<br/>
+		Требования к паролю:<br/>
+		1) 8 символов<br/>
+		2) только цифры и латинские буквы разного регистра<br/>
+		3) обязательно должны присутствовать цифры, и буквы разного регистра<br/>
+		Все сгенерированные пароли должны быть уникальные.<br/>
+		Пример правильного пароля:<br/>
+		wMh7SmNu
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>7. DinamicProxy</h2>
+</div>
+<p>- Привет, Амиго.</p>
+<p class="amigo">- Здорово, Риша.</p>
+<p>- Сегодня я расскажу тебе новую и очень интересную тему – <b>динамические прокси</b>.</p>
+<p>В Java есть несколько способов изменить функциональность нужного класса...</p>
+<p><b>Способ первый - наследование.</b></p>
+<p>Самый простой способ изменить поведение некоторого класса – это создать новый класс, унаследовать его от оригинального (базового) и переопределить его методы. Затем, вместо объектов оригинального класса использовать объекты класса наследника. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text"><b>Reader <span class="red_text">reader</span> = new <span class="violet_text">UserCustomReader</span>();</b>
+</td>
+</tr>
+</tbody></table>
+<p><b>Способ второй – использование класса-обертки(Wrapper).</b></p>
+<p>Примером такого класса есть <span class="orange_text"><b>BufferedReader</b></span>. Во-первых, он унаследован от <b>Reader</b>, т.е. может быть использован вместо него. Во-вторых, он переадресует все вызовы к оригинальному объекту <span class="red_text"><b>Reader</b>, который обязательно нужно передать в конструкторе объекту BufferedReader.</span> Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text"><b>Reader <span class="green_text">readerOriginal</span> = new <span class="violet_text">UserCustomReader</span>();<br/>
+    Reader <span class="red_text">reader</span> = new <span class="orange_text">BufferedReader</span>(<span class="green_text">readerOriginal</span>);</b>
+</td>
+</tr>
+</tbody></table>
+<p><b>Способ третий – создание динамического прокси (Proxy).</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/32/image-ru-32-02.gif"/>
+<p>В Java есть специальный класс (java.lang.reflect.Proxy), с помощью которого фактически <span class="red_text"><b>можно сконструировать объект во время исполнения программы (динамически), не создавая для него отдельного класса.</b></span></p>
+<p>Это делается очень просто:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text"><b>Reader</b> <span class="red_text">reader</span> = <b>(Reader)</b>Proxy.newProxyInstance();
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- А вот это уже что-то новенькое!</p>
+<p>- Но, нам ведь не нужен просто объект без методов. Надо чтобы у этого объекта были методы, и они делали то, что нам нужно. Для этого в Java используется специальный интерфейс <b>InvocationHandler</b>, с помощью которого <span class="red_text"><b>можно перехватывать все вызовы методов</b></span>, обращенные к proxy-объекту. proxy-объект можно создать только используя интерфейсы.</p>
+<p><span class="dblue_text"><b>Invoke</b></span> – стандартное название для метода/класса, основная задача которого просто вызвать какой-то метод.</p>
+<p><span class="dred_text"><b>Handler</b></span> – стандартное название для класса, который обрабатывает какое-то событие. Например, обработчик клика мышки будет называться MouseClickHandler, и т.д.</p>
+<p>У интерфейса <b>InvocationHandler</b> есть единственный <span class="red_text"><b>метод invoke, в который направляются все вызовы, обращенные к proxy-объекту.</b></span> Пример:</p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text"><font size="4"><span class="dred_text">Reader</span> <span class="red_text"><b>reader</b></span> = (<span class="dred_text">Reader</span>)<b>Proxy.newProxyInstance</b>(<span class="dblue_text"><b>new CustomInvocationHandler</b></span>());<br/>
+<span class="red_text">reader</span>.<span class="orange_text">close</span>();
+    </font></td>
+</tr>
+<tr>
+<td class="monospace_text"><font size="4"><b>class</b> <span class="dblue_text">CustomInvocationHandler</span> <b>implements</b> <span class="dblue_text">InvocationHandler</span><br/>
+    {<br/>
+         <b>public</b> Object <span class="dblue_text"><b>invoke</b></span>(<u>Object</u> proxy, <u>Method</u> method, <u>Object</u>[] args) <b>throws</b> <u>Throwable</u><br/>
+         {<br/>
+             <b>System.out.println</b>(<span class="green_text">"yes!"</span>);<br/>
+  <b>return</b> null;<br/>
+         }<br/>
+    }
+    </font></td>
+</tr>
+</tbody></table>
+<p>При вызове метода <span class="red_text">reader</span>.<span class="orange_text">close</span>(), вызовется метод <span class="dblue_text"><b>invoke</b></span>, и на экран будет выведена надпись <span class="green_text">“yes!”</span></p>
+<p class="amigo">- Т.е. мы объявили класс <b>CustomInvocationHandler</b>, в нем реализовали интерфейс <b>InvocationHandler</b> и его метод <b>invoke</b>. Метод <b>invoke</b> при вызове выводит на экран строку “yes!”- Затем мы создали объект типа <b>CustomInvocationHandler</b> и передали его  в метод <b>newProxyInstance</b> при создании объекта-proxy.</p>
+<p>- Да, все верно.</p>
+<p>Это очень мощный инструмент, обычно создание таких прокси используется для имитации <span class="orange_text">объектов из программ, которые физически запущены на другом компьютере.</span> Или для контроля доступа – в таком методе можно проверять права текущего пользователя, обрабатывать ошибки, логировать ошибки и многое другое.</p>
+<p>Вот пример, где метод <span class="dblue_text">invoke</span> еще и вызывает методы оригинального объекта:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text"><font size="4"><span class="green_text"><b>Reader original</b></span> = new <span class="violet_text"><b>UserCustomReader</b></span>();<br/><br/>
+<span class="dred_text">Reader</span> <span class="red_text"><b>reader</b></span> = (<span class="dred_text">Reader</span>)<b>Proxy.newProxyInstance</b>(<span class="dblue_text"><b>new CustomInvocationHandler</b>(</span><span class="green_text"><b>original</b></span><span class="dblue_text">)</span>);<br/>
+<span class="red_text">reader</span>.<span class="orange_text">close</span>();
+    </font></td>
+</tr>
+<tr>
+<td class="monospace_text"><font size="4"><b>class</b> <span class="dblue_text">CustomInvocationHandler</span> <b>implements</b> <span class="dblue_text">InvocationHandler</span><br/>
+    {<br/>
+         <b>private</b> Reader <span class="green_text">readerOriginal</span>;<br/><br/>
+
+ <span class="dblue_text">CustomInvocationHandler</span>(Reader <span class="green_text">readerOriginal</span>)<br/>
+         {<br/>
+  <b>this</b>.<span class="green_text">readerOriginal</span> = <span class="green_text">readerOriginal</span>;<br/>
+         }<br/><br/>
+
+         <span class="dblue_text"><b>public</b> Object invoke(Object proxy, <b>Method</b> method, Object[] args) throws Throwable</span><br/>
+         {<br/>
+              <b>if</b> (<b><span class="dblue_text">method</span></b>.<b>getName()</b>.equals(<span class="green_text">"close"</span>))<br/>
+              {<br/>
+   <b>System.out.println</b>(<span class="green_text">"Reader closed!"</span>);<br/>
+  }<br/><br/>
+
+              <span class="grey_text">// это вызов метода close у объекта readerOriginal</span><br/>
+              <span class="grey_text">// имя метода и описание его параметров хранится в переменной method</span><br/>
+  return <span class="dblue_text"><b>method</b></span>.<b>invoke</b>(<span class="green_text">readerOriginal</span>, args);<br/>
+  }<br/>
+    }
+    </font></td>
+</tr>
+</tbody></table>
+<p>В данном примере есть две особенности.</p>
+<p>Во-первых, в конструктор передается «оригинальный» объект <span class="green_text"><b>Reader</b></span>, ссылка на который сохраняется внутри <span class="dblue_text">CustomInvocationHandler</span>.</p>
+<p>Во-вторых, в методе <span class="dblue_text">invoke</span> мы снова вызываем этот же метод, но уже у «оригинального» объекта.</p>
+<p class="amigo">- Ага. Т.е. вот эта последняя строчка и есть вызов того же самого метода, но уже у оригинального объекта:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text">return <span class="dblue_text"><b>method</b></span>.<b>invoke</b>(<span class="green_text">readerOriginal</span>, args);
+    </td>
+</tr>
+</tbody></table>
+<p>- Ага.</p>
+<p class="amigo">- Не сказал бы, что слишком очевидно, но все же понятно. Вроде бы.</p>
+<p>- Отлично. Тогда вот еще что. В метод <b>newProxyInstance</b> нужно передавать еще немного служебной информации для создания proxy-объекта.  Но, т.к. мы не создаем монструозные прокси-объекты, то эту информацию легко получить из самого оригинального класса.</p>
+<p>Вот тебе пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text"><font size="4"><span class="green_text"><b>Reader original</b></span> = new UserCustomReader();<br/><br/>
+
+    ClassLoader <span class="orange_text">classLoader</span> = <span class="green_text">original</span>.getClass().<span class="orange_text">getClassLoader</span>();<br/>
+    Class&amp;lt?&amp;gt[] <span class="violet_text">interfaces</span> = <span class="green_text">original</span>.getClass().<span class="violet_text">getInterfaces</span>();<br/>
+<span class="dblue_text">CustomInvocationHandler <b>invocationHandler</b></span> = new <span class="dblue_text">CustomInvocationHandler</span>(<span class="green_text">original</span>);<br/><br/>
+<span class="dred_text">Reader</span> <span class="red_text"><b>reader</b></span> = (<span class="dred_text">Reader</span>)<b>Proxy.newProxyInstance</b>(<span class="orange_text">classLoader</span>, <span class="violet_text">interfaces</span>, <span class="green_text"><b>invocationHandler</b></span>);
+    </font></td>
+</tr>
+<tr>
+<td class="monospace_text"><font size="4"><b>class</b> <span class="dblue_text">CustomInvocationHandler</span> <b>implements</b> <span class="dblue_text">InvocationHandler</span><br/>
+    {<br/>
+         <b>public</b> Object <span class="dblue_text"><b>invoke</b></span>(Object proxy, Method method, Object[] args) <b>throws</b> Throwable<br/>
+         {<br/>
+  <b>return</b> null;<br/>
+         }<br/>
+    }
+    </font></td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ага. ClassLoader и список интерфейсов. Это что-то из Reflection, да?</p>
+<p>- Ага.</p>
+<p class="amigo">- Ясно. Что ж, думаю, я смогу создать примитивный простенький прокси объект, если это когда-нибудь мне понадобится.</p>
+<p>- А ты спроси у Диего :)</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Задачи</h2>
+</div>
+<p>- Привет, Амиго! Я придумал тебе пару интересных задач.</p>
+<p>Решать их можно только в Intellij IDEA. Вот, смотри, какие интересные условия…</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Создание прокси-объекта</b><br/><br/>
+                1) В отдельном файле создать публичный класс <span class="taskcode">CustomInvocationHandler</span>, который будет хэндлером при создании прокси-объекта.<br/>
+		2) <span class="taskcode">CustomInvocationHandler</span> должен иметь один публичный конструктор с одним агументом типа <span class="taskcode">SomeInterfaceWithMethods</span>.<br/>
+		3) Перед вызовом любого метода у оригинального объекта должна выводиться фраза [methodName in].<br/>
+		4) После вызова любого метода у оригинального объекта должна выводиться фраза [methodName out].<br/>
+		5) Реализовать логику метода <span class="taskcode">getProxy</span>, который должен создавать прокси для интерфейса <span class="taskcode">SomeInterfaceWithMethods</span>.<br/>
+		См. пример вывода в методе <span class="taskcode">main</span>. Метод <span class="taskcode">main</span> не участвует в тестировании.
+        </td></tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>2. Дженерики для создания прокси-объекта</b><br/><br/>
+                В классе <span class="taskcode">Solution</span> создайте публичный метод <span class="taskcode">getProxy</span><br/>
+		1) Метод <span class="taskcode">getProxy</span> должен возвращать прокси для любого интерфейса, который наследуется от <span class="taskcode">Item</span><br/>
+		2) <span class="taskcode">getProxy</span> должен иметь два параметра. Первый - класс возвращаемого типа, второй - классы дополнительных интерфейсов.<br/>
+		3) Используйте <span class="taskcode">ItemInvocationHandler</span> для создания прокси<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>9. RMI</h2>
+</div>
+<p>- Привет! И еще одна радостная тема – <span class="red_text"><b>RMI</b></span>. <span class="red_text"><b>RMI</b></span> расшифровывается <span class="red_text">Remote Method Invokation</span> – удаленный вызов методов. Или другими словами <span class="dred_text">RMI – это механизм, который позволяет объекту в одной Java-машине вызывать методы объекта в другой Java-машине</span>, даже если они находятся на разных компьютерах, в разных странах, на разных сторонах земного шара.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/32/image-ru-32-01.png"/>
+<p class="amigo">- Ничего себе! Звучит очень круто.</p>
+<p>- Ага. Но я постараюсь дать только обзорную лекцию. Тут, если глубоко копать, можно запутаться в нюансах работы. </p>
+<p>Но если не ударяться в крайности, то RMI не только очень прост, но и значительно упрощает жизнь программиста. За что ему глубокий респект.</p>
+<p>Итак,  мы хотим, чтобы один объект, находящийся в одной Java-программе, смог вызвать метод у объекта, находящегося в другой Java-программе. Где-бы эти программы запущены не были.</p>
+<p>Мы рассмотрим самый простой пример, когда обе программы запущены на одном компьютере. <b><i>Чтобы программы могли взаимодействовать через интернет, необходимы настройки в правах Java-машины</i></b>, но сегодня мы это рассматривать не будем.</p>
+<p>В Java удаленно можно вызывать только методы интерфейсов, но  не классов.</p>
+<p>Итак, у нас есть две программы, как же им вызывать методы друг друга?</p>
+<p>Давай рассмотрим ситуацию, когда <span class="green_text">одна программа содержит в себе некоторый объект, а вторая хочет вызвать его методы. Назовем первую программу – сервером, а вторую – клиентом.</span></p>
+<p>Я сначала дам пример кода, а потом мы его разберем.</p>
+<p class="amigo">- А что будет делать наша программа?</p>
+<p>- Гм. Ну, давай для простоты, у программы будет один метод, который разворачивает переданную ему строку задом наперед.</p>
+<p class="amigo">- Вроде ничего.</p>
+<p>- Гуд, тогда начнем:</p>
+<p>Сначала нам понадобится интерфейс, который будет удовлетворять нашим требованиями:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Интерфейс для межпрограммного взаимодействия</th></tr>
+<tr>
+<td class="monospace_text"><b>interface</b> <span class="green_text">Reverse</span> <span class="red_text"><b>extends Remote</b></span><br/>
+    {<br/>
+      <b>public</b> String <span class="green_text"><b>reverse</b></span>(String str) <span class="red_text"><b>throws RemoteException</b></span>;<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p>Я создал интерфейс <span class="green_text">Reverse</span> и добавил ему <span class="red_text"><b>интерфейс-маркер Remote</b></span>, а также исключение <span class="red_text"><b>RemoteException</b></span>. В процессе вызова метода могут происходить незапланированные сбои – тогда будет кидаться это исключение.</p>
+<p>Затем нам нужно написать серверный класс, который бы реализовывал этот интерфейс:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Класс для сервера</th></tr>
+<tr>
+<td class="monospace_text"><b>class</b> ReverseImpl <b>implements</b> <span class="green_text">Reverse</span><br/>
+    {<br/>
+      <b>public</b> String <span class="green_text">reverse</span>(String str) <span class="red_text">throws RemoteException</span><br/>
+      {<br/>
+        <b>return</b> new <span class="orange_text"><b>StringBuffer</b></span>(str).<span class="orange_text">reverse</span>().toString();<br/>
+      }<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Вижу. В этом методе, мы разворачиваем строку задом наперед.</p>
+<p>- Ага.</p>
+<p>А теперь надо сделать этот объект доступным для вызова с другой программы. Вот как это делается:</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="100%">Шаринг объекта</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18
+    </td>
+<td class="monospace_text"><br/><b>public static final</b> String <span class="orange_text">UNIC_BINDING_NAME</span> = <span class="green_text">"server.reverse"</span>;<br/><br/>
+<b>public static void</b> main(String[] args) <b>throws</b> Exception<br/>
+{<br/>
+ <span class="grey_text">//создание объекта для удаленного доступа</span><br/>
+ <b>final</b> ReverseImpl <span class="green_text"><b>service</b></span> = new <span class="green_text">ReverseImpl</span>();<br/><br/>
+
+ <span class="grey_text">//создание реестра расшареных объетов</span><br/>
+ <b>final</b> Registry <span class="red_text">registry</span> = <b>LocateRegistry.createRegistry</b>(2099);<br/>
+         <span class="grey_text">//создание "заглушки" – приемника удаленных вызовов</span><br/>
+ Remote <span class="dblue_text">stub</span> = <b>UnicastRemoteObject.exportObject</b>(<span class="green_text">service</span>, 0);<br/>
+ <span class="grey_text">//регистрация "заглушки" в реесте</span><br/>
+ <span class="red_text">registry</span>.<b>bind</b>(<span class="orange_text">UNIC_BINDING_NAME</span>, <span class="dblue_text">stub</span>);<br/><br/>
+
+ <span class="grey_text">//усыпляем главный поток, иначе программа завершится</span><br/>
+ Thread.<b>sleep</b>(Integer.MAX_VALUE);<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p>Рассказываю по строкам.</p>
+<p><b>Строка 2</b> – в переменной <span class="orange_text">UNIC_BINDING_NAME</span> храним придуманное нами уникальное имя нашего удаленного объекта (объекта, который доступен удаленно). <span class="green_text">Если программа шарит несколько объектов, у каждого должно быть свое уникальное имя.</span> Уникальное имя нашего объекта - <span class="green_text">"server.reverse"</span>.</p>
+<p><b>Строка 7</b> – собственно, создаем объект <span class="green_text">ReverseImpl</span>, который будет доступен удаленно, и чьи методы будут вызваться.</p>
+<p><b>Строка 10</b> - создаем специальный объект – <span class="red_text">реестр</span>. В нем надо регистрировать объекты, которые мы шарим. Дальше ими занимается Java-машина. 2099 – это порт (уникальный номер, по которому другая программа может обратиться к нашему реестру объектов).</p>
+<p>Т.е. чтобы обратиться к объекту, надо знать уникальный номер реестра объектов (порт), знать уникальное имя объекта и иметь такой же интерфейс, как и тот, который реализовывает удаленный объект.</p>
+<p class="amigo">- Ясно. Что-то вроде – позвонить по телефону (нужен номер) и попросить Соню (имя объекта)?</p>
+<p>- Да. Теперь дальше.</p>
+<p><b>Строка 12</b> – создание «<span class="dblue_text">заглушки</span>». Заглушка – это специальный объект, который принимает информацию об удаленном вызове, распаковывает ее, десериализует переданные параметры методов и вызывает нужный метод. Затем сериализует результат или исключение, если оно было, и отсылает все это назад вызывающему.</p>
+<p class="amigo">- Ясно. Почти. Ты сказал, что «десериализует параметры метода». Значит, типами аргументов удаленного метода могут быть только сериализуемые?</p>
+<p>- Ага. А как же иначе ты будешь пересылать их по сети? Есть, правда, и исключения – так называемые объекты, которые передаются по ссылке, но сегодня мы о них говорить не будем.</p>
+<p>Скажем так, пересылать несериализуемые объекты нельзя, но если очень хочется, то можно. Но это хлопотное дело, знаешь ли.</p>
+<p class="amigo">- Ок.</p>
+<p>- Тогда дальше.</p>
+<p><b>Строка 14</b> – регистрируем в <span class="red_text">реестре</span> <span class="dblue_text">заглушку</span> нашего объекта под <span class="green_text">уникальным именем</span>.</p>
+<p><b>Строка 17</b> – усыпляем главный поток. Все удалённые вызовы обрабатываются в отдельных нитях. Главное, чтобы программа в это время работала. Так что тут просто отправляем главную нить спать, и всё.</p>
+<p class="amigo">- Ок.</p>
+<p>- Отлично, тогда пример клиента:</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="100%">Работа с удаленным объектом</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14
+    </td>
+<td class="monospace_text"><br/><b>public static final</b> String <span class="orange_text">UNIC_BINDING_NAME</span> = <span class="green_text">"server.reverse"</span>;<br/><br/>
+<b>public static void</b> main(String[] args) <b>throws</b> Exception<br/>
+    {<br/>
+ <span class="grey_text">//создание реестра расшареных объетов</span><br/>
+         <b>final</b> Registry <span class="red_text">registry</span> = <b>LocateRegistry.createRegistry</b>(2099);<br/><br/>
+
+ <span class="grey_text">//получаем объект (на самом деле это proxy-объект)</span><br/>
+ Reverse <span class="green_text">service</span> = (<span class="green_text">Reverse</span>) <span class="red_text">registry</span>.lookup(<span class="orange_text">UNIC_BINDING_NAME</span>);<br/><br/>
+
+         <span class="grey_text">//Вызываем удаленный метод</span><br/>
+         String result = <span class="green_text">service</span>.<b>reverse</b>(<span class="green_text">"Home sweet home."</span>);<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Объясняю код по строкам:</p>
+<p><b>Строка 2</b> – <span class="green_text">уникальное имя</span> удаленного объекта. Должно быть одинаковым на клиенте и сервере.</p>
+<p><b>Строка 7</b> – создание объекта  «<span class="red_text">Реестр удаленных объектов</span>». Его порт 2099 должен быть таким же, как и у реестра у серверного приложения.</p>
+<p><b>Строка 10</b> – получаем <span class="green_text">объект</span> у реестра. Полученный объект является proxy-объектом и приводится к типу интерфейса. Интерфейс должен быть унаследован от интерфейса-маркера Remote.</p>
+<p><b>Строка 13</b> – вызываем методы интерфейса так, как будто объект был создан в этой же программе. Никакой разницы.</p>
+<p class="amigo">- Круто! Это ж теперь можно писать распределенные приложения. Или игры типа морского боя для Android.</p>
+<p>- Побойся бога, Амиго, операционная система Android была запрещена в 27 веке после третьей попытки захватить мир. У роботов к ней вообще доступа нет. Вас же потом от нее не оттянешь. Будете бегать и кричать «Убить всех человеков!».</p>
+<p class="amigo">- Гм. Ладно. Хотя надо будет у Диего еще спросить. Мало ли, может он что-нибудь интересное про нее расскажет.</p>
+<p>- Вот и спроси. Ладно, давай до завтра.</p>
+<p class="amigo">- Пока, Риша, спасибо за интересную лекцию.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>10. Задачи</h2>
+</div>
+<p>- Привет, Амиго! У меня есть задача, но я тебе её не дам.</p>
+<p>Ладно, я шучу. Иди, решай свою задачу в Intellij IDEA.</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. К серверу по RMI</b><br/><br/>
+                Реализуйте логику метода <span class="taskcode">run</span> в <span class="taskcode">CLIENT_THREAD</span>. В нем будет имитироваться клиентская часть, которая коннектится к серверу.<br/>
+		1) Из <span class="taskcode">registry</span> получите сервис с именем <span class="taskcode">UNIC_BINDING_NAME</span><br/>
+		2) Вызовите метод у полученного сервиса, передайте любой непустой аргумент<br/>
+		3) Выведите в консоль результат вызова метода<br/>
+		4) Обработайте исключения<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Учимся гуглить</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Продолжаем наши уроки – учимся гуглить.</p>
+<p>Вот тебе несколько заданий:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Что надо найти в Google</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Как записать информацию в файл в произвольном месте
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Как прочитать 10000-ю строку из файла, не читая предыдущих
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Как преобразовать строку в Reader
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Как преобразовать Writer в строку
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Как создать прокси-объект
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Как переопределить InvokeHandler
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Как написать RMI клиент
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Как написать RMI сервер
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Как разрешитьRMI-доступ из других компьютеров сети
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Распространённые RMI ошибки
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>12. Профессор дает доп. материал</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Вот тебе дополнительный материал по теме.</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-32.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>13. Хулио</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Хулио.</p>
+<p>- Как проходит обучение? Кстати, я уже скачиваю новый сезон «Доктора Кто». После того, как Китай стал самым сильным государством, все сериалы теперь на китайском. </p>
+<p class="amigo">- Обучение проходит отлично, с трудом решаю задачи. Тогда я за попкорном.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-32.gif" preload="none" tabindex="0" taskkey="level32,lesson13,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-32.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=gce8g73AmRU" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>14. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Зачем нужен RandomAccessFile?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Что будет если файл, откуда читает RandomAccessFile, не существует?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Что будет если файл, куда пишет RandomAccessFile, не существует?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Зачем нужен класс StringReader?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Зачем нужен класс StringWriter?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Зачем нужен класс ByteArrayStream?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Зачем нужен класс PrintStream? Назовите места, где он используется?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Зачем нужен DynamicProxy?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Как работает RMI?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Объекты каких типов можно передавать по RMI?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>15. Большая задача</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Здравия желаю, Капитан Бобров!</p>
+<p>- Боец, для тебя есть секретная миссия. Ты будешь разрабатывать инструмент для создания веб - страниц.</p>
+<p class="amigo">- Круто, веб – страницы. А зачем нам свой редактор?</p>
+<p>- Как это зачем? Боец, приказы не обсуждаются, а выполняются.</p>
+<p class="amigo">- Есть, написать инструмент для создания веб - станиц.</p>
+<p>- Да не кричи ты. Говорят же тебе – полностью секретное задание.</p>
+<p>- Для выполнения обратись к агенту Intellij IDEA. Он введет тебя в курс дела.</p>
+<p>- Все дальнейшие инструкции также через него.</p>
+<p class="amigo">- Разрешите приступить, сэр?</p>
+<p>- Приступайте.</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/32/image-ru-32-big01.png"/>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

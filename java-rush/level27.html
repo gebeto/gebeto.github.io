@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-27.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 700px;">
+                    Уровень 27
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>1. Циклы (break и return, continue, метки)</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/27/image-ru-27-07.png"/>
+<p>- Привет, Амиго!</p>
+<p>Сегодня я тебе расскажу про некоторые удобные вещи в работе с циклами.</p>
+<p>Первая такая вещь – это ключевое слово <b>break</b>. Если в теле цикла написать такую инструкцию, то при ее выполнении цикл сразу завершится. Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Пример</th><th width="50%">Результат работы цикла:</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>for</b> (int i=0;i
+{<br/>
+    System.out.println(i);<br/>
+    <b>if</b> (i&gt;5) <br/>
+        <b>break</b>;<br/>
+}
+    </td>
+<td class="wide-text">0<br/>
+    1<br/>
+    2<br/>
+    3<br/>
+    4<br/>
+    5
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- А break можно использовать только в цикле?</p>
+<p>- Да. break можно использовать только в цикле. При выполнении команды <b>break</b> цикл тут же завершается.</p>
+<p class="amigo">- Ок. Понятно.</p>
+<p>- Отлично. Теперь вторая команда – это ключевое слово <b>continue</b>. Его тоже можно использовать только в цикле. При выполнении этой команды, сразу начинается новая итерация цикла.  Другими словами, просто пропускается весь код тела цикла.</p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Пример</th><th width="50%">Результат работы цикла:</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>for</b> (int i=0;i
+{<br/>
+    <b>if</b> (i%2==0) <br/>
+        <b>continue</b>;<br/>
+    System.out.println(i);<br/>
+}
+    </td>
+<td class="wide-text">1<br/>
+    3<br/>
+    5<br/>
+    7<br/>
+    9
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Т.е. как только программа доходит до исполнения  команды <b>continue</b> внутри цикла, она перестает выполнять код в нем? </p>
+<p>- Нет. Смотри. Цикл – это когда мы выполняем один и то же код несколько раз. В примере выше – у нас цикл от 0 до 9 – т.е. тело цикла выполнится 10 раз. Так?</p>
+<p class="amigo">- Да.</p>
+<p>- Одно такое исполнение кода тела цикла называется итерацией цикла. Наш цикл состоит из 10 итераций – десяти исполнений кода в его теле.</p>
+<p class="amigo">- Да, это ясно.</p>
+<p>- Команда <b>continue</b> преждевременно завершает текущую итерацию - код внутри цикла пропускается и начинается новая итерация.</p>
+<p>Вот тебе еще пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text">ArrayList list = new ArrayList();<br/>
+<b>for</b>  (Object o: list)<br/>
+{<br/>
+    <b>if</b> (o==null) <b>continue</b>;<br/>
+    System.out.println(o.toString());<br/>
+}
+    </td>
+</tr>
+</tbody>
+</table>
+<p>В данном примере мы  выводим на экран строковое представление всех объектов, содержащихся в списке list. Но пропускаем все объекты, которые равны null.</p>
+<p class="amigo">- Да, ясно. Очень удобная штука, я смотрю.</p>
+<p>- Ага. Еще хочу рассказать тебе про метки. Они редко используются в Java, т.к. часто  нарушают красоту логики программы. Но ты можешь встретить их где-то в коде. Так что лучше пусть ты от меня услышишь о них, чем где-то во дворе.</p>
+<p>Давным-давно в коде разрешалось прыгать с любой строчки на любую. Для этого использовались метки и оператор <b>goto</b>. Вот как это выглядело:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Ужасный код с метками</th></tr>
+<tr>
+<td class="monospace_text wide-text">       System.out.println("Мир");<br/>
+<b>label:</b> System.out.println("Труд");<br/>
+                 System.out.println("Май");<br/>
+                 <b>goto</b> label;
+    </td>
+</tr>
+</tbody>
+</table>
+<p>В данном примере, после выполнении команды <b>goto label</b>, программа прыгала на строку, обозначенную меткой <b>label</b>.</p>
+<p>Потом все дружно прозрели  и решили не использовать оператор <b>goto</b>. В Java его до сих пор нет, но ключевое слово <b>goto</b> зарезервировано. Мало ли…</p>
+<p class="amigo">- Т.е. ни goto, ни меток в Java нет?</p>
+<p>- Оператора goto нет, а метки есть!</p>
+<p class="amigo">- Это как же это?</p>
+<p>- Метки можно использовать в Java вместе с командами <b>continue</b> и <b>break</b>. Они используются, когда у тебя много вложенных циклов. </p>
+<p>Например, у тебя 5 вложенных циклов и ты хочешь, при выполнении некоторого условия, выйти из трех из них, но не из всех. Метки позволяют сделать это красиво:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="blue_text">label1:</span> <b>for</b> (int i=0;i
+      <span class="red_text">label2:</span> <b>for</b> (int j=0;j
+            <span class="green_text">label3:</span> <b>for</b> (int k=0;k
+                 <b>if</b> (i==j &amp;&amp; j==k) <br/>
+                      <b>break</b> <span class="red_text">label2</span>;
+    </td>
+</tr>
+</tbody></table>
+<p>В данном примере, при выполнении команды break, мы выйдем не из цикла с переменной k, а из цикла помеченного меткой label2 – т.е. выйдем сразу из двух циклов k и j.</p>
+<p class="amigo">- И как часто это используется?</p>
+<p>- Если честно, то не часто, но мало ли. Может, встретишь где-нибудь. Это основы синтаксиса – это все надо знать!</p>
+<p class="amigo">- Ок. Спасибо, Билаабо.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>2. Задачи на break &amp; continue;</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level27,lesson02,task01"></button><b>1. Рефакторинг</b><br/><br/>
+                Перепишите код без использования меток, сохранив при этом логику.<br/>
+		Не оставляйте закомментированный код.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level27,lesson02,task02"></button><b>2. Нужный оператор</b><br/><br/>
+                Вставьте в код единственную строчку - оператор (не <span class="taskcode">break</span>), чтобы выводился треугольник из букв S
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. DeadLock, и его причины</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/27/image-ru-27-06.gif"/>
+<p>- Привет, Амиго!</p>
+<p>Сегодня я тебе расскажу, что такое дедлок (Dead Lock) - смертельный захват.</p>
+<p class="amigo">- Так ты же уже что-то такое рассказывала.</p>
+<p>- Ага, было дело. Но сегодня мы рассмотрим эту тему детальнее.</p>
+<p>В самом простом случае в дедлоке участвуют две нити и два объекта-мютекса. Взаимная блокировка возникает, когда:</p>
+<p><b>А)</b> Каждой нити в процессе работы нужно захватить  оба мютекса.</p>
+<p><b>Б)</b> Первая нить захватила первый мютекс и ждет освобождения второго.</p>
+<p><b>В)</b> Вторая нить захватила второй мютекс и ждет освобождения первого.</p>
+<p>Примеры:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public class</b> Student<br/>
+{<br/>
+   <b>private</b> ArrayList&amp;ltStudent&amp;gt  <span class="red_text">friends</span> = new ArrayList&amp;ltStudent&amp;gt();<br/><br/>
+
+   <b>public synchronized</b> ArrayList&amp;ltStudent&amp;gt  getFriends()<br/>
+   {<br/>
+         <b>synchronized</b>(<span class="red_text">friends</span>)<br/>
+         {<br/>
+              return new ArrayList(<span class="red_text">friends</span>);<br/>
+         }<br/>
+   }<br/><br/>
+ 
+    <b>public synchronized</b> int getFriendsCount()<br/>
+   {<br/>
+         return <span class="red_text">friends</span>.size();<br/>
+   }<br/><br/>
+
+    <b>public</b> int addFriend(Student student)<br/>
+   {<br/>
+       <b>synchronized</b>(<span class="red_text">friends</span>)<br/>
+      {<br/>
+          <span class="red_text">friends</span>.add(student)<br/>
+          return getFriendsCount ();<br/>
+       }<br/>
+   }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Допустим, первая нить вызвала метод <b>getFriends</b>, тогда она сначала захватит мютекс объекта <b>this</b>, а затем мютекс объекта <b>friends</b>.</p>
+<p>Вторая нить при этом вызвала метод <b>addFriend</b>, она сначала захватывает мютекс объекта <b>friends</b>, а затем мютекс объекта <b>this</b> (при вызове getFriendsCount).</p>
+<p>Сначала все будет хорошо, но как гласит Закон Мерфи - если неприятность может случиться, она случается. Обязательно возникнет ситуация, когда первая нить успеет захватить только один мютекс, а вторая нить в это время захватит второй. Они так и будут висеть вечно в ожидании, что кто-то из них первым освободит мютекс.</p>
+<p>Еще один простой пример, нашел в книге – решил привести:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> KnightUtil<br/>
+{<br/>
+     <b>public static</b> void kill(Knight knight1, Knight knight2)<br/>
+     {<br/>
+          <b>synchronized</b>(knight1)<br/>
+          {<br/>
+               <b>synchronized</b>(knight2)<br/>
+               {<br/>
+                    knight2.live = 0;<br/>
+                    knight1.experiance +=100;<br/>
+               } <br/>  
+          }<br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Есть игра, где два рыцаря сражаются друг с другом. Один рыцарь убивает другого. Это поведение отражено в методе <b>kill</b>. Туда передаются два объекта-рыцаря.</p>
+<p>Сначала мы защищаем оба объекта, чтобы никто больше не мог их изменить.</p>
+<p>Второй рыцарь умирает  (live=0)</p>
+<p>Первый рыцарь получает +100 опыта.</p>
+<p>Все вроде бы отлично, но иногда может возникнуть ситуация, когда второй рыцарь в это время атакует первого. Для него тоже вызывается этот метод, но рыцари передаются в другом порядке.</p>
+<p class="amigo">- Т.е. нам даже не нужно несколько методов для получения дедлока?</p>
+<p>- Ага. Иногда бывает достаточно одного простого метода, в котором уже могут происходить процессы, приводящие к зависанию  нитей и всей программы.</p>
+<p class="amigo">- Да, оказывается, это явление встречается чаще, чем я думал. Спасибо, Элли.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи по написанию своих дедлоков</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level27,lesson04,task01"></button><b>1. Создаем дедлок</b><br/><br/>
+                Расставьте модификаторы так, чтобы при работе с этим кодом появился дедлок<br/>
+		Метод <span class="taskcode">main</span> порождает <span class="taskcode">deadLock</span>, поэтому не участвует в тестировании
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level27,lesson04,task02"></button><b>2. Второй вариант дедлока</b><br/><br/>
+                В методе <span class="taskcode">secondMethod</span> в синхронизированных блоках расставьте локи так,<br/>
+		чтобы при использовании класса <span class="taskcode">Solution</span> нитями образовывался дедлок
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Модификаторы и дедлоки</b><br/><br/>
+                Расставьте модификаторы так, чтобы при работе с этим кодом появился дедлок
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>5. Стратегии избегания DeadLock</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/27/image-ru-27-05.png"/>
+<p>- Привет, Амиго!</p>
+<p>Хочу рассказать тебе про пару стратегий избегания дедлоков.</p>
+<p>Самая лучшая стратегия – это продуманная архитектура и набор правил, когда можно использовать блокировки (захват мютексов) и в каком порядке. Классический способ борьбы с проблемой — разработка иерархии блокировок, установление правила, что некоторые блокировки никогда не могут захватываться в состоянии, в котором уже захвачены какие-то другие блокировки.</p>
+<p>Иногда, например, блокировкам присваивают уровни, требуя при этом от нити захватывать блокировки в порядке от большего уровня к меньшему, но не в обратном. Так же нельзя захватывать несколько блокировок одного уровня.</p>
+<p>Например, в предыдущем примере про рыцарей, каждому рыцарю можно добавить его уникальный номер (id) и потребовать, чтобы блокировки происходили от большего id к меньшему.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> KnightUtil<br/>
+{<br/>
+     <b>public static</b> void kill(Knight knight1, Knight knight2)<br/>
+     {<br/>
+          Knight knightMax = knight1.id &gt; knight2.id ? knight1: knight2;<br/>
+          Knight knightMin = knight1.id &gt; knight2.id ? knight2: knight1;<br/><br/>
+
+          <b>synchronized</b>(knightMax)<br/>
+          {<br/>
+               <b>synchronized</b>(knightMin)<br/>
+               {<br/>
+                    knight2.live = 0;<br/>
+                    knight1.experiance +=100;<br/>
+               } <br/>  
+          }<br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Красивое решение.</p>
+<p>- Это очень простое решение, но мне нравится. Надеюсь, оно тебе пригодится, когда ты будешь думать, как решать возможные проблемы с дедлоками.</p>
+<p class="amigo">- Спасибо, Элли.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задачи по иправлению дедлоков</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level27,lesson06,task01"></button><b>1. Убираем deadLock</b><br/><br/>
+                Используя стратегию избегания <span class="taskcode">deadLock</span>-а сделайте так, чтобы он не возник.<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании.<br/>
+		Действуйте аналогично примеру из лекций.<br/>
+		Изменения вносите только в <span class="taskcode">safeMethod</span>.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level27,lesson06,task02"></button><b>2. Определяем порядок захвата монитора. Сложная.</b><br/><br/>
+                Реализуйте логику метода <span class="taskcode">isNormalLockOrder</span>, который должен определять:<br/>
+		соответствует ли порядок <span class="taskcode">synchronized</span> блоков в методе <span class="taskcode">someMethodWithSynchronizedBlocks</span> - порядку передаваемых в него аргументов.<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Убираем deadLock, используя Открытые вызовы</b><br/><br/>
+                Синхронизированные методы, которые вызывают внутри себя синхронизированные методы других классов, приводят к <span class="taskcode">dead-lock</span>-у.<br/>
+		1. Перенесите синхронизацию с метода в синхронизированный блок, куда поместите лишь необходимые части кода.<br/>
+		2. Уберите избыточную синхронизацию методов.<br/>
+		3. В стеке вызова методов не должно быть перекрестной синхронизации,<br/>
+		т.е. такого <span class="taskcode">synchronizedMethodAClass().synchronizedMethodBClass().synchronizedMethodAClass()</span><br/><br/>
+
+		Этот способ избавления от дэдлока называется Открытые вызовы, о нем читайте в дополнительном материале к лекции.<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании.
+
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>7. Стратегия "wait-notify-notifyAll"</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/27/image-ru-27-04.png"/>
+<p>- Привет, Амиго!</p>
+<p>Хочу основательно разобрать с тобой тему wait-notify. Методы wait-notify обеспечивают удобный механизм взаимодействия нитей. Также их можно использовать для построения сложных высокоуровневых механизмов взаимодействия нитей.</p>
+<p>Начну с небольшого примера. Пусть у нас есть программа для сервера, которая должна выполнять различные задания, которые пользователи добавляют через сайт. Пользователи добавляют различные задания в разное время. Задачи ресурсоемкие, но сервер у нас с восьмиядерным процессором - справится. Как исполнять задачи на сервере?</p>
+<p>Во-первых, мы создадим группу нитей-исполнителей, столько же, сколько и количество ядер процессора. Каждая нить сможет работать на своем ядре: нити не будут друг другу мешать, а ядра процессора не будут простаивать.</p>
+<p>Во-вторых, создадим объект-очередь, в который будут помещаться полученные от пользователей задания.  Разным типам заданий будут соответствовать различные объекты, но все они будут реализовать интерфейс Runnable, чтобы их можно было выполнить.</p>
+<p class="amigo">- А можно пример такого объекта-задания?</p>
+<p>- Вот смотри:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Класс вычисляет факториал числа n при вызове метода run()</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> Factorial <b>implements Runnable</b><br/>
+{<br/>
+   <b>public</b> int n = 0;<br/>
+   <b>public</b> long result = 1;<br/><br/>
+  
+   <b>public</b> Factorial (int n)<br/>
+   {<br/>
+        this.n = n;<br/>
+   }<br/><br/>
+
+   <b>public void run()</b><br/>
+   {<br/>
+         <b>for</b> (int i=2;i
+              result*=i;<br/>
+    }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Пока ясно.</p>
+<p>- Отлично. Тогда разберем, как должен выглядеть объект-очередь. Что ты можешь сказать про него?</p>
+<p class="amigo">- Он должен быть thread-safe. В него кладутся объекты-задания (таски) нитью, которая принимает их от пользователей, а забираются задания нитями-исполнителями.</p>
+<p>- Ага. А если задания временно закончились?</p>
+<p class="amigo">- Тогда нити-исполнители должны ждать, пока они появятся.</p>
+<p>- Верно. Тогда представь, что все это можно встроить в одну очередь. Вот смотри:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Очередь заданий, если задания нет, то нить засыпает и ждет его появления:</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public class</b> JobQueue<br/>
+{<br/>
+     ArrayList&amp;ltRunnable&amp;gt jobs = new ArrayList&amp;ltRunnable&amp;gt();<br/><br/>
+
+     <b>public synchronized</b> void <b>put</b>(Runnable job)<br/>
+     {<br/>
+          jobs.add(job);<br/>
+          this.<span class="red_text"><b>notifyAll</b></span>();<br/>
+     }<br/><br/>
+
+     <b>public synchronized</b> Runnable <b>getJob</b>()<br/>
+     {<br/>
+          <b>while</b> (jobs.size()==0)<br/>
+               this.<span class="red_text"><b>wait</b></span>();<br/><br/>
+
+          return jobs.remove(0);<br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>У нас есть метод <b>getJob</b>, который  смотрит, если список работы (jobs) пуст, то нить засыпает (wait), пока в списке что-то не появится.</p>
+<p>А есть еще метод <b>put</b>, который позволяет добавить в список jobs новое задание (job). Как только новое задание добавлено, вызывается метод <b>notifyAll</b>. Вызов этого метода пробудит все нити-исполнители, которые заснули внутри метода getJob.</p>
+<p class="amigo">- А можешь напомнить еще раз, как работают методы wait и notify?</p>
+<p>- Метод wait вызывается только внутри блока synchronized, у объекта-мютекса. В нашем случае – это this. При этом происходит две вещи:</p>
+<p><b>1)</b> Нить засыпает.</p>
+<p><b>2)</b> Нить временно освобождает мютекс (пока не проснется).</p>
+<p>После этого другие нити могу входить в блок <b>synchronized</b> и занимать этот же мютекс.</p>
+<p>Метод <b>notifyAll</b> тоже можно вызвать только внутри блока <b>synchronized</b> у объекта-мютекса.  В нашем случае – это this. При этом происходит две вещи:</p>
+<p><b>1)</b> Просыпаются все нити, которые заснули на этом же объекте-мютексе.</p>
+<p><b>2) Как только текущая нить выйдет из блока synchronized, одна из проснувшихся нитей захватит мютекс и продолжит свою работу. Когда она освободит мютекс, другая проснувшаяся нить захватит мютекс и т.д.</b></p>
+<p>Очень похоже на автобус. Вы заходите внутрь, хотите передать за проезд, а водителя нет. И вы «засыпаете». Со временем вас набивается целый автобус, но за проезд пока никто не передает – некому. Затем заходит водитель, вы слышите « – Передаем за проезд».  И тут начинается...</p>
+<p class="amigo">- Интересное сравнение. А что такое автобус?</p>
+<p>- А это Хулио рассказывал. Были такие странные штуки в 21 веке. </p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>8. Нюансы работы</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>И еще пара деталей. Так сказать практических советов.</p>
+<p>Пусть у тебя есть метод, который что-то ждет и засыпает, пока условие не выполнено.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Если коллекция пустая, то ждем</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public synchronized</b> Runnable getJob()<br/>
+    {<br/>
+         <b>if</b> (jobs.size()==0)<br/>
+              <span class="red_text"><b>this.wait();</b></span><br/><br/>
+
+         return jobs.remove(0);<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p>В документации по Java очень старательно советуют вызвать метод wait в цикле:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Если коллекция пустая, то ждем</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public synchronized</b> Runnable getJob()<br/>
+    {<br/>
+         <b>while</b> (jobs.size()==0)<br/>
+              <span class="red_text"><b>this.wait();</b></span><br/><br/>
+
+         return jobs.remove(0);<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p>Зачем это надо. Дело в том, что если нить разбудили – это еще не значит, что условие выполнится. Может, там таких спящих нитей было два десятка. Разбудили всех, а задание забрать сможет только одна.</p>
+<p>Грубо говоря, могут быть «ложные побудки». Хороший разработчик должен учитывать это дело.</p>
+<p class="amigo">- Ясно.  А не проще ли тогда использовать просто notify?</p>
+<p>- А если в списке больше чем одно задание? Notify обычно советуют использовать ради оптимизации. Во всех остальных случаях рекомендуют использовать метод notifyAll.</p>
+<p class="amigo">- Ок.</p>
+<p>- Но и это еще не все. Во-первых, может возникнуть ситуация, когда кто-то унаследовался от твоего класса, добавил туда свои методы и тоже использует wait/notifyAll. Т.е. может быть ситуация, когда  на одном объекте висят независимые пары wait/notifyAll, которые друг о друге не знают. Поэтому  что надо делать?</p>
+<p class="amigo">- Всегда вызывать wait в цикле и проверять, что условие выхода из цикла действительно выполнилось!</p>
+<p>- Правильно. А чтобы тебе стало совсем понятно, что от этого никуда не деться, то многие разработчики указывают на то, что иногда нити просыпаются сами. Нити, которые гарантированно никто не может будить случайно. Похоже это побочный процесс оптимизации/ускорения кода в работающей Java-машине.</p>
+<p class="amigo">- Ничего себе. Понял, без цикла перед wait никуда.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>9. Задачи на "wait-notify-notifyAll"  </h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/27/image-ru-27-03.png"/>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level27,lesson09,task01"></button><b>1. CountDownLatch</b><br/><br/>
+                Дана стандартная реализация методологии <span class="taskcode">wait-notify</span>.<br/>
+		Почитайте про <span class="taskcode">CountDownLatch</span> и перепишите тело метода <span class="taskcode">someMethod</span> используя поле <span class="taskcode">latch</span>.<br/>
+		Весь лишний код удалите из класса.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Producer–consumer</b><br/><br/>
+                В классе <span class="taskcode">TransferObject</span> расставьте вызов методов <span class="taskcode">wait</span>/<span class="taskcode">notify</span>/<span class="taskcode">notifyAll</span>,<br/>
+		чтобы обеспечить последовательное создание и получение объекта.<br/>
+		Метод <span class="taskcode">main</span> не участвует в тестировании
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Расставьте wait-notify</b><br/><br/>
+                Расставьте <span class="taskcode">wait-notify</span>.<br/><br/>
+<span class="example-legacy">Пример вывода:</span><br/>
+<span class="example-data">Thread-0 MailServer has got: [Person [Thread-1] has written an email 'AAA'] in 1001 ms after start</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>10. Другие детали синхронизации и многонитиевости</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Есть такая здоровенная тема, называется Java Memory Model. В принципе знать ее тебе пока не обязательно, но услышать про это – будет полезно.</p>
+<p>С целью устранить все возможные проблемы, в Java изменили механизм работы памяти. Теперь память не просто делится на локальный кэш нити и глобальную, а механизм стал еще лучше.</p>
+<p class="amigo">- И сложнее!</p>
+<p>- Да, лучше и сложнее. Это как самолет. Летать на самолете лучше, чем идти пешком, но сложнее. Попробую объяснить тебе новую ситуацию очень упрощенно.</p>
+<p>Вот, что было придумано. <span class="red_text"><b>В код был добавлен механизм синхронизации локальной памяти нитей, названный «happens before» (дословно «случилось перед»). Был придуман ряд правил/условий, при наступлении которых память синхронизируется – обновляется до актуального состояния.</b></span></p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="10%">Порядок</th><th width="33%">Нить 1</th><th width="33%">Нить 2</th></tr>
+<tr>
+<td class="wide-text"><b>1<br/>
+    2<br/>
+    …<br/>
+    101<br/>
+    102<br/>
+    103<br/>
+    104<br/>
+    105<br/>
+    …<br/>
+    201<br/>
+    202<br/>
+    203<br/>
+    204<br/>
+    205</b>
+</td>
+<td class="monospace_text"><b>public</b> int y = 1;<br/>
+<b>public</b> int x = 1;<br/><br/>
+
+x=2;<br/>
+synchronized(mutex)<br/>
+{<br/>
+    y = 2;<br/>
+}
+    </td>
+<td class="wide-text">нить ждет освобождения мютекса - mutex<br/><br/><br/>
+<span class="monospace_text">synchronized(mutex)<br/>
+{<br/>
+    <b>if</b> (y == x)<br/>
+        System.out.println("YES");<br/>
+}</span>
+</td>
+</tr>
+</tbody></table>
+<p>Одно из таких условий – это захват освобожденного мютекса. Если мютекс был освобожден и снова захвачен, то перед захватом обязательно выполнится синхронизация памяти. Нить  2 увидит «самые новые» значения переменных x и y, даже если не объявлять их <b>volatile</b>.</p>
+<p class="amigo">- Как интересно. И много таких условий?</p>
+<p>- Достаточно, вот некоторые условия синхронизации памяти:</p>
+<ul>
+<li>В рамках одной нити любая команда <b>happens-before</b> (читается «случается перед») любой операцией, следующей за ней в исходном коде.</li>
+<li>Освобождение лока (unlock) <b>happens-before</b> захватом того же лока (lock).</li>
+<li>Выход из <b>synhronized</b> блока/метода <b>happens-before</b> вход в synhronized блок/метод на том же мониторе.</li>
+<li>Запись volatile поля <b>happens-before</b> чтение того же самого volatile поля.</li>
+<li>Завершение метода run экземпляра класса Thread <b>happens-before</b> выход из метода join() или возвращение false методом isAlive() экземпляром той же нити.</li>
+<li>Вызов метода start() экземпляра класса Thread <b>happens-before</b> начало метода run() экземпляра той же нити.</li>
+<li>Завершение конструктора <b>happens-before</b> начало метода finalize() этого класса</li>
+<li>Вызов метода interrupt() на нити <b>happens-before</b>, когда нить обнаружила, что данный метод был вызван, либо путем выбрасывания исключения InterruptedException, либо с помощью методов isInterrupted() или interrupted()</li>
+</ul>
+<p class="amigo">- Т.е. все немного сложнее, чем я думал?</p>
+<p>- Да, немного сложнее…</p>
+<p class="amigo">- Спасибо, Риша, буду думать.</p>
+<p>- Не заморачивайся сильно на эту тему. Придет время, сам все поймешь. Пока тебе лучше разбираться в основах, чем лезть в дебри внутреннего устройства Java-машины. Вот выйдет Java 8 и опять все поменяется.</p>
+<p class="amigo">- О_о. М-да. Некоторые вещи лучше не знать.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Учимся гуглить. (Как получить список файлов по маске)</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/27/image-ru-27-02.png"/>
+<p>- Привет, Амиго!</p>
+<p>Продолжаем наши уроки – учимся гуглить.</p>
+<p>Вот тебе несколько заданий:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Задания на поиск в интернете:</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Чем плох оператор goto?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Что такое зарезервированные слова в Java?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Что произойдет, если вызвать wait не в блоке synchronized?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Что такое happens-before?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Назначение и методы класса BlockedQueue?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Как скомпилировать java-файл из консоли?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Как запустить java-файл из консоли?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Как запустить программу из нескольких скомпилированнх файлов из консоли?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Как создать директорию с поддиректориями: (doc/release/com/javarush/test)?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Как получить список файлов в директории по маске (шаблону) «*.doc»?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>12. Профессор дает доп. материал</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Вот тебе дополнительный материал по теме.</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-27.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>13. Хулио</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Хулио. А скажи,  в честь  кого тебя назвали?</p>
+<p>- Во времена моей прапрапрапрабабушки был такой известный певец, Иглесиас.  Ну, вот теперь мне только осталось  научиться петь «Nostalgie».</p>
+<p class="amigo">- А как это, петь?</p>
+<p>- Сейчас покажу видео,  присаживайся.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-27.gif" preload="none" tabindex="0" taskkey="level27,lesson13,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-27.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=r6R04pXwC6g" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>14. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Что такое дедлок?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Какие вы знаете стратегии, предотвращающие появление дедлоков?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Могут ли возникнуть дедлоки при использовании методов wait-notify?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Что чаще используется: notify или notifyAll?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Метод wait рекомендуется использовать с конструкциями if или while?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Что происходит после вызова метода notifyAll?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Какие выгоды получает объект, если он immutable?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Что такое «thread-safe»?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Что такое "happens-before"?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Что такое JMM?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>11</b>
+</td>
+<td class="wide-text">Какое исключение вылетит, если вызвать wait не в блоке synchronized?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>15. Большая задача</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Сегодня ты начинаешь работу над супер современной и полезной программой! Это – электронное меню. Вот:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/27/image-ru-27-01.gif"/>
+<p class="amigo">- Круто! А для чего это?</p>
+<p>- Что-то ты много вопросов задаешь! Вот сделаешь, потом поговорим. Иди к секретному агенту, он даст тебе все необходимые инструкции.</p>
+<p class="amigo">- Товарищ  Капитан,  я не умею так красиво рисовать!</p>
+<p>- Запомни, тебе нужно реализовать необходимую бизнес логику, а картинки будет рисовать дизайнер. Иди к секретному агенту, по ходу дела разберешься.</p>
+<p class="amigo">- Есть разбираться!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

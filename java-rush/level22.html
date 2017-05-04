@@ -1,0 +1,1918 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-22.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 700px;">
+                    Уровень 22
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>1. Что такое mutable/imutable объекты и зачем они</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/22/image-ru-22-13.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Билаабо!</p>
+<p>- Сегодня Билаабо расскажет тебе о <b>mutable</b> и <b>immutable</b> объектах. </p>
+<p>Объекты, которые после создания можно изменить, называются изменяемыми или <b>mutable</b>.</p>
+<p>Объекты, которые после их создания изменить нельзя, называются неизменяемыми или <b>immutable</b>.</p>
+<p class="amigo">- А от чего зависит, можно объект менять или нет?</p>
+<p>- Человек, который пишет новый класс, может сделать объекты этого класса неизменяемыми. Например, можно скрыть все setter'ы – у объекта будет только конструктор и getter'ы, а значит, после создания объекта поменять его уже будет нельзя.</p>
+<p class="amigo">- И какая от этого польза?</p>
+<p>- У неизменяемых объектов много полезных свойств. Но можно выделить два, которые характерны практически для всех immutable объектов:</p>
+<p><b>1) Неизменяемые объекты можно реализовать значительно проще, чем изменяемые.</b></p>
+<p><b>2) Неизменяемые объекты можно свободно использовать одновременно из разных нитей.</b></p>
+<p>Чаще всего, когда разработчик решает написать immutable класс, он делает две версии этого класса – mutable и immutable.</p>
+<p class="amigo">- А в чем смысл писать два класса вместо одного?</p>
+<p>- Иногда так выгоднее, когда неизменяемая версия объекта будет гораздо проще/быстрее чем изменяемая. Тогда и делают две версии. Это почти как ArrayList и LinkedList: оба – списки, но один оптимизирован для одних целей, второй – для других.</p>
+<p class="amigo">- Уже понятнее.</p>
+<p>- Бывают также и чисто immutable классы, без их mutable версии.</p>
+<p class="amigo">- А если мне нужно что-то поменять в таком объекте? Что вообще можно сделать с неизменяемым объектом?</p>
+<p>- Обычно immutable классы содержат различные методы, которые «как-бы» меняют объект, но вместо изменения самого объекта эти методы просто создают новый объект и возвращают его.</p>
+<p>Вот тебе несколько примеров:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>String s = "moscow";<br/>
+        String s2 = s.toUpperCase();</b>
+</td>
+<td class="wide-text wide-text">В результате s содержит строку «moscow», а s2 –«MOSCOW»
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>Integer i = 1;<br/>
+         Integer j = i;<br/>
+         j++;</b>
+</td>
+<td class="wide-text wide-text">Вот что происходит на самом деле:<br/>
+    Integer  i =  new Integer(1);<br/>
+    Integer j = i;<br/>
+    j = new Integer(i.getInt()+1);
+    </td>
+</tr>
+</tbody></table>
+<p>Класс String – это immutable класс. Все объекты типа String – неизменяемые, что, однако, не мешает нами с ними работать. Например, метод <b>toUpperCase()</b> класса <b>String</b> преобразовывает строку в верхний регистр (заменяет все маленькие буквы на большие). Но <b>этот метод не меняет саму строку, а возвращает новую строку</b>, которая идентична первой, только все символы в верхнем регистре (большие).</p>
+<p>Класс Integer – это тоже immutable класс. Все объекты типа Integer – неизменяемые. Каждый раз, когда мы изменяем объект Integer – на самом деле создается новый объект.</p>
+<p class="amigo">- Как интересно. Ура, Билаабо.</p>
+<p>- Ура мне, ура Билаабо!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2><center>2. Перечисляю все классы, связанные со строками, и говорю, что делают они и все методы</center></h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Так ведь уже здоровались, Билаабо.</p>
+<p>- Да? Но мне все равно приятно начинать каждый урок с этой фразы.</p>
+<p>Сегодня мы плотно займемся классом String.</p>
+<p class="amigo">- Так я там уже все знаю. Даже то, что String – immutable.</p>
+<p>- У класса String 46 методов, сколько из них знаешь ты?</p>
+<p class="amigo">- Не больше десятка. Даже, наверное, максимум штук 5.</p>
+<p>- Тогда слушай.</p>
+<p>Разработчики Java заметили, что  в большинстве своем строки внутри программ существуют в неизменяемом виде, но иногда их все-таки изменяют. Очень неприятно, когда вы создали стоку, сохранили в нее что-то важное, передали в чужой метод, а он ее поменял. Чтобы такого не происходило, разработчики решили создать два вида строк – изменяемую и неизменяемую.</p>
+<p>- Класс String стал отвечать за неизменяемую строку, а класс <b>StringBuilder</b> – за  изменяемую. Объекты этих классов легко преобразуются друг в друга. В большинстве случаев разработчикам программ на Java достаточно просто String, что показывает, что проектировщики Java были правы.</p>
+<p class="amigo">- Т.е. если мне нужна строка – я создаю класс String, а если нужна изменяемая строка – то класс <b>StringBuilder</b>? </p>
+<p>- Да. На самом деле есть еще класс StringBuffer – это копия StringBilder, но все методы которого объявлены <b>synchronized</b>, для того, чтобы к объекту можно было обращаться из разных нитей программы.</p>
+<p class="amigo">- А как же такой пример? Разве тут строка не изменяется?</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">String s = "cat";<br/>
+    s= s + "-" + s;
+    </span>
+</td>
+</tr>
+</tbody></table>
+<p>- Нет. Тут есть два объекта String: «cat»и «cat-cat». Второй создается на основе первого, но первый объект не меняется. На самом деле тут все еще интереснее. Вот какой код сгенерирует компилятор, когда будет компилировать твой пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">String s = "cat";<br/>
+<b>StrinsBuilder</b> s2  = new <b>StringBuilder</b>(s);<br/>
+    s2.<b>append</b>("-");<br/>
+    s2.<b>append</b>(s);<br/>
+    s = s2.<b>toString</b>();
+    </span>
+</td>
+</tr>
+</tbody></table>
+<p>Т.е. для создания новой строки практически всегда используется StringBuilder, просто иногда всю работу за тебя делает компилятор. Но ведь твой вариант проще, разве нет?</p>
+<p class="amigo">- Да, классно, что в Java такой продвинутый компилятор.</p>
+<p>- А теперь пройдемся по методам класса String:</p>
+<p><b>1) Как узнать длину строки?</b></p>
+<p>Метод <b>length</b> возвращает длину строки – количество в ней символов.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод(ы)</th><th width="50%">Пример(ы)</th></tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2"><b>int</b> length<b>()</b>;
+    </td>
+<td class="monospace_text">String s = "Good news everyone!";<br/>
+    int n = s.<b>length</b>();
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">int n = "Good news everyone!".<b>length</b>();
+    </td>
+</tr>
+</tbody></table>
+<p><b>2) Как получить символ из строки?</b></p>
+<p>Метод <b>charAt</b> возвращает символ строки по его номеру. Нумерация символов начинается с 0.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод(ы)</th><th width="50%">Пример(ы)</th></tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2"><b>char</b> charAt<b>(int index)</b>
+</td>
+<td class="monospace_text">String s = "Good news everyone!";<br/>
+    char n = s.<b>сharAt</b>(5);
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">char n = "Good news everyone!".<b>сharAt</b>(5);
+    </td>
+</tr>
+</tbody></table>
+<p><b>3) Как получить символы из строки?</b></p>
+<p>Метод toCharArray возвращает массив всех символов строки.</p>
+<table class="table_example">
+<tbody><tr><th width="38%">Метод(ы)</th><th width="62%">Пример(ы)</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>char[]</b>toCharArray <b>()</b>
+</td>
+<td class="monospace_text">String s = "Good news everyone!";<br/>
+<b>for</b>(char c: s.<b>toCharArray</b>())<br/>
+    {<br/>
+    System.out.println(c);<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p><b>4) Как сравнить стоки?</b></p>
+<p>Метод equals проверяет – совпадают ли строки, а метод <b>equalsIgnoreCase</b> – совпадают ли строки, игнорируя регистр букв.</p>
+<table class="table_example">
+<tbody><tr><th width="38%">Метод(ы)</th><th width="62%">Пример(ы)</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>boolean</b> equals <b>(Object o)</b>
+</td>
+<td class="monospace_text">String s = "cat";<br/>
+    boolean test1 = s.<b>equals</b>("cat");<span class="grey_text">//true</span><br/>
+    boolean test2 = s.<b>equals</b>("Cat");<span class="grey_text">//false</span><br/>
+    boolean test3 = s.<b>equals</b>("c"+"a"+"t");<span class="grey_text">//true</span>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>boolean</b> equalsIgnoreCase <b>(String str)</b>
+</td>
+<td class="monospace_text">String s = "cat";<br/>
+    boolean test1 = s.<b>equalsIgnoreCase</b>("cat");<span class="grey_text">//true</span><br/>
+    boolean test2 = s.<b>equalsIgnoreCase</b>("Cat");<span class="grey_text">//true</span><br/>
+    boolean test3 = s.<b>equalsIgnoreCase</b>("cAT");<span class="grey_text">//true</span>
+</td>
+</tr>
+</tbody></table>
+<p><b>5) Как превратить все буквы в строке в большие или маленькие?</b></p>
+<p>Метод <b>toUpperCase</b> возвращает копию строки, все символы которой – большие.</p>
+<p>Метод <b>toLowerCase</b>  возвращает копию строки, все символы которой – маленькие.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод(ы)</th><th width="50%">Пример(ы)</th></tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2"><b>String</b> toUpperCase<b>()</b>
+</td>
+<td class="monospace_text">String s = "Good news everyone!";<br/>
+    s = s.toUpperCase();
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>Результат:</b><br/>
+    s == "GOOD NEWS EVERYONE!";
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2"><b>String</b> toLowerCase<b>()</b>
+</td>
+<td class="monospace_text">String s = "Good news everyone!";<br/>
+    s = s.toLowerCase();
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>Результат:</b><br/>
+    s == "good news everyone!";
+    </td>
+</tr>
+</tbody></table>
+<p><b>6) Как убрать пробелы в начале и в конце строки?</b></p>
+<p>Метод <b>trim</b> возвращает  копию строки, без «пустых» символов в начале и конце.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод(ы)</th><th width="50%">Пример(ы)</th></tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2"><b>String</b> trim<b>()</b>
+</td>
+<td class="monospace_text">String s = "Good news everyone!";<br/>
+    s = s.trim();
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>Результат:</b><br/>
+    s == "Good news everyone!";
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Внутреннее устройство String, метод substring</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/22/image-ru-22-12.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Элли.</p>
+<p>- Я тебе расскажу о подстроках. Подстрока – это часть строки. И самое частое действие со строками (после склеивания нескольких строк вместе) – это получение подстроки у строки.</p>
+<p><b>7) Как получить часть строки?</b></p>
+<p>Метод <b>substring</b> возвращает  часть строки. Есть два варианта этого метода.</p>
+<p>Первый вариант возвращает подстроку, заданную начальным и конечным номерами символов. <span class="red_text"><b>Последний символ при этом не входит!</b></span> Если передать номера (1,3) – с первого по третий, то в подстроке будут только первый и второй символы.</p>
+<p>Второй вариант – от переданного номера и до конца строки.</p>
+<table class="table_example">
+<tbody><tr><th width="55%">Метод(ы)</th><th width="45%">Пример(ы)</th></tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2"><b>String</b> substring<b>(int beginIndex, int endIndex)</b>
+</td>
+<td class="monospace_text">String s = "Good news everyone!";<br/>
+    s = s.<b>substring(1,6);</b>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>Результат:</b><br/>
+    s == "ood n";
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2"><b>String</b> substring<b>(int beginIndex)</b>
+</td>
+<td class="monospace_text">String s = "Good news everyone!";<br/>
+    s = s.<b>substring(1);</b>
+</td>
+</tr>
+</tbody></table>
+<p>
+</p><p class="amigo">- Все достаточно просто. Спасибо, Элли.</p>
+<p>- Еще я тебе расскажу о внутреннем устройстве объектов String.</p>
+<p>Как ты уже наверное знаешь – String – это  immutable класс. И какие же преимущества это дало? Одно из ключевых преимуществ – это как раз получение подстроки. Но обо всем попорядку.</p>
+<p>Внутри объект типа String содержит массив символов, о чем не трудно было догадаться. Но кроме этого там хранятся еще две переменные – номер первого символа в массиве и их количество. Для чего они нужны, я сейчас и расскажу.</p>
+<p>Когда мы создаем подстроку с помощью метода <b>substring</b>, то создается новый объект <span class="green_text">String</span>.</p>
+<p><span class="green_text">Но вместо того, чтобы хранить ссылку на массив с новым набором символов, этот объект хранит ссылку на старый массив символов и вместе с этим хранит две переменные, с помощью которых определяет – какая часть оригинального массива символов относится к нему.</span></p>
+<p class="amigo">- Ничего не понял.</p>
+<p>- Когда создается подстрока, массив символов не копируется в новый объект String. Вместо этого оба объекта хранят ссылку на один и тот же массив символов. Но! Второй объект хранит еще две переменных, в который записано с какого и сколько символов этого массива – его.</p>
+<p>Вот смотри:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Получение подстроки</th><th width="50%">Что хранится внутри подстроки</th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>String s = "mama";</b></span>
+</td>
+<td class="monospace_text">Что хранится в s:<br/>
+    char[] <b>value</b> = {'m','a','m','a'};<br/>
+<b>offset</b> = 0;<br/>
+<b>count</b> = 4;
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>Strins s2 = s.substring(1);</b></span>
+</td>
+<td class="monospace_text">Что хранится в s2:<br/>
+    char[] <b>value</b> = {'m','a','m','a'};<br/>
+<b>offset</b> = 1;<br/>
+<b>count</b> = 3;
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>Strins s3 = s.substring(1, 3);</b></span>
+</td>
+<td class="monospace_text">Что хранится в s3:<br/>
+    char[] <b>value</b> = {'m','a','m','a'};<br/>
+<b>offset</b> = 1;<br/>
+<b>count</b> = 2;
+    </td>
+</tr>
+</tbody></table>
+<p>Все три строки хранят ссылку на один и тот же массив char, просто кроме этого они еще хранят номер первого и последнего символа этого массива, который относится непосредственно к их объекту. Вернее, номер первого символа и количество.</p>
+<p class="amigo">- Теперь ясно.</p>
+<p>- Поэтому, если ты возьмешь строку длинной 10,000 символов и наделаешь из нее 10,000 подстрок любой длинны, то эти «подстроки» будут занимать очень мало памяти, т.к. массив символов не дублируется. Строки, которые должны занимать кучу места, будут занимать буквально пару байт.</p>
+<p class="amigo">- Круто!</p>
+<p>- А если бы строки  можно было менять – можно было бы так сделать?</p>
+<p class="amigo">- Нет, кто-то мог поменять ту первую строку, и тогда поменялись бы все ее «подстроки». Теперь понятно, почему так сделали. Это действительно крутое решение.</p>
+<p>- Рада, что тебе понравилось.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>4. Поиск, получение, удаление подстроки в String</h2>
+</div>
+<p>- Смотри, что еще можно делать с подстроками:</p>
+<p><b>8) Как найти нужную подстроку в строке?</b></p>
+<p>Методы <b>indexOf</b>, <b>lastIndexOf</b> позволяют искать строки в строках. Есть 4 вида таких методов:</p>
+<p>Метод <b>indexOf</b> ищет в нашей строке указанную строку. Он может искать ее с начала строки или начиная с какого-то номера (второй метод). Если строка найдена – метод возвращает номер ее первого символа, если не найдена  - возвращает -1</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод(ы)</th><th width="50%">Пример(ы)</th></tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2"><b>int</b> indexOf<b>(String str)</b>
+</td>
+<td class="monospace_text">String s = "<span class="green_text">Good <b>n</b>ews everyone!</span>";<br/>
+    int index  = s.<b>indexOf ("ne");</b>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>Результат:</b><br/>
+    index == 5
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2"><b>int</b> indexOf<b>(String str, int from)</b>
+</td>
+<td class="monospace_text">String s = "Good ne<span class="green_text">ws everyo<b>ne</b>!</span>";<br/>
+    int index  = s.<b>indexOf ("ne",7);</b>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>Результат:</b><br/>
+    index == 16
+    </td>
+</tr>
+</tbody></table>
+<p>Метод <b>lastIndexOf</b> ищет указанную строку в нашей строке с конца! Он может искать ее с самого конца строки или начиная с какого-то номера (второй метод). Если строка найдена – метод возвращает номер ее первого символа, если не найдена  - возвращает -1.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод(ы)</th><th width="50%">Пример(ы)</th></tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2"><b>int</b> lastIndexOf<b>(String str)</b>
+</td>
+<td class="monospace_text">String s = "<span class="green_text">Good news everyo<b>ne</b>!</span>";<br/>
+    int index  = s.<b>lastIndexOf("ne");</b>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>Результат:</b><br/>
+    index == 16
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2"><b>int</b> lastIndexOf<b>(String str,int from)</b>
+</td>
+<td class="monospace_text">String s = "<span class="green_text">Good <b>ne</b>ws every</span>one!";<br/>
+    int index  = s.<b>lastIndexOf("ne",15);</b>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>Результат:</b><br/>
+    index == 5
+    </td>
+</tr>
+</tbody></table>
+<p><b>9) Как заменить часть строки на другую?</b></p>
+<p>Для этого есть три метода.</p>
+<p>Метод <b>replace</b> заменяет все вхождения определенного символа на другой.</p>
+<p>Метод <b>replaceAll</b> заменяет все вхождения одной подстроки на другую.</p>
+<p>Метод <b>replaceFirst</b> заменяет первое вхождение переданной подстроки на заданную подстроку.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод(ы)</th><th width="50%">Пример(ы)</th></tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2">String <b>replace</b>(char oldChar, char newChar)
+    </td>
+<td class="monospace_text">String s = "G<b>oo</b>d news every<b>o</b>ne!";<br/>
+    String s2  = s.<b>replace</b>&gt;('o', 'a');
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>Результат:</b><br/>
+    s2 == "G<b>aa</b>d news every<b>a</b>ne!";
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2">String <b>replaceAll</b>(String regex, String replacement)
+    </td>
+<td class="monospace_text">String s = "Good <b>ne</b>ws everyo<b>ne</b>!";<br/>
+    String s2  = s.<b>replaceAll ("ne","_");</b>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>Результат:</b><br/>
+    s2 == "Good _ws everyo_!";
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2">String <b>replaceFirst</b>(String regex, String replacement)
+    </td>
+<td class="monospace_text">String s = "Good <b>ne</b>ws everyone!";<br/>
+    String s2  = s.<b>replaceFirst ("ne","_");</b>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>Результат:</b><br/>
+    s2 == "Good _ws everyone!";
+    </td>
+</tr>
+</tbody></table>
+<p>Но тут нужно быть аккуратным. В двух последних методах (<b>replaceAll&amp;replaceFirst</b>) в качестве строки, которую мы ищем, передается не просто строка, а регулярное выражение. Но об этом я расскажу позднее.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>5. Задачи на поиск/получение подстроки</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/22/image-ru-22-11.png"/>
+<p>- Привет, Амиго!</p>
+<p>Ты не поверишь. Я только что решил за тебя все задачи!</p>
+<p class="amigo">- Класс, спасибо, Диего.</p>
+<p>- Только я их тебе не отдам. Так что решай – умнее будешь:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level22,lesson05,task01"></button><b>1. Найти подстроку</b><br/><br/>
+                Метод <span class="taskcode">getPartOfString</span> должен возвращать подстроку начиная с символа после 1-го пробела и до конца слова,которое следует после 4-го пробела.<br/><br/>
+		Пример: "JavaRush - лучший сервис обучения Java."<br/><br/>
+		Результат: "- лучший сервис обучения"<br/><br/>
+		На некорректные данные бросить исключение <span class="taskcode">TooShortStringException</span> (сделать исключением).<br/>
+		Сигнатуру метода <span class="taskcode">getPartOfString</span> не менять.<br/>
+        Метод <span class="taskcode">main</span> не участвует в тестировании.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level22,lesson05,task02"></button><b>2. Между табуляциями</b><br/><br/>
+                Метод <span class="taskcode">getPartOfString</span> должен возвращать подстроку между первой и второй табуляцией.<br/>
+		На некорректные данные бросить исключение <span class="taskcode">TooShortStringException</span>.<br/>
+		Класс <span class="taskcode">TooShortStringException</span> не менять.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Нитиевые строки или строковые нити? Вот в чем вопрос.</b><br/><br/>
+                1. Метод <span class="taskcode">getPartOfString</span> должен возвращать подстроку между первой и последней табуляцией.<br/>
+		2. На некорректные данные <span class="taskcode">getPartOfString</span> должен бросить исключение:<br/>
+		а) <span class="taskcode">TooShortStringFirstThreadException</span>, если имя трэда <span class="taskcode">FIRST_THREAD_NAME</span>.<br/>
+		б) <span class="taskcode">TooShortStringSecondThreadException</span>, если имя трэда <span class="taskcode">SECOND_THREAD_NAME</span>.<br/>
+		в) <span class="taskcode">RuntimeException</span> в других случаях.<br/>
+		3. Реализуйте логику трех <span class="taskcode">protected</span> методов в <span class="taskcode">ThisUncaughtExceptionHandler</span> используя вызовы соответствующих методов согласно заданному шаблону.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>6. String.format</h2>
+</div>
+<p>- Я еще хотела тебе рассказать о методе <b>String.format</b>.</p>
+<p>Это статический метод класса <b>String</b>, но очень полезный. Но начну издалека.</p>
+<p>Когда тебе нужно вывести в одной строке текст, содержащий значения нескольких переменных, как ты будешь это делать?</p>
+<p class="amigo">- Какой текст?</p>
+<p>- Ну, например, такой:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">У тебя есть переменные:</th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">String name = "Bender";<br/>
+    int age = 12;<br/>
+    String friend = "Fry";<br/>
+    int weight = 200;
+    </span>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Нужно вывести текст:</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>User = {name: Bender, age: 12 years, friend: Fry, weight: 200 kg.}</b>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Примерно так:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">String name = "Bender";<br/>
+    int age = 12;<br/>
+    String friend = "Fry";<br/>
+    int weight = 200;<br/><br/>
+
+    System.out.println("User = {name: "+name+", age:"+age+" years,  friend: "+friend+", weight: "+weight+" kg. }");
+    </span>
+</td>
+</tr>
+</tbody></table>
+<p>- Не очень читаемо – не так ли?</p>
+<p class="amigo">- А по-моему – нормально.</p>
+<p>- Но вот если имена переменных у тебя будут длинные или нужно будет вызывать методы для получения данных, будет уже не очень читаемо:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text">System.out.println("User = <span class="green_text">{name: "</span>+user.getName()+<span class="green_text">", age:"</span>+user.getAge()+<span class="green_text">" years,  friend: "</span>+user.getFriends().get(0)+<span class="green_text">", weight: "</span>+user.getExtraInformation().getWeight()+<span class="green_text">" kg. }"</span>);
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ну, если так, то да – не очень читаемо.</p>
+<p>- Дело в том, что в реальных программах такоевстречается очень часто, поэтому я хочу показать тебе, как можно упростить себе жизнь с помощью метода <b>String.format</b>.</p>
+<p class="amigo">- Да говори же скорее, что это за волшебный метод такой?</p>
+<p>- Вот как можно записать  приведенный выше код:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text">String text  = String.format(<span class="green_text">"User = {name: %s, age:%d years,  friend: %s, weight:%d kg.}"</span>,<br/> 
+    user.getName(), user.getAge(), user.getFriends().get(0), user.getExtraInformation().getWeight())<br/><br/>
+
+    System.out.println(text);
+    </td>
+</tr>
+</tbody></table>
+<p>В метод <b>String.format</b> первым параметром передается строка-шаблон, в которой, на местах, в которые мы хотим подставить значения, стоят специальные символы: %s, %d.</p>
+<p>После строки-шаблона передаются параметры, значения которых и будут подставлены  на место символов %s, %d.</p>
+<p>Если нужно подставить строку мы пишем %s, если число - %d.</p>
+<p>Вот тебе пример попроще:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">String s = String.format("a=%d, b=%d, c=%d", 1, 4, 3);</span>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Результат:</th></tr>
+<tr>
+<td class="wide-text"><b>s будет равна «a=1, b=4, c=3»</b>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Да, это очень удобно.</p>
+<p>- А ведь еще можно делать и так:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">int a = -1, b = 4, c = 3;<br/>
+    String template;<br/>
+     <b>if</b> (a
+        template = "Warning! a=%d, b=%d, c=%d";<br/>
+     <b>else</b> <br/>
+        template = "a=%d, b=%d, c=%d";<br/><br/>
+
+    System.out.println(String.format(template, a, b, c) );
+    </span>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Результат вывода:</th></tr>
+<tr>
+<td class="wide-text">Warning! a=-1, b=4, c=3
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Гм. Действительно полезный метод, спасибо, Элли.</p>
+<p>- Если ты хочешь  использовать в методе format другие типы данных, то вот тебе таблица:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Обозначение</th><th width="50%">Тип</th></tr>
+<tr>
+<td class="wide-text wide-text">%s
+    </td>
+<td class="wide-text wide-text">String
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">%d
+    </td>
+<td class="wide-text wide-text">целое число: int, long, ...
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">%f
+    </td>
+<td class="wide-text wide-text">вещественное число: float, double
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">%b
+    </td>
+<td class="wide-text wide-text">boolean
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">%c
+    </td>
+<td class="wide-text wide-text">char
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">%t
+    </td>
+<td class="wide-text wide-text">Date
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">%%
+    </td>
+<td class="wide-text wide-text">Символ %
+    </td>
+</tr>
+</tbody></table>
+<p>На самом деле у этих параметров еще есть свои настройки, а у них свои.</p>
+<p>Но для начала тебе этого хватит. Если же нет – вот тебе ссылка на официальную документацию:</p>
+<p><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>7. Задачи на String.format</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/22/image-ru-22-10.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Нет, Диего, хватит. Сам решай свои задачи!</p>
+<p>- Амиго, дружище. Никто твои задачи за тебя не решит. Ты же хочешь стать умнее?</p>
+<p class="amigo">- Да.</p>
+<p>- Ты же в спортзале не просишь потягать за тебя штангу или согнуть пару балок?</p>
+<p class="amigo">- Нет.</p>
+<p>- Тогда и тут делай все сам. Вот тебе на этот раз очень интересные задачи:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level22,lesson07,task01"></button><b>1. Форматирование строки</b><br/><br/>
+                Исправить метод <span class="taskcode">getFormattedString</span> так, чтобы он возвращал строку с параметрами для форматирования.<br/>
+		Для перевода каретки не используйте \n.<br/><br/>
+<span class="example-legacy">Должен быть вывод:</span><br/>
+<span class="example-data">20 / 7 = 2,86<br/>
+		Exp = 3,33e+00</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level22,lesson07,task02"></button><b>2. МНЕ нравится курс JavaRush</b><br/><br/>
+                Исправить метод <span class="taskcode">getFormattedString</span> так, чтобы он возвращал строку с параметрами для форматирования.<br/>
+		Параметры должны меняться местами.<br/><br/>
+<span class="example-legacy">Должен быть вывод:</span><br/>
+<span class="example-data">МНЕ нравится курс JavaRush</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level22,lesson07,task03"></button><b>3. Форматирование даты</b><br/><br/>
+                Исправить метод <span class="taskcode">getFormattedString</span> так, чтобы он возвращал строку с параметрами для форматирования.<br/><br/>
+<span class="example-legacy">Должен быть вывод аналогичный следующему:</span><br/>
+<span class="example-data">31:10:13 15:59:59</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>8. StringBilder, StringBuffer</h2>
+</div>
+<p>- Осталось разобраться с <b>StringBuilder</b> и считай, что мы закончили.</p>
+<p>Как ты уже знаешь, StringBuilder – это аналог класса String, только изменяемый.</p>
+<p class="amigo">- А еще я помню, что компилятор сам генерирует код с использованием StringBuilder, когда мы просто складываем строки.</p>
+<p>- Да, ты прав. Какая у тебя отличная память. Впрочем, как и у всех роботов. Все время забываю об этом.</p>
+<p>Давай же разберемся, что можно делать с помощью класса <b>StringBuilder:</b></p>
+<p><b>1) У меня есть обычная строка, я  хочу сделать ее изменяемой. Как мне это сделать?</b></p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">String s = "Bender";<br/>
+    StringBuilder s2 = <b>new StringBuilder(s);</b>
+</span>
+</td>
+</tr>
+</tbody></table>
+<p><b>2) Я хочу добавить символ к текущей «изменяемой строке»?</b></p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">String s = "Bender";<br/>
+    StringBuilder s2 = new StringBuilder(s);<br/>
+    s2.<b>append("!");</b>
+</span>
+</td>
+</tr>
+</tbody></table>
+<p><b>3) А как преобразовать StringBuilder обратно в строку?</b></p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">String s = "Bender";<br/>
+    StringBuilder s2 = new StringBuilder(s);<br/>
+    s2.append("!");<br/>
+    s = s2.<b>toString();</b>
+</span>
+</td>
+</tr>
+</tbody></table>
+<p><b>4) А если мне нужно удалить символ?</b></p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">String s = "Bender";<br/>
+    StringBuilder s2 = new StringBuilder(s);<br/>
+    s2.<b>deleteCharAt(2);</b> <span class="grey_text">//останется "Beder"</span>
+</span>
+</td>
+</tr>
+</tbody></table>
+<p><b>5) Я хочу заменить часть строки на другую?</b></p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">String s = "Ben<b>de</b>r";<br/>
+    StringBuilder s2 = new StringBuilder(s);<br/>
+    s2.<b>replace (3, 5, "_DE_");</b> <span class="grey_text">//будет "Ben_DE_r"</span>
+</span>
+</td>
+</tr>
+</tbody></table>
+<p><b>6) Мне нужно развернуть строку задом наперед?</b></p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">String s = "Bender";<br/>
+    StringBuilder s2 = new StringBuilder(s);<br/>
+    s2.<b>reverse();</b> <span class="grey_text">//будет "redneB";</span>
+</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Круто. Спасибо, Элли, все понятно.</p>
+<p>- Рада, что тебе понравилось.</p>
+<p>Еще хотела бы напомнить, вроде об этом должен был сказать Билаабо.</p>
+<p>Есть еще один класс – <b>StringBuffer</b> – это аналог класса <b>StringBuilder</b>, только его методы объявлены как <b>synchronized</b>. А значит, перед каждым вызовом такого метода, Java-машина проверяет – занят ли объект или если нет -  помечает его как занятый. После выхода из метода – «освобождает» объект. Из-за этого такие вызовы работают медленнее. Не стоит без необходимости пользоваться <b>StringBuffer</b>.</p>
+<p>Но если тебе нужен изменяемый объект <b>String</b>, к которому будут обращаться из нескольких нитей – лучше <b>StringBuffer</b> тебе не найди.</p>
+<p class="amigo">- Спасибо за информацию. Думаю, когда-нибудь она мне пригодится.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>9. Задачи по StringBilder, StringBuffer</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/22/image-ru-22-09.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Диего. Знаешь, я решил, что все, что ты делаешь – это для моей же пользы.</p>
+<p class="amigo">Спасибо тебе за задачи. Я с удовольствием буду их решать.</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level22,lesson09,task01"></button><b>1. Обращенные слова</b><br/><br/>
+                В методе <span class="taskcode">main</span> с консоли считать имя файла, который содержит слова, разделенные пробелами.<br/>
+		Найти в тексте все пары слов, которые являются обращением друг друга. Добавить их в <span class="taskcode">result</span>.<br/>
+		Порядок слов first/second не влияет на тестирование.<br/>
+		Использовать <span class="taskcode">StringBuilder</span>.<br/><br/>
+        Пример содержимого файла<br/>
+        рот тор торт о<br/>
+        о тот тот тот<br/>
+        Вывод:<br/>
+        рот тор<br/>
+        о о<br/>
+        тот тот<br/>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level22,lesson09,task02"></button><b>2. Формируем Where</b><br/><br/>
+                Сформируйте часть запроса <span class="taskcode">WHERE</span>, используя <span class="taskcode">StringBuilder</span>.<br/>
+		Если значение <span class="taskcode">null</span>, то параметр не должен попадать в запрос.<br/><br/>
+<span class="example-legacy">Пример:</span><br/>
+<span class="example-data">{"name", "Ivanov", "country", "Ukraine", "city", "Kiev", "age", null}</span><br/><br/>
+<span class="example-legacy">Результат:</span><br/>
+<span class="example-data">"name = 'Ivanov' and country = 'Ukraine' and city = 'Kiev'"</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level22,lesson09,task03"></button><b>3. Составить цепочку слов</b><br/><br/>
+                В методе <span class="taskcode">main</span> считайте с консоли имя файла, который содержит слова, разделенные пробелом.<br/>
+		В методе <span class="taskcode">getLine</span> используя <span class="taskcode">StringBuilder</span> расставить все слова в таком порядке,<br/>
+		чтобы последняя буква данного слова совпадала с первой буквой следующего, не учитывая регистр.<br/>
+		Каждое слово должно участвовать 1 раз.<br/>
+		Метод <span class="taskcode">getLine</span> должен возвращать любой вариант.<br/>
+		Слова разделять пробелом.<br/>
+		В файле не обязательно будет много слов.<br/><br/>
+<span class="example-legacy">Пример тела входного файла:</span><br/>
+<span class="example-data">Киев Нью-Йорк Амстердам Вена Мельбурн</span><br/><br/>
+<span class="example-legacy">Результат:</span><br/>
+<span class="example-data">Амстердам Мельбурн Нью-Йорк Киев Вена</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>10. Character, кодировки</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Сейчас будет еще одна интересная тема – кодировки.</p>
+<p>Возможно, ты где-то уже слышал, что у каждого символа есть код (число). Именно поэтому тип char считается не только символьным, но и числовым типом.</p>
+<p>Например код символа А английского алфавита – 65. B – 66, C – 67и так далее. Свои коды есть у больших букв и у маленьких, у русских букв, у китайских (ага, много, много кодов), у цифр, у различных символов – словом практически у всего, что можно назвать символом.</p>
+<p class="amigo">- Т.е. каждой букве или каждому символу соответствует какое-то число?</p>
+<p>- Да, именно так.</p>
+<p>Символ можно преобразовать в число, а число в символ. Java вообще практически не видит разницы между ними:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">charc = 'A'; <span class="grey_text">//код(число) буквы А – 65</span><br/>
+    c++; <span class="grey_text">//Теперь с содержит число 66 – код буквы B</span>
+</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Интересно.</p>
+<p>- Так вот, кодировкой называется набор символов и соответствующий им набор кодов. Только вот таких кодировок было придумано не одна, а достаточно много. Это уже потом придумали общую универсальную кодировку – Unicode.</p>
+<p>Хотя, сколько бы универсальных стандартов не придумали, от старых никто отказываться  не спешит. И все получается прямо как на этой картинке:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/22/image-ru-22-05.png"/>
+<p>Вот представь, что Вася и Коля захотели самостоятельно придумать кодировки.</p>
+<p>Вот кодировка Васи:</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/22/image-ru-22-06.png"/>
+<p>А вот кодировка Коли:</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/22/image-ru-22-07.png"/>
+<p>Они даже используют одни и те же символы, но коды у этих символов разные.</p>
+<p>И вот когда строку "ABC-123" в кодировке Васи записывают в файл, туда пишется набор байт:</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/22/image-ru-22-08.png"/>
+<p>А теперь этот файл хочет прочитать другая программа, которая использует кодировку Коли:</p>
+<p>Вот что она прочитает«345-IJK»</p>
+<p>И самое плохое то, что обычно нигде в файле тип кодировки не хранится, и разработчикам программ приходится угадывать их.</p>
+<p class="amigo">- А как их угадывать?</p>
+<p>- Это отдельная тема. Но я хочу тебе рассказать, как работать с кодировками. Как ты уже знаешь, размер типа char в Java – два байта. И строки в Java имеют формат Unicode.</p>
+<p>Но Java позволяет преобразовать строку в набор байт любой известной ей кодировки. Для этого есть специальные методы у класса String(!). Так же в Java есть специальный класс Charset, который описывает конкретную кодировку.</p>
+<p><b>1) Как получить список всех кодировок, с которыми Java может работать?</b></p>
+<p>Для этого есть специальный статический метод <b>availableCharsets</b>. Этот метод возвращает набор пар (имя кодировки, объект описывающий кодировку)</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">SortedMap&lt;String,Charset&gt; charsets  =  Charset.<b><u>availableCharsets</u></b>();</span>
+</td>
+</tr>
+</tbody></table>
+<p>У каждой кодировки есть уникальное имя, вот некоторые из них: UTF-8, UTF-16, Windows-1251, KOI8-R,…</p>
+<p><b>2) Как получить текущую активную кодировку (Unicode)?</b></p>
+<p>Для этого есть специальный метод <b>defaultCharset</b></p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text">Charset currentCharset = Charset.<b>defaultCharset</b>();</span>
+</td>
+</tr>
+</tbody></table>
+<p><b>3) Как преобразовать строку в определенную кодировку?</b></p>
+<p>В Java на основе строки можно создать массив байт в любой известной Java кодировке:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод</th><th width="50%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>byte[]</b> getBytes<b>()</b>
+</td>
+<td class="monospace_text wide-text">String s = "Good news everyone!";<br/>
+    byte[] buffer = s.<b>getBytes</b>()
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>byte[]</b> getBytes<b>(Charset charset)</b>
+</td>
+<td class="monospace_text wide-text">String s = "Good news everyone!";<br/>
+    Charset koi8 = Charset.forName("KOI8-R");<br/>
+    byte[] buffer = s.<b>getBytes</b>(koi8);
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>byte[]</b> getBytes<b>(String charsetName)</b>
+</td>
+<td class="monospace_text wide-text">String s = "Good news everyone!";<br/>
+    byte[] buffer = s.<b>getBytes</b>("Windows-1251")
+    </td>
+</tr>
+</tbody></table>
+<p><b>4) А как преобразовать набор байт, которые я прочитал из файла в строку, если я знаю в какой кодировке они были в файле?</b></p>
+<p>Тут все еще проще – у класса String есть специальный конструктор:</p>
+<table class="table_example">
+<tbody><tr><th width="47%">Метод</th><th width="53%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text">String<b>(byte bytes[])</b>
+</td>
+<td class="monospace_text wide-text">byte[] buffer = new byte[1000];<br/>
+    inputStream.read(buffer);<br/><br/>
+
+    String s = <b>new String(buffer);</b>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">String<b>(byte bytes[],</b> Charset charset<b>)</b>
+</td>
+<td class="monospace_text wide-text">byte[] buffer = new byte[1000];<br/>
+    inputStream.read(buffer);<br/><br/>
+<b>Charset koi8 = Charset.forName("KOI8-R");</b><br/>
+    String s = <b>new String(buffer, koi8);</b>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">String<b>(byte bytes[],</b> String charsetName<b>)</b>
+</td>
+<td class="monospace_text wide-text">byte[] buffer = new byte[1000];<br/>
+    inputStream.read(buffer);<br/><br/>
+
+    String s = <b>new String(buffer, "Windows-1251");</b>
+</td>
+</tr>
+</tbody></table>
+<p><b>5) А как преобразовать набор байт из одной кодировки в другую?</b></p>
+<p>Есть много способов. Вот тебе один из самых простых:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>Charset koi8 = Charset.forName("KOI8-R");<br/>
+    Charset windows1251 = Charset.forName("Windows-1251");</b><br/><br/>
+
+    byte[] buffer = new byte[1000];<br/>
+    inputStream.read(buffer);<br/>
+    String s = <b>new String(buffer, koi8);</b><br/>
+    buffer = s.<b>getBytes(windows1251);</b><br/>
+    outputStream.write(buffer);
+    </span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Я так и думал. Спасибо за интересную лекцию, Риша.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>11. Регулярные выражения, примеры</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/22/image-ru-22-04.png"/>
+<p>- А сейчас я расскажу тебе о регулярных выражениях. Это одновременно и сложная, и простая тема. Чтобы досконально разобраться в регулярных выражениях может понадобиться прочитать пару-тройку нетонких книг, но научить тебя пользоваться ими я могу прямо сейчас.</p>
+<p><b>Как любят шутить опытные программисты – <span class="red_text">если у вас есть проблема и вы захотели решить ее с помощью регулярных выражений, то теперь у вас две проблемы.</span></b></p>
+<p class="amigo">- Гм.</p>
+<p>- Надеюсь, я не сильно тебя запугал, мой друг. Нет?</p>
+<p>Вот и отлично. И так, новая тема или что же такое «регулярные выражения»?</p>
+<p>Если сильно упростить, то регулярные выражения – это шаблон для строки.</p>
+<p>Ты можешь проверить – <b>соответствует ли некоторая строка заданному шаблону или нет.</b> Также можно разбивать строку на части, используя символ-разделитель или строку-шаблон.</p>
+<p>Но начнем с простого – <b>что же такое шаблон строки?</b></p>
+<p>В SQL, не в Java, при сравнении строк можно проверять – совпадает ли строка с определенным шаблоном или нет. Вот как это выглядит:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text">name <b>like</b> 'Alex%'
+    </td>
+</tr>
+</tbody></table>
+<p>Тут name – это переменная, like–это команда для проверки шаблона, а 'Alex%' –это шаблон.</p>
+<p>В данном случае % обозначает любую строку или подстроку.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Шаблон</th><th width="50%">Строки подходящие под шаблон</th></tr>
+<tr>
+<td class="wide-text wide-text"><b>'Alex%'</b>
+</td>
+<td class="wide-text wide-text"><b>Alex</b><br/>
+<b>Alex</b>andr<br/>
+<b>Alex</b>ander<br/>
+<b>Alex</b>andra<br/>
+    ….
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>'%x%'</b>
+</td>
+<td class="wide-text wide-text">Ma<b>x</b><br/>
+    Ma<b>x</b>im<br/>
+    Ale<b>x</b>andr<br/>
+    …
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>'%a'</b>
+</td>
+<td class="wide-text wide-text">Olg<b>a</b><br/>
+    Helen<b>a</b><br/>
+    Ir<b>a</b><br/>
+<b>…</b>
+</td>
+</tr>
+</tbody></table>
+<p>Если нужно было обозначить, что любой символ должен быть всего один, тодля этого в SQL используется знак подчеркивания – «_».</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Шаблон</th><th width="50%">Строки подходящие под шаблон</th></tr>
+<tr>
+<td class="wide-text wide-text"><b>'Alex%_'</b>
+</td>
+<td class="wide-text wide-text"><b><s>Alex</s></b><br/>
+<b>Alex</b>andr<br/>
+<b>Alex</b>ander<br/>
+<b>Alex</b>andra<br/>
+    ….
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>'_x'</b>
+</td>
+<td class="wide-text wide-text">Ax<br/>
+    Bx<br/>
+    Cx<br/>
+    …
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>'___'</b>
+</td>
+<td class="wide-text wide-text">Aaa<br/>
+    Aab<br/>
+    Bbb<br/>
+<b>…</b>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- В общем – понятно.</p>
+<p>- Отлично, тогда перейдем к регулярным выражениям.</p>
+<p>В регулярных выражениях принято задавать ограничение не только на «количество символов», но и на «содержание символа». Любая «маска» обычно состоит из двух (иногда больше) частей, первая из которых описывает «предпочтения» в символах, а вторая часть – их количество.</p>
+<p>Вот тебе несколько примеров <b>содержание символа:</b></p>
+<table class="table_example">
+<tbody><tr><th width="20%">Шаблон</th><th width="40%">Описание</th><th width="40%">Примеры</th></tr>
+<tr>
+<td class="wide-text wide-text">.
+    </td>
+<td class="wide-text wide-text">Один любой символ
+    </td>
+<td class="wide-text wide-text">1
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">\d
+    </td>
+<td class="wide-text wide-text">Любая цифра
+    </td>
+<td class="wide-text wide-text">7
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">\D
+    </td>
+<td class="wide-text wide-text">Любая <b>не</b>цифра
+    </td>
+<td class="wide-text wide-text">C
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">\s
+    </td>
+<td class="wide-text wide-text">Пробел, перенос строки, символ табуляции
+    </td>
+<td class="wide-text wide-text">' '
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">\S
+    </td>
+<td class="wide-text wide-text">Что угодно, кроме пробела, табуляции, переноса строки
+    </td>
+<td class="wide-text wide-text">f
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">[a-z]
+    </td>
+<td class="wide-text wide-text">Любая буква от a до z
+    </td><td class="wide-text wide-text">z
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">[0-9]
+    </td>
+<td class="wide-text wide-text">Любая цифра от 0 до 9.
+    </td>
+<td class="wide-text wide-text">8
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">\w
+    </td>
+<td class="wide-text wide-text">Любая буква
+    </td>
+<td class="wide-text wide-text">c
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">\W
+    </td>
+<td class="wide-text wide-text">Любая <b>не</b>буква
+    </td>
+<td class="wide-text wide-text">_
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Сразу не запомню, но выглядит не очень сложно.</p>
+<p>- Отлично, тогда еще примеры <b>количества символов в маске:</b></p>
+<table class="table_example">
+<tbody><tr><th width="20%">Шаблон</th><th width="40%">Описание</th><th width="40%">Примеры</th></tr>
+<tr>
+<td class="wide-text wide-text">A?
+    </td>
+<td class="wide-text wide-text">Символ A встречается 0..1 раз
+    </td>
+<td class="wide-text wide-text">A
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">B+
+    </td>
+<td class="wide-text wide-text">Символ B встречается 1.. ∞ раз
+    </td>
+<td class="wide-text wide-text">BBBB
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">C*
+    </td>
+<td class="wide-text wide-text">Символ C встречается 0.. ∞ раз
+    </td>
+<td class="wide-text wide-text">CCC
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">D{n}
+    </td>
+<td class="wide-text wide-text">Символ D встречается n раз
+    </td>
+<td class="wide-text wide-text">DDDD, для шаблона D{4}
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">E{n,}
+    </td>
+<td class="wide-text wide-text">Символ E встречается n.. ∞ раз
+    </td>
+<td class="wide-text wide-text">EEEEEEE, для шаблона E{2,}
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">F{n,m}
+    </td>
+<td class="wide-text wide-text">Символ F встречается n..m раз
+    </td><td class="wide-text wide-text">EEEE, для шаблона E{2,4}
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Тут вообще все очевидно.</p>
+<p>- Ты схватываешь все просто на лету. А теперь посмотрим, как все это смотрится вместе:</p>
+<table class="table_example">
+<tbody><tr><th width="20%">Шаблон</th><th width="40%">Описание</th><th width="40%">Примеры</th></tr>
+<tr>
+<td class="wide-text wide-text">[a-d]?
+    </td>
+<td class="wide-text wide-text">Символы a-d встречаются 0..1 раз
+    </td>
+<td class="wide-text wide-text">a, b, c, d
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">[b-d,z]+
+    </td>
+<td class="wide-text wide-text">Символы b,c,d,z встречаются 1.. ∞ раз
+    </td>
+<td class="wide-text wide-text">b, bcdcdbdbdbdbzzzzbbzbzb, zbz
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">[1,7-9]*
+    </td>
+<td class="wide-text wide-text">Символы 1,7,8,9 встречаются 0.. ∞ раз
+    </td>
+<td class="wide-text wide-text">1, 7, 9, 9777, 111199
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">1{5}
+    </td>
+<td class="wide-text wide-text">Символ 1 встречается 5 раз
+    </td>
+<td class="wide-text wide-text">11111
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">[1,2,a,b]{2}
+    </td>
+<td class="wide-text wide-text">Символы 1,2,a,b встречаются 2 раза
+    </td>
+<td class="wide-text wide-text">11, 12, 1a, ab, 2b, bb, 22
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">[a,0]{2,3}
+    </td>
+<td class="wide-text wide-text">Символы a,0 встречаются 2..3 раз
+    </td><td class="wide-text wide-text">aa, a0,00,0a, aaa,000, a00,0a0, a0a
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Так понятно же все.</p>
+<p>- Да. Гм. Или я все очень хорошо объясняю или ты слишком хорошо соображаешь. Но и то, и то нам на руку.</p>
+<p>Вот тебе еще пара новых моментов.</p>
+<p>Т.к. регулярные выражения часто используют для поиска подстрок в строке, то в шаблон добавлены еще два символа ^ и $.</p>
+<p>«^» - означает, что подстрока обязана включать начало строки.</p>
+<p>«$» - означает, что подстрока обязана включать конец строки.</p>
+<p>Примеры:</p>
+<table class="table_example">
+<tbody><tr><th width="30%">Шаблон</th><th width="70%">Строка и найденные подстроки, совпадающие с шаблоном</th></tr>
+<tr>
+<td class="wide-text wide-text">a{3}
+    </td>
+<td class="wide-text wide-text"><span class="green_text"><b>aaa</b></span> a  <span class="green_text"><b>aaa</b></span> a  <span class="green_text"><b>aaa</b></span>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text">a{3}$
+    </td>
+<td class="wide-text wide-text">aaa a  aaa a  <span class="green_text"><b>aaa</b></span>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text">^a{3}
+    </td>
+<td class="wide-text wide-text"><span class="green_text"><b>aaa</b></span> a  aaa a  aaa
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">^a{3}$
+    </td>
+<td class="wide-text wide-text">aaa a  aaa a  aaa
+    </td>
+</tr>
+</tbody></table>
+<p>И еще одно важное дополнение.</p>
+<p>В регулярных выражениях символы «[ ] \ / ^ $ . | ? * + ( ) { }» имеют специальное значение. Их еще называют «управляющие символы». Поэтому просто так их использовать в строке нельзя.</p>
+<p>Как и в Java их необходимо экранировать. Для этого, как и в Java, используется символ «\».</p>
+<p>Если мы хотим  описать, что строка должна состоять из трех символов «?», то нельзя писать так: ?{3}, т.к. символ «?» является управляющим. Надо сделать так: \?{3}, если мы хотим задать символ «\», то надо написать «\\».</p>
+<p class="amigo">- Ок, понятно.</p>
+<p>- А теперь еще маленькая интересная новость. В java, в файлах с кодом, внутри строк символ «\» тоже нужно экранировать, т.к. он является управляющим.</p>
+<p class="amigo">- Ну да.</p>
+<p>- Так вот, если ты попытаешься задать шаблон регулярного выражения в java внутри строки, то тебе нужно будет экранировать символ \ дважды.</p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="wide-text wide-text">Я хочу задать маску «c:\что-угодно» 
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">Регулярное выражение, по идее, должно выглядеть так: <br/>
+    один символ «с», <br/>
+    двоеточие,<br/>
+    слеш,<br/>
+    точка и звездочка (для обозначения любого количества символов).<br/><br/>
+
+    Я добавил пробелов для лучшей читабельности:<br/>
+    c  :  \  .*<br/>
+    Но символы «\» и «.» нужно экранировать, поэтому  регулярное выражение будет выглядеть так:<br/>
+    c  :   <span class="red_text">\\</span><span class="green_text">\.</span>*<br/>
+    Или, без пробелов<br/>
+    c:<span class="red_text">\\</span><span class="green_text">\.</span>*
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text">В регулярном выражении у нас должно быть три слеша (слеш – косая черта)<br/>
+    Поэтому регулярное выражение в java-файле будет выглядеть так:<br/>
+    Stringregexp = "c:<span class="red_text">\\\\</span><span class="green_text">\\.</span>*";
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ого! Ничего себе. Буду знать.</p>
+<p>- И если ты решил посильнее в этом разобраться, то вот тебе пара хороших ссылок:</p>
+<p><a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D0%B5_%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F" target="_blank">Лекция на вики</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>12. StringTokinizer, String.replace, String.split</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Насколько я знаю, Риша уже рассказал тебе о регулярных выражениях.</p>
+<p class="amigo">- Да, было очень интересно.</p>
+<p>- Отлично, теперь я расскажу тебе о работе со строками с помощью регулярных выражений.</p>
+<p>Начнем мы с самого простого:</p>
+<p><b>1) Как проверить, совпадает ли строка с шаблоном, заданным регулярным выражением:</b></p>
+<p>Для этого есть метод <b>matches</b>, в который передается строка, хранящая регулярное выражение, а метод возвращает true или false.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод(ы)</th><th width="50%">Пример(ы)</th></tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2">boolean <b>matches</b>(String regex)
+    </td>
+<td class="monospace_text">String s = "Good news everyone!";<br/>
+    Boolean test = s.<b>matches("news\\.*");</b>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>Результат:</b><br/>
+    false (строка не начинается со слова news)
+    </td>
+</tr>
+</tbody></table>
+<p><b>2) Как заменить все подстроки, заданные маской,  на нужные нам?</b></p>
+<p>Для этого есть два метода.</p>
+<p>Метод <b>replaceAll</b> заменяет все вхождения одной подстроки на другую.</p>
+<p>Метод <b>replaceFirst</b> заменяет первое вхождение переданной подстроки на заданную подстроку. </p>
+<table class="table_example">
+<tbody><tr><th width="48%">Метод(ы)</th><th width="52%">Пример(ы)</th></tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2">String <b>replaceAll</b>(String regex, String replacement)
+    </td>
+<td class="monospace_text">String s = "Good n<b>ew</b>s <b>ever</b>yon<b>e!</b>";<br/>
+    String s2  = s.<b>replaceAll ("e\\.","EX");</b>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>Результат:</b><br/>
+    s2 == "Good nEXs EXEXyonEX";
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2">String <b>replaceFirst</b>(String regex, String replacement)
+    </td>
+<td class="monospace_text">String s = "Good n<b>ew</b>s everyone!";<br/>
+    String s2  = s.<b>replaceFirst("e\\.","EX");</b>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>Результат:</b><br/>
+    s2 == "Good nEXs everyone!";
+    </td>
+</tr>
+</tbody></table>
+<p><b>3) Как разбить строку на части?</b></p>
+<p>Для этого есть метод split, который принимает маску подстроки-разделителя:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Метод(ы)</th><th width="50%">Пример(ы)</th></tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2">String[] <b>split</b>(String regex)
+    </td>
+<td class="monospace_text">String s = "Good <b>ne</b>ws everyo<b>ne</b>!";<br/>
+    String[] ss = s.<b>split</b>("ne");<br/>
+    System.out.println(Arrays.toString(ss));
+    </td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>Результат (будет массив из трех строк):</b><br/>
+    [Good , ws everyo, !]<br/>
+    "Good ", "ws everyo", "!";
+    </td>
+</tr>
+</tbody></table>
+<p>Есть еще один способ <b>разбиения строки на части</b> – с помощью класса <b>StringTokenizer</b>.</p>
+<p>Этот класс не использует регулярные выражения, вместо этого в него просто передается строка, состоящая из символов-разделителей. Преимущества этого подхода в том, что он не разбивает сразу всю строку на кусочки, а потихоньку идет от начала к концу.</p>
+<p>Класс состоит из конструктора и двух методов. В конструктор нужно передать строку, которую мы разбиваем на части, и строку – набор символов, используемых для разделения.</p>
+<p>Метод nextToken возвращает очередной токен – подстроку.</p>
+<p>Метод hasMoreTokens() возвращает true, если еще остались не отданные подстроки.</p>
+<table class="table_example">
+<tbody><tr><th width="28%">Метод(ы)</th><th width="72%">Пример(ы)</th></tr>
+<tr>
+<td class="monospace_text wide-text" rowspan="2"><b>boolean hasMoreTokens()<br/><br/>
+
+    String nextToken()
+    </b>
+</td>
+<td class="monospace_text"><span class="green_text">String s = "Good <b>ne</b>ws everyo<b>ne</b>!";<br/><br/>
+<b>StringTokenizer</b> tokenizer = <br/>    new <b>StringTokenizer</b>(s,"ne");<br/>
+<b>while</b> (tokenizer.<b>hasMoreTokens</b>())<br/>
+        {<br/>
+            String token = tokenizer.<b>nextToken</b>();<br/>
+     System.out.println(token);<br/>
+  }</span>
+</td>
+</tr>
+<tr>
+<td class="wide-text wide-text"><b>Вывод на экран будет таким:</b><br/>
+    Good <br/>
+    ws <br/>
+    v<br/>
+    ryo<br/>
+    !
+    </td>
+</tr>
+</tbody></table>
+<p>Обрати внимание, что разделителем считается любой символ, переданный во второй строке в конструктор <b>StringTokenizer</b>.</p>
+<p class="amigo">- Да, тут тоже все понятно. Может я не сразу смогу сам написать такой код, но то, что тут происходит, мне ясно.</p>
+<p>- Отлично, тогда будем считать, что тему ты освоил.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>13. Задачи на StringTokinizer, String.replace</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/22/image-ru-22-03.png"/>
+<p>- Хотя не так быстро. Вот решишь пару задач – тогда и освоил.</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level22,lesson13,task01"></button><b>1. StringTokenizer</b><br/><br/>
+                Используя <span class="taskcode">StringTokenizer</span> разделить <span class="taskcode">query</span> на части по разделителю <span class="taskcode">delimiter</span>.<br/><br/>
+		Пример:<br/>
+		getTokens("level22.lesson13.task01", ".") == {"level22", "lesson13", "task01"}
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level22,lesson13,task02"></button><b>2. Смена кодировки</b><br/><br/>
+                В метод <span class="taskcode">main</span> первым параметром приходит имя файла, тело которого в кодировке Windows-1251.<br/>
+		В метод <span class="taskcode">main</span> вторым параметром приходит имя файла, в который необходимо записать содержимое первого файла в кодировке UTF-8.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level22,lesson13,task03"></button><b>3. Проверка номера телефона</b><br/><br/>
+                Метод <span class="taskcode">checkTelNumber</span> должен проверять, является ли аргумент <span class="taskcode">telNumber</span> валидным номером телефона.<br/>
+<i>Критерии валидности:</i><br/>
+		1) если номер начинается с '+', то он содержит 12 цифр<br/>
+		2) если номер начинается с цифры или открывающей скобки, то он содержит 10 цифр<br/>
+		3) может содержать 0-2 знаков '-', которые не могут идти подряд<br/>
+		4) может содержать 1 пару скобок '(' и ')', причем если она есть, то она расположена левее знаков '-'<br/>
+		5) скобки внутри содержат четко 3 цифры<br/>
+		6) номер не содержит букв<br/>
+		7) номер заканчивается на цифру<br/><br/>
+
+		Примеры:<br/>
+		+380501234567 - true<br/>
+		+38(050)1234567 - true<br/>
+		+38050123-45-67 - true<br/>
+		050123-4567 - true<br/><br/>
+
+		+38)050(1234567 - false<br/>
+		+38(050)1-23-45-6-7 - false<br/>
+		050ххх4567 - false<br/>
+		050123456 - false<br/>
+		(0)501234567 - false
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>14. Учимся гуглить. Как сменить кодировку строки</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/22/image-ru-22-02.png"/>
+<p>- Привет, Амиго!</p>
+<p>Продолжаем учиться гуглить. Вот тебе несколько вопросов. Найди мне ответ на них в Google. Ответов я пока от тебя не требую. Просто попробуй найти эти ответы в интернете.</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопрос</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Как отсортировать массив строк в алфавитном порядке?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Регулярное выражение для проверки email?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Регулярное выражение для проверки url?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Регулярное выражение для разбиения строки на слова?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Как развернуть строку задом наперед? 
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Как узнать имя текущей кодировки?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Как создать папку на диске?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Как проверить – если ли определенная папка на диске?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Как скопировать файл?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Как скопировать директорию?
+    </td>
+</tr>
+</tbody></table>
+<p>Ответы на каждый вопрос можно найти в интернете где-то за минуту. Часто сразу готовые примеры. Пробуй. Учись искать.</p>
+<p>Очень часто программисты используют в своей работе код, написанный другими программистами. А любой код содержит ошибки.</p>
+<p>Я хочу, чтобы ты занимался интересной работой, а не сидел часами над глупыми ошибками.</p>
+<p>Так что – учись гуглить полезную информацию.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>15. Профессор дает доп. материал</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Вот тебе дополнительный материал по этому уровню</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-22.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>16. Хулио</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Слушай, а что бы ты делал, если бы узнал, что осталось жить полгода?</p>
+<p class="amigo">- Мне или всем?</p>
+<p>- Важное уточнение…</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-22.gif" preload="none" tabindex="0" taskkey="level22,lesson16,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-22.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=UUh4oVtF_EY" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>17. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Чуть не забыл. Вот тебе несколько вопросов к собеседованию, рассмотренных в текущем уровне:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Как правильно сравнить две строки в Java?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Как правильно сравнить две строки в Java игнорируя регистр букв?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Как отсортировать список строк в алфавитном порядке?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">В какой кодировке хранятся строки в Java?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Как преобразовать строку в кодировку Windows-1251?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Как разбить строку на отдельные слова?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Как развернуть строку задом наперед?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Что происходит, когда мы пишем "A"+"b"+"C"?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Что такое mutable и immutable типы?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Что дает типу String то, что его сделали immutable?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>18. Большая задача</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/22/image-ru-22-01.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Здравия желаю, Капитан Бобров!</p>
+<p>- У меня для тебя новая миссия - <b>давай напишем игру Тетрис</b>.</p>
+<p>Это секретная операция. Все дальнейшие инструкции через Intellij IDEA.</p>
+<p class="amigo">- Есть, начать выполнение секретного задания.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

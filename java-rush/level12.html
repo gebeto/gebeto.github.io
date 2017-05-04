@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-12.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 700px;">
+                    Уровень 12
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>1. Полиморфизм и  переопределение</h2>
+</div>
+<p>- Амиго, ты любишь китов?</p>
+<p class="amigo">- Китов? Не, не слышал.</p>
+<p>- Этот как корова, только больше и плавает. Кстати, киты произошли от коров. Ну, или имели общего с ними предка. Не столь важно.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/12/image-ru-12-03.png"/>
+<p>- Так вот. Хочу рассказать тебе об еще одном очень мощном инструменте ООП – это <span class="red_text"><b>полиморфизм</b></span>. У него есть четыре особенности.</p>
+<p><b>1) Переопределение метода.</b></p>
+<p>Представь, что ты для игры написал класс «Корова». В нем есть много полей и методов. Объекты этого класса могут делать разные вещи: идти, есть, спать. Еще коровы звонят в колокольчик, когда ходят. Допустим, ты реализовал в классе все до мелочей.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/12/image-ru-12-04.gif"/>
+<p>А тут приходит заказчик проекта и говорит, что хочет выпустить новый уровень игры, где все действия происходят в море, а главным героем будет кит.</p>
+<p>Ты начал проектировать  класс «Кит» и понял, что он лишь немного отличается от класса «Корова». Логика работы обоих классов очень похожа, и ты решил использовать наследование.</p>
+<p>Класс «Корова» идеально подходит на роль класса-родителя, там есть все необходимые переменные и методы. Достаточно только добавить киту возможность плавать. Но есть проблема: у твоего кита есть ноги, рога и колокольчик. Ведь эта функциональность реализована внутри класса «Корова». Что тут можно сделать?</p>
+<p><img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/12/image-ru-12-05.png"/></p>
+<p>К нам на помощь приходит <b>переопределение (замена) методов</b>. Если мы унаследовали метод,  который делает не совсем то, что нужно нам в нашем новом классе, мы можем заменить этот метод на другой.</p>
+<p><img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/12/image-ru-12-06.png"/></p>
+<p>Как же это делается? <span class="dred_text">В нашем классе-потомке мы объявляем <b>такой же метод, как и метод класса родителя, который хотим изменить.</b></span> Пишем в нем новый код. <span class="green_text">И все – как будто старого метода в классе-родителе и не было.</span></p>
+<p>Вот как это работает:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class Cow</b><br/>
+{<br/>
+   <b>public</b> void <b>printColor()</b><br/>
+   {<br/>
+      System.out.println(<span class="green_text">"Я - белая"</span>);<br/>	
+   }<br/>
+   <b>public</b> void <span class="dred_text"><b>printName</b></span>()<br/>
+   {<br/>
+      System.out.println(<span class="green_text">"Я - корова"</span>);<br/>
+   }<br/>
+}<br/><br/>
+<b>class Whale extends Cow</b><br/>
+{<br/>
+   <b>public</b> void <span class="dred_text"><b>printName</b></span>()<br/>
+   {<br/>
+     System.out.println(<span class="green_text">"Я - кит"</span>);<br/>
+   }<br/>
+}
+    </td>
+<td class="wide-text">Тут определены два класса <b>Cow</b> и <b>Whale</b>. 
+    <b>Whale</b> унаследован от <b>Cow</b>.<br/><br/> 
+    В классе <b>Whale</b> переопределен метод <b>printName();</b>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+  {<br/>
+      Cow cow = new Cow();<br/>
+      cow.<span class="dred_text"><b>printName</b></span>();<br/>
+  }
+</td>
+<td class="wide-text">Данный код выведет на экран надпись «<span class="green_text">Я – корова</span>»
+</td>
+</tr>
+<tr><td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+  {<br/>
+      Whale whale = new Whale();<br/>
+      whale.<span class="dred_text"><b>printName</b></span>();<br/>
+  }
+</td>
+<td class="wide-text">Данный код выведет на экран «<span class="green_text">Я – кит</span>»
+</td>
+</tr>
+</tbody>
+</table>
+<p>После наследования класса <b>Cow</b> и переопределения метода <b>printName</b>, класс <b>Whale</b> фактически содержит такие данные и методы:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class Whale</b><br/> 
+{<br/>
+   <b>public</b> void <b>printColor</b>()<br/>
+   {<br/>
+      System.out.println(<span class="green_text">"Я - белая"</span>);<br/>
+   }<br/>
+   <b>public</b> void <b>printName</b>()<br/>
+   {<br/>
+     System.out.println(<span class="green_text">"Я - кит"</span>);<br/>
+   }<br/>
+}
+    </td>
+<td class="wide-text">Ни о каком старом методе мы и не знаем.
+    </td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Честно говоря, ожидаемо.</p>
+<p><b>2) Но это еще не все.</b></p>
+<p>- Предположим в классе <b>Cow</b> есть метод <b>printAll</b>, который вызывает два других метода, тогда код будет работать так:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class Cow</b><br/>
+{<br/>
+   <b>public</b> void <span class="blue_text"><b>printAll</b></span>()<br/>
+   {<br/>
+       <b>printColor</b>();<br/>
+      <span class="dred_text">printName</span>();<br/>
+   }<br/>
+   <b>public</b> void <b>printColor</b>()<br/>
+   {<br/>
+      System.out.println(<span class="green_text">"Я - белая"</span>);<br/>
+   }<br/>
+   <b>public</b> void <span class="dred_text"><b>printName</b></span>()<br/>
+   {<br/>
+      System.out.println(<span class="green_text">"Я - корова"</span>);<br/>
+   }<br/>
+}<br/><br/>
+<b>class Whale extends Cow</b><br/>
+{<br/>
+   public void <span class="dred_text"><b>printName</b></span>()<br/>
+   {<br/>
+      System.out.println(<span class="green_text">"Я - кит"</span>);<br/>
+   }<br/>
+}
+    </td>
+<td class="wide-text">
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+  {<br/>
+      Whale whale = new Whale();<br/>
+      whale.<span class="blue_text"><b>printAll</b></span>();<br/>
+  }
+    </td>
+<td class="wide-text">На экран будет выведена надпись<br/>
+<span class="green_text">Я – белая</span><br/>
+<span class="green_text">Я – кит</span>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Обрати внимание, когда вызываются метод printAll() написанный в классе Cow, <span class="green_text">у объекта типа Whale, то будет использован метод printName класса Whale,</span> а не Cow.</p>
+<p><span class="red_text">Главное,  не в каком классе написан метод, а какой тип (класс) объекта, у которого этот метод вызван.</span></p>
+<p class="amigo">- Ясно.</p>
+<p>- <span class="red_text">Наследовать и переопределять можно только нестатические методы. Статические методы не наследуются и, следовательно, не переопределяются.</span></p>
+<p>Вот как выглядит класс Whale после применения наследования и переопределения методов:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class Whale</b><br/> 
+{<br/>
+   <b>public</b> void <span class="blue_text"><b>printAll</b></span>()<br/>
+   {<br/>
+       <b>printColor</b>();<br/>
+       <span class="dred_text"><b>printName</b></span>();<br/>
+   }<br/>
+   <b>public</b> void <b>printColor</b>()<br/>
+   {<br/>
+      System.out.println(<span class="green_text">"Я - белая"</span>);<br/>
+   }<br/>
+   <b>public</b> void <span class="dred_text"><b>printName</b></span>()<br/>
+   {<br/>
+      System.out.println(<span class="green_text">"Я - кит"</span>);<br/>
+   }<br/>
+}
+    </td>
+<td class="wide-text">Вот как выглядит класс Whale, после применения наследования и переопределения метода. Ни о каком старом методе <b>printName</b> мы и не знаем.
+    </td>
+</tr>
+</tbody>
+</table>
+<p><b>3) Приведение типов.</b></p>
+<p>Тут есть еще более интересный момент. <span class="green_text">Т.к. класс при наследовании получает все методы и данные класса  родителя, то объект этого класса разрешается сохранять (присваивать) в переменные класса родителя</span> (и родителя родителя, и т.д., вплоть до Object). Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static void</b> main(String[] args)<br/>
+  {<br/>
+      Whale whale = <b>new</b> Whale();<br/>
+      whale.<span class="green_text">printColor</span>();<br/>
+  }
+</td>
+<td class="wide-text">На экран будет выведена надпись<br/> Я – белый.
+</td>
+</tr>
+<tr><td class="monospace_text wide-text"><b>public static void</b> main(String[] args)<br/>
+  {<br/>
+      <span class="dred_text">Cow cow</span> = <b>new</b> Whale();<br/>
+      <span class="dred_text">cow</span>.<span class="green_text">printColor</span>();<br/>
+  }
+</td>
+<td class="wide-text">На экран будет выведена надпись<br/> Я – белый.
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static void</b> main(String[] args)<br/>
+  {<br/>
+      <span class="orange_text">Object o = <b>new</b> Whale();</span><br/>
+      System.out.println(o.toString());<br/>
+  }
+</td>
+<td class="wide-text">На экран будет выведена надпись<br/>
+     Whale@da435a.<br/> 
+     Метод toString() унаследован от класса Object.
+</td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Очень интересно. А зачем это может понадобиться?</p>
+<p>- Это ценное свойство. Позже ты поймешь, что очень, очень ценное.</p>
+<p><b>4) Вызов метода объекта</b> (динамическая диспетчеризация методов).</p>
+<p>Вот как это выглядит:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args)<br/>
+  {<br/>
+      Whale whale = new Whale();<br/>
+      whale.<span class="green_text">printName</span>();<br/>
+  }
+</td>
+<td class="wide-text">На экран будет выведена надпись<br/> Я – кит.
+</td>
+</tr>
+<tr><td class="monospace_text wide-text">public static void main(String[] args)<br/>
+  {<br/>
+      <span class="dred_text">Cow cow</span> = new Whale();<br/>
+      <span class="dred_text">cow</span>.<span class="green_text">printName</span>();<br/>
+  }
+</td>
+<td class="wide-text">На экран будет выведена надпись<br/> <span class="red_text">Я – кит.</span>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Обрати внимание, что на то, какой именно метод <b>printName</b> вызовется, от класса Cow или Whale, <span class="red_text">влияет не тип переменной, а тип – объекта, на который она ссылается.</span></p>
+<p><span class="green_text">В переменной типа <b>Cow</b> сохранена ссылка на объект типа <b>Whale</b>, и будет вызван метод <b>printName</b>, описанный в классе <b>Whale</b>.</span></p>
+<p class="amigo">- Это не просто для понимания.</p>
+<p>- Да, это не очень очевидно. Запомни главное правило:</p>
+<p><span class="red_text">Набор методов, которые можно вызвать у переменной, определяется типом переменной. А какой именно метод/какая реализация вызовется, определяется типом/классом объекта, ссылку на который хранит переменная.</span></p>
+<p class="amigo">- Попробую.</p>
+<p>- Ты будешь постоянно сталкиваться с этим, так что скоро поймешь и больше никогда не забудешь.</p>
+<p><b>5) Приведение типов.</b></p>
+<p><span class="orange_text">Для ссылочных типов, т.е. классов, приведение типов работает не так, как для примитивных типов. Хотя у ссылочных типов тоже есть <b>расширение</b> и <b>сужение типа</b>.</span> Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Сужение типа</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">Cow <span class="violet_text">cow</span> = new Whale();
+    </td>
+<td class="wide-text"><span class="dred_text">Классическое сужение типа.</span> Теперь у объекта типа Whale можно вызывать только методы, описанные в классе Cow.<br/><br/> 
+    Компилятор разрешит вызвать <span class="violet_text">у переменной cow</span> только те методы, которые есть у ее типа - класса Cow.
+    </td>
+</tr>
+</tbody>
+</table>
+<table class="table_example">
+<tbody><tr><th width="50%">Расширение типа</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">Cow <span class="violet_text">cow</span> = new Whale();<br/>
+<b>if</b> (cow <span class="orange_text">instanceof</span> Whale)<br/>
+{<br/>
+  Whale whale = <span class="red_text">(Whale)</span> cow;<br/>
+}
+    </td>
+<td class="wide-text"><span class="green_text">Классическое расширение типа</span> с проверкой.
+    Переменная <span class="violet_text">cow</span> типа Cow, хранит ссылку на объект класса Whale.<br/>
+<span class="orange_text">Мы проверяем, что это так и есть</span>, и затем выполняем операцию преобразования (расширения) типа. Или как ее еще называют – <span class="red_text">type cast</span>.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">Cow <span class="violet_text">cow</span> = new Cow();<br/>
+Whale whale = <span class="red_text">(Whale)</span> cow; <span class="grey_text">//exception</span>
+</td>
+<td class="wide-text">Ссылочное расширение типа можно провести и без проверки типа объекта.<br/>
+    При этом, если в переменной <span class="violet_text">cow</span> хранился объект не класса Whale, будет сгенерировано исключение – InvalidClassCastException.
+    </td>
+</tr>
+</tbody>
+</table>
+<p><b>6) А теперь еще на закуску. Вызов оригинального метода.</b></p>
+<p>Иногда тебе хочется не заменить унаследованный метод на свой при переопределении метода, а лишь немного дополнить его.</p>
+<p>В этом случае очень хочется исполнить в новом методе свой код и вызвать этот же метод, но базового класса. И такая возможность в Java есть. Делается это так: <b>super.method()</b>.</p>
+<p>Примеры:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> <span class="orange_text">Cow</span><br/>
+{<br/>
+   <b>public void</b> <span class="blue_text">printAll</span>()<br/>
+   {<br/>
+       printColor();<br/>
+       <span class="dred_text">printName</span>();<br/>
+   }<br/>
+   <b>public void</b> printColor()<br/>
+   {<br/>
+      System.out.println(<span class="green_text">"Я – белый"</span>);<br/>
+   }<br/>
+   <b>public void</b> <span class="dred_text">printName</span>()<br/>
+   {<br/>
+      System.out.println(<span class="green_text">"Я – корова"</span>);<br/>
+   }<br/>
+}<br/><br/>
+<b>class</b> <span class="violet_text">Whale</span> <b>extends</b> <span class="orange_text">Cow</span><br/>
+{<br/>
+   <b>public void</b> <span class="dred_text">printName</span>()<br/>
+   {<br/>
+      System.out.print(<span class="green_text">"Это неправда: "</span>);<br/>
+      <span class="red_text"><b>super</b>.printName();</span><br/><br/>
+
+      System.out.println(<span class="green_text">"Я – кит"</span>);<br/>
+   }<br/>
+}
+    </td>
+<td class="wide-text">
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static void</b> main(String[] args)<br/>
+  {<br/>
+      <span class="violet_text">Whale</span> whale = <b>new</b> <span class="violet_text">Whale</span>();<br/>
+      whale.<span class="blue_text">printAll</span>();<br/>
+  }
+</td>
+<td class="wide-text">На экран будет выведена надпись<br/>
+<span class="green_text">Я – белый</span><br/>
+<span class="green_text">Это неправда: Я – корова</span><br/>
+<span class="green_text">Я – кит</span>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Гм. Ничего себе лекция. Мои робо-уши чуть не расплавились.</p>
+<p>- Да, это не простой материал, он один из самых сложных. Профессор обещал дать ссылок на материалы других авторов, чтобы ты, если все-таки что-то не поймешь, мог устранить этот пробел.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>2. Задачи на полиморфизм</h2>
+</div>
+<p>- Привет, Амиго!  Вот тебе пара сотен задач на полиморфизм.</p>
+<p class="amigo">- Что? Еще и сотня задач?!</p>
+<p>- Шучу. Всего десять. То есть пять я хотел сказать.</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson02,task01"></button><b>1. Я не корова, Я - кит.</b><br/><br/>
+                Переопределить метод <span class="taskcode">getName</span> в классе <span class="taskcode">Whale</span>(Кит), чтобы программа выдавала:<br/>
+                Я не корова, Я – кит.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson02,task02"></button><b>2. Ничего не выводится на экран</b><br/><br/>
+                Переопределить метод <span class="taskcode">getName</span> в классе <span class="taskcode">Whale</span>(Кит), чтобы программа ничего не выдавала на экран.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson02,task03"></button><b>3. Кот от кота, а собака от собаки</b><br/><br/>
+                Переопределить метод <span class="taskcode">getChild</span> в классах <span class="taskcode">Cat</span>(кот) и <span class="taskcode">Dog</span>(собака), чтобы кот порождал кота, а собака – собаку.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson02,task04"></button><b>4. Или «Кошка», или «Собака», или «Птица», или «Лампа»</b><br/><br/>
+            Написать метод, который определяет, объект какого класса ему передали, и выводит на экран одну из надписей: Кошка, Собака, Птица, Лампа.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson02,task05"></button><b>5. Или «Корова», или «Кит», или «Собака», или «Неизвестное животное»</b><br/><br/>
+            Написать метод, который определяет, объект какого класса ему передали, и возвращает результат – одно значение из: «Корова», «Кит», «Собака», «Неизвестное животное».
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>3. Перегрузка методов </h2>
+</div>
+<p>- Привет, Амиго!  А я расскажу тебе о <span class="red_text">перегрузке методов.</span></p>
+<p class="amigo">- Их еще и перегружать можно?! Да что за день сегодня такой!</p>
+<p>- С ними много чего можно делать, но не будем об этом.</p>
+<p class="amigo">- Согласен.</p>
+<p>- <span class="green_text">Перегрузка – это очень простая операция.</span> На самом деле – это даже не операция над методами, хотя иногда ее называют страшным словом – <b>параметрический полиморфизм.</b></p>
+<p>Дело в том, что все методы внутри класса должны иметь уникальные имена.</p>
+<p class="amigo">- Да, я знаю об этом.</p>
+<p>- Так вот, это не совсем так. Вернее совсем не так. Метод не должен иметь уникальное имя. Уникальным должно быть <span class="green_text">объединение из имени и типов параметров</span> этого метода.  Их еще называют сигнатурами методов.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public</b> void <span class="green_text">print();</span><br/>
+<b>public</b> void <span class="green_text">print2();</span>
+</td>
+<td class="wide-text">Так можно. <span class="green_text">Два метода имеют уникальные имена.</span>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public</b> void <span class="green_text">print();</span><br/>
+<b>public</b> void <span class="green_text">print(int n);</span>
+</td>
+<td class="wide-text">И так можно. <span class="green_text">Два метода имеют уникальные имена (сигнатуры).</span>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public</b> void <span class="green_text">print(int n, int n2);</span><br/>
+<b>public</b> void <span class="green_text">print(int n);</span>
+</td>
+<td class="wide-text"><span class="green_text">Все еще уникальные методы.</span>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public</b> int <span class="dred_text">print(int a);</span><br/>
+<b>public</b> void <span class="dred_text">print(int n);</span>
+</td>
+<td class="wide-text">А так нельзя. <span class="dred_text">Методы не уникальные, хоть и возвращают разные типы.</span>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public</b> int <span class="green_text">print(int a, long b);</span><br/>
+<b>public</b> long <span class="green_text">print(long b, int a);</span>
+</td>
+<td class="wide-text">А так – можно. <span class="green_text">Параметры методов уникальные.</span>
+</td>
+</tr></tbody>
+</table>
+<p class="amigo">- Где-то я уже такое видел.</p>
+<p>- Ага. Когда ты пишешь <b>System.out.println</b>, Intellij IDEA подсказывает тебе и выдает в подсказке пару десятков методов <b>print</b> с разными параметрами. Компилятор просто определит нужный метод, по типам переменных, которые ты туда передаешь, и пропишет вызов именно его.</p>
+<p class="amigo">- Это, вроде, не сложно. Не полиморфизм, однако.</p>
+<p>- Точнее -  не переопределение методов</p>
+<p>Кстати, обращаю твое внимание, что <span class="orange_text">имена параметров роли не играют</span> – они теряются при компиляции. После компиляции о методе известно <span class="green_text">только его имя и типы параметров.</span></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи на перегрузку методов</h2>
+</div>
+<p>- Привет, Амиго! А вот и снова я. Принес тебе в подарок несколько интересных задач. И не благодари.  Бывай, Амиго.</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson04,task01"></button><b>1. print(int) и print(String)</b><br/><br/>
+                Написать два метода: <span class="taskcode">print(int)</span> и <span class="taskcode">print(String)</span>. 
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson04,task02"></button><b>2. print(int) и print(Integer)</b><br/><br/>
+                Написать два метода: <span class="taskcode">print(int)</span> и <span class="taskcode">print(Integer)</span>.<br/> 
+                Написать такой код в методе <span class="taskcode">main</span>, чтобы вызвались они оба.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson04,task03"></button><b>3. Пять методов print с разными параметрами</b><br/><br/>
+                Написать пять методов <span class="taskcode">print</span> с разными параметрами.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson04,task04"></button><b>4. Три метода возвращают минимальное из двух переданных в него чисел</b><br/><br/>
+            Написать <span class="taskcode">public static</span> методы: <span class="taskcode">int min(int, int)</span>, <span class="taskcode">long min(long, long)</span>, <span class="taskcode">double min(double, double)</span>.
+            Каждый метод должен возвращать минимальное из двух переданных в него чисел.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson04,task05"></button><b>5. Три метода возвращают максимальное из двух переданных в него чисел</b><br/><br/>
+            Написать <span class="taskcode">public static</span> методы: <span class="taskcode">int max(int, int)</span>, <span class="taskcode">long max (long, long)</span>, <span class="taskcode">double max (double, double)</span>.
+            Каждый метод должен возвращать максимальное из двух переданных в него чисел.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>5. Абстрактные классы </h2>
+</div>
+<p>- Привет, Амиго! Новая интересная тема.</p>
+<p class="amigo">- Да сегодня просто день интересных тем!!</p>
+<p>- Спасибо!</p>
+<p class="amigo">- Да не за что.</p>
+<p>- Помнишь ситуацию, когда <span class="orange_text">мы ввели базовый класс ChessItem для упрощения всех классов шахматных фигур?</span></p>
+<p class="amigo">- Да.</p>
+<p>- Теперь представь, что у каждой фигуры есть метод, который занимается ее отрисовкой на экране. Вызываешь метод, и фигура сама себя рисует в своих текущих координатах. Удобно было бы вынести этот метод в базовый класс?</p>
+<p class="amigo">- Да. После того, что я узнал о полиморфизме, можно было бы вызывать метод отрисовки для всех фигур, независимо от их типа. Примерно так:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th>
+</tr><tr>
+<td class="monospace_text wide-text"><b>class</b> ChessBoard<br/>
+{<br/>
+    <b>public void</b> drawAllChessItems()<br/>
+   {<br/>
+     <span class="grey_text">//добавляем фигуры в список</span><br/>
+     ArrayListChessItem&gt; <span class="yellow_bg">items</span> = new ArrayListChessItem&gt;();<br/> 
+     <span class="yellow_bg">items</span>.add(<b>new</b> King());<br/>
+     <span class="yellow_bg">items</span>.add(<b>new</b> Queen());<br/>
+     <span class="yellow_bg">items</span>.add(<b>new</b> Bishop());<br/><br/>
+
+     <span class="grey_text">//рисуем их независимо от их типа.</span><br/>
+     <b>for</b> (<span class="orange_text">ChessItem</span> item: <span class="yellow_bg">items</span>)<br/>
+     {<br/>
+        item.draw(); <br/>
+     }<br/>
+  }<br/>
+}
+
+    </td>
+</tr>
+</tbody></table>
+<p>- Молодец. Именно так. А что бы отрисовал на экране метод draw самого класса ChessItem?</p>
+<p class="amigo">- Не знаю. Такой фигуры ведь в шахматах нет. Значит, и изображения у нее нет.</p>
+<p>- Именно. Более того, создавать объекты типа ChessItem – не имеет смысла. Это не фигура из шахмат, <span class="dred_text">всего лишь</span> <span class="red_text">абстракция</span> <span class="dred_text">- класс, который мы сделали для удобства.</span> Так работает абстракция из ООП: мы вынесли важные (общие для всех фигур) данные и методы в базовый класс, а их различия оставили в их классах.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/12/image-ru-12-02.png"/>
+<p>Для такого случая в Java  есть специальный тип классов – <b>абстрактные классы</b>. Вот три вещи, которые стоит помнить об абстрактных классах. </p>
+<p><b>1)</b> <span class="green_text">Абстрактный класс может содержать объявление метода без его реализации.</span> Такой метод называется абстрактным.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th>
+</tr><tr>
+<td class="monospace_text wide-text"><b>public <span class="red_text">abstract</span> class</b> ChessItem<br/>
+            {<br/>
+             <b>public int</b> x, y; <span class="grey_text">//координаты</span><br/>
+             <b>private int</b> value; <span class="grey_text">// «ценность» фигуры</span><br/><br/>
+
+             <b>public</b> int getValue() <span class="grey_text">//обычный метод, возвращает значение value</span><br/>
+             {<br/>
+               <b>return</b> value;<br/>
+             }<br/><br/>
+
+             <span class="red_text"><b>public abstract</b> void draw();</span> <span class="grey_text">//абстрактный метод. Реализация отсутствует.</span><br/><br/>
+
+            }
+        </td>
+</tr>
+</tbody></table>
+<p><b>2)</b><span class="green_text"> Абстрактный метод помечается специальным ключевым словом <b>abstract</b>.</span></p>
+<p>Если в классе есть хоть один абстрактный метод, класс тоже помечается ключевым словом <span class="red_text"><b>abstract</b></span>.</p>
+<p><b>3)</b> <span class="dred_text">Создавать объекты абстрактного класса нельзя.</span> Такой код просто не скомпилируется.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text">ChessItem item = <span class="red_text">new ChessItem</span>();<br/>
+item.draw();
+    </td>
+<td class="wide-text"><span class="dred_text">Этот код не скомпилируется</span>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text">ChessItem item = <span class="green_text">new Queen</span>();<br/>
+item.draw();
+</td>
+<td class="wide-text"><span class="green_text">А так можно.</span>
+</td>
+</tr>
+</tbody>
+</table>
+<p><b>4)</b> Если ты наследовал свой класс от абстрактного класса, то нужно переопределить все унаследованные абстрактные методы - написать для них реализацию. Иначе такой класс тоже придется объявить абстрактным. <span class="red_text">Если в классе есть хотя-бы один нереализованный метод, объявленный прямо в нем или унаследованный от класса-родителя, то класс считается абстрактным.</span></p>
+<p class="amigo">- А зачем это все нужно? Зачем нужны абстрактные классы? Разве нельзя вместо них использовать обычные? А вместо абстрактных методов просто писать две скобочки в качестве тела метода - {} ?</p>
+<p>- Можно. Но эти ограничения сродни модификатору <b>private</b>. Мы специально запрещали с помощью <b>private</b> прямой доступ к данным, чтобы другие программисты и их классы пользовались только написанными нами <b>public</b>-методами.</p>
+<p>То же и с абстрактным классом. <span class="green_text">Тот, кто написал этот класс, не хочет, чтобы создавались его объекты.</span> Наоборот, он рассчитывает на то, чтобы от его абстрактного класса наследовались и переопределяли абстрактные методы.</p>
+<p class="amigo">- Все равно не понятно, зачем усложнять себе жизнь?</p>
+<p>- Преимущество этого проявляется в больших проектах. Чем больше классов, тем чётче приходится очерчивать их роли.  Ты увидишь преимущество этого, и уже в ближайшем будущем. Все через это проходят.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задачи на абстрактные классы</h2>
+</div>
+<p>- Привет, Амиго!  Ты так классно справился с предыдущими задачами. Я решил поискать для тебя задачи посложнее.</p>
+<p class="amigo">- Спасибо, Диего. Ты настоящий друг. Вот уж не ожидал!!!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson06,task01"></button><b>1. Абстрактный класс Pet</b><br/><br/>
+                Сделать класс <span class="taskcode">Pet</span> абстрактным. 
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson06,task02"></button><b>2. Исправь код. Первая задача</b><br/><br/>
+                Исправь код, чтобы программа компилировалась.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson06,task03"></button><b>3. Исправь код. Вторая задача</b><br/><br/>
+                Исправь код, чтобы программа компилировалась.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson06,task04"></button><b>4. Класс Cow от Animal</b><br/><br/>
+            Унаследуй класс <span class="taskcode">Cow</span> от <span class="taskcode">Animal</span>.<br/>
+            Реализуй все недостающие методы в классе <span class="taskcode">Cow</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson06,task05"></button><b>5. Классы Cat и Dog от Pet</b><br/><br/>
+            Унаследуй классы <span class="taskcode">Cat</span> и <span class="taskcode">Dog</span> от <span class="taskcode">Pet</span>.<br/>
+            Реализуй недостающие методы. Классы <span class="taskcode">Cat</span> и <span class="taskcode">Dog</span> не должны быть абстрактными.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>7. Интерфейсы </h2>
+</div>
+<p>- Привет, Амиго! Сегодня у тебя день открытий. <span class="green_text">Новая и интересная тема – это интерфейсы.</span>
+</p>
+<p class="amigo">- Ага. День настолько чудесный, что я приду домой и приму ванну полную воды.</p>
+<p>- <span class="red_text"><b>Интерфейс</b></span> – это дитя Абстракции и Полиморфизма. Интерфейс очень
+            напоминает абстрактный класс, у которого все методы абстрактные. Он объявляется так же, как и класс, только
+            используется ключевое слово <span class="red_text"><b>interface</b></span>. Примеры:</p>
+<table class="table_example wide-table">
+<tbody>
+<tr>
+<th width="63%">Код</th>
+<th width="47%">Описание и Факты</th>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><span class="red_text"><b>interface</b></span> Drawable<br/>
+                    {<br/>
+                     void draw();<br/>
+                    }<br/>
+<span class="red_text"><b>interface</b></span> HasValue<br/>
+                    {<br/>
+                     int getValue();<br/>
+                    }
+
+                </td>
+<td class="wide-text">1) Вместо слова <b>class</b> пишем <b>interface</b>.<br/><br/>
+<span class="orange_text">2) Содержит только абстрактные методы (слово abstract писать не нужно).</span><br/><br/>
+<span class="green_text">3) На самом деле у интерфейсов все методы - public.</span>
+</td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>interface</b> Element <span class="red_text"><b>extends</b> Drawable, HasValue</span><br/>
+                    {<br/>
+                    int getX();<br/>
+                    int getY();<br/>
+                    }
+                </td>
+<td class="wide-text"><span class="red_text">Интерфейс может наследоваться  только от интерфейсов.<br/><br/>
+     Интерфейсов-родителей может  быть много.</span>
+</td>
+</tr>
+<tr><td class="monospace_text wide-text"><b>class abstract</b> ChessItem <span class="red_text"><b>implements</b> Drawable,     HasValue</span><br/>
+{<br/>
+    private int x, y, value;<br/><br/>
+
+    public int getValue()<br/> 
+   {<br/>
+     return value;<br/>
+   }<br/><br/>
+
+    public int getX()<br/>
+   {<br/>
+     return x;<br/>
+    }<br/><br/>
+
+    public  int getY()<br/>
+    {<br/>
+     return y;<br/>
+    }<br/><br/>
+
+}
+</td>
+<td class="wide-text">Класс может наследоваться от нескольких интерфейсов (и только от одного класса). При этом используется ключевое слово <span class="red_text"><b>implements</b></span>.<br/><br/>
+<span class="green_text">Класс <b>ChessItem</b> объявлен абстрактным: он реализовал все унаследованные методы, кроме <b>draw</b>.</span><br/><br/> 
+Т.е. класс <b>ChessItem</b> содержит один абстрактный метод: <b>draw()</b>.
+</td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Интересно. А зачем нужны интерфейсы? Когда их используют?</p>
+<p>- У интерфейсов есть два сильных преимущества по сравнению с классами:</p>
+<p><b>1) Отделение «описания методов» от их реализации.</b></p>
+<p>Раньше я тебе рассказывал, что <span class="green_text">если ты хочешь разрешить вызывать методы своего класса из других классов, то их нужно пометить ключевым словом <b>public</b>.</span> Если же хочешь, чтобы какие-то методы можно было вызывать только из твоего же класса, их нужно помечать ключевым словом <b>private</b>. Другими словами мы делим методы класса на  две категории: «для всех» и «только для своих».</p>
+<p>С помощью интерфейсов, это деление можно усилить еще больше. Мы сделаем специальный «класс для всех», и второй «класс для своих», который унаследуем от первого. Вот как это примерно будет:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Было</th><th width="50%">Стало</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class</b> <span class="green_text">Student</span><br/>
+            {<br/>
+             <b>private</b> String name;<br/><br/>
+
+             <b>public</b> Student(String name)<br/>
+             {<br/>
+              this.name = name;<br/>
+             }<br/><br/>
+
+             <b>public</b> String getName() <br/>
+             {<br/>
+              return this.name;<br/>
+             }<br/><br/>
+
+             <b>private</b> void setName(String name)<br/>
+             {<br/>
+              this.name = name;<br/>
+             }
+        </td>
+<td class="monospace_text wide-text"><b>interface</b> <span class="red_text"><b>Student</b></span><br/>
+            {<br/>
+             <b>public</b> String getName();<br/>
+            }<br/><br/>
+<b>class</b> <span class="blue_text"><b>StudentImpl</b></span> <b>implements</b> <span class="dred_text">Student</span><br/>
+            {<br/>
+             <b>private</b> String name;<br/>
+             <b>public</b> StudentImpl(String name) <br/>
+             {<br/>
+              this.name = name;<br/>
+             }<br/>
+             <b>public</b> String getName()<br/>
+             {<br/>
+              return this.name;<br/>
+             }<br/>
+             <b>private</b> void setName(String name)<br/>
+             {<br/>
+              this.name = name;<br/>
+             }<br/>
+            }
+        </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static void</b> main(String[] args)<br/>
+            {<br/>
+             <span class="green_text">Student</span> student = <br/>
+                           new <span class="green_text">Student</span>(<span class="green_text">"Alibaba"</span>);<br/>
+             System.out.println(student.getName());<br/>
+            }
+        </td>
+<td class="monospace_text wide-text"><b>public static void</b> main(String[] args)<br/>
+            {<br/>
+             <span class="dred_text">Student</span> student =  <br/>
+                           new <span class="blue_text">StudentImpl</span>(<span class="green_text">"Ali"</span>);<br/>
+             System.out.println(student.getName());<br/>
+            }
+        </td>
+</tr>
+</tbody>
+</table>
+<p>Мы разбили наш класс на два: <span class="red_text">интерфейс</span> и <span class="blue_text">класс, унаследованный от интерфейса.</span></p>
+<p class="amigo">- И в чем тут преимущество?</p>
+<p>- Один и тот же интерфейс могут реализовывать (наследовать) различные классы. И у каждого может быть свое собственное поведение. Так же как <span class="orange_text">ArrayList и LinkedList – это две различные реализации интерфейса List.</span></p>
+<p>Таким образом, <span class="green_text">мы скрываем не только различные реализации, но и даже сам класс, который ее содержит (везде в коде может фигурировать  только интерфейс).</span> Это позволяет очень гибко, прямо в процессе исполнения программы, подменять одни объекты на другие, меняя поведение объекта скрытно от всех классов, которые его используют.</p>
+<p>Это очень мощная технология в сочетании с полиморфизмом. Сейчас далеко не очевидно, зачем так нужно делать. Ты должен сначала столкнуться с программами, состоящими из десятков или сотен классов, чтобы понять, что интерфейсы способны существенно упростить тебе жизнь.</p>
+<p><b>2) Множественное наследование.</b></p>
+<p>В Java все классы могут иметь только одного класса-родителя. В других языках программирования, классы часто могут иметь несколько классов-родителей. Это очень удобно, но приносит так же много проблем.</p>
+<p>В Java пришли к компромиссу – <span class="violet_text">запретили множественное наследование классов, но разрешили множественное наследование интерфейсов.</span> <span class="green_text">Интерфейс может иметь несколько интерфейсов-родителей.</span> <span class="orange_text">Класс может иметь несколько интерфейсов-родителей и только один класс-родитель.</span></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>8. Интерфейсы - это больше чем интерфейсы - это поведение</h2>
+</div>
+<p>- Привет, Амиго!  А вот и снова я. Хочу рассказать тебе еще об одном взгляде на интерфейсы. Понимаешь, класс – это, чаще всего модель какого-то конкретного объекта.  Интерфейс же больше соответствует не объектам, а их способностям или ролям.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/12/image-ru-12-01.png"/>
+<p>Например, такие вещи, как машина, велосипед, мотоцикл и колесо лучше всего представить в виде классов и объектов. А такие их способности как «могу ездить», «могу перевозить людей», «могу стоять» - лучше представить в виде интерфейсов. Смотри пример:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="60%">Код</th><th width="40%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>interface</b> Moveable<br/>
+{<br/>
+  void move(String newAddress);<br/>
+}<br/>
+</td>
+<td class="wide-text">- соответствует способности передвигаться.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>interface</b> Driveable<br/>
+{<br/>
+  void drive(Driver driver);<br/>
+}
+</td>
+<td class="wide-text">- соответствует способности управляться водителем.
+</td>
+</tr>
+<tr><td class="monospace_text wide-text"><b>interface</b> Transport<br/>
+{<br/>
+  void addStaff(Object staff);<br/>
+  Object removeStaff();<br/>
+}
+</td>
+<td class="wide-text">- соответствует способности перевозить грузы.
+</td>
+</tr>
+<tr><td class="monospace_text wide-text"><b>class</b> Wheel <span class="red_text"><b>implements</b> Moveable</span><br/>
+{<br/>
+...<br/>
+}
+
+</td>
+<td class="wide-text">- класс «колесо». Обладает способностью передвигаться.
+</td>
+</tr>
+<tr><td class="monospace_text wide-text"><b>class</b> Car <span class="red_text"><b>implements</b> Moveable, Driveable,   Transport</span><br/>
+{<br/>
+...<br/>
+}
+</td>
+<td class="wide-text">- класс «машина». Обладает способностью передвигаться, управляться человеком и перевозить грузы.
+</td>
+</tr>
+<tr><td class="monospace_text wide-text"><b>class</b> Skateboard <span class="red_text"><b>implements</b> Moveable, Driveable</span><br/>
+{<br/>
+...<br/>
+}
+
+</td>
+<td class="wide-text">- класс «скейтборд». Обладает способностью передвигаться и управляться человеком.
+</td>
+</tr>
+</tbody>
+</table>
+<p><span class="violet_text">Интерфейсы сильно упрощают жизнь программиста.</span> Очень часто в программе тысячи объектов, сотни классов и всего пара десятков интерфейсов – ролей.  Ролей мало, а их комбинаций – классов – очень много.</p>
+<p>Весь смысл в том, что тебе <span class="green_text">не нужно писать код для взаимодействия со всеми классами. Тебе достаточно взаимодействовать с их ролями (интерфейсами).</span></p>
+<p>Представь, что ты – робот-строитель и у тебя в подчинении есть десятки роботов, каждый из которых может иметь несколько профессий. Тебе нужно срочно достроить стену. Ты просто берешь всех роботов, у которых есть способность «строитель» и говоришь им строить стену. Тебе все равно, что это за роботы. Хоть робот-поливалка. Если он умеет строить – пусть идет строить.</p>
+<p>Вот как это выглядело бы в коде:</p>
+<table class="table_example wide-table">
+<tbody><tr><th width="60%">Код</th><th width="40%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>static interface WallBuilder</b><br/>
+{<br/>
+  void buildWall();<br/>
+}
+    </td>
+<td class="wide-text">- способность «строитель стен». Понимает команду «(по)строить стену» - имеет соответствующий метод.
+    </td>
+</tr>
+<tr>
+<td class="monospace_text wide-text"><b>static class <span class="blue_text">РабочийРобот</span> <span class="red_text">implements WallBuilder</span></b><br/>
+{<br/>
+  void buildWall()<br/>
+   {<br/>
+  …<br/>
+   }<br/>
+}<br/>
+<b>static class <span class="blue_text">РоботСторож</span> <span class="red_text">implements WallBuilder</span></b><br/>
+{<br/>
+  void buildWall()<br/>
+   {<br/>
+  …<br/>
+   }<br/>
+}<br/>
+<b>static class <span class="blue_text">Поливалка</span></b><br/>
+{<br/>
+…<br/>
+}<br/>
+</td>
+<td class="wide-text">- роботы у которых есть эта профессия/особенность.<br/><br/>
+
+- для удобства я сделал классам имена на русском. Такое допускается в java, но крайне нежелательно.<br/><br/>
+
+- поливалка не обладает способностью строить стены (не реализует интерфейс WallBuilder).<br/>
+</td>
+</tr>
+<tr><td class="monospace_text wide-text"><b>public static void</b> main(String[] args)<br/>
+{<br/>
+    <span class="grey_text">//добавляем всех роботов в список</span><br/>
+    ArrayList <span class="green_text">robots</span> = <b>new</b> ArrayList(); <br/>
+    <span class="green_text">robots</span>.add(<b>new <span class="blue_text">РабочийРобот</span></b>());<br/>
+    <span class="green_text">robots</span>.add(<b>new <span class="blue_text">РоботСторож</span></b>());<br/>
+    <span class="green_text">robots</span>.add(<b>new <span class="blue_text">Поливалка</span></b>());<br/><br/>
+
+    <span class="grey_text">//строить стену, если есть такая способность</span><br/>
+    for (Object robot: <span class="green_text">robots</span>)<br/>
+    {<br/>
+        if (<span class="red_text">robot  instanceof  WallBuilder</span>)<br/>
+        {<br/>
+           <span class="red_text">WallBuilder</span> builder = (<span class="red_text">WallBuilder</span>) robot;<br/>
+           builder.buildWall();<br/>
+        } <br/>
+    }<br/>
+  }<br/>
+}
+</td>
+<td class="wide-text">- как дать им команду – построить стену?
+</td>
+</tr>
+</tbody>
+</table>
+<p class="amigo">- Чертовски интересно. Даже и не думал, что интерфейсы – такая интересная тема.</p>
+<p>- А то! В совокупности с полиморфизмом – это вообще бомба.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>9. Задачи на интерфейсы</h2>
+</div>
+<p>- Привет, Амиго! Скоро интерфейсы будут тебе сниться. Так что я бы на твоем месте не спал. Вообще! Ха-ха! Вот тебе пара задачек. Пусть интерфейсы навсегда останутся в твоей памяти.</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson09,task01"></button><b>1. Интерфейс Fly</b><br/><br/>
+                Напиши свой <span class="taskcode">public</span> интерфейс <span class="taskcode">Fly</span> (летать). Добавь в него два метода. 
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson09,task02"></button><b>2. Интерфейсы Fly, Run, Swim</b><br/><br/>
+                Напиши <span class="taskcode">public</span> интерфейсы <span class="taskcode">Fly</span>(летать), <span class="taskcode">Run</span>(бежать/ездить), <span class="taskcode">Swim</span>(плавать). Добавить в каждый интерфейс по одному методу.
+
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson09,task03"></button><b>3. Fly, Move, Eat для классов Dog, Car, Duck, Airplane</b><br/><br/>
+                Есть <span class="taskcode">public</span> интерфейсы <span class="taskcode">Fly</span>(летать), <span class="taskcode">Move</span>(передвигаться), <span class="taskcode">Eat</span>(есть). Добавь эти интерфейсы классам <span class="taskcode">Dog</span>(собака), <span class="taskcode">Car</span>(автомобиль), <span class="taskcode">Duck</span>(утка), <span class="taskcode">Airplane</span>(самолет).
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson09,task04"></button><b>4. Fly, Run, Swim для классов Human, Duck, Penguin, Airplane</b><br/><br/>
+                 Есть <span class="taskcode">public</span> интерфейсы <span class="taskcode">Fly</span>(летать), <span class="taskcode">Run</span>(бежать/ездить), <span class="taskcode">Swim</span>(плавать). Добавь эти интерфейсы классам <span class="taskcode">Human</span>(человек), <span class="taskcode">Duck</span>(утка), <span class="taskcode">Penguin</span>(пингвин), <span class="taskcode">Airplane</span>(самолет). 
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level12,lesson09,task05"></button><b>5. Класс Human и интерфейсы Run, Swim</b><br/><br/>
+                Напиши <span class="taskcode">public</span> класс <span class="taskcode">Human</span>(человек) и  <span class="taskcode">public</span> интерфейсы <span class="taskcode">Run</span>(бежать/ездить), <span class="taskcode">Swim</span>(плавать). <br/>Добавь в каждый интерфейс по одному методу. <br/>Добавь эти интерфейсы классу <span class="taskcode">Human</span>, но не реализуй методы. <br/>Объяви класс <span class="taskcode">Human</span> абстрактным.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>10. Ссылка на вики по поводу: полиморфизма и интерфейсов</h2>
+</div>
+<p>-  Если у тебя нет вопросов, значит, ты ничего не понял. Но я могу найти выход из любой ситуации. Вот тебе замечательные лекции про полиморфизм. Советую почитать их, даже если ты понял все, чему сегодня тебя учили. Держи ссылку:</p>
+<p><a href="http://wikijava.it-cache.net/index.php@title=Glava_8_Thinking_in_Java_4th_edition.html" target="_blank">Ссылка на вики по поводу: полиморфизма и интерфейсов</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Хулио</h2>
+</div>
+<p>- Привет, Амиго! Ты где ходишь? Уже начинается. Давай присоединяйся.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-12.gif" preload="none" tabindex="0" taskkey="level12,lesson11,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-12.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=b1qvmVacWcc" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>12. Домашние и бонусные задания</h2>
+</div>
+<p>- Здорово, боец!</p>
+<p class="amigo">- Здравия желаю, капитан Бобров!</p>
+<p>- У меня для тебя шикарная новость. Вот тебе задания для закрепления полученных навыков. Выполняй их каждый день, и твои навыки будут расти с неимоверной скоростью. Они специально разработаны для выполнения их в Intellij IDEA.</p>
+<table class="table_task">
+<tr>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Метод getName в классе Cat</b><br/><br/>
+                Переопредели метод <span class="taskcode">getName</span> в классе <span class="taskcode">Cat</span> так, чтобы программа выдавала на экран надпись «Я - кот».
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Метод setName в классе Cat</b><br/><br/>
+                Переопредели метод <span class="taskcode">setName</span> в классе <span class="taskcode">Cat</span> так, чтобы программа выдавала на экран надпись «Я - кот».
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Добавь один метод в класс Cat</b><br/><br/>
+                Добавь один метод в класс <span class="taskcode">Cat</span> так, чтобы программа ничего не выводила на экран.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>4. Что это? «Кот», «Тигр», «Лев», «Бык», «хз»</b><br/><br/>
+                 Напиши метод, который определяет, какой объект передали в него. <br/>Программа должна выводить на экран одну из надписей: <br/>«Кот», «Тигр», «Лев», «Бык», «хз».
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>5. Что это? «Кот», «Тигр», «Лев», «Бык», «Корова», «Животное»</b><br/><br/>
+                Напиши метод, который определяет, какой объект передали в него. <br/>Программа должна выводить на экран одну из надписей: <br/>«Кот», «Тигр», «Лев», «Бык», «Корова», «Животное». <br/><br/><b>Замечание:</b> постарайся определять тип животного как можно более точно.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>6. Fly, Run, Climb для классов Cat, Dog, Tiger, Duck</b><br/><br/>
+                1) Внутри класса <span class="taskcode">Solution</span> создай интерфейс <span class="taskcode">public interface Fly</span>(летать) с методом <span class="taskcode">void fly()</span><br/>
+                2) Внутри класса <span class="taskcode">Solution</span> создай интерфейс <span class="taskcode">public interface Climb</span>(лазить по деревьям) с методом <span class="taskcode">void climb()</span><br/>
+                3) Внутри класса <span class="taskcode">Solution</span> создай интерфейс <span class="taskcode">public interface Run</span>(бегать) с методом <span class="taskcode">void run()</span><br/>
+                4) Подумай логически, какие именно интерфейсы нужно добавить для каждого класса<br/>
+                5) Добавь интерфейсы классам <span class="taskcode">Cat</span>(кот), <span class="taskcode">Dog</span>(собака), <span class="taskcode">Tiger</span>(тигр), <span class="taskcode">Duck</span>(Утка).
+
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>7. Fly, Run, Swim для классов Duck, Penguin, Toad</b><br/><br/>
+                Есть интерфейсы <span class="taskcode">Fly</span>(летать), <span class="taskcode">Swim</span>(плавать), <span class="taskcode">Run</span>(бегать).<br/>
+                Добавь эти интерфейсы классам <span class="taskcode">Duck</span>(утка), <span class="taskcode">Penguin</span>(пингвин), <span class="taskcode">Toad</span>(жаба).
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>8. Интерфейсы к классу Human</b><br/><br/>
+                Добавь как можно больше интерфейсов к классу <span class="taskcode">Human</span>, но чтобы он не стал абстрактным классом. Добавлять методы в класс <span class="taskcode">Human</span> запрещается.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>9. Родитель класса CTO</b><br/><br/>
+                Добавь такой класс-родитель к классу <span class="taskcode">CTO</span>(технический директор), чтобы класс перестал быть абстрактным. Добавлять/реализовывать методы в классе <span class="taskcode">CTO</span> запрещается.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>10. Метод, который выводит на экран число 10</b><br/><br/>
+                Добавь еще один метод, чтобы программа выводила на экран число 10.<br/><br/>
+<b>Подсказка:</b> используй перегрузку методов.
+            </td>
+</tr>
+</table>
+<p>- Те задания были для духов. Для дедушек я добавил бонусные задания повышенной сложности. Только для старослужащих. </p>
+<table class="table_task">
+<tr>
+<th></th>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>1. Нужно исправить программу, чтобы компилировалась и работала.</b><br/><br/>
+<u>Задача:</u> Расставить правильно ключевые слова <span class="taskcode">abstract</span>, чтобы программа компилировалась(там где надо и не надо).
+            </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>2. Нужно добавить в программу новую функциональность. </b><br/><br/>
+<u>Задача:</u> Сделать класс <span class="taskcode">Pegas</span>(пегас) на основе класса <span class="taskcode">Horse</span>(лошадь) и интерфейса <span class="taskcode">Fly</span>(летать).
+            </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>3. Задача по алгоритмам. </b><br/><br/>
+<u>Задача:</u> Написать метод, который возвращает минимальное число в массиве и его позицию (индекс).
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

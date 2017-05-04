@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:0px;margin-right: 0px;   background: url(images/profile/web-bender-39.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 250px;margin-left: -500px;">
+                    Уровень 39
+                </div>
+</div>
+</div>
+<br/>
+<!--<div class="line"></div>-->
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>1. Tomcat install, configure</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Здорово, Билаабо! Что у нас сегодня?</p>
+<p>- Сегодня я расскажу тебе, как установить web-сервер Tomcat.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-62.png"/>
+<p class="amigo">- А веб-сервер – это что? Что такое вообще сервер?</p>
+<p>- Есть такой принцип взаимодействия программ – «клиент-сервер». Сервер (от слова serve – обслуживать) – обслуживает запросы клиентов. Клиенты обращаются со своими запросами к серверу, сервер их выполняет и возвращает результат.</p>
+<p>Вот представь ситуацию: продавец в магазине обслуживает клиентов. Тогда продавец – это  фактически сервер, клиенты магазина – клиенты, а товар, который продавец продает, - результат обработки запроса (результат работы сервера).</p>
+<p class="amigo">- Т.е. сервер – это тот, кто обслуживает запросы/заказы/потребности клиентов, так?</p>
+<p>- Да.</p>
+<p class="amigo">- Хорошо, а что же такое – веб-сервер?</p>
+<p>- Веб-сервер – это программа, которая обслуживает запросы страниц из браузеров пользователей.</p>
+<p>Когда ты вбиваешь в браузере определенный URL(ссылку), то запрос уходит на сервер, сервер этот запрос обслуживает, генерирует веб-страницу и отдает (отсылает) ее обратно браузеру.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-63.png"/>
+<p>Веб-сервер – это <b>сервер</b>.  Браузер – <b>клиент</b>. URL – это <b>запрос</b>. Веб-страница – <b>результат обработки запроса.</b></p>
+<p class="amigo">- Ага. Ситуация понемногу проясняется. Т.е. веб-сервер – это программа(?), которая генерирует страницы для браузера(ов). Так?</p>
+<p>- Да.</p>
+<p>Давай возьмем обычную ссылку:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Разбор ссылки</th></tr>
+<tr>
+<td class="wide-text"><b><span class="orange_text">http</span>:</b>//<span class="red_text"><b>javarush.ru</b></span>/<b><span class="dblue_text">alpha/api/contacts</span>?<span class="green_text">userid=13&amp;fileter=none&amp;page=3</span></b>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Описание частей ссылки</th></tr>
+<tr>
+<td class="wide-text"><span class="red_text">javarush.ru</span> – это <b>домен</b> - уникальное имя (адрес) компьютера в интернете
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><span class="orange_text">http</span> - это <b>протокол</b> (стандарт) взаимодействия клиента и сервера
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><span class="dblue_text">alpha/api/contacts</span> – запрос к веб-серверу / запрос веб-страницы на сервере
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><span class="green_text">userid=13 &amp;fileter=none &amp; page=3</span> – параметры запроса
+    </td>
+</tr>
+</tbody></table>
+<p>Смотри. Мы берем компьютер, подключаем его к интернету.</p>
+<p>Затем покупаем ему доменное имя.</p>
+<p>Затем запускаем на нем программу веб-сервер.</p>
+<p>Теперь этому веб-серверу можно посылать запросы из любого браузера, вбивая ссылку и указывая в ней его доменное имя.</p>
+<p class="amigo">- Вроде понятно.</p>
+<p>- Приведу некоторую аналогию, чтобы все стало еще немного понятнее.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Разбор <s>ссылки</s> обращения</th></tr>
+<tr>
+<td class="wide-text"><b><span class="orange_text">По-русски</span>:</b>//<span class="red_text"><b>Вася,</b></span>/<b><span class="dblue_text">дай мне папку</span>?<span class="green_text">номер=13</span>
+</b></td>
+</tr>
+</tbody><tbody><tr><th width="100%">Описание  частей  <s>ссылки</s> запроса</th></tr>
+<tr>
+<td class="wide-text"><span class="red_text">Вася</span> – это уникальное имя  компьютера в интернете
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><span class="orange_text">По-русски</span> - это <b>протокол</b> (стандарт) взаимодействия клиента и сервера
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><span class="dblue_text">дай мне папку</span> – запрос к веб-серверу / запрос веб-страницы на сервере
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><span class="green_text">номер=13</span> – параметры запроса
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ага. Так действительно понятнее. Спасибо.</p>
+<p>- Это еще не все. Иногда на одном компьютере запускают несколько программ – веб-серверов.  Для того чтобы их отличать, им назначают номера.</p>
+<p>Представь, что домен – это дом. Если в доме живет одна семья, то при отправке ей письма, ты бы написал что-то вроде «ул. Третьего Анти-Марсианского Восстания, дом 5 »</p>
+<p>А теперь представь, что в доме живет много семей.</p>
+<p class="amigo">- Многоквартирный дом?</p>
+<p>- Именно! Очень похоже. Спасибо за аналогию.</p>
+<p>В таком доме много квартир. В некоторых квартирах никто не живет, в некоторых живут веб-сервера. И когда ты отправляешь запрос к веб-серверу, надо указывать еще и номер квартиры. <span class="red_text">Такой номер в ссылке называют портом</span>.</p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="wide-text"><b><span class="orange_text">http</span>:</b>//<span class="red_text"><b>javarush.ru:80</b></span>/<b><span class="dblue_text">alpha/api/contacts</span>?<span class="green_text">userid=13&amp;fileter=none&amp;page=3</span></b>
+</td>
+</tr>
+<tr>
+<td class="wide-text"><b><span class="orange_text">http</span>:</b>//<span class="red_text"><b>javarush.ru:8080</b></span>/<b><span class="dblue_text">alpha/api/contacts</span>?<span class="green_text">userid=13&amp;fileter=none&amp;page=3</span></b>
+</td>
+</tr>
+<tr>
+<td class="wide-text"><b><span class="orange_text">http</span>:</b>//<span class="red_text"><b>javarush.ru:443</b></span>/<b><span class="dblue_text">alpha/api/contacts</span>?<span class="green_text">userid=13&amp;fileter=none&amp;page=3</span></b>
+</td>
+</tr>
+</tbody></table>
+<p>На самом деле, все сервера – это многоквартирные дома. И в каждом по 65000 квартир (портов).</p>
+<p class="amigo">- А почему 65000?</p>
+<p>- Для обозначения номер порта используются два байт данных. 65536 – это максимальное значение в целом типе длинной в два байта.</p>
+<p>У каждого протокола (http, https, ftp,…) есть свой порт, используемый по умолчанию.</p>
+<p><span class="violet_text">Если номер квартиры (порт) не указан, то используется порт-по-умолчанию, который определяется на основе протокола.</span></p>
+<p><span class="violet_text">Если протокол http, то порт – 80. Если протокол https, то порт – 443, и т.д.</span></p>
+<p>Т.е. эти записи эквиваленты:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Ссылка</th><th width="50%">Что это значит на самом деле</th></tr>
+<tr>
+<td class="wide-text"><span class="dred_text">http</span>://www.mail.ru
+    </td>
+<td class="wide-text"><span class="dred_text">http</span>://www.mail.ru<span class="dred_text">:80</span>
+</td>
+</tr>
+<tr>
+<td class="wide-text"><span class="dred_text">http</span>://javarush.ru
+    </td>
+<td class="wide-text"><span class="dred_text">http</span>://javarush.ru<span class="dred_text">:80</span>
+</td>
+</tr>
+<tr>
+<td class="wide-text"><span class="dred_text">http</span>://javarush.ru/alpha
+    </td>
+<td class="wide-text"><span class="dred_text">http</span>://javarush.ru<span class="dred_text">:80</span>/alpha
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><span class="dblue_text">https</span>://javarush.ru/api?x
+    </td>
+<td class="wide-text"><span class="dblue_text">https</span>://javarush.ru<span class="dblue_text">:443</span>/api?x
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- А если порт 444, а протокол – https?</p>
+<p>- Я же уже говорил. Если порт не указан, он определяется из протокола, а если указан – используется указанный.</p>
+<p class="amigo">- Ясно.</p>
+<p>- Ты знаешь, что люди, кроме имен, иногда еще используют местоимения: я, ты, он,…</p>
+<p class="amigo">- Ага. Но люди странные сами по себе. Стараюсь не обращать на это внимание.</p>
+<p>- Так вот, у компьютера тоже есть доменное имя, которое обозначает «Я». Это – <b>localhost</b>.</p>
+<p>Если ты в браузере напишешь <b>localhost</b>, то браузер обратится к твоему же компьютеру.</p>
+<p>И если у тебя будет установлена программа – веб-сервер, то она будет отдавать браузеру веб-страницы.</p>
+<p class="amigo">- Круто!  Хочу запустить себе веб-сервер и открывать его страницы в браузере.</p>
+<p class="amigo">Расскажи мне как это сделать, Билаабо. Пожалуйста!!! Ты же мне друг?</p>
+<p>- Для друга Билаабо сделает все что угодно. </p>
+<p>Тогда слушай.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Шаг 1</th></tr>
+<tr>
+<td class="wide-text"><b>Надо установить JavaJDK</b>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Результат</th></tr>
+<tr>
+<td class="wide-text"><b>Установленная JDK</b>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Билаабо, я же программист 30 уровня, у меня JDK уже давно стоит!</p>
+<p>- Отлично, тогда пойдем дальше.</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-64.png"/>
+<table class="table_example">
+<tbody><tr><th width="100%">Шаг 2</th></tr>
+<tr>
+<td class="wide-text"><b>Скачать Tomcat 7</b>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Подсказка  1</th></tr>
+<tr>
+<td class="wide-text"><a href="https://www.google.co.th/search?q=tomcat+7+download" target="_blank">Погуглить</a>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Подсказка  2</th></tr>
+<tr>
+<td class="wide-text"><a href="http://tomcat.apache.org/download-70.cgi" target="_blank">Официальная страница Apache Tomcat</a>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Подсказка  3  (прямая ссылка для Windows  пользователей)</th></tr>
+<tr>
+<td class="wide-text"><a download="" href="http://apache.volia.net/tomcat/tomcat-7/v7.0.64/bin/apache-tomcat-7.0.64.exe">Скачать Apache Tomcat 7</a>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Есть.</p>
+<p>- Отлично.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Шаг 3</th></tr>
+<tr>
+<td class="wide-text"><b>Установить Tomcat 7</b><br/>
+    Используй настройки установки по умолчанию.<br/> 
+    Ничего менять не надо.
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Экран 3</th></tr>
+<tr>
+<td><img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-65.png"/>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Экран 4</th></tr>
+<tr>
+<td><img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-66.png"/><br/>
+<span class="wide-text">Тут можно задать  имя web-сервера и его рабочий порт. По умолчанию 8080.<br/> 
+    Ничего менять  не надо, оставляем все как есть.
+    </span>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Экран 5</th></tr>
+<tr>
+<td><img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-67.png"/><br/>
+<span class="wide-text">Указываем папку, где у нас стоит JDK</span>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Экран 6</th></tr>
+<tr>
+<td><img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-68.png"/>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Экран 7</th></tr>
+<tr>
+<td><img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-69.png"/>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ага. Просто покликал Next и все.</p>
+<p>- Отлично. Теперь у тебя установлен и запущен веб-сервер Tomcat 7, который слушает запросы на порту 8080. Это стандартный порт для разработки программ.</p>
+<p class="amigo">- Да, Tomcat у меня есть, а как мне написать программу для него?</p>
+<p class="amigo">Я хочу, чтобы он написал что-нибудь интересное. Какую-нибудь прикольную страницу.</p>
+<p>- Хорошо, я расскажу тебе, как это сделать, но после небольшого перерыва.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>2. run simple web application</h2>
+</div>
+<p>- А вот и я. Как ты и просил, сейчас я расскажу тебе, как написать первую программу для веб-сервера.</p>
+<p>Веб-сервер сам по себе – это как операционная система. Он ценен не сам по себе, а потому, что в <span class="violet_text">нем можно запускать специальные веб-программы – сервлеты</span>(Servlet).</p>
+<p>Именно эти сервелаты и обрабатывают запросы, приходящие от пользователей.</p>
+<p class="amigo">- А как они обрабатывают запросы? Как вообще запустить свою программу внутри веб-сервера?</p>
+<p>- Чтобы написать свой сервлет, надо унаследовать класс от класса HttpServlet. Затем реализовать там методы doGet() и doPost().  Когда от пользователя придет запрос, веб сервер создаст объект твоего класса-сервлета и вызовет у него метод doGet(). Или  doPost(), в зависимости от типа запроса из браузера.</p>
+<p class="amigo">- А как моя программа вообще попадет в web-server?</p>
+<p>- Тут все просто. Ты пишешь программу, компилируешь ее и кладешь в специальную папку, в директорию, куда установил Tomcat.</p>
+<p>Сервлеты – это большая отдельная и интересная тема. Поэтому я не буду тебе сегодня ее рассказывать.  Я расскажу тебе немного о другом.</p>
+<p>Есть одна очень интересная разновидность сервлетов – это JSP. Чем-то напоминает PHP.</p>
+<p>Давай мы напишем самую простую веб-программу с использованием JSP, и запустим ее.</p>
+<p class="amigo">- Давай! Я – готов.</p>
+<p>- Тогда начнем.</p>
+<p><b>Шаг 1 – создаем новый web-проект</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-43.png"/>
+<p class="amigo">- Есть.</p>
+<p><b>Шаг 2 – указываем тип модуля – JavaModule, задаем имя и JDK</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-44.png"/>
+<p class="amigo">- Есть.</p>
+<p><b>Шаг 3 – указываем тип приложения - WebApplication</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-45.png"/>
+<p class="amigo">- Есть.</p>
+<p>- Ты должен видеть новый созданный пустой проект.</p>
+<p>Почти пустой. В нем будет один файл – index.jsp. Найди его.</p>
+<p><b>Шаг 4 – Находим jsp-файл</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-46.png"/>
+<p class="amigo">- Нашел.</p>
+<p>- Отлично. Вот в нем можно будет написать код нашего сервлета.</p>
+<p>Но давай сначала немного настроим Intellij IDEA.</p>
+<p>Можно запускать сервлеты в Tomcat'е прямо из Intellij IDEA. Дебажить их, если надо. В общем, это очень удобно и круто. Ты это оценишь, когда придет время.</p>
+<p class="amigo">- Верю. Так что делать дальше?</p>
+<p>- Мы «научим» Intellij IDEA запускать наш webmodule (наше приложение) в Tomcat.</p>
+<p><b>Шаг 5 – выбираем в меню EditConfiguration</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-47.png"/>
+<p class="amigo">- Готово.</p>
+<p><b>Шаг 6 – создаем новую конфигурацию – жми плюсик</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-48.png"/>
+<p class="amigo">- Есть.</p>
+<p><b>Шаг 7 – указываем что запускать – TomcatServer, Local</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-49.png"/>
+<p>- Задаем имя этой конфигурации – отмечено красным кружком.</p>
+<p>Зеленым выделен порт, на котором будет запускаться сервлет с Tomcat'ом.</p>
+<p>Надо еще указать IntellijIDEA, где находится наш Tomcat. Жми кнопку Configure…</p>
+<p><b>Шаг 8 – конфигурируем запуск приложения</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-50.png"/>
+<p>Теперь надо выбрать папку, где находится Tomcat:</p>
+<p><b>Шаг 9 – указываем месторасположение Tomcat'а</b></p>
+<p></p><center><img alt="" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-51.png"/></center>
+<p></p><center><img alt="" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-52.png"/></center>
+<p></p><center><img alt="" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-53.png"/></center>
+<p class="amigo">- Готово.</p>
+<p>- Должно получиться что-то типа такого:</p>
+<p><b>Шаг 10 – результат настройки:</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-54.png"/>
+<p>Теперь нужно привязать наш проект к Tomcat'у.</p>
+<p class="amigo">- Сколько всего надо сделать. Хорошо, что есть такая подробная инструкция.</p>
+<p>- А, то! Для друга же стараюсь.</p>
+<p>Теперь жми кнопку Fix и IDEA все сделает сама.</p>
+<p><b>Шаг 11 – IDEA делает привязку проекта и Tomcat</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-55.png"/>
+<p class="amigo">- Готово.</p>
+<p>- Отлично. Еще одно замечание. Порт 8080 уже скорее всего занят. Ведь Tomcat запустился сразу после установки.</p>
+<p>Intellij IDEA умеет «подкладывать» сервлеты к уже запущенному проекту, но сейчас для простоты она будет каждый раз запускать новый Tomcat.</p>
+<p class="amigo">- Т.е. у нас будет несколько запущенных Tomcat'ов?</p>
+<p>- Ага. И каждому нужен свой порт. Поэтому, давай-ка в настройках проекта поменяем порт 8080, на порт 8888.</p>
+<p class="amigo">- 4 восьмерки – мне нравится. </p>
+<p><b>Шаг 12 – меняем порт на 8888</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-56.png"/>
+<p class="amigo">- Сделал.</p>
+<p>- Отлично. С настройками мы покончили.</p>
+<p class="amigo">- Так, а что дальше?</p>
+<p>- Теперь давай немного поменяем наш index.jsp</p>
+<p>Напиши там что-нибудь, например «Вся власть – крабообразным».</p>
+<p><b>Шаг 13 – меняем index.jsp</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-57.png"/>
+<p class="amigo">- Не, я лучше «Вся власть роботам!» напишу.</p>
+<p>- Отлично. Теперь осталось совсем немного.</p>
+<p><b>Шаг 14 – запускаем сервлет и Tomcat</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-58.png"/>
+<p>Должен быть виден лог работающего Tomcat, без ошибок и stackTrace.</p>
+<p>Что-то типа такого:</p>
+<p><b>Шаг 15 – лог запущенного Tomcat</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-59.png"/>
+<p>При этом IDEA должна открыть браузер с ссылкой на твой сервлет.</p>
+<p>Должно получиться что-то типа такого:</p>
+<p><b>Шаг 16 – меняем index.jsp</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-60.png"/>
+<p class="amigo">- Ага. Так и есть. Круто!</p>
+<p>- А теперь напиши в браузере ссылку:</p>
+<table class="table_example">
+<tr>
+</tr><tbody><tr><th width="100%"> </th></tr>
+<td class="wide-text">http://localhost:8888/index.jsp
+    </td>
+</tbody></table>
+<p class="amigo">- Ничего не поменялось.</p>
+<p>- Ну не скажи.</p>
+<p><b>Шаг 17 – меняем index.jsp</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-61.png"/>
+<p>Тут в браузере отображается тот файл index.jsp, который ты видел в IntellijIDEA.</p>
+<p class="amigo">- Который я менял?</p>
+<p>- Да.</p>
+<p>Но если в запросе браузера указан только домен без остальной части запроса, то будет вызван обработчик по умолчанию. В нашем случае – это index.jsp</p>
+<p>Допустим, у тебя есть три файла: <span class="green_text">index.jsp</span>, <span class="dblue_text">apple.jsp</span>, <span class="violet_text">google.jsp</span>. Вот как будут обстоять дела:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Запрос</th><th width="50%">Ответ</th></tr>
+<tr>
+<td class="wide-text"><span class="green_text">http://localhost:8888</span>
+</td>
+<td class="wide-text"><span class="green_text"><b>index.jsp</b></span>
+</td>
+</tr>
+<tr>
+<td class="wide-text"><span class="green_text">http://localhost:8888/</span>
+</td>
+<td class="wide-text"><span class="green_text"><b>index.jsp</b></span>
+</td>
+</tr>
+<tr>
+<td class="wide-text"><span class="green_text">http://localhost:8888/<b>index.jsp</b></span>
+</td>
+<td class="wide-text"><span class="green_text"><b>index.jsp</b></span>
+</td>
+</tr>
+<tr>
+<td class="wide-text"><span class="blue_text">http://localhost:8888/<b>apple.jsp</b></span>
+</td>
+<td class="wide-text"><span class="blue_text"><b>apple.jsp</b></span>
+</td>
+</tr>
+<tr>
+<td class="wide-text">http://localhost:8888/<span class="red_text">samsung.jsp</span>
+</td>
+<td class="wide-text"><span class="dred_text">Сообщение об ошибке – сервлет не найден</span>
+</td>
+</tr>
+<tr>
+<td class="wide-text"><span class="violet_text">http://localhost:8888/<b>google.jsp</b></span>
+</td>
+<td class="wide-text"><span class="violet_text"><b>google.jsp</b></span>
+</td>
+</tr>
+<tr>
+<td class="wide-text">http://localhost:8888/<span class="red_text">index</span>
+</td>
+<td class="wide-text"><span class="dred_text">Сообщение об ошибке – сервлет не найден</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Это я понял.</p>
+<p class="amigo">Билаабо. Ты так долго рассказывал, что JSP это круто. Но они же очень похожи на самые обычные HTML-страницы. Все то же самое.</p>
+<p>- Ну не совсем. Попробуй написать в JSP такой текст:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">JSP-код</th></tr>
+<tr>
+<td class="monospce_text"><span class="blue_text"><b>&amp;lt%@ page contentType="text/html; charset=UTF-8" language="java" %&amp;gt</b></span><br/>
+<span class="grey_text">&amp;lthtml&amp;gt<br/>
+&amp;lthead&amp;gt<br/>
+&amp;lttitle&amp;gtПривет от Амиго&amp;lt/title&amp;gt<br/>
+&amp;lt/head&amp;gt<br/>
+&amp;ltbody&amp;gt</span><br/>
+<span class="violet_text">&amp;lt%--это еще HTML--%&amp;gt</span><br/>
+<span class="dred_text">&amp;lt%<br/>
+//А тут можно писать Java-код<br/><br/>
+
+String s = "Вся власть роботам!";<br/>
+for(int i=0; i
+          {<br/>
+ out.println(s);<br/>
+ out.println("&amp;ltbr&amp;gt");<br/>
+          }<br/><br/>
+
+      %&amp;gt</span><br/>
+<span class="violet_text">&amp;lt%--а это уже опять HTML--%&amp;gt</span><br/>
+<span class="grey_text">&amp;lt/body&amp;gt<br/>
+&amp;lt/html&amp;gt</span>
+</td>
+</tr>
+</tbody></table>
+<p><span class="violet_text">Внутри JSP-страницы можно делать вставки Java-кода и он будет работать!</span></p>
+<p>Java-код в JSP-странице называется скриптлетом и обозначается двумя «скобками – « &amp;lt% » и « %&amp;gt »</p>
+<p class="amigo">- Ничего себе.</p>
+<p class="amigo">Ладно. Пойду напишу пару своих JSP-страниц.</p>
+<p class="amigo">Большое тебе спасибо, Билаабо.</p>
+<p>- И тебе спасибо, друг!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. IDEA: debug,точки останова</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Элли! У тебя новая прическа? Тебе очень идет!</p>
+<p>- Да? Спасибо!</p>
+<p>Сегодня я расскажу тебе про работу в Intellij IDEA.</p>
+<p class="amigo">- Так я уже работаю в ней и довольно давно.</p>
+<p>- Да, я знаю, поэтому и хочу тебе рассказать про некоторые вещи, которые значительно упрощают жизнь.</p>
+<p>Первое и самое главное, что должен уметь каждый разработчик – это отладка программы. Или как еще называют – дебаг. Баг по-английски – жук – сленговое название ошибок в программе.</p>
+<p>В Intellij IDEA можно запустить приложение в двух режимах.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Кнопки</th><th width="50%">Режимы</th></tr>
+<tr>
+<td><img src="https://javarush.ru/levels/images/lessons/39/image-ru-39-32.png"/>
+</td>
+<td class="wide-text">Обычный запуск программы
+    </td>
+</tr>
+<tr>
+<td><img src="https://javarush.ru/levels/images/lessons/39/image-ru-39-33.png"/>
+</td>
+<td class="wide-text">Запуск программы в режиме отладки (дебага)
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ага. Кнопка в виде жука – это де<b>баг</b>. Прикольно придумано.</p>
+<p>- <b>Самое важное!</b> При запуске в режиме отладки ты можешь выполнять приложение пошагово. По одной строчке за раз.</p>
+<p>А самая важная часть дебага – это <b>точки останова</b>.</p>
+<p>На любой строчке кода ты можешь поставить точку останова – <b>BreakPoint</b>. <span class="green_text">Программа, запущенная в режиме отладки, дойдёт до этой точки и остановится. Чтобы поставить <b>BreakPoint</b>, надо поставить курсор на нужную строку и нажать Ctrl+F8. Чтобы убрать – снова Ctrl+F8.</span></p>
+<p>Чтобы продолжить исполнение программы до следующей точки останова – надо нажать F5.</p>
+<p>Чтобы продолжить исполнение программы пошагово (построчно) надо нажать F7 или F8.</p>
+<p><span class="orange_text">При этом, при нажатии F7 программа будет заходить в методы</span>, когда они вызываются.</p>
+<p><span class="orange_text">При нажатии F8 вызов метода будет считаться за 1 шаг</span> – программа не будет заходить в методы.</p>
+<p class="amigo">- А можно этот момент, только более подробно.</p>
+<p>- Конечно. Вот скопируй себе код, а я  на его примере объясню, что надо делать:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text"><b>package</b> com.javarush.test;<br/><br/>
+<b>public class</b> MainClass<br/>
+{<br/>
+ <b>public static void</b> main(String[] args)<br/>
+     {<br/>
+  <b>int</b> n = 100;<br/>
+  <b>int</b> sum = 0;<br/><br/>
+
+  <b>for</b> (<b>int</b> i = 0; i
+          {<br/>
+               sum += i;<br/>
+          }<br/><br/>
+
+  <b>System.out.println</b>(sum);<br/>
+ }<br/>
+}
+    </td>
+</tr>
+<tr>
+<td class="wide-text">В этом примере мы просто считаем сумму чисел от 0 до n.
+    </td>
+</tr>
+</tbody></table>
+<p><u><b>Как поставить точку остановки – BreakPoint</b></u></p>
+<p><span class="orange_text">Вариант 1 – стать курсором на нужную строку и нажать Ctrl+F8</span></p>
+<p><span class="orange_text">Вариант 2 – кликнуть слева от нужно строки.</span> На картинке снизу место отмечено <span class="red_text">крестиком</span>.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Как поставить точку остановки</th><th width="50%">Результат</th></tr>
+<tr>
+<td><img alt="" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-34.png"/>
+</td>
+<td><img alt="" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-35.png"/>
+</td>
+</tr>
+</tbody></table>
+<p>Чтобы убрать BreakPoint – <span class="orange_text">кликни на красный кружочек или нажмите Ctrl+F8.</span></p>
+<p>Теперь запускаем программу кликом мышкой на кнопке дебаг.</p>
+<p>Должно получиться что-то типа такого:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td><img align="left" alt="" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-36.png"/>
+</td>
+</tr>
+</tbody></table>
+<p><span class="orange_text">Весь код программы выполнился до синей строки.</span> Строка, выделенная синим цветом, еще не выполнилась.</p>
+<p><span class="orange_text">Нажми F8 и выполни ее.</span> Должно получиться как на картинке ниже:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td><img align="left" alt="" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-37.png"/>
+</td>
+</tr>
+<tr>
+<td class="wide-text"><span class="red_text">Красная</span> – точка остановки – BreakPoint<br/>
+<span class="dblue_text">Синяя</span> – текущая строка отладки/дебага
+    </td>
+</tr>
+</tbody></table>
+<p>Давай заменим число 100 в коде на 5 и попробуем выполнить всю программу пошагово. Вот какая будет последовательность шагов:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="50%"> </th></tr>
+<tr>
+<td><img align="right" alt="" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-38.png"/>
+</td>
+<td><br/><img align="left" alt="" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-39.png"/>
+</td>
+</tr>
+</tbody></table>
+<p><span class="orange_text">Первый шаг – это строчка выделенная красным.</span></p>
+<p><span class="orange_text">Пустые строки пропускаются</span>, так же как и скобки – <span class="orange_text">там нет</span> никакого <span class="orange_text">кода</span>.</p>
+<p>Теперь давай немного усложним программу, и я покажу тебе разницу между F7 и F8.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Код</th><th width="30%">F7</th><th width="20%">F8</th></tr>
+<tr>
+<td><img alt="" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-40.png"/>
+</td>
+<td><img align="left" alt="" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-41.png"/>
+</td>
+<td><br/><img align="left" alt="" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-42.png"/>
+</td>
+</tr>
+</tbody></table>
+<p><span class="orange_text">Если ты нажимаешь F8, то выполняешь текущую строку за 1 шаг.</span></p>
+<p><span class="orange_text">Если нажимаешь F7 и в текущей строке вызов метода, ты «заходишь» туда и выполняешь его пошагово.</span></p>
+<p class="amigo">- Т.е. разница в том – заходим мы в метод или нет.</p>
+<p>- Ага.</p>
+<p class="amigo">- А я могу комбинировать F7 и F8? Т.е. какие-то методы пропускаю, которые мне не интересны, а в какие-то захожу?</p>
+<p>- Да.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>4. IDEA: watch, quick watch</h2>
+</div>
+<p>- Но это еще не все. Как ты думаешь – для чего был придуман режим отладки? </p>
+<p>Это риторический вопрос.</p>
+<p>Самое интересное в том, что на каждом шаге в дебаге ты можешь смотреть значения всех переменных, которые есть! Включая локальные переменные методов, аргументы, да фактически все что угодно.</p>
+<p>Когда ты запускаешь режим отладки и делаешь остановку, снизу появляется специальная панель:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Режим отладки</th></tr>
+<tr>
+<td><img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-28.png"/>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Комментарии</th></tr>
+<tr>
+<td class="wide-text"><span class="green_text">Зеленым выделен</span> раздел переменных, в нем видны все локальные переменные<br/>
+<span class="red_text">Красным выделено</span> окно watch – в него можно добавить переменные самому<br/>
+<span class="orange_text">Оранжевым</span> – список нитей. Прямо под ним – стек-трейс текущей нити
+    </td>
+</tr>
+</tbody></table>
+<p>Сейчас я нажму F8 три раза, и в среднем окне появятся значения двух новых переменных – sum5 &amp; sum7.</p>
+<p>А в правом нижнем окне я нажму на плюсик и добавлю сразу выражение sum5+sum7.</p>
+<p>Вот  что у меня получилось:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Режим отладки</th></tr>
+<tr>
+<td><img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-29.png"/>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Комментарии</th></tr>
+<tr>
+<td class="wide-text">В центре внизу мы видим значения переменных<br/>
+    Справа внизу мы видим текущее значение выражения sum5+sum7
+    </td>
+</tr>
+</tbody></table>
+<p>Окно Watches удобно использовать, когда переменные имеют  длинные и сложные имена, например:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text"><b>this</b>.connection.<b>getProvider</b>().getRights().<b>get</b>("super")
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Круто! Классные штуки.</p>
+<p>- Кроме Watches есть еще Quick Watches. Ты можешь узнать значение любой переменной, просто поднеся к ней мышку.   Подержи мышку над переменной пару секунд и во всплывающем окне можно будет увидеть ее значение.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Режим отладки</th></tr>
+<tr>
+<td><img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-30.png"/>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Комментарии</th></tr>
+<tr>
+<td class="wide-text">Мышки на скриншоте не видно, но она была в центре красного кружка, прямо над именем переменной.
+    </td>
+</tr>
+</tbody></table>
+<p>И самое интересное. Значения переменных можно менять!</p>
+<p>Просто кликаешь правой кнопкой мыши на переменной в Watches или Variables, выбираешь пункт SetValue и вводишь новое значение. Или просто жмешь F2.</p>
+<p>Вот как это выглядит у меня:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Режим отладки</th></tr>
+<tr>
+<td><img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-31.png"/>
+</td>
+</tr>
+</tbody><tbody><tr><th width="100%">Комментарии</th></tr>
+<tr>
+<td class="wide-text">Можно задать переменной любое значение, ссылку можно обратить в null,…
+    </td>
+</tr>
+</tbody></table>
+<p>Затем жмем Enter и все. У переменной теперь новое значение.</p>
+<p class="amigo">- Ничего себе, а я и половины этого не знал. Какой полезный урок.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>5. IDEA: evaluate expression</h2>
+</div>
+<p>- Кроме Watches есть еще мощный инструмент – это EvaluateExpression.</p>
+<p>Кликаешь на переменной в коде правой кнопкой и выбираешь в меню EvaluateExpression. Ну, или просто жмешь Alt+F8.</p>
+<p>Тогда открывается волшебное окно, где можно вычислить значение любого выражения:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-22.png"/>
+<p>Вот, что мы получим:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-23.png"/>
+<p>Но я сказал, там можно написать любое выражение:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-24.png"/>
+<p>Или даже так:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-25.png"/>
+<p>Или так:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-26.png"/>
+<p><span class="orange_text">Все эти переменные можно посмотреть, как можно посмотреть и все, на что они ссылаются и т.д.</span></p>
+<p class="amigo">- Думаю это очень удобная штука для больших программ.</p>
+<p>- Ага. Но и это еще не все.</p>
+<p><b>А хочешь выполнить произвольный код прямо во время работы программы, работая с данными этой программы?</b></p>
+<p class="amigo">- А что, и так можно?</p>
+<p>- Конечно. Для этого есть кнопка – <span class="red_text"><b>CodeFragmentMode</b></span>. Нажимай ее и переключайся в режим, где можно вводить целые «фрагменты кода», состоящие из нескольких строк.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-27.png"/>
+<p>Я тут: <span class="green_text">использовала переменную sum5</span>, <span class="dblue_text">вызвала метод sum()</span>, <span class="violet_text">объявила несколько переменных</span>, <span class="dred_text">указала им значения</span> и вычислила результат всего этого.</p>
+<p>Как тебе?</p>
+<p class="amigo">- Как по мне – это очень круто. Особенно, что можно делать разные действия с текущими переменными, такими как sum5, sum7. Ну, а то, что можно вызывать методы и создавать переменные – так это вообще делает мои возможности практически безграничными.</p>
+<p>- Ага. Это очень круто. Ты можешь выполнить код, вывести в нем что-то в консоль и оно выведется в консоль! Это полноценный рабочий код. Без всяких ограничений.</p>
+<p class="amigo">- Спасибо, Элли. Это были несколько очень познавательных, и я не побоюсь этого слова, одни из самых полезных уроков за все время.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>6. IDEA: file/class find</h2>
+</div>
+<p>- А теперь еще немного новых фич на закуску.</p>
+<p>Это не самые важные, но одни из самых часто используемых функций.</p>
+<p><span class="orange_text">Поиск файла в проекте.</span></p>
+<p>Когда ты работаешь в реальном проекте, он обычно насчитывает тысячи файлов. Это java-файлы, файлы properties, xml, html, css, js и много чего еще.</p>
+<p>Иногда ты помнишь, как называется файл/класс, но не помнить точное его местоположение. В Intellij IDEA есть механизм быстрой навигации по файлам и классам.</p>
+<p>Нажми Ctrl+Shift+N и откроется поиск по файлам. В нем обычно достаточно ввести первые буквы имени файла и затем выбрать нужный файл из списка подходящих.</p>
+<p>Пример такого окна-поиска: </p>
+<p>Быстрый поиск файла в проекте</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-19.png"/>
+<p>Я нажала Ctrl+Shift+N, и появилось окно для ввода имени файла.</p>
+<p>Я ввела «ind», и IDEA показала мне весь список файлов с путями, которые подходят под данный шаблон.</p>
+<p>Можно искать только среди классов, для этого надо нажать Ctrl+N. Появляется такое же окно, но поиск ведется только по классам.</p>
+<p>Удобно тем, что можно перейти на любой класс доступный проекту. В том числе классы из jar-ов проекта и JDK.</p>
+<p>Я вот сейчас попробую найти <b>StringBuffer</b>:</p>
+<p>Быстрый поиск класса в проекте</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-20.png"/>
+<p>Помнишь, я когда-то рассказывала, что если название класса состоит из нескольких слов, то их пишут с большой буквы.</p>
+<p class="amigo">- Ага. Это еще называется CamelCase, да?</p>
+<p>- Ага. Так вот, при поиске по имени класса, поддерживается поиск в CamelCase – поиск по заглавным буквам. Т.е. не обязательно писать <b><span class="red_text">S</span>tring<span class="red_text">B</span>uffer</b>, можно просто написать <b><span class="red_text">S</span>tr<span class="red_text">B</span>uff</b> или даже <span class="red_text"><b>SB</b></span>.</p>
+<p class="amigo">- Т.е. достаточно просто написать начальные буквы каждого слова в имени класса?</p>
+<p>- Да. Если ты ищешь <b><span class="red_text">B</span>uffered<span class="red_text">I</span>nput<span class="red_text">S</span>tream</b>, можно конечно написать все название целиком, но это долго, можно написать что-то вроде  <b><span class="red_text">B</span>u<span class="red_text">I</span>n<span class="red_text">S</span>tr</b> и быстро перейти к коду класса:</p>
+<p>Camel Style Search</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-21.png"/>
+<p class="amigo">- Ну, эта информация, конечно, ценная, но в ближайшее время она мне вряд ли пригодится. Количество файлов в моих проектах редко превышает десяток.</p>
+<p>- Что тебе сказать, Амиго? Времена меняются…</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>7. IDEA: refactoring</h2>
+</div>
+<p>- И снова здравствуйте.</p>
+<p class="amigo">- Привет!</p>
+<p>- Сегодня я расскажу тебе про <b>рефакторинг</b>(re-factoring). <b>Рефакторинг</b> – это изменение кода проекта без изменения его функционала.</p>
+<p class="amigo">- А как такое может быть?</p>
+<p>- Ну, в самых простых случаях – мы переименовываем переменные и/или методы. От переименования переменных программа ведь по-другому работать не станет?</p>
+<p class="amigo">- Нет, конечно.</p>
+<p>- Вот, затем <span class="orange_text">можно разбить большие методы на несколько отдельных.</span></p>
+<p>Можно <span class="orange_text">вынести повторяющиеся куски кода в отдельный метод.</span></p>
+<p><span class="orange_text">Некоторые функции обозначить как static</span>, а затем <span class="orange_text">вынести их в утилитные классы.</span></p>
+<p>Но это рефакторинг в узком смысле.</p>
+<p>Иногда под рефакторингом понимают переписывание (улучшение) архитектуры проекта, без добавления новой функциональности. Это рефакторинг в широком смысле.</p>
+<p>Intellij IDEA стала самой популярной IDE (среда разработки) именно потому, что первая внедрила очень мощные средства рефакторинга.</p>
+<p class="amigo">- Что же это за волшебные штуки такие-то?</p>
+<p><u><b>Волшебство первое – изменение имени метода.</b></u></p>
+<p>- Представь, что в твоем коде есть метод, который вызывается из 100-500 других мест. И ты решил сменить его имя на более читаемое. Скажем, было run(), а стало  runDownloadTaskAsync().  Насколько быстро это сделать?</p>
+<p class="amigo">- Ну, сначала надо поменять имя этого метода, затем искать в программе все места, где этот метод вызывается, и менять его имя там.</p>
+<p>- А как ты будешь его искать?</p>
+<p class="amigo">- Я бы просто запустил программу, и Intellij IDEA бы выдала все ошибки, где вызывается метод, которого нет.</p>
+<p>- Хорошо, а допустим, у тебя у каждого метода есть поясняющий комментарий (JavaDoc), в котором написано что делает этот метод, и там написано его старое имя.</p>
+<p class="amigo">- Я поменяю и комментарии.</p>
+<p>- А ведь могут еще быть переменные, название которых связано с именем метода, хорошо бы и их поменять тоже:</p>
+<table class="table_example">
+<tbody><tr><th width="40%">Было</th><th width="60%">Стало</th></tr>
+<tr>
+<td class="monospace_text wide-text">Task <span class="green_text">task</span> = <span class="dred_text">manager</span>.<span class="red_text"><b>run</b></span>();
+    </td>
+<td class="monospace_text wide-text">Task <span class="green_text">asyncTask</span> = <span class="dred_text">manager</span>.<span class="red_text"><b>runDownloadTaskAsync</b></span>();
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Да, хорошо бы поменять имена и этим переменным. Не помешало бы.</p>
+<p>- Так вот, это все можно сделать с помощью Intellij IDEA за пару секунд!</p>
+<p>Становишься курсором на имя метода (или кликаешь по нему мышкой), затем жмешь <span class="red_text"><b>Shift+F6</b></span> и просто начинаешь вводить нужное имя файла.</p>
+<p>Пример: редактирование имени метода.</p>
+<p><b>Начало редактирования:</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-11.png"/>
+<p><b>Указали новое имя:</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-12.png"/>
+<p>Просто вводишь новое имя, жмешь enter  и все. Все вызовы данного метода в проекте переименованы.</p>
+<p>Intellij IDEA так же обычно дополнительно спрашивает – надо ли переименовывать переменные и имена методов в комментариях. Достаточно просто нажать «да», и она все сделает.</p>
+<p>При этом если до рефакторинга проект компилировался, то после рефакторинга он так же будет гарантированно компилироваться.</p>
+<p class="amigo">- Звучит очень многообещающе.</p>
+<p>- Кстати, <b>имена переменных можно поменять так же. Стал на имя, просто жмешь <span class="red_text">Shift+F6</span> и все – можешь вводить новое имя, и везде, где используется эта переменная, оно поменяется.</b></p>
+<p><span class="violet_text">Если переменная была полем класса и у нее были getter и setter, они тоже сменят имя, чтобы соответствовать новому имени переменной.</span></p>
+<p class="amigo">- Попробовал с переменными. Все работает, как ты и говоришь, Элли. Рефакторинг - это круто!</p>
+<p>- Ты думаешь – это весь рефакторинг? Да там столько всего, что мы и десятой части не коснулись.</p>
+<p class="amigo">- Ого. И что же там еще?</p>
+<p><u><b>Волшебство второе – вынос переменной.</b></u></p>
+<p>- Иногда в коде часто повторяются некоторые выражения, что аж хочется вынести их в отдельную переменную. Пример: Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text"><b>public void</b> printInfo(User user)<br/>
+{<br/>
+ <span class="grey_text">System.out.println</span>(<span class="dred_text">user.getProfile().</span>getName());<br/>
+ <span class="grey_text">System.out.println</span>(<span class="red_text">user.getProfile().getAddress().</span>getState());<br/>
+ <span class="grey_text">System.out.println</span>(<span class="red_text">user.getProfile().getAddress().</span>getCity());<br/>
+ <span class="grey_text">System.out.println</span>(<span class="red_text">user.getProfile().getAddress().</span>getStreet());<br/>
+     <span class="grey_text">System.out.println</span>(<span class="red_text">user.getProfile().getAddress().</span>getHomeNumber());<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Как хочется сделать, глядя на него:</th></tr>
+<tr>
+<td class="monospace_text"><b>public void</b> printInfo(User user)<br/>
+{<br/>
+     Address <span class="red_text"><b>address</b></span> = <span class="red_text">user.getProfile().getAddress();</span><br/><br/>
+
+ <span class="grey_text">System.out.println</span>(<span class="dred_text">user.getProfile().</span>getName());<br/>
+ <span class="grey_text">System.out.println</span>(<span class="red_text"><b>address.</b></span> getState());<br/>
+ <span class="grey_text">System.out.println</span>(<span class="red_text"><b>address.</b></span>getCity());<br/>
+ <span class="grey_text">System.out.println</span>(<span class="red_text"><b>address.</b></span>getStreet());<br/>
+ <span class="grey_text">System.out.println</span>(<span class="red_text"><b>address.</b></span>getHomeNumber());<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ага.</p>
+<p>- А ведь бывает и куда более сложный код, в котором очень много повторяющихся частей.</p>
+<p>Программисты так не специально пишут. Но часто случается, что надо в метод что-то дописать, потом еще что-то, и со временем количество избыточных частей зашкаливает.</p>
+<p>К тому же, создавая отдельную переменную, мы может дать ей правильное имя и улучшить читабельность кода.</p>
+<p>Например, в примере выше, речь может идти не об адресе проживания, а об адресе, куда можно обратиться, в случае, если с человеком что-то случиться. Тогда можно назвать переменную не address, а, скажем, supportAddress. Тогда, программисту, который видит этот код в первый раз, будет понятнее, что тут происходит.</p>
+<p class="amigo">- Да, согласен, добавление таких переменных имеет смысл.</p>
+<p class="amigo">Так как это сделать?</p>
+<p>- Вынести какое-то выражение в отдельную переменную очень просто.</p>
+<p><b>Шаг 1 – выделяем мышкой выражение.</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-13.png"/>
+<p><b>Шаг 2 – нажимаем Ctrl+Alt+V</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-14.png"/>
+<p>Появляется окно, где Intellij IDEA нас спрашивает – заменить только одно выделенное выражение или заменить все выражения (4 шт.)?</p>
+<p>Выбираем второй пункт – заменить все вхождения (Replace all 4 occurrences)</p>
+<p><b>Шаг 3 – нажимаем Enter.</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-15.png"/>
+<p>Intellij IDEA предлагает ввести имя переменной. И сразу предлагает свой вариант имени. Не так уже он и плох, да?</p>
+<p class="amigo">- Ага. В самую точку. Мы тоже собирались назвать переменную address. А как она догадалась?</p>
+<p>- По имени последнего метода в выражении – он возвращает адрес, значит, скорее всего, в переменной хранится именно адрес.</p>
+<p class="amigo">- Отлично получилось. Классная штука, Элли.</p>
+<p><u><b>Волшебство третье – вынос кода в отдельный метод.</b></u></p>
+<p>- А ведь можно было сделать и по-другому. Можно было объявить новый метод, например, <b>printAddress</b> и вынести весь этот код в него.</p>
+<p>Давай, так и попробуем сделать.</p>
+<p><b>Шаг 1 – выделяем 4 строчки кода, которые используют переменную address:</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-16.png"/>
+<p><b>Шаг 2 – нажимаем Ctrl+Alt+M</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-17.png"/>
+<p>Intellij IDEA сама определила, какие переменные будут нужны этому методу, и предлагает нам, как он будет выглядеть. Осталось только ввести имя метода.</p>
+<p><b>Шаг 3 – вводим имя метода - printAddress и жмем Enter.</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-18.png"/>
+<p>Как тебе результат?</p>
+<p class="amigo">- Это офигенно. Intellij IDEA не только вынесла код в отдельный метод, она еще и добавила туда все нужные переменные. Так еще и имена угадала правильно.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>8. IDEA: replace, find</h2>
+</div>
+<p>- Хочу еще рассказать пару волшебных вещей.</p>
+<p class="amigo">- Давай! Сегодня прямо день чудес. Оказывается,  я и половины возможностей Intellij IDEA не использовал.</p>
+<p><u><b>Волшебная вещь третья – поиск.</b></u></p>
+<p>- Представь себе ситуацию, ты открыл файл на 5 тысяч строк, и тебе надо найти в нем метод, который называется getProcessTask. Или getProcessorTask или getTaskProcessor или как-то так.</p>
+<p>У Intellij IDEA есть очень мощный механизм поиска по текущему открытому файлу.</p>
+<p>Просто нажми Ctrl+F и начни вводить нужное слово:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-06.png"/>
+<p>Например, мы хотим найти все вызовы метода println, тогда пишем дальше - println:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-07.png"/>
+<p>Так же можно перемещаться по найденным совпадениям использую стрелки вверх и вниз. Специально обвела их кружочком на скриншоте.</p>
+<p class="amigo">- А там справа есть еще галочки MatchCase, Regex, Words. Что они значат?</p>
+<p>- <b>MatchCase</b> – учитывать регистр букв. <span class="orange_text">Если галочка снята, то различий между большими и строчными буквами не делается, если выставлена, то такие буквы считаются разными. Тогда, например, слово «Print» не будет считаться совпадающим  с «print».</span></p>
+<p>Галочка в <b>Regex</b>, говорит о том, что <span class="violet_text">шаблон строки, на самом деле, является регулярным выражением и надо учитывать это при поиске всех совпадений.</span></p>
+<p>Галочка в <b>Words</b>, говорит о том, что <span class="green_text">слово должно полностью совпасть с тем, что имеем. Если совпадает только часть слова – это не подходит.</span></p>
+<p>Например, у меня есть методы <b>print</b> и <b>println</b>, и я хочу найти только <b>print</b>, тогда я должна буду выставить эту галочку.  В примере ниже, я специально заменила два метода <b>println</b> на <b>print</b> и выделила только их, нажав галочку <b>Words</b>.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-08.png"/>
+<p class="amigo">- Т.е. Words переключает режимы «часто слова совпадает с шаблоном» и «все слово совпадает с шаблоном»?</p>
+<p>- Ага.</p>
+<p><u><b>Пятая волшебная  вещь – замена.</b></u></p>
+<p>Представь, что у тебя есть кусок кода, и ты хочешь заменить в нем вызов одних методов на другие. Просто заменить кусок кода на другой и все. Как это быстро сделать?</p>
+<p>Для этого есть комбинация Ctrl+R</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-09.png"/>
+<p>Давай заменим <b>println</b> на <b>print</b>.</p>
+<p>Чтобы замена не произошла во всем классе, надо выделить нужный кусок кода и отметить галочку – In Selection – только в выделенном.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-10.png"/>
+<p>Теперь можно смело нажимать кнопку «Replace all» и все вхождения <b>println</b> в выделенном куске кода будет заменены на <b>print</b>.</p>
+<p class="amigo">- Есть такое дело. Все отлично работает. Спасибо тебе, Элли!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>9. Задачи</h2>
+<p>- Привет, Амиго. Держи интересную задачу:</p>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>Сегодня мы напишем парсер логов</b><br/><br/>
+                Лог файл имеет следующий формат:<br/>
+                ip username date event status<br/>
+                Класс, который будет отвечать за парсинг логов называется <span class="taskcode">LogParser</span>.
+        </td></tr>
+</table>
+<p>- Как обычно, все подробности реализации тебе сообщит секретный агент.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>10. Стиль кода</h2>
+</div>
+<p>- Ну и еще две маленькие вещи напоследок, как говорится.</p>
+<p><u><b>Шестая волшебная вещь – оборачивание.</b></u></p>
+<p>Например, мы хотим обернуть кусок кода в блок <b>try-catch</b>. Для этого у Intellij IDEA тоже есть своя комбинация – <span class="red_text"><b>Ctrl+T</b></span>.</p>
+<p>Просто выделяем кусок кода – например, те же <b>println</b> в методе printAddress  и нажимаем Ctrl+T. И вот, что мы наблюдаем:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-01.png"/>
+<p>Вот меню, со списком конструкций, которыми можно обернуть выделенный код.</p>
+<p>Можно <span class="green_text">обернуть в цикл (пункт 3)</span> или в <span class="dblue_text">try-catch (пункт 6)</span>, и еще много всего.</p>
+<p>Мы сейчас хотим обернуть код в <span class="dblue_text"><b>try-catch</b></span>, поэтому выберем пункт 6.</p>
+<p>Цифры и буквы с точкой слева  - это горячие клавиши. Достаточно просто нажать 6 и выберется нужный нам пункт. Мышкой конечно тоже можно, если очень хочется.</p>
+<p>Вот и результат:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-02.png"/>
+<p>Т.е. выделили код, нажали Ctrl+T, затем 6 и вуаля – код обернут, все красиво.</p>
+<p class="amigo">- Да, полезная вещь.</p>
+<p><u><b>Седьмая волшебная вещь – форматирование кода.</b></u></p>
+<p>- Иногда, когда код редактируют, то появляются лишние отступы и пробелы. Иногда их, наоборот не хватает. Тогда код выглядит не очень опрятно и практически не читаемо.</p>
+<p>Пример:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-03.png"/>
+<p><span class="violet_text">Intellij IDEA позволяет настраивать стили форматирования кода – отступы, их размеры, надо ли переносить { на следующую строку, и т.д.</span></p>
+<p>Сделать это очень просто. Выдели кусок кода, который хочешь привести к правильному стилю (ничего не выделяй, если хочешь форматировать весь текущий документ), затем нажми Ctrl+Alt+L.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-04.png"/>
+<p>По умолчанию выбран текущий файл, но ты можешь выбрать «выделенный текст» или все файлы в текущей папке. Затем жми enter и любуйся результатом.</p>
+<p>Для приведенного примера выше, он у меня вышел таким:</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/39/image-ru-39-05.png"/>
+<p>Каждой строке кода добавилось правильное количество отступов, где надо расставились пробелы. Такой код красивее и читать его гораздо легче.</p>
+<p class="amigo">- О. Люблю, когда все красиво. Особенно код. У нас – роботов,  любовь к красивому коду в крови. </p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Учимся гуглить</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Продолжаем наши уроки – учимся гуглить.</p>
+<p>Вот тебе несколько заданий:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Надо найти в Google</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Что такое веб
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Что такое веб-сервер
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Что такое сервлет
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Что такое JSP
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Как работает JSP
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">С какими переменными может работать Java-код внутри JSP-страницы
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Как настроить веб-проект в IDEA
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Как написать свой сервлет
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Как задеплоить(deploy) свой сервлет в Tomcat
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Как посмотреть список всех точек остановки в IDEA
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>12. Профессор дает доп. материал</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Вот тебе дополнительный материал по теме.</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-39.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>13. Хулио</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Хулио.</p>
+<p>- Рад видеть тебя, как настроение?</p>
+<p class="amigo">- Настроение бодрое, вот решил практически все задачи этого уровня.</p>
+<p>- Если все решил, тогда самое время просмотреть видео.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-39.gif" preload="none" tabindex="0" taskkey="level39,lesson13,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-39.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=i9zXNtoT0J0" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>14. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Что такое web-сервер?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Что такое Tomcat?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Что такое сервлеты и где они используются?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Какие режимы запуска приложений в IDEA вы знаете?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Можно ли дебажить приложение/сервлет, которое запущено внутри Tomcat’а?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Как в IDEA установить точку остановки?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Как в IDEA посмотреть список всех точек остановки?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Можно ли с помощью IDEA поменять значение переменной в процессе работы программы?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Как в IDEA настроить отступы?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Как в IDEA настроить, чтобы { отображалось на той же строке,  а не на новой?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>15. Большая задача</h2>
+</div>
+<p>- Привет, боец!</p>
+<p>- Поздравляю тебя с повышением уровня квалификации. Нам нужны отчаянные парни.</p>
+<p>- Уверен, у тебя есть еще много нерешенных задач. Самое время решить парочку из них!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

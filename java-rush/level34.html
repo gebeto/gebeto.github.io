@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:0px;margin-right: 0px;   background: url(images/profile/web-bender-34.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 250px;margin-left: -500px;">
+                    Уровень 34
+                </div>
+</div>
+</div>
+<br/>
+<!--<div class="line"></div>-->
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>1. Рекурсия</h2>
+</div>
+<p>- Привет, Амиго. Сегодня Билаабо расскажет тебе, что такое рекурсия.</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/34/image-ru-34-05.gif"/>
+<p>Как ты знаешь, в Java одни методы вызывают другие методы.  При этом, при вызове метода, в него передаются конкретные значения аргументов, а во время его работы локальные переменные метода принимают некоторые значения.</p>
+<p class="amigo">- Ага.</p>
+<p>- И как ты знаешь, внутренние переменные разных методов  независимы друг от друга.</p>
+<p class="amigo">- Ага.</p>
+<p>- Так вот, представь ситуацию, когда метод может вызвать сам себя. Именно она называется рекурсией.  Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><b>public static void</b> main(String[] args)<br/>
+{<br/>
+ <span class="red_text"><b>countDown</b></span>(10);<br/>
+}<br/><br/>
+<b>public static void <span class="red_text">countDown</span></b>(int x)<br/>
+{<br/>
+ <b>if</b> (x 
+  <b>System.out.println</b>(<span class="violet_text">"Boom!"</span>);<br/>
+ <b>else</b><br/>
+ <b>{</b><br/>
+  System.out.println(<span class="violet_text">x</span>);<br/>
+  <span class="red_text"><b>countDown</b></span>(x - 1);<br/>
+    <b>}</b><br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Вывод на экран:</th></tr>
+<tr>
+<td class="wide-text">10<br/>
+9<br/>
+8<br/>
+7<br/>
+6<br/>
+5<br/>
+4<br/>
+3<br/>
+2<br/>
+1<br/>
+Boom!
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Честно говоря, вижу, что метод в коде сам себя вызывает, но не понимаю, что именно при этом происходит.</p>
+<p>- Да примерно тоже, что и при вызове другого метода.</p>
+<p class="amigo">- Нет, я спрашиваю, что происходит с переменными? С их значениями? И как мы выходим из метода? Или мы выходим из всех сразу?</p>
+<p>- Господи. Да все гораздо проще. Представь что метод, который вызывает сам себя,  размножили много раз. Тогда будет аналогичная ситуация:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Рекурсивный вызов метода</th><th width="50%">Что происходит «на самом деле»</th></tr>
+<tr>
+<td class="monospace_text" valign="top"><b>public static void</b> main(String[] args)<br/>
+{<br/>
+ <span class="red_text"><b>countDown</b></span>(10);<br/>
+}<br/><br/>
+<b>public static void <span class="red_text">countDown</span></b>(int x)<br/>
+{<br/>
+ <b>if</b> (x 
+  <span class="grey_text">System.out.println</span>(<span class="violet_text">"Boom!"</span>);<br/>
+ <b>else</b><br/>
+ <b>{</b><br/>
+  <span class="grey_text">System.out.println</span>(<span class="violet_text">x</span>);<br/>
+  <span class="red_text"><b>countDown</b></span>(x - 1);<br/>
+    <b>}</b><br/>
+}
+    </td>
+<td class="monospace_text"><b>public static void</b> main(String[] args)<br/>
+{<br/>
+ <span class="red_text">countDown1</span>(3);<br/>
+}<br/><br/>
+<b>public static void</b> <span class="red_text">countDown1</span><b>(int x)</b><br/>
+{<br/>
+ <b>if (x <br/>
+  <span class="grey_text">System.out.println</span><b>(</b><span class="violet_text">"Boom!"</span><b>);</b><br/>
+ <b>else</b><br/>
+    {<br/>
+  <span class="grey_text">System.out.println</span>(<span class="violet_text"><b>x</b></span>);<br/>
+  <span class="red_text">countDown2</span><b>(x - 1);</b><br/>
+    }<br/>
+}<br/>
+<b>public static void</b> <span class="red_text">countDown2</span><b>(int x)</b><br/>
+{<br/>
+ <b>if (x <br/>
+  <span class="grey_text">System.out.println</span><b>(</b><span class="violet_text">"Boom!"</span><b>);</b><br/>
+ <b>else</b><br/>
+    {<br/>
+  <span class="grey_text">System.out.println</span>(<span class="violet_text"><b>x</b></span>);<br/>
+  <span class="red_text">countDown3</span><b>(x - 1);</b><br/>
+    }<br/>
+}<br/>
+<b>public static void</b> <span class="red_text">countDown3</span><b>(int x)</b><br/>
+{<br/>
+ <b>if (x <br/>
+  <span class="grey_text">System.out.println</span><b>(</b><span class="violet_text">"Boom!"</span><b>);</b><br/>
+ <b>else</b><br/>
+    {<br/>
+  <span class="grey_text">System.out.println</span>(<span class="violet_text"><b>x</b></span>);<br/>
+  <span class="red_text">countDown4</span><b>(x - 1);</b><br/>
+    }<br/>
+}<br/><br/>
+<b>public static void</b> <span class="red_text">countDown4</span><b>(int x)</b><br/>
+{<br/>
+ <b>if (x <br/>
+  <span class="grey_text">System.out.println</span><b>(</b><span class="violet_text">"Boom!"</span><b>);</b><br/>
+ <b>else</b><br/>
+    {<br/>
+  <span class="grey_text">System.out.println</span>(<span class="violet_text"><b>x</b></span>);<br/>
+  <span class="red_text">countDown5</span><b>(x - 1);</b><br/>
+    }<br/>
+}
+    </b></b></b></b></td>
+</tr>
+</tbody><tbody><tr><th width="50%">Вывод на экран:</th><th width="50%">Вывод на экран:</th></tr>
+<tr>
+<td class="wide-text">3<br/>
+2<br/>
+1<br/>
+Boom!
+    </td>
+<td class="wide-text">3<br/>
+2<br/>
+1<br/>
+Boom!
+    </td>
+</tr>
+</tbody></table>
+<p>Т.е. <span class="red_text">каждый раз, при вызове метода (даже самого себя), <b>создаются новые переменные, которые хранят данные для этого метода.</b> Никаких общих переменных нет.</span></p>
+<p>При каждом вызове в памяти появляется еще одна копия аргументов метода, но уже с новыми значениями. При возвращении в старый метод, там используются его переменные. Т.е. при рекурсии <b>фактически мы вызываем другой метод, но с таким же кодом как наш!</b></p>
+<p class="amigo">- Ясно. А как работает выход из этих методов? Можно пример?</p>
+<p>- Ладно. Один пример стоит тысячи слов. Вот тебе пример:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Рекурсивный вызов метода</th><th width="50%">Что происходит «на самом деле»</th></tr>
+<tr>
+<td class="monospace_text" valign="top"><b>public static void</b> main(String[] args)<br/>
+{<br/>
+ <span class="red_text"><b>print</b></span>(3);<br/>
+}<br/><br/>
+<b>public static void <span class="red_text">print</span></b>(int x)<br/>
+{<br/>
+ <b>if</b> (x 
+  <span class="grey_text">System.out.println</span>(<span class="violet_text">"</span>Boom!");<br/>
+ <b>else</b><br/>
+ <b>{</b><br/>
+  <span class="grey_text">System.out.println</span>(<span class="violet_text">x</span>);<br/>
+  <span class="red_text"><b>print</b></span>(x - 1);<br/>
+  <span class="grey_text">System.out.println</span>(<span class="violet_text">x</span>);<br/>
+    <b>}</b><br/>
+}
+    </td>
+<td class="monospace_text"><b>public static void</b> main(String[] args)<br/>
+{<br/>
+ <span class="red_text">print1</span>(3);<br/>
+}<br/><br/>
+<b>public static void <span class="red_text">print1</span></b>(int x)<br/>
+{<br/>
+ <b>if</b> (x 
+         <span class="grey_text">System.out.println</span>(<span class="violet_text">"</span>Boom!");<br/>
+ <b>else</b><br/>
+    {<br/>
+  <span class="grey_text">System.out.println</span>(<span class="violet_text">x</span>);<br/>
+  <span class="red_text"><b>print2</b></span>(x - 1);<br/>
+  <span class="grey_text">System.out.println</span>(<span class="violet_text">x</span>);<br/>
+    }<br/>
+}<br/><br/>
+<b>public static void <span class="red_text">print2</span></b>(int x)<br/>
+{<br/>
+ <b>if</b> (x 
+         <span class="grey_text">System.out.println</span>(<span class="violet_text">"</span>Boom!");<br/>
+ <b>else</b><br/>
+    {<br/>
+  <span class="grey_text">System.out.println</span>(<span class="violet_text">x</span>);<br/>
+  <span class="red_text"><b>print3</b></span>(x - 1);<br/>
+  <span class="grey_text">System.out.println</span>(<span class="violet_text">x</span>);<br/>
+    }<br/>
+}<br/><br/>
+
+…
+    </td>
+</tr>
+</tbody><tbody><tr><th width="50%">Вывод на экран:</th><th width="50%">Вывод на экран:</th></tr>
+<tr>
+<td class="wide-text">3<br/>
+2<br/>
+1<br/>
+Boom!<br/>
+1<br/>
+2<br/>
+3
+
+    </td>
+<td class="wide-text">3<br/>
+2<br/>
+1<br/>
+Boom!<br/>
+1<br/>
+2<br/>
+3
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ок. Вроде понял. А зачем нужна рекурсия?</p>
+<p>- Есть очень много задач, которые разбиваются на отдельные подзадачи, которые идентичны первоначальной задаче. Например, надо обойти все элементы XML-дерева. У каждого элемента может быть несколько дочерних элементов, а у них свои дочерние элементы.</p>
+<p>Или тебе нужно вывести список файлов, которые есть в директории и все ее поддиректориях. Тогда ты пишешь метод, который выводит файлы текущей директории, а потом для получения файлов всех поддиректорий вызываешь его же, но с другим параметром – поддиректорией.</p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="100%">Вывод всех файлов на экран из директории и её поддиректорий</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16
+    </td>
+<td class="monospace_text" valign="top"><b>public static void</b> main(String[] args)<br/>
+   {<br/>
+ <span class="red_text">printAllFiles</span>(new <b>File</b>("c:/windows/"));<br/>
+   }<br/><br/>
+<b>public static void</b> <span class="red_text">printAllFiles</span>(File <span class="dblue_text">dir</span>)<br/>
+   {<br/>
+ <b>for</b> (File <span class="green_text">file</span> : <span class="dblue_text">dir</span>.<b>listFiles</b>())<br/>
+        {<br/>
+  <b>if</b> (<span class="green_text">file</span>.<b>isDirectory</b>())<br/>
+   <span class="red_text">printAllFiles</span>(<span class="green_text">file</span>);<br/>
+  <b>else</b><br/>
+   <span class="grey_text">System.out.println</span>(<span class="green_text">file</span>.<b>getAbsolutePath</b>()); <br/>    
+ }<br/>
+   }
+    </td>
+</tr>
+</tbody></table>
+<p>Строка 8 – получаем список всех файлов (и директорий) в директории dir.</p>
+<p>Строки 10-11 – если файл на самом деле директория, то для вывода ее файлов опять вызываем <span class="red_text"><b>printAllFiles</b></span>, но уже с другим параметром – поддиректорией.</p>
+<p>Строка 13 – выводим имя текущего файла.</p>
+<p class="amigo">- Ок. Вроде понял. Спасибо, Билаабо.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>2. Задачи</h2>
+</div>
+<p>- Привет, Амиго! Я отыскал для тебя отличные задания: </p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level34,lesson02,task01"></button><b>1. Числа Фибоначчи с помощью рекурсии</b><br/><br/>
+                Почитать про числа Фибоначчи.<br/>
+		Реализовать логику метода <span class="taskcode">fibonacci</span>, <br/>
+		где <span class="taskcode">n</span> - это номер элемента в последовательности Фибоначчи.<br/>
+		Не создавайте статические переменные и поля класса.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level34,lesson02,task02"></button><b>2. Факториал с помощью рекурсии</b><br/><br/>
+                Почитать про вычисление факториала.<br/>
+		Реализовать логику метода <span class="taskcode">factorial</span>, где <span class="taskcode">n</span> - это число, факториал которого нужно вычислить.<br/>
+		Не создавайте статические переменные и поля класса.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level34,lesson02,task03"></button><b>3. Разложение на множители с помощью рекурсии</b><br/><br/>
+                Разложить целое число n &amp;gt 1 на простые множители.<br/>
+		Вывести в консоль через пробел все множители в порядке возрастания.<br/>
+		Написать рекуррентный метод для вычисления простых множителей.<br/>
+		Не создавайте статические переменные и поля класса.<br/><br/>
+<span class="example-legacy">Пример:</span><br/>
+<span class="example-data">132</span><br/><br/>
+<span class="example-legacy">Вывод на консоль:</span><br/>
+<span class="example-data">2 2 3 11</span>
+</td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>4. Рекурсия для мат.выражения</b><br/><br/>
+                На вход подается строка - математическое выражение.<br/>
+		Выражение включает целые и дробные числа, скобки (), пробелы, знак отрицания -, возведение в степень ^, sin(x), cos(x), tan(x)<br/>
+		Для sin(x), cos(x), tan(x) выражение внутри скобок считать градусами, <br/>
+		например, cos(3 + 19*3)=0.5<br/>
+		Степень задается так: a^(1+3) и так a^4, что эквивалентно a*a*a*a.<br/>
+		С помощью рекурсии вычислить выражение и количество математических операций. Вывести через пробел результат в консоль.<br/>
+		Результат выводить с точностью до двух знаков, для 0.33333 вывести 0.33, использовать стандартный принцип округления.<br/>
+		Не создавайте статические переменные и поля класса.<br/>
+		Не пишите косвенную рекурсию.<br/>
+		Пример, состоящий из операций sin * - + * +:<br/>
+		sin(2*(-5+1.5*4)+28)<br/>
+		Результат:<br/>
+		0.5 6
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Сборка мусора</h2>
+</div>
+<p>- Привет! Снова решила устроить тебе небольшую лекцию про сборку мусора.</p>
+<p>Как ты уже знаешь, Java-машина сама отслеживает ситуации, когда объект становится не нужными и удаляет его.</p>
+<p class="amigo">- Ага. Вы с Ришей раньше мне рассказывали об этом, нюансов я не помню.</p>
+<p>- Ок. Тогда повторим.</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/34/image-ru-34-04.png"/>
+<p>Как только объект создается, Java выделяет ему память. А за востребованностью объекта следит с помощью переменных-ссылок. <span class="green_text">Объект может быть удален при «сборке мусора» - процедуре очистки памяти, если не остается переменных, которые ссылаются  на этот объект.</span></p>
+<p class="amigo">- А расскажи немного о сборщике мусора, что это такое и как он работает.</p>
+<p>- Ок. Раньше сборка мусора происходила в главном потоке/нити. Раз в 5 минут, или чаще. Если наступал случай, когда не хватало свободной памяти, Java-машина приостанавливала работу всех нитей и удаляла неиспользуемые объекты.</p>
+<p>Но сейчас от этого подхода отказались. Сборщик Мусора нового поколения работает незаметно и в отдельном потоке. Такую сборку мусора принято называть параллельной.</p>
+<p class="amigo">- Ясно. А как именно определяется – нужно удалять объект или нет.</p>
+<p>- Просто считать количество ссылок на объект не очень эффективно – ведь могут быть объекты, которые ссылаются друг на друга, а на которые никто не ссылается.</p>
+<p>Поэтому в Java применяется другой подход. <span class="orange_text">Java делит объекты на достижимые и недостижимые.</span> Объект считается достижимым (живым), если на него ссылается другой достижимый (живой) объект.  Достижимость считается от нитей. Работающие нити всегда считаются достижимыми (живыми), даже если на них никто не ссылается.</p>
+<p class="amigo">- Ок. С этим вроде ясно.</p>
+<p class="amigo">А как происходит сама уборка мусора – удаление ненужных объектов?</p>
+<p>- Тут все просто. В Java память условно разделена на две части,  и когда приходит время сборки мусора, все живые (достижимые) объекты копируются в другую часть памяти, а старая память вся освобождается.</p>
+<p class="amigo">- Интересный подход. И не надо считать ссылки – скопировал все достижимые объекты, а все остальные – мусор.</p>
+<p>- Там все немного сложнее. Программисты Java выяснили, что объекты обычно делятся на две категории – долгоживущие (которые существуют все время работы программы) и маложивущие (нужны в методах и для выполнения «локальных» операций).</p>
+<p>Хранить долгоживущие отдельно от маложивущих гораздо эффективнее. Для этого надо было придумать механизм определения долгожительства объекта.</p>
+<p>Поэтому они разделили всю память на «поколения».  Есть объекты первого поколения, есть объекты второго поколения и т.д. Каждый раз после очистки  памяти, счетчик поколений увеличивается на 1. Если какие-то объекты существуют много поколений, то их записывали в долгожители.</p>
+<p>На сегодняшний день Сборщик Мусора очень сложная и эффективная часть в Java. Многие его части работают эвристически – на основе алгоритмов-догадок. Поэтому он часто «не слушается» пользователя.</p>
+<p class="amigo">- В смысле?</p>
+<p>- У Java есть объект <span class="dred_text">GC</span> (Garbage Collector – Сборщик Мусора), который можно вызвать с помощью метода <span class="dred_text">System.gc</span>().</p>
+<p>Так же можно принудительно инициировать вызов finalize-методов удаляемых объектов, посредством <span class="dred_text">System.runFinalization</span>(). Но дело в том, что по документации Java, это не гарантирует ни начало сборки мусора, ни вызов методов finalize(). <span class="dred_text">Garbage Collector сам решает, что и когда ему вызывать.</span></p>
+<p class="amigo">- Ничего себе! Буду занять.</p>
+<p>- Но  и это еще не все. Как ты знаешь, в Java одни объекты ссылаются на другие, и именно с помощью этой сети ссылок определяется – стоит удалять объект или нет.</p>
+<p>Так вот, в Java есть специальные ссылки, которые позволяет влиять на этот процесс. Для них есть специальные классы-обертки. Вот они:</p>
+<p><b>SoftReference</b> – мягкая ссылка.</p>
+<p><b>WeakReference</b> – слабая ссылка.</p>
+<p><b>PhantomReference</b> – призрачная ссылка.</p>
+<p class="amigo">- М-да. Чем-то напоминает внутренние классы, вложенные классы, внутренние  анонимные классы, локальны классы. Названия разные, но по ним совсем не понятно за что они отвечают.</p>
+<p>- <span class="violet_text">Вот, ты Амиго и стал программистом. Теперь ты возмущаешься по поводу названий классов – дескать, недостаточно информативны, и нельзя по одному названию(!) определить, что этот класс делает, как и зачем.</span></p>
+<p class="amigo">- Ого. А я и сам не заметил. Но это же так очевидно.</p>
+<p>Ладно. Соловья баснями не кормят. Давай я тебе расскажу про <b>SoftReference</b> – мягкие ссылки.</p>
+<p>Эти ссылки были специально придуманы для кэширования, хотя их можно использовать и для других целей – все на усмотрение программиста.</p>
+<p>Пример такой ссылки:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><span class="grey_text">//создание объекта Cat</span><br/>
+<span class="green_text">Cat cat</span> = new <span class="green_text">Cat</span>();<br/><br/>
+<span class="grey_text">//создание мягкой ссылки на объект Cat</span><br/>
+<span class="dred_text">SoftReference&amp;lt</span><span class="green_text">Cat</span><span class="dred_text">&amp;gt</span> <span class="red_text"><b>catRef</b></span> = new <span class="dred_text">SoftReference&amp;lt</span><span class="green_text">Cat</span><span class="dred_text">&amp;gt</span>(<span class="green_text">cat</span>);<br/><br/>
+<span class="grey_text">//теперь на объект ссылается только мягкая ссылка <span class="red_text"><b>catRef</b></span>.</span><br/>
+<span class="green_text">cat</span> = null; <br/><br/>
+<span class="grey_text">//теперь на объект ссылается еще и обычная переменная cat</span><br/>
+<span class="green_text">cat</span> = <span class="red_text"><b>catRef</b></span>.<b>get</b>();<br/><br/>
+<span class="grey_text">//очищаем мягкую ссылку</span><br/>
+<span class="red_text"><b>catRef</b></span>.<b>clear</b>();
+    </td>
+</tr>
+</tbody></table>
+<p>Если на объект существуют только мягкие ссылки, то он продолжает жить и называется «мягкодостижимым».</p>
+<p>Но! <span class="orange_text">Объект, на который ссылаются только мягкие ссылки, может быть удален сборщиком мусора, если программе не хватает памяти.</span> Если программе вдруг не хватает памяти, прежде чем выкинуть <b>OutOfMemoryException</b>, сборщик мусора удалит все объекты, на которые ссылаются мягкие ссылки и попробует выделить программе память еще раз.</p>
+<p>Предположим, что программа-клиент часто запрашивает у программы-сервера различные данные. Тогда программа сервер может некоторые из них кэшировать, воспользовавшись для этого <span class="dred_text">SoftReference</span>. Если объекты, удерживаемые от смерти мягкими ссылками, будет занимать большую часть памяти, то сборщик мусора просто их поудаляет и все. Красота!</p>
+<p class="amigo">- Ага. Мне самому понравилось.</p>
+<p>- Ну и маленькое дополнение: у класса <span class="dred_text">SoftReference</span> есть два метода. Метод <b>get</b>() возвращает объект, на который ссылается <span class="dred_text">SoftReference</span>. Если объект был удален сборщиком мусора, внезапно(!) метод <b>get</b>() начнет отдавать <b>null</b>.</p>
+<p>Так же пользователь может сам очистить <span class="dred_text">SoftReference</span>, вызвав метод <b>clear</b>(). При этом слабая ссылка внутри объекта <span class="dred_text">SoftReference</span> будет уничтожена.</p>
+<p>На этом пока все.</p>
+<p class="amigo">- Спасибо за интересный рассказ, Элли. Действительно было очень интересно.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>4. Задачи</h2>
+</div>
+<p>- Что, соскучился? Вот, держи:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level34,lesson04,task01"></button><b>1. Мягкие ссылки</b><br/><br/>
+                Разберитесь в примере.<br/>
+		Внутри метода <span class="taskcode">main</span> в нужном месте создайте мягкую ссылку <span class="taskcode">reference</span> на объект <span class="taskcode">monkey</span>.<br/>
+		Должны быть только используемые импорты.
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>5. weakReference</h2>
+</div>
+<p>- И снова здравствуйте!</p>
+<p>Сейчас я расскажу тебе еще про одну замечательную штуку - <span class="dred_text">WeakReference</span> – слабые ссылки.</p>
+<p>Выглядит она почти так же, как и SoftReference:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><span class="grey_text">//создание объекта Cat</span><br/>
+<span class="green_text">Cat cat</span> = new <span class="green_text">Cat</span>();<br/><br/>
+<span class="grey_text">//создание слабой ссылки на объект Cat</span><br/>
+<span class="dred_text">WeakReference</span>&amp;lt<span class="green_text">Cat</span>&amp;gt <span class="red_text"><b>catRef</b></span> = new <span class="dred_text">WeakReference</span>&amp;lt<span class="green_text">Cat</span>&amp;gt(<span class="green_text">cat</span>);<br/><br/>
+<span class="grey_text">//теперь на объект ссылается только слабая ссылка <span class="red_text"><b>catRef</b></span>.</span><br/>
+<span class="green_text">cat</span> = null; <br/><br/>
+<span class="grey_text">//теперь на объект ссылается еще и обычная переменная cat</span><br/>
+<span class="green_text">cat</span> = <span class="red_text"><b>catRef</b></span>.<b>get</b>();<br/><br/>
+<span class="grey_text">//очищаем слабую ссылку</span><br/>
+<span class="red_text"><b>catRef</b></span>.<b>clear</b>();
+    </td>
+</tr>
+</tbody></table>
+<p>У слабой ссылки есть другая особенность.</p>
+<p>Если на объект не осталось обычных ссылок и мягких ссылок, а только слабые ссылки, то этот объект является живым, но он будет уничтожен при ближайшей сборке мусора.</p>
+<p class="amigo">- А можно еще раз, в чем отличия межу этими ссылками?</p>
+<p>- Объект, который удерживает от смерти только <span class="dred_text">SoftReference</span> может пережить сколько угодно сборок мусора и скорее всего, будет уничтожен при нехватке программе памяти.</p>
+<p>Объект, который удерживает от смерти только <span class="dred_text">WeakReference</span> не переживает ближайшей сборки мусора. Но пока она не произошла, его можно получить, вызвав метод get() у <span class="dred_text">WeakReference</span> и вызвать его методы или сделать что-нибудь еще.</p>
+<p class="amigo">- А если на объект ссылаются и SoftReference и WeakReference?</p>
+<p>- Тут все просто. Если на объект есть хотя бы одна обычная ссылка – он считается живым. Такие ссылки, кстати, называются StrongReference.</p>
+<p>Если на объект нет обычных ссылок, но есть SoftReference, то он – SoftReference.</p>
+<p>Если  на объект нет обычных ссылок и SoftReference, но есть WeakReference, то он – WeakReference.</p>
+<p>Подумай сам, SoftReference защищает объект от удаления и гарантирует, что объект будет удален только при нехватке памяти. WeakReference удерживает объект до ближайшей сборки мусора. SoftReference удерживает от удаления сильнее.</p>
+<p class="amigo">- Ага. Вроде понятно.</p>
+<p>- Отлично, тогда расскажу тебе про еще одну занимательную штуку с использованием WeakReference – это WeakHashMap.</p>
+<p class="amigo">- Звучит серьезно!</p>
+<p>- А то! WeakHashMap – это HashMap, у которого ключи – это слабые ссылки – WeakReference.</p>
+<p>Т.е. ты добавляешь в такой HashMap объекты и работаешь с ними. Все как обычно.</p>
+<p>Пока на объекты, которые ты хранишь в WeakHashMap в качестве ключей есть обычные (сильные или мягкие) ссылки, эти объекты будут живы.</p>
+<p>Но, представь, что во всем приложении больше не осталось ссылок на эти объекты. Все что удерживает их от смерти – это несколько WeakReference внутри WeakHashMap. Тогда после ближайшей очистки мусора такие объекты исчезнут из WeakHashMap. Сами. Как будто их там и не было.</p>
+<p class="amigo">- Не уверен, что понял.</p>
+<p>- Ты хранишь в WeakHashMap пары объектов – ключ и значение. Но WeakHashMap ссылается на ключи не прямо, а через WeakReference. Поэтому, когда объекты, используемые в качестве ключей, станут слабодостижимыми, они уничтожатся при ближайшей сборке мусора. А значит, из WeakHashMap автоматически удалятся и их значения.</p>
+<p>В WeakHashMap очень удобно хранить дополнительную информацию к каким-то объектам.</p>
+<p>Во-первых, ее очень легко получить, если использовать сам объект в качестве ключа.</p>
+<p>Во-вторых, если объект будет уничтожен, он сам исчезнет из HashMap и все данные, что были к нему привязаны.</p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text"><font size="4"><span class="grey_text">//создаем объект для хранения дополнительной информации о пользователе</span><br/>
+<span class="dred_text">WeakHashMap</span>&amp;lt<span class="green_text">User</span>, <span class="dblue_text">StatisticInfo</span>&amp;gt <span class="red_text">userStatistics</span> = <b>new</b> <span class="dred_text">WeakHashMap</span>&amp;lt<span class="green_text">User</span>, <span class="dblue_text">StatisticInfo</span>&amp;gt();<br/><br/>
+<span class="grey_text">//кладем информацию о пользователе в userStatistics</span><br/>
+<span class="green_text">User user</span> = <span class="violet_text">session</span>.getUser();<br/>
+<span class="red_text">userStatistics</span>.<b>put</b>(<span class="green_text">user</span>, <b>new</b> <span class="dblue_text">StatisticInfo</span> (…));<br/><br/>
+<span class="grey_text">//получаем информацию о пользователе из userStatistics</span><br/>
+<span class="green_text">User user</span> = <span class="violet_text">session</span>.getUser();<br/>
+<span class="dblue_text">StatisticInfo statistics</span> = <span class="red_text">userStatistics</span>.<b>get</b>(<span class="green_text">user</span>);<br/><br/>
+<span class="grey_text">//удаление любой информации о пользователе из userStatistics</span><br/>
+<span class="green_text">User user</span> = <span class="violet_text">session</span>.getUser();<br/>
+<span class="red_text">userStatistics</span>.<b>remove</b>(<span class="green_text">user</span>);
+    </font></td>
+</tr>
+<tr>
+<td class="wide-text"><font size="4">1.Внутри WeakHashMap ключи хранятся в виде WeakReference&amp;ltUser&amp;gt.<br/><br/>
+    2.Как только объект user будет уничтожен сборщиком мусора, в WeakHashMap неявно вызовется метод remove(user) и любая «привязанная» к объекту user информация, будет удалена из WeakHashMap автоматически.
+    </font></td>
+</tr>
+</tbody></table>
+<p class="amigo">- Выглядит как мощный инструмент. А где можно его использовать?</p>
+<p>- По обстоятельствам. Ну, допустим, у тебя в программе есть нить, которая отслеживает работу некоторых объектов-заданий и пишет информацию о них в лог. Тогда эта нить может хранить отслеживаемые объекты в таком WeakHashMap. Как только объекты станут не нужны, сборщик мусора удалит их, автоматически удалятся и ссылки на них из WeakHashMap.</p>
+<p class="amigo">- Звучит интересно. Сразу чувствуется, ну не писал я еще серьезных программ на Java, чтобы задействовать такие мощные механизмы. Но я буду расти в эту сторону, спасибо большое, Элли, за такой интересный урок.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level34,lesson06,task01"></button><b>1. Слабые ссылки</b><br/><br/>
+                Разберитесь в примере.<br/>
+		Внутри метода <span class="taskcode">main</span> в нужном месте создайте слабую ссылку <span class="taskcode">reference</span> на объект <span class="taskcode">monkey</span>.
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>7. phanotom Reference</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Риша!</p>
+<p>- Ну, как день прошел?</p>
+<p class="amigo">- Отлично! Мне сегодня Билаабо рассказал про рекурсию, а Элли про слабые и мягкие ссылки.</p>
+<p>- А про призрачные ссылки рассказывала?</p>
+<p class="amigo">- Ты про PhantomReference? Упоминала, но не рассказывала подробно.</p>
+<p>- Отлично, тогда надеюсь, ты не будешь против, если я заполню этот пробел.</p>
+<p class="amigo">- Конечно, я с удовольствием тебя послушаю, Риша!</p>
+<p>- Отлично. Тогда я начну.</p>
+<p>Призрачные(Phantom) ссылки – это самые слабые ссылки из всех. Только если на объект не остаётся никаких ссылок вообще, кроме призрачных, их механизм вступает в действие.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/34/image-ru-34-03.gif"/>
+<p><span class="violet_text">PhantomReference используется для сложной процедуры удаления объекта.</span> Это может быть необходимо, когда объект что-то делает за границами Java-машины, например вызывает низкоуровневые функции ОС или пишет свое состояние в файл  или еще что-нибудь очень важное.</p>
+<p>Пример использования:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример создания призрачных ссылок</th></tr>
+<tr>
+<td class="monospace_text"><font size="4"><span class="grey_text">//специальная очередь для призрачных объектов</span><br/>
+<span class="dblue_text">ReferenceQueue</span>&amp;lt<span class="green_text">Integer</span>&amp;gt <span class="dblue_text">queue</span> = new <span class="dblue_text">ReferenceQueue</span>&amp;lt<span class="green_text">Integer</span>&amp;gt();<br/><br/>
+<span class="grey_text">//список призрачных ссылок</span><br/>
+<span class="violet_text"><b>ArrayList</b></span>&amp;lt<span class="red_text">PhantomReference</span>&amp;lt<span class="green_text">Integer</span>&amp;gt&amp;gt <span class="violet_text">list</span> = new <span class="violet_text">ArrayList</span>&amp;lt<span class="red_text">PhantomReference</span>&amp;lt<span class="green_text">Integer</span>&amp;gt&amp;gt();<br/><br/>
+<span class="grey_text">//создаем 10 объектов и добавляем их в список  через призрачные ссылки</span><br/>
+<b>for</b> ( int i = 0; i &amp;lt 10; i++) <br/>
+{<br/>
+ <span class="green_text">Integer</span> x = new <span class="green_text">Integer</span>(i);<br/>
+ <b><span class="violet_text">list</span>.add</b>(new <span class="red_text">PhantomReference</span>&amp;lt<span class="green_text">Integer</span>&amp;gt(x, <span class="dblue_text">queue</span>));<br/>
+}
+    </font></td>
+</tr>
+</tbody></table>
+<p>Еще раз обращаю внимание на последнюю строчку. В <span class="red_text">PhantomReference</span> передается не только объект x, но и <span class="dblue_text">специальная очередь призрачных ссылок.</span></p>
+<p class="amigo">- А зачем нужна эта очередь?</p>
+<p>- Вот сейчас и расскажу.</p>
+<p>При уничтожении объекта, удерживаемого призрачной ссылкой, он уничтожается, но не удаляется из памяти! Вот такая вот загогулина, понимаешь.</p>
+<p class="amigo">- А это как?</p>
+<p>- Тут довольно много нюансов, так что начну с самого простого.</p>
+<p>Если на объект остаются только призрачные ссылки, то вот что его ждет:</p>
+<p><b>Шаг 1.</b> Во время ближайшей сборки мусора у объекта будет вызван метод finalize(). Но, если метод finalize() не был переопределен, этот шаг пропускается, а выполнится сразу шаг 2.</p>
+<p><b>Шаг 2.</b> Во время следующей сборки мусора, объект будет помещен в специальную очередь призрачных объектов, из которой будет удален, когда у PhantomReference вызовут метод <b>clear</b>().</p>
+<p class="amigo">- А кто его вызовет? Ведь объект-то как бы удален, разве нет?</p>
+<p>- Тут дело в том, что фактически объект умер в нашем (Java) мире, но не исчез, а остался в нем призраком – на него хранится ссылка в очереди призрачных объектов. Та самая <span class="dblue_text">ReferenceQueue</span>, ссылку на которую мы так заботливо передаем в конструктор <span class="red_text">PhantomReference</span>.</p>
+<p class="amigo">- Т.е. эта  ReferenceQueue  - это как бы потусторонний мир?</p>
+<p>- Скорее, как мир призраков.</p>
+<p>И чтобы удалить объект-призрак, надо вызвать <b>clear</b>() у его призрачной ссылки.</p>
+<p>Вот как можно продолжить предыдущий пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример создания призрачных ссылок</th></tr>
+<tr>
+<td class="monospace_text"><font size="4"><span class="grey_text">//специальная очередь для призрачных объектов</span><br/>
+<span class="dblue_text">ReferenceQueue</span>&amp;lt<span class="green_text">Integer</span>&amp;gt <span class="dblue_text">queue</span> = new <span class="dblue_text">ReferenceQueue</span>&amp;lt<span class="green_text">Integer</span>&amp;gt();<br/><br/>
+<span class="grey_text">//список призрачных ссылок</span><br/>
+<span class="violet_text"><b>ArrayList</b></span>&amp;lt<span class="red_text">PhantomReference</span>&amp;lt<span class="green_text">Integer</span>&amp;gt&amp;gt <span class="violet_text">list</span> = new <span class="violet_text">ArrayList</span>&amp;lt<span class="red_text">PhantomReference</span>&amp;lt<span class="green_text">Integer</span>&amp;gt&amp;gt();<br/><br/>
+<span class="grey_text">//создаем 10 объектов и добавляем их в список  через призрачные ссылки</span><br/>
+<b>for</b> ( int i = 0; i 
+{<br/>
+ <span class="green_text">Integer</span> x = new <span class="green_text">Integer</span>(i);<br/>
+ <b><span class="violet_text">list</span>.add</b>(new <span class="red_text">PhantomReference</span>&amp;lt<span class="green_text">Integer</span>&amp;gt(x, <span class="dblue_text">queue</span>));<br/>
+}<br/><br/>
+<span class="grey_text">//взываем сборщик мусора, надеемся, что он нас послушается :)</span><br/>
+<span class="grey_text">//он должен убить все «призрачно достижимые» объекты и поместить их в очередь</span><br/>
+<span class="grey_text">//призраков</span><br/>
+<b>System.gc</b>();<br/><br/>
+<span class="grey_text">//достаем из очереди все объекты</span><br/>
+<span class="red_text">Reference</span>&amp;lt? <b>extends</b> <span class="green_text">Integer</span>&amp;gt<span class="red_text">referenceFromQueue</span>;<br/>
+<b>while</b> ((<span class="red_text">referenceFromQueue</span> = <span class="dblue_text">queue</span>.<b>poll</b>()) != <b>null</b>) <br/>
+{<br/>
+    <span class="grey_text">//выводим объект на экран</span><br/>
+ <b>System.out.println</b>(<span class="red_text">referenceFromQueue</span>.<b>get</b>());<br/>
+ <span class="grey_text">//очищаем ссылку</span><br/>
+ <span class="red_text">referenceFromQueue</span>.<b>clear</b>();<br/>
+}
+    </font></td>
+</tr>
+</tbody></table>
+<p class="amigo">- Что что-то тут происходит – это понятно. Даже почти понятно, что именно происходит.</p>
+<p class="amigo">Но как это использовать на практике? </p>
+<p>- Вот тебе более адекватный пример:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример создания призрачных ссылок</th></tr>
+<tr>
+<td class="monospace_text"><span class="grey_text">//специальная очередь для призрачных объектов</span><br/>
+<span class="dblue_text">ReferenceQueue</span>&amp;lt<span class="green_text">Integer</span>&amp;gt <span class="dblue_text">queue</span> = new <span class="dblue_text">ReferenceQueue</span>&amp;lt<span class="green_text">Integer</span>&amp;gt();<br/><br/>
+<span class="grey_text">//список призрачных ссылок</span><br/>
+<span class="violet_text"><b>ArrayList</b></span>&amp;lt<span class="green_text">PhantomInteger</span>&amp;gt <span class="violet_text">list</span> = new <span class="violet_text">ArrayList</span>&amp;lt<span class="green_text">PhantomInteger</span>&amp;gt();<br/><br/>
+<span class="grey_text">//создаем 10 объектов и добавляем их в список  через призрачные ссылки</span><br/>
+<b>for</b> ( int i = 0; i 
+{<br/>
+ <span class="green_text">Integer</span> x = new <span class="green_text">Integer</span>(i);<br/>
+ <b><span class="violet_text">list</span>.add</b>(new <span class="green_text">PhantomInteger</span> (x, <span class="dblue_text">queue</span>));<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Эта нить будет следить за призрачной очередью и удалять оттуда объекты</th></tr>
+<tr>
+<td class="monospace_text"><span class="dblue_text">Thread referenceThread</span> = new <span class="dblue_text">Thread</span>()<br/>
+        {<br/>
+ <b>public void</b> run()<br/>
+ {<br/>
+  <b>while</b> (<b>true</b>)<br/>
+                  {<br/>
+   <b>try</b><br/>
+                       {<br/>
+    <span class="grey_text">//получаем новый объект из очереди, если объекта нет - ждем!</span><br/>
+    <span class="green_text">PhantomInteger</span> <span class="dgreen_text"><b>ref</b></span> = (<span class="green_text">PhantomInteger</span>)<span class="dblue_text">queue</span>.<b>remove</b>();<br/>
+    <span class="grey_text">//вызвваем у него метод close</span><br/>
+    <b><span class="dgreen_text">ref</span>.close</b>();<br/>
+    <b><span class="dgreen_text">ref</span>.clear</b>();<br/>
+   }<br/>
+   <b>catch</b> (Exception ex)<br/>
+   {<br/>
+    <span class="grey_text">// пишем в лог ошибки</span><br/>
+   }<br/>
+                  }<br/>
+             }<br/>
+        };<br/>
+<span class="grey_text">//запускаем поток в служебном режиме.</span><br/>
+<span class="dblue_text">referenceThread</span>.<b>setDaemon</b>(true);<br/>
+<span class="dblue_text">referenceThread</span>.<b>start</b>();
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Это класс, унаследованный от PhantomReference, у него есть метод close()</th></tr>
+<tr>
+<td class="monospace_text"><b>static class</b> <span class="green_text">PhantomInteger</span> <b>extends</b> <span class="red_text">PhantomReference</span>&amp;lt<span class="green_text">Integer</span>&amp;gt<br/>
+    {<br/>
+ <span class="green_text">PhantomInteger</span>(<span class="green_text">Integer</span> referent, <span class="dblue_text">ReferenceQueue</span>&amp;lt? super <span class="green_text">Integer</span>&amp;gt queue)<br/>
+         {<br/>
+  <b>super</b>(referent, queue);<br/>
+         }<br/><br/>
+
+ <b>private void <span class="orange_text">close</span></b>()<br/>
+         {<br/>
+  <b>System.out.println</b>(<span class="violet_text">"Bad Integer totally destroyed!"</span>);<br/>
+         }<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p>Мы тут сделали три вещи.</p>
+<p>Во-первых, мы создали класс <span class="green_text">PhantomInteger</span>, который унаследовали от <span class="red_text">PhantomReference</span>&amp;lt<span class="green_text">Integer</span>&amp;gt.</p>
+<p>Во-вторых, у этого класса есть специальный метод – <span class="orange_text"><b>close</b></span>(),  ради вызова которого как бы все это и затевается.</p>
+<p>В третьих, мы объявили специальную нить - <span class="dblue_text">referenceThread</span>. Она в цикле ждет, пока в очереди призраков не появится еще один объект. Как только он появляется, она удаляет его из очереди призраков, а затем вызывает  у него метод <span class="orange_text"><b>close</b></span>().  А затем метод clear(). И все – призрак может переходить в следующий лучший мир. В нашем он нас больше не побеспокоит.</p>
+<p class="amigo">- Как интересно, однако все вышло.</p>
+<p>- Мы фактически отслеживаем очередь умирающих объектов, и потом для каждого можем вызвать специальный метод.</p>
+<p>Но, учти, ты не можешь вызвать метод самого объекта. <span class="dred_text">Ссылку на него получить нельзя! Метод get() у PhantomReference всегда возвращает null.</span></p>
+<p class="amigo">- Но ведь мы же наследуемся от  PhantomReference!</p>
+<p>- Даже внутри наследника PhantomReference, метод get() возвращает null. </p>
+<p class="amigo">- Тогда я просто сохраню ссылку на объект в конструкторе :)</p>
+<p>- Ага. Но тогда эта ссылка будет StrongReference, и PhantomReference не вызовется никогда!</p>
+<p class="amigo">- Блин. Ладно, сдаюсь. Нельзя так нельзя.</p>
+<p>- Вот и отлично. Надеюсь, ты вынесешь для себя что-то ценное из сегодняшнего урока.</p>
+<p class="amigo">- Да тут столько нового материала. А я думал, что уже все знаю. Спасибо тебе за урок, Риша.</p>
+<p>- Пожалуйста. Все, иди отдыхай. Но не забудь, у нас вечером еще урок.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level34,lesson08,task01"></button><b>1. Призрачные ссылки</b><br/><br/>
+                Разберитесь в примере.<br/>
+		Реализуйте логику метода <span class="taskcode">getFilledList</span> класса <span class="taskcode">Helper</span>:<br/>
+		1) создайте список, который сможет хранить призрачные ссылки на объекты <span class="taskcode">Monkey</span><br/>
+		2) добавьте в список 200 ссылок, используйте очередь <span class="taskcode">helper.getQueue()</span><br/>
+		3) верните заполненный список
+        </td></tr>
+<tr>
+<td><button class="bonus-task-button"></button><b>2. Кэширование</b><br/><br/>
+                Класс <span class="taskcode">Cache</span> - универсальный параметризированный класс для кеширования объектов.<br/>
+		Он работает с классами(дженерик тип <span class="taskcode">Т</span>), у которых обязан быть:<br/>
+		а) публичный конструктор с одним параметром типа <span class="taskcode">K</span><br/>
+		б) метод <span class="taskcode">K getKey()</span> с любым модификатором доступа<br/><br/>
+
+		Задание:<br/>
+		1. Выберите правильный тип для поля <span class="taskcode">cache</span>. <span class="taskcode">Map&amp;ltK, V&amp;gt cache</span> должен хранить ключи, на которые есть активные ссылки. Если нет активных ссылок на ключи, то они вместе со значениями должны автоматически удаляться из <span class="taskcode">cache</span>.<br/>
+		2. Реализуйте логику метода <span class="taskcode">getByKey</span>:<br/>
+		2.1. Верните объект из <span class="taskcode">cache</span> для ключа <span class="taskcode">key</span><br/>
+		2.2. Если объекта не существует в кэше, то добавьте в кэш новый экземпляр используя рефлекшн, см. п.а)<br/>
+		3. Реализуйте логику метода <span class="taskcode">put</span>:<br/>
+		3.1. Используя рефлекшн получите ссылку на метод, описанный в п.б)<br/>
+		3.2. Используя рефлекшн разрешите к нему доступ<br/>
+		3.3. Используя рефлекшн вызовите метод <span class="taskcode">getKey</span> у объекта <span class="taskcode">obj</span>, таким образом Вы получите ключ <span class="taskcode">key</span><br/>
+		3.4. Добавьте в кэш пару <span class="taskcode">&amp;ltkey, obj&amp;gt</span><br/>
+		3.5. Верните <span class="taskcode">true</span>, если метод отработал корректно, <span class="taskcode">false</span> в противном случае. Исключения игнорируйте.
+        </td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>9. Logger</h2>
+</div>
+<p>- А, вот ты где! Ты не забыл, что у нас сегодня еще одна лекция?</p>
+<p class="amigo">- Нет, я как раз тебя искал. Почти…</p>
+<p>- Отлично, тогда начнем. Сегодня я хочу рассказать тебе про логирование.</p>
+<p>Лог – это список произошедших событий. Почти как «морской журнал» или «дневник». Ну, или Твиттер – кому что ближе.  А, соответственно, логгер это объект, с помощью которого можно вести логирование.</p>
+<p>В программировании принято логировать практически все. А в Java – так вообще все и даже немного больше.</p>
+<p>Дело в том, что Java-программы – это очень часто большие серверные приложения без UI, консоли и т.д. Они обрабатывают одновременно запросы тысяч пользователей, и нередко при этом возникают различные ошибки. Особенно, когда разные нити начинают друг другу мешать.</p>
+<p>И, фактически, единственным способом поиска редко воспроизводимых ошибок и сбоев в такой ситуации есть запись в лог/файл всего, что происходит в каждой нити.</p>
+<p>Чаще всего в лог пишется информация о параметрах метода, с которыми он был вызван, все перехваченные ошибки, и еще много промежуточной информации.</p>
+<p>Чем полнее лог, тем легче восстановить последовательность событий и отследить причины возникновения сбоя или ошибки.</p>
+<p>Иногда логи достигают нескольких гигабайт в сутки. Это нормально. </p>
+<p class="amigo">- Нескольких гигабайт? О_о</p>
+<p>- Ага. Чаще всего при этом, лог-файлы автоматически архивируются, с указанием дня – за какой день это архив с логом.</p>
+<p class="amigo">- Ничего себе.</p>
+<p>- Ага. Изначально в Java не было своего логгера, что привело к написанию нескольких независимых логгеров. Самым распространенным из них стал <b>log4j</b>.</p>
+<p>Спустя несколько лет, в Java все же был добавлен свой логгер, но его функциональность была гораздо беднее и большого распространения он не получил.</p>
+<p>Факт, как говорится, на лицо – <span class="orange_text">в Java есть официальный логгер, но все сообщество Java-программистов предпочитает пользоваться другим.</span></p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/34/image-ru-34-01.png"/>
+<p>На основе log4j потом было написано еще несколько логгеров.</p>
+<p>А затем для них всех был написан специальный универсальный логгер <b>slf4j</b>, который сейчас повсеместно используют. Он очень похож на <b>log4j</b>, поэтому я расскажу тебе логирование на его примере.</p>
+<p>Весь процесс логирования состоит из трех частей.</p>
+<p><b>Первая часть</b> – это сбор информации.</p>
+<p><b>Вторая часть</b> – это фильтрование собранной информации.</p>
+<p><b>Третья часть</b> – это запись отобранной информации.</p>
+<p>Начнем со сбора. Вот типичный пример класса, который ведет лог:</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="100%">Класс с логированием</th></tr>
+<tr>
+<td class="wide-text"><font size="4">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>19<br/>20<br/>21<br/>22
+    </font></td>
+<td class="monospace_text" valign="top"><font size="4"><b>class</b> <span class="violet_text">Manager</span><br/>
+{<br/>
+ <b>private static final</b> <span class="dred_text">Logger</span> <span class="red_text"><b>logger</b></span> = <span class="dred_text">LoggerFactory</span>.<span class="dred_text">getLogger</span>(<span class="violet_text">Manager</span>.class);<br/><br/>
+
+ <b>public boolean</b> processTask(<span class="green_text">Task task</span>)<br/>
+ {<br/>
+  <b><span class="red_text">logger</span>.debug</b>("processTask id="+<span class="green_text">task</span>.<b>getId</b>());<br/>
+  <b>try</b><br/>
+       {<br/>
+   <span class="green_text">task</span>.start();<br/>
+   <span class="green_text">task</span>.progress();<br/>
+   <span class="green_text">task</span>.compleate();<br/>
+   <b>return true;</b><br/>
+       }<br/>
+  <b>catch</b>(Exception e)<br/>
+      {<br/>
+   <b><span class="red_text">logger</span>.error</b>("Unknown error", e);<br/>
+   <b>return false;</b><br/>
+      }<br/>
+  }<br/>
+}
+    </font></td>
+</tr>
+</tbody></table>
+<p>Обрати внимание на слова, выделенные красным.</p>
+<p><b>Строка 3</b> – создание объекта <span class="red_text"><b>logger</b></span>. Такой статический объект создают практически в каждом классе! Ну, разве что кроме классов, которые ничего не делают, а только хранят данные.</p>
+<p><b>LoggerFactory</b> – это специальный класс для создания логгеров, а getLogger – это его статический метод. В него обычно передают текущий класс, хотя возможны различные варианты.</p>
+<p><b>Строка 7</b> – в логгер пишется информация о вызове метода. Обрати внимание – это первая строчка метода. Только метод вызвался – сразу пишем информацию в лог.</p>
+<p>Мы вызываем метод debug, это значит, что важность информации «уровня DEBUG».  Этот факт используется на уровне фильтрации. Об этом я расскажу через пару минут.</p>
+<p><b>Строка 17</b> – мы перехватили исключение и… сразу же записали его в лог! Именно так и нужно делать. </p>
+<p>На этот раз мы вызываем метод error, что сразу придает информации статус «ERROR»</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/34/image-ru-34-02.png"/>
+<p class="amigo">- Пока вроде все ясно. Ну, насколько это может быть ясно в середине разговора.</p>
+<p>- Отлично, тогда перейдем к записи фильтрации.</p>
+<p>Обычно, у каждого лог-сообщения есть своя степень важности, и, используя ее можно часть этих сообщений отбрасывать. Вот эти степени важности:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Степень важности</th><th width="50%">Описание</th></tr>
+<tr>
+<td class="wide-text"><span class="grey_text">ALL</span>
+</td>
+<td class="wide-text"><span class="grey_text">Все сообщения</span>
+</td>
+</tr>
+<tr>
+<td class="wide-text"><span class="grey_text">TRACE</span>
+</td>
+<td class="wide-text"><span class="grey_text">Мелкое сообщение при отладке</span>
+</td>
+</tr>
+<tr>
+<td class="wide-text">DEBUG
+    </td>
+<td class="wide-text">Сообщения важные при отладке
+    </td>
+</tr>
+<tr>
+<td class="wide-text">INFO
+    </td>
+<td class="wide-text">Просто сообщение
+    </td>
+</tr>
+<tr>
+<td class="wide-text">WARN
+    </td>
+<td class="wide-text">Предупреждение
+    </td>
+</tr>
+<tr>
+<td class="wide-text">ERROR
+    </td>
+<td class="wide-text">Ошибка
+    </td>
+</tr>
+<tr>
+<td class="wide-text">FATAL
+    </td>
+<td class="wide-text">Фатальная ошибка
+    </td>
+</tr><tr>
+<td class="wide-text"><span class="grey_text">OFF</span>
+</td>
+<td class="wide-text"><span class="grey_text">Нет сообщения</span>
+</td>
+</tr>
+</tbody></table>
+<p>Эти уровни используются еще и при отсеве сообщений.</p>
+<p>Скажем, если выставить уровень логирования в WARN, то все сообщения, менее важные, чем WARN будут отброшены: TRACE, DEBUG, INFO.</p>
+<p>Если выставить уровень фильтрации в FATAL, то будут отброшены даже ERROR'ы.</p>
+<p>Есть еще два уровня важности, которые используются при фильтрации – это OFF – отбросить все сообщения и ALL – показать все сообщения (не отбрасывать ничего).</p>
+<p class="amigo">- А как настраивать фильтрацию и где?</p>
+<p>- Сейчас расскажу.</p>
+<p>Обычно настройки логгера log4j задаются в файле <b>log4j.properties</b>.</p>
+<p>В этом файле можно задать несколько appender’ов – объектов, в которые будут писаться данные. Есть источники данных, а есть – аппендеры – противоположные по смыслу объекты. Объекты, куда как бы «стекают» данные, если их можно представить в виде воды.</p>
+<p>Вот тебе несколько примеров:</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="100%">Запись лога в консоль</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10
+    </td>
+<td class="monospace_text"><span class="grey_text"># Root logger option</span><br/>
+log4j.rootLogger=<span class="dblue_text">INFO</span>, <span class="red_text">stdout</span><br/><br/>
+<span class="grey_text"># Direct log messages to stdout</span><br/>
+log4j.appender.<span class="red_text">stdout</span>=org.apache.log4j.<span class="green_text">ConsoleAppender</span><br/>
+log4j.appender.<span class="red_text">stdout</span>.Target=<span class="green_text">System.out</span><br/>
+log4j.appender.<span class="red_text">stdout</span>.layout=org.apache.log4j.PatternLayout<br/>
+log4j.appender.<span class="red_text">stdout</span>.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} 
+    </td>
+</tr>
+</tbody></table>
+<p>Строки 2 и 5 – это комментарии</p>
+<p>Строка 3 – мы указываем уровень сообщений, которые оставляем. Все менее важные уровни будут отброшены (DEBUG,TRACE)</p>
+<p>Там же, через запятую, мы указываем имя объекта (сами придумываем), куда будет писаться лог. В строках 6-9 идут его настройки.</p>
+<p>Строка 6 – указываем  тип апендера – консоль (<span class="green_text">ConsoleAppender</span>).</p>
+<p>Строка 7 – указываем, куда именно будем писать - <span class="green_text">System.out</span>.</p>
+<p>Строка 8 – задаем класс, который будет управлять шаблонами записей – PetternLayout.</p>
+<p>Строка 9 – задаем шаблон для  записи, который будет использоваться. В примере выше это дата и время.</p>
+<p>А вот как выгладит запись в файл:</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="100%">Запись лога в файл</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11
+    </td>
+<td class="monospace_text"><br/><span class="grey_text"># Root logger option</span><br/>
+log4j.rootLogger=<span class="dblue_text">INFO</span>, <span class="red_text">file</span><br/><br/>
+<span class="grey_text"># Direct log messages to a log file</span><br/>
+log4j.appender.<span class="red_text">file</span>=org.apache.log4j.<span class="green_text">RollingFileAppender</span><br/>
+log4j.appender.<span class="red_text">file</span>.File=C:\\loging.log<br/>
+log4j.appender.<span class="red_text">file</span>.MaxFileSize=1MB<br/>
+log4j.appender.<span class="red_text">file</span>.MaxBackupIndex=1<br/>
+log4j.appender.<span class="red_text">file</span>.layout=org.apache.log4j.PatternLayout<br/>
+log4j.appender.<span class="red_text">file</span>.layout.ConversionPattern= %-5p %c{1}:%L - %m%n
+    </td>
+</tr>
+</tbody></table>
+<p>Строка 3 задает уровень фильтрации сообщений и имя объекта-апендера (стока).</p>
+<p>Строка 6  - указываем тип апендера – файл (<span class="green_text">RollingFileAppender</span>).</p>
+<p>Строка 7 – указываем имя файла – куда писать лог.</p>
+<p>Строка 8 – указываем максимальный размер лога. При превышении размера, начнет писаться новый файл.</p>
+<p>Строка 9 – указываем количество старых файлов логов, которые надо хранить.</p>
+<p>Строки 10-11 – задание шаблона сообщений.</p>
+<p class="amigo">- Я  не знаю, что тут происходит, но догадываюсь. Что не может не радовать.</p>
+<p>- Это отлично. Тогда вот тебе пример, как писать лог в файл и на консоль:</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="100%">Запись лога на консоль и в файл</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18
+    </td>
+<td class="monospace_text"><span class="grey_text"># Root logger option</span><br/>
+log4j.rootLogger=<span class="dblue_text">INFO</span>, <span class="red_text">file</span>, <span class="violet_text">stdout</span><br/><br/>
+<span class="grey_text"># Direct log messages to a log file</span><br/>
+log4j.appender.<span class="red_text">file</span>=org.apache.log4j.<span class="green_text">RollingFileAppender</span><br/>
+log4j.appender.<span class="red_text">file</span>.File=C:\\loging.log<br/>
+log4j.appender.<span class="red_text">file</span>.MaxFileSize=1MB<br/>
+log4j.appender.<span class="red_text">file</span>.MaxBackupIndex=1<br/>
+log4j.appender.<span class="red_text">file</span>.layout=org.apache.log4j.PatternLayout<br/>
+log4j.appender.<span class="red_text">file</span>.layout.ConversionPattern= %-5p %c{1}:%L - %m%n<br/><br/>
+<span class="grey_text"># Direct log messages to stdout</span><br/>
+log4j.appender.<span class="violet_text">stdout</span>=org.apache.log4j.<span class="dblue_text">ConsoleAppender</span><br/>
+log4j.appender.<span class="violet_text">stdout</span>.Target=System.out<br/>
+log4j.appender.<span class="violet_text">stdout</span>.layout=org.apache.log4j.PatternLayout<br/>
+log4j.appender.<span class="violet_text">stdout</span>.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss}
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ага, оказывается и так можно? Это же отлично!</p>
+<p>- Ага. Ты можешь объявить сколько угодно апендеров и настроить каждый из них по-своему.</p>
+<p>Более того, каждому апендеру можно очень гибко настроить фильтр его сообщений. Мы можем не только задать каждому апендеру свой уровень фильтрации сообщений, но и отфильтровать их по пакетам! Вот для чего надо указывать класс при создании логгера (я про <b>LoggerFactory.getLogger</b>).</p>
+<p>Пример:</p>
+<table class="table_example">
+<tbody><tr><th width="1%"> </th><th width="100%">Запись лога на консоль и в файл</th></tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>19<br/>20<br/>21<br/>22<br/>23<br/>24
+    </td>
+<td class="monospace_text" valign="top"><span class="grey_text"># Root logger option</span><br/>
+log4j.rootLogger=<span class="dblue_text">INFO</span>, <span class="red_text">file</span>, <span class="violet_text">stdout</span><br/><br/>
+<span class="grey_text"># Direct log messages to a log file</span><br/>
+log4j.appender.<span class="red_text">file</span>=org.apache.log4j.<span class="green_text">RollingFileAppender</span><br/>
+log4j.appender.<span class="red_text">file</span>.threshold=<span class="red_text"><b>DEBUG</b></span><br/>
+log4j.appender.<span class="red_text">file</span>.File=C:\\loging.log<br/>
+log4j.appender.<span class="red_text">file</span>.MaxFileSize=1MB<br/>
+log4j.appender.<span class="red_text">file</span>.MaxBackupIndex=1<br/>
+log4j.appender.<span class="red_text">file</span>.layout=org.apache.log4j.PatternLayout<br/>
+log4j.appender.<span class="red_text">file</span>.layout.ConversionPattern= %-5p %c{1}:%L - %m%n<br/><br/>
+<span class="grey_text"># Direct log messages to stdout</span><br/>
+log4j.appender.<span class="violet_text">stdout</span>=org.apache.log4j.<span class="dblue_text">ConsoleAppender</span><br/>
+log4j.appender.<span class="violet_text">stdout</span>.threshold=<span class="red_text"><b>ERROR</b></span><br/>
+log4j.appender.<span class="violet_text">stdout</span>.Target=System.out<br/>
+log4j.appender.<span class="violet_text">stdout</span>.layout=org.apache.log4j.PatternLayout<br/>
+log4j.appender.<span class="violet_text">stdout</span>.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss}<br/><br/>
+
+log4j.logger.<span class="orange_text">org.springframework</span>=ERROR<br/>
+log4j.logger.<span class="orange_text">org.hibernate</span>=ERROR<br/>
+log4j.logger.<span class="orange_text">com.javarush</span>=DEBUG<br/>
+log4j.logger.<span class="orange_text">org.apache.cxf</span>=ERROR
+    </td>
+</tr>
+</tbody></table>
+<p>Строки 6 и 15 – мы задаем свой уровень фильтрации для каждого апендера.</p>
+<p>Строки 20-23 мы указываем имя пакета и тип фильтрации его сообщений. «log4j.logger» - это префикс, имя пакета выделено оранжевым.</p>
+<p class="amigo">- Ничего себе? Даже так можно. Ну, круто!</p>
+<p>- Кстати, ни log4j, ни slf4j не входят в JDK, скачивать их надо отдельно. Это можно сделать вот <a href="http://www.slf4j.org/download.html" target="_blank">тут</a>. Но есть и второй способ:</p>
+<p><b>Шаг 1.</b> Добавляешь в класс импорты:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text"><b>import</b> org.<span class="red_text">slf4j</span>.Logger;<br/>
+<b>import</b> org.<span class="red_text">slf4j</span>.LoggerFactory;
+    </td>
+</tr>
+</tbody></table>
+<p><b>Шаг 2.</b> Становишься курсором на эти строчки и нажимаешь Alt+Enter в Intellij IDEA</p>
+<p><b>Шаг 3.</b> Выбираешь пункт Fine jar on web.</p>
+<p><b>Шаг 4.</b> Выбираешь – slf4j-log4j13.jar</p>
+<p><b>Шаг 5.</b> Указываешь, куда скачать библиотеку (jar)</p>
+<p><b>Шаг 6.</b> Пользуешься нужными тебе классами.</p>
+<p class="amigo">- Ничего себе! Да что же сегодня за день-то такой. Столько нового и столько классного!</p>
+<p>- Вот тебе еще хорошая статья по логингу: <a href="http://habrahabr.ru/post/113145/" target="_blank">http://habrahabr.ru/post/113145/</a></p>
+<p>Ладно, все. Иди отдыхай, программист.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>10. Задачи</h2>
+</div>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Настраиваем логгер</b><br/><br/>
+                Дан файл <span class="taskcode">log4j.properties</span>, который содержит настройки для логгера для разработчиков.<br/>
+		Изменились требования к логированию для продакшена.<br/>
+		Список изменений, которые нужно сделать:<br/><br/>
+		1) Размер файла для логирования не должен превышать 5 мегабайт<br/>
+		2) Файлы лога должны храниться на диске D в директории log, называться должны runApp.log<br/>
+		3) Файлы лога должны содержать 6 последних файлов. Если шестой файл уже заполнен(имеет размер 5Мб), то нужно удалить самый первый и создать новый.<br/>
+		4) Уровень вывода сообщений в консоль нужно установить на уровне <span class="taskcode">ERROR</span><br/>
+		5) Минимальный уровень логирования выставить в <span class="taskcode">WARN</span>
+</td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Учимся гуглить</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Продолжаем наши уроки – учимся гуглить.</p>
+<p>Вот тебе несколько заданий:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Что надо найти в Google</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Как работает сборщик мусора в Java
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Какие бывают виды сборщиков мусора
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Что такое «поколения» объектов
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Для чего используется SoftReference
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Пример использования SoftReference
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Пример использования WeakReference
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Зачем нужен WeakHashMap
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Что такое логгер
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Как настроить логгер
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Настройки логгера
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>12. Профессор дает доп. материал</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Вот тебе дополнительный материал по теме.</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-34.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>13. Хулио</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Хулио. Чем занимаешься?</p>
+<p>- Да вот, решил заказать пиццу, и посмотреть хорошее видео.</p>
+<p class="amigo">- Отличная идея, а что будем смотреть?</p>
+<p>- Как что? Конечно, новый блокбастер, называется "Пингвины атакуют".</p>
+<p class="amigo">- Что-то новенькое, ну давай посмотрим.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-34.gif" preload="none" tabindex="0" taskkey="level34,lesson13,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-34.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=0SGQo8-dcww" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>14. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Что такое сборка мусора?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Когда вызывается метод finalize?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Что произойдет, если в методе finalize возникнет исключение?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Что такое SoftReference?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Что такое WeakReference?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Что такое PhantomReference?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Как работает WeakHashMap?  Где он используется?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Зачем нужно передавать очередь в конструктор PhantomReference?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Зачем нужен логгер?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Какие настройки логгера вы знаете?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>15. Большая задача</h2>
+</div>
+<p>- Привет, боец!</p>
+<p class="amigo">- Здравия желаю, Капитан Бобров!</p>
+<p>- Поздравляю. Сегодня у нас выходной.</p>
+<p class="amigo">- И мы можем заниматься любыми своими делами?</p>
+<p>- Да Амиго,  хоть целый день в игрушки  шпилить. Например, в Sokoban. Моя самая любимая игра с детства.  Вот не могу пройти 435 уровень.  Поможешь?</p>
+<p class="amigo">- Конечно  помогу,  показывайте, товарищ Капитан.</p>
+<p>- Капитан Бобров достает из кармана старенький Game boy, запускает Sokoban в монохромном режиме, и тут досада.  Батарея разряжена, Game boy выключается.</p>
+<p>- Капитан молча смотрит на Game boy, потом на Амиго, потом снова на Game boy, разворачивается и медленно идет в свою комнату.</p>
+<p class="amigo">- Товарищ Капитан, а давайте сами напишем игру Sokoban и придумаем 1000 дополнительных уровней, и крутой графический интерфейс.</p>
+<p>- Амиго,  ты не перестаешь меня удивлять. Обратись к агенту Intellij IDEA. Если у него нет других заданий, и он захочет тебе помочь в свой выходной, тогда приступайте.</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/34/image-ru-34-15-big.jpg"/>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

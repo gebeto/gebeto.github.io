@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-08.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 8
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>Глобальный рынок труда</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/08/image-ru-08-01.jpg"/>
+<p>Если вы живете в маленькой и/или развивающейся стране, на пути вашей профессиональной самореализации вы можете столкнуться с ограниченностью местного рынка труда. <b>Вы можете просто не найти работу!</b></p>
+<p class="blue_text"><b>Ограничения местного рынка труда</b></p>
+<p><b>1 Низкие зарплаты </b></p>
+<p>Даже если вы высококлассный специалист, на местном рынке может просто не оказаться того, кто может платить вам достойную зарплату. Пример: учителя, ученые. </p>
+<p><b>2 Перепроизводство кадров</b></p>
+<p>Количество юристов и экономистов, которые выпускают вузы, в десятки раз превосходит потребность рынка. 90% из них не могут найти работу по специальности. Часто это следствие низкого качества обучения.</p>
+<p><b>3 Спрос на вашу профессию отсутствует</b></p>
+<p>Вы можете быть шикарным ученым, но государство больше не финансирует фундаментальные исследования. На бирже труда вам советуют переквалифицироваться. Не разумно это делать, когда у вас огромный опыт и в мире есть страны, где он востребован.</p>
+<p>Когда физик с мировым именем бросает на родине кафедру и едет в Нью-Йорк мыть посуду – это трагедия. Когда физик с мировым именем моет на родине посуду, вместо того, чтобы возглавить кафедру в Нью-Йорке – это еще большая трагедия.</p>
+<p><b>4 Небольшие карьерные перспективы</b></p>
+<p>Вы биржевой брокер и хотите расти как узкий специалист по ценным бумагам. В будущем вы хотите возглавить собственный инвестиционный фонд. В вашей стране спрос на специалистов такого профиля может отсутствовать в принципе.</p>
+<p><b>5 Маленький рынок труда</b></p>
+<p>В стране всего может быть пара компаний, которым интересен специалист вашего профиля и квалификации. Если вы работайте в одной из них, вам могут запретить работать у конкурентов. Вам просто больше некуда устроиться.</p>
+<p>Вследствие процессов глобализации, а также развития и удешевления телекоммуникационных технологий появился глобальный рынок труда. Он состоит из компаний, которые хотят (и могут) нанимать себе работников за рубежом. И работников, которые хотят (и могут) устраиваться на работу в иностранную компанию.</p>
+<p class="blue_text"><b>Преимущества глобального рынка труда</b></p>
+<p><b>1 Зарплаты ниже, чем в развитых странах, но выше чем в развивающихся.</b></p>
+<p>Если вы специалист, востребованный на глобальном рынке труда, то разница в доходах на местном и глобальном рынках может достигать 5-10 раз. При этом вы тратите заработанные деньги в своей стране, чем развиваете ее экономику.</p>
+<p><b>2 Опыт. Более совершенные бизнес-процессы</b></p>
+<p>Главное, что дает работа – это опыт, деньги и связи. Если вы привыкли брать только деньги – <b>это ваши проблемы</b>. Вы можете получить ценнейший опыт, если поработайте в ведущих мировых компаниях. Они приветствуют тенденции глобализации, так что это может быть легче, чем кажется. Как сотруднику компании вам будут видны все эффективные и не очень внутренние бизнес-процессы. Надо только держать открытыми глаза и уши.</p>
+<p><b>3 Большие перспективы роста</b></p>
+<p>Работа в большой международной  компании поможет вам расти как профессионально, так и строить карьеру. Вы можете обзавестись полезными связями во всем мире, что очень полезно: зарекомендуйте себя отличным специалистом и вам, возможно, несколько международных компаний предложат продолжить у них карьеру. <b>Талантливому человеку нужна только возможность, как ее использовать он додумается сам.</b></p>
+<p><b>4 Командировки</b></p>
+<p>Вам часто будут предлагать ездить заграницу в командировки. Особенно, если компания имеет несколько международных филиалов. Не стоит этим пренебрегать: это хорошая возможность  не только попутешествовать, но и получить новые знания, навыки, поговорить с людьми. Помните, что одна-единственная точка зрения еще никогда не давала качественную объемную картину.</p>
+<p><b>5 Возможность переехать в понравившуюся вам страну</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/08/image-ru-08-02.jpg"/>
+<p>Очень часто, зарекомендовав себя отличным специалистом, можно получить приглашение переехать/поработать в офисе заказчика. Это очень удобно. Вы, скорее всего, уже бывали там, в командировках, и представляете куда едете. Имеете там друзей и знакомых. Сразу получите хорошую работу и коллектив, который вас знает. Да это почти лучшие условия для иммиграции, которые я знаю.</p>
+<p class="blue_text"><b>Требования глобального рынка труда</b></p>
+<p><b>1 Ваша профессия должна подходить для этого</b></p>
+<p>Не все профессии можно перенести на глобальный рынок. Но многие можно. Их список постоянно расширяется. Их можно перечислять и перечислять: телефонная поддержка, разработка, исследования, дизайн, почти все, что касается интернета и/или компьютеров.  Если ваша профессия появилась всего 20-30 лет назад, есть очень большая вероятность, что он легко глобализируется.</p>
+<p><b>2 Цена и качество</b></p>
+<p>Когда иностранная компания видит, что может нанять у вас  в стране специалиста лучшего уровня и дешевле, чем у себя, зачастую ей трудно устоять. Вы должны быть или «лучше и дешевле» или «гораздо дешевле». Просто «дешевле» ее не устроит, т.к. компания несет дополнительные риски, когда нанимает специалистов удаленно. </p>
+<p><b>3 Английский язык</b></p>
+<p>В 21 веке английский язык - это международный язык. Хотите работать на глобальном рынке труда и пользоваться всеми его преимуществами, но английский не ваш родной – учите международный язык. Чем хуже вы знаете английский язык, тем сильнее должны быть ваши два остальных преимущества.</p>
+<br/>
+<div class="line"></div>
+<br/>
+<p>Получить высшее образование легко - поступил в вуз, 5 лет "проучился" и готово. Благо вузов сейчас как грязи.</p>
+<p>Получить профессиональное образование сложнее - сначала надо найти место, где его можно получить, а потом надо много работать. JavaRush - дает отличный старт, чтобы стать профессионалом. Пройдешь JavaRush, устроишься на работу, а дальше будешь получать и опыт и деньги одновременно.</p>
+<button class="profile-tariff-button-popular" onclick="window.top.location.href = '//javarush.ru/user/subscription?l=8';">Получить профессиональное образование - купить подписку</button>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>1. Объяснение основных коллекций</h2>
+</div>
+<img src="https://javarush.ru/levels/images/lessons/08/image-ru-08-10.gif"/>
+<p>- Привет, Амиго. Сегодня хочу рассказать тебе о коллекциях. <span class="green_text">Коллекциями/контейнерами в Java принято называть классы, основная цель которых – хранить набор других элементов.</span> Пример такого класса, с которым ты уже знаком, есть – это ArrayList.</p>
+<p>- В Java коллекции делятся на три основных группы: Set - множество, List - список, Map - словарь (или карта).</p>
+<p class="amigo">- И в чем же их отличие?</p>
+<p>-  Начну с Set. <span class="orange_text">Представь много туфель сброшенных в кучу – это Set - множество. В set можно добавить элемент, поискать его или удалить. Но у элементов там нет строго заданного порядка!</span></p>
+<p class="amigo">- Не густо… </p>
+<p>- <span class="violet_text">А теперь представь ту же кучу обуви, но выставленную вдоль стенки. Теперь в ней появился порядок. У каждого элемента есть его номер. И можно просто взять «пару номер 7» по её номеру. Это – List – список.</span> Мы можем добавить элемент в начало списка или в середину, или убрать его, и сделать это просто по его номеру.</p>
+<p class="amigo">- Понятно. А Map?</p>
+<p>- Представь ту же обувь, но теперь у каждой пары есть табличка с именем «Коля», «Вася», «Аня». Это Map – мэп, (его еще часто называют «карта» или «словарь»). <span class="red_text">У каждого элемента  есть его уникальное название, по которому к нему можно было обращаться. Уникальное название элемента ещё называют «ключом».  А Map – это набор пар «ключ»-«значение».</span> Ключ не обязательно должен быть строкой, он может быть любым типом. <b>Map</b>, у которого тип ключа – <b>Integer</b>, – это фактически <b>List</b> (с некоторыми отличиями).</p>
+<p class="amigo">- На словах понятно, но хотелось бы увидеть больше примеров.</p>
+<p>- Примеры тебе даст Риша, а я хочу добавить еще пару слов.</p>
+<p>- Все коллекции и контейнеры сразу после создания ничего в себе не хранят. Но в них можно постепенно добавлять элементы – тогда они будут динамически изменять свой размер.</p>
+<p class="amigo">- О, это уже интересно. А как узнать, сколько элементов в коллекции?</p>
+<p>- Для этого есть метод <b>size</b>(). В коллекциях есть все необходимое. Думаю, через пару уроков ты сам убедишься, какие эти коллекции удобные.</p>
+<p class="amigo">- Надеюсь. </p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>2. Список всех коллекций и интерфейсов</h2>
+</div>
+<img src="https://javarush.ru/levels/images/lessons/08/image-ru-08-09.gif"/>
+<p>- Привет, Амиго.</p>
+<p class="amigo">- Здорова, Риша.</p>
+<p>- Элли мне сказала, что ты хотел больше примеров коллекций. Сейчас я дам тебе несколько. Хочу представить тебе список коллекций и интерфейсов:</p>
+<table class="table_example">
+<tr><th width="30%">Интерфейс</th><th width="35%">Класс/Реализация</th><th width="35%">Описание</th></tr>
+<tr class="blue_text">
+<td rowspan="4">List</td>
+<td>ArrayList</td>
+<td>Список </td>
+</tr>
+<tr class="blue_text">
+<td>LinkedList</td>
+<td>Список </td>
+</tr>
+<tr class="blue_text">
+<td>Vector</td>
+<td>Вектор </td>
+</tr>
+<tr class="blue_text">
+<td>Stack</td>
+<td>Стек </td>
+</tr>
+<tr class="green_text">
+<td rowspan="3">Set</td>
+<td>HashSet</td>
+<td>Множество </td>
+</tr>
+<tr class="green_text">
+<td>TreeSet</td>
+<td>Множество </td>
+</tr>
+<tr class="green_text">
+<td>SortedSet</td>
+<td>Отсортированное множество</td>
+</tr>
+<tr class="orange_text">
+<td rowspan="4">Map</td>
+<td>HashMap</td>
+<td>Карта/Словарь </td>
+</tr>
+<tr class="orange_text">
+<td>TreeMap</td>
+<td>Карта/Словарь </td>
+</tr>
+<tr class="orange_text">
+<td>SortedMap</td>
+<td>Отсортированный словарь </td>
+</tr>
+<tr class="orange_text">
+<td>Hashtable </td>
+<td>Хеш-таблица</td>
+</tr>
+</table>
+<p class="amigo">- Хм. Как их много. Четыре List’а, три Set’а и четыре Map’а.</p>
+<p>- Да, это все различные реализации интерфейсов List, Set и Map.</p>
+<p class="amigo">- А чем отличаются различные реализации?</p>
+<p>- Об этом как раз сегодня мы тебе и расскажем. Просто подожди немного. </p>
+<p>- Может, у тебя уже накопились какие-нибудь вопросы?</p>
+<p class="amigo">- Как вывести список на экран я знаю. А как вывести Set и Map?</p>
+<p>- У элементов списка (List) есть четко заданный порядок, поэтому их можно вывести просто по номеру. У Set и Map строго заданного порядка элементов нет. Собственно говоря, порядок их элементов может меняться при удалении или добавлении какого-нибудь элемента.</p>
+<p class="amigo">- Надо же.</p>
+<p>- Поэтому для работы с элементами коллекций были придуманы специальные объекты – <b>итераторы</b>. С их помощью можно пройтись по  всем элементам коллекции, даже если у них нет номера, а только имена (Map), или вообще нет имён – Set.</p>
+<p><b>-Примеры:</b></p>
+<table class="table_task wide-table">
+<tr>
+<th class="collapsed"></th>
+<th>Вывод на экран элементов Set</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level08,lesson02,type01"></button></td>
+<td class="monospace_text wide-text"><pre>public static void <b>main</b>(String[] args)
+{
+    <b>Set</b>&lt;String&gt; <span class="dblue_text">set</span> = new <b>HashSet</b>&lt;String&gt;();
+    <span class="dblue_text">set</span>.add("Mama");
+    <span class="dblue_text">set</span>.add("Mila");
+    <span class="dblue_text">set</span>.add("Ramu");
+
+    <span class="grey_text">//получение итератора для множества</span>
+    <b>Iterator</b>&lt;String&gt; <span class="green_text">iterator</span> = <span class="dblue_text">set</span>.iterator();
+
+    <b>while</b> (<span class="green_text">iterator</span>.<span class="red_text">hasNext</span>())        <span class="grey_text">//проверка, есть ли ещё элементы</span>   
+    {
+        <span class="grey_text">//получение текущего элемента и переход на следующий</span>
+        String <span class="orange_text">text</span> = <span class="green_text">iterator</span>.<span class="red_text">next</span>();
+
+        System.out.println(<span class="orange_text">text</span>);
+    }
+}</pre></td></tr>
+<tr>
+<td class="collapsed" rowspan="2"><button class="task_button" taskkey="level08,lesson02,type02"></button></td>
+<td class="example">Вывод на экран элементов List</td></tr>
+<tr><td class="monospace_text wide-text"><pre>public static void <b>main</b>(String[] args)
+{
+    <b>List</b>&lt;String&gt; <span class="dblue_text">list</span> = new <b>ArrayList</b>&lt;String&gt;();
+    <span class="dblue_text">list</span>.add("Mama");
+    <span class="dblue_text">list</span>.add("Mila");
+    <span class="dblue_text">list</span>.add("Ramu");
+
+    <b>Iterator</b>&lt;String&gt; <span class="green_text">iterator</span> = <span class="dblue_text">list</span>.iterator();<span class="grey_text">//получение итератора для списка</span>
+
+    while (<span class="green_text">iterator</span>.<span class="red_text">hasNext</span>())      <span class="grey_text">//проверка, есть ли ещё элементы   </span>
+    {
+        <span class="grey_text">//получение текущего элемента и переход на следующий</span>
+        String <span class="orange_text">text</span> = <span class="green_text">iterator</span>.<span class="red_text">next</span>();
+
+        System.out.println(<span class="orange_text">text</span>);
+    }
+}</pre></td></tr>
+<tr>
+<td class="collapsed" rowspan="2"><button class="task_button" taskkey="level08,lesson02,type03"></button></td>
+<td class="example">Вывод на экран элементов Map</td></tr>
+<tr><td class="monospace_text wide-text"><pre>public static void main(String[] args)
+{
+    <span class="grey_text">//все элементы хранятся в парах</span>
+    <b>Map</b>&lt;String, String&gt; <span class="dblue_text">map</span> = new <b>HashMap</b>&lt;String, String&gt;();
+    <span class="dblue_text">map</span>.put("first", "Mama");
+    <span class="dblue_text">map</span>.put("second", "Mila");
+    <span class="dblue_text">map</span>.put("third", "Ramu");
+
+    <b>Iterator</b>Map.Entry&lt;String, String&gt;&gt; <span class="green_text">iterator</span> = <span class="dblue_text">map</span>.entrySet().iterator();
+
+    <b>while</b> (<span class="green_text">iterator</span>.<span class="red_text">hasNext</span>())
+    {
+        <span class="grey_text">//получение «пары» элементов</span>
+        <span class="violet_text">Map.Entry&lt;String, String&gt;</span> <span class="orange_text">pair</span> = <span class="green_text">iterator</span>.<span class="red_text">next</span>();
+        String <b>key</b> = <span class="orange_text">pair</span>.getKey();            <span class="grey_text">//ключ</span>
+        String <b>value</b> = <span class="orange_text">pair</span>.getValue();        <span class="grey_text">//значение</span>
+        System.out.println(<b>key</b> + ":" + <b>value</b>);
+    }
+}</pre></td></tr>
+</table>
+<p class="amigo">- Ничего себе!  И что все это значит?</p>
+<p>- На самом деле все довольно просто. Сначала мы получаем у коллекции специальный объект-iterator. У него есть всего два метода </p>
+<p class="green_text">1 Метод next() возвращает очередной элемент коллекции.</p>
+<p class="orange_text">2 Метод hasNext() проверяет, есть ли еще элементы, которые не возвращал next(). </p>
+<p class="amigo">- Ага. Похоже ситуация начинает проясняться. Давай я расскажу, как я все это понял. </p>
+<p class="amigo">- Так. Сначала надо вызвать у коллекции метод iterator(), чтобы получить этот волшебный объект-итератор.</p>
+<p class="amigo">- Затем мы в цикле, пока есть еще неполученные элементы, получаем их по одному. Получаем мы очередной элемент коллекции с помощью вызова next(), а проверяем, есть ли еще элементы в итераторе с помощью hasNext(). Все верно?</p>
+<p>- Да, примерно все так и есть.  Но самое интересное будет сейчас.</p>
+<p>- В Java есть сокращённая запись работы с итераторами. По аналогии с <b>while</b>, <b>for</b> был добавлен еще один специальный оператор «<b>for each</b>» - «<b>для каждого</b>».  Обозначается тоже ключевым словом <b>for</b>.</p>
+<p class="green_text">- Оператор <b>for-each</b> используется только при работе с коллекциями и контейнерами. В нем неявно используется итератор, но мы видим уже полученный элемент. </p>
+<p>- Давая я покажу тебе длинную и сокращенную работу с итератором:</p>
+<table class="table_example double-wide-table">
+<tr><th width="50%">Длинная запись</th><th>Сокращенная запись</th></tr>
+<tr>
+<td class="monospace_text double-wide-text"><pre>public static void main(String[] args)
+{
+  <b>Set</b>&lt;String&gt; <span class="dblue_text">set</span> = new <b>HashSet</b>&lt;String&gt;();
+  <span class="dblue_text">set</span>.add("Mama");
+  <span class="dblue_text">set</span>.add("Mila");
+  <span class="dblue_text">set</span>.add("Ramu");
+
+  <b>Iterator</b>&lt;String&gt; <span class="green_text">iterator</span> = <span class="dblue_text">set</span>.iterator();
+  <b>while</b> (<span class="green_text">iterator</span>.<span class="red_text">hasNext</span>())
+  {
+    <span class="orange_text">String text</span> = <span class="green_text">iterator</span>.<span class="red_text">next</span>();
+    System.out.println(<span class="orange_text">text</span>);
+  }
+}</pre></td>
+<td class="monospace_text double-wide-text"><pre>public static void main(String[] args)
+{
+    <b>Set</b>&lt;String&gt; <span class="dblue_text">set</span> = new <b>HashSet</b>&lt;String&gt;();
+    <span class="dblue_text">set</span>.add("Mama");
+    <span class="dblue_text">set</span>.add("Mila");
+    <span class="dblue_text">set</span>.add("Ramu");
+
+    <b>for</b> (<span class="orange_text">String text</span> : <span class="dblue_text">set</span>)   
+    {
+        System.out.println(<span class="orange_text">text</span>);
+    }
+}</pre></td>
+</tr>
+</table>
+<p>- Обрати внимание: в правой таблице нет ни зелёных, ни красных слов. Фактически 3 строки заменяются на одну:</p>
+<table class="table_example wide-table">
+<tr><th width="55%">Длинная запись</th><th>Сокращенная запись</th></tr>
+<tr>
+<td class="monospace_text double-wide-text"><pre><b>Iterator</b>&lt;String&gt; <span class="green_text">iterator</span> = <span class="dblue_text">set</span>.iterator();
+<b>while</b> (<span class="green_text">iterator</span>.<span class="red_text">hasNext</span>())
+{
+    <span class="orange_text">String text</span> = <span class="green_text">iterator</span>.<span class="red_text">next</span>();</pre></td>
+<td class="monospace_text"><pre><b>for</b> (<span class="orange_text">String text</span> : <span class="dblue_text">set</span>)</pre></td>
+</tr>
+</table>
+<p class="amigo">- Выглядит шикарно. Так мне нравится гораздо больше!</p>
+<p>- Давай посмотрим на те же примеры, что и выше, только записанные короче:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th>Вывод на экран элементов Set</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level08,lesson02,type04"></button></td>
+<td class="monospace_text"><pre>public static void <b>main</b>(String[] args)
+{
+    <b>Set</b>&lt;String&gt; <span class="green_text">set</span> = new <b>HashSet</b>&lt;String&gt;();
+    <span class="green_text">set</span>.add("Mama");
+    <span class="green_text">set</span>.add("Mila");
+    <span class="green_text">set</span>.add("Ramu");
+
+    <b>for</b> (String <span class="orange_text">text</span> : <span class="green_text">set</span>)   
+    {
+        <span class="brown_text">System.out.println</span>(<span class="orange_text">text</span>);
+    }
+}</pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="2"><button class="task_button" taskkey="level08,lesson02,type05"></button></td>
+<td class="example">Вывод на экран элементов List</td></tr>
+<tr>
+<td class="monospace_text"><pre>public static void <b>main</b>(String[] args)
+{
+    <b>List</b>&lt;String&gt; <span class="green_text">list</span> = new <b>ArrayList</b>&lt;String&gt;();
+    <span class="green_text">list</span>.add("Mama");
+    <span class="green_text">list</span>.add("Mila");
+    <span class="green_text">list</span>.add("Ramu");
+
+    <b>for</b> (String <span class="orange_text">text</span> : <span class="green_text">list</span>)        
+    {
+        <span class="brown_text">System.out.println</span>(<span class="orange_text">text</span>);
+    }
+}</pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="2"><button class="task_button" taskkey="level08,lesson02,type06"></button></td>
+<td class="example">Вывод на экран элементов Map</td></tr>
+<tr>
+<td class="monospace_text"><pre>public static void <b>main</b>(String[] args)
+{
+    <b>Map</b>&lt;String, String&gt; <span class="green_text">map</span> = new <b>HashMap</b>&lt;String, String&gt;(); 
+    <span class="green_text">map</span>.put("first", "Mama");
+    <span class="green_text">map</span>.put("second", "Mila");
+    <span class="green_text">map</span>.put("third", "Ramu");
+
+    <b>for</b> (<span class="brown_text">Map.Entry&lt;String, String&gt;</span> <span class="orange_text">pair</span> : <span class="green_text">map</span>.<span class="brown_text">entrySet</span>())
+    {
+        String <b>key</b> = <span class="orange_text">pair</span>.getKey();                     <span class="grey_text"> //ключ</span>
+        String <b>value</b> = <span class="orange_text">pair</span>.getValue();                  <span class="grey_text">//значение</span>
+        <span class="brown_text">System.out.println</span>(<b>key</b> + ":" + <b>value</b>);
+    }
+}</pre></td>
+</tr>
+</table>
+<p class="amigo">- Так это же другое дело!</p>
+<p>- Рад, что тебе понравилось.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>3. Задачи по коллекциям </h2>
+</div>
+<p>- Привет, Амиго. Хочу дать тебе несколько задач по коллекциям:</p>
+<table class="table_task">
+<tr><th>Задачи</th></tr>
+<tr><td><button class="task_button" taskkey="level08,lesson03,task01"></button>
+<b>1. HashSet из растений</b><br/><br/>
+                Создать коллекцию <span class="taskcode">HashSet</span> с типом элементов <span class="taskcode">String</span>. <br/>
+                Добавить в неё 10 строк: арбуз, банан, вишня, груша, дыня, ежевика, жень-шень, земляника, ирис, картофель.  <br/>
+                Вывести содержимое коллекции на экран, каждый элемент с новой строки.<br/>Посмотреть, как изменился порядок добавленных элементов.
+            </td></tr>
+<tr><td><button class="task_button" taskkey="level08,lesson03,task02"></button>
+<b>2. HashMap из 10 пар</b><br/><br/>
+                Создать коллекцию <span class="taskcode">HashMap&lt;String, String&gt;</span>, занести туда 10 пар строк: арбуз - ягода, банан - трава, вишня - ягода, груша - фрукт, дыня - овощ, ежевика - куст, жень-шень - корень, земляника - ягода, ирис - цветок, картофель - клубень.  <br/>
+                Вывести содержимое коллекции на экран, каждый элемент с новой строки.<br/>
+<br/>
+<i><u>Пример вывода</u></i> (тут показана только одна строка):<br/><span class="example-data">картофель - клубень</span>
+</td></tr>
+<tr><td><button class="task_button" taskkey="level08,lesson03,task03"></button>
+<b>3. Коллекция HashMap из котов</b><br/><br/>
+                Есть класс <span class="taskcode">Cat</span>, с полем имя (<span class="taskcode">name, String</span>).<br/>Создать коллекцию <span class="taskcode">HashMap&lt;String, Cat&gt;</span>. <br/>
+                Добавить в коллекцию 10 котов, в качестве ключа использовать имя кота.<br/>
+                Вывести результат на экран, каждый элемент с новой строки.
+            </td></tr>
+<tr><td><button class="task_button" taskkey="level08,lesson03,task04"></button>
+<b>4. Вывести на экран список ключей</b><br/><br/>
+                Есть коллекция <span class="taskcode">HashMap&lt;String, String&gt;</span>, туда занесли 10 различных строк. <br/>
+                Вывести на экран список ключей, каждый элемент с новой строки.
+            </td></tr>
+<tr><td><button class="task_button" taskkey="level08,lesson03,task05"></button>
+<b>5. Вывести на экран список значений</b><br/><br/>
+                Есть коллекция <span class="taskcode">HashMap&lt;String, String&gt;</span>, туда занесли 10 различных строк. <br/>
+                Вывести на экран список значений, каждый элемент с новой строки.
+            </td></tr>
+<tr><td><button class="task_button" taskkey="level08,lesson03,task06"></button>
+<b>6. Коллекция HashMap из Object</b><br/><br/>
+                Есть коллекция <span class="taskcode">HashMap&lt;String, Object&gt;</span>, туда занесли 10 различных пар объектов.  <br/>
+                Вывести содержимое коллекции на экран, каждый элемент с новой строки.<br/>
+<br/>
+<i><u>Пример вывода</u></i> (тут показана только одна строка):<br/><span class="example-data">Sim - 5</span>
+</td></tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>4. Знакомимся с типом Date</h2>
+</div>
+<img src="https://javarush.ru/levels/images/lessons/08/image-ru-08-08.gif"/>
+<p>- Привет, Амиго. Хочу рассказать тебе про интересный тип – Date. С помощью этого типа можно хранить дату и время, а также измерять временные промежутки.</p>
+<p class="amigo">- Уже интересно. Продолжай.</p>
+<p class="red_text">- Каждый объект типа Date хранит внутри себя время. А время хранится в очень интересном виде – количество миллисекунд, которые прошли с 1 января 1970 года, по Гринвичу.</p>
+<p class="amigo">- Ничего себе!</p>
+<p>- Ага. Это число настолько большое, что не влезает в <b>int</b>, приходится хранить его в <b>long</b>. Зато <span class="green_text">очень удобно считать разницу между двумя датами: отнял два числа и уже известна разница с точностью до миллисекунд</span>. И к тому же устраняется проблема смены дат и перевода часов. </p>
+<p class="orange_text">- А что самое интересное, каждый объект при создании инициализируется текущим временем. Чтобы узнать текущее время – достаточно просто создать объект.</p>
+<p class="amigo">- А как с ним работать?</p>
+<p>-  Вот тебе несколько примеров:</p>
+<table class="table_task wide-table">
+<tr>
+<th class="collapsed"></th>
+<th>Получение текущей даты:</th></tr>
+<tr>
+<td class="collapsed" rowspan="1"><button class="task_button" taskkey="level08,lesson04,type01"></button></td>
+<td class="monospace_text wide-text"><pre><b>public static void</b> main(String[] args) throws Exception
+{
+    <b>Date</b> <span class="blue_text">today</span> = new <b>Date</b>();
+    <span class="brown_text">System.out.println</span>(<span class="green_text">"Current date: "</span> + <span class="blue_text">today</span>);
+}</pre></td></tr>
+<tr>
+<td class="collapsed" rowspan="2"><button class="task_button" taskkey="level08,lesson04,type02"></button></td>
+<td class="example">Вычисление разницы между двумя датами:</td></tr>
+<tr><td class="monospace_text wide-text"><pre><b>public static void</b> main(String[] args) throws Exception
+{
+    <b>Date</b> <span class="blue_text">currentTime</span> = new <b>Date</b>();           <span class="grey_text">//получаем текущую дату и время</span>
+    <b>Thread</b>.sleep(3000);                      <span class="grey_text">//ждём 3 секунды – 3000 миллисекунд</span>
+    <b>Date</b> <span class="blue_text">newTime</span> = new <b>Date</b>();               <span class="grey_text">//получаем новое текущее время</span>
+        
+    long <span class="red_text">msDelay</span> = <span class="blue_text">newTime</span>.<span class="dgreen_text">getTime</span>() - <span class="blue_text">currentTime</span>.<span class="dgreen_text">getTime</span>(); <span class="grey_text">//вычисляем разницу</span>
+    <span class="brown_text">System.out.println</span>(<span class="green_text">"Time distance is: "</span> + <span class="red_text">msDelay</span> + <span class="green_text">" in ms"</span>);
+}</pre></td></tr>
+<tr>
+<td class="collapsed" rowspan="2"><button class="task_button" taskkey="level08,lesson04,type03"></button></td>
+<td class="example">Наступило ли уже некоторое время:</td></tr>
+<tr><td class="monospace_text wide-text"><pre><b>public static void</b> main(String[] args) throws Exception
+{
+    <b>Date</b> <span class="blue_text">startTime</span> = new <b>Date</b>();
+
+    long <span class="orange_text">endTime</span> = <span class="blue_text">startTime</span>.<span class="dgreen_text">getTime</span>() + 5000;   <span class="grey_text">//    +5 секунд</span>
+    <b>Date</b> <span class="blue_text">endDate</span> = new <b>Date</b>(<span class="orange_text">endTime</span>);
+
+    Thread.<b>sleep</b>(3000);              <span class="grey_text">// ждем 3 секунды </span>
+
+    <b>Date</b> <span class="blue_text">currentTime</span> = new <b>Date</b>();
+    <b>if</b> (<span class="blue_text">currentTime</span>.<span class="red_text">after</span>(<span class="blue_text">endDate</span>))<span class="grey_text">//проверяем что время currentTime после endDate</span>
+    {
+        <span class="brown_text">System.out.println</span>(<span class="green_text">"End time!"</span>);
+    }
+}</pre></td></tr>
+<tr>
+<td class="collapsed" rowspan="2"><button class="task_button" taskkey="level08,lesson04,type04"></button></td>
+<td class="example">Сколько прошло времени с начала сегодняшнего дня:</td></tr>
+<tr><td class="monospace_text wide-text"><pre>public static void main(String[] args) throws Exception
+{
+    <b>Date</b> <span class="blue_text">currentTime</span> = <b>new Date</b>();
+    <b>int</b> hours = <span class="blue_text">currentTime</span>.<span class="red_text">getHours</span>();
+    <b>int</b> mins = <span class="blue_text">currentTime</span>.<span class="red_text">getMinutes</span>();
+    <b>int</b> secs = <span class="blue_text">currentTime</span>.<span class="red_text">getSeconds</span>();
+
+    <span class="brown_text">System.out.println</span>(<span class="green_text">"Time from midnight "</span> + hours + <span class="green_text">":"</span> + mins + <span class="green_text">":"</span> + secs);
+}</pre></td></tr>
+<tr>
+<td class="collapsed" rowspan="2"><button class="task_button" taskkey="level08,lesson04,type05"></button></td>
+<td class="example">Сколько дней прошло с начала года:</td></tr>
+<tr><td class="monospace_text wide-text"><pre>public static void main(String[] args) throws Exception
+{
+    <b>Date</b> <span class="blue_text">yearStartTime</span> = <b>new Date</b>();
+    <span class="blue_text">yearStartTime</span>.<span class="red_text">setHours</span>(0);
+    <span class="blue_text">yearStartTime</span>.<span class="red_text">setMinutes</span>(0);
+    <span class="blue_text">yearStartTime</span>.<span class="red_text">setSeconds</span>(0);
+
+    <span class="blue_text">yearStartTime</span>.<span class="red_text">setDate</span>(1);      <span class="grey_text">// первое число</span>
+    <span class="blue_text">yearStartTime</span>.<span class="red_text">setMonth</span>(0);     <span class="grey_text">// месяц январь, нумерация для месяцев 0-11</span>
+
+    <b>Date</b> <span class="blue_text">currentTime</span> = new <b>Date</b>();
+    long <span class="violet_text">msTimeDistance</span> = <span class="blue_text">currentTime</span>.<span class="dgreen_text">getTime</span>() - <span class="blue_text">yearStartTime</span>.<span class="dgreen_text">getTime</span>();
+    long msDay = 24 * 60 * 60 * 1000;  <span class="grey_text">//сколько миллисекунд в одних сутках</span>
+        
+    int <span class="orange_text">dayCount</span> = (int) (<span class="violet_text">msTimeDistance</span>/msDay); <span class="grey_text">//количество целых дней</span>
+    <span class="brown_text">System.out.println</span>(<span class="green_text">"Days from start of year: "</span> + <span class="orange_text">dayCount</span>);
+}</pre></td></tr>
+</table>
+<p>- Метод <span class="dgreen_text">getTime()</span> возвращает количество миллисекунд, которое хранится в объекте Date.</p>
+<p>- Метод <span class="red_text">after()</span> проверяет, что дата, у которой мы вызвали метод, идет после переданной в метод даты <b>after</b>.</p>
+<p>- Методы  <span class="red_text">getHours()</span>, <span class="red_text">getMinutes()</span>, <span class="red_text">getSeconds()</span> возвращают  количество часов, минут и секунд у объекта, у которого их вызвали. </p>
+<p>- Более того, в последнем примере ты видишь, что можно повлиять на дату/время, сохраненное в объекте <b>Date</b>. Мы получаем текущее время и дату, а затем сбрасываем часы, минуты и секунды в 0. Так же устанавливаем месяц в Январь, а день месяца в 1. Теперь объект  <span class="blue_text">yearStartTime</span> хранит дату и время 1 января текущего года 0 часов 0 минут 0 секунд.</p>
+<p>- Потом мы снова получаем текущую дату <span class="blue_text">currentTime</span>, и вычисляем разницу в миллисекундах между двумя датами. Я про <span class="violet_text">msTimeDistance</span>.</p>
+<p>- Затем делим <span class="violet_text">msTimeDistance</span> на количество миллисекунд в сутках и получаем полное количество дней, прошедшее с начала года до сегодняшнего дня!</p>
+<p class="amigo">- Вау! Вот это круто!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>5. ArrayList vs. LinkedList </h2>
+</div>
+<p>- Как насчёт немного размять мозги? Надеюсь, они ещё не закипели. </p>
+<p>- В таблице контейнеров и коллекций ты ранее видел, что у одного и того же интерфейса может быть несколько реализаций. Сейчас я расскажу тебе, зачем это нужно. И в чем отличие <b><i>ArrayList</i></b> от <b><i>LinkedList</i></b>.</p>
+<p>- Все дело в том, что <span class="green_text">коллекции могут быть реализованы разными способами и нет единственного – самого правильного.</span> <span class="orange_text">При одном подходе одни операции являются быстрыми, а остальные медленными, при другом – все наоборот.</span> Нет одного идеального, подходящего всем решения. </p>
+<p>- Поэтому было решено сделать несколько реализаций одной и той же коллекции. <span class="red_text">И каждая реализация была оптимизирована для какого-то узкого набора операций.</span> Так появились разные коллекции. Давай рассмотрим это на примере двух классов – <i><b>ArrayList</b></i>  и  <i><b>LinkedList</b></i>. </p>
+<img src="https://javarush.ru/levels/images/lessons/08/image-ru-08-04.gif"/>
+<p>- <i><b>ArrayList</b></i> реализован внутри <span class="green_text">в виде обычного массива</span>. Поэтому при вставке элемента в середину, приходиться сначала сдвигать на один все элементы после него, а уже затем в освободившееся место вставлять новый элемент. Зато в нем <span class="violet_text">быстро реализованы</span> взятие и изменение элемента – <span class="violet_text">операции get, set</span>, так как в них мы просто обращаемся к соответствующему элементу массива.</p>
+<p>- <b><i>LinkedList</i></b> реализован внутри по-другому. Он <span class="green_text">реализован в виде связного списка</span>: набора отдельных элементов, каждый из которых хранит ссылку на следующий и предыдущий элементы. Чтобы вставить элемент в середину такого списка, достаточно поменять ссылки его будущих соседей. <span class="orange_text">А вот чтобы получить элемент с номером 130, нужно пройтись последовательно по всем объектам от 0 до 130.</span> Другими словами<span class="violet_text"> операции set и get</span> тут <span class="violet_text">реализованы очень медленно</span>. Посмотри на таблицу:</p>
+<table class="table_example">
+<tr><th width="40%">Описание</th><th width="20%">Операция</th><th width="20%">ArrayList</th><th width="20%">LinkedList</th></tr>
+<tr>
+<td>Взятие элемента</td>
+<td>get</td>
+<td class="green_text">Быстро</td>
+<td class="red_text">Медленно</td>
+</tr>
+<tr>
+<td>Присваивание элемента</td>
+<td>set</td>
+<td class="green_text">Быстро</td>
+<td class="red_text">Медленно</td>
+</tr>
+<tr>
+<td>Добавление элемента</td>
+<td>add</td>
+<td class="green_text">Быстро</td>
+<td class="green_text">Быстро</td>
+</tr>
+<tr>
+<td>Вставка элемента</td>
+<td>add(i, value)</td>
+<td class="red_text">Медленно</td>
+<td class="green_text">Быстро</td>
+</tr>
+<tr>
+<td>Удаление элемента</td>
+<td>remove</td>
+<td class="red_text">Медленно</td>
+<td class="green_text">Быстро</td>
+</tr>
+</table>
+<p class="amigo">- Ага. Кое-что начинает проясняться. А есть какие-нибудь критерии или правила, когда какая коллекция лучше?</p>
+<p>- Ну, для простоты, я бы сформулировала такое правило: если ты собираешься вставлять (или удалять) в середину коллекции много элементов, то тебе лучше использовать <b><i>LinkedList</i></b>. Во всех остальных случаях – <b><i>ArrayList</i></b>.</p>
+<p>- Как они устроены мы разберем в старших уровнях, а пока будем учиться ими пользоваться.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задача: померить производительность обоих списков</h2>
+</div>
+<p>- А вот и ты. Я уже начал скучать. Где это ты пропадал? Вот тебе задачи.</p>
+<p class="amigo">- Интересные?</p>
+<p>- Ну конечно! Очень интересные:</p>
+<table class="table_task">
+<tr>
+<th>Очень интересные задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level08,lesson06,task01"></button>
+<b>1. Создать два списка <span class="taskcode">LinkedList</span> &amp; <span class="taskcode">ArrayList</span>.</b><br/><br/>
+                    Нужно создать два списка – <span class="taskcode">LinkedList</span> и <span class="taskcode">ArrayList</span>.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level08,lesson06,task02"></button>
+<b>2. Провести 10 тысяч вставок, удалений</b><br/><br/>
+                    Для <span class="taskcode">arrayList</span> и <span class="taskcode">linkedList</span> провести 10 тысяч вставок, удалений, а также вызовов <span class="taskcode">get</span> и <span class="taskcode">set</span>.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level08,lesson06,task03"></button>
+<b>3. Измерить сколько времени занимает 10 тысяч вставок для каждого списка</b><br/><br/>
+                    Измерить, сколько времени занимает 10 тысяч вставок для каждого списка. <br/>Метод <span class="taskcode">getTimeMsOfInsert</span>  должен вернуть время его исполнения в миллисекундах.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level08,lesson06,task04"></button>
+<b>4. Измерить сколько времени занимает 10 тысяч вызовов get для каждого списка</b><br/><br/>
+                    Измерить, сколько времени занимает 10 тысяч вызовов get для каждого списка. <br/>Метод <span class="taskcode">getTimeMsOfGet</span>  должен вернуть время его исполнения в миллисекундах.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level08,lesson06,task05"></button>
+<b>5. Четыре метода</b><br/><br/>
+                    Реализовать 4 метода. Они должны возвращать список, который лучше всего подходит для выполнения данных операций (быстрее всего справится с большим количеством операций). Ничего измерять не нужно. 
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>7. Set, Map, что можно с ними делать</h2>
+</div>
+<p>- Ты ещё не устал? Тогда продолжим. Хочу поподробнее рассказать тебе, что такое Set и Map. И какие у них есть операции.</p>
+<p>- <b><i>Set</i></b> – это множество – куча ненумерованных объектов. <span class="green_text">Главная особенность <b><i><span class="green_text">Set</span></i></b> – в нем только уникальные объекты</span>, т.е. <span class="green_text">они все разные</span>. Вот что с ним можно делать:</p>
+<table class="table_example">
+<tr><th width="50%">Операция</th><th>Метод</th></tr>
+<tr><td>Добавлять элемент(ы)</td><td>add(), addAll()</td></tr>
+<tr><td>Удалять элемент(ы)</td><td>remove(), removeAll()</td></tr>
+<tr><td>Проверять, есть ли элемент(ы) </td><td>contains(), containsAll()</td></tr>
+</table>
+<p class="amigo">- И это все?</p>
+- Собственно говоря, да. Ещё можно узнать количество элементов с помощью метода size().
+        <p class="amigo">- А что насчёт <i>Map</i>?</p>
+<p>- <i><b>Map</b></i> – это множество пар. То же множество, но не одиноких элементов, а пар: ключ-значение. Единственное ограничение: <span class="green_text">первый объект в паре, называемый ключом, должен быть уникальным</span>. <span class="red_text">В Map не может содержаться две пары с одинаковыми ключами.</span></p>
+<p>- Вот что мы можем делать с <b><i>Map</i></b>:</p>
+<table class="table_example">
+<tr><th width="50%">Операция</th><th>Метод</th></tr>
+<tr class="dblue_text"><td>Получить множество всех пар</td><td>entrySet()</td></tr>
+<tr class="dblue_text"><td>Получить множество всех ключей </td><td>keySet()</td></tr>
+<tr class="dblue_text"><td>Получить множество всех значений</td><td>values()</td></tr>
+<tr class="green_text"><td>Добавить пару</td><td>put(key, value)</td></tr>
+<tr class="green_text"><td>Получить значение по ключу</td><td>get(key)</td></tr>
+<tr class="violet_text"><td>Проверить наличие «ключа»</td><td>containsKey(key)</td></tr>
+<tr class="violet_text"><td>Проверить наличие «значения»</td><td>containsValue(value)</td></tr>
+<tr><td>Проверить что Map - пустой</td><td>isEmpty()</td></tr>
+<tr><td>Очистить Map</td><td>clear()</td></tr>
+<tr class="green_text"><td>Удалить элемент по ключу</td><td>remove(key)</td></tr>
+</table>
+<p class="amigo">- Вот это гораздо интереснее, чем set.</p>
+<p>- Да, Map хоть не так популярен, как список, но используется во многих задачах.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Задачи на Set &amp; Map</h2>
+</div>
+<p>- Ты уже выучил, что такое Set и Map, я надеюсь? Вот тебе немного задач на Set и Map.</p>
+<table class="table_task">
+<tr>
+<th>Задачи на коллекции</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level08,lesson08,task01"></button>
+<b>1. 20 слов на букву «Л»</b><br/><br/>
+                    Создать множество строк (<span class="taskcode">Set&lt;String&gt;</span>), занести в него 20 слов на букву «Л».
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level08,lesson08,task02"></button>
+<b>2. Удалить все числа больше 10</b><br/><br/>
+                    Создать множество чисел(<span class="taskcode">Set&lt;Integer&gt;</span>), занести туда 20 различных чисел.<br/>Удалить из множества все числа больше 10.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level08,lesson08,task03"></button>
+<b>3. Одинаковые имя и фамилия</b><br/><br/>
+                    Создать словарь (<span class="taskcode">Map&lt;String, String&gt;</span>) занести в него десять записей по принципу «Фамилия» - «Имя». Проверить сколько людей имеют совпадающие с заданным имя или фамилию.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level08,lesson08,task04"></button>
+<b>4. Удалить всех людей, родившихся летом</b><br/><br/>
+                    Создать словарь (<span class="taskcode">Map&lt;String, Date&gt;</span>) и занести в него десять записей по принципу: «фамилия» - «дата рождения». Удалить из словаря всех людей, родившихся летом.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level08,lesson08,task05"></button>
+<b>5. Удалить людей, имеющих одинаковые имена</b><br/><br/>
+                    Создать словарь (<span class="taskcode">Map&lt;String, String&gt;</span>) занести в него десять записей по принципу «фамилия» - «имя». Удалить людей, имеющих одинаковые имена.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>9. Лекция по коллекциям </h2>
+</div>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/08/image-ru-08-03.gif" style="width:649px;height:519px;"/>
+<p>-  Хо-хо. Наконец-то мы дошли до коллекций. У меня сохранилась “замечательная” лекция с моих студенческих времён. Немного слишком пыльная, конечно, но “отличная” по своей сути. Вот мои заметки: </p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/06/12/lecture-8.html" target="_blank">Дополнительная информация для 8-го уровня</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>10. Хулио</h2>
+</div>
+<p>- О, Господи! Ты опять перетрудился! Говорил же тебе – не работай так много. Давай я поставлю что-нибудь расслабляющее:</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-08.gif" preload="none" tabindex="0" taskkey="level08,lesson10,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-08.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=Dy4XeU6_Lgk" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>11.  Задания на дом </h2>
+</div>
+<p>- Здорово, боец!</p>
+<p class="blue_text">- Здравия желаю, капитан Бобров!</p>
+<p>- У меня для тебя шикарная новость. Вот тебе задания для закрепления полученных навыков. Выполняй их каждый день, и твои навыки будут расти с неимоверной скоростью. Они специально разработаны для выполнения их в Intellij IDEA.</p>
+<table class="table_task">
+<tr>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>1. Set из котов</b><br/><br/>
+                    1. Внутри класса <span class="taskcode">Solution</span> создать <span class="taskcode">public static</span> класс кот – <span class="taskcode">Cat</span>.<br/>
+                    2. Реализовать метод <span class="taskcode">createCats</span>, он должен создавать множество (<span class="taskcode">Set</span>) котов и добавлять в него три кота.<br/>
+                    3. В методе <span class="taskcode">main</span> удалите одного кота из <span class="taskcode">Set cats</span>.<br/>
+                    4. Реализовать метод <span class="taskcode">printCats</span>, он должен вывести на экран всех котов, которые остались во множестве. Каждый кот с новой строки.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>2. Множество всех животных</b><br/><br/>
+                    1. Внутри класса <span class="taskcode">Solution</span> создать <span class="taskcode">public static</span> классы <span class="taskcode">Cat</span>, <span class="taskcode">Dog</span>.<br/>
+                    2. Реализовать метод <span class="taskcode">createCats</span>, который должен возвращать множество с 4 котами.<br/>
+                    3. Реализовать метод <span class="taskcode">createDogs</span>, который должен возвращать множество с 3 собаками.<br/>
+                    4. Реализовать метод <span class="taskcode">join</span>, который должен возвращать объединенное множество всех животных - всех котов и собак.<br/>
+                    5. Реализовать метод <span class="taskcode">removeCats</span>, который должен удалять из множества pets всех котов, которые есть в множестве cats.<br/>
+                    6. Реализовать метод <span class="taskcode">printPets</span>, который должен выводить на экран всех животных, которые в нем есть. Каждое животное с новой строки
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>3. Люди с одинаковыми именами и/или фамилиями</b><br/><br/>
+                    1. Создать словарь <span class="taskcode">Map</span> (<span class="taskcode">&lt;String, String&gt;</span>) и добавить туда 10 человек в виде «Фамилия»-«Имя». 2. Пусть среди этих 10 человек есть люди с одинаковыми именами и/или фамилиями.<br/>
+                    2. Пусть среди этих 10 человек есть люди с одинаковыми именами.<br/>
+                    3. Пусть среди этих 10 человек есть люди с одинаковыми фамилиями.<br/>4. Вывести содержимое <span class="taskcode">Map</span> на экран.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>4. Минимальное из N чисел</b><br/><br/>
+                    1. Ввести с клавиатуры число <span class="taskcode">N</span>.<br/>
+                    2. Считать <span class="taskcode">N</span> целых чисел и заполнить ими список - метод <span class="taskcode">getIntegerList</span>.<br/>
+                    3. Найти минимальное число среди элементов списка - метод <span class="taskcode">getMinimum</span>.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>5. Мама Мыла Раму. Теперь с большой буквы</b><br/><br/>
+                    Написать программу, которая вводит с клавиатуры строку текста.<br/>
+                    Программа заменяет в тексте первые буквы всех слов на заглавные.<br/>
+                    Вывести результат на экран.<br/>
+<br/>
+<u><i>Пример ввода:</i></u><br/>
+<span class="example-data">мама мыла раму.<br/></span>
+<u><i>Пример вывода:</i></u><br/>
+<span class="example-data">Мама Мыла Раму.</span>
+</td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>6. Вся семья в сборе</b><br/><br/>
+                    1. Создай класс <span class="taskcode">Human</span> с полями имя (<span class="taskcode">String</span>), пол (<span class="taskcode">boolean</span>), возраст (<span class="taskcode">int</span>), дети (<span class="taskcode">ArrayList&lt;Human&gt;</span>). <br/>
+                    2. Создай объекты и заполни их так, чтобы получилось: Два дедушки, две бабушки, отец, мать, трое детей. <br/>
+                    3. Вывести все объекты <span class="taskcode">Human</span> на экран.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>7. Переставь один модификатор static</b><br/><br/>
+                    Переставь один модификатор <span class="taskcode">static</span>, чтобы пример скомпилировался.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>8. Пять наибольших чисел</b><br/><br/>
+                    Создать массив на 20 чисел. Заполнить его числами с клавиатуры. Вывести пять наибольших чисел.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>9. Работа с датой</b><br/><br/>
+                    1. Реализовать метод <span class="taskcode">isDateOdd(String date)</span> так, чтобы он возвращал <span class="taskcode">true</span>, если количество дней с начала года - нечетное число, иначе <span class="taskcode">false</span><br/>
+                    2. <span class="taskcode">String date</span> передается в формате <span class="taskcode">MAY 1 2013</span><br/>
+                    Не забудьте учесть первый день года.<br/>
+<br/>
+<span class="example-data">JANUARY 1 2000 = true<br/>
+                    JANUARY 2 2020 = false</span>
+</td>
+</tr>
+</table>
+<p>- Те задания были для духов. Для дедушек я добавил бонусные задания повышенной сложности. Только для старослужащих. </p>
+<table class="table_task">
+<tr>
+<th>Бонусные задачи</th>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button>
+<b>1. Номер месяца</b><br/><br/>
+                    Программа вводит с клавиатуры имя месяца и выводит его номер на экран в виде: «May is 5 month». Используйте коллекции.
+                </td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button>
+<b>2. Нужно добавить в программу новую функциональность. </b><br/><br/>
+<u>Задача:</u> Программа определяет, какая семья (фамилию) живёт в доме с указанным номером.<br/>
+<u>Новая задача: </u>Программа должна работать не с номерами домов, а с городами:<br/>
+<br/>
+<u><i>Пример ввода:</i></u><span class="example-data"><br/>Москва <br/>Ивановы<br/>Киев <br/>Петровы<br/>Лондон<br/>Абрамовичи<br/>Лондон <br/></span>
+<br/>
+<u><i>Пример вывода:</i></u><span class="example-data"><br/>Абрамовичи</span>
+</td>
+</tr>
+<tr>
+<td><button class="bonus-task-button"></button>
+<b>3. Задача по алгоритмам. </b><br/>
+<u>Задача:</u> Введи с клавиатуры 20 слов и выведи их в алфавитном порядке.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

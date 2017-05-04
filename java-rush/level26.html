@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-26.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 700px;">
+                    Уровень 26
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>1. Comparator, сортировка коллекций</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/26/image-ru-26-07.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Билаабо!</p>
+<p>- Сегодня будет небольшая, но интересная и полезная тема – сортировки коллекций.</p>
+<p class="amigo">- Сортировка? Я что-то про это слышал.</p>
+<p>- Давным-давно каждый программист обязан был уметь писать сортировку. Умел и писал. Но те времена канули в лету.  Сегодня написание своей сортировки считается дурным тоном, как и написание всего, что уже было придумано.</p>
+<p>В Java (да и других языках программирования) сортировки уже реализованы. <b>Твоя задача – научиться правильно пользоваться тем, что есть.</b></p>
+<p class="amigo">- Ок.</p>
+<p>- У вспомогательного класса <b>Collections</b> есть статический метод <b>sort</b>, который используется для сортировки коллекций, а если точнее – списков. Элементы в коллекциях Map и Set не имеют порядка/номера, значит, и сортировать там нечего.</p>
+<p class="amigo">- Да, я вспомнил, я когда-то уже использовал этот метод для сортировки списка чисел.</p>
+<p>- Отлично. Но этот метод гораздо мощнее чем, кажется на первый взгляд. Он может сортировать не только числа, но и любые объекты, по любым критериям.  И помогают ему в этом два интерфейса: <b>Comparable</b> и <b>Comparator</b>.</p>
+<p>Иногда бывает нужно отсортировать объекты, а не числа. Например, у тебя есть список людей, и ты хочешь отсортировать их по возрасту. Для этого есть интерфейс <b>Comparable</b>.</p>
+<p>Давай я сначала покажу тебе пример, и все станет понятнее:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public class</b> Woman <b>implements <span class="red_text">Comparable</span></b><span class="red_text">&amp;ltWoman&amp;gt</span><br/>
+{<br/>
+     <b>public</b> int age;<br/><br/>
+
+     <b>public</b> Woman(int age) {<br/>
+          this.age = age;<br/>
+     }<br/><br/>
+
+     <span class="red_text"><b>public</b> int compareTo(Woman o)</span><br/>
+     {<br/>
+          return this.age - o.age;<br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Пример использования:</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public static</b> void main(String[] args )<br/>
+    {<br/>
+         ArrayList&amp;ltWoman&amp;gt women = new ArrayList&amp;ltWoman&amp;gt();<br/>
+         women.add(new Woman(18));<br/>
+         women.add(new Woman(21));<br/>
+         women.add(new Woman(5));<br/><br/>
+
+         <b>Collections.sort(women);</b><br/>
+    }
+    </td>
+</tr>
+</tbody>
+</table>
+<p>Чтобы объекты можно было сортировать, сначала нужно научиться их сравнивать. Для этого и используется Comparable. Интерфейс <b>Comparable</b> является generic’ом – т.е. типом с параметром. У него всего один generic-метод – compare(To).  В этом методе и происходит сравнение переданного объекта и текущего (this). Т.е. надо переопределить этот метод в своем классе и сравнить в нем текущий объект (this) с переданным.</p>
+<p class="amigo">- А как работает compare? Я думал, что он будет возвращать true/false в зависимости от того – больше переданный объект или меньше.</p>
+<p>- Тут все немного хитрее. Метод compare возвращает не true/false, а значение типа int. На самом деле так сделано для простоты.</p>
+<p>Когда компьютеру нужно определить больше ли одно число, чем другое, он просто вычитает из первого числа второе, а потом смотрит, что получилось. Если 0 – числа равны, если получилось число меньше нуля, то второе число больше, а если результат больше нуля, то больше уже первое число.</p>
+<p>Тут используется та же логика. Согласно спецификации метод compare должен вернуть ноль, если сравниваемые объекты равны. Если метод compare вернул число больше нуля, это значит, что  наш (this) объект больше, чем переданный. Если метод compare вернул число меньше нуля, то объект this меньше чем переданный.</p>
+<p class="amigo">- Немного странно.</p>
+<p>- Да, но если ты сравниваешь объекты просто по какому-то параметру-числу, то можешь просто вернуть разницу между ними – вычесть один из другого. Как это и сделано в примере выше.</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public</b> int <b>compareTo</b>(Woman o)<br/>
+    {<br/>
+         return this.age - o.age;<br/>
+    }
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Вроде все понятно. Хотя может и не все. Но почти все.</p>
+<p>- Отлично. Теперь рассмотрим более практическую задачу. Ты написал крутой сайт по пошиву женской одежды в Китае. Для описания своих пользователей ты используешь класс Woman. Ты даже сделал страницу с таблицей, где можешь посмотреть их всех. Но есть проблема…</p>
+<p>Объект Woman содержит у тебя не только возраст, а еще целую кучу данных: имя, фамилию, рост, вес, количество детей, …</p>
+<p>В таблице пользователей есть много колонок, и тут встает вопрос: а как сортировать пользователей по разным критериям? По весу, по возрасту, по фамилии?</p>
+<p class="amigo">- Гм. Действительно, часто вижу таблицы с сортировкой колонок. И как это сделать?</p>
+<p>- А для этого есть второй интерфейс,  о котором я хотел тебе сегодня рассказать – это интерфейс <b>Comparator</b>. И у него тоже есть метод <b>compare</b>, только он принимает не один параметр, а два. Вот как это работает:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public class</b> Woman<br/>
+{<br/>
+     <b>public</b> int age;<br/>
+     <b>public</b> int childrenCount;<br/>
+     <b>public</b> int weight;<br/>
+     <b>public</b> int height;<br/>
+     <b>public</b> String name;<br/><br/>
+
+     <b>public</b> Woman(int age) {<br/>
+          this.age = age;<br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Пример использования:</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public stati</b> void main(String[] args )<br/>
+    {<br/>
+         ArrayList&amp;ltWoman&amp;gt women = new ArrayList&amp;ltWoman&amp;gt();<br/>
+         women.add(new Woman(18));<br/>
+         women.add(new Woman(21));<br/>
+         women.add(new Woman(5));<br/><br/>
+
+         <span class="red_text">Comparator&amp;ltWoman&amp;gt <b>compareByHeight</b> = new Comparator&amp;ltWoman&amp;gt() {<br/>
+             public int compare(Woman o1, Woman o2) {</span><br/>
+                  return o1.height - o2.height;<br/>
+             <span class="red_text">}<br/>
+        };</span><br/><br/>
+
+         <b>Collections.sort(</b><b>women, <span class="red_text">compareByHeight</span></b><b>);</b><br/>
+    }
+    </td>
+</tr>
+</tbody>
+</table>
+<p>При использовании интерфейса Comparator, логика сравнения пары объектов не прячется внутрь класса/объекта, а реализуется в отдельном классе.</p>
+<p class="amigo">- Т.е. я могу сделать несколько классов, реализующих интерфейс <b>Comparator</b>, но в каждом из них сравнивать разные параметры? В одном – weight, в другом – age, в третьем – height?</p>
+<p>- Да, это очень просто и удобно.</p>
+<p>Мы просто вызываем метод <b>Collections.sort</b>, передаем туда список объектов и еще специальный объект во втором параметре, который реализует интерфейс <b>Comparator</b> и говорит, как правильно сравнивать пары объектов в процессе сортировки.</p>
+<p class="amigo">- Гм. Вроде все понятно. Дай-ка я сам попробую. Допустим, мне нужно отсортировать пользователей по весу, это будет так:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример кода, пользователи сортируются по росту:</th></tr>
+<tr>
+<td class="monospace_text wide-text">Comparator&amp;ltWoman&amp;gt <span class="red_text">compareByWeight</span> = new Comparator&amp;ltWoman&amp;gt() {<br/>
+            <b>public</b> int <span class="red_text">compare</span>(Woman o1, Woman o2) {<br/>
+                 return o1.weight  - o2.weight;<br/>
+            }<br/>
+       };<br/><br/>
+
+        Collections.sort(women, <span class="red_text">compareByWeight</span>);
+    </td>
+</tr>
+</tbody></table>
+<p>- Да, именно так.</p>
+<p class="amigo">- Отлично. А если я хочу отсортировать в обратном порядке?</p>
+<p>- А подумать? Ответ очень простой!</p>
+<p class="amigo">- Придумал! Вот так:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Сортировка по возрастанию:</th></tr>
+<tr>
+<td class="monospace_text wide-text">return o1.weight - o2.weight;
+    </td>
+</tr>
+</tbody><tbody><tr><th width="100%">Сортировка по убыванию:</th></tr>
+<tr>
+<td class="monospace_text wide-text">return o2.weight – o1.weight;
+    </td>
+</tr>
+</tbody>
+</table>
+<p>- Правильно. Молодец.</p>
+<p class="amigo">- А если я хочу сортировать по фамилии? Как сортировать строки, Билаабо?</p>
+<p>- А у строк уже реализован метод compare, надо просто вызвать его:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример кода, пользователи сортируются по имени:</th></tr>
+<tr>
+<td class="monospace_text wide-text">Comparator&amp;ltWoman&amp;gt <span class="red_text">compareByName</span> = new Comparator&amp;ltWoman&amp;gt() {<br/>
+            <b>public</b> int <span class="red_text">compare</span>(Woman o1, Woman o2) {<br/>
+                 return <b>o1.name.<span class="red_text">compareTo</span>(o2.name);</b><br/>
+            }<br/>
+       };<br/><br/>
+
+        Collections.sort(women, <span class="red_text">compareByName</span>);
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Это был отличный урок, Билаабо, спасибо тебе большое.</p>
+<p>- И тебе спасибо, друг!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>2. Задачи на сортировку и comparator</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level26,lesson02,task01"></button><b>1. Почитать в инете про медиану выборки</b><br/><br/>
+                Реализовать логику метода <span class="taskcode">sort</span>, который должен сортировать данные в массиве по удаленности от его медианы<br/>
+		Вернуть отсортированный массив от минимального расстояния до максимального<br/>
+		Если удаленность одинаковая у нескольких чисел, то выводить их в порядке возрастания
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level26,lesson02,task02"></button><b>2. Был бы ум - будет и успех</b><br/><br/>
+                Солдаты всегда строились, строятся и будут строиться по убыванию роста.<br/>
+		Отсортируйте солдат, предварительно подумав, что лучше использовать при таких условиях - <span class="taskcode">Comparable</span> или <span class="taskcode">Comparator</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level26,lesson02,task03"></button><b>3. Убежденному убеждать других не трудно</b><br/><br/>
+                В таблице есть колонки, по которым можно сортировать.<br/>
+		Пользователь имеет возможность настроить под себя список колонок, которые будут сортироваться.<br/>
+		Напишите <span class="taskcode">public static</span> компаратор <span class="taskcode">CustomizedComparator</span>, который будет:<br/>
+		1. в конструкторе принимать список компараторов<br/>
+		2. сортировать данные в порядке, соответствующем последовательности компараторов.<br/>
+		Все переданные компараторы сортируют дженерик тип <span class="taskcode">Т</span><br/>
+		В конструктор передается как минимум один компаратор
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Разделяемые ресурсы, Конфликты, Проблема совместного доступа</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/26/image-ru-26-06.png"/>
+<p>- Привет, Амиго! Хочу тебе рассказать о совместном использовании ресурсов.  Разными нитями, ясное дело.</p>
+<p>Я все время говорю о проблемах при работе нескольких нитей и о том, как их решать. Это не значит, что использование нитей – это плохо. Нити – это очень мощный инструмент. Фактически, они позволяют увеличить скорость, и даже надежность работы твоей программы. Чем сложнее программа – тем больше в ней нитей и различных самостоятельных  частей.</p>
+<p>Разбиение программы на независимые (слабосвязанные) части очень выгодно.</p>
+<p>Представь, что твоя программа внутри разбита на 100 нитей. Но у тебя всего двухъядерный процессор. Это значит, что на каждом ядре исполняется в среднем 50 нитей.</p>
+<p>Если же тебе нужно нарастить мощность программы, ты  просто покупаешь двухпроцессорный сервер и пару крутых процессоров для него. В результате у него суммарно может быть до 32- ядер, и производительность твоей программы может вырасти в 2-20 раз. В зависимости от того, насколько действительно независимых частей она разбита.</p>
+<p>Это одна из причин доминирования Java в секторе Enterprise-разработки.  Если у компании есть сложная программа для внутренних нужд, которую пишут 20 разработчиков, то купить еще один сервер гораздо дешевле, чем ускорить программу в 2 раза.</p>
+<p class="amigo">- Так вот оказывается в чем дело.</p>
+<p>- Но! Каждый раз, когда разработчик решает использовать еще одну нить, он решает одну проблему, а создает две. Слишком много нитей не увеличат производительность программы до бесконечности.</p>
+<p>Во-первых, в любой программе есть работа, которую невозможно разбить на части и выполнять параллельно в разных нитях. Во-вторых, все нити выполняются на одном и том же процессоре.  Чем больше нитей, тем медленнее работает каждая из них.</p>
+<p>И, самое главное – нити часто используют одни и те же объекты (их обычно называют разделяемыми ресурсами).</p>
+<p>Например, нить хочет сохранить в файл информацию о сделанной работе. Если таких нитей несколько, и они хотят записать информацию в один файл – они будут мешать друг другу. Чтобы в файле не было мешанины, каждая нить пользуется уникальным доступом к файлу – т.е. пока файлом пользуется одна нить, другие ждут.</p>
+<p class="amigo">- Да, я помню, это делается с помощью ключевого слова <b>synchronized</b>.</p>
+<p>- Да, именно.</p>
+<p class="amigo">- А если нити пишут в разные файлы?</p>
+<p>- Формально – это разные объекты, но жесткий диск же один.</p>
+<p class="amigo">- Т.е. реально что-то распараллелить можно только внутри процессора?</p>
+<p>- Формально – Да, как только твоей нити надо что-то еще кроме данных, которые у нее есть, это что-то уже может быть занято другой нитью и придется ждать.</p>
+<p class="amigo">- И что же делать? Как узнать – делать много нитей или нет?</p>
+<p>- Это определяется непосредственно архитектурой программы. У любого проекта есть его «архитектор», который знает все «ресурсы», которые используются в программе, знает их ограничения, и насколько они хорошо/плохо параллелятся.</p>
+<p class="amigo">- А если я не знаю?</p>
+<p>- Тут есть два варианта:</p>
+<p><b>а)</b> поработать под началом такого специалиста</p>
+<p><b>б)</b> набить шишек самому</p>
+<p class="amigo">- Я – робот, у меня не бывает шишек – только вмятины.</p>
+<p>- Ну, значит, набить вмятин.</p>
+<p class="amigo">- Ясно, спасибо. Ты прояснила некоторые вопросы, о которых я уже начал ломать голову.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>4. Применение volatile</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Элли!</p>
+<p>- Хочу рассказать тебе о модификаторе <b>volatile</b>. Знаешь, что это такое?</p>
+<p class="amigo">- Вроде что-то связанное с нитями. Не помню точно.</p>
+<p>- Тогда слушай. Вот тебе немного технических деталей:</p>
+<p>В компьютере есть два вида памяти – глобальная (обычная) и встроенная в процессор. Встроенная в процессор делится на регистры, затем кэш первого уровня (L1), кэш второго уровня (L2) и  третьего уровня (L3).</p>
+<p>Эти виды памяти отличаются по скорости работы. Самая быстрая и самая маленькая память – это регистры, затем идет кэш процессора (L1, L2, L3) и, наконец, глобальная память (самая медленная).</p>
+<p>Скорость работы глобальной памяти и кэша процессора сильно отличаются, поэтому Java-машина позволяет каждой нити хранить самые часто используемые переменные в локальной памяти нити (в кэше процессора).</p>
+<p class="amigo">- А можно как-то управлять этим процессом?</p>
+<p>- Практически никак – всю работу делает Java-машина, она очень интеллектуальная в плане оптимизации скорости работы.</p>
+<p>Но я тебе это рассказываю вот зачем. Есть одна маленькая проблемка. Когда две нити работают с одной и той же переменной, каждая из них может сохранить ее копию в своем внутреннем локальном кэше. И тогда может получиться такая ситуация, что одна нить переменную меняет, а вторая не видит этого изменения, т.к. по-прежнему работает со своей копией переменной.</p>
+<p class="amigo">- И что же делать?</p>
+<p>- На этот случай разработчики Java предусмотрели специальное ключевое слово – <b>volatile</b>.  Если есть переменная, к которой обращаются из разных нитей, ее нужно пометить модификатором volatile, чтобы Java-машина не помещала ее в кэш. Вот как это обычно выглядит:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public volatile int</b> count = 0;
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- О, вспомнил. Ты же уже про это рассказывала. Я же это уже знаю.</p>
+<p>- Ага, знаешь. А вспомнил, только когда я рассказала.</p>
+<p class="amigo">- Э, ну забыл немного.</p>
+<p>- Повторение – мать учения.</p>
+<p>Вот тебе несколько новых фактов работы модификатора volatile. Модификатор volatile гарантирует только безопасное чтение/запись переменной, но не ее изменение.</p>
+<p class="amigo">- А в чем разница?</p>
+<p>- Вот смотри. Как изменяется переменная:</p>
+<table class="table_example">
+<tbody><tr><th width="10%">Код</th><th width="45%">Что происходит на самом деле:</th><th width="45%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>count++</b>
+</td>
+<td class="monospace_text"><span class="green_text">register = count;</span><br/><br/><br/>
+<span class="red_text">register = register+1;</span><br/><br/><br/>
+<span class="dblue_text">count = register;</span>
+</td>
+<td class="wide-text"><span class="green_text">Этап 1.<br/> 
+    Значение переменной count копируется из глобальной памяти в регистровую память процессора.</span><br/><br/>
+<span class="red_text">Этап 2<br/>
+    Внутри процессора регистровая переменная увеличивается на 1.</span><br/><br/>
+<span class="dblue_text">Этап 3<br/>
+    Значение переменной копируется из процессора в глобальную память.</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ого! Так что, изменение любой переменной происходит только в процессоре?</p>
+<p>- Ага.</p>
+<p class="amigo">- И значения копируются туда-сюда: из памяти в процессор и обратно?</p>
+<p>- Ага.</p>
+<p>Так вот, модификатор volatile, гарантирует, что при обращении к переменной count она будет прочитана из памяти (этап 1). А если какая-то нить захочет присвоить ей новое значение, то оно обязательно окажется в глобальной памяти (этап 3).</p>
+<p>Но Java-машина не гарантирует, что не будет переключения нитей между этапами 1 и 3.</p>
+<p class="amigo">- Т.е. увеличение переменной на 1 – это фактически три операции?</p>
+<p>- Да.</p>
+<p class="amigo">- И если две нити одновременно захотят исполнить count++, то они могут помешать друг другу?</p>
+<p>- Да, вот смотри:</p>
+<table class="table_example">
+<tbody><tr><th width="33%">Нить 1</th><th width="33%">Нить 2</th><th width="33%">Результат</th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="dblue_text">register1 = count;<br/>
+    register1++;<br/>
+    count = register1;</span>
+</td>
+<td class="monospace_text"><span class="green_text">register2 = count;<br/>
+    register2++;<br/>
+    count = register2;</span>
+</td>
+<td class="monospace_text wide-text"><span class="dblue_text">register1 = count;</span><br/>
+<span class="green_text">register2 = count;<br/>
+    register2++;<br/>
+    count = register2;</span><br/>
+<span class="dblue_text">register1++;<br/>
+    count = register1;</span>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- Т.е. обращаться к переменной можно, а изменять рискованно все равно?</p>
+<p>- Ну, изменять можно, только осторожно ☺</p>
+<p class="amigo">- Это как же?</p>
+<p>- <b>synchronized</b> наше все.</p>
+<p class="amigo">- Ясно.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>5. Задачи по volatile</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/26/image-ru-26-05.png"/>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level26,lesson05,task01"></button><b>1. Для того, чтобы усовершенствовать ум, надо больше размышлять, чем заучивать</b><br/><br/>
+                Расставьте <span class="taskcode">volatile</span> там, где это необходимо.
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level26,lesson05,task02"></button><b>2. Трудолюбие - душа всякого дела и залог благосостояния</b><br/><br/>
+                Расставьте <span class="taskcode">volatile</span> там, где это необходимо.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level26,lesson05,task03"></button><b>3. Тот, кто любит труд, не нуждается в развлечениях</b><br/><br/>
+                Расставьте <span class="taskcode">volatile</span> там, где это необходимо.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>6. Мютекс и монитор</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>В своих предыдущих лекциях я иногда использовала слова «мютекс» и «монитор», теперь настало время рассказать, что же это значит.</p>
+<p class="amigo">- Я готов слушать.</p>
+<p>- <b>Мютекс</b> – это специальный объект для синхронизации нитей/процессов. Он может принимать два состояния – занят и свободен. Если упростить, то мютекс – это boolean-переменная, которая принимает два значения: занят(true) и свободен(false).</p>
+<p>Когда нить хочет монопольно владеть некоторым объектом, она помечает его мютекс занятым, а когда закончила работу с ним – помечает его мютекс свободным.</p>
+<p class="amigo">- Т.е. мютекс – это как табличка на двери – занят/свободен?</p>
+<p>- Да. И такой мютекс прикреплен к каждому объекту в Java.  Прямой доступ к мютексу есть только у Java-машины. От программиста он скрыт.</p>
+<p class="amigo">- А как же тогда его использовать?</p>
+<p>- А работать с мютексом в Java можно посредством монитора.</p>
+<p>Монитор – это специальный механизм (кусок кода) – надстройка над мютексом, который обеспечивает правильную работу с ним. Ведь мало пометить, что объект – занят, надо еще обеспечить, чтобы другие нити не пробовали воспользоваться занятым объектом.</p>
+<p>В Java монитор реализован с помощью ключевого слова <b>synchronized</b>.</p>
+<p>Когда ты пишешь блок synchronized, то компилятор Java заменяет его тремя кусками кода:</p>
+<p><b>1)</b> В начале блока synchronized добавляется код, который отмечает мютекс как занятый.</p>
+<p><b>2)</b> В конце блока synchronized  добавляется код, который отмечает мютекс как свободный.</p>
+<p><b>3)</b> Перед блоком synchronized добавляется код, который смотрит, если мютекс занят – то нить должна ждать его освобождения.</p>
+<p>Вот как это примерно работает:</p>
+<table class="table_example">
+<tbody><tr><th width="33%">Код</th><th width="33%">Как это работает</th><th width="33%">Описание</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b><span class="green_text">synchro</span><span class="dblue_text">nized(object)</span></b><br/>
+<span class="dblue_text">{</span><br/><br/>
+
+     <b>object.doJob();</b><br/><br/>
+<span class="orange_text">}</span>
+</td>
+<td class="monospace_text"><span class="green_text"><b>while</b> (object.mutex)<br/> 
+      Thread.sleep(1);</span><br/><br/>
+<span class="dblue_text">object.mutex = true;</span><br/><br/>
+
+    object.doJob();<br/><br/>
+<span class="orange_text">object.mutex = false;</span>
+</td>
+<td class="wide-text"><span class="green_text">Нить спит, пока мютекс занят<br/>
+    (выйдем из цикла, когда мютекс освободится)</span><br/><br/>
+<span class="dblue_text">Помечаем мютекс занятым</span><br/><br/>
+
+    Выполняем doJob();<br/><br/>
+<span class="orange_text">Помечаем мютекс свободным</span>
+</td>
+</tr>
+</tbody></table>
+<p>На самом деле логика там другая и сложнее, но это уже детали.</p>
+<p class="amigo">- А можно подробности?</p>
+<p>- Пока не научишься правильно этим пользоваться – в детали лезть нет смысла.</p>
+<p>Пару уровней назад я дала тебе список всех состояний нити со стрелками переходов и списком методов, которые влияют на это состояние. Ты много запомнил?</p>
+<p class="amigo">- Не очень. Просто все быстро забывается…</p>
+<p>- Чем меньше практики, тем меньше пользы и от теории.</p>
+<p>Вот уровню к 40 научишься всем этим пользоваться, и я тебе объясню, как все устроено на самом деле. А пока  - учись просто правильно всем пользоваться. Ясно?</p>
+<p class="amigo">- Да, спасибо, Элли.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>7. Применение synchronized</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/26/image-ru-26-04.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Да тут я, тут.</p>
+<p>- Сегодня я расскажу тебе о практическом применении <b>synchronized</b>.</p>
+<p>Когда в программе много объектов и нитей, то часто случаются ситуации, когда с одним объектом одновременно работает несколько нитей. Нити при этом мешают друг другу.</p>
+<p class="amigo">- Да, я это уже знаю.</p>
+<p>- Так вот, допустим, у тебя есть объект, к которому обращаются несколько нитей. Чтобы с ним не было проблем можно сделать две вещи.</p>
+<p>Первая – все места работы с данным объектом обернуть в блоки synchronized. Но такой подход может не сработать, если какой-то программист в своем коде будет обращаться к объекту напрямую, без блока synchronized.</p>
+<p>Поэтому чаще всего применяется второй подход – объект делают нитебезопасным (thread-safe). Т.е. механизм <b>synchronized</b> встраивают в сам объект – объявляют его методы synchronized и/или оборачивают код внутри методов в блоки synchronized.</p>
+<p class="amigo">- Т.е все объекты, которые я могу использоваться из разных нитей, а это почти все объекты программы, я должен сделать thread-safe?</p>
+<p>- В общем-то, да.  На самом деле не все объекты программы используются из разных нитей, но обычно много. Так что, когда ты начинаешь писать код своей нити и в ней обращаешься к различным объектам своей программы, то при вызове <b>каждого</b> метода, ты должен задуматься – <b>а безопасен ли этот вызов</b>?</p>
+<p class="amigo">- Безопасен?</p>
+<p>- Безопасен (thread-safe) - это безопасен при вызове из разных нитей.</p>
+<p>Вот тебе несколько примеров. Допустим, у тебя есть объект String, к которому происходит обращение из разных нитей. Как ты уже должен был запомнить, String (и все другие примитивные типы) является <b>immutable</b>. А это значит, что после создания объект не изменяется. А значит, и «сломать» такой объект нельзя. Все immutable объекты являются thread-safe.</p>
+<p class="amigo">- Уже легче.</p>
+<p>- Теперь, допустим, тебе нужна изменяемая строка.</p>
+<p class="amigo">- Ага, помню. Есть две вида таких строк – StringBuffer и StringBuilder.  StringBuffer – это аналог StringBuilder, но у него все методы синхронизированы. Он тоже является thread-safe?</p>
+<p>- Да. Если тебе нужно обращаться к объекту StringBuilder из разных нитей, то нужно заменить его на StringBuffer, иначе рано или поздно нити будут менять его одновременно и «поломают».</p>
+<p class="amigo">- А если объект, к которому происходит обращение из разных нитей, – это объект моего собственного класса? Мне тоже надо добавлять к его методам synchronized?</p>
+<p>- Да. Лучше всего руководствоваться таким правилом – <b>все объекты, к которым происходит обращение из разных нитей, должны быть thread-safe</b>.</p>
+<p class="amigo">- Ясно. Не думал, что все так серьезно. Спасибо, Элли.</p>
+<p>- Пожалуйста. Надеюсь, эти советы помогут тебе, когда Диего даст тебе пару своих легких задач ☺</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Сложные задачи на synchronized</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level26,lesson08,task01"></button><b>1. Вежливость - это искусственно созданное хорошее настроение</b><br/><br/>
+                В классе <span class="taskcode">Solution</span> создайте <span class="taskcode">public static</span> класс <span class="taskcode">IntegerHolder</span>.<br/>
+<span class="taskcode">IntegerHolder</span> должен быть для типа <span class="taskcode">int</span>, быть нитебезопасным и изменяемым.<br/>
+		В этом классе должны быть два <span class="taskcode">public</span> метода <span class="taskcode">get</span> и <span class="taskcode">set</span>
+</td></tr>
+<tr>
+<td><button class="task_button" taskkey="level26,lesson08,task02"></button><b>2. Мудрый человек думает раз, прежде чем два раза сказать</b><br/><br/>
+                Все методы класса <span class="taskcode">Solution</span> должны быть потоково-безопасными.<br/>
+		Сделайте так, чтобы оба метода могли выполняться одновременно двумя различными трэдами.<br/>
+<span class="taskcode">synchronized(this)</span> для этого не подходит, используйте другой объект для лока.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level26,lesson08,task03"></button><b>3. Распределение элементов по корзинам с собственным локом</b><br/><br/>
+                В синхронизированных блоках используйте нужный лок.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>9. Канкаренси, BlockingQueues (java7)</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/26/image-ru-26-03.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Ким!</p>
+<p>- Я тебе сегодня расскажу про «канкаренси» - <b>Concurrency</b>.</p>
+<p><b>Concurrency</b> – это библиотека классов в Java, в которой собрали специальные классы, оптимизированные для работы из нескольких нитей. Эта тема очень интересная и обширная. Но сегодня мы просто познакомимся с ней. Эти классы собраны в пакете <b>java.util.concurrent</b>. Я расскажу про пару интересных классов.</p>
+<p><b>Атомарные типы.</b></p>
+<p>Ты уже знаешь, что даже операция count++ не является потокобезопасной (thread-safe).  При увеличении переменной на 1 реально происходит три операции, в результате чего может возникнуть конфликт при одновременном изменении этой переменной.</p>
+<p class="amigo">- Ага, Элли рассказывала это немного раньше:</p>
+<table class="table_example">
+<tbody><tr><th width="33%">Нить 1</th><th width="33%">Нить 2</th><th width="33%">Результат</th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="dblue_text"><b>register1 = count;<br/>
+    register1++;<br/>
+    count = register1;</b></span>
+</td>
+<td class="monospace_text"><span class="green_text">register2 = count;<br/>
+    register2++;<br/>
+    count = register2;</span>
+</td>
+<td class="monospace_text wide-text"><span class="dblue_text">register1 = count;</span><br/>
+<span class="green_text">register2 = count;<br/>
+    register2++;<br/>
+    count = register2;</span><br/>
+<span class="dblue_text">register1++;<br/>
+    count = register1;</span>
+</td>
+</tr>
+</tbody></table>
+<p>- Именно. Тогда в Java были добавлены типы данных, которые выполняют такие операции неразрывно – атомарно. (Атом - неделимый).</p>
+<p>Так в Java появились типы <b>AtomicInteger</b>, <b>AtomicBoolean</b>, <b>AtomicDouble</b> и т.д.</p>
+<p>Вот, допустим нам нужно сделать класс «счетчик»:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class Counter</b><br/> 
+{<br/>
+     <b>private</b> int c = 0;<br/><br/>
+
+     <b>public</b> void <b>increment</b>() <br/>
+     {<br/>
+          c++;<br/>
+     }<br/><br/>
+
+     <b>public</b> void <b>decrement</b>() <br/>
+     {<br/>
+          c--;<br/>
+     }<br/><br/>
+
+     <b>public</b> int <b>value</b>() <br/>
+     {<br/>
+          return c;<br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>Как бы ты сделал его объекты thread-safe?</p>
+<p class="amigo">- Да, сделал бы все методы synchronized и все:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class synchronized</b> Counter <br/>
+{<br/>
+     <b>private</b> int c = 0;<br/><br/>
+
+     <b>public synchronized</b> void increment() <br/>
+     {<br/>
+          c++;<br/>
+     }<br/><br/>
+
+     <b>public synchronized</b> void decrement() <br/>
+     {<br/>
+          c--;<br/>
+     }<br/><br/>
+
+     <b>public synchronized</b> int value() <br/>
+     {<br/>
+          return c;<br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>- Отличная работа. А вот, как бы он выглядел с использованием атомарных типов:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>class Atomic</b>Counter<br/> 
+{<br/>
+     <b>private AtomicInteger</b> c = new <b>AtomicInteger</b>(0);<br/><br/>
+
+     <b>public</b> void <b>increment</b>() <br/>
+    {<br/>
+          c.<b>incrementAndGet</b>();<br/>
+     }<br/><br/>
+
+     <b>public</b> void <b>decrement</b>() <br/>
+    {<br/>
+          c.<b>decrementAndGet</b>();<br/>
+     }<br/><br/>
+
+     <b>public</b> int <b>value</b>() <br/>
+    {<br/>
+          return c.<b>get</b>();<br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>И твой и мой классы работают одинаково, но класс с AtomicInteger работает быстрее.</p>
+<p class="amigo">- Т.е. разница небольшая?</p>
+<p>Да. Из своего опыта я могу посоветовать всегда в лоб использовать synchronized. И только когда весь код приложения уже написан и начинается процесс его оптимизации, то можно начинать переписывать его части с использованием Atomic-типов. Но в любом случае, я бы хотела, чтобы ты знал, что такие типы есть. Даже если не будешь активно ими пользоваться, ты всегда можешь увидеть код, написанный с их применением.</p>
+<p class="amigo">- Согласен, в это есть смысл.</p>
+<p>- Кстати, а ты заметил, что атомарные типы – не <b>immutable</b>? <b>AtomicInteger</b>, в отличии от просто <b>Integer</b>, содержит методы по изменению своего внутреннего состояния.</p>
+<p class="amigo">- Понятно, прямо как <b>String</b> и <b>StringBuffer</b>.</p>
+<p>- Да, что-то типа того.</p>
+<p><b>Нитебезопасные (иногда называют - потокобезопасные)  коллекции.</b></p>
+<p>В качестве такой коллекции я хотела бы привести ConcurrentHashMap. Как сделать HashMap thread-safe?</p>
+<p class="amigo">- Сделать все его методы synchronized?</p>
+<p>- Да, но представь теперь, что у тебя есть один такой SynchronizedHashMap, а к нему обращаются десятки нитей. И сто раз в секунду в этот map добавляется новая запись, при этом весь объект блокируется для чтения и записи.</p>
+<p class="amigo">- Да, но это же стандартный подход. Что тут можно сделать?</p>
+<p>- Разработчики Java придумали несколько крутых штук.</p>
+<p>Во-первых, они хранят данные в ConcurrentHashMap не одним куском, а разбивая их на порции - «корзины». И когда кто-то меняет данные в ConcurrentHashMap, то блокируется не весь объект, а только одна корзина, к которой происходит доступ. Т.е. на самом деле объект могут одновременно менять много нитей.</p>
+<p>Во-вторых, помнишь проблему, что нельзя одновременно идти по элементам списка/мэпа и менять его? Такой код кинет исключение:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Нельзя одновременно идти в цикле по элементам коллекции и менять ее</th></tr>
+<tr>
+<td class="monospace_text wide-text">HashMap&amp;ltString, Integer&amp;gt <b>map</b> = new HashMap&amp;ltString, Integer&amp;gt();<br/><br/>
+<b>for</b> (String key: <b>map.keySet</b>())<br/>
+    {<br/>
+          <b>if</b> (<b>map.get</b>(key)==0)<br/>
+               <b>map.remove</b>(key);<br/>
+  }
+    </td>
+</tr>
+</tbody></table>
+<p>А в ConcurrentHashMap это можно:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Нельзя одновременно идти в цикле по элементам коллекции и менять ее</th></tr>
+<tr>
+<td class="monospace_text wide-text">ConcurrentHashMap&amp;ltString, Integer&amp;gt map = new ConcurrentHashMap&amp;ltString, Integer&amp;gt();<br/><br/>
+<b>for</b> (String key: <b>map.keySet</b>())<br/>
+    {<br/>
+          <b>if</b> (<b>map.get</b>(key)==0)<br/>
+               <b>map.remove</b>(key);<br/>
+  }
+    </td>
+</tr>
+</tbody></table>
+<p>У Concurrency есть очень много преимуществ. Просто надо очень хорошо разобраться в этих классах, чтобы их применять.</p>
+<p class="amigo">- Ясно. Спасибо, Ким. Действительно, очень интересные классы. Надеюсь, когда-нибудь я тоже буду виртуозно ими владеть.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>10. Задачи на канкаренси</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level26,lesson10,task01"></button><b>1. Весь мир играет комедию</b><br/><br/>
+                Почитать про <span class="taskcode">java.util.concurrent.locks.Lock</span> на http://docs.oracle.com/  (там все есть в джавадоках!)<br/>
+		Написать реализацию метода <span class="taskcode">someMethod</span>:<br/>
+		1. попытаться захватить лок<br/>
+		1.1. если лок занят, то вызвать метод <span class="taskcode">ifLockIsBusy</span><br/>
+		1.2. если лок свободен, то:<br/>
+		1.2.1 вызвать метод <span class="taskcode">ifLockIsFree</span><br/>
+		1.2.2 отпустить лок при любых условиях, даже если <span class="taskcode">ifLockIsFree</span> будет кидать исключение
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Мир скучен для скучных людей</b><br/><br/>
+                Разберитесь с <span class="taskcode">BlockingQueue</span><br/>
+		По образу и подобию класса <span class="taskcode">Producer</span> создайте класс <span class="taskcode">Consumer</span>, который будет выводить данные из <span class="taskcode">BlockingQueue</span> в консоль
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Мир не меняется, меняемся мы</b><br/><br/>
+                Разберитесь с <span class="taskcode">ConcurrentHashMap</span><br/>
+		В отдельном файле создайте класс <span class="taskcode">Producer</span>, который будет:<br/>
+		1. каждые полсекунды выводить на консоль, с новой строки начиная с 1 фразу [Some text for i]<br/><br/>пример: "Some text for 1"<br/><br/>
+		2. при возникновении исключения выводить в консоль [[TREAD_NAME] thread was terminated]<br/><br/>
+                пример: "[thread-1] thread was terminated"
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Учимся гуглить. (Как отсортировать по строке)</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/26/image-ru-26-02.png"/>
+<p>- Привет, Амиго!</p>
+<p>Продолжаем наши уроки – учимся гуглить.</p>
+<p>Вот тебе несколько заданий:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Задания на поиск в интернете:</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Какие методы есть у класса Collections?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Какие методы есть у класса Arrays?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Как называется сортировка, которая используется при вызове Collections.sort()?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Что такое mutex?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Что такое монитор?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Какие есть атомарные типы?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Какие классы есть в канкаренси?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Что такое "happens-before"?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Что такое «барьер» в канкаренси?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Нагуглить 5 различных классов из канкаренси.
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>12. Профессор дает доп. материал</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Вот тебе дополнительный материал по теме.</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-26.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>13. Хулио</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет ,  Хулио.</p>
+<p>- Я тут нашел  новую серию  «Звёздных войн».  Эпизод  называется «С3P0 в далёкой галактике  DBCP». Садись смотреть.</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-26.gif" preload="none" tabindex="0" taskkey="level26,lesson13,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-26.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=GVIwW0ZKEs8" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>14. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Как пользоваться интерфейсом Comparable?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Как пользоваться интерфейсом Comparator?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Какие методы есть у класса Collections?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Какие методы есть у класса Arrays?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Как называется сортировка, которая используется при вызове Collections.sort()?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Что такое канкаренси?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Какие классы из «канкаренси» ты знаешь?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Как устроен класс <b>ConcurrentHashMap</b>?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Что такое класс Lock?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Что такое итератор?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>11</b>
+</td>
+<td class="wide-text">Что такое mutex?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>12</b>
+</td>
+<td class="wide-text">Что такое монитор?
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>15. Большая задача</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Здравия желаю, капитан Бобров.</p>
+<p>- Хорошо учишься. Молодец, боец!</p>
+<p>У тебя сегодня новая секретная миссия - осваивать финансы.</p>
+<p class="amigo">- Ура!!! Я уже придумал, на что я их потрачу!!!</p>
+<p>- Так, не расслабляться! Осваивать финансы – это писать новую секретную<br/> программу "Банкомат".</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/26/image-ru-26-01.gif"/>
+<p>Отправляйся к нашему секретному агенту Intellij IDEA, там получишь все инструкции.</p>
+<p class="amigo">- Будет сделано, товарищ капитан!</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

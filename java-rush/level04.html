@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-04.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 4
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>Я - лучший</h2>
+</div>
+<p class="blue_text"><b>1 Лучшее – враг хорошего</b></p>
+<img alt="" class="cartoon-squired" src="https://javarush.ru/levels/images/lessons/04/image-ru-04-04.jpg"/>
+<p>Быть лучше – это значит быть лучше других, превосходить их и отличаться от них. <b>Вы не можете делать то же, что и все, чтобы стать лучшим. Вам нужен свой путь.</b> </p>
+<p>Вы не можете быть лучшим во всем: пока вы изучаете все, кто-то специализируется на чем-то одном. Лучший способ стать лучшим - это выбрать одну очень узкую специальность и стать в ней специалистом мирового уровня.</p>
+<p>Если вы занимаетесь в балете с пяти лет по 8 часов в день, всегда найдется тот, кто занимается с трех лет и по 10 часов в день. К пятнадцати годам его опыт будет превосходить ваш на 5000 часов. А ведь есть еще и гении, на каждый час которого вам нужно заниматься три. И лучшие в мире преподаватели, а вы, например, самоучка. </p>
+<p>Единственный способ стать лучшим, не имея своего уникального пути – это работать больше всех, быть талантливым, иметь хороших преподавателей и богатых родителей. Хотя – это уже не совсем «как все», да?</p>
+<p>Но даже самая быстрая и трудолюбивая  в мире лошадь не обгонит автомобиль. <b>Вам нужна своя стратегия, свой уникальный план, чтобы стать лучшим, не жертвуя при этом всем.</b></p>
+<p class="blue_text">2 Лучшим стать непросто</p>
+<p>Всегда найдется кто-то, кто начал раньше вас. У кого-то богатые родители, кто-то учился в самом лучшем в мире университете. Кого-то родители взяли к себе на работу. Ничего страшного. Бывает.  <b>Это называется – разные стартовые условия.</b> Но таких людей – меньшинство,  в мире полно людей, которые сами добились успеха, благодаря своему нестандартному мышлению, трудолюбию и способности постоянно учиться всему новому.</p>
+<p>Жизнь напоминает игру в карты. Любой выиграет, если ему раздали одни козыри, профессионал выигрывает не зависимо от розданных карт. Он сводит их влияние к минимуму своим мастерством. </p>
+<p>Никто не понимает этого так хорошо, как профессиональные спортсмены. У многих из них есть всего несколько лет, чтобы реализовать свой шанс и достичь успеха.</p>
+<p class="blue_text">3 Всегда есть тот, кто готов работать больше, чем вы</p>
+<img alt="" class="cartoon-squired" src="https://javarush.ru/levels/images/lessons/04/image-ru-04-05.jpg"/>
+<p>Таких людей много. Среди них есть трудоголики, перфекционисты и люди, просто влюбленные в свою работу.  Да, многие из них жертвуют семьей,  друзьями, и готовы работать по 80 часов в неделю. Работа и есть их жизнь. Это путь не для нас. <b>Но они отлично способны вытеснить вас на карьерную обочину.</b> Вы не готовы проводить 6 месяцев в году в командировках, чтобы получить повышение, а они – готовы.</p>
+<p><b>Средний китайский школьник усерднее европейского, а сотрудник в Китае готов выполнять вашу работу за четверть вашей зарплаты.</b></p>
+<p>Много работать – не путь к успеху, но работать мало – путь к поражению.</p>
+<p class="blue_text">4 Культурная среда</p>
+<img alt="" class="cartoon-squired" src="https://javarush.ru/levels/images/lessons/04/image-ru-04-06.jpg"/>
+<p>Мало где в мире принято много и честно работать.  Если в колледже вы много учитесь, пропадаете в библиотеке и сами сдаете все экзамены, то вы – заучка. А если «весь семестр гулял, но сдал» или другим способом «победил систему», то вы – молодец. На дороге под названием «работай больше» слишком большая конкуренция (дорожная пробка, если хотите), этот способ больше не работает. Вам нужно искать другой путь.</p>
+<p>Сложно стремиться к успеху, когда само общество ненавидит успешных и богатых. Ненавидит и завидует. Бедные люди, дорвавшись до денег, начинают выставлять свое богатство на показ. Действительно богатые люди ведут себя скромнее: Билл Гейтс  может ходить в футболке за $10, потому что и в ней и без нее  он – Билл Гейтс. </p>
+<p>Между тем именно бизнесмены создают рабочие места и двигают экономику вперед. Заработная плата наемных сотрудников – это результат конкуренции бизнеса за лучшие кадры. Чем больше бизнесов в стране, тем выше в ней будут зарплаты.</p>
+<p>Надо любить свою жизнь и свое время. Деньги – это всего лишь инструмент, который делает вас финансово независимым. А если вы финансово независимы, то вы можете делать, что хотите и не делать, то чего не хотите. </p>
+<p>Поосторожнее с «жертвами», когда будете становиться лучшим. Не жертвуйте действительно важными вещами: семьей, друзьями, здоровьем, любимой работой. Быть финансово успешным в 50 лет и не иметь семьи, друзей, здоровья, не любить работу – это не успех, это провал.</p>
+<br/>
+<div class="line"></div>
+<br/>
+<table style="width: 800px;">
+<tr>
+<td style="width: 400px;"> <a href="http://www.it-weekly.ru/analytics/trends/72490.html" target="_blank">Обзор зарплат по Москве</a> </td>
+<td style="width: 400px;"> <a href="http://jobs.dou.ua/salaries/#period=may2015&amp;city=%D0%9A%D0%B8%D0%B5%D0%B2&amp;title=Senior+Software+Engineer&amp;language=Java&amp;spec=&amp;exp1=0&amp;exp2=10" target="_blank">Зарплаты в Киеве</a> </td>
+</tr>
+</table>
+<br/>
+<p>Решил стать программистом - купи подписку. Вся мощь проекта JavaRush к твоим услугам.</p>
+<button class="profile-tariff-button-popular" onclick="window.top.location.href = '//javarush.ru/user/subscription?l=4';">Купить подписку</button>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>1. Области действия переменных</h2>
+</div>
+<p>- Профессор всё свою линию гнёт. Все они, старые лекторишки, такие. Всё, что он может рассказать, ты можешь прочесть в книгах. Запомни, <span class="orange_text">ещё ни один человек не научился плавать, прослушав с десяток лекций по этому поводу</span>. Лекции помогают, когда ты 100% в теме и знаешь сам чуть меньше этого профессора. </p>
+<p class="amigo">- Ну, от лекций профессора же есть польза.</p>
+<p>- Ага... вернее, мы надеемся, что она есть.  Чем больше точек зрения на один и тот же материал ты услышишь, тем больше задумаешься, а как же дела обстоят на самом деле. Услышав только одну точку зрения, ты либо веришь ей, либо нет. Ладно, давай перейдём к делу.</p>
+<p>- Давай рассмотрим картинку, которую я уже давал тебе ранее:</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/04/image-ru-04-01.jpg"/>
+<p class="red_text">1 Переменная, объявленная в методе, существует/видна с начала объявления до конца метода.</p>
+<p class="orange_text">2 Переменная, объявленная в блоке кода, существует до конца этого блока кода.</p>
+<p class="blue_text">3 Переменные - аргументы метода - существуют до конца выхода из метода.</p>
+<p class="green_text">4 Переменные класса/объекта существуют все время жизни содержащего их объекта. Их видимость регулируется специальными модификаторами доступа.</p>
+<p class="violet_text">5 Статические переменные классов существуют все время работы программы. Их видимость также определяется модификаторами доступа. </p>
+<p class="amigo">- Да, помню эту картинку.</p>
+<p>- Вот и отлично. Давай напомню тебе некоторые моменты. </p>
+<p>- Все переменные, объявленные внутри методов, существуют/видны с начала их объявления до конца метода (пример: 1).</p>
+<p>- Если переменная определена/объявлена в каком-то блоке кода, то она существует до конца этого блока кода (пример: 2). </p>
+<p>- Если переменная является аргументом функции, то она существует/видна во всем теле данного метода (пример: 3) .</p>
+<p>- Если переменная является переменной класса (пример: 4), то она привязана к конкретному объекту и существует все время, пока существует объект данного класса. <b>Если нет ни одного объекта, то нет и ни одной копии переменной</b>. <span class="orange_text">К переменной можно обращаться (переменная видна) из всех  методов класса, независимо от того, объявлены они до неё или после неё.</span> <span class="green_text">Для каждого объекта создаётся своя, независимая от других объектов, переменная.</span> <span class="red_text">Доступ к переменной невозможен из статических методов.</span></p>
+<p>- Если переменная объявлена статической – помечена ключевым словом <b>static</b>, то она существует все время, когда существует её класс. Обычно JVM загружает класс в память при первом его использовании,  тогда же и инициализируются статические переменные.</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/04/image-ru-04-02.jpg" width="80%"/>
+<p>- В примере выше у нас объявлен класс Cat, у которого есть 4 переменные: a,b,s – обычные, а count – статическая. <span class="orange_text">Если создать несколько объектов такого класса (например, 3 шт.), то каждый из них будет содержать свою собственную копию обычных переменных класса.</span> <span class="green_text">Статическая же переменная – общая на всех.</span> Формально она даже не находится внутри этих объектов, т.к. существует даже тогда, когда ни одного объекта класса Cat создано не было.</p>
+<p>- Вот что произойдет, если мы объявим переменную <span class="red_text">s</span> статической:</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/04/image-ru-04-03.jpg" width="80%"/>
+<p class="amigo">- Ага. Вроде понятно.</p>
+<p class="amigo">- А можно объявить одинаковые переменные? </p>
+<p>- В методе - нет. <span class="green_text">Все переменные, объявленные внутри метода, должны иметь уникальные имена.</span> Аргументы метода также считаются его переменными.</p>
+<p class="amigo">- А как насчёт переменных класса?</p>
+<p>- Переменные класса тоже должны быть уникальными в рамках каждого конкретного класса.</p>
+<p>Но есть исключение – <span class="orange_text">имена переменных метода и переменных класса могут совпадать</span>.</p>
+<p class="amigo">- А если мы в коде изменяем переменную, а таких переменных две, какая будет изменяться?</p>
+<p>- Если в методе видны (доступны) несколько переменных, например, переменная класса и переменная метода, то тогда обращение произойдет к переменной метода.</p>
+<table class="table_example">
+<tr>
+<th style="width: 20px;"></th>
+<th>Пример с двумя переменными count </th>
+</tr>
+<tr>
+<td class="monospace_text" style="text-align: right">
+                    1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13
+                </td>
+<td class="monospace_text">
+<pre><b>class</b> Main
+{
+    <b>public</b> <span class="green_text">int</span> <span class="dred_text">count</span> = 0;    <span class="grey_text"> //объявили переменную класса</span>
+
+    <b>public void</b> run()
+    {
+        <span class="dred_text">count</span> = 15;           <span class="grey_text">//обращение к переменной класса</span>
+        <span class="green_text">int</span> <span class="blue_text">count</span> = 10;       <span class="grey_text">//объявили локальную переменную метода</span>
+        <span class="blue_text">count</span> ++;             <span class="grey_text">//обращение к переменной метода</span>
+    }
+}</pre>
+</td>
+</tr>
+</table>
+<p>- В этом коде объявлены две переменных count. В строке 4 объявлена <span class="dred_text">переменная класса</span>, а в строке 9 – <span class="blue_text">переменная метода</span>.</p>
+<p>- Когда метод run будет исполняться, то произойдет вот что:</p>
+<p>- В строке 8 мы обращаемся к <span class="dred_text">переменной класса</span> и присваиваем ей значение 15</p>
+<p>- В строке 9 объявляется (создается) новая <span class="blue_text">переменная метода – count</span>. Она закрывает собой переменную класса. Любой дальнейший код в методе будет видеть (обращаться) именно к переменной метода.</p>
+<p class="amigo">- Понятно.</p>
+<p>- <span class="dred_text">Переменная метода закрывает собой переменную класса</span>. Т.е. обращение будет происходить к переменной метода. Но к переменной класса тоже можно обратиться, только более сложным способом.</p>
+<table class="table_example">
+<tr>
+<th width="50%">Статическая переменная класса</th>
+<th width="50%">Обычная переменная класса</th>
+</tr>
+<tr>
+<td class="monospace_text">
+<span class="dblue_text"><b>ClassName</b></span>.<span class="green_text">variableName</span><br/><br/>
+<span class="example-legacy">Примеры:</span><br/>
+<span class="dblue_text"><b>Cat</b></span>.<span class="green_text">catsCount</span>
+</td>
+<td class="monospace_text">
+<span class="red_text"><b>this</b></span>.<span class="green_text">variableName</span><br/><br/>
+<span class="example-legacy">Примеры:</span><br/>
+<span class="red_text"><b>this</b></span>.<span class="green_text">catsCount</span>
+</td>
+</tr>
+</table>
+<p class="amigo">- А что ещё за статические методы и статические переменные?</p>
+<p>- <span class="green_text">Статические методы и переменные привязаны не к объектам класса, а непосредственно к самому классу.</span> Т.е. если мы создадим 10 объектов <span class="violet_text">класса <b>Variables</b></span> из примера в самом начале уровня, у нас будет 10 переменных <span class="violet_text">classVariable</span> (по одной на каждый объект)  и всего одна общая переменная <b><span class="violet_text">TEXT</span></b>.</p>
+<p class="amigo">- У меня тут вопрос.</p>
+<p class="amigo">- А чем отличаются статические и нестатические методы?</p>
+<p>- Давай рассмотрим, как работает обычный нестатический метод:</p>
+<table class="table_task wide-table">
+<tr>
+<th class="collapsed"></th>
+<th width="50%">Как выглядит код</th>
+<th width="50%">Что происходит на самом деле</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson01,type01"></button>--></td>
+<td class="monospace_text wide-text">
+<span class="orange_text">Cat</span> <span class="red_text">cat</span> = <b>new</b> <span class="orange_text">Cat</span>();<br/>
+                    String name = <span class="red_text">cat</span>.getName();<br/>
+<span class="red_text">cat</span>.setAge(17);<br/>
+<span class="red_text">cat</span>.setChildren(cat1, cat2, cat3);
+                </td>
+<td class="monospace_text wide-text">
+<span class="orange_text">Cat</span> <span class="red_text">cat</span> = <b>new</b> <span class="orange_text">Cat</span>();<br/>
+                    String name = <span class="orange_text">Cat</span>.getName(<span class="red_text">cat</span>);<br/>
+<span class="orange_text">Cat</span>.setAge(<span class="red_text">cat</span>,17);<br/>
+<span class="orange_text">Cat</span>.setChildren(<span class="red_text">cat</span>, cat1, cat2, cat3);
+                </td>
+</tr>
+</table>
+<p>- При вызове метода в виде <span class="red_text">«<b>объект</b>»</span> <span class="dred_text">точка «имя метода»</span>, на самом деле вызывается метод класса, в который первым аргументом передаётся <span class="red_text"><b>тот самый объект</b></span>. Внутри метода он получает имя <span class="red_text"><b>this</b></span>. Именно с ним и его данными происходят все действия.</p>
+<p class="amigo">- Нифига себе. Так вот как, оказывается, оно все работает!</p>
+<p>- А вот как работает статический метод:</p>
+<table class="table_task wide-table">
+<tr>
+<th class="collapsed"></th>
+<th width="50%">Как выглядит код</th>
+<th width="50%">Что происходит на самом деле</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson01,type02"></button>--></td>
+<td class="monospace_text wide-text">
+<span class="orange_text">Cat</span> cat1 = new <span class="orange_text">Cat</span>();<br/>
+<span class="orange_text">Cat</span> cat2 = new <span class="orange_text">Cat</span>();<br/>
+                    int catCount = <span class="orange_text">Cat</span>.<b>getAllCatsCount</b>();
+                </td>
+<td class="monospace_text wide-text">
+<span class="orange_text">Cat</span> cat1 = new <span class="orange_text">Cat</span>();<br/>
+<span class="orange_text">Cat</span> cat2 = new <span class="orange_text">Cat</span>();<br/>
+                    int catCount = <span class="orange_text">Cat</span>.<b>getAllCatsCount</b>(<span class="red_text"><b>null</b></span>);
+                </td>
+</tr>
+</table>
+<p>- При вызове статического метода, никакого объекта внутрь не передаётся. Т.е. <span class="dred_text">this</span> равен <span class="red_text">null</span>, поэтому статический метод не имеет доступа к нестатическим переменным и методам (ему нечего передать в такие методы в качестве <span class="dred_text">this</span>).</p>
+<p class="amigo">- Хм. Вроде понятно. Хотя как-то поверхностно.</p>
+<p>- А вот и дядя Диего… С его задачками.</p>
+<table class="table_task">
+<tr>
+<th style="width: 12px;"></th>
+<th>Условие</th>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level04,lesson01,task01"></button>1</td>
+<td>
+                    Подумайте, что делает программа. <br/>
+                    Исправьте ошибку в программе чтобы переменная <span class="taskcode">age</span> объекта <span class="taskcode">person</span> изменила свое значение.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level04,lesson01,task02"></button>1</td>
+<td>
+                    Реализовать метод <span class="taskcode">addPrice(int applesPrice)</span>, чтобы при его вызове суммарная стоимость яблок увеличивалось на переданное значение.
+                    За суммарную стоимость яблок отвечает переменная <span class="taskcode">public static int applesPrice</span>.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>2. Задачи на видимость переменных</h2>
+</div>
+<p>- Привет, Амиго.</p>
+<p class="amigo">- Привет, Диего.</p>
+<p>- Я вот тут принёс тебе пару задачек на видимость переменных</p>
+<table class="table_task">
+<tr>
+<th>№</th>
+<th width="55%">Пример</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson02,task01"></button>1</td>
+<td class="monospace_text wide-text">
+<pre>class Cat
+{
+  <span class="violet_text">private String name</span>;
+  public void setName(<span class="green_text">String name</span>)
+  {
+     <span class="grey_text">//написать тут ваш код</span>
+  }
+}</pre>
+</td>
+<td>
+Реализовать метод setName, чтобы с его помощью можно было устанавливать значение переменной <span class="violet_text">private String name</span> равное переданному параметру <span class="green_text">String name</span>.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson02,task02"></button>2</td>
+<td class="monospace_text wide-text">
+<pre>class Cat
+{
+  private static int <span class="dred_text">catsCount</span> = 0;
+  public static void <span class="orange_text">addNewCat</span>()
+  {
+     <span class="grey_text">//написать тут ваш код</span>
+  }
+}</pre>
+</td>
+<td>
+Реализовать метод <span class="orange_text">addNewCat</span>, чтобы при его вызове (т.е. добавлении нового кота), количество котов увеличивалось на 1. За количество котов отвечает переменная <span class="dred_text">catsCount</span>.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson02,task03"></button>3</td>
+<td class="monospace_text wide-text">
+<pre>class Cat
+{
+  private static int <span class="green_text">catsCount</span> = 0;
+  public static <span class="violet_text">setCatsCount</span>(int <span class="orange_text">catsCount</span>)
+  {
+     <span class="grey_text">//написать тут ваш код</span>
+  }
+}</pre>
+</td>
+<td>
+Реализовать метод <span class="violet_text">setCatsCount</span> так, чтобы с его помощью можно было устанавливать значение <span class="green_text">переменной catsCount</span> равное <span class="orange_text">переданному параметру</span>.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson02,task04"></button>4</td>
+<td class="monospace_text wide-text">
+<pre>class Cat
+{
+  <span class="violet_text">private String fullName</span>;
+  public void <span class="red_text">setName</span>(String firstName, String lastName)
+  {
+   <span class="green_text">String fullName</span> = firstName + lastName;
+   <span class="grey_text">//написать тут ваш код</span>
+  }
+}</pre>
+</td>
+<td>
+Реализовать метод <span class="red_text">setName</span>, чтобы с его помощью можно было устанавливать значение переменной <span class="violet_text">private String fullName</span> равное значению локальной переменной <span class="green_text">String fullName</span>.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson02,task05"></button>5</td>
+<td class="monospace_text wide-text">
+<pre>Cat cat1 = new Cat();
+   <span class="grey_text">//написать тут ваш код</span>
+Cat cat2 = new Cat();
+   <span class="grey_text">//написать тут ваш код</span>
+System.out.println("Cats count is " + <span class="dred_text">Cat.count</span>);</pre>
+</td>
+<td>
+Написать код, который бы подсчитывал количество созданных котов (<span class="dred_text">count</span>) и на экран выдавалось правильно их количество.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>3. Команда и блок команд</h2>
+</div>
+<p>-  Сейчас я расскажу тебе, что такое команда и блок команд. Все очень просто. Тело метода состоит из команд. Каждая команда оканчивается точкой с запятой.</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th width="10px"></th>
+<th>Примеры команд:</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="5"><!--<button class="task_button" taskKey="level04,lesson03,type01"></button>--></td>
+<td>1</td>
+<td class="monospace_text">String s = "Name";</td>
+</tr>
+<tr>
+<td>2</td>
+<td class="monospace_text td2">System.out.println(1234);</td>
+</tr>
+<tr>
+<td>3</td>
+<td class="monospace_text">return a + b * c;</td>
+</tr>
+<tr>
+<td>4</td>
+<td class="monospace_text td2">throw new RuntimeException();</td>
+</tr>
+<tr>
+<td>5</td>
+<td class="monospace_text">;</td>
+</tr>
+</table>
+<p>- Блок команд состоит из нескольких команд, объединённых вместе фигурными скобками. <span class="green_text">Тело метода является блоком команд.</span> </p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th width="10px"></th>
+<th>Примеры:</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="4"><!--<button class="task_button" taskKey="level04,lesson03,type02"></button>--></td>
+<td>1</td>
+<td class="monospace_text">{}</td>
+</tr>
+<tr>
+<td>2</td>
+<td class="monospace_text td2"><pre>{
+    throw new RuntimeException();
+}</pre>
+</td>
+</tr>
+<tr>
+<td>3</td>
+<td class="monospace_text"><pre>{
+    return null;
+}</pre>
+</td>
+</tr>
+<tr>
+<td>4</td>
+<td class="monospace_text td2"><pre>{
+    System.out.println(23);
+    System.out.println(1);
+    System.out.println(14);
+}</pre>
+</td>
+</tr>
+</table>
+<p>- Почти для всех ситуаций справедливо правило: <span class="orange_text">там, где можно написать одну команду,  можно написать и блок команд.</span> Мы увидим это в примерах для задач ниже.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>4. Условные операторы</h2>
+</div>
+<p>- Привет, Амиго. Сегодня мы разберём <span class="red_text"><b>условные операторы</b></span>. </p>
+<p>- От программ было бы мало толку, если бы они делали абсолютно одно и то же независимо от того, как меняются внешние обстоятельства. <span class="green_text">Программе нужно уметь подстраиваться под обстоятельства, и делать одни действия в одних случаях и другие – в других.</span> В  Java это реализовано с помощью «условного оператора» - специального ключевого слова, которое позволяет выполнять разные блоки команд в зависимости от правдивости условия. </p>
+<p>- Он состоит из трех частей: «<span class="dred_text">условия</span>»,  «<span class="green_text">команды 1</span>» и «<span class="violet_text">команды 2</span>». Если <span class="dred_text">условие</span> верно (истинно), тогда выполняется «<span class="green_text">команда 1</span>», иначе выполняется «<span class="violet_text">команда 2</span>». Команды никогда не выполняются одновременно. Общий вид этого оператора таков:</p>
+<table class="table_example" style="width: 290px !important;margin: 10px auto;">
+<tr><th>Код условного оператора</th></tr>
+<tr><td>
+<pre><b>if</b> (<span class="dred_text">условие</span>)
+    <span class="green_text">команда_1</span>;
+<b>else</b>
+    <span class="violet_text">команда_2</span>;</pre>
+</td></tr>
+</table>
+<p class="amigo">- Как интересно. Думаю, с таким оператором программировать гораздо интереснее.</p>
+<p>- Ага. Вот тебе парочка примеров:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th width="50%">Код</th>
+<th>Пояснение</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson04,type01"></button>--></td>
+<td class="monospace_text wide-text">
+<pre>if (a System.out.println("А меньше Б");
+<b>else</b>
+    <span class="violet_text">System.out.println("Б меньше А");</span></pre>
+</td>
+<td>
+                    Если a меньше b, то выполнится <span class="green_text">первая команда</span>, в противном случае – <span class="violet_text">вторая</span>. <span class="dred_text">Команды никогда не выполнятся одновременно.</span>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson04,type02"></button>--></td>
+<td class="monospace_text wide-text">
+<pre><b>if</b> (a {
+    System.out.println("А меньше Б");
+    System.out.println("Б больше А");
+}
+<b>else</b>
+<span class="violet_text">{
+     System.out.println("Б меньше А");
+     System.out.println("А больше Б");
+}</span></pre>
+</td>
+<td>
+                    Вместо одной команды можно подставить блок команд. В остальном - то же самое.
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson04,type03"></button>--></td>
+<td class="monospace_text wide-text">
+<pre><b>if</b> (a {
+    a = 0;
+}
+<b>else</b>
+<span class="violet_text">{
+}</span></pre>
+</td>
+<td rowspan="3">
+                    Блок <b>else</b> можно не писать, если он пустой.<br/><br/>
+                    Данные три примера абсолютно эквиваленты. <br/><br/>
+                    Можно не писать скобочки, если нужно выполнить только одну команду. Если у нас несколько команд, то скобочки писать обязательно.
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson04,type04"></button>--></td>
+<td class="monospace_text wide-text">
+<pre><b>if</b> (a {
+    a = 0;
+}</pre>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson04,type05"></button>--></td>
+<td class="monospace_text wide-text">
+<pre><b>if</b> (a a = 0;</pre>
+</td>
+</tr>
+</table>
+<p>- Диего тут просил передать тебе несколько задачек.</p>
+<table class="table_task">
+<tr>
+<th style="width: 12px;"></th>
+<th>Условие</th>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level04,lesson04,task01"></button>1</td>
+<td>
+                    Реализовать метод <span class="taskcode">compare(int a)</span>. <br/>
+                    Метод должен выводить строку на экран "Число меньше 5", если параметр метода меньше 5 - и,
+                    выводить строку "Число больше 5", если параметр метода больше 5 - и,
+                    и выводить строку "Число равно 5", если параметр метода равен 5 - и.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level04,lesson04,task02"></button>2</td>
+<td>
+                    Реализовать метод <span class="taskcode">closeToTen</span>. <br/>
+                    Метод должен выводить на экран ближайшее к 10 из двух чисел, записанных в аргументах метода.Например, среди чисел 8 и 11 ближайшее к десяти 11.<br/>
+                    Если оба числа на равной длине к 10, то вывести на экран любое из них.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level04,lesson04,task03"></button>3</td>
+<td>
+                    Реализовать метод <span class="taskcode">checkInterval</span>.<br/>
+                    Метод должен проверять попало ли целое число в интервал от 50 до 100
+                    и сообщить результат на экран в следующем виде: "Число <span class="taskcode">а</span> не содержится в интервале." или "Число <span class="taskcode">а</span> содержится в интервале.",
+                    где <span class="taskcode">а</span> - аргумент метода.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level04,lesson04,task04"></button>4</td>
+<td>
+                    Реализовать метод <span class="taskcode">checkSeason</span>. <br/>
+                    По номеру месяца, метод должен определить время года (зима, весна, лето, осень) и вывести на экран.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level04,lesson04,task05"></button>5</td>
+<td>
+                    Ввести с клавиатуры число. Если число положительное, то увеличить его в два раза. Если число отрицательное, то прибавить единицу.
+                    Вывести результат на экран.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level04,lesson04,task06"></button>6</td>
+<td>
+                    Ввести с клавиатуры номер дня недели, в зависимости от номера вывести название «понедельник», «вторник», «среда», «четверг», «пятница», «суббота», «воскресенье»,
+                    если введен номер больше или меньше 7 – вывести «такого дня недели не существует».
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level04,lesson04,task07"></button>7</td>
+<td>
+                    Ввести с клавиатуры год, определить количество дней в году.<br/>
+                    Результат вывести на экран в следующем виде: "количество дней в году: x", где <span class="taskcode">х</span> - 366 для високосными года, <span class="taskcode">х</span> - 365 для обычного года.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level04,lesson04,task08"></button>8</td>
+<td>
+                    Ввести с клавиатуры три числа <span class="taskcode">а</span>, <span class="taskcode">b</span>, <span class="taskcode">c</span> – стороны предполагаемого треугольника.
+                    Определить возможность существования треугольника по сторонам.<br/>
+                    Результат вывести на экран в следующем виде:
+                    "Треугольник существует." - если треугольник с такими сторонами существует.
+                    "Треугольник не существует." - если треугольник с такими сторонами не существует.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level04,lesson04,task09"></button>9</td>
+<td>
+                    Работа светофора для пешеходов запрограммирована следующим образом: в начале каждого часа в течение трех минут горит зеленый сигнал,
+                    затем в течение одной минуты — желтый, а потом в течение одной минуты — красный, затем опять зеленый горит три минуты и т. д.
+                    Ввести с клавиатуры вещественное число <span class="taskcode">t</span>, означающее время в минутах, прошедшее с начала очередного часа.<br/>
+                    Определить, сигнал какого цвета горит для пешеходов в этот момент.
+                    Результат вывести на экран в следующем виде:
+                    "зеленый" - если горит зеленый цвет, "желтый" - если горит желтый цвет, "красный" - если горит красный цвет.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level04,lesson04,task10"></button>10</td>
+<td>
+                    Ввести с клавиатуры три целых числа. Определить, имеется ли среди них хотя бы одна пара равных между собой чисел.
+                    Если такая пара существует, вывести на экран числа через пробел. Если все три числа равны между собой, то вывести все три.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>5. Билаабо</h2>
+</div>
+<p>- Привет, Амиго. У нас на планете мы пользуемся более продвинутым Паскалем. Вот как это все выглядело бы на Паскале.</p>
+<table class="table_task double-wide-table font19">
+<tr>
+<th class="collapsed"></th>
+<th width="44%">Pascal</th>
+<th>Java</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson05,type01"></button>--></td>
+<td class="monospace_text wide-text" style="font-size: 30px"><pre><b>If</b> a Then
+    <span class="brown_text">WriteLn</span> ('a меньше b');</pre>
+</td>
+<td class="monospace_text wide-text"><pre><b>if</b> (a System.out.println("a меньше b");</pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson05,type02"></button>--></td>
+<td class="monospace_text wide-text"><pre><b>If</b> a Then
+    <span class="brown_text">WriteLn</span>('a меньше b')
+<b>Else</b> 
+    <span class="brown_text">WriteLn</span>('a больше b');</pre>
+</td>
+<td class="monospace_text wide-text"><pre><b>if</b> (a System.out.println("a меньше b");
+<b>else</b>
+    <span class="brown_text">System.out.println</span>("a больше b");</pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson05,type03"></button>--></td>
+<td class="monospace_text wide-text"><pre><b>If</b> a Then
+    <b>Begin</b>
+        <span class="brown_text">WriteLn</span>('a меньше b');
+        <span class="brown_text">WriteLn</span>('a меньше b');
+    <b>End</b>
+<b>Else</b> 
+    <b>Begin</b>
+        <span class="brown_text">WriteLn</span>('a больше b');
+        <span class="brown_text">WriteLn</span>('a больше b');
+    <b>End;</b>
+<b>End</b>;</pre>
+</td>
+<td class="monospace_text wide-text"><pre><b>if</b> (a System.out.println("a меньше b");
+    <span class="brown_text">System.out.println</span>("a меньше b");
+}
+<b>else</b>
+{
+    <span class="brown_text">System.out.println</span>("a больше b");
+    <span class="brown_text">System.out.println</span>("a больше b");
+}</pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson05,type04"></button>--></td>
+<td class="monospace_text wide-text"><pre><b>If</b> <span class="red_text">a</span> b <b>And</b> <span class="red_text">a</span> c <b>Then</b>
+    <span class="brown_text">WriteLn</span>(<span class="green_text">'a минимальное из a, b, c'</span>);</pre>
+</td>
+<td class="monospace_text wide-text"><pre><b>if</b> (<span class="red_text">a</span> b <b>&amp;&amp;</b> <span class="red_text">a</span> c)
+    <span class="brown_text">System.out.println</span>(<span class="green_text">"a минимальное из a, b, c"</span>);</pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson05,type05"></button>--></td>
+<td class="monospace_text wide-text"><pre><b>If</b> <span class="red_text">a</span> b <b>Or</b> <span class="red_text">a</span> c <b>Then</b>
+    <span class="brown_text">WriteLn</span>(<span class="green_text">'a или меньше b, или меньше c'</span>);</pre>
+</td>
+<td class="monospace_text wide-text"><pre><b>if</b> (<span class="red_text">a</span> b <b>||</b> <span class="red_text">a</span> c)
+    <span class="brown_text">System.out.println</span>(<span class="green_text">"a или меньше b, или меньше c"</span>);</pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson05,type06"></button>--></td>
+<td class="monospace_text wide-text"><pre><b>If Not</b> (a Then
+    <span class="brown_text">WriteLn</span>(<span class="green_text">'b меньше либо равно a'</span>)
+<b>Else</b>
+    <span class="brown_text">WriteLn</span>(<span class="green_text">'b больше a'</span>);</pre>
+</td>
+<td class="monospace_text wide-text"><pre><b>if</b> ( <b>!</b>(a System.out.println(<span class="green_text">"b меньше либо равно a"</span>);
+<b>else</b>
+    <span class="brown_text">System.out.println</span>(<span class="green_text">"b больше a"</span>);</pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson05,type07"></button>--></td>
+<td class="monospace_text wide-text"><pre><b>If</b> a Then
+    <b>Begin</b>
+        <b>If</b> a Then 
+            <span class="brown_text">WriteLn</span>(<span class="green_text">'a – это минимум'</span>)
+        <b>Else</b> 
+            <span class="brown_text">WriteLn</span>(<span class="green_text">'c – это минимум'</span>);
+    <b>End</b>
+<b>Else</b>
+    <b>Begin</b>
+        <b>If</b> b Then 
+            <span class="brown_text">WriteLn</span>(<span class="green_text">'b – это минимум'</span>)
+        <b>Else</b> 
+            <span class="brown_text">WriteLn</span>(<span class="green_text">'c – это минимум'</span>);
+    <b>End</b>;</pre>
+</td>
+<td class="monospace_text wide-text"><pre><b>if</b> (a if (a System.out.println(<span class="green_text">"a – это минимум"</span>);
+    <b>else</b>
+        <span class="brown_text">System.out.println</span>(<span class="green_text">"c – это минимум"</span>);
+}
+<b>else</b>
+{
+    <b>if</b> (b System.out.println(<span class="green_text">"b – это минимум"</span>);
+    <b>else</b>
+        <span class="brown_text">System.out.println</span>(<span class="green_text">"c – это минимум"</span>);
+}</pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson05,type08"></button>--></td>
+<td class="monospace_text wide-text"><pre><b>If</b> a And a Then
+    <span class="brown_text">WriteLn</span>(<span class="green_text">'a – это минимум'</span>)
+<b>Else If</b> b And b Then
+    <span class="brown_text">WriteLn</span>(<span class="green_text">'b – это минимум'</span>)
+<b>Else If</b> c And c Then
+    <span class="brown_text">WriteLn</span>(<span class="green_text">'c – это минимум'</span>);</pre></td>
+<td class="monospace_text wide-text"><pre><b>if</b> (a System.out.println(<span class="green_text">"a – это минимум"</span>);
+<b>else   if</b> (b System.out.println(<span class="green_text">"b – это минимум"</span>);
+<b>else   if</b> (c System.out.println(<span class="green_text">"c – это минимум"</span>);
+</pre></td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>6. Задачи на условные операторы</h2>
+</div>
+<p>- Хочу рассказать тебе немного <span class="green_text">о сравнении переменных в Java.</span> </p>
+<p>- Самые простые операторы сравнения ты уже знаешь – это меньше (&lt;) и больше (&gt;).</p>
+<p class="amigo">- Ага.</p>
+<p>- Так же есть «равно»(==) и «не равно»(!=). А еще «меньше либо равно»(&lt;=) и «больше либо равно»(&gt;=).</p>
+<p class="amigo">- О, это уже интереснее.</p>
+<p class="red_text">- Обрати внимание, что операторов «=&lt;» и «=&gt;» в Java нет!</p>
+<p>- <span class="orange_text">Знак «=» используется для операции присваивания</span>,<span class="violet_text"> поэтому для равенства используют «==» - два знака равно</span>. Для того, чтобы проверить, что переменные <span class="red_text">не равны</span>, используют «<span class="red_text">!=</span>»</p>
+<p class="amigo">- Ясно.</p>
+<p class="green_text">- При сравнении двух переменных в Java с использованием оператора «==», происходит сравнение того, что эти переменные в себе содержат.</p>
+<p>- Т.е. для переменных <span class="orange_text">примитивных типов</span> происходит <span class="orange_text">сравнение значений</span>.</p>
+<p>- Для переменных <span class="orange_text">ссылочных типов</span> происходит <span class="orange_text">сравнение ссылок</span>. Т.е. <span class="red_text">если объекты идентичны внутри, но ссылки на них разные, сравнение покажет, что они неравны</span>: результатом сравнения будет <b>false(ложь)</b>. <span class="violet_text">Сравнение ссылок будет <b>true(истина)</b>, только если обе ссылки указывают на один и тот же объект.</span></p>
+<p>- Для сравнения объектов по их внутреннему содержанию используют специальный метод <b>equals</b>. Этот метод (и все методы класса Object) добавляется компилятором в твой класс, даже если ты их не объявляешь. Поясняю на примерах:</p>
+<table class="table_example">
+<tr>
+<th width="40%">Код</th>
+<th>Пояснение</th>
+</tr>
+<tr>
+<td class="monospace_text">
+<pre>int a = 5;
+int b = 5;
+<span class="brown_text">System.out.println</span>(<span class="red_text">a == b</span>);</pre>
+</td>
+<td>Происходит сравнение <span class="red_text">примитивных</span> типов.<br/>На экран будет выведено <span class="red_text">true</span>.</td>
+</tr>
+<tr>
+<td class="monospace_text">
+<pre>Cat <span class="green_text">cat1 = new Cat("Vaska")</span>;
+Cat <span class="green_text">cat2 = cat1</span>;
+<span class="brown_text">System.out.println</span>(<span class="red_text">cat1 == cat2</span>);</pre>
+</td>
+<td>Происходит сравнение <span class="red_text">ссылок</span>.<br/>На экран будет выведено <b><span class="red_text">true</span></b>.<br/>Обе переменных хранят ссылки на <span class="red_text">один и тот же объект.</span></td>
+</tr>
+<tr>
+<td class="monospace_text">
+<pre>String <span class="green_text">s = new String("Mama")</span>;
+String <span class="green_text">s2 = s</span>;
+<span class="brown_text">System.out.println</span>(<span class="red_text">s == s2</span>);</pre>
+</td>
+<td>Происходит сравнение <span class="red_text">ссылок</span>.<br/>На экран будет выведено <b><span class="red_text">true</span></b>.<br/>Обе переменных хранят ссылки на <span class="red_text">один и тот же объект.</span></td>
+</tr>
+<tr>
+<td class="monospace_text">
+<pre>Cat <span class="green_text">cat1 = new Cat("Vaska")</span>;
+Cat <span class="blue_text">cat2 = new Cat("Vaska")</span>;
+<span class="brown_text">System.out.println</span>(<span class="green_text">cat1</span> <span class="red_text">==</span> <span class="blue_text">cat2</span>);</pre>
+</td>
+<td>Происходит сравнение <span class="red_text">ссылок</span>.<br/>На экран будет выведено <b><span class="red_text">false</span></b>.<br/>Переменные хранят ссылки на два идентичных объекта Cat, но не на один и тот же.</td>
+</tr>
+<tr>
+<td class="monospace_text">
+<pre>String <span class="green_text">s = new String("Mama")</span>;
+String <span class="blue_text">s2 = new String("Mama")</span>;
+<span class="brown_text">System.out.println</span>(<span class="green_text">s</span> <span class="red_text">==</span> <span class="blue_text">s2</span>);</pre>
+</td>
+<td>Происходит сравнение <span class="red_text">ссылок</span>.<br/>На экран будет выведено <b><span class="red_text">false</span></b>.<br/>Переменные хранят ссылки на два идентичных объекта String, но не на один и тот же.</td>
+</tr>
+<tr>
+<td class="monospace_text">
+<pre>Cat <span class="green_text">cat1 = new Cat("Vaska")</span>;
+Cat <span class="blue_text">cat2 = new Cat("Vaska")</span>;
+<span class="brown_text">System.out.println</span>(<span class="green_text">cat1</span>.<span class="red_text">equals</span>(<span class="blue_text">cat2</span>));</pre>
+</td>
+<td>Происходит <span class="red_text">сравнение объектов</span>.<br/>На экран будет выведено <b><span class="red_text">true</span></b>.<br/>Переменные хранят ссылки на два идентичных объекта Cat</td>
+</tr>
+<tr>
+<td class="monospace_text">
+<pre>String <span class="green_text">s = new String("Mama")</span>;
+String <span class="blue_text">s2 = new String("Mama")</span>;
+<span class="brown_text">System.out.println</span>(<span class="green_text">s</span>.<span class="red_text">equals</span>(<span class="blue_text">s2</span>));</pre>
+</td>
+<td>Происходит <span class="red_text">сравнение объектов</span>.<br/>На экран будет выведено <b><span class="red_text">true</span></b>.<br/>Переменные хранят ссылки на два идентичных объекта String</td>
+</tr>
+</table>
+<p>- И, кстати, чуть не забыл, вот тебе несколько заданий:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson06,task01"></button>
+<b>Задача 1.  Минимум двух чисел</b><br/><br/>
+                Ввести с клавиатуры два числа, и вывести на экран минимальное из них.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson06,task02"></button>
+<b>Задача 2.   Максимум четырех чисел</b><br/><br/>
+                Ввести с клавиатуры четыре числа, и вывести максимальное из них.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson06,task03"></button>
+<b>Задача 3.   Сортировка трех чисел</b><br/><br/>
+                Ввести с клавиатуры три числа, и вывести их в порядке убывания.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson06,task04"></button>
+<b>Задача 4.   Сравнить имена</b><br/><br/>
+                Ввести с клавиатуры два имени, и если имена одинаковые, вывести сообщение «Имена идентичны». <br/>Если имена разные, но их длины равны – вывести сообщение – «Длины имен равны». 
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson06,task05"></button>
+<b>Задача 5.   18+</b><br/><br/>
+                Ввести с клавиатуры имя и возраст. Если возраст меньше 18 вывести надпись «Подрасти еще»
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson06,task06"></button>
+<b>Задача 6.   И 18-ти достаточно</b><br/><br/>
+                Ввести с клавиатуры имя и возраст. <br/>Если возраст больше 20 вывести надпись «И 18-ти достаточно»
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson06,task07"></button>
+<b>Задача 7.   Три числа</b><br/><br/>
+                    Ввести с клавиатуры три целых числа. Одно из чисел отлично от двух других, равных между собой. Вывести на экран порядковый номер числа, отличного от остальных.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson06,task08"></button>
+<b>Задача 8.   Координатные четверти</b><br/><br/>
+                    Ввести с клавиатуры два целых числа, которые будут координатами точки, не лежащей на координатных осях OX и OY.
+                    Вывести на экран номер координатной четверти, в которой находится данная точка.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>7. Тип boolean</h2>
+</div>
+<p>- Привет, Амиго. Хочу рассказать тебе о новом типе данных. Это тип <span class="red_text">boolean</span>. Переменные этого типа могут принимать всего два значения – <b><span class="green_text">true</span></b> <span class="green_text">(истина/правда)</span> и <b><span class="dred_text">false</span></b> <span class="dred_text">(ложь)</span>. </p>
+<p class="amigo">- А как его использовать?</p>
+<p>- Этот тип неявно используется во многих местах. <span class="violet_text">Так же, как и результат любого сложения – число, то и результат любого сравнения – истина или ложь – тип <b>boolean</b></span>. Примеры:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th width="35%">Код</th>
+<th>Пояснение</th>
+</tr>
+<tr style="height: 60px;">
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson07,type01"></button>--></td>
+<td class="monospace_text"><span class="red_text"><b>boolean</b></span> m;</td>
+<td rowspan="2">Два данных выражения эквивалентны. Значение переменой типа <span class="red_text"><b>boolean</b></span> по умолчанию  <b>false</b> («ложь»).</td>
+</tr>
+<tr style="height: 60px;">
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson07,type02"></button>--></td>
+<td class="monospace_text"><span class="red_text"><b>boolean</b></span> m = <b>false</b>;</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson07,type03"></button>--></td>
+<td class="monospace_text"><pre><b>if</b> (a &gt; b) 
+    <span class="brown_text">System.out.println</span>(a);</pre>
+</td>
+<td rowspan="2">В переменную <span class="green_text">m</span> будет записан результат сравнения – <b>true</b> или <b>false</b>. Условие выполняется, если переданное в него выражение истинно – <b>true</b>. </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson07,type04"></button>--></td>
+<td class="monospace_text"><pre><span class="red_text"><b>boolean</b></span> <span class="green_text">m</span> = (a &gt; b);
+<b>if</b> (<span class="green_text">m</span>) 
+    <span class="brown_text">System.out.println</span>(a);</pre>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson07,type05"></button>--></td>
+<td class="monospace_text"><pre><span class="red_text"><b>boolean</b></span> m = (a &gt; b);
+<b>if</b> (m == <b>true</b>) 
+    <span class="brown_text">System.out.println</span>(a);</pre>
+</td>
+<td rowspan="2">Не нужно сравнивать логическую переменную (типа  <span class="red_text">boolean</span>) c <b>true</b> или <b>false</b>.<br/>Результат сравнения сам будет иметь тип <span class="red_text">boolean</span>, и в точности будет совпадать со значением сравниваемой переменой:<br/><span class="green_text">true == true – истина. Результат выражения – true.</span><br/><span class="red_text">true == false – ложь. Результат сравнения – false.</span>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson07,type06"></button>--></td>
+<td class="monospace_text"><pre><span class="red_text"><b>boolean</b></span> m = (a &gt; b);
+<b>if</b> (m) 
+    <span class="brown_text">System.out.println</span>(a);</pre>
+</td>
+</tr>
+</table>
+<p>- Еще примеры:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th width="60%">Код</th>
+<th>Пояснение</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson07,type07"></button>--></td>
+<td class="monospace_text"><pre>public <span class="red_text"><b>boolean</b></span> <span class="orange_text">isALessThenB</span> (int a, int b)
+{
+    <b>if</b> (a &lt; b)
+        return <b>true</b>;
+    <b>else</b> 
+        return <b>false</b>;
+}</pre>
+</td>
+<td rowspan="4">Данный метод проверяет, что число А меньше числа Б.<br/><br/>Показаны четыре эквивалентных записи сравнения. Внизу самая компактная и корректная. Всегда старайся использовать <span class="red_text">компактную</span> запись.
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson07,type08"></button>--></td>
+<td class="monospace_text"><pre>public <span class="red_text"><b>boolean</b></span> <span class="orange_text">isALessThenB</span> (int a, int b)
+{
+    <span class="red_text"><b>boolean</b></span> <span class="green_text">m</span> = (a &lt; b);
+    if (<span class="green_text">m</span>)
+        return <b>true</b>;
+    <b>else</b> 
+        return <b>false</b>;
+}</pre>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson07,type09"></button>--></td>
+<td class="monospace_text"><pre>public <span class="red_text"><b>boolean</b></span> <span class="orange_text">isALessThenB</span> (int a, int b)
+{
+    <span class="red_text"><b>boolean</b></span> <span class="green_text">m</span> = (a &lt; b);
+    <b>return</b> <span class="green_text">m</span>;
+}</pre>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson07,type10"></button>--></td>
+<td class="monospace_text"><pre><span class="red_text">public <span class="red_text"><b>boolean</b></span>  isALessThenB (int a, int b)</span>
+<span class="red_text">{</span>
+    <span class="red_text"><b><span class="red_text">return</span></b> a &lt; b;</span>
+<span class="red_text">}</span>
+</pre>
+</td>
+</tr>
+</table>
+<p class="amigo">- А что мне делать, если я хочу записать, выражение 0&lt;a&lt;b ?</p>
+<p>- Ну, выражений, которые включают три оператора, в Java нет, поэтому тут нужно воспользоваться такой конструкцией: <span class="green_text">(0&lt;a) И (a&lt;b)</span></p>
+<p class="amigo">- Так и писать И?</p>
+<p>- Подожди, сейчас все объясню.</p>
+<p>- В Java есть три логических оператора: <span class="orange_text">AND</span> (и), <span class="orange_text">OR</span> (или) и <span class="orange_text">NOT</span> (не). С помощью них можно строить условия различной сложности. Эти операторы можно применять только к выражению, имеющему тип <span class="red_text">boolean</span>.  Т.е. <span class="violet_text">(a+1) AND (3)</span> написать нельзя, а <span class="violet_text">(a&gt;1)AND (a&lt;3)</span> – можно. </p>
+<p>- Оператор <span class="orange_text">NOT</span> – унарный – его действие распространяется только на выражение справа от него. Он больше похож на знак «минус» перед отрицательным числом, чем на знак умножить</p>
+<p>- С переменными типа <span class="red_text">boolean</span> (логический тип) можно выполнять различные операции.</p>
+<p class="amigo">- А какие?</p>
+<p>- Вот сейчас мы их и рассмотрим:</p>
+<table class="table_example">
+<tr>
+<th style="text-align:center" width="20%">Логический oператор</th>
+<th style="text-align:center" width="20%">Обозначение в Java</th>
+<th style="text-align:center" width="30%">Выражение</th>
+<th style="text-align:center" width="30%">Результат</th>
+</tr>
+<tr>
+<td class="monospace_text" rowspan="4" style="text-align:center">AND (и)</td>
+<td class="monospace_text" rowspan="4" style="text-align:center">&amp;&amp;</td>
+<td class="monospace_text" style="text-align:center"><span class="green_text">true</span> &amp;&amp; <span class="green_text">true</span></td>
+<td class="monospace_text" style="text-align:center"><span class="green_text">true</span></td>
+</tr>
+<tr>
+<td class="monospace_text td2" style="text-align:center"><span class="green_text">true</span> &amp;&amp; <span class="red_text">false</span></td>
+<td class="monospace_text td2" style="text-align:center"><span class="red_text">false</span></td>
+</tr>
+<tr>
+<td class="monospace_text" style="text-align:center"><span class="red_text">false</span> &amp;&amp; <span class="green_text">true</span></td>
+<td class="monospace_text" style="text-align:center"><span class="red_text">false</span></td>
+</tr>
+<tr>
+<td class="monospace_text td2" style="text-align:center"><span class="red_text">false</span> &amp;&amp; <span class="red_text">false</span></td>
+<td class="monospace_text td2" style="text-align:center"><span class="red_text">false</span></td>
+</tr>
+<tr>
+<td class="monospace_text" rowspan="4" style="text-align:center">OR (или)</td>
+<td class="monospace_text" rowspan="4" style="text-align:center">||</td>
+<td class="monospace_text" style="text-align:center"><span class="green_text">true</span> || <span class="green_text">true</span></td>
+<td class="monospace_text" style="text-align:center"><span class="green_text">true</span></td>
+</tr>
+<tr>
+<td class="monospace_text td2" style="text-align:center"><span class="green_text">true</span> || <span class="red_text">false</span></td>
+<td class="monospace_text td2" style="text-align:center"><span class="green_text">true</span></td>
+</tr>
+<tr>
+<td class="monospace_text" style="text-align:center"><span class="red_text">false</span> || <span class="green_text">true</span></td>
+<td class="monospace_text" style="text-align:center"><span class="green_text">true</span></td>
+</tr>
+<tr>
+<td class="monospace_text td2" style="text-align:center"><span class="red_text">false</span> || <span class="red_text">false</span></td>
+<td class="monospace_text td2" style="text-align:center"><span class="red_text">false</span></td>
+</tr>
+<tr>
+<td class="monospace_text" rowspan="2" style="text-align:center">NOT(не)</td>
+<td class="monospace_text" rowspan="2" style="text-align:center">!</td>
+<td class="monospace_text" style="text-align:center">! <span class="green_text">true</span></td>
+<td class="monospace_text" style="text-align:center"><span class="red_text">false</span></td>
+</tr>
+<tr>
+<td class="monospace_text td2" style="text-align:center">! <span class="red_text">false</span></td>
+<td class="monospace_text td2" style="text-align:center"><span class="green_text">true</span></td>
+</tr>
+<tr>
+<td class="monospace_text" colspan="2" rowspan="4">Распространённые  комбинации и выражения</td>
+<td class="monospace_text" style="text-align:center">m &amp;&amp; !m</td>
+<td class="monospace_text" style="text-align:center"><span class="red_text">false</span></td>
+</tr>
+<tr>
+<td class="monospace_text td2" style="text-align:center">m || !m</td>
+<td class="monospace_text td2" style="text-align:center"><span class="green_text">true</span></td>
+</tr>
+<tr>
+<td class="monospace_text" style="text-align:center">! (a &amp;&amp; b)</td>
+<td class="monospace_text" style="text-align:center">!a || !b</td>
+</tr>
+<tr>
+<td class="monospace_text td2" style="text-align:center">! (a || b)</td>
+<td class="monospace_text td2" style="text-align:center">!a &amp;&amp; !b</td>
+</tr>
+</table>
+<p class="amigo">- А можно побольше примеров?</p>
+<p>- Конечно:</p>
+<table class="table_example">
+<tr>
+<th width="33%">Запись в Java</th>
+<th width="33%">Логическая запись</th>
+<th>Пояснение</th>
+</tr>
+<tr>
+<td class="monospace_text">(a&lt;3) &amp;&amp; (a&gt;0)</td>
+<td class="monospace_text">(a &lt; 3) AND  (a&gt;0)</td>
+<td class="monospace_text">a&lt;3  и  a&gt;0</td>
+</tr>
+<tr>
+<td class="monospace_text">(a&gt;10)|| (a&lt;100)</td>
+<td class="monospace_text">(a&gt;10) OR (a&lt;100)</td>
+<td class="monospace_text">a&gt;10   или   a&lt;100</td>
+</tr>
+<tr>
+<td class="monospace_text">(a&lt;b)&amp;&amp; (!(c&lt;=d))</td>
+<td class="monospace_text">(a&lt;b) AND (NOT (c&lt;=d))</td>
+<td class="monospace_text">a&lt;b  и (не (c&lt;=d))</td>
+</tr>
+</table>
+<p>- Реши пока немоного задачек.</p>
+<table class="table_task">
+<tr>
+<th style="width: 12px;"></th>
+<th>Условие</th>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level04,lesson07,task01"></button>1</td>
+<td>
+                    Ввести с клавиатуры целое число.<br/>
+                    Вывести на экран его строку-описание следующего вида:<br/>
+                    «отрицательное четное число» - если число отрицательное и четное,<br/>
+                    «отрицательное нечетное число» - если число отрицательное и нечетное,<br/>
+                    «нулевое число» - если число равно <span class="taskcode">0</span>,<br/>
+                    «положительное четное число» - если число положительное и четное,<br/>
+                    «положительное нечетное число» - если число положительное и нечетное.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level04,lesson07,task02"></button>2</td>
+<td>
+                    Ввести с клавиатуры целое число в диапазоне <span class="taskcode">1</span> - <span class="taskcode">999</span>. <br/>
+                    Вывести его строку-описание следующего вида:<br/>
+                    «четное однозначное число» - если число четное и имеет одну цифру,<br/>
+                    «нечетное однозначное число» - если число нечетное и имеет одну цифру,<br/>
+                    «четное двузначное число» - если число четное и имеет две цифры,<br/>
+                    «нечетное двузначное число» - если число нечетное и имеет две цифры,<br/>
+                    «четное трехзначное число» - если число четное и имеет три цифры,<br/>
+                    «нечетное трехзначное число» - если число нечетное и имеет три цифры.<br/>
+                    Если введенное число не попадает в диапазон <span class="taskcode">1</span> - <span class="taskcode">999</span>, в таком случае ничего не выводить на экран.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level04,lesson07,task03"></button>3</td>
+<td>
+                    Ввести с клавиатуры три целых числа. Вывести на экран количество положительных чисел в исходном наборе.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level04,lesson07,task04"></button>4</td>
+<td>
+                    Ввести с клавиатуры три целых числа.<br/>
+                    Вывести на экран количество положительных и количество отрицательных чисел в исходном наборе,
+                    в следующем виде:
+                    "количество отрицательных чисел: <span class="taskcode">а</span>", "количество положительных чисел: <span class="taskcode">b</span>", где <span class="taskcode">а</span>, <span class="taskcode">b</span> - искомые значения.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>8. Циклы</h2>
+</div>
+<p>- Привет.</p>
+<p class="amigo">- Привет, Элли!</p>
+<p>- Настало… <span class="red_text">время изучать циклы!</span> Циклы такая же простая штука, как и условия, только интересней. <span class="green_text">С помощью цикла можно выполнить какую-нибудь команду или блок команд несколько раз</span>. Общий вид цикла такой:</p>
+<table class="table_example" style="width:445px !important; margin: 10px auto;">
+<tr>
+<th>Цикл</th>
+</tr>
+<tr>
+<td class="monospace_text"><pre><b>while</b>(<span class="red_text">условие типа boolean</span>) 
+    <span class="green_text">команда</span>;
+</pre></td>
+</tr>
+<tr>
+<td class="monospace_text"><pre><b>while</b>(<span class="red_text">условие типа boolean</span>) 
+    <span class="blue_text">блок команд в фигурных скобках</span>
+</pre></td>
+</tr>
+</table>
+<p>- Все очень просто. <span class="green_text">Команда или блок команд выполняются снова и снова, пока условие цикла истинно – равно true.</span> Сначала проверяется условие, затем выполняется тело цикла (блок команд), затем снова проверяется условие и снова выполняется тело цикла. И так до тех пор, пока условие не станет ложным.</p>
+<p class="amigo">- А если оно всегда истинно или всегда ложно?</p>
+<p>- Если оно всегда истинно, программа никогда не прекратит работать и будет всегда выполнять цикл. А если всегда ложно, то тело цикла не выполнится ни разу. </p>
+<p>Примеры.</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th width="50%">Код</th>
+<th>Вывод на экран</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson08,type01"></button>--></td>
+<td class="monospace_text"><pre>int <span class="red_text">i</span> = 3;
+<b>while</b> (<span class="red_text">i</span> &gt;= 0)
+{
+    <span class="orange_text">System.out.println</span>(<span class="red_text">i</span>);
+    <span class="red_text">i</span>--;    <span class="grey_text">//уменьшение i на 1</span>
+}</pre></td>
+<td>    
+                    3<br/>2<br/>1<br/>0
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson08,type02"></button>--></td>
+<td class="monospace_text"><pre>int <span class="red_text">i</span> = 0;
+<b>while</b> (<span class="red_text">i</span> &lt; 3)
+{
+    <span class="orange_text">System.out.println</span>(<span class="red_text">i</span>);
+    <span class="red_text">i</span>++;   <span class="grey_text">//увеличение i на 1</span>
+}</pre></td>
+<td>    
+                    0<br/>1<br/>2
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson08,type03"></button>--></td>
+<td class="monospace_text"><pre>boolean <span class="red_text">isExit</span> = <b>false</b>;
+<b>while</b> (!<span class="red_text">isExit</span>)
+{
+    String <span class="blue_text">s</span> = <span class="orange_text">buffer</span>.readLine();
+    <span class="red_text">isExit</span> = <span class="blue_text">s</span>.<b>equals</b>(<span class="green_text">"exit"</span>);
+}</pre></td>
+<td>    
+                    Программа будет вводить строки с клавиатуры, пока не будет введена строка <span class="green_text">"exit"</span>.
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson08,type04"></button>--></td>
+<td class="monospace_text"><pre><b>while (true)</b> 
+    <span class="brown_text">System.out.println</span>(<span class="green_text">"C"</span>);</pre></td>
+<td>    
+                    Программа будет <span class="red_text">вечно</span> печатать на экран букву <span class="green_text">C</span>.
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson08,type05"></button>--></td>
+<td class="monospace_text"><pre><b>while (true) </b>
+{
+    String <span class="blue_text">s</span> = <span class="orange_text">buffer</span>.readLine();
+    if (<span class="blue_text">s</span>.<b>equals</b>(<span class="green_text">"exit"</span>)) 
+        <b>break</b>;
+}</pre></td>
+<td>    
+                    Программа будет вводить строки с клавиатуры, пока не будет введена строка <span class="green_text">"exit"</span>.
+                </td>
+</tr>
+</table>
+<p class="amigo">- Вроде и не сложно. После условий. Уже хочется попробовать.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>9. Билаабо</h2>
+</div>
+<p>- Привет друг. Билаабо сейчас расскажет, как это все выглядело бы на Паскале.</p>
+<table class="table_example">
+<tr>
+<th width="50%">Pascal</th>
+<th>Java</th>
+</tr>
+<tr>
+<td class="monospace_text"><pre><span class="red_text">i</span> := 3;
+<b>While</b> <span class="red_text">i</span> &gt;= 0 <b>Do</b>
+<b>Begin</b> 
+    <span class="brown_text">WriteLn</span>(<span class="red_text">i</span>);
+    <span class="red_text">i</span> := <span class="red_text">i</span> - 1;
+<b>End</b>;</pre></td>
+<td class="monospace_text"><pre>int <span class="red_text">i</span> = 3;
+<b>while</b> (<span class="red_text">i</span> &gt;= 0)
+{
+    <span class="brown_text">System.out.println</span>(<span class="red_text">i</span>);
+    <span class="red_text">i</span>--;
+}</pre></td>
+</tr>
+<tr>
+<td class="monospace_text"><pre><span class="red_text">i</span> := 0;
+<b>While</b> <span class="red_text">i</span> Do
+<b>Begin</b> 
+    <span class="brown_text">WriteLn</span>(<span class="red_text">i</span>);
+    <span class="red_text">i</span> := <span class="red_text">i</span> + 1;
+<b>End</b>;</pre></td>
+<td class="monospace_text"><pre>int <span class="red_text">i</span> = 0;
+<b>while</b> (<span class="red_text">i</span> System.out.println(<span class="red_text">i</span>);
+    <span class="red_text">i</span>++;
+}</pre></td>
+</tr>
+<tr>
+<td class="monospace_text"><pre><span class="red_text">isExit</span> := False;
+<b>While</b> Not <span class="red_text">isExit</span> <b>Do</b>
+<b>Begin</b>
+    <span class="orange_text">ReadLn</span>(s);
+    <span class="red_text">isExit</span> :=  (s = <span class="green_text">'exit'</span>);
+<b>End</b>;</pre></td>
+<td class="monospace_text"><pre>boolean <span class="red_text">isExit</span> = <b>false</b>;
+<b>while</b> (!<span class="red_text">isExit</span>)
+{
+    String <span class="blue_text">s</span> = <span class="orange_text">buffer</span>.readLine();
+    <span class="red_text">isExit</span> = <span class="blue_text">s</span>.equals(<span class="green_text">"exit"</span>);
+}</pre></td>
+</tr>
+<tr>
+<td class="monospace_text"><pre><b>While</b> True <b>Do</b>
+    <span class="brown_text">WriteLn</span>(<span class="green_text">'C'</span>);</pre></td>
+<td class="monospace_text"><pre><b>while (true)</b>
+    <span class="brown_text">System.out.println</span>(<span class="green_text">'C'</span>);</pre></td>
+</tr>
+<tr>
+<td class="monospace_text"><pre><b>While</b> True <b>Do</b>
+<b>Begin</b>
+    <span class="orange_text">ReadLn</span>(<span class="blue_text">s</span>);
+    <b>If</b>  <span class="blue_text">s</span> = <span class="green_text">'exit'</span> <b>Then</b> 
+        <b>Break</b>;
+<b>End</b>;</pre></td>
+<td class="monospace_text"><pre><b>while (true)</b> 
+{
+    String <span class="blue_text">s</span> = <span class="orange_text">buffer</span>.readLine();
+    if (<span class="blue_text">s</span>.<b>equals</b>("exit")) 
+        <b>break</b>;    
+}</pre></td>
+</tr>
+</table>
+<p class="amigo">- Ну, сравнение с Паскалем полезно тем, кто его знает.</p>
+<p>- А ты что - не знаешь? Это ж самый любимый язык на моей планете!</p>
+<p class="amigo">- Ладно, ладно. Верю, что это классный язык. И если бы я его уже знал, это бы мне помогло.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>10. Задачи на циклы</h2>
+</div>
+<p>- Привет, Амиго! </p>
+<p>- Я слышал, ты циклы выучил. Подкину-ка я тебе ещё пару задачек.</p>
+<table class="table_task">
+<tr>
+<th>Задачи на циклы</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson10,task01"></button>
+<b>1. 10 чисел</b><br/><br/>
+                Вывести на экран числа от 1 до 10, используя цикл <span class="taskcode">while</span>.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson10,task02"></button>
+<b>2. 10 чисел наоборот</b><br/><br/>
+                Вывести на экран числа от 10 до 1, используя цикл <span class="taskcode">while</span>.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson10,task03"></button>
+<b>3. Хорошего не бывает много</b><br/><br/>
+                Ввести с клавиатуры строку и число <span class="taskcode">N</span>.<br/>Вывести на экран строку <span class="taskcode">N</span> раз, используя цикл <span class="taskcode">while</span>.<br/>
+<br/>
+<span class="example-legacy">Пример ввода:</span><br/>
+<span class="example-data">абв<br/>2<br/></span>
+<span class="example-legacy">Пример вывода:</span><br/>
+<span class="example-data">абв<br/>абв</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson10,task04"></button>
+<b>4. S-квадрат</b><br/><br/>
+                Вывести на экран квадрат из 10х10 букв S используя цикл <span class="taskcode">while</span>.<br/>Буквы в каждой строке не разделять.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson10,task05"></button>
+<b>5. Таблица умноження</b><br/><br/>
+                Вывести на экран таблицу умножения 10х10 используя цикл <span class="taskcode">while</span>.<br/>Числа разделить пробелом.<br/>
+<br/>
+<span class="example-legacy">Example output:</span><br/>
+<table border="0" class="emptytable example-data">
+<tbody><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+<tr><td>2</td><td>4</td><td>6</td><td>8</td><td>10</td><td>12</td><td>14</td><td>16</td><td>18</td><td>20</td></tr>
+<tr><td>3</td><td>6</td><td>9</td><td>12</td><td>15</td><td>18</td><td>21</td><td>24</td><td>27</td><td>30</td></tr>
+<tr><td colspan="10" style="text-align: left">...</td></tr>
+</tbody></table>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>11. Цикл For</h2>
+</div>
+<p>- Хочу рассказать тебе ещё об одном цикле. <span class="green_text">Это цикл называется <b>for</b>. Это ещё одна запись цикла <b>while</b>, просто более компактная и удобная [для программистов].</span> Примеры:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th width="50%">while</th>
+<th>for</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson11,type01"></button>--></td>
+<td class="monospace_text wide-text"><pre><span class="green_text">int i = 3</span>;
+<b>while</b> (<span class="orange_text">i &gt;= 0</span>)
+{
+    System.out.println(i);
+    <span class="violet_text">i</span>--;
+}</pre></td>
+<td class="monospace_text wide-text"><pre><b>for</b> (<span class="green_text">int i = 3</span>; <span class="orange_text">i &gt;= 0</span>; <span class="violet_text">i</span>--)
+{
+    System.out.println(<span class="violet_text">i</span>);
+}</pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson11,type02"></button>--></td>
+<td class="monospace_text wide-text"><pre><span class="green_text">int i = 0</span>;
+<b>while</b> (<span class="orange_text">i )
+{
+    System.out.println(i);
+    <span class="violet_text">i</span>++;
+}</span></pre></td>
+<td class="monospace_text wide-text"><pre><b>for</b> (<span class="green_text">int i = 0</span>; <span class="orange_text">i ; <span class="violet_text">i</span>++)
+{
+    System.out.println(<span class="violet_text">i</span>);
+}</span></pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson11,type03"></button>--></td>
+<td class="monospace_text wide-text"><pre><span class="green_text">boolean isExit = false;</span>
+<b>while</b> (<span class="orange_text">!isExit</span>)
+{
+    String s = buffer.readLine();
+    isExit = s.equals("exit");
+}</pre></td>
+<td class="monospace_text wide-text"><pre><b>for</b> (<span class="green_text">boolean isExit = false</span>; <span class="orange_text">!isExit</span>; )
+{
+    String s = buffer.readLine();
+    isExit = s.equals("exit");
+}</pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson11,type04"></button>--></td>
+<td class="monospace_text wide-text"><pre><b>while</b> (<span class="orange_text">true</span>)
+    System.out.println("C");</pre></td>
+<td class="monospace_text wide-text"><pre><b>for </b>(; <span class="orange_text">true</span>; )
+    System.out.println("C");</pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson11,type05"></button>--></td>
+<td class="monospace_text wide-text"><pre><b>while</b> (<span class="orange_text">true</span>)
+{
+    String s = buffer.readLine();
+    if (s.equals("exit"))
+        break;    
+}</pre></td>
+<td class="monospace_text wide-text"><pre><b>for </b>(; <span class="orange_text">true</span>; )
+{
+    String s = buffer.readLine();
+    if (s.equals("exit"))
+        break;    
+}</pre></td>
+</tr>
+</table>
+<p class="amigo">- Эээ?</p>
+<p>- Данные циклы эквиваленты. <span class="green_text">Если <b>while</b> содержит в скобках одно условие, то <b><span class="green_text">for</span></b> – три.</span><span class="violet_text"> Но при компиляции <b>for</b> превращается в такой же цикл, как и  <b><span class="violet_text">while</span></b></span>. </p>
+<p>- Первое выражение в цикле <b>for</b> (<span class="green_text">выделено зеленым</span>) выполняется один раз до цикла. </p>
+<p>- <span class="orange_text">Второе выражение</span> выполняется каждый раз перед исполнением тела цикла – аналогично условию в цикле while.</p>
+<p>- <span class="violet_text">Третье</span> – каждый раз после исполнения тела цикла.</p>
+<p class="amigo">- А зачем нужен ещё один цикл. С <b>while</b> все прекрасно понятно.</p>
+<p>- <span class="orange_text">Это сделано для удобства программистов</span>. Циклы встречаются в программировании очень часто, и удобно, когда в одной строчке собрана информация о стартовом значении переменой, условии её изменения и команда, которая её меняет.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>12. Сравнение с паскалем</h2>
+</div>
+<p>- Амиго, ты не поверишь, но в Паскале есть цикл <b>For</b>. Он вообще есть практически во всех языках программирования. Только в Паскале он гораздо понятнее. Вот, смотри:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th width="50%">Pascal</th>
+<th>Java</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson12,type01"></button>--></td>
+<td class="monospace_text"><pre><b>For</b> <span class="red_text">i</span> := <span class="red_text">1</span> <b>to</b> <span class="red_text">10</span> <b>do</b>
+<b>Begin</b>
+    <span class="brown_text">Writeln</span>(<span class="red_text">i</span>);
+<b>End</b>;</pre></td>
+<td class="monospace_text"><pre><b>for</b> (int <span class="red_text">i</span> = <span class="red_text">1</span>; <span class="red_text">i</span> &lt;= <span class="red_text">10</span>; <span class="red_text">i</span>++)
+{
+    <span class="brown_text">System.out.println</span>(<span class="red_text">i</span>);
+}</pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson12,type02"></button>--></td>
+<td class="monospace_text"><pre><b>For</b> <span class="red_text">i</span> := <span class="red_text">1</span> <b>to</b> <span class="red_text">10</span> <b>do step</b> <span class="blue_text">2</span>
+<b>Begin</b>
+    <span class="brown_text">Writeln</span>(<span class="red_text">i</span>);
+<b>End</b>;</pre></td>
+<td class="monospace_text"><pre><b>for</b> (int <span class="red_text">i</span> = <span class="red_text">1</span>; <span class="red_text">i</span> &lt;= <span class="red_text">10</span>; <span class="red_text">i</span>= <span class="red_text">i</span> + <span class="blue_text">2</span>)
+{
+    <span class="brown_text">System.out.println</span>(<span class="red_text">i</span>);
+}</pre></td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level04,lesson12,type03"></button>--></td>
+<td class="monospace_text"><pre><b>For</b> <span class="red_text">i</span> := <span class="red_text">10</span> <span class="blue_text">downto</span> <span class="red_text">0</span> <b>do step</b> <span class="blue_text">2</span>
+<b>Begin</b>
+    <span class="brown_text">Writeln</span>(<span class="red_text">i</span>);
+<b>End</b>;
+</pre></td>
+<td class="monospace_text"><pre><b>for</b> (int <span class="red_text">i</span> = <span class="red_text">10</span>; <span class="red_text">i</span> &gt;= <span class="red_text">0</span>; <span class="red_text">i</span>= <span class="red_text">i</span> - <span class="blue_text">2</span>)
+{
+    <span class="brown_text">System.out.println</span>(<span class="red_text">i</span>);
+}</pre></td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>13. Задачи на for</h2>
+</div>
+<p>- Сегодня мой счастливый день. Я придумал для тебя 5 новых задач. Креативность так и прёт. Удачи  тебе мой друг. Она тебе понадобится…</p>
+<table class="table_task">
+<tr>
+<th>Задачи на отработку For</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson13,task01"></button>
+<b>1. Четные числа</b><br/><br/>
+                Используя цикл <span class="taskcode">for</span> вывести на экран чётные числа от 1 до 100 включительно.<br/>Через пробел либо с новой строки.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson13,task02"></button>
+<b>2. Рисуем прямоугольник</b><br/><br/>
+                Ввести с клавиатуры два числа <span class="taskcode">m</span> и <span class="taskcode">n</span>.<br/>Используя цикл <span class="taskcode">for</span> вывести на экран прямоугольник размером <span class="taskcode">m</span> на <span class="taskcode">n</span> из восьмёрок.<br/><br/>
+<i><u>Пример: m=2, n=4</u></i><br/>
+<span class="example-data">8888<br/>8888</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson13,task03"></button>
+<b>3. Рисуем треугольник</b><br/><br/>
+                Используя цикл <span class="taskcode">for</span> вывести на экран прямоугольный треугольник из восьмёрок со сторонами 10 и 10.<br/><br/>
+<span class="example-legacy">Пример:</span><br/>
+<span class="example-data">8<br/>88<br/>888<br/>...</span>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson13,task04"></button>
+<b>4. Рисуем линии</b><br/><br/>
+                Используя цикл <span class="taskcode">for</span> вывести на экран:<br/>-   горизонтальную линию из 10 восьмёрок<br/>-   вертикальную линию из 10 восьмёрок.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level04,lesson13,task05"></button>
+<b>5. Все любят Мамбу</b><br/><br/>
+                Ввести с клавиатуры имя и, используя цикл <span class="taskcode">for</span> 10 раз, вывести: [*имя* любит меня.]<br/><br/>
+<span class="example-legacy">Пример текста:</span><br/>
+<span class="example-data">Света любит меня.<br/>Света любит меня.<br/>…</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>14. Лекция про переменные и области видимости</h2>
+</div>
+<p>- Привет, Амиго. Как успехи?</p>
+<p class="amigo">- Отлично, профессор Нудлс. Уже выучили циклы for и while.</p>
+<p>- Это же великолепно. Так и знал, что профессор Нудлс – лучший преподаватель в мире. Вместе мы посрамим всех недалёких, которые утверждают, что надо  начинать с практики. Ты – моё живое доказательство, насколько это может быть живым для робота. Пройди по ссылке, и там ты найдешь что-то полезное для себя:</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/05/20/lecture-4.html" target="_blank">Дополнительные материалы по 4-му уровню</a></p>
+<p>- Обязательно прочти <a href="http://info.javarush.ru/javarush_articles/2015/12/02/%D0%A1%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2-%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0.html" target="_blank">статью о сравнении объектов</a>.</p>
+<p>- Для тебя будет полезным прочесть о <a href="http://www.quizful.net/interview/java/logical-operators" target="_blank">логических операторах в Java</a>.</p>
+<p>- Вот <a href="http://info.javarush.ru/javarush_articles/2015/12/03/%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D0%BD%D0%B0%D0%B4-%D0%BF%D1%80%D0%B8%D0%BC%D0%B8%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%BC%D0%B8-%D1%82%D0%B8%D0%BF%D0%B0%D0%BC%D0%B8-%D0%B2-Java.html" target="_blank">тут</a> ты узнаешь все операции над примитивными типами в Java.</p>
+<p>- Вот интересная статья о <a href="http://info.javarush.ru/javarush_articles/2015/12/03/%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D0%BE%D0%B4%D0%B0.html" target="_blank">операторах перехода break, continue и return</a>.</p>
+<p>- Ах, эти строки... Чуть не забыл, статья о <a href="http://info.javarush.ru/javarush_articles/2015/12/03/%D0%90%D1%85-%D1%8D%D1%82%D0%B8-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8-.html" target="_blank">строках в Java</a>.</p>
+<p>- Прочти о  <a href="http://old.intuit.ru/department/pl/javapl/5/3.html" target="_blank">областях видимости имен в Java</a>.</p>
+<p>- Погугли книгу <b>"Head First Java"</b>. Самое время почитать ее в перерывах между решением задач. Эта книга написана доступным языком, в ней простые и понятные объяснения. Эта книга идеальна в качестве первой книги по Джаве.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>15. Хулио</h2>
+</div>
+<p>- Привет, Амиго! Я был должен тебе сегодня что-то прочитать, но давай сначала посмотрим немного телевизор, а потом приступим?</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-04.gif" preload="none" tabindex="0" taskkey="level04,lesson15,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-04.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=5NbVwt7kIj0" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>16. Джон</h2>
+</div>
+<p>- Здорово, боец!</p>
+<p class="amigo">- Здравия желаю, капитан Бобров!</p>
+<p>- У меня для тебя шикарная новость. Вот тебе задания для закрепления полученных навыков. Выполняй их каждый день, и твои навыки будут расти с неимоверной скоростью. Они специально разработаны для выполнения их в Intellij IDEA.</p>
+<table class="table_task">
+<tr>
+<th>Дополнительные задания для выполнения в Intellij Idea</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>1. Я никогда не буду работать за копейки</b><br/><br/>
+                Используя цикл вывести на экран сто раз надпись:<br/>«Я никогда не буду работать за копейки. Амиго»
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>2. Среднее такое среднее</b><br/><br/>
+                Ввести с клавиатуры три числа, вывести на экран среднее из них, т.е. не самое большое и не самое маленькое.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>3. Посчитать сумму чисел</b><br/><br/>
+                Вводить с клавиатуры числа и считать их сумму. Если пользователь ввел -1, вывести на экран сумму и завершить программу.  -1 должно учитываться в сумме.
+                </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button>
+<b>4. Меня зовут 'Вася'...</b><br/><br/>
+                Ввести с клавиатуры строку name.<br/>Ввести с клавиатуры дату рождения (три числа): y, m, d.<br/>Вывести на экран текст:<br/>«Меня зовут name<br/>Я родился d.m.y»<br/>
+<br/>
+<span class="example-legacy">Пример:</span><br/>
+<span class="example-data">Меня зовут Вася<br/>Я родился 15.2.1988</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

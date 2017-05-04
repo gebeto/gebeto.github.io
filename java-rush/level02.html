@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-02.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 600px;">
+                    Уровень 2
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>JavaRush - обучения программированию на Java</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/02/image-ru-02-06.jpg"/>
+<p>Как насчет совсем нового подхода к изучению программирования и образованию вообще? Не похожего ни на что из того, что вы видели раньше. Как насчет обучения, где есть цель, средства и результат?</p>
+<p>Рад представить вам новые онлайн курсы обучения программированию на Java.</p>
+<p class="blue_text"><b>1 Обучение сделано в виде онлайн-игры</b></p>
+<p>Вы берете задание, выполняете его и получаете награду. Думаю вам это и понятно и привычно. Задачи будут самые  разнообразные: чтение кода, решение задач, видео-уроки,  исправление ошибок в коде, добавление новых фич, большие задачи, написание игр и многое другое.</p>
+<p>Возможно, вам даже придется писать программы для своего робота, чтобы сражаться со своими друзьями на «арене» или что-нибудь еще.</p>
+<p class="blue_text"><b>2 Только самое необходимое</b> </p>
+<p>Чтобы курс не растянулся на 5 лет, я выкинул из него все полезное и оставил только самое необходимое. Я проанализировал десятки вакансий на рынке труда. В курс включены все темы, которые нужно знать новичку <b>Java Junior Developer</b>, чтобы устроиться на работу. </p>
+<p class="blue_text"><b>3 Я основательно подошел к вашему обучению</b></p>
+<p> Полный курс содержит <b>500 мини-лекций и  1200(!) практических задач</b>. Задачи небольшие, но их много, очень много. Как раз тот минимум, выполнив который, вы получите столь ценный опыт.</p>
+<p>Также есть работа в парах, различные игры, большие задачи, реальные проекты и другие виды практики.</p>
+<p class="blue_text"><b>4 Вы не можете пройти игру до конца и не стать программистом</b></p>
+<p>Курс разбит на 40 уровней. Вы можете перейти на следующий уровень, только если решили большую часть задач текущего уровня. Начиная с маленьких и легких, и заканчивая большими и очень полезными. <b>Каждый, дошедший до конца, получит 300-500 часов практического опыта.</b>  Серьезная заявка на победу. И на работу. </p>
+<p class="blue_text"><b>5 Целенаправленная подготовка к собеседованию</b></p>
+<p>Последние 10 уровней посвящены написанию резюме,  подготовке к прохождению собеседования и навыкам работе в команде. Будут добавлены видео-записи собеседований и их разбор. Ну и, конечно, <b>типичные вопросы на собеседованиях с ответами</b>.</p>
+<p>Также вам пригодится «план развития программиста на 5 лет» и «карта дальнейших возможностей программиста» на следующие 5 лет.</p>
+<p class="blue_text"><b>6 Задачи можно решать прямо на сайте</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/02/image-ru-02-07.jpg"/>
+<p>Это очень удобно и эффективно. Только что в лекциях вы разбирали новую задачу, а теперь прямо тут же должны сделать свою по аналогии. Для тех, кто хочет решать задачи в  IDE, есть плагин, который позволяет <b>получить задачу за два клика, а сдать на проверку - за один.</b> </p>
+<p>Лекция, разбор примеров, решение задач прямо на сайте, решение задач в IDE – разрыв между теорией и практикой тонок, как никогда. </p>
+<p class="blue_text"><b>7 Мгновенная проверка задач (меньше секунды)</b></p>
+<p>Знакома ли вам ситуация, когда вы сдали задачу/работу на проверку, а результатов пришлось ждать неделю, т.к. проверяющий занят?</p>
+<p>В JavaRush вы узнаете результаты компиляции и проверки задачи <b>меньше чем через секунду</b>, после нажатия кнопки «Выполнить/Проверить»</p>
+<p class="blue_text"><b>8 JavaRush любит, когда вы сидите в Facebook  во время учебы </b></p>
+<p>В Facebook есть группа посвященная проекту. В ней вы можете обсудить задачи, поделится достижениями с друзьями, посмотреть видео-уроки или попросить помощи.</p>
+<p class="blue_text"><b>9 Охват материала</b></p>
+<p>В наших лекциях есть много ссылок на различные сайты, где вы можете почитать объяснения других лекторов.<b> Моя цель, чтобы вы поняли материал, а не слушали только меня.</b></p>
+<p class="blue_text"><b>10 Для того чтобы стать программистом вам нужны только мозги и компьютер</b> </p>
+<p>Это займет у вас от 3 до 6 месяцев, в зависимости от того, сколько времени вы будете уделять практике.</p>
+<p class="blue_text"><b>11 Поддержка</b></p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/02/image-ru-02-08.jpg"/>
+<p>Безусловно, у вас возникнут вопросы, когда вы будете решать тысячи задач. Мы запустили специальный сервис (<a href="http://help.javarush.ru" target="_blank">help.javarush.ru</a>), где вы можете задавать свои вопросы по задачам. Отвечать там будут другие javarush-студенты, модераторы, волонтеры или основатели сервиса.</p>
+<p class="blue_text"><b>12 Сообщество</b></p>
+<p>Мы верим, что сила – в единстве. Поэтому мы создали сообщество (<a href="http://info.javarush.ru" target="_blank">info.javarush.ru</a>), где вы можете задавать вопросы, обсуждать различные темы, делится статьями и вести блоги.</p>
+<p>К тому же, сообщество – это идеальное место, чтобы устроится на работу по знакомству. Поэтому не стесняйтесь задавать умные вопросы и давать умные ответы. Чем активнее вы себя ведете и помогаете другим, тем больше шансов, что другой член сообщества предложит вам присоединиться к его проекту.</p>
+<!--        <p class="blue_text"><b>13 Оплата</b></p>
+        <p>Курс состоит из 40 уровней. Первые 10 уровней доступны всем. Вполне достаточно, чтобы примерить на себя роль Java-программиста, оценить и свои силы и JavaRush. Уровни 11-40 доступны по подписке. Подписка стоит $30/месяц или $200 единоразово.</p>
+        <p>Так же вы можете приглашать друзей. Вам доступна специальная уникальная ссылка, которую вы можете размещать на форумах, в интернете или выслать друзьям. Все люди, которые зарегистрируются у нас на сайте после перехода по вашей ссылке, будут считаться вашими приглашенными. </p>
+        <p>За каждых 5 приглашенных, которые достигли 3-го уровня, можно «купить» подписку на месяц.</p>-->
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>1. Программа - это взаимодействие объектов.</h2>
+</div>
+<p>- Привет, Амиго. Сегодня я хочу рассказать тебе, как устроена типичная программа на Java.  Главная новость: <span class="green_text">Каждая  программа на Java состоит из классов и объектов.</span></p>
+<p class="amigo">- Что такое классы, я уже знаю. А что такое объекты?</p>
+<p>- Начну с аналогии. Представь, что ты хочешь сделать небольшой корабль. Сначала нужно сделать чертёж, затем отдать его на завод, где по этому чертежу соберут корабль. Или десяток. Да, вообще, сколько угодно кораблей. По одному чертежу строятся десятки идентичных кораблей, вот что важно.</p>
+<p>- В программировании на Java все точно так же.</p>
+<p>- <span class="green_text">Программист – он как проектировщик. Только проектировщик рисует чертежи, а Java-программист пишет классы.</span> <span class="violet_text">Затем на основе чертежей создаются детали, а на основе классов – объекты.</span></p>
+<p>- Сначала мы пишем классы (делаем чертежи), а потом, во время исполнения программы, на основе этих классов Java-машина создает объекты. Точно так же, как корабли создаются на основе чертежей. Чертёж один, но кораблей много. Корабли разные, у них разные имена, они возят разные грузы. Но они очень похожие: они все - корабли с идентичной конструкцией, и могут выполнять аналогичные задачи.</p>
+<p class="amigo">- На примере кораблей все понятно. А можно еще пару аналогий, чтобы я точно понял, о чем речь?</p>
+<p>- Вот, например, пчелы…</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/02/image-ru-02-09.gif" style="width:772px;height: 600px;margin-top: 0px;margin-bottom: 0px;"/>
+<p>- Хотя нет, что-то с пчелами у меня плохие ассоциации. Возьмем лучше муравейник.</p>
+<p class="orange_text">- Муравейник – это хороший пример взаимодействия объектов. В простейшем муравейнике есть три класса муравьёв: королева, воины и рабочие муравьи. Количество муравьёв каждого класса – разное.  Королева – одна на весь муравейник, воинов – десятки, а рабочих муравьёв – сотни. Три класса и сотни объектов. Муравьи взаимодействуют друг с другом, с такими же муравьями и муравьями других классов по жёстко заданным правилам. </p>
+<p>- Это просто идеальный пример. В типичной программе все точно так же. Есть главный объект, который создаёт объекты всех остальных классов. Объекты начинают взаимодействовать друг с другом и «внешним миром» программы. Внутри этих объектов жёстко запрограммировано их поведение. </p>
+<p class="amigo">- Не совсем понятно. Вернее, совсем не понятно.</p>
+<p>- Два этих пояснения – это две стороны одной медали. Истина посередине. Первый пример (про чертеж и корабли) показывает связь между классом и объектами этого класса. Аналогия очень сильная. Второй пример (про муравейник) показывает связь между объектами, которые существуют во время работы программы, и написанными классами.</p>
+<p class="amigo">- Ты хочешь сказать, что сначала мы должны написать классы для всех существующих в программе объектов, а потом ещё и описать их взаимодействие?</p>
+<p>- Да, но это легче чем кажется. В Java все сущности во время работы программы являются объектами, а написание программы сводится к описанию различных способов взаимодействия объектов. Объекты просто вызывают методы друг друга и передают в них нужные данные.</p>
+<p class="amigo">- Не совсем очевидно, но почти понятно.</p>
+<p class="amigo">- А как узнать, какие методы вызывать, и какие данные туда передавать?</p>
+<p>- У каждого класса есть описание, в котором говорится – для чего он создан. Также и у каждого его метода есть описание: что он делает, и какие данные нужно в него передавать. Чтобы использовать класс, нужно в общих чертах знать, что он делает. А также нужно точно знать, что делает каждый его метод. И совсем <span class="red_text">не обязательно знать, как он это делает</span>. Такая себе волшебная палочка. </p>
+<p class="amigo">- Хм. Звучит заманчиво.</p>
+<p>- Вот посмотри на код класса, который копирует файл:</p>
+<table class="table_task wide-table">
+<tr>
+<th class="collapsed"></th>
+<th>Копирование файла c:\data.txt в файл c:\result.txt</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson01,type01"></button>--></td>
+<td class="monospace_text wide-text">
+<pre class="wide-text">
+<b>package</b> com.javarush.lesson2;
+<b>import</b> java.io.FileInputStream;
+<b>import</b> java.io.FileOutputStream;
+<b>import</b> java.io.IOException;
+
+<b>public class</b> FileCopy
+{
+    <b>public static void</b> main(String[] args) <b>throws</b> IOException
+    {
+        <span class="green_text">FileInputStream  <b>fileInputStream</b></span> = new FileInputStream(<span class="grey_text">"c:\\data.txt"</span>);
+        <span class="blue_text">FileOutputStream  <b>fileOutputStream</b></span> = new <span class="blue_text">FileOutputStream</span>(<span class="grey_text">"c:\\result.txt"</span>);
+
+        <b>while</b> (<span class="green_text">fileInputStream</span>.<b>available</b>() &gt; 0)
+        {
+            <b>int</b> <span class="dred_text">data</span> = <span class="green_text">fileInputStream</span>.<b>read</b>();
+            <span class="blue_text">fileOutputStream</span>.<b>write</b>(<span class="dred_text">data</span>);
+        }
+
+        <span class="green_text">fileInputStream</span>.<b>close</b>();
+        <span class="blue_text">fileOutputStream</span>.<b>close</b>();
+    }
+}
+            </pre>
+</td>
+</tr>
+</table>
+<p class="amigo">- Не то, чтобы все понятно, но суть уже улавливаю.</p>
+<p>- Отлично. Тогда – до следующего урока.</p>
+<p>- Чуть не забыла. Вот тебе задачка от Диего.</p>
+<table class="table_task">
+<tr>
+<th style="width: 12px;"></th>
+<th>Условие</th>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level02,lesson01,task01"></button>1</td>
+<td>
+                    Реализуй метод <span class="taskcode">print</span>. Метод должен вывести на экран переданную строку 4 раза. Каждый раз с новой строки.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>2. Переменные, примитивные типы </h2>
+</div>
+<p>- Привет, бесплатный работник. </p>
+<p>- Т.е. я хотел сказать «Здорова, Амиго». Хочу рассказать тебе о внутреннем устройстве переменных. Ты уже знаешь, что <span class="green_text">у каждой переменной есть область памяти, привязанная к ней, где эта переменная хранит своё значение.</span></p>
+<p class="amigo">- Ага. Ты рассказывал это в прошлый раз.</p>
+<p>- Отлично. Хорошо, что ты это помнишь. Тогда продолжу.</p>
+<p>- <span class="red_text">Все сложные типы состоят из более простых</span>. Те, в свою очередь, из ещё более простых. Пока, наконец, дело не доходит до самых <b>примитивных</b>, неделимых типов. Их так и называют – <b>примитивные типы</b>. Например, <b>int</b> – это один из примитивных типов, а <b>String</b> – это уже сложный тип, хранящий свои данные в виде таблицы символов (где каждый символ - это примитивный тип - <b>char</b>).</p>
+<p class="amigo">- Очень интересно. Продолжай.</p>
+<br/>
+<p>- Сложные типы образуются из простых путём группировки. Такие типы мы называем <span class="violet_text">классами</span>. Когда мы описываем в программе новый класс – это значит, что мы объявляем новый <span class="violet_text">сложный составной тип</span>, данные которого будут или другими сложными типами, или примитивными типами. </p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th width="40%">Код на Java</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson02,type01"></button>--></td>
+<td class="monospace_text wide-text">
+<p><b>public class</b> <span class="blue_text">Person</span></p>
+<p><b>{</b></p>
+<p>   <span class="green_text">String name</span>;</p>
+<p>   <span class="violet_text">int age;</span></p>
+<p><b>}</b></p>
+</td>
+<td>
+                    Объявили новый сложный тип – <span class="blue_text">Person</span>. <br/>Его данные – это переменная <span class="green_text">name</span> типа <span class="green_text">String</span>(сложный тип) и переменная <span class="violet_text">age</span> типа <span class="violet_text">int</span>(примитивный тип)
+
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson02,type02"></button>--></td>
+<td class="monospace_text wide-text">
+<p><b>public class</b> <span class="dred_text">Rectangle</span></p>
+<p><b>{</b></p>
+<p>   <b>int x, y, width, height;</b></p>
+<p><b>}</b></p>
+</td>
+<td>
+                    Объявили новый сложный тип – <span class="dred_text">Rectangle</span>.<br/>Он состоит из четырёх переменных примитивного типа – <b>int</b>.
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson02,type03"></button>--></td>
+<td class="monospace_text wide-text">
+<p><b>public class</b> <span class="blue_text">Cat</span></p>
+<p><b>{</b></p>
+<p>   <span class="green_text">Person owner</span>;</p>
+<p>   <span class="violet_text">Rectangle territory;</span></p>
+<p>   <span class="orange_text">int age;</span></p>
+<p>   <b>String name;</b></p>
+<p><b>}</b></p>
+</td>
+<td>
+                    Объявили новый сложный тип – Cat. У него есть переменные: <br/>
+                    -   <span class="green_text">owner</span>, сложный тип <span class="green_text">Person</span><br/>  
+                    -   <span class="violet_text">territory</span>, сложный тип <span class="violet_text">Rectangle</span><br/>
+                    -   <span class="orange_text">age</span>, примитивный тип <span class="orange_text">int</span><br/>
+                    -   <b>name</b>, сложный тип <b>String</b>
+</td>
+</tr>
+</table>
+<p class="amigo">- Всё пока ещё понятно, как ни странно.</p>
+<p>- Т.к. большие (сложные) типы содержат в себе много маленьких (примитивных), то их объекты занимают много памяти. Больше, чем обычные переменные примитивных типов. Иногда намного больше. Присваивание таких переменных выполнялось очень долго и требовало копирования больших объёмов памяти.  Поэтому <span class="red_text">переменные сложных типов хранят в себе не сам объект, а всего лишь ссылку на него!</span> Т.е. четырёхбайтовый адрес. Этого хватает, чтобы можно было обращаться к данным этих объектов. Всю сложность, связанную с этим, берет на себя Java-машина. </p>
+<p class="amigo">- Ничего не понял.</p>
+<p>- Мы уже говорили, что переменная – это как коробка. Если ты хочешь сохранить в ней число 13, то ты можешь написать его на листе и положить в коробку.</p>
+<p>- Но представь, что тебе надо сохранить в коробку (переменную) что-нибудь побольше. Например, собаку, машину или твоего соседа Васю. Чтобы не пихать в коробку невпихиваемое, можно поступить проще: вместо собаки взять ее фото, вместо машины – ее номер, вместо Васи – его номер телефона. </p>
+<p>- Вот мы берем лист бумаги и пишем на нем телефонный номер Васи. Это и будет аналогом ссылки на объект. Если мы достанем из коробки лист с номером Васи, отксерим его и положим в несколько коробок, то количество ссылок на Васю увеличится, но Вася как был один, так и остался. Что, в общем-то, логично.</p>
+<p>- Особенность такого хранения данных в том, что <span class="green_text">ссылок может быть много, а объект – один</span>.</p>
+<p class="amigo">- Очень интересно. Почти понял, кстати. Ответь только еще раз: что будет, если я одной переменной сложного типа присвою другую переменную сложного типа?</p>
+<p>- Тогда эти две переменные будут содержать одинаковые адреса. И, значит, <span class="dred_text">изменение данных, хранящихся в одной переменой сложного типа, приведёт к изменению данных, хранящихся в другой</span>. <b>Объект-то</b>, на который они хранят ссылки, реально <b>всего один</b>. А переменных, хранящих на него ссылки, может быть очень много.</p>
+<p class="amigo">- А что хранится в переменных сложных (ссылочных/классовых) типов, пока там ещё нет ссылки на объект? Такое вообще может быть? </p>
+<p>- Да, Амиго. Ты опередил меня своим вопросом. Такое может быть. Если в переменной ссылочного (сложного) типа ещё нет ссылки на какой-то объект, то она хранит null – специальную «пустую ссылку». На самом деле, она просто хранит адрес объекта равный 0. Но Java-машина никогда не создаёт объекты с таким адресом, и поэтому всегда знает, что если переменная-ссылка содержит 0, то никакого объекта там нет.</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th width="40%">Код на Java</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson02,type04"></button>--></td>
+<td class="monospace_text">
+<p>String s;</p>
+<p>String s = null;</p>
+</td>
+<td>
+                    Эквивалентные записи.    
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson02,type05"></button>--></td>
+<td class="monospace_text">
+<p class="red_text">Person person; </p>
+<p class="green_text">person = new Person();</p>
+<p class="violet_text">person = null;</p>
+</td>
+<td>
+<span class="red_text">Создали переменную person, её значение null.</span><br/>
+<span class="green_text">Занесли в неё адрес новосозданного объекта.</span><br/>
+<span class="violet_text">Присвоили переменной ссылку null.</span>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson02,type06"></button>--></td>
+<td class="monospace_text">
+<p class="red_text">Cat cat = new Cat();</p>
+<br/>
+<p class="green_text">cat.owner = new Person();</p>
+<br/>
+<p class="violet_text">cat.owner.name = "God";</p>
+</td>
+<td>
+<span class="red_text">Создали объект Cat, занесли его ссылку в переменную cat. cat.owner равен null.</span><br/>
+<span class="green_text">Занесли в cat.owner ссылку на новосозданный объект Person.<br/>cat.owner.name пока ещё null.
+</span><br/>
+<span class="violet_text">cat.owner.name присвоили имя – God.</span>
+</td>
+</tr>
+</table>
+<p class="amigo">- Я правильно понял? Переменные делятся на два типа: примитивные и ссылочные. Примитивные типы у себя внутри хранят значение, а ссылочные – ссылку на объект. Примитивные типы – это int, char, boolean и ещё немного, а ссылочные типы – это все остальные, и образуются они с помощью классов.</p>
+<p>- Абсолютно верно, мальчик мой.</p>
+<p>- Раз ты все понял, вот тебе задачи на закрепление материала.</p>
+<table class="table_task">
+<tr>
+<th style="width: 12px;"></th>
+<th>Условие</th>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level02,lesson02,task01"></button>1</td>
+<td>
+                    В классе <span class="taskcode">Person</span> объяви следующие переменные: <span class="taskcode">name</span> типа <span class="taskcode">String</span>, <span class="taskcode">age</span> типа <span class="taskcode">int</span>,
+                    <span class="taskcode">weight</span> типа <span class="taskcode">int</span>, <span class="taskcode">money</span> типа <span class="taskcode">int</span>.
+                    В методе <span class="taskcode">main</span> создай объект <span class="taskcode">Person</span>, занеси его ссылку в переменную <span class="taskcode">person</span>.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level02,lesson02,task02"></button>2</td>
+<td>
+                    Реализуй метод <span class="taskcode">public static int subtraction(int a, int b)</span>. Метод возвращает результат вычитания из числа <span class="taskcode">a</span> числа <span class="taskcode">b</span>.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level02,lesson02,task03"></button>3</td>
+<td>
+                    В методе <span class="taskcode">main</span> создай объект <span class="taskcode">Man</span>, занеси его ссылку в переменную <span class="taskcode">man</span>.
+                    Создай также объект <span class="taskcode">Woman</span> и занеси его ссылку в переменную <span class="taskcode">woman</span>.
+                    В <span class="taskcode">man.wife</span> занеси ссылку на новосозданный объект <span class="taskcode">Woman</span>.
+                    В <span class="taskcode">woman.husband</span> занеси ссылку на новосозданный объект <span class="taskcode">Man</span>.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level02,lesson02,task04"></button>4</td>
+<td>
+                    Реализуй метод <span class="taskcode">public static void salary(int a)</span>.<br/>
+                    Метод должен увеличить переданное число на 100 и вывести на экран надпись: «Твоя зарплата составляет: a долларов в месяц.».
+                    Где a - это число, которое увеличили на 100.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level02,lesson02,task05"></button>5</td>
+<td>
+                    Подумайте, что делает программа.<br/>
+                    По аналогии с методом <span class="taskcode">printName(Student student)</span>, в метод <span class="taskcode">main</span> добавьте вызовы методов <span class="taskcode">printAge(Student student)</span> и <span class="taskcode">printMoney(Student student)</span>.
+                </td>
+</tr>
+<tr style="height: 70px;">
+<td><button class="task_button" taskkey="level02,lesson02,task06"></button>6</td>
+<td>
+                    В методе <span class="taskcode">main</span> обьявите две целочисельные переменные <span class="taskcode">a</span> и <span class="taskcode">b</span> типа <span class="taskcode">int</span>. Присвойте им любые значения.
+                    Выведите на экран их сумму и произведение. <br/>
+                    Каждое значение выводить с новой строки.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>3. Что такое объекты.</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/02/image-ru-02-02.jpg" style="width:624px;height:352px; "/>
+<p>- Это снова твоя любимая учительница.  Раз у нас так быстро пошли дела, решила рассказать тебе, что такое объекты, и как с ними работать. </p>
+<p>- <span class="green_text">Чтобы создать какой-нибудь объект, нужно написать имя типа (класс) этого объекта и ключевое слово new перед ним</span>. Допустим, у нас есть класс «кот» – Cat, тогда: </p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th width="35%">Код</th>
+<th>Описание</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"></td>
+<td class="monospace_text">
+<span class="green_text"><b>Cat</b> cat;</span>
+</td>
+<td>
+<span class="green_text">Объявляет ссылочную переменную с именем <b>cat</b> и типом <b>Cat</b>.</span> Значение переменной cat – ссылка null.   
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson03,type01"></button>--></td>
+<td class="monospace_text">
+<span class="blue_text"><b>new</b> Cat();</span>
+</td>
+<td>
+<span class="blue_text">Создаёт объект типа <b>Cat</b>.</span>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"></td>
+<td class="monospace_text">
+<span class="green_text">Cat cat</span> = <span class="blue_text"><b>new</b> Cat();</span>
+</td>
+<td>
+<span class="green_text">Создаёт ссылочную переменную cat типа Cat.</span> <br/><span class="blue_text">Создаёт новый объект типа Cat</span>. Присваивает в переменную cat ссылку на новосозданный объект.
+ 
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson03,type02"></button>--></td>
+<td class="monospace_text">
+<span class="orange_text">Cat murzik = new Cat();<br/>Cat vaska = new Cat();</span>
+</td>
+<td>
+<span class="orange_text">Создаются два объекта, ссылки на которые присваиваются двум разным переменным соответственно.</span>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson03,type03"></button>--></td>
+<td class="monospace_text">
+<span class="green_text">Cat murzik = new Cat();<br/>
+                    Cat vaska = new Cat();</span><br/><br/>
+<span class="blue_text">vaska = murzik;</span>
+</td>
+<td>
+<span class="green_text">Создаются два объекта, ссылки на которые присваиваются двум разным переменным.</span>
+<br/><br/>
+<span class="blue_text">Затем, переменной vaska присваивается ссылка на объект, содержащийся в переменной murzik.</span> Теперь обе переменных ссылаются на первый созданный объект. <br/>
+                    (На второй больше никто не ссылается – второй объект считается мусором)
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson03,type04"></button>--></td>
+<td class="monospace_text">
+<span class="orange_text">Cat murzik = new Cat();<br/>
+                    Cat vaska = null;</span><br/><br/>
+<span class="blue_text">vaska = murzik;</span><br/><br/>
+<span class="dred_text">murzik = null;</span>
+</td>
+<td>
+<span class="orange_text">Создаётся один объект типа Cat, ссылка на который заносится в первую переменную (murzik), вторая переменная (vaska) содержит пустую (нулевую) ссылку.</span><br/><br/>
+<span class="blue_text">Обе переменных ссылаются на один объект.</span><br/><br/>
+<span class="dred_text">Теперь только vaska ссылается на объект, но не murzik.</span>
+</td>
+</tr>
+</table>
+<p class="amigo">- А что будет, если просто создать объект и не присваивать его [ссылку] никакой переменной?</p>
+<p>- Если просто создать объект и не присвоить его никакой переменной, то Java-машина создаст его и тут же объявит его мусором (неиспользуемым объектом).  А через некоторое время удалит его в процессе «сборки мусора».</p>
+<p class="amigo">- А как мне уничтожить объект, если он мне больше не нужен?</p>
+<p>- Никак. <span class="dred_text">Как только не останется ни одной переменной, хранящей ссылки на данный объект, он будет помечен как мусор и убран: уничтожен Java-машиной при следующей «сборке мусора».</span> </p>
+<p><span class="green_text">Пока есть хоть одна ссылка на объект, он считается живым и уничтожаться не будет.</span> Если хочешь побыстрее уничтожить объект – обнули все ссылки на него: присвой всем переменным, ссылающимся на него, значение <b>null</b>.</p>
+<p class="amigo">- Понятно. Вроде и не сложно совсем после предыдущих уроков.</p>
+<p>- Диего вчера сидел всю ночь и придумывал для тебя интересные задачи. Специально для тебя старался. У него отличное чувство юмора, кстати:</p>
+<table class="table_task">
+<tr>
+<th></th>
+<th>Условие</th>
+</tr>
+<tr>
+<td>
+<button class="task_button" taskkey="level02,lesson03,task01"></button>1</td>
+<td>
+<br/>
+                    Создать объект типа <span class="taskcode">Cat</span> 2 раза.<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level02,lesson03,task02"></button>2</td>
+<td>
+<br/>
+                    Создать 3 объекта типа <span class="taskcode">Dog</span> (собака) и присвоить им имена "Max", "Bella", "Jack".<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level02,lesson03,task03"></button>3</td>
+<td>
+<br/>
+                    Напиши программу, которая выводит на экран надпись: «Будешь плохо кодить, придет Java и съест твою память».<br/>
+<br/>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar risha"></div>
+<h2>4. Риша</h2>
+</div>
+<p>- Привет, мой любимый ученик. Сейчас я расскажу тебе о <b>видимости переменных.</b> </p>
+<p class="amigo">- А что, бывают и невидимые переменные?</p>
+<p>- Нет, <span class="green_text">под «видимостью переменных» подразумевают места в коде, где к этой переменной можно обратиться.</span> <span class="orange_text">К некоторым переменным можно обращаться отовсюду в программе, к другим только в пределах их класса, к третьим же только внутри одного метода.</span></p>
+<p>- Например, ты не можешь обратиться к переменной раньше, чем она объявлена.</p>
+<p class="amigo">- Логично.</p>
+<p>- Вот несколько примеров:</p>
+<img alt="" src="https://javarush.ru/levels/images/lessons/02/image-ru-02-03.jpg"/>
+<p class="red_text">1 Переменная, объявленная в методе, существует/видна с начала объявления до конца метода.</p>
+<p class="orange_text">2 Переменная, объявленная в блоке кода, существует до конца этого блока кода.</p>
+<p class="blue_text">3 Переменные - аргументы метода - существуют везде внутри метода.</p>
+<p class="green_text">4 Переменные класса/объекта существуют все время жизни содержащего их объекта. Их видимость дополнительно регулируется специальными модификаторами доступа: public, private.</p>
+<p class="violet_text">5 Статические переменные классов существуют все время работы программы. Их видимость также определяется модификаторами доступа. </p>
+<p class="amigo">- Обожаю картинки, на них все всегда понятно.</p>
+<p>- Молодец, Амиго. Всегда знал, что ты сообразительный малый. </p>
+<p>- Еще расскажу тебе про «<span class="red_text">модификаторы доступа</span>». Да не пугайся ты так, ничего сложного в них нет. Это слова <b>public</b> и <b>private</b>, которые ты видишь.</p>
+<p class="amigo">- А я и не пугаюсь – это  у меня глаз дергается.</p>
+<p>- Верю, верю. Ты можешь управлять доступом (видимостью) методов и переменных твоего класса из других классов. Каждому методу или переменной можно указывать только один модификатор доступа.</p>
+<p>1 Модификатор «<b>public</b>».</p>
+<p class="green_text">К переменной, методу или классу, помеченному модификатором public, можно обращаться из любого места программы. Это самая высокая степень открытости - никаких ограничений нет. </p>
+<p>2 Модификатор «<b>private</b>».</p>
+<p class="dred_text">К переменной или методу, помеченному модификатором <b>private</b>, можно обращаться только из того же класса, где он объявлен. Для всех остальных классов помеченный метод или переменная -  невидимы и «как бы не существуют». Это самая высокая степень закрытости – только свой класс.</p>
+<p>3 Без модификатора.</p>
+<p>Если переменная или метод не помечены никаким модификатором, то считается, что они помечены «модификатором по умолчанию». Переменные или методы с таким модификатором (т.е. вообще без какого-нибудь) видны всем классам пакета, в котором они объявлены. И только им. Этот модификатор еще иногда называют «<b>package</b>», намекая, что доступ к переменным и методам открыт для всего пакета, в котором находится их класс</p>
+<p>Таблица с пояснением:</p>
+<table class="simple_table">
+<tr>
+<td rowspan="2">Модификаторы</td>
+<td colspan="3" style="text-align: center">Доступ из…</td>
+</tr>
+<tr>
+<td>Своего класса</td>
+<td>Своего пакета</td>
+<td>Любого класса</td>
+</tr>
+<tr>
+<td><b>private</b></td>
+<td><span class="green_text">Есть</span></td>
+<td><span class="red_text">Нет</span></td>
+<td><span class="red_text">Нет</span></td>
+</tr>
+<tr>
+<td>нет модификатора (<b>package</b>)</td>
+<td><span class="green_text">Есть</span></td>
+<td><span class="green_text">Есть</span></td>
+<td><span class="red_text">Нет</span></td>
+</tr>
+<tr>
+<td><b>public</b></td>
+<td><span class="green_text">Есть</span></td>
+<td><span class="green_text">Есть</span></td>
+<td><span class="green_text">Есть</span></td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>5. Диего</h2>
+</div>
+<p>- Привет, дружище. Я сберёг для тебя копию контракта, если что. Этот подлый скряга Риша пребывает в счастливом неведении. <b>Видел бы ты цифры в моем контракте</b>. Хе-хе.</p>
+<p class="amigo">- Молодец, Диего. Я думаю, ты научишь меня реально полезным вещам.</p>
+<p>- Конечно, Амиго. <b class="orange_text">В большом мире слишком много глупцов, которые хотят разбогатеть, ничего не делая. Но ещё больше глупцов, которые работают бесплатно.</b></p>
+<p>- Давай лучше займёмся учёбой.  Сейчас я научу тебя создавать кучу переменных разными способами:</p>
+<table class="table_task">
+<tr>
+<th class="collapsed"></th>
+<th width="35%">Пример</th>
+<th>Пояснение</th>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson05,type01"></button>--></td>
+<td class="monospace_text"> 
+                    String <span class="green_text">s1</span> = new String();<br/>String <span class="green_text">s2</span> = "";
+                </td>
+<td>
+                    Создание двух идентичных пустых строк.
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson05,type02"></button>--></td>
+<td class="monospace_text" style="height: 50px;">
+<span class="dred_text">int</span> <span class="red_text">a</span>;
+                </td>
+<td>
+                    Создание переменной типа <span class="dred_text">int</span>;
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson05,type03"></button>--></td>
+<td class="monospace_text">
+<span class="dred_text">int</span> <span class="red_text">a</span> = <span class="red_text">5</span>;
+                </td>
+<td>
+                    Создание переменной типа <span class="dred_text">int</span>, установка её значения равным <span class="red_text">5</span>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson05,type04"></button>--></td>
+<td class="monospace_text">
+<span class="dred_text">int</span> <span class="blue_text">a</span> = <span class="dblue_text">5</span>, <span class="green_text">b</span> = <span class="green_text">6</span>;
+                </td>
+<td>
+                    Создание переменной <span class="blue_text">a</span> типа <span class="dred_text">int</span>, установка ей значения <span class="dblue_text">5</span>
+Создание переменной <span class="green_text">b</span> типа <span class="dred_text">int</span>, установка ей значения <span class="green_text">6</span>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson05,type05"></button>--></td>
+<td class="monospace_text">
+<span class="dred_text">int</span> <span class="blue_text">a</span> = <span class="dblue_text">5</span>, <span class="green_text">b</span> = <span class="dblue_text">a</span> + 1;
+                </td>
+<td>
+                    Создание переменной <span class="blue_text">a</span> типа <span class="dred_text">int</span>, установка ей значения <span class="dblue_text">5</span>
+Создание переменной <span class="green_text">b</span> типа <span class="dred_text">int</span>, установка ей значения <span class="green_text">6</span>
+</td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson05,type06"></button>--></td>
+<td class="monospace_text">
+<b>Date</b> <span class="orange_text">date</span> = <b>new</b> Date();   
+                </td>
+<td>
+                    Создание объекта типа «Дата». В каждый объект типа «дата» после создания заносится текущее время и дата.
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson05,type07"></button>--></td>
+<td class="monospace_text">
+<b class="orange_text">boolean</b> isTrue = <b class="orange_text">true</b>;
+                </td>
+<td>
+                    Переменная <span class="orange_text">логического типа</span> инициализируется значением <span class="orange_text">true</span> (истина)
+                </td>
+</tr>
+<tr>
+<td class="collapsed" rowspan="1"><!--<button class="task_button" taskKey="level02,lesson05,type08"></button>--></td>
+<td class="monospace_text double-wide-text">
+<b>boolean</b> <span class="orange_text">isLess</span> = (5 &gt; 6);
+                </td>
+<td>
+                    В переменную <span class="orange_text">isLess</span> заносится значение <span class="orange_text">false</span> (ложь). Других значений тип boolean не принимает.
+                </td>
+</tr>
+</table>
+<p class="amigo">- Круто, Диего! Ты всегда так просто объясняешь.</p>
+<p>- Хе-хе! Спасибо, Амиго.</p>
+<p>- Кстати, у меня для тебя еще пара задачек. Как они тебе, кстати?</p>
+<p class="amigo">- Не сложные, но некоторые - обхохочешься.</p>
+<table class="table_task">
+<tr>
+<th></th>
+<th>Условие</th>
+</tr>
+<tr>
+<td>
+<button class="task_button" taskkey="level02,lesson05,task01"></button>1</td>
+<td>
+<br/>
+                    Закоментарь несколько строк, чтобы на экран вывелось число 19<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td>
+<button class="task_button" taskkey="level02,lesson05,task02"></button>2</td>
+<td>
+<br/>
+                    Создайте 10 переменных типа <span class="taskcode">Cat</span> и 8 объектов типа <span class="taskcode">Cat</span>.<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<td>
+<button class="task_button" taskkey="level02,lesson05,task03"></button>3</td>
+<td>
+<br/>
+                    Создайте объект типа <span class="taskcode">Cat</span>(кот), объект типа <span class="taskcode">Dog</span> (собака), объект типа <span class="taskcode">Fish</span> (рыбка) и объект типа <span class="taskcode">Woman</span>.<br/>
+                    Присвойте каждому животному владельца (<span class="taskcode">owner</span>).<br/>
+<br/>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>6. Переменные-ссылки</h2>
+</div>
+<p>- Привет, Амиго, это снова я – Элли. Прости, что постоянно так говорю, так просто принято на Земле в 31 веке.  Я хочу рассказать тебе об особенностях переменных-ссылок и передаче в функции(методы) аргументов-ссылок.</p>
+<p class="amigo">- Я готов.</p>
+<p>- Отлично, тогда слушай.  Переменные-ссылки – это переменные всех типов, кроме примитивных. Такие переменные содержат в себе только адрес объекта (ссылку на объект).</p>
+<p class="amigo">- Переменные примитивных типов хранят в себе значения, а переменные типов-классов хранят ссылку на объекты этого же класса, ну или хранят null. Я все правильно говорю?</p>
+<p>- Абсолютно верно.</p>
+<p class="amigo">- Так что же это такое - эта ссылка?</p>
+<p>- Объект и ссылка на него связаны, примерно, как человек и его телефонный номер. Телефонный номер не является человеком, но номер можно использовать, чтобы звонить человеку, спрашивать у него какую-то информацию, руководить им или давать команды. Ссылка тоже используется для взаимодействия с объектом. Все объекты взаимодействуют друг с другом при помощи ссылок. </p>
+<p class="amigo">- Это как если бы люди общались друг с другом по телефону? </p>
+<p>- Именно. <span class="dred_text">При присваивании примитивного объекта, его значение копируется (дублируется). При присваивании же ссылочной переменной, копируется только адрес объекта (телефонный номер), сам же объект при этом не копируется.</span></p><p class="amigo">- Ок, понял.</p>
+<p>- Ссылка даёт ещё одно преимущество: можно передать ссылку на объект в какой-нибудь метод, и этот метод будет в состоянии модифицировать (изменять) наш объект используя ссылку на него, вызывая его методы и обращаясь к данным внутри объекта.</p>
+<table class="table_example" style="width: 110%;margin-left: -60px;">
+<tr>
+<th width="50%">Пример 1<br/>Тут значение m и n не меняется.
+</th>
+<th width="50%">И вот почему.<br/>Данный код аналогичен коду слева
+</th>
+</tr>
+<tr>
+<td class="monospace_text">
+<pre class="wide-text"><b>public class</b> References
+{
+  <b>public static void</b> main (String[] args)
+  {
+    <span class="red_text">int m = 5;</span>
+    <span class="red_text">int n = 6;</span>
+
+    System.out.println("M=" +m+ " N=" + n);
+    <span class="blue_text">swap(<span class="green_bg">m, n</span>);</span>
+    System.out.println("M=" +m+ " N=" + n);
+  }
+
+  <span class="blue_text">private static void swap(<span class="green_bg">int a, int b</span>)</span>
+  {
+    <span class="yellow_bg">int c = a;</span>
+    <span class="yellow_bg">a = b;</span>
+    <span class="yellow_bg">b = c;</span>
+  }
+}</pre>
+</td>
+<td class="monospace_text">
+<pre class="wide-text"><b>public class</b> References
+{
+  <b>public static void</b> main (String[] args)
+  {
+    <span class="red_text">int m = 5;</span>
+    <span class="red_text">int n = 6;</span>
+
+    System.out.println("M=" +m+ " N=" + n);
+    <span class="blue_text"><span class="green_bg">int a = m, b = n;</span></span>
+
+    <span class="yellow_bg">int c = a;</span>
+    <span class="yellow_bg">a = b;</span>
+    <span class="yellow_bg">b = c;</span>
+
+    System.out.println("M=" +m+ " N=" + n);
+  }
+}</pre>
+</td>
+</tr>
+</table>
+<p>- Переменным <span class="green_bg">a</span> и <span class="green_bg">b</span> присваиваются только значения 5(m) и 6(n) соответственно, <span class="green_bg">a</span> и <span class="green_bg">b</span> ничего не знают про (никак не влияют на) m и n.</p>
+<p class="amigo">- Честно говоря, я понял, что я ничего не понял. Можно еще пару примеров?</p>
+<p>- В случае со ссылочным типом, можно было сделать так:</p>
+<table class="table_example double-wide-table">
+<tr>
+<th width="50%"><b>Пример 2<br/>Тут данные объектов меняются</b></th>
+<th width="50%"><b>И вот почему.<br/>Данный код аналогичен коду слева</b></th>
+</tr>
+<tr>
+<td class="monospace_text wide-text">
+<pre class="wide-text" style="font-size: 14pt;">public class Primitives
+{
+  public static void main(String[] args)
+  {
+    <span class="red_text">Student olga = new Student();</span>
+    <span class="red_text">olga.name = "Olga";</span>
+    <span class="red_text">olga.age = 21;</span>
+
+    <span class="red_text">Student vera = new Student();</span>
+    <span class="red_text">vera.name = "Veronika";</span>
+    <span class="red_text">vera.age = 15;</span>
+
+    System.out.println("Olga is " + olga.age);
+    System.out.println("Vera is " + vera.age);
+
+    <span class="blue_text">ageSwap(olga, vera);</span>
+
+    System.out.println("Olga is " + olga.age);
+    System.out.println("Vera is " + vera.age);
+  }
+
+  <span class="blue_text">private static void ageSwap(Student a,
+                                    Student b)</span>
+  {
+    <span class="green_text">int c = a.age;</span>
+    <span class="green_text">a.age = b.age;</span>
+    <span class="green_text">b.age = c;</span>
+  }
+
+  static class Student
+  {
+    String name;
+    int age;
+  }
+}</pre>
+</td>
+<td class="monospace_text wide-text">
+<pre class="wide-text" style="font-size: 14pt;">public class Primitives
+{
+  public static void main(String[] args)
+  {
+    <span class="red_text">Student olga = new Student();</span>
+    <span class="red_text">olga.name = "Olga";</span>
+    <span class="red_text">olga.age = 21;</span>
+
+    <span class="red_text">Student vera = new Student();</span>
+    <span class="red_text">vera.name = "Veronika";</span>
+    <span class="red_text">vera.age = 15;</span>
+
+    System.out.println("Olga is " + olga.age);
+    System.out.println("Vera is " + vera.age);
+
+    <span class="blue_text">Student a = olga, b = vera;</span>
+
+    <span class="green_text">int c = a.age;</span>
+    <span class="green_text">a.age = b.age;</span>
+    <span class="green_text">b.age = c;</span>
+
+    System.out.println("Olga is " + olga.age);
+    System.out.println("Vera is " + vera.age);
+  }
+
+    
+
+
+
+  static class Student
+  {
+    String name;
+    int age;
+  }
+}
+</pre>
+</td>
+</tr>
+</table>
+<p>- Переменным a и b присваиваются ссылки на olga и vera соответственно, a и b меняют значения внутри объектов olga и vera.</p>
+<p class="amigo">- Так классы внутри других классов ещё можно объявлять? Круто! </p>
+<p class="amigo">- Но в остальном не очень-то и понятно.</p>
+<p>- Не все сразу.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>7. Вызов функции и возвращаемое значение</h2>
+</div>
+<p>- Ладно, давай зайдем с другой стороны. Я тебе сейчас расскажу как работает вызов методов, а ты потом еще раз попробуешь  пробежаться по предыдущей лекции, ок?</p>
+<p class="amigo">- Идет.</p>
+<p>- Отлично, тогда я расскажу тебе о вызове функций/методов и возвращаемых ими значениях.</p>
+<p>- Команды группируют в функции, чтобы потом можно было исполнять их единым блоком – как одну сложную команду. Для этого надо написать имя функции(метода) и в скобках после него перечислить значения-параметры.</p>
+<table class="table_example">
+<tr><th width="1%"> </th><th width="100%">Пример</th>
+</tr>
+<tr>
+<td class="wide-text">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16
+                </td>
+<td class="monospace_text">
+<pre>package com.javarush.lesson2;<br/><b>public class</b> MethodCall
+{
+    <b>public static void</b> main(String[] args)
+    {
+         <span class="red_text"><b>print4</b></span>(<span class="green_text">“I like to move it, move it.”</span>);
+    }
+
+    <b>public static void</b> <span class="red_text"><b>print4</b></span>(String s)
+    {
+        System.out.<b>println</b>(s);
+        System.out.<b>println</b>(s);
+        System.out.<b>println</b>(s);
+        System.out.<b>println</b>(s);
+    }
+}</pre>
+</td>
+</tr>
+</table>
+<p>- В примере выше мы написали функцию, которая выводит на экран переданную строку 4 раза. Затем мы <span class="red_text"><b>вызвали функцию print4</b></span> в строке номер 6. </p>
+<p>- Когда программа дойдет до выполнения строчки 6, она перескачет на строчку 9 – переменной s будет присвоено значение <span class="green_text">“I like to move it, move it.”</span> </p>
+<p>- Затем будут выполнены строки 11-14, и, наконец, функция завершится и программа продолжит работу со строчки номер 7.</p>
+<p class="amigo">- Ясно. </p>
+<p>- В функцию можно не только передавать аргументы (параметры), функция еще может возвращать результат(значение) своей работы. Это делается с помощью ключевого слова <b>return</b>. Вот как это выглядит:</p>
+<table class="table_example double-wide-table">
+<tr>
+<th width="50%">Пример 1.<br/>Вычисление минимума из двух чисел.</th>
+<th width="50%">Вот как это работает:</th>
+</tr>
+<tr>
+<td class="monospace_text wide-text">
+<pre><b>public class</b> MethodCall
+{
+   <b>public static void</b> main(String[] args)
+   {
+      <span class="red_text">int a = 5, b = 7;</span>
+      <span class="blue_text">int m = min(a, b);</span>
+      System.out.println(<span class="orange_text">"Minimum is "</span>+ m);
+   }
+
+   <span class="blue_text">public static int min(int c, int d)</span>
+   {
+      <span class="green_text">int m2;</span>
+      <span class="green_text">if (c 
+           <span class="green_text">m2 = c;</span>
+      <span class="green_text">else</span>
+           <span class="green_text">m2 = d;</span>
+
+      <span class="blue_text"><b>return m2</b>;</span>
+   }
+}</span></pre>
+</td>
+<td class="monospace_text wide-text">
+<pre><b>public class</b> MethodCall
+{
+   <b>public static void</b> main(String[] args)
+   {
+      <span class="red_text">int a = 5, b = 7;</span>
+      <span class="blue_text">int c = a, d = b;</span>
+      <span class="green_text">int m2;</span>
+      <span class="green_text">if (c 
+           <span class="green_text">m2 = c;</span>
+      <span class="green_text">else</span>
+           <span class="green_text">m2 = d;</span>
+
+      <span class="blue_text">int m = m2;</span>
+      System.out.println(<span class="orange_text">"Minimum is "</span>+ m);
+   }
+}
+
+
+
+
+</span></pre>
+</td>
+</tr>
+</table>
+<p class="amigo">- Похоже, начинаю понимать. Слева и справа написан один и тот же код. Просто слева он вынесен в отдельную функцию. </p>
+<p class="amigo">- Функция вычисляет какое-то значение и отдает его тем, кто ее вызвал с помощью команды return. По крайней мере, мне так кажется.</p>
+<p>- В принципе верно.</p>
+<p class="amigo">- А что еще за тип void такой?</p>
+<p>- Некоторые функции просто что-то делают, но никаких значений не вычисляют и не возвращают, как наш метод <b>main</b>(), например. Для них придуман специальный тип результата – <b>void</b> – пустой тип.</p>
+<p class="amigo">- А почему нельзя было просто ничего не указывать, раз функция ничего не возвращает?</p>
+<p>- Вспомни, как объявляется любая переменная – «тип и имя». А функция – «тип, имя и круглые скобки». А имя функции и затем круглые скобки – это вызов функции!</p>
+<p class="amigo">- Т.е. было проще придумать «пустой тип», чем разделять функции на две категории – возвращающие значение и не возвращающие значение?</p>
+<p>- Именно! Ты отлично соображаешь, мой мальчик.</p>
+<p class="amigo">- А как возвращать пустой тип?</p>
+<p>- Никак. Вот как все это работает: <span class="orange_text">когда Java-машина выполняет команду <b><span class="orange_text">return</span></b>, она вычисляет значение выражения, стоящего справа от слова return, сохраняет это значение в специальной части памяти и <b><span class="orange_text">тут же завершает работу функции.</span></b></span> А сохранённое значение использует как результат вызова функции в том месте, где её вызвали. Ты можешь увидеть это на примере вверху.</p>
+<p class="amigo">- Ты говоришь про то место, где int m = min(a,b) трансформировалось в m=m2?</p>
+<p>- Да. После вызова функции всё продолжает работать так, как будто вместо неё на этом же месте был написан её результат. <span class="dred_text">Прочитай эту фразу еще раз и посмотри на код последнего примера.</span></p>
+<p class="amigo">- По-моему это только кажется лёгким, а на самом деле – сложно. Я только чуть-чуть чего-то понял и всё.</p>
+<p>- Ничего. <span class="green_text">С первого раза можно понять только то, что уже знаешь.</span> Чем больше не понятно, тем сильнее ты влез в новую для тебя область. И тем круче будет результат. Со временем всё прояснится.</p>
+<p class="amigo">- Ну, если ты так говоришь, тогда поехали дальше.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>8. Задачи на вызов функций.</h2>
+</div>
+<p>- Привет, Амиго. Хочу дать тебе пару задачек:</p>
+<table class="table_task">
+<tr>
+<th></th>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level02,lesson08,task01"></button>1</td>
+<td><b>Минимум двух чисел</b><br/><br/>
+                Написать функцию, которая возвращает минимум из двух чисел.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level02,lesson08,task02"></button>2</td>
+<td><b>Максимум двух чисел</b><br/><br/>
+                Написать функцию, которая вычисляет максимум из двух чисел.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level02,lesson08,task03"></button>3</td>
+<td><b>Минимум трёх чисел</b><br/><br/>
+                Написать функцию, которая вычисляет минимум из трёх чисел.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level02,lesson08,task04"></button>4</td>
+<td><b>Минимум четырёх чисел</b><br/><br/>
+                Написать функцию, которая вычисляет минимум из четырёх чисел. <br/>Функция min(a,b,c,d) должна использовать (вызывать) функцию min(a,b)
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level02,lesson08,task05"></button>5</td>
+<td><b>Дублирование строки</b><br/><br/>
+                Написать функцию, которая выводит переданную строку на экран три раза, каждый раз с новой строки.
+                </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level02,lesson08,task06"></button>6</td>
+<td><b>Вывод текста на экран</b><br/><br/>
+                Написать функцию, которая выводит переданную строку (слово) на экран три раза, но в одной строке. Слова должны быть разделены пробелом и не должны сливаться в одно.
+                </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>9. Полное имя класса.</h2>
+</div>
+<img class="cartoon" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-24.gif" style="width:800px;  height: 453px;"/>
+<p>- Привет, Амиго, хочу рассказать тебе о полных именах классов. </p>
+<p>- Ты уже знаешь, что классы находятся в пакетах. Так вот, полным именем класса считается имя, состоящее из всех пакетов, перечисленных через точку и имени класса. <b>Примеры</b>:</p>
+<table class="table_example">
+<tr>
+<th width="30%">Имя класса</th>
+<th width="30%">Имя пакета</th>
+<th width="40%">Полное имя</th>
+</tr>
+<tr>
+<td class="monospace_text"><b>String</b></td>
+<td class="monospace_text">java.lang</td>
+<td class="monospace_text">java.lang.<b>String</b></td>
+</tr>
+<tr>
+<td class="monospace_text"><b>FileInputStream</b></td>
+<td class="monospace_text">java.io</td>
+<td class="monospace_text">java.io.<b>FileInputStream</b></td>
+</tr>
+<tr>
+<td class="monospace_text"><b>ArrayList</b></td>
+<td class="monospace_text">java.util</td>
+<td class="monospace_text">java.util.<b>ArrayList</b></td>
+</tr>
+<tr>
+<td class="monospace_text"><b>IOException</b></td>
+<td class="monospace_text">java.io</td>
+<td class="monospace_text">java.io.<b>IOException</b>;</td>
+</tr>
+</table>
+<p>- Чтобы использовать класс в своём коде, тебе нужно указывать его полное имя. Хотя можно использовать и краткое имя – только лишь имя класса, но для этого нужно «проимпортировать данный класс» - указать его имя перед объявлением твоего класса,  со словом <b>import</b>. Классы из пакета java.lang импортируются по умолчанию. Их указывать не обязательно. Пример:</p>
+<table class="table_example" style="width: 105%;margin-left: -30px;">
+<tr>
+<th>Полное имя класса:</th>
+</tr>
+<tr>
+<td class="monospace_text">
+<pre><b>package</b> com.javarush.lesson2;
+
+<b>public class</b> FileCopy2
+{
+    <b>public static void</b> main(String[] args) <b>throws</b> <span class="red_text">java.io.IOException</span>
+    {
+        <span class="orange_text">java.io.FileInputStream</span> fileInputStream =
+                        <b>new</b> <span class="orange_text">java.io.FileInputStream</span>("c:\\data.txt");
+        <span class="dred_text">java.io.FileOutputStream</span> fileOutputStream =
+                        <b>new</b> <span class="dred_text">java.io.FileOutputStream</span>("c:\\result.txt");
+
+        <b>while</b> (fileInputStream.available() &gt; 0)
+        {
+            int data = fileInputStream.<b>read</b>();
+            fileOutputStream.<b>write</b>(data);
+        }
+
+        fileInputStream.<b>close</b>();
+        fileOutputStream.<b>close</b>();
+    }
+}</pre>
+</td>
+</tr>
+</table>
+<p>- Пример с использование коротких имен:</p>
+<table class="table_example" style="width: 105%;margin-left: -30px;">
+<tr>
+<th>Короткое имя класса:</th>
+</tr>
+<tr>
+<td class="monospace_text">
+<pre><b>package</b> com.javarush.lesson2;
+
+<span class="orange_text">import java.io.FileInputStream;</span>
+<span class="dred_text">import java.io.FileOutputStream;</span>
+<span class="red_text">import java.io.IOException;</span>
+
+<b>public class</b> FileCopy
+{
+    <b>public static void</b> main(String[] args) <b>throws</b> <span class="red_text">IOException</span>
+    {
+        <span class="orange_text">FileInputStream</span> fileInputStream =
+                        <b>new</b> <span class="orange_text">FileInputStream</span>("c:\\data.txt");
+        <span class="dred_text">FileOutputStream</span> fileOutputStream =
+                        <b>new</b> <span class="dred_text">FileOutputStream</span>("c:\\result.txt");
+
+        <b>while</b> (fileInputStream.<b>available</b>() &gt; 0)
+        {
+            int data = fileInputStream.<b>read</b>();
+            fileOutputStream.<b>write</b>(data);
+        }
+
+        fileInputStream.<b>close</b>();
+        fileOutputStream.<b>close</b>();
+    }
+}</pre>
+</td>
+</tr>
+</table>
+<p class="amigo">- Все понятно.</p>
+<p>- Отлично.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>10. Лекция про классы и объекты</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/00/image-ru-00-18.gif" style="width:800px;  height: 453px;"/>
+<p>- Привет, Амиго. Надеюсь, ты понял всё из того, что сегодня тебе рассказали Элли и Риша.</p>
+<p>На всякий случай, как и обещал, даю тебе ссылки на дополнительный материал:</p>
+<p class="green_text">1 <a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/05/20/lecture-2.html" target="_blank">Мои заметки</a></p>
+<p class="orange_text">2 <a href="http://wikijava.it-cache.net/" target="_blank">Философия Java</a></p>
+<p>Вот еще шикарная книга. Каждый программист Java должен прочитать ее. Рассчитана далеко не на новичков. Но все же может очень помочь разобраться в сложной теме. Если будешь понимать, что там написано, я буду гордиться тобой.</p>
+<p>- Надеюсь, ты найдёшь пол часика и пролистаешь их. </p>
+<p class="amigo">- Гм. Да тут листов 5 будет!</p>
+<p>- Обязательно прочти статью про <a href="http://info.javarush.ru/javarush_articles/2015/12/01/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-%D0%B2-Java.html" target="_blank">методы в Java</a>, а также
+            <a href="http://info.javarush.ru/javarush_articles/2015/12/01/%D0%9F%D1%80%D0%B8%D0%BC%D0%B8%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5-%D1%82%D0%B8%D0%BF%D1%8B-Java.html" target="_blank">примитивные типы в Java</a>.
+        </p>
+<p>- Очень будет  полезным узнать о <a href="http://www.quizful.net/interview/java/passing-parameters-reference-value" target="_blank">передаче объектов в методы по ссылке и по значению</a>, и
+            <a href="http://info.javarush.ru/javarush_articles/2015/12/02/%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-return_3.html" target="_blank">выход из метода используя return</a>.
+        </p>
+<p>- Что еще можно посмотреть на досуге: </p>
+<p>- Почитать про  <a href="http://info.javarush.ru/articles/2015/12/02/%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B5-%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%BD%D1%8B%D0%B9-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-.html" target="_blank">конструкцию if-else</a>.
+        </p>
+<p>- По примитивам можно посмотреть <a href="http://www.slideshare.net/metaform/3-10010035" target="_blank">слайды</a>, а также <a href="http://habrahabr.ru/post/49582/" target="_blank">эту хорошую статью</a>.
+        </p>
+<p>- Эту статью читай, чтобы узнать про <a href="http://www.quizful.net/interview/java/primitive-types-auto-boxing" target="_blank">автоупаковку примитивов в Java</a>.
+        </p>
+<p>- Вот хорошая лекция про <a href="http://wikijava.it-cache.net/index.php?title=%D0%93%D0%BB%D0%B0%D0%B2%D0%B0_1_Thinking_in_Java_4th_edition" target="_blank">классы и объекты</a>.</p>
+<p>- Почитай внимательно этот материал: <a href="http://wikijava.it-cache.net/index.php?title=%D0%93%D0%BB%D0%B0%D0%B2%D0%B0_1_Thinking_in_Java_4th_edition" target="_blank">Философия Java</a>.
+        </p>
+<p>- Вот еще две ссылки: про <a href="http://old.intuit.ru/department/pl/javapl/2/" target="_blank">ООП</a> и про <a href="http://old.intuit.ru/department/pl/javapl/5/" target="_blank">имена и пакеты</a>.
+        </p>
+<p>- Долго тут не сиди, достаточно лишь просмотреть. </p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>11. Хулио</h2>
+</div>
+<p>- Привет, Амиго! Надеюсь, ты готов к тяжёлому и утомительному отдыху?</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-02.gif" preload="none" tabindex="0" taskkey="level02,lesson11,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-02.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=tVl2fkUY5PI" target="_blank">Оригинал видео на YouTube</a></center>
+<p><span class="bold _red"> - Напоминаю, что за каждое просмотренное видео от Хулио ты будешь получать от 2 до 10 единиц 'Черной материи'.</span> Только досматривай до конца.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+body, html, .item {
+	margin: 0;
+	padding: 0;
+}
+
+.main-wrapper {
+	width: 764px;
+	/*background-color: red;*/
+	margin: 0 auto;
+}
+
+.item {
+	/*position: relative;*/
+	width: 320px;
+	/*height: 140px;*/
+	display: flex;
+	background-color: #fefefe;
+	padding: 20px;
+	margin: 8px auto;
+	list-style: none;
+	
+	border-radius: 6px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3) inset;
+}
+
+a {
+	display: absolute;
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	color: #333;
+	font-family: Arial;
+}

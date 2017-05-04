@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta property="fb:app_id" content="163275303873171"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/table-task.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/table-example.css?v=3">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/legacy.css">
+
+    <title> JavaRush </title>
+
+    <link rel="apple-touch-icon" href="http://javarush.ru/images/apple-touch-icon_142x142.png" type="image/png"/>
+    <link rel="shortcut icon" href="http://javarush.ru/images/javarush.ico" type="image/ico"/>
+
+    <!--VK API-->
+    <script  src="http://vk.com/js/api/openapi.js?96"></script>
+    <script  src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+
+    <!--jQuery-->
+    <script src="http://javarush.ru/js/jquery-2.1.4.js"></script>
+    <script src="http://javarush.ru/js/jquery.cookie.js"></script>
+    <script src="http://javarush.ru/js/jquery.scrolldepth.min.js"></script>
+
+    <!--Page Scripts-->
+    <script src="http://javarush.ru/statistics.js.jsp"></script>
+    <script src="http://javarush.ru/common.js"></script>
+
+    <!--ACE editor-->
+    <script src="http://javarush.ru/js/ace/ace.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/mode-java.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/theme-github.js" charset="utf-8"></script>
+    <script src="http://javarush.ru/js/ace/ext-language_tools.js" charset="utf-8"></script>
+
+    <script src="http://javarush.ru/levels/js/prettify.js"></script>
+    <script src="http://javarush.ru/levels/dialogs-and-panels.js?v=2"  charset="utf-8"></script>
+    <script src="http://javarush.ru/levels/levels.js?v=5" charset="utf-8"></script>
+
+    <!--Facebook Analytics-->
+    <script>(function() {var _fbq = window._fbq || (window._fbq = []);if (!_fbq.loaded) {var fbds = document.createElement('script');fbds.async = true;fbds.src = '//connect.facebook.net/en_US/fbds.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fbds, s);_fbq.loaded = true;}_fbq.push(['addPixelId', '910397485679687']);})();window._fbq = window._fbq || [];window._fbq.push(['track', 'PixelInitialized', {}]);</script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=910397485679687&amp;ev=PixelInitialized" /></noscript>
+</head>
+<body>
+<!--Google Universal Analytics-->
+<!--<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-35679269-1', 'auto');ga('send', 'pageview');</script>-->
+
+<!--Page Header begin-->
+<!-- <div class="header">
+    <div class="header2">
+
+        <div class="header3">
+            <a href="http://javarush.ru/" target="_top"><div class="logo"></div></a>
+            <div class="header32">
+                <a href="http://javarush.ru/course.html"><div class="logo2"></div></a>
+            </div>
+
+            <div class="header-menu">
+                <ul class="header-menu" id="nav">
+
+                    <li id="menu-item-user-profile-nologin" class="menu-item" style="display: block;">
+                        <a href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                    </li>
+
+                    <li id="menu-item-user-profile" class="menu-item has-sub" style="display: none;">
+                        <a id="pProfileLink" href="http://javarush.ru/user/profile" target="_top">Моя страница</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-profile" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#profile"  target="_top">Моя страница</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-messages" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#messages" target="_top">Сообщения</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-friends" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#friends" target="_top">Друзья</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-subscrioption" class="menu-item">
+                                <a href="http://javarush.ru/Profile.html#subscriptions" target="_top">Подписки</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-exit" class="menu-item">
+                                <a href="http://javarush.ru/user/logout"  target="_top">Выход</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-course-java-nologin" class="menu-item current-menu-parent" style="display: block;">
+                        <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                    </li>
+
+                    <li id="menu-item-course-java" class="menu-item has-sub current-menu-parent" style="display: none;">
+                        <a id="pCourseLink" href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-cource" class="menu-item current-menu-item">
+                                <a href="http://javarush.ru/user/course" target="_top">Курс Java</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-task" class="menu-item">
+                                <a href="http://javarush.ru/user/course/task" target="_top">Задачи</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-cource-plan" class="menu-item">
+                                <a href="http://info.javarush.ru/page/learning_plan/" target="_top">План обучения</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-posts" class="menu-item has-sub">
+                        <a href="http://info.javarush.ru" target="_top">Сообщество</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-info" class="menu-item">
+                                <a href="http://info.javarush.ru" title="Сообщество" target="_top">Сообщество</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-rating" class="menu-item">
+                                <a href="http://javarush.ru/rating" title="Рейтинги" target="_top">Рейтинги</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-articles" class="menu-item">
+                                <a href="http://javarush.ru/articles.html" title="Статьи" target="_top">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="menu-item-reviews" class="menu-item has-sub">
+                        <a href="http://javarush.ru/reviews.html" target="_top">Отзывы</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-rev" class="menu-item">
+                                <a href="http://javarush.ru/reviews.html" title="Отзывы" target="_top">Отзывы</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-his" class="menu-item">
+                                <a href="http://info.javarush.ru/tag/%D1%82%D1%80%D1%83%D0%B4%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE/" title="Истории успеха" target="_top">Истории успеха</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-about-us" class="menu-item has-sub">
+                        <a href="http://javarush.ru/21.html" target="_top">О нас</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-mission" class="menu-item">
+                                <a href="http://javarush.ru/21.html" title="Миссия" target="_top">Наша Команда </a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-news" class="menu-item">
+                                <a href="http://info.javarush.ru/blog/news/" title="Новости проекта" target="_top">Новости проекта</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-social" class="menu-item">
+                                <a href="http://javarush.ru/social.html" title="Мы в социальных сетях" target="_top">Мы в соцсетях</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-honorcode" class="menu-item">
+                                <a href="http://info.javarush.ru/page/honorcode/" target="_top">Кодекс Чести</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li id="menu-item-help" class="menu-item has-sub">
+                        <a href="http://help.javarush.ru/" target="_top">Помощь</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-help-jr" class="menu-item">
+                                <a href="http://help.javarush.ru/" title="" target="_top">Помощь</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-faq" class="menu-item">
+                                <a href="http://info.javarush.ru/page/FAQ/" title="FAQ" target="_top">FAQ</a>
+                                <span>•</span>
+                            </li>
+                            <li id="menu-item-search" class="menu-item">
+                                <a href="http://google.ru/search?q=site%3Ajavarush.ru" title="Поиск" target="_top">Поиск</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--Page Header end-->
+
+<div class="wrapper">
+
+<section class="lesson">
+<h2> Вы достигли нового уровня </h2>
+<div style="width: 100%;height:450px;">
+<div style="width:850px;height:478px;margin-left:-150px;margin-right: 150px;   background: url(images/profile/web-bender-24.gif) no-repeat;background-size: contain;">
+<div style="width: 300px;height: 50px;display: inline-block; font-size: 30pt;text-align: left;margin-top: 200px;margin-left: 700px;">
+                    Уровень 24
+                </div>
+</div>
+</div>
+<br/>
+<div class="line"></div>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<!--<div class="line"></div>-->
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>1. Интерфейсы-маркеры, глубокое клонирование</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/24/image-ru-24-07.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Билаабо!</p>
+<p>- Сегодня я расскажу тебе про <b>интерфейсы-маркеры</b>.</p>
+<p>Интерфейсы-маркеры – это интерфейсы, которые не содержат методов. Когда класс наследуется от такого интерфейса, то говорят, что он им помечен.</p>
+<p>Примеры таких интерфейсов: <b>Cloneable</b>, <b>Serializable</b>, <b>Remote</b>.</p>
+<p>Интерфейс <b>Serializable</b> используется, чтобы помечать классы, которые поддерживают сериализацию -  как доказательство того, что объекты класса можно автоматически сериализовать и десериализовать.</p>
+<p>Интерфейс <b>Remote</b> используется, чтобы обозначать объекты, которые поддерживают удаленный вызов – вызов из другой Java-машины и/или другого компьютера.</p>
+<p>Интерфейс <b>Cloneable</b> используется, чтобы помечать классы, которые поддерживают клонирование.</p>
+<p>Кстати, о клонировании.</p>
+<p>Клонирование делится на два типа – обычное  клонирование и глубокое клонирование.</p>
+<p><b>Обычное клонирование</b> – это когда создается дубликат только указанного объекта, без его внутренних объектов.</p>
+<p><b>Глубокое клонирование</b> – это когда создается дубликат объекта, объектов, на которые он ссылается, объектов, на которые ссылаются они и т.д.</p>
+<p>Есть очень хороший способ выполнить качественное глубокое клонирование.</p>
+<p>Этот способ подходит, даже если разработчики классов забыли пометить его интерфейсом Cloneable. Достаточно, чтобы объекты были сериализуемыми.</p>
+<p>Вот что можно сделать:</p>
+<p><b>1)</b> Создать буфер (массив байт) в памяти.</p>
+<p><b>2)</b> Сериализовать в него нужный объект с подобъектами.</p>
+<p><b>3)</b> Десериализовать из буфера копию сохраненной в него группы объектов.</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text wide-text">
+<span class="red_text">BigObject <b>objectOriginal</b></span> = new <span class="red_text">BigObject</span>();<br/><br/>
+<span class="green_text">ByteArrayOutputStream writeBuffer</span> = new <span class="green_text">ByteArrayOutputStream</span>();<br/>
+<span class="dgreen_text">ObjectOutputStream outputStream</span> = new <span class="dgreen_text">ObjectOutputStream</span>(<span class="green_text">writeBuffer</span>);<br/>
+<span class="dgreen_text">outputStream</span>.writeObject(<span class="red_text"><b>objectOriginal</b></span>);<br/>
+<span class="dgreen_text">outputStream</span>.close();<br/><br/>
+<span class="violet_text">byte[] <b>buffer</b></span> = <span class="green_text">writeBuffer</span>.toByteArray();<br/>
+<span class="dblue_text">ByteArrayInputStream readBuffer</span> = new <span class="dblue_text">ByteArrayInputStream</span>(<span class="violet_text"><b>buffer</b></span>);<br/>
+<span class="blue_text">ObjectInputStream inputStream</span> = new <span class="blue_text">ObjectInputStream</span>(<span class="dblue_text">readBuffer</span>);<br/>
+<span class="red_text">BigObject <b>objectCopy</b></span> = (<span class="red_text">BigObject</span>)<span class="blue_text">inputStream</span>.readObject();
+    </td>
+</tr>
+</tbody>
+</table>
+<p>На первой строчке мы создаем объект <span class="red_text"><b>objectOriginal</b></span>, который будем клонировать. Он и все его подобъекты должны поддерживать сериализацию.</p>
+<p>На третьей строчке мы создаем <span class="green_text">ByteArrayOutputStream</span> – массив байт, который будет динамически растягиваться при добавлении к нему новых данных (как ArrayList).</p>
+<p>На 4-й строчке мы создаем <span class="dgreen_text">ObjectOutputStream</span>, который используется для сериализации.</p>
+<p>В пятой строчке мы сериализуем объект <span class="red_text"><b>objectOriginal</b></span> в массив байт с помощью <span class="dgreen_text">outputStream</span> и сохраняем его в массив <span class="green_text">writeBuffer</span>.</p>
+<p>На 8-й строчке мы преобразовываем <span class="green_text">writeBuffer</span> в обычный массив байт. Дальше мы из этого массива будем «читать» наш новый объект.</p>
+<p>На 9-й строчке мы оборачиваем <span class="violet_text"><b>buffer</b></span> в класс <span class="dblue_text">ByteArrayInputStrea</span>, чтобы из него можно было читать, как из InputStream.</p>
+<p>На 10-й строчке передаем объект <span class="dblue_text">readBuffer</span> классу <span class="blue_text">ObjectInputStream</span>, для чтения (десериализации) объекта.</p>
+<p>На 11-й строчке мы читаем наш объект и преобразуем его к типу <span class="red_text">BigObject</span>.</p>
+<p>Как тебе?</p>
+<p class="amigo">- Красота.</p>
+<p class="amigo">Кстати, когда код раскрашен разными цветами – гораздо легче его понимать.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zoidberg"></div>
+<h2>2. Задачи на интерфейсы-маркеры</h2>
+</div>
+<p>- У Билаабо готовы для тебя задачи.</p>
+<p>Ты очень способный ученик, Амиго.</p>
+<p>Надеюсь, с помощью моих задач ты станешь просто недосягаем.</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level24,lesson02,task01"></button><b>1. Cloneable</b><br/><br/>
+                Добавьте java-код, чтобы метод <span class="taskcode">main</span> отработал без исключений.<br/>
+		Удалять что-либо нельзя.
+            </td>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level24,lesson02,task02"></button><b>2. Так-с...сопоставим </b><br/><br/>
+                Исправьте ошибки: переместите методы <span class="taskcode">clone</span> в те классы, в которых они должны быть реализованы.<br/>
+		Лишние методы удалите.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Создание своего интерфейса-маркера</b><br/><br/>
+                1. Создайте интерфейс-маркер <span class="taskcode">SelfInterfaceMarker</span><br/>
+		2. Создайте класс <span class="taskcode">SelfInterfaceMarkerImpl</span>, который реализует <span class="taskcode">SelfInterfaceMarker</span><br/>
+		3. Добавьте в <span class="taskcode">SelfInterfaceMarkerImpl</span> минимум 2 любых различных <span class="taskcode">public</span> метода (дефолтовый <span class="taskcode">public</span> конструктор должен присутствовать)<br/>
+		4. Создайте исключение <span class="taskcode">UnsupportedInterfaceMarkerException</span><br/>
+		5. В методе <span class="taskcode">testClass</span> класса <span class="taskcode">Util</span>: если параметр == null, то выбросьте <span class="taskcode">UnsupportedInterfaceMarkerException</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>3. Наследование внутренних классов</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/24/image-ru-24-06.png"/>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Ким.</p>
+<p>- Я хочу рассказать тебе о наследовании внутренних и вложенных классов.</p>
+<p class="amigo">- Я готов.</p>
+<p>- На самом деле с наследованием вложенных классов (те, которые со словом static) никаких проблем нет. Они наследуются так же как и обычные классы:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public class <span class="green_text">Car</span></b><br/>
+{<br/>
+     <b>public static class <span class="dblue_text">Door</span></b><br/>
+     {<br/><br/>
+
+     }<br/>
+}<br/><br/>
+<b>public class <span class="red_text">LamborginiDoor</span> extends Car<span class="dblue_text">.Door</span></b><br/>
+{<br/>
+}
+    
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- А мы можем наследовать вложенные классы от вложенных классов, вложенных в другие классы?</p>
+<p>- Почему бы и нет?</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public class <span class="green_text">Car</span></b><br/>
+{<br/>
+     <b>public static class <span class="dblue_text">Door</span></b><br/>
+     {<br/><br/>
+
+     }<br/>
+}<br/><br/>
+<b>public class <span class="dgreen_text">Lamborgini</span> extends Car</b><br/>
+{<br/>
+     <b>public static class <span class="blue_text">LamborginiDoor</span> extends Car<span class="dblue_text">.Door</span></b><br/>
+ {<br/>
+ }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Ок, понятно. Просто наследуем как обычные классы, да?</p>
+<p>- Да. А вот внутренние классы наследуются не так просто.</p>
+<p>При создании внутреннего класса в нем неявно хранится ссылка на объект его внешнего класса и передается она в него в конструкторе.</p>
+<p>Поэтому в объект класса, который унаследовался от внутреннего класса, нужно передать нужный объект явно. Вот как это выглядит:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Код</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b>public class <span class="green_text">Car</span></b><br/>
+{<br/>
+     <b>public class <span class="dblue_text">Door</span></b><br/>
+     {<br/><br/>
+
+     }<br/>
+}<br/><br/>
+<b>public class <span class="red_text">LamborginiDoor</span> extends Car<span class="dblue_text">.Door</span></b><br/>
+{<br/>
+ <b><span class="red_text">LamborginiDoor</span>(<span class="green_text">Car car</span>)</b><br/>
+     {<br/>
+  <b><span class="green_text">car</span>.super();</b><br/>
+     }<br/>
+}
+    </td>
+</tr>
+</tbody></table>
+<p>В конструктор класса Door нужно неявно передать объект класса Car, это делается с помощью специальной конструкции: "car.super()".</p>
+<p>Кстати, если ты попробуешь создать конструктор вообще без параметров, то программа просто не скомпилируется. Немного странно и непривычно, да?</p>
+<p class="amigo">- Ага. Есть пара моментов, но в целом не «rocket science».</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>4. Задачи на наследование внутренних классов</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Вот тебе набор шикарных задач, надеюсь, тебе понравится:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level24,lesson04,task01"></button><b>1. Наследование от внутреннего класса</b><br/><br/>
+                Внутри класса <span class="taskcode">Solution</span> создайте 2 внутренних <span class="taskcode">public</span> класса <span class="taskcode">Apt3Bedroom</span>, <span class="taskcode">BigHall</span>.<br/>
+		Унаследуйте их от <span class="taskcode">Apartments</span> и <span class="taskcode">Hall</span>.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Рефакторинг</b><br/><br/>
+                1. Измените методы <span class="taskcode">getHeight</span> и <span class="taskcode">getWidth</span>, чтобы они возвращали <span class="taskcode">HasHeight</span> и <span class="taskcode">HasWidth</span> соответственно.<br/>
+		2. Для этого внутри методов <span class="taskcode">getHeight</span> и <span class="taskcode">getWidth</span> создайте локальные классы - реализации интерфейсов.<br/>
+		3. Переименуйте <span class="taskcode">getHeight</span> в <span class="taskcode">castToHasHeight</span>, <span class="taskcode">getWidth</span> в <span class="taskcode">castToHasWidth</span> (на имени метода нажмите Shift+F6).<br/>
+		4. Уберите наследование интерфейсов в классе  <span class="taskcode">Rectangle</span>.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Blackbox</b><br/><br/>
+                1. Восстановите логику метода <span class="taskcode">someAction</span> для поля <span class="taskcode">solutionAction</span>.<br/>
+		2. Пример вывода смотрите коментарием к методу <span class="taskcode">main</span>.<br/>
+		3. Подсказка: метод <span class="taskcode">someAction</span> анонимного класса поля <span class="taskcode">solutionAction</span> должен вызвать метод сабкласса <span class="taskcode">FirstClass</span>,<br/>
+		если <span class="taskcode">param</span> &gt; 0, иначе вызвать метод сабкласса <span class="taskcode">SecondClass</span><br/>
+		4. Свои строки создавать нельзя.<br/>
+		5. Классы <span class="taskcode">Action</span>, <span class="taskcode">FirstClass</span>, <span class="taskcode">SecondClass</span> менять нельзя.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>5. Локальные классы - классы внутри методов</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/24/image-ru-24-05.png"/>
+<p>- Привет, Амиго!</p>
+<p>Еще маленькая и небольшая тема – это <b>локальные классы</b>.</p>
+<p>Как ты уже видел, классы можно создавать не только в отдельных файлах, но и внутри других классов. Так вот – это еще не все. Классы можно создавать и внутри методов. Такие классы называются локальными. Они работают как обычные внутренние классы, но их можно использовать в пределах того метода, где их объявили.</p>
+<p>Внимание на экран:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><b><span class="green_text">class Car<br/>
+{</span><br/>
+    <span class="blue_text">public ArrayList&amp;ltCar&amp;gtcreatePoliceCars(int count)<br/>
+   {<br/>
+  ArrayList&amp;ltCar&amp;gt result = new ArrayList&amp;ltCar&amp;gt();</span><br/><br/>
+
+         <span class="red_text">class PoliceCar extends Car<br/>
+         {<br/>
+   int policeNumber;<br/>
+   PoliceCar(int policeNumber)<br/>
+             {<br/>
+   this.policeNumber = policeNumber;<br/>
+             }<br/>
+        }</span><br/><br/>
+
+       <span class="blue_text">for(int i=0; i&amp;ltcount; i++)<br/>
+  result.add(new</span> <span class="red_text">PoliceCar</span><span class="blue_text">(i));<br/><br/>
+
+        return result;<br/>
+    }</span><br/>
+<span class="green_text">}</span></b>
+</td>
+</tr>
+</tbody></table>
+<p class="amigo">- А зачем такие классы нужны? </p>
+<p class="amigo">Класс внутри метода, да еще с методами и конструкторами – это очень плохо читаемый код, разве не так?</p>
+<p>- Именно так. Ты абсолютно прав.</p>
+<p>В методах также можно использовать анонимные внутренние классы. Но есть одно маленькое преимущество у таких классов, из-за чего их довольно-таки часто используют внутри методов.</p>
+<p>Класс, объявленный внутри метода, может использовать локальные переменные этого метода:</p>
+<table class="table_example">
+<tbody><tr><th width="100%"> </th></tr>
+<tr>
+<td class="monospace_text wide-text"><b><span class="green_text">class Car<br/>
+{</span><br/>
+    <span class="blue_text">public ArrayList&amp;ltCar&amp;gtcreatePoliceCars(int count)<br/>
+   {<br/>
+  ArrayList&amp;ltCar&amp;gt result = new ArrayList&amp;ltCar&amp;gt();<br/><br/>
+
+        for(int i=0; i&amp;ltcount; i++)<br/>
+       {</span><br/>
+   <span class="violet_text">final int number</span> <span class="blue_text">= i;<br/>
+   result.add(new</span> <span class="red_text">Car() <br/>
+  {<br/>
+   int policeNumber =  number;<br/>
+               }</span><span class="blue_text">);<br/>
+      }<br/>
+        return result;<br/>
+    }</span><br/>
+<span class="green_text">}</span></b>
+</td>
+</tr>
+</tbody></table>
+<p>Но есть одно ограничение – переменные можно только «читать»,  изменять их нельзя.</p>
+<p>Поэтому существует такое ограничение:</p>
+<p>Классы, объявленные внутри метода, могут иметь доступ только к тем переменным метода, которые помечены ключевым словом final. В примере выше ты можешь видеть, что я не могу сразу присвоить переменной policeNumber значение переменной i, а сначала сохраняю его в final-переменную number.</p>
+<p class="amigo">- То, что можно использовать переменные метода – это действительно классная штука. Надеюсь, я оценю ее по достоинству.  Плохо только, что нельзя менять переменные.</p>
+<p>- Почему их нельзя менять, тебе сегодня расскажет Элли, а я пойду пока часок вздремну.</p>
+<p class="amigo">- Спокойной ночи, Ким. Спасибо за интересный урок.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar kim"></div>
+<h2>6. Задачи на локальные классы</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>И еще немного задач. Надеюсь, ты останешься доволен.</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>1. Реализация интерфейса используя локальный класс</b><br/><br/>
+                В классе <span class="taskcode">Cat</span> реализуйте логику метода <span class="taskcode">toSayable</span>, которая описана в джавадоке.
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>2. Как избежать Copy+Paste</b><br/><br/>
+                В классе <span class="taskcode">Dog</span> реализуйте логику метода <span class="taskcode">toSayable</span>, которая описана в джавадоке.
+            </td>
+</tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Интернет-магазин продажи джинсов</b><br/><br/>
+                1.Внутри файла <span class="taskcode">Solution.java</span>, но НЕ внутри класса <span class="taskcode">Solution</span> создайте 2 интерфейса:<br/>
+		1.1) <span class="taskcode">Item</span> с методами <span class="taskcode">int getId()</span>, <span class="taskcode">double getPrice()</span>, <span class="taskcode">String getTM()</span><br/>
+		1.2) <span class="taskcode">Jeans extends Item</span> с методами <span class="taskcode">int getLength()</span> и <span class="taskcode">int getSize()</span><br/>
+		2. В классе <span class="taskcode">Util</span> в методе <span class="taskcode">getAllJeans</span> добавьте пропущенную часть java-кода:<br/>
+		2.1) разберитесь в том, что уже есть в методе <span class="taskcode">getAllJeans</span> класса <span class="taskcode">Util</span><br/>
+		2.2) создайте абстрактный <span class="taskcode">classAbstractJeans</span> от интерфейса <span class="taskcode">Jeans</span> с одним абстрактным методом, реализуйте остальные методы<br/>
+		2.3) создайте классы <span class="taskcode">Levis</span> и <span class="taskcode">Denim</span> от <span class="taskcode">AbstractJeans</span>, реализуйте оставшийся метод<br/>
+		2.4) в классе <span class="taskcode">AbstractJeans</span> реализуйте метод <span class="taskcode">toString()</span> используя  Alt+Insert -&gt;<span class="taskcode">toString()</span><br/>
+		2.5) метод <span class="taskcode">toString</span> класса <span class="taskcode">AbstractJeans</span> должен начинаться с имени сабкласса, например, <span class="taskcode">Levis{id=1, length=34, size=6, price=150.0}</span>
+</td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>7. Что происходит на самом деле (Во что превращаются классы компилятором)</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/24/image-ru-24-04.png"/>
+<p>- Привет, Амиго! Вот тебе еще немного информации.</p>
+<p>Я уже тебе говорила, что все анонимные классы на самом деле превращаются компилятором в обычные внутренние классы.</p>
+<p class="amigo">- Ага. Я даже помню, что у них имена – это числа: 1, 2, 3 и т.д.</p>
+<p>- Именно так. Но вот, еще, какой есть нюанс.</p>
+<p>Если класс был объявлен внутри метода и использовал какие-то переменные, то ссылки на них будут добавлены в сгенерированный класс. Смотри сам:</p>
+<p>Было:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Исходный пример:</th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>class</b> Car<br/>
+{</span><br/>
+    <span class="blue_text"><b>public</b> ArrayList&amp;ltCar&amp;gtcreatePoliceCars(int count)<br/>
+   {<br/>
+  ArrayList&amp;ltCar&amp;gt result = new ArrayList&amp;ltCar&amp;gt();<br/><br/>
+
+        <b>for</b>(int i=0; i&amp;ltcount; i++)<br/>
+  {</span><br/>
+             <span class="violet_text"><b>final</b> int number</span> <span class="blue_text">= i;</span><br/>
+   <span class="blue_text">result.add(new</span> <span class="red_text">Car()<br/>
+    {<br/>
+                     public String toString()<br/>
+                    {<br/>
+                           return ""+number;<br/>
+                     }</span><br/>
+    <span class="red_text">}</span><span class="blue_text">);<br/>
+  }<br/>
+        return result;<br/>
+    }<br/>
+}</span>
+</td>
+</tr>
+</tbody></table>
+<p>Результат компиляции:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Что сгенерировал компилятор:</th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>class Car</b><br/>
+{</span><br/>
+    <span class="blue_text"><b>public ArrayList&amp;ltCar&amp;gtcreatePoliceCars(int count)</b><br/>
+   {<br/>
+  <b>ArrayList&amp;ltCar&amp;gt result = new ArrayList&amp;ltCar&amp;gt();</b><br/><br/>
+
+        <b>for(int i=0; i&amp;ltcount; i++)</b><br/>
+       {<br/>
+             <b>final int number  = i;</b><br/>
+   <b>result.add(new Anonymous2 (number));</b><br/>
+       }<br/>
+         <b>return result;</b><br/>
+     }</span><br/><br/>
+
+     <span class="red_text"><b>class Anonymous2</b><br/>
+     {</span><br/>
+  <b><span class="orange_text">final int</span> <span class="dred_text">number</span><span class="orange_text">;</span></b><br/> 
+  <span class="red_text"><b>Anonymous2(int number)</b><br/>
+        {</span><br/>
+  <b><span class="orange_text">this.</span><span class="dred_text">number</span> <span class="red_text">= number;</span></b><br/>
+        <span class="red_text">}<br/><br/>
+
+         <b>public String toString()</b><br/>
+        {<br/>
+              <b>return ""+</b></span><span class="dred_text">number</span><span class="red_text">;</span><br/>
+        <span class="red_text">}<br/>
+    }</span><br/>
+<span class="green_text">}</span>
+</td>
+</tr>
+</tbody></table>
+<p>Понял в чем штука? Внутренний класс не может изменить локальную переменную метода, т.к. к тому времени, когда будет исполняться код этого класса, мы уже можем вообще уйти из метода.</p>
+<p>Теперь второй момент. Метод toString() использует переданную переменную. Для этого пришлось:</p>
+<p><b>А)</b> сохранить ее внутри сгенерированного класса</p>
+<p><b>Б)</b> добавить ее  в конструктор.</p>
+<p class="amigo">- Понял. Классы, объявленные  внутри метода, всегда работают с копией переменных.</p>
+<p>- Именно!</p>
+<p class="amigo">- Тогда понятно, почему переменные должны быть final. И почему их нельзя менять. Если на самом деле ты работаешь с копией, а не с оригиналом, то пользователь не поймет, почему не может менять значение переменной, а значит, надо просто ему запретить ее менять.</p>
+<p>- Да, мне кажется, что объявление переменных final – это небольшая плата за то, что компилятор за тебя сгенерирует класс, передаст в него и сохранит там все переменные метода, которые ты хочешь использовать.</p>
+<p class="amigo">- Согласен. Все-таки это крутая штука – анонимные локальные классы.</p>
+<p class="amigo">А если я объявлю внутри метода свой локальный класс и буду в нем использовать переменные метода, компилятор их тоже добавит этому классу?</p>
+<p>- Да, добавит в класс и его конструктор.</p>
+<p class="amigo">- Я так и думал.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar elly"></div>
+<h2>8. Конструкторы/переменные анонимных иннер классов, final</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p>Как ты уже знаешь, у анонимных внутренних классов не может быть конструктора.</p>
+<p class="amigo">- Ага. Это очень неудобно. Конструктор – это очень нужная вещь.</p>
+<p>- Как говорится, если нельзя, но очень хочется, то можно.</p>
+<p>Вспомни, у статических переменных нет статического конструктора, но есть статический инициализатор – static-блок.</p>
+<p class="amigo">- Ага, я помню.</p>
+<p>- Вот точно такой же инициализатор, только не статик, есть у анонимных внутренних классов:</p>
+<table class="table_example">
+<tbody><tr><th width="100%">Пример</th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="green_text"><b>class Car</b><br/>
+{</span><br/>
+    <span class="blue_text"><b>public ArrayList&amp;ltCar&amp;gtcreatePoliceCars(int count)</b><br/>
+   {<br/>
+  <b>ArrayList&amp;ltCar&amp;gt result = new ArrayList&amp;ltCar&amp;gt();</b><br/><br/>
+
+        <b>for(int i=0; i&lt;count; i++)</b><br/>
+       {</span><br/>
+    <span class="dblue_text"><b>final int number  = i;</b></span><br/>
+    <b><span class="blue_text">result.add(new</span> <span class="red_text">Car()</span></b><br/>
+    <span class="red_text">{<br/>
+      <b>int policeNumber;</b></span><br/>
+      <span class="violet_text">{<br/>
+        <b>policeNumber =  number;</b><br/>
+      }</span><br/>
+    <span class="red_text">}</span><span class="blue_text">);<br/>
+       }<br/>
+        <b>return result;</b><br/>
+    }<br/>
+<span class="green_text">}</span></span>
+</td>
+</tr>
+</tbody></table>
+<p>В этот раз я выделила красным цветом код анонимного внутреннего класса, а фиолетовым – его инициализатор – или, фактически, конструктор. Тело «конструктора» есть, а заголовка метода – нет:</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Ожидание</th><th width="50%">Реальность</th></tr>
+<tr>
+<td class="monospace_text wide-text"><span class="red_text"><b>class Car</b><br/> 
+{<br/>
+ <b>int policeNumber;</b></span><br/>
+ <span class="violet_text"><b><s>Car()</s></b><br/><br/>   
+           {<br/>
+  <b>policeNumber =  number;</b><br/>
+           }</span><br/>
+<span class="red_text">}</span>
+</td>
+<td class="monospace_text"><span class="red_text"><b>class Car</b><br/> 
+{<br/>
+ <b>int policeNumber;</b></span><br/>  
+           <span class="violet_text">{<br/>
+  <b>policeNumber =  number;</b><br/>
+           }</span><br/>
+<span class="red_text">}</span>
+</td>
+</tr>
+</tbody></table>
+<p>Ты можешь объявлять переменные внутри такого класса и инициализировать их внутри инициализатора.</p>
+<p class="amigo">- Отлично, теперь ограничений значительно меньше.</p>
+<p>- На этом мы наше знакомство с внутренними классами и закончим. Надеюсь, тебе понравилось.</p>
+<p class="amigo">- Очень. Лекции Ким, Риши, а особенно твои, Элли, были просто бесподобными.</p>
+<p>- Льстец! Продолжай… </p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar diego"></div>
+<h2>9. Задачи на анонимные иннерклассы</h2>
+</div>
+<p>- А вот и новенькие задачи для моего друга:</p>
+<table class="table_task">
+<tr>
+<th>Задачи</th>
+</tr>
+<tr>
+<td><button class="task_button" taskkey="level24,lesson09,task01"></button><b>1. Вспомним наследование</b><br/><br/>
+                Исправить наследование во всех классах, чтобы вывод метода <span class="taskcode">main</span> был CCBAYS
+        </td></tr>
+<tr>
+<td><button class="task_button" taskkey="level24,lesson09,task02"></button><b>2. Знания - сила!</b><br/><br/>
+                1. В методе sort написать компаратор для <span class="taskcode">Stock</span>:
+        1.1. Первичная сортировка по name в алфавитном порядке
+        1.2. Вторичная сортировка по дате без учета часов, минут, секунд (сверху самые новые), потом по прибыли от положительных к отрицательным
+        ... open 125,64 and last 126,74 - тут прибыль = 126,74-125,64
+        ... open 125,64 and last 123,43 - тут прибыль = 123,43-125,64
+        2. Разобраться с *Format-ами и исправить <span class="taskcode">IllegalArgumentException</span>. Подсказка - это одна строчка.
+        Пример вывода:
+        Fake Apple Inc.   AAPL | 17-11-2025 open 125,64 and last 123,43
+        Fake Oracle Corporation   ORCL | 21-08-1989 closed 0,15
+        </td></tr>
+<tr>
+<td><button class="https://javarush.ru/levels/idea-task-button"></button><b>3. Рефакторинг</b><br/><br/>
+                Сделайте так, чтобы метод <span class="taskcode">getIterator</span> возвращал анонимный класс.<br/>
+		Перенесите логику <span class="taskcode">LocalIterator</span> в анонимный класс.<br/>
+		Меняйте только тело метода <span class="taskcode">getIterator</span>.
+            </td>
+</tr>
+</table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>10. Учимся гуглить. Как скачать видео из интернета</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Привет, Хулио.</p>
+<p class="amigo">Знаешь, я начал следовать твоему совету и гуглить все, о чем ты просил. Действительно, в интернете очень много ответов прямо с примерами. А еще я сайт классный нашел – SakOverlow. Кажется, так называется.</p>
+<p>- StackOverflow (<a href="http://stackoverflow.com/" target="_blank">http://stackoverflow.com/</a>) – это <b>крупнейший</b> сайт/форум, где программисты помогают программистам (и новичкам!). Там практически всегда тебе дают развернутый ответ на твой вопрос, так еще и с примерами.</p>
+<p>На StackOverflow есть свой поиск по темам.</p>
+<p>Но ты всегда можешь воспользоваться Google для поиска по этому сайту.</p>
+<p class="amigo">- Так я и ищу через Google.</p>
+<p>- Не-не-не. Я о другом. В Google в строке поиска напиши:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Примеры запросов</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">site:stackoverflow.com java download file
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">site:stackoverflow.com java upload file
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">site:javarush.ru путь программиста
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">site:habrahbar.ru java как скачать файл
+    </td>
+</tr>
+</tbody></table>
+<p>Если ты хочешь, чтобы Google искал что-то только на определенном сайте, для этого в поисковом запросе нужно указать имя сайта с префиксом «site:»</p>
+<p>Вот тебе несколько вещей, которые нужно найти на сайте stackoverflow.com и д.р.</p>
+<table class="table_example">
+<tbody><tr><th width="50%">Что нужно найти:</th><th width="50%">Где:</th></tr>
+<tr>
+<td class="wide-text">java string intern
+    </td>
+<td class="wide-text">stackoverflow.com
+    </td>
+</tr>
+<tr>
+<td class="wide-text">java thread state
+    </td>
+<td class="wide-text">stackoverflow.com
+    </td>
+</tr>
+<tr>
+<td class="wide-text">java hashset
+    </td>
+<td class="wide-text">stackoverflow.com
+    </td>
+</tr>
+<tr>
+<td class="wide-text">java string intern
+    </td>
+<td class="wide-text">hashcode.ru
+    </td>
+</tr>
+<tr>
+<td class="wide-text">java thread state
+    </td>
+<td class="wide-text">hashcode.ru
+    </td>
+</tr>
+<tr>
+<td class="wide-text">java hashset
+    </td>
+<td class="wide-text">hashcode.ru
+    </td>
+</tr>
+<tr>
+<td class="wide-text">java string intern
+    </td>
+<td class="wide-text">oracle.com
+    </td>
+</tr>
+<tr>
+<td class="wide-text">java thread state
+    </td>
+<td class="wide-text">oracle.com
+    </td>
+</tr>
+<tr>
+<td class="wide-text">Java home
+    </td>
+<td class="wide-text">oracle.com
+    </td>
+</tr>
+<tr>
+<td class="wide-text">java hashset
+    </td>
+<td class="wide-text">habrahabr.ru
+    </td>
+</tr>
+</tbody></table>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>11. Профессор дает доп. материал</h2>
+</div>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/24/image-ru-24-03.png"/>
+<p>- Привет, Амиго!</p>
+<p>Не понимаю я этих интерактивных уроков. Вот в мое время – все, на что мог рассчитывать студент, – это старая добрая нудная лекция.</p>
+<p class="amigo">- Я тоже так считаю.</p>
+<p>- Вот тебе одна из этого великолепия:</p>
+<p><a href="http://info.javarush.ru/JavaRush_lectures_discussion/2013/10/20/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F-24.html" target="_blank">Ссылка на дополнительный материал</a></p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar julio"></div>
+<h2>12. Хулио</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Здорово. Слушай, Хулио, а ты в армии служил?</p>
+<p>- Нет, Амиго, не служил. Меня не взяли...</p>
+<p class="amigo">- А почему тебя не взяли?</p>
+<p>- Найти не смогли...</p>
+<video class="movie-futurama" controls="" id="eyephoneMoviePlayer" poster="http://storage.javarush.ru/alpha/video/video-snapshot-ru-24.gif" preload="none" tabindex="0" taskkey="level24,lesson12,none01">
+<source src="http://storage.javarush.ru/alpha/video/video-ru-24.mp4" type="video/mp4"></source>
+</video>
+<p></p><center><a href="https://www.youtube.com/watch?v=_-B4AMrqP3g" target="_blank">Оригинал видео на YouTube</a></center>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar professor"></div>
+<h2>13. Вопросы к собеседованию по этой теме</h2>
+</div>
+<p>- Привет, Амиго! Вот тебе несколько вопросов к собеседованиям:</p>
+<table class="table_example">
+<tbody><tr><th width="10%"> </th><th width="90%">Вопросы к собеседованиям</th></tr>
+<tr>
+<td class="wide-text"><b>1</b>
+</td>
+<td class="wide-text">Во что компилируются анонимные внутренние классы?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>2</b>
+</td>
+<td class="wide-text">Можно ли наследовать внутренние классы?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>3</b>
+</td>
+<td class="wide-text">Можно ли наследовать анонимные внутренние классы?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>4</b>
+</td>
+<td class="wide-text">Можно ли переопределять внутренние классы?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>5</b>
+</td>
+<td class="wide-text">Какие ограничения есть у локальных классов?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>6</b>
+</td>
+<td class="wide-text">Может ли анонимный внутренний класс содержать статические методы?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>7</b>
+</td>
+<td class="wide-text">Можно ли создать объект внутреннего класса, если у внешнего класса только private конструктор?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>8</b>
+</td>
+<td class="wide-text">Можно ли объявлять внутренние классы private?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>9</b>
+</td>
+<td class="wide-text">Можно ли объявлять анонимные внутренние классы private?
+    </td>
+</tr>
+<tr>
+<td class="wide-text"><b>10</b>
+</td>
+<td class="wide-text">Сколько у класса максимально может быть внутренних классов? 
+    </td>
+</tr>
+</tbody></table>
+<p class="amigo">- Профессор, но мне не рассказывали ответы на эти вопросы!</p>
+<p>- Амиго, а ты думаешь, что работодатели готовят вопросы на собеседование по моим лекциям?</p>
+<p class="amigo">- Э-э-э. Нет.</p>
+<p>- Это тебе не универ. Нужны ответы – гугли.</p>
+<p>И скажи спасибо за сами вопросы.</p>
+<p class="amigo">- Спасибо.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+<section class="lesson">
+<div class="section_header">
+<div class="avatar zapp"></div>
+<h2>14. Большая задача</h2>
+</div>
+<p>- Привет, Амиго!</p>
+<p class="amigo">- Здравия желаю, Капитан Бобров!</p>
+<p>- Сегодня у тебя новое, более сложное задание.</p>
+<p>Мы напишем игру Арканоид.</p>
+<p>Вот как, примерно, это выглядит <a href="http://www.youtube.com/watch?v=Th-Z6QQ5AOQ" target="_blank">ссылка</a></p>
+<p class="amigo">- И что, будет такая же графика?</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/24/image-ru-24-01.gif"/>
+<p>- Конечно, нет, мы же не гражданские.</p>
+<p class="amigo">- А что, такая?</p>
+<img alt="" class="cartoon" src="https://javarush.ru/levels/images/lessons/24/image-ru-24-02.gif"/>
+<p>- Все будет консольно-спартанское, как и должно быть у военных.</p>
+<p>Приступай.</p>
+<p class="amigo">- Есть, приступить к выполнению задачи.</p>
+<div class="section_footer">
+<button class="next_lesson"></button>
+<div class="line"></div>
+</div>
+</section>
+
+<div class="level-ref">
+</div>
+
+<br>
+<br>
+
+</div>
+
+<!--WINDOWS BEGIN-->
+<div id="code-task-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="type-task-dialog" class="" tabindex="-1" role="dialog" ></div>
+<div id="top-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="right-panel-dialog" class="" tabindex="-1" role="dialog"  ></div>
+<div id="share-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="social-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<div id="subscription-dialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"></div>
+<!--WINDOWS END-->
+
+<script language="JavaScript">
+    /*MAIN*/
+    $(function(){
+        TOPMENU.initialize();
+        controller.main(11);
+    })
+</script>
+
+
+<!-- Yandex.Metrika counter --><script >(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23548852 = new Ya.Metrika({id:23548852, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="http://javarush.ru//mc.yandex.ru/watch/23548852" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!--VK remarketing--> <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=suzK*cTK8ENwibxo6kXHqPUOEoZ0q/qCpLFBU09ssARGoOvJVT0hTTUCenGO9J3swAVqz1dpjqdHQqUXTVSdCMitczHB*e2vsBR*ol36lRwj1ZLvi9vazhjAbXwDlc*xC/J18ZypuIPYpzjXFkjXfY5TXY*xpxwzbpcBUDiGct8-';</script>
+<!-- Google Code for Price-Conversion Conversion Page --> <script type="text/javascript" src="http://javarush.ru//www.googleadservices.com/pagead/conversion_async.js"></script>
+</body>
+</html>
+
