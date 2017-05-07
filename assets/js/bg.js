@@ -60,7 +60,8 @@ function drawStars(){
     initializeStars();
   }
   if(warp==0)
-  {c.fillStyle = "rgba(0,10,20,1)";
+  // {c.fillStyle = "rgba(0,10,20,1)";
+  {c.fillStyle = "#000";
   c.fillRect(0,0, canvas.width, canvas.height);}
   c.fillStyle = "rgba(209, 255, 255, "+radius+")";
   for(i = 0; i < numStars; i++){
