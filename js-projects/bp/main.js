@@ -37,6 +37,16 @@ function initMap(markers) {
 			return false;
 		});
 	});
+}
 
 
+window.onload = function() {
+	document.getElementById('menu-control').addEventListener('click', function() {
+		var menu = document.getElementById('side-menu');
+		if (menu.className === 'opened') {
+			menu.className = 'closed';
+		} else {
+			menu.className = 'opened';
+		}
+	});
 }

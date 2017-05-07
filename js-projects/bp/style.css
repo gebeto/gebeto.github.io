@@ -5,8 +5,37 @@
 }
 
 #map {
-	/*width: 100%;*/
 	height: 100vh;
 }
 
+#menu-control {
+	display: block;
+	width: 30px;
+	height: 34px;
+	font-size: 24px;
+	line-height: 1;
+	margin: 0;
+	padding: 5px;
+	cursor: pointer;
+}
+
+#side-menu {
+	position: fixed;
+	top: 0px;
+	right: -270px;
+	width: 300px;
+	background: #fff;
+	height: 100vh;
+	transition-duration: .3s;
+	overflow: hidden;
+}
+
+#side-menu.closed {
+	right: -270px;
+	height: 36px;
+}
+
+#side-menu.opened {
+	right: 0px;
+}
 
