@@ -39,7 +39,8 @@ function createImageWithFile(openedFile, index) {
 		imgForSave.height = 200;
 		// blc.appendChild(link);
 		blc.appendChild(imgForSave);
-		document.body.appendChild(blc);
+		// document.body.appendChild(blc);
+		document.getElementById('results').appendChild(blc);
 
 	    // link.click();
 

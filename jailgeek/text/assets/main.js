@@ -1,25 +1,31 @@
 var canvas = document.getElementById('main-canvas');
+var img = document.getElementById('main-img');
 var textInput = document.getElementById('text-input');
 var downloadButton = document.getElementById('download-button');
 
 function CanvasDrawer(canvas, bgUrl) {
 	this.canvas = canvas;
 	this.ctx = this.canvas.getContext('2d');
-	this.fontSize = this.lineSpacing = 150;
-	this.fontFamily = 'CoreSansDS67CnHeavyItalic';
+	this.fontSize = this.lineSpacing = 120;
+	this.fontFamily = 'font';
 	this.background = this.loadImage(bgUrl);
 	this.linesCount = 1;
 	this.currentText = 'JailGeek';
 	this.top = 280;
 	this.setFillStyle();
+	// this.refreshTitle();
 }
 
 CanvasDrawer.prototype.saveImage = function() {
 	console.log(this.canvas);
-	var link = document.createElement('a');
-    link.href = this.canvas.toDataURL();
-    link.download = this.currentText + '.png';
-    link.click();
+	var imgg = document.createElement('img');
+	imgg.src = this.canvas.toDataURL();
+	img.src = this.canvas.toDataURL();
+	document.body.appendChild(imgg);
+	// var link = document.createElement('a');
+	// link.href = this.canvas.toDataURL();
+ 	// link.download = this.currentText + '.png';
+	// link.click();
 }
 
 
@@ -34,8 +40,11 @@ CanvasDrawer.prototype.loadImage = function(iurl) {
 
 CanvasDrawer.prototype.setFillStyle = function() {
 	var gradient = this.ctx.createLinearGradient(this.canvas.width/2, this.canvas.height/3, this.canvas.width/2, this.canvas.height - this.canvas.height/3);
-	gradient.addColorStop(0.0, "#FCFDFF");
-	gradient.addColorStop(1.0, "#E5F4FA");
+	// gradient.addColorStop(0.0, "#FCFDFF");
+	// gradient.addColorStop(1.0, "#e5c3bd");
+	gradient.addColorStop(0.0, "#fff");
+	// gradient.addColorStop(1.0, "#e5c3bd");
+	gradient.addColorStop(1.0, "#fff");
 	this.ctx.fillStyle = gradient;
 	this.ctx.font = this.fontSize + 'px ' + this.fontFamily;
 	this.ctx.textAlign = 'center';
@@ -49,7 +58,8 @@ CanvasDrawer.prototype.refreshTitle = function(text) {
 	lines.map(function(line, i) {
 		var top = this.top + this.fontSize / 3;
 		this.ctx.fillText(line, 425, top + this.lineSpacing * i);
-	}.bind(this))
+	}.bind(this));
+	img.src = this.canvas.toDataURL();
 }
 
 CanvasDrawer.prototype.moveOneLineUp = function() {
@@ -79,12 +89,13 @@ CanvasDrawer.prototype.changeLineSpacing = function(size) {
 	this.refreshTitle();
 }
 
-var drawer = new CanvasDrawer(canvas, 'background.svg');
+// var drawer = new CanvasDrawer(canvas, 'assets/background.svg');
+var drawer = new CanvasDrawer(canvas, 'assets/background.png');
 
 WebFontConfig = {
 	custom: {
-		families: ['CoreSansDS67CnHeavyItalic'],
-		urls: ['fonts.css']
+		families: ['font'],
+		urls: ['assets/fonts.css']
 	},
 	active: function() {
 		drawer.refreshTitle();

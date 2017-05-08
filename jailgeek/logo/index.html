@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<title>Logo on image</title>
 	<meta content="width=device-width,initial-scale=1.0" name="viewport">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
 	<style type="text/css">
 		canvas {
 			background: #333;
@@ -26,11 +28,39 @@
 			display: inline-block;
 			margin: 4px;
 		}
+
+		.btn-file {
+			position: relative;
+			overflow: hidden;
+		}
+		.btn-file input[type=file] {
+			position: absolute;
+			top: 0;
+			right: 0;
+			min-width: 100%;
+			min-height: 100%;
+			font-size: 100px;
+			text-align: right;
+			opacity: 0;
+			outline: none;
+			background: white;
+			cursor: inherit;
+			display: block;
+		}
 	</style>
 </head>
 <body>
 	
-	<input type="file" id="images" style="display: block;" multiple>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">	
+				<label class="btn btn-default btn-file col-xs-12">
+					Выбор изображений <input class="file" type="file" id="images" style="display: block;" multiple hidden>
+				</label>
+			</div>
+			<div class="col-xs-12" id="results"></div>
+		</div>
+	</div>	
 	
 	<script type="text/javascript" src="assets/main.js"></script>
 </body>
