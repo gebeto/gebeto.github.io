@@ -1,0 +1,463 @@
+/* 
+	//http://freebies.flatro.ru/publications/category/fonts
+
+	var a = jQuery('#publications').children().map(function(item, index){
+		var aa = jQuery(index).find('a');
+		return {url: aa[0].href, img: aa[0].children[0].src, title: (aa[2] ? aa[2].textContent.trim() : 'NONE')}
+	}).toArray();
+	JSON.stringify(a);
+ */
+
+[{
+	"url": "http://freebies.flatro.ru/verbena-handstylish-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/651/thumb/v.jpg?1495555017",
+	"title": "Verbena Handstylish Font"
+}, {
+	"url": "http://freebies.flatro.ru/lustinmal-script-",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/641/thumb/dribbble.jpg?1494452775",
+	"title": "Lustinmal Script"
+}, {
+	"url": "http://freebies.flatro.ru/ralington-script",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/638/thumb/ralington_script.jpg?1494313519",
+	"title": "Ralington Script"
+}, {
+	"url": "http://freebies.flatro.ru/nikoleta-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/636/thumb/Flatro_site.png?1494061248",
+	"title": "Nikoleta Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/jack-lane-display-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/633/thumb/Flatro_site.jpg?1493555665",
+	"title": "Jack Lane Display Font"
+}, {
+	"url": "http://freebies.flatro.ru/scriblle-brush-script-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/629/thumb/untitled-1.png?1493327104",
+	"title": "Scriblle Brush Script Font"
+}, {
+	"url": "http://freebies.flatro.ru/moderne-sans-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/614/thumb/Flatro_site.jpg?1491774263",
+	"title": "Moderne Sans Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/goldin-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/612/thumb/prev156.jpg?1491501613",
+	"title": "Goldin Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/sitka-brush",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/609/thumb/Flatro_site.jpg?1491247034",
+	"title": "Sitka Brush"
+}, {
+	"url": "http://freebies.flatro.ru/somatic-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/607/thumb/Flatro_site.jpg?1491113330",
+	"title": "Somatic Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/caleb-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/605/thumb/prev274.jpg?1490908748",
+	"title": "Caleb Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/anurati---free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/601/thumb/Flatro_site.jpg?1490734399",
+	"title": "ANURATI - Free font"
+}, {
+	"url": "http://freebies.flatro.ru/befolk-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/597/thumb/s320170126-4-187s21o.jpg?1490443208",
+	"title": "Befolk Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/slopes-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/593/thumb/s320170301-4-1ykarki.jpg?1489956727",
+	"title": "Slopes Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/-connoisseurs-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/587/thumb/freebie-1489140205.jpg?1489583375",
+	"title": "Connoisseurs Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/aveline-script",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/582/thumb/Flatro_site.jpg?1489351067",
+	"title": "Aveline Script"
+}, {
+	"url": "http://freebies.flatro.ru/luciano-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/578/thumb/s320170120-4-1fxocxy.jpg?1489150883",
+	"title": "Luciano Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/-little-brushy-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/568/thumb/freebie-1480063829.jpg?1488314256",
+	"title": "Little Brushy Font"
+}, {
+	"url": "http://freebies.flatro.ru/befindisa-script-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/559/thumb/Flatro_site.jpg?1487530655",
+	"title": "Befindisa Script Font"
+}, {
+	"url": "http://freebies.flatro.ru/signatura-monoline-free-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/543/thumb/output20170211-10020-27q8xs.jpg?1487371988",
+	"title": "Signatura Monoline Free Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/ikaros-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/521/thumb/output20170211-10020-89qvvn.jpg?1487371977",
+	"title": "Ikaros Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/rising-star-monoline-script",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/506/thumb/output20170211-10020-j3hed7.jpg?1487371969",
+	"title": "Rising Star Monoline Script"
+}, {
+	"url": "http://freebies.flatro.ru/nomah-light",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/505/thumb/output20170211-10020-7s0pmp.jpg?1487371969",
+	"title": "Nomah Light"
+}, {
+	"url": "http://freebies.flatro.ru/rissa-typeface-",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/495/thumb/output20170211-10020-sz0es4.jpg?1487371964",
+	"title": "Rissa Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/banaue-free-handwritten-brush-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/487/thumb/output20170211-10020-1jse57s.jpg?1487371959",
+	"title": "Banaue Free handwritten brush font"
+}, {
+	"url": "http://freebies.flatro.ru/simple",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/484/thumb/output20170211-10020-as2tu.jpg?1487371958",
+	"title": "Simple"
+}, {
+	"url": "http://freebies.flatro.ru/komi-free-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/478/thumb/output20170211-10020-19z26xx.jpg?1487371955",
+	"title": "KOMI Free Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/knucklehead:-new-free-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/473/thumb/output20170211-10020-1wgilf5.jpg?1487371952",
+	"title": "Knucklehead: New Free Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/larch-script-typeface-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/443/thumb/output20170211-10020-gyt064.jpg?1487371936",
+	"title": "Larch Script Typeface Font"
+}, {
+	"url": "http://freebies.flatro.ru/peenu-free-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/434/thumb/output20170211-10020-nab87z.jpg?1487371931",
+	"title": "Peenu Free Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/ikaros-free-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/431/thumb/output20170211-10020-wksa0y.jpg?1487371929",
+	"title": "Ikaros Free Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/parthanar-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/417/thumb/output20170211-10020-1pbpl1o.jpg?1487371922",
+	"title": "Parthanar Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/humblle-rought-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/414/thumb/output20170211-10020-lv0e2a.jpg?1487371921",
+	"title": "Humblle Rought Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/typeface-hello-stockholm-",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/409/thumb/output20170211-10020-1hxymyr.jpg?1487371917",
+	"title": "Typeface Hello Stockholm"
+}, {
+	"url": "http://freebies.flatro.ru/phalanx-free-vintage-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/406/thumb/output20170211-10020-1pcd81p.jpg?1487371916",
+	"title": "Phalanx Free Vintage Font"
+}, {
+	"url": "http://freebies.flatro.ru/free-font-northwest",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/398/thumb/output20170211-10020-sipqpq.jpg?1487371911",
+	"title": "FREE FONT NORTHWEST"
+}, {
+	"url": "http://freebies.flatro.ru/kocoon-light-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/393/thumb/output20170211-10020-75mxqz.jpg?1487371908",
+	"title": "Kocoon Light Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/octanis-font-family",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/392/thumb/output20170211-10020-10e6ya.jpg?1487371907",
+	"title": "Octanis Font Family"
+}, {
+	"url": "http://freebies.flatro.ru/lauren-script-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/382/thumb/output20170211-10020-a1vqui.jpg?1487371902",
+	"title": "Lauren Script Font"
+}, {
+	"url": "http://freebies.flatro.ru/brice-",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/377/thumb/output20170211-10020-1q7ft5l.jpg?1487371899",
+	"title": "Brice"
+}, {
+	"url": "http://freebies.flatro.ru/zike-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/361/thumb/output20170211-10020-7mkxip.jpg?1487371891",
+	"title": "Zike Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/hensa-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/359/thumb/output20170211-10020-1v8joc4.jpg?1487371890",
+	"title": "Hensa Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/original",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/353/thumb/output20170211-10020-1vog7s1.jpg?1487371887",
+	"title": "Original"
+}, {
+	"url": "http://freebies.flatro.ru/kano-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/351/thumb/output20170211-10020-9udm3c.jpg?1487371886",
+	"title": "Kano Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/-breathe-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/350/thumb/output20170211-10020-gtb313.jpg?1487371886",
+	"title": "Breathe Font"
+}, {
+	"url": "http://freebies.flatro.ru/bellico-typeface-and-bonus-vectors",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/338/thumb/output20170211-10020-1n76sot.jpg?1487371880",
+	"title": ""
+}, {
+	"url": "http://freebies.flatro.ru/baron-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/329/thumb/output20170211-10020-1eswssx.jpg?1487371875",
+	"title": "Baron Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/quito",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/321/thumb/output20170211-10020-1gwz0si.jpg?1487371871",
+	"title": "QUITO"
+}, {
+	"url": "http://freebies.flatro.ru/alcubierre-free-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/315/thumb/output20170211-10020-wc0mn5.jpg?1487371867",
+	"title": "Alcubierre Free Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/slash-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/313/thumb/output20170211-10020-1i6pern.jpg?1487371866",
+	"title": "Slash Font"
+}, {
+	"url": "http://freebies.flatro.ru/zefani-free-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/310/thumb/output20170211-10020-og4h96.jpg?1487371865",
+	"title": "Zefani Free Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/bushcraft-font-family",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/307/thumb/output20170211-10020-8h3mpe.jpg?1487371864",
+	"title": "Bushcraft Font Family"
+}, {
+	"url": "http://freebies.flatro.ru/gothic-modern-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/306/thumb/output20170211-10020-1xfp005.jpg?1487371864",
+	"title": "Gothic Modern Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/againts-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/300/thumb/output20170211-10020-p7u4mz.jpg?1487371860",
+	"title": "Againts Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/serendipity-script",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/298/thumb/output20170211-10020-urcrs5.jpg?1487371859",
+	"title": "Serendipity Script"
+}, {
+	"url": "http://freebies.flatro.ru/el-capitan-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/293/thumb/output20170211-10020-1p8456i.jpg?1487371857",
+	"title": "El Capitan Font"
+}, {
+	"url": "http://freebies.flatro.ru/popo-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/290/thumb/output20170211-10020-a59qcn.jpg?1487371855",
+	"title": "Popo Font"
+}, {
+	"url": "http://freebies.flatro.ru/-carosello-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/286/thumb/output20170211-10020-az9mub.jpg?1487371853",
+	"title": "Carosello Font"
+}, {
+	"url": "http://freebies.flatro.ru/stellar-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/282/thumb/output20170211-10020-1v2qd6e.jpg?1487371851",
+	"title": "Stellar Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/awesawez-script",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/279/thumb/output20170211-10020-11dc5ym.jpg?1487371850",
+	"title": "Awesawez Script"
+}, {
+	"url": "http://freebies.flatro.ru/break-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/273/thumb/output20170211-10020-lz25vn.jpg?1487371847",
+	"title": "Break Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/coves",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/267/thumb/output20170211-10020-1kwlnus.jpg?1487371844",
+	"title": "Coves"
+}, {
+	"url": "http://freebies.flatro.ru/beyno",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/263/thumb/output20170211-10020-ko3amd.jpg?1487371842",
+	"title": "BEYNO"
+}, {
+	"url": "http://freebies.flatro.ru/pier-sans",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/259/thumb/output20170211-10020-16dxhaf.jpg?1487371840",
+	"title": "Pier Sans"
+}, {
+	"url": "http://freebies.flatro.ru/exodus",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/251/thumb/output20170211-10020-myflqx.jpg?1487371836",
+	"title": "Exodus"
+}, {
+	"url": "http://freebies.flatro.ru/stereo",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/245/thumb/output20170211-10020-e4axf8.jpg?1487371833",
+	"title": "Stereo"
+}, {
+	"url": "http://freebies.flatro.ru/caja",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/229/thumb/output20170211-10020-16rkszq.jpg?1487371827",
+	"title": "Caja"
+}, {
+	"url": "http://freebies.flatro.ru/poiret-one",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/228/thumb/output20170211-10020-1qnxoxt.jpg?1487371827",
+	"title": ""
+}, {
+	"url": "http://freebies.flatro.ru/screpka",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/227/thumb/output20170211-10020-1eamp38.jpg?1487371827",
+	"title": "Screpka"
+}, {
+	"url": "http://freebies.flatro.ru/olesia-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/220/thumb/output20170211-10020-aetfi9.jpg?1487371824",
+	"title": "Olesia Font"
+}, {
+	"url": "http://freebies.flatro.ru/monitorca",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/218/thumb/output20170211-10020-mgg8nd.jpg?1487371823",
+	"title": "Monitorca"
+}, {
+	"url": "http://freebies.flatro.ru/bravo",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/217/thumb/output20170211-10020-px2l9i.jpg?1487371823",
+	"title": "BRAVO"
+}, {
+	"url": "http://freebies.flatro.ru/venice-serif",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/212/thumb/output20170211-10020-dfuh0p.jpg?1487371820",
+	"title": "Venice Serif"
+}, {
+	"url": "http://freebies.flatro.ru/brassie-",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/208/thumb/output20170211-10020-gdr3q2.jpg?1487371819",
+	"title": "Brassie"
+}, {
+	"url": "http://freebies.flatro.ru/%D0%91%D0%B5%D1%80%D1%91%D0%B7%D0%BA%D0%B8",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/207/thumb/output20170211-10020-zas1gn.jpg?1487371819",
+	"title": "Берёзки"
+}, {
+	"url": "http://freebies.flatro.ru/track",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/196/thumb/output20170211-10020-18qdgy.jpg?1487371815",
+	"title": "NONE"
+}, {
+	"url": "http://freebies.flatro.ru/diamor-script",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/192/thumb/output20170211-10020-hui9bq.jpg?1487371814",
+	"title": "Diamor Script"
+}, {
+	"url": "http://freebies.flatro.ru/nordic",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/178/thumb/output20170211-10020-o3l8zr.jpg?1487371809",
+	"title": "Nordic"
+}, {
+	"url": "http://freebies.flatro.ru/julep-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/174/thumb/output20170211-10020-18gh40q.jpg?1487371808",
+	"title": "Julep Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/shirota",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/171/thumb/output20170211-10020-6a7qu8.jpg?1487371807",
+	"title": "SHIROTA"
+}, {
+	"url": "http://freebies.flatro.ru/goeo",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/170/thumb/output20170211-10020-1kswh69.jpg?1487371807",
+	"title": "GOEO"
+}, {
+	"url": "http://freebies.flatro.ru/bemount-",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/169/thumb/output20170211-10020-j2vmm6.jpg?1487371806",
+	"title": "BEMOUNT"
+}, {
+	"url": "http://freebies.flatro.ru/-something-wild",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/166/thumb/output20170211-10020-zy2gs1.jpg?1487371805",
+	"title": "Something Wild"
+}, {
+	"url": "http://freebies.flatro.ru/one-day-",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/165/thumb/output20170211-10020-ywhk7m.jpg?1487371804",
+	"title": "One Day"
+}, {
+	"url": "http://freebies.flatro.ru/phenomena",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/160/thumb/output20170211-10020-h7tejr.jpg?1487371803",
+	"title": "Phenomena"
+}, {
+	"url": "http://freebies.flatro.ru/-logawa-script",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/151/thumb/output20170211-10020-1j21zj4.jpg?1487371798",
+	"title": "Logawa Script"
+}, {
+	"url": "http://freebies.flatro.ru/little-cutie",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/146/thumb/output20170211-10020-16q4lpv.jpg?1487371796",
+	"title": "Little Cutie"
+}, {
+	"url": "http://freebies.flatro.ru/naila-script-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/144/thumb/output20170211-10020-f21iuz.jpg?1487371794",
+	"title": "Naila Script Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/arkana-script-vintage-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/139/thumb/output20170211-10020-16gjsc.jpg?1487371792",
+	"title": "Arkana Script Vintage Font"
+}, {
+	"url": "http://freebies.flatro.ru/aquino",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/137/thumb/output20170211-10020-bokf60.jpg?1487371791",
+	"title": "Aquino"
+}, {
+	"url": "http://freebies.flatro.ru/bonkers-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/135/thumb/output20170211-10020-114ww1h.jpg?1487371790",
+	"title": "Bonkers Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/fenton",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/132/thumb/output20170211-10020-168y8zm.jpg?1487371789",
+	"title": "Fenton"
+}, {
+	"url": "http://freebies.flatro.ru/fina",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/130/thumb/output20170211-10020-xj5so0.jpg?1487371788",
+	"title": "Fina"
+}, {
+	"url": "http://freebies.flatro.ru/butler-free-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/124/thumb/output20170211-10020-1df9eud.jpg?1487371786",
+	"title": "Butler Free Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/free-mom-tattoo-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/122/thumb/output20170211-10020-1ag1dd7.jpg?1487371785",
+	"title": ""
+}, {
+	"url": "http://freebies.flatro.ru/blowbrush-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/114/thumb/output20170211-10020-1k0e7ld.jpg?1487371782",
+	"title": "BlowBrush Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/sannie-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/103/thumb/output20170211-10020-1x47yl1.jpg?1487371779",
+	"title": "Sannie Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/argon-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/101/thumb/output20170211-10020-ajx57f.jpg?1487371778",
+	"title": "Argon Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/-morracle-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/099/thumb/output20170211-10020-1yqdo6b.jpg?1487371777",
+	"title": "Morracle Font"
+}, {
+	"url": "http://freebies.flatro.ru/stoked-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/091/thumb/output20170211-10020-vaqjw2.jpg?1487371775",
+	"title": "Stoked Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/handletter-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/087/thumb/output20170211-10020-mc6spf.jpg?1487371773",
+	"title": "Handletter Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/liquide-free-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/084/thumb/output20170211-10020-v8g2v1.jpg?1487371773",
+	"title": "Liquide Free Typeface"
+}, {
+	"url": "http://freebies.flatro.ru/rosco-brush-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/077/thumb/output20170211-10020-2vnfnc.jpg?1487371771",
+	"title": "Rosco Brush Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/font-top-chart-%E2%84%962",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/076/thumb/output20170211-10020-kryi7z.jpg?1487371771",
+	"title": "Font Top Chart №2"
+}, {
+	"url": "http://freebies.flatro.ru/fonts-top-chart-%E2%84%961",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/061/thumb/output20170211-10020-1sp1hsd.jpg?1487371765",
+	"title": "Fonts Top Chart №1"
+}, {
+	"url": "http://freebies.flatro.ru/san-francisco-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/055/thumb/output20170211-10020-4xa6sh.jpg?1487371764",
+	"title": "San Francisco Font"
+}, {
+	"url": "http://freebies.flatro.ru/goldin-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/046/thumb/output20170211-10020-17wbyrx.jpg?1487371761",
+	"title": "Goldin Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/brusher-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/043/thumb/output20170211-10020-5k76fm.jpg?1487371760",
+	"title": "Brusher Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/neaments-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/042/thumb/output20170211-10020-1ru4kdh.jpg?1487371760",
+	"title": "Neaments Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/simplifica-typeface-free",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/029/thumb/output20170211-10020-117ejsn.jpg?1487371756",
+	"title": "Simplifica Typeface Free"
+}, {
+	"url": "http://freebies.flatro.ru/-shirota-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/028/thumb/output20170211-10020-nhuh5b.jpg?1487371756",
+	"title": "Shirota Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/amsdam-free-font",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/011/thumb/output20170211-10020-nf946t.jpg?1487371750",
+	"title": "Amsdam Free Font"
+}, {
+	"url": "http://freebies.flatro.ru/bellico-typeface",
+	"img": "http://freebies.flatro.ru/system/publications/covers/000/000/007/thumb/output20170211-10020-1g1znoc.jpg?1487371750",
+	"title": "Bellico Typeface"
+}]
