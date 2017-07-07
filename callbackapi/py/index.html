@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0031)https://vk.com/dev/callback_api -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+  <head>
+  <meta charset="utf-8">
+<title>Callback API</title>
+
+<link rel="stylesheet" type="text/css" href="./css/common.css">
+<link type="text/css" rel="stylesheet" href="./css/dev.css">
+<link type="text/css" rel="stylesheet" href="./css/wk.css">
+</head>
+
+<body class="is_rtl font_default pads dev no_wrap_cont no_stl" data-useragent="opera chrome">
+
+<div id="page_layout" style="width: 960px;">
+<div id="dev_page_wrap2" class="fl_r">
+  <div id="dev_page_wrap1" style="min-height: 0px;">
+    <div id="dev_page_wrap">
+      <div class="dev_main_col" valign="top">
+        <div id="dev_page" class="dev_page wk_text">
+
+          <div class="dev_page_block">
+            <table cellpadding="0" cellspacing="0" class="wk_table wk_table_no_margin"><tbody><tr><th>Раздел</th><th>Тип события</th><th>Формат поля object </th></tr><tr><td>Сообщения</td><td><b>message_new</b><br>
+              <span class="wk_gray">новое входящее сообщение</span><br>
+              <b>message_reply</b><br>
+              <span class="wk_gray">новое исходящее сообщение</span></td><td><a href="https://vk.com/dev/objects/message">Объект личного сообщения</a>. </td></tr><tr><td></td><td><b>message_allow</b><br>
+              <span class="wk_gray">новая подписка на сообщения от сообщества</span></td><td>Объект, содержащий следующие поля: 
+              <ul class="listing">
+                <li><span class="l"><b>user_id</b> <span class="wk_gray">(integer)</span> — идентификатор пользователя. </span></li>
+                <li><span class="l"><b>key</b> <span class="wk_gray">(string)</span> — параметр, переданный в методе <a href="https://vk.com/dev/messages.allowMessagesFromGroup">messages.allowMessagesFromGroup</a>. </span></li></ul></td></tr><tr><td></td><td><b>message_deny</b><br>
+                <span class="wk_gray">новый запрет сообщений от сообщества</span></td><td>Объект, содержащий единственное поле <b>user_id</b> <span class="wk_gray">(integer)</span> — идентификатор пользователя. </td></tr><tr><td>Фотографии</td><td><b>photo_new</b><br>
+                <span class="wk_gray">добавление новой фотографии в сообщество</span></td><td><a href="https://vk.com/dev/objects/photo">Объект фотографии</a> </td></tr><tr><td></td><td><b>photo_comment_new</b><br>
+                <span class="wk_gray">добавление нового комментария к фотографии</span><br>
+                <b>photo_comment_edit</b><br>
+                <span class="wk_gray">редактирование комментария к фотографии</span><br>
+                <b>photo_comment_restore</b><br>
+                <span class="wk_gray">восстановление комментария к фотографии</span></td><td><a href="https://vk.com/dev/objects/comment">Объект комментария на стене</a> с дополнительными полями: 
+                <ul class="listing">
+                  <li><span class="l"><b>photo_id</b> <span class="wk_gray">(integer)</span> — идентификатор фотографии; </span></li>
+                  <li><span class="l"><b>photo_owner_id</b> <span class="wk_gray">(integer)</span> — идентификатор владельца фотографии. </span></li></ul></td></tr><tr><td></td><td><b>photo_comment_delete</b><br>
+                  <span class="wk_gray">удаление комментария к фотографии</span></td><td>Объект, содержащий следующие поля: 
+                  <ul class="listing">
+                    <li><span class="l"><b>owner_id</b> <span class="wk_gray">(integer)</span> — идентификатор владельца фотографии; </span></li>
+                    <li><span class="l"><b>id</b> <span class="wk_gray">(integer)</span> — идентификатор комментария; </span></li>
+                    <li><span class="l"><b>user_id</b> <span class="wk_gray">(integer)</span> — идентификатор пользователя, который удалил комментарий; </span></li>
+                    <li><span class="l"><b>photo_id</b> <span class="wk_gray">(integer)</span> — идентификатор фотографии. </span></li></ul></td></tr><tr><td>Аудиозаписи</td><td><b>audio_new</b><br>
+                    <span class="wk_gray">добавление новой аудиозаписи в сообщество</span></td><td><a href="https://vk.com/dev/objects/audio">Объект аудиозаписи</a>. </td></tr><tr><td>Видеозаписи</td><td><b>video_new</b><br>
+                    <span class="wk_gray">добавление новой видеозаписи в сообщество</span></td><td><a href="https://vk.com/dev/objects/video">Объект видеозаписи</a> </td></tr><tr><td></td><td><b>video_comment_new</b><br>
+                    <span class="wk_gray">новый комментарий к видеозаписи</span><br>
+                    <b>video_comment_edit</b><br>
+                    <span class="wk_gray">редактирование комментария к видеозаписи</span><br>
+                    <b>video_comment_restore</b><br>
+                    <span class="wk_gray">восстановление комментария к видеозаписи</span></td><td><a href="https://vk.com/dev/objects/comment">Объект комментария на стене</a> с дополнительными полями: 
+                    <ul class="listing">
+                      <li><span class="l"><b>video_id</b> <span class="wk_gray">(integer)</span> — идентификатор видеозаписи; </span></li>
+                      <li><span class="l"><b>video_owner_id</b> <span class="wk_gray">(integer)</span> — идентификатор владельца видеозаписи. </span></li></ul></td></tr><tr><td></td><td><b>video_comment_delete</b><br>
+                      <span class="wk_gray">удаление комментария к видеозаписи</span></td><td>Объект, содержащий следующие поля: 
+                      <ul class="listing">
+                        <li><span class="l"><b>owner_id</b> <span class="wk_gray">(integer)</span> — идентификатор владельца видеозаписи; </span></li>
+                        <li><span class="l"><b>id</b> <span class="wk_gray">(integer)</span> — идентификатор комментария; </span></li>
+                        <li><span class="l"><b>user_id</b> <span class="wk_gray">(integer)</span> — идентификатор пользователя, который удалил комментарий; </span></li>
+                        <li><span class="l"><b>video_id</b> <span class="wk_gray">(integer)</span> — идентификатор видеозаписи. </span></li></ul></td></tr><tr><td>Записи на стене</td><td><b>wall_post_new</b><br>
+                        <span class="wk_gray">новая запись на стене</span><br>
+                        <b>wall_repost</b><br>
+                        <span class="wk_gray">репост записи из сообщества</span></td><td><a href="https://vk.com/dev/objects/post">Объект записи на стене</a><br>
+                        Для записей, размещенных от имени пользователя, поле <b>from_id</b> содержит положительное значение. </td></tr><tr><td>Комментарии на стене</td><td><b>wall_reply_new</b><br>
+                        <span class="wk_gray">добавление нового комментария на стене </span><br>
+                        <b>wall_reply_edit</b><br>
+                        <span class="wk_gray">редактирование комментария на стене </span><br>
+                        <b>wall_reply_restore</b><br>
+                        <span class="wk_gray">восстановление комментария на стене </span></td><td><a href="https://vk.com/dev/objects/comment">Объект комментария на стене</a> с дополнительными полями: 
+                        <ul class="listing">
+                          <li><span class="l"><b>post_id</b> <span class="wk_gray">(integer)</span> — идентификатор записи, к которой относится комментарий; </span></li>
+                          <li><span class="l"><b>post_owner_id</b> <span class="wk_gray">(integer)</span> — идентификатор владельца записи, к которой относится комментарий. </span></li></ul></td></tr><tr><td></td><td><b>wall_reply_delete</b><br>
+                          <span class="wk_gray">удаление комментария на стене </span></td><td>Объект, содержащий следующие поля: 
+                          <ul class="listing">
+                            <li><span class="l"><b>owner_id</b> <span class="wk_gray">(integer)</span> — идентификатор владельца стены; </span></li>
+                            <li><span class="l"><b>id</b> <span class="wk_gray">(integer)</span> — идентификатор комментария; </span></li>
+                            <li><span class="l"><b>user_id</b> <span class="wk_gray">(integer)</span> — идентификатор пользователя, который удалил комментарий; </span></li>
+                            <li><span class="l"><b>post_id</b> <span class="wk_gray">(integer)</span> — идентификатор записи, к которой был оставлен комментарий. </span></li></ul></td></tr><tr><td>Обсуждения</td><td><b>board_post_new</b><br>
+                            <span class="wk_gray">создание нового комментария в обсуждении</span><br>
+                            <b>board_post_edit</b><br>
+                            <span class="wk_gray">редактирование комментария</span><br>
+                            <b>board_post_restore</b><br>
+                            <span class="wk_gray">восстановление комментария</span></td><td><a href="https://vk.com/dev/objects/comment_board">Объект комментария в обсуждении</a> с дополнительными полями: 
+                            <ul class="listing">
+                              <li><span class="l"><b>topic_id</b> <span class="wk_gray">(integer)</span> — идентификатор обсуждения, к которому относится комментарий; </span></li>
+                              <li><span class="l"><b>topic_owner_id</b> <span class="wk_gray">(integer)</span> — идентификатор владельца обсуждения, к которому относится комментарий. </span></li></ul></td></tr><tr><td></td><td><b>board_post_delete</b><br>
+                              <span class="wk_gray">удаление комментария в обсуждении</span></td><td>Объект, содержащий следующие поля: 
+                              <ul class="listing">
+                                <li><span class="l"><b>topic_owner_id</b> <span class="wk_gray">(integer)</span> — идентификатор владельца обсуждения, к которому относится комментарий. </span></li>
+                                <li><span class="l"><b>topic_id</b> <span class="wk_gray">(integer)</span> — идентификатор обсуждения.<br>
+                                  <span class="wk_gray">integer</span> </span></li>
+                                  <li><span class="l"><b>id</b> <span class="wk_gray">(integer)</span> — идентификатор комментария.<br>
+                                    <span class="wk_gray">integer</span> </span></li></ul></td></tr><tr><td>Товары</td><td><b>market_comment_new</b> <br>
+                                    <span class="wk_gray">новый комментарий к товару</span><br>
+                                    <b>market_comment_edit</b><br>
+                                    <span class="wk_gray">редактирование комментария к товару</span><br>
+                                    <b>market_comment_restore</b><br>
+                                    <span class="wk_gray">восстановление комментария к товару</span></td><td><a href="https://vk.com/dev/objects/comment">Объект комментария на стене</a> с дополнительными полями: 
+                                    <ul class="listing">
+                                      <li><span class="l"><b>market_owner_id</b> <span class="wk_gray">(integer)</span> — идентификатор владельца товара. </span></li>
+                                      <li><span class="l"><b>item_id</b> <span class="wk_gray">(integer)</span> — идентификатор товара. </span></li></ul></td></tr><tr><td></td><td><b>market_comment_delete</b><br>
+                                      <span class="wk_gray">удаление комментария к товару</span></td><td>Объект, содержащий следующие поля: 
+                                      <ul class="listing">
+                                        <li><span class="l"><b>owner_id</b> <span class="wk_gray">(integer)</span> — идентификатор владельца товара; </span></li>
+                                        <li><span class="l"><b>id</b> <span class="wk_gray">(integer)</span> — идентификатор комментария; </span></li>
+                                        <li><span class="l"><b>user_id</b> <span class="wk_gray">(integer)</span> — идентификатор пользователя, который удалил комментарий; </span></li>
+                                        <li><span class="l"><b>item_id</b> <span class="wk_gray">(integer)</span> — идентификатор товара. </span></li></ul></td></tr><tr><td>Прочее</td><td><b>group_leave</b><br>
+                                        <span class="wk_gray">удаление участника из сообщества</span></td><td>Объект, содержащий следующие поля: 
+                                        <ul class="listing">
+                                          <li><span class="l"><b>user_id</b> <span class="wk_gray">(integer)</span> — идентификатор пользователя. </span></li>
+                                          <li><span class="l"><b>self</b> <span class="wk_gray">(integer, [0,1])</span> — значение, указывающее, был пользователь удален или вышел самостоятельно. </span></li></ul></td></tr><tr><td></td><td><b>group_join</b><br>
+                                          <span class="wk_gray">добавление участника или заявки на вступление в сообщество</span></td><td>Объект, содержащий следующие поля: 
+                                          <ul class="listing">
+                                            <li><span class="l"><b>user_id</b> <span class="wk_gray">(integer)</span> — идентификатор пользователя. </span></li>
+                                            <li><span class="l"><b>join_type</b> <span class="wk_gray">(string)</span> — указывает, как именно был добавлен участник. Возможные значения: 
+                                              <ul class="listing">
+                                                <li><span class="l"><i>join</i> — пользователь вступил в группу или мероприятие (подписался на публичную страницу). </span></li>
+                                                <li><span class="l"><i>unsure</i> — для мероприятий: пользователь выбрал вариант «Возможно, пойду». </span></li>
+                                                <li><span class="l"><i>accepted</i> — пользователь принял приглашение в группу или на мероприятие. </span></li>
+                                                <li><span class="l"><i>approved</i> — заявка на вступление в группу/мероприятие была одобрена руководителем сообщества. </span></li>
+                                                <li><span class="l"><i>request</i> — пользователь подал заявку на вступление в сообщество. </span></li></ul></span></li></ul></td></tr><tr><td></td><td><b>poll_vote_new</b><br>
+                                                <span class="wk_gray">добавление голоса в публичном опросе</span></td><td>Объект, содержащий следующие поля: 
+                                                <ul class="listing">
+                                                  <li><span class="l"><b>owner_id</b> <span class="wk_gray">(integer)</span> — идентификатор владельца опроса; </span></li>
+                                                  <li><span class="l"><b>poll_id</b> <span class="wk_gray">(integer)</span> — идентификатор опроса; </span></li>
+                                                  <li><span class="l"><b>option_id</b> <span class="wk_gray">(integer)</span> — идентификатор варианта ответа; </span></li>
+                                                  <li><span class="l"><b>user_id</b> <span class="wk_gray">(integer)</span> — идентификатор пользователя. </span></li></ul></td></tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </body></html>
