@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Slavik Nychkalo</title>
+		<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"> 
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.7, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/bg.css" />
+		<style type="text/css">
+			.fa {font-size: 10px;}
+			.fa::before {font-size: 13px !important;}
+			#main {padding-top: 30px;}
+			#main .icons {margin-bottom: 15px;}
+			body { opacity: 1;animation: opacity .3s linear; }
+			@keyframes opacity { from { opacity: 0; } to { opacity: 0; } }
+		</style>
+		<link rel="stylesheet" type="text/css" href="assets/css/preloader.css">
+	</head>
+	<body class="is-loading">
+		<div class="preloader">
+		  <div class="preloader__slide preloader__slide-a">Hello World!</div>
+		  <div class="preloader__slide preloader__slide-b"></div>
+		  <div class="preloader__slide preloader__slide-c"></div>
+		  <div class="preloader__slide preloader__slide-d"></div>
+		</div> 
+
+		<canvas id="space"></canvas>
+
+		<div style="position: fixed; width: 100%; text-align: center;">
+			<div style="display: inline;">
+				<script type="text/javascript">
+					google_ad_client = "ca-pub-5776396008481166";
+					google_ad_slot = "6948590934";
+					google_ad_width = 728;
+					google_ad_height = 90;
+				</script>
+				<!-- gebetto page -->
+				<script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>
+			</div>
+		</div>
+
+		<div id="wrapper">
+			<section id="main" class="main">
+				<ul class="icons">
+					<li><a target="_blank" href="https://twitter.com/slavik.nychkalo" class="fa fa-twitter">Twitter</a></li>
+					<li><a target="_blank" href="https://instagram.com/slavik.nychkalo" class="fa fa-instagram">Instagram</a></li>
+					<li><a target="_blank" href="https://facebook.com/bboyheadman" class="fa fa-facebook">Facebook</a></li>
+					<li><a target="_blank" href="https://www.linkedin.com/in/slavik-nychkalo-57452a127" class="fa fa-linkedin">LinkEdin</a></li>
+					<li><a target="_blank" href="https://vk.com/gebeto" class="fa fa-vk">VK</a></li>
+					<li><a target="_blank" href="https://github.com/gebeto" class="fa fa-github">GitHub</a></li>
+				</ul>
+				<header>
+					<span class="avatar"><img src="images/avatar.jpg" alt=""/></span>
+					<h1>Slavik Nychkalo</h1>
+					<p>Developer</p>
+				</header>
+
+				<ul class="actions">
+					<div class="field">
+						<div class="select-wrapper">
+							<select name="projects" id="projects" class="projects">
+								<option value="">Source codes</option>
+								<option value="https://github.com/gebeto/VK-Graffiti-Uploader">VK Graffiti Uploader</option>
+								<option value="https://github.com/gebeto/theos-projects">Theos tweaks</option>
+								<option value="https://github.com/gebeto/HTML-CSS-JS-Snippets">Sublime text snippets</option>
+								<option value="https://github.com/gebeto/react-native-docs">React Native Documentation</option>
+								<option value="https://github.com/gebeto/react-native-ios-dev-launcher">React Native iOS Dev Launcher</option>
+								<option value="https://github.com/gebeto/react-native-vk-audio-messages">VK Audio Messages</option>
+								<option value="https://github.com/gebeto/lfy-react-native-app">#LFY Reader app</option>
+								<option value="https://github.com/gebeto/boomserver">BOOM ios app custom server</option>
+								<option value="https://github.com/gebeto/js-libs">My JavaScript libs</option>
+							</select>
+						</div>
+					</div>
+				</ul>
+
+				<ul class="actions">
+					<div class="field">
+						<div class="select-wrapper">
+							<select name="projects" id="projects" class="projects">
+								<option value="">Web</option>
+								<option value="https://gebeto.github.io/toraw.html">GitHub toRaw</option>
+								<option value="https://gebeto.github.io/sitelayouts/keepsake">- LAYOUT: Keepsake</option>
+								<option value="https://gebeto.github.io/sitelayouts/mochr">- LAYOUT: Mochr</option>
+								<option value="https://gebeto.github.io/jsProjects/dragdrop">Canvas Grag&Drop</option>
+								<option value="https://gebeto.github.io/jsProjects/keyboard">Keyboard trainer</option>
+							</select>
+						</div>
+					</div>
+				</ul>
+			</section>
+ 
+			<footer id="footer">
+				<ul class="copyright">
+					<li>anonimizer <br><a href="http://217.79.181.111">217.79.181.111</a> | <a href="itms-services://?action=download-manifest&url=https://gebeto.github.io/yalu/yalu.plist">YALU</a></li>
+					<!-- <li>&copy; Jane Doe</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
+				</ul>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<!-- <script type="text/javascript" src="https://gebeto.github.io/logger.js"></script> -->
+		<script type="text/javascript" src="assets/js/bg.js"></script>
+		<script>
+
+			if ('addEventListener' in window) {
+				window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+				document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+			}
+
+			var projects = document.getElementsByClassName('projects');
+			for (var i = 0; i < projects.length; i++) {
+				projects[i].addEventListener('change', function(e) {
+					if (this.value) {
+
+						if (window.navigator.platform[0] === 'i') {
+							// alert(window.navigator.platform);
+							window.location = this.value;
+						} else {
+							var win = window.open(this.value, '_blank');
+							win.focus();
+						}
+					}
+				});
+			}
+
+		</script>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-98495899-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+	</body>
+</html>
