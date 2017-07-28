@@ -6,7 +6,7 @@
   left: 0;
   z-index: -1;
   opacity: 0;
-  animation: preloader__hide 2.4s linear;
+  animation: preloader__hide 2.8s linear;
 }
 
 .preloader__slide { 
@@ -16,7 +16,7 @@
 
 .preloader__slide-a { 
   background: #fff;
-  animation: preloader__slide-close 4s .0s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  animation: preloader__slide-close 4s .4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
   line-height: 100vh;
   font-size: 4em;
   overflow: hidden;
@@ -25,15 +25,15 @@
 }
 .preloader__slide-b {
   background: #bbb;
-  animation: preloader__slide-close 4s .1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  animation: preloader__slide-close 4s .5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 .preloader__slide-c {
   background: #777;
-  animation: preloader__slide-close 4s .2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  animation: preloader__slide-close 4s .6s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 .preloader__slide-d {
   background: #111;
-  animation: preloader__slide-close 4s .3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  animation: preloader__slide-close 4s .7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 } 
 
 @keyframes preloader__hide {
