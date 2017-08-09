@@ -73,17 +73,6 @@
 
 	}
 
-	body.is-loading-0 *, body.is-loading-0 *:before, body.is-loading-0 *:after {
-		-moz-animation: none !important;
-		-webkit-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
-		-moz-transition: none !important;
-		-webkit-transition: none !important;
-		-ms-transition: none !important;
-		transition: none !important;
-	}
-
 	html, body {
 		background-color: #101010;
 		overflow: hidden;
@@ -750,7 +739,7 @@
 			right: -22.5em;
 		}
 
-		body.is-loading-1 #main {
+		body.inging-1 #main {
 			opacity: 0;
 			right: -2em;
 		}
@@ -791,11 +780,6 @@
 				text-align: center;
 			}
 
-				body.is-loading-1 #main {
-					left: auto !important;
-					right: auto !important;
-				}
-
 				body.fullscreen #main {
 					left: auto !important;
 					right: auto !important;
@@ -823,6 +807,8 @@
 
 	#footer {
 		padding: 2.25em 2.25em 1em 2.25em ;
+		/*position: absolute;*/
+		/*bottom: 0;*/
 	}
 
 		#footer .copyright {
@@ -857,9 +843,35 @@
 
 		#thumbnails article {
 			position: relative;
-			width: 50%;
-			background: #101010;
+			/*width: 50%;*/
+			width: 100%;
+			/*background: #101010;*/
 			outline: 0;
+			padding: 6px;
+		}
+
+		#thumbnails article div {
+			/*background: #fafafa;*/
+			background: #fff;
+			padding: 10px;
+			padding-top: 12px;
+			padding-bottom: 10px;
+			border-radius: 5px;
+			text-align: center;
+		}
+
+
+		#thumbnails article div {
+		  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+		}
+
+		#thumbnails article div:hover {
+		  box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+		}
+
+		#thumbnails article div p, #thumbnails article div h2 {
+			margin-bottom: 0px;
 		}
 
 			#thumbnails article .thumbnail {
@@ -900,7 +912,7 @@
 				}
 
 			#thumbnails article h2, #thumbnails article p {
-				display: none;
+				/*display: none;*/
 			}
 
 			#thumbnails article.active .thumbnail:before {
@@ -1155,14 +1167,6 @@
 			body.fullscreen #viewer .inner .toggle {
 				background-image: url("images/open.svg");
 			}
-
-		body.is-loading-1 #viewer {
-			opacity: 0;
-		}
-
-		body.is-loading-2 #viewer .slide {
-			opacity: 0;
-		}
 
 		@media screen and (max-width: 1280px) {
 
