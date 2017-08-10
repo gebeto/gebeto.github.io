@@ -500,7 +500,7 @@
 		}
 
 		@media screen and (max-width: 480px) {
-			ul.skills br{
+			ul.skills br {
 				display: none;
 			}
 		}
@@ -1128,7 +1128,7 @@
 		@media screen and (max-width: 980px) {
 
 			#header .links {
-				/*display: none;*/
+				display: none;
 			}
 
 		}
