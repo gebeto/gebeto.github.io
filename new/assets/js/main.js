@@ -1,11 +1,62 @@
 var POSTS_WRAPPER = document.querySelector('.mini-posts');
-var POSTS = [{
+var POSTS = [
+{
   title: 'Theos Projects',
   image: 'theos-projects.png',
-},{
+},
+{
   title: 'VK Graffiti Uploader',
   image: 'graffiti-uploader.png',
-},];
+},
+{
+  title: 'Google Chrome plugins',
+  image: 'chrome-plugins.png',
+},
+{
+  title: 'Howdy Ho Poster Sublime Plugin',
+  image: 'howdy-ho-post-sublime.png',
+},
+{
+  title: 'learn.javascript.ru offline',
+  image: 'learnjsru-reactnative-app.png',
+},
+{
+  title: 'LinkedId Downloader',
+  image: 'linkedin-learning-downloader.png',
+},
+{
+  title: 'Mini Web Projects',
+  image: 'mini-web-projects.png',
+},
+{
+  title: 'Treehouse downloader',
+  image: 'python-treehouse-downloader.png',
+},
+{
+  title: 'ReactJS Emoji',
+  image: 'react-emoji.png',
+},
+{
+  title: 'React Native Docs iOS',
+  image: 'react-native-docs.png',
+},
+{
+  title: 'VK Audio Message',
+  image: 'react-native-vk-audio-messages.png',
+},
+{
+  title: 'Sublime Auto Inputer',
+  image: 'sublime-auto-inputer.png',
+},
+{
+  title: 'VK Multi Bot',
+  image: 'vk-multi-bot.png',
+},
+{
+  title: 'VK Voice Changer',
+  image: 'vk-voice-changer.png',
+},
+];
 
 function MiniPost(data) {
   // Data
