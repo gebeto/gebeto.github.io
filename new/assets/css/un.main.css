@@ -575,6 +575,7 @@
 		
 		max-height: 54px;
 		transition-duration: 1s;
+		overflow: hidden;
 	}
 
 	.mini-post.opened {

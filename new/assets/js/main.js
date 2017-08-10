@@ -84,6 +84,8 @@ POSTS.map(function(post, index) {
     } else if (this.className === 'mini-post opened') {
       this.className = 'mini-post';
     }
+    e.preventDefault();
+    e.stopPropagation();
   });
   POSTS_WRAPPER.appendChild(minipost);
 });
