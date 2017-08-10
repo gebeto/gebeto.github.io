@@ -13,7 +13,7 @@ var POSTS = [
   image: 'chrome-plugins.png',
 },
 {
-  title: 'Howdy Ho Poster Sublime Plugin',
+  title: 'Howdy Ho Sublime Plugin',
   image: 'howdy-ho-post-sublime.png',
 },
 {
@@ -77,5 +77,14 @@ function MiniPost(data) {
 }
 
 POSTS.map(function(post, index) {
-  POSTS_WRAPPER.appendChild(new MiniPost(post))
+  var minipost = new MiniPost(post);
+  minipost.addEventListener('click', function(e) {
+    if (this.className === 'mini-post') {
+      this.className = 'mini-post opened';
+    } else if (this.className === 'mini-post opened') {
+      this.className = 'mini-post';
+    }
+  });
+  POSTS_WRAPPER.appendChild(minipost);
 });
+
