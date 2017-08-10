@@ -488,7 +488,6 @@
 			padding-left: 0;
 			transition-duration: 1s;
 		}
-		
 
 		ul.skills li{
 			display: inline-block;
@@ -498,6 +497,12 @@
 		}
 		ul.skills i{
 			cursor: pointer;
+		}
+
+		@media screen and (max-width: 480px) {
+			ul.skills br{
+				display: none;
+			}
 		}
 
 		ul.actions {
