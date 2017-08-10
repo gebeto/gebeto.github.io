@@ -486,14 +486,9 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
-			max-height: 110px;
-			overflow-x: scroll;
 			transition-duration: 1s;
 		}
 		
-		ul.skills:hover {
-			max-height: 400px;
-		}
 
 		ul.skills li{
 			display: inline-block;
@@ -626,8 +621,6 @@
 
 	.mini-posts {
 		margin: 0 0 2em 0;
-		max-height: 600px;
-		overflow-y: scroll;
 	}
 
 	.mini-posts {
@@ -664,12 +657,7 @@
 			.mini-posts {
 				display: block;
 				width: 100%;
-				max-height: 260px;
 				transition-duration: 3s;
-			}
-
-			.mini-posts:hover {
-				max-height: 4000px;
 			}
 
 				.mini-posts > * {
