@@ -1,3 +1,16 @@
+var GITHUB_REPOS_URL = 'https://api.github.com/users/gebeto/repos';
+function getAllRepos() {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', GITHUB_REPOS_URL);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4) {
+      console.log(JSON.parse(xhr.responseText));
+    }
+  }
+  xhr.send();
+}
+
+
 var POSTS_WRAPPER = document.querySelector('.mini-posts');
 var POSTS = [
 {
@@ -69,7 +82,7 @@ function MiniPost(data) {
   html += '       <time class="published" datetime="2015-10-20">October 20, 2015</time>';
   html += '       <a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>';
   html += '     </header>';
-  html += '     <a href="#" class="image"><img src="images/' + data.image + '" alt="" /></a>';
+  // html += '     <a href="#" class="image"><img src="images/' + data.image + '" alt="" /></a>';
   var elem = document.createElement('article');
   elem.className = 'mini-post';
   elem.innerHTML = html;

@@ -573,14 +573,14 @@
 		border: solid 1px rgba(160, 160, 160, 0.3);
 		margin: 0 0 2em 0;
 		
-		max-height: 54px;
+		/*max-height: 54px;
 		transition-duration: 1s;
-		overflow: hidden;
+		overflow: hidden;*/
 	}
 
-	.mini-post.opened {
+	/*.mini-post.opened {
 		max-height: 300px;
-	}
+	}*/
 
 		.mini-post .image {
 			overflow: hidden;
