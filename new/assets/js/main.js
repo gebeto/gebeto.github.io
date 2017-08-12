@@ -8,7 +8,7 @@ function getAllRepos() {
   xhr.open('GET', GITHUB_REPOS_URL);
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4) {
-      conaole.log(xhr.responseText);
+      console.log(xhr.responseText);
       var resp = JSON.parse(xhr.responseText)
       console.log(resp);
       createPosts(resp);
