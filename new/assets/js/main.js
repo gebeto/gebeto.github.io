@@ -7,8 +7,8 @@ function getAllRepos() {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', GITHUB_REPOS_URL);
   xhr.onreadystatechange = function() {
+    console.log(xhr.readyState);
     if (xhr.readyState === 4) {
-      console.log(xhr.responseText);
       var resp = JSON.parse(xhr.responseText)
       console.log(resp);
       createPosts(resp);
@@ -19,8 +19,10 @@ function getAllRepos() {
 
 
 function createPosts(posts) {
-  posts.map(function(post, index) {
-    console.log(post);
+  posts.sort(function(a, b) {
+    // return (new Date(b.pushed_at)) - (new Date(a.pushed_at));
+    return b.watchers - a.watchers;
+  }).map(function(post, index) {
     var minipost = new MiniGithubPost(post);
     POSTS_WRAPPER.appendChild(minipost);
   });
@@ -35,6 +37,11 @@ function MiniGithubPost(data) {
   html += '       <h3><a href="#">' + data.name + '</a></h3>';
   html += '       <time class="published" datetime="2015-10-20">' + MONTHS[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear() + '</time>';
   html += '       <a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>';
+  html += '       <ul class="stats">';
+  html += '         <li><a href="#">' + data.language + '</a></li>';
+  html += '         <li><a href="#" class="icon fa-star" title="Watchers">' + data.watchers + '</a></li>';
+  html += '         <li><a href="#" class="icon fa-code-fork" title="Forks">' + data.forks + '</a></li>';
+  html += '       </ul>';
   html += '     </header>';
   // html += '     <a href="#" class="image"><img src="images/' + data.image + '" alt="" /></a>';
   var elem = document.createElement('article');
