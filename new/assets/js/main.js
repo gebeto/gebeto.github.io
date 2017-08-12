@@ -43,3 +43,4 @@ function MiniGithubPost(data) {
   return elem;
 }
 
+window.onload = getAllRepos;
