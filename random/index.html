@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random shit</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+  <h1 id="random-number" data-range-from="200" data-range-to="290"></h1>
+  <h1 id="random-number" data-range-from="1000" data-range-to="1010"></h1>
+
+
+  <pre>
+    <code>
+        &lt;h1 id="random-number" data-range-from="200" data-range-to="290"&gt;&lt;/h1&gt;
+        &lt;h1 id="random-number" data-range-from="1000" data-range-to="1010"&gt;&lt;/h1&gt;
+    </code>
+  </pre>
+
+  <pre>
+    <code>
+      (function() {
+        var elements = document.querySelectorAll('#random-number');
+
+        for (var i = 0; i < elements.length; i++) {
+          var elem = elements[i];
+          var rangeFrom = parseInt(elem.getAttribute('data-range-from'));
+          var rangeTo = parseInt(elem.getAttribute('data-range-to'));
+          elem.textContent = Math.floor(Math.random() * (rangeTo - rangeFrom) + rangeFrom);
+        }
+      }())
+    </code>
+  </pre>
+  <script type="text/javascript" src="random.js"></script>
+
+  <!-- <link rel="stylesheet" href="/path/to/styles/default.css"> -->
+  <!-- <script type="text/javascript">
+    document.querySelector('.html').textContent = document.querySelector('.html').innerHTML;
+  </script> -->
+  <link rel="stylesheet" href="styles/ocean.css">
+  <script src="highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
