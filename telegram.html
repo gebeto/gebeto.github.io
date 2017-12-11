@@ -3,44 +3,140 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Telegram audio uploader</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 <body>
 
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header">Отправка Песни</div>
+					<div class="card-body">
+						<h4 class="card-title">Отправка Песни</h4>
+						<!-- <p class="card-text">Best ugg boots on the planet. Free shipping, 24/7 customer service.</p> -->
+						<form method="POST" target="_blank" enctype="multipart/form-data" action="https://api.telegram.org/bot445153754:AAHwUF7-CO3Y3qEJXh8XsV-pyqn_WcktSuk/sendAudio">
+							<div class="form-group">
+								<label for="chat_id">Чат</label>
+								<input name="chat_id" class="form-control" id="chat_id" value="@gebeto_music">
+							</div>
 
-	<div class="col-md-12">
-		<form method="POST" enctype="multipart/form-data" action="https://api.telegram.org/bot445153754:AAHwUF7-CO3Y3qEJXh8XsV-pyqn_WcktSuk/sendAudio">
-			<h1>Отправка песни</h1>
-			<div class="form-group">
-				<label for="chat_id">Чат</label>
-				<input name="chat_id" class="form-control" id="chat_id" value="@gebeto_music">
-			</div>
-			<div class="form-group">
-				<label for="audio">Песня</label>
-				<input type="file" class="form-control" id="audio" name="audio">
+							<div class="form-group">
+								<label for="title">Название</label>
+								<input name="title" class="form-control" id="title" value="">
+							</div>
+
+							<div class="form-group">
+								<label for="performer">Автор</label>
+								<input name="performer" class="form-control" id="performer" value="">
+							</div>
+
+							<div class="form-group">
+								<label for="duration">Длина (в секундах)</label>
+								<input type="number" name="duration" class="form-control" id="duration" value="">
+							</div>
+
+							<div class="form-group">
+								<label for="audio">Песня</label>
+								<input type="file" class="form-control" id="audio" name="audio">
+							</div>
+
+							<button type="submit" class="btn btn-primary">Отправить</button>
+						</form>
+					</div>
+					<div class="card-footer">Отправка Песни</div>
+				</div>
 			</div>
 
-			<button type="submit" class="btn btn-primary">Отправить</button>
-		</form>
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header">Отправка сообщения</div>
+					<div class="card-body">
+						<h4 class="card-title">Отправка сообщения</h4>
+						<!-- <p class="card-text">Best ugg boots on the planet. Free shipping, 24/7 customer service.</p> -->
+						<form id="message-form" method="POST" target="_blank" enctype="multipart/form-data" action="https://api.telegram.org/bot445153754:AAHwUF7-CO3Y3qEJXh8XsV-pyqn_WcktSuk/sendMessage">
+							<div class="form-group">
+								<label for="chat_id">Чат</label>
+								<input name="chat_id" class="form-control" id="chat_id" value="@gebeto_music">
+							</div>
+							<div class="form-group">
+								<label for="parse_mode">Парсинг</label>
+								<select class="form-control" id="parse_mode" name="parse_mode">
+									<option value="Markdown">Markdown</option>
+									<option value="HTML">HTML</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="message">Сообщение</label>
+								<textarea class="form-control" id="message" name="text" rows="8"></textarea>
+								<div class="btn-group btn-group-sm" id="text-styling">
+									<button type="button" class="btn btn-primary" data-type="*">bold</button>
+									<button type="button" class="btn btn-primary" data-type="_">italic</button>
+									<button type="button" class="btn btn-primary" data-type="`">code</button>
+									<button type="button" class="btn btn-primary" data-type="link">link</button>
+									<button type="button" class="btn btn-primary" data-type="user">user</button>
+								</div>
+							</div>
+							<div class="btn-group btn-group-sm" id="text-styling">
+								<label class="btn btn-primary"><input type="checkbox" name="disable_notification" autocomplete="off"> Тихое сообщение</label>
+							</div>
+							
+							<div class="form-group">
+							</div>
+
+							<!-- <div class="form-group">
+								<label for="disable_notification">Тихое сообщение</label>
+								<input class="form-control" id="disable_notification" name="disable_notification" type="checkbox" >
+							</div> -->
+							<button type="submit" class="btn btn-primary">Отправить</button>
+						</form>
+					</div>
+					<div class="card-footer">Отправка сообщения</div>
+				</div>
+			</div>
+		</div>
 	</div>
+	
+	<script type="text/javascript">
+		var messageArea = document.querySelector('#message');
+		document.querySelector('#text-styling').addEventListener('click', function(e) {
+			if (e.target.dataset.type) {			
+				var left = e.target.dataset.type;
+				var right = e.target.dataset.type;
+				if (e.target.dataset.type === 'link') {
+					// [inline URL](http://www.example.com/)
+					left = '[TITLE](https://';
+					right = ')';
+				} else if (e.target.dataset.type === 'user') {
+					left = '[inline mention of a user](tg://user?id=123456789)';
+					right = '';
+				}
+
+				var txt1 = messageArea.value;
+				var txt2 = txt1.slice(0, messageArea.selectionEnd) + right + txt1.slice(messageArea.selectionEnd);
+				var txt3 = txt2.slice(0, messageArea.selectionStart) + left + txt2.slice(messageArea.selectionStart);
+				messageArea.value = txt3;
+			}
+		});
 
 
-	<div class="col-md-12">
-		<form method="POST" enctype="multipart/form-data" action="https://api.telegram.org/bot445153754:AAHwUF7-CO3Y3qEJXh8XsV-pyqn_WcktSuk/sendMessage">
-			<h1>Отправка сообщения</h1>
-			<div class="form-group">
-				<label for="chat_id">Чат</label>
-				<input name="chat_id" class="form-control" id="chat_id" value="@gebeto_music">
-			</div>
-			<div class="form-group">
-				<label for="message">Сообщение</label>
-				<textarea class="form-control" id="message" name="text"></textarea>
-			</div>
-			<button type="submit" class="btn btn-primary">Отправить</button>
-		</form>
-	</div>
+		document.querySelector('#message-form').addEventListener('submit', function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+			var formdata = new FormData(this);
 
+			var notification = formdata.get('disable_notification') ? true : false;
+			formdata.set('disable_notification', notification);
+
+			fetch('https://api.telegram.org/bot445153754:AAHwUF7-CO3Y3qEJXh8XsV-pyqn_WcktSuk/sendMessage', {
+				method: 'POST', body: formdata
+			}).then(resp => resp.json())
+				.then(console.log);
+		});
+	</script>
 
 </body>
 </html>
