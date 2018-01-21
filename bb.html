@@ -33,7 +33,11 @@
 
 			<input hidden type="radio" name="output_format" value="sendit" checked="checked">
 			<!-- <input hidden type="text" name="filename_template" value="@DATABASE@"> -->
-			<input hidden type="text" name="filename_template" value="backup">
+
+			<div class="form-group">
+				<label>Filename</label>
+				<input class="form-control" type="text" name="filename_template" value="backup">
+			</div>
 
 			<input hidden type="text" name="charset" value="utf-8">
 			<input hidden type="text" name="compression" value="none">
