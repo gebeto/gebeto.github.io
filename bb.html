@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Beget backup</title>
+</head>
+
+<body>
+    <form method="post" action="https://free11.beget.com/phpMyAdmin/export.php" name="dump">
+        <input type="hidden" name="db" value="c97006xu_1">
+        <input type="hidden" name="token" value="c33797b2377bf8cbfb4b46d026a607e2">
+        <input type="hidden" name="export_type" value="database">
+        <input type="hidden" name="export_method" value="quick">
+        <input type="hidden" name="template_id" value="">
+
+        <select name="what">
+            <option value="csv">CSV</option>
+            <option value="json">JSON</option>
+            <option selected="selected" value="sql">SQL</option>
+            <option value="pdf">PDF</option>
+            <option value="xml">XML</option>
+            <option value="phparray">PHP array</option>
+        </select>
+
+        <input type="hidden" name="structure_or_data_forced" value="0">
+
+        <input hidden type="radio" name="output_format" value="sendit" checked="checked">
+        <input hidden type="text" name="filename_template" value="@DATABASE@">
+
+        <input hidden type="text" name="charset" value="utf-8">
+        <input hidden type="text" name="compression" value="none">
+        <input hidden type="text" name="maxsize" size="4">
+        <input hidden type="radio" name="output_format" value="astext">
+		
+		
+		<input hidden type="text" name="ods_null" value="NULL">
+		<input hidden type="text" name="csv_null" value="NULL">
+		<input hidden type="text" name="odt_null" value="NULL">
+		<input hidden type="text" name="excel_null" value="NULL">
+		<input hidden type="text" name="csv_separator" value=",">
+		<input hidden type="text" name="pdf_report_title" value="">
+		<input hidden type="text" name="csv_escaped" value="&quot;">
+		<input hidden type="text" name="texytext_null" value="NULL">
+		<input hidden type="text" name="htmlword_null" value="NULL">
+		<input hidden type="text" name="csv_enclosed" value="&quot;">
+		<input hidden type="text" name="csv_terminated" value="AUTO">
+		<input hidden type="text" name="sql_header_comment" value="">
+		<input hidden type="text" name="sql_max_query_size" value="50000">
+		<input hidden type="text" name="latex_null" value="\textit{NULL}">
+		<input hidden type="text" name="latex_data_label" value="tab:@TABLE@-data">
+		<input hidden type="text" name="latex_structure_label" value="tab:@TABLE@-structure">
+		<input hidden type="text" name="latex_data_caption" value="Content of table @TABLE@">
+		<input hidden type="text" name="latex_structure_caption" value="Structure of table @TABLE@">
+		<input hidden type="text" name="latex_data_continued_caption" value="Content of table @TABLE@ (continued)">
+		<input hidden type="text" name="latex_structure_continued_caption" value="Structure of table @TABLE@ (continued)">
+
+		<input hidden type="radio" name="sql_insert_syntax" value="none">
+		<input hidden type="radio" name="sql_insert_syntax" value="complete">
+		<input hidden type="radio" name="sql_insert_syntax" value="extended">
+		<input hidden type="radio" name="sql_insert_syntax" value="both" checked="checked">
+		
+		<input hidden type="hidden" name="ods_structure_or_data" value="data">
+		<input hidden type="hidden" name="csv_structure_or_data" value="data">
+		<input hidden type="hidden" name="xml_structure_or_data" value="data">
+		<input hidden type="hidden" name="yaml_structure_or_data" value="data">
+		<input hidden type="hidden" name="json_structure_or_data" value="data">
+		<input hidden type="hidden" name="excel_structure_or_data" value="data">
+		<input hidden type="hidden" name="codegen_structure_or_data" value="data">
+		<input hidden type="hidden" name="phparray_structure_or_data" value="data">
+		<input hidden type="hidden" name="odt_structure_or_data" value="structure_and_data">
+		<input hidden type="hidden" name="sql_structure_or_data" value="structure_and_data">
+		<input hidden type="hidden" name="pdf_structure_or_data" value="structure_and_data">
+		<input hidden type="hidden" name="latex_structure_or_data" value="structure_and_data">
+		<input hidden type="hidden" name="sql_create_table" value="something" checked="checked">
+		<input hidden type="hidden" name="texytext_structure_or_data" value="structure_and_data">
+		<input hidden type="hidden" name="htmlword_structure_or_data" value="structure_and_data">
+		<input hidden type="hidden" name="mediawiki_structure_or_data" value="structure_and_data">
+		<input hidden type="hidden" name="pdf_structure_or_data_default" value="data" disabled="">
+		<input hidden type="hidden" name="mediawiki_structure_or_data_default" value="data" disabled="">
+		<input hidden type="hidden" name="odt_structure_or_data_default" value="structure_and_data" disabled="">
+		<input hidden type="hidden" name="sql_structure_or_data_default" value="structure_and_data" disabled="">
+		<input hidden type="hidden" name="latex_structure_or_data_default" value="structure_and_data" disabled="">
+		<input hidden type="hidden" name="texytext_structure_or_data_default" value="structure_and_data" disabled="">
+		<input hidden type="hidden" name="htmlword_structure_or_data_default" value="structure_and_data" disabled="">
+
+		<input hidden type="checkbox" name="sql_ignore" value="something">
+		<input hidden type="checkbox" name="ods_columns" value="something">
+		<input hidden type="checkbox" name="csv_columns" value="something">
+		<input hidden type="checkbox" name="sql_delayed" value="something">
+		<input hidden type="checkbox" name="sql_metadata" value="something">
+		<input hidden type="checkbox" name="sql_truncate" value="something">
+		<input hidden type="checkbox" name="csv_removeCRLF" value="something">
+		<input hidden type="checkbox" name="sql_disable_fk" value="something">
+		<input hidden type="checkbox" name="excel_removeCRLF" value="something">
+		<input hidden type="checkbox" name="texytext_columns" value="something">
+		<input hidden type="checkbox" name="htmlword_columns" value="something">
+        <input hidden type="checkbox" name="lock_tables" value="something">
+		<input hidden type="checkbox" name="json_pretty_print" value="something">
+		<input hidden type="checkbox" name="sql_if_not_exists" value="something">
+		<input hidden type="checkbox" name="sql_views_as_tables" value="something">
+		<input hidden type="checkbox" name="sql_create_database" value="something">
+        <input hidden type="checkbox" name="as_separate_files" value="database">
+        <input hidden type="checkbox" name="remember_template" checked="checked">
+		<input hidden type="checkbox" name="sql_dates" value="something" checked="checked">
+		<input hidden type="checkbox" name="odt_columns" value="something" checked="checked">
+		<input hidden type="checkbox" name="odt_comments" value="something" checked="checked">
+		<input hidden type="checkbox" name="sql_utc_time" value="something" checked="checked">
+		<input hidden type="checkbox" name="excel_columns" value="something" checked="checked">
+		<input hidden type="checkbox" name="latex_caption" value="something" checked="checked">
+		<input hidden type="checkbox" name="latex_columns" value="something" checked="checked">
+        <input hidden type="checkbox" name="table_data[]" value="users" checked="checked">
+		<input hidden type="checkbox" name="sql_drop_table" value="something" checked="checked">
+		<input hidden type="checkbox" name="sql_backquotes" value="something" checked="checked">
+		<input hidden type="checkbox" name="latex_comments" value="something" checked="checked">
+		<input hidden type="checkbox" name="sql_create_view" value="something" checked="checked">
+        <input hidden type="checkbox" name="table_select[]" value="users" checked="checked">
+		<input hidden type="checkbox" name="xml_export_views" value="something" checked="checked">
+		<input hidden type="checkbox" name="mediawiki_caption" value="something" checked="checked">
+		<input hidden type="checkbox" name="mediawiki_headers" value="something" checked="checked">
+		<input hidden type="checkbox" name="xml_export_events" value="something" checked="checked">
+		<input hidden type="checkbox" name="xml_export_tables" value="something" checked="checked">
+		<input hidden type="checkbox" name="sql_auto_increment" value="something" checked="checked">
+		<input hidden type="checkbox" name="sql_create_trigger" value="something" checked="checked">
+		<input hidden type="checkbox" name="sql_hex_for_binary" value="something" checked="checked">
+        <input hidden type="checkbox" name="table_structure[]" value="users" checked="checked">
+		<input hidden type="checkbox" name="sql_use_transaction" value="something" checked="checked">
+		<input hidden type="checkbox" name="xml_export_triggers" value="something" checked="checked">
+		<input hidden type="checkbox" name="xml_export_contents" value="something" checked="checked">
+		<input hidden type="checkbox" name="sql_include_comments" value="something" checked="checked">
+		<input hidden type="checkbox" name="xml_export_functions" value="something" checked="checked">
+		<input hidden type="checkbox" name="xml_export_procedures" value="something" checked="checked">
+		<input hidden type="checkbox" name="sql_procedure_function" value="something" checked="checked">
+		<input hidden type="checkbox" name="sql_create_table" value="something" checked="checked" disabled="">
+		
+		<select hidden name="excel_edition"> <option value="win" selected="selected">Windows</option> </select>
+		<select hidden name="codegen_format"> <option value="0" selected="selected">NHibernate C# DO</option> </select>
+		<select hidden name="sql_compatibility"> <option value="NONE" selected="selected">NONE</option> </select>
+		<select hidden name="sql_type">
+		    <option value="INSERT" selected="selected">INSERT</option>
+		    <option value="UPDATE">UPDATE</option>
+		    <option value="REPLACE">REPLACE</option>
+		</select>
+        
+        <input type="submit" value="Go">
+    </form>
+</body>
+
+</html>
