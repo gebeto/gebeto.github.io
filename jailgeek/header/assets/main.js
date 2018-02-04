@@ -1,6 +1,6 @@
 var images = document.getElementById('images');
-var logo = new Image();
-logo.src = 'ban.jpg';
+var header = new Image();
+header.src = 'header.jpg';
 
 function drawLogoInCtx(canvas, img) {
 	var ctx = canvas.getContext('2d');
@@ -9,16 +9,16 @@ function drawLogoInCtx(canvas, img) {
 	var cheight = canvas.height;
 	
 	// console.log('canvas', cwidth, cheight);
-	// console.log('img', logo.width, logo.height);
+	// console.log('img', header.width, header.height);
 
 	ctx.globalAlpha = 1.0;
 	ctx.drawImage(img, 0, 0);
 
 	ctx.drawImage(
-		logo,
+		header,
 		0, 0,
 		cwidth,
-		logo.height * (cwidth / logo.width)
+		header.height * (cwidth / header.width)
 	);
 }
 

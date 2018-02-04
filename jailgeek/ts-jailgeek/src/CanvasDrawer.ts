@@ -13,11 +13,11 @@ export default class CanvasDrawer {
 
     constructor(canvas, bgUrl) {
         this.background = this.loadImage(bgUrl);
+        this.canvas = canvas;
         this.ctx = this.canvas.getContext('2d');
         this.fontSize = this.lineSpacing = 120;
         this.currentText = 'JailGeek';
         this.fontFamily = 'font';
-        this.canvas = canvas;
         this.linesCount = 1;
         this.top = 280;
 
@@ -64,7 +64,7 @@ export default class CanvasDrawer {
             var top = this.top + this.fontSize / 3;
             this.ctx.fillText(line, 425, top + this.lineSpacing * i);
         }.bind(this));
-        img.src = this.canvas.toDataURL();
+        G.img.src = this.canvas.toDataURL();
     }
 
     moveOneLineUp(): void {

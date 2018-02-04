@@ -38,3 +38,6 @@ canvas {
 	cursor: inherit;
 	display: block;
 }
+.file {
+	display: block;
+}
