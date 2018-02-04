@@ -8,23 +8,18 @@ function drawLogoInCtx(canvas, img) {
 	var cwidth = canvas.width;
 	var cheight = canvas.height;
 	
-	console.log('canvas', cwidth, cheight);
-	console.log('img', logo.width, logo.height);
-
+	// console.log('canvas', cwidth, cheight);
+	// console.log('img', logo.width, logo.height);
 
 	ctx.globalAlpha = 1.0;
 	ctx.drawImage(img, 0, 0);
-	// var smallerHeight = (img.width > img.height);
-	// logoSize = (smallerHeight ? img.height : img.width);
-	// logoSize -= logoSize / 2;
-	// ctx.globalAlpha = 0.1;
+
 	ctx.drawImage(
 		logo,
 		0, 0,
 		cwidth,
 		logo.height * (cwidth / logo.width)
 	);
-	// ctx.drawImage(logo, 0, 0);
 }
 
 function createImageWithFile(openedFile, index) {
