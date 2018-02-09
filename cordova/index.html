@@ -5,29 +5,19 @@
         <meta http-equiv="Content-Security-Policy" content="default-src * gap: ws: https://ssl.gstatic.com;img-src * 'self' data: content:;style-src 'self' 'unsafe-inline' data: blob:;script-src * 'unsafe-inline' 'unsafe-eval' data: blob:;">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>Blank App</title>
-        <!-- <link rel="stylesheet" type="text/css" href="styles/main.css"> -->
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
     </head>
     <body>
-        <!-- <div class="main">
-            <header>
-                Header
-            </header>
-            <main>
+		<div class="main">
+			<header>
+				Header
+			</header>
+			<main>
                 <p id="content"></p>
                 <button id="camera-scan">Scan QR code</button>
-            </main>
-        </div> -->
+			</main>
+		</div>
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript">
-            document.addEventListener('deviceready', function() {
-                // if (navigator.connection.type == Connection.NONE) {
-                //     navigator.notification.alert('An internet connection is required to continue');
-                // } else {
-                    // alert(Object.keys(window));
-                    window.location="https://gebeto.github.io/cordova/";
-                // }
-            });
-        </script>
         <script type="text/javascript" src="cordova-plugin-qrscanner-lib.min.js"></script>
         <script type="text/javascript" src="main.js"></script>
     </body>
