@@ -5,27 +5,30 @@
         <!-- <meta http-equiv="Content-Security-Policy" content="default-src * gap: ws: https://ssl.gstatic.com;img-src * 'self' data: content:;style-src 'self' 'unsafe-inline' data: blob:;script-src * 'unsafe-inline' 'unsafe-eval' data: blob:;"> -->
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>Blank App</title>
-        <!-- <link rel="stylesheet" type="text/css" href="styles/main.css"> -->
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
-    <body>
-		<div class="main">
-			<header>
-				Header
-			</header>
-			<main>
-                <p id="content"></p>
-                <button id="camera-scan">Scan QR code</button>
-			</main>
-		</div>
+    <body class="scan">
+
+        <div class="scanner">
+            <div class="top"></div>
+            <div class="bottom">
+                <div class="button">
+                    <button>Light</button>
+                </div>
+                <div class="button">
+                    <button>Camera</button>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <p id="content"></p>
+            <button id="camera-scan">Scan QR code</button>
+		</main>
 
         <script type="text/javascript">
-            document.addEventListener('deviceready', function() {
-                alert('HEY!!!');
-                alert(QRScanner);
-            });
+
         </script>
-        <!-- <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="cordova-plugin-qrscanner-lib.min.js"></script>
-        <script type="text/javascript" src="main.js"></script> -->
-    </body>
+	</body>
 </html>

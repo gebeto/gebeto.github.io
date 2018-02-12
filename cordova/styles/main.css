@@ -6,6 +6,38 @@
 
 body {
 	/*background: transparent;*/
+	transition-duration: .4s;
+}
+
+.scanner .top,
+.scanner .bottom {
+	transition-duration: .4s;
+	z-index: 1000;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: blue;
+}
+
+.scanner .top {
+	top: -100%;
+}
+
+.scanner .bottom {
+	bottom: -100%;
+}
+
+.scanner .bottom .button {
+	width: 50%;
+	/*float: left;*/
+}
+
+body.scan .scanner .top {
+	top: -80%;
+}
+
+body.scan .scanner .bottom {
+	bottom: -80%;
 }
 
 header {
