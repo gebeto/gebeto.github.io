@@ -1,0 +1,12 @@
+Name: TestPackage
+Package: com.gebeto.test
+Version: 0.1
+Architecture: iphoneos-arm
+Maintainer: Slavik Nychkalo <slavik.nychkalo@gmail.com>
+Filename: ./debs/package.deb
+Section: Themes
+Homepage: https://google.com
+Description: This is a test package!
+Author: Slavik Nychkalo <slavik.nychkalo@gmail.com>
+Depiction: https://google.com
+
