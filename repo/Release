@@ -1,8 +1,8 @@
-Origin: Gebero github
-Label: Gebeto github
+Origin: Daniel Repository
+Label: Daniel Repository
 Suite: stable
 Version: 1.0
 Codename: ios
 Architectures: iphoneos-arm
 Components: main
-Description: Gebeto github repo
+Description: This is Daniel's repository

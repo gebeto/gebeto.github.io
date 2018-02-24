@@ -1,12 +1,16 @@
-Name: TestPackage
-Package: com.gebeto.test
-Version: 0.1
+Package: net.winneonsword.package
+Version: 1.0
 Architecture: iphoneos-arm
-Maintainer: Slavik Nychkalo <slavik.nychkalo@gmail.com>
-Filename: ./debs/package.deb
+Maintainer: Jesse Bryan <winneonsword@gmail.com>
+Filename: ./debs/Package.deb
+Size: 1370
+MD5sum: e71f21bd3b20d299b406c77e9143a15e
+SHA1: 6b268fae35dfab8c8b846a2374b1774dc2e1ffb4
+SHA256: 97674d16ee3bc4ff3d46e1b6a424c1e23dbe00e34caefd477522e580ddce183d
 Section: Themes
-Homepage: https://google.com
-Description: This is a test package!
-Author: Slavik Nychkalo <slavik.nychkalo@gmail.com>
-Depiction: https://google.com
+Homepage: http://repo.winneonsword.net
+Description: This is a test package from /u/WinneonSword's tutorial repository!
+Author: Jesse Bryan <winneonsword@gmail.com>
+Depiction: http://repo.winneonsword.net/packages/package.html
+Name: Test Package
 
