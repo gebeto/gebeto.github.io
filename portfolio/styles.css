@@ -9,12 +9,12 @@ body {
 	position: relative;
 }
 .logo {
-	position: fixed;
+	position: absolute;
 	bottom: 30px;
 	left: 30px;
 }
 .hey {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -32,7 +32,8 @@ body {
 	}
 
 	.header .logo {
-		top: 0;
+		transition-duration: 2s;
+		top: 0px;
 		left: 0;
 		right: 0;
 		bottom: 0;
