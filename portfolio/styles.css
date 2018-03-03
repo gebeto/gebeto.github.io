@@ -9,12 +9,12 @@ body {
 	position: relative;
 }
 .logo {
-	position: absolute;
+	position: fixed;
 	bottom: 30px;
 	left: 30px;
 }
 .hey {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;

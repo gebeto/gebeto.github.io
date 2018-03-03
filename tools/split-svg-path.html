@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SVG Path split</title>
+</head>
+<body>
+	<textarea id="input" placeholder="Input path"></textarea>
+	<button id="process">Process</button>
+	<textarea id="output" placeholder="Output paths" readonly></textarea>
+	<script type="text/javascript">
+		var input = document.querySelector('#input');
+		var output = document.querySelector('#output');
+		document.querySelector('#process').addEventListener('click', function() {
+			var data = input.value;
+			output.value = data;
+		});
+	</script>
+</body>
+</html>
