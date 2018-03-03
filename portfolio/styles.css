@@ -1,0 +1,27 @@
+body {
+	background: #000;
+	margin: 0;
+	padding: 0;
+}
+.header {
+	background: #000;
+	height: 100vh;
+	position: relative;
+}
+.logo {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+}
+.hey {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.main {
+	box-sizing: content-box;
+}
