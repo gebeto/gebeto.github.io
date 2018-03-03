@@ -25,3 +25,17 @@ body {
 .main {
 	box-sizing: content-box;
 }
+
+@media screen and (max-width: 420px) {
+	.header .hey {
+		display: none;
+	}
+
+	.header .logo {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+}
