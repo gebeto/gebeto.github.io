@@ -11,37 +11,30 @@
 			.path { fill: #56BCC8; }
 			.git { fill: #5644E1; }
 			.branch { fill: #C33829; }
-			.background { fill: #000000; }
-			.plain { fill: #F4F4F4; }
-		</style>
-		<style>
-			.red { fill: #fc4346; }
 			.background { fill: #1e1f29; }
-			.green { fill: #50fb7c; }
-			.blue { fill: #49baff; }
-			.white { fill: #ebece6; }
+			.plain { fill: #F4F4F4; }
 		</style>
 		<g font-size="1.6" font-family="Monaco,Consolas,Menlo,'Bitstream Vera Sans Mono','Powerline Symbols',monospace">
 			<g style="transform:translate(0, -2px)">
 				<svg width="100">
 					<svg>
 						<text y="4" class="white">
-							<tspan class="blue">~/Projects/ink</tspan>
-						</text>
-						<text y="6.2" class="white">
-							<!-- <tspan class="red">λ</tspan> -->
-							<!-- <tspan class="green">node</tspan> -->
-							<!-- <tspan class="white">media/example</tspan> -->
-							<!-- <tspan fill="#e4e4e4">🁢</tspan> -->
-
 							<tspan class="arrow">➜</tspan>
-							<tspan class="path">~/Desktop</tspan>
+							<tspan class="path">repo</tspan>
 							<tspan class="git">git:(</tspan><tspan class="branch">master</tspan><tspan class="git">)</tspan>
 							<tspan class="plain">git add -A</tspan>
 						</text>
+						<text y="6.2" class="white">
+							<tspan class="arrow">➜</tspan>
+							<tspan class="path">repo</tspan>
+							<tspan class="git">git:(</tspan><tspan class="branch">master</tspan><tspan class="git">)</tspan>
+							<tspan class="plain">git commit -m "update"</tspan>
+						</text>
 						<text y="8.4" class="white">
-							<tspan class="green">2</tspan>
-							<tspan class="green"> tests passed</tspan>
+							<tspan class="arrow">➜</tspan>
+							<tspan class="path">repo</tspan>
+							<tspan class="git">git:(</tspan><tspan class="branch">master</tspan><tspan class="git">)</tspan>
+							<tspan class="plain">git push</tspan>
 						</text>
 					</svg>
 				</svg>
