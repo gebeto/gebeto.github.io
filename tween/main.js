@@ -1,16 +1,15 @@
-var Tween = TweenLite;
-
 var cdev = document.querySelector('#CDev');
 var client = document.querySelector('#Client');
 var visionArrow = document.querySelector('#Vision-Arrow');
 var projectVision = document.querySelector('#Project-Vision');
+projectVision.setAttribute('opacity', 0);
 
-Tween.to(cdev, 4, {x: 65, ease: Expo.easeOut});
-Tween.to(client, 4, {x: 292, ease: Expo.easeOut, onComplete: projectVisionAnimation});
-Tween.to(visionArrow, 1, {opacity: 1}).delay(2);
+TweenLite.from(cdev, 4, {x: -84, ease: Expo.easeOut});
+TweenLite.from(client, 4, {x: 440, ease: Expo.easeOut, onComplete: projectVisionAnimation});
+TweenLite.from(visionArrow, 1, {opacity: 0}).delay(2);
 
 function projectVisionAnimation() {
-	Tween.fromTo(projectVision, 3, {
+	TweenLite.fromTo(projectVision, 3, {
 		x: 65,
 		opacity: 0,
 	}, {
@@ -19,7 +18,7 @@ function projectVisionAnimation() {
 		ease: Circ.easeOut,
 	});
 	
-	Tween.to(projectVision, 3, {
+	TweenLite.to(projectVision, 3, {
 		x: 292,
 		opacity: 0,
 		ease: Circ.easeIn,
