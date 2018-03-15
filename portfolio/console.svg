@@ -47,22 +47,12 @@
 							<!-- <tspan fill="#e4e4e4">🁢</tspan> -->
 						</text>
 						<text y="8.183" class="white">
-							<tspan class="green" id="test-count">0</tspan>
+							<tspan class="green">2</tspan>
 							<tspan class="green"> tests passed</tspan>
 						</text>
 					</svg>
 				</svg>
 			</g>
-			<defs>
-				<script>
-					// slert('a');
-					var testCountNumber = 0;
-					var testCount = document.rootElement.querySelector('#test-count');
-					setInterval(function() {
-						testCount.textContent = testCountNumber++;
-					}, 300);
-				</script>
-			</defs>
 		</g>
 	</svg>
 </svg>
