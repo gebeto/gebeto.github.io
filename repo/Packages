@@ -3,10 +3,10 @@ Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: Jesse Bryan <winneonsword@gmail.com>
 Filename: ./debs/Package.deb
-Size: 1370
-MD5sum: e71f21bd3b20d299b406c77e9143a15e
-SHA1: 6b268fae35dfab8c8b846a2374b1774dc2e1ffb4
-SHA256: 97674d16ee3bc4ff3d46e1b6a424c1e23dbe00e34caefd477522e580ddce183d
+Size: 1328
+MD5sum: 833c02bc80a1fea46e8f34bd03d60702
+SHA1: 86b9c1f867cf468b1c630327cfc474f149042255
+SHA256: 327bb7b8fa2a7c75da30e3b4d5fbfad79937b402f5922d099152eb0810fca1c9
 Section: Themes
 Homepage: http://repo.winneonsword.net
 Description: This is a test package from /u/WinneonSword's tutorial repository!
