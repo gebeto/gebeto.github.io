@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ZSH generator</title>
+</head>
+<body>
+	<div id="inputs"></div>
+
+	<center>
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="540" height="233.68">
+			<rect width="540" height="234" rx="5" ry="5" class="background"/>
+			<g>
+				<circle cx="20" cy="20" r="6" fill="#ff5f58"/>
+				<circle cx="40" cy="20" r="6" fill="#ffbd2e"/>
+				<circle cx="60" cy="20" r="6" fill="#18c132"/>
+			</g>
+			<svg viewBox="0 0 50 18" width="500" height="178" x="10" y="86" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<style>
+					.arrow { fill: #62BE2A; }
+					.path { fill: #56BCC8; }
+					.git { fill: #5644E1; }
+					.branch { fill: #C33829; }
+					.background { fill: #1e1f29; }
+					.plain { fill: #F4F4F4; }
+				</style>
+				<g font-size="1.6" font-family="Monaco,Consolas,Menlo,'Bitstream Vera Sans Mono','Powerline Symbols',monospace">
+					<g style="transform:translate(0, -2px)">
+						<svg width="100">
+							<svg id="commands">
+								<text y="4" class="white">
+									<tspan class="arrow">➜</tspan>
+									<tspan class="path">repo</tspan>
+									<tspan class="git">git:(</tspan><tspan class="branch">master</tspan><tspan class="git">)</tspan>
+									<tspan class="plain">git add -A</tspan>
+								</text>
+								<text y="6.2" class="white">
+									<tspan class="arrow">➜</tspan>
+									<tspan class="path">repo</tspan>
+									<tspan class="git">git:(</tspan><tspan class="branch">master</tspan><tspan class="git">)</tspan>
+									<tspan class="plain">git commit -m "update"</tspan>
+								</text>
+								<text y="8.4" class="white">
+									<tspan class="arrow">➜</tspan>
+									<tspan class="path">repo</tspan>
+									<tspan class="git">git:(</tspan><tspan class="branch">master</tspan><tspan class="git">)</tspan>
+									<tspan class="plain">git push</tspan>
+								</text>
+							</svg>
+						</svg>
+					</g>
+				</g>
+			</svg>
+		</svg>
+		<button onclick="prompt('copy svg', svg.outerHTML)"> copy </button>
+	</center>
+
+	<script type="text/javascript">
+		var inputsWrapper = document.getElementById('inputs');
+		var commands = document.getElementById('commands').children;
+		var svg = document.querySelector('svg');
+
+		function createInputs(index) {
+			var cmd = commands[index].children;
+			var pathInput = document.createElement('input');
+			pathInput.placeholder = 'path';
+			pathInput.value = cmd[1].textContent;
+			pathInput.addEventListener('input', function(e) {
+				cmd[1].textContent = this.value;
+			});
+
+			var branchInput = document.createElement('input');
+			branchInput.placeholder = 'branch';
+			branchInput.value = cmd[3].textContent;
+			branchInput.addEventListener('input', function(e) {
+				cmd[3].textContent = this.value;
+			});
+
+			var commandInput = document.createElement('input');
+			commandInput.placeholder = 'command';
+			commandInput.value = cmd[5].textContent;
+			commandInput.addEventListener('input', function(e) {
+				cmd[5].textContent = this.value;
+			});
+
+			var wrapper = document.createElement('center');
+			wrapper.appendChild(pathInput);
+			wrapper.appendChild(branchInput);
+			wrapper.appendChild(commandInput);
+
+			return wrapper;
+		}
+
+		inputsWrapper.appendChild(createInputs(0));
+		inputsWrapper.appendChild(createInputs(1));
+		inputsWrapper.appendChild(createInputs(2));
+	</script>
+</body>
+</html>
