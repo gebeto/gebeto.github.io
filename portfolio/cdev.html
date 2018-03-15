@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CDev</title>
+</head>
+<body>
+	<style type="text/css">
+		#intro {
+			border: 1px solid #333;
+		}
+	</style>
+
+	<svg id="intro" width="440px" height="240px" viewBox="0 0 440 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<defs>
+			<rect id="path-1" x="0" y="0" width="75" height="41"></rect>
+		</defs>
+		<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+			<g id="Artboard">
+				<rect id="BG" fill="#FFFFFF" x="0" y="0" width="440" height="240"></rect>
+				<polygon id="Vision-Arrow" fill="#979797" fill-rule="nonzero" points="149 163.000637 286.041333 163.000637 286.00422 166.002103 294.086779 163.000637 294.086779 162.000637 286.00422 159 286.00422 162.000637 149 162.000637"></polygon>
+				<g id="Project-Vision" transform="translate(183.000000, 142.000000)">
+					<g id="Rectangle">
+						<use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+						<rect stroke="#6A9F45" stroke-width="1" x="0.5" y="0.5" width="74" height="40"></rect>
+					</g>
+					<text font-family="Roboto-Regular, Roboto" font-size="11" font-weight="normal" fill="#656565">
+						<tspan x="20.3666992" y="17">Project</tspan>
+						<tspan x="22.6225586" y="32">Vision</tspan>
+					</text>
+				</g>
+				<g id="CDev" transform="translate(65.000000, 120.000000)">
+					<ellipse fill="#6A9F45" cx="42" cy="42" rx="42" ry="42"></ellipse>
+					<text font-family="Roboto-Regular, Roboto" font-size="24" font-weight="normal" fill="#FFFFFF">
+						<tspan x="11" y="51">Client</tspan>
+					</text>
+				</g>
+				<g id="Client" transform="translate(292.000000, 120.000000)">
+					<ellipse fill="#6A9F45" cx="42" cy="42" rx="42" ry="42"></ellipse>
+					<text font-family="Roboto-Regular, Roboto" font-size="24" font-weight="normal" fill="#FFFFFF">
+						<tspan x="14" y="51">CDev</tspan>
+					</text>
+				</g>
+			</g>
+		</g>
+	</svg>
+
+	<img src="Untitled.gif" style="position: fixed; left: 0; right: 0; top: 0;bottom: 0; margin: auto; border: 1px solid #333;" loop="0">
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+	<script type="text/javascript">
+		var cdev = document.querySelector('#CDev');
+		var client = document.querySelector('#Client');
+		var visionArrow = document.querySelector('#Vision-Arrow');
+		var projectVision = document.querySelector('#Project-Vision');
+
+		var tl = new TimelineMax();
+
+		tl.fromTo(cdev, 3, {x: -84}, {x: 65, ease: Expo.easeOut}, 0);
+		tl.fromTo(client, 3, {x: 440}, {x: 292, ease: Expo.easeOut}, 0);
+		tl.fromTo(visionArrow, 3, {opacity: 0}, {opacity: 1, ease: Expo.easeInOut}, 1);
+		
+		var pvtl = new TimelineMax({repeat: 10});
+		// pvtl.fromTo(projectVision, 4, {opacity: 0, x: 65}, 2);
+		pvtl.fromTo(projectVision, 2, {opacity: 0}, {opacity: 1}, 2, {delay: 100})
+			.fromTo(projectVision, 7, {x: 65}, {x: 292}, 3)
+			.to(projectVision, 2, {opacity: 0}, 3, {delay: 4800});
+		// pvtl.to(projectVision, 2, {opacity: 0}, 2, {delay: 5});
+		// pvtl.to(projectVision, 10, {x: 292}, 3);
+		// pvtl.fromTo(projectVision, 10, {opacity: 0, x: 65}, {opacity: 1, x: 292}, 2);
+		// pvtl.to(projectVision, 3, {opacity: 1, x: 183}, {opacity: 0, x: 287, ease: Expo.easeInOut}, 3);
+		// pvtl.to(projectVision, 3, {opacity: 0, x: 287, ease: Expo.easeInOut}, 2);
+	</script>
+</body>
+</html>
