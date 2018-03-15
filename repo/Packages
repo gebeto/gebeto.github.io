@@ -1,12 +1,26 @@
+Package: com.slaviknychkalo.vpnmasterhack
+Version: 0.1
+Architecture: iphoneos-arm
+Depends: mobilesubstrate
+Filename: ./debs/VPNMasterHack.deb
+Size: 3446
+MD5sum: d68f3962aa24852c63c143f3f83283b3
+SHA1: c329e427f0ffa45339eb1e3cd9ffbb0f16d6a8ff
+SHA256: 0b3f541cfc82a97a76c2ca34ea9910a12dea6ca3899bc8540a61426eacaf2c31
+Section: Tweaks
+Description: VPN Master VIP Hack open VIP VPNs https://appsto.re/ru/D3Wi9.i
+Author: SlavikNychkalo <bboyheadman@gmail.com>
+Name: VPN Master Hack
+
 Package: net.winneonsword.package
 Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: Jesse Bryan <winneonsword@gmail.com>
 Filename: ./debs/Package.deb
 Size: 1328
-MD5sum: 833c02bc80a1fea46e8f34bd03d60702
-SHA1: 86b9c1f867cf468b1c630327cfc474f149042255
-SHA256: 327bb7b8fa2a7c75da30e3b4d5fbfad79937b402f5922d099152eb0810fca1c9
+MD5sum: 04db9b2d783a4d6771212786440339f7
+SHA1: 1ffab38ed9e75159158077acafaa1875ea8ea4a1
+SHA256: 97bc418adc6ceb780bd7b0c4b3f27e698408b3b4090d0da14873bcf0cc551369
 Section: Themes
 Homepage: http://repo.winneonsword.net
 Description: This is a test package from /u/WinneonSword's tutorial repository!

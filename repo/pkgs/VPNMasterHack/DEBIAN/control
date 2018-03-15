@@ -1,0 +1,9 @@
+Package: com.slaviknychkalo.vpnmasterhack
+Name: VPN Master Hack
+Version: 0.1
+Architecture: iphoneos-arm
+Description: VPN Master VIP Hack open VIP VPNs https://appsto.re/ru/D3Wi9.i
+Author: SlavikNychkalo <bboyheadman@gmail.com>
+Section: Tweaks
+Depends: mobilesubstrate
+
