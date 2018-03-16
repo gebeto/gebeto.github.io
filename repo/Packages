@@ -1,12 +1,26 @@
+Package: com.slaviknychkalo.bearnoteshack
+Version: 0.1
+Architecture: iphoneos-arm
+Depends: mobilesubstrate
+Filename: ./debs/BearHack.deb
+Size: 3038
+MD5sum: 2eb462306996a83dccaf731494ccfac7
+SHA1: db658cb1d72c92bf410200904a254ff833a17e23
+SHA256: aa30813da9ea03f0311a73ec3b8dc85f1987efb0c6f9287b8baf459fa2f958c9
+Section: Tweaks
+Description: Beat Awesome Notes Hack for premium subscription
+Author: SlavikNychkalo <bboyheadman@gmail.com>
+Name: Bear (Notes) Hack
+
 Package: com.slaviknychkalo.vpnmasterhack
 Version: 0.1
 Architecture: iphoneos-arm
 Depends: mobilesubstrate
 Filename: ./debs/VPNMasterHack.deb
 Size: 3446
-MD5sum: d68f3962aa24852c63c143f3f83283b3
-SHA1: c329e427f0ffa45339eb1e3cd9ffbb0f16d6a8ff
-SHA256: 0b3f541cfc82a97a76c2ca34ea9910a12dea6ca3899bc8540a61426eacaf2c31
+MD5sum: c1da0ca834811fc65bffb0929b708f0e
+SHA1: 60db4e958e6662162e703cfa92799d46002903d1
+SHA256: d8bdf9df4d945c81267b0694186cf27d837d6f3f02c2d8cb488039ad98f9c993
 Section: Tweaks
 Description: VPN Master VIP Hack open VIP VPNs https://appsto.re/ru/D3Wi9.i
 Author: SlavikNychkalo <bboyheadman@gmail.com>
@@ -18,9 +32,9 @@ Architecture: iphoneos-arm
 Maintainer: Jesse Bryan <winneonsword@gmail.com>
 Filename: ./debs/Package.deb
 Size: 1328
-MD5sum: 04db9b2d783a4d6771212786440339f7
-SHA1: 1ffab38ed9e75159158077acafaa1875ea8ea4a1
-SHA256: 97bc418adc6ceb780bd7b0c4b3f27e698408b3b4090d0da14873bcf0cc551369
+MD5sum: 2d3ccc7bc5b27e3845f6a497587d7e2c
+SHA1: 60367b75ff801e34cd9d0318c3d6a15d08ff620a
+SHA256: 9f95e36ebf1cf5981ca67ee070908a84f41a850de54466f24ce3ade9f6b9d41e
 Section: Themes
 Homepage: http://repo.winneonsword.net
 Description: This is a test package from /u/WinneonSword's tutorial repository!
