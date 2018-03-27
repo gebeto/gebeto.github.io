@@ -7,6 +7,7 @@ var radius = '0.'+Math.floor(Math.random() * 9) + 1  ;
 var focalLength = canvas.width *2;
 var warp = 0;
 var centerX, centerY;
+var PI2 = Math.PI * 2;
 
 var stars = [], star;
 var i;
@@ -16,9 +17,9 @@ var animate = true;
 initializeStars();
 
 function executeFrame(){
-  
-  if(animate)
+  if(animate) {
     requestAnimFrame(executeFrame);
+  }
   moveStars();
   drawStars();
 }
@@ -64,6 +65,7 @@ function drawStars(){
   {c.fillStyle = "#000";
   c.fillRect(0,0, canvas.width, canvas.height);}
   c.fillStyle = "rgba(209, 255, 255, "+radius+")";
+  // c.strokeStyle = "rgba(209, 255, 255, "+radius+")";
   for(i = 0; i < numStars; i++){
     star = stars[i];
     
@@ -74,6 +76,12 @@ function drawStars(){
     pixelRadius = 1 * (focalLength / star.z);
     
     c.fillRect(pixelX, pixelY, pixelRadius, pixelRadius);
+    // c.beginPath();
+    // c.arc(pixelX, pixelY, pixelRadius, 0, PI2);
+    // c.fill();
+    // c.strokeStyle = "rgba(209, 255, 255, "+star.o+")";
+    // c.stroke();
+
     c.fillStyle = "rgba(209, 255, 255, "+star.o+")";
     //c.fill();
   }
