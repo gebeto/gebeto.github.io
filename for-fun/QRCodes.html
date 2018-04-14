@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>QRCodes</title>
+	<style>
+		.wrapper {
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		div.code {
+			text-align: center;
+			width: 300px;
+			border: 1px solid #333;
+			display: inline-block;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>QRCode page</h1>
+	<p>Use hash in url to generate codes, text separated by "|"</p>
+	<div class="wrapper"></div>
+	<script>
+		var wrapper = document.querySelector('.wrapper');
+
+		function createQRCode(text) {
+			var element = document.createElement('div');
+			element.className = 'code';
+			var html = '';
+			html += '<img width="200" src="http://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data='
+			html += decodeURI(text);
+			html += '&amp;qzone=3&amp;margin=0&amp;size=1000x1000&amp;ecc=L" alt="qr code" />';
+			html += '<h3 class="title">' + text + '</h3>';
+			element.innerHTML = html;
+			return element;
+		}
+
+		var qrcodes = [];
+
+		if (window.location.hash) {
+			var hash = window.location.hash.slice(1);
+			var data = hash.split("|");
+			console.log(data);
+			qrcodes = data;
+		} else {	
+			qrcodes = [
+				'123,123,123',
+				'1,1,1',
+			];
+		}
+
+		for (var qrcode of qrcodes) {
+			wrapper.appendChild(
+				createQRCode(qrcode)
+			);
+		}
+	</script>
+</body>
+</html>
