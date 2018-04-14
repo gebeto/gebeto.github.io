@@ -57,6 +57,10 @@
 				createQRCode(qrcode)
 			);
 		}
+
+		window.onhashchange = function() {
+			window.location.reload()
+		};
 	</script>
 </body>
 </html>
