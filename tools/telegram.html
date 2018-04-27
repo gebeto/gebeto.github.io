@@ -13,6 +13,45 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="card">
+					<div class="card-header">Отправка Песни URL</div>
+					<div class="card-body">
+						<h4 class="card-title">Отправка Песни</h4>
+						<!-- <p class="card-text">Best ugg boots on the planet. Free shipping, 24/7 customer service.</p> -->
+						<form method="POST" target="_blank" enctype="multipart/form-data" action="https://api.telegram.org/bot445153754:AAHwUF7-CO3Y3qEJXh8XsV-pyqn_WcktSuk/sendAudio">
+							<div class="form-group">
+								<label for="chat_id">Чат</label>
+								<input name="chat_id" class="form-control" id="chat_id" value="@gebeto_music">
+							</div>
+
+							<div class="form-group">
+								<label for="title">Название</label>
+								<input name="title" class="form-control" id="title" value="">
+							</div>
+
+							<div class="form-group">
+								<label for="performer">Автор</label>
+								<input name="performer" class="form-control" id="performer" value="">
+							</div>
+
+							<div class="form-group">
+								<label for="duration">Длина (в секундах)</label>
+								<input type="number" name="duration" class="form-control" id="duration" value="">
+							</div>
+
+							<div class="form-group">
+								<label for="audio">Песня</label>
+								<input type="text" class="form-control" id="audio" name="audio">
+							</div>
+
+							<button type="submit" class="btn btn-primary">Отправить</button>
+						</form>
+					</div>
+					<div class="card-footer">Отправка Песни</div>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card">
 					<div class="card-header">Отправка Песни</div>
 					<div class="card-body">
 						<h4 class="card-title">Отправка Песни</h4>
