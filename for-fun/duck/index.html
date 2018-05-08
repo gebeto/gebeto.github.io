@@ -49,6 +49,11 @@
 		.hidden {
 			display: none;
 		}
+
+		.start {
+			cursor: pointer;
+			font-size: 100px;
+		}
 	</style>
 </head>
 <body>
@@ -57,9 +62,13 @@
 		<img class="img" src="logo.png" alt="">
 	</div>
 	
-	<div class="loader">
+	<div class="loader start" id="start">
+		Click for Duck-Party
+	</div>
+	<div class="loader" id="loader">
 		Loading...
 	</div>
+
 
 	<audio id="myAudio" src="song.mp3" type="audio/mpeg"></audio>
 	<script>
@@ -154,12 +163,11 @@
 
 		var drawer = ArrDrawer(1024, 400, 720);
 		var analyser = Pizzicato.context.createAnalyser();
-		var loader = new Loader(".loader");
+		var loader = new Loader("#loader");
 		var filename = location.hash.length ? location.hash.slice(1) : 'songf.mp3';
 		console.log("Filename", filename);
 		// var song = new Pizzicato.Sound('./songf.mp3', function(e) {
 		var song = new Pizzicato.Sound(filename, function(e) {
-			song.play();
 			loader.hide();
 
 			var frequencyData = new Uint8Array(analyser.frequencyBinCount);
@@ -189,6 +197,12 @@
 			}
 			renderFrame();
 
+		});
+
+		document.querySelector("#start").addEventListener("click", function(e) {
+			console.log(e);
+			song.play();
+			document.body.removeChild(e.target);
 		});
 
 		// var audio;
