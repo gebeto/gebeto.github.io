@@ -84,7 +84,7 @@
 
 		if (window.DeviceOrientationEvent) {
 			window.addEventListener("deviceorientation", function () {
-				translate(event.beta, event.gamma, SCALEX, SCALEY);
+				translate(event.gamma, event.beta, SCALEX, SCALEY);
 			}, true);
 		} else if (window.DeviceMotionEvent) {
 			window.addEventListener('devicemotion', function () {
