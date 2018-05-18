@@ -78,18 +78,21 @@
 			translate(x, y, scaleX, scaleY);
 		});
 
+		var SCALEX = 1;
+		var SCALEY = 1;
+
 		if (window.DeviceOrientationEvent) {
 			window.addEventListener("deviceorientation", function () {
 				tilt([event.beta, event.gamma]);
-				translate(event.beta, event.gamma, 1, 1);
+				translate(event.beta, event.gamma, SCALEX, SCALEY);
 			}, true);
 		} else if (window.DeviceMotionEvent) {
 			window.addEventListener('devicemotion', function () {
-				translate(event.acceleration.x * 2, event.acceleration.y * 2, 1, 1);
+				translate(event.acceleration.x * 2, event.acceleration.y * 2, SCALEX, SCALEY);
 			}, true);
 		} else {
 			window.addEventListener("MozOrientation", function () {
-				translate(orientation.x * 50, orientation.y * 50, 1, 1);
+				translate(orientation.x * 50, orientation.y * 50, SCALEX, SCALEY);
 			}, true);
 		}
 	</script>
