@@ -83,7 +83,6 @@
 
 		if (window.DeviceOrientationEvent) {
 			window.addEventListener("deviceorientation", function () {
-				tilt([event.beta, event.gamma]);
 				translate(event.beta, event.gamma, SCALEX, SCALEY);
 			}, true);
 		} else if (window.DeviceMotionEvent) {
