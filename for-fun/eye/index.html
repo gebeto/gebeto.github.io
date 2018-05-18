@@ -60,18 +60,38 @@
 		var eyeRight = document.querySelector("#apple-right");
 		var eyeSvgLeft = document.querySelector("#eye-svg-left");
 		var eyeSvgRight = document.querySelector("#eye-svg-right");
+		
+		function translate(x, y, scaleX, scaleY) {
+			eyeLeft.style.transform = 'translateX(' + x/scaleX + 'px) translateY(' + y/scaleY + 'px)';
+			eyeRight.style.transform = 'translateX(' + x/scaleX + 'px) translateY(' + y/scaleY + 'px)';
+			eyeSvgLeft.style.transform = 'translateX(' + x/scaleX + 'px) translateY(' + y/scaleY + 'px)';
+			eyeSvgRight.style.transform = 'translateX(' + x/scaleX + 'px) translateY(' + y/scaleY + 'px)';
+		}
+
 		document.addEventListener("mousemove", function(e) {
 			var scaleX = window.innerWidth / 34;
 			var scaleY = window.innerHeight / 18;
 			// var scaleY = window.innerHeight / 20;
 			var x = e.clientX - window.innerWidth / 2;
 			var y = e.clientY - window.innerHeight / 2;
-			eyeLeft.style.transform = 'translateX(' + x/scaleX + 'px) translateY(' + y/scaleY + 'px)';
-			eyeRight.style.transform = 'translateX(' + x/scaleX + 'px) translateY(' + y/scaleY + 'px)';
-			eyeSvgLeft.style.transform = 'translateX(' + x/scaleX + 'px) translateY(' + y/scaleY + 'px)';
-			eyeSvgRight.style.transform = 'translateX(' + x/scaleX + 'px) translateY(' + y/scaleY + 'px)';
 			// console.log(x, y, e);
+			translate(x, y, scaleX, scaleY);
 		});
+
+		if (window.DeviceOrientationEvent) {
+			window.addEventListener("deviceorientation", function () {
+				tilt([event.beta, event.gamma]);
+				translate(event.beta, event.gamma, 1, 1);
+			}, true);
+		} else if (window.DeviceMotionEvent) {
+			window.addEventListener('devicemotion', function () {
+				translate(event.acceleration.x * 2, event.acceleration.y * 2, 1, 1);
+			}, true);
+		} else {
+			window.addEventListener("MozOrientation", function () {
+				translate(orientation.x * 50, orientation.y * 50, 1, 1);
+			}, true);
+		}
 	</script>
 
 </body>
