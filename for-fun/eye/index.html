@@ -55,44 +55,63 @@
 			</g>
 		</svg>
 	</div>
+	<button>Fix</button>
 	
 	<script>
+		var pos = {
+			x: 0,
+			y: 0,
+		}
+
+		var origY = -46;
+
+		document.querySelector("button").addEventListener("click", function() {
+			origY = -pos.y;
+		});
+
 		var eyeLeft = document.querySelector("#apple-left");
 		var eyeRight = document.querySelector("#apple-right");
 		var eyeSvgLeft = document.querySelector("#eye-svg-left");
 		var eyeSvgRight = document.querySelector("#eye-svg-right");
 		
 		function translate(x, y, scaleX, scaleY) {
+			y = y + origY;
 			eyeLeft.style.transform = 'translateX(' + x/scaleX + 'px) translateY(' + y/scaleY + 'px)';
 			eyeRight.style.transform = 'translateX(' + x/scaleX + 'px) translateY(' + y/scaleY + 'px)';
 			eyeSvgLeft.style.transform = 'translateX(' + x/scaleX + 'px) translateY(' + y/scaleY + 'px)';
 			eyeSvgRight.style.transform = 'translateX(' + x/scaleX + 'px) translateY(' + y/scaleY + 'px)';
 		}
 
-		document.addEventListener("mousemove", function(e) {
-			var scaleX = window.innerWidth / 34;
-			var scaleY = window.innerHeight / 18;
-			// var scaleY = window.innerHeight / 20;
-			var x = e.clientX - window.innerWidth / 2;
-			var y = e.clientY - window.innerHeight / 2;
-			// console.log(x, y, e);
-			translate(x, y, scaleX, scaleY);
-		});
+		// document.addEventListener("mousemove", function(e) {
+		// 	var scaleX = window.innerWidth / 34;
+		// 	var scaleY = window.innerHeight / 18;
+		// 	// var scaleY = window.innerHeight / 20;
+		// 	pos.x = e.clientX - window.innerWidth / 2;
+		// 	pos.y = e.clientY - window.innerHeight / 2;
+		// 	// console.log(x, y, e);
+		// 	translate(pos.x, pos.y, scaleX, scaleY);
+		// });
 
-		var SCALEX = 1;
+		var SCALEX = 3;
 		var SCALEY = 1;
 
 		if (window.DeviceOrientationEvent) {
 			window.addEventListener("deviceorientation", function () {
+				pos.x = event.gamma;
+				pos.y = event.beta;
 				translate(event.gamma, event.beta, SCALEX, SCALEY);
 			}, true);
 		} else if (window.DeviceMotionEvent) {
 			window.addEventListener('devicemotion', function () {
-				translate(event.acceleration.x * 2, event.acceleration.y * 2, SCALEX, SCALEY);
+				pos.x = event.acceleration.x * 2;
+				pos.y = event.acceleration.y * 2;
+				translate(pos.x, pos.y, SCALEX, SCALEY);
 			}, true);
 		} else {
 			window.addEventListener("MozOrientation", function () {
-				translate(orientation.x * 50, orientation.y * 50, SCALEX, SCALEY);
+				pos.x = orientation.x * 50;
+				pos.y = orientation.y * 50;
+				translate(pos.x, pos.y, SCALEX, SCALEY);
 			}, true);
 		}
 	</script>
