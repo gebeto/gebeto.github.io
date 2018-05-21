@@ -75,6 +75,7 @@
 		var eyeSvgRight = document.querySelector("#eye-svg-right");
 		
 		function translate(x, y, scaleX, scaleY) {
+			// console.log(arguments);
 			y = y + origY;
 			eyeLeft.style.transform = 'translateX(' + x/scaleX + 'px) translateY(' + y/scaleY + 'px)';
 			eyeRight.style.transform = 'translateX(' + x/scaleX + 'px) translateY(' + y/scaleY + 'px)';
@@ -82,15 +83,13 @@
 			eyeSvgRight.style.transform = 'translateX(' + x/scaleX + 'px) translateY(' + y/scaleY + 'px)';
 		}
 
-		// document.addEventListener("mousemove", function(e) {
-		// 	var scaleX = window.innerWidth / 34;
-		// 	var scaleY = window.innerHeight / 18;
-		// 	// var scaleY = window.innerHeight / 20;
-		// 	pos.x = e.clientX - window.innerWidth / 2;
-		// 	pos.y = e.clientY - window.innerHeight / 2;
-		// 	// console.log(x, y, e);
-		// 	translate(pos.x, pos.y, scaleX, scaleY);
-		// });
+		document.addEventListener("mousemove", function(e) {
+			var scaleX = window.innerWidth / 34;
+			var scaleY = window.innerHeight / 18;
+			pos.x = e.clientX - window.innerWidth / 2;
+			pos.y = e.clientY - window.innerHeight / 2;
+			translate(pos.x, pos.y, scaleX, scaleY);
+		});
 
 		var SCALEX = 3;
 		var SCALEY = 1;
@@ -107,13 +106,13 @@
 				pos.y = event.acceleration.y * 2;
 				translate(pos.x, pos.y, SCALEX, SCALEY);
 			}, true);
-		} else {
+		} /*else {
 			window.addEventListener("MozOrientation", function () {
 				pos.x = orientation.x * 50;
 				pos.y = orientation.y * 50;
 				translate(pos.x, pos.y, SCALEX, SCALEY);
 			}, true);
-		}
+		}*/
 	</script>
 
 </body>
