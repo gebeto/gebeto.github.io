@@ -1,0 +1,44 @@
+{
+  "name": "webgl-template",
+  "version": "1.0.0",
+  "description": "WebGL THREE.js Templte",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "watch": "npm run dev -- --watch",
+    "watch:live": "webpack-dev-server --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gebeto/web-projects.git"
+  },
+  "keywords": [
+    "webgl",
+    "three",
+    "three.js",
+    "template",
+    "webpack"
+  ],
+  "author": "gebeto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gebeto/web-projects/issues"
+  },
+  "homepage": "https://github.com/gebeto/web-projects#readme",
+  "devDependencies": {
+    "@types/three": "^0.92.2",
+    "awesome-typescript-loader": "^5.0.0",
+    "raw-loader": "^0.5.1",
+    "types": "^0.1.1",
+    "typescript": "^2.8.3",
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "three": "^0.92.0",
+    "three-orbitcontrols-ts": "^0.1.2"
+  }
+}
