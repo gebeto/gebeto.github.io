@@ -1,8 +1,0 @@
-Package: com.slaviknychkalo.bearnoteshack
-Name: Bear (Notes) Hack
-Version: 0.1
-Architecture: iphoneos-arm
-Description: Beat Awesome Notes Hack for premium subscription
-Author: SlavikNychkalo <bboyheadman@gmail.com>
-Section: Tweaks
-Depends: mobilesubstrate
