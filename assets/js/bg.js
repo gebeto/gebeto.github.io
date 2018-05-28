@@ -16,6 +16,11 @@ var animate = true;
 
 initializeStars();
 
+var mouse = {
+  x: 0,
+  y: 0,
+}
+
 function executeFrame(){
   if(animate) {
     requestAnimFrame(executeFrame);
@@ -74,18 +79,21 @@ function drawStars(){
     pixelY = (star.y - centerY) * (focalLength / star.z);
     pixelY += centerY;
     pixelRadius = 1 * (focalLength / star.z);
-    
+
+    pixelX += mouse.x;    
+    pixelY += mouse.y;
+
     c.fillRect(pixelX, pixelY, pixelRadius, pixelRadius);
-    // c.beginPath();
-    // c.arc(pixelX, pixelY, pixelRadius, 0, PI2);
-    // c.fill();
-    // c.strokeStyle = "rgba(209, 255, 255, "+star.o+")";
-    // c.stroke();
 
     c.fillStyle = "rgba(209, 255, 255, "+star.o+")";
-    //c.fill();
   }
 }
 
 executeFrame();
+
+
+document.addEventListener("mousemove", function(e) {
+  mouse.x = (window.innerWidth/2 - e.clientX) / 30;
+  mouse.y = (window.innerHeight/2 - e.clientY) / 30;
+});
 
