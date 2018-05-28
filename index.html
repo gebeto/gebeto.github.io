@@ -105,8 +105,12 @@
 		}, 400);
 
 		var hhey = document.querySelector('.hey');
+		var header = document.querySelector('.header');
 		document.addEventListener("mousemove", function() {
-			hhey.style.transform = 'translateX(' + -mouse.x + 'px) translateY(' + -mouse.y + 'px)';
+			var x = -mouse.x/2;
+			var y = -mouse.y/2;
+			hhey.style.transform = 'translateX(' + x + 'px) translateY(' + y + 'px)';
+			header.style.transform = 'translateX(' + x/2 + 'px) translateY(' + y/2 + 'px)';
 		});
 
 	</script>
