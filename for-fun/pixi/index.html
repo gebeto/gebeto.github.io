@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script src="pixi.js"></script>
+	<script>
+		var time = 0;
+		var app = new PIXI.Application(800, 600, {backgroundColor : 0x1099bb});
+		document.body.appendChild(app.view);
+
+		// create a new Sprite from an image path
+		var bunny = PIXI.Sprite.fromImage('bunny.png')
+
+		// center the sprite's anchor point
+		bunny.anchor.set(0.5);
+
+		// move the sprite to the center of the screen
+		bunny.x = app.screen.width / 2;
+		bunny.y = app.screen.height / 2;
+
+		// add shader filter
+		// var filter = new PIXI.Filter(null, `
+		// 	varying vec2 vTextureCoord;
+		// 	varying vec2 vFilterCoord;
+		// 	uniform sampler2D uSampler;
+		// 	uniform sampler2D filterSampler;
+		// 	uniform float time;
+		// 	void main(void){
+		// 		vec4 masky = texture2D(filterSampler, vFilterCoord);
+		// 		vec4 sample = texture2D(uSampler, vTextureCoord);
+		// 		masky.x = sin(time);
+		// 		gl_FragColor = masky;
+		// 	}
+		// `);
+		var filter = new PIXI.filters.BlurXFilter(10, 1, bunny.width + 10, bunny.width);
+		filter.uniforms.time = time;
+
+		bunny.filters = [filter];
+
+		app.stage.addChild(bunny);
+
+		// Listen for animate update
+		app.ticker.add(function(delta) {
+			bunny.rotation += 0.1 * delta;
+			filter.uniforms.time += 0.06;
+		});
+
+	</script>
+</body>
+</html>
