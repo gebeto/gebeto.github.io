@@ -6,8 +6,6 @@ function DisplayPoint() {
 		y: 0,
 	};
 	this.point = {
-		// x: window.innerWidth / 2,
-		// y: window.innerHeight / 2,
 		x: 0,
 		y: 0,
 	};
