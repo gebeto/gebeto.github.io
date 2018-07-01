@@ -102,3 +102,109 @@ ul.links li:hover:before {
 	left: 0;
 	top: 0;
 }
+
+
+
+
+
+
+
+
+/*
+	Animation HEY
+*/
+#hey {
+	opacity: 0;
+	transition-duration: 2s;
+}
+
+#path-h {
+	transform: translateY(-100px);
+	transition-duration: 2.7s;
+}
+#path-e {
+	transform: translateY(-100px);
+	transition-duration: 3.1s;
+}
+#path-y {
+	transform: translateY(-100px);
+	transition-duration: 2.5s;
+}
+
+
+.loaded #hey {
+	opacity: 1;
+}
+
+.loaded #path-h {
+	transform: translateY(0px);
+}
+.loaded #path-e {
+	transform: translateY(0px);
+}
+.loaded #path-y {
+	transform: translateY(0px);
+}
+
+
+/*
+	Animation SLAVIK NYCHKALO WEB DEVELOPER
+*/
+#logo * {
+	/*transition-timing-function: ease-out;*/
+	-webkit-transition: all 500ms cubic-bezier(0.000, 0.000, 0.060, 1); /* older webkit */
+	-webkit-transition: all 500ms cubic-bezier(0.000, 0.000, 0.060, 1); 
+	   -moz-transition: all 500ms cubic-bezier(0.000, 0.000, 0.060, 1); 
+	     -o-transition: all 500ms cubic-bezier(0.000, 0.000, 0.060, 1); 
+			transition: all 500ms cubic-bezier(0.000, 0.000, 0.060, 1); /* custom */
+
+	-webkit-transition-timing-function: cubic-bezier(0.000, 0.000, 0.060, 1); /* older webkit */
+	-webkit-transition-timing-function: cubic-bezier(0.000, 0.000, 0.060, 1); 
+	   -moz-transition-timing-function: cubic-bezier(0.000, 0.000, 0.060, 1); 
+	     -o-transition-timing-function: cubic-bezier(0.000, 0.000, 0.060, 1); 
+			transition-timing-function: cubic-bezier(0.000, 0.000, 0.060, 1); /* custom */
+	transition-duration: 4s;
+	transition-delay: .1s;
+}
+
+#logo #left {
+	transform: translateY(-73px);
+}
+#logo #top {
+	transform: translateX(-248px);
+}
+#logo #right {
+	transform: translateY(73px);
+}
+#logo #bottom {
+	transform: translateX(248px);
+}
+#Web-Developer {
+	transition-duration: 1.5s;
+	transform: translateX(-288px);
+}
+#Slavik-Nychkalo {
+	transition-duration: 1.3s;
+	transform: translateX(-288px);
+}
+
+body[data-logo] #Web-Developer {
+	transform: translateX(0px);
+}
+body[data-logo] #Slavik-Nychkalo {
+	transform: translateX(0px);
+}
+body[data-logo] #logo #left {
+	transform: translateY(0px);
+}
+body[data-logo] #logo #top {
+	transform: translateX(0px);
+}
+body[data-logo] #logo #right {
+	transform: translateY(0px);
+}
+body[data-logo] #logo #bottom {
+	transform: translateX(0px);
+}
+
+
