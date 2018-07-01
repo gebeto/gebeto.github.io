@@ -75,18 +75,24 @@
 			</g>
 		</svg>
 	</div>
+	<script type="text/javascript" src="assets/js/DisplayPoint.js"></script>
 	<script type="text/javascript" src="assets/js/bg.js"></script>
 	<script type="text/javascript">
-
-		setTimeout(function() {
-			document.querySelector(".links").className = "links shown";
-		}, 400);
-
 		var hhey = document.querySelector('.hey');
 		var header = document.querySelector('.header');
-		document.addEventListener("mousemove", function() {
-			var x = -mouse.x/2;
-			var y = -mouse.y/2;
+		// document.addEventListener("mousemove", function() {
+		// 	var x = -displayPoint.point.x/2;
+		// 	var y = -displayPoint.point.y/2;
+
+		// 	var x2 = (x/2).toFixed(3);
+		// 	var y2 = (x/2).toFixed(3);
+
+		// 	hhey.style.transform = 'translateX(' + x + 'px) translateY(' + y + 'px) rotate(' + y2 + 'deg)';
+		// 	header.style.transform = 'translateX(' + -x2 + 'px) translateY(' + -y2 + 'px) rotate(' + x2/10 + 'deg)';
+		// });
+		displayPoint.onUpdate(function() {
+			var x = -displayPoint.point.x/20;
+			var y = -displayPoint.point.y/20;
 
 			var x2 = (x/2).toFixed(3);
 			var y2 = (x/2).toFixed(3);
@@ -96,13 +102,14 @@
 		});
 
 		window.addEventListener('load', function() {
-			document.body.setAttribute('data-links', '1');
 			document.body.setAttribute('data-hey', '1');
+			setTimeout(function() {
+				document.body.setAttribute('data-links', '1');
+			}, 400);
 			setTimeout(function() {
 				document.body.setAttribute('data-logo', '1');
 			}, 500);
 		});
-
 	</script>
 </body>
 </html>

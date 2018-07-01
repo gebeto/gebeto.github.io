@@ -1,4 +1,3 @@
-window.requestAnimFrame = (function(){return  window.requestAnimationFrame})();
 var canvas = document.getElementById("space");
 var c = canvas.getContext("2d");
 
@@ -17,15 +16,14 @@ var animate = true;
 
 initializeStars();
 
-var mouse = {
-  x: 0,
-  y: 0,
-}
+var displayPoint = new DisplayPoint();
+displayPoint.init();
 
 function executeFrame(){
   if(animate) {
-    requestAnimFrame(executeFrame);
+    requestAnimationFrame(executeFrame);
   }
+  displayPoint.update();
   moveStars();
   drawStars();
   starSpeed && scroll();
@@ -84,8 +82,8 @@ function drawStars(){
       pixelY += centerY;
       pixelRadius = 1 * (focalLength / star.z);
 
-      pixelX += mouse.x;
-      pixelY += mouse.y;
+      pixelX += displayPoint.point.x / 20;
+      pixelY += displayPoint.point.y / 20;
 
 
       // pixelX = canvas.width / 2 + (pixelX + Math.sin(star.z / canvas.width) * 100);
@@ -99,16 +97,7 @@ function drawStars(){
   }
 }
 
-
 executeFrame();
-
-
-document.addEventListener("mousemove", function(e) {
-  mouse.x = (window.innerWidth/2 - e.clientX) / 30;
-  mouse.y = (window.innerHeight/2 - e.clientY) / 30;
-});
-
-
 
 document.addEventListener("wheel", function(e) {
   starSpeed += e.deltaY > 0 ? 1 : starSpeed > 3 ? -1 : 0;
