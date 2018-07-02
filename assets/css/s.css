@@ -60,14 +60,14 @@ ul.links {
       content: " ";
       position: absolute;
       left: -10%;
-      top: -30px;
+      top: -50px;
       background: #DB50F8;
       height: 0%;
       width: 120%;
       transition-duration: 0.6s;
       z-index: -1; }
     ul.links li:hover:before {
-      height: 70px; }
+      height: 90px; }
     ul.links li img {
       transform: translateY(-40px);
       transition-duration: 3s;

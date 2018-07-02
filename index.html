@@ -91,14 +91,14 @@
 		// 	header.style.transform = 'translateX(' + -x2 + 'px) translateY(' + -y2 + 'px) rotate(' + x2/10 + 'deg)';
 		// });
 		displayPoint.onUpdate(function() {
-			var x = -displayPoint.point.x / 30;
-			var y = -displayPoint.point.y / 30;
+			var x = -displayPoint.point.x;
+			var y = -displayPoint.point.y;
 
-			var x2 = (x/2).toFixed(3);
-			var y2 = (y/2).toFixed(3);
+			var nX = x / (window.innerWidth / 2);
+			var nY = y / (window.innerHeight / 2);
 
-			hhey.style.transform = 'translateX(' + x + 'px) translateY(' + y + 'px) rotate(' + x2 / 2 + 'deg)';
-			header.style.transform = 'translateX(' + -x2 + 'px) translateY(' + -y2 + 'px) rotate(' + x2 / 10 + 'deg)';
+			hhey.style.transform = 'translateX(' + (nX * 10) + 'px) translateY(' + nY * 10 + 'px) rotate(' + nX*2 + 'deg)';
+			header.style.transform = 'translateX(' + (-nX * 5) + 'px) translateY(' + -nY * 5 + 'px) rotate(' + nX/3 + 'deg)';
 		});
 
 		window.addEventListener('load', function() {
