@@ -37,7 +37,6 @@ body[data-links] ul.links li img {
   transform: translateY(0px); }
 
 ul.links {
-  width: 224px;
   padding: 0;
   margin: 10px;
   position: fixed;
