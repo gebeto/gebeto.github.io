@@ -24,7 +24,6 @@ p {
 	font-size: 1.1em;
 }
 
-
 main {
 	display: none;
 }
@@ -33,17 +32,17 @@ footer {
 	display: none;
 }
 
-
 header {
 	height: 100%;
 	box-sizing: border-box;
-	border: solid 0em rgba(0,0,0,0.1);
+	border: solid 0em rgba(0, 0, 0, 0.1);
 	padding: 3em;
 	transition-duration: 1.0s;
-	transition-timing-function: cubic-bezier(0.5,0,0,1);
+	transition-timing-function: cubic-bezier(0.5, 0, 0, 1);
 }
 
 header .container {
+
 	/*background-image: url(user.png);*/
 	background-repeat: no-repeat;
 	background-position: center right;
@@ -62,7 +61,7 @@ header .description h1 {
 	transform: translateX(-30px);
 	transition-duration: 1s;
 	transition-delay: 0.1s;
-	transition-timing-function: cubic-bezier(0.5,0,0,1);
+	transition-timing-function: cubic-bezier(0.5, 0, 0, 1);
 }
 
 header .description p {
@@ -70,7 +69,7 @@ header .description p {
 	transform: translateX(-30px);
 	transition-duration: 1s;
 	transition-delay: 0.15s;
-	transition-timing-function: cubic-bezier(0.5,0,0,1);
+	transition-timing-function: cubic-bezier(0.5, 0, 0, 1);
 }
 
 header .image {
@@ -99,32 +98,41 @@ header .image:before {
 	transition-delay: 0.4s;
 }
 
+ul.links {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: right;
+	display: inline-block;
+	width: 100%;
+	clear: both;
 
-body[data-loaded="1"] header {
-	border-width: 3em;
-}
-
-body[data-loaded="1"] header .description h1 {
-	opacity: 1;
-	transform: translateX(0px);
-}
-body[data-loaded="1"] header .description p {
-	opacity: 1;
-	transform: translateX(0px);
-}
-
-body[data-loaded="1"] header .image {
-	opacity: 1;
-	transform: translateX(0em);
-}
-body[data-loaded="1"] header .image:before {
 	opacity: 0;
+	transform: translateX(-30px);
+	transition-duration: 1s;
+	transition-delay: 0.2s;
+	transition-timing-function: cubic-bezier(0.5, 0, 0, 1);
 }
 
-body[data-loaded="1"] main {
-	display: block;
+ul.links li {
+	list-style: none;
+	display: inline-block;
+	height: 18px;
+	float: left;
+	padding: 0px 0.3em;
+	transition-duration: 0.2s;
+	cursor: pointer;
 }
 
-body[data-loaded="1"] footer {
-	display: block;
+ul.links li:hover {
+	transform: scale(1.2);
+}
+
+ul.links li a {
+	display: inline-block;
+	height: 18px;
+}
+
+ul.links li img {
+	
 }
