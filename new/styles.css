@@ -35,8 +35,8 @@ footer {
 header {
 	height: 100%;
 	box-sizing: border-box;
-	border: solid 0em rgba(0, 0, 0, 0.1);
-	padding: 3em;
+	box-shadow: 0px 0px 0px 0em rgba(0, 0, 0, 0.1) inset;
+	padding: 6em;
 	transition-duration: 1.0s;
 	transition-timing-function: cubic-bezier(0.5, 0, 0, 1);
 }
@@ -134,7 +134,34 @@ ul.links li img {
 
 
 body[data-loaded="1"] header {
-	border-width: 3em;
+	box-shadow: 0px 0px 0px 3em rgba(0, 0, 0, 0.1) inset;
+}
+
+@media (max-width: 768px) {
+	header {
+		padding: 4em;
+	}
+
+	header .image {
+		background-position: center center;
+	}
+
+	body[data-loaded="1"] header {
+		box-shadow: 0px 0px 0px 1em rgba(0, 0, 0, 0.1) inset;
+	}
+
+	header .container {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	header .description {
+		width: 100%;
+	}
+
+	/*body[data-loaded="1"] header .image {
+		display: none;
+	}*/
 }
 
 body[data-loaded="1"] header .description h1 {
