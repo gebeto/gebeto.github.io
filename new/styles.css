@@ -35,7 +35,7 @@ footer {
 header {
 	height: 100%;
 	box-sizing: border-box;
-	box-shadow: 0px 0px 0px 0em rgba(0, 0, 0, 0.1) inset;
+	box-shadow: 0px 0px 0px 0em #EEEEEE inset;
 	padding: 6em;
 	transition-duration: 1.0s;
 	transition-timing-function: cubic-bezier(0.5, 0, 0, 1);
@@ -49,7 +49,10 @@ header .container {
 }
 
 header .description {
+	/*display: flex;*/
+	/*flex-direction: column;*/
 	width: 500px;
+	/*justify-content: space-between;*/
 }
 
 header .description h1 {
@@ -58,9 +61,11 @@ header .description h1 {
 	transition-duration: 1s;
 	transition-delay: 0.1s;
 	transition-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	text-shadow: 0.06em 0.06em 0px rgba(0,0,0,0.1);
 }
 
 header .description p {
+	text-shadow: 0.06em 0.06em 0px rgba(0,0,0,0.1);
 	opacity: 0;
 	transform: translateX(-30px);
 	transition-duration: 1s;
@@ -79,7 +84,8 @@ header .image {
 	background-image: url(user.png);
 	background-repeat: no-repeat;
 	background-position: center right;
-	background-size: auto 100%;
+	/*background-size: auto 100%;*/
+	background-size: contain;
 }
 
 header .image:before {
@@ -136,7 +142,7 @@ ul.links li img {
 
 
 body[data-loaded="1"] header {
-	box-shadow: 0px 0px 0px 3em rgba(0, 0, 0, 0.1) inset;
+	box-shadow: 0px 0px 0px 3em #EEEEEE inset;
 }
 
 @media screen and (max-width: 896px) {
@@ -145,7 +151,7 @@ body[data-loaded="1"] header {
 	}
 
 	body[data-loaded="1"] header {
-		box-shadow: 0px 0px 0px 1em rgba(0, 0, 0, 0.1) inset;
+		box-shadow: 0px 0px 0px 2em #EEEEEE inset;
 	}
 }
 
