@@ -96,6 +96,7 @@ header .image:before {
 
 ul.links {
 	margin: 0;
+	margin-top: 1em;
 	padding: 0;
 	box-sizing: border-box;
 	text-align: right;
