@@ -175,34 +175,3 @@ body[data-loaded="1"] header {
 		width: 70%;
 	}
 }
-
-
-body[data-loaded="1"] header .description h1 {
-	opacity: 1;
-	transform: translateX(0px);
-}
-body[data-loaded="1"] header .description p {
-	opacity: 1;
-	transform: translateX(0px);
-}
-
-body[data-loaded="1"] header .description ul {
-	opacity: 1;
-	transform: translateX(0px);
-}
-
-body[data-loaded="1"] header .image {
-	opacity: 1;
-	transform: translateX(0em);
-}
-body[data-loaded="1"] header .image:before {
-	opacity: 0;
-}
-
-body[data-loaded="1"] main {
-	display: block;
-}
-
-body[data-loaded="1"] footer {
-	display: block;
-}

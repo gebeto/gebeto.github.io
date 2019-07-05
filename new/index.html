@@ -82,7 +82,11 @@
 	<script>
 		document.addEventListener('DOMContentLoaded', function() {
 			setTimeout(() => {
-				document.body.setAttribute('data-loaded', '1')
+				// document.body.setAttribute('data-loaded', '1')
+				var link = document.createElement('link');
+				link.rel = 'stylesheet';
+				link.href = 'loaded.css';
+				document.body.appendChild(link);
 			}, 70)
 		});
 	</script>

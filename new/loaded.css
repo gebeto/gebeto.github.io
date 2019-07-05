@@ -1,0 +1,39 @@
+header {
+	box-shadow: 0px 0px 0px 3em #EEEEEE inset;
+}
+
+header .description h1 {
+	opacity: 1;
+	transform: translateX(0px);
+}
+header .description p {
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+header .description ul {
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+header .image {
+	opacity: 1;
+	transform: translateX(0em);
+}
+header .image:before {
+	opacity: 0;
+}
+
+main {
+	display: block;
+}
+
+footer {
+	display: block;
+}
+
+@media screen and (max-width: 896px) {
+	header {
+		box-shadow: 0px 0px 0px 2em #EEEEEE inset;
+	}
+}
