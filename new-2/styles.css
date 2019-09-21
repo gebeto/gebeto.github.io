@@ -134,6 +134,7 @@ a {
 	flex: 1;
 	padding: 14px 12px;
 	border-right: 1px solid #eee;
+	transition: flex 0.2s;
 }
 
 .social .social-item a {
@@ -142,6 +143,7 @@ a {
 
 .social .social-item:hover {
 	background: #fbfbfb;
+	flex: 2;
 }
 
 .social .social-item img {
