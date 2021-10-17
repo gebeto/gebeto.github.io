@@ -74,13 +74,8 @@
 			</li>
 		</ul>
 
-		<svg class="hey" width="221px" height="92px" viewBox="0 0 221 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-			<g id="hey" transform="translate(-210.000000, -114.000000)" opacity="0" stroke="none" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd">
-				<path id="path-h" d="M268.640625,205.757812 L254.085938,205.757812 L254.085938,165.609375 L224.554688,165.609375 L224.554688,205.757812 L210,205.757812 L210,114 L224.554688,114 L224.554688,152.460938 L254.085938,152.460938 L254.085938,114 L268.640625,114 L268.640625,205.757812 Z" />
-				<path id="path-e" d="M347.25,205.757812 L288.609375,205.757812 L288.609375,114 L347.25,114 L347.25,127.148438 L303.164062,127.148438 L303.164062,152.460938 L337.546875,152.460938 L337.546875,165.609375 L303.164062,165.609375 L303.164062,192.679688 L347.25,192.679688 L347.25,205.757812 Z" />
-				<path id="path-y" d="M430.710938,127.148438 L424.101562,127.148438 L403.78125,168.351562 L403.78125,192.679688 L418.476562,192.679688 L418.476562,205.757812 L374.601562,205.757812 L374.601562,192.679688 L389.226562,192.679688 L389.226562,168.351562 L368.976562,127.148438 L362.367188,127.148438 L362.367188,114 L391.265625,114 L391.265625,127.148438 L384.9375,127.148438 L396.609375,154.078125 L408.140625,127.148438 L401.8125,127.148438 L401.8125,114 L430.710938,114 L430.710938,127.148438 Z" />
-			</g>
-		</svg>
+		<img src="assets/3d.png" class="hey hey1">
+		<img src="assets/3d.png" class="hey hey2">
 
 		<svg class="logo" width="248px" height="73px" viewBox="0 0 248 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<g id="logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -94,21 +89,56 @@
 			</g>
 		</svg>
 	</div>
+	<style>
+		@keyframes roller1 {
+			from {
+				transform: rotateY(90deg) rotateZ(0deg) translateZ(0px);
+			}
+			50% {
+				transform: rotateY(270deg) rotateZ(180deg) translateZ(500px);
+			}
+			to {
+				transform: rotateY(450deg) rotateZ(360deg) translateZ(0px);
+			}
+		}
+
+		@keyframes roller2 {
+			from {
+				transform: rotateY(45deg) rotateZ(0deg) translateZ(0px);
+			}
+			50% {
+				transform: rotateY(225deg) rotateZ(180deg) translateZ(-400px);
+			}
+			to {
+				transform: rotateY(405deg) rotateZ(360deg) translateZ(0px);
+			}
+		}
+
+		.header {
+			transform-style: preserve-3d;
+			perspective: 600px;
+		}
+
+		.hey {
+			perspective-origin: center;
+			animation-duration: 30s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+
+		.hey1 {
+			animation-name: roller1;
+		}
+
+		.hey2 {
+			animation-name: roller2;
+		}
+	</style>
 	<script type="text/javascript" src="assets/js/DisplayPoint.js"></script>
 	<script type="text/javascript" src="assets/js/bg.js"></script>
 	<script type="text/javascript">
-		var hhey = document.querySelector('.hey');
 		var header = document.querySelector('.header');
-		// document.addEventListener("mousemove", function() {
-		// 	var x = -displayPoint.point.x/2;
-		// 	var y = -displayPoint.point.y/2;
 
-		// 	var x2 = (x/2).toFixed(3);
-		// 	var y2 = (x/2).toFixed(3);
-
-		// 	hhey.style.transform = 'translateX(' + x + 'px) translateY(' + y + 'px) rotate(' + y2 + 'deg)';
-		// 	header.style.transform = 'translateX(' + -x2 + 'px) translateY(' + -y2 + 'px) rotate(' + x2/10 + 'deg)';
-		// });
 		displayPoint.onUpdate(function() {
 			var x = -displayPoint.point.x;
 			var y = -displayPoint.point.y;
@@ -116,7 +146,6 @@
 			var nX = x / (window.innerWidth / 2);
 			var nY = y / (window.innerHeight / 2);
 
-			hhey.style.transform = 'translateX(' + (nX * 10) + 'px) translateY(' + nY * 10 + 'px) rotate(' + nX*2 + 'deg)';
 			header.style.transform = 'translateX(' + (-nX * 5) + 'px) translateY(' + -nY * 5 + 'px) rotate(' + nX/3 + 'deg)';
 		});
 
