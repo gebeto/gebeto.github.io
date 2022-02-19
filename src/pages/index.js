@@ -10,6 +10,7 @@ const Tile = ({ post }) => {
   const title = post.frontmatter.title || post.fields.slug
   const size = post.frontmatter.size || 'full';
   
+  const image = post.frontmatter.image;
   const randomImage = React.useMemo(() => {
     const images = post.frontmatter.images || [post.frontmatter.image];
     const imageIndex = Math.floor(Math.random() * images.length);
@@ -20,7 +21,7 @@ const Tile = ({ post }) => {
   return (
     <li className={`tile tile-${size}`}>
       <div className="tile-image">
-        <img src={randomImage?.publicURL} alt="project" />
+        <img src={image?.publicURL} alt="project" />
       </div>
       <article
         className="tile-details"
