@@ -31,13 +31,14 @@ const Bio = () => {
   return (
     <div className="bio-wrapper">
       <div className="bio">
-        <h1>Web engineer</h1>
+        <h1>web engineer</h1>
+        <span className="separator">·</span>
         <h2>{author?.name}</h2>
-        {author?.summary && (
+        {/* {author?.summary && (
           <p className="summary">
             {author?.summary || null}
           </p>
-        )}
+        )} */}
       </div>
     </div>
   )

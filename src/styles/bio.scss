@@ -1,45 +1,65 @@
 .bio-wrapper {
-  padding: 180px 40px;
-  padding-top: 240px;
+  height: calc(100vh - 36px);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+::selection {
+  color: #fff;
+  background: #000;
+}
+
 .bio {
-  text-align: right;
+  display: flex;
 }
 
 .bio h1 {
-  font-size: 100px;
+  font-size: 24px;
   margin: 0;
   line-height: 1;
 }
 
+.bio .separator {
+  padding: 0 16px;
+  user-select: none;
+}
+
 .bio h2 {
-  font-size: 25px;
+  font-size: 24px;
   color: #b0b0b0;
-  padding-right: 22px;
 }
 
 @media screen and (max-width: 400px) {
   .bio {
-    text-align: left;
+    flex-direction: column;
+    text-align: center;
   }
 
   .bio h1 {
-    font-size: 80px;
+    margin-bottom: 16px;
   }
 
   .bio h2 {
-    text-align: right;
-    padding-right: 16px;
-    font-size: 18px;
+    font-size: 14px;
+  }
+
+  .bio .separator {
+    display: none;
   }
 }
 
 @media (prefers-color-scheme: dark) {
+  ::selection {
+    color: #000;
+    background: #fff;
+  }
+
+  .bio h1 {
+    color: #fff;
+  }
+
   .bio h2 {
-    color: #3a3a3a;
+    color: #8a8a8a;
   }
 }
