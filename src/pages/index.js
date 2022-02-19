@@ -13,7 +13,7 @@ const Tile = ({ post }) => {
   return (
     <li className={`tile tile-${size}`}>
       <div className="tile-image">
-        <img src={post.frontmatter.image?.publicURL} />
+        <img src={post.frontmatter.image?.publicURL} alt="project image" />
       </div>
       <article
         className="tile-details"
