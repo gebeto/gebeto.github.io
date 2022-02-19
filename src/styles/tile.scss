@@ -8,6 +8,10 @@
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
+.tile-details h2 {
+  margin-bottom: 8px;
+}
+
 .tile {
   background-color: #fff;
   grid-column: span 12;
