@@ -1,0 +1,163 @@
+html {
+  background: #ebebec;
+}
+
+body,
+button,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0
+}
+
+h2 {
+  font-size: 32px;
+  line-height: .90625;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}
+
+body {
+  font-size: 17px;
+  line-height: 1.4705882353;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #1d1d1f;
+  font-style: normal
+}
+
+footer {
+  text-align: center;
+  color: #c2c2c2;
+  margin-top: 48px;
+}
+
+.global-wrapper {
+  max-width: 820px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.bio-wrapper {
+  padding: 180px 40px;
+  padding-top: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio {
+  text-align: right;
+}
+
+.bio h1 {
+  font-size: 100px;
+  margin: 0;
+  line-height: 1;
+}
+
+.bio h2 {
+  font-size: 25px;
+  color: #b0b0b0;
+  padding-right: 22px;
+}
+
+@media screen and (max-width: 400px) {
+  .bio {
+    text-align: left;
+  }
+
+  .bio h1 {
+    font-size: 80px;
+  }
+
+  .bio h2 {
+    text-align: right;
+    padding-right: 16px;
+    font-size: 18px;
+  }
+}
+
+
+a {
+  text-decoration: none;
+  color: #1d1d1f;
+}
+
+p {
+  font-size: 19px;
+  line-height: 1.2105263158;
+  font-weight: 600;
+  letter-spacing: 0em;
+  color: #2a2a2a;
+}
+
+.tiles-grid {
+  margin-left: auto;
+  margin-right: auto;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.tile {
+  background-color: #fff;
+  grid-column: span 12;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.tile-full {
+  grid-column: span 12;
+  display: flex;
+}
+
+.tile-full .tile-image {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.tile-full .tile-image img {
+  width: 100%;
+}
+
+.tile-full .tile-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  padding: 40px 46px 40px 0px;
+}
+
+
+
+.tile-half {
+  grid-column: span 6;
+  display: flex;
+  flex-direction: column;
+}
+
+.tile-half .tile-image {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-bottom: 40px;
+}
+
+.tile-half .tile-image img {
+  width: 100%;
+}
+
+.tile-half .tile-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  padding: 0px 46px 40px 46px;
+}
