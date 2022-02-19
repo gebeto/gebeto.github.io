@@ -12,7 +12,8 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-image`,
+    'gatsby-plugin-image',
+    'gatsby-plugin-sass',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

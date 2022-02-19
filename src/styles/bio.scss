@@ -1,0 +1,45 @@
+.bio-wrapper {
+  padding: 180px 40px;
+  padding-top: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio {
+  text-align: right;
+}
+
+.bio h1 {
+  font-size: 100px;
+  margin: 0;
+  line-height: 1;
+}
+
+.bio h2 {
+  font-size: 25px;
+  color: #b0b0b0;
+  padding-right: 22px;
+}
+
+@media screen and (max-width: 400px) {
+  .bio {
+    text-align: left;
+  }
+
+  .bio h1 {
+    font-size: 80px;
+  }
+
+  .bio h2 {
+    text-align: right;
+    padding-right: 16px;
+    font-size: 18px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .bio h2 {
+    color: #3a3a3a;
+  }
+}
