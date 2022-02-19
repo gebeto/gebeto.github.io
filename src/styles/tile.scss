@@ -48,7 +48,7 @@
   padding: 40px 46px 40px 0px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 720px) {
   .tile-full {
     flex-direction: column;
   }
@@ -70,7 +70,7 @@
   flex-direction: column;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 720px) {
   .tile-half {
     grid-column: span 12;
   }
