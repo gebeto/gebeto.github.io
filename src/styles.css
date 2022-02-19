@@ -1,5 +1,6 @@
 html {
   background: #ebebec;
+  color: #1d1d1f;
 }
 
 body,
@@ -9,7 +10,7 @@ h2,
 h3,
 p {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 h2 {
@@ -25,14 +26,14 @@ body {
   font-weight: 400;
   letter-spacing: -0.022em;
   font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: #1d1d1f;
   font-style: normal
 }
 
 footer {
   text-align: center;
   color: #c2c2c2;
-  margin-top: 48px;
+  padding-top: 48px;
+  padding-bottom: 24px;
 }
 
 .global-wrapper {
@@ -160,4 +161,32 @@ p {
   flex: 1;
   justify-content: center;
   padding: 0px 46px 40px 46px;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #151618;
+    color: #fff;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  p {
+    color: #cecece;
+  }
+
+  .tile {
+    background-color: #1d1e20;
+  }
+
+  .bio h2 {
+    color: #3a3a3a;
+  }
+
+  footer {
+    color: #4a4a4a;
+  }
+
 }
