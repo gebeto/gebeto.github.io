@@ -4,7 +4,12 @@ title: Telegram Charts
 date: "2015-05-28T22:40:32.169Z"
 description: Lightweight, fully functional charts library. Project was created for Telegram Charts contest.
 link: https://gebeto.github.io/telegram-charts
-image: ./charts.png
+images:
+  - ./charts_1.png
+  - ./charts_2.png
+  - ./charts_3.png
+  - ./charts_4.png
+  - ./charts_5.png
 size: half
 ---
 

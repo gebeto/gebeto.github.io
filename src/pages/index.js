@@ -9,11 +9,18 @@ import Seo from "../components/seo"
 const Tile = ({ post }) => {
   const title = post.frontmatter.title || post.fields.slug
   const size = post.frontmatter.size || 'full';
+  
+  const randomImage = React.useMemo(() => {
+    const images = post.frontmatter.images || [post.frontmatter.image];
+    const imageIndex = Math.floor(Math.random() * images.length);
+    const randomImage = post.frontmatter.images ? post.frontmatter.images[imageIndex] : post.frontmatter.image;
+    return randomImage;
+  }, [post]);
 
   return (
     <li className={`tile tile-${size}`}>
       <div className="tile-image">
-        <img src={post.frontmatter.image?.publicURL} alt="project" />
+        <img src={randomImage?.publicURL} alt="project" />
       </div>
       <article
         className="tile-details"
@@ -83,6 +90,9 @@ export const pageQuery = graphql`
           link
           size
           image {
+            publicURL
+          }
+          images {
             publicURL
           }
         }
