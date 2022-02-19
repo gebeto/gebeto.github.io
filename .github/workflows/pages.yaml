@@ -1,0 +1,32 @@
+name: Deploy to pages
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: "Setup node"
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: "Install dependencies"
+      run: npm install
+
+    - name: "Build"
+      run: npm run build
+
+    - name: "Deploy 🚀"
+      uses: JamesIves/github-pages-deploy-action@v4.2.2
+      with:
+        branch: gh-pages
+        folder: public
+        token: ${{ secrets.REPO_ACCESS_TOKEN }}
+        git-config-name: ${{ secrets.GIT_NAME }}
+        git-config-email: ${{ secrets.GIT_EMAIL }}
