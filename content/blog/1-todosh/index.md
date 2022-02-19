@@ -1,9 +1,10 @@
 ---
+order: 1
 title: Todosh
 date: "2015-05-06T23:46:37.121Z"
 description: Shopping list app! Integrated with Microsoft ToDo.
-size: half
-image: ./salty_egg.jpg
+size: full
+image: ./iphone.png
 ---
 
 Did you know that "despite its name, salted duck eggs can also be made from

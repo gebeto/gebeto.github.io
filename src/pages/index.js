@@ -13,7 +13,7 @@ const Tile = ({ post }) => {
   return (
     <li className={`tile tile-${size}`}>
       <div className="tile-image">
-        <img src={post.frontmatter.image?.publicURL} alt="project image" />
+        <img src={post.frontmatter.image?.publicURL} alt="project" />
       </div>
       <article
         className="tile-details"
@@ -50,7 +50,7 @@ const BlogIndex = ({ data, location }) => {
       <Seo title="gebeto | projects" />
       <Bio />
       <ol style={{ listStyle: `none` }} className="tiles-grid">
-        {posts.map(post => <Tile post={post} />)}
+        {posts.map(post => <Tile key={post.fields.slug} post={post} />)}
       </ol>
     </Layout>
   )
@@ -65,7 +65,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___order], order: ASC }) {
       nodes {
         excerpt
         fields {
