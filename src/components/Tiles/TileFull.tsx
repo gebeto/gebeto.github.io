@@ -22,10 +22,10 @@ export const TileFullWrapper = styled.li`
     display: flex;
     flex-direction: column;
     flex: 1;
-  }
-
-  .tile-image img {
-    width: 100%;
+    
+    img {
+      width: 100%;
+    }
   }
 
   .tile-details {

@@ -24,10 +24,10 @@ export const TileHalfWrapper = styled.li`
     flex-direction: column;
     flex: 1;
     padding-bottom: 40px;
-  }
 
-  .tile-image img {
-    width: 100%;
+    img {
+      width: 100%;
+    }
   }
 
   .tile-details {
