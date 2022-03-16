@@ -24,6 +24,7 @@ export const TileFullWrapper = styled.li`
     flex: 1;
     
     img, picture {
+      font-size: 0;
       width: 100%;
     }
   }
