@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const Baseline = createGlobalStyle`
   html {
-    background: #ebebec;
+    background: rgb(250, 250, 250);
     color: #1d1d1f;
   }
 
