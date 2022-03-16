@@ -23,7 +23,7 @@ export const TileFullWrapper = styled.li`
     flex-direction: column;
     flex: 1;
     
-    img {
+    img, picture {
       width: 100%;
     }
   }

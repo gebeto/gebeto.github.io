@@ -11,6 +11,9 @@ export type Project = {
     image: {
       publicURL: string;
     };
+    image_dark: {
+      publicURL: string;
+    };
     images: {
       publicURL: string;
     }[];

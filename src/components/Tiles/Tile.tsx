@@ -28,6 +28,7 @@ export const Tile: React.FC<TileProps> = ({ project }) => {
   const title = project.frontmatter.title || project.fields.slug
   const size = project.frontmatter.size || 'full';
   const image = project.frontmatter.image;
+  const imageDark = project.frontmatter.image_dark;
   const TileWrapper = tileBySize[size];
 
   // eslint-disable-next-line
@@ -41,7 +42,10 @@ export const Tile: React.FC<TileProps> = ({ project }) => {
   return (
     <TileWrapper>
       <div className="tile-image">
-        <img src={image?.publicURL} alt="project" />
+        <picture>
+          <source srcSet={imageDark?.publicURL} media="(prefers-color-scheme: dark)"/>
+          <img src={image.publicURL} alt="project" />
+        </picture>
       </div>
       <article className="tile-details" itemScope itemType="http://schema.org/Article">
         <header>

@@ -25,7 +25,7 @@ export const TileHalfWrapper = styled.li`
     flex: 1;
     padding-bottom: 40px;
 
-    img {
+    img, picture {
       width: 100%;
     }
   }
