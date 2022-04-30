@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/projects',
+  pathPrefix: "/projects",
   siteMetadata: {
     title: `Web Engineer`,
     author: {
@@ -9,17 +9,18 @@ module.exports = {
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `_pupiti`,
     },
   },
   plugins: [
-    'gatsby-plugin-image',
-    'gatsby-plugin-styled-components',
+    "gatsby-plugin-mdx",
+    "gatsby-plugin-image",
+    "gatsby-plugin-styled-components",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/projects`,
+        name: `projects`,
       },
     },
     {
@@ -32,6 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
+        footnotes: true,
         plugins: [
           {
             resolve: `gatsby-remark-images`,
@@ -43,6 +45,12 @@ module.exports = {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          {
+            resolve: "gatsby-remark-code-titles",
+            options: {
+              className: "your-custom-class-name",
             },
           },
           `gatsby-remark-prismjs`,
