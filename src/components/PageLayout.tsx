@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import { Baseline } from "./Baseline"
 import { Container } from "./Container"
 import { Footer } from "./Footer"
+import { Blurry } from "./Blurry"
 
 export type PageLayoutProps = {
   title?: string
@@ -39,7 +40,7 @@ export const PageLayout: React.FC<PageLayoutProps> = ({
     <>
       <Baseline />
       <Container data-is-root-path={isRootPath}>
-        <div className="blurry blurry-ua"></div>
+        <Blurry color="ukraine" />
         <header>{header}</header>
         <main>{children}</main>
         <Footer>© {new Date().getFullYear()}, Built by gebeto.</Footer>

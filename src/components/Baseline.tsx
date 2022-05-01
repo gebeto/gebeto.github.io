@@ -20,39 +20,6 @@ export const Baseline = createGlobalStyle`
     position: relative;
   }
 
-  @keyframes blurry {
-    from {
-      background-position: 0px 0px;
-    }
-    
-    to {
-      background-position: 1000px 1000px;
-    }
-  }
-
-  .blurry {
-    background-image: linear-gradient(to bottom right, #ddd 40%, transparent, #444 40%);
-    filter: blur(300px);
-    position: absolute;
-    width: 100%;
-    height: 120%;
-    top: 0;
-    left: 0;
-    opacity: 0.3;
-    background-position: 0px 0px;
-    animation: blurry 8s reverse cubic-bezier(0.36, 0, 0.66, -0.56);
-  }
-
-  .blurry-ua {
-    background-image: linear-gradient(to bottom right, #2980b9 50%, transparent, #b59308 40%);
-    opacity: 0.4;
-  }
-
-  .blurry-purple {
-    background-image: linear-gradient(to bottom right, red 50%, transparent, blue 40%);
-    opacity: 0.14;
-  }
-
   body, button, h1, h2, h3, p {
     margin: 0;
     padding: 0;
