@@ -1,53 +1,63 @@
 import React from "react"
 import { Link } from "gatsby"
-import styled from "styled-components";
+import styled from "styled-components"
 
-import { Project } from "../../types";
+import { Project } from "../../types"
 
-import { TileFullWrapper } from './TileFull';
-import { TileHalfWrapper } from './TileHalf';
-
+import { TileFullWrapper } from "./TileFull"
+import { TileHalfWrapper } from "./TileHalf"
 
 export type TileProps = {
-  project: Project;
-};
-
+  project: Project
+}
 
 const tileBySize = {
   full: TileFullWrapper,
   half: TileHalfWrapper,
 }
 
-
 const TileTitle = styled.h2`
   margin-bottom: 8px;
-`;
+  font-size: 20px;
+`
 
+const TileDescription = styled.p`
+  font-size: 15px;
+`
 
 export const Tile: React.FC<TileProps> = ({ project }) => {
   const title = project.frontmatter.title || project.fields.slug
-  const size = project.frontmatter.size || 'full';
-  const image = project.frontmatter.image;
-  const imageDark = project.frontmatter.image_dark;
-  const TileWrapper = tileBySize[size];
+  const size = project.frontmatter.size || "full"
+  const image = project.frontmatter.image
+  const imageDark = project.frontmatter.image_dark
+  const TileWrapper = tileBySize[size]
 
   // eslint-disable-next-line
   const randomImage = React.useMemo(() => {
-    const images = project.frontmatter.images || [project.frontmatter.image];
-    const imageIndex = Math.floor(Math.random() * images.length);
-    const randomImage = project.frontmatter.images ? project.frontmatter.images[imageIndex] : project.frontmatter.image;
-    return randomImage;
-  }, [project]);
+    const images = project.frontmatter.images || [project.frontmatter.image]
+    const imageIndex = Math.floor(Math.random() * images.length)
+    const randomImage = project.frontmatter.images
+      ? project.frontmatter.images[imageIndex]
+      : project.frontmatter.image
+    return randomImage
+  }, [project])
 
   return (
     <TileWrapper>
       <div className="tile-image">
         <picture>
-          <source srcSet={imageDark?.publicURL} media="(prefers-color-scheme: dark)"/>
+          <source
+            srcSet={imageDark?.publicURL}
+            media="(prefers-color-scheme: dark)"
+          />
           <img src={image.publicURL} alt="project" />
         </picture>
       </div>
-      <article className="tile-details" itemScope itemType="http://schema.org/Article">
+      <article
+        className="tile-details"
+        itemScope
+        itemType="http://schema.org/Article"
+      >
         <header>
           <TileTitle>
             {project.frontmatter.link ? (
@@ -62,7 +72,7 @@ export const Tile: React.FC<TileProps> = ({ project }) => {
           </TileTitle>
         </header>
         <section>
-          <p
+          <TileDescription
             dangerouslySetInnerHTML={{
               __html: project.frontmatter.description || project.excerpt,
             }}
@@ -71,5 +81,5 @@ export const Tile: React.FC<TileProps> = ({ project }) => {
         </section>
       </article>
     </TileWrapper>
-  );
+  )
 }

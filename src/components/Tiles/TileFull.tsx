@@ -1,5 +1,4 @@
-import styled from "styled-components";
-
+import styled from "styled-components"
 
 export const TileFullWrapper = styled.li`
   background-color: #fff;
@@ -11,21 +10,27 @@ export const TileFullWrapper = styled.li`
     background-color: #1d1e20;
   }
 
-  grid-column: span 12;
+  grid-column: span 8;
   display: flex;
 
   @media screen and (max-width: 400px) {
     flex-direction: column;
   }
 
+  @media screen and (max-width: 720px) {
+    grid-column: span 12;
+  }
+
   .tile-image {
     display: flex;
     flex-direction: column;
     flex: 1;
-    
-    img, picture {
+
+    img,
+    picture {
       font-size: 0;
-      width: 100%;
+      max-width: 100%;
+      max-height: 100%;
     }
   }
 
@@ -34,7 +39,7 @@ export const TileFullWrapper = styled.li`
     flex-direction: column;
     flex: 1;
     justify-content: center;
-    padding: 40px 46px 40px 0px;
+    padding: 30px 30px 30px 0px;
   }
 
   @media screen and (max-width: 720px) {
@@ -45,7 +50,7 @@ export const TileFullWrapper = styled.li`
     }
 
     .tile-details {
-      padding: 0px 46px 40px 46px;
+      padding: 0px 30px 30px 30px;
     }
   }
-`;
+`

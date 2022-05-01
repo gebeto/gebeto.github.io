@@ -1,5 +1,4 @@
-import styled from "styled-components";
-
+import styled from "styled-components"
 
 export const TileHalfWrapper = styled.li`
   background-color: #fff;
@@ -11,7 +10,7 @@ export const TileHalfWrapper = styled.li`
     background-color: #1d1e20;
   }
 
-  grid-column: span 6;
+  grid-column: span 4;
   display: flex;
   flex-direction: column;
 
@@ -23,11 +22,13 @@ export const TileHalfWrapper = styled.li`
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding-bottom: 40px;
 
-    img, picture {
+    img,
+    picture {
       font-size: 0;
-      width: 100%;
+      width: auto;
+      max-width: 100%;
+      height: auto;
     }
   }
 
@@ -36,6 +37,6 @@ export const TileHalfWrapper = styled.li`
     flex-direction: column;
     flex: 1;
     justify-content: center;
-    padding: 0px 46px 40px 46px;
+    padding: 24px 30px;
   }
-`;
+`
