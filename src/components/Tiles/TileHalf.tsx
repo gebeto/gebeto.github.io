@@ -5,7 +5,7 @@ export const TileHalfWrapper = styled.li`
   grid-column: span 12;
   border-radius: 18px;
   overflow: hidden;
-  transition-duration: 400ms;
+  transition-duration: 300ms;
 
   @media (prefers-color-scheme: dark) {
     background-color: hsla(0, 0%, 100%, 0.02);
