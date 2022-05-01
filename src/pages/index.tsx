@@ -8,13 +8,11 @@ import Seo from "../components/seo"
 import { Tile, TilesGrid } from "../components/Tiles"
 import { Project } from "../types"
 
-
 export type BlogIndexProps = {
   allMarkdownRemark: {
-    nodes: Project[];
-  };
+    nodes: Project[]
+  }
 }
-
 
 const BlogIndex: React.FC<PageProps<BlogIndexProps>> = ({ data, location }) => {
   const posts = data.allMarkdownRemark.nodes
@@ -24,7 +22,9 @@ const BlogIndex: React.FC<PageProps<BlogIndexProps>> = ({ data, location }) => {
       <Seo title="gebeto | projects" />
       <Bio />
       <TilesGrid>
-        {posts.map(post => <Tile key={post.fields.slug} project={post} />)}
+        {posts.map(post => (
+          <Tile key={post.fields.slug} project={post} />
+        ))}
       </TilesGrid>
     </PageLayout>
   )

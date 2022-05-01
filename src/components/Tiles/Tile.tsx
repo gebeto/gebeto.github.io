@@ -43,7 +43,7 @@ export const Tile: React.FC<TileProps> = ({ project }) => {
   }, [project])
 
   return (
-    <TileWrapper>
+    <TileWrapper as="a" target="_blank" href={project.frontmatter.link}>
       <div className="tile-image">
         <picture>
           <source
@@ -61,9 +61,7 @@ export const Tile: React.FC<TileProps> = ({ project }) => {
         <header>
           <TileTitle>
             {project.frontmatter.link ? (
-              <a href={project.frontmatter.link} target="_blank">
-                <span itemProp="headline">{title}</span>
-              </a>
+              <span itemProp="headline">{title}</span>
             ) : (
               <Link to={project.fields.slug} itemProp="url">
                 <span itemProp="headline">{title}</span>
