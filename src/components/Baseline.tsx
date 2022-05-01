@@ -13,7 +13,21 @@ export const Baseline = createGlobalStyle`
     font-weight: 400;
     letter-spacing: -0.022em;
     font-family: Karla,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    font-style: normal
+    font-style: normal;
+  }
+
+  main {
+    position: relative;
+  }
+
+  .blurry {
+    background-image: linear-gradient(to right, rgba(251,113,133,.2),rgba(217,70,239,.2),rgba(99,102,241,.2));
+    filter: blur(64px);
+    position: absolute;
+    width: 80%;
+    height: 100px;
+    top: -30px;
+    left: 10%;
   }
 
   body, button, h1, h2, h3, p {
