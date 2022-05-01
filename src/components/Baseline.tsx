@@ -1,10 +1,10 @@
-import { createGlobalStyle } from "styled-components";
-
+import { createGlobalStyle } from "styled-components"
 
 export const Baseline = createGlobalStyle`
   html {
     background: rgb(250, 250, 250);
     color: #1d1d1f;
+    -webkit-font-smoothing: antialiased;
   }
 
   body {
@@ -12,7 +12,7 @@ export const Baseline = createGlobalStyle`
     line-height: 1.4705882353;
     font-weight: 400;
     letter-spacing: -0.022em;
-    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: Karla,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
     font-style: normal
   }
 
@@ -36,7 +36,6 @@ export const Baseline = createGlobalStyle`
   p {
     font-size: 19px;
     line-height: 1.2105263158;
-    font-weight: 600;
     letter-spacing: 0em;
     color: #2a2a2a;
   }
@@ -55,4 +54,4 @@ export const Baseline = createGlobalStyle`
       color: #cecece;
     }
   }
-`;
+`

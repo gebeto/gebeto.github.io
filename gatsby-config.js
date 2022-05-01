@@ -13,6 +13,13 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Karla\:300,400,500,600,700`],
+        display: "swap",
+      },
+    },
     "gatsby-plugin-mdx",
     "gatsby-plugin-image",
     "gatsby-plugin-styled-components",
