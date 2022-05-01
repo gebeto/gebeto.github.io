@@ -37,7 +37,7 @@ export const BioWrapper = styled.div`
       opacity: 1;
     }
 
-    90% {
+    85% {
       opacity: 0;
     }
 
@@ -73,7 +73,7 @@ export const BioWrapper = styled.div`
   .bio .separator {
     padding: 0 16px;
     user-select: none;
-    animation: appear2 4.2s cubic-bezier(0.36, 0, 0.66, -0.56) reverse;
+    animation: appear2 7s cubic-bezier(0.36, 0, 0.66, -0.56) reverse;
   }
 
   .bio h2 {
