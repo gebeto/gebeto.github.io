@@ -39,7 +39,7 @@ export const PageLayout: React.FC<PageLayoutProps> = ({
     <>
       <Baseline />
       <Container data-is-root-path={isRootPath}>
-        <div className="blurry"></div>
+        <div className="blurry blurry-ua"></div>
         <header>{header}</header>
         <main>{children}</main>
         <Footer>© {new Date().getFullYear()}, Built by gebeto.</Footer>

@@ -1,5 +1,4 @@
-import styled from "styled-components";
-
+import styled from "styled-components"
 
 export const BioWrapper = styled.div`
   height: calc(100vh - 36px);
@@ -16,20 +15,71 @@ export const BioWrapper = styled.div`
     display: flex;
   }
 
+  @keyframes appear1 {
+    from {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+
+    90% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+
+    to {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes appear2 {
+    from {
+      opacity: 1;
+    }
+
+    90% {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes appear3 {
+    from {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+
+    90% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    to {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  }
+
   .bio h1 {
     font-size: 24px;
     margin: 0;
     line-height: 1;
+    animation: appear1 4s cubic-bezier(0.36, 0, 0.66, -0.56) reverse;
   }
 
   .bio .separator {
     padding: 0 16px;
     user-select: none;
+    animation: appear2 4.2s cubic-bezier(0.36, 0, 0.66, -0.56) reverse;
   }
 
   .bio h2 {
     font-size: 24px;
     color: #b0b0b0;
+    animation: appear3 4.1s cubic-bezier(0.36, 0, 0.66, -0.56) reverse;
   }
 
   @media screen and (max-width: 400px) {
@@ -65,4 +115,4 @@ export const BioWrapper = styled.div`
       color: #8a8a8a;
     }
   }
-`;
+`
