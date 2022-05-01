@@ -5,9 +5,14 @@ export const TileHalfWrapper = styled.li`
   grid-column: span 12;
   border-radius: 18px;
   overflow: hidden;
+  transition-duration: 400ms;
 
   @media (prefers-color-scheme: dark) {
-    background-color: #1d1e20;
+    background-color: hsla(0, 0%, 100%, 0.02);
+
+    &:hover {
+      background-color: hsla(0, 0%, 100%, 0.03);
+    }
   }
 
   grid-column: span 4;

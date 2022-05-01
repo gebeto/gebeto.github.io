@@ -56,7 +56,7 @@ export const Baseline = createGlobalStyle`
 
   @media (prefers-color-scheme: dark) {
     html {
-      background: #151618;
+      background: rgb(14 12 11/1);
       color: #fff;
     }
 
