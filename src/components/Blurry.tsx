@@ -1,6 +1,6 @@
-import styled, { css, FlattenSimpleInterpolation } from "styled-components"
+import styled, { css } from "styled-components"
+import { detect } from "detect-browser"
 
-import { detect, Browser } from "detect-browser"
 const browser = detect()
 
 const blurryColors = {
