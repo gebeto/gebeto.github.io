@@ -11,7 +11,7 @@ export type SocialProps = {}
 const SocialWrapper = styled.div`
   display: flex;
   gap: 12px;
-  margin-top: 16px;
+  margin-top: 20px;
 
   svg {
     color: white;

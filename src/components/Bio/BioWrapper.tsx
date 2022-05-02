@@ -93,7 +93,7 @@ export const BioWrapper = styled.div`
     }
 
     .bio h1 {
-      margin-bottom: 16px;
+      margin-bottom: 4px;
     }
 
     .bio h2 {
