@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components"
 import blurryUa from "./Blurry-ua-2.png"
 import blurryPurple from "./Blurry-purple.png"
+import gradientLight from "./gradient-light.png"
 
 const blurryColors = {
   ukraine: css`
@@ -44,14 +45,13 @@ export const Blurry = styled.div<{ color: keyof typeof blurryColors }>`
     content: " ";
     position: absolute;
     width: 100%;
-    height: 150%;
+    height: 50%;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(
-      to bottom,
-      transparent 60%,
-      rgb(241 243 244/1)
-    );
+    background-image: url(${gradientLight});
+    background-repeat: repeat no-repeat;
+    background-position: bottom;
+    background-size: contain;
   }
 
   @media screen and (max-width: 400px) {
@@ -60,11 +60,8 @@ export const Blurry = styled.div<{ color: keyof typeof blurryColors }>`
 
   @media (prefers-color-scheme: dark) {
     &:after {
-      background-image: linear-gradient(
-        to bottom,
-        transparent,
-        rgb(14 12 11/1)
-      );
+      height: 150%;
+      background-image: linear-gradient(to bottom, transparent, #0e0c0b);
     }
   }
 

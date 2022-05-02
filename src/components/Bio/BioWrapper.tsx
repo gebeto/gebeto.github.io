@@ -82,7 +82,7 @@ export const BioWrapper = styled.div`
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    color: #b0b0b0;
+    color: #444;
     animation: appear3 4.1s cubic-bezier(0.36, 0, 0.66, -0.56) reverse;
   }
 

@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components"
 
 export const Baseline = createGlobalStyle`
   html {
-    background: rgb(241 243 244/1);
+    background: #f1f3f4;
     color: #1d1d1f;
     -webkit-font-smoothing: antialiased;
   }
@@ -46,7 +46,7 @@ export const Baseline = createGlobalStyle`
 
   @media (prefers-color-scheme: dark) {
     html {
-      background: rgb(14 12 11/1);
+      background: #0e0c0b;
       color: #fff;
     }
 
