@@ -2,6 +2,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import { BioWrapper } from "./BioWrapper"
+import { Social } from "../Social"
 
 type BioStaticQuery = {
   site: {
@@ -48,6 +49,7 @@ export const Bio = () => {
           <p className="summary">{author?.summary || null}</p>
         )} */}
       </div>
+      <Social />
     </BioWrapper>
   )
 }

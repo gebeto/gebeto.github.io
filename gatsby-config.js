@@ -21,6 +21,7 @@ module.exports = {
         display: "swap",
       },
     },
+    "gatsby-plugin-react-svg",
     "gatsby-plugin-mdx",
     "gatsby-plugin-image",
     "gatsby-plugin-styled-components",
