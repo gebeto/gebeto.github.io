@@ -64,9 +64,10 @@ export const BioWrapper = styled.div`
   }
 
   .bio h1 {
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
     margin: 0;
-    line-height: 1;
     animation: appear1 4s cubic-bezier(0.36, 0, 0.66, -0.56) reverse;
   }
 
@@ -77,7 +78,9 @@ export const BioWrapper = styled.div`
   }
 
   .bio h2 {
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
     color: #b0b0b0;
     animation: appear3 4.1s cubic-bezier(0.36, 0, 0.66, -0.56) reverse;
   }

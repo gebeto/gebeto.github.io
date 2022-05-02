@@ -1,23 +1,22 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import { BioWrapper } from './BioWrapper';
-
+import { BioWrapper } from "./BioWrapper"
 
 type BioStaticQuery = {
   site: {
     siteMetadata: {
       author: {
-        name: string;
-        summary: string;
-      };
+        name: string
+        title: string
+        summary: string
+      }
       social: {
-        twitter: string;
-      };
-    };
-  };
-};
-
+        twitter: string
+      }
+    }
+  }
+}
 
 export const Bio = () => {
   const data = useStaticQuery<BioStaticQuery>(graphql`
@@ -26,6 +25,7 @@ export const Bio = () => {
         siteMetadata {
           author {
             name
+            title
             summary
           }
           social {
@@ -34,22 +34,20 @@ export const Bio = () => {
         }
       }
     }
-  `);
+  `)
 
   const author = data.site.siteMetadata?.author
 
   return (
     <BioWrapper>
       <div className="bio">
-        <h1>web engineer</h1>
+        <h1>{author?.name}</h1>
         <span className="separator">·</span>
-        <h2>{author?.name}</h2>
+        <h2>{author?.title}</h2>
         {/* {author?.summary && (
-          <p className="summary">
-            {author?.summary || null}
-          </p>
+          <p className="summary">{author?.summary || null}</p>
         )} */}
       </div>
     </BioWrapper>
   )
-};
+}

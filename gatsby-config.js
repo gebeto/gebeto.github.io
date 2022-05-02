@@ -1,9 +1,10 @@
 module.exports = {
   pathPrefix: "/projects",
   siteMetadata: {
-    title: `Web Engineer`,
+    title: "Web Engineer",
     author: {
-      name: `yaroslav nychkalo`,
+      name: "Yaroslav Nychkalo",
+      title: "Web Software Engineer",
       // summary: `lives and works in San Francisco building useful things.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
