@@ -58,7 +58,21 @@ export const Blurry = styled.div<{ color: keyof typeof blurryColors }>`
     height: 150%;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom, transparent, rgb(14 12 11/1));
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(241 243 244/1)
+    );
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &:after {
+      background-image: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(14 12 11/1)
+      );
+    }
   }
 
   @media (prefers-reduced-motion) {

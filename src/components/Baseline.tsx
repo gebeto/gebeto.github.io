@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components"
 
 export const Baseline = createGlobalStyle`
   html {
-    background: rgb(250, 250, 250);
+    background: rgb(241 243 244/1);
     color: #1d1d1f;
     -webkit-font-smoothing: antialiased;
   }
