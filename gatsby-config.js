@@ -10,7 +10,11 @@ module.exports = {
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `_pupiti`,
+      github: "gebeto",
+      linkedin: "gebeto",
+      twitter: "_pupiti",
+      telegram: "gebeto",
+      // codepen: "gebeto",
     },
   },
   plugins: [

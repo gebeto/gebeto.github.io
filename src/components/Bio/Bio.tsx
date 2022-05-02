@@ -2,7 +2,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import { BioWrapper } from "./BioWrapper"
-import { Social } from "../Social"
+import { Social, SocialProps } from "../Social"
 
 type BioStaticQuery = {
   site: {
@@ -12,9 +12,7 @@ type BioStaticQuery = {
         title: string
         summary: string
       }
-      social: {
-        twitter: string
-      }
+      social?: SocialProps["social"]
     }
   }
 }
@@ -30,7 +28,11 @@ export const Bio = () => {
             summary
           }
           social {
+            github
             twitter
+            linkedin
+            telegram
+            codepen
           }
         }
       }
@@ -49,7 +51,7 @@ export const Bio = () => {
           <p className="summary">{author?.summary || null}</p>
         )} */}
       </div>
-      <Social />
+      <Social social={data.site.siteMetadata.social} />
     </BioWrapper>
   )
 }

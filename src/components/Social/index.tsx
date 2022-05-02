@@ -5,8 +5,17 @@ import GithubIcon from "./github.svg"
 import LinkedinIcon from "./linkedin.svg"
 import TwitterIcon from "./twitter.svg"
 import TelegramIcon from "./telegram.svg"
+import CodepenIcon from "./codepen.svg"
 
-export type SocialProps = {}
+export type SocialProps = {
+  social?: {
+    github?: string
+    linkedin?: string
+    twitter?: string
+    telegram?: string
+    codepen?: string
+  }
+}
 
 const SocialWrapper = styled.div`
   @keyframes social {
@@ -45,13 +54,50 @@ const SocialWrapper = styled.div`
   }
 `
 
-export const Social: React.FC<SocialProps> = props => {
+const SocialLink = styled.a`
+  font-size: 0;
+`
+
+export const Social: React.FC<SocialProps> = ({ social }) => {
   return (
     <SocialWrapper>
-      <GithubIcon />
-      <TwitterIcon />
-      <LinkedinIcon />
-      <TelegramIcon />
+      {social?.github && (
+        <SocialLink
+          href={`https://github.com/${social?.github}`}
+          target="_blank"
+        >
+          <GithubIcon />
+        </SocialLink>
+      )}
+      {social?.codepen && (
+        <SocialLink
+          href={`https://codepen.io/${social?.codepen}`}
+          target="_blank"
+        >
+          <CodepenIcon />
+        </SocialLink>
+      )}
+      {social?.twitter && (
+        <SocialLink
+          href={`https://twitter.com/${social?.twitter}`}
+          target="_blank"
+        >
+          <TwitterIcon />
+        </SocialLink>
+      )}
+      {social?.linkedin && (
+        <SocialLink
+          href={`https://www.linkedin.com/in/${social?.linkedin}`}
+          target="_blank"
+        >
+          <LinkedinIcon />
+        </SocialLink>
+      )}
+      {social?.telegram && (
+        <SocialLink href={`https://t.me/${social?.telegram}`} target="_blank">
+          <TelegramIcon />
+        </SocialLink>
+      )}
     </SocialWrapper>
   )
 }
