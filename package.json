@@ -12,7 +12,6 @@
     "@mdx-js/react": "v1",
     "@types/styled-components": "^5.1.23",
     "babel-plugin-styled-components": "^2.0.3",
-    "detect-browser": "^5.3.0",
     "gatsby": "^4.7.2",
     "gatsby-plugin-feed": "^4.7.0",
     "gatsby-plugin-gatsby-cloud": "^4.7.0",
