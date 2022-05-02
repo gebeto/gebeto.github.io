@@ -9,9 +9,29 @@ import TelegramIcon from "./telegram.svg"
 export type SocialProps = {}
 
 const SocialWrapper = styled.div`
+  @keyframes social {
+    from {
+      opacity: 1;
+      transform: scale(1) translateY(0px);
+    }
+    80% {
+      opacity: 0;
+      transform: scale(0.96) translateY(10px);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.96) translateY(10px);
+    }
+  }
+
   display: flex;
   gap: 12px;
   margin-top: 20px;
+
+  opacity: 1;
+  transform: scale(1) translateY(0px);
+
+  animation: social 3s reverse cubic-bezier(0.36, 0, 0.66, -0.56);
 
   svg {
     color: white;
