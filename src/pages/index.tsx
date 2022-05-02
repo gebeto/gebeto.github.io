@@ -54,7 +54,7 @@ export const pageQuery = graphql`
           image {
             publicURL
           }
-          image_dark {
+          image_light {
             publicURL
           }
           images {

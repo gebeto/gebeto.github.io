@@ -23,14 +23,15 @@ export const BioAuthorName = styled.h1`
   line-height: 24px;
   margin: 0;
   animation: appear1 4s cubic-bezier(0.36, 0, 0.66, -0.56) reverse;
+  color: #fff;
 
   @media screen and (max-width: 400px) {
     margin-bottom: 4px;
   }
 
-  @media (prefers-color-scheme: dark) {
-    color: #fff;
-  }
+  /* @media (prefers-color-scheme: light) {
+    color: #000;
+  } */
 `
 
 export const BioAuthorTitle = styled.h1`
@@ -54,16 +55,16 @@ export const BioAuthorTitle = styled.h1`
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
-  color: #444;
+  color: #8a8a8a;
   animation: appear3 4.1s cubic-bezier(0.36, 0, 0.66, -0.56) reverse;
 
   @media screen and (max-width: 400px) {
     font-size: 14px;
   }
 
-  @media (prefers-color-scheme: dark) {
-    color: #8a8a8a;
-  }
+  /* @media (prefers-color-scheme: light) {
+    color: #444;
+  } */
 `
 
 export const BioSummary = styled.div`
@@ -101,8 +102,8 @@ export const BioWrapper = styled.div`
   flex-direction: column;
 
   ::selection {
-    color: #fff;
-    background: #000;
+    color: #000;
+    background: #fff;
   }
 
   .bio {
@@ -140,10 +141,10 @@ export const BioWrapper = styled.div`
     }
   }
 
-  @media (prefers-color-scheme: dark) {
+  /* @media (prefers-color-scheme: light) {
     ::selection {
-      color: #000;
-      background: #fff;
+      color: #fff;
+      background: #000;
     }
-  }
+  } */
 `

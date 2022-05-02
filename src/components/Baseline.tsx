@@ -2,8 +2,8 @@ import { createGlobalStyle } from "styled-components"
 
 export const Baseline = createGlobalStyle`
   html {
-    background: #f1f3f4;
-    color: #1d1d1f;
+    background: #0e0c0b;
+    color: #fff;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -34,28 +34,13 @@ export const Baseline = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: #1d1d1f;
+    color: #fff;
   }
 
   p {
     font-size: 19px;
     line-height: 1.2105263158;
     letter-spacing: 0em;
-    color: #2a2a2a;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    html {
-      background: #0e0c0b;
-      color: #fff;
-    }
-
-    a {
-      color: #fff;
-    }
-
-    p {
-      color: #cecece;
-    }
+    color: #cecece;
   }
 `

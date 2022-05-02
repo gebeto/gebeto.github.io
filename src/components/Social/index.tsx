@@ -43,14 +43,14 @@ const SocialWrapper = styled.div`
   animation: social 3s reverse cubic-bezier(0.36, 0, 0.66, -0.56);
 
   svg {
-    color: #000;
+    color: #fff;
     opacity: 0.7;
     transition-duration: 200ms;
     cursor: pointer;
 
-    @media (prefers-color-scheme: dark) {
-      color: #fff;
-    }
+    /* @media (prefers-color-scheme: light) {
+      color: #000;
+    } */
   }
 
   & svg:hover {

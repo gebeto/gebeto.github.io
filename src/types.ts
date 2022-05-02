@@ -1,21 +1,21 @@
 export type Project = {
-  excerpt: string;
+  excerpt: string
   fields: {
-    slug: string;
-  };
+    slug: string
+  }
   frontmatter: {
-    title: string;
-    link: string;
-    description: string;
-    size: 'full' | 'half';
+    title: string
+    link: string
+    description: string
+    size: "full" | "half"
     image: {
-      publicURL: string;
-    };
-    image_dark: {
-      publicURL: string;
-    };
+      publicURL: string
+    }
+    image_light: {
+      publicURL: string
+    }
     images: {
-      publicURL: string;
-    }[];
-  };
-};
+      publicURL: string
+    }[]
+  }
+}

@@ -45,10 +45,10 @@ export const Blurry = styled.div<{ color: keyof typeof blurryColors }>`
     content: " ";
     position: absolute;
     width: 100%;
-    height: 50%;
+    height: 150%;
     bottom: 0;
     left: 0;
-    background-image: url(${gradientLight});
+    background-image: linear-gradient(to bottom, transparent, #0e0c0b);
     background-repeat: repeat no-repeat;
     background-position: bottom;
     background-size: contain;
@@ -58,12 +58,12 @@ export const Blurry = styled.div<{ color: keyof typeof blurryColors }>`
     background-size: 600% 400%;
   }
 
-  @media (prefers-color-scheme: dark) {
+  /* @media (prefers-color-scheme: light) {
     &:after {
-      height: 150%;
-      background-image: linear-gradient(to bottom, transparent, #0e0c0b);
+      height: 50%;
+      background-image: url(${gradientLight});
     }
-  }
+  } */
 
   @media (prefers-reduced-motion) {
     animation-name: none;
