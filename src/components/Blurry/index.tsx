@@ -1,16 +1,15 @@
 import styled, { css } from "styled-components"
 import blurryUa from "./Blurry-ua-2.png"
+import blurryPurple from "./Blurry-purple.png"
 
 const blurryColors = {
   ukraine: css`
     background-image: url(${blurryUa});
+    height: 120%;
   `,
   purple: css`
-    background-image: linear-gradient(
-      to bottom right,
-      rgba(255, 0, 0, 0.14) 50%,
-      rgba(0, 0, 255, 0.14) 50%
-    );
+    background-image: url(${blurryPurple});
+    height: 180%;
   `,
 }
 
@@ -32,7 +31,7 @@ const blurEffect = css`
 export const Blurry = styled.div<{ color: keyof typeof blurryColors }>`
   position: absolute;
   width: 100%;
-  height: 120%;
+  height: 150%;
   top: 0;
   left: 0;
   background-position: -100vw -130vh;
@@ -53,6 +52,10 @@ export const Blurry = styled.div<{ color: keyof typeof blurryColors }>`
       transparent 60%,
       rgb(241 243 244/1)
     );
+  }
+
+  @media screen and (max-width: 400px) {
+    background-size: 600% 400%;
   }
 
   @media (prefers-color-scheme: dark) {
