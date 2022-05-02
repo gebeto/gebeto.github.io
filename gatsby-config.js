@@ -5,7 +5,7 @@ module.exports = {
     author: {
       name: "Yaroslav Nychkalo",
       title: "Web Software Engineer",
-      // summary: `lives and works in San Francisco building useful things.`,
+      // summary: `Welcome to my digital garden where I share what I'm learning about shipping great products, becoming a better developer and growing a career in tech.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,

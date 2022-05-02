@@ -18,19 +18,19 @@ export const TileBase = css`
     }
   }
 
-  border: 1px solid hsla(0, 0%, 0%, 0.02);
-  background-color: hsla(0, 0%, 100%, 0.2);
+  background-color: hsla(0, 0%, 100%, 0.02);
 
   &:hover {
-    border: 1px solid hsla(0, 0%, 0%, 0.03);
-    background-color: hsla(0, 0%, 100%, 0.3);
+    background-color: hsla(0, 0%, 100%, 0.03);
   }
 
-  @media (prefers-color-scheme: dark) {
-    background-color: hsla(0, 0%, 100%, 0.02);
+  @media (prefers-color-scheme: light) {
+    border: 1px solid hsla(0, 0%, 0%, 0.02);
+    background-color: hsla(0, 0%, 100%, 0.2);
 
     &:hover {
-      background-color: hsla(0, 100%, 100%, 0.03);
+      border: 1px solid hsla(0, 0%, 0%, 0.03);
+      background-color: hsla(0, 0%, 100%, 0.3);
     }
   }
 

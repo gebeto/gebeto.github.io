@@ -1,7 +1,12 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import { BioWrapper } from "./BioWrapper"
+import {
+  BioAuthorName,
+  BioAuthorTitle,
+  BioSummary,
+  BioWrapper,
+} from "./BioWrapper"
 import { Social, SocialProps } from "../Social"
 
 type BioStaticQuery = {
@@ -44,13 +49,11 @@ export const Bio = () => {
   return (
     <BioWrapper>
       <div className="bio">
-        <h1>{author?.name}</h1>
+        <BioAuthorName>{author?.name}</BioAuthorName>
         <span className="separator">·</span>
-        <h2>{author?.title}</h2>
-        {/* {author?.summary && (
-          <p className="summary">{author?.summary || null}</p>
-        )} */}
+        <BioAuthorTitle>{author?.title}</BioAuthorTitle>
       </div>
+      {author?.summary && <BioSummary>{author?.summary}</BioSummary>}
       <Social social={data.site.siteMetadata.social} />
     </BioWrapper>
   )
