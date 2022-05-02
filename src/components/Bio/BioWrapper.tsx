@@ -24,12 +24,12 @@ export const BioWrapper = styled.div`
 
     90% {
       opacity: 0;
-      transform: translateY(-10px);
+      transform: translateY(-6px);
     }
 
     to {
       opacity: 0;
-      transform: translateY(-10px);
+      transform: translateY(-6px);
     }
   }
 
@@ -55,12 +55,12 @@ export const BioWrapper = styled.div`
 
     90% {
       opacity: 0;
-      transform: translateY(10px);
+      transform: translateY(6px);
     }
 
     to {
       opacity: 0;
-      transform: translateY(10px);
+      transform: translateY(6px);
     }
   }
 
