@@ -1,6 +1,7 @@
-import { createGlobalStyle } from "styled-components"
+import React from "react"
+import { Global, css } from "@emotion/react"
 
-export const Baseline = createGlobalStyle`
+const styles = css`
   html {
     background: #0e0c0b;
     color: #fff;
@@ -12,7 +13,10 @@ export const Baseline = createGlobalStyle`
     line-height: 1.4705882353;
     font-weight: 400;
     letter-spacing: -0.022em;
-    font-family: Karla,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-family: Karla, ui-sans-serif, system-ui, -apple-system,
+      BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+      sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+      Noto Color Emoji;
     font-style: normal;
   }
 
@@ -20,14 +24,19 @@ export const Baseline = createGlobalStyle`
     position: relative;
   }
 
-  body, button, h1, h2, h3, p {
+  body,
+  button,
+  h1,
+  h2,
+  h3,
+  p {
     margin: 0;
     padding: 0;
   }
 
   h2 {
     font-size: 32px;
-    line-height: .90625;
+    line-height: 0.90625;
     font-weight: 600;
     letter-spacing: -0.003em;
   }
@@ -44,3 +53,5 @@ export const Baseline = createGlobalStyle`
     color: #cecece;
   }
 `
+
+export const Baseline = () => <Global styles={styles} />

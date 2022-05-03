@@ -1,7 +1,7 @@
-import styled from "styled-components"
+import styled from "@emotion/styled"
 import { TileBase } from "./TileBase"
 
-export const TileHalfWrapper = styled.li`
+export const TileHalfWrapper = styled.a`
   ${TileBase}
 
   display: flex;

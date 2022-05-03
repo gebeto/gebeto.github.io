@@ -18,6 +18,7 @@ module.exports = {
     },
   },
   plugins: [
+    "gatsby-plugin-emotion",
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -28,7 +29,6 @@ module.exports = {
     "gatsby-plugin-react-svg",
     "gatsby-plugin-mdx",
     "gatsby-plugin-image",
-    "gatsby-plugin-styled-components",
     {
       resolve: `gatsby-source-filesystem`,
       options: {

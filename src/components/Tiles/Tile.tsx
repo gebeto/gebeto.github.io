@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import styled from "styled-components"
+import styled from "@emotion/styled"
 
 import { Project } from "../../types"
 
@@ -43,7 +43,7 @@ export const Tile: React.FC<TileProps> = ({ project }) => {
   }, [project])
 
   return (
-    <TileWrapper as="a" target="_blank" href={project.frontmatter.link}>
+    <TileWrapper target="_blank" href={project.frontmatter.link}>
       <div className="tile-image">
         <picture>
           {/* <source

@@ -1,5 +1,4 @@
-import styled from "styled-components";
-
+import styled from "@emotion/styled"
 
 export const TilesGrid = styled.ol`
   list-style: none;
@@ -10,4 +9,4 @@ export const TilesGrid = styled.ol`
   padding: 0 24px;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-`;
+`

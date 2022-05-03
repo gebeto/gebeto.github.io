@@ -1,4 +1,5 @@
-import styled, { css } from "styled-components"
+import styled from "@emotion/styled"
+import { css } from "@emotion/react"
 import blurryUa from "./Blurry-ua-2.png"
 import blurryPurple from "./Blurry-purple.png"
 import gradientLight from "./gradient-light.png"
