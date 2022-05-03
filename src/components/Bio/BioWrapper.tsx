@@ -95,7 +95,8 @@ export const BioSummary = styled.div`
 `
 
 export const BioWrapper = styled.div`
-  height: calc(100vh - 36px);
+  height: min(calc(100vh - 36px));
+  max-height: -webkit-fill-available;
   display: flex;
   align-items: center;
   justify-content: center;
