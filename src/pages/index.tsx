@@ -19,7 +19,7 @@ const BlogIndex: React.FC<PageProps<BlogIndexProps>> = ({ data, location }) => {
 
   return (
     <PageLayout location={location}>
-      <Seo title="gebeto | projects" />
+      <Seo title="gebeto" />
       <Bio />
       <TilesGrid>
         {posts.map(post => (
