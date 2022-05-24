@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-blog-post-js",
+    "path": "/4-scriptable-vscode/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Web Engineer"}},"markdownRemark":{"id":"3657186f-3c5c-53ca-9979-6bcd6a370b9c","excerpt":"Scriptable VSCode VSCode extension for integration with Scriptable App","html":"<h1>Scriptable VSCode</h1>\n<p>VSCode extension for integration with Scriptable App</p>","frontmatter":{"title":"Scriptable VSCode","date":"January 01, 2022","description":"Scriptable integration VSCode extension"}},"previous":{"fields":{"slug":"/3-telegram-charts/"},"frontmatter":{"title":"Telegram Charts"}},"next":{"fields":{"slug":"/5-raycast-screenshot-maker/"},"frontmatter":{"title":"Raycast Screenshot Maker"}}},"pageContext":{"id":"3657186f-3c5c-53ca-9979-6bcd6a370b9c","previousPostId":"b4001e38-afc3-5264-bef9-4eb795d6fe64","nextPostId":"5ed91ba9-444c-5ff1-a0fd-dec8d060d841"}},
+    "staticQueryHashes": ["2841359383","841922572"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-blog-post-js",
+    "path": "/5-raycast-screenshot-maker/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Web Engineer"}},"markdownRemark":{"id":"5ed91ba9-444c-5ff1-a0fd-dec8d060d841","excerpt":"Raycast Screenshot Maker Raycast Screenshot Maker tool for extensions developers","html":"<h1>Raycast Screenshot Maker</h1>\n<p>Raycast Screenshot Maker tool for extensions developers</p>","frontmatter":{"title":"Raycast Screenshot Maker","date":"May 14, 2022","description":"Raycast Screenshot Maker tool for extensions developers"}},"previous":{"fields":{"slug":"/4-scriptable-vscode/"},"frontmatter":{"title":"Scriptable VSCode"}},"next":null},"pageContext":{"id":"5ed91ba9-444c-5ff1-a0fd-dec8d060d841","previousPostId":"3657186f-3c5c-53ca-9979-6bcd6a370b9c","nextPostId":null}},
+    "staticQueryHashes": ["2841359383","841922572"]}
