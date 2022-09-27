@@ -17,7 +17,7 @@ export const TileFullWrapper = styled.a`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30px 30px 30px 0px;
+    padding: 30px 30px 30px 30px;
   }
 
   @media screen and (max-width: 720px) {

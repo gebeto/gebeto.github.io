@@ -1,7 +1,7 @@
 import { css } from "@emotion/react"
 
 export const TileBase = css`
-  border-radius: 18px;
+  border-radius: 24px;
   overflow: hidden;
   transition-duration: 300ms;
 

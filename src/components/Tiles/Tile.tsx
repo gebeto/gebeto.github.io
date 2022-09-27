@@ -18,7 +18,7 @@ const tileBySize = {
 
 const TileTitle = styled.h2`
   margin-bottom: 8px;
-  font-size: 20px;
+  font-size: 24px;
 `
 
 const TileDescription = styled.p`
@@ -44,15 +44,6 @@ export const Tile: React.FC<TileProps> = ({ project }) => {
 
   return (
     <TileWrapper target="_blank" href={project.frontmatter.link}>
-      <div className="tile-image">
-        <picture>
-          {/* <source
-            srcSet={image.publicURL}
-            media="(prefers-color-scheme: light)"
-          /> */}
-          <img src={image.publicURL || imageLight?.publicURL} alt="project" />
-        </picture>
-      </div>
       <article
         className="tile-details"
         itemScope
@@ -78,6 +69,15 @@ export const Tile: React.FC<TileProps> = ({ project }) => {
           />
         </section>
       </article>
+      <div className="tile-image">
+        <picture>
+          {/* <source
+            srcSet={image.publicURL}
+            media="(prefers-color-scheme: light)"
+          /> */}
+          <img src={image.publicURL || imageLight?.publicURL} alt="project" />
+        </picture>
+      </div>
     </TileWrapper>
   )
 }

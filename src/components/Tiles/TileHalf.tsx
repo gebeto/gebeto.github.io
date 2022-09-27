@@ -11,8 +11,9 @@ export const TileHalfWrapper = styled.a`
   .tile-details {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     flex: 1;
-    justify-content: center;
     padding: 24px 30px;
+    padding-top: 40px;
   }
 `
