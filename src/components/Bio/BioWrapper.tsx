@@ -118,7 +118,11 @@ export const BioWrapper = styled.div`
     transition: opacity 1s 0.5s ease-in-out;
     opacity: 0;
 
-    &.shown {
+    &.appear-active {
+      opacity: 0;
+    }
+
+    &.enter-done {
       opacity: 1;
     }
   }

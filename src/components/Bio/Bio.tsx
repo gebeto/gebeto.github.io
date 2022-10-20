@@ -1,5 +1,6 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { CSSTransition, Transition } from "react-transition-group"
 
 import {
   BioAuthorName,
@@ -8,6 +9,7 @@ import {
   BioWrapper,
 } from "./BioWrapper"
 import { Social, SocialProps } from "../Social"
+import { Fade } from "../transitions"
 
 type BioStaticQuery = {
   site: {
@@ -46,14 +48,12 @@ export const Bio = () => {
 
   const author = data.site.siteMetadata?.author
 
-  const [shown, setShown] = React.useState(false)
-
-  React.useEffect(() => setShown(true), [])
-
   return (
     <BioWrapper>
       <div className="bio">
-        <div className={"ukraine" + (shown ? " shown" : "")} />
+        <Fade duration={1000} delay={1000}>
+          <div className="ukraine" />
+        </Fade>
         <BioAuthorName>{author?.name}</BioAuthorName>
         <span className="separator">·</span>
         <BioAuthorTitle>{author?.title}</BioAuthorTitle>
