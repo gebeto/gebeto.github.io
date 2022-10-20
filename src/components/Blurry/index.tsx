@@ -42,6 +42,13 @@ export const Blurry = styled.div<{ color: keyof typeof blurryColors }>`
   animation: blurry 8s reverse cubic-bezier(0.36, 0, 0.66, -0.56);
   filter: hue-rotate(0deg);
 
+  opacity: 0;
+  transition: opacity 2s 300ms;
+
+  &.shown {
+    opacity: 1;
+  }
+
   &:after {
     content: " ";
     position: absolute;

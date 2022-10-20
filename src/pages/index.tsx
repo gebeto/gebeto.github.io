@@ -17,11 +17,15 @@ export type BlogIndexProps = {
 const BlogIndex: React.FC<PageProps<BlogIndexProps>> = ({ data, location }) => {
   const posts = data.allMarkdownRemark.nodes
 
+  const [shown, setShown] = React.useState(false)
+
+  React.useEffect(() => setShown(true), [])
+
   return (
     <PageLayout location={location}>
       <Seo title="gebeto" />
       <Bio />
-      <TilesGrid>
+      <TilesGrid className={shown ? "shown" : undefined}>
         {posts.map(post => (
           <Tile key={post.fields.slug} project={post} />
         ))}

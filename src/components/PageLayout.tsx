@@ -36,14 +36,18 @@ export const PageLayout: React.FC<PageLayoutProps> = ({
     )
   }
 
+  const [shown, setShown] = React.useState(false)
+
+  React.useEffect(() => setShown(true), [])
+
   return (
     <>
       <Baseline />
       <Container data-is-root-path={isRootPath}>
-        <Blurry color="ukraine" />
+        <Blurry className={shown ? "shown" : undefined} color="ukraine" />
         <header>{header}</header>
         <main>{children}</main>
-        <Footer>© {new Date().getFullYear()}, Built by gebeto.</Footer>
+        {/* <Footer>© {new Date().getFullYear()}, Built by gebeto.</Footer> */}
       </Container>
     </>
   )

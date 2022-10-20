@@ -35,6 +35,6 @@ export const TileBase = css`
   } */
 
   @media screen and (max-width: 720px) {
-    grid-column: span 12;
+    grid-column: span 16;
   }
 `

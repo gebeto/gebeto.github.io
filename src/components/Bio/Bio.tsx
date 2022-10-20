@@ -46,12 +46,14 @@ export const Bio = () => {
 
   const author = data.site.siteMetadata?.author
 
+  const [shown, setShown] = React.useState(false)
+
+  React.useEffect(() => setShown(true), [])
+
   return (
     <BioWrapper>
       <div className="bio">
-        <div className="ukraine">
-          <div className="ukraine-colors" />
-        </div>
+        <div className={"ukraine" + (shown ? " shown" : "")} />
         <BioAuthorName>{author?.name}</BioAuthorName>
         <span className="separator">·</span>
         <BioAuthorTitle>{author?.title}</BioAuthorTitle>

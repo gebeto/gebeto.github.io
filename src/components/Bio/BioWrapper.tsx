@@ -114,6 +114,13 @@ export const BioWrapper = styled.div`
     height: 18px;
     box-sizing: border-box;
     background: linear-gradient(to bottom, #0066cc 50%, #ffcc00 50%);
+
+    transition: opacity 1s 0.5s ease-in-out;
+    opacity: 0;
+
+    &.shown {
+      opacity: 1;
+    }
   }
 
   @keyframes appear2 {
