@@ -33,9 +33,10 @@ const SocialWrapper = styled.div`
     }
   }
 
+  font-size: 0;
   display: flex;
+  align-items: center;
   gap: 12px;
-  margin-top: 20px;
 
   opacity: 1;
   transform: scale(1) translateY(0px);

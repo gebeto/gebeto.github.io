@@ -49,12 +49,16 @@ export const Bio = () => {
   return (
     <BioWrapper>
       <div className="bio">
+        <div className="ukraine">
+          <div className="ukraine-colors" />
+        </div>
         <BioAuthorName>{author?.name}</BioAuthorName>
         <span className="separator">·</span>
         <BioAuthorTitle>{author?.title}</BioAuthorTitle>
+        <span className="separator">·</span>
+        {/* {author?.summary && <BioSummary>{author?.summary}</BioSummary>} */}
+        <Social social={data.site.siteMetadata.social} />
       </div>
-      {author?.summary && <BioSummary>{author?.summary}</BioSummary>}
-      <Social social={data.site.siteMetadata.social} />
     </BioWrapper>
   )
 }

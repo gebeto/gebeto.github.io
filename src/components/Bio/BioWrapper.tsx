@@ -26,7 +26,7 @@ export const BioAuthorName = styled.h1`
   color: #fff;
 
   @media screen and (max-width: 400px) {
-    margin-bottom: 4px;
+    /* margin-bottom: 4px; */
   }
 
   /* @media (prefers-color-scheme: light) {
@@ -95,12 +95,8 @@ export const BioSummary = styled.div`
 `
 
 export const BioWrapper = styled.div`
-  height: min(calc(100vh - 36px));
-  max-height: -webkit-fill-available;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  padding: 32px 24px;
+  padding-top: 40px;
 
   ::selection {
     color: #000;
@@ -109,6 +105,15 @@ export const BioWrapper = styled.div`
 
   .bio {
     display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .ukraine {
+    width: 32px;
+    height: 18px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #0066cc 50%, #ffcc00 50%);
   }
 
   @keyframes appear2 {
@@ -126,7 +131,6 @@ export const BioWrapper = styled.div`
   }
 
   .bio .separator {
-    padding: 0 16px;
     user-select: none;
     animation: appear2 7s cubic-bezier(0.36, 0, 0.66, -0.56) reverse;
   }
@@ -137,7 +141,7 @@ export const BioWrapper = styled.div`
       text-align: center;
     }
 
-    .bio .separator {
+    .separator {
       display: none;
     }
   }
