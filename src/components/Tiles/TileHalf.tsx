@@ -14,6 +14,5 @@ export const TileHalfWrapper = styled.a`
     justify-content: flex-start;
     flex: 1;
     padding: 24px 30px;
-    padding-top: 40px;
   }
 `

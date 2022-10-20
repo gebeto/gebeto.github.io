@@ -8,6 +8,6 @@ export const TilesGrid = styled.ol`
   grid-row-gap: 24px;
   padding: 24px 24px;
   display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-columns: repeat(16, minmax(0, 1fr));
   margin: 0;
 `

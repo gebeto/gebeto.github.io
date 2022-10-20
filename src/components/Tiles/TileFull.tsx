@@ -20,6 +20,10 @@ export const TileFullWrapper = styled.a`
     padding: 30px 30px 30px 30px;
   }
 
+  .tile-image {
+    justify-content: flex-end;
+  }
+
   @media screen and (max-width: 720px) {
     flex-direction: column;
 

@@ -71,10 +71,6 @@ export const Tile: React.FC<TileProps> = ({ project }) => {
       </article>
       <div className="tile-image">
         <picture>
-          {/* <source
-            srcSet={image.publicURL}
-            media="(prefers-color-scheme: light)"
-          /> */}
           <img src={image.publicURL || imageLight?.publicURL} alt="project" />
         </picture>
       </div>
