@@ -26,7 +26,10 @@ const TileDescription = styled.p`
 `
 
 export const Tile: React.FC<TileProps> = ({ project }) => {
-  const title = project.frontmatter.title || project.fields.slug
+  const title =
+    project.frontmatter.title === ""
+      ? ""
+      : project.frontmatter.title || project.fields.slug
   const size = project.frontmatter.size || "full"
   const image = project.frontmatter.image
   const imageLight = project.frontmatter.image_light
@@ -41,6 +44,8 @@ export const Tile: React.FC<TileProps> = ({ project }) => {
       : project.frontmatter.image
     return randomImage
   }, [project])
+
+  const resultImage = image?.publicURL || imageLight?.publicURL
 
   return (
     <TileWrapper target="_blank" href={project.frontmatter.link}>
@@ -69,11 +74,13 @@ export const Tile: React.FC<TileProps> = ({ project }) => {
           />
         </section>
       </article>
-      <div className="tile-image">
-        <picture>
-          <img src={image.publicURL || imageLight?.publicURL} alt="project" />
-        </picture>
-      </div>
+      {image && (
+        <div className="tile-image">
+          <picture>
+            <img src={resultImage} alt="project" />
+          </picture>
+        </div>
+      )}
     </TileWrapper>
   )
 }
