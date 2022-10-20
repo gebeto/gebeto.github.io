@@ -9,7 +9,7 @@ import {
   BioWrapper,
 } from "./BioWrapper"
 import { Social, SocialProps } from "../Social"
-import { Fade } from "../transitions"
+import { Fade, FadeAndSlide } from "../Transitions"
 
 type BioStaticQuery = {
   site: {
@@ -51,9 +51,9 @@ export const Bio = () => {
   return (
     <BioWrapper>
       <div className="bio">
-        <Fade duration={1000} delay={1000}>
+        <FadeAndSlide duration={2000} delay={500}>
           <div className="ukraine" />
-        </Fade>
+        </FadeAndSlide>
         <BioAuthorName>{author?.name}</BioAuthorName>
         <span className="separator">·</span>
         <BioAuthorTitle>{author?.title}</BioAuthorTitle>
