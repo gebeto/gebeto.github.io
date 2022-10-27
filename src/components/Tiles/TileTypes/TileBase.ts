@@ -4,6 +4,7 @@ export const TileBase = css`
   border-radius: 24px;
   overflow: hidden;
   transition-duration: 300ms;
+  grid-row: span 3;
 
   .tile-image {
     display: flex;

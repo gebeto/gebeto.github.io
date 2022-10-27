@@ -11,6 +11,7 @@ export const RaycastTileWrapper = styled.a`
   display: flex;
   flex-direction: row-reverse;
   grid-column: span 8;
+  grid-row: span 1;
 
   .tile-details {
     display: flex;
