@@ -4,8 +4,12 @@ import styled from "@emotion/styled"
 
 import { Project } from "../../types"
 
-import { TileFullWrapper } from "./TileFull"
-import { TileHalfWrapper } from "./TileHalf"
+import { TileFullWrapper } from "./TileTypes/TileFull"
+import { TileHalfWrapper } from "./TileTypes/TileHalf"
+import {
+  RaycastTileWrapper,
+  RaycastWideTileWrapper,
+} from "./TileTypes/TileRaycast"
 
 export type TileProps = {
   project: Project
@@ -14,6 +18,8 @@ export type TileProps = {
 const tileBySize = {
   full: TileFullWrapper,
   half: TileHalfWrapper,
+  raycast: RaycastTileWrapper,
+  "raycast-wide": RaycastWideTileWrapper,
 }
 
 const TileTitle = styled.h2`
