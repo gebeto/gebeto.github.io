@@ -1,2 +1,2 @@
-export * from './Tile';
-export * from './TilesGrid';
+export * from "./Tile"
+export * from "./TilesGrid"

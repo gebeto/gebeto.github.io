@@ -1,5 +1,13 @@
+import React from "react"
 import styled from "@emotion/styled"
-import { ProjectCardBase } from "./ProjectCardBase"
+import { Project } from "../../types"
+import {
+  ProjectCardBase,
+  ProjectCardDescription,
+  ProjectCardImage,
+  ProjectCardTitle,
+} from "./ProjectCardBase"
+import { Link } from "gatsby"
 
 const hoverTransition = "400ms ease-in-out"
 
@@ -11,27 +19,6 @@ export const ProjectCardRaycastWrapper = styled.a`
 
   display: flex;
   flex-direction: row-reverse;
-
-  .tile-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex: 1;
-    padding: 24px 30px;
-    overflow: hidden;
-    padding-left: 0;
-  }
-
-  .tile-image {
-    max-width: 100px;
-    align-items: center;
-    justify-content: center;
-
-    img,
-    picture {
-      max-height: 48px;
-    }
-  }
 
   box-sizing: border-box;
   border: 1px solid transparent;
@@ -94,7 +81,68 @@ export const ProjectCardRaycastWrapper = styled.a`
   }
 `
 
-export const RaycastWideTileWrapper = styled.a`
-  ${ProjectCardRaycastWrapper.__emotion_styles}
-  grid-column: span 16;
+export const ProjectCardRaycastDetails = styled.article`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  padding: 24px 30px;
+  overflow: hidden;
+  padding-left: 0;
 `
+
+export const ProjectCardRaycastImage = styled(ProjectCardImage)`
+  max-width: 100px;
+  align-items: center;
+  justify-content: center;
+
+  img,
+  picture {
+    max-height: 48px;
+  }
+`
+
+export const ProjectCardRaycast: React.VFC<{ project: Project }> = ({
+  project,
+}) => {
+  const title =
+    project.frontmatter.title === ""
+      ? ""
+      : project.frontmatter.title || project.fields.slug
+  const image = project.frontmatter.image
+  const imageLight = project.frontmatter.image_light
+  const resultImage = image?.publicURL || imageLight?.publicURL
+
+  return (
+    <ProjectCardRaycastWrapper target="_blank" href={project.frontmatter.link}>
+      <ProjectCardRaycastDetails itemScope itemType="http://schema.org/Article">
+        <header>
+          <ProjectCardTitle>
+            {project.frontmatter.link ? (
+              <span itemProp="headline">{title}</span>
+            ) : (
+              <Link to={project.fields.slug} itemProp="url">
+                <span itemProp="headline">{title}</span>
+              </Link>
+            )}
+          </ProjectCardTitle>
+        </header>
+        <section>
+          <ProjectCardDescription
+            dangerouslySetInnerHTML={{
+              __html: project.frontmatter.description || project.excerpt,
+            }}
+            itemProp="description"
+          />
+        </section>
+      </ProjectCardRaycastDetails>
+      {image && (
+        <ProjectCardRaycastImage>
+          <picture>
+            <img src={resultImage} alt="project" />
+          </picture>
+        </ProjectCardRaycastImage>
+      )}
+    </ProjectCardRaycastWrapper>
+  )
+}
