@@ -53,8 +53,22 @@ export const Tile: React.FC<TileProps> = ({ project }) => {
 
   const resultImage = image?.publicURL || imageLight?.publicURL
 
+  const [shown, setShown] = React.useState(false)
+  React.useEffect(() => setShown(true), [])
+  const style: React.CSSProperties = React.useMemo(() => {
+    const rand = 600 + Math.round(Math.random() * 600)
+    return {
+      transition: `transform 1s ${rand}ms, opacity 1s ${rand}ms`,
+    }
+  }, [])
+
   return (
-    <TileWrapper target="_blank" href={project.frontmatter.link}>
+    <TileWrapper
+      className={shown ? "shown" : undefined}
+      style={style}
+      target="_blank"
+      href={project.frontmatter.link}
+    >
       <article
         className="tile-details"
         itemScope

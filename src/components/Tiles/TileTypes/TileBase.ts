@@ -38,4 +38,13 @@ export const TileBase = css`
   @media screen and (max-width: 720px) {
     grid-column: span 16;
   }
+
+  opacity: 0;
+  transform: translateY(8px);
+  /* transition: transform 1s 300ms, opacity 1s 300ms; */
+
+  &.shown {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 `
