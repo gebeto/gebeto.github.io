@@ -1,5 +1,5 @@
 import React from "react"
-import { Project } from "../../types"
+import { CardSize, Project } from "../../types"
 import { ProjectCardFull } from "./ProjectCardFull"
 import { ProjectCardHalf } from "./ProjectCardHalf"
 import { ProjectCardRaycast } from "./ProjectCardRaycast"
@@ -8,12 +8,11 @@ export type TileProps = {
   project: Project
 }
 
-export const cardComponentBySize: Record<
-  Project["frontmatter"]["size"],
-  React.ElementType<{ project: Project }>
-> = {
+export type CardElementType = React.ElementType<{ project: Project }>
+export const cardComponentBySize: Record<CardSize, CardElementType> = {
   full: ProjectCardFull,
   half: ProjectCardHalf,
+  half_long: ProjectCardHalf,
   raycast: ProjectCardRaycast,
 }
 

@@ -1,7 +1,8 @@
 import React from "react"
-import styled from "@emotion/styled"
+import styled, { StyledComponent } from "@emotion/styled"
 
 import { css } from "@emotion/react"
+import { CardSize, Project } from "../../types"
 
 const randomTransitionDuration = () => {
   const rand = 600 + Math.round(Math.random() * 600)
@@ -26,7 +27,7 @@ const baseStyles = css`
   }
 `
 
-const tileBySize = {
+const tileBySize: Record<CardSize, StyledComponent<{}>> = {
   full: styled.ol`
     ${baseStyles}
     ${randomTransitionDuration}
@@ -41,6 +42,13 @@ const tileBySize = {
     grid-column: span 4;
     grid-row: span 3;
   `,
+  half_long: styled.ol`
+    ${baseStyles}
+    ${randomTransitionDuration}
+
+    grid-column: span 4;
+    grid-row: span 6;
+  `,
   raycast: styled.ol`
     ${baseStyles}
     ${randomTransitionDuration}
@@ -52,6 +60,7 @@ const tileBySize = {
 
 export type TileProps = {
   size: keyof typeof tileBySize
+  children: React.ReactNode
 }
 
 export const Tile: React.FC<TileProps> = ({ size = "full", children }) => {

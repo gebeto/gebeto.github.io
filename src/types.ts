@@ -1,3 +1,4 @@
+export type CardSize = "full" | "half" | "raycast" | "half_long"
 export type Project = {
   excerpt: string
   fields: {
@@ -7,7 +8,7 @@ export type Project = {
     title: string
     link: string
     description: string
-    size: "full" | "half" | "raycast"
+    size: CardSize
     image: {
       publicURL: string
     }
