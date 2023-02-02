@@ -7,6 +7,7 @@ import Seo from "../components/seo"
 
 import { Tile, TilesGrid } from "../components/Tiles"
 import { Project } from "../types"
+import { ProjectCard } from "../components/ProjectCard/ProjectCard"
 
 export type BlogIndexProps = {
   allMarkdownRemark: {
@@ -17,17 +18,15 @@ export type BlogIndexProps = {
 const BlogIndex: React.FC<PageProps<BlogIndexProps>> = ({ data, location }) => {
   const posts = data.allMarkdownRemark.nodes
 
-  const [shown, setShown] = React.useState(false)
-
-  React.useEffect(() => setShown(true), [])
-
   return (
     <PageLayout location={location}>
       <Seo title="gebeto" />
       <Bio />
-      <TilesGrid className={shown ? "shown" : undefined}>
+      <TilesGrid>
         {posts.map(post => (
-          <Tile key={post.fields.slug} project={post} />
+          <Tile key={post.fields.slug} size={post.frontmatter.size}>
+            <ProjectCard project={post} />
+          </Tile>
         ))}
       </TilesGrid>
     </PageLayout>

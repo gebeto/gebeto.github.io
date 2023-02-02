@@ -1,12 +1,11 @@
 import styled from "@emotion/styled"
-import { TileBase } from "./TileBase"
+import { ProjectCardBase } from "./ProjectCardBase"
 
-export const TileHalfWrapper = styled.a`
-  ${TileBase}
+export const ProjectCardHalfWrapper = styled.a`
+  ${ProjectCardBase}
 
   display: flex;
   flex-direction: column;
-  grid-column: span 4;
 
   .tile-details {
     display: flex;

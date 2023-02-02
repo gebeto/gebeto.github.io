@@ -7,7 +7,7 @@ export type Project = {
     title: string
     link: string
     description: string
-    size: "full" | "half"
+    size: "full" | "half" | "raycast"
     image: {
       publicURL: string
     }

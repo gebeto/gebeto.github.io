@@ -1,17 +1,16 @@
 import styled from "@emotion/styled"
-import { TileBase } from "./TileBase"
+import { ProjectCardBase } from "./ProjectCardBase"
 
 const hoverTransition = "400ms ease-in-out"
 
-export const RaycastTileWrapper = styled.a`
-  ${TileBase}
+export const ProjectCardRaycastWrapper = styled.a`
+  ${ProjectCardBase}
+
   position: relative;
   overflow: visible;
 
   display: flex;
   flex-direction: row-reverse;
-  grid-column: span 8;
-  grid-row: span 1;
 
   .tile-details {
     display: flex;
@@ -60,7 +59,8 @@ export const RaycastTileWrapper = styled.a`
       #100321 98.44%
     );
     border-radius: 12px;
-    transition: transform ${hoverTransition}, opacity ${hoverTransition};
+    transition: transform ${hoverTransition}, opacity ${hoverTransition},
+      background-color ${hoverTransition};
     opacity: 0;
   }
 
@@ -74,9 +74,9 @@ export const RaycastTileWrapper = styled.a`
     z-index: -1;
     left: 0px;
     top: 0px;
-    transition: left ${hoverTransition}, top ${hoverTransition},
-      width ${hoverTransition}, height ${hoverTransition},
-      opacity ${hoverTransition}, border-radius ${hoverTransition};
+    transition-property: left, top, width, height, opacity, border-radius,
+      background-color;
+    transition-duration: ${hoverTransition};
   }
 
   &:hover:after {
@@ -95,6 +95,6 @@ export const RaycastTileWrapper = styled.a`
 `
 
 export const RaycastWideTileWrapper = styled.a`
-  ${RaycastTileWrapper.__emotion_styles}
+  ${ProjectCardRaycastWrapper.__emotion_styles}
   grid-column: span 16;
 `

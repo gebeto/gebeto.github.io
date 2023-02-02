@@ -1,10 +1,10 @@
 import { css } from "@emotion/react"
 
-export const TileBase = css`
+export const ProjectCardBase = css`
   border-radius: 24px;
   overflow: hidden;
+  height: 100%;
   transition-duration: 300ms;
-  grid-row: span 3;
 
   .tile-image {
     display: flex;
@@ -34,17 +34,4 @@ export const TileBase = css`
       background-color: hsla(0, 0%, 100%, 0.3);
     }
   } */
-
-  @media screen and (max-width: 720px) {
-    grid-column: span 16;
-  }
-
-  opacity: 0;
-  transform: translateY(8px);
-  /* transition: transform 1s 300ms, opacity 1s 300ms; */
-
-  &.shown {
-    opacity: 1;
-    transform: translateY(0px);
-  }
 `

@@ -1,12 +1,11 @@
 import styled from "@emotion/styled"
-import { TileBase } from "./TileBase"
+import { ProjectCardBase } from "./ProjectCardBase"
 
-export const TileFullWrapper = styled.a`
-  ${TileBase}
+export const ProjectCardFullWrapper = styled.a`
+  ${ProjectCardBase}
 
   display: flex;
   flex-direction: row;
-  grid-column: span 8;
 
   @media screen and (max-width: 400px) {
     flex-direction: column;

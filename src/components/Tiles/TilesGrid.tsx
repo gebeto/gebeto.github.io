@@ -14,4 +14,8 @@ export const TilesGrid = styled.ol`
   @media screen and (max-width: 720px) {
     grid-column-gap: 0;
   }
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
 `
