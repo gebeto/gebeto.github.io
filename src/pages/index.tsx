@@ -19,8 +19,6 @@ export type BlogIndexProps = {
 const BlogIndex: React.FC<PageProps<BlogIndexProps>> = ({ data, location }) => {
   const projects = data.allMarkdownRemark.nodes
 
-  console.log(" >>> SLUG", projects)
-
   return (
     <PageLayout location={location}>
       <Seo title="gebeto" />
