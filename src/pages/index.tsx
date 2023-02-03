@@ -8,6 +8,7 @@ import Seo from "../components/seo"
 import { Tile, TilesGrid } from "../components/Tiles"
 import { Project } from "../types"
 import { ProjectCard } from "../components/ProjectCard/ProjectCard"
+import { LocationCard } from "../components/LocationCard/LocationCard"
 
 export type BlogIndexProps = {
   allMarkdownRemark: {
