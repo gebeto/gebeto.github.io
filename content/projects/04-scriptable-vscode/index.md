@@ -1,5 +1,4 @@
 ---
-order: 4
 title: Scriptable VSCode
 date: "2022-01-01T00:00:00+00:00"
 description: Scriptable integration VSCode extension

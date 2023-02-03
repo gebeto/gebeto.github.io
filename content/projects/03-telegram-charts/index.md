@@ -1,5 +1,4 @@
 ---
-order: 3
 title: Telegram Charts
 date: "2015-05-28T22:40:32.169Z"
 description: Lightweight, fully functional charts library. Project was created for Telegram Charts contest.

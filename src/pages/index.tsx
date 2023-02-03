@@ -17,7 +17,9 @@ export type BlogIndexProps = {
 }
 
 const BlogIndex: React.FC<PageProps<BlogIndexProps>> = ({ data, location }) => {
-  const posts = data.allMarkdownRemark.nodes
+  const projects = data.allMarkdownRemark.nodes
+
+  console.log(" >>> SLUG", projects)
 
   return (
     <PageLayout location={location}>
@@ -25,9 +27,9 @@ const BlogIndex: React.FC<PageProps<BlogIndexProps>> = ({ data, location }) => {
       <Bio />
       <TilesGrid>
         {/* <LocationCard /> */}
-        {posts.map(post => (
-          <Tile key={post.fields.slug} size={post.frontmatter.size}>
-            <ProjectCard project={post} />
+        {projects.map(project => (
+          <Tile key={project.fields.slug} size={project.frontmatter.size}>
+            <ProjectCard project={project} />
           </Tile>
         ))}
       </TilesGrid>
@@ -44,7 +46,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___order], order: ASC }) {
+    allMarkdownRemark(sort: { fields: [fields___slug], order: ASC }) {
       nodes {
         excerpt
         fields {
