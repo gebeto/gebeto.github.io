@@ -23,6 +23,7 @@ const BlogIndex: React.FC<PageProps<BlogIndexProps>> = ({ data, location }) => {
       <Seo title="gebeto" />
       <Bio />
       <TilesGrid>
+        {/* <LocationCard /> */}
         {posts.map(post => (
           <Tile key={post.fields.slug} size={post.frontmatter.size}>
             <ProjectCard project={post} />

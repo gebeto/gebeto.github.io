@@ -27,7 +27,10 @@ const baseStyles = css`
   }
 `
 
-const tileBySize: Record<CardSize, StyledComponent<{}>> = {
+const tileBySize: Record<
+  CardSize,
+  StyledComponent<{ children: React.ReactNode; className?: string }>
+> = {
   full: styled.ol`
     ${baseStyles}
     ${randomTransitionDuration}

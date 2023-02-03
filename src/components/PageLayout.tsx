@@ -7,6 +7,7 @@ import { Footer } from "./Footer"
 import { Blurry } from "./Blurry"
 
 export type PageLayoutProps = {
+  children: React.ReactNode
   title?: string
   location: {
     pathname: string
