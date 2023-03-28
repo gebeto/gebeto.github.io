@@ -13,6 +13,10 @@ export const ProjectCardBase = css`
 
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.03);
+
+    img {
+      transform: scale(1.04);
+    }
   }
 
   /* @media (prefers-color-scheme: light) {
@@ -45,6 +49,7 @@ export const ProjectCardImage = styled.div`
     font-size: 0;
     max-width: 100%;
     max-height: 100%;
+    transition: transform 1600ms cubic-bezier(0.15, 0.75, 0.5, 1);
   }
 `
 
