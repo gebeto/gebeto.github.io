@@ -10,6 +10,7 @@ export const TilesGrid = styled.ol`
   display: grid;
   grid-template-columns: repeat(16, minmax(0, 1fr));
   margin: 0;
+  grid-auto-flow: dense;
 
   @media screen and (max-width: 720px) {
     grid-column-gap: 0;

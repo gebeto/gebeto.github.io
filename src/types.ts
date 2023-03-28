@@ -1,4 +1,4 @@
-export type CardSize = "full" | "half" | "raycast" | "half_long"
+export type CardSize = "full" | "half" | "half_large" | "raycast" | "half_long"
 export type Project = {
   excerpt: string
   fields: {

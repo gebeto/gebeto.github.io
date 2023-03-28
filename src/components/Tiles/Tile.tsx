@@ -45,6 +45,13 @@ const tileBySize: Record<
     grid-column: span 4;
     grid-row: span 3;
   `,
+  half_large: styled.ol`
+    ${baseStyles}
+    ${randomTransitionDuration}
+
+    grid-column: span 8;
+    grid-row: span 6;
+  `,
   half_long: styled.ol`
     ${baseStyles}
     ${randomTransitionDuration}

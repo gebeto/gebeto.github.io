@@ -17,7 +17,6 @@ const LocationCardImage = styled.div`
   background-position: center center;
   background-size: cover;
   mix-blend-mode: screen;
-  background-color: hsla(0, 0%, 100%, 0.02);
 
   width: 100%;
   height: 100%;
@@ -28,8 +27,6 @@ const LocationCardTitle = styled.h2`
   padding: 24px;
   position: absolute;
   line-height: 26px;
-  /* bottom: 0;
-  left: 0; */
 `
 
 export const LocationCard = () => (

@@ -31,7 +31,6 @@ export function BaseTransition({
         React.cloneElement(children, {
           ref: nodeRef,
           ...children.props,
-          dataSUS: state,
           style: {
             ...defaultStyles,
             ...states[state],

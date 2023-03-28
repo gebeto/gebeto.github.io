@@ -12,6 +12,7 @@ export type CardElementType = React.ElementType<{ project: Project }>
 export const cardComponentBySize: Record<CardSize, CardElementType> = {
   full: ProjectCardFull,
   half: ProjectCardHalf,
+  half_large: ProjectCardHalf,
   half_long: ProjectCardHalf,
   raycast: ProjectCardRaycast,
 }
