@@ -14,6 +14,7 @@ export default function Home({
 }: {
   allPostsData: { date: string; title: string; id: string }[]
 }) {
+  console.log(" >> SDSDS", allPostsData)
   return (
     <>
       <section>
@@ -21,6 +22,7 @@ export default function Home({
         <ul>
           {allPostsData.map(({ id, date, title }) => (
             <li key={id}>
+              <a href={`/posts/${id}`}>{title}</a>
               {title}
               <br />
               {id}
