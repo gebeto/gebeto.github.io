@@ -27,16 +27,18 @@ export function BaseTransition({
 
   return (
     <Transition nodeRef={nodeRef} in={isIn} timeout={duration}>
-      {state =>
-        React.cloneElement(children, {
-          ref: nodeRef,
-          ...children.props,
-          style: {
-            ...defaultStyles,
-            ...states[state],
-          },
-        })
-      }
+      {state => (
+        <>
+          {React.cloneElement(children, {
+            ref: nodeRef,
+            ...children.props,
+            style: {
+              ...defaultStyles,
+              ...states[state],
+            },
+          })}
+        </>
+      )}
     </Transition>
   )
 }
