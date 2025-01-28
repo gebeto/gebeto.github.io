@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Project } from "../../types"
+import { Project } from "../../blog/types"
 import {
   ProjectCardBase,
   ProjectCardDescription,
@@ -9,22 +9,38 @@ import {
 } from "./ProjectCardBase"
 import Link from "next/link"
 
-export const ProjectCardHalfWrapper = styled.a`
+export const ProjectCardFullWrapper = styled.a`
   ${ProjectCardBase}
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+
+  @media screen and (max-width: 400px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+  }
 `
 
-export const ProjectCardHalfDetails = styled.article`
+export const ProjectCardFullImage = styled(ProjectCardImage)`
+  justify-content: flex-end;
+`
+
+export const ProjectCardFullDetails = styled.article`
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  flex: 1;
-  padding: 24px 30px;
+  justify-content: center;
+  padding: 30px 30px 30px 30px;
+
+  @media screen and (max-width: 720px) {
+    padding: 30px;
+  }
 `
 
-export const ProjectCardHalf: React.VFC<{ project: Project }> = ({
+export const ProjectCardFull: React.VFC<{ project: Project }> = ({
   project,
 }) => {
   const title =
@@ -36,8 +52,8 @@ export const ProjectCardHalf: React.VFC<{ project: Project }> = ({
   const resultImage = image?.publicURL || imageLight?.publicURL
 
   return (
-    <ProjectCardHalfWrapper target="_blank" href={project.frontmatter.link}>
-      <ProjectCardHalfDetails itemScope itemType="http://schema.org/Article">
+    <ProjectCardFullWrapper target="_blank" href={project.frontmatter.link}>
+      <ProjectCardFullDetails itemScope itemType="http://schema.org/Article">
         <header>
           <ProjectCardTitle>
             {project.frontmatter.link ? (
@@ -57,14 +73,14 @@ export const ProjectCardHalf: React.VFC<{ project: Project }> = ({
             itemProp="description"
           />
         </section>
-      </ProjectCardHalfDetails>
+      </ProjectCardFullDetails>
       {image && (
-        <ProjectCardImage>
+        <ProjectCardFullImage>
           <picture>
             <img src={resultImage} alt="project" />
           </picture>
-        </ProjectCardImage>
+        </ProjectCardFullImage>
       )}
-    </ProjectCardHalfWrapper>
+    </ProjectCardFullWrapper>
   )
 }

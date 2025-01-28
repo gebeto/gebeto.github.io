@@ -1,10 +1,10 @@
 import { BlogPosts } from "app/components/posts"
-import { Blurry } from "./blog/components/Blurry"
+import { Blurry } from "./components/Blurry"
+import { PageLayout } from "./components/PageLayout"
 
 export default function Page() {
   return (
-    <>
-      <Blurry shown color="ukraine" />
+    <PageLayout location={{ pathname: "/" }} title="Home">
       <section>
         <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
           My Portfolio
@@ -20,6 +20,6 @@ export default function Page() {
           <BlogPosts />
         </div>
       </section>
-    </>
+    </PageLayout>
   )
 }

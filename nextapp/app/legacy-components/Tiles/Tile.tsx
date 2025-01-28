@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import { css } from "styled-components"
-import { CardSize, Project } from "../../types"
+import { CardSize, Project } from "../../blog/types"
 
 const randomTransitionDuration = () => {
   const rand = 600 + Math.round(Math.random() * 600)

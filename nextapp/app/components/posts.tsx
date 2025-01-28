@@ -1,8 +1,8 @@
 import Link from "next/link"
 import { getBlogPosts } from "app/blog/serverUtils"
-import { Tile } from "app/blog/components/Tiles"
+import { Tile } from "app/legacy-components/Tiles"
 import { formatDate } from "app/blog/utils"
-import { Blurry } from "../blog/components/Blurry"
+import { Blurry } from "./Blurry"
 
 export async function BlogPosts() {
   let allBlogs = getBlogPosts()

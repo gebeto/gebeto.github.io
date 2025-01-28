@@ -1,9 +1,8 @@
-import * as React from "react"
-import { Link } from "gatsby"
+"use client"
 
-import { Baseline } from "./Baseline"
-import { Container } from "./Container"
-import { Footer } from "./Footer"
+import React from "react"
+import Link from "next/link"
+
 import { Blurry } from "./Blurry"
 
 export type PageLayoutProps = {
@@ -19,19 +18,20 @@ export const PageLayout: React.FC<PageLayoutProps> = ({
   title,
   children,
 }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
+  // const rootPath = `${__PATH_PREFIX__}/`
+  const rootPath = `/`
   const isRootPath = location.pathname === rootPath
   let header
 
   if (isRootPath) {
     header = (
       <h1 className="main-heading">
-        <Link to="/">{title}</Link>
+        <Link href="/">{title}</Link>
       </h1>
     )
   } else {
     header = (
-      <Link className="header-link-home" to="/">
+      <Link className="header-link-home" href="/">
         {title}
       </Link>
     )
@@ -43,13 +43,12 @@ export const PageLayout: React.FC<PageLayoutProps> = ({
 
   return (
     <>
-      <Baseline />
-      <Container data-is-root-path={isRootPath}>
+      <div className="container" data-is-root-path={isRootPath}>
         <Blurry shown={shown} color="ukraine" />
         <header>{header}</header>
         <main>{children}</main>
         {/* <Footer>© {new Date().getFullYear()}, Built by gebeto.</Footer> */}
-      </Container>
+      </div>
     </>
   )
 }

@@ -3,7 +3,7 @@ import { CustomMDX } from "app/components/mdx"
 import { getBlogPosts } from "app/blog/serverUtils"
 import { baseUrl } from "app/sitemap"
 import { formatDate } from "../utils"
-import { Blurry } from "../components/Blurry"
+import { Blurry } from "../../components/Blurry"
 
 export async function generateStaticParams() {
   let posts = getBlogPosts()
@@ -62,7 +62,6 @@ export default function Blog({ params }) {
 
   return (
     <section>
-      <Blurry shown color="ukraine" />
       <script
         type="application/ld+json"
         suppressHydrationWarning

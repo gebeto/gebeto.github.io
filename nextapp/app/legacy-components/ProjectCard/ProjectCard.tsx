@@ -1,5 +1,5 @@
 import React from "react"
-import { CardSize, Project } from "../../types"
+import { CardSize, Project } from "../../blog/types"
 import { ProjectCardFull } from "./ProjectCardFull"
 import { ProjectCardHalf } from "./ProjectCardHalf"
 import { ProjectCardRaycast } from "./ProjectCardRaycast"
