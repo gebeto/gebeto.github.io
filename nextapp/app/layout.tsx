@@ -9,6 +9,7 @@ import { Blurry } from "./components/Blurry"
 
 import { Karla } from "next/font/google"
 import { StyledComponentsRegistry } from "./registry"
+import Head from "next/head"
 
 const karla = Karla({
   subsets: ["latin"],
@@ -18,6 +19,7 @@ const karla = Karla({
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
+  icons: [{ rel: "icon", url: "/logo.png" }],
   title: {
     default: "gebeto | Web Engineer",
     template: "gebeto | %s",
@@ -51,6 +53,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={karla.className}>
+      <Head>
+        <link rel="icon" type="image/png" href="/icon.png"/>
+      </Head>
       <body>
         <Blurry shown color="ukraine" />
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>

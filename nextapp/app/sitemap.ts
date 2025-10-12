@@ -1,10 +1,10 @@
 import { getProjects } from "app/content/serverUtils"
 
-export const baseUrl = "https://portfolio-blog-starter.vercel.app"
+export const baseUrl = "https://gebeto.github.io"
 
 export default async function sitemap() {
   let blogs = getProjects().map(post => ({
-    url: `${baseUrl}/blog/${post.slug}`,
+    url: `${baseUrl}/content/${post.slug}`,
     lastModified: post.metadata.date,
   }))
 
