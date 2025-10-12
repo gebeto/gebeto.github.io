@@ -1,21 +1,21 @@
 import React from "react"
 import { Transition, TransitionStatus } from "react-transition-group"
 
-export function BaseTransition({
-  in: inProp = false,
-  duration = 500,
-  delay = 0,
-  children,
-  defaultStyles,
-  states,
-}: {
+export const BaseTransition: React.FC<{
   in?: boolean
   duration?: number
   delay?: number
   children: React.ReactElement
   defaultStyles: React.CSSProperties
   states: Partial<Record<TransitionStatus, React.CSSProperties>>
-}) {
+}> = ({
+  in: inProp = false,
+  duration = 500,
+  delay = 0,
+  children,
+  defaultStyles,
+  states,
+}) => {
   const [isIn, setIsIn] = React.useState(inProp)
   const nodeRef = React.useRef(null)
 
@@ -26,8 +26,11 @@ export function BaseTransition({
   }, [])
 
   return (
-    <Transition nodeRef={nodeRef} in={isIn} timeout={duration}>
-      {state => (
+    <Transition
+      nodeRef={nodeRef}
+      in={isIn}
+      timeout={duration}
+      children={state => (
         <>
           {React.cloneElement(children, {
             ref: nodeRef,
@@ -39,7 +42,7 @@ export function BaseTransition({
           })}
         </>
       )}
-    </Transition>
+    />
   )
 }
 
