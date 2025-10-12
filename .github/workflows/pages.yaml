@@ -31,6 +31,11 @@ jobs:
       - name: Build
         run: yarn build
 
+      - name: Test Run
+        run: pwd
+      - name: Test Run
+        run: ls
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
