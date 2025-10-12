@@ -7,6 +7,8 @@ import TwitterIcon from "./twitter.svg"
 import TelegramIcon from "./telegram.svg"
 import CodepenIcon from "./codepen.svg"
 
+console.log(" >>> SDSDS", GithubIcon)
+
 export type SocialProps = {
   social?: {
     github?: string

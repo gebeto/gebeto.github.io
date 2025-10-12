@@ -5,7 +5,7 @@ import { formatDate } from "app/blog/utils"
 import { Blurry } from "./Blurry"
 import { ProjectCard } from "app/legacy-components/ProjectCard/ProjectCard"
 
-export async function BlogPosts() {
+export async function Projects() {
   let projects = getProjects()
 
   return (

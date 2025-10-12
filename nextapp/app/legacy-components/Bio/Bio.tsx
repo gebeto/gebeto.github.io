@@ -1,6 +1,4 @@
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { CSSTransition, Transition } from "react-transition-group"
 
 import {
   BioAuthorName,
@@ -11,42 +9,21 @@ import {
 import { Social, SocialProps } from "../Social"
 import { Fade, FadeAndSlide } from "../Transitions"
 
-type BioStaticQuery = {
-  site: {
-    siteMetadata: {
-      author: {
-        name: string
-        title: string
-        summary: string
-      }
-      social?: SocialProps["social"]
-    }
-  }
-}
-
 export const Bio = () => {
-  const data = useStaticQuery<BioStaticQuery>(graphql`
-    query BioQuery {
-      site {
-        siteMetadata {
-          author {
-            name
-            title
-            summary
-          }
-          social {
-            github
-            twitter
-            linkedin
-            telegram
-            codepen
-          }
-        }
-      }
-    }
-  `)
-
-  const author = data.site.siteMetadata?.author
+  const data = {
+    author: {
+      name: "Yaroslav Nychkalo",
+      title: "Web Software Engineer",
+      summary: "who lives and works in Ukraine.",
+    },
+    social: {
+      github: "gebeto",
+      linkedin: "gebeto",
+      twitter: "_pupiti",
+      telegram: "gebeto",
+      // codepen: "gebeto",
+    },
+  }
 
   return (
     <BioWrapper>
@@ -54,12 +31,12 @@ export const Bio = () => {
         <FadeAndSlide duration={2000} delay={500}>
           <div className="ukraine" />
         </FadeAndSlide>
-        <BioAuthorName>{author?.name}</BioAuthorName>
+        <BioAuthorName>{data.author.name}</BioAuthorName>
         <span className="separator">·</span>
-        <BioAuthorTitle>{author?.title}</BioAuthorTitle>
+        <BioAuthorTitle>{data.author.title}</BioAuthorTitle>
         <span className="separator">·</span>
         {/* {author?.summary && <BioSummary>{author?.summary}</BioSummary>} */}
-        <Social social={data.site.siteMetadata.social} />
+        <Social social={data.social} />
       </div>
     </BioWrapper>
   )

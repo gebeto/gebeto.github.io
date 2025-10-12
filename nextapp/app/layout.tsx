@@ -9,6 +9,14 @@ import Footer from "./components/footer"
 import { baseUrl } from "./sitemap"
 import { Blurry } from "./components/Blurry"
 
+import { Karla } from "next/font/google"
+
+const karla = Karla({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "auto",
+})
+
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
@@ -43,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={karla.className}>
       <body>
         <Blurry shown color="ukraine" />
         {children}
