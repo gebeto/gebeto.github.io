@@ -138,7 +138,7 @@ export const ProjectCardRaycast: React.VFC<{ project: Project }> = ({
         <ProjectCardRaycastImage>
           <picture>
             <img
-              src={`/projects/${project.slug}/${resultImage}`}
+              src={`/content/${project.slug}/images/${resultImage}`}
               alt={project.metadata.title || project.slug}
             />
           </picture>

@@ -77,7 +77,7 @@ export const ProjectCardFull: React.VFC<{ project: Project }> = ({
         <ProjectCardFullImage>
           <picture>
             <img
-              src={`/projects/${project.slug}/${resultImage}`}
+              src={`/content/${project.slug}/images/${resultImage}`}
               alt={project.metadata.title || project.slug}
             />
             {/* <Image

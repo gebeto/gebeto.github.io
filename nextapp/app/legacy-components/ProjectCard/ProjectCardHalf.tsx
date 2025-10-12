@@ -60,7 +60,7 @@ export const ProjectCardHalf: React.VFC<{ project: Project }> = ({
         <ProjectCardImage>
           <picture>
             <img
-              src={`/projects/${project.slug}/${resultImage}`}
+              src={`/content/${project.slug}/images/${resultImage}`}
               alt={project.metadata.title || project.slug}
             />
           </picture>
