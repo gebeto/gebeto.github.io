@@ -4,6 +4,20 @@ import { getProjects } from "app/content/serverUtils"
 import { baseUrl } from "app/sitemap"
 import { formatDate } from "../utils"
 
+const getRepoInfo = async (params: {
+  owner: string
+  repo: string
+  path?: string
+}) => {
+  const url = `https://api.github.com/repos/${params.owner}/${
+    params.repo
+  }/readme${params.path ?? ""}`
+
+  const response = await fetch(url).then(res => res.json())
+  const markdownUrl = response.download_url
+  return await fetch(markdownUrl).then(res => res.text())
+}
+
 export async function generateStaticParams() {
   let posts = getProjects()
 
@@ -13,13 +27,13 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  let post = getProjects().find(post => post.slug === params.slug)
+  const post = getProjects().find(post => post.slug === params.slug)
   if (!post) {
     return
   }
 
-  let { title, date: publishedTime, image } = post.metadata
-  let ogImage = image ? image : `${baseUrl}/og/${encodeURIComponent(title)}`
+  const { title, date: publishedTime, image } = post.metadata
+  const ogImage = image ? image : `${baseUrl}/og/${encodeURIComponent(title)}`
 
   return {
     title,
@@ -45,12 +59,16 @@ export async function generateMetadata({ params }) {
   }
 }
 
-export default function Blog({ params }) {
+export default async function Blog({ params }) {
   let post = getProjects().find(post => post.slug === params.slug)
 
   if (!post) {
     notFound()
   }
+
+  const repoData = post.metadata.github
+    ? await getRepoInfo(post.metadata.github)
+    : null
 
   return (
     <section>
@@ -85,7 +103,7 @@ export default function Blog({ params }) {
         </p>
       </div>
       <article className="prose">
-        <CustomMDX source={post.content} />
+        <CustomMDX source={post.content || repoData} />
       </article>
     </section>
   )

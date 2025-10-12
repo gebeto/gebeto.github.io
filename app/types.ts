@@ -8,6 +8,11 @@ export type ProjectMetadata = {
   image: string
   image_light: string
   images: string[]
+  github?: {
+    owner: string
+    repo: string
+    path?: string
+  }
 }
 export type Project = {
   slug: string

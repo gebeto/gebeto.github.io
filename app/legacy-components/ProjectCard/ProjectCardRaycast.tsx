@@ -112,7 +112,8 @@ export const ProjectCardRaycast: React.VFC<{ project: Project }> = ({
   const resultImage = image || imageLight
 
   return (
-    <ProjectCardRaycastWrapper target="_blank" href={project.metadata.link}>
+    // <ProjectCardRaycastWrapper target="_blank" href={project.metadata.link}>
+    <ProjectCardRaycastWrapper href={`/content/${project.slug}`}>
       <ProjectCardRaycastDetails itemScope itemType="http://schema.org/Article">
         <header>
           <ProjectCardTitle>

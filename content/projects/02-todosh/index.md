@@ -5,6 +5,9 @@ description: Shopping list app! Integrated with Microsoft ToDo.
 link: https://todosh.github.io
 size: full
 image: todosh.png
+# github:
+#   owner: todosh
+#   repo: todosh
 ---
 
 **Todosh** is a comprehensive and user-friendly shopping list app that helps users keep track of their shopping needs. With the ability to add items to your list, Todosh makes it easy to keep track of all the items you need to purchase. The app also has a feature that allows you to mark items as complete, making it simple to see what items you've already purchased and what's still left on your list.
