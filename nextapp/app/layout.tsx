@@ -19,8 +19,8 @@ const karla = Karla({
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Next.js Portfolio Starter",
-    template: "%s | Next.js Portfolio Starter",
+    default: "gebeto | Web Engineer",
+    template: "gebeto | %s",
   },
   description: "This is my portfolio.",
   openGraph: {

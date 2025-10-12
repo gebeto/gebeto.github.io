@@ -6,6 +6,14 @@ import Link from "next/link"
 import { Blurry } from "./Blurry"
 import { Bio } from "app/legacy-components/Bio"
 
+import styled from "styled-components"
+
+export const Container = styled.div`
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+`
+
 export type PageLayoutProps = {
   children: React.ReactNode
   title?: string
@@ -44,14 +52,12 @@ export const PageLayout: React.FC<PageLayoutProps> = ({
   React.useEffect(() => setShown(true), [])
 
   return (
-    <>
-      <div className="container" data-is-root-path={isRootPath}>
-        <Blurry shown={shown} color="ukraine" />
-        {/* <header>{header}</header> */}
-        <Bio />
-        <main>{children}</main>
-        {/* <Footer>© {new Date().getFullYear()}, Built by gebeto.</Footer> */}
-      </div>
-    </>
+    <Container data-is-root-path={isRootPath}>
+      <Blurry shown={shown} color="ukraine" />
+      {/* <header>{header}</header> */}
+      <Bio />
+      <main>{children}</main>
+      {/* <Footer>© {new Date().getFullYear()}, Built by gebeto.</Footer> */}
+    </Container>
   )
 }

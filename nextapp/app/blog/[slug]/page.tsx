@@ -20,9 +20,7 @@ export async function generateMetadata({ params }) {
   }
 
   let { title, date: publishedTime, image } = post.metadata
-  let ogImage = image
-    ? image
-    : `${baseUrl}/og?title=${encodeURIComponent(title)}`
+  let ogImage = image ? image : `${baseUrl}/og/${encodeURIComponent(title)}`
 
   return {
     title,
