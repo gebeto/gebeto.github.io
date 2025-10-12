@@ -45,5 +45,5 @@ function getMDXData(dir: string): Project[] {
 }
 
 export function getProjects() {
-  return getMDXData(path.join(process.cwd(), "public", "projects"))
+  return getMDXData(path.join(process.cwd(), "..", "content", "projects"))
 }

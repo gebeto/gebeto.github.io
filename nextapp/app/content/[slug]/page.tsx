@@ -1,9 +1,8 @@
 import { notFound } from "next/navigation"
 import { CustomMDX } from "app/components/mdx"
-import { getProjects } from "app/blog/serverUtils"
+import { getProjects } from "app/content/serverUtils"
 import { baseUrl } from "app/sitemap"
 import { formatDate } from "../utils"
-import { Blurry } from "../../components/Blurry"
 
 export async function generateStaticParams() {
   let posts = getProjects()

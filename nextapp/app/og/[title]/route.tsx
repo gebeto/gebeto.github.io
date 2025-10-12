@@ -1,4 +1,4 @@
-import { getProjects } from "app/blog/serverUtils"
+import { getProjects } from "app/content/serverUtils"
 import { ImageResponse } from "next/og"
 
 export async function generateStaticParams() {

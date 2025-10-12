@@ -1,4 +1,4 @@
-import { getProjects } from "app/blog/serverUtils"
+import { getProjects } from "app/content/serverUtils"
 
 export async function GET() {
   let allBlogs = getProjects()
