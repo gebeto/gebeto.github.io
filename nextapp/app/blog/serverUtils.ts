@@ -1,9 +1,11 @@
 import fs from "fs"
 import path from "path"
-import { ProjectMetadata } from "app/types"
+import { Project, ProjectMetadata } from "app/types"
 import frontMatter from "front-matter"
 
-function parseFrontmatter(fileContent: string) {
+function parseFrontmatter(
+  fileContent: string
+): Pick<Project, "metadata" | "content"> {
   const parsed = frontMatter(fileContent)
 
   return {
@@ -29,7 +31,7 @@ function readMDXFile(filePath: string) {
   return parseFrontmatter(rawContent)
 }
 
-function getMDXData(dir: string) {
+function getMDXData(dir: string): Project[] {
   let mdxFiles = getMDXFiles(dir)
   return mdxFiles.map(file => {
     let { metadata, content } = readMDXFile(path.join(file))
@@ -43,6 +45,6 @@ function getMDXData(dir: string) {
   })
 }
 
-export function getBlogPosts() {
-  return getMDXData(path.join(process.cwd(), "..", "content", "projects"))
+export function getProjects() {
+  return getMDXData(path.join(process.cwd(), "public", "projects"))
 }

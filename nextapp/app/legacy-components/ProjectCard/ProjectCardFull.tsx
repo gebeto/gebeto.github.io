@@ -1,6 +1,7 @@
 import React from "react"
+import Image from "next/image"
 import styled from "styled-components"
-import { Project } from "../../blog/types"
+import { Project } from "app/types"
 import {
   ProjectCardBase,
   ProjectCardDescription,
@@ -44,22 +45,20 @@ export const ProjectCardFull: React.VFC<{ project: Project }> = ({
   project,
 }) => {
   const title =
-    project.frontmatter.title === ""
-      ? ""
-      : project.frontmatter.title || project.fields.slug
-  const image = project.frontmatter.image
-  const imageLight = project.frontmatter.image_light
-  const resultImage = image?.publicURL || imageLight?.publicURL
+    project.metadata.title === "" ? "" : project.metadata.title || project.slug
+  const image = project.metadata.image
+  const imageLight = project.metadata.image_light
+  const resultImage = image || imageLight
 
   return (
-    <ProjectCardFullWrapper target="_blank" href={project.frontmatter.link}>
+    <ProjectCardFullWrapper target="_blank" href={project.metadata.link}>
       <ProjectCardFullDetails itemScope itemType="http://schema.org/Article">
         <header>
           <ProjectCardTitle>
-            {project.frontmatter.link ? (
+            {project.metadata.link ? (
               <span itemProp="headline">{title}</span>
             ) : (
-              <Link href={project.fields.slug} itemProp="url">
+              <Link href={project.slug} itemProp="url">
                 <span itemProp="headline">{title}</span>
               </Link>
             )}
@@ -68,7 +67,7 @@ export const ProjectCardFull: React.VFC<{ project: Project }> = ({
         <section>
           <ProjectCardDescription
             dangerouslySetInnerHTML={{
-              __html: project.frontmatter.description || project.excerpt,
+              __html: project.metadata.description,
             }}
             itemProp="description"
           />
@@ -77,7 +76,17 @@ export const ProjectCardFull: React.VFC<{ project: Project }> = ({
       {image && (
         <ProjectCardFullImage>
           <picture>
-            <img src={resultImage} alt="project" />
+            <img
+              src={`/projects/${project.slug}/${resultImage}`}
+              alt={project.metadata.title || project.slug}
+            />
+            {/* <Image
+              src={`/projects/${project.slug}/${resultImage}`}
+              width={300}
+              height={300}
+              unoptimized
+              alt="project"
+            /> */}
           </picture>
         </ProjectCardFullImage>
       )}

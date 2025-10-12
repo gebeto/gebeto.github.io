@@ -5,20 +5,12 @@ export type ProjectMetadata = {
   date: string
   description: string
   size: CardSize
-  image: {
-    publicURL: string
-  }
-  image_light: {
-    publicURL: string
-  }
-  images: {
-    publicURL: string
-  }[]
+  image: string
+  image_light: string
+  images: string[]
 }
 export type Project = {
-  excerpt: string
-  fields: {
-    slug: string
-  }
-  frontmatter: ProjectMetadata
+  slug: string
+  metadata: ProjectMetadata
+  content: string
 }

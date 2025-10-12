@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { css } from "styled-components"
-import { Project } from "../../blog/types"
+import { Project } from "app/types"
 
 export const ProjectCardBase = css`
   border-radius: 24px;
@@ -55,11 +55,11 @@ export const ProjectCardImage = styled.div`
 
 export const useRandomImage = (project: Project) => {
   const randomImage = React.useMemo(() => {
-    const images = project.frontmatter.images || [project.frontmatter.image]
+    const images = project.metadata.images || [project.metadata.image]
     const imageIndex = Math.floor(Math.random() * images.length)
-    const randomImage = project.frontmatter.images
-      ? project.frontmatter.images[imageIndex]
-      : project.frontmatter.image
+    const randomImage = project.metadata.images
+      ? project.metadata.images[imageIndex]
+      : project.metadata.image
     return randomImage
   }, [project])
 

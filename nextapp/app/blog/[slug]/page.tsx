@@ -1,12 +1,12 @@
 import { notFound } from "next/navigation"
 import { CustomMDX } from "app/components/mdx"
-import { getBlogPosts } from "app/blog/serverUtils"
+import { getProjects } from "app/blog/serverUtils"
 import { baseUrl } from "app/sitemap"
 import { formatDate } from "../utils"
 import { Blurry } from "../../components/Blurry"
 
 export async function generateStaticParams() {
-  let posts = getBlogPosts()
+  let posts = getProjects()
 
   return posts.map(post => ({
     slug: post.slug,
@@ -14,7 +14,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  let post = getBlogPosts().find(post => post.slug === params.slug)
+  let post = getProjects().find(post => post.slug === params.slug)
   if (!post) {
     return
   }
@@ -49,7 +49,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default function Blog({ params }) {
-  let post = getBlogPosts().find(post => post.slug === params.slug)
+  let post = getProjects().find(post => post.slug === params.slug)
 
   if (!post) {
     notFound()

@@ -1,5 +1,7 @@
+"use client"
+
 import React from "react"
-import { CardSize, Project } from "../../blog/types"
+import { CardSize, Project } from "app/types"
 import { ProjectCardFull } from "./ProjectCardFull"
 import { ProjectCardHalf } from "./ProjectCardHalf"
 import { ProjectCardRaycast } from "./ProjectCardRaycast"
@@ -18,7 +20,7 @@ export const cardComponentBySize: Record<CardSize, CardElementType> = {
 }
 
 export const ProjectCard: React.FC<TileProps> = ({ project }) => {
-  const size = project.frontmatter.size || "full"
+  const size = project.metadata.size || "full"
   const CompeteComponent = cardComponentBySize[size]
 
   return <CompeteComponent project={project} />
