@@ -19,22 +19,17 @@ export async function generateMetadata({ params }) {
     return
   }
 
-  let {
-    title,
-    publishedAt: publishedTime,
-    summary: description,
-    image,
-  } = post.metadata
+  let { title, date: publishedTime, image } = post.metadata
   let ogImage = image
     ? image
     : `${baseUrl}/og?title=${encodeURIComponent(title)}`
 
   return {
     title,
-    description,
+    description: "(No description)",
     openGraph: {
       title,
-      description,
+      description: "(No description)",
       type: "article",
       publishedTime,
       url: `${baseUrl}/blog/${post.slug}`,
@@ -47,7 +42,7 @@ export async function generateMetadata({ params }) {
     twitter: {
       card: "summary_large_image",
       title,
-      description,
+      description: "(No description)",
       images: [ogImage],
     },
   }
@@ -70,9 +65,9 @@ export default function Blog({ params }) {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             headline: post.metadata.title,
-            datePublished: post.metadata.publishedAt,
-            dateModified: post.metadata.publishedAt,
-            description: post.metadata.summary,
+            datePublished: post.metadata.date,
+            dateModified: post.metadata.date,
+            description: "(No description)",
             image: post.metadata.image
               ? `${baseUrl}${post.metadata.image}`
               : `/og?title=${encodeURIComponent(post.metadata.title)}`,
@@ -89,7 +84,7 @@ export default function Blog({ params }) {
       </h1>
       <div className="flex justify-between items-center mt-2 mb-8 text-sm">
         <p className="text-sm text-neutral-600 dark:text-neutral-400">
-          {formatDate(post.metadata.publishedAt)}
+          {formatDate(post.metadata.date)}
         </p>
       </div>
       <article className="prose">
