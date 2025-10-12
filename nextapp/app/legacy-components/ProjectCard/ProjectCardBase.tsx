@@ -4,6 +4,7 @@ import { css } from "styled-components"
 import { Project } from "app/types"
 
 export const ProjectCardBase = css`
+  user-select: none;
   border-radius: 24px;
   overflow: hidden;
   height: 100%;
