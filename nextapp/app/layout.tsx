@@ -10,6 +10,7 @@ import { baseUrl } from "./sitemap"
 import { Blurry } from "./components/Blurry"
 
 import { Karla } from "next/font/google"
+import { StyledComponentsRegistry } from "./registry"
 
 const karla = Karla({
   subsets: ["latin"],
@@ -54,7 +55,7 @@ export default function RootLayout({
     <html lang="en" className={karla.className}>
       <body>
         <Blurry shown color="ukraine" />
-        {children}
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
         {/* <header>{header}</header>
         <main>{children}</main> */}
         {/* <Navbar /> */}

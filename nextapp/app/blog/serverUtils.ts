@@ -22,7 +22,6 @@ function getMDXFiles(dir: string) {
   const files = projectFolders
     .map(folder => path.join(folder, "index.md"))
     .filter(md => fs.statSync(md).isFile())
-  console.log(dir, files)
   return files
 }
 
