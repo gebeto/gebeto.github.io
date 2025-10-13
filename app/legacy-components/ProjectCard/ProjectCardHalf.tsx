@@ -34,8 +34,9 @@ export const ProjectCardHalf: React.VFC<{ project: Project }> = ({
   const resultImage = image || imageLight
 
   return (
-    // <ProjectCardHalfWrapper target="_blank" href={project.metadata.link}>
-    <ProjectCardHalfWrapper href={`/content/${project.slug}`}>
+    <ProjectCardHalfWrapper
+      href={project.metadata.link || `/content/${project.slug}`}
+    >
       <ProjectCardHalfDetails itemScope itemType="http://schema.org/Article">
         <header>
           <ProjectCardTitle>

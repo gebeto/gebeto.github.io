@@ -51,8 +51,9 @@ export const ProjectCardFull: React.VFC<{ project: Project }> = ({
   const resultImage = image || imageLight
 
   return (
-    // <ProjectCardFullWrapper target="_blank" href={project.metadata.link}>
-    <ProjectCardFullWrapper href={`/content/${project.slug}`}>
+    <ProjectCardFullWrapper
+      href={project.metadata.link || `/content/${project.slug}`}
+    >
       <ProjectCardFullDetails itemScope itemType="http://schema.org/Article">
         <header>
           <ProjectCardTitle>
