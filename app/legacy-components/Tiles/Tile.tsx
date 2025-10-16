@@ -6,8 +6,12 @@ import styled from "styled-components"
 import { css } from "styled-components"
 import { CardSize } from "app/types"
 
-const randomTransitionDuration = () => {
+const randomTransitionDuration = params => {
   const rand = 600 + Math.round(Math.random() * 600)
+
+  if (params.animated === false) {
+    return {}
+  }
 
   return {
     transition: `transform 1s ${rand}ms, opacity 1s ${rand}ms`,
@@ -31,7 +35,11 @@ const baseStyles = css`
 
 const tileBySize: Record<
   CardSize,
-  React.ComponentClass<{ children: React.ReactNode; className?: string }>
+  React.ComponentClass<{
+    children: React.ReactNode
+    className?: string
+    animated?: boolean
+  }>
 > = {
   full: styled.ol`
     ${baseStyles}
@@ -72,17 +80,22 @@ const tileBySize: Record<
 
 export type TileProps = {
   size: keyof typeof tileBySize
+  animated?: boolean
   children: React.ReactNode
 }
 
-export const Tile: React.FC<TileProps> = ({ size = "full", children }) => {
+export const Tile: React.FC<TileProps> = ({
+  size = "full",
+  animated = true,
+  children,
+}) => {
   const [shown, setShown] = React.useState(false)
   React.useEffect(() => setShown(true), [])
 
   const TileWrapper = tileBySize[size]
 
   return (
-    <TileWrapper className={shown ? "shown" : undefined}>
+    <TileWrapper className={shown ? "shown" : undefined} animated={animated}>
       {children}
     </TileWrapper>
   )

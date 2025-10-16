@@ -1,4 +1,13 @@
-export type CardSize = "full" | "half" | "half_large" | "raycast" | "half_long"
+import { ValueOf } from "next/dist/shared/lib/constants"
+
+export enum CardSizeEnum {
+  full = "full",
+  half = "half",
+  half_large = "half_large",
+  raycast = "raycast",
+  half_long = "half_long",
+}
+export type CardSize = `${CardSizeEnum}`
 export type ProjectMetadata = {
   title: string
   link: string

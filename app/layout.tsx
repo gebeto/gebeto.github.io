@@ -11,7 +11,7 @@ import { Karla } from "next/font/google"
 import { StyledComponentsRegistry } from "./registry"
 import Head from "next/head"
 
-const karla = Karla({
+export const karlaFont = Karla({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   display: "auto",
@@ -52,9 +52,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={karla.className}>
+    <html lang="en" className={karlaFont.className}>
       <Head>
-        <link rel="icon" type="image/png" href="/icon.png"/>
+        <link rel="icon" type="image/png" href="/icon.png" />
       </Head>
       <body>
         <Blurry shown color="ukraine" />
