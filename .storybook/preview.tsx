@@ -1,7 +1,7 @@
 import type { Preview } from "@storybook/nextjs-vite"
 import "../app/global.css"
 import "../app/normalize.css"
-import { karlaFont } from "../app/layout"
+import { karlaFont } from "../app/font"
 
 const preview: Preview = {
   parameters: {

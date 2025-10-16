@@ -7,15 +7,9 @@ import Footer from "./components/footer"
 import { baseUrl } from "./sitemap"
 import { Blurry } from "./components/Blurry"
 
-import { Karla } from "next/font/google"
 import { StyledComponentsRegistry } from "./registry"
 import Head from "next/head"
-
-export const karlaFont = Karla({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  display: "auto",
-})
+import { karlaFont } from "./font"
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
